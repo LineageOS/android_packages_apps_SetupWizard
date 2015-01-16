@@ -20,7 +20,7 @@
              android:layout_height="match_parent"
              style="@style/PageContent">
 
-    <com.cyanogenmod.account.ui.LocalePicker
+    <com.cyanogenmod.setupwizard.ui.LocalePicker
         android:id="@+id/locale_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
