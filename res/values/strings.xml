@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2014 The Cyanogen Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Setup Wizard</string>
+    <string name="product_name" translatable="false">cyanogen</string>
+    <string name="account_name" translatable="false">Cyanogen</string>
+
+    <string name="next">Next</string>
+    <string name="continue_label">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="finish">Finish</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="login">Login</string>
+    <string name="ok">OK</string>
+    <string name="existing">Existing</string>
+    <string name="new_account">New</string>
+    <string name="skip_anyway">Skip anyway</string>
+    <string name="dont_skip">Don\'t skip</string>
+
+    <string name="setup_complete">Setup is complete</string>
+    <string name="setup_welcome">Welcome</string>
+    <string name="setup_wifi">Connect to Wi-Fi</string>
+    <string name="setup_sim_missing">SIM Card Missing</string>
+    <string name="setup_gms_account">GMS account</string>
+    <string name="setup_choose_data_sim">Choose a SIM for Data</string>
+    <string name="setup_location">Location Services</string>
+    <string name="setup_datetime">Date &amp; time</string>
+    <string name="setup_current_date">Current date</string>
+    <string name="setup_current_time">Current time</string>
+    <string name="setup_msg_no_network">WARNING: You won\'t be able to set up your accounts</string>
+    <string name="setup_warning_skip_wifi" product="tablet">WARNING: You may incur extra carrier data charges.\n\nTablet setup can require significant network activity.</string>
+    <string name="setup_warning_skip_wifi" product="default">WARNING: You may incur extra carrier data charges.\n\nPhone setup can require significant network activity.</string>
+    <string name="setup_privacy">Privacy Settings</string>
+    <string name="setup_finalizing">Finalizing setup\u2026</string>
+
+    <string name="sim_missing_summary">A SIM card has not been detected in your device. Please insert a valid SIM card.</string>
+    <string name="choose_data_sim_summary">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your device.</string>
+
+    <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
+
+    <string name="location_services_summary">Location services allows Maps and other apps to gather and use data such as your approximate location. For example, Maps may use your approximate location to locate nearby coffee shops.</string>
+    <string name="location_access_summary">Allow apps that have asked your permission to use your location information. This may include your current location and past locations.</string>
+    <string name="location_gps">Improve location accuracy by allowing apps to use the GPS on your phone.</string>
+    <string name="location_network">Use Google’s location service to help apps determine your location. This means sending annonymous location data to Google, even when no apps are running.</string>
+
+    <string name="setup_mobile_data">Turn On Mobile Data</string>
+    <string name="setup_mobile_data_no_service">No service</string>
+    <string name="setup_mobile_data_emergency_only">Emergency calls only</string>
+    <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on mobile data may be subject to data charges.</string>
+    <string name="enable_mobile_off">No</string>
+    <string name="enable_mobile_on">Yes</string>
+
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+
+    <string name="emergency_call">Emergency Call</string>
+</resources>
