@@ -24,7 +24,7 @@
         android:id="@+id/brand_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/finish_logo"
+        android:src="@drawable/brand_finish"
         android:scaleType="centerInside"/>
 
 </LinearLayout>
