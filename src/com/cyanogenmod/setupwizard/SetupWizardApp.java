@@ -27,6 +27,8 @@ public class SetupWizardApp extends Application {
     // Leave this off for release
     public static final boolean DEBUG = false;
 
+    public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
+
     public static final String ACCOUNT_TYPE_CYANOGEN = "com.cyanogen";
     public static final String ACCOUNT_TYPE_GMS = "com.google";
 

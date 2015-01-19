@@ -16,6 +16,7 @@
 
 package com.cyanogenmod.setupwizard.util;
 
+import android.accounts.AccountManager;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -136,6 +137,10 @@ public class SetupWizardUtils {
     public static boolean hasGMS(Context context) {
         return GooglePlayServicesUtil.isGooglePlayServicesAvailable(context) !=
                 ConnectionResult.SERVICE_MISSING;
+    }
+
+    public static boolean accountExists(Context context, String accountType) {
+        return AccountManager.get(context).getAccountsByType(accountType).length > 0;
     }
 
     public static void disableSetupWizards(Activity context) {

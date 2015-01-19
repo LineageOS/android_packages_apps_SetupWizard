@@ -120,7 +120,7 @@ public abstract class SetupPage implements Page {
         mCallbacks.onPageLoaded(this);
     }
 
-    protected SetupDataCallbacks getCallbacks() {
+    public SetupDataCallbacks getCallbacks() {
         return mCallbacks;
     }
 }

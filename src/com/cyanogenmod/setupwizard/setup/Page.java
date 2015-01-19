@@ -42,5 +42,6 @@ public interface Page {
     public boolean doPreviousAction();
     public boolean doNextAction();
     public void doLoadAction(Activity context, int action);
-    public abstract boolean onActivityResult(int requestCode, int resultCode, Intent data);
+    public boolean onActivityResult(int requestCode, int resultCode, Intent data);
+    public SetupDataCallbacks getCallbacks();
 }

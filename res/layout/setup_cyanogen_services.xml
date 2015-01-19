@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/PageContent">
+
+        <!-- The caption about privacy policy -->
+        <TextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="@dimen/summary_margin_bottom"
+            style="@style/PageSummaryText"
+            android:text="@string/services_explanation"
+            android:clickable="true"/>
+
+        <!-- Whether or not to enable metrics -->
+        <LinearLayout
+            android:id="@+id/metrics"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/location_margin_left"
+            android:layout_marginRight="@dimen/content_margin_right"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+
+            <CheckBox
+                android:id="@+id/enable_metrics_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/enable_metrics_summary"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:layout_marginLeft="@dimen/location_text_margin_left"
+                android:layout_marginRight="@dimen/location_text_margin_right"
+                android:paddingBottom="@dimen/content_margin_bottom"
+                android:text="@string/services_metrics_label"
+                android:maxLines="5" />
+
+        </LinearLayout>
+
+        <!-- Checkbox for using on-screen nav keys -->
+        <LinearLayout
+            android:id="@+id/nav_keys"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/location_margin_left"
+            android:layout_marginRight="@dimen/content_margin_right"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <CheckBox
+                android:id="@+id/nav_keys_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:clickable="false" />
+
+
+            <TextView
+                android:id="@+id/nav_keys_summary"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:layout_marginLeft="@dimen/location_text_margin_left"
+                android:layout_marginRight="@dimen/location_text_margin_right"
+                android:paddingBottom="@dimen/content_margin_bottom"
+                android:text="@string/services_os_nav_keys_label"
+                android:maxLines="5" />
+
+        </LinearLayout>
+
+        <!-- Checkbox for enabling secure SMS -->
+        <LinearLayout
+            android:id="@+id/secure_sms"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/location_margin_left"
+            android:layout_marginRight="@dimen/content_margin_right"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true">
+
+            <CheckBox
+                android:id="@+id/secure_sms_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/secure_sms_summary"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="top"
+                android:layout_marginLeft="@dimen/location_text_margin_left"
+                android:layout_marginRight="@dimen/location_text_margin_right"
+                android:paddingBottom="@dimen/content_margin_bottom"
+                android:text="@string/services_secure_sms_label"
+                android:maxLines="5" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

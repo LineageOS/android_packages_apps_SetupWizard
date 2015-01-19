@@ -55,10 +55,14 @@ public class GmsAccountPage extends SetupPage {
 
     @Override
     public void doLoadAction(Activity context, int action) {
-        launchGmsAccountSetup(context, action);
+        if (action == Page.ACTION_PREVIOUS) {
+            getCallbacks().onPreviousPage();
+        } else {
+            launchGmsAccountSetup(context);
+        }
     }
 
-    public void launchGmsAccountSetup(final Activity activity, final int action) {
+    public void launchGmsAccountSetup(final Activity activity) {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
@@ -79,11 +83,7 @@ public class GmsAccountPage extends SetupPage {
                         if (token != null) {
                             setCompleted(true);
                         }
-                        if (action == Page.ACTION_NEXT) {
-                            getCallbacks().onNextPage();
-                        } else {
-                            getCallbacks().onPreviousPage();
-                        }
+                        getCallbacks().onNextPage();
                     }
                 }, null);
     }

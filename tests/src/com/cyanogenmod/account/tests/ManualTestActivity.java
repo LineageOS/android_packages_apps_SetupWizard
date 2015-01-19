@@ -51,7 +51,7 @@ public class ManualTestActivity extends Activity {
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
-        ComponentName componentName = new ComponentName("com.cyanogenmod.account", "com.cyanogenmod.account.ui.SetupWizardActivity");
+        ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard", "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
         pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
         componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.SetupWizardActivity");
         pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);

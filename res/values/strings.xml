@@ -51,7 +51,7 @@
     <string name="location_services_summary">Location services allows Maps and other apps to gather and use data such as your approximate location. For example, Maps may use your approximate location to locate nearby coffee shops.</string>
     <string name="location_access_summary">Allow apps that have asked your permission to use your location information. This may include your current location and past locations.</string>
     <string name="location_gps">Improve location accuracy by allowing apps to use the GPS on your phone.</string>
-    <string name="location_network">Use Google’s location service to help apps determine your location. This means sending annonymous location data to Google, even when no apps are running.</string>
+    <string name="location_network">Use Google\'s location service to help apps determine your location. This means sending annonymous location data to Google, even when no apps are running.</string>
 
     <string name="setup_mobile_data">Turn On Mobile Data</string>
     <string name="setup_mobile_data_no_service">No service</string>
@@ -63,4 +63,11 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
 
     <string name="emergency_call">Emergency Call</string>
+
+    <string name="setup_services">Cyanogen services</string>
+    <string name="services_explanation">These services work for you to extend the capabilities of your device. You can turn them off at anytime. Data will be used in accordance with Cyanogen\'s %s.</string>
+    <string name="services_privacy_policy">Privacy Policy</string>
+    <string name="services_metrics_label"><b>Help improve Cyanogen OS</b> by automatically sending diagnostic and usage data to Cyanogen. This information won’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new Cyanogen OS features.</string>
+    <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> to move between screens instead of hardware keys.</string>
+    <string name="services_secure_sms_label"><b>Use secure SMS</b> to encrypt SMS conversations with other users using secure SMS on a Cyanogen OS device.</string>
 </resources>
