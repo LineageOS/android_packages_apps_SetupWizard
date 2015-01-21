@@ -97,6 +97,12 @@ public class WelcomePage extends SetupPage {
         };
 
         @Override
+        public void onActivityCreated(Bundle savedInstanceState) {
+            super.onActivityCreated(savedInstanceState);
+            getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
+        }
+
+        @Override
         protected void initializePage() {
             mLanguagePicker = (LocalePicker) mRootView.findViewById(R.id.locale_list);
             loadLanguages();
@@ -152,10 +158,6 @@ public class WelcomePage extends SetupPage {
             return R.layout.setup_welcome_page;
         }
 
-        @Override
-        protected int getHeaderLayoutResource() {
-            return R.layout.logo_header;
-        }
     }
 
 }

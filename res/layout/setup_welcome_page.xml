@@ -14,19 +14,31 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/header"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             style="@style/PageContent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-    <com.cyanogenmod.setupwizard.ui.LocalePicker
-        android:id="@+id/locale_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="12dp"
-        android:gravity="left"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
+    <include layout="@layout/logo_header" />
 
-</FrameLayout>
+    <RelativeLayout android:id="@+id/page"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:paddingLeft="@dimen/content_margin_left"
+                 android:paddingRight="@dimen/content_margin_left"
+                 style="@style/PageContent">
+
+        <com.cyanogenmod.setupwizard.ui.LocalePicker
+            android:id="@+id/locale_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_locale_picker_height"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

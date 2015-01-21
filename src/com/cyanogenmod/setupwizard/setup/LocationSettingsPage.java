@@ -128,11 +128,6 @@ public class LocationSettingsPage extends SetupPage {
         }
 
         @Override
-        protected int getHeaderLayoutResource() {
-            return R.layout.header_condensed;
-        }
-
-        @Override
         public void onResume() {
             super.onResume();
             updateLocationToggles();

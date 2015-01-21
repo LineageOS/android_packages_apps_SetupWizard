@@ -14,36 +14,50 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <include layout="@layout/header" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/sim_missing"
-            style="@style/PageSummaryText"
-            android:textSize="15sp"
-            android:layout_marginBottom="@dimen/summary_margin_bottom"
-            android:paddingTop="@dimen/content_margin_top"
-            android:paddingLeft="@dimen/content_margin_left"
-            android:paddingRight="@dimen/content_margin_right"
-            android:text="@string/sim_missing_summary" />
+    <FrameLayout android:id="@+id/page"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:src="@drawable/sim_back"/>
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
 
-    </LinearLayout>
-</ScrollView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PageContent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sim_missing"
+                    style="@style/PageSummaryText"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="@dimen/summary_margin_bottom"
+                    android:paddingLeft="@dimen/content_margin_left"
+                    android:paddingRight="@dimen/content_margin_right"
+                    android:text="@string/sim_missing_summary" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/sim_back"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
+
 
 
 

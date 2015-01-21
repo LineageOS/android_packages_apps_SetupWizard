@@ -14,31 +14,44 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/page_view"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <include layout="@layout/header" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/PageSummaryText"
-            android:textSize="15sp"
-            android:paddingTop="@dimen/content_margin_top"
-            android:paddingLeft="@dimen/content_margin_left"
-            android:paddingRight="@dimen/content_margin_right"
-            android:paddingBottom="@dimen/summary_margin_bottom"
-            android:text="@string/choose_data_sim_summary" />
+    <FrameLayout android:id="@+id/page"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1">
 
-        <include layout="@layout/divider" />
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
 
-    </LinearLayout>
-</ScrollView>
+            <LinearLayout
+                android:id="@+id/page_view"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PageContent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/PageSummaryText"
+                    android:textSize="15sp"
+                    android:paddingLeft="@dimen/content_margin_left"
+                    android:paddingRight="@dimen/content_margin_right"
+                    android:paddingBottom="@dimen/summary_margin_bottom"
+                    android:text="@string/choose_data_sim_summary" />
+
+                <include layout="@layout/divider" />
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
 
 

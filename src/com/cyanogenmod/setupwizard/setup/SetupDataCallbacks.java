@@ -16,9 +16,6 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-
 public interface SetupDataCallbacks {
     void onNextPage();
     void onPreviousPage();
@@ -27,5 +24,4 @@ public interface SetupDataCallbacks {
     void onFinish();
     Page getPage(String key);
     Page getPage(int key);
-    void onPageViewCreated(LayoutInflater inflater, Bundle savedInstanceState, int layoutResource);
 }

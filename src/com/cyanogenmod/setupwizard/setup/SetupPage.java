@@ -21,10 +21,12 @@ import com.cyanogenmod.setupwizard.R;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Slide;
+import android.transition.Transition;
+import android.view.Gravity;
 
 
 public abstract class SetupPage implements Page {
@@ -71,14 +73,19 @@ public abstract class SetupPage implements Page {
     public void doLoadAction(Activity context, int action) {
         if (context == null || context.isFinishing()) { return; }
         final FragmentManager fragmentManager = context.getFragmentManager();
+        Fragment fragment = getFragment();
         if (action == Page.ACTION_NEXT) {
-            FragmentTransaction transaction = fragmentManager.beginTransaction();
-            transaction.replace(R.id.content, getFragment(), getKey());
-            transaction.commit();
+            Transition t = new Slide(Gravity.RIGHT);
+            fragment.setEnterTransition(t);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content,fragment, getKey())
+                    .commit();
         } else {
-            FragmentTransaction transaction = fragmentManager.beginTransaction();
-            transaction.replace(R.id.content, getFragment(), getKey());
-            transaction.commit();
+            Transition t = new Slide(Gravity.LEFT);
+            fragment.setEnterTransition(t);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content, fragment, getKey())
+                    .commit();
         }
     }
 

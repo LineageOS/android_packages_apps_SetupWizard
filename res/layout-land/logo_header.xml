@@ -16,9 +16,30 @@
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/header"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/header_height"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/header_logo_margin_top"
                 style="@style/Header">
+
+    <ImageView
+        android:id="@+id/brand_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brand"
+        android:paddingLeft="@dimen/header_logo_margin_left"
+        android:paddingBottom="@dimen/header_logo_margin_bottom"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/powered_by_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/powered_by"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/header_logo_margin_left"
+        android:paddingBottom="@dimen/header_logo_margin_bottom"
+        android:layout_below="@+id/brand_logo"/>
 
     <TextView
         android:layout_width="match_parent"

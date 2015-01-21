@@ -18,15 +18,13 @@
     <style name="Theme.Setup" parent="@android:style/Theme.Material.Light">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/primary</item>
         <item name="android:windowActivityTransitions">true</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
         <item name="android:colorPrimary">@color/primary</item>
-        <item name="android:colorPrimaryDark">@color/primary</item>
+        <item name="android:colorPrimaryDark">#00000000</item>
         <item name="android:colorAccent">@color/accent</item>
-    </style>
-
-    <style name="RootView">
-        <item name="android:background">@color/window_background</item>
     </style>
 
     <style name="Header">
@@ -36,13 +34,11 @@
 
     <style name="PageContainer">
         <item name="android:textColor">@color/primary_text</item>
-        <item name="android:background">@color/page_background</item>
     </style>
 
     <style name="PageContent">
+        <item name="android:background">@color/page_background</item>
         <item name="android:paddingTop">@dimen/content_margin_top</item>
-        <item name="android:paddingLeft">@dimen/content_margin_left</item>
-        <item name="android:paddingRight">@dimen/content_margin_right</item>
     </style>
 
     <style name="PageTitle">
@@ -57,6 +53,7 @@
 
     <style name="PageSummaryText">
         <item name="android:id">@android:id/summary</item>
+        <item name="android:lineSpacingExtra">@dimen/setup_line_spacing</item>
     </style>
 
     <style name="SpinnerItem">

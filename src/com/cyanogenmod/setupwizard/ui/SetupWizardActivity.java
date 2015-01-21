@@ -19,7 +19,9 @@ package com.cyanogenmod.setupwizard.ui;
 import android.app.Activity;
 import android.app.AppGlobals;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
@@ -45,11 +47,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
     private View mRootView;
-    private View mPageView;
     private Button mNextButton;
     private Button mPrevButton;
-    private TextView mTitleView;
-    private ViewGroup mHeaderView;
 
     private AbstractSetupData mSetupData;
 
@@ -57,13 +56,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setup_main);
         mRootView = findViewById(R.id.root);
-        mPageView = findViewById(R.id.page);
         ((SetupWizardApp)getApplicationContext()).disableStatusBar();
         mSetupData = (AbstractSetupData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
             mSetupData = new CMSetupWizardData(this);
         }
-        mHeaderView = (ViewGroup)findViewById(R.id.header);
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
         mSetupData.registerListener(this);
@@ -118,24 +115,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onBackPressed() {
-        mSetupData.onPreviousPage();
-    }
-
-    @Override
-    public void onPageViewCreated(LayoutInflater inflater, Bundle savedInstanceState,
-            int layoutResource) {
-        if (layoutResource != -1) {
-            mHeaderView.setVisibility(View.VISIBLE);
-            mHeaderView.removeAllViews();
-            inflater.inflate(layoutResource, mHeaderView, true);
-        } else {
-            mHeaderView.setVisibility(View.GONE);
-        }
-        mTitleView = (TextView) findViewById(android.R.id.title);
-        if (mTitleView != null) {
-            Page page = mSetupData.getCurrentPage();
-            mTitleView.setText(page.getTitleResId());
-        }
+         if (!mSetupData.isFirstPage()) {
+             mSetupData.onPreviousPage();
+         }
     }
 
     @Override
@@ -152,6 +134,14 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onPageLoaded(Page page) {
+        if (getResources().getConfiguration().orientation
+                == Configuration.ORIENTATION_LANDSCAPE &&
+                mSetupData.isFirstPage()) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN);
+        } else {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+        }
         updateButtonBar();
     }
 
@@ -179,18 +169,12 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         if (mSetupData.isLastPage()) {
             mPrevButton.setVisibility(View.INVISIBLE);
             mRootView.setBackgroundColor(resources.getColor(R.color.primary));
-            mPageView.setBackgroundColor(resources.getColor(R.color.primary));
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_wht), null);
             mNextButton.setTextColor(resources.getColor(R.color.white));
         } else {
             mPrevButton.setVisibility(View.VISIBLE);
-            mPageView.setBackgroundColor(resources.getColor(R.color.page_background));
-            if (mSetupData.isFirstPage()) {
-                mRootView.setBackgroundColor(resources.getColor(R.color.page_background));
-            } else {
-                mRootView.setBackgroundColor(resources.getColor(R.color.window_background));
-            }
+            mRootView.setBackgroundColor(resources.getColor(R.color.window_background));
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_dark), null);
             mNextButton.setTextColor(resources.getColor(R.color.primary_text));

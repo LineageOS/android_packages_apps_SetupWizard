@@ -17,8 +17,6 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.accounts.AccountManager;
-import android.accounts.AccountManagerCallback;
-import android.accounts.AccountManagerFuture;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
@@ -137,8 +135,6 @@ public class CyanogenServicesPage extends SetupPage {
         private CheckBox mNavKeys;
         private CheckBox mSecureSms;
 
-        private Runnable mDeferredAction;
-
         private Handler mHandler;
 
 
@@ -251,22 +247,9 @@ public class CyanogenServicesPage extends SetupPage {
         }
 
         @Override
-        protected int getHeaderLayoutResource() {
-            return R.layout.header_condensed;
-        }
-
-        @Override
         public void onResume() {
             super.onResume();
             updateDisableNavkeysOption();
-            runDeferredAction();
-        }
-
-        private void runDeferredAction() {
-            if (mDeferredAction != null) {
-                mDeferredAction.run();
-                mDeferredAction = null;
-            }
         }
 
         private void updateDisableNavkeysOption() {
@@ -279,28 +262,9 @@ public class CyanogenServicesPage extends SetupPage {
         private void launchCyanogenAccountSetup(final Activity activity) {
             Bundle bundle = new Bundle();
             bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
-            AccountManager
-                    .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_CYANOGEN, null, null, bundle,
-                    activity, new AccountManagerCallback<Bundle>() {
-                        @Override
-                        public void run(AccountManagerFuture<Bundle> bundleAccountManagerFuture) {
-                            if (activity == null) return; //There is a chance this activity has been torn down.
-                            Runnable runnable = new Runnable() {
-                                @Override
-                                public void run() {
-                                    if (!SetupWizardUtils.accountExists(activity,
-                                            SetupWizardApp.ACCOUNT_TYPE_CYANOGEN)) {
-                                        mPage.getCallbacks().onNextPage();
-                                    }
-                                }
-                            };
-                            if (activity.isResumed()) {
-                                runnable.run();
-                            } else {
-                                mDeferredAction = runnable;
-                            }
-                        }
-                    }, null);
+            AccountManager.get(activity)
+                    .addAccount(SetupWizardApp.ACCOUNT_TYPE_CYANOGEN, null, null, bundle,
+                    activity, null, null);
         }
 
     }

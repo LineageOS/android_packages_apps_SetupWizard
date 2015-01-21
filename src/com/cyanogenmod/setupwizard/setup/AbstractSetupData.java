@@ -18,7 +18,6 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 
 import java.util.ArrayList;
 
@@ -103,10 +102,6 @@ public abstract class AbstractSetupData implements SetupDataCallbacks {
             }
         }
     }
-
-    @Override
-    public void onPageViewCreated(LayoutInflater inflater, Bundle savedInstanceState,
-            int layoutResource) {}
 
     private boolean advanceToNextUncompleted() {
         while (mCurrentPageIndex < mPageList.size()) {

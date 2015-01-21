@@ -15,12 +15,13 @@
      limitations under the License.
 -->
 <resources>
-    <dimen name="logo_header_height">290dp</dimen>
+    <dimen name="logo_header_height">220dp</dimen>
     <dimen name="header_height">220dp</dimen>
     <dimen name="page_title_height">56dp</dimen>
     <dimen name="header_title_margin_left">26dp</dimen>
     <dimen name="header_logo_margin_left">25dp</dimen>
     <dimen name="header_logo_margin_bottom">11dp</dimen>
+    <dimen name="header_logo_margin_top">30dp</dimen>
     <dimen name="content_margin_top">26dp</dimen>
     <dimen name="content_margin_left">26dp</dimen>
     <dimen name="content_margin_right">14dp</dimen>
@@ -31,4 +32,6 @@
     <dimen name="location_text_margin_right">30dp</dimen>
     <dimen name="data_switch_margin_right">30dp</dimen>
     <dimen name="carrier_text_margin_left">15dp</dimen>
+    <dimen name="setup_line_spacing">3sp</dimen>
+    <dimen name="min_locale_picker_height">100dp</dimen>
 </resources>

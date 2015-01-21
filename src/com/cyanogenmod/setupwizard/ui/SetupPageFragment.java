@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.setup.Page;
@@ -33,6 +34,8 @@ public abstract class SetupPageFragment extends Fragment {
     protected String mKey;
     protected Page mPage;
     protected View mRootView;
+    protected TextView mTitleView;
+    protected ViewGroup mHeaderView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,7 +51,9 @@ public abstract class SetupPageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(getLayoutResource(), container, false);
-        mCallbacks.onPageViewCreated(inflater, savedInstanceState, getHeaderLayoutResource());
+        mTitleView = (TextView) mRootView.findViewById(android.R.id.title);
+        mHeaderView = (ViewGroup )  mRootView.findViewById(R.id.header);
+        getActivity().startPostponedEnterTransition();
         return mRootView;
     }
 
@@ -56,9 +61,12 @@ public abstract class SetupPageFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mPage = mCallbacks.getPage(mKey);
+        if (mTitleView != null) {
+            mTitleView.setText(mPage.getTitleResId());
+        }
         initializePage();
         mCallbacks.onPageLoaded(mPage);
-        getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
+        getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar));
     }
 
     @Override
@@ -74,10 +82,6 @@ public abstract class SetupPageFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mCallbacks = null;
-    }
-
-    protected int getHeaderLayoutResource() {
-        return R.layout.header;
     }
 
     protected abstract void initializePage();

@@ -15,8 +15,10 @@
      limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/header"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/page_title_height">
+                android:layout_height="@dimen/page_title_height"
+                style="@style/Header">
 
     <TextView
         android:layout_width="match_parent"
