@@ -18,6 +18,8 @@
     <string name="app_name">Setup Wizard</string>
     <string name="product_name" translatable="false">cyanogenmod</string>
 
+    <string name="cm_account_type" translatable="false">com.cyanogenmod.account</string>
+
     <string name="next">Next</string>
     <string name="continue_label">Continue</string>
     <string name="skip">Skip</string>

@@ -23,7 +23,7 @@
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowExitTransition">@android:transition/explode</item>
         <item name="android:colorPrimary">@color/primary</item>
-        <item name="android:colorPrimaryDark">#00000000</item>
+        <item name="android:colorPrimaryDark">@color/primary</item>
         <item name="android:colorAccent">@color/accent</item>
     </style>
 

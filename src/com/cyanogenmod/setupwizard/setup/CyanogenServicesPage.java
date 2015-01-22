@@ -39,6 +39,7 @@ import android.widget.TextView;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -54,6 +55,7 @@ public class CyanogenServicesPage extends SetupPage {
     public static final String KEY_REGISTER_WHISPERPUSH = "register";
 
     public static final String SETTING_METRICS = "settings.cyanogen.allow_metrics";
+    public static final String PRIVACY_POLICY_URI = "https://cyngn.com/legal/privacy-policy";
 
     public CyanogenServicesPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -180,10 +182,11 @@ public class CyanogenServicesPage extends SetupPage {
         @Override
         public void onActivityCreated(Bundle savedInstanceState) {
             super.onActivityCreated(savedInstanceState);
-            getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
-            if (!SetupWizardUtils.accountExists(getActivity(),
-                    SetupWizardApp.ACCOUNT_TYPE_CYANOGEN)) {
-                 launchCyanogenAccountSetup(getActivity());
+            final Activity activity = getActivity();
+            activity.getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
+            if (!SetupWizardUtils.accountExists(activity,
+                    activity.getString(R.string.cm_account_type))) {
+                 launchCyanogenAccountSetup(activity);
             }
         }
 
@@ -195,7 +198,9 @@ public class CyanogenServicesPage extends SetupPage {
             ClickableSpan clickableSpan = new ClickableSpan() {
                 @Override
                 public void onClick(View textView) {
-                    //TDB privacy policy
+                    WebViewDialogFragment.newInstance()
+                            .setUri(PRIVACY_POLICY_URI)
+                            .show(getActivity().getFragmentManager(), WebViewDialogFragment.TAG);
                 }
             };
             ss.setSpan(clickableSpan,
@@ -262,8 +267,9 @@ public class CyanogenServicesPage extends SetupPage {
         private void launchCyanogenAccountSetup(final Activity activity) {
             Bundle bundle = new Bundle();
             bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
+            bundle.putBoolean(SetupWizardApp.EXTRA_SHOW_BUTTON_BAR, true);
             AccountManager.get(activity)
-                    .addAccount(SetupWizardApp.ACCOUNT_TYPE_CYANOGEN, null, null, bundle,
+                    .addAccount(activity.getString(R.string.cm_account_type), null, null, bundle,
                     activity, null, null);
         }
 

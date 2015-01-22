@@ -29,7 +29,6 @@ public class SetupWizardApp extends Application {
 
     public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
 
-    public static final String ACCOUNT_TYPE_CYANOGEN = "com.cyanogen";
     public static final String ACCOUNT_TYPE_GMS = "com.google";
 
     public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
@@ -37,6 +36,7 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_FIRST_RUN = "firstRun";
     public static final String EXTRA_ALLOW_SKIP = "allowSkip";
     public static final String EXTRA_AUTO_FINISH = "wifi_auto_finish_on_connect";
+    public static final String EXTRA_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
 
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
 
