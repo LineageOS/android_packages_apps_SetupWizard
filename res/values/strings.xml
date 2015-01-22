@@ -45,7 +45,7 @@
     <string name="setup_current_date">Current date</string>
     <string name="setup_current_time">Current time</string>
 
-    <string name="sim_missing_summary">A SIM card has not been detected in your device. Please insert a valid SIM card.</string>
+    <string name="sim_missing_summary">A SIM card has not been detected in your device.  To insert a SIM card, read the instructions that came with your device.</string>
     <string name="choose_data_sim_summary">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your device.</string>
 
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
