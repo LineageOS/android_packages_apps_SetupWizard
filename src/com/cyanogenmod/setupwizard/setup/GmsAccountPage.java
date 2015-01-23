@@ -75,8 +75,8 @@ public class GmsAccountPage extends SetupPage {
         if (action == Page.ACTION_PREVIOUS) {
             getCallbacks().onPreviousPage();
         } else {
-            super.doLoadAction(context, action);
             launchGmsAccountSetup(context);
+            super.doLoadAction(context, action);
         }
     }
 
