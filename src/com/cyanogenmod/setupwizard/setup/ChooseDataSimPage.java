@@ -161,12 +161,14 @@ public class ChooseDataSimPage extends SetupPage {
 
                 @Override
                 public void onSignalStrengthsChanged(SignalStrength signalStrength) {
+                    if (isDetached()) return;
                     mSignalStrengths.put(subInfoRecord.slotId, signalStrength);
                     updateSignalStrength(subInfoRecord);
                 }
 
                 @Override
                 public void onServiceStateChanged(ServiceState state) {
+                    if (isDetached()) return;
                     mServiceStates.put(subInfoRecord.slotId, state);
                     updateSignalStrength(subInfoRecord);
                 }
@@ -174,12 +176,14 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         private void updateSignalStrengths() {
+            if (isDetached()) return;
             for (int i = 0; i < mSubInfoRecords.size(); i++) {
                 updateSignalStrength(mSubInfoRecords.get(i));
             }
         }
 
         private void setDataSubChecked(SubInfoRecord subInfoRecord) {
+            if (isDetached()) return;
             for (int i = 0; i < mCheckBoxes.size(); i++) {
                 mCheckBoxes.get(i).setChecked(subInfoRecord.slotId == i);
 
@@ -187,6 +191,7 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         private void updateCurrentDataSub() {
+            if (isDetached()) return;
             for (int i = 0; i < mSubInfoRecords.size(); i++) {
                 SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
                 mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
@@ -196,6 +201,7 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         private void updateCarrierText(SubInfoRecord subInfoRecord) {
+            if (isDetached()) return;
             String name = mPhone.getNetworkOperatorName(subInfoRecord.subId);
             ServiceState serviceState = mServiceStates.get(subInfoRecord.slotId);
             if (TextUtils.isEmpty(name)) {
@@ -211,6 +217,7 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         private void updateSignalStrength(SubInfoRecord subInfoRecord) {
+            if (isDetached()) return;
             ImageView signalView = mSignalViews.get(subInfoRecord.slotId);
             SignalStrength signalStrength = mSignalStrengths.get(subInfoRecord.slotId);
             if (!hasService(subInfoRecord)) {

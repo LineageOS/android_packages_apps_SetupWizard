@@ -22,6 +22,7 @@ import android.accounts.AccountManagerFuture;
 import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -109,8 +110,12 @@ public class GmsAccountPage extends SetupPage {
                             Bundle result = future.getResult();
                             Intent intent = result
                                     .getParcelable(AccountManager.KEY_INTENT);
+                            ActivityOptions options =
+                                    ActivityOptions.makeCustomAnimation(activity,
+                                            android.R.anim.fade_in,
+                                            android.R.anim.fade_out);
                             activity.startActivityForResult(intent,
-                                    SetupWizardApp.REQUEST_CODE_SETUP_GMS);
+                                    SetupWizardApp.REQUEST_CODE_SETUP_GMS, options.toBundle());
                         } catch (OperationCanceledException e) {
                         } catch (IOException e) {
                         } catch (AuthenticatorException e) {

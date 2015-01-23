@@ -55,6 +55,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setup_main);
+        getWindow().setWindowAnimations(android.R.anim.fade_in);
         mRootView = findViewById(R.id.root);
         ((SetupWizardApp)getApplicationContext()).disableStatusBar();
         mSetupData = (AbstractSetupData)getLastNonConfigurationInstance();

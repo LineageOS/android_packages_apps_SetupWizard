@@ -18,6 +18,7 @@ package com.cyanogenmod.setupwizard.util;
 
 import android.accounts.AccountManager;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -29,6 +30,7 @@ import android.net.wifi.WifiManager;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
+import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -58,7 +60,12 @@ public class SetupWizardUtils {
         intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
         intent.putExtra("theme", "material_light");
         intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
-        context.startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_WIFI);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(context,
+                        android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+        context.startActivityForResult(intent,
+                SetupWizardApp.REQUEST_CODE_SETUP_WIFI, options.toBundle());
     }
 
     public static boolean isNetworkConnected(Context context) {
