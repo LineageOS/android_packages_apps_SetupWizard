@@ -263,7 +263,6 @@ public class ChooseDataSimPage extends SetupPage {
             } else {
                 retVal = false;
             }
-            Log.d(TAG, "hasService: mServiceState=" + serviceState + " retVal=" + retVal);
             return retVal;
         }
     }
