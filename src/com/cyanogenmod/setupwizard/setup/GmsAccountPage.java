@@ -23,10 +23,12 @@ import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
+import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
 
@@ -62,30 +64,58 @@ public class GmsAccountPage extends SetupPage {
         }
     }
 
+    @Override
+    public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
+            if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
+                if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
+                    setCompleted(true);
+                }
+                getCallbacks().onNextPage();
+            } else if (resultCode == Activity.RESULT_CANCELED) {
+                getCallbacks().onPreviousPage();
+            }
+        }
+        return true;
+    }
+
     public void launchGmsAccountSetup(final Activity activity) {
-        Bundle bundle = new Bundle();
-        bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
-        bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-        bundle.putBoolean("useImmersiveMode", true);
-        AccountManager
-                .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
-                bundle, activity, new AccountManagerCallback<Bundle>() {
-                    @Override
-                    public void run(AccountManagerFuture<Bundle> bundleAccountManagerFuture) {
-                        //There is a chance this activity has been torn down.
-                        if (activity == null) return;
-                        String token = null;
-                        try {
-                            token = bundleAccountManagerFuture.getResult().getString(AccountManager.KEY_AUTHTOKEN);
-                        } catch (OperationCanceledException e) {
-                        } catch (IOException e) {
-                        } catch (AuthenticatorException e) {
+        /*
+         * XXX: The AccountIntro intent is now public and therefore likely to change.
+         * The only way to catch whether the user pressed skip of back if via startActivityForResult.
+         * If this fails, fall back to the old method, but it is not ideal because only a
+         * OperationCanceledException is thrown regardless of skipping or pressing back.
+         */
+        try {
+            Intent intent = new Intent("com.google.android.accounts.AccountIntro");
+            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+            activity.startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_GMS);
+        } catch (Exception e) {
+            Bundle bundle = new Bundle();
+            bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
+            bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+            bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+            AccountManager
+                    .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
+                    bundle, activity, new AccountManagerCallback<Bundle>() {
+                        @Override
+                        public void run(AccountManagerFuture<Bundle> bundleAccountManagerFuture) {
+                            try {
+                                if (bundleAccountManagerFuture.getResult()
+                                        .getString(AccountManager.KEY_AUTHTOKEN) != null) {
+                                    setCompleted(true);
+                                }
+                            } catch (OperationCanceledException e) {
+                                if (activity != null && activity.isResumed()) {
+                                    getCallbacks().onNextPage();
+                                }
+                            } catch (IOException e) {
+                            } catch (AuthenticatorException e) {
+                            }
                         }
-                        if (token != null) {
-                            setCompleted(true);
-                        }
-                        getCallbacks().onNextPage();
-                    }
-                }, null);
+                    }, null);
+        }
     }
 }
