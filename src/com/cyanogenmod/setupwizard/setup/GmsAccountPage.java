@@ -80,44 +80,26 @@ public class GmsAccountPage extends SetupPage {
     }
 
     public void launchGmsAccountSetup(final Activity activity) {
-        /*
-         * XXX: The AccountIntro intent is now public and therefore likely to change.
-         * The only way to catch whether the user pressed skip of back if via
-         * startActivityForResult.
-         *
-         * If this fails, fall back to the old method, but it is not ideal because only a
-         * OperationCanceledException is thrown regardless of skipping or pressing back.
-         */
-        try {
-            Intent intent = new Intent("com.google.android.accounts.AccountIntro");
-            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
-            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-            activity.startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_GMS);
-        } catch (Exception e) {
-            Bundle bundle = new Bundle();
-            bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
-            bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-            bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-            AccountManager
-                    .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
-                    bundle, activity, new AccountManagerCallback<Bundle>() {
-                        @Override
-                        public void run(AccountManagerFuture<Bundle> bundleAccountManagerFuture) {
-                            try {
-                                if (bundleAccountManagerFuture.getResult()
-                                        .getString(AccountManager.KEY_AUTHTOKEN) != null) {
-                                    setCompleted(true);
-                                }
-                            } catch (OperationCanceledException e) {
-                                if (activity != null && activity.isResumed()) {
-                                    getCallbacks().onNextPage();
-                                }
-                            } catch (IOException e) {
-                            } catch (AuthenticatorException e) {
-                            }
+        Bundle bundle = new Bundle();
+        bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
+        bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+        AccountManager
+                .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
+                bundle, null, new AccountManagerCallback<Bundle>() {
+                    @Override
+                    public void run(AccountManagerFuture<Bundle> future) {
+                        try {
+                            Bundle result = future.getResult();
+                            Intent intent = result
+                                    .getParcelable(AccountManager.KEY_INTENT);
+                            activity.startActivityForResult(intent,
+                                    SetupWizardApp.REQUEST_CODE_SETUP_GMS);
+                        } catch (OperationCanceledException e) {
+                        } catch (IOException e) {
+                        } catch (AuthenticatorException e) {
                         }
-                    }, null);
-        }
+                    }
+                }, null);
     }
 }
