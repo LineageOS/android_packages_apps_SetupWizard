@@ -22,6 +22,8 @@ import android.accounts.AccountManagerFuture;
 import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -41,13 +43,26 @@ public class GmsAccountPage extends SetupPage {
     }
 
     @Override
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new LoadingFragment();
+            fragment.setArguments(args);
+        }
+        return fragment;
+    }
+
+    @Override
     public String getKey() {
         return TAG;
     }
 
     @Override
     public int getTitleResId() {
-        return R.string.setup_gms_account;
+        return R.string.loading;
     }
 
     @Override
@@ -60,6 +75,7 @@ public class GmsAccountPage extends SetupPage {
         if (action == Page.ACTION_PREVIOUS) {
             getCallbacks().onPreviousPage();
         } else {
+            super.doLoadAction(context, action);
             launchGmsAccountSetup(context);
         }
     }

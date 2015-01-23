@@ -17,8 +17,11 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
@@ -33,6 +36,19 @@ public class WifiSetupPage extends SetupPage {
     }
 
     @Override
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new LoadingFragment();
+            fragment.setArguments(args);
+        }
+        return fragment;
+    }
+
+    @Override
     public int getNextButtonTitleResId() {
         return R.string.skip;
     }
@@ -44,22 +60,23 @@ public class WifiSetupPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        return R.string.existing;
+        return R.string.setup_wifi;
     }
 
     @Override
     public void doLoadAction(Activity context, int action) {
-        if (action == Page.ACTION_PREVIOUS) {
-            getCallbacks().onPreviousPage();
-        } else {
-            SetupWizardUtils.launchWifiSetup(context);
-        }
+        super.doLoadAction(context, action);
+        SetupWizardUtils.launchWifiSetup(context);
     }
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode != SetupWizardApp.REQUEST_CODE_SETUP_WIFI) return false;
-        getCallbacks().onNextPage();
+        if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
+            getCallbacks().onNextPage();
+        } else if (resultCode == Activity.RESULT_CANCELED) {
+            getCallbacks().onPreviousPage();
+        }
         return true;
     }
 }

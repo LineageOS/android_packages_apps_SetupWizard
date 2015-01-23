@@ -57,7 +57,7 @@ public class SetupWizardUtils {
         intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
         intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
         intent.putExtra("theme", "material_light");
-        intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, true);
+        intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
         context.startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_WIFI);
     }
 
