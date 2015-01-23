@@ -17,9 +17,15 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.accounts.AccountManager;
+import android.accounts.AccountManagerCallback;
+import android.accounts.AccountManagerFuture;
+import android.accounts.AuthenticatorException;
+import android.accounts.OperationCanceledException;
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
@@ -47,6 +53,8 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import org.cyanogenmod.hardware.KeyDisabler;
 
+import java.io.IOException;
+
 public class CyanogenServicesPage extends SetupPage {
 
     public static final String TAG = "CyanogenServicesPage";
@@ -62,12 +70,15 @@ public class CyanogenServicesPage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment() {
-        Bundle args = new Bundle();
-        args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
-
-        CyanogenServicesFragment fragment = new CyanogenServicesFragment();
-        fragment.setArguments(args);
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new CyanogenServicesFragment();
+            fragment.setArguments(args);
+        }
         return fragment;
     }
 
@@ -79,6 +90,16 @@ public class CyanogenServicesPage extends SetupPage {
     @Override
     public int getTitleResId() {
         return R.string.setup_services;
+    }
+
+    @Override
+    public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN) {
+           if (resultCode == Activity.RESULT_CANCELED) {
+               getCallbacks().onPreviousPage();
+           }
+        }
+        return true;
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
@@ -184,8 +205,9 @@ public class CyanogenServicesPage extends SetupPage {
             super.onActivityCreated(savedInstanceState);
             final Activity activity = getActivity();
             activity.getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
-            if (!SetupWizardUtils.accountExists(activity,
-                    activity.getString(R.string.cm_account_type))) {
+            int action = getArguments().getInt(Page.KEY_PAGE_ACTION);
+            if (savedInstanceState == null && !SetupWizardUtils.accountExists(activity,
+                    activity.getString(R.string.cm_account_type)) && action == Page.ACTION_NEXT) {
                  launchCyanogenAccountSetup(activity);
             }
         }
@@ -270,7 +292,21 @@ public class CyanogenServicesPage extends SetupPage {
             bundle.putBoolean(SetupWizardApp.EXTRA_SHOW_BUTTON_BAR, true);
             AccountManager.get(activity)
                     .addAccount(activity.getString(R.string.cm_account_type), null, null, bundle,
-                    activity, null, null);
+                            null, new AccountManagerCallback<Bundle>() {
+                                @Override
+                                public void run(AccountManagerFuture<Bundle> future) {
+                                    try {
+                                        Bundle result = future.getResult();
+                                        Intent intent = result
+                                                        .getParcelable(AccountManager.KEY_INTENT);
+                                        activity.startActivityForResult(intent,
+                                                SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN);
+                                    } catch (OperationCanceledException e) {
+                                    } catch (IOException e) {
+                                    } catch (AuthenticatorException e) {
+                                    }
+                                }
+                            }, null);
         }
 
     }

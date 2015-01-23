@@ -18,12 +18,14 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 
 public interface Page {
 
     public static final String KEY_PAGE_ARGUMENT = "key_arg";
+    public static final String KEY_PAGE_ACTION= "action";
 
     public static final int ACTION_NEXT = 1;
     public static final int ACTION_PREVIOUS = 2;
@@ -32,7 +34,7 @@ public interface Page {
     public int getTitleResId();
     public int getPrevButtonTitleResId();
     public int getNextButtonTitleResId();
-    public Fragment getFragment();
+    public Fragment getFragment(FragmentManager fragmentManager, int action);
     public Bundle getData();
     public void resetData(Bundle data);
     public boolean isRequired();

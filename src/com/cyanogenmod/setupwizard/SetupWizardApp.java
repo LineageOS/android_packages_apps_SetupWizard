@@ -41,6 +41,7 @@ public class SetupWizardApp extends Application {
 
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_GMS= 1;
+    public static final int REQUEST_CODE_SETUP_CYANOGEN= 2;
 
     private StatusBarManager mStatusBarManager;
 

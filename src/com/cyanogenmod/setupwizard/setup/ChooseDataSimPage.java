@@ -17,6 +17,7 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
@@ -49,12 +50,15 @@ public class ChooseDataSimPage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment() {
-        Bundle args = new Bundle();
-        args.putString(SetupPage.KEY_PAGE_ARGUMENT, getKey());
-
-        ChooseDataSimFragment fragment = new ChooseDataSimFragment();
-        fragment.setArguments(args);
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new ChooseDataSimFragment();
+            fragment.setArguments(args);
+        }
         return fragment;
     }
 

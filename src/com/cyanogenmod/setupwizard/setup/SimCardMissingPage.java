@@ -17,6 +17,7 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
 
@@ -32,12 +33,15 @@ public class SimCardMissingPage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment() {
-        Bundle args = new Bundle();
-        args.putString(SetupPage.KEY_PAGE_ARGUMENT, getKey());
-
-        FinishFragment fragment = new FinishFragment();
-        fragment.setArguments(args);
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new SimCardMissingFragment();
+            fragment.setArguments(args);
+        }
         return fragment;
     }
 
@@ -57,7 +61,7 @@ public class SimCardMissingPage extends SetupPage {
     }
 
 
-    public static class FinishFragment extends SetupPageFragment {
+    public static class SimCardMissingFragment extends SetupPageFragment {
 
         @Override
         protected void initializePage() {}

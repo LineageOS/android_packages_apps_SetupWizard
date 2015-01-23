@@ -17,6 +17,7 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -42,12 +43,15 @@ public class LocationSettingsPage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment() {
-        Bundle args = new Bundle();
-        args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
-
-        LocationSettingsFragment fragment = new LocationSettingsFragment();
-        fragment.setArguments(args);
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new LocationSettingsFragment();
+            fragment.setArguments(args);
+        }
         return fragment;
     }
 

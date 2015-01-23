@@ -45,7 +45,7 @@ public abstract class SetupPage implements Page {
     }
 
     @Override
-    public Fragment getFragment() {
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
         return null;
     }
 
@@ -73,7 +73,7 @@ public abstract class SetupPage implements Page {
     public void doLoadAction(Activity context, int action) {
         if (context == null || context.isFinishing()) { return; }
         final FragmentManager fragmentManager = context.getFragmentManager();
-        Fragment fragment = getFragment();
+        Fragment fragment = getFragment(fragmentManager, action);
         if (action == Page.ACTION_NEXT) {
             Transition t = new Slide(Gravity.RIGHT);
             fragment.setEnterTransition(t);

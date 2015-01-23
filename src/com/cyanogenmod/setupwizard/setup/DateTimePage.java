@@ -27,6 +27,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.TimePickerDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -72,12 +73,15 @@ public class DateTimePage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment() {
-        Bundle args = new Bundle();
-        args.putString(SetupPage.KEY_PAGE_ARGUMENT, getKey());
-
-        DateTimeFragment fragment = new DateTimeFragment();
-        fragment.setArguments(args);
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
+        if (fragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            fragment = new DateTimeFragment();
+            fragment.setArguments(args);
+        }
         return fragment;
     }
 

@@ -21,6 +21,7 @@ import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 
 import android.animation.Animator;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -38,12 +39,15 @@ public class FinishPage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment() {
-        Bundle args = new Bundle();
-        args.putString(SetupPage.KEY_PAGE_ARGUMENT, getKey());
-
-        mFinishFragment = new FinishFragment();
-        mFinishFragment.setArguments(args);
+    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+        mFinishFragment = (FinishFragment)fragmentManager.findFragmentByTag(getKey());
+        if (mFinishFragment == null) {
+            Bundle args = new Bundle();
+            args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
+            args.putInt(Page.KEY_PAGE_ACTION, action);
+            mFinishFragment = new FinishFragment();
+            mFinishFragment.setArguments(args);
+        }
         return mFinishFragment;
     }
 
