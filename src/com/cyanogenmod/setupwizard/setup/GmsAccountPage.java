@@ -66,6 +66,7 @@ public class GmsAccountPage extends SetupPage {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        bundle.putBoolean("useImmersiveMode", true);
         AccountManager
                 .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
                 bundle, activity, new AccountManagerCallback<Bundle>() {
