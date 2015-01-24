@@ -113,7 +113,6 @@ public abstract class SetupPage implements Page {
     @Override
     public void setCompleted(boolean completed) {
         mCompleted = completed;
-        mCallbacks.onNextPage();
     }
 
     @Override

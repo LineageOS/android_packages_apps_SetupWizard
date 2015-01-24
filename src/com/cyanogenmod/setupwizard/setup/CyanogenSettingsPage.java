@@ -20,7 +20,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
@@ -38,7 +37,6 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
@@ -50,7 +48,7 @@ import org.cyanogenmod.hardware.KeyDisabler;
 
 public class CyanogenSettingsPage extends SetupPage {
 
-    public static final String TAG = "CyanogenServicesPage";
+    public static final String TAG = "CyanogenSettingsPage";
 
     public static final String KEY_SEND_METRICS = "send_metrics";
     public static final String KEY_REGISTER_WHISPERPUSH = "register";
@@ -83,16 +81,6 @@ public class CyanogenSettingsPage extends SetupPage {
     @Override
     public int getTitleResId() {
         return R.string.setup_services;
-    }
-
-    @Override
-    public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN) {
-            if (resultCode == Activity.RESULT_CANCELED) {
-                getCallbacks().onPreviousPage();
-            }
-        }
-        return true;
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
