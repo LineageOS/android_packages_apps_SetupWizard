@@ -21,21 +21,18 @@ import android.app.AppGlobals;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.setup.AbstractSetupData;
 import com.cyanogenmod.setupwizard.setup.CMSetupWizardData;
 import com.cyanogenmod.setupwizard.setup.CyanogenServicesPage;
+import com.cyanogenmod.setupwizard.setup.CyanogenSettingsPage;
 import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
@@ -203,7 +200,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             return;
         }
         Bundle privacyData = page.getData();
-        if (privacyData != null && privacyData.getBoolean(CyanogenServicesPage.KEY_REGISTER_WHISPERPUSH)) {
+        if (privacyData != null && privacyData.getBoolean(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH)) {
             Log.d(TAG, "Registering with WhisperPush");
             WhisperPushUtils.startRegistration(this);
         }
@@ -216,9 +213,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         }
         Bundle privacyData = page.getData();
         if (privacyData != null
-                && privacyData.getBoolean(CyanogenServicesPage.KEY_SEND_METRICS)) {
-            Settings.System.putInt(getContentResolver(), CyanogenServicesPage.SETTING_METRICS,
-                    privacyData.getBoolean(CyanogenServicesPage.KEY_SEND_METRICS) ? 1 : 0);
+                && privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS)) {
+            Settings.System.putInt(getContentResolver(), CyanogenSettingsPage.SETTING_METRICS,
+                    privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS) ? 1 : 0);
         }
     }
 

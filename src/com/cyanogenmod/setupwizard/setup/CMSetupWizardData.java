@@ -49,6 +49,7 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new GmsAccountPage(mContext, this));
         }
         pages.add(new CyanogenServicesPage(mContext, this));
+        pages.add(new CyanogenSettingsPage(mContext, this));
         pages.add(new LocationSettingsPage(mContext, this));
         pages.add(new DateTimePage(mContext, this));
         pages.add(new FinishPage(mContext, this));
