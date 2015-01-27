@@ -24,7 +24,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.UserHandle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
 
@@ -110,6 +110,11 @@ public class WelcomePage extends SetupPage {
         protected void initializePage() {
             mLanguagePicker = (LocalePicker) mRootView.findViewById(R.id.locale_list);
             loadLanguages();
+            final boolean brandedDevice = getResources().getBoolean(
+                    R.bool.branded_device);
+            if (brandedDevice) {
+                mRootView.findViewById(R.id.powered_by_logo).setVisibility(View.VISIBLE);
+            }
         }
 
         private void loadLanguages() {

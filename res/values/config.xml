@@ -16,4 +16,6 @@
 -->
 <resources>
     <integer name="local_picker_items">3</integer>
+    <bool name="sim_back">false</bool>
+    <bool name="branded_device">false</bool>
 </resources>
