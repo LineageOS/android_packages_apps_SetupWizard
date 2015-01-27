@@ -150,10 +150,10 @@ public class ChooseDataSimPage extends SetupPage {
 
         @Override
         public void onDetach() {
-            super.onDetach();
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
                 mPhone.listen(mPhoneStateListeners.get(i), PhoneStateListener.LISTEN_NONE);
             }
+            super.onDetach();
         }
 
         private PhoneStateListener createPhoneStateListener(final SubInfoRecord subInfoRecord) {

@@ -83,12 +83,14 @@ public class MobileDataPage extends SetupPage {
 
             @Override
             public void onSignalStrengthsChanged(SignalStrength signalStrength) {
+                if (isDetached()) return;
                 mSignalStrength = signalStrength;
                 updateSignalStrength();
             }
 
             @Override
             public void onServiceStateChanged(ServiceState state) {
+                if (isDetached()) return;
                 mServiceState = state;
                 updateSignalStrength();
             }
@@ -138,11 +140,12 @@ public class MobileDataPage extends SetupPage {
 
         @Override
         public void onDetach() {
-            super.onDetach();
             mPhone.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
+            super.onDetach();
         }
 
         private void updateCarrierText() {
+            if (isDetached()) return;
             String name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultDataSubId());
             if (TextUtils.isEmpty(name)) {
                 if (mServiceState != null && mServiceState.isEmergencyOnly()) {
@@ -155,6 +158,7 @@ public class MobileDataPage extends SetupPage {
         }
 
         private void updateSignalStrength() {
+            if (isDetached()) return;
             if (!hasService()) {
                 mSignalView.setImageResource(R.drawable.ic_signal_no_signal);
             } else {
