@@ -78,8 +78,8 @@ public class CyanogenServicesPage extends SetupPage {
         } else {
             if (!SetupWizardUtils.accountExists(mContext,
                     mContext.getString(R.string.cm_account_type))) {
-                launchCyanogenAccountSetup(context);
                 super.doLoadAction(context, action);
+                launchCyanogenAccountSetup(context);
             } else {
                 getCallbacks().onNextPage();
             }

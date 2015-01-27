@@ -65,8 +65,8 @@ public class WifiSetupPage extends SetupPage {
 
     @Override
     public void doLoadAction(Activity context, int action) {
-        SetupWizardUtils.launchWifiSetup(context);
         super.doLoadAction(context, action);
+        SetupWizardUtils.launchWifiSetup(context);
     }
 
     @Override
