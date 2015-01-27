@@ -24,8 +24,7 @@
         style="@style/ButtonBar.Left"
         android:id="@+id/prev_button"
         android:layout_width="0dp"
-        android:layout_weight="1"
-        android:text="@string/prev" />
+        android:layout_weight="1"/>
 
     <Button
         style="@style/ButtonBar.Right"

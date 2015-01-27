@@ -18,7 +18,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="next">Další</string>
   <string name="continue_label">Pokračovat</string>
-  <string name="prev">Předchozí</string>
   <string name="skip">Přeskočit</string>
   <string name="cancel">Zrušit</string>
   <string name="ok">OK</string>
