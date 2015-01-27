@@ -51,6 +51,16 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Since this is a new component, we need to disable here if the user
+        // has already been through setup on a previous version.
+        try {
+            if (Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.USER_SETUP_COMPLETE) == 1) {
+                finishWizard();
+            }
+        } catch (Settings.SettingNotFoundException e) {
+            // Continue with setup
+        }
         setContentView(R.layout.setup_main);
         getWindow().setWindowAnimations(android.R.anim.fade_in);
         mRootView = findViewById(R.id.root);
@@ -225,6 +235,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         handleEnableMetrics();
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
+        finishWizard();
+    }
+
+    private void finishWizard() {
         ((SetupWizardApp)AppGlobals.getInitialApplication()).enableStatusBar();
         SetupWizardUtils.disableSetupWizards(this);
         finish();
