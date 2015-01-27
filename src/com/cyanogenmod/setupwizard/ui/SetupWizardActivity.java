@@ -81,6 +81,16 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         if (savedInstanceState != null && savedInstanceState.containsKey("data")) {
             mSetupData.load(savedInstanceState.getBundle("data"));
         }
+        // Since this is a new component, we need to disable here if the user
+        // has already been through setup on a previous version.
+        try {
+            if (Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.USER_SETUP_COMPLETE) == 1) {
+                finishSetup();
+            }
+        } catch (Settings.SettingNotFoundException e) {
+            // Continue with setup
+        }
     }
 
     @Override
