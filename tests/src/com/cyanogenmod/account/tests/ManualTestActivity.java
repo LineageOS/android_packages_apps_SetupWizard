@@ -43,6 +43,12 @@ public class ManualTestActivity extends Activity {
                 enableGoogleSetup();
             }
         });
+        findViewById(R.id.setup_complete_flag).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setSetupComplete();
+            }
+        });
     }
 
     private void enableSetup() {
@@ -67,6 +73,21 @@ public class ManualTestActivity extends Activity {
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
         ComponentName componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.SetupWizardActivity");
+        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
+        startActivity(intent);
+        finish();
+    }
+
+    private void setSetupComplete() {
+        Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
+        Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 0);
+        Intent intent = new Intent("android.intent.action.MAIN");
+        intent.addCategory("android.intent.category.HOME");
+        final PackageManager pm = getPackageManager();
+        ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard", "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.SetupWizardActivity");
         pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
         startActivity(intent);

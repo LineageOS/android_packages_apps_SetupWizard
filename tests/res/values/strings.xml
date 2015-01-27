@@ -18,4 +18,5 @@
     <string name="app_test">SetupWizard Test</string>
     <string name="enable_setup">Enable Setup Wizard</string>
     <string name="enable_google_setup">Enable Google Setup Wizard</string>
+    <string name="user_setup_complete">Set SetupWizard complete</string>
 </resources>
