@@ -18,14 +18,14 @@
               android:id="@+id/root"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:clickable="true">
 
-    <FrameLayout
-            android:id="@+id/content"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            style="@style/PageContainer"/>
+    <FrameLayout android:id="@+id/content"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 style="@style/PageContainer"/>
 
     <include layout="@layout/button_bar" />
 

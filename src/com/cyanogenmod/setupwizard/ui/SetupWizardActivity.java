@@ -24,6 +24,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -35,6 +36,7 @@ import com.cyanogenmod.setupwizard.setup.CyanogenServicesPage;
 import com.cyanogenmod.setupwizard.setup.CyanogenSettingsPage;
 import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
+import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
 
@@ -81,6 +83,13 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         if (savedInstanceState != null && savedInstanceState.containsKey("data")) {
             mSetupData.load(savedInstanceState.getBundle("data"));
         }
+        final EnableAccessibilityController acc = new EnableAccessibilityController(this);
+        mRootView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                return acc.onInterceptTouchEvent(event);
+            }
+        });
         // Since this is a new component, we need to disable here if the user
         // has already been through setup on a previous version.
         try {
