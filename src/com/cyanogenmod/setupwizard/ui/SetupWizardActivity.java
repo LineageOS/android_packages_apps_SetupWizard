@@ -16,16 +16,19 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
+import android.animation.Animator;
 import android.app.Activity;
 import android.app.AppGlobals;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.widget.Button;
 
 import com.cyanogenmod.setupwizard.R;
@@ -48,8 +51,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private View mRootView;
     private Button mNextButton;
     private Button mPrevButton;
+    private View mReveal;
 
     private AbstractSetupData mSetupData;
+
+    private final Handler mHandler = new Handler();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +69,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         }
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
+        mReveal = findViewById(R.id.reveal);
         mSetupData.registerListener(this);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -210,7 +217,39 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onFinish() {
-        finishSetup();
+        animateOut();
+    }
+
+    private void animateOut() {
+        int cx = (mReveal.getLeft() + mReveal.getRight()) / 2;
+        int cy = (mReveal.getTop() + mReveal.getBottom()) / 2;
+        int finalRadius = Math.max(mReveal.getWidth(), mReveal.getHeight());
+        Animator anim =
+                ViewAnimationUtils.createCircularReveal(mReveal, cx, cy, 0, finalRadius);
+
+        anim.addListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                mReveal.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        finishSetup();;
+                    }
+                });
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {}
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {}
+        });
+        anim.start();
     }
 
     private void handleWhisperPushRegistration() {

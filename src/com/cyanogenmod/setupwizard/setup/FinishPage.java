@@ -16,17 +16,13 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-
-import android.animation.Animator;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.View;
-import android.view.ViewAnimationUtils;
+
+import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 
 public class FinishPage extends SetupPage {
 
@@ -63,7 +59,7 @@ public class FinishPage extends SetupPage {
 
     @Override
     public boolean doNextAction() {
-        mFinishFragment.animateOut(getCallbacks());
+        getCallbacks().onFinish();
         return true;
     }
 
@@ -79,53 +75,14 @@ public class FinishPage extends SetupPage {
 
     public static class FinishFragment extends SetupPageFragment {
 
-        private View mReveal;
-
-        private Handler mHandler;
-
         @Override
         public void onActivityCreated(Bundle savedInstanceState) {
             super.onActivityCreated(savedInstanceState);
-            mHandler = new Handler();
             getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
         }
 
         @Override
-        protected void initializePage() {
-            mReveal = mRootView.findViewById(R.id.reveal);
-        }
-
-        private void animateOut(final SetupDataCallbacks callbacks) {
-            int cx = (mReveal.getLeft() + mReveal.getRight()) / 2;
-            int cy = (mReveal.getTop() + mReveal.getBottom()) / 2;
-            int finalRadius = Math.max(mReveal.getWidth(), mReveal.getHeight());
-            Animator anim =
-                    ViewAnimationUtils.createCircularReveal(mReveal, cx, cy, 0, finalRadius);
-
-            anim.addListener(new Animator.AnimatorListener() {
-                @Override
-                public void onAnimationStart(Animator animation) {
-                    mReveal.setVisibility(View.VISIBLE);
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    mHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            callbacks.onFinish();
-                        }
-                    });
-                }
-
-                @Override
-                public void onAnimationCancel(Animator animation) {}
-
-                @Override
-                public void onAnimationRepeat(Animator animation) {}
-            });
-            anim.start();
-        }
+        protected void initializePage() {}
 
         @Override
         protected int getLayoutResource() {

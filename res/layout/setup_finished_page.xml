@@ -17,31 +17,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="@color/primary">
 
-    <FrameLayout android:id="@+id/page"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1">
+    <ImageView
+        android:id="@+id/brand_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/brand_finish"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/content_margin_left"/>
 
-        <LinearLayout android:orientation="vertical"
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:background="@color/primary">
-
-            <ImageView
-                android:id="@+id/brand_logo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/brand_finish"
-                android:scaleType="centerInside"/>
-
-        </LinearLayout>
-
-        <ImageView android:id="@+id/reveal"
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:background="@drawable/reveal"
-                   android:visibility="invisible"/>
-    </FrameLayout>
 </LinearLayout>

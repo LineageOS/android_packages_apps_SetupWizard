@@ -14,19 +14,33 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/root"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:clickable="true">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/root"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clickable="true">
 
-    <FrameLayout android:id="@+id/content"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1"
-                 style="@style/PageContainer"/>
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:clickable="true">
 
-    <include layout="@layout/button_bar" />
+        <FrameLayout android:id="@+id/content"
+                     android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight="1"
+                     style="@style/PageContainer"/>
 
-</LinearLayout>
+        <include layout="@layout/button_bar" />
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/reveal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/reveal"
+               android:visibility="invisible"/>
+
+</FrameLayout>
+
