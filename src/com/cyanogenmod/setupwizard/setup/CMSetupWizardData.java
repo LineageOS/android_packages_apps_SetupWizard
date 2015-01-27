@@ -34,7 +34,7 @@ public class CMSetupWizardData extends AbstractSetupData {
         ArrayList<SetupPage> pages = new ArrayList<SetupPage>();
         pages.add(new WelcomePage(mContext, this));
         pages.add(new WifiSetupPage(mContext, this));
-        if (SetupWizardUtils.isGSMPhone(mContext) && SetupWizardUtils.isSimMissing(mContext)) {
+        if (SetupWizardUtils.isSimMissing(mContext)) {
             pages.add(new SimCardMissingPage(mContext, this));
         }
         if (SetupWizardUtils.isMultiSimDevice(mContext)
