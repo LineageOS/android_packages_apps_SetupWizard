@@ -72,11 +72,6 @@ public class ChooseDataSimPage extends SetupPage {
         return R.string.setup_choose_data_sim;
     }
 
-    @Override
-    public int getNextButtonTitleResId() {
-        return R.string.skip;
-    }
-
 
     public static class ChooseDataSimFragment extends SetupPageFragment {
 
