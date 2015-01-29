@@ -73,10 +73,10 @@ public class WifiSetupPage extends SetupPage {
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode != SetupWizardApp.REQUEST_CODE_SETUP_WIFI) return false;
-        if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
-            getCallbacks().onNextPage();
-        } else if (resultCode == Activity.RESULT_CANCELED) {
+        if (resultCode == Activity.RESULT_CANCELED) {
             getCallbacks().onPreviousPage();
+        } else {
+            getCallbacks().onNextPage();
         }
         return true;
     }
