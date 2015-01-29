@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.setup;
+package com.cyanogenmod.setupwizard.ui;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
