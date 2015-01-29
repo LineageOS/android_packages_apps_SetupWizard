@@ -92,7 +92,7 @@ public class CyanogenServicesPage extends SetupPage {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN) {
             if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
                 if (SetupWizardUtils.accountExists(mContext, mContext.getString(R.string.cm_account_type))) {
-                    setCompleted(true);
+                    setHidden(true);
                 }
                 getCallbacks().onNextPage();
             } else if (resultCode == Activity.RESULT_CANCELED) {

@@ -84,7 +84,7 @@ public abstract class AbstractSetupData implements SetupDataCallbacks {
     @Override
     public void onNextPage() {
         if (getCurrentPage().doNextAction() == false) {
-            if (advanceToNextUncompleted()) {
+            if (advanceToNextUnhidden()) {
                 for (int i = 0; i < mListeners.size(); i++) {
                     mListeners.get(i).onNextPage();
                 }
@@ -95,7 +95,7 @@ public abstract class AbstractSetupData implements SetupDataCallbacks {
     @Override
     public void onPreviousPage() {
         if (getCurrentPage().doPreviousAction() == false) {
-            if (advanceToPreviousUncompleted()) {
+            if (advanceToPreviousUnhidden()) {
                 for (int i = 0; i < mListeners.size(); i++) {
                     mListeners.get(i).onPreviousPage();
                 }
@@ -103,20 +103,20 @@ public abstract class AbstractSetupData implements SetupDataCallbacks {
         }
     }
 
-    private boolean advanceToNextUncompleted() {
+    private boolean advanceToNextUnhidden() {
         while (mCurrentPageIndex < mPageList.size()) {
             mCurrentPageIndex++;
-            if (!getCurrentPage().isCompleted()) {
+            if (!getCurrentPage().isHidden()) {
                 return true;
             }
         }
         return false;
     }
 
-    private boolean advanceToPreviousUncompleted() {
+    private boolean advanceToPreviousUnhidden() {
         while (mCurrentPageIndex > 0) {
             mCurrentPageIndex--;
-            if (!getCurrentPage().isCompleted()) {
+            if (!getCurrentPage().isHidden()) {
                 return true;
             }
         }
