@@ -35,7 +35,7 @@ public abstract class SetupPage implements Page {
 
     private Bundle mData = new Bundle();
     private boolean mRequired = false;
-    private boolean mCompleted = false;
+    private boolean mHidden = false;
 
     protected final Context mContext;
 
@@ -106,13 +106,13 @@ public abstract class SetupPage implements Page {
     }
 
     @Override
-    public boolean isCompleted() {
-        return mCompleted;
+    public boolean isHidden() {
+        return mHidden;
     }
 
     @Override
-    public void setCompleted(boolean completed) {
-        mCompleted = completed;
+    public void setHidden(boolean hidden) {
+        mHidden = hidden;
     }
 
     @Override
