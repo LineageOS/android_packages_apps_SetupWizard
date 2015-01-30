@@ -34,8 +34,6 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/content_margin_left"
-                android:paddingRight="@dimen/content_margin_right"
                 style="@style/PageContent">
 
                 <TextView
@@ -43,6 +41,7 @@
                     android:layout_height="wrap_content"
                     style="@style/PageSummaryText"
                     android:textSize="16sp"
+                    android:paddingLeft="@dimen/content_margin_left"
                     android:layout_marginBottom="@dimen/summary_margin_bottom"
                     android:paddingRight="@dimen/location_text_margin_right"
                     android:text="@string/date_time_summary" />
