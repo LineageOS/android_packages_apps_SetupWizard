@@ -33,7 +33,6 @@ import android.widget.Button;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
-import com.cyanogenmod.setupwizard.setup.AbstractSetupData;
 import com.cyanogenmod.setupwizard.setup.CMSetupWizardData;
 import com.cyanogenmod.setupwizard.setup.CyanogenServicesPage;
 import com.cyanogenmod.setupwizard.setup.CyanogenSettingsPage;
@@ -53,7 +52,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private Button mPrevButton;
     private View mReveal;
 
-    private AbstractSetupData mSetupData;
+    private EnableAccessibilityController mEnableAccessibilityController;
+
+    private CMSetupWizardData mSetupData;
 
     private final Handler mHandler = new Handler();
 
@@ -63,7 +64,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         getWindow().setWindowAnimations(android.R.anim.fade_in);
         mRootView = findViewById(R.id.root);
         ((SetupWizardApp)getApplicationContext()).disableStatusBar();
-        mSetupData = (AbstractSetupData)getLastNonConfigurationInstance();
+        mSetupData = (CMSetupWizardData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
             mSetupData = new CMSetupWizardData(this);
         }
@@ -90,13 +91,15 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         if (savedInstanceState != null && savedInstanceState.containsKey("data")) {
             mSetupData.load(savedInstanceState.getBundle("data"));
         }
-        final EnableAccessibilityController acc = new EnableAccessibilityController(this);
-        mRootView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                return acc.onInterceptTouchEvent(event);
-            }
-        });
+        if (EnableAccessibilityController.canEnableAccessibilityViaGesture(this)) {
+            mEnableAccessibilityController = new EnableAccessibilityController(this);
+            mRootView.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    return mEnableAccessibilityController.onInterceptTouchEvent(event);
+                }
+            });
+        }
         // Since this is a new component, we need to disable here if the user
         // has already been through setup on a previous version.
         try {
@@ -107,6 +110,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         } catch (Settings.SettingNotFoundException e) {
             // Continue with setup
         }
+        registerReceiver(mSetupData, mSetupData.getIntentFilter());
     }
 
     @Override
@@ -118,7 +122,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (mEnableAccessibilityController != null) {
+            mEnableAccessibilityController.onDestroy();
+        }
         mSetupData.unregisterListener(this);
+        unregisterReceiver(mSetupData);
     }
 
     @Override
@@ -139,9 +147,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onBackPressed() {
-         if (!mSetupData.isFirstPage()) {
-             mSetupData.onPreviousPage();
-         }
+        if (!mSetupData.isFirstPage()) {
+            mSetupData.onPreviousPage();
+        }
     }
 
     @Override
@@ -161,10 +169,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         if (getResources().getConfiguration().orientation
                 == Configuration.ORIENTATION_LANDSCAPE &&
                 mSetupData.isFirstPage()) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-                    | View.SYSTEM_UI_FLAG_FULLSCREEN);
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         } else {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
         updateButtonBar();
     }
@@ -191,13 +200,15 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         }
         final Resources resources = getResources();
         if (mSetupData.isLastPage()) {
-            mPrevButton.setVisibility(View.INVISIBLE);
             mRootView.setBackgroundColor(resources.getColor(R.color.primary));
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_wht), null);
             mNextButton.setTextColor(resources.getColor(R.color.white));
+            mPrevButton.setCompoundDrawablesWithIntrinsicBounds(
+                    getDrawable(R.drawable.ic_chevron_left_wht), null,
+                    null, null);
+            mPrevButton.setTextColor(resources.getColor(R.color.white));
         } else {
-            mPrevButton.setVisibility(View.VISIBLE);
             mRootView.setBackgroundColor(resources.getColor(R.color.window_background));
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_dark), null);

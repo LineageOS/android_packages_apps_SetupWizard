@@ -111,8 +111,9 @@ public abstract class SetupPage implements Page {
     }
 
     @Override
-    public void setHidden(boolean hidden) {
+    public Page setHidden(boolean hidden) {
         mHidden = hidden;
+        return this;
     }
 
     @Override

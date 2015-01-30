@@ -16,12 +16,13 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public abstract class AbstractSetupData implements SetupDataCallbacks {
+public abstract class AbstractSetupData extends BroadcastReceiver implements SetupDataCallbacks {
 
     private static final String TAG = AbstractSetupData.class.getSimpleName();
 

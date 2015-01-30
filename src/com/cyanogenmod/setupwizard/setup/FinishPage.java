@@ -68,11 +68,6 @@ public class FinishPage extends SetupPage {
         return R.string.start;
     }
 
-    @Override
-    public int getPrevButtonTitleResId() {
-        return -1;
-    }
-
     public static class FinishFragment extends SetupPageFragment {
 
         @Override

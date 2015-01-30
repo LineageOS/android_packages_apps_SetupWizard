@@ -107,6 +107,7 @@ public class CyanogenServicesPage extends SetupPage {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_SHOW_BUTTON_BAR, true);
+        bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
         AccountManager.get(activity)
                 .addAccount(activity.getString(R.string.cm_account_type), null, null, bundle,
                         null, new AccountManagerCallback<Bundle>() {
