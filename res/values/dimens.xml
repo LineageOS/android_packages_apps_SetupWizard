@@ -17,7 +17,7 @@
 <resources>
     <dimen name="logo_header_height">220dp</dimen>
     <dimen name="header_height">220dp</dimen>
-    <dimen name="page_title_height">56dp</dimen>
+    <dimen name="page_title_height">64dp</dimen>
     <dimen name="header_title_margin_left">26dp</dimen>
     <dimen name="header_logo_margin_left">25dp</dimen>
     <dimen name="header_logo_margin_bottom">11dp</dimen>
