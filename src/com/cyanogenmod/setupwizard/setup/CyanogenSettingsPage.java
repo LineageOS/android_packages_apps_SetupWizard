@@ -152,6 +152,14 @@ public class CyanogenSettingsPage extends SetupPage {
         }
     }
 
+    private static boolean isKeyDisablerActive() {
+        try {
+            return KeyDisabler.isActive();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     private static boolean hideWhisperPush(Context context) {
         final int playServicesAvailable = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(context);
@@ -243,7 +251,7 @@ public class CyanogenSettingsPage extends SetupPage {
                 mNavKeysRow.setVisibility(View.GONE);
             } else {
                 boolean navKeysDisabled =
-                        KeyDisabler.isActive();
+                        isKeyDisablerActive();
                 mNavKeys.setChecked(navKeysDisabled);
             }
             mSecureSmsRow = mRootView.findViewById(R.id.secure_sms);
