@@ -70,6 +70,9 @@ public abstract class SetupPage implements Page {
     }
 
     @Override
+    public void onFinishSetup() {}
+
+    @Override
     public void doLoadAction(Activity context, int action) {
         if (context == null || context.isFinishing()) { return; }
         final FragmentManager fragmentManager = context.getFragmentManager();

@@ -133,6 +133,12 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
         }
     }
 
+    public void finishPages() {
+        for (Page page : mPageList.values()) {
+            page.onFinishSetup();
+        }
+    }
+
     public Bundle save() {
         Bundle bundle = new Bundle();
         for (Page page : mPageList.values()) {
