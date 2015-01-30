@@ -40,7 +40,7 @@ public interface Page {
     public boolean isRequired();
     public Page setRequired(boolean required);
     public boolean isHidden();
-    public void setHidden(boolean hidden);
+    public Page setHidden(boolean hidden);
     public boolean doPreviousAction();
     public boolean doNextAction();
     public void doLoadAction(Activity context, int action);
