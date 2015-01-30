@@ -30,7 +30,6 @@ import android.net.wifi.WifiManager;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
-import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -58,6 +57,7 @@ public class SetupWizardUtils {
         Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_WIFI);
         intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
         intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
         intent.putExtra("theme", "material_light");
         intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
         ActivityOptions options =
