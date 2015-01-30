@@ -112,6 +112,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     protected void onResume() {
         super.onResume();
+        updateSystemUI();
         onPageTreeChanged();
     }
 
@@ -162,6 +163,16 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onPageLoaded(Page page) {
+        updateSystemUI();
+        updateButtonBar();
+    }
+
+    @Override
+    public void onPageTreeChanged() {
+        updateButtonBar();
+    }
+
+    private void updateSystemUI() {
         if (getResources().getConfiguration().orientation
                 == Configuration.ORIENTATION_LANDSCAPE &&
                 mSetupData.isFirstPage()) {
@@ -171,12 +182,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
-        updateButtonBar();
-    }
-
-    @Override
-    public void onPageTreeChanged() {
-        updateButtonBar();
     }
 
     private void updateButtonBar() {
@@ -189,6 +194,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         }
         if (mSetupData.isFirstPage()) {
             mPrevButton.setCompoundDrawables(null, null, null, null);
+            mPrevButton.setVisibility(SetupWizardUtils.hasTelephony(this) ?
+                    View.VISIBLE : View.INVISIBLE);
         } else {
             mPrevButton.setCompoundDrawablesWithIntrinsicBounds(
                     getDrawable(R.drawable.ic_chevron_left_dark),
@@ -209,6 +216,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_dark), null);
             mNextButton.setTextColor(resources.getColor(R.color.primary_text));
+            mPrevButton.setTextColor(resources.getColor(R.color.primary_text));
         }
     }
 
