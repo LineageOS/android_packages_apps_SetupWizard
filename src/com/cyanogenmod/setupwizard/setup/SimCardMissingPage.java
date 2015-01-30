@@ -20,6 +20,8 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
@@ -64,7 +66,16 @@ public class SimCardMissingPage extends SetupPage {
     public static class SimCardMissingFragment extends SetupPageFragment {
 
         @Override
-        protected void initializePage() {}
+        protected void initializePage() {
+            final boolean simOnBack = getResources().getBoolean(
+                    R.bool.sim_back);
+            ImageView simLogo = ((ImageView)mRootView.findViewById(R.id.sim_slot_image));
+            if (simOnBack) {
+                simLogo.setImageResource(R.drawable.sim_back);
+            } else {
+                simLogo.setImageResource(R.drawable.sim_side);
+            }
+        }
 
         @Override
         protected int getLayoutResource() {
