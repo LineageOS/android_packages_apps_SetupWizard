@@ -30,6 +30,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.IWindowManager;
 import android.view.View;
 import android.view.WindowManagerGlobal;
@@ -40,6 +41,7 @@ import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -52,6 +54,7 @@ public class CyanogenSettingsPage extends SetupPage {
 
     public static final String KEY_SEND_METRICS = "send_metrics";
     public static final String KEY_REGISTER_WHISPERPUSH = "register";
+    public static final String KEY_ENABLE_NAV_KEYS = "enable_nav_keys";
 
     public static final String SETTING_METRICS = "settings.cyanogen.allow_metrics";
     public static final String PRIVACY_POLICY_URI = "https://cyngn.com/legal/privacy-policy";
@@ -114,6 +117,32 @@ public class CyanogenSettingsPage extends SetupPage {
         editor.commit();
     }
 
+    @Override
+    public void onFinishSetup() {
+        if (getData().containsKey(KEY_ENABLE_NAV_KEYS)) {
+            writeDisableNavkeysOption(mContext, getData().getBoolean(KEY_ENABLE_NAV_KEYS));
+        }
+        handleWhisperPushRegistration();
+        handleEnableMetrics();
+    }
+
+    private void handleWhisperPushRegistration() {
+        Bundle privacyData = getData();
+        if (privacyData != null && privacyData.containsKey(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH)) {
+            Log.i(TAG, "Registering with WhisperPush");
+            WhisperPushUtils.startRegistration(mContext);
+        }
+    }
+
+    private void handleEnableMetrics() {
+        Bundle privacyData = getData();
+        if (privacyData != null
+                && privacyData.containsKey(CyanogenSettingsPage.KEY_SEND_METRICS)) {
+            Settings.System.putInt(mContext.getContentResolver(), CyanogenSettingsPage.SETTING_METRICS,
+                    privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS) ? 1 : 0);
+        }
+    }
+
     private static boolean hideKeyDisabler() {
         try {
             return !KeyDisabler.isSupported();
@@ -139,8 +168,6 @@ public class CyanogenSettingsPage extends SetupPage {
         private CheckBox mNavKeys;
         private CheckBox mSecureSms;
 
-        private Handler mHandler;
-
 
         private View.OnClickListener mMetricsClickListener = new View.OnClickListener() {
             @Override
@@ -154,16 +181,9 @@ public class CyanogenSettingsPage extends SetupPage {
         private View.OnClickListener mNavKeysClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mNavKeys.setEnabled(false);
                 boolean checked = !mNavKeys.isChecked();
-                writeDisableNavkeysOption(getActivity(), checked);
-                updateDisableNavkeysOption();
-                mHandler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        mNavKeys.setEnabled(true);
-                    }
-                }, 1000);
+                mNavKeys.setChecked(checked);
+                mPage.getData().putBoolean(KEY_ENABLE_NAV_KEYS, checked);
             }
         };
 
@@ -175,11 +195,6 @@ public class CyanogenSettingsPage extends SetupPage {
                 mPage.getData().putBoolean(KEY_REGISTER_WHISPERPUSH, checked);
             }
         };
-
-        public CyanogenSettingsFragment() {
-            super();
-            mHandler = new Handler();
-        }
 
         @Override
         public void onActivityCreated(Bundle savedInstanceState) {
@@ -258,8 +273,10 @@ public class CyanogenSettingsPage extends SetupPage {
         private void updateDisableNavkeysOption() {
             boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
                     Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
-
-            mNavKeys.setChecked(enabled);
+            boolean checked = mPage.getData().containsKey(KEY_ENABLE_NAV_KEYS) ?
+                    mPage.getData().getBoolean(KEY_ENABLE_NAV_KEYS) :
+                    enabled;
+            mNavKeys.setChecked(checked);
         }
 
     }

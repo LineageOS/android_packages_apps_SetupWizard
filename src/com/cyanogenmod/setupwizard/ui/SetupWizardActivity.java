@@ -25,7 +25,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -34,13 +33,10 @@ import android.widget.Button;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.setup.CMSetupWizardData;
-import com.cyanogenmod.setupwizard.setup.CyanogenServicesPage;
-import com.cyanogenmod.setupwizard.setup.CyanogenSettingsPage;
 import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
-import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
 
 
 public class SetupWizardActivity extends Activity implements SetupDataCallbacks {
@@ -263,35 +259,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         anim.start();
     }
 
-    private void handleWhisperPushRegistration() {
-        Page page = getPage(CyanogenServicesPage.TAG);
-        if (page == null) {
-            return;
-        }
-        Bundle privacyData = page.getData();
-        if (privacyData != null && privacyData.getBoolean(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH)) {
-            Log.d(TAG, "Registering with WhisperPush");
-            WhisperPushUtils.startRegistration(this);
-        }
-    }
-
-    public void handleEnableMetrics() {
-        Page page = getPage(CyanogenServicesPage.TAG);
-        if (page == null) {
-            return;
-        }
-        Bundle privacyData = page.getData();
-        if (privacyData != null
-                && privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS)) {
-            Settings.System.putInt(getContentResolver(), CyanogenSettingsPage.SETTING_METRICS,
-                    privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS) ? 1 : 0);
-        }
-    }
-
     private void finishSetup() {
         getApplication().sendBroadcast(new Intent(SetupWizardApp.ACTION_FINISHED));
-        handleWhisperPushRegistration();
-        handleEnableMetrics();
+        mSetupData.finishPages();
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
         ((SetupWizardApp)AppGlobals.getInitialApplication()).enableStatusBar();
