@@ -38,7 +38,7 @@ import java.io.IOException;
 
 public class CyanogenServicesPage extends SetupPage {
 
-    public static final String TAG = "CyangogenServicesPage";
+    public static final String TAG = "CyanogenServicesPage";
 
     public CyanogenServicesPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
