@@ -26,7 +26,9 @@ import android.os.Handler;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
+import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
@@ -166,7 +168,7 @@ public class CyanogenSettingsPage extends SetupPage {
         final int playServicesAvailable = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(context);
         return playServicesAvailable != ConnectionResult.SUCCESS
-                || (SetupWizardUtils.isGSMPhone(context) && SetupWizardUtils.isSimMissing(context));
+                || (SetupWizardUtils.hasTelephony(context) && SetupWizardUtils.isSimMissing(context));
     }
 
     public static class CyanogenSettingsFragment extends SetupPageFragment {
@@ -216,8 +218,8 @@ public class CyanogenSettingsPage extends SetupPage {
         @Override
         protected void initializePage() {
             String privacy_policy = getString(R.string.services_privacy_policy);
-            String summary = getString(R.string.services_explanation, privacy_policy);
-            SpannableString ss = new SpannableString(summary);
+            String policySummary = getString(R.string.services_explanation, privacy_policy);
+            SpannableString ss = new SpannableString(policySummary);
             ClickableSpan clickableSpan = new ClickableSpan() {
                 @Override
                 public void onClick(View textView) {
@@ -227,19 +229,30 @@ public class CyanogenSettingsPage extends SetupPage {
                 }
             };
             ss.setSpan(clickableSpan,
-                    summary.length() - privacy_policy.length() - 1,
-                    summary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            TextView textView = (TextView) mRootView.findViewById(R.id.privacy_policy);
-            textView.setMovementMethod(LinkMovementMethod.getInstance());
-            textView.setText(ss);
+                    policySummary.length() - privacy_policy.length() - 1,
+                    policySummary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            TextView privacyPolicy = (TextView) mRootView.findViewById(R.id.privacy_policy);
+            privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
+            privacyPolicy.setText(ss);
+
             mMetricsRow = mRootView.findViewById(R.id.metrics);
             mMetricsRow.setOnClickListener(mMetricsClickListener);
+            String metricsHelpImproveCM =
+                    getString(R.string.services_help_improve_cm, getString(R.string.os_name));
+            String metricsSummary = getString(R.string.services_metrics_label,
+                    metricsHelpImproveCM, getString(R.string.os_name));
+            final SpannableStringBuilder metricsSpan = new SpannableStringBuilder(metricsSummary);
+            metricsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
+                    0, metricsHelpImproveCM.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            TextView metrics = (TextView) mRootView.findViewById(R.id.enable_metrics_summary);
+            metrics.setText(metricsSpan);
             mMetrics = (CheckBox) mRootView.findViewById(R.id.enable_metrics_checkbox);
             boolean metricsChecked =
                     !mPage.getData().containsKey(KEY_SEND_METRICS) || mPage.getData()
                             .getBoolean(KEY_SEND_METRICS);
             mMetrics.setChecked(metricsChecked);
             mPage.getData().putBoolean(KEY_SEND_METRICS, metricsChecked);
+
             mNavKeysRow = mRootView.findViewById(R.id.nav_keys);
             mNavKeysRow.setOnClickListener(mNavKeysClickListener);
             mNavKeys = (CheckBox) mRootView.findViewById(R.id.nav_keys_checkbox);
@@ -256,8 +269,18 @@ public class CyanogenSettingsPage extends SetupPage {
                         isKeyDisablerActive();
                 mNavKeys.setChecked(navKeysDisabled);
             }
+
             mSecureSmsRow = mRootView.findViewById(R.id.secure_sms);
             mSecureSmsRow.setOnClickListener(mSecureSmsClickListener);
+            String useSecureSms = getString(R.string.services_use_secure_sms);
+            String secureSmsSummary = getString(R.string.services_secure_sms_label,
+                    useSecureSms, getString(R.string.os_name));
+            final SpannableStringBuilder secureSmsSpan =
+                    new SpannableStringBuilder(secureSmsSummary);
+            secureSmsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
+                    0, useSecureSms.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            TextView secureSms = (TextView) mRootView.findViewById(R.id.secure_sms_summary);
+            secureSms.setText(secureSmsSpan);
             if (hideWhisperPush(getActivity())) {
                 mSecureSmsRow.setVisibility(View.GONE);
             }

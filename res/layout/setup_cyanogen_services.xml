@@ -82,8 +82,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/services_metrics_label"
-                        android:maxLines="5" />
+                        android:text="@string/services_metrics_label"/>
 
                 </LinearLayout>
 
@@ -119,8 +118,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/services_os_nav_keys_label"
-                        android:maxLines="5" />
+                        android:text="@string/services_os_nav_keys_label"/>
 
                 </LinearLayout>
 
@@ -155,8 +153,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/services_secure_sms_label"
-                        android:maxLines="5" />
+                        android:text="@string/services_secure_sms_label"/>
 
                 </LinearLayout>
             </LinearLayout>

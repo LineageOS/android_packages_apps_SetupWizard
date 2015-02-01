@@ -17,37 +17,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Setup Wizard</string>
     <string name="product_name" translatable="false">cyanogenmod</string>
+    <string name="os_name" translatable="false">CyanogenMod</string>
 
     <string name="cm_account_type" translatable="false">com.cyanogenmod.account</string>
 
     <string name="next">Next</string>
-    <string name="continue_label">Continue</string>
     <string name="skip">Skip</string>
-    <string name="finish">Finish</string>
     <string name="start">Start</string>
-    <string name="cancel">Cancel</string>
-    <string name="create">Create</string>
-    <string name="login">Login</string>
     <string name="ok">OK</string>
-    <string name="existing">Existing</string>
-    <string name="new_account">New</string>
-    <string name="skip_anyway">Skip anyway</string>
-    <string name="dont_skip">Don\'t skip</string>
-    <string name="loading">Just a sec...</string>
+    <string name="loading">Just a sec\u2026</string>
 
     <string name="setup_complete">Setup is complete</string>
     <string name="setup_welcome">Welcome</string>
     <string name="setup_wifi">Select Wi-Fi</string>
-    <string name="setup_sim_missing">SIM Card Missing</string>
-    <string name="setup_gms_account">GMS account</string>
-    <string name="setup_choose_data_sim">Choose a SIM for Data</string>
-    <string name="setup_location">Location Services</string>
-    <string name="setup_other">Other Services</string>
+    <string name="setup_sim_missing">SIM card missing</string>
+    <string name="setup_choose_data_sim">Choose a SIM for data</string>
+    <string name="setup_location">Location services</string>
+    <string name="setup_other">Other services</string>
     <string name="setup_datetime">Date &amp; time</string>
     <string name="setup_current_date">Current date</string>
     <string name="setup_current_time">Current time</string>
 
-    <string name="sim_missing_summary">A SIM card has not been detected in your device.  To insert a SIM card, read the instructions that came with your device.</string>
+    <string name="sim_missing_summary">A SIM card has not been detected in your device. To insert a SIM card, read the instructions that came with your device.</string>
     <string name="choose_data_sim_summary">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your device.</string>
 
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
@@ -60,7 +51,7 @@
     <string name="location_gps"><b>Improve location accuracy</b> by allowing apps to use the GPS on your phone.</string>
     <string name="location_network"><b>Use Google\'s location service</b> to help apps determine your location. This means sending annonymous location data to Google, even when no apps are running.</string>
 
-    <string name="setup_mobile_data">Turn On Mobile Data</string>
+    <string name="setup_mobile_data">Turn on mobile data</string>
     <string name="setup_mobile_data_no_service">No service</string>
     <string name="setup_mobile_data_emergency_only">Emergency calls only</string>
     <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on mobile data may be subject to data charges.</string>
@@ -69,12 +60,14 @@
 
     <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
 
-    <string name="emergency_call">Emergency Call</string>
+    <string name="emergency_call">Emergency call</string>
 
     <string name="setup_services">Cyanogen services</string>
-    <string name="services_explanation">These services work for you to extend the capabilities of your device. You can turn them off at anytime. Data will be used in accordance with Cyanogen\'s %s.</string>
+    <string name="services_explanation">These services work for you to extend the capabilities of your device. You can turn them off at anytime. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="services_privacy_policy">Privacy Policy</string>
-    <string name="services_metrics_label"><b>Help improve Cyanogen OS</b> by automatically sending diagnostic and usage data to Cyanogen. This information won’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new Cyanogen OS features.</string>
+    <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> by automatically sending diagnostic and usage data to Cyanogen. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> to move between screens instead of hardware keys.</string>
-    <string name="services_secure_sms_label"><b>Use secure SMS</b> to encrypt SMS conversations with other users using secure SMS on a Cyanogen OS device.</string>
+    <string name="services_use_secure_sms">Use secure SMS</string>
+    <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> to encrypt SMS conversations with other users using secure SMS on a <xliff:g id="name" example="CyanogenMod">%s</xliff:g> device.</string>
 </resources>
