@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "bacf61ea_0848072d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2015-02-01T16:22:04Z",
+      "side": 1,
+      "message": "I\u0027d say putting two buttons that say \"Don\u0027t skip\" and \"Skip anyway\" together is terrible. You can\u0027t quickly say which one do you need (I used to tap the wrong button sometimes because there are too many \"skips\" involved)\n\nI\u0027m pretty sure the dialog this is used in also says something like \"Do you want to skip Wi-Fi selection?\", so I suggest to change these buttons to something more simple (Skip WiFi connection? Yes/No)",
+      "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_c85c2ff0",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2015-02-01T16:22:04Z",
+      "side": 1,
+      "message": "So we\u0027re asking to select SIM and saying the already selected one may incur charges. Something\u0027s not right here.",
+      "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_685543c5",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2015-02-01T16:22:04Z",
+      "side": 1,
+      "message": "Privacy policy (lowercase, though not completely sure about that)",
+      "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bacf61ea_488ddf7a",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
@@ -13,6 +64,23 @@
       "writtenOn": "2015-02-01T15:28:22Z",
       "side": 1,
       "message": "This should be CyanogenMod on community builds",
+      "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_e85773c8",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2015-02-01T16:22:04Z",
+      "side": 1,
+      "message": "This information CAN\u0027T be used to identify you (or can it?)",
       "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
