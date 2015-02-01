@@ -214,8 +214,8 @@ public class CyanogenSettingsPage extends SetupPage {
         @Override
         protected void initializePage() {
             String privacy_policy = getString(R.string.services_privacy_policy);
-            String summary = getString(R.string.services_explanation, privacy_policy);
-            SpannableString ss = new SpannableString(summary);
+            String policySummary = getString(R.string.services_explanation, privacy_policy);
+            SpannableString ss = new SpannableString(policySummary);
             ClickableSpan clickableSpan = new ClickableSpan() {
                 @Override
                 public void onClick(View textView) {
@@ -225,19 +225,25 @@ public class CyanogenSettingsPage extends SetupPage {
                 }
             };
             ss.setSpan(clickableSpan,
-                    summary.length() - privacy_policy.length() - 1,
-                    summary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            TextView textView = (TextView) mRootView.findViewById(R.id.privacy_policy);
-            textView.setMovementMethod(LinkMovementMethod.getInstance());
-            textView.setText(ss);
+                    policySummary.length() - privacy_policy.length() - 1,
+                    policySummary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            TextView privacyPolicy = (TextView) mRootView.findViewById(R.id.privacy_policy);
+            privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
+            privacyPolicy.setText(ss);
+
             mMetricsRow = mRootView.findViewById(R.id.metrics);
             mMetricsRow.setOnClickListener(mMetricsClickListener);
+            String metricsSummary = getString(R.string.services_metrics_label,
+                    getString(R.string.os_name), getString(R.string.os_name));
+            TextView metrics = (TextView) mRootView.findViewById(R.id.enable_metrics_summary);
+            metrics.setText(metricsSummary);
             mMetrics = (CheckBox) mRootView.findViewById(R.id.enable_metrics_checkbox);
             boolean metricsChecked =
                     !mPage.getData().containsKey(KEY_SEND_METRICS) || mPage.getData()
                             .getBoolean(KEY_SEND_METRICS);
             mMetrics.setChecked(metricsChecked);
             mPage.getData().putBoolean(KEY_SEND_METRICS, metricsChecked);
+
             mNavKeysRow = mRootView.findViewById(R.id.nav_keys);
             mNavKeysRow.setOnClickListener(mNavKeysClickListener);
             mNavKeys = (CheckBox) mRootView.findViewById(R.id.nav_keys_checkbox);
@@ -254,8 +260,13 @@ public class CyanogenSettingsPage extends SetupPage {
                         isKeyDisablerActive();
                 mNavKeys.setChecked(navKeysDisabled);
             }
+
             mSecureSmsRow = mRootView.findViewById(R.id.secure_sms);
             mSecureSmsRow.setOnClickListener(mSecureSmsClickListener);
+            String secureSmsSummary = getString(R.string.services_secure_sms_label,
+                    getString(R.string.os_name));
+            TextView secureSms = (TextView) mRootView.findViewById(R.id.secure_sms_summary);
+            secureSms.setText(secureSmsSummary);
             if (hideWhisperPush(getActivity())) {
                 mSecureSmsRow.setVisibility(View.GONE);
             }
