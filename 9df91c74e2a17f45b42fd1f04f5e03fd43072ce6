@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "bacf61ea_f7af4a7b",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-02-03T17:17:53Z",
+      "side": 1,
+      "message": "We\u0027re talking about the SIM that is going to be selected.",
+      "parentUuid": "bacf61ea_c85c2ff0",
+      "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bacf61ea_685543c5",
         "filename": "res/values/strings.xml",
         "patchSetId": 1
