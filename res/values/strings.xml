@@ -42,6 +42,7 @@
     <string name="setup_gms_account">GMS account</string>
     <string name="setup_choose_data_sim">Choose a SIM for Data</string>
     <string name="setup_location">Location Services</string>
+    <string name="setup_other">Other Services</string>
     <string name="setup_datetime">Date &amp; time</string>
     <string name="setup_current_date">Current date</string>
     <string name="setup_current_time">Current time</string>
@@ -50,6 +51,9 @@
     <string name="choose_data_sim_summary">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your device.</string>
 
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
+
+    <string name="backup_data_title">Back up my data</string>
+    <string name="backup_data_summary">Back up app data, Wi-Fi passwords, and other settings to Google servers</string>
 
     <string name="location_services_summary">Location services allows Maps and other apps to gather and use data such as your approximate location. For example, Maps may use your approximate location to locate nearby coffee shops.</string>
     <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>

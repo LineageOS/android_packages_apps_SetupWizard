@@ -27,6 +27,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
@@ -39,6 +40,8 @@ import java.io.IOException;
 public class GmsAccountPage extends SetupPage {
 
     public static final String TAG = "GmsAccountPage";
+
+    public static final String ACTION_RESTORE = "com.google.android.setupwizard.RESTORE";
 
     public GmsAccountPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -85,19 +88,49 @@ public class GmsAccountPage extends SetupPage {
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
-            if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
-                if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
-                    setHidden(true);
-                }
-                getCallbacks().onNextPage();
-            } else if (resultCode == Activity.RESULT_CANCELED) {
-                getCallbacks().onPreviousPage();
+            if (!hasNFC(mContext)) {
+                launchGmsRestorePage((Activity)mContext);
+            } else {
+                handleResult(resultCode);
             }
+        } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
+            handleResult(resultCode);
         }
         return true;
     }
 
-    public void launchGmsAccountSetup(final Activity activity) {
+    private void handleResult(int resultCode) {
+        if (resultCode == Activity.RESULT_CANCELED) {
+            getCallbacks().onPreviousPage();
+        }  else {
+            if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
+                setHidden(true);
+            }
+            getCallbacks().onNextPage();
+        }
+    }
+
+    private boolean hasNFC(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        return packageManager.hasSystemFeature("android.hardware.nfc");
+    }
+
+    private void launchGmsRestorePage(final Activity activity) {
+        Intent intent = new Intent(ACTION_RESTORE);
+        intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+        intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(activity,
+                        android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+        activity.startActivityForResult(
+                intent,
+                SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
+    }
+
+    private void launchGmsAccountSetup(final Activity activity) {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
