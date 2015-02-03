@@ -83,8 +83,8 @@
                         android:gravity="center_vertical"
                         android:duplicateParentState="true"
                         android:clickable="false"
-                        android:textOff="@string/enable_mobile_off"
-                        android:textOn="@string/enable_mobile_on"/>
+                        android:textOff="@string/no"
+                        android:textOn="@string/yes"/>
                 </LinearLayout>
 
                 <include layout="@layout/divider" />

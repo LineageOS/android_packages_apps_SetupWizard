@@ -58,7 +58,7 @@ public class SetupWizardUtils {
         intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
         intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
         intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-        intent.putExtra("theme", "material_light");
+        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
         intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
         ActivityOptions options =
                 ActivityOptions.makeCustomAnimation(context,

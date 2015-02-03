@@ -25,9 +25,13 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.ContentQueryMap;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.Settings;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
@@ -35,13 +39,37 @@ import com.cyanogenmod.setupwizard.ui.LoadingFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
+import java.util.Observable;
+import java.util.Observer;
 
 public class GmsAccountPage extends SetupPage {
 
     public static final String TAG = "GmsAccountPage";
 
-    public GmsAccountPage(Context context, SetupDataCallbacks callbacks) {
+    public static final String ACTION_RESTORE = "com.google.android.setupwizard.RESTORE";
+
+    private ContentQueryMap mContentQueryMap;
+    private Observer mSettingsObserver;
+
+    private boolean mBackupEnabled = false;
+
+    public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
+        final ContentResolver res = context.getContentResolver();
+        mSettingsObserver = new Observer() {
+            public void update(Observable o, Object arg) {
+                mBackupEnabled = (Settings.Secure.getInt(res,
+                        Settings.Secure.BACKUP_AUTO_RESTORE, 0) == 1) ||
+                        (Settings.Secure.getInt(res,
+                                Settings.Secure.BACKUP_ENABLED, 0) == 1);
+            }
+        };
+        Cursor settingsCursor = res.query(Settings.Secure.CONTENT_URI, null,
+                "(" + Settings.System.NAME + "=? OR " + Settings.System.NAME + "=?)",
+                new String[]{Settings.Secure.BACKUP_AUTO_RESTORE, Settings.Secure.BACKUP_ENABLED},
+                null);
+        mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
+        mContentQueryMap.addObserver(mSettingsObserver);
     }
 
     @Override
@@ -85,19 +113,52 @@ public class GmsAccountPage extends SetupPage {
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
-            if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
-                if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
-                    setHidden(true);
-                }
-                getCallbacks().onNextPage();
-            } else if (resultCode == Activity.RESULT_CANCELED) {
-                getCallbacks().onPreviousPage();
+            if (!mBackupEnabled) {
+                launchGmsRestorePage((Activity) mContext);
+            } else {
+                handleResult(resultCode);
             }
+        } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
+            handleResult(resultCode);
         }
         return true;
     }
 
-    public void launchGmsAccountSetup(final Activity activity) {
+    @Override
+    public void onFinishSetup() {
+        if (mContentQueryMap != null) {
+            mContentQueryMap.close();
+        }
+
+    }
+
+    private void handleResult(int resultCode) {
+        if (resultCode == Activity.RESULT_CANCELED) {
+            getCallbacks().onPreviousPage();
+        }  else {
+            if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
+                setHidden(true);
+            }
+            getCallbacks().onNextPage();
+        }
+    }
+
+    private static void launchGmsRestorePage(final Activity activity) {
+        Intent intent = new Intent(ACTION_RESTORE);
+        intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+        intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(activity,
+                        android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+        activity.startActivityForResult(
+                intent,
+                SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
+    }
+
+    private void launchGmsAccountSetup(final Activity activity) {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);

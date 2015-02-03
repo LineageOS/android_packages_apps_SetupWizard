@@ -18,12 +18,15 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.backup.IBackupManager;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.CheckBox;
@@ -34,11 +37,11 @@ import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import java.util.Observable;
 import java.util.Observer;
 
-public class LocationSettingsPage extends SetupPage {
+public class OtherSettingsPage extends SetupPage {
 
-    private static final String TAG = "LocationSettingsPage";
+    private static final String TAG = "OtherSettingsPage";
 
-    public LocationSettingsPage(Context context, SetupDataCallbacks callbacks) {
+    public OtherSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
@@ -49,7 +52,7 @@ public class LocationSettingsPage extends SetupPage {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new LocationSettingsFragment();
+            fragment = new OtherSettingsFragment();
             fragment.setArguments(args);
         }
         return fragment;
@@ -62,19 +65,23 @@ public class LocationSettingsPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        return R.string.setup_location;
+        return R.string.setup_other;
     }
 
-    public static class LocationSettingsFragment extends SetupPageFragment {
+    public static class OtherSettingsFragment extends SetupPageFragment {
 
+        private View mBackupRow;
         private View mLocationRow;
         private View mGpsRow;
         private View mNetworkRow;
+        private CheckBox mBackup;
         private CheckBox mNetwork;
         private CheckBox mGps;
         private CheckBox mLocationAccess;
 
         private ContentResolver mContentResolver;
+
+        private IBackupManager mBackupManager;
 
         // These provide support for receiving notification when Location Manager settings change.
         // This is necessary because the Network Location Provider can change settings
@@ -82,6 +89,13 @@ public class LocationSettingsPage extends SetupPage {
         private ContentQueryMap mContentQueryMap;
         private Observer mSettingsObserver;
 
+
+        private View.OnClickListener mBackupClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onToggleBackup(!mBackup.isChecked());
+            }
+        };
 
         private View.OnClickListener mLocationClickListener = new View.OnClickListener() {
             @Override
@@ -110,11 +124,16 @@ public class LocationSettingsPage extends SetupPage {
         public void onActivityCreated(Bundle savedInstanceState) {
             super.onActivityCreated(savedInstanceState);
             mContentResolver = getActivity().getContentResolver();
+            mBackupManager = IBackupManager.Stub.asInterface(
+                    ServiceManager.getService(Context.BACKUP_SERVICE));
             getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
         }
 
         @Override
         protected void initializePage() {
+            mBackupRow = mRootView.findViewById(R.id.backup);
+            mBackupRow.setOnClickListener(mBackupClickListener);
+            mBackup = (CheckBox) mRootView.findViewById(R.id.backup_checkbox);
             mLocationRow = mRootView.findViewById(R.id.location);
             mLocationRow.setOnClickListener(mLocationClickListener);
             mLocationAccess = (CheckBox) mRootView.findViewById(R.id.location_checkbox);
@@ -135,10 +154,12 @@ public class LocationSettingsPage extends SetupPage {
         public void onResume() {
             super.onResume();
             updateLocationToggles();
+            updateBackupToggle();
             if (mSettingsObserver == null) {
                 mSettingsObserver = new Observer() {
                     public void update(Observable o, Object arg) {
                         updateLocationToggles();
+                        updateBackupToggle();
                     }
                 };
             }
@@ -166,6 +187,24 @@ public class LocationSettingsPage extends SetupPage {
             mContentQueryMap.close();
         }
 
+        private boolean isBackupRestoreEnabled() {
+            try {
+                return mBackupManager.isBackupEnabled();
+            } catch (Exception e) {
+                return false;
+            }
+        }
+
+        private void updateBackupToggle() {
+            mBackup.setChecked(isBackupRestoreEnabled());
+        }
+
+        private void onToggleBackup(boolean checked) {
+            try {
+                mBackupManager.setBackupEnabled(checked);
+            } catch (RemoteException e) {}
+            updateBackupToggle();
+        }
 
         private void updateLocationToggles() {
             boolean gpsEnabled = Settings.Secure.isLocationProviderEnabled(
