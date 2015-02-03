@@ -102,6 +102,24 @@
       "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bacf61ea_97640e4a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 848
+      },
+      "writtenOn": "2015-02-03T18:38:21Z",
+      "side": 1,
+      "message": "\"Can\u0027t\" is correct here. Cyanogen Services is correct here, but this should _not_ read Cyanogen OS unless its a retail device. Need to adjust this to CyanogenMod and make it overlayable (same issue below).",
+      "parentUuid": "bacf61ea_e85773c8",
+      "revId": "9df91c74e2a17f45b42fd1f04f5e03fd43072ce6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
