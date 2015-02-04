@@ -82,9 +82,11 @@ public class CMSetupWizardData extends AbstractSetupData {
            if (slot != -1 && mSimStates.length > 0) {
                mSimStates[slot] = mTelephonyManager.getSimState(slot);
            }
-        } else if (intent.getAction().equals(Intent.ACTION_TIMEZONE_CHANGED)) {
+        } else if (intent.getAction().equals(Intent.ACTION_TIMEZONE_CHANGED) ||
+                intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIMEZONE)) {
             mTimeZoneSet = true;
-        } else if (intent.getAction().equals(Intent.ACTION_TIME_CHANGED)) {
+        } else if (intent.getAction().equals(Intent.ACTION_TIME_CHANGED) ||
+                intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIME)) {
             mTimeSet = true;
         }
         DateTimePage dateTimePage = (DateTimePage) getPage(DateTimePage.TAG);
@@ -108,6 +110,8 @@ public class CMSetupWizardData extends AbstractSetupData {
         filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
         filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
         filter.addAction(Intent.ACTION_TIME_CHANGED);
+        filter.addAction(TelephonyIntents.ACTION_NETWORK_SET_TIME);
+        filter.addAction(TelephonyIntents.ACTION_NETWORK_SET_TIMEZONE);
         return filter;
     }
 
