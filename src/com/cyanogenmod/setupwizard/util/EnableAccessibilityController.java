@@ -97,7 +97,9 @@ public class EnableAccessibilityController {
     private float mSecondPointerDownX;
     private float mSecondPointerDownY;
 
-    public EnableAccessibilityController(Context context) {
+    private static EnableAccessibilityController sInstance;
+
+    private EnableAccessibilityController(Context context) {
         mContext = context;
         mUserManager = (UserManager) mContext.getSystemService(Context.USER_SERVICE);
         mTts = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
@@ -114,6 +116,13 @@ public class EnableAccessibilityController {
                 R.dimen.accessibility_touch_slop);
     }
 
+    public static EnableAccessibilityController getInstance(Context context) {
+        if (sInstance == null) {
+            sInstance = new EnableAccessibilityController(context);
+        }
+        return sInstance;
+    }
+
     public static boolean canEnableAccessibilityViaGesture(Context context) {
         AccessibilityManager accessibilityManager = AccessibilityManager.getInstance(context);
         // Accessibility is enabled and there is an enabled speaking
@@ -123,11 +132,10 @@ public class EnableAccessibilityController {
                         AccessibilityServiceInfo.FEEDBACK_SPOKEN).isEmpty()) {
             return false;
         }
-        // If the global gesture is enabled and there is a speaking service
+
+        // If there is a speaking service
         // installed we are good to go, otherwise there is nothing to do.
-        return Settings.Global.getInt(context.getContentResolver(),
-                Settings.Global.ENABLE_ACCESSIBILITY_GLOBAL_GESTURE_ENABLED, 0) == 1
-                && !getInstalledSpeakingAccessibilityServices(context).isEmpty();
+        return getInstalledSpeakingAccessibilityServices(context).isEmpty();
     }
 
     private static List<AccessibilityServiceInfo> getInstalledSpeakingAccessibilityServices(

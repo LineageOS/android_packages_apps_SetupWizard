@@ -162,11 +162,11 @@ public class SetupWizardUtils {
                         new ComponentName(info.activityInfo.packageName, info.activityInfo.name);
                 pm.setComponentEnabledSetting(componentName,
                         PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                        PackageManager.DONT_KILL_APP);
+                        0);
             }
         }
         pm.setComponentEnabledSetting(context.getComponentName(),
-                PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivity(intent);
     }
