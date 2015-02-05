@@ -83,29 +83,28 @@ public class SetupWizardUtils {
     }
 
     public static boolean isMobileDataEnabled(Context context) {
-        TelephonyManager tm =
-                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        if (tm.isMultiSimEnabled()) {
-            int subscription = SubscriptionManager.getDefaultDataPhoneId();
-            return android.provider.Settings.Global.getInt(context.getContentResolver(),
-                    android.provider.Settings.Global.MOBILE_DATA + subscription, 0) != 0;
-        } else {
-            return android.provider.Settings.Global.getInt(context.getContentResolver(),
-                    android.provider.Settings.Global.MOBILE_DATA, 0) != 0;
+        try {
+            TelephonyManager tm =
+                    (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            return tm.getDataEnabled();
+        } catch (Exception e) {
+            return false;
         }
     }
 
     public static void setMobileDataEnabled(Context context, boolean enabled) {
         TelephonyManager tm =
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        tm.setDataEnabled(enabled);
         if (tm.isMultiSimEnabled()) {
-            int subscription = SubscriptionManager.getDefaultDataPhoneId();
+            int phoneId = SubscriptionManager.getDefaultDataPhoneId();
             android.provider.Settings.Global.putInt(context.getContentResolver(),
-                    android.provider.Settings.Global.MOBILE_DATA + subscription, enabled ? 1 : 0);
+                    android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
+            long subId = SubscriptionManager.getDefaultDataSubId();
+            tm.setDataEnabledUsingSubId(subId, enabled);
         } else {
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA, enabled ? 1 : 0);
+            tm.setDataEnabled(enabled);
         }
     }
 
