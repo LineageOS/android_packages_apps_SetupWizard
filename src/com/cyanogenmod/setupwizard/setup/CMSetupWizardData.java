@@ -30,22 +30,11 @@ public class CMSetupWizardData extends AbstractSetupData {
 
     private static final String TAG = CMSetupWizardData.class.getSimpleName();
 
-    private final TelephonyManager mTelephonyManager;
-
     private boolean mTimeSet = false;
     private boolean mTimeZoneSet = false;
 
-    private final int mSimSlotCount;
-    private final int[] mSimStates;
-
     public CMSetupWizardData(Context context) {
         super(context);
-        mTelephonyManager = TelephonyManager.from(context);
-        mSimSlotCount = mTelephonyManager.getPhoneCount();
-        mSimStates = new int[mSimSlotCount];
-        for (int i = 0; i < mSimSlotCount; i++) {
-            mSimStates[i] = TelephonyManager.SIM_STATE_ABSENT;
-        }
     }
 
     @Override
@@ -54,14 +43,14 @@ public class CMSetupWizardData extends AbstractSetupData {
         pages.add(new WelcomePage(mContext, this));
         pages.add(new WifiSetupPage(mContext, this));
         if (SetupWizardUtils.hasTelephony(mContext)) {
-            pages.add(new SimCardMissingPage(mContext, this).setHidden(true));
+            pages.add(new SimCardMissingPage(mContext, this).setHidden(isSimInserted()));
         }
         if (SetupWizardUtils.isMultiSimDevice(mContext)) {
-            pages.add(new ChooseDataSimPage(mContext, this));
+            pages.add(new ChooseDataSimPage(mContext, this).setHidden(!allSimsInserted()));
         }
-        if (SetupWizardUtils.hasTelephony(mContext) &&
-                !SetupWizardUtils.isMobileDataEnabled(mContext)) {
-            pages.add(new MobileDataPage(mContext, this));
+        if (SetupWizardUtils.hasTelephony(mContext)) {
+            pages.add(new MobileDataPage(mContext, this)
+                    .setHidden(!isSimInserted() || SetupWizardUtils.isMobileDataEnabled(mContext)));
         }
         if (SetupWizardUtils.hasGMS(mContext)) {
             pages.add(new GmsAccountPage(mContext, this));
@@ -78,36 +67,53 @@ public class CMSetupWizardData extends AbstractSetupData {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals(TelephonyIntents.ACTION_SIM_STATE_CHANGED)) {
-           int slot = intent.getIntExtra("slot", -1);
-           if (slot != -1 && mSimStates.length > 0) {
-               mSimStates[slot] = mTelephonyManager.getSimState(slot);
-           }
+            ChooseDataSimPage chooseDataSimPage =
+                    (ChooseDataSimPage) getPage(ChooseDataSimPage.TAG);
+            if (chooseDataSimPage != null) {
+                chooseDataSimPage.setHidden(!allSimsInserted());
+            }
+            SimCardMissingPage simCardMissingPage =
+                    (SimCardMissingPage) getPage(SimCardMissingPage.TAG);
+            if (simCardMissingPage != null) {
+                simCardMissingPage.setHidden(isSimInserted());
+            }
+            showHideMobileDataPage();
+        } else  if (intent.getAction()
+                .equals(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED)) {
+            showHideMobileDataPage();
         } else if (intent.getAction().equals(Intent.ACTION_TIMEZONE_CHANGED) ||
                 intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIMEZONE)) {
             mTimeZoneSet = true;
+            showHideDateTimePage();
         } else if (intent.getAction().equals(Intent.ACTION_TIME_CHANGED) ||
                 intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIME)) {
             mTimeSet = true;
+            showHideDateTimePage();
         }
+    }
+
+    private void showHideMobileDataPage() {
+        MobileDataPage mobileDataPage =
+                (MobileDataPage) getPage(MobileDataPage.TAG);
+        if (mobileDataPage != null) {
+            mobileDataPage.setHidden(!isSimInserted() ||
+                    SetupWizardUtils.isMobileDataEnabled(mContext));
+        }
+    }
+
+    private void showHideDateTimePage() {
         DateTimePage dateTimePage = (DateTimePage) getPage(DateTimePage.TAG);
-        dateTimePage.setHidden(mTimeZoneSet & mTimeSet);
-
-        SimCardMissingPage simCardMissingPage =
-                (SimCardMissingPage) getPage(SimCardMissingPage.TAG);
-        if (simCardMissingPage != null) {
-            simCardMissingPage.setHidden(isSimInserted());
-        }
-
-        ChooseDataSimPage chooseDataSimPage =
-                (ChooseDataSimPage) getPage(ChooseDataSimPage.TAG);
-        if (chooseDataSimPage != null) {
-            chooseDataSimPage.setHidden(!allSimsInserted());
+        if (dateTimePage != null) {
+            dateTimePage.setHidden(mTimeZoneSet & mTimeSet);
         }
     }
 
     public IntentFilter getIntentFilter() {
         IntentFilter filter = new IntentFilter();
-        filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
+        if (SetupWizardUtils.hasTelephony(mContext)) {
+            filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
+            filter.addAction(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
+        }
         filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
         filter.addAction(Intent.ACTION_TIME_CHANGED);
         filter.addAction(TelephonyIntents.ACTION_NETWORK_SET_TIME);
@@ -117,7 +123,10 @@ public class CMSetupWizardData extends AbstractSetupData {
 
     // We only care that one sim is inserted
     private boolean isSimInserted() {
-        for (int state : mSimStates) {
+        TelephonyManager tm = TelephonyManager.from(mContext);
+        int simSlotCount = tm.getSimCount();
+        for (int i = 0; i < simSlotCount; i++) {
+            int state = tm.getSimState(i);
             if (state != TelephonyManager.SIM_STATE_ABSENT
                     && state != TelephonyManager.SIM_STATE_UNKNOWN) {
                  return true;
@@ -126,9 +135,12 @@ public class CMSetupWizardData extends AbstractSetupData {
         return false;
     }
 
-    // We only care the each slot has a sim
+    // We only care that each slot has a sim
     private boolean allSimsInserted() {
-        for (int state : mSimStates) {
+        TelephonyManager tm = TelephonyManager.from(mContext);
+        int simSlotCount = tm.getSimCount();
+        for (int i = 0; i < simSlotCount; i++) {
+            int state = tm.getSimState(i);
             if (state == TelephonyManager.SIM_STATE_ABSENT) {
                 return false;
             }
