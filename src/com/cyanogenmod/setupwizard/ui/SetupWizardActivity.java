@@ -25,6 +25,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
 import android.view.MotionEvent;
@@ -55,6 +56,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private CMSetupWizardData mSetupData;
 
     private final Handler mHandler = new Handler();
+
+    private boolean mIsGuestUser = false;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,7 +113,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             // Continue with setup
         }
         UserManager userManager = (UserManager) getSystemService(Context.USER_SERVICE);
-        if (userManager.isGuestUser()) {
+        mIsGuestUser =  userManager.isGuestUser();
+        if (mIsGuestUser) {
             finishSetup();
         }
         registerReceiver(mSetupData, mSetupData.getIntentFilter());
@@ -272,7 +276,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void finishSetup() {
-        getApplication().sendBroadcast(new Intent(SetupWizardApp.ACTION_FINISHED));
+        if (!mIsGuestUser) {
+            getApplication().sendBroadcastAsUser(new Intent(SetupWizardApp.ACTION_FINISHED),
+                    UserHandle.getCallingUserHandle());
+        }
         mSetupData.finishPages();
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
