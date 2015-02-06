@@ -166,7 +166,7 @@ public class CyanogenSettingsPage extends SetupPage {
         final int playServicesAvailable = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(context);
         return playServicesAvailable != ConnectionResult.SUCCESS
-                || (SetupWizardUtils.isGSMPhone(context) && SetupWizardUtils.isSimMissing(context));
+                || (SetupWizardUtils.hasTelephony(context) && SetupWizardUtils.isSimMissing(context));
     }
 
     public static class CyanogenSettingsFragment extends SetupPageFragment {
