@@ -128,7 +128,9 @@ public class CyanogenSettingsPage extends SetupPage {
 
     private void handleWhisperPushRegistration() {
         Bundle privacyData = getData();
-        if (privacyData != null && privacyData.containsKey(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH)) {
+        if (privacyData != null &&
+                privacyData.containsKey(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH) &&
+                privacyData.getBoolean(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH)) {
             Log.i(TAG, "Registering with WhisperPush");
             WhisperPushUtils.startRegistration(mContext);
         }
