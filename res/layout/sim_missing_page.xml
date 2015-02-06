@@ -45,13 +45,11 @@
 
             <ImageView
                 android:id="@+id/sim_slot_image"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="1"
-                android:layout_gravity="right"
-                android:gravity="right"
                 android:scaleType="fitEnd"
-                android:src="@drawable/sim_back"/>
+                android:src="@drawable/sim"/>
 
         </LinearLayout>
     </FrameLayout>

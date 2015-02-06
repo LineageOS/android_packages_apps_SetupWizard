@@ -16,6 +16,8 @@
 -->
 <resources>
     <integer name="local_picker_items">3</integer>
-    <bool name="sim_back">false</bool>
     <bool name="branded_device">false</bool>
+    <!-- The type of sim image to display.
+         0=default sim image, 1=sim on side, 2=sim on back-->
+    <integer name="sim_image_type">0</integer>
 </resources>

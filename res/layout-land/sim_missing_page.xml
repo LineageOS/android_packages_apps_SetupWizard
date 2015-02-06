@@ -49,10 +49,8 @@
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_gravity="right"
-                android:gravity="right"
                 android:scaleType="fitEnd"
-                android:src="@drawable/sim_back"/>
+                android:src="@drawable/sim"/>
 
         </LinearLayout>
     </FrameLayout>
