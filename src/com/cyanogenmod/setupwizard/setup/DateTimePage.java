@@ -181,13 +181,13 @@ public class DateTimePage extends SetupPage {
 
         private void showDatePicker() {
             DatePickerFragment datePickerFragment = DatePickerFragment.newInstance();
-            datePickerFragment.setOnDateSetListener(this);
+            datePickerFragment.setTargetFragment(this, 0);
             datePickerFragment.show(getFragmentManager(), DatePickerFragment.TAG);
         }
 
         private void showTimePicker() {
             TimePickerFragment timePickerFragment = TimePickerFragment.newInstance();
-            timePickerFragment.setOnTimeSetListener(this);
+            timePickerFragment.setTargetFragment(this, 0);
             timePickerFragment.show(getFragmentManager(), TimePickerFragment.TAG);
         }
 
@@ -395,26 +395,18 @@ public class DateTimePage extends SetupPage {
         }
     }
 
-    private static class TimePickerFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
+    public static class TimePickerFragment extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
 
         private static String TAG = TimePickerFragment.class.getSimpleName();
-
-        private TimePickerDialog.OnTimeSetListener mOnTimeSetListener;
 
         public static TimePickerFragment newInstance() {
             TimePickerFragment frag = new TimePickerFragment();
             return frag;
         }
 
-        private void setOnTimeSetListener(TimePickerDialog.OnTimeSetListener onTimeSetListener) {
-            mOnTimeSetListener = onTimeSetListener;
-        }
-
         @Override
         public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            if (mOnTimeSetListener != null) {
-                mOnTimeSetListener.onTimeSet(view, hourOfDay, minute);
-            }
+            ((DateTimeFragment) getTargetFragment()).onTimeSet(view, hourOfDay, minute);
         }
 
         @Override
@@ -428,28 +420,21 @@ public class DateTimePage extends SetupPage {
                     DateFormat.is24HourFormat(getActivity()));
 
         }
+
     }
 
-    private static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+    public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
         private static String TAG = DatePickerFragment.class.getSimpleName();
-
-        private DatePickerDialog.OnDateSetListener mOnDateSetListener;
 
         public static DatePickerFragment newInstance() {
             DatePickerFragment frag = new DatePickerFragment();
             return frag;
         }
 
-        private void setOnDateSetListener(DatePickerDialog.OnDateSetListener onDateSetListener) {
-            mOnDateSetListener = onDateSetListener;
-        }
-
         @Override
         public void onDateSet(DatePicker view, int year, int month, int day) {
-            if (mOnDateSetListener != null) {
-                mOnDateSetListener.onDateSet(view, year, month, day);
-            }
+            ((DateTimeFragment) getTargetFragment()).onDateSet(view, year, month, day);
         }
 
         @Override
