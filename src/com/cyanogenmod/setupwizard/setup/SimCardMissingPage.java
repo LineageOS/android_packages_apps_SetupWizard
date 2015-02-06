@@ -29,6 +29,10 @@ public class SimCardMissingPage extends SetupPage {
 
     public static final String TAG = "SimCardMissingPage";
 
+    private static final int SIM_DEFAULT = 0;
+    private static final int SIM_SIDE = 1;
+    private static final int SIM_BACK = 2;
+
     public SimCardMissingPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
@@ -66,13 +70,19 @@ public class SimCardMissingPage extends SetupPage {
 
         @Override
         protected void initializePage() {
-            final boolean simOnBack = getResources().getBoolean(
-                    R.bool.sim_back);
+            final int simLocation = getResources().getInteger(
+                    R.integer.sim_image_type);
             ImageView simLogo = ((ImageView)mRootView.findViewById(R.id.sim_slot_image));
-            if (simOnBack) {
-                simLogo.setImageResource(R.drawable.sim_back);
-            } else {
-                simLogo.setImageResource(R.drawable.sim_side);
+            switch (simLocation) {
+                case SIM_SIDE:
+                    simLogo.setImageResource(R.drawable.sim_side);
+                    break;
+                case SIM_BACK:
+                    simLogo.setImageResource(R.drawable.sim_back);
+                    break;
+                default:
+                    simLogo.setImageResource(R.drawable.sim);
+                    simLogo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
             }
         }
 
