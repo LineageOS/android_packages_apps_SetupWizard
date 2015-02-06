@@ -16,6 +16,7 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
+import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -67,7 +68,11 @@ public class WelcomePage extends SetupPage {
         Intent intent = new Intent(ACTION_EMERGENCY_DIAL);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-        mContext.startActivity(intent);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(mContext,
+                        android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+        mContext.startActivity(intent, options.toBundle());
         return true;
     }
 
