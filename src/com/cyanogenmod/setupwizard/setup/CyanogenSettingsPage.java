@@ -26,9 +26,7 @@ import android.os.Handler;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
-import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
@@ -237,15 +235,10 @@ public class CyanogenSettingsPage extends SetupPage {
 
             mMetricsRow = mRootView.findViewById(R.id.metrics);
             mMetricsRow.setOnClickListener(mMetricsClickListener);
-            String metricsHelpImproveCM =
-                    getString(R.string.services_help_improve_cm, getString(R.string.os_name));
             String metricsSummary = getString(R.string.services_metrics_label,
-                    metricsHelpImproveCM, getString(R.string.os_name));
-            final SpannableStringBuilder metricsSpan = new SpannableStringBuilder(metricsSummary);
-            metricsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
-                    0, metricsHelpImproveCM.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    getString(R.string.os_name), getString(R.string.os_name));
             TextView metrics = (TextView) mRootView.findViewById(R.id.enable_metrics_summary);
-            metrics.setText(metricsSpan);
+            metrics.setText(metricsSummary);
             mMetrics = (CheckBox) mRootView.findViewById(R.id.enable_metrics_checkbox);
             boolean metricsChecked =
                     !mPage.getData().containsKey(KEY_SEND_METRICS) || mPage.getData()
@@ -272,15 +265,10 @@ public class CyanogenSettingsPage extends SetupPage {
 
             mSecureSmsRow = mRootView.findViewById(R.id.secure_sms);
             mSecureSmsRow.setOnClickListener(mSecureSmsClickListener);
-            String useSecureSms = getString(R.string.services_use_secure_sms);
             String secureSmsSummary = getString(R.string.services_secure_sms_label,
-                    useSecureSms, getString(R.string.os_name));
-            final SpannableStringBuilder secureSmsSpan =
-                    new SpannableStringBuilder(secureSmsSummary);
-            secureSmsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
-                    0, useSecureSms.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    getString(R.string.os_name));
             TextView secureSms = (TextView) mRootView.findViewById(R.id.secure_sms_summary);
-            secureSms.setText(secureSmsSpan);
+            secureSms.setText(secureSmsSummary);
             if (hideWhisperPush(getActivity())) {
                 mSecureSmsRow.setVisibility(View.GONE);
             }
