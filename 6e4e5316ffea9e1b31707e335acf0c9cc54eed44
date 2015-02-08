@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_5dc10d80",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-02-08T23:10:23Z",
+      "side": 1,
+      "message": "According to a comment in Settings strings.xml, html tags should be escaped in order to work correctly together with xliff tags.\n\nSo \u003cb\u003e becomes \u0026lt;b\u003e",
+      "revId": "6e4e5316ffea9e1b31707e335acf0c9cc54eed44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
