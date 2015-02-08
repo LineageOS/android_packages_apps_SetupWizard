@@ -38,8 +38,10 @@
     <string name="setup_current_date">Current date</string>
     <string name="setup_current_time">Current time</string>
 
-    <string name="sim_missing_summary">A SIM card has not been detected in your device. To insert a SIM card, read the instructions that came with your device.</string>
-    <string name="choose_data_sim_summary">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your device.</string>
+    <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
+    <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
+    <string name="choose_data_sim_summary" product="tablet">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your tablet.</string>
+    <string name="choose_data_sim_summary" product="default">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your phone.</string>
 
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
 
@@ -48,7 +50,8 @@
 
     <string name="location_services_summary">Location services allows Maps and other apps to gather and use data such as your approximate location. For example, Maps may use your approximate location to locate nearby coffee shops.</string>
     <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
-    <string name="location_gps"><b>Improve location accuracy</b> by allowing apps to use the GPS on your phone.</string>
+    <string name="location_gps" product="tablet"><b>Improve location accuracy</b> by allowing apps to use the GPS on your tablet.</string>
+    <string name="location_gps" product="default"><b>Improve location accuracy</b> by allowing apps to use the GPS on your phone.</string>
     <string name="location_network"><b>Use Google\'s location service</b> to help apps determine your location. This means sending annonymous location data to Google, even when no apps are running.</string>
 
     <string name="setup_mobile_data">Turn on mobile data</string>
@@ -63,11 +66,12 @@
     <string name="emergency_call">Emergency call</string>
 
     <string name="setup_services">Cyanogen services</string>
-    <string name="services_explanation">These services work for you to extend the capabilities of your device. You can turn them off at anytime. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. You can turn them off at anytime. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. You can turn them off at anytime. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="services_privacy_policy">Privacy Policy</string>
     <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> by automatically sending diagnostic and usage data to Cyanogen. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%s</xliff:g> features.</string>
-    <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> to move between screens instead of hardware keys.</string>
+    <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
     <string name="services_use_secure_sms">Use secure SMS</string>
     <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> to encrypt SMS conversations with other users using secure SMS on a <xliff:g id="name" example="CyanogenMod">%s</xliff:g> device.</string>
 </resources>
