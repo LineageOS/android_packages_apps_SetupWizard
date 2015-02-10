@@ -27,6 +27,8 @@ import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
+import android.os.UserHandle;
+import android.os.UserManager;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
@@ -138,6 +140,15 @@ public class SetupWizardUtils {
             }
         }
         return true;
+    }
+
+    public static boolean isGuestUser(Context context) {
+        UserManager userManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
+        return userManager.isGuestUser();
+    }
+
+    public static boolean isOwner() {
+        return UserHandle.getCallingUserHandle().isOwner();
     }
 
     public static boolean hasGMS(Context context) {

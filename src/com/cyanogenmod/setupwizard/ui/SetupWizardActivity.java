@@ -19,14 +19,12 @@ package com.cyanogenmod.setupwizard.ui;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.AppGlobals;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
-import android.os.UserManager;
 import android.provider.Settings;
 import android.view.MotionEvent;
 import android.view.View;
@@ -112,8 +110,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         } catch (Settings.SettingNotFoundException e) {
             // Continue with setup
         }
-        UserManager userManager = (UserManager) getSystemService(Context.USER_SERVICE);
-        mIsGuestUser =  userManager.isGuestUser();
+        mIsGuestUser =  SetupWizardUtils.isGuestUser(this);
         if (mIsGuestUser) {
             finishSetup();
         }
