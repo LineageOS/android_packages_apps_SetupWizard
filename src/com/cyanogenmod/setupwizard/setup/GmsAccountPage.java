@@ -48,6 +48,8 @@ public class GmsAccountPage extends SetupPage {
     public static final String TAG = "GmsAccountPage";
 
     public static final String ACTION_RESTORE = "com.google.android.setupwizard.RESTORE";
+    private static final String RESTORE_WIZARD_SCRIPT =
+            "android.resource://com.google.android.setupwizard/xml/wizard_script";
 
     private ContentQueryMap mContentQueryMap;
     private Observer mSettingsObserver;
@@ -114,7 +116,7 @@ public class GmsAccountPage extends SetupPage {
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
-            if (!mBackupEnabled) {
+            if (!mBackupEnabled && SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
                 launchGmsRestorePage((Activity) mContext);
             } else {
                 handleResult(resultCode);
@@ -151,6 +153,9 @@ public class GmsAccountPage extends SetupPage {
             intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
             intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
             intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+            // XXX: Fool G's setup wizard into thinking it is their setup wizard.
+            // This is necessary to get the material theme on the restore page.
+            intent.putExtra("scriptUri", RESTORE_WIZARD_SCRIPT);
             ActivityOptions options =
                     ActivityOptions.makeCustomAnimation(activity,
                             android.R.anim.fade_in,
