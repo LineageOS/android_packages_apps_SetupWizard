@@ -47,7 +47,7 @@
 
     <string name="backup_data_summary"><b>Back up</b> app data, Wi-Fi passwords, and other settings to Google servers</string>
 
-    <string name="other_services_summary">These services put Google to work you, and you can turn them on or off at any time. Data will be used in accordance with Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="other_services_summary">These services put Google to work for you, and you can turn them on or off at any time. Data will be used in accordance with Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="location_services_summary">Location services allows system and third party apps to gather and use data such as your approximate location. For example, an app may use your approximate location to locate nearby coffee shops.</string>
     <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
     <string name="location_gps" product="tablet"><b>Improve location accuracy</b> by allowing apps to use the GPS on your tablet.</string>
