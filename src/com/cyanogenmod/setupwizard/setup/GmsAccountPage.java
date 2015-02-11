@@ -59,6 +59,8 @@ public class GmsAccountPage extends SetupPage {
     public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
         final ContentResolver res = context.getContentResolver();
+        mBackupEnabled = Settings.Secure.getInt(res,
+                Settings.Secure.BACKUP_ENABLED, 0) == 1;
         mSettingsObserver = new Observer() {
             public void update(Observable o, Object arg) {
                 mBackupEnabled = (Settings.Secure.getInt(res,
