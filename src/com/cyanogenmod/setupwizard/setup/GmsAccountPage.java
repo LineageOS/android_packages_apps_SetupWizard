@@ -25,12 +25,15 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.backup.IBackupManager;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.provider.Settings;
 
 import com.cyanogenmod.setupwizard.R;
@@ -59,6 +62,14 @@ public class GmsAccountPage extends SetupPage {
     public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
         final ContentResolver res = context.getContentResolver();
+        IBackupManager backupManager = IBackupManager.Stub.asInterface(
+                ServiceManager.getService(Context.BACKUP_SERVICE));
+        try {
+            mBackupEnabled = backupManager.isBackupEnabled();
+        } catch (RemoteException e) {
+            mBackupEnabled = Settings.Secure.getInt(res,
+                    Settings.Secure.BACKUP_ENABLED, 0) == 1;
+        }
         mSettingsObserver = new Observer() {
             public void update(Observable o, Object arg) {
                 mBackupEnabled = (Settings.Secure.getInt(res,
