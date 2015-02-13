@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/brand_finish"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         android:padding="@dimen/content_margin_left"/>
 
 </LinearLayout>
