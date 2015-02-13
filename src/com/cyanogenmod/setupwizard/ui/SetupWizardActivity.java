@@ -240,13 +240,19 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         animateOut();
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
     private void animateOut() {
         int cx = (mReveal.getLeft() + mReveal.getRight()) / 2;
         int cy = (mReveal.getTop() + mReveal.getBottom()) / 2;
         int finalRadius = Math.max(mReveal.getWidth(), mReveal.getHeight());
         Animator anim =
                 ViewAnimationUtils.createCircularReveal(mReveal, cx, cy, 0, finalRadius);
-
+        anim.setDuration(800);
         anim.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -258,7 +264,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        finishSetup();;
+                        finishSetup();
                     }
                 });
             }
