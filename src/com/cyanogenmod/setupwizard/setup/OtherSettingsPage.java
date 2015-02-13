@@ -37,6 +37,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
@@ -169,7 +170,9 @@ public class OtherSettingsPage extends SetupPage {
             }
             mBackupRow = mRootView.findViewById(R.id.backup);
             mBackupRow.setOnClickListener(mBackupClickListener);
-            mBackupRow.setVisibility(hasGms ? View.VISIBLE : View.GONE);
+            boolean backupVisible = hasGms &&
+                    SetupWizardUtils.accountExists(getActivity(), SetupWizardApp.ACCOUNT_TYPE_GMS);
+            mBackupRow.setVisibility(backupVisible ? View.VISIBLE : View.GONE);
             mBackup = (CheckBox) mRootView.findViewById(R.id.backup_checkbox);
             mLocationRow = mRootView.findViewById(R.id.location);
             mLocationRow.setOnClickListener(mLocationClickListener);
