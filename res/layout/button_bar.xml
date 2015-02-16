@@ -17,7 +17,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/button_bar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/button_bar_background">
 
     <Button
         style="@style/ButtonBar.Left"

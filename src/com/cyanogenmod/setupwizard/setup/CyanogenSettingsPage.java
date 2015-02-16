@@ -16,13 +16,11 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
@@ -209,13 +207,6 @@ public class CyanogenSettingsPage extends SetupPage {
                 mPage.getData().putBoolean(KEY_REGISTER_WHISPERPUSH, checked);
             }
         };
-
-        @Override
-        public void onActivityCreated(Bundle savedInstanceState) {
-            super.onActivityCreated(savedInstanceState);
-            final Activity activity = getActivity();
-            activity.getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
-        }
 
         @Override
         protected void initializePage() {

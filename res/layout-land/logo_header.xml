@@ -20,6 +20,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:paddingTop="@dimen/header_logo_margin_top"
+                android:background="@color/primary"
                 style="@style/Header">
 
     <ImageView

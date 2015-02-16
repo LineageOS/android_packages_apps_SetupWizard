@@ -19,9 +19,11 @@ package com.cyanogenmod.setupwizard.ui;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.AppGlobals;
+import android.app.WallpaperManager;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Point;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
@@ -45,6 +47,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
     private View mRootView;
+    private View mButtonBar;
     private Button mNextButton;
     private Button mPrevButton;
     private View mReveal;
@@ -59,9 +62,12 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         setContentView(R.layout.setup_main);
         getWindow().setWindowAnimations(android.R.anim.fade_in);
         mRootView = findViewById(R.id.root);
+        mButtonBar = findViewById(R.id.button_bar);
         ((SetupWizardApp)getApplicationContext()).disableStatusBar();
         mSetupData = (CMSetupWizardData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
@@ -70,16 +76,19 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
         mReveal = findViewById(R.id.reveal);
+        setupRevealImage();
         mSetupData.registerListener(this);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                enableButtonBar(false);
                 mSetupData.onNextPage();
             }
         });
         mPrevButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                enableButtonBar(false);
                 mSetupData.onPreviousPage();
             }
         });
@@ -120,8 +129,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     protected void onResume() {
         super.onResume();
-        updateSystemUI();
         onPageTreeChanged();
+        enableButtonBar(true);
     }
 
     @Override
@@ -168,8 +177,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onPageLoaded(Page page) {
-        updateSystemUI();
         updateButtonBar();
+        enableButtonBar(true);
     }
 
     @Override
@@ -177,16 +186,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         updateButtonBar();
     }
 
-    private void updateSystemUI() {
-        if (getResources().getConfiguration().orientation
-                == Configuration.ORIENTATION_LANDSCAPE &&
-                mSetupData.isFirstPage()) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE
-                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
-        } else {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE
-                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
-        }
+    private void enableButtonBar(boolean enabled) {
+        mNextButton.setEnabled(enabled);
+        mPrevButton.setEnabled(enabled);
     }
 
     private void updateButtonBar() {
@@ -208,7 +210,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         }
         final Resources resources = getResources();
         if (mSetupData.isLastPage()) {
-            mRootView.setBackgroundColor(resources.getColor(R.color.primary));
+            mButtonBar.setBackgroundResource(R.color.primary);
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_wht), null);
             mNextButton.setTextColor(resources.getColor(R.color.white));
@@ -217,7 +219,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                     null, null);
             mPrevButton.setTextColor(resources.getColor(R.color.white));
         } else {
-            mRootView.setBackgroundColor(resources.getColor(R.color.window_background));
+            mButtonBar.setBackgroundResource(R.color.button_bar_background);
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_dark), null);
             mNextButton.setTextColor(resources.getColor(R.color.primary_text));
@@ -246,13 +248,35 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
+    private void setupRevealImage() {
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                Point p = new Point();
+                getWindowManager().getDefaultDisplay().getRealSize(p);
+                final Drawable drawable = WallpaperManager.getInstance(SetupWizardActivity.this)
+                        .getBuiltInDrawable(
+                                p.x, p.y, false, 0, 0);
+                if (drawable != null) {
+                    mHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            mReveal.setBackground(drawable);
+                        }
+                    });
+                }
+            }
+        };
+        t.start();
+    }
+
     private void animateOut() {
         int cx = (mReveal.getLeft() + mReveal.getRight()) / 2;
         int cy = (mReveal.getTop() + mReveal.getBottom()) / 2;
         int finalRadius = Math.max(mReveal.getWidth(), mReveal.getHeight());
         Animator anim =
                 ViewAnimationUtils.createCircularReveal(mReveal, cx, cy, 0, finalRadius);
-        anim.setDuration(800);
+        anim.setDuration(900);
         anim.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {

@@ -71,12 +71,6 @@ public class FinishPage extends SetupPage {
     public static class FinishFragment extends SetupPageFragment {
 
         @Override
-        public void onActivityCreated(Bundle savedInstanceState) {
-            super.onActivityCreated(savedInstanceState);
-            getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
-        }
-
-        @Override
         protected void initializePage() {}
 
         @Override

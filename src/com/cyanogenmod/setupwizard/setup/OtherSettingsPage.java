@@ -49,7 +49,8 @@ public class OtherSettingsPage extends SetupPage {
 
     private static final String TAG = "OtherSettingsPage";
 
-    private static final String PRIVACY_POLICY_URI = "https://www.google.com/intl/en/policies/privacy/?fg=1";
+    private static final String PRIVACY_POLICY_URI =
+            "https://www.google.com/intl/en/policies/privacy/?fg=1";
 
     public OtherSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -140,7 +141,6 @@ public class OtherSettingsPage extends SetupPage {
             mContentResolver = getActivity().getContentResolver();
             mBackupManager = IBackupManager.Stub.asInterface(
                     ServiceManager.getService(Context.BACKUP_SERVICE));
-            getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.primary_dark));
         }
 
         @Override
@@ -157,7 +157,8 @@ public class OtherSettingsPage extends SetupPage {
                     public void onClick(View textView) {
                         WebViewDialogFragment.newInstance()
                                 .setUri(PRIVACY_POLICY_URI)
-                                .show(getActivity().getFragmentManager(), WebViewDialogFragment.TAG);
+                                .show(getActivity().getFragmentManager(),
+                                        WebViewDialogFragment.TAG);
                     }
                 };
                 ss.setSpan(clickableSpan,
@@ -219,11 +220,13 @@ public class OtherSettingsPage extends SetupPage {
         public void onStart() {
             super.onStart();
             // listen for Location Manager settings changes
-            Cursor settingsCursor = getActivity().getContentResolver().query(Settings.Secure.CONTENT_URI, null,
+            Cursor settingsCursor = getActivity().getContentResolver()
+                    .query(Settings.Secure.CONTENT_URI, null,
                     "(" + Settings.System.NAME + "=?)",
                     new String[]{Settings.Secure.LOCATION_PROVIDERS_ALLOWED},
                     null);
-            mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
+            mContentQueryMap =
+                    new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
         }
 
         @Override

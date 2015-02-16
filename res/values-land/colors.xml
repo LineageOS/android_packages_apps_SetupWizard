@@ -15,5 +15,5 @@
      limitations under the License.
 -->
 <resources>
-     <color name="status_bar">@color/primary_dark</color>
+     <color name="header_bg">@color/header_condensed_bg</color>
 </resources>

@@ -66,7 +66,6 @@ public abstract class SetupPageFragment extends Fragment {
         }
         initializePage();
         mCallbacks.onPageLoaded(mPage);
-        getActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar));
     }
 
     @Override
