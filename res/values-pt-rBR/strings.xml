@@ -32,16 +32,20 @@
   <string name="setup_datetime">Data e hora</string>
   <string name="setup_current_date">Data atual</string>
   <string name="setup_current_time">Hora atual</string>
+  <string name="sim_missing_summary" product="tablet">Não foi encontrado um cartão SIM no seu tablet. Para colocar um cartão SIM, leia as instruções que vieram com seu dispositivo.</string>
+  <string name="sim_missing_summary" product="default">Não foi encontrado um cartão SIM no seu celular. Para colocar um cartão SIM, leia as instruções que vieram com seu dispositivo.</string>
   <string name="choose_data_sim_summary" product="tablet">Qual SIM você gostaria usar para dados? Poderão haver cobranças no SIM escolhido, pois ele será usado para configurar o seu tablet.</string>
   <string name="choose_data_sim_summary" product="default">Qual SIM você gostaria usar para dados? Poderão haver cobranças no SIM escolhido, pois ele será usado para configurar o seu celular.</string>
   <string name="date_time_summary">Defina o fuso horário e ajuste a data e a hora atual, se necessário</string>
-  <string name="backup_data_title">Cópia de segurança dos meus dados</string>
-  <string name="backup_data_summary">Realizar uma cópia de segurança dos dados dos aplicativos, senhas de acesso Wi-Fi e outras configurações para os servidores da Google</string>
-  <string name="location_services_summary">Os serviços de localização permitem aos mapas e outros aplicativos a coletar e utilizar dados tais como a sua localização aproximada. Por exemplo, os mapas podem usar a sua localização aproximada para localizar cafés ou bares próximos.</string>
+  <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, senhas de acesso de redes sem fios e outras configuraçõess para os servidores do Google</string>
+  <string name="other_services_summary">Esses serviços colocam o Google para trabalhar para você, e você pode desligá-los a qualquer momento. Os dados serão usados de acordo com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
+  <string name="location_services_summary">Serviços de localização permitem ao sistema e aplicativos de terceiros a obter e usar dados como a sua localização aproximada. Por exemplo, um aplicativo pode usar sua localização aproximada para localizar cafeterias perto de você.</string>
   <string name="location_access_summary"><b>Permitir aplicativos que pediram a sua permissão</b> para usar as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
   <string name="location_gps" product="tablet"><b>Melhorar a precisão de localização</b> permitindo que os aplicativos usem o GPS do seu tablet.</string>
   <string name="location_gps" product="default"><b>Melhorar a precisão de localização</b>, permitindo que os aplicativos usem o GPS do seu telefone.</string>
-  <string name="location_network"><b>Usar o serviço de localização do Google</b> para ajudar os aplicativos a determinar a sua localização. Isto significa o envio de dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver rodando.</string>
+  <string name="location_network"><b>Usar Wi-Fi</b> para ajudar aplicativos a determinarem a sua localização.</string>
+  <string name="location_network_telephony"><b>Usar Wi-Fi e redes móveis</b> para ajudar aplicativos a determinarem a sua localização.</string>
+  <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar os aplicativos a determinarem a sua localização. Isto significa o envio de dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver aberto.</string>
   <string name="setup_mobile_data">Ativar dados de redes móveis</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
@@ -54,5 +58,9 @@
   <string name="services_explanation" product="tablet">Esses serviços servem para que você aumente as capacidades do seu tablet. Você pode desligá-los sempre que quiser. Seus dados serão usados de acordo com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> da Cyanogen.</string>
   <string name="services_explanation" product="default">Estes serviços servem para que você aumente as capacidades do seu celular. Você pode desligá-los sempre que quiser. Seus dados serão usados de acordo com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> da Cyanogen.</string>
   <string name="services_privacy_policy">Política de Privacidade</string>
+  <string name="services_help_improve_cm">Ajudar a melhorar a <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> enviando automaticamente relatórios de uso de dados e diagnósticos para a Cyanogen. Esta informação não será usada para lhe identificar, e ajudam as equipes responsáveis pela duração de bateria, desempenho dos aplicativos, e novas funcionalidades do <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
+  <string name="services_use_secure_sms">Usar SMS seguro</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> para criptografar conversas SMS com outros usuários que usam o SMS seguro em um dispositivo <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
 </resources>

@@ -37,13 +37,15 @@
   <string name="choose_data_sim_summary" product="tablet">Mitä SIM-korttia haluat käyttää mobiilitiedonsiirtoon? Mobiilidatan käyttö voi aiheuttaa tiedonsiirtokuluja.</string>
   <string name="choose_data_sim_summary" product="default">Mitä SIM-korttia haluat käyttää mobiilitiedonsiirtoon? Mobiilidatan käyttö voi aiheuttaa tiedonsiirtokuluja.</string>
   <string name="date_time_summary">Valitse aikavyöhyke ja määritä aika ja päivämäärä tarvittaessa</string>
-  <string name="backup_data_title">Varmuuskopioi tietoni</string>
-  <string name="backup_data_summary">Varmuuskopioi sovellusten tiedot, Wi-FI-salasanat ja muut asetukset Googlen palvelimille</string>
-  <string name="location_services_summary">Sijaintipalvelut sallii Mapsin ja muiden sovellusten kerätä ja käyttää tietoja kuten likimääräinen sijaintisi. Esimerkiksi Maps voi paikantaa sinut ja etsiä lähistöllä olevia kahviloita.</string>
+  <string name="backup_data_summary"><b>Varmuuskopioi</b> sovellusten tiedot, Wi-FI-salasanat ja muut asetukset Googlen palvelimille</string>
+  <string name="other_services_summary">Tämä ottaa Googlen palvelut käyttöön, ja voit ottaa ne käyttöön tai poistaa käytöstä milloin tahansa. Tietoja käytetään Googlen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>n mukaisesti.</string>
+  <string name="location_services_summary">Sijaintipalvelut sallii järjestelmän ja muiden sovellusten kerätä ja käyttää tietoja kuten likimääräinen sijaintisi. Esimerkiksi sovellus voi paikantaa sinut ja etsiä lähistöllä olevia kahviloita.</string>
   <string name="location_access_summary"><b>Salli sovellusten, jotka ovat kysyneet sinulta lupaa</b> käyttää sijaintitietojasi. Tämä saattaa sisältää nykyisen sijaintisi ja aiemmat sijaintisi.</string>
   <string name="location_gps" product="tablet"><b>Paranna paikannuksen tarkkuutta</b> sallimalla sovellusten käyttää GPS:ää tabletissasi.</string>
   <string name="location_gps" product="default"><b>Paranna paikannuksen tarkkuutta</b> sallimalla sovellusten käyttää GPS:ää puhelimessasi.</string>
-  <string name="location_network"><b>Käytä Googlen paikannusta</b> auttaaksesi sovellusten sijaintisi paikannusta. Tämä tarkoittaa nimettömien paikannustietojen lähettämistä Googlelle, jopa ilman sovellusten käynnissäolemista.</string>
+  <string name="location_network"><b>Käytä Wi-Fiä</b> auttaaksesi sovelluksia paikantamaan sijaintisi.</string>
+  <string name="location_network_telephony"><b>Käytä Wi-Fi- ja mobiiliverkkoja</b> auttaaksesi sovelluksia määrittämään sijaintisi.</string>
+  <string name="location_network_gms"><b>Käytä Googlen paikannusta</b> auttaaksesi sovellusten sijaintisi paikannusta. Tämä tarkoittaa nimettömien paikannustietojen lähettämistä Googlelle, jopa ilman sovellusten käynnissäolemista.</string>
   <string name="setup_mobile_data">Ota mobiilidata käyttöön</string>
   <string name="setup_mobile_data_no_service">Ei palvelua</string>
   <string name="setup_mobile_data_emergency_only">Vain hätäpuhelut</string>
@@ -53,9 +55,9 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Hätäpuhelu</string>
   <string name="setup_services">Cyanogen-palvelut</string>
-  <string name="services_explanation" product="tablet">Nämä palvelut toimivat tablettisi ominaisuuksien parantamiseksi. Voit poistaa ne käytöstä milloin tahansa. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaan.</string>
-  <string name="services_explanation" product="default">Nämä palvelut toimivat puhelimesi ominaisuuksien parantamiseksi. Voit poistaa ne käytöstä milloin tahansa. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaan.</string>
-  <string name="services_privacy_policy">Tietosuojakäytäntö</string>
+  <string name="services_explanation" product="tablet">Nämä palvelut toimivat tablettisi ominaisuuksien parantamiseksi. Voit poistaa ne käytöstä milloin tahansa. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
+  <string name="services_explanation" product="default">Nämä palvelut toimivat puhelimesi ominaisuuksien parantamiseksi. Voit poistaa ne käytöstä milloin tahansa. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
+  <string name="services_privacy_policy">Tietosuojakäytännön</string>
   <string name="services_help_improve_cm">Auta parantamaan <xliff:g id="name" example="CyanogenMod">%s</xliff:g>ia</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> lähettämällä vianmääritys- ja käyttötietoja Cyanogenille. Tietoja ei voi käyttää tunnistamiseen. Tiedot auttavat kehittäjiä muun muassa parantamaan akun kestoa, sovellusten suorituskykyä ja kehittämään <xliff:g id="name" example="CyanogenMod">%s</xliff:g>iin uusia ominaisuuksia.</string>
   <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
