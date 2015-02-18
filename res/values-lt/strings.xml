@@ -32,16 +32,20 @@
   <string name="setup_datetime">Data ir laikas</string>
   <string name="setup_current_date">Dabartinė data</string>
   <string name="setup_current_time">Dabartinis laikas</string>
+  <string name="sim_missing_summary" product="tablet">SIM kortelė nebuvo aptikta jūsų planšetiniame kompiuteryje. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo planšetiniu kompiuteriu.</string>
+  <string name="sim_missing_summary" product="default">SIM kortelė nebuvo aptikta jūsų telefone. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo telefonu.</string>
   <string name="choose_data_sim_summary" product="tablet">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų planšetinį kompiuterį.</string>
   <string name="choose_data_sim_summary" product="default">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų telefoną.</string>
   <string name="date_time_summary">Jei reikia nustatykite savo laiko juostą ir koreguokite dabartinę datą ir laiką</string>
-  <string name="backup_data_title">Kurti atsarginę duomenų kopiją</string>
-  <string name="backup_data_summary">Kurti atsargines programos duomenų, „Wi-Fi“ slaptažodžių ir kitų nustatymų kopijas „Google“ serveriuose</string>
-  <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavinės.</string>
-  <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b>naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
-  <string name="location_gps" product="tablet"><b>Pagerinti vietos tikslumą</b>leidžiant programoms naudotis GPS jūsų planšetiniame kompiuteryje.</string>
+  <string name="backup_data_summary"><b>Kurti</b> atsargines programos duomenų, „Wi-Fi“ slaptažodžių ir kitų nustatymų kopijas „Google“ serveriuose</string>
+  <string name="other_services_summary">Šios paslaugos leidžia „Google“ atlikti darbą už jus, jūs galite jas įjungti arba išjungti bet kuriuo metu. Duomenys bus naudojami pagal „Google“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavines.</string>
+  <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
+  <string name="location_gps" product="tablet"><b>Pagerinti vietos tikslumą</b> leidžiant programoms naudotis GPS jūsų planšetiniame kompiuteryje.</string>
   <string name="location_gps" product="default"><b>Pagerinti vietos tikslumą</b>leidžiant programoms naudotis GPS jūsų telefone.</string>
-  <string name="location_network"><b>Naudoti „Google“ vietos paslauga</b> , kad padėtumėte programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
+  <string name="location_network"><b>Naudoti „Wi-Fi“</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
+  <string name="location_network_telephony"><b>Naudoti „Wi-Fi“ ir mobiliuosius duomenis</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
+  <string name="location_network_gms"><b>Naudoti „Google“ vietos paslauga</b> , kad padėtumėte programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
   <string name="setup_mobile_data">Įjungti mobiliuosius duomenis</string>
   <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
   <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
@@ -54,5 +58,9 @@
   <string name="services_explanation" product="tablet">Šios paslaugos padės jums išplėsti jūsų planšetinio kompiuterio galimybes. Jūs galite išjungti jas bet kuriuo metu. Duomenys bus naudojami pagal „Cyanogen\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_explanation" product="default">Šios paslaugos padės jums išplėsti jūsų telefono galimybes. Jūs galite išjungti jas bet kuriuo metu. Duomenys bus naudojami pagal „Cyanogen\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privatumo politika</string>
+  <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="„CyanogenMod“">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Padėti tobulinti „CyanogenMod“">%s</xliff:g> automatiškai siunčiant diagnostikos ir naudojimo duomenis „Cyanogen“. Ši informacija negali būti naudojama jūsų identifikavimui, pateikti duomenys padės komandoms dirbančioms prie akumuliatoriaus ilgaamžiškumo, programų našumo ir naujų <xliff:g id="name" example="„CyanogenMod“">%s</xliff:g> funkcijų.</string>
   <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
+  <string name="services_use_secure_sms">Naudoti saugius SMS</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Naudoti saugius SMS">%s</xliff:g> , kad užšifruoti SMS pokalbius su kitais vartotojais, naudojančiais saugius SMS <xliff:g id="name" example="„CyanogenMod“">%s</xliff:g> įrenginyje.</string>
 </resources>

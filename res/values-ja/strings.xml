@@ -37,13 +37,15 @@
   <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信用に使用しますか？選択したSIMをタブレットのセットアップに使用しますので、パケット通信料が発生する恐れがあります。</string>
   <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信用に使用しますか？選択したSIMを携帯電話のセットアップに使用しますので、パケット通信料が発生する恐れがあります。</string>
   <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
-  <string name="backup_data_title">データをバックアップ</string>
-  <string name="backup_data_summary">アプリのデータ、Wi-Fiパスワード、その他の設定をGoogleのサーバーにバックアップする</string>
-  <string name="location_services_summary">位置情報サービスはおおよその位置情報などのデータの収集や使用をマップやその他のアプリに許可します。例えば、マップが最寄りの喫茶店を探すために、おおよその位置情報を使用するかもしれません。</string>
+  <string name="backup_data_summary">アプリのデータ、Wi-Fiパスワード、その他の設定をGoogleのサーバーに<b>バックアップする</b></string>
+  <string name="other_services_summary">これらのサービスはGoogleアプリを動作させるもので、いつでもONまたはOFFにすることができます。データはGoogleの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>にしたがって使用されます。</string>
+  <string name="location_services_summary">位置情報サービスは、おおよその位置情報などのデータの収集や使用をマップやサードパーティーのアプリに許可します。例えば、アプリが最寄りの喫茶店を探すために、おおよその位置情報を使用するかもしれません。</string>
   <string name="location_access_summary">位置情報を使用する<b>権限を求めてきたアプリを許可します</b>。現在の位置情報と過去の位置情報を含む可能性があります。</string>
   <string name="location_gps" product="tablet">タブレットのGPSの使用をアプリに許可して<b>位置情報の精度を向上させます</b>。</string>
   <string name="location_gps" product="default">携帯電話のGPSの使用をアプリに許可して<b>位置情報の精度を向上させます</b>。</string>
-  <string name="location_network">アプリが位置情報を特定しやすくするために<b>Googleの位置情報サービスを使用します</b>。アプリが実行されていなくても、匿名の位置情報データをGoogleに送信することになります。</string>
+  <string name="location_network">アプリが位置情報を特定しやすくするために<b>Wi-Fiを使用します</b>。</string>
+  <string name="location_network_telephony">アプリが位置情報を特定しやすくするために<b>Wi-Fiとモバイルネットワークを使用します</b>。</string>
+  <string name="location_network_gms">アプリが位置情報を特定しやすくするために<b>Googleの位置情報サービスを使用します</b>。アプリが実行されていなくても、匿名の位置情報データをGoogleに送信することになります。</string>
   <string name="setup_mobile_data">データ通信をON</string>
   <string name="setup_mobile_data_no_service">サービスがありません</string>
   <string name="setup_mobile_data_emergency_only">緊急通報のみ</string>

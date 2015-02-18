@@ -25,6 +25,10 @@
   <string name="setup_current_date">Data curentă</string>
   <string name="setup_current_time">Ora curentă</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
+  <string name="no">Nu</string>
+  <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Apel de urgenţă</string>
+  <string name="setup_services">Servicii Cyanogen</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
 </resources>

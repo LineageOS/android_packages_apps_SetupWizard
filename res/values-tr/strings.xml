@@ -37,13 +37,15 @@
   <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Tabletinizin kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
   <string name="choose_data_sim_summary" product="default">Hangi SIM\'i veri için kullanmak istiyorsunuz? Telefonunuzun kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
   <string name="date_time_summary">Zaman diliminizi seçin ve gerekirse geçerli tarih ve saati ayarlayın</string>
-  <string name="backup_data_title">Verilerimi yedekle</string>
-  <string name="backup_data_summary">Uyg. verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına yedekle</string>
-  <string name="location_services_summary">Konum servisleri Haritalar ve diğer uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, Haritalar yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
+  <string name="backup_data_summary"><b>Uyg. verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına yedekle</b></string>
+  <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
+  <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
   <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
   <string name="location_gps" product="tablet"><b>Konum doğruluğunu geliştirin</b> uygulamalara tabletinizdeki GPS\'i kullanma izni verin.</string>
   <string name="location_gps" product="default"><b>Konum doğruluğunu geliştirin</b> uygulamalara telefonunuzdaki GPS\'i kullanma izni verin.</string>
-  <string name="location_network"><b>Konumunuzu belirlemek için Google konum servislerini kullanın.</b> Bu hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
+  <string name="location_network"><b>Wi-Fi\'yi kullanarak uygulamaların konumunuzu bulmanıza yardımcı olun.</b></string>
+  <string name="location_network_telephony"><b>Wi-Fi\'yi ve mobil şebekeleri kullanarak uygulamaların konumunuzu bulmanıza yardımcı olun.</b></string>
+  <string name="location_network_gms"><b>Konumunuzu belirlemek için Google konum servislerini kullanın.</b> Bu hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
   <string name="setup_mobile_data">Mobil veriyi aç</string>
   <string name="setup_mobile_data_no_service">Servis yok</string>
   <string name="setup_mobile_data_emergency_only">Sadece acil durum çağrıları</string>
