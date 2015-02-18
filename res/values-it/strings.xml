@@ -21,21 +21,45 @@
   <string name="skip">Salta</string>
   <string name="start">Cominciamo</string>
   <string name="ok">OK</string>
+  <string name="loading">Solo un secondo\u2026</string>
   <string name="setup_complete">Il setup è completo</string>
   <string name="setup_welcome">Benvenuto</string>
   <string name="setup_wifi">Seleziona Wi-Fi</string>
+  <string name="setup_sim_missing">Scheda SIM non inserita</string>
+  <string name="setup_choose_data_sim">Scegli una SIM per la connessione dati</string>
+  <string name="setup_location">Servizi di localizzazione</string>
+  <string name="setup_other">Altri servizi</string>
   <string name="setup_datetime">Data &amp; Ora</string>
   <string name="setup_current_date">Data corrente</string>
   <string name="setup_current_time">Ora corrente</string>
+  <string name="sim_missing_summary" product="tablet">Non è stata riconosciuta alcuna scheda SIM nel tuo tablet. Per inserire una scheda SIM, leggi le istruzioni comprese col tuo dispositivo.</string>
+  <string name="sim_missing_summary" product="default">Non è stata rilevata alcuna scheda SIM nel tuo cellulare. Per inserire una scheda SIM, leggi le istruzioni comprese col tuo dispositivo.</string>
+  <string name="choose_data_sim_summary" product="tablet">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
+  <string name="choose_data_sim_summary" product="default">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
   <string name="date_time_summary">Imposta il fuso orario e se necessario regola ora e data corrente</string>
+  <string name="backup_data_summary"><b>Esegui il Back-up</b> dei dati delle app, password Wi-Fi e altre impostazioni sui server di Google</string>
   <string name="location_services_summary">I servizi di localizzazione permettono a Maps e ad altre applicazioni di raccogliere ed utilizzare dati come la tua posizione. Ad esempio, Maps potrebbe utilizzare la tua posizione per individuare negozi di caffè nelle tue vicinanze.</string>
   <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> ad utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
+  <string name="location_gps" product="tablet"><b>Migliora l\'accuratezza della localizzazione</b> consentendo alle app di usare il GPS sul tuo tablet.</string>
   <string name="location_gps" product="default"><b>Migliora l\'accuratezza della localizzazione</b> permettendo alle applicazioni di utilizzare il GPS sul tuo telefono.</string>
-  <string name="location_network"><b>Usa il servizio di localizzazione Google</b> per aiutare le app a determinare la tua posizione. Questo significa spedire dati anonimi riguardo la tua posizione a Google, anche quando nessuna app è in esecuzione.</string>
+  <string name="location_network"><b>Usa il Wi-Fi</b> per aiutare le app a determinare la tua posizione.</string>
+  <string name="location_network_telephony"><b>Usa il Wi-Fi e le reti mobili</b> per aiutare le app a determinare la tua posizione.</string>
+  <string name="location_network_gms"><b>Usa il servizio di localizzazione di Google</b> per aiutare le app a determinare la tua posizione. Questo significa spedire dati anonimi sulla tua posizione a Google, anche quando nessuna app è in esecuzione.</string>
+  <string name="setup_mobile_data">Attiva i dati mobili</string>
   <string name="setup_mobile_data_no_service">Nessun servizio</string>
   <string name="setup_mobile_data_emergency_only">Solo chiamate di emergenza</string>
   <string name="enable_mobile_data_summary">Vuoi utilizzare la connessione dati durante la configurazione? Attivando la connessione dati potrebbero essere applicate tariffe dati.</string>
+  <string name="no">No</string>
+  <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Chiamata di emergenza</string>
   <string name="setup_services">Servizi Cyanogen</string>
+  <string name="services_explanation" product="tablet">Questi servizi funzionano estendendo le funzionalità del tuo tablet. Puoi disattivarle in qualsiasi momento. I dati verranno usati in accordo con Cyanogenmod <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Questi servizi funzionano estendendo le funzionalità del tuo telefono. Puoi disattivarle in qualsiasi momento. I dati verranno usati in accordo con Cyanogenmod <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Condizioni sulla Privacy</string>
+  <string name="services_help_improve_cm">Aiuta a migliorare <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> inviando automaticamente dati di diagnostica e sull\'utilizzo a Cyanogen. Queste informazioni non possono essere utilizzate per identificarti e servono ad aiutare i team che lavorano sulla durata della batteria, sulle prestazioni delle app, e su nuove funzionalità <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
+  <string name="services_use_secure_sms">Utilizza SMS sicuri</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> per criptare le conversazioni SMS con altri utenti che utilizzano gli SMS sicuri su un dispositivo <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
 </resources>
