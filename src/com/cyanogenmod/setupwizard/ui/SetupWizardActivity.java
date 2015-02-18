@@ -18,7 +18,6 @@ package com.cyanogenmod.setupwizard.ui;
 
 import android.animation.Animator;
 import android.app.Activity;
-import android.app.AppGlobals;
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -305,18 +304,23 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void finishSetup() {
+        SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
         if (!mIsGuestUser) {
-            getApplication().sendBroadcastAsUser(new Intent(SetupWizardApp.ACTION_FINISHED),
+            setupWizardApp.sendBroadcastAsUser(new Intent(SetupWizardApp.ACTION_FINISHED),
                     UserHandle.getCallingUserHandle());
         }
         mSetupData.finishPages();
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
-        ((SetupWizardApp)AppGlobals.getInitialApplication()).enableStatusBar();
+        setupWizardApp.enableStatusBar();
         finish();
         if (mEnableAccessibilityController != null) {
             mEnableAccessibilityController.onDestroy();
         }
-        SetupWizardUtils.disableSetupWizards(this);
+        SetupWizardUtils.disableGMSSetupWizard(this);
+        SetupWizardUtils.disableSetupWizard(this);
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        startActivity(intent);
     }
 }

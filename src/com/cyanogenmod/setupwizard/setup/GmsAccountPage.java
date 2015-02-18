@@ -125,6 +125,7 @@ public class GmsAccountPage extends SetupPage {
             }
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
             handleResult(resultCode);
+            setHidden(true);
         }
         return true;
     }
@@ -150,6 +151,8 @@ public class GmsAccountPage extends SetupPage {
 
     private static void launchGmsRestorePage(final Activity activity) {
         try {
+            // GMS can disable this after logging in sometimes
+            SetupWizardUtils.enableGMSSetupWizard(activity);
             Intent intent = new Intent(ACTION_RESTORE);
             intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
             intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
@@ -169,7 +172,7 @@ public class GmsAccountPage extends SetupPage {
             e.printStackTrace();
             // XXX: In open source, we don't know what gms version a user has.
             // Bail if the restore activity is not found.
-            ((SetupWizardActivity)activity).onNextPage();
+            ((SetupWizardActivity) activity).onNextPage();
         }
     }
 

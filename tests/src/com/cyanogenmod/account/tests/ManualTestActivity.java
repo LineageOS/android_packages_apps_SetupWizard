@@ -19,7 +19,10 @@ package com.cyanogenmod.setupwizard.tests;
 
 import android.app.Activity;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ComponentInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -58,13 +61,19 @@ public class ManualTestActivity extends Activity {
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
-        ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard", "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
-        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard",
+                "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP);
+        pm.clearApplicationUserData("com.cyanogenmod.setupwizard", null);
         try {
-            componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.SetupWizardActivity");
-            pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-            componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.WizardManager");
-            pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+            PackageInfo packageInfo = getPackageManager()
+                    .getPackageInfo("com.google.android.setupwizard",
+                            PackageManager.GET_ACTIVITIES |
+                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
+            enableComponentArray(packageInfo.activities);
+            enableComponentArray(packageInfo.services);
+            enableComponentArray(packageInfo.receivers);
             pm.clearApplicationUserData("com.google.android.setupwizard", null);
         } catch (Exception e) {
             Toast.makeText(this, "GMS not installed", Toast.LENGTH_SHORT).show();
@@ -82,10 +91,13 @@ public class ManualTestActivity extends Activity {
             Intent intent = new Intent("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.HOME");
             final PackageManager pm = getPackageManager();
-            ComponentName componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.SetupWizardActivity");
-            pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-            componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.WizardManager");
-            pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+            PackageInfo packageInfo = this.getPackageManager()
+                    .getPackageInfo("com.google.android.setupwizard",
+                            PackageManager.GET_ACTIVITIES |
+                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
+            enableComponentArray(packageInfo.activities);
+            enableComponentArray(packageInfo.services);
+            enableComponentArray(packageInfo.receivers);
             pm.clearApplicationUserData("com.google.android.setupwizard", null);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
             startActivity(intent);
@@ -102,13 +114,19 @@ public class ManualTestActivity extends Activity {
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
-        ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard", "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
-        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard",
+                "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+        pm.setComponentEnabledSetting(componentName,
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
         try {
-            componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.SetupWizardActivity");
-            pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-            componentName = new ComponentName("com.google.android.setupwizard", "com.google.android.setupwizard.WizardManager");
-            pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+            PackageInfo packageInfo = this.getPackageManager()
+                    .getPackageInfo("com.google.android.setupwizard",
+                            PackageManager.GET_ACTIVITIES |
+                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
+            enableComponentArray(packageInfo.activities);
+            enableComponentArray(packageInfo.services);
+            enableComponentArray(packageInfo.receivers);
+            pm.clearApplicationUserData("com.google.android.setupwizard", null);
         } catch (Exception e) {
             Toast.makeText(this, "GMS not installed", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
@@ -116,6 +134,24 @@ public class ManualTestActivity extends Activity {
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
         startActivity(intent);
         finish();
+    }
+
+    private void enableComponentArray(ComponentInfo[] components) {
+        if(components != null) {
+            ComponentInfo[] componentInfos = components;
+            for(int i = 0; i < componentInfos.length; i++) {
+                enableComponent(componentInfos[i].packageName, componentInfos[i].name);
+            }
+        }
+    }
+
+    private void enableComponent(String packageName, String name) {
+        enableComponent(new ComponentName(packageName, name));
+    }
+
+    private void enableComponent(ComponentName component) {
+        getPackageManager().setComponentEnabledSetting(component,
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 1);
     }
 
 }

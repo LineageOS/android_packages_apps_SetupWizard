@@ -22,8 +22,9 @@ import android.app.ActivityOptions;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ComponentInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
@@ -31,13 +32,12 @@ import android.os.UserHandle;
 import android.os.UserManager;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
-
-import java.util.List;
 
 public class SetupWizardUtils {
 
@@ -160,24 +160,72 @@ public class SetupWizardUtils {
         return AccountManager.get(context).getAccountsByType(accountType).length > 0;
     }
 
-    public static void disableSetupWizards(Activity context) {
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_HOME);
-        final PackageManager pm = context.getPackageManager();
-        final List<ResolveInfo> resolveInfos =
-                pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
-        for (ResolveInfo info : resolveInfos) {
-            if (GOOGLE_SETUPWIZARD_PACKAGE.equals(info.activityInfo.packageName)) {
-                final ComponentName componentName =
-                        new ComponentName(info.activityInfo.packageName, info.activityInfo.name);
-                pm.setComponentEnabledSetting(componentName,
-                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                        0);
+    public static void disableSetupWizard(Activity context) {
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+    }
+
+    public static void disableGMSSetupWizard(Activity context) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager()
+                    .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
+                            PackageManager.GET_ACTIVITIES |
+                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
+            disableComponentArray(context, packageInfo.activities);
+            disableComponentArray(context, packageInfo.services);
+            disableComponentArray(context, packageInfo.receivers);
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e(TAG, "Enable to disable GMS");
+        }
+    }
+
+    public static void enableGMSSetupWizard(Activity context) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager()
+                    .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
+                            PackageManager.GET_ACTIVITIES |
+                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
+            enableComponentArray(context, packageInfo.activities);
+            enableComponentArray(context, packageInfo.services);
+            enableComponentArray(context, packageInfo.receivers);
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e(TAG, "Unable to disable GMS");
+        }
+    }
+
+    private static void disableComponentArray(Activity context, ComponentInfo[] components) {
+        if(components != null) {
+            ComponentInfo[] componentInfos = components;
+            for(int i = 0; i < componentInfos.length; i++) {
+                disableComponent(context, componentInfos[i].packageName, componentInfos[i].name);
             }
         }
-        pm.setComponentEnabledSetting(context.getComponentName(),
+    }
+
+    private static void disableComponent(Activity context, String packageName, String name) {
+        disableComponent(context, new ComponentName(packageName, name));
+    }
+
+    private static void disableComponent(Activity context, ComponentName component) {
+        context.getPackageManager().setComponentEnabledSetting(component,
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        context.startActivity(intent);
+    }
+
+    private static void enableComponentArray(Activity context, ComponentInfo[] components) {
+        if(components != null) {
+            ComponentInfo[] componentInfos = components;
+            for(int i = 0; i < componentInfos.length; i++) {
+                enableComponent(context, componentInfos[i].packageName, componentInfos[i].name);
+            }
+        }
+    }
+
+    private static void enableComponent(Activity context, String packageName, String name) {
+        enableComponent(context, new ComponentName(packageName, name));
+    }
+
+    private static void enableComponent(Activity context, ComponentName component) {
+        context.getPackageManager().setComponentEnabledSetting(component,
+                PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }
 }
