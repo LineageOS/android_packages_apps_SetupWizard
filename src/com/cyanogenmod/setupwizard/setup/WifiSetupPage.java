@@ -70,6 +70,8 @@ public class WifiSetupPage extends SetupPage {
                             mContext.getResources().getColor(R.color.primary_dark));
                     intent.putExtra("action_bar_color", mContext.getResources().getColor(
                             R.color.primary_dark));
+                    intent.putExtra("progress_bar_color", mContext.getResources().getColor(
+                            R.color.accent));
                     ActivityOptions options =
                             ActivityOptions.makeCustomAnimation(mContext,
                                     android.R.anim.fade_in,
