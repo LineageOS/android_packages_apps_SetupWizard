@@ -17,36 +17,99 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.os.Handler;
+import android.provider.Settings;
+import android.util.Log;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class WifiSetupPage extends SetupPage {
 
     public static final String TAG = "WifiSetupPage";
 
+    private static final String DEFAULT_SERVER = "clients3.google.com";
+    private static final int CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS = 10000;
+
+    private static final String CAPTIVE_PORTAL_LOGIN_ACTION
+            = "android.net.action.captive_portal_login";
+
+    private LoadingFragment mLoadingFragment;
+
+    private URL mCaptivePortalUrl;
+
+    private boolean mIsCaptivePortal = false;
+
+    private final Handler mHandler = new Handler();
+
+    private Runnable mFinishCaptivePortalCheckRunnable = new Runnable() {
+        @Override
+        public void run() {
+            final Activity activity = (Activity)mContext;
+            if (mIsCaptivePortal) {
+                try {
+                    int netId = ConnectivityManager.from(activity)
+                            .getNetworkForType(ConnectivityManager.TYPE_WIFI).netId;
+                    Intent intent = new Intent(CAPTIVE_PORTAL_LOGIN_ACTION);
+                    intent.putExtra(Intent.EXTRA_TEXT, String.valueOf(netId));
+                    intent.putExtra("status_bar_color",
+                            mContext.getResources().getColor(R.color.primary_dark));
+                    intent.putExtra("action_bar_color", mContext.getResources().getColor(
+                            R.color.primary_dark));
+                    ActivityOptions options =
+                            ActivityOptions.makeCustomAnimation(mContext,
+                                    android.R.anim.fade_in,
+                                    android.R.anim.fade_out);
+                    activity.startActivityForResult(intent,
+                            SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL,
+                            options.toBundle());
+                } catch (Exception e) {
+                    //Oh well
+                    Log.e(TAG, "No captive portal activity found" + e);
+                    getCallbacks().onNextPage();
+                }
+            } else {
+                getCallbacks().onNextPage();
+            }
+        }
+    };
+
     public WifiSetupPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
+        String server = Settings.Global.getString(context.getContentResolver(), "captive_portal_server");
+        if (server == null) server = DEFAULT_SERVER;
+        try {
+            mCaptivePortalUrl = new URL("http://" + server + "/generate_204");
+        } catch (MalformedURLException e) {
+            Log.e(TAG, "Not a valid url" + e);
+        }
     }
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
-        if (fragment == null) {
+        mLoadingFragment = (LoadingFragment)fragmentManager.findFragmentByTag(getKey());
+        if (mLoadingFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new LoadingFragment();
-            fragment.setArguments(args);
+            mLoadingFragment = new LoadingFragment();
+            mLoadingFragment.setArguments(args);
         }
-        return fragment;
+        return mLoadingFragment;
     }
 
     @Override
@@ -61,7 +124,7 @@ public class WifiSetupPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        return R.string.setup_wifi;
+        return R.string.loading;
     }
 
     @Override
@@ -72,12 +135,57 @@ public class WifiSetupPage extends SetupPage {
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode != SetupWizardApp.REQUEST_CODE_SETUP_WIFI) return false;
-        if (resultCode == Activity.RESULT_CANCELED) {
-            getCallbacks().onPreviousPage();
-        } else {
-            getCallbacks().onNextPage();
+        if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_WIFI) {
+            if (resultCode == Activity.RESULT_CANCELED) {
+                getCallbacks().onPreviousPage();
+            } else if (resultCode == Activity.RESULT_OK) {
+                checkForCaptivePortal();
+            } else {
+                getCallbacks().onNextPage();
+            }
+        } else if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL) {
+            if (resultCode == Activity.RESULT_CANCELED) {
+                SetupWizardUtils.launchWifiSetup((Activity)mContext);
+            } else {
+                getCallbacks().onNextPage();
+            }
+        }  else {
+            return false;
         }
         return true;
+    }
+
+    private void checkForCaptivePortal() {
+        new Thread() {
+            @Override
+            public void run() {
+                mIsCaptivePortal = isCaptivePortal();
+                mHandler.post(mFinishCaptivePortalCheckRunnable);
+            }
+        }.start();
+    }
+
+    // Don't run on UI thread
+    private boolean isCaptivePortal() {
+        if (mCaptivePortalUrl == null) return false;
+        HttpURLConnection urlConnection = null;
+        try {
+            urlConnection = (HttpURLConnection) mCaptivePortalUrl.openConnection();
+            urlConnection.setInstanceFollowRedirects(false);
+            urlConnection.setConnectTimeout(CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS);
+            urlConnection.setReadTimeout(CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS);
+            urlConnection.setUseCaches(false);
+            urlConnection.getInputStream();
+            // We got a valid response, but not from the real google
+            return urlConnection.getResponseCode() != 204;
+        } catch (IOException e) {
+            Log.e(TAG, "Captive portal check - probably not a portal: exception "
+                    + e);
+            return false;
+        } finally {
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
+        }
     }
 }

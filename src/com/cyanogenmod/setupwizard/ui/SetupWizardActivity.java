@@ -312,6 +312,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mSetupData.finishPages();
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
+        setupWizardApp.enableCaptivePortalDetection();
         setupWizardApp.enableStatusBar();
         finish();
         if (mEnableAccessibilityController != null) {
