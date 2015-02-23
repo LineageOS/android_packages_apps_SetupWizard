@@ -16,10 +16,6 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
-
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -28,6 +24,8 @@ import android.os.Bundle;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.view.Gravity;
+
+import com.cyanogenmod.setupwizard.R;
 
 
 public abstract class SetupPage implements Page {
@@ -38,9 +36,9 @@ public abstract class SetupPage implements Page {
     private boolean mRequired = false;
     private boolean mHidden = false;
 
-    protected final SetupWizardActivity mContext;
+    protected final Context mContext;
 
-    protected SetupPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    protected SetupPage(Context context, SetupDataCallbacks callbacks) {
         mContext = context;
         mCallbacks = callbacks;
     }
@@ -74,9 +72,7 @@ public abstract class SetupPage implements Page {
     public void onFinishSetup() {}
 
     @Override
-    public void doLoadAction(SetupWizardActivity context, int action) {
-        if (context == null || context.isFinishing()) { return; }
-        final FragmentManager fragmentManager = context.getFragmentManager();
+    public void doLoadAction(FragmentManager fragmentManager, int action) {
         Fragment fragment = getFragment(fragmentManager, action);
         if (action == Page.ACTION_NEXT) {
             Transition t = new Slide(Gravity.RIGHT);
@@ -92,6 +88,9 @@ public abstract class SetupPage implements Page {
                     .commit();
         }
     }
+
+    @Override
+    public void onFragmentReady(){}
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {

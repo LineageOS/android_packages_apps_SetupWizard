@@ -77,6 +77,7 @@
                   android:launchMode="singleInstance"
                   android:excludeFromRecents="true"
                   android:uiOptions="none"
+                  android:configChanges="themeChange|mcc|mnc"
                   android:immersive="true">
 
             <intent-filter android:priority="9">

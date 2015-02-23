@@ -17,11 +17,8 @@
 package com.cyanogenmod.setupwizard.util;
 
 import android.accounts.AccountManager;
-import android.app.Activity;
-import android.app.ActivityOptions;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ComponentInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -33,8 +30,6 @@ import android.os.UserManager;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-
-import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -52,22 +47,6 @@ public class SetupWizardUtils {
         if (!wifiManager.isWifiEnabled()) {
             wifiManager.setWifiEnabled(true);
         }
-    }
-
-    public static void launchWifiSetup(Activity context) {
-        SetupWizardUtils.tryEnablingWifi(context);
-        Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_WIFI);
-        intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
-        intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
-        intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
-        ActivityOptions options =
-                ActivityOptions.makeCustomAnimation(context,
-                        android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-        context.startActivityForResult(intent,
-                SetupWizardApp.REQUEST_CODE_SETUP_WIFI, options.toBundle());
     }
 
     public static boolean isNetworkConnected(Context context) {
@@ -160,12 +139,12 @@ public class SetupWizardUtils {
         return AccountManager.get(context).getAccountsByType(accountType).length > 0;
     }
 
-    public static void disableSetupWizard(Activity context) {
+    public static void disableSetupWizard(Context context) {
         disableComponent(context, context.getPackageName(),
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
     }
 
-    public static void disableGMSSetupWizard(Activity context) {
+    public static void disableGMSSetupWizard(Context context) {
         try {
             PackageInfo packageInfo = context.getPackageManager()
                     .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
@@ -179,7 +158,7 @@ public class SetupWizardUtils {
         }
     }
 
-    public static void enableGMSSetupWizard(Activity context) {
+    public static void enableGMSSetupWizard(Context context) {
         try {
             PackageInfo packageInfo = context.getPackageManager()
                     .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
@@ -193,7 +172,7 @@ public class SetupWizardUtils {
         }
     }
 
-    private static void disableComponentArray(Activity context, ComponentInfo[] components) {
+    private static void disableComponentArray(Context context, ComponentInfo[] components) {
         if(components != null) {
             ComponentInfo[] componentInfos = components;
             for(int i = 0; i < componentInfos.length; i++) {
@@ -202,16 +181,16 @@ public class SetupWizardUtils {
         }
     }
 
-    private static void disableComponent(Activity context, String packageName, String name) {
+    private static void disableComponent(Context context, String packageName, String name) {
         disableComponent(context, new ComponentName(packageName, name));
     }
 
-    private static void disableComponent(Activity context, ComponentName component) {
+    private static void disableComponent(Context context, ComponentName component) {
         context.getPackageManager().setComponentEnabledSetting(component,
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
     }
 
-    private static void enableComponentArray(Activity context, ComponentInfo[] components) {
+    private static void enableComponentArray(Context context, ComponentInfo[] components) {
         if(components != null) {
             ComponentInfo[] componentInfos = components;
             for(int i = 0; i < componentInfos.length; i++) {
@@ -220,11 +199,11 @@ public class SetupWizardUtils {
         }
     }
 
-    private static void enableComponent(Activity context, String packageName, String name) {
+    private static void enableComponent(Context context, String packageName, String name) {
         enableComponent(context, new ComponentName(packageName, name));
     }
 
-    private static void enableComponent(Activity context, ComponentName component) {
+    private static void enableComponent(Context context, ComponentName component) {
         context.getPackageManager().setComponentEnabledSetting(component,
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }

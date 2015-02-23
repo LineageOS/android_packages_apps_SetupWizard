@@ -17,9 +17,8 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.os.Bundle;
-
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 import java.util.ArrayList;
 
@@ -27,21 +26,19 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
 
     private static final String TAG = AbstractSetupData.class.getSimpleName();
 
-    protected SetupWizardActivity mContext;
+    protected final Context mContext;
     private ArrayList<SetupDataCallbacks> mListeners = new ArrayList<SetupDataCallbacks>();
     private PageList mPageList;
 
     private int mCurrentPageIndex = 0;
 
+    private boolean mIsResumed = false;
+
     private OnResumeRunnable mOnResumeRunnable;
 
-    public AbstractSetupData(SetupWizardActivity context) {
+    public AbstractSetupData(Context context) {
         mContext = context;
         mPageList = onNewPageList();
-    }
-
-    public void setContext(SetupWizardActivity context) {
-        mContext = context;
     }
 
     protected abstract PageList onNewPageList();
@@ -64,6 +61,13 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
     public void onFinish() {
         for (int i = 0; i < mListeners.size(); i++) {
             mListeners.get(i).onFinish();
+        }
+    }
+
+    @Override
+    public void finishSetup() {
+        for (int i = 0; i < mListeners.size(); i++) {
+            mListeners.get(i).finishSetup();
         }
     }
 
@@ -159,7 +163,7 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
     }
 
     private void doPreviousNext(Runnable runnable) {
-        if (mContext.isResumed()) {
+        if (mIsResumed) {
             runnable.run();
         } else {
             mOnResumeRunnable = new OnResumeRunnable(runnable, this);
@@ -170,7 +174,12 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
         mOnResumeRunnable = null;
     }
 
+    public void onPause() {
+        mIsResumed = false;
+    }
+
     public void onResume() {
+        mIsResumed = true;
         if (mOnResumeRunnable != null) {
             mOnResumeRunnable.run();
         }

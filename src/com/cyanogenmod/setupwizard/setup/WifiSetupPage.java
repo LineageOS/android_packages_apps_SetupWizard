@@ -18,8 +18,8 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
-import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
@@ -30,7 +30,7 @@ import android.util.Log;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
+import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -59,10 +59,9 @@ public class WifiSetupPage extends SetupPage {
     private Runnable mFinishCaptivePortalCheckRunnable = new Runnable() {
         @Override
         public void run() {
-            final SetupWizardActivity activity = mContext;
             if (mIsCaptivePortal) {
                 try {
-                    int netId = ConnectivityManager.from(activity)
+                    int netId = ConnectivityManager.from(mContext)
                             .getNetworkForType(ConnectivityManager.TYPE_WIFI).netId;
                     Intent intent = new Intent(CAPTIVE_PORTAL_LOGIN_ACTION);
                     intent.putExtra(Intent.EXTRA_TEXT, String.valueOf(netId));
@@ -76,25 +75,25 @@ public class WifiSetupPage extends SetupPage {
                             ActivityOptions.makeCustomAnimation(mContext,
                                     android.R.anim.fade_in,
                                     android.R.anim.fade_out);
-                    activity.startActivityForResult(intent,
+                    mLoadingFragment.startActivityForResult(intent,
                             SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL,
                             options.toBundle());
                 } catch (Exception e) {
                     //Oh well
                     Log.e(TAG, "No captive portal activity found" + e);
-                    if (activity.isCurrentPage(WifiSetupPage.this)) {
+                    if (getCallbacks().isCurrentPage(WifiSetupPage.this)) {
                         getCallbacks().onNextPage();
                     }
                 }
             } else {
-                if (activity.isCurrentPage(WifiSetupPage.this)) {
+                if (getCallbacks().isCurrentPage(WifiSetupPage.this)) {
                     getCallbacks().onNextPage();
                 }
             }
         }
     };
 
-    public WifiSetupPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public WifiSetupPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
         String server = Settings.Global.getString(context.getContentResolver(), "captive_portal_server");
         if (server == null) server = DEFAULT_SERVER;
@@ -106,7 +105,7 @@ public class WifiSetupPage extends SetupPage {
     }
 
     @Override
-    public Fragment getFragment(FragmentManager fragmentManager, int action) {
+    public SetupPageFragment getFragment(FragmentManager fragmentManager, int action) {
         mLoadingFragment = (LoadingFragment)fragmentManager.findFragmentByTag(getKey());
         if (mLoadingFragment == null) {
             Bundle args = new Bundle();
@@ -134,9 +133,8 @@ public class WifiSetupPage extends SetupPage {
     }
 
     @Override
-    public void doLoadAction(SetupWizardActivity context, int action) {
-        super.doLoadAction(context, action);
-        SetupWizardUtils.launchWifiSetup(context);
+    public void onFragmentReady() {
+        launchWifiSetup();
     }
 
     @Override
@@ -151,7 +149,7 @@ public class WifiSetupPage extends SetupPage {
             }
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL) {
             if (resultCode == Activity.RESULT_CANCELED) {
-                SetupWizardUtils.launchWifiSetup(mContext);
+                launchWifiSetup();
             } else {
                 getCallbacks().onNextPage();
             }
@@ -183,6 +181,11 @@ public class WifiSetupPage extends SetupPage {
             urlConnection.setUseCaches(false);
             urlConnection.getInputStream();
             // We got a valid response, but not from the real google
+            final int responseCode = urlConnection.getResponseCode();
+            if (responseCode == 408 || responseCode == 504) {
+                // If we timeout here, we'll try and go through captive portal login
+                return true;
+            }
             return urlConnection.getResponseCode() != 204;
         } catch (IOException e) {
             Log.e(TAG, "Captive portal check - probably not a portal: exception "
@@ -193,5 +196,21 @@ public class WifiSetupPage extends SetupPage {
                 urlConnection.disconnect();
             }
         }
+    }
+
+    private void launchWifiSetup() {
+        SetupWizardUtils.tryEnablingWifi(mContext);
+        Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_WIFI);
+        intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+        intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+        intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(mContext,
+                        android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+        mLoadingFragment.startActivityForResult(intent,
+                SetupWizardApp.REQUEST_CODE_SETUP_WIFI, options.toBundle());
     }
 }

@@ -19,10 +19,13 @@ package com.cyanogenmod.setupwizard.ui;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.WallpaperManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
+import android.content.res.ThemeManager;
+import android.graphics.Bitmap;
 import android.graphics.Point;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
@@ -30,7 +33,11 @@ import android.provider.Settings;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
@@ -49,7 +56,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private View mButtonBar;
     private Button mNextButton;
     private Button mPrevButton;
-    private View mReveal;
+    private ImageView mReveal;
+    private ProgressBar mFinishingProgressBar;
 
     private EnableAccessibilityController mEnableAccessibilityController;
 
@@ -59,23 +67,38 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private boolean mIsGuestUser = false;
 
+    private volatile boolean mIsFinishing = false;
+
+    private ThemeManager.ThemeChangeListener mThemeChangeListener = new ThemeManager.ThemeChangeListener() {
+        @Override
+        public void onProgress(int progress) {
+            if (progress > 0) {
+                mFinishingProgressBar.setIndeterminate(false);
+                mFinishingProgressBar.setProgress(progress);
+            }
+        }
+
+        @Override
+        public void onFinish(boolean isSuccess) {
+            finishSetup();
+        }
+    };
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.setup_main);
         getWindow().setWindowAnimations(android.R.anim.fade_in);
+        setContentView(R.layout.setup_main);
         mRootView = findViewById(R.id.root);
+        mReveal = (ImageView)mRootView.findViewById(R.id.reveal);
         mButtonBar = findViewById(R.id.button_bar);
+        mFinishingProgressBar = (ProgressBar)findViewById(R.id.finishing_bar);
         ((SetupWizardApp)getApplicationContext()).disableStatusBar();
         mSetupData = (CMSetupWizardData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
-            mSetupData = new CMSetupWizardData(this);
-        } else {
-            mSetupData.setContext(this);
+            mSetupData = new CMSetupWizardData(getApplicationContext());
         }
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
-        mReveal = findViewById(R.id.reveal);
-        setupRevealImage();
         mSetupData.registerListener(this);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,7 +116,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         });
         if (savedInstanceState == null) {
             Page page = mSetupData.getCurrentPage();
-            page.doLoadAction(this, Page.ACTION_NEXT);
+            page.doLoadAction(getFragmentManager(), Page.ACTION_NEXT);
         }
         if (savedInstanceState != null && savedInstanceState.containsKey("data")) {
             mSetupData.load(savedInstanceState.getBundle("data"));
@@ -111,14 +134,14 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         try {
             if (Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.USER_SETUP_COMPLETE) == 1) {
-                finishSetup(false);
+                finalizeSetup();
             }
         } catch (Settings.SettingNotFoundException e) {
             // Continue with setup
         }
         mIsGuestUser =  SetupWizardUtils.isGuestUser(this);
         if (mIsGuestUser) {
-            finishSetup(false);
+            finalizeSetup();
         }
         registerReceiver(mSetupData, mSetupData.getIntentFilter());
     }
@@ -136,16 +159,17 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     @Override
+    protected void onPause() {
+        super.onPause();
+        mSetupData.onPause();
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         mSetupData.onDestroy();
         mSetupData.unregisterListener(this);
         unregisterReceiver(mSetupData);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        mSetupData.getCurrentPage().onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
@@ -169,13 +193,17 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     public void onNextPage() {
         Page page = mSetupData.getCurrentPage();
-        page.doLoadAction(this, Page.ACTION_NEXT);
+        if (!isFinishing()) {
+            page.doLoadAction(getFragmentManager(), Page.ACTION_NEXT);
+        }
     }
 
     @Override
     public void onPreviousPage() {
         Page page = mSetupData.getCurrentPage();
-        page.doLoadAction(this, Page.ACTION_PREVIOUS);
+        if (!isFinishing()) {
+            page.doLoadAction(getFragmentManager(), Page.ACTION_PREVIOUS);
+        }
     }
 
     @Override
@@ -247,7 +275,39 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     @Override
     public void onFinish() {
-        animateOut();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
+        Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+        mNextButton.startAnimation(fadeOut);
+        mNextButton.setVisibility(View.INVISIBLE);
+        mPrevButton.startAnimation(fadeOut);
+        mPrevButton.setVisibility(View.INVISIBLE);
+        final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
+        setupWizardApp.enableStatusBar();
+        setupWizardApp.enableCaptivePortalDetection();
+        Animation fadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+        mFinishingProgressBar.setVisibility(View.VISIBLE);
+        mFinishingProgressBar.setIndeterminate(true);
+        mFinishingProgressBar.startAnimation(fadeIn);
+        final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
+        tm.addClient(mThemeChangeListener);
+        mSetupData.finishPages();
+    }
+
+    @Override
+    public void finishSetup() {
+        if (!mIsFinishing) {
+            mIsFinishing = true;
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
+                    setupWizardApp.sendStickyBroadcastAsUser(
+                            new Intent(SetupWizardApp.ACTION_FINISHED),
+                            UserHandle.getCallingUserHandle());
+                    setupRevealImage();
+                }
+            });
+        }
     }
 
     @Override
@@ -257,22 +317,41 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void setupRevealImage() {
-        Thread t = new Thread() {
+        mFinishingProgressBar.setProgress(100);
+        Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+        mFinishingProgressBar.startAnimation(fadeOut);
+        mFinishingProgressBar.setVisibility(View.INVISIBLE);
+
+        final Thread t = new Thread() {
             @Override
             public void run() {
-                Point p = new Point();
+                final Point p = new Point();
                 getWindowManager().getDefaultDisplay().getRealSize(p);
-                final Drawable drawable = WallpaperManager.getInstance(SetupWizardActivity.this)
-                        .getBuiltInDrawable(
-                                p.x, p.y, false, 0, 0);
-                if (drawable != null) {
-                    mHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            mReveal.setBackground(drawable);
-                        }
-                    });
+                final WallpaperManager wallpaperManager =
+                        WallpaperManager.getInstance(SetupWizardActivity.this);
+                wallpaperManager.forgetLoadedWallpaper();
+                final Bitmap wallpaper = wallpaperManager.getBitmap();
+                Bitmap cropped = null;
+                if (wallpaper != null) {
+                    cropped = Bitmap.createBitmap(wallpaper, 0,
+                            0, Math.min(p.x, wallpaper.getWidth()),
+                            Math.min(p.y, wallpaper.getHeight()));
                 }
+                final Bitmap croppedWallpaper = cropped;
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (croppedWallpaper != null) {
+                            mReveal.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                            mReveal.setImageBitmap(croppedWallpaper);
+                        } else {
+                            mReveal.setBackground(wallpaperManager
+                                    .getBuiltInDrawable(p.x, p.y, false, 0, 0));
+                        }
+                        animateOut();
+                    }
+                });
+
             }
         };
         t.start();
@@ -296,7 +375,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        finishSetup(true);
+                        finalizeSetup();
                     }
                 });
             }
@@ -310,25 +389,22 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         anim.start();
     }
 
-    private void finishSetup(boolean broadcastFinish) {
-        SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
-        if (broadcastFinish && !mIsGuestUser) {
-            setupWizardApp.sendBroadcastAsUser(new Intent(SetupWizardApp.ACTION_FINISHED),
-                    UserHandle.getCallingUserHandle());
-        }
-        mSetupData.finishPages();
+    private void finalizeSetup() {
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
-        setupWizardApp.enableCaptivePortalDetection();
-        setupWizardApp.enableStatusBar();
         finish();
         if (mEnableAccessibilityController != null) {
             mEnableAccessibilityController.onDestroy();
         }
         SetupWizardUtils.disableGMSSetupWizard(this);
         SetupWizardUtils.disableSetupWizard(this);
+        final ThemeManager tm = (ThemeManager) this.getSystemService(THEME_SERVICE);
+        tm.removeClient(mThemeChangeListener);
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         startActivity(intent);
+        final WallpaperManager wallpaperManager =
+                WallpaperManager.getInstance(SetupWizardActivity.this);
+        wallpaperManager.forgetLoadedWallpaper();
     }
 }

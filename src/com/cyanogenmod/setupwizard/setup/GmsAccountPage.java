@@ -27,15 +27,16 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -55,7 +56,9 @@ public class GmsAccountPage extends SetupPage {
 
     private boolean mBackupEnabled = false;
 
-    public GmsAccountPage(final SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    private Fragment mFragment;
+
+    public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
         final ContentResolver res = context.getContentResolver();
         mBackupEnabled = Settings.Secure.getInt(res,
@@ -78,15 +81,15 @@ public class GmsAccountPage extends SetupPage {
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
-        if (fragment == null) {
+        mFragment = fragmentManager.findFragmentByTag(getKey());
+        if (mFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new LoadingFragment();
-            fragment.setArguments(args);
+            mFragment = new LoadingFragment();
+            mFragment.setArguments(args);
         }
-        return fragment;
+        return mFragment;
     }
 
     @Override
@@ -105,20 +108,24 @@ public class GmsAccountPage extends SetupPage {
     }
 
     @Override
-    public void doLoadAction(SetupWizardActivity context, int action) {
+    public void doLoadAction(FragmentManager fragmentManager, int action) {
         if (action == Page.ACTION_PREVIOUS) {
             getCallbacks().onPreviousPage();
         } else {
-            launchGmsAccountSetup(context);
-            super.doLoadAction(context, action);
+            super.doLoadAction(fragmentManager, action);
         }
+    }
+
+    @Override
+    public void onFragmentReady() {
+        launchGmsAccountSetup();
     }
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
             if (!mBackupEnabled && SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
-                launchGmsRestorePage(mContext);
+                launchGmsRestorePage();
             } else {
                 handleResult(resultCode);
             }
@@ -131,10 +138,13 @@ public class GmsAccountPage extends SetupPage {
 
     @Override
     public void onFinishSetup() {
-        if (mContentQueryMap != null) {
-            mContentQueryMap.close();
+        try {
+            if (mContentQueryMap != null) {
+                mContentQueryMap.close();
+            }
+        } catch (Exception e) {
+            Log.wtf(TAG, e.toString());
         }
-
     }
 
     private void handleResult(int resultCode) {
@@ -148,10 +158,10 @@ public class GmsAccountPage extends SetupPage {
         }
     }
 
-    private static void launchGmsRestorePage(final SetupWizardActivity activity) {
+    private void launchGmsRestorePage() {
         try {
             // GMS can disable this after logging in sometimes
-            SetupWizardUtils.enableGMSSetupWizard(activity);
+            SetupWizardUtils.enableGMSSetupWizard(mContext);
             Intent intent = new Intent(ACTION_RESTORE);
             intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
             intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
@@ -161,27 +171,27 @@ public class GmsAccountPage extends SetupPage {
             // This is necessary to get the material theme on the restore page.
             intent.putExtra("scriptUri", RESTORE_WIZARD_SCRIPT);
             ActivityOptions options =
-                    ActivityOptions.makeCustomAnimation(activity,
+                    ActivityOptions.makeCustomAnimation(mContext,
                             android.R.anim.fade_in,
                             android.R.anim.fade_out);
-            activity.startActivityForResult(
+            mFragment.startActivityForResult(
                     intent,
                     SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
         } catch (Exception e) {
             e.printStackTrace();
             // XXX: In open source, we don't know what gms version a user has.
             // Bail if the restore activity is not found.
-            activity.onNextPage();
+            getCallbacks().onNextPage();
         }
     }
 
-    private void launchGmsAccountSetup(final SetupWizardActivity activity) {
+    private void launchGmsAccountSetup() {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
         AccountManager
-                .get(activity).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
+                .get(mContext).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
                 bundle, null, new AccountManagerCallback<Bundle>() {
                     @Override
                     public void run(AccountManagerFuture<Bundle> future) {
@@ -190,10 +200,10 @@ public class GmsAccountPage extends SetupPage {
                             Intent intent = result
                                     .getParcelable(AccountManager.KEY_INTENT);
                             ActivityOptions options =
-                                    ActivityOptions.makeCustomAnimation(activity,
+                                    ActivityOptions.makeCustomAnimation(mContext,
                                             android.R.anim.fade_in,
                                             android.R.anim.fade_out);
-                            activity.startActivityForResult(intent,
+                            mFragment.startActivityForResult(intent,
                                     SetupWizardApp.REQUEST_CODE_SETUP_GMS, options.toBundle());
                         } catch (OperationCanceledException e) {
                         } catch (IOException e) {

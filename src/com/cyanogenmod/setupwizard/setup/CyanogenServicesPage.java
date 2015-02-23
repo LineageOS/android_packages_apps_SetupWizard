@@ -25,13 +25,14 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
+import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -40,21 +41,23 @@ public class CyanogenServicesPage extends SetupPage {
 
     public static final String TAG = "CyanogenServicesPage";
 
-    public CyanogenServicesPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    private Fragment mFragment;
+
+    public CyanogenServicesPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
-        if (fragment == null) {
+        mFragment = fragmentManager.findFragmentByTag(getKey());
+        if (mFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new LoadingFragment();
-            fragment.setArguments(args);
+            mFragment = new LoadingFragment();
+            mFragment.setArguments(args);
         }
-        return fragment;
+        return mFragment;
     }
 
     @Override
@@ -73,18 +76,22 @@ public class CyanogenServicesPage extends SetupPage {
     }
 
     @Override
-    public void doLoadAction(SetupWizardActivity context, int action) {
+    public void doLoadAction(FragmentManager fragmentManager, int action) {
         if (action == Page.ACTION_PREVIOUS) {
             getCallbacks().onPreviousPage();
         } else {
             if (!SetupWizardUtils.accountExists(mContext,
                     mContext.getString(R.string.cm_account_type))) {
-                super.doLoadAction(context, action);
-                launchCyanogenAccountSetup(context);
+                super.doLoadAction(fragmentManager, action);
             } else {
                 getCallbacks().onNextPage();
             }
         }
+    }
+
+    @Override
+    public void onFragmentReady() {
+        launchCyanogenAccountSetup();
     }
 
     @Override
@@ -102,14 +109,13 @@ public class CyanogenServicesPage extends SetupPage {
         return true;
     }
 
-
-    private void launchCyanogenAccountSetup(final Activity activity) {
+    private void launchCyanogenAccountSetup() {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_SHOW_BUTTON_BAR, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-        AccountManager.get(activity)
-                .addAccount(activity.getString(R.string.cm_account_type), null, null, bundle,
+        AccountManager.get(mContext)
+                .addAccount(mContext.getString(R.string.cm_account_type), null, null, bundle,
                         null, new AccountManagerCallback<Bundle>() {
                             @Override
                             public void run(AccountManagerFuture<Bundle> future) {
@@ -118,10 +124,10 @@ public class CyanogenServicesPage extends SetupPage {
                                     Intent intent = result
                                             .getParcelable(AccountManager.KEY_INTENT);
                                     ActivityOptions options =
-                                            ActivityOptions.makeCustomAnimation(activity,
+                                            ActivityOptions.makeCustomAnimation(mContext,
                                                     android.R.anim.fade_in,
                                                     android.R.anim.fade_out);
-                                    activity.startActivityForResult(intent,
+                                    mFragment.startActivityForResult(intent,
                                             SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN,
                                             options.toBundle());
                                 } catch (OperationCanceledException e) {

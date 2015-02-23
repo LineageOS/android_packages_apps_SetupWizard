@@ -34,14 +34,13 @@ import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 public class MobileDataPage extends SetupPage {
 
     public static final String TAG = "MobileDataPage";
 
-    public MobileDataPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public MobileDataPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

@@ -39,7 +39,6 @@ import android.widget.TextView;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
@@ -53,7 +52,7 @@ public class OtherSettingsPage extends SetupPage {
     private static final String PRIVACY_POLICY_URI =
             "https://www.google.com/intl/en/policies/privacy/?fg=1";
 
-    public OtherSettingsPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public OtherSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

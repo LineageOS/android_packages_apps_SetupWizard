@@ -35,7 +35,7 @@ public class CMSetupWizardData extends AbstractSetupData {
     private boolean mTimeSet = false;
     private boolean mTimeZoneSet = false;
 
-    public CMSetupWizardData(SetupWizardActivity context) {
+    public CMSetupWizardData(Context context) {
         super(context);
     }
 

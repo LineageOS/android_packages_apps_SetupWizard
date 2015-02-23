@@ -21,8 +21,6 @@ import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
-
 public interface Page {
 
     public static final String KEY_PAGE_ARGUMENT = "key_arg";
@@ -44,7 +42,8 @@ public interface Page {
     public Page setHidden(boolean hidden);
     public boolean doPreviousAction();
     public boolean doNextAction();
-    public void doLoadAction(SetupWizardActivity context, int action);
+    public void doLoadAction(FragmentManager fragmentManager, int action);
+    public void onFragmentReady();
     public void onFinishSetup();
     public boolean onActivityResult(int requestCode, int resultCode, Intent data);
     public SetupDataCallbacks getCallbacks();

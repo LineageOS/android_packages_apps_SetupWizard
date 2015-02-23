@@ -18,6 +18,7 @@ package com.cyanogenmod.setupwizard.ui;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +41,7 @@ public abstract class SetupPageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRetainInstance(true);
         Bundle args = getArguments();
         mKey = args.getString(Page.KEY_PAGE_ARGUMENT);
         if (mKey == null) {
@@ -65,6 +67,7 @@ public abstract class SetupPageFragment extends Fragment {
             mTitleView.setText(mPage.getTitleResId());
         }
         initializePage();
+        mPage.onFragmentReady();
         mCallbacks.onPageLoaded(mPage);
     }
 
@@ -81,6 +84,11 @@ public abstract class SetupPageFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mCallbacks = null;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mPage.onActivityResult(requestCode, resultCode, data);
     }
 
     protected abstract void initializePage();

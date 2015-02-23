@@ -43,7 +43,6 @@ import android.widget.TimePicker;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -69,7 +68,7 @@ public class DateTimePage extends SetupPage {
     private static final int HOURS_1 = 60 * 60000;
 
 
-    public DateTimePage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public DateTimePage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

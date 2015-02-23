@@ -37,7 +37,6 @@ import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 import java.util.List;
 
@@ -45,7 +44,7 @@ public class ChooseDataSimPage extends SetupPage {
 
     public static final String TAG = "ChooseDataSimPage";
 
-    public ChooseDataSimPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public ChooseDataSimPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

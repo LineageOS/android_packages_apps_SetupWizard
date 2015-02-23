@@ -18,6 +18,7 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -33,7 +34,7 @@ public class SimCardMissingPage extends SetupPage {
     private static final int SIM_SIDE = 1;
     private static final int SIM_BACK = 2;
 
-    public SimCardMissingPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public SimCardMissingPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

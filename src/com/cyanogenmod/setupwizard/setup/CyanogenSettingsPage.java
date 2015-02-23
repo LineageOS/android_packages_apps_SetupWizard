@@ -20,6 +20,9 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ThemeUtils;
+import android.content.res.ThemeConfig;
+import android.content.res.ThemeManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -39,7 +42,6 @@ import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
@@ -56,11 +58,12 @@ public class CyanogenSettingsPage extends SetupPage {
     public static final String KEY_SEND_METRICS = "send_metrics";
     public static final String KEY_REGISTER_WHISPERPUSH = "register";
     public static final String KEY_ENABLE_NAV_KEYS = "enable_nav_keys";
+    public static final String KEY_APPLY_DEFAULT_THEME = "apply_default_theme";
 
     public static final String SETTING_METRICS = "settings.cyanogen.allow_metrics";
     public static final String PRIVACY_POLICY_URI = "https://cyngn.com/legal/privacy-policy";
 
-    public CyanogenSettingsPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
+    public CyanogenSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
@@ -125,6 +128,7 @@ public class CyanogenSettingsPage extends SetupPage {
         }
         handleWhisperPushRegistration();
         handleEnableMetrics();
+        handleDefaultThemeSetup();
     }
 
     private void handleWhisperPushRegistration() {
@@ -143,6 +147,18 @@ public class CyanogenSettingsPage extends SetupPage {
                 && privacyData.containsKey(CyanogenSettingsPage.KEY_SEND_METRICS)) {
             Settings.System.putInt(mContext.getContentResolver(), CyanogenSettingsPage.SETTING_METRICS,
                     privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS) ? 1 : 0);
+        }
+    }
+
+    private void handleDefaultThemeSetup() {
+        Bundle privacyData = getData();
+        if (!ThemeUtils.getDefaultThemePackageName(mContext).equals(ThemeConfig.SYSTEM_DEFAULT) &&
+                privacyData != null && privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
+            Log.i(TAG, "Applying default theme");
+            final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
+            tm.applyDefaultTheme();
+        } else {
+            getCallbacks().finishSetup();
         }
     }
 
@@ -172,12 +188,18 @@ public class CyanogenSettingsPage extends SetupPage {
                 SetupWizardUtils.isSimMissing(context));
     }
 
+    protected static boolean hideThemeSwitch(Context context) {
+        return ThemeUtils.getDefaultThemePackageName(context).equals(ThemeConfig.SYSTEM_DEFAULT);
+    }
+
     public static class CyanogenSettingsFragment extends SetupPageFragment {
 
         private View mMetricsRow;
+        private View mDefaultThemeRow;
         private View mNavKeysRow;
         private View mSecureSmsRow;
         private CheckBox mMetrics;
+        private CheckBox mDefaultTheme;
         private CheckBox mNavKeys;
         private CheckBox mSecureSms;
 
@@ -188,6 +210,15 @@ public class CyanogenSettingsPage extends SetupPage {
                 boolean checked = !mMetrics.isChecked();
                 mMetrics.setChecked(checked);
                 mPage.getData().putBoolean(KEY_SEND_METRICS, checked);
+            }
+        };
+
+        private View.OnClickListener mDefaultThemeClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean checked = !mDefaultTheme.isChecked();
+                mDefaultTheme.setChecked(checked);
+                mPage.getData().putBoolean(KEY_APPLY_DEFAULT_THEME, checked);
             }
         };
 
@@ -211,6 +242,7 @@ public class CyanogenSettingsPage extends SetupPage {
 
         @Override
         protected void initializePage() {
+            final Bundle myPageBundle = mPage.getData();
             String privacy_policy = getString(R.string.services_privacy_policy);
             String policySummary = getString(R.string.services_explanation, privacy_policy);
             SpannableString ss = new SpannableString(policySummary);
@@ -242,10 +274,34 @@ public class CyanogenSettingsPage extends SetupPage {
             metrics.setText(metricsSpan);
             mMetrics = (CheckBox) mRootView.findViewById(R.id.enable_metrics_checkbox);
             boolean metricsChecked =
-                    !mPage.getData().containsKey(KEY_SEND_METRICS) || mPage.getData()
+                    !myPageBundle.containsKey(KEY_SEND_METRICS) || myPageBundle
                             .getBoolean(KEY_SEND_METRICS);
             mMetrics.setChecked(metricsChecked);
-            mPage.getData().putBoolean(KEY_SEND_METRICS, metricsChecked);
+            myPageBundle.putBoolean(KEY_SEND_METRICS, metricsChecked);
+
+            mDefaultThemeRow = mRootView.findViewById(R.id.theme);
+            if (hideThemeSwitch(getActivity())) {
+                mDefaultThemeRow.setVisibility(View.GONE);
+            } else {
+                mDefaultThemeRow.setOnClickListener(mDefaultThemeClickListener);
+                String defaultTheme =
+                        getString(R.string.services_apply_theme,
+                                getString(R.string.default_theme_name));
+                String defaultThemeSummary = getString(R.string.services_apply_theme_label,
+                        defaultTheme);
+                final SpannableStringBuilder themeSpan =
+                        new SpannableStringBuilder(defaultThemeSummary);
+                themeSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
+                        0, defaultTheme.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                TextView theme = (TextView) mRootView.findViewById(R.id.enable_theme_summary);
+                theme.setText(themeSpan);
+                mDefaultTheme = (CheckBox) mRootView.findViewById(R.id.enable_theme_checkbox);
+                boolean themesChecked =
+                        !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
+                                .getBoolean(KEY_APPLY_DEFAULT_THEME);
+                mDefaultTheme.setChecked(themesChecked);
+                myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
+            }
 
             mNavKeysRow = mRootView.findViewById(R.id.nav_keys);
             mNavKeysRow.setOnClickListener(mNavKeysClickListener);
@@ -279,11 +335,11 @@ public class CyanogenSettingsPage extends SetupPage {
                 mSecureSmsRow.setVisibility(View.GONE);
             }
             mSecureSms = (CheckBox) mRootView.findViewById(R.id.secure_sms_checkbox);
-            boolean smsChecked = mPage.getData().containsKey(KEY_REGISTER_WHISPERPUSH) ?
-                    mPage.getData().getBoolean(KEY_REGISTER_WHISPERPUSH) :
+            boolean smsChecked = myPageBundle.containsKey(KEY_REGISTER_WHISPERPUSH) ?
+                    myPageBundle.getBoolean(KEY_REGISTER_WHISPERPUSH) :
                     false;
             mSecureSms.setChecked(smsChecked);
-            mPage.getData().putBoolean(KEY_REGISTER_WHISPERPUSH, smsChecked);
+            myPageBundle.putBoolean(KEY_REGISTER_WHISPERPUSH, smsChecked);
         }
 
         @Override
