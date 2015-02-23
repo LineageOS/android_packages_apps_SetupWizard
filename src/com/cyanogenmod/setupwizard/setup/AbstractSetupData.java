@@ -33,9 +33,15 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
 
     private int mCurrentPageIndex = 0;
 
+    private OnResumeRunnable mOnResumeRunnable;
+
     public AbstractSetupData(SetupWizardActivity context) {
         mContext = context;
         mPageList = onNewPageList();
+    }
+
+    public void setContext(SetupWizardActivity context) {
+        mContext = context;
     }
 
     protected abstract PageList onNewPageList();
@@ -75,6 +81,12 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
         return mPageList.getPage(mCurrentPageIndex);
     }
 
+    @Override
+    public boolean isCurrentPage(Page page) {
+        if (page == null) return false;
+        return page.getKey().equals(getCurrentPage().getKey());
+    }
+
     public boolean isFirstPage() {
         return mCurrentPageIndex == 0;
     }
@@ -85,24 +97,36 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
 
     @Override
     public void onNextPage() {
-        if (getCurrentPage().doNextAction() == false) {
-            if (advanceToNextUnhidden()) {
-                for (int i = 0; i < mListeners.size(); i++) {
-                    mListeners.get(i).onNextPage();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (getCurrentPage().doNextAction() == false) {
+                    if (advanceToNextUnhidden()) {
+                        for (int i = 0; i < mListeners.size(); i++) {
+                            mListeners.get(i).onNextPage();
+                        }
+                    }
                 }
             }
-        }
+        };
+        doPreviousNext(runnable);
     }
 
     @Override
     public void onPreviousPage() {
-        if (getCurrentPage().doPreviousAction() == false) {
-            if (advanceToPreviousUnhidden()) {
-                for (int i = 0; i < mListeners.size(); i++) {
-                    mListeners.get(i).onPreviousPage();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                if (getCurrentPage().doPreviousAction() == false) {
+                    if (advanceToPreviousUnhidden()) {
+                        for (int i = 0; i < mListeners.size(); i++) {
+                            mListeners.get(i).onPreviousPage();
+                        }
+                    }
                 }
             }
-        }
+        };
+        doPreviousNext(runnable);
     }
 
     private boolean advanceToNextUnhidden() {
@@ -134,6 +158,24 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
         }
     }
 
+    private void doPreviousNext(Runnable runnable) {
+        if (mContext.isResumed()) {
+            runnable.run();
+        } else {
+            mOnResumeRunnable = new OnResumeRunnable(runnable, this);
+        }
+    }
+
+    public void onDestroy() {
+        mOnResumeRunnable = null;
+    }
+
+    public void onResume() {
+        if (mOnResumeRunnable != null) {
+            mOnResumeRunnable.run();
+        }
+    }
+
     public void finishPages() {
         for (Page page : mPageList.values()) {
             page.onFinishSetup();
@@ -154,5 +196,22 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
 
     public void unregisterListener(SetupDataCallbacks listener) {
         mListeners.remove(listener);
+    }
+
+    private static class OnResumeRunnable implements Runnable {
+
+        private final AbstractSetupData mAbstractSetupData;
+        private final Runnable mRunnable;
+
+        private OnResumeRunnable(Runnable runnable, AbstractSetupData abstractSetupData) {
+            mAbstractSetupData = abstractSetupData;
+            mRunnable = runnable;
+        }
+
+        @Override
+        public void run() {
+            mRunnable.run();
+            mAbstractSetupData.mOnResumeRunnable = null;
+        }
     }
 }

@@ -59,7 +59,7 @@ public class WifiSetupPage extends SetupPage {
     private Runnable mFinishCaptivePortalCheckRunnable = new Runnable() {
         @Override
         public void run() {
-            final Activity activity = mContext;
+            final SetupWizardActivity activity = mContext;
             if (mIsCaptivePortal) {
                 try {
                     int netId = ConnectivityManager.from(activity)
@@ -82,10 +82,14 @@ public class WifiSetupPage extends SetupPage {
                 } catch (Exception e) {
                     //Oh well
                     Log.e(TAG, "No captive portal activity found" + e);
-                    getCallbacks().onNextPage();
+                    if (activity.isCurrentPage(WifiSetupPage.this)) {
+                        getCallbacks().onNextPage();
+                    }
                 }
             } else {
-                getCallbacks().onNextPage();
+                if (activity.isCurrentPage(WifiSetupPage.this)) {
+                    getCallbacks().onNextPage();
+                }
             }
         }
     };
@@ -147,7 +151,7 @@ public class WifiSetupPage extends SetupPage {
             }
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CAPTIVE_PORTAL) {
             if (resultCode == Activity.RESULT_CANCELED) {
-                SetupWizardUtils.launchWifiSetup((Activity)mContext);
+                SetupWizardUtils.launchWifiSetup(mContext);
             } else {
                 getCallbacks().onNextPage();
             }

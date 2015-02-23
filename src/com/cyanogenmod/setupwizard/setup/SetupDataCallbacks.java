@@ -22,6 +22,7 @@ public interface SetupDataCallbacks {
     void onPageLoaded(Page page);
     void onPageTreeChanged();
     void onFinish();
+    boolean isCurrentPage(Page page);
     Page getPage(String key);
     Page getPage(int key);
 }
