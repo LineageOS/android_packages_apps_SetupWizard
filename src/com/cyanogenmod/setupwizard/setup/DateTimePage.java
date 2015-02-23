@@ -16,11 +16,6 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-
-import org.xmlpull.v1.XmlPullParserException;
-
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
@@ -46,6 +41,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
+
+import org.xmlpull.v1.XmlPullParserException;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -68,7 +69,7 @@ public class DateTimePage extends SetupPage {
     private static final int HOURS_1 = 60 * 60000;
 
 
-    public DateTimePage(Context context, SetupDataCallbacks callbacks) {
+    public DateTimePage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

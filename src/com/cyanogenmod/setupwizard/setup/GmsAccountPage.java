@@ -27,7 +27,6 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -56,7 +55,7 @@ public class GmsAccountPage extends SetupPage {
 
     private boolean mBackupEnabled = false;
 
-    public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
+    public GmsAccountPage(final SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
         final ContentResolver res = context.getContentResolver();
         mBackupEnabled = Settings.Secure.getInt(res,
@@ -106,7 +105,7 @@ public class GmsAccountPage extends SetupPage {
     }
 
     @Override
-    public void doLoadAction(Activity context, int action) {
+    public void doLoadAction(SetupWizardActivity context, int action) {
         if (action == Page.ACTION_PREVIOUS) {
             getCallbacks().onPreviousPage();
         } else {
@@ -119,7 +118,7 @@ public class GmsAccountPage extends SetupPage {
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
             if (!mBackupEnabled && SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
-                launchGmsRestorePage((Activity) mContext);
+                launchGmsRestorePage(mContext);
             } else {
                 handleResult(resultCode);
             }
@@ -149,7 +148,7 @@ public class GmsAccountPage extends SetupPage {
         }
     }
 
-    private static void launchGmsRestorePage(final Activity activity) {
+    private static void launchGmsRestorePage(final SetupWizardActivity activity) {
         try {
             // GMS can disable this after logging in sometimes
             SetupWizardUtils.enableGMSSetupWizard(activity);
@@ -172,11 +171,11 @@ public class GmsAccountPage extends SetupPage {
             e.printStackTrace();
             // XXX: In open source, we don't know what gms version a user has.
             // Bail if the restore activity is not found.
-            ((SetupWizardActivity) activity).onNextPage();
+            activity.onNextPage();
         }
     }
 
-    private void launchGmsAccountSetup(final Activity activity) {
+    private void launchGmsAccountSetup(final SetupWizardActivity activity) {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);

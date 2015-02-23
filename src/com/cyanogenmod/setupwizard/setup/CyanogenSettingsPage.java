@@ -39,6 +39,7 @@ import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
@@ -59,7 +60,7 @@ public class CyanogenSettingsPage extends SetupPage {
     public static final String SETTING_METRICS = "settings.cyanogen.allow_metrics";
     public static final String PRIVACY_POLICY_URI = "https://cyngn.com/legal/privacy-policy";
 
-    public CyanogenSettingsPage(Context context, SetupDataCallbacks callbacks) {
+    public CyanogenSettingsPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

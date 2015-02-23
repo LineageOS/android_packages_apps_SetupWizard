@@ -20,7 +20,6 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
@@ -31,6 +30,7 @@ import android.util.Log;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -59,7 +59,7 @@ public class WifiSetupPage extends SetupPage {
     private Runnable mFinishCaptivePortalCheckRunnable = new Runnable() {
         @Override
         public void run() {
-            final Activity activity = (Activity)mContext;
+            final Activity activity = mContext;
             if (mIsCaptivePortal) {
                 try {
                     int netId = ConnectivityManager.from(activity)
@@ -90,7 +90,7 @@ public class WifiSetupPage extends SetupPage {
         }
     };
 
-    public WifiSetupPage(Context context, SetupDataCallbacks callbacks) {
+    public WifiSetupPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
         String server = Settings.Global.getString(context.getContentResolver(), "captive_portal_server");
         if (server == null) server = DEFAULT_SERVER;
@@ -130,7 +130,7 @@ public class WifiSetupPage extends SetupPage {
     }
 
     @Override
-    public void doLoadAction(Activity context, int action) {
+    public void doLoadAction(SetupWizardActivity context, int action) {
         super.doLoadAction(context, action);
         SetupWizardUtils.launchWifiSetup(context);
     }

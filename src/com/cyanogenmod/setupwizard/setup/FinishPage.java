@@ -18,11 +18,11 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 public class FinishPage extends SetupPage {
 
@@ -30,7 +30,7 @@ public class FinishPage extends SetupPage {
 
     private FinishFragment mFinishFragment;
 
-    public FinishPage(Context context, SetupDataCallbacks callbacks) {
+    public FinishPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

@@ -25,13 +25,13 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -40,7 +40,7 @@ public class CyanogenServicesPage extends SetupPage {
 
     public static final String TAG = "CyanogenServicesPage";
 
-    public CyanogenServicesPage(Context context, SetupDataCallbacks callbacks) {
+    public CyanogenServicesPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
@@ -73,7 +73,7 @@ public class CyanogenServicesPage extends SetupPage {
     }
 
     @Override
-    public void doLoadAction(Activity context, int action) {
+    public void doLoadAction(SetupWizardActivity context, int action) {
         if (action == Page.ACTION_PREVIOUS) {
             getCallbacks().onPreviousPage();
         } else {

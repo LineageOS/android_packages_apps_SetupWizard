@@ -17,6 +17,7 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -37,9 +38,9 @@ public abstract class SetupPage implements Page {
     private boolean mRequired = false;
     private boolean mHidden = false;
 
-    protected final Context mContext;
+    protected final SetupWizardActivity mContext;
 
-    protected SetupPage(Context context, SetupDataCallbacks callbacks) {
+    protected SetupPage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         mContext = context;
         mCallbacks = callbacks;
     }
@@ -73,7 +74,7 @@ public abstract class SetupPage implements Page {
     public void onFinishSetup() {}
 
     @Override
-    public void doLoadAction(Activity context, int action) {
+    public void doLoadAction(SetupWizardActivity context, int action) {
         if (context == null || context.isFinishing()) { return; }
         final FragmentManager fragmentManager = context.getFragmentManager();
         Fragment fragment = getFragment(fragmentManager, action);

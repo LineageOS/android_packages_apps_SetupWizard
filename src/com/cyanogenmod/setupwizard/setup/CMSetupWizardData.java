@@ -23,6 +23,7 @@ import android.net.ConnectivityManager;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.telephony.TelephonyIntents;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class CMSetupWizardData extends AbstractSetupData {
     private boolean mTimeSet = false;
     private boolean mTimeZoneSet = false;
 
-    public CMSetupWizardData(Context context) {
+    public CMSetupWizardData(SetupWizardActivity context) {
         super(context);
     }
 

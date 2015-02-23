@@ -17,7 +17,6 @@
 package com.cyanogenmod.setupwizard.ui;
 
 import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 
 public class LoadingFragment extends SetupPageFragment {
     @Override

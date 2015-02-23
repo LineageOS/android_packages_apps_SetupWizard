@@ -16,11 +16,12 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 public interface Page {
 
@@ -43,7 +44,7 @@ public interface Page {
     public Page setHidden(boolean hidden);
     public boolean doPreviousAction();
     public boolean doNextAction();
-    public void doLoadAction(Activity context, int action);
+    public void doLoadAction(SetupWizardActivity context, int action);
     public void onFinishSetup();
     public boolean onActivityResult(int requestCode, int resultCode, Intent data);
     public SetupDataCallbacks getCallbacks();

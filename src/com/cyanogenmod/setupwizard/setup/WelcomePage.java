@@ -19,7 +19,6 @@ package com.cyanogenmod.setupwizard.setup;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -32,6 +31,7 @@ import android.widget.NumberPicker;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.LocalePicker;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 import java.util.Locale;
 
@@ -41,7 +41,7 @@ public class WelcomePage extends SetupPage {
 
     private static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
 
-    public WelcomePage(Context context, SetupDataCallbacks callbacks) {
+    public WelcomePage(SetupWizardActivity context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 

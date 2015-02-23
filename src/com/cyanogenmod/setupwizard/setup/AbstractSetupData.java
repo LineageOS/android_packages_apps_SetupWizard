@@ -17,8 +17,9 @@
 package com.cyanogenmod.setupwizard.setup;
 
 import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.os.Bundle;
+
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 
 import java.util.ArrayList;
 
@@ -26,13 +27,13 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
 
     private static final String TAG = AbstractSetupData.class.getSimpleName();
 
-    protected Context mContext;
+    protected SetupWizardActivity mContext;
     private ArrayList<SetupDataCallbacks> mListeners = new ArrayList<SetupDataCallbacks>();
     private PageList mPageList;
 
     private int mCurrentPageIndex = 0;
 
-    public AbstractSetupData(Context context) {
+    public AbstractSetupData(SetupWizardActivity context) {
         mContext = context;
         mPageList = onNewPageList();
     }
