@@ -95,26 +95,26 @@ public class CyanogenSettingsPage extends SetupPage {
         final int defaultBrightness = context.getResources().getInteger(
                 com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
 
-        Settings.System.putInt(context.getContentResolver(),
-                Settings.System.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
         KeyDisabler.setActive(enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
         SharedPreferences.Editor editor = prefs.edit();
 
         if (enabled) {
-            int currentBrightness = Settings.System.getInt(context.getContentResolver(),
-                    Settings.System.BUTTON_BRIGHTNESS, defaultBrightness);
+            int currentBrightness = Settings.Secure.getInt(context.getContentResolver(),
+                    Settings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
             if (!prefs.contains("pre_navbar_button_backlight")) {
                 editor.putInt("pre_navbar_button_backlight", currentBrightness);
             }
-            Settings.System.putInt(context.getContentResolver(),
-                    Settings.System.BUTTON_BRIGHTNESS, 0);
+            Settings.Secure.putInt(context.getContentResolver(),
+                    Settings.Secure.BUTTON_BRIGHTNESS, 0);
         } else {
             int oldBright = prefs.getInt("pre_navbar_button_backlight", -1);
             if (oldBright != -1) {
-                Settings.System.putInt(context.getContentResolver(),
-                        Settings.System.BUTTON_BRIGHTNESS, oldBright);
+                Settings.Secure.putInt(context.getContentResolver(),
+                        Settings.Secure.BUTTON_BRIGHTNESS, oldBright);
                 editor.remove("pre_navbar_button_backlight");
             }
         }
@@ -354,8 +354,8 @@ public class CyanogenSettingsPage extends SetupPage {
         }
 
         private void updateDisableNavkeysOption() {
-            boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
-                    Settings.System.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+            boolean enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
+                    Settings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
             boolean checked = mPage.getData().containsKey(KEY_ENABLE_NAV_KEYS) ?
                     mPage.getData().getBoolean(KEY_ENABLE_NAV_KEYS) :
                     enabled;
