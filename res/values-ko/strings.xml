@@ -26,7 +26,7 @@
   <string name="setup_welcome">환영합니다</string>
   <string name="setup_wifi">Wi-Fi 연결</string>
   <string name="setup_sim_missing">SIM 카드 없음</string>
-  <string name="setup_choose_data_sim">데이터 통신용 SIM카드 선택</string>
+  <string name="setup_choose_data_sim">데이터 통신용 SIM 카드 선택</string>
   <string name="setup_location">위치 서비스</string>
   <string name="setup_other">기타 서비스</string>
   <string name="setup_datetime">날짜 및 시간</string>
@@ -54,9 +54,6 @@
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">긴급 통화</string>
-  <string name="setup_services">Cyanogen 서비스</string>
-  <string name="services_explanation" product="tablet">이 서비스들은 태블릿의 기능을 확장하기 위해 작동하며, 언제든지 끌 수 있습니다. 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
-  <string name="services_explanation" product="default">이 서비스들은 휴대전화의 기능을 확장하기 위해 작동하며, 언제든지 끌 수 있습니다. 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
   <string name="services_metrics_label">진단 및 사용 정보를 Cyanogen에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%s</xliff:g>. 이 정보는 배터리 수명, 앱 성능과 새 <xliff:g id="name" example="CyanogenMod">%s</xliff:g> 기능과 같이 사용자를 식별할 수 없는 정보입니다.</string>

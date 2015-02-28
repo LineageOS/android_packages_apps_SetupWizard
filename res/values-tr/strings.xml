@@ -54,9 +54,6 @@
   <string name="yes">Evet</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Acil durum çağrısı</string>
-  <string name="setup_services">Cyanogen servisleri</string>
-  <string name="services_explanation" product="tablet">Bu hizmetler tabletinizin işlevlerini arttırmak için çalışır. İstediğiniz zaman kapatabilirsiniz. Veriler Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> koşulları dahilinde kullanılacaktır.</string>
-  <string name="services_explanation" product="default">Bu hizmetler telefonunuzun işlevlerini arttırmak için çalışır. İstediğiniz zaman kapatabilirsiniz. Veriler Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> koşulları dahilinde kullanılacaktır.</string>
   <string name="services_privacy_policy">Gizlilik Politikası</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
   <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g>. Bu bilgiler kimliğinizi ifşah edecek şekilde kullanılmaz ancak pil ömrü, uyg. performansı, ve yeni <xliff:g id="name" example="CyanogenMod">%s</xliff:g> özellikleri gibi konularda takımımızın çalışmalarında kullanılır.</string>

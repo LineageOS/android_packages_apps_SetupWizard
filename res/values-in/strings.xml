@@ -34,6 +34,5 @@
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
   <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan mobile data selama setup? Menyalakan mobile data mungkin akan dikenakan biaya data.</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="setup_services">Layanan Cyanogen</string>
   <string name="services_privacy_policy">Kebijakan privasi</string>
 </resources>
