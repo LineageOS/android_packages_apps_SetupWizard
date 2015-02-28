@@ -127,9 +127,15 @@ public class CyanogenServicesPage extends SetupPage {
                                             ActivityOptions.makeCustomAnimation(mContext,
                                                     android.R.anim.fade_in,
                                                     android.R.anim.fade_out);
-                                    mFragment.startActivityForResult(intent,
-                                            SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN,
-                                            options.toBundle());
+                                    if (!mFragment.isDetached()) {
+                                        mFragment.startActivityForResult(intent,
+                                                SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN,
+                                                options.toBundle());
+                                    } else {
+                                        if (getCallbacks().isCurrentPage(CyanogenServicesPage.this)) {
+                                            getCallbacks().onNextPage();
+                                        }
+                                    }
                                 } catch (OperationCanceledException e) {
                                 } catch (IOException e) {
                                 } catch (AuthenticatorException e) {
