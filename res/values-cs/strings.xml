@@ -54,9 +54,6 @@
   <string name="yes">Ano</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Tísňové volání</string>
-  <string name="setup_services">Cyanogen služby</string>
-  <string name="services_explanation" product="tablet">Tyto služby fungují pro rozšíření možností vašeho tabletu. Můžete je kdykoli vypnout. Daná data budou použita v souladu s Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Tyto služby fungují pro rozšíření možností vašeho telefonu. Můžete je kdykoli vypnout. Daná data budou použita v souladu s Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Zásady ochrany osobních údajů</string>
   <string name="services_help_improve_cm">Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label">&lt;b&gt;Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g>&lt;/b&gt; automatickým odesíláním dat o používání do Cyanogenu. Tyto informace nebudou použity k vaší identifikaci, ale pomohou vývojářům v práci na věcech jako výdrž baterie, rychlost aplikací nebo vývoj nových <xliff:g id="name" example="CyanogenMod">%s</xliff:g> funkcí.</string>

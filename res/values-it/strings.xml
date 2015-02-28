@@ -38,6 +38,7 @@
   <string name="choose_data_sim_summary" product="default">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
   <string name="date_time_summary">Imposta il fuso orario e se necessario regola ora e data corrente</string>
   <string name="backup_data_summary"><b>Esegui il Back-up</b> dei dati delle app, password Wi-Fi e altre impostazioni sui server di Google</string>
+  <string name="other_services_summary">Questi servizi consentono a Google di lavorare per te, ed è possibile attivarli o disattivarli in qualsiasi momento. I dati saranno utilizzati in conformità con la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> di Google.</string>
   <string name="location_services_summary">I servizi di localizzazione permettono a Maps e ad altre applicazioni di raccogliere ed utilizzare dati come la tua posizione. Ad esempio, Maps potrebbe utilizzare la tua posizione per individuare negozi di caffè nelle tue vicinanze.</string>
   <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> ad utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
   <string name="location_gps" product="tablet"><b>Migliora l\'accuratezza della localizzazione</b> consentendo alle app di usare il GPS sul tuo tablet.</string>
@@ -53,9 +54,6 @@
   <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Chiamata di emergenza</string>
-  <string name="setup_services">Servizi Cyanogen</string>
-  <string name="services_explanation" product="tablet">Questi servizi funzionano estendendo le funzionalità del tuo tablet. Puoi disattivarle in qualsiasi momento. I dati verranno usati in accordo con Cyanogenmod <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Questi servizi funzionano estendendo le funzionalità del tuo telefono. Puoi disattivarle in qualsiasi momento. I dati verranno usati in accordo con Cyanogenmod <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Condizioni sulla Privacy</string>
   <string name="services_help_improve_cm">Aiuta a migliorare <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> inviando automaticamente dati di diagnostica e sull\'utilizzo a Cyanogen. Queste informazioni non possono essere utilizzate per identificarti e servono ad aiutare i team che lavorano sulla durata della batteria, sulle prestazioni delle app, e su nuove funzionalità <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>

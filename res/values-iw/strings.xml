@@ -32,18 +32,28 @@
   <string name="setup_datetime">תאריך ושעה</string>
   <string name="setup_current_date">התאריך הנוכחי</string>
   <string name="setup_current_time">השעה הנוכחית</string>
+  <string name="sim_missing_summary" product="tablet">לא זוהה כרטיס SIM בטאבלט שלך. כדי להכניס כרטיס SIM, קרא את הוראות ההפעלה שהגיעו יחד עם מכשירך.</string>
+  <string name="sim_missing_summary" product="default">לא זוהה כרטיס SIM במכשיר. כדי להכניס כרטיס SIM, קרא את הוראות ההפעלה שהגיעו יחד עם מכשירך.</string>
+  <string name="choose_data_sim_summary" product="tablet">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? יתכן ויחולו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת הטאבלט שלך.</string>
+  <string name="choose_data_sim_summary" product="default">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? יתכן ויחולו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת המכשיר.</string>
   <string name="date_time_summary">הגדר את אזור הזמן שלך והתאם את התאריך ואת השעה הנוכחיים במידת הצורך</string>
+  <string name="backup_data_summary"><b>גבה</b> נתוני יישומים, סיסמאות Wi-Fi והגדרות אחרות לשרתי Google</string>
+  <string name="other_services_summary">שירותים אלו נותנים ל-Google לעבוד בשבילך, ואתה יכול לכבות/להדליק אותם בכל זמן. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Google.</string>
+  <string name="location_services_summary">שירותי מיקום מאפשרים ליישום המפות וליישומים אחרים להשתמש במיקומך. לדוגמא, יישום המפות עשוי להשתמש במידע זה על מנת להציג לך בתי קפה הנמצאים בקרבתך.</string>
   <string name="location_access_summary"><b>אפשר ליישומים שביקשו את אישורך</b> להשתמש במידע על מיקומך.</string>
   <string name="location_gps" product="tablet"><b>שפר דיוק מיקום</b> ע\"י נתינת הרשאה ליישומים להשתמש ב-GPS בטאבלט.</string>
   <string name="location_gps" product="default"><b>שפר דיוק מיקום</b> ע\"י נתינת הרשאה ליישומים להשתמש ב-GPS בטלפון.</string>
+  <string name="location_network"><b>השתמש ב-Wi-Fi</b> כדי לסייע לאפליקציות לקבוע את מיקומך.</string>
+  <string name="location_network_telephony"><b>השתמש ב-Wi-Fi וברשתות סלולריות</b> כדי לסייע לאפליקציות לקבוע את מיקומך.</string>
+  <string name="location_network_gms"><b>השתמש בשירותי המיקום של Google</b> כדי לשלוח נתוני מיקום אנונימיים ל-Google, גם כשיישומים לא פועלים.</string>
   <string name="setup_mobile_data">הפעל נתונים ניידים</string>
   <string name="setup_mobile_data_no_service">אין שירות</string>
   <string name="setup_mobile_data_emergency_only">שיחות חירום בלבד</string>
+  <string name="enable_mobile_data_summary">האם ברצונך להשתמש באינטרנט הסלולרי במהלך ההתקנה? פעולה זו עלולה להיות כרוכה בתשלום עקב הפעלת נתונים ניידים.</string>
   <string name="no">לא</string>
   <string name="yes">כן</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">שיחת חירום</string>
-  <string name="setup_services">שירותי Cyanogen</string>
   <string name="services_privacy_policy">מדיניות הפרטיות</string>
   <string name="services_help_improve_cm">עזור לשפר את <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> על ידי שליחת נתוני אבחון ושימוש למפתחים. מידע זה לא יוכל לשמש כדי לזהות אותך והוא תורם לצוותים העובדים על דברים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
