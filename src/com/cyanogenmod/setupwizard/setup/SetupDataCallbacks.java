@@ -26,4 +26,5 @@ public interface SetupDataCallbacks {
     boolean isCurrentPage(Page page);
     Page getPage(String key);
     Page getPage(int key);
+    void addFinishRunnable(Runnable runnable);
 }

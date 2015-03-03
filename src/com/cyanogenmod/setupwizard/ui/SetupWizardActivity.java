@@ -47,6 +47,8 @@ import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
+import java.util.ArrayList;
+
 
 public class SetupWizardActivity extends Activity implements SetupDataCallbacks {
 
@@ -68,6 +70,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     private boolean mIsGuestUser = false;
 
     private volatile boolean mIsFinishing = false;
+
+    private final ArrayList<Runnable> mFinishRunnables = new ArrayList<Runnable>();
 
     private ThemeManager.ThemeChangeListener mThemeChangeListener = new ThemeManager.ThemeChangeListener() {
         @Override
@@ -274,6 +278,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     @Override
+    public void addFinishRunnable(Runnable runnable) {
+        mFinishRunnables.add(runnable);
+    }
+
+    @Override
     public void onFinish() {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
         Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
@@ -313,6 +322,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     public void finish() {
         super.finish();
+        for (Runnable runnable : mFinishRunnables) {
+            runnable.run();
+        }
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
@@ -390,21 +402,28 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     }
 
     private void finalizeSetup() {
-        Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
-        Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
+        mFinishRunnables.add(new Runnable() {
+            @Override
+            public void run() {
+                Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
+                Settings.Secure.putInt(getContentResolver(),
+                        Settings.Secure.USER_SETUP_COMPLETE, 1);
+                if (mEnableAccessibilityController != null) {
+                    mEnableAccessibilityController.onDestroy();
+                }
+                SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
+                SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
+                final ThemeManager tm =
+                        (ThemeManager) SetupWizardActivity.this.getSystemService(THEME_SERVICE);
+                tm.removeClient(mThemeChangeListener);
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent);
+                final WallpaperManager wallpaperManager =
+                        WallpaperManager.getInstance(SetupWizardActivity.this);
+                wallpaperManager.forgetLoadedWallpaper();
+            }
+        });
         finish();
-        if (mEnableAccessibilityController != null) {
-            mEnableAccessibilityController.onDestroy();
-        }
-        SetupWizardUtils.disableGMSSetupWizard(this);
-        SetupWizardUtils.disableSetupWizard(this);
-        final ThemeManager tm = (ThemeManager) this.getSystemService(THEME_SERVICE);
-        tm.removeClient(mThemeChangeListener);
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_HOME);
-        startActivity(intent);
-        final WallpaperManager wallpaperManager =
-                WallpaperManager.getInstance(SetupWizardActivity.this);
-        wallpaperManager.forgetLoadedWallpaper();
     }
 }
