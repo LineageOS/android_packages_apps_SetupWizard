@@ -191,6 +191,13 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
         }
     }
 
+    @Override
+    public void addFinishRunnable(Runnable runnable) {
+        for (int i = 0; i < mListeners.size(); i++) {
+            mListeners.get(i).addFinishRunnable(runnable);
+        }
+    }
+
     public Bundle save() {
         Bundle bundle = new Bundle();
         for (Page page : mPageList.values()) {
