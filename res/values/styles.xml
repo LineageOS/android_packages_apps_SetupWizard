@@ -66,7 +66,7 @@
         <item name="android:maxLines">1</item>
         <item name="android:minWidth">15dp</item>
         <item name="android:minHeight">15dp</item>
-        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColor">@color/button_bar_text</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:drawablePadding">6dp</item>
         <item name="android:ellipsize">end</item>
