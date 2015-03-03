@@ -6,6 +6,6 @@
     android:viewportHeight="24">
 
     <path
-        android:fillColor="@color/primary_text"
+        android:fillColor="@color/button_bar_text"
         android:pathData="M10,6L8.59,7.41L13.17,12l-4.58,4.59L10,18l6-6L10,6Z" />
 </vector>

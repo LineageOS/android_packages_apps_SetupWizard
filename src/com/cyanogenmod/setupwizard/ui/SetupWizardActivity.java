@@ -253,8 +253,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             mButtonBar.setBackgroundResource(R.color.button_bar_background);
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_dark), null);
-            mNextButton.setTextColor(resources.getColor(R.color.primary_text));
-            mPrevButton.setTextColor(resources.getColor(R.color.primary_text));
+            mNextButton.setTextColor(resources.getColor(R.color.button_bar_text));
+            mPrevButton.setTextColor(resources.getColor(R.color.button_bar_text));
         }
     }
 
