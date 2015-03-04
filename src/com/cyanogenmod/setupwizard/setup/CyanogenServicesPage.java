@@ -31,8 +31,8 @@ import android.os.Bundle;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.LoadingFragment;
-import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
@@ -98,11 +98,19 @@ public class CyanogenServicesPage extends SetupPage {
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN) {
             if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
-                if (SetupWizardUtils.accountExists(mContext, mContext.getString(R.string.cm_account_type))) {
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.CYANOGEN_ACCOUNT,
+                        resultCode == Activity.RESULT_OK ? "success" : "skipped");
+                if (SetupWizardUtils.accountExists(mContext,
+                        mContext.getString(R.string.cm_account_type))) {
                     setHidden(true);
                 }
                 getCallbacks().onNextPage();
             } else if (resultCode == Activity.RESULT_CANCELED) {
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.CYANOGEN_ACCOUNT, "canceled");
                 getCallbacks().onPreviousPage();
             }
         }
@@ -128,11 +136,17 @@ public class CyanogenServicesPage extends SetupPage {
                                                     android.R.anim.fade_in,
                                                     android.R.anim.fade_out);
                                     if (!mFragment.isDetached()) {
+                                        SetupStats
+                                                .addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                                                        SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
+                                                        SetupStats.Label.PAGE,
+                                                        SetupStats.Label.CYANOGEN_ACCOUNT);
                                         mFragment.startActivityForResult(intent,
                                                 SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN,
                                                 options.toBundle());
                                     } else {
-                                        if (getCallbacks().isCurrentPage(CyanogenServicesPage.this)) {
+                                        if (getCallbacks().
+                                                isCurrentPage(CyanogenServicesPage.this)) {
                                             getCallbacks().onNextPage();
                                         }
                                     }

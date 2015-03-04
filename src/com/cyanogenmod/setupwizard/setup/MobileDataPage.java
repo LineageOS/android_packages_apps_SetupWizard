@@ -33,6 +33,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
@@ -103,6 +104,9 @@ public class MobileDataPage extends SetupPage {
                 boolean checked = !mEnableMobileData.isChecked();
                 SetupWizardUtils.setMobileDataEnabled(getActivity(), checked);
                 mEnableMobileData.setChecked(checked);
+                SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                        SetupStats.Action.ENABLE_MOBILE_DATA,
+                        SetupStats.Label.CHECKED, String.valueOf(checked));
             }
         };
 

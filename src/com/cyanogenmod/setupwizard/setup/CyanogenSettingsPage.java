@@ -41,6 +41,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
@@ -127,6 +128,10 @@ public class CyanogenSettingsPage extends SetupPage {
             @Override
             public void run() {
                 if (getData().containsKey(KEY_ENABLE_NAV_KEYS)) {
+                    SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                            SetupStats.Action.ENABLE_NAV_KEYS,
+                            SetupStats.Label.CHECKED,
+                            String.valueOf(getData().getBoolean(KEY_ENABLE_NAV_KEYS)));
                     writeDisableNavkeysOption(mContext, getData().getBoolean(KEY_ENABLE_NAV_KEYS));
                 }
             }
@@ -139,8 +144,12 @@ public class CyanogenSettingsPage extends SetupPage {
     private void handleWhisperPushRegistration() {
         Bundle privacyData = getData();
         if (privacyData != null &&
-                privacyData.containsKey(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH) &&
-                privacyData.getBoolean(CyanogenSettingsPage.KEY_REGISTER_WHISPERPUSH)) {
+                privacyData.containsKey(KEY_REGISTER_WHISPERPUSH) &&
+                privacyData.getBoolean(KEY_REGISTER_WHISPERPUSH)) {
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.USE_SECURE_SMS,
+                    SetupStats.Label.CHECKED,
+                    String.valueOf(privacyData.getBoolean(KEY_REGISTER_WHISPERPUSH)));
             Log.i(TAG, "Registering with WhisperPush");
             WhisperPushUtils.startRegistration(mContext);
         }
@@ -149,9 +158,9 @@ public class CyanogenSettingsPage extends SetupPage {
     private void handleEnableMetrics() {
         Bundle privacyData = getData();
         if (privacyData != null
-                && privacyData.containsKey(CyanogenSettingsPage.KEY_SEND_METRICS)) {
-            Settings.System.putInt(mContext.getContentResolver(), CyanogenSettingsPage.SETTING_METRICS,
-                    privacyData.getBoolean(CyanogenSettingsPage.KEY_SEND_METRICS) ? 1 : 0);
+                && privacyData.containsKey(KEY_SEND_METRICS)) {
+            Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.STATS_COLLECTION,
+                    privacyData.getBoolean(KEY_SEND_METRICS) ? 1 : 0);
         }
     }
 
@@ -159,9 +168,14 @@ public class CyanogenSettingsPage extends SetupPage {
         Bundle privacyData = getData();
         if (!ThemeUtils.getDefaultThemePackageName(mContext).equals(ThemeConfig.SYSTEM_DEFAULT) &&
                 privacyData != null && privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.APPLY_CUSTOM_THEME,
+                    SetupStats.Label.CHECKED,
+                    String.valueOf(privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)));
             Log.i(TAG, "Applying default theme");
             final ThemeManager tm = (ThemeManager) mContext.getSystemService(Context.THEME_SERVICE);
             tm.applyDefaultTheme();
+
         } else {
             getCallbacks().finishSetup();
         }

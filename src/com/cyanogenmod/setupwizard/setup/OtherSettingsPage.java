@@ -38,6 +38,7 @@ import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
@@ -253,6 +254,9 @@ public class OtherSettingsPage extends SetupPage {
         private void onToggleBackup(boolean checked) {
             try {
                 mBackupManager.setBackupEnabled(checked);
+                SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                        SetupStats.Action.ENABLE_BACKUP,
+                        SetupStats.Label.CHECKED, String.valueOf(checked));
             } catch (RemoteException e) {}
             updateBackupToggle();
         }
@@ -263,11 +267,20 @@ public class OtherSettingsPage extends SetupPage {
             boolean networkEnabled = Settings.Secure.isLocationProviderEnabled(
                     mContentResolver, LocationManager.NETWORK_PROVIDER);
             mGps.setChecked(gpsEnabled);
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.ENABLE_GPS_LOCATION,
+                    SetupStats.Label.CHECKED, String.valueOf(gpsEnabled));
             mNetwork.setChecked(networkEnabled);
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.ENABLE_NETWORK_LOCATION,
+                    SetupStats.Label.CHECKED, String.valueOf(networkEnabled));
             mLocationAccess.setChecked(gpsEnabled || networkEnabled);
         }
 
         private void onToggleLocationAccess(boolean checked) {
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.ENABLE_LOCATION,
+                    SetupStats.Label.CHECKED, String.valueOf(checked));
             Settings.Secure.setLocationProviderEnabled(mContentResolver,
                     LocationManager.GPS_PROVIDER, checked);
             mGps.setEnabled(checked);

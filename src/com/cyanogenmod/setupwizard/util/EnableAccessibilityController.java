@@ -39,6 +39,7 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.accessibility.IAccessibilityManager;
 
 import com.android.internal.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -275,6 +276,8 @@ public class EnableAccessibilityController {
             // Turn on accessibility mode last.
             Settings.Secure.putIntForUser(resolver, Settings.Secure.ACCESSIBILITY_ENABLED,
                     1, userId);
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    "accessibility_enabled");
         } else if (keyguardLocked) {
             try {
                 mAccessibilityManager.temporaryEnableAccessibilityStateUntilKeyguardRemoved(

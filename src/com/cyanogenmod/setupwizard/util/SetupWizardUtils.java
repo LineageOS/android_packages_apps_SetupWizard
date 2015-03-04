@@ -27,6 +27,7 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.provider.Settings;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -41,6 +42,11 @@ public class SetupWizardUtils {
     private static final String GOOGLE_SETUPWIZARD_PACKAGE = "com.google.android.setupwizard";
 
     private SetupWizardUtils(){}
+
+    public static boolean isStatsCollectionEnabled(Context context) {
+        return Settings.Secure.getInt(context.getContentResolver(),
+                Settings.Secure.STATS_COLLECTION, 1) != 0;
+    }
 
     public static void tryEnablingWifi(Context context) {
         WifiManager wifiManager = (WifiManager)context.getSystemService(Context.WIFI_SERVICE);

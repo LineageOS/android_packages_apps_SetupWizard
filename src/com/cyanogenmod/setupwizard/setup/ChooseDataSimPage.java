@@ -36,6 +36,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 
 import java.util.List;
@@ -179,7 +180,14 @@ public class ChooseDataSimPage extends SetupPage {
         private void setDataSubChecked(SubInfoRecord subInfoRecord) {
             if (isDetached()) return;
             for (int i = 0; i < mCheckBoxes.size(); i++) {
-                mCheckBoxes.get(i).setChecked(subInfoRecord.slotId == i);
+                if (subInfoRecord.slotId == i) {
+                    mCheckBoxes.get(i).setChecked(true);
+                    SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                            SetupStats.Action.PREFERRED_DATA_SIM,
+                            SetupStats.Label.SLOT, String.valueOf(i + 1));
+                } else {
+                    mCheckBoxes.get(i).setChecked(false);
+                }
 
             }
         }

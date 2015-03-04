@@ -26,6 +26,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 
@@ -47,6 +48,8 @@ public abstract class SetupPageFragment extends Fragment {
         if (mKey == null) {
             throw new IllegalArgumentException("No KEY_PAGE_ARGUMENT given");
         }
+        SetupStats.addEvent(SetupStats.Categories.PAGE_LOAD, SetupStats.Action.PAGE_LOADED,
+                mKey, String.valueOf(System.currentTimeMillis()));
     }
 
     @Override

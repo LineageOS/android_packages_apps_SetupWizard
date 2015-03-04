@@ -42,6 +42,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -135,6 +136,8 @@ public class DateTimePage extends SetupPage {
             mDateView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    SetupStats.addEvent(SetupStats.Categories.BUTTON_CLICK,
+                            "date_picker");
                     showDatePicker();
                 }
             });
@@ -142,6 +145,8 @@ public class DateTimePage extends SetupPage {
             mTimeView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    SetupStats.addEvent(SetupStats.Categories.BUTTON_CLICK,
+                            "time_picker");
                     showTimePicker();
                 }
             });
@@ -162,11 +167,17 @@ public class DateTimePage extends SetupPage {
                             final Map<?, ?> map = (Map<?, ?>) adapterView.getItemAtPosition(position);
                             final String tzId = (String) map.get(KEY_ID);
                             if (mCurrentTimeZone != null && !mCurrentTimeZone.getID().equals(tzId)) {
+                                SetupStats.addEvent(SetupStats.Categories.BUTTON_CLICK,
+                                        "timezone_picker");
                                 // Update the system timezone value
                                 final Activity activity = getActivity();
                                 final AlarmManager alarm = (AlarmManager) activity.getSystemService(Context.ALARM_SERVICE);
                                 alarm.setTimeZone(tzId);
                                 mCurrentTimeZone = TimeZone.getTimeZone(tzId);
+                                SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                                        SetupStats.Action.TIMEZONE_CHANGED,
+                                        SetupStats.Label.VALUE,
+                                        mCurrentTimeZone.getDisplayName());
                             }
 
                         }
@@ -209,6 +220,10 @@ public class DateTimePage extends SetupPage {
             if (activity != null) {
                 setDate(activity, year, month, day);
                 updateTimeAndDateDisplay(activity);
+                SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                        SetupStats.Action.DATE_CHANGED,
+                        SetupStats.Label.VALUE,
+                        month+"/"+day+"/"+year);
             }
         }
 
@@ -218,6 +233,10 @@ public class DateTimePage extends SetupPage {
             if (activity != null) {
                 setTime(activity, hourOfDay, minute);
                 updateTimeAndDateDisplay(activity);
+                SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                        SetupStats.Action.TIME_CHANGED,
+                        SetupStats.Label.VALUE,
+                        hourOfDay+":"+minute);
             }
         }
 

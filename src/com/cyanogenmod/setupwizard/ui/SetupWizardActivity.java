@@ -41,6 +41,7 @@ import android.widget.ProgressBar;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.setup.CMSetupWizardData;
 import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
@@ -71,6 +72,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     private volatile boolean mIsFinishing = false;
 
+    private static long sLaunchTime = 0;
+
     private final ArrayList<Runnable> mFinishRunnables = new ArrayList<Runnable>();
 
     private ThemeManager.ThemeChangeListener mThemeChangeListener = new ThemeManager.ThemeChangeListener() {
@@ -90,6 +93,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (sLaunchTime == 0) {
+            SetupStats.addEvent(SetupStats.Categories.APP_LAUNCH, TAG);
+            sLaunchTime = System.nanoTime();
+        }
         getWindow().setWindowAnimations(android.R.anim.fade_in);
         setContentView(R.layout.setup_main);
         mRootView = findViewById(R.id.root);
@@ -300,6 +307,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
         tm.addClient(mThemeChangeListener);
         mSetupData.finishPages();
+        SetupStats.addEvent(SetupStats.Categories.APP_FINISHED, TAG,
+                SetupStats.Label.TOTAL_TIME, String.valueOf(
+                        System.nanoTime() - sLaunchTime));
     }
 
     @Override
@@ -322,9 +332,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
     @Override
     public void finish() {
         super.finish();
-        for (Runnable runnable : mFinishRunnables) {
-            runnable.run();
-        }
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 
@@ -411,11 +418,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 if (mEnableAccessibilityController != null) {
                     mEnableAccessibilityController.onDestroy();
                 }
-                SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
-                SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
                 final ThemeManager tm =
                         (ThemeManager) SetupWizardActivity.this.getSystemService(THEME_SERVICE);
                 tm.removeClient(mThemeChangeListener);
+                SetupStats.sendEvents(SetupWizardActivity.this);
+                SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.addCategory(Intent.CATEGORY_HOME);
                 startActivity(intent);
@@ -425,5 +432,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
             }
         });
         finish();
+        for (Runnable runnable : mFinishRunnables) {
+            runnable.run();
+        }
+        SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
     }
 }
