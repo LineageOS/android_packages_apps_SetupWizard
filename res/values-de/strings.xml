@@ -40,9 +40,12 @@
   <string name="backup_data_summary"><b>Sichert</b> App-Daten, WLAN-Passwörter und andere Einstellungen auf Google-Servern</string>
   <string name="other_services_summary">Diese Dienste werden von Google zur Verfügung gestellt und können jederzeit aktiviert oder deaktiviert werden. Die Daten werden in Übereinstimmung mit Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g> genutzt.</string>
   <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern Daten, wie z. B. Ihren ungefähren Standort zu bestimmen und zu verwenden. Zum Beispiel könnte eine App Ihren ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
+  <string name="location_access_summary"><b>Erlaubt Apps, die nach Ihrer Berechtigung gefragt haben,</b> Standortinformationen zu verwenden. Diese können Ihren derzeitigen und vergangenen Standort beinhalten.</string>
   <string name="location_gps" product="tablet"><b>Standortgenauigkeit erhöhen</b>, indem Apps erlaubt wird, GPS an Ihrem Tablet zu verwenden.</string>
   <string name="location_gps" product="default"><b>Standortgenauigkeit erhöhen</b>, indem Apps erlaubt wird, GPS an Ihrem Telefon zu verwenden.</string>
+  <string name="location_network"><b>WLAN nutzen</b>, um Apps zu helfen, Ihren Standort zu ermitteln.</string>
   <string name="location_network_telephony"><b>WLAN und mobiles Netzwerk aktivieren</b>, um Apps den Standortabruf zu ermöglichen.</string>
+  <string name="location_network_gms"><b>Googles Standortdienst verwenden</b>, um Apps bei der Bestimmung Ihrer Position zu helfen. Das bedeutet, dass anonymisierte Standortdaten an Google gesendet werden, auch wenn keine App aktiv ist.</string>
   <string name="setup_mobile_data">Mobile Daten aktivieren</string>
   <string name="setup_mobile_data_no_service">Kein Netz</string>
   <string name="setup_mobile_data_emergency_only">Nur Notrufe</string>
@@ -51,6 +54,8 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> – <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Notruf</string>
+  <string name="services_explanation" product="tablet">Diese Dienste werden verwendet, um die Funktionen Ihres Tablets zu erweitern. Die Daten werden in Übereinstimmung mit Cyanogens <xliff:g id="name" example="Privacy Policy">%s</xliff:g> verwendet.</string>
+  <string name="services_explanation" product="default">Diese Dienste werden verwendet, um die Funktionen Ihres Telefons zu erweitern. Die Daten werden in Übereinstimmung mit Cyanogens <xliff:g id="name" example="Privacy Policy">%s</xliff:g> verwendet.</string>
   <string name="services_privacy_policy">Datenschutzbestimmungen</string>
   <string name="services_help_improve_cm">Helfen Sie <xliff:g id="name" example="CyanogenMod">%s</xliff:g> zu verbessern</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> indem Sie automatisch Diagnose- und Nutzungsdaten an CyanogenMod senden. Diese Information können nicht verwendet werden, um Sie zu identifizieren. Es hilft unseren Teams, die an Dingen wie Akkulaufzeit, App-Leistung oder an neuen <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-Funktionen arbeiten.</string>
