@@ -24,7 +24,7 @@
   <string name="loading">Even geduld\u2026</string>
   <string name="setup_complete">Instellen voltooid</string>
   <string name="setup_welcome">Welkom</string>
-  <string name="setup_wifi">Selecteer Wi-Fi</string>
+  <string name="setup_wifi">Wifi selecteren</string>
   <string name="setup_sim_missing">Simkaart ontbreekt</string>
   <string name="setup_choose_data_sim">Kies een simkaart voor gegevensverbinding</string>
   <string name="setup_location">Locatieservices</string>
@@ -32,11 +32,11 @@
   <string name="setup_datetime">Datum &amp; tijd</string>
   <string name="setup_current_date">Huidige datum</string>
   <string name="setup_current_time">Huidige tijd</string>
-  <string name="sim_missing_summary" product="tablet">Geen simkaart gedetecteerd in uw tablet. Om een simkaart te plaatsen, lees de instructies die bij uw tablet is geleverd.</string>
-  <string name="sim_missing_summary" product="default">Geen simkaart gedetecteerd in uw telefoon. Om een simkaart te plaatsen, lees de instructies die bij uw telefoon is geleverd.</string>
+  <string name="sim_missing_summary" product="tablet">Geen simkaart gedetecteerd in uw tablet. Om een simkaart te plaatsen, lees de instructie die bij uw tablet is geleverd.</string>
+  <string name="sim_missing_summary" product="default">Geen simkaart gedetecteerd in uw telefoon. Om een simkaart te plaatsen, lees de instructie die bij uw telefoon is geleverd.</string>
   <string name="choose_data_sim_summary" product="tablet">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw tablet in te stellen.</string>
   <string name="choose_data_sim_summary" product="default">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw telefoon in te stellen.</string>
-  <string name="date_time_summary">Selecteer uw tijdzone en pas de huidige datum en tijd aan indien nodig.</string>
+  <string name="date_time_summary">Selecteer uw tijdzone en pas indien nodig de huidige datum en tijd aan.</string>
   <string name="backup_data_summary"><b>Back-up maken</b> van app-gegevens, wifi-wachtwoorden en andere instellingen naar de servers van Google</string>
   <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
   <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
@@ -54,9 +54,14 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Noodoproep</string>
+  <string name="setup_services">Cyanogen-functies</string>
+  <string name="services_explanation" product="tablet">Deze diensten worden gebruikt om de mogelijkheden van uw tablet uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van Cyanogen.</string>
+  <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van Cyanogen.</string>
   <string name="services_privacy_policy">Privacybeleid</string>
   <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar Cyanogen. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-functies.</string>
+  <string name="services_apply_theme">Thema <xliff:g id="name" example="Material">%s</xliff:g> toepassen</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> voor unieke pictogrammen, achtergronden en lettertypen.</string>
   <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
   <string name="services_use_secure_sms">Beveiligde sms-berichten gebruiken</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> om sms-gesprekken te versleutelen met anderen die ook beveiligde sms-berichten gebruiken op een <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-apparaat.</string>
