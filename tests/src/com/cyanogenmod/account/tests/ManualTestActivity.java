@@ -18,6 +18,7 @@ package com.cyanogenmod.setupwizard.tests;
 
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -66,6 +67,8 @@ public class ManualTestActivity extends Activity {
         pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP);
         pm.clearApplicationUserData("com.cyanogenmod.setupwizard", null);
+        ActivityManager am = (ActivityManager) getSystemService(Activity.ACTIVITY_SERVICE);
+        am.killBackgroundProcesses("com.cyanogenmod.setupwizard");
         try {
             PackageInfo packageInfo = getPackageManager()
                     .getPackageInfo("com.google.android.setupwizard",
@@ -110,7 +113,6 @@ public class ManualTestActivity extends Activity {
 
     private void setSetupComplete() {
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
-        Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 0);
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
@@ -118,6 +120,8 @@ public class ManualTestActivity extends Activity {
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
         pm.setComponentEnabledSetting(componentName,
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        ActivityManager am = (ActivityManager) getSystemService(Activity.ACTIVITY_SERVICE);
+        am.killBackgroundProcesses("com.cyanogenmod.setupwizard");
         try {
             PackageInfo packageInfo = this.getPackageManager()
                     .getPackageInfo("com.google.android.setupwizard",

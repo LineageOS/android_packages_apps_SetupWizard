@@ -22,6 +22,8 @@ import android.app.StatusBarManager;
 import android.content.Context;
 import android.provider.Settings;
 
+import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+
 public class SetupWizardApp extends Application {
 
     public static final String TAG = SetupWizardApp.class.getSimpleName();
@@ -55,8 +57,22 @@ public class SetupWizardApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        disableCaptivePortalDetection();
         mStatusBarManager = (StatusBarManager)getSystemService(Context.STATUS_BAR_SERVICE);
+        try {
+            // Since this is a new component, we need to disable here if the user
+            // has already been through setup on a previous version.
+            if (SetupWizardUtils.isGuestUser(this)
+                    || Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.USER_SETUP_COMPLETE) == 1) {
+                SetupWizardUtils.disableSetupWizard(this);
+            }  else {
+                disableCaptivePortalDetection();
+            }
+        } catch (Settings.SettingNotFoundException e) {
+            // Continue with setup
+            disableCaptivePortalDetection();
+        }
+
     }
 
     public void disableStatusBar() {

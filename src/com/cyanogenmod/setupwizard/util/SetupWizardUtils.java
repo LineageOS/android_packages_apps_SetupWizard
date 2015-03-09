@@ -43,11 +43,6 @@ public class SetupWizardUtils {
 
     private SetupWizardUtils(){}
 
-    public static boolean isStatsCollectionEnabled(Context context) {
-        return Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.STATS_COLLECTION, 1) != 0;
-    }
-
     public static void tryEnablingWifi(Context context) {
         WifiManager wifiManager = (WifiManager)context.getSystemService(Context.WIFI_SERVICE);
         if (!wifiManager.isWifiEnabled()) {
@@ -160,7 +155,7 @@ public class SetupWizardUtils {
             disableComponentArray(context, packageInfo.services);
             disableComponentArray(context, packageInfo.receivers);
         } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "Enable to disable GMS");
+            Log.e(TAG, "Unable to disable GMS");
         }
     }
 
