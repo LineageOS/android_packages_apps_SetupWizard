@@ -18,12 +18,25 @@
     <style name="Theme.Setup" parent="@android:style/Theme.Material.Light">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primary</item>
         <item name="android:colorAccent">@color/accent</item>
         <item name="android:textColorLink">@color/accent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimations</item>
+    </style>
+
+    <style name="ActivityAnimations" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/translucent_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/translucent_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/translucent_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/translucent_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/translucent_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/translucent_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/translucent_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/translucent_exit</item>
     </style>
 
     <style name="Header">
@@ -32,6 +45,7 @@
 
     <style name="PageContainer">
         <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@color/page_background</item>
     </style>
 
     <style name="PageContent">

@@ -86,7 +86,9 @@ public class CMSetupWizardData extends AbstractSetupData {
             }
             showHideMobileDataPage();
         } else if (intent.getAction()
-                .equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
+                .equals(ConnectivityManager.CONNECTIVITY_ACTION) ||
+                intent.getAction()
+                        .equals(ConnectivityManager.CONNECTIVITY_ACTION_IMMEDIATE)) {
             showHideAccountPages();
         } else  if (intent.getAction()
                 .equals(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED)) {
@@ -139,6 +141,7 @@ public class CMSetupWizardData extends AbstractSetupData {
             filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
             filter.addAction(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
         }
+        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION_IMMEDIATE);
         filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
         filter.addAction(Intent.ACTION_TIMEZONE_CHANGED);
         filter.addAction(Intent.ACTION_TIME_CHANGED);
