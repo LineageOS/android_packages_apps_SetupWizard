@@ -62,7 +62,7 @@ public class CyanogenSettingsPage extends SetupPage {
     public static final String KEY_APPLY_DEFAULT_THEME = "apply_default_theme";
 
     public static final String SETTING_METRICS = "settings.cyanogen.allow_metrics";
-    public static final String PRIVACY_POLICY_URI = "https://cyngn.com/legal";
+    public static final String PRIVACY_POLICY_URI = "https://cyngn.com/oobe-legal?hideHeader=1";
 
     public CyanogenSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
