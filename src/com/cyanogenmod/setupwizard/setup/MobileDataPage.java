@@ -16,7 +16,6 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -79,21 +78,25 @@ public class MobileDataPage extends SetupPage {
         private SignalStrength mSignalStrength;
         private ServiceState mServiceState;
 
+        private boolean mIsAttached = false;
+
         private PhoneStateListener mPhoneStateListener =
                 new PhoneStateListener(SubscriptionManager.getDefaultDataSubId()) {
 
             @Override
             public void onSignalStrengthsChanged(SignalStrength signalStrength) {
-                if (isDetached()) return;
-                mSignalStrength = signalStrength;
-                updateSignalStrength();
+                if (mIsAttached) {
+                    mSignalStrength = signalStrength;
+                    updateSignalStrength();
+                }
             }
 
             @Override
             public void onServiceStateChanged(ServiceState state) {
-                if (isDetached()) return;
-                mServiceState = state;
-                updateSignalStrength();
+                if (mIsAttached) {
+                    mServiceState = state;
+                    updateSignalStrength();
+                }
             }
 
         };
@@ -129,66 +132,66 @@ public class MobileDataPage extends SetupPage {
         @Override
         public void onResume() {
             super.onResume();
+            mIsAttached = true;
+            mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+            mPhone.listen(mPhoneStateListener,
+                    PhoneStateListener.LISTEN_SERVICE_STATE
+                            | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
             updateDataConnectionStatus();
             updateSignalStrength();
         }
 
         @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
-            mPhone.listen(mPhoneStateListener,
-                    PhoneStateListener.LISTEN_SERVICE_STATE
-                            | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
-        }
-
-        @Override
-        public void onDetach() {
+        public void onPause() {
+            super.onPause();
+            mIsAttached = false;
             mPhone.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
-            super.onDetach();
         }
 
         private void updateCarrierText() {
-            if (isDetached()) return;
-            String name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultDataSubId());
-            if (TextUtils.isEmpty(name)) {
-                if (mServiceState != null && mServiceState.isEmergencyOnly()) {
-                    name = getString(R.string.setup_mobile_data_emergency_only);
-                } else {
-                    name = getString(R.string.setup_mobile_data_no_service);
+            if (mIsAttached) {
+                String name =
+                        mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultDataSubId());
+                if (TextUtils.isEmpty(name)) {
+                    if (mServiceState != null && mServiceState.isEmergencyOnly()) {
+                        name = getString(R.string.setup_mobile_data_emergency_only);
+                    } else {
+                        name = getString(R.string.setup_mobile_data_no_service);
+                    }
                 }
+                mNameView.setText(name);
             }
-            mNameView.setText(name);
         }
 
         private void updateSignalStrength() {
-            if (isDetached()) return;
-            if (!hasService()) {
-                mSignalView.setImageResource(R.drawable.ic_signal_no_signal);
-            } else {
-                if (mSignalStrength != null) {
-                    int resId;
-                    switch (mSignalStrength.getLevel()) {
-                        case 4:
-                            resId = R.drawable.ic_signal_4;
-                            break;
-                        case 3:
-                            resId = R.drawable.ic_signal_3;
-                            break;
-                        case 2:
-                            resId = R.drawable.ic_signal_2;
-                            break;
-                        case 1:
-                            resId = R.drawable.ic_signal_1;
-                            break;
-                        default:
-                            resId = R.drawable.ic_signal_0;
-                            break;
+            if (mIsAttached) {
+                if (!hasService()) {
+                    mSignalView.setImageResource(R.drawable.ic_signal_no_signal);
+                } else {
+                    if (mSignalStrength != null) {
+                        int resId;
+                        switch (mSignalStrength.getLevel()) {
+                            case 4:
+                                resId = R.drawable.ic_signal_4;
+                                break;
+                            case 3:
+                                resId = R.drawable.ic_signal_3;
+                                break;
+                            case 2:
+                                resId = R.drawable.ic_signal_2;
+                                break;
+                            case 1:
+                                resId = R.drawable.ic_signal_1;
+                                break;
+                            default:
+                                resId = R.drawable.ic_signal_0;
+                                break;
+                        }
+                        mSignalView.setImageResource(resId);
                     }
-                    mSignalView.setImageResource(resId);
                 }
+                updateCarrierText();
             }
-            updateCarrierText();
         }
 
         private void updateDataConnectionStatus() {

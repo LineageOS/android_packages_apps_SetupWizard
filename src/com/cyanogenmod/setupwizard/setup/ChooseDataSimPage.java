@@ -86,6 +86,8 @@ public class ChooseDataSimPage extends SetupPage {
         private SparseArray<ServiceState> mServiceStates;
         private SparseArray<PhoneStateListener> mPhoneStateListeners;
 
+        private boolean mIsAttached = false;
+
         private View.OnClickListener mSetDataSimClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -121,12 +123,6 @@ public class ChooseDataSimPage extends SetupPage {
                 mPhoneStateListeners.put(i, createPhoneStateListener(subInfoRecord));
                 mPageView.addView(inflater.inflate(R.layout.divider, null));
             }
-            mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
-            for (int i = 0; i < mPhoneStateListeners.size(); i++) {
-                mPhone.listen(mPhoneStateListeners.get(i),
-                        PhoneStateListener.LISTEN_SERVICE_STATE
-                                | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
-            }
             updateSignalStrengths();
             updateCurrentDataSub();
         }
@@ -139,16 +135,24 @@ public class ChooseDataSimPage extends SetupPage {
         @Override
         public void onResume() {
             super.onResume();
+            mIsAttached = true;
+            mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+            for (int i = 0; i < mPhoneStateListeners.size(); i++) {
+                mPhone.listen(mPhoneStateListeners.get(i),
+                        PhoneStateListener.LISTEN_SERVICE_STATE
+                                | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
+            }
             updateSignalStrengths();
             updateCurrentDataSub();
         }
 
         @Override
-        public void onDetach() {
+        public void onPause() {
+            super.onPause();
+            mIsAttached = false;
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
                 mPhone.listen(mPhoneStateListeners.get(i), PhoneStateListener.LISTEN_NONE);
             }
-            super.onDetach();
         }
 
         private PhoneStateListener createPhoneStateListener(final SubInfoRecord subInfoRecord) {
@@ -156,98 +160,105 @@ public class ChooseDataSimPage extends SetupPage {
 
                 @Override
                 public void onSignalStrengthsChanged(SignalStrength signalStrength) {
-                    if (isDetached()) return;
-                    mSignalStrengths.put(subInfoRecord.slotId, signalStrength);
-                    updateSignalStrength(subInfoRecord);
+                    if (mIsAttached) {
+                        mSignalStrengths.put(subInfoRecord.slotId, signalStrength);
+                        updateSignalStrength(subInfoRecord);
+                    }
                 }
 
                 @Override
                 public void onServiceStateChanged(ServiceState state) {
-                    if (isDetached()) return;
-                    mServiceStates.put(subInfoRecord.slotId, state);
-                    updateSignalStrength(subInfoRecord);
+                    if (mIsAttached) {
+                        mServiceStates.put(subInfoRecord.slotId, state);
+                        updateSignalStrength(subInfoRecord);
+                    }
                 }
             };
         }
 
         private void updateSignalStrengths() {
-            if (isDetached()) return;
-            for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                updateSignalStrength(mSubInfoRecords.get(i));
+            if (mIsAttached) {
+                for (int i = 0; i < mSubInfoRecords.size(); i++) {
+                    updateSignalStrength(mSubInfoRecords.get(i));
+                }
             }
         }
 
         private void setDataSubChecked(SubInfoRecord subInfoRecord) {
-            if (isDetached()) return;
-            for (int i = 0; i < mCheckBoxes.size(); i++) {
-                if (subInfoRecord.slotId == i) {
-                    mCheckBoxes.get(i).setChecked(true);
-                    SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
-                            SetupStats.Action.PREFERRED_DATA_SIM,
-                            SetupStats.Label.SLOT, String.valueOf(i + 1));
-                } else {
-                    mCheckBoxes.get(i).setChecked(false);
-                }
+            if (mIsAttached) {
+                for (int i = 0; i < mCheckBoxes.size(); i++) {
+                    if (subInfoRecord.slotId == i) {
+                        mCheckBoxes.get(i).setChecked(true);
+                        SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                                SetupStats.Action.PREFERRED_DATA_SIM,
+                                SetupStats.Label.SLOT, String.valueOf(i + 1));
+                    } else {
+                        mCheckBoxes.get(i).setChecked(false);
+                    }
 
+                }
             }
         }
 
         private void updateCurrentDataSub() {
-            if (isDetached()) return;
-            for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
-                mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
-                        == subInfoRecord.subId);
+            if (mIsAttached) {
+                for (int i = 0; i < mSubInfoRecords.size(); i++) {
+                    SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
+                    mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
+                            == subInfoRecord.subId);
 
+                }
             }
         }
 
         private void updateCarrierText(SubInfoRecord subInfoRecord) {
-            if (isDetached()) return;
-            String name = mPhone.getNetworkOperatorName(subInfoRecord.subId);
-            ServiceState serviceState = mServiceStates.get(subInfoRecord.slotId);
-            if (TextUtils.isEmpty(name)) {
-                if (serviceState != null && serviceState.isEmergencyOnly()) {
-                    name = getString(R.string.setup_mobile_data_emergency_only);
-                } else {
-                    name = getString(R.string.setup_mobile_data_no_service);
+            if (mIsAttached) {
+                String name = mPhone.getNetworkOperatorName(subInfoRecord.subId);
+                ServiceState serviceState = mServiceStates.get(subInfoRecord.slotId);
+                if (TextUtils.isEmpty(name)) {
+                    if (serviceState != null && serviceState.isEmergencyOnly()) {
+                        name = getString(R.string.setup_mobile_data_emergency_only);
+                    } else {
+                        name = getString(R.string.setup_mobile_data_no_service);
+                    }
                 }
+                String formattedName =
+                        getString(R.string.data_sim_name, subInfoRecord.slotId + 1, name);
+                mNameViews.get(subInfoRecord.slotId).setText(formattedName);
             }
-            String formattedName =
-                    getString(R.string.data_sim_name, subInfoRecord.slotId + 1, name);
-            mNameViews.get(subInfoRecord.slotId).setText(formattedName);
         }
 
         private void updateSignalStrength(SubInfoRecord subInfoRecord) {
-            if (isDetached()) return;
-            ImageView signalView = mSignalViews.get(subInfoRecord.slotId);
-            SignalStrength signalStrength = mSignalStrengths.get(subInfoRecord.slotId);
-            if (!hasService(subInfoRecord)) {
-                signalView.setImageResource(R.drawable.ic_signal_no_signal);
-            } else {
-                if (signalStrength != null) {
-                    int resId;
-                    switch (signalStrength.getLevel()) {
-                        case 4:
-                            resId = R.drawable.ic_signal_4;
-                            break;
-                        case 3:
-                            resId = R.drawable.ic_signal_3;
-                            break;
-                        case 2:
-                            resId = R.drawable.ic_signal_2;
-                            break;
-                        case 1:
-                            resId = R.drawable.ic_signal_1;
-                            break;
-                        default:
-                            resId = R.drawable.ic_signal_0;
-                            break;
+            if (mIsAttached) {
+                ImageView signalView = mSignalViews.get(subInfoRecord.slotId);
+                SignalStrength signalStrength = mSignalStrengths.get(subInfoRecord.slotId);
+                if (!hasService(subInfoRecord)) {
+                    signalView.setImageResource(R.drawable.ic_signal_no_signal);
+                } else {
+                    if (signalStrength != null) {
+                        int resId;
+                        switch (signalStrength.getLevel()) {
+                            case 4:
+                                resId = R.drawable.ic_signal_4;
+                                break;
+                            case 3:
+                                resId = R.drawable.ic_signal_3;
+                                break;
+                            case 2:
+                                resId = R.drawable.ic_signal_2;
+                                break;
+                            case 1:
+                                resId = R.drawable.ic_signal_1;
+                                break;
+                            default:
+                                resId = R.drawable.ic_signal_0;
+                                break;
+                        }
+                        signalView.setImageResource(resId);
                     }
-                    signalView.setImageResource(resId);
                 }
+                updateCarrierText(subInfoRecord);
             }
-            updateCarrierText(subInfoRecord);
         }
 
         private boolean hasService(SubInfoRecord subInfoRecord) {
