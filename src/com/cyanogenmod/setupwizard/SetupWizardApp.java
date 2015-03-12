@@ -61,9 +61,10 @@ public class SetupWizardApp extends Application {
         try {
             // Since this is a new component, we need to disable here if the user
             // has already been through setup on a previous version.
-            if (SetupWizardUtils.isGuestUser(this)
+            if (!SetupWizardUtils.isOwner()
                     || Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.USER_SETUP_COMPLETE) == 1) {
+                SetupWizardUtils.disableGMSSetupWizard(this);
                 SetupWizardUtils.disableSetupWizard(this);
             }  else {
                 disableCaptivePortalDetection();
