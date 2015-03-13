@@ -93,6 +93,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         }
         mNextButton = (Button) findViewById(R.id.next_button);
         mPrevButton = (Button) findViewById(R.id.prev_button);
+        if (mSetupData.isFinished()) {
+            mNextButton.setVisibility(View.INVISIBLE);
+            mPrevButton.setVisibility(View.INVISIBLE);
+        }
         mSetupData.registerListener(this);
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,9 +137,18 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 | View.SYSTEM_UI_FLAG_IMMERSIVE
                 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         super.onResume();
-        mSetupData.onResume();
-        onPageTreeChanged();
-        enableButtonBar(true);
+        if (mSetupData.isFinished()) {
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    finishSetup();
+                }
+            }, 500);
+        }  else {
+            mSetupData.onResume();
+            onPageTreeChanged();
+            enableButtonBar(true);
+        }
     }
 
     @Override
@@ -276,17 +289,18 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
         tm.addClient(this);
         mSetupData.finishPages();
-        SetupStats.addEvent(SetupStats.Categories.APP_FINISHED, TAG,
-                SetupStats.Label.TOTAL_TIME, String.valueOf(
-                        System.nanoTime() - sLaunchTime));
-        setupWizardApp.sendStickyBroadcastAsUser(
-                new Intent(SetupWizardApp.ACTION_FINISHED),
-                UserHandle.getCallingUserHandle());
     }
 
     @Override
     public void onFinish(boolean isSuccess) {
-        finishSetup();
+        if (isResumed()) {
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    finishSetup();
+                }
+            });
+        }
     }
 
     @Override
@@ -300,6 +314,13 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
     @Override
     public void finishSetup() {
         if (!mIsFinishing) {
+            SetupStats.addEvent(SetupStats.Categories.APP_FINISHED, TAG,
+                    SetupStats.Label.TOTAL_TIME, String.valueOf(
+                            System.nanoTime() - sLaunchTime));
+            final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
+            setupWizardApp.sendStickyBroadcastAsUser(
+                    new Intent(SetupWizardApp.ACTION_FINISHED),
+                    UserHandle.getCallingUserHandle());
             mIsFinishing = true;
             setupRevealImage();
         }
@@ -394,10 +415,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 wallpaperManager.forgetLoadedWallpaper();
             }
         });
-        finish();
         for (Runnable runnable : mFinishRunnables) {
             runnable.run();
         }
+        finish();
         SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
     }
 }
