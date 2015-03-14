@@ -27,7 +27,7 @@
   <string name="setup_wifi">Selecciona una red Wi-Fi</string>
   <string name="setup_sim_missing">Falta la tarjeta SIM</string>
   <string name="setup_choose_data_sim">Elige una SIM para datos</string>
-  <string name="setup_location">Servicios de localizacion</string>
+  <string name="setup_location">Servicios de ubicación</string>
   <string name="setup_other">Otros servicios</string>
   <string name="setup_datetime">Fecha y hora</string>
   <string name="setup_current_date">Fecha actual</string>
