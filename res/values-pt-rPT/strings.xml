@@ -37,7 +37,7 @@
   <string name="choose_data_sim_summary" product="tablet">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu tablet.</string>
   <string name="choose_data_sim_summary" product="default">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu telefone.</string>
   <string name="date_time_summary">Defina o fuso horário e ajuste a hora e a data atual, se necessário</string>
-  <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, senhas de acesso de redes sem fios e outras definições para os servidores da Google</string>
+  <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, palavras-passe de acesso de redes sem fios e outras definições para os servidores da Google</string>
   <string name="other_services_summary">Estes serviços colocam o Google a trabalhar para si, e pode ligá-los ou desligá-los a qualquer momento. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
   <string name="location_services_summary">Os serviços de localização permitem às aplicações de sistema e de terceiros reunir e utilizar dados tais como a sua localização aproximada. Por exemplo, uma aplicação pode usar a sua localização aproximada para localizar cafés ou bares nas proximidades.</string>
   <string name="location_access_summary"><b>Permitir às aplicações que pediram a sua permissão</b> para usar as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
