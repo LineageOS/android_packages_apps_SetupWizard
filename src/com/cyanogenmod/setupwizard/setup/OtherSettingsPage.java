@@ -137,17 +137,12 @@ public class OtherSettingsPage extends SetupPage {
         };
 
         @Override
-        public void onActivityCreated(Bundle savedInstanceState) {
-            super.onActivityCreated(savedInstanceState);
-            mContentResolver = getActivity().getContentResolver();
-            mBackupManager = IBackupManager.Stub.asInterface(
-                    ServiceManager.getService(Context.BACKUP_SERVICE));
-        }
-
-        @Override
         protected void initializePage() {
             final boolean hasGms = SetupWizardUtils.hasGMS(getActivity());
             final boolean hasTelephony = SetupWizardUtils.hasTelephony(getActivity());
+            mContentResolver = getActivity().getContentResolver();
+            mBackupManager = IBackupManager.Stub.asInterface(
+                    ServiceManager.getService(Context.BACKUP_SERVICE));
             TextView summaryView = (TextView) mRootView.findViewById(android.R.id.summary);
             if (hasGms) {
                 String privacy_policy = getString(R.string.services_privacy_policy);
