@@ -28,6 +28,7 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
@@ -83,15 +84,11 @@ public class CyanogenServicesPage extends SetupPage {
             if (!SetupWizardUtils.accountExists(mContext,
                     mContext.getString(R.string.cm_account_type))) {
                 super.doLoadAction(fragmentManager, action);
+                launchCyanogenAccountSetup();
             } else {
                 getCallbacks().onNextPage();
             }
         }
-    }
-
-    @Override
-    public void onFragmentReady() {
-        launchCyanogenAccountSetup();
     }
 
     @Override
@@ -127,6 +124,7 @@ public class CyanogenServicesPage extends SetupPage {
                         null, new AccountManagerCallback<Bundle>() {
                             @Override
                             public void run(AccountManagerFuture<Bundle> future) {
+                                boolean error = false;
                                 try {
                                     Bundle result = future.getResult();
                                     Intent intent = result
@@ -135,24 +133,26 @@ public class CyanogenServicesPage extends SetupPage {
                                             ActivityOptions.makeCustomAnimation(mContext,
                                                     android.R.anim.fade_in,
                                                     android.R.anim.fade_out);
-                                    if (!mFragment.isDetached()) {
-                                        SetupStats
-                                                .addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
-                                                        SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
-                                                        SetupStats.Label.PAGE,
-                                                        SetupStats.Label.CYANOGEN_ACCOUNT);
-                                        mFragment.startActivityForResult(intent,
-                                                SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN,
-                                                options.toBundle());
-                                    } else {
-                                        if (getCallbacks().
-                                                isCurrentPage(CyanogenServicesPage.this)) {
-                                            getCallbacks().onNextPage();
-                                        }
-                                    }
+                                    SetupStats
+                                            .addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                                                    SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
+                                                    SetupStats.Label.PAGE,
+                                                    SetupStats.Label.CYANOGEN_ACCOUNT);
+                                    mFragment.startActivityForResult(intent,
+                                            SetupWizardApp.REQUEST_CODE_SETUP_CYANOGEN,
+                                            options.toBundle());
                                 } catch (OperationCanceledException e) {
+                                    error = true;
                                 } catch (IOException e) {
+                                    error = true;
                                 } catch (AuthenticatorException e) {
+                                    Log.e(TAG, "Error launching cm account", e);
+                                    error = true;
+                                } finally {
+                                    if (error && getCallbacks().
+                                            isCurrentPage(CyanogenServicesPage.this)) {
+                                        getCallbacks().onNextPage();
+                                    }
                                 }
                             }
                         }, null);
