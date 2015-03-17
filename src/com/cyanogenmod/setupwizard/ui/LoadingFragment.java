@@ -16,14 +16,66 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import com.cyanogenmod.setupwizard.R;
 
 public class LoadingFragment extends SetupPageFragment {
+
+    private StartActivityForResultRunnable mStartActivityForResultRunnable;
+
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode, Bundle options) {
+        if (isResumed()) {
+            super.startActivityForResult(intent, requestCode, options);
+        } else {
+            mStartActivityForResultRunnable =
+                    new StartActivityForResultRunnable(this, intent, requestCode, options);
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mStartActivityForResultRunnable != null) {
+            mStartActivityForResultRunnable.run();
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mStartActivityForResultRunnable = null;
+    }
+
     @Override
     protected void initializePage() {}
 
     @Override
     protected int getLayoutResource() {
         return R.layout.setup_loading_page;
+    }
+
+    private static class StartActivityForResultRunnable implements Runnable {
+
+        private final LoadingFragment mLoadingFragment;
+        private final Intent mIntent;
+        private final int mRequestCode;
+        private final Bundle mOptions;
+
+        private StartActivityForResultRunnable(LoadingFragment loadingFragment,
+                Intent intent, int requestCode, Bundle options) {
+            mLoadingFragment = loadingFragment;
+            mIntent = intent;
+            mRequestCode = requestCode;
+            mOptions = options;
+        }
+
+        @Override
+        public void run() {
+            mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
+            mLoadingFragment.mStartActivityForResultRunnable = null;
+        }
     }
 }
