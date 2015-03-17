@@ -43,7 +43,6 @@ public interface Page {
     public boolean doPreviousAction();
     public boolean doNextAction();
     public void doLoadAction(FragmentManager fragmentManager, int action);
-    public void onFragmentReady();
     public void onFinishSetup();
     public boolean onActivityResult(int requestCode, int resultCode, Intent data);
     public SetupDataCallbacks getCallbacks();
