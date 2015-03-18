@@ -16,6 +16,24 @@
       "revId": "22e251dc86be19b72e1888629a254b2fc32db771",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ac665da_7fe5efa6",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/CyanogenServicesPage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1448
+      },
+      "writtenOn": "2015-03-18T14:14:34Z",
+      "side": 1,
+      "message": "Huh? It doesn\u0027t return null.",
+      "parentUuid": "5ac665da_bf5f6774",
+      "revId": "22e251dc86be19b72e1888629a254b2fc32db771",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
