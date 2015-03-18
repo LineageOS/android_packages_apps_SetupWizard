@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_bf5f6774",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/CyanogenServicesPage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 10631
+      },
+      "writtenOn": "2015-03-18T14:07:01Z",
+      "side": 1,
+      "message": "How possible is it for getCallbacks to return null?  It looks like SetupPage constructor doesn\u0027t reject nulls.",
+      "revId": "22e251dc86be19b72e1888629a254b2fc32db771",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
