@@ -261,7 +261,6 @@ public class CyanogenSettingsPage extends SetupPage {
 
         @Override
         protected void initializePage() {
-            final Bundle myPageBundle = mPage.getData();
             String privacy_policy = getString(R.string.services_privacy_policy);
             String policySummary = getString(R.string.services_explanation, privacy_policy);
             SpannableString ss = new SpannableString(policySummary);
@@ -292,11 +291,6 @@ public class CyanogenSettingsPage extends SetupPage {
             TextView metrics = (TextView) mRootView.findViewById(R.id.enable_metrics_summary);
             metrics.setText(metricsSpan);
             mMetrics = (CheckBox) mRootView.findViewById(R.id.enable_metrics_checkbox);
-            boolean metricsChecked =
-                    !myPageBundle.containsKey(KEY_SEND_METRICS) || myPageBundle
-                            .getBoolean(KEY_SEND_METRICS);
-            mMetrics.setChecked(metricsChecked);
-            myPageBundle.putBoolean(KEY_SEND_METRICS, metricsChecked);
 
             mDefaultThemeRow = mRootView.findViewById(R.id.theme);
             if (hideThemeSwitch(getActivity())) {
@@ -315,11 +309,6 @@ public class CyanogenSettingsPage extends SetupPage {
                 TextView theme = (TextView) mRootView.findViewById(R.id.enable_theme_summary);
                 theme.setText(themeSpan);
                 mDefaultTheme = (CheckBox) mRootView.findViewById(R.id.enable_theme_checkbox);
-                boolean themesChecked =
-                        !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
-                                .getBoolean(KEY_APPLY_DEFAULT_THEME);
-                mDefaultTheme.setChecked(themesChecked);
-                myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
             }
 
             mNavKeysRow = mRootView.findViewById(R.id.nav_keys);
@@ -354,11 +343,6 @@ public class CyanogenSettingsPage extends SetupPage {
                 mSecureSmsRow.setVisibility(View.GONE);
             }
             mSecureSms = (CheckBox) mRootView.findViewById(R.id.secure_sms_checkbox);
-            boolean smsChecked = myPageBundle.containsKey(KEY_REGISTER_WHISPERPUSH) ?
-                    myPageBundle.getBoolean(KEY_REGISTER_WHISPERPUSH) :
-                    false;
-            mSecureSms.setChecked(smsChecked);
-            myPageBundle.putBoolean(KEY_REGISTER_WHISPERPUSH, smsChecked);
         }
 
         @Override
@@ -370,6 +354,36 @@ public class CyanogenSettingsPage extends SetupPage {
         public void onResume() {
             super.onResume();
             updateDisableNavkeysOption();
+            updateMetricsOption();
+            updateThemeOption();
+            updateSmsOption();
+        }
+
+        private void updateMetricsOption() {
+            final Bundle myPageBundle = mPage.getData();
+            boolean metricsChecked =
+                    !myPageBundle.containsKey(KEY_SEND_METRICS) || myPageBundle
+                            .getBoolean(KEY_SEND_METRICS);
+            mMetrics.setChecked(metricsChecked);
+            myPageBundle.putBoolean(KEY_SEND_METRICS, metricsChecked);
+        }
+
+        private void updateThemeOption() {
+            final Bundle myPageBundle = mPage.getData();
+            boolean themesChecked =
+                    !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
+                            .getBoolean(KEY_APPLY_DEFAULT_THEME);
+            mDefaultTheme.setChecked(themesChecked);
+            myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
+        }
+
+        private void updateSmsOption() {
+            final Bundle myPageBundle = mPage.getData();
+            boolean smsChecked = myPageBundle.containsKey(KEY_REGISTER_WHISPERPUSH) ?
+                    myPageBundle.getBoolean(KEY_REGISTER_WHISPERPUSH) :
+                    false;
+            mSecureSms.setChecked(smsChecked);
+            myPageBundle.putBoolean(KEY_REGISTER_WHISPERPUSH, smsChecked);
         }
 
         private void updateDisableNavkeysOption() {
