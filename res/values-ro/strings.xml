@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Expert de instalare</string>
+  <string name="skip">Omite</string>
   <string name="start">Pornire</string>
   <string name="ok">OK</string>
   <string name="setup_complete">Configurarea este completă</string>
   <string name="setup_wifi">Selectaţi Wi-Fi</string>
+  <string name="setup_other">Alte servicii</string>
   <string name="setup_datetime">Dată &amp; oră</string>
   <string name="setup_current_date">Data curentă</string>
   <string name="setup_current_time">Ora curentă</string>
