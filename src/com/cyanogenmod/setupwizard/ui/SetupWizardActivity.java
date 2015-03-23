@@ -260,7 +260,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
     @Override
     public void onFinish() {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
         mNextButton.startAnimation(fadeOut);
         mNextButton.setVisibility(View.INVISIBLE);
