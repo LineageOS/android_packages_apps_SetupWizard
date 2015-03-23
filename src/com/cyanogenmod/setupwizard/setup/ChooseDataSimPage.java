@@ -23,7 +23,7 @@ import android.os.Bundle;
 import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
-import android.telephony.SubInfoRecord;
+import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -35,6 +35,8 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.internal.telephony.SubscriptionController;
+
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
@@ -45,8 +47,11 @@ public class ChooseDataSimPage extends SetupPage {
 
     public static final String TAG = "ChooseDataSimPage";
 
+    private SubscriptionManager mSubscriptionManager;
+
     public ChooseDataSimPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
+        mSubscriptionManager = SubscriptionManager.from(context);
     }
 
     @Override
@@ -73,7 +78,7 @@ public class ChooseDataSimPage extends SetupPage {
     }
 
 
-    public static class ChooseDataSimFragment extends SetupPageFragment {
+    public class ChooseDataSimFragment extends SetupPageFragment {
 
         private ViewGroup mPageView;
         private SparseArray<TextView> mNameViews;
@@ -81,7 +86,7 @@ public class ChooseDataSimPage extends SetupPage {
         private SparseArray<CheckBox> mCheckBoxes;
 
         private TelephonyManager mPhone;
-        private List<SubInfoRecord> mSubInfoRecords;
+        private List<SubscriptionInfo> mSubInfoRecords;
         private SparseArray<SignalStrength> mSignalStrengths;
         private SparseArray<ServiceState> mServiceStates;
         private SparseArray<PhoneStateListener> mPhoneStateListeners;
@@ -91,9 +96,10 @@ public class ChooseDataSimPage extends SetupPage {
         private View.OnClickListener mSetDataSimClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SubInfoRecord subInfoRecord = (SubInfoRecord)view.getTag();
+                SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
                 if (subInfoRecord != null) {
-                    SubscriptionManager.setDefaultDataSubId(subInfoRecord.subId);
+                    SubscriptionController.getInstance()
+                            .setDefaultDataSubId(subInfoRecord.getSubscriptionId());
                     setDataSubChecked(subInfoRecord);
                 }
             }
@@ -102,7 +108,7 @@ public class ChooseDataSimPage extends SetupPage {
         @Override
         protected void initializePage() {
             mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
-            mSubInfoRecords =  SubscriptionManager.getActiveSubInfoList();
+            mSubInfoRecords =  mSubscriptionManager.getActiveSubscriptionInfoList();
             int simCount = mSubInfoRecords.size();
             mNameViews = new SparseArray<TextView>(simCount);
             mSignalViews = new SparseArray<ImageView>(simCount);
@@ -114,7 +120,7 @@ public class ChooseDataSimPage extends SetupPage {
             for (int i = 0; i < simCount; i++) {
                 View simRow = inflater.inflate(R.layout.data_sim_row, null);
                 mPageView.addView(simRow);
-                SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
+                SubscriptionInfo subInfoRecord = mSubInfoRecords.get(i);
                 simRow.setTag(subInfoRecord);
                 simRow.setOnClickListener(mSetDataSimClickListener);
                 mNameViews.put(i, (TextView) simRow.findViewById(R.id.sim_title));
@@ -155,13 +161,13 @@ public class ChooseDataSimPage extends SetupPage {
             }
         }
 
-        private PhoneStateListener createPhoneStateListener(final SubInfoRecord subInfoRecord) {
-            return new PhoneStateListener(subInfoRecord.subId) {
+        private PhoneStateListener createPhoneStateListener(final SubscriptionInfo subInfoRecord) {
+            return new PhoneStateListener(subInfoRecord.getSubscriptionId()) {
 
                 @Override
                 public void onSignalStrengthsChanged(SignalStrength signalStrength) {
                     if (mIsAttached) {
-                        mSignalStrengths.put(subInfoRecord.slotId, signalStrength);
+                        mSignalStrengths.put(subInfoRecord.getSimSlotIndex(), signalStrength);
                         updateSignalStrength(subInfoRecord);
                     }
                 }
@@ -169,7 +175,7 @@ public class ChooseDataSimPage extends SetupPage {
                 @Override
                 public void onServiceStateChanged(ServiceState state) {
                     if (mIsAttached) {
-                        mServiceStates.put(subInfoRecord.slotId, state);
+                        mServiceStates.put(subInfoRecord.getSimSlotIndex(), state);
                         updateSignalStrength(subInfoRecord);
                     }
                 }
@@ -184,10 +190,10 @@ public class ChooseDataSimPage extends SetupPage {
             }
         }
 
-        private void setDataSubChecked(SubInfoRecord subInfoRecord) {
+        private void setDataSubChecked(SubscriptionInfo subInfoRecord) {
             if (mIsAttached) {
                 for (int i = 0; i < mCheckBoxes.size(); i++) {
-                    if (subInfoRecord.slotId == i) {
+                    if (subInfoRecord.getSimSlotIndex() == i) {
                         mCheckBoxes.get(i).setChecked(true);
                         SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
                                 SetupStats.Action.PREFERRED_DATA_SIM,
@@ -203,18 +209,18 @@ public class ChooseDataSimPage extends SetupPage {
         private void updateCurrentDataSub() {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                    SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
+                    SubscriptionInfo subInfoRecord = mSubInfoRecords.get(i);
                     mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
-                            == subInfoRecord.subId);
+                            == subInfoRecord.getSimSlotIndex());
 
                 }
             }
         }
 
-        private void updateCarrierText(SubInfoRecord subInfoRecord) {
+        private void updateCarrierText(SubscriptionInfo subInfoRecord) {
             if (mIsAttached) {
-                String name = mPhone.getNetworkOperatorName(subInfoRecord.subId);
-                ServiceState serviceState = mServiceStates.get(subInfoRecord.slotId);
+                String name = mPhone.getNetworkOperatorName(subInfoRecord.getSimSlotIndex());
+                ServiceState serviceState = mServiceStates.get(subInfoRecord.getSimSlotIndex());
                 if (TextUtils.isEmpty(name)) {
                     if (serviceState != null && serviceState.isEmergencyOnly()) {
                         name = getString(R.string.setup_mobile_data_emergency_only);
@@ -223,15 +229,16 @@ public class ChooseDataSimPage extends SetupPage {
                     }
                 }
                 String formattedName =
-                        getString(R.string.data_sim_name, subInfoRecord.slotId + 1, name);
-                mNameViews.get(subInfoRecord.slotId).setText(formattedName);
+                        getString(R.string.data_sim_name,
+                                  subInfoRecord.getSimSlotIndex() + 1, name);
+                mNameViews.get(subInfoRecord.getSimSlotIndex()).setText(formattedName);
             }
         }
 
-        private void updateSignalStrength(SubInfoRecord subInfoRecord) {
+        private void updateSignalStrength(SubscriptionInfo subInfoRecord) {
             if (mIsAttached) {
-                ImageView signalView = mSignalViews.get(subInfoRecord.slotId);
-                SignalStrength signalStrength = mSignalStrengths.get(subInfoRecord.slotId);
+                ImageView signalView = mSignalViews.get(subInfoRecord.getSimSlotIndex());
+                SignalStrength signalStrength = mSignalStrengths.get(subInfoRecord.getSimSlotIndex());
                 if (!hasService(subInfoRecord)) {
                     signalView.setImageResource(R.drawable.ic_signal_no_signal);
                 } else {
@@ -261,9 +268,9 @@ public class ChooseDataSimPage extends SetupPage {
             }
         }
 
-        private boolean hasService(SubInfoRecord subInfoRecord) {
+        private boolean hasService(SubscriptionInfo subInfoRecord) {
             boolean retVal;
-            ServiceState serviceState = mServiceStates.get(subInfoRecord.slotId);
+            ServiceState serviceState = mServiceStates.get(subInfoRecord.getSimSlotIndex());
             if (serviceState != null) {
                 // Consider the device to be in service if either voice or data service is available.
                 // Some SIM cards are marketed as data-only and do not support voice service, and on

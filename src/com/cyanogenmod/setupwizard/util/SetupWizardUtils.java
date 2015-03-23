@@ -32,6 +32,8 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
+import com.android.internal.telephony.SubscriptionController;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
@@ -78,10 +80,10 @@ public class SetupWizardUtils {
         TelephonyManager tm =
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         if (tm.isMultiSimEnabled()) {
-            int phoneId = SubscriptionManager.getDefaultDataPhoneId();
+            int phoneId = SubscriptionManager.from(context).getDefaultDataPhoneId();
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
-            long subId = SubscriptionManager.getDefaultDataSubId();
+            int subId = SubscriptionManager.getDefaultDataSubId();
             tm.setDataEnabledUsingSubId(subId, enabled);
         } else {
             android.provider.Settings.Global.putInt(context.getContentResolver(),
@@ -111,7 +113,7 @@ public class SetupWizardUtils {
     public static boolean isSimMissing(Context context) {
         TelephonyManager tm =
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        int simCount = SubscriptionManager.getActiveSubInfoCount();
+        int simCount = SubscriptionController.getInstance().getActiveSubInfoCount();
         for (int i = 0; i < simCount; i++) {
             int simState = tm.getSimState(i);
             if (simState != TelephonyManager.SIM_STATE_ABSENT &&
