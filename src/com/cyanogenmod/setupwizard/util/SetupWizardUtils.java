@@ -113,12 +113,15 @@ public class SetupWizardUtils {
     public static boolean isSimMissing(Context context) {
         TelephonyManager tm =
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        int simCount = SubscriptionController.getInstance().getActiveSubInfoCount();
-        for (int i = 0; i < simCount; i++) {
-            int simState = tm.getSimState(i);
-            if (simState != TelephonyManager.SIM_STATE_ABSENT &&
-                    simState != TelephonyManager.SIM_STATE_UNKNOWN) {
-                return false;
+        SubscriptionController subscriptionController = SubscriptionController.getInstance();
+        if (subscriptionController != null) {
+            int simCount = subscriptionController.getActiveSubInfoCount();
+            for (int i = 0; i < simCount; i++) {
+                int simState = tm.getSimState(i);
+                if (simState != TelephonyManager.SIM_STATE_ABSENT &&
+                        simState != TelephonyManager.SIM_STATE_UNKNOWN) {
+                    return false;
+                }
             }
         }
         return true;
