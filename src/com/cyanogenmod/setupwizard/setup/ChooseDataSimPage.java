@@ -63,6 +63,26 @@ public class ChooseDataSimPage extends SetupPage {
     }
 
     @Override
+    public void onFinishSetup() {
+        if (SubscriptionManager.getDefaultDataSubId() == SubscriptionManager.INVALID_SUB_ID) {
+            List<SubInfoRecord> subInfoRecords =  SubscriptionManager.getActiveSubInfoList();
+            // Extra check to see if we even have valid subscription info records
+            if (subInfoRecords.size() > 1) {
+                // Set the default data sub id, in case the user doesn't set one.
+                // Otherwise, any component that needs to query SubscriptionManager
+                // for a default subscription will fail because it received an INVALID_SUB_ID.
+                // This causes fun issues with prompting on mms send (for subscription choice)
+                // and possible issues with handling network type changes not triggered from
+                // user choice.
+                // To mitigate, instead of doing invalid sub id checks all over the OS,
+                // simply set the default data sbu to the first subscription we find.
+                // The user can modify this freely after the SetupWizard completes.
+                SubscriptionManager.setDefaultDataSubId(subInfoRecords.get(0).subId);
+            }
+        }
+    }
+
+    @Override
     public String getKey() {
         return TAG;
     }
@@ -71,7 +91,6 @@ public class ChooseDataSimPage extends SetupPage {
     public int getTitleResId() {
         return R.string.setup_choose_data_sim;
     }
-
 
     public static class ChooseDataSimFragment extends SetupPageFragment {
 
