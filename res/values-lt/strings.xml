@@ -45,7 +45,7 @@
   <string name="location_gps" product="default"><b>Pagerinti vietos tikslumą</b> leidžiant programoms naudotis GPS jūsų telefone.</string>
   <string name="location_network"><b>Naudoti „Wi-Fi“</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
   <string name="location_network_telephony"><b>Naudoti „Wi-Fi“ ir mobiliuosius duomenis</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
-  <string name="location_network_gms"><b>Naudoti „Google“ vietos paslaugą</b>, kad padėtumėte programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
+  <string name="location_network_gms"><b>Naudoti „Google“ vietos paslaugą</b>, kad padėti programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
   <string name="setup_mobile_data">Įjungti mobiliuosius duomenis</string>
   <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
   <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
