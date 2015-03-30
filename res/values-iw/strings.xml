@@ -54,9 +54,14 @@
   <string name="yes">כן</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">שיחת חירום</string>
+  <string name="setup_services">תכונות Cyanogen</string>
+  <string name="services_explanation" product="tablet">שירותים אלה עובדים בשבילך כדי להרחיב את יכולותיו של הטאבלט שלך. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
+  <string name="services_explanation" product="default">שירותים אלה עובדים בשבילך כדי להרחיב את יכולותיו של הטלפון שלך. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
   <string name="services_privacy_policy">מדיניות הפרטיות</string>
   <string name="services_help_improve_cm">עזור לשפר את <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> על ידי שליחת נתוני אבחון ושימוש למפתחים. מידע זה לא יוכל לשמש כדי לזהות אותך והוא תורם לצוותים העובדים על דברים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="services_apply_theme">החל את ערכת העיצוב <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> הופך לזמין סמלים ייחודיים, טפטים וגופנים.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <string name="services_use_secure_sms">השתמש ב-SMS מאובטח</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> להצפנת שיחות SMS עם משתמשים אחרים באמצעות SMS מאובטח במכשיר <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>

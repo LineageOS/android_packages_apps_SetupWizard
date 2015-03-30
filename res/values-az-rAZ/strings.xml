@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Quraşdırma Sehrbazı</string>
   <string name="next">Sonrakı</string>
-  <string name="skip">Keç</string>
+  <string name="skip">Ötür</string>
   <string name="setup_choose_data_sim">Verilənlər üçün bir SIM seçin</string>
   <string name="choose_data_sim_summary" product="tablet">Hansı SIM\'dən verilənlər üçün istifadə etmək istəyirsiz? Şəbəkə planşetinizin quraşdırılması üçün seçilən SIM\'ə görə ödəniş tətbiq edə bilər.</string>
   <string name="choose_data_sim_summary" product="default">Hansı SIM\'dən verilənlər üçün istifadə etmək istəyirsiz? Şəbəkə telefonunuzun quraşdırılması üçün seçilən SIM\'ə görə ödəniş tətbiq edə bilər.</string>

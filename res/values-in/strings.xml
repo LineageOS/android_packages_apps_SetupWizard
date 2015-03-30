@@ -30,9 +30,12 @@
   <string name="date_time_summary">Atur zona waktu dan sesuaikan tanggal dan waktu jika diperlukan</string>
   <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
   <string name="location_gps" product="default"><b>Meningkatkan akurasi lokasi</b> dengan mengizinkan aplikasi untuk menggunakan GPS pada ponsel Anda.</string>
+  <string name="setup_mobile_data">Aktifkan data seluler</string>
   <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
   <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan mobile data selama setup? Menyalakan mobile data mungkin akan dikenakan biaya data.</string>
+  <string name="no">Tidak</string>
+  <string name="yes">Ya</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="services_privacy_policy">Kebijakan privasi</string>
 </resources>
