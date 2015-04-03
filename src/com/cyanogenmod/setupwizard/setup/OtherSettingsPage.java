@@ -270,6 +270,10 @@ public class OtherSettingsPage extends SetupPage {
                     SetupStats.Action.ENABLE_NETWORK_LOCATION,
                     SetupStats.Label.CHECKED, String.valueOf(networkEnabled));
             mLocationAccess.setChecked(gpsEnabled || networkEnabled);
+            mGps.setEnabled(gpsEnabled || networkEnabled);
+            mGpsRow.setEnabled(gpsEnabled || networkEnabled);
+            mNetwork.setEnabled(gpsEnabled || networkEnabled);
+            mNetworkRow.setEnabled(gpsEnabled || networkEnabled);
         }
 
         private void onToggleLocationAccess(boolean checked) {
