@@ -78,7 +78,7 @@ public class ChooseDataSimPage extends SetupPage {
     }
 
 
-    public class ChooseDataSimFragment extends SetupPageFragment {
+    public static class ChooseDataSimFragment extends SetupPageFragment {
 
         private ViewGroup mPageView;
         private SparseArray<TextView> mNameViews;
@@ -86,7 +86,7 @@ public class ChooseDataSimPage extends SetupPage {
         private SparseArray<CheckBox> mCheckBoxes;
 
         private TelephonyManager mPhone;
-        private List<SubscriptionInfo> mSubInfoRecords;
+        private SparseArray<SubscriptionInfo> mSubInfoRecords;
         private SparseArray<SignalStrength> mSignalStrengths;
         private SparseArray<ServiceState> mServiceStates;
         private SparseArray<PhoneStateListener> mPhoneStateListeners;
@@ -108,8 +108,14 @@ public class ChooseDataSimPage extends SetupPage {
         @Override
         protected void initializePage() {
             mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
-            mSubInfoRecords =  mSubscriptionManager.getActiveSubscriptionInfoList();
-            int simCount = mSubInfoRecords.size();
+            List<SubscriptionInfo> subInfoRecords =  SubscriptionController
+                    .getInstance().getActiveSubscriptionInfoList();
+            int simCount = subInfoRecords.size();
+            mSubInfoRecords = new SparseArray<SubscriptionInfo>(simCount);
+            for (int i = 0; i < simCount; i++) {
+                SubscriptionInfo subInfoRecord = subInfoRecords.get(i);
+                mSubInfoRecords.put(subInfoRecord.getSubscriptionId(), subInfoRecord);
+            }
             mNameViews = new SparseArray<TextView>(simCount);
             mSignalViews = new SparseArray<ImageView>(simCount);
             mCheckBoxes = new SparseArray<CheckBox>(simCount);
