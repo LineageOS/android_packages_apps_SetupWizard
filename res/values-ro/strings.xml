@@ -20,12 +20,17 @@
   <string name="skip">Omite</string>
   <string name="start">Pornire</string>
   <string name="ok">OK</string>
+  <string name="loading">Doar o secundă\u2026</string>
   <string name="setup_complete">Configurarea este completă</string>
+  <string name="setup_welcome">Bine ați venit</string>
   <string name="setup_wifi">Selectaţi Wi-Fi</string>
+  <string name="setup_sim_missing">Lipsă card SIM</string>
+  <string name="setup_location">Servicii de localizare</string>
   <string name="setup_other">Alte servicii</string>
   <string name="setup_datetime">Dată &amp; oră</string>
   <string name="setup_current_date">Data curentă</string>
   <string name="setup_current_time">Ora curentă</string>
+  <string name="setup_mobile_data">Porniți datele mobile</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
   <string name="no">Nu</string>
   <string name="yes">Da</string>
