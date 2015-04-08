@@ -130,7 +130,7 @@ public class EnableAccessibilityController {
         // accessibility service, then we have nothing to do.
         if (accessibilityManager.isEnabled()
                 && !accessibilityManager.getEnabledAccessibilityServiceList(
-                        AccessibilityServiceInfo.FEEDBACK_SPOKEN).isEmpty()) {
+                AccessibilityServiceInfo.FEEDBACK_SPOKEN).isEmpty()) {
             return false;
         }
 
@@ -168,7 +168,7 @@ public class EnableAccessibilityController {
             mHandler.sendEmptyMessageDelayed(MESSAGE_SPEAK_WARNING,
                     SPEAK_WARNING_DELAY_MILLIS);
             mHandler.sendEmptyMessageDelayed(MESSAGE_ENABLE_ACCESSIBILITY,
-                   ENABLE_ACCESSIBILITY_DELAY_MILLIS);
+                    ENABLE_ACCESSIBILITY_DELAY_MILLIS);
             return true;
         }
         return false;
@@ -188,8 +188,14 @@ public class EnableAccessibilityController {
                 if (pointerCount > 2) {
                     cancel();
                 }
-            } break;
+            }
+            break;
             case MotionEvent.ACTION_MOVE: {
+                //We only care about a 2 fingered move
+                if (pointerCount < 2) {
+                    cancel();
+                    return false;
+                }
                 final float firstPointerMove = MathUtils.dist(event.getX(0),
                         event.getY(0), mFirstPointerDownX, mFirstPointerDownY);
                 if (Math.abs(firstPointerMove) > mTouchSlop) {
@@ -200,11 +206,13 @@ public class EnableAccessibilityController {
                 if (Math.abs(secondPointerMove) > mTouchSlop) {
                     cancel();
                 }
-            } break;
+            }
+            break;
             case MotionEvent.ACTION_POINTER_UP:
             case MotionEvent.ACTION_CANCEL: {
                 cancel();
-            } break;
+            }
+            break;
         }
         return true;
     }
