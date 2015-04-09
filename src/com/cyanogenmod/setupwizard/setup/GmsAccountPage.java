@@ -176,31 +176,33 @@ public class GmsAccountPage extends SetupPage {
     private void launchGmsRestorePage() {
         try {
             // GMS can disable this after logging in sometimes
-            SetupWizardUtils.enableGMSSetupWizard(mContext);
-            Intent intent = new Intent(ACTION_RESTORE);
-            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
-            intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
-            // XXX: Fool G's setup wizard into thinking it is their setup wizard.
-            // This is necessary to get the material theme on the restore page.
-            intent.putExtra("scriptUri", RESTORE_WIZARD_SCRIPT);
-            ActivityOptions options =
-                    ActivityOptions.makeCustomAnimation(mContext,
-                            android.R.anim.fade_in,
-                            android.R.anim.fade_out);
-            SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
-                    SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
-                    SetupStats.Label.PAGE, SetupStats.Label.RESTORE);
-            mFragment.startActivityForResult(
-                    intent,
-                    SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
+            if (SetupWizardUtils.enableGMSSetupWizard(mContext)) {
+                Intent intent = new Intent(ACTION_RESTORE);
+                intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+                intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+                intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+                intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+                // XXX: Fool G's setup wizard into thinking it is their setup wizard.
+                // This is necessary to get the material theme on the restore page.
+                intent.putExtra("scriptUri", RESTORE_WIZARD_SCRIPT);
+                ActivityOptions options =
+                        ActivityOptions.makeCustomAnimation(mContext,
+                                android.R.anim.fade_in,
+                                android.R.anim.fade_out);
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
+                        SetupStats.Label.PAGE, SetupStats.Label.RESTORE);
+                mFragment.startActivityForResult(
+                        intent,
+                        SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
+                return;
+            }
         } catch (Exception e) {
             e.printStackTrace();
             // XXX: In open source, we don't know what gms version a user has.
             // Bail if the restore activity is not found.
-            getCallbacks().onNextPage();
         }
+        getCallbacks().onNextPage();
     }
 
     private void launchGmsAccountSetup() {
