@@ -158,7 +158,7 @@ public class SetupWizardUtils {
         }
     }
 
-    public static void enableGMSSetupWizard(Context context) {
+    public static boolean enableGMSSetupWizard(Context context) {
         try {
             PackageInfo packageInfo = context.getPackageManager()
                     .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
@@ -167,8 +167,10 @@ public class SetupWizardUtils {
             enableComponentArray(context, packageInfo.activities);
             enableComponentArray(context, packageInfo.services);
             enableComponentArray(context, packageInfo.receivers);
+            return true;
         } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "Unable to disable GMS");
+            Log.e(TAG, "Unable to enable GMS");
+            return false;
         }
     }
 
