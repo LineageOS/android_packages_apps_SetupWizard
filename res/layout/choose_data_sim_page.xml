@@ -21,6 +21,13 @@
 
     <include layout="@layout/header" />
 
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="true"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
     <FrameLayout android:id="@+id/page"
                  android:layout_width="match_parent"
                  android:layout_height="0dp"
@@ -35,7 +42,8 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/PageContent">
+                style="@style/PageContent"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"

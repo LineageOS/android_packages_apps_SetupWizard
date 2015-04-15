@@ -20,6 +20,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
@@ -31,13 +32,17 @@ import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 
@@ -76,6 +81,7 @@ public class ChooseDataSimPage extends SetupPage {
     public static class ChooseDataSimFragment extends SetupPageFragment {
 
         private ViewGroup mPageView;
+        private ProgressBar mProgressBar;
         private SparseArray<TextView> mNameViews;
         private SparseArray<ImageView> mSignalViews;
         private SparseArray<CheckBox> mCheckBoxes;
@@ -87,6 +93,17 @@ public class ChooseDataSimPage extends SetupPage {
         private SparseArray<PhoneStateListener> mPhoneStateListeners;
 
         private boolean mIsAttached = false;
+
+        private Context mContext;
+
+        private final Handler mHandler = new Handler();
+
+        private final Runnable mRadioReadyRunnable = new Runnable() {
+            @Override
+            public void run() {
+                hideWaitForRadio();
+            }
+        };
 
         private View.OnClickListener mSetDataSimClickListener = new View.OnClickListener() {
             @Override
@@ -102,6 +119,7 @@ public class ChooseDataSimPage extends SetupPage {
         @Override
         protected void initializePage() {
             mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
+            mProgressBar = (ProgressBar) mRootView.findViewById(R.id.progress);
             List<SubInfoRecord> subInfoRecords =  SubscriptionManager.getActiveSubInfoList();
             int simCount = subInfoRecords.size();
             mSubInfoRecords = new SparseArray<SubInfoRecord>(simCount);
@@ -141,6 +159,7 @@ public class ChooseDataSimPage extends SetupPage {
         public void onResume() {
             super.onResume();
             mIsAttached = true;
+            mContext = getActivity().getApplicationContext();
             mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
                 mPhone.listen(mPhoneStateListeners.get(i),
@@ -149,6 +168,12 @@ public class ChooseDataSimPage extends SetupPage {
             }
             updateSignalStrengths();
             updateCurrentDataSub();
+            if (SetupWizardUtils.isRadioReady(mContext, null)) {
+                hideWaitForRadio();
+            } else if (mTitleView != null) {
+                mTitleView.setText(R.string.loading);
+                mHandler.postDelayed(mRadioReadyRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
+            }
         }
 
         @Override
@@ -165,20 +190,33 @@ public class ChooseDataSimPage extends SetupPage {
 
                 @Override
                 public void onSignalStrengthsChanged(SignalStrength signalStrength) {
-                    if (mIsAttached) {
                         mSignalStrengths.put(subInfoRecord.slotId, signalStrength);
                         updateSignalStrength(subInfoRecord);
-                    }
+
                 }
 
                 @Override
                 public void onServiceStateChanged(ServiceState state) {
-                    if (mIsAttached) {
-                        mServiceStates.put(subInfoRecord.slotId, state);
-                        updateSignalStrength(subInfoRecord);
+                    if (SetupWizardUtils.isRadioReady(mContext, state)) {
+                        hideWaitForRadio();
                     }
+                    mServiceStates.put(subInfoRecord.slotId, state);
+                    updateSignalStrength(subInfoRecord);
                 }
             };
+        }
+
+        private void hideWaitForRadio() {
+            if (getUserVisibleHint() && mProgressBar.isShown()) {
+                mHandler.removeCallbacks(mRadioReadyRunnable);
+                if (mTitleView != null) {
+                    mTitleView.setText(mPage.getTitleResId());
+                }
+                mProgressBar.setVisibility(View.GONE);
+                mPageView.setVisibility(View.VISIBLE);
+                mPageView.startAnimation(
+                        AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_enter));
+            }
         }
 
         private void updateSignalStrengths() {

@@ -44,10 +44,12 @@ public class CMSetupWizardData extends AbstractSetupData {
         pages.add(new WelcomePage(mContext, this));
         pages.add(new WifiSetupPage(mContext, this));
         if (SetupWizardUtils.hasTelephony(mContext)) {
-            pages.add(new SimCardMissingPage(mContext, this).setHidden(isSimInserted()));
+            pages.add(new SimCardMissingPage(mContext, this)
+                    .setHidden(isSimInserted()));
         }
         if (SetupWizardUtils.isMultiSimDevice(mContext)) {
-            pages.add(new ChooseDataSimPage(mContext, this).setHidden(!allSimsInserted()));
+            pages.add(new ChooseDataSimPage(mContext, this)
+                    .setHidden(!allSimsInserted()));
         }
         if (SetupWizardUtils.hasTelephony(mContext)) {
             pages.add(new MobileDataPage(mContext, this)
@@ -68,19 +70,8 @@ public class CMSetupWizardData extends AbstractSetupData {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals(TelephonyIntents.ACTION_SIM_STATE_CHANGED)) {
-            ChooseDataSimPage chooseDataSimPage =
-                    (ChooseDataSimPage) getPage(ChooseDataSimPage.TAG);
-            if (chooseDataSimPage != null) {
-                chooseDataSimPage.setHidden(!allSimsInserted());
-            }
-            SimCardMissingPage simCardMissingPage =
-                    (SimCardMissingPage) getPage(SimCardMissingPage.TAG);
-            if (simCardMissingPage != null) {
-                simCardMissingPage.setHidden(isSimInserted());
-                if (isCurrentPage(simCardMissingPage)) {
-                    onNextPage();
-                }
-            }
+            showHideDataSimPage();
+            showHideSimMissingPage();
             showHideMobileDataPage();
         } else if (intent.getAction()
                 .equals(ConnectivityManager.CONNECTIVITY_ACTION) ||
@@ -116,12 +107,30 @@ public class CMSetupWizardData extends AbstractSetupData {
         }
     }
 
+    private void showHideSimMissingPage() {
+        SimCardMissingPage simCardMissingPage =
+                (SimCardMissingPage) getPage(SimCardMissingPage.TAG);
+        if (simCardMissingPage != null && isSimInserted()) {
+            simCardMissingPage.setHidden(true);
+            if (isCurrentPage(simCardMissingPage)) {
+                onNextPage();
+            }
+        }
+    }
+
+    private void showHideDataSimPage() {
+        ChooseDataSimPage chooseDataSimPage =
+                (ChooseDataSimPage) getPage(ChooseDataSimPage.TAG);
+        if (chooseDataSimPage != null) {
+            chooseDataSimPage.setHidden(!isSimInserted());
+        }
+    }
+
     private void showHideMobileDataPage() {
         MobileDataPage mobileDataPage =
                 (MobileDataPage) getPage(MobileDataPage.TAG);
         if (mobileDataPage != null) {
-            mobileDataPage.setHidden(!isSimInserted() ||
-                    SetupWizardUtils.isMobileDataEnabled(mContext));
+            mobileDataPage.setHidden(!isSimInserted());
         }
     }
 
