@@ -27,11 +27,14 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.android.internal.telephony.SubscriptionController;
+
+import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -124,6 +127,19 @@ public class SetupWizardUtils {
             }
         }
         return true;
+    }
+
+    public static boolean isRadioReady(Context context, ServiceState state) {
+        final SetupWizardApp setupWizardApp = (SetupWizardApp)context.getApplicationContext();
+        if (setupWizardApp.isRadioReady()) {
+            return true;
+        } else {
+            final boolean ready = state != null
+                    && state.getState() != ServiceState.STATE_POWER_OFF;
+            setupWizardApp.setRadioReady(ready);
+            return ready;
+        }
+
     }
 
     public static boolean isGuestUser(Context context) {
