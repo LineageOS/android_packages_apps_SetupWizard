@@ -38,8 +38,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.android.internal.telephony.SubscriptionController;
-
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
@@ -83,7 +81,7 @@ public class ChooseDataSimPage extends SetupPage {
     }
 
 
-    public static class ChooseDataSimFragment extends SetupPageFragment {
+    public class ChooseDataSimFragment extends SetupPageFragment {
 
         private ViewGroup mPageView;
         private ProgressBar mProgressBar;
@@ -115,8 +113,7 @@ public class ChooseDataSimPage extends SetupPage {
             public void onClick(View view) {
                 SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
                 if (subInfoRecord != null) {
-                    SubscriptionController.getInstance()
-                            .setDefaultDataSubId(subInfoRecord.getSubscriptionId());
+                    mSubscriptionManager.setDefaultDataSubId(subInfoRecord.getSubscriptionId());
                     setDataSubChecked(subInfoRecord);
                 }
             }
@@ -126,8 +123,7 @@ public class ChooseDataSimPage extends SetupPage {
         protected void initializePage() {
             mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
             mProgressBar = (ProgressBar) mRootView.findViewById(R.id.progress);
-            List<SubscriptionInfo> subInfoRecords =  SubscriptionController
-                    .getInstance().getActiveSubscriptionInfoList();
+            List<SubscriptionInfo> subInfoRecords = mSubscriptionManager.getActiveSubscriptionInfoList();
             int simCount = subInfoRecords.size();
             mSubInfoRecords = new SparseArray<SubscriptionInfo>(simCount);
             for (int i = 0; i < simCount; i++) {
