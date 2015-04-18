@@ -138,13 +138,14 @@ public class ChooseDataSimPage extends SetupPage {
             for (int i = 0; i < simCount; i++) {
                 View simRow = inflater.inflate(R.layout.data_sim_row, null);
                 mPageView.addView(simRow);
-                SubscriptionInfo subInfoRecord = mSubInfoRecords.get(i);
+                SubscriptionInfo subInfoRecord = mSubInfoRecords.valueAt(i);
                 simRow.setTag(subInfoRecord);
                 simRow.setOnClickListener(mSetDataSimClickListener);
-                mNameViews.put(i, (TextView) simRow.findViewById(R.id.sim_title));
-                mSignalViews.put(i, (ImageView) simRow.findViewById(R.id.signal));
-                mCheckBoxes.put(i, (CheckBox) simRow.findViewById(R.id.enable_check));
-                mPhoneStateListeners.put(i, createPhoneStateListener(subInfoRecord));
+                int slot = subInfoRecord.getSimSlotIndex();
+                mNameViews.put(slot, (TextView) simRow.findViewById(R.id.sim_title));
+                mSignalViews.put(slot, (ImageView) simRow.findViewById(R.id.signal));
+                mCheckBoxes.put(slot, (CheckBox) simRow.findViewById(R.id.enable_check));
+                mPhoneStateListeners.put(slot, createPhoneStateListener(subInfoRecord));
                 mPageView.addView(inflater.inflate(R.layout.divider, null));
             }
             updateSignalStrengths();
@@ -228,7 +229,7 @@ public class ChooseDataSimPage extends SetupPage {
         private void updateSignalStrengths() {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                    updateSignalStrength(mSubInfoRecords.get(i));
+                    updateSignalStrength(mSubInfoRecords.valueAt(i));
                 }
             }
         }
@@ -252,7 +253,7 @@ public class ChooseDataSimPage extends SetupPage {
         private void updateCurrentDataSub() {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                    SubscriptionInfo subInfoRecord = mSubInfoRecords.get(i);
+                    SubscriptionInfo subInfoRecord = mSubInfoRecords.valueAt(i);
                     mCheckBoxes.get(i).setChecked(mSubscriptionManager.getDefaultDataPhoneId()
                             == subInfoRecord.getSimSlotIndex());
                 }
