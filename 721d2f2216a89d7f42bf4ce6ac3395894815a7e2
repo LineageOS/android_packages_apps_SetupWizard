@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa7ab95a_1d6da404",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/ChooseDataSimPage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2015-04-20T20:11:42Z",
+      "side": 1,
+      "message": "This should still equal simCount, shouldn\u0027t it?",
+      "range": {
+        "startLine": 140,
+        "startChar": 48,
+        "endLine": 140,
+        "endChar": 52
+      },
+      "revId": "721d2f2216a89d7f42bf4ce6ac3395894815a7e2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
