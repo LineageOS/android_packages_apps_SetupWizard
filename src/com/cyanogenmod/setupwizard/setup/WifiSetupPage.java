@@ -222,6 +222,9 @@ public class WifiSetupPage extends SetupPage {
     private void launchWifiSetup() {
         SetupWizardUtils.tryEnablingWifi(mContext);
         Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_WIFI);
+        if (SetupWizardUtils.hasLeanback(mContext)) {
+            intent.setComponent(SetupWizardUtils.mTvsettingsActivity);
+        }
         intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
         intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
         intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
