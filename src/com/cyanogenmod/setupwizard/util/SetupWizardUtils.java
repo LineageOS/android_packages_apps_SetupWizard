@@ -225,4 +225,13 @@ public class SetupWizardUtils {
         context.getPackageManager().setComponentEnabledSetting(component,
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }
+
+    public static boolean hasLeanback(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
+    }
+
+    public static final ComponentName mTvwifisettingsActivity =
+            new ComponentName("com.android.tv.settings",
+                    "com.android.tv.settings.connectivity.setup.WifiSetupActivity");
 }
