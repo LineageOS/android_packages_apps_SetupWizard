@@ -61,7 +61,9 @@ public class CMSetupWizardData extends AbstractSetupData {
         if (SetupWizardUtils.hasGMS(mContext)) {
             pages.add(new GmsAccountPage(mContext, this).setHidden(true));
         }
-        pages.add(new CyanogenServicesPage(mContext, this).setHidden(true));
+        if (SetupWizardUtils.hasLeanback(mContext)) {
+            pages.add(new CyanogenServicesPage(mContext, this).setHidden(true));
+        }
         pages.add(new CyanogenSettingsPage(mContext, this));
         pages.add(new OtherSettingsPage(mContext, this));
         pages.add(new DateTimePage(mContext, this));
