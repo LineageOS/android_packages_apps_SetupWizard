@@ -59,7 +59,7 @@
   <string name="services_explanation" product="default">Tyto služby rozšiřují funkce vašeho telefonu. Data budou použita v souladu se zásadami ochrany osobních údajů Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Zásady ochrany osobních údajů</string>
   <string name="services_help_improve_cm">Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label">&lt;b&gt;Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g>&lt;/b&gt; automatickým odesíláním dat o používání do Cyanogenu. Tyto informace nebudou použity k vaší identifikaci, ale pomohou vývojářům v práci na věcech jako výdrž baterie, rychlost aplikací nebo vývoj nových <xliff:g id="name" example="CyanogenMod">%s</xliff:g> funkcí.</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> automatickým odesíláním dat o používání. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="services_apply_theme">Použít motiv <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> povolí unikátní ikony, tapety a písma.</string>
   <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
