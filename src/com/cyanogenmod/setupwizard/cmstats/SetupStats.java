@@ -146,6 +146,7 @@ public class SetupStats {
         public static final String LOCALE = "local";
         public static final String RESULT = "result";
         public static final String WIFI_SETUP = "wifi_setup";
+        public static final String BLUETOOTH_SETUP = "bluetooth_setup";
         public static final String CYANOGEN_ACCOUNT = "cyanogen_account_setup";
         public static final String CAPTIVE_PORTAL_LOGIN = "captive_portal_login";
         public static final String EMERGENCY_CALL = "emergency_call";

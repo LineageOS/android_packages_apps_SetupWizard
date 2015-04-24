@@ -59,6 +59,7 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_RESTORE_GMS= 2;
     public static final int REQUEST_CODE_SETUP_CYANOGEN= 3;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
+    public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 

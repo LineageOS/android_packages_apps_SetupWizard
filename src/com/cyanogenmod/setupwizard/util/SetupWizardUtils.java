@@ -234,4 +234,8 @@ public class SetupWizardUtils {
     public static final ComponentName mTvwifisettingsActivity =
             new ComponentName("com.android.tv.settings",
                     "com.android.tv.settings.connectivity.setup.WifiSetupActivity");
+
+    public static final ComponentName mTvAddAccessorySettingsActivity =
+            new ComponentName("com.android.tv.settings",
+                    "com.android.tv.settings.accessories.AddAccessoryActivity");
 }
