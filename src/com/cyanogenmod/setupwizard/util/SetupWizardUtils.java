@@ -41,7 +41,8 @@ public class SetupWizardUtils {
 
     private static final String TAG = SetupWizardUtils.class.getSimpleName();
 
-    private static final String GOOGLE_SETUPWIZARD_PACKAGE = "com.google.android.setupwizard";
+    private static final String GOOGLE_SETUPWIZARD_PACKAGE_MOBILE = "com.google.android.setupwizard";
+    private static final String GOOGLE_SETUPWIZARD_PACKAGE_TELEVISION = "com.google.android.tungsten.setupwraith";
 
     private SetupWizardUtils(){}
 
@@ -160,16 +161,35 @@ public class SetupWizardUtils {
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
     }
 
+    private static String getGoogleSetupWizard(Context context) {
+        try {
+            // Check for tungsten wizard presence
+            PackageInfo packageInfo = context.getPackageManager()
+                   .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE_TELEVISION, PackageManager.GET_ACTIVITIES);
+            return GOOGLE_SETUPWIZARD_PACKAGE_TELEVISION;
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.d(TAG, "TV SetupWizard not present. Checking for mobile SetupWizard");
+            try {
+                PackageInfo packageInfo = context.getPackageManager()
+                   .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE_MOBILE, PackageManager.GET_ACTIVITIES);
+                return GOOGLE_SETUPWIZARD_PACKAGE_MOBILE;
+            } catch (PackageManager.NameNotFoundException f) {
+                Log.e(TAG, "Mobile SetupWizard not present. Unable to determine package");
+            }
+        }
+        return null;
+    }
+
     public static void disableGMSSetupWizard(Context context) {
         try {
             PackageInfo packageInfo = context.getPackageManager()
-                    .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
+                    .getPackageInfo(getGoogleSetupWizard(context),
                             PackageManager.GET_ACTIVITIES |
                                     PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
             disableComponentArray(context, packageInfo.activities);
             disableComponentArray(context, packageInfo.services);
             disableComponentArray(context, packageInfo.receivers);
-        } catch (PackageManager.NameNotFoundException e) {
+        } catch (PackageManager.NameNotFoundException | NullPointerException e) {
             Log.e(TAG, "Unable to disable GMS");
         }
     }
@@ -177,14 +197,14 @@ public class SetupWizardUtils {
     public static boolean enableGMSSetupWizard(Context context) {
         try {
             PackageInfo packageInfo = context.getPackageManager()
-                    .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
+                    .getPackageInfo(getGoogleSetupWizard(context),
                             PackageManager.GET_ACTIVITIES |
                                     PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
             enableComponentArray(context, packageInfo.activities);
             enableComponentArray(context, packageInfo.services);
             enableComponentArray(context, packageInfo.receivers);
             return true;
-        } catch (PackageManager.NameNotFoundException e) {
+        } catch (PackageManager.NameNotFoundException | NullPointerException e) {
             Log.e(TAG, "Unable to enable GMS");
             return false;
         }
