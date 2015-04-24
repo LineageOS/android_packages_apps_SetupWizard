@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da7fb54a_bb4cc777",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/CMSetupWizardData.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 10621
+      },
+      "writtenOn": "2015-04-24T18:12:56Z",
+      "side": 1,
+      "message": "SHouldn\u0027t it be !SetupWizardUtils.hasLeanback(...)?",
+      "revId": "8f81b695cd27b489da972a495cb1b4c5cb8ff7d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
