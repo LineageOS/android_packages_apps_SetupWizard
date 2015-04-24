@@ -28,8 +28,8 @@ public class SetupStats {
 
     private static final String TAG = SetupStats.class.getSimpleName();
 
-    private static final String ANALYTIC_INTENT = "com.cyngn.cmstats.action.SEND_ANALYTIC_EVENT";
-    private static final String ANALYTIC_PERMISSION = "com.cyngn.cmstats.RECEIVE_ANALYTICS";
+    private static final String ANALYTIC_INTENT = "com.cyngn.stats.action.SEND_ANALYTIC_EVENT";
+    private static final String ANALYTIC_PERMISSION = "com.cyngn.stats.SEND_ANALYTICS";
 
     public static final String TRACKING_ID = "tracking_id";
 

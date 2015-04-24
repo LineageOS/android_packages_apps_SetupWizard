@@ -18,12 +18,13 @@
 package com.cyanogenmod.setupwizard.cmstats;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.provider.Settings;
 
 public class StatsUtils {
-    private static final String STATS_PACKAGE = "com.cyngn.cmstats";
+    private static final String STATS_PACKAGE = "com.cyngn.stats";
 
     public static boolean isStatsCollectionEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
@@ -33,7 +34,8 @@ public class StatsUtils {
     public static boolean isStatsPackageInstalled(Context context) {
         try {
             PackageInfo pi = context.getPackageManager().getPackageInfo(STATS_PACKAGE, 0);
-            return pi.applicationInfo.enabled;
+            return pi.applicationInfo.enabled
+                    && ((pi.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0);
         } catch (PackageManager.NameNotFoundException e) {
             return false;
         }
