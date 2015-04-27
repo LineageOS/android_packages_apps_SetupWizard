@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
+import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.telephony.TelephonyIntents;
@@ -127,7 +128,7 @@ public class CMSetupWizardData extends AbstractSetupData {
         ChooseDataSimPage chooseDataSimPage =
                 (ChooseDataSimPage) getPage(ChooseDataSimPage.TAG);
         if (chooseDataSimPage != null) {
-            chooseDataSimPage.setHidden(!isSimInserted());
+            chooseDataSimPage.setHidden(!allSimsInserted());
         }
     }
 
@@ -185,7 +186,7 @@ public class CMSetupWizardData extends AbstractSetupData {
                 return false;
             }
         }
-        return true;
+        return simSlotCount == SubscriptionManager.from(mContext).getActiveSubscriptionInfoCount();
     }
 
 }
