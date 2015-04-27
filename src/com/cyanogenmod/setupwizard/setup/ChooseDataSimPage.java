@@ -123,8 +123,7 @@ public class ChooseDataSimPage extends SetupPage {
             List<SubInfoRecord> subInfoRecords =  SubscriptionManager.getActiveSubInfoList();
             int simCount = subInfoRecords.size();
             mSubInfoRecords = new SparseArray<SubInfoRecord>(simCount);
-            for (int i = 0; i < simCount; i++) {
-                SubInfoRecord subInfoRecord = subInfoRecords.get(i);
+            for (SubInfoRecord subInfoRecord : subInfoRecords) {
                 mSubInfoRecords.put(subInfoRecord.slotId, subInfoRecord);
             }
             mNameViews = new SparseArray<TextView>(simCount);
@@ -137,13 +136,17 @@ public class ChooseDataSimPage extends SetupPage {
             for (int i = 0; i < simCount; i++) {
                 View simRow = inflater.inflate(R.layout.data_sim_row, null);
                 mPageView.addView(simRow);
-                SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
+                SubInfoRecord subInfoRecord = mSubInfoRecords.valueAt(i);
                 simRow.setTag(subInfoRecord);
                 simRow.setOnClickListener(mSetDataSimClickListener);
-                mNameViews.put(i, (TextView) simRow.findViewById(R.id.sim_title));
-                mSignalViews.put(i, (ImageView) simRow.findViewById(R.id.signal));
-                mCheckBoxes.put(i, (CheckBox) simRow.findViewById(R.id.enable_check));
-                mPhoneStateListeners.put(i, createPhoneStateListener(subInfoRecord));
+                mNameViews.put(subInfoRecord.slotId,
+                        (TextView) simRow.findViewById(R.id.sim_title));
+                mSignalViews.put(subInfoRecord.slotId,
+                        (ImageView) simRow.findViewById(R.id.signal));
+                mCheckBoxes.put(subInfoRecord.slotId,
+                        (CheckBox) simRow.findViewById(R.id.enable_check));
+                mPhoneStateListeners.put(subInfoRecord.slotId,
+                        createPhoneStateListener(subInfoRecord));
                 mPageView.addView(inflater.inflate(R.layout.divider, null));
             }
             updateSignalStrengths();
@@ -162,7 +165,7 @@ public class ChooseDataSimPage extends SetupPage {
             mContext = getActivity().getApplicationContext();
             mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
-                mPhone.listen(mPhoneStateListeners.get(i),
+                mPhone.listen(mPhoneStateListeners.valueAt(i),
                         PhoneStateListener.LISTEN_SERVICE_STATE
                                 | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
             }
@@ -181,7 +184,7 @@ public class ChooseDataSimPage extends SetupPage {
             super.onPause();
             mIsAttached = false;
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
-                mPhone.listen(mPhoneStateListeners.get(i), PhoneStateListener.LISTEN_NONE);
+                mPhone.listen(mPhoneStateListeners.valueAt(i), PhoneStateListener.LISTEN_NONE);
             }
         }
 
@@ -222,7 +225,7 @@ public class ChooseDataSimPage extends SetupPage {
         private void updateSignalStrengths() {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                    updateSignalStrength(mSubInfoRecords.get(i));
+                    updateSignalStrength(mSubInfoRecords.valueAt(i));
                 }
             }
         }
@@ -231,10 +234,10 @@ public class ChooseDataSimPage extends SetupPage {
             if (mIsAttached) {
                 for (int i = 0; i < mCheckBoxes.size(); i++) {
                     if (subInfoRecord.slotId == i) {
-                        mCheckBoxes.get(i).setChecked(true);
+                        mCheckBoxes.get(subInfoRecord.slotId).setChecked(true);
                         SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
                                 SetupStats.Action.PREFERRED_DATA_SIM,
-                                SetupStats.Label.SLOT, String.valueOf(i + 1));
+                                SetupStats.Label.SLOT, String.valueOf(subInfoRecord.slotId + 1));
                     } else {
                         mCheckBoxes.get(i).setChecked(false);
                     }
@@ -246,9 +249,10 @@ public class ChooseDataSimPage extends SetupPage {
         private void updateCurrentDataSub() {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
-                    SubInfoRecord subInfoRecord = mSubInfoRecords.get(i);
-                    mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
-                            == subInfoRecord.subId);
+                    SubInfoRecord subInfoRecord = mSubInfoRecords.valueAt(i);
+                    final long defaultDataSubId =  SubscriptionManager.getDefaultDataSubId();
+                    mCheckBoxes.get(subInfoRecord.slotId)
+                            .setChecked(defaultDataSubId == subInfoRecord.subId);
 
                 }
             }
