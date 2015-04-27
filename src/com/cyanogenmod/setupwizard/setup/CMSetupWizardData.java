@@ -20,12 +20,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
+import android.telephony.SubInfoRecord;
+import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.telephony.TelephonyIntents;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CMSetupWizardData extends AbstractSetupData {
 
@@ -122,7 +125,7 @@ public class CMSetupWizardData extends AbstractSetupData {
         ChooseDataSimPage chooseDataSimPage =
                 (ChooseDataSimPage) getPage(ChooseDataSimPage.TAG);
         if (chooseDataSimPage != null) {
-            chooseDataSimPage.setHidden(!isSimInserted());
+            chooseDataSimPage.setHidden(!allSimsInserted());
         }
     }
 
@@ -174,13 +177,14 @@ public class CMSetupWizardData extends AbstractSetupData {
     private boolean allSimsInserted() {
         TelephonyManager tm = TelephonyManager.from(mContext);
         int simSlotCount = tm.getSimCount();
+        List<SubInfoRecord> subInfoRecords =  SubscriptionManager.getActiveSubInfoList();
         for (int i = 0; i < simSlotCount; i++) {
             int state = tm.getSimState(i);
             if (state == TelephonyManager.SIM_STATE_ABSENT) {
                 return false;
             }
         }
-        return true;
+        return simSlotCount == subInfoRecords.size();
     }
 
 }
