@@ -38,7 +38,7 @@
   <string name="choose_data_sim_summary" product="default">Mitä SIM-korttia haluat käyttää mobiilitiedonsiirtoon? Mobiilidatan käyttö voi aiheuttaa tiedonsiirtokuluja.</string>
   <string name="date_time_summary">Valitse aikavyöhyke ja määritä aika ja päivämäärä tarvittaessa</string>
   <string name="backup_data_summary"><b>Varmuuskopioi</b> sovellusten tiedot, Wi-FI-salasanat ja muut asetukset Googlen palvelimille</string>
-  <string name="other_services_summary">Tämä ottaa Googlen palvelut käyttöön, ja voit ottaa ne käyttöön tai poistaa käytöstä milloin tahansa. Tietoja käytetään Googlen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>n mukaisesti.</string>
+  <string name="other_services_summary">Tämä ottaa Googlen palvelut käyttöön, ja voit ottaa ne käyttöön tai poistaa käytöstä milloin tahansa. Tietoja käytetään Googlen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
   <string name="location_services_summary">Sijaintipalvelut sallii järjestelmän ja muiden sovellusten kerätä ja käyttää tietoja kuten likimääräinen sijaintisi. Esimerkiksi sovellus voi paikantaa sinut ja etsiä lähistöllä olevia kahviloita.</string>
   <string name="location_access_summary"><b>Salli sovellusten, jotka ovat kysyneet sinulta lupaa</b> käyttää sijaintitietojasi. Tämä saattaa sisältää nykyisen sijaintisi ja aiemmat sijaintisi.</string>
   <string name="location_gps" product="tablet"><b>Paranna paikannuksen tarkkuutta</b> sallimalla sovellusten käyttää GPS:ää tabletissasi.</string>
