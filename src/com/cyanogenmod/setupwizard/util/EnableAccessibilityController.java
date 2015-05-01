@@ -47,8 +47,8 @@ import java.util.List;
 
 public class EnableAccessibilityController {
 
-    private static final int SPEAK_WARNING_DELAY_MILLIS = 2000;
-    private static final int ENABLE_ACCESSIBILITY_DELAY_MILLIS = 6000;
+    private static final int SPEAK_WARNING_DELAY_MILLIS = 5000;
+    private static final int ENABLE_ACCESSIBILITY_DELAY_MILLIS = 12000;
 
     public static final int MESSAGE_SPEAK_WARNING = 1;
     public static final int MESSAGE_SPEAK_ENABLE_CANCELED = 2;
