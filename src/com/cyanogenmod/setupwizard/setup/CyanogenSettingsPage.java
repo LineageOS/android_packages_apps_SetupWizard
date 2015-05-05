@@ -18,12 +18,15 @@ package com.cyanogenmod.setupwizard.setup;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ThemeUtils;
 import android.content.res.ThemeConfig;
 import android.content.res.ThemeManager;
 import android.hardware.CmHardwareManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.preference.PreferenceManager;
@@ -42,6 +45,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
@@ -267,9 +271,13 @@ public class CyanogenSettingsPage extends SetupPage {
             ClickableSpan clickableSpan = new ClickableSpan() {
                 @Override
                 public void onClick(View textView) {
-                    WebViewDialogFragment.newInstance()
-                            .setUri(PRIVACY_POLICY_URI)
-                            .show(getActivity().getFragmentManager(), WebViewDialogFragment.TAG);
+                    final Intent intent = new Intent(SetupWizardApp.ACTION_VIEW_LEGAL);
+                    intent.setData(Uri.parse(PRIVACY_POLICY_URI));
+                    try {
+                        getActivity().startActivity(intent);
+                    } catch (Exception e) {
+                        Log.e(TAG, "Unable to start activity " + intent.toString(), e);
+                    }
                 }
             };
             ss.setSpan(clickableSpan,

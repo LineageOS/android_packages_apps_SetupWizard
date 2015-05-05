@@ -19,11 +19,14 @@ package com.cyanogenmod.setupwizard.setup;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.backup.IBackupManager;
+import android.content.ComponentName;
 import android.content.ContentQueryMap;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -32,6 +35,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -151,10 +155,13 @@ public class OtherSettingsPage extends SetupPage {
                 ClickableSpan clickableSpan = new ClickableSpan() {
                     @Override
                     public void onClick(View textView) {
-                        WebViewDialogFragment.newInstance()
-                                .setUri(PRIVACY_POLICY_URI)
-                                .show(getActivity().getFragmentManager(),
-                                        WebViewDialogFragment.TAG);
+                        final Intent intent = new Intent(SetupWizardApp.ACTION_VIEW_LEGAL);
+                        intent.setData(Uri.parse(PRIVACY_POLICY_URI));
+                        try {
+                            getActivity().startActivity(intent);
+                        } catch (Exception e) {
+                            Log.e(TAG, "Unable to start activity " + intent.toString());
+                        }
                     }
                 };
                 ss.setSpan(clickableSpan,
