@@ -34,6 +34,7 @@ public class SetupWizardApp extends Application {
 
     public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
 
+    public static final String ACCOUNT_TYPE_CYANOGEN = "com.cyanogen";
     public static final String ACCOUNT_TYPE_GMS = "com.google";
 
     public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
@@ -46,6 +47,8 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_USE_IMMERSIVE = "useImmersiveMode";
     public static final String EXTRA_THEME = "theme";
     public static final String EXTRA_MATERIAL_LIGHT = "material_light";
+    public static final String EXTRA_CKSOP = "cksOp";
+    public static final String EXTRA_LOGIN_FOR_KILL_SWITCH = "authCks";
 
     private static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
 
@@ -61,10 +64,13 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_CYANOGEN= 3;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
+    public static final int REQUEST_CODE_UNLOCK = 6;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
     private boolean mIsRadioReady = false;
+
+    private boolean mIsAuthorized = false;
 
     private StatusBarManager mStatusBarManager;
 
@@ -112,6 +118,14 @@ public class SetupWizardApp extends Application {
             mHandler.removeCallbacks(mRadioTimeoutRunnable);
         }
         mIsRadioReady = radioReady;
+    }
+
+    public boolean isAuthorized() {
+        return mIsAuthorized;
+    }
+
+    public void setIsAuthorized(boolean isAuthorized) {
+        mIsAuthorized = isAuthorized;
     }
 
     public void disableStatusBar() {

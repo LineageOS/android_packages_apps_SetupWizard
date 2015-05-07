@@ -16,6 +16,10 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
+import android.accounts.AccountManager;
+import android.accounts.AccountManagerCallback;
+import android.accounts.AccountManagerFuture;
+import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -25,14 +29,17 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
 
 import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.LocalePicker;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.util.Locale;
 
@@ -42,26 +49,38 @@ public class WelcomePage extends SetupPage {
 
     private static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
 
+    private WelcomeFragment mWelcomeFragment;
+
     public WelcomePage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
-        if (fragment == null) {
+        mWelcomeFragment = (WelcomeFragment)fragmentManager.findFragmentByTag(getKey());
+        if (mWelcomeFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new WelcomeFragment();
-            fragment.setArguments(args);
+            mWelcomeFragment = new WelcomeFragment();
+            mWelcomeFragment.setArguments(args);
         }
-        return fragment;
+        return mWelcomeFragment;
     }
 
     @Override
     public int getTitleResId() {
         return R.string.setup_welcome;
+    }
+
+    @Override
+    public boolean doNextAction() {
+        if (isLocked()) {
+            confirmCyanogenCredentials(mWelcomeFragment);
+            return true;
+        } else {
+            return super.doNextAction();
+        }
     }
 
     @Override
@@ -82,13 +101,63 @@ public class WelcomePage extends SetupPage {
     }
 
     @Override
+    public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == SetupWizardApp.REQUEST_CODE_UNLOCK) {
+            if (resultCode == Activity.RESULT_OK) {
+                ((SetupWizardApp) mContext.getApplicationContext()).setIsAuthorized(true);
+                getCallbacks().onNextPage();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     public String getKey() {
         return TAG;
     }
 
     @Override
+    public int getNextButtonTitleResId() {
+        if (isLocked()) {
+            return R.string.setup_unlock;
+        } else {
+            return R.string.next;
+        }
+    }
+
+    @Override
     public int getPrevButtonTitleResId() {
         return R.string.emergency_call;
+    }
+
+    private void confirmCyanogenCredentials(final Fragment fragment) {
+        AccountManager accountManager = AccountManager.get(mContext);
+        accountManager.editProperties(SetupWizardApp.ACCOUNT_TYPE_CYANOGEN, null,
+                new AccountManagerCallback<Bundle>() {
+                    public void run(AccountManagerFuture<Bundle> f) {
+                        try {
+                            Bundle b = f.getResult();
+                            Intent i = b.getParcelable(AccountManager.KEY_INTENT);
+                            i.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+                            i.putExtra(SetupWizardApp.EXTRA_SHOW_BUTTON_BAR, true);
+                            i.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+                            i.putExtra(SetupWizardApp.EXTRA_LOGIN_FOR_KILL_SWITCH, true);
+                            fragment.startActivityForResult(i,
+                                    SetupWizardApp.REQUEST_CODE_UNLOCK);
+                        } catch (Throwable t) {
+                            Log.e(getKey(), "confirmCredentials failed", t);
+                        }
+                    }
+                }, null);
+    }
+
+    private boolean isLocked() {
+        boolean isAuthorized = ((SetupWizardApp) mContext.getApplicationContext()).isAuthorized();
+        if (SetupWizardUtils.isDeviceLocked()) {
+            return !isAuthorized;
+        }
+        return false;
     }
 
     public static class WelcomeFragment extends SetupPageFragment {

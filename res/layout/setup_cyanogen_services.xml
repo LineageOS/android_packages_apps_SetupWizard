@@ -50,6 +50,58 @@
                     android:text="@string/services_explanation"
                     android:clickable="true"/>
 
+                <LinearLayout
+                    android:id="@+id/killswitch"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/location_margin_left"
+                    android:paddingRight="@dimen/content_margin_right"
+                    android:background="?android:attr/selectableItemBackground">
+
+
+                    <ImageView
+                        android:id="@+id/killswitch_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="@dimen/location_text_margin_left"
+                        android:layout_gravity="center|top"
+                        android:src="@drawable/tick"/>
+
+                    <RelativeLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:layout_marginLeft="@dimen/location_text_margin_left"
+                        android:layout_marginRight="@dimen/location_text_margin_right"
+                        android:paddingBottom="@dimen/content_margin_bottom">
+
+                        <TextView
+                            android:id="@+id/killswitch_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:lineSpacingExtra="@dimen/setup_line_spacing"
+                            android:fadingEdge="horizontal"
+                            android:text="@string/setup_require_cyanogen_label"/>
+
+                        <TextView
+                            android:id="@+id/killswitch_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/killswitch_title"
+                            android:layout_alignStart="@+id/killswitch_title"
+                            android:textSize="15sp"
+                            android:lineSpacingExtra="@dimen/setup_line_spacing"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:text="@string/setup_device_locked_instructions"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
                 <!-- Whether or not to enable metrics -->
                 <LinearLayout
                     android:id="@+id/metrics"

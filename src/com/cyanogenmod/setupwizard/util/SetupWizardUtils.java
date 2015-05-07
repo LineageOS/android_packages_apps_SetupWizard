@@ -17,6 +17,7 @@
 package com.cyanogenmod.setupwizard.util;
 
 import android.accounts.AccountManager;
+import android.app.AppGlobals;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.ComponentInfo;
@@ -25,6 +26,8 @@ import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
+import android.os.IBinder;
+import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.telephony.ServiceState;
@@ -32,6 +35,7 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
+import com.android.internal.os.IKillSwitchService;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -122,6 +126,36 @@ public class SetupWizardUtils {
             }
         }
         return true;
+    }
+
+    public static boolean isDeviceLocked() {
+        IBinder b = ServiceManager.getService(Context.KILLSWITCH_SERVICE);
+        IKillSwitchService service = IKillSwitchService.Stub.asInterface(b);
+        if (service != null) {
+            try {
+                return service.isDeviceLocked();
+            } catch (Exception e) {
+                // silently fail
+            }
+        }
+        return false;
+    }
+
+    public static boolean hasKillSwitch() {
+        IBinder b = ServiceManager.getService(Context.KILLSWITCH_SERVICE);
+        IKillSwitchService service = IKillSwitchService.Stub.asInterface(b);
+        if (service != null) {
+            try {
+                return service.hasKillSwitch();
+            } catch (Exception e) {
+                // silently fail
+            }
+        }
+        return false;
+    }
+
+    public static boolean hasAuthorized() {
+        return ((SetupWizardApp) AppGlobals.getInitialApplication()).isAuthorized();
     }
 
     public static boolean isRadioReady(Context context, ServiceState state) {

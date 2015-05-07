@@ -101,6 +101,9 @@ public class CyanogenServicesPage extends SetupPage {
                         resultCode == Activity.RESULT_OK ? "success" : "skipped");
                 if (SetupWizardUtils.accountExists(mContext,
                         mContext.getString(R.string.cm_account_type))) {
+                    if (SetupWizardUtils.isDeviceLocked()) {
+                        ((SetupWizardApp) mContext.getApplicationContext()).setIsAuthorized(true);
+                    }
                     setHidden(true);
                 }
                 getCallbacks().onNextPage();

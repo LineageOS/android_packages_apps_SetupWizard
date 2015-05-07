@@ -42,6 +42,7 @@ import android.view.IWindowManager;
 import android.view.View;
 import android.view.WindowManagerGlobal;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
@@ -213,6 +214,9 @@ public class CyanogenSettingsPage extends SetupPage {
 
     public static class CyanogenSettingsFragment extends SetupPageFragment {
 
+        private View mKillSwitchView;
+        private TextView mKillSwitchTitle;
+        private ImageView mKillSwitchStatus;
         private View mMetricsRow;
         private View mDefaultThemeRow;
         private View mNavKeysRow;
@@ -286,6 +290,21 @@ public class CyanogenSettingsPage extends SetupPage {
             TextView privacyPolicy = (TextView) mRootView.findViewById(R.id.privacy_policy);
             privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
             privacyPolicy.setText(ss);
+
+            mKillSwitchView = mRootView.findViewById(R.id.killswitch);
+            mKillSwitchTitle = (TextView)mRootView.findViewById(R.id.killswitch_title);
+            mKillSwitchStatus = (ImageView)mRootView.findViewById(R.id.killswitch_check);
+            if (hideKillSwitch()) {
+                mKillSwitchView.setVisibility(View.GONE);
+            } else {
+                if (SetupWizardUtils.isDeviceLocked()) {
+                    mKillSwitchTitle.setEnabled(true);
+                    mKillSwitchStatus.setImageResource(R.drawable.tick);
+                } else {
+                    mKillSwitchTitle.setEnabled(false);
+                    mKillSwitchStatus.setImageResource(R.drawable.cross);
+                }
+            }
 
             mMetricsRow = mRootView.findViewById(R.id.metrics);
             mMetricsRow.setOnClickListener(mMetricsClickListener);
@@ -412,6 +431,10 @@ public class CyanogenSettingsPage extends SetupPage {
                 mNavKeys.setChecked(checked);
                 myPageBundle.putBoolean(KEY_ENABLE_NAV_KEYS, checked);
             }
+        }
+
+        private static boolean hideKillSwitch() {
+            return !SetupWizardUtils.hasKillSwitch();
         }
 
     }
