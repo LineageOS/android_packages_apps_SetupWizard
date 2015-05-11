@@ -16,6 +16,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>segurtasun kopia</b> egin Google zerbitzarietan</string>
+  <string name="setup_wifi">Aukeratu Wi-Fia</string>
+  <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>babeskopia</b> egin Google zerbitzarietan</string>
   <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
+  <string name="location_network"><b>Erabili Wi-Fia</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
+  <string name="location_network_telephony"><b>Erabili Wi-Fi eta sare mugikorrak</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
 </resources>
