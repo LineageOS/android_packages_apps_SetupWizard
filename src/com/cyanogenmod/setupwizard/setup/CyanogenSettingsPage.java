@@ -22,6 +22,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.ThemeUtils;
 import android.content.res.ThemeConfig;
 import android.content.res.ThemeManager;
@@ -67,6 +69,8 @@ public class CyanogenSettingsPage extends SetupPage {
 
     public static final String SETTING_METRICS = "settings.cyanogen.allow_metrics";
     public static final String PRIVACY_POLICY_URI = "https://cyngn.com/oobe-legal?hideHeader=1";
+
+    private static final String WHISPERPUSH_PACKAGE = "org.whispersystems.whisperpush";
 
     public CyanogenSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -202,10 +206,20 @@ public class CyanogenSettingsPage extends SetupPage {
     private static boolean hideWhisperPush(Context context) {
         final int playServicesAvailable = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(context);
-        return playServicesAvailable != ConnectionResult.SUCCESS
+        boolean installed = false;
+        PackageInfo pi = null;
+        try {
+            pi = context.getPackageManager().getPackageInfo(WHISPERPUSH_PACKAGE, 0);
+            if (pi != null) {
+                installed = true;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            installed = false;
+        }
+        return installed && (playServicesAvailable != ConnectionResult.SUCCESS
                 || !SetupWizardUtils.hasTelephony(context)
                 || (SetupWizardUtils.hasTelephony(context) &&
-                SetupWizardUtils.isSimMissing(context));
+                SetupWizardUtils.isSimMissing(context)));
     }
 
     private static boolean hideThemeSwitch(Context context) {
