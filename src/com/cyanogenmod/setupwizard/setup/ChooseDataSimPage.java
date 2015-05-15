@@ -122,7 +122,8 @@ public class ChooseDataSimPage extends SetupPage {
             mPageView = (ViewGroup)mRootView.findViewById(R.id.page_view);
             mProgressBar = (ProgressBar) mRootView.findViewById(R.id.progress);
             List<SubscriptionInfo> subInfoRecords = mSubscriptionManager.getActiveSubscriptionInfoList();
-            int simCount = subInfoRecords.size();
+            int simCount =
+                    subInfoRecords != null ? subInfoRecords.size() : 0;
             mSubInfoRecords = new SparseArray<SubscriptionInfo>(simCount);
             for (SubscriptionInfo subInfoRecord : subInfoRecords) {
                 mSubInfoRecords.put(subInfoRecord.getSimSlotIndex(), subInfoRecord);
