@@ -16,6 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>segurtasun kopia</b> egin Google zerbitzarietan</string>
+  <string name="next">Hurrengoa</string>
+  <string name="skip">Saltatu</string>
+  <string name="ok">Ados</string>
+  <string name="setup_welcome">Ongi etorri</string>
+  <string name="setup_wifi">Hautatu Wi-Fia</string>
+  <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>babeskopia</b> egin Google zerbitzarietan</string>
   <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
+  <string name="location_network"><b>Erabili Wi-Fia</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
+  <string name="location_network_telephony"><b>Erabili Wi-Fi eta sare mugikorrak</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
+  <string name="location_network_gms"><b>Erabili Google kokapen zerbitzua</b> aplikazioei zure kokapena zehazten laguntzeko. Honek Google-i kokapen informazio anonimoa bidaltzea dakar, aplikaziorik erabiltzen ez duzunean ere.</string>
+  <string name="setup_mobile_data">Piztu datu mugikorrak</string>
+  <string name="services_apply_theme">Aplikatu <xliff:g id="name" example="Material">%s</xliff:g> gaia</string>
+  <string name="services_use_secure_sms">Erabili SMS segurua</string>
+  <string name="setup_unlock">Desblokeatu</string>
+  <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo desgaitzeko zoan hona: Ezarpenak &gt; Segurtasuna</i></string>
 </resources>

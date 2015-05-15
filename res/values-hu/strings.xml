@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
   <string name="services_use_secure_sms">Biztonságos SMS használata</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> az SMS beszélgetések titkosításához más olyan felhasználókkal, akik szintén biztonságos SMS-t használnak <xliff:g id="name" example="CyanogenMod">%s</xliff:g> eszközön.</string>
+  <string name="setup_unlock">Feloldás</string>
+  <string name="setup_device_locked">Ezt az eszközt a felhasználó zárolta.</string>
+  <string name="setup_require_cyanogen_label"><b>Cyanogen OS fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
+  <string name="setup_device_locked_instructions"><i>A szolgáltatás ki/be kapcsolásához, kérjük menjen ide: Beállítások &gt; Biztonság</i></string>
+  <string name="setup_warning_skip_anyway">Cyanogen OS fiók nélkül nem fog hozzáférni a következőkhöz:\n\nTelefon testreszabása új ikonokkal, háttérképekkel és egyebekkel a Téma kezelő alkalmazáson keresztül\n\nTelefon helyének maghatározása, vagy távolról való törlése, ha elveszett</string>
 </resources>

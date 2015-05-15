@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
   <string name="services_use_secure_sms">Utilizza SMS sicuri</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> per criptare le conversazioni SMS con altri utenti che utilizzano gli SMS sicuri su un dispositivo <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="setup_unlock">Sblocca</string>
+  <string name="setup_device_locked">Questo dispositivo è stato bloccato dall\'utente.</string>
+  <string name="setup_require_cyanogen_label"><b>È necessaria la password del tuo account Cyanogen OS</b> al fine di utilizzare il dispositivo anche dopo il ripristino di fabbrica.</string>
+  <string name="setup_device_locked_instructions"><i>Per attivare e disattivare questa funzione, vai in Impostazioni &gt; Sicurezza</i></string>
+  <string name="setup_warning_skip_anyway">\"Senza un account Cyanogen OS, non sarai in grado di:\n\nPersonalizzare il telefono con nuove icone, sfondi ed altro ancora dall\'app Temi\n\nLocalizzare o formattare da remoto il telefono se viene smarrito\"</string>
 </resources>

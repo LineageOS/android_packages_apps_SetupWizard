@@ -58,4 +58,7 @@
   <string name="services_help_improve_cm">Hëllef <xliff:g id="name" example="CyanogenMod">%s</xliff:g> ze verbesseren</string>
   <string name="services_apply_theme">Den Design <xliff:g id="name" example="Material">%s</xliff:g> applizéieren</string>
   <string name="services_use_secure_sms">Sécher SMSe benotzen</string>
+  <string name="setup_unlock">Entspären</string>
+  <string name="setup_device_locked">Dësen Apparat gouf duerch de Benotzer gespaart.</string>
+  <string name="setup_device_locked_instructions"><i>Fir dës Funktioun z\'aktivéieren/desaktivéieren, géi op Astellungen  &gt; Sécherheet</i></string>
 </resources>

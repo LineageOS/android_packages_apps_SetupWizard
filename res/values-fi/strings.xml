@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
   <string name="services_use_secure_sms">Käytä turvallisia tekstiviestejä</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> salataksesi tekstiviestikeskustelut muiden turvallisia tekstiviestejä ja <xliff:g id="name" example="CyanogenMod">%s</xliff:g>ia käyttävien henkilöiden kanssa.</string>
+  <string name="setup_unlock">Avaa lukitus</string>
+  <string name="setup_device_locked">Käyttäjä on lukinnut laitteen.</string>
+  <string name="setup_require_cyanogen_label"><b>Vaadi Cyanogen OS-tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>
+  <string name="setup_device_locked_instructions"><i>Poistaaksesi tämän ominaisuuden käytöstä/ottaaksesi käyttöön, mene Asetukset &gt; Suojaus</i></string>
+  <string name="setup_warning_skip_anyway">Ilman Cyanogen OS-tiliä, et voi:\n\nMukauttaa puhelintasi uusilla kuvakkeilla, taustakuvilla tai muilla käyttämällä Teemat-sovellusta\n\nPaikantaa tai etätyhjentää kadonnutta puhelintasi</string>
 </resources>

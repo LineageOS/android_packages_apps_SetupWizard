@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
   <string name="services_use_secure_sms">Použít zabezpečené SMS</string>
   <string name="services_secure_sms_label">Použijte aplikaci <xliff:g id="name" example="Use secure SMS">%s</xliff:g> pro šifrované SMS a zabezpečenou komunikaci na zařízení <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="setup_unlock">Odemknout</string>
+  <string name="setup_device_locked">Toto zařízení bylo uzamčeno uživatelem.</string>
+  <string name="setup_require_cyanogen_label">Po obnovení továrního nastavení bude <b>vyžadováno heslo k Vašemu účtu Cyanogen OS</b>.</string>
+  <string name="setup_device_locked_instructions"><i>Pro zapnutí/vypnutí této funkce, přejděte do nastavení &gt; Zabezpečení</i></string>
+  <string name="setup_warning_skip_anyway">Bez účtu Cyanogen nebudete schopni:\n\nPřizpůsobit svůj telefon novými ikonami, tapetami a dalším z aplikace Motivy\n\nVzdáleně vyhledat nebo vymazat telefon v případě ztráty</string>
 </resources>

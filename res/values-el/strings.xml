@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
   <string name="services_use_secure_sms">Κάντε χρήση των ασφαλών SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> για να κρυπτογραφήσετε τις συνομιλίες SMS με άλλους χρήστες που χρησιμοποιούν ασφαλή SMS σε συσκευές <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="setup_unlock">Ξεκλείδωμα</string>
+  <string name="setup_device_locked">Αυτή η συσκευή έχει κλειδωθεί από το χρήστη.</string>
+  <string name="setup_require_cyanogen_label"><b>Απαίτηση του κωδικού πρόσβασης του λογαριασμού σας Cyanogen OS</b> για να χρησιμοποιήσετε τη συσκευή σας, ακόμα και μετά από επαναφορά εργοστασιακών ρυθμίσεων.</string>
+  <string name="setup_device_locked_instructions"><i>Για να ενεργοποιήσετε/απενεργοποιήσετε αυτή τη λειτουργία, παρακαλώ πηγαίνετε στις Ρυθμίσεις &gt; Ασφάλεια</i></string>
+  <string name="setup_warning_skip_anyway">Χωρίς ένα λογαριασμό Cyanogen OS, δεν θα είστε σε θέση να:\n\nΠροσαρμόσετε το τηλέφωνό σας με νέα εικονίδια, ταπετσαρίες και πολλά άλλα στην εφαρμογή Θεμάτων\n\nΕντοπίσετε ή διαγράψετε εξ αποστάσεως το τηλέφωνό σας εάν το χάσετε</string>
 </resources>

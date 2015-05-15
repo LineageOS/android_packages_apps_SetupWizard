@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
   <string name="services_use_secure_sms">Sichere SMS verwenden</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g>, um SMS-Konversationen mit anderen Nutzern auf einem <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-Gerät zu verschlüsseln.</string>
+  <string name="setup_unlock">Entsperren</string>
+  <string name="setup_device_locked">Dieses Gerät wurde durch den Benutzer gesperrt.</string>
+  <string name="setup_require_cyanogen_label"><b>Ihr Cyanogen OS Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
+  <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit</i></string>
+  <string name="setup_warning_skip_anyway">Ohne ein Cyanogen OS-Konto können Sie ihr Telefon nicht:\n\nMit neuen Symbolen, Hintergründen und mehr in der Design-App anpassen\n\nLokalisieren oder löschen, falls Sie es verloren haben</string>
 </resources>
