@@ -91,7 +91,6 @@ public class EnableAccessibilityController {
     private final float mTouchSlop;
 
     private boolean mDestroyed;
-    private boolean mCanceled;
 
     private float mFirstPointerDownX;
     private float mFirstPointerDownY;
@@ -177,12 +176,6 @@ public class EnableAccessibilityController {
     public boolean onTouchEvent(MotionEvent event) {
         final int pointerCount = event.getPointerCount();
         final int action = event.getActionMasked();
-        if (mCanceled) {
-            if (action == MotionEvent.ACTION_UP) {
-                mCanceled = false;
-            }
-            return true;
-        }
         switch (action) {
             case MotionEvent.ACTION_POINTER_DOWN: {
                 if (pointerCount > 2) {
@@ -218,7 +211,6 @@ public class EnableAccessibilityController {
     }
 
     private void cancel() {
-        mCanceled = true;
         if (mHandler.hasMessages(MESSAGE_SPEAK_WARNING)) {
             mHandler.removeMessages(MESSAGE_SPEAK_WARNING);
         } else if (mHandler.hasMessages(MESSAGE_ENABLE_ACCESSIBILITY)) {
