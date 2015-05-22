@@ -413,9 +413,13 @@ public class CyanogenSettingsPage extends SetupPage {
         private void updateThemeOption() {
             if (!mHideThemeRow) {
                 final Bundle myPageBundle = mPage.getData();
-                boolean themesChecked =
-                        !myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME) || myPageBundle
-                                .getBoolean(KEY_APPLY_DEFAULT_THEME);
+                boolean themesChecked;
+                if (myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME)) {
+                    themesChecked = myPageBundle.getBoolean(KEY_APPLY_DEFAULT_THEME);
+                } else {
+                    themesChecked = getActivity().getResources().getBoolean(
+                            R.bool.check_custom_theme_by_default);
+                }
                 mDefaultTheme.setChecked(themesChecked);
                 myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
             }
