@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
   <string name="services_use_secure_sms">Beveiligde sms-berichten gebruiken</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> om sms-gesprekken te versleutelen met anderen die ook beveiligde sms-berichten gebruiken op een <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-apparaat.</string>
+  <string name="setup_unlock">Ontgrendelen</string>
+  <string name="setup_device_locked">Dit apparaat is vergrendeld door de gebruiker.</string>
+  <string name="setup_require_cyanogen_label"><b>Uw Cyanogen OS-accountwachtwoord vereisen</b> om het apparaat te gebruiken, zelfs na terugzetten naar fabrieksinstellingen.</string>
+  <string name="setup_device_locked_instructions"><i>Om deze functie in of uit te schakelen, ga naar Instellingen &gt; Beveiliging</i></string>
+  <string name="setup_warning_skip_anyway">Zonder een Cyanogen OS-account kunt u niet:\n\nUw telefoon personaliseren met nieuwe pictogrammen, achtergronden en meer in de app Thema\'s\n\nUw telefoon lokaliseren of op afstand wissen wanneer u deze kwijt raakt</string>
 </resources>

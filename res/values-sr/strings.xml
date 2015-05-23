@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Користите навигационе тастере на екрану</b> уместо хардверских тастера.</string>
   <string name="services_use_secure_sms">Користи безбедан SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> да заштитиш SMS преписку са другим корисницима користећи безбедан SMS на <xliff:g id="name" example="CyanogenMod">%s</xliff:g> уређају.</string>
+  <string name="setup_unlock">Откључај</string>
+  <string name="setup_device_locked">Овај уређај је закључао корисник.</string>
+  <string name="setup_require_cyanogen_label"><b>Захтева твоју лозинку Cyanogen налога</b> да би користио свој уређај чак и после ресетовања на фабрички.</string>
+  <string name="setup_device_locked_instructions"><i>Да би искључио/укључио ово, иди на Подешавања &gt; Приватност</i></string>
+  <string name="setup_warning_skip_anyway">Без Cyanogen налога, нећеш моћи да:\n\nПрилагодиш телефон са новим иконама, тапетама и осталим у апликацији тема\n\nЛоцираш или обришеш телефон на даљину ако га изгубиш</string>
 </resources>

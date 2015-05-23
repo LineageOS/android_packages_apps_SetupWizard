@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
   <string name="services_use_secure_sms">Usar SMS seguros</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Usar SMS seguro">%s</xliff:g> para cifrar conversaciones SMS con otros usuarios usando SMS seguros en tu dispositivo <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="setup_unlock">Desbloquear</string>
+  <string name="setup_device_locked">Este dispositivo ha sido bloqueado por el usuario.</string>
+  <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta Cyanogen OS</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
+  <string name="setup_device_locked_instructions"><i>Para activar o desactivar esta función, ve a Ajustes &gt; Seguridad</i></string>
+  <string name="setup_warning_skip_anyway">Sin una cuenta de Cyanogen OS no podrás:\n\nPersonalizar tu teléfono con nuevos iconos, fondos de pantalla y mucho más a través de la aplicación de temas\n\nBorrar tu teléfono localmente o de manera remota si se ha perdido</string>
 </resources>

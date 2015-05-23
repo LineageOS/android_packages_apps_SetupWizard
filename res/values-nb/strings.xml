@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
   <string name="services_use_secure_sms">Bruk sikker SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> for å kryptere SMS samtaler med andre som også bruker sikker SMS på en <xliff:g id="name" example="CyanogenMod">%s</xliff:g> enhet.</string>
+  <string name="setup_unlock">Lås opp</string>
+  <string name="setup_device_locked">Denne enheten er låst av brukeren.</string>
+  <string name="setup_require_cyanogen_label"><b>Krever passordet til Cyanogen OS konto</b> for å bruke enheten etter en fabrikkgjennoppretting.</string>
+  <string name="setup_device_locked_instructions"><i>For å slå denne funksjonen av/på, kan du gå til Innstillinger &gt; sikkerhet</i></string>
+  <string name="setup_warning_skip_anyway">Uten en Cyanogen OS konto, vil du ikke kunne: \n\nEndre på telefonen med nye ikoner, bakgrunnsbilder og mer i temaer-app\n\nLokalisere eller eksternt slette telefonen hvis du har mistet den</string>
 </resources>
