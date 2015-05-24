@@ -66,4 +66,9 @@
 </b> замість апаратних.</string>
   <string name="services_use_secure_sms">Використовувати безпечні SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s </xliff:g> для шифрування SMS розмови з іншими користувачами за допомогою безпечної SMS на <xliff:g id="name" example="CyanogenMod"> %s </xliff:g> пристрої.</string>
+  <string name="setup_unlock">Розблокувати</string>
+  <string name="setup_device_locked">Цей пристрій заблоковано користувачем.</string>
+  <string name="setup_require_cyanogen_label"><b>Необхідний пароль Cyanogen OS</b> для використання Вашого пристрою навіть після скидання до заводських налаштувань.</string>
+  <string name="setup_device_locked_instructions"><i>Щоб увімкнути/вимкнути цю функцію, будь ласка, перейдіть до Налаштування &gt; Безпека</i></string>
+  <string name="setup_warning_skip_anyway">Без облікового запису ОС Cyanogen, Ви не зможете:\n\nДодати індивідуальності телефону за допомогою нових іконок, шпалер тощо у програмі \"Теми\",\n\nвиявити місцезнаходження пристрою  чи віддалено стерти дані, у випадку його втрати</string>
 </resources>
