@@ -65,4 +65,9 @@
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <string name="services_use_secure_sms">השתמש ב-SMS מאובטח</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> להצפנת שיחות SMS עם משתמשים אחרים באמצעות SMS מאובטח במכשיר <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="setup_unlock">שחרר</string>
+  <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
+  <string name="setup_require_cyanogen_label"><b>נדרשת סיסמת חשבון מערכת Cyanogen</b> על מנת להשתמש במכשירך, אפילו לאחר איפוס המכשיר להגדרות היצרן.</string>
+  <string name="setup_device_locked_instructions"><i>כדי להפעיל/לכבות אפשרות זו, אנא גש להגדרות &gt; אבטחה</i></string>
+  <string name="setup_warning_skip_anyway">בלי חשבון מערכת Cyanogen, לא ניתן יהיה:\n\nלהתאים את מכשירך עם סמלים, רקעים ועוד ביישום ערכות העיצוב\n\nלאתר או למחוק מרחוק את מכשירך במקרה של אובדן</string>
 </resources>
