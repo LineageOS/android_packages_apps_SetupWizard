@@ -55,7 +55,8 @@
 
     <permission
         android:name="cyanogenmod.permission.FINISH_SETUP"
-        android:protectionLevel="signatureOrSystem" />
+        android:protectionLevel="signatureOrSystem"
+        androidprv:allowViaWhitelist="true" />
 
     <permission android:name="org.whispersystems.whisperpush.permissions.REGISTER"
                 android:protectionLevel="signature" />
