@@ -94,6 +94,9 @@ public class SetupWizardApp extends Application {
             if (!isOwner
                     || Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.USER_SETUP_COMPLETE) == 1) {
+                Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
+                Settings.Secure.putInt(getContentResolver(),
+                        Settings.Secure.USER_SETUP_COMPLETE, 1);
                 SetupWizardUtils.disableGMSSetupWizard(this);
                 SetupWizardUtils.disableSetupWizard(this);
                 if (!isOwner) {
