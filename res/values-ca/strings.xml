@@ -39,13 +39,13 @@
   <string name="date_time_summary">Estableix el teu fus horari i ajusta la data i hora actual si és necessari</string>
   <string name="backup_data_summary"><b>Fes una còpia de seguretat</b> de les dades de les app, contrasenyes Wi-Fi, i altres ajustaments als servidors de Google</string>
   <string name="other_services_summary">Aquests serveis posen a Google a treballar per a tu, i pots activar-los o desactivar-los en qualsevol moment. Les dades s\'utilitzaran d\'acord amb la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
-  <string name="location_services_summary">Els serveis d\'ubicació permeten al sistema i a apps de tercers recopilar i utilitzar dades com la teva ubicació aproximada. Per exemple, una app pot utilitzar la teva ubicació aproximada per localitzar cafeteries als voltants.</string>
-  <string name="location_access_summary"><b>Permet a les apps que han demanat el teu permís</b> utilitzar la teva informació d\'ubicació. Això pot incloure la teva ubicació i ubicacions anteriors.</string>
-  <string name="location_gps" product="tablet"><b>Millora la precisió de la ubicació</b> permetent a les apps utilitzar el GPS de la teva tauleta.</string>
-  <string name="location_gps" product="default"><b>Millora la precisió de la ubicació</b> permetent a les apps utilitzar el GPS del teu telèfon.</string>
-  <string name="location_network"><b>Utilitza Wi-Fi</b> per ajudar a les apps a determinar la teva ubicació.</string>
-  <string name="location_network_telephony"><b>Utilitza Wi-Fi i les xarxes mòbils</b> per ajudar a les apps a determinar la teva ubicació.</string>
-  <string name="location_network_gms"><b>Utilitza el servei d\'ubicació de Google</b> per ajudar a les apps a determinar la teva ubicació. Això implica l\'enviament de dades anònimes d\'ubicació a Google, fins i tot quan no hi ha apps en execució.</string>
+  <string name="location_services_summary">Els serveis d\'ubicació permeten al sistema i a aplicacions de tercers recopilar i utilitzar dades com la teva ubicació aproximada. Per exemple, una aplicació pot utilitzar la teva ubicació aproximada per localitzar cafeteries als voltants.</string>
+  <string name="location_access_summary"><b>Permet a les aplicacions que han demanat el teu permís</b> utilitzar la teva informació d\'ubicació. Això pot incloure la teva ubicació i ubicacions anteriors.</string>
+  <string name="location_gps" product="tablet"><b>Millora la precisió de la ubicació</b> permetent a les aplicacions utilitzar el GPS de la teva tauleta.</string>
+  <string name="location_gps" product="default"><b>Millora la precisió de la ubicació</b> permetent a les aplicacions utilitzar el GPS del teu telèfon.</string>
+  <string name="location_network"><b>Utilitza Wi-Fi</b> per ajudar a les aplicacions a determinar la teva ubicació.</string>
+  <string name="location_network_telephony"><b>Utilitza Wi-Fi i les xarxes mòbils</b> per ajudar a les aplicacions a determinar la teva ubicació.</string>
+  <string name="location_network_gms"><b>Utilitza el servei d\'ubicació de Google</b> per ajudar a les aplicacions a determinar la teva ubicació. Això implica l\'enviament de dades anònimes d\'ubicació a Google, fins i tot quan no hi ha aplicacions en execució.</string>
   <string name="setup_mobile_data">Activa les dades mòbils</string>
   <string name="setup_mobile_data_no_service">Sense servei</string>
   <string name="setup_mobile_data_emergency_only">Només trucades d\'emergència</string>
