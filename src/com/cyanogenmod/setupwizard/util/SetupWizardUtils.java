@@ -192,6 +192,8 @@ public class SetupWizardUtils {
     public static void disableSetupWizard(Context context) {
         disableComponent(context, context.getPackageName(),
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.setup.FinishSetupReceiver");
     }
 
     public static void disableGMSSetupWizard(Context context) {

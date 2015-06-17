@@ -66,6 +66,10 @@ public class ManualTestActivity extends Activity {
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
         pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP);
+        componentName = new ComponentName("com.cyanogenmod.setupwizard",
+                "com.cyanogenmod.setupwizard.setup.FinishSetupReceiver");
+        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP);
         pm.clearApplicationUserData("com.cyanogenmod.setupwizard", null);
         ActivityManager am = (ActivityManager) getSystemService(Activity.ACTIVITY_SERVICE);
         am.killBackgroundProcesses("com.cyanogenmod.setupwizard");

@@ -93,5 +93,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".setup.FinishSetupReceiver"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.ACTION_FINISH_SETUPWIZARD" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

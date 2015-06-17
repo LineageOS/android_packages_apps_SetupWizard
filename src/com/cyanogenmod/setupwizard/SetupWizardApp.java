@@ -50,7 +50,7 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_CKSOP = "cksOp";
     public static final String EXTRA_LOGIN_FOR_KILL_SWITCH = "authCks";
 
-    private static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
+    public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
 
     private static final String[] THEME_PACKAGES = {
             "org.cyanogenmod.theme.chooser",
