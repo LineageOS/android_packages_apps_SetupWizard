@@ -24,6 +24,7 @@ import android.os.SystemProperties;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
+import android.util.Log;
 import com.android.internal.telephony.TelephonyIntents;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
@@ -171,7 +172,13 @@ public class CMSetupWizardData extends AbstractSetupData {
         TelephonyManager tm = TelephonyManager.from(mContext);
         int simSlotCount = tm.getSimCount();
         for (int i = 0; i < simSlotCount; i++) {
-            int state = tm.getSimState(i);
+            int state;
+            try {
+                state = tm.getSimState(i);
+            } catch (IllegalStateException ise) {
+                Log.e(TAG, "Unable to get sim state from TelephonyManager");
+                continue;
+            }
             if (state != TelephonyManager.SIM_STATE_ABSENT
                     && state != TelephonyManager.SIM_STATE_UNKNOWN) {
                  return true;
