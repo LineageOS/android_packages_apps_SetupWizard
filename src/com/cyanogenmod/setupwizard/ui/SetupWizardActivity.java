@@ -143,9 +143,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mRootView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                return
-                    mEnableAccessibilityController.onInterceptTouchEvent(event) &
-                    mEnableAccessibilityController.onTouchEvent(event);
+                boolean consumeIntercept = mEnableAccessibilityController.onInterceptTouchEvent(event);
+                boolean consumeTouch = mEnableAccessibilityController.onTouchEvent(event);
+                return consumeIntercept && consumeTouch;
             }
         });
         registerReceiver(mSetupData, mSetupData.getIntentFilter());
