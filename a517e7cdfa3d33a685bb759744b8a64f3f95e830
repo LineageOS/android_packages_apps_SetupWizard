@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba2be162_eb02ed6e",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/SetupWizardActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2015-06-20T09:23:21Z",
+      "side": 1,
+      "message": "A single \u0026 will not short circuit while double \u0026\u0026 will short circuit if the first item evaluates to false.",
+      "parentUuid": "ba2be162_2bc7a546",
+      "revId": "a517e7cdfa3d33a685bb759744b8a64f3f95e830",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba2be162_eb802d49",
         "filename": "src/com/cyanogenmod/setupwizard/util/EnableAccessibilityController.java",
         "patchSetId": 1
