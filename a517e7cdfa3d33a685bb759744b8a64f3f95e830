@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba2be162_2bc7a546",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/SetupWizardActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-06-20T09:20:46Z",
+      "side": 1,
+      "message": "Wait what? Is this supposed to be \u0027\u0026\u0026\u0027 ?",
+      "revId": "a517e7cdfa3d33a685bb759744b8a64f3f95e830",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba2be162_eb802d49",
         "filename": "src/com/cyanogenmod/setupwizard/util/EnableAccessibilityController.java",
         "patchSetId": 1
