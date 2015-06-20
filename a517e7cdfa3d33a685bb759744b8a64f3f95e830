@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba2be162_eb802d49",
+        "filename": "src/com/cyanogenmod/setupwizard/util/EnableAccessibilityController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2015-06-20T07:13:48Z",
+      "side": 1,
+      "message": "need to indent this line 4 more spaces like it was previously",
+      "revId": "a517e7cdfa3d33a685bb759744b8a64f3f95e830",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
