@@ -24,15 +24,18 @@
   <string name="setup_welcome">Välkommen</string>
   <string name="setup_wifi">Välj Wi-Fi</string>
   <string name="setup_sim_missing">SIM-kort saknas</string>
+  <string name="setup_choose_data_sim">Välj ett SIM-kort för data</string>
   <string name="setup_location">Platstjänster</string>
   <string name="setup_other">Andra tjänster</string>
   <string name="setup_datetime">Datum &amp; tid</string>
   <string name="setup_current_date">Aktuellt datum</string>
   <string name="setup_current_time">Aktuell tid</string>
+  <string name="location_network_telephony"><b>Använd Wi-Fi och mobila nät</b> för att hjälpa appar fastställa din position.</string>
   <string name="setup_mobile_data_no_service">Ingen service</string>
   <string name="setup_mobile_data_emergency_only">Endast nödsamtal</string>
   <string name="no">Nej</string>
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Nödsamtal</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverar unika ikoner, bakgrunder, och typsnitt.</string>
 </resources>
