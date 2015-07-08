@@ -36,6 +36,7 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.android.internal.os.IKillSwitchService;
+import com.android.internal.widget.LockPatternUtils;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -265,6 +266,11 @@ public class SetupWizardUtils {
     public static boolean hasLeanback(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
+    }
+
+    public static boolean hasFingerprint(Context context) {
+        LockPatternUtils lockPatternUtils = new LockPatternUtils(context);
+        return lockPatternUtils.isFingerprintInstalled(context);
     }
 
     public static final ComponentName mTvwifisettingsActivity =
