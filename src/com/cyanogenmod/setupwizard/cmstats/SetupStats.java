@@ -156,6 +156,7 @@ public class SetupStats {
         public static final String VALUE = "value";
         public static final String SLOT = "slot";
         public static final String TOTAL_TIME = "total_time";
+        public static final String FINGERPRINT_SETUP = "fingerprint_setup";
     }
 
 }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header" />
+
+    <FrameLayout android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/PageContent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/PageSummaryText"
+                    android:textSize="16sp"
+                    android:paddingLeft="@dimen/content_margin_left"
+                    android:layout_marginBottom="@dimen/summary_margin_bottom"
+                    android:paddingRight="@dimen/location_text_margin_right"
+                    android:text="@string/fingerprint_setup_summary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:paddingLeft="@dimen/content_margin_left"
+                    android:paddingRight="@dimen/location_text_margin_right"
+                    android:drawableStart="@drawable/ic_check_mark"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fingerprint_setup_backup_lock_method"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:paddingLeft="@dimen/content_margin_left"
+                    android:paddingRight="@dimen/location_text_margin_right"
+                    android:drawableStart="@drawable/ic_check_mark"
+                    android:drawablePadding="24dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/fingerprint_setup_add_fingerprint"/>
+
+                <TextView
+                    android:id="@+id/setup_fingerprint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/content_margin_left"
+                    android:paddingRight="@dimen/location_text_margin_right"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/fingerprint_setup_text_color"
+                    android:text="@string/fingerprint_setup_screen_lock_setup"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
