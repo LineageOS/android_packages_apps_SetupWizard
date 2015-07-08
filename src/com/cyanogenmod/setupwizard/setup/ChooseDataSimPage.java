@@ -111,8 +111,11 @@ public class ChooseDataSimPage extends SetupPage {
             public void onClick(View view) {
                 SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
                 if (subInfoRecord != null) {
-                    mSubscriptionManager.setDefaultDataSubId(subInfoRecord.getSubscriptionId());
-                    setDataSubChecked(subInfoRecord);
+                    int subId = subInfoRecord.getSubscriptionId();
+                    if (mSubscriptionManager.getDefaultDataSubId() != subId) {
+                        mSubscriptionManager.setDefaultDataSubId(subId);
+                        setDataSubChecked(subInfoRecord);
+                    }
                 }
             }
         };
