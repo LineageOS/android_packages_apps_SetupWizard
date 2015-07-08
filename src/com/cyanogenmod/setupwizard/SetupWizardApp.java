@@ -40,6 +40,8 @@ public class SetupWizardApp extends Application {
     public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
     public static final String ACTION_VIEW_LEGAL = "cyanogenmod.intent.action.LEGALESE";
 
+    public static final String ACTION_SETUP_FINGERPRINT = "com.android.settings.SETUP_FINGERPRINT";
+
     public static final String EXTRA_FIRST_RUN = "firstRun";
     public static final String EXTRA_ALLOW_SKIP = "allowSkip";
     public static final String EXTRA_AUTO_FINISH = "wifi_auto_finish_on_connect";
@@ -49,6 +51,8 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_MATERIAL_LIGHT = "material_light";
     public static final String EXTRA_CKSOP = "cksOp";
     public static final String EXTRA_LOGIN_FOR_KILL_SWITCH = "authCks";
+    public static final String EXTRA_TITLE = "title";
+    public static final String EXTRA_DETAILS = "details";
 
     public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
 
@@ -65,6 +69,7 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
     public static final int REQUEST_CODE_UNLOCK = 6;
+    public static final int REQUEST_CODE_SETUP_FINGERPRINT = 7;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
