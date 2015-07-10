@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f013ff3_1b607b32",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/CMSetupWizardData.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 9199
+      },
+      "writtenOn": "2015-07-10T22:30:15Z",
+      "side": 1,
+      "message": "Don\u0027t add this page if device does not support this feature",
+      "range": {
+        "startLine": 53,
+        "startChar": 8,
+        "endLine": 53,
+        "endChar": 60
+      },
+      "revId": "615c956b2dd0b3cba47844bbd717e3daf73dbc98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
