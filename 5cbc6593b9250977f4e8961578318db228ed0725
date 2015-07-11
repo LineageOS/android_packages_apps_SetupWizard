@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f013ff3_c17fc6a9",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-07-11T13:39:45Z",
+      "side": 1,
+      "message": "2",
+      "range": {
+        "startLine": 81,
+        "startChar": 214,
+        "endLine": 81,
+        "endChar": 215
+      },
+      "revId": "5cbc6593b9250977f4e8961578318db228ed0725",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
