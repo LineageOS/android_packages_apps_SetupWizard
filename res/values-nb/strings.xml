@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Disse tjenestene fungere for deg ved å utvide funksjonene i telefonen. Dataene vil bli brukt i samsvar med Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Personvern</string>
   <string name="services_help_improve_cm">Hjelp til med å forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> ved å automatisk sende diagnose og bruksdata til Cyanogen. Denne informasjonen kan ikke bli brukt til å identifisere deg og du hjelper de som jobber med ting som batteritid, appytelse og nye <xliff:g id="name" example="CyanogenMod">%s</xliff:g> funksjoner.</string>
   <string name="services_apply_theme">Bruke <xliff:g id="name" example="Material">%s</xliff:g> temaet</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
   <string name="services_use_secure_sms">Bruk sikker SMS</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> for å kryptere SMS samtaler med andre som også bruker sikker SMS på en <xliff:g id="name" example="CyanogenMod">%s</xliff:g> enhet.</string>
   <string name="setup_unlock">Lås opp</string>
   <string name="setup_device_locked">Denne enheten er låst av brukeren.</string>
   <string name="setup_require_cyanogen_label"><b>Krever passordet til Cyanogen OS konto</b> for å bruke enheten etter en fabrikkgjennoppretting.</string>

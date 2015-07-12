@@ -59,10 +59,8 @@
   <string name="services_explanation" product="default">這些服務用來增強您的手機的功能。資料將根據 Cyanogen 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="services_privacy_policy">隱私權政策</string>
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> 通過自動發送診斷及使用資料給 Cyanogen。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式性能和增加 <xliff:g id="name" example="CyanogenMod">%s</xliff:g> 的新功能。</string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 來使用獨特的圖示、 桌布和字體。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
   <string name="services_use_secure_sms">使用加密簡訊</string>
-  <string name="services_secure_sms_label">在您的 <xliff:g id="name" example="CyanogenMod">%s</xliff:g> 裝置上 <xliff:g id="name" example="Use secure SMS">%s</xliff:g> 來加密您與其他人的簡訊。</string>
 </resources>

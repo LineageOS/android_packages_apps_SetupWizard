@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
   <string name="services_privacy_policy">Gizlilik Politikası</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
-  <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g>. Bu bilgiler kimliğinizi ifşah edecek şekilde kullanılmaz ancak pil ömrü, uyg. performansı, ve yeni <xliff:g id="name" example="CyanogenMod">%s</xliff:g> özellikleri gibi konularda takımımızın çalışmalarında kullanılır.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>nırken eşsiz simgeler, duvar kağıtları ve yazı tipleri etkinleştiriliyor.</string>
   <string name="services_os_nav_keys_label"><b>Donanımsal tuşlar yerine ekran üstü dolaşım tuşlarını kullanın.</b></string>
   <string name="services_use_secure_sms">Şifreli SMS kullanın</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> cihazında diğer kullanıcılarla olan sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%s</xliff:g>.</string>
   <string name="setup_unlock">Kilidi kaldır</string>
   <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
   <string name="setup_require_cyanogen_label"><b>Cyanogen İS hesap şifresi gerekir</b> ki cihazınızı fabrika ayarlarına sıfırladıktan sonra kullanabilin.</string>

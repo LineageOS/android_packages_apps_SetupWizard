@@ -59,10 +59,8 @@
   <string name="services_explanation" product="default">Estos servicios furrulen por ti pa estender les capacidaes del móvil. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Política de privacidá</string>
   <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> unviando automáticamente diagnósticos y usu de datos a Cyanogen. Esta información nun s\'usa pa indentificate y écha-yos un gabitu a los equipos pa trabayar en coses como\'l consumu de batería, el rindimientu d\'aplicaciones, y les nueves carauterístiques <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos, fondos de pantalla y fontes únicos.</string>
   <string name="services_os_nav_keys_label"><b>Usar tecles de navegación na pantalla</b> en cuantes de tecles físiques.</string>
   <string name="services_use_secure_sms">Usar SMS seguru</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> pa cifrar conversaciones SMS con otros usuarios usando SMS seguru nun preséu <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
 </resources>

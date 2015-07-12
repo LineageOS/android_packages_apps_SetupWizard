@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van Cyanogen.</string>
   <string name="services_privacy_policy">Privacybeleid</string>
   <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar Cyanogen. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-functies.</string>
   <string name="services_apply_theme">Thema <xliff:g id="name" example="Material">%s</xliff:g> toepassen</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> voor unieke pictogrammen, achtergronden en lettertypen.</string>
   <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
   <string name="services_use_secure_sms">Beveiligde sms-berichten gebruiken</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> om sms-gesprekken te versleutelen met anderen die ook beveiligde sms-berichten gebruiken op een <xliff:g id="name" example="CyanogenMod">%s</xliff:g>-apparaat.</string>
   <string name="setup_unlock">Ontgrendelen</string>
   <string name="setup_device_locked">Dit apparaat is vergrendeld door de gebruiker.</string>
   <string name="setup_require_cyanogen_label"><b>Uw Cyanogen OS-accountwachtwoord vereisen</b> om het apparaat te gebruiken, zelfs na terugzetten naar fabrieksinstellingen.</string>

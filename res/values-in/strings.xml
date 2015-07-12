@@ -59,10 +59,8 @@
   <string name="services_explanation" product="default">Layanan ini bekerja untuk Anda untuk memperluas kemampuan perangkat tablet Anda. Data akan digunakan sesuai dengan sianogen di <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="services_privacy_policy">Kebijakan privasi</string>
   <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s </xliff:g> dengan secara otomatis mengirim data diagnostik dan penggunaan ke Cyanogen. Informasi ini tidak dapat digunakan untuk mengidentifikasi Anda dan meminjamkan tangan untuk tim bekerja pada hal-hal seperti baterai, app kinerja dan fitur <xliff:g id="name" example="CyanogenMod"> %s </xliff:g> baru.</string>
   <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> memungkinkan ikon unik, Wallpaper dan font.</string>
   <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
   <string name="services_use_secure_sms">Menggunakan SMS aman</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s </xliff:g> untuk mengenkripsi percakapan SMS dengan pengguna lain menggunakan SMS aman pada perangkat <xliff:g id="name" example="CyanogenMod"> %s </xliff:g>.</string>
 </resources>

@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Aquests serveis serveixen per ampliar les capacitats del teu telèfon. Les dades s\'utilitzaran d\'acord amb la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Política de privacitat</string>
   <string name="services_help_improve_cm">Ajuda a millorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> enviant automàticament les dades de diagnòstic i d\'ús a Cyanogen. Aquesta informació no es pot utilitzar per identificar-te i dóna un cop de mà als equips que treballen en coses com la duració de les bateries, el rendiment de les app i noves característiques de <xliff:g id="name" example="CyanogenMod"> %s</xliff:g>.</string>
   <string name="services_apply_theme">Aplica el tema <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> habilitant icones úniques, fons de pantalla i tipus de lletra.</string>
   <string name="services_os_nav_keys_label"><b>Utilitza les tecles de navegació en pantalla</b> enlloc de les tecles físiques.</string>
   <string name="services_use_secure_sms">Utilitza SMS segurs</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> per xifrarr les converses SMS amb altres usuaris mitjançant SMS segurs en un dispositiu <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="setup_unlock">Desbloqueja</string>
   <string name="setup_device_locked">Aquest dispositiu ha estat bloquejat per l\'usuari.</string>
   <string name="setup_require_cyanogen_label"><b>Demana la contrasenya del teu compte Cyanogen OS</b> per utilitzar el teu dispositiu, fins i tot després de restaurar als ajustaments de fàbrica.</string>

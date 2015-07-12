@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Estos servicios sirven para extender las capacidades del teléfono. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Política de Privacidad</string>
   <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Ayuda a mejorar CyanogenMod">%s</xliff:g> enviando automáticamente datos de diagnóstico y uso a Cyanogen. Esta información no puede utilizarse para identificarte y sirve de ayuda a los equipos que trabajan en aspectos como la duración de la batería, rendimiento de las aplicaciones y nuevas características de <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos especiales, fondo de pantalla y fuentes.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
   <string name="services_use_secure_sms">Usar SMS seguros</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Usar SMS seguro">%s</xliff:g> para cifrar conversaciones SMS con otros usuarios usando SMS seguros en tu dispositivo <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo ha sido bloqueado por el usuario.</string>
   <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta Cyanogen OS</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
