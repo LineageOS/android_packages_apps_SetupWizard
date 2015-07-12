@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Ови сервиси раде за тебе да повећају могућности твог телефона. Подаци ће бити коришћени у сагласности са Cyanogen-овим <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Политика приватности</string>
   <string name="services_help_improve_cm">Помозите да побољшамо <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> аутоматским слањем дијагностике и коришћењу података у Cyanogen. Ове информације се неће користити за вашу идентификацију и далазе у руку да тимова који раде на стварима као што су трајање батерије, перформансе апликација, и новим <xliff:g id="name" example="CyanogenMod">%s</xliff:g> карактеристикама.</string>
   <string name="services_apply_theme">Примени <xliff:g id="name" example="Material">%s</xliff:g> тему</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> омогућава јединствене иконе, тапете и фонтове.</string>
   <string name="services_os_nav_keys_label"><b>Користите навигационе тастере на екрану</b> уместо хардверских тастера.</string>
   <string name="services_use_secure_sms">Користи безбедан SMS</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> да заштитиш SMS преписку са другим корисницима користећи безбедан SMS на <xliff:g id="name" example="CyanogenMod">%s</xliff:g> уређају.</string>
   <string name="setup_unlock">Откључај</string>
   <string name="setup_device_locked">Овај уређај је закључао корисник.</string>
   <string name="setup_require_cyanogen_label"><b>Захтева твоју лозинку Cyanogen налога</b> да би користио свој уређај чак и после ресетовања на фабрички.</string>

@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Nämä palvelut toimivat puhelimesi ominaisuuksien parantamiseksi. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
   <string name="services_privacy_policy">Tietosuojakäytännön</string>
   <string name="services_help_improve_cm">Auta parantamaan <xliff:g id="name" example="CyanogenMod">%s</xliff:g>ia</string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> lähettämällä vianmääritys- ja käyttötietoja Cyanogenille. Tietoja ei voi käyttää tunnistamiseen. Tiedot auttavat kehittäjiä muun muassa parantamaan akun kestoa, sovellusten suorituskykyä ja kehittämään <xliff:g id="name" example="CyanogenMod">%s</xliff:g>iin uusia ominaisuuksia.</string>
   <string name="services_apply_theme">Ota <xliff:g id="name" example="Material">%s</xliff:g>-teema käyttöön</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> käyttääksesi ainutlaatuisia kuvakkeita, taustakuvia ja fontteja.</string>
   <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
   <string name="services_use_secure_sms">Käytä turvallisia tekstiviestejä</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> salataksesi tekstiviestikeskustelut muiden turvallisia tekstiviestejä ja <xliff:g id="name" example="CyanogenMod">%s</xliff:g>ia käyttävien henkilöiden kanssa.</string>
   <string name="setup_unlock">Avaa lukitus</string>
   <string name="setup_device_locked">Käyttäjä on lukinnut laitteen.</string>
   <string name="setup_require_cyanogen_label"><b>Vaadi Cyanogen OS-tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>

@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Эти службы расширяют возможности вашего телефона. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
   <string name="services_privacy_policy">политикой конфиденциальности</string>
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> автоматической отправкой диагностических и данных об использовании в Cyanogen. Эта информация не может быть использована для идентификации вашей личности и и поможет командам, работающим над оптимизацией расхода батареи, улучшением производительности и новыми функциями в <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её значки, обои и шрифты.</string>
   <string name="services_os_nav_keys_label"><b>Использовать наэкранные навигационные кнопки</b> вместо аппаратных.</string>
   <string name="services_use_secure_sms">Использовать безопасные SMS</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> для шифрования SMS с другими пользователями, использующими безопасные SMS на устройстве <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="setup_unlock">Разблокировать</string>
   <string name="setup_device_locked">Устройство было заблокировано пользователем.</string>
   <string name="setup_require_cyanogen_label"><b>Требовать пароль аккаунта ОС Cyanogen</b> для использования устройства даже после удаления всех данных.</string>

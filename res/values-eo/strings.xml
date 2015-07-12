@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Tiuj servoj funkcias por etendi kapablojn de via telefono. Datumoj estos uzataj laŭ la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Privateca politiko</string>
   <string name="services_help_improve_cm">Helpu por plibonigi <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> per aŭtomata sendado de diagnozaj kaj uzaj datumoj al Cyanogen. Tiuj informoj ne kapablos identigi vin kaj helpos programistojn kiuj laboras pri bateria vivdaŭro, aplikaĵa rendimento kaj novaj <xliff:g id="name" example="CyanogenMod">%s</xliff:g> funkcioj.</string>
   <string name="services_apply_theme">Apliki la etoson <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ŝaltas unikajn piktogramojn, ekranfonojn kaj fontojn.</string>
   <string name="services_os_nav_keys_label"><b>Uzi ekran-klavojn </b> anstataŭ tiujn de la aparato.</string>
   <string name="services_use_secure_sms">Uzi sekurajn SMS</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> por ĉifri SMS dialogojn kun aliaj uzantoj per sekuraj SMS sur <xliff:g id="name" example="CyanogenMod">%s</xliff:g> aparatoj.</string>
   <string name="setup_unlock">Malŝlosi</string>
   <string name="setup_device_locked">La aparato estas ŝlosita de la uzanto.</string>
   <string name="setup_require_cyanogen_label"><b>Postulas vian Cyanogen OS pasvorton</b> por uzi vian aparaton eĉ post rekomencigo al fabrika stato.</string>

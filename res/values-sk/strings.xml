@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">Tieto služby sú určené pre vás a rozširujú možnosti vášho telefónu. Údaje sa použijú v súlade s Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Ochrana osobných údajov</string>
   <string name="services_help_improve_cm">Pomôcť vylepšovať <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> automatickým zasielaním diagnostických údajov a údajov o používaní do Cyanogenu. Tieto informácie sa nepoužijú na vašu identifikáciu, ale pomôžu tímom pracujúcim na výdrži, výkone aplikácií a nových funkciách <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="services_apply_theme">Použiť tému <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> umožňuje používanie unikátnych ikon, tapiet a písiem.</string>
   <string name="services_os_nav_keys_label"><b>Používajte navigačné tlačidlá na obrazovke</b> namiesto hardvérových tlačidiel.</string>
   <string name="services_use_secure_sms">Používajte zabezpečené SMS</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> pre šifrovanie SMS konverzácií s ostatnými používateľmi prostredníctvom zabezpečených SMS na zariadení s <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
   <string name="setup_unlock">Odomknúť</string>
   <string name="setup_device_locked">Toto zariadenie bolo uzamknuté používateľom.</string>
   <string name="setup_require_cyanogen_label"><b>Vyžadovať heslo vášho účtu Cyanogen OS</b> na použitie vášho zariadenia aj po obnove továrenských nastavení.</string>

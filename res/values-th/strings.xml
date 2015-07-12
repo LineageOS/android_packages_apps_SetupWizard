@@ -59,12 +59,10 @@
   <string name="services_explanation" product="default">บริการเหล่านี้คุณสามารถเพิ่มความสามารถของโทรศัพท์ของคุณได้ ข้อมูลจะถูกใช้ตาม Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g></string>
   <string name="services_privacy_policy">นโยบายความเป็นส่วนตัว</string>
   <string name="services_help_improve_cm">ช่วยปรับปรุง <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> โดยการส่งปัญหาและข้อมูลการใช้งานไปยัง Cyanogen อัตโนมัติ โดยการกระทำนี้ จะไม่มีข้อมูลที่สามารถระบุตัวตนคุณได้ส่งไปด้วย โดยการกระทำนี้จะช่วยให้ทีมงานของพวกเราสามารถพัฒนาประสิทธิภาพ,ยืดอายุการใช้งาน รวมถึงสร้างความสามารถใหม่ของ  <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">ใช้งานรูปแบบ  <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>  กำลังเปิดใช้งาน ไอคอน,ภาพพื้นหลัง และฟ้อนต์</string>
   <string name="services_os_nav_keys_label"><b>ใช้แถบนำทาง</b> แทนการใช้ปุ่มบนอุปกรณ์</string>
   <string name="services_use_secure_sms">ใช้ SMS แบบเข้ารหัส</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> จะเข้ารหัสข้อความเมื่อส่งข้อความไปหาผู้ที่ใช้อุปกรณ์ที่ติดตั้ง <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="setup_unlock">ปลดล็อก</string>
   <string name="setup_device_locked">อุปกรณ์นี้ถูกล็อคโดยผู้ใช้</string>
   <string name="setup_require_cyanogen_label"><b>กรุณาใส่รหัสผ่านบัญชี Cyanogen OS</b> แม้ว่าจะทำการคืนค่าโรงงานไปแล้วก็ตาม.</string>
