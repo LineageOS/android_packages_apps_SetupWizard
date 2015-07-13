@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff0f0b1f_60c226ec",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/WifiSetupPage.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 9045
+      },
+      "writtenOn": "2015-07-13T21:47:54Z",
+      "side": 1,
+      "message": "We missed the last part of this - checking for this response token in onActivityResult() to make sure it matches",
+      "revId": "6c015bf22cb605a96ae525ab6836c4957be937c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
