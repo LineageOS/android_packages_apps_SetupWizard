@@ -90,8 +90,8 @@
     <string name="settings_fingerprint_setup_title">Select backup screen lock type</string>
     <string name="settings_fingerprint_setup_details">How would you like to lock your screen?</string>
     <string name="fingerprint_setup_title">Fingerprint setup</string>
-    <string name="fingerprint_setup_summary">To use your fingerprint sensor to unlock your screen or confirm purchases, you\'ll need to:</string>
-    <string name="fingerprint_setup_backup_lock_method">Setup a backup screen lock method</string>
+    <string name="fingerprint_setup_summary">To use your fingerprint sensor to unlock your screen, you\'ll need to:</string>
+    <string name="fingerprint_setup_backup_lock_method">Setup a secondary unlock method</string>
     <string name="fingerprint_setup_add_fingerprint">Add your fingerprint</string>
     <string name="fingerprint_setup_screen_lock_setup">Setup screen lock</string>
 </resources>
