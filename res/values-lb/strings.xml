@@ -73,8 +73,6 @@
   <string name="settings_fingerprint_setup_title">Wiel den Typ vun der Ersatz-Schirmspär aus</string>
   <string name="settings_fingerprint_setup_details">Wéi wëlls du däi Schierm spären?</string>
   <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>
-  <string name="fingerprint_setup_summary">Fir däi Fangerofdrocksensor fir d\'Entspäre vun dengem Schierm oder d\'Bestätege vun Akeef ze benotzen, muss du:</string>
-  <string name="fingerprint_setup_backup_lock_method">Eng Ersatz-Schiermspär ariichten</string>
   <string name="fingerprint_setup_add_fingerprint">Däi Fangerofdrock dobäisetzen</string>
   <string name="fingerprint_setup_screen_lock_setup">D\'Schiermspär ariichten</string>
 </resources>

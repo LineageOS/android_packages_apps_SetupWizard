@@ -63,4 +63,14 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> memungkinkan ikon unik, Wallpaper dan font.</string>
   <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
   <string name="services_use_secure_sms">Menggunakan SMS aman</string>
+  <string name="setup_unlock">Buka kunci</string>
+  <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
+  <string name="setup_require_cyanogen_label"><b>Memerlukan sandi akun Cyanogen OS</b> untuk dapat menggunakan perangkat meskipun setelah pengaturan ulang ke pabrik.</string>
+  <string name="setup_device_locked_instructions"><i>Untuk mengaktifkan/menonaktifkan fitur ini, silakan masuk ke Pengaturan &gt; Keamanan</i></string>
+  <string name="setup_warning_skip_anyway">Tanpa Akun Cyanogen OS, anda tidak bisa:\n\nMenyesuaikan ponsel anda dengan ikon baru, wallpaper dan masih banyak lagi di aplikasi Tema\n\nMencari atau menghapus data jarak jauh jika ponsel anda hilang</string>
+  <string name="settings_fingerprint_setup_title">Pilih tipe kunci layar cadangan</string>
+  <string name="settings_fingerprint_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
+  <string name="fingerprint_setup_title">Penyiapan Sidik jari</string>
+  <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari anda</string>
+  <string name="fingerprint_setup_screen_lock_setup">Siapkan kunci layar</string>
 </resources>

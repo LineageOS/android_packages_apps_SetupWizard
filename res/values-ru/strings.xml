@@ -68,4 +68,6 @@
   <string name="setup_require_cyanogen_label"><b>Требовать пароль аккаунта ОС Cyanogen</b> для использования устройства даже после удаления всех данных.</string>
   <string name="setup_device_locked_instructions"><i>Чтобы включить или отключить эту функцию, перейдите в меню «Настройки &gt; Безопасность»</i></string>
   <string name="setup_warning_skip_anyway">Без учетной записи Cyanogen вы не сможете:\n\nПерсонализировать телефон новыми обоями, иконками и другими компонентами в приложении «Темы»\n\nНайти или удалённо сбросить настройки на телефоне в случае его потери</string>
+  <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
+  <string name="fingerprint_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
 </resources>

@@ -72,8 +72,6 @@
   <string name="settings_fingerprint_setup_title">백업 화면 잠금 방법 선택</string>
   <string name="settings_fingerprint_setup_details">화면을 어떻게 잠그시겠습니까?</string>
   <string name="fingerprint_setup_title">지문 설정</string>
-  <string name="fingerprint_setup_summary">지문 인식 센서를 사용하여 화면 잠금을 해제하거나 결제를 확인하려면:</string>
-  <string name="fingerprint_setup_backup_lock_method">백업 화면 잠금 방법 설정</string>
   <string name="fingerprint_setup_add_fingerprint">지문 추가</string>
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
 </resources>

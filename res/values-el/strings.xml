@@ -73,7 +73,7 @@
   <string name="settings_fingerprint_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
   <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
   <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
-  <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας ή να επιβεβαιώνετε αγορές, θα πρέπει να:</string>
+  <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
   <string name="fingerprint_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
   <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
   <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>

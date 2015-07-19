@@ -17,6 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Expert de instalare</string>
+  <string name="next">Următoarea</string>
   <string name="skip">Omite</string>
   <string name="start">Pornire</string>
   <string name="ok">OK</string>
@@ -36,5 +37,6 @@
   <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Apel de urgenţă</string>
+  <string name="setup_services">Facilități Cyanogen</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
 </resources>
