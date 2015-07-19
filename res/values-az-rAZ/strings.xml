@@ -27,4 +27,5 @@
   <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
   <string name="enable_mobile_data_summary">Quraşdırma vaxtı mobil verilənlərdən istifadə etmək istəyirsiniz? Mobil verilənləri açmaq əlavə ödənişə səbəb ola bilər.</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
 </resources>

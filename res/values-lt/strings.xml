@@ -71,8 +71,6 @@
   <string name="settings_fingerprint_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
   <string name="settings_fingerprint_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
   <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>
-  <string name="fingerprint_setup_summary">Norint naudoti pirštų atspaudų jutiklį, kad atrakinti ekraną arba patvirtinti pirkimus, jums reikia:</string>
-  <string name="fingerprint_setup_backup_lock_method">Nustatyti atsarginį ekrano užrakto būdą</string>
   <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
   <string name="fingerprint_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
 </resources>

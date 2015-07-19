@@ -59,13 +59,22 @@
   <string name="services_explanation" product="default">Estes serviços trabalham para estender os recursos do seu telefone. Dados serão utilizados em conformidade com o <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Cyanogen.</string>
   <string name="services_privacy_policy">Política de Privacidade</string>
   <string name="services_help_improve_cm">Ajudar a melhorar a <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automaticamente relatórios de uso de dados e diagnósticos para a Cyanogen. Esta informação não será usada para lhe identificar, e ajudam as equipes responsáveis pela duração de bateria, desempenho dos aplicativos, e novas funcionalidades do <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando fontes, papéis de parede e ícones exclusivos.</string>
   <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
   <string name="services_use_secure_sms">Usar SMS seguro</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para criptografar conversas SMS com outros usuários que usam o SMS seguro em um dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo foi bloqueado pelo usuário.</string>
   <string name="setup_require_cyanogen_label"><b>Exigir a senha da conta Cyanogen</b> para usar o dispositivo mesmo depois da restauração de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá para Configurações e Segurança</i></string>
   <string name="setup_warning_skip_anyway">Sem uma conta Cyanogen, você não será capaz de:\n\nPersonalizar seu celular com novos ícones, papéis de parede e muito mais no app Temas\n\nLocalizar ou apagar remotamente o seu telefone se for perdido</string>
+  <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio de tela do backup</string>
+  <string name="settings_fingerprint_setup_details">Como você gostaria de bloquear a tela?</string>
+  <string name="fingerprint_setup_title">Configuração de impressão digital</string>
+  <string name="fingerprint_setup_summary">Para usar o sensor de impressão digital para desbloquear a tela, você vai precisar de:</string>
+  <string name="fingerprint_setup_backup_lock_method">Configurar um método de desbloqueio secundário</string>
+  <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
+  <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
 </resources>

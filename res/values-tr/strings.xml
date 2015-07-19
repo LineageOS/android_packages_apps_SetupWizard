@@ -59,13 +59,22 @@
   <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
   <string name="services_privacy_policy">Gizlilik Politikası</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
+  <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ifşah edecek şekilde kullanılmaz ancak pil ömrü, uyg. performansı, ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konularda takımımızın çalışmalarında kullanılır.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>nırken eşsiz simgeler, duvar kağıtları ve yazı tipleri etkinleştiriliyor.</string>
   <string name="services_os_nav_keys_label"><b>Donanımsal tuşlar yerine ekran üstü dolaşım tuşlarını kullanın.</b></string>
   <string name="services_use_secure_sms">Şifreli SMS kullanın</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> cihazında diğer kullanıcılarla olan sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Kilidi kaldır</string>
   <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
   <string name="setup_require_cyanogen_label"><b>Cyanogen İS hesap şifresi gerekir</b> ki cihazınızı fabrika ayarlarına sıfırladıktan sonra kullanabilin.</string>
   <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için, lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen İS Hesabı olmadan, aşağıdakiler mümkün olmayacaktır:\n\nTelefonunuzu yeni simgeler, duvar kağıtları ve Temalar uygulamasındaki daha fazla ögeyle özelleştirmek\n\nTelefonunuzu kaybedince uzaktan konumunu bulmak veya içeriğini silmek</string>
+  <string name="settings_fingerprint_setup_title">Yedek ekran kilidi türü seçin</string>
+  <string name="settings_fingerprint_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
+  <string name="fingerprint_setup_title">Parmak izi kurulumu</string>
+  <string name="fingerprint_setup_summary">Ekran kilidini açarken parmak izi sensörünüzü kullanmak için:</string>
+  <string name="fingerprint_setup_backup_lock_method">İkinci kilit açma yönteminizi ayarlayın</string>
+  <string name="fingerprint_setup_add_fingerprint">Parmak izinizi ekleyin</string>
+  <string name="fingerprint_setup_screen_lock_setup">Ekran kilidini kurun</string>
 </resources>
