@@ -36,11 +36,11 @@ public class CMSetupWizardData extends AbstractSetupData {
 
     private boolean mTimeSet = false;
     private boolean mTimeZoneSet = false;
-    private boolean mMobileDataEnabled = SystemProperties
-            .getBoolean("ro.com.android.mobiledata", true);
+    private boolean mMobileDataEnabled;
 
     public CMSetupWizardData(Context context) {
         super(context);
+        mMobileDataEnabled = SetupWizardUtils.isMobileDataEnabled(context);
     }
 
     @Override
