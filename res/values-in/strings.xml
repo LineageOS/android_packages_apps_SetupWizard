@@ -59,10 +59,12 @@
   <string name="services_explanation" product="default">Layanan ini bekerja untuk Anda untuk memperluas kemampuan perangkat tablet Anda. Data akan digunakan sesuai dengan sianogen di <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="services_privacy_policy">Kebijakan privasi</string>
   <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> dengan mengirim data diagnostik dan penggunaan ke Cyanogen secara otomatis. Informasi ini tidak dapat mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja dengan hal-hal seperti masa pakai baterai, kinerja aplikasi, dan fitur <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> baru.</string>
   <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> memungkinkan ikon unik, Wallpaper dan font.</string>
   <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
   <string name="services_use_secure_sms">Menggunakan SMS aman</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> untuk mengenkripsi percakapan SMS dengan pengguna lain menggunakan SMS aman pada perangkat <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Buka kunci</string>
   <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
   <string name="setup_require_cyanogen_label"><b>Memerlukan sandi akun Cyanogen OS</b> untuk dapat menggunakan perangkat meskipun setelah pengaturan ulang ke pabrik.</string>
@@ -71,6 +73,8 @@
   <string name="settings_fingerprint_setup_title">Pilih tipe kunci layar cadangan</string>
   <string name="settings_fingerprint_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
   <string name="fingerprint_setup_title">Penyiapan Sidik jari</string>
+  <string name="fingerprint_setup_summary">Untuk menggunakan sensor sidik jari untuk membuka layar, Anda perlu:</string>
+  <string name="fingerprint_setup_backup_lock_method">Setel metode buka kunci kedua</string>
   <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari anda</string>
   <string name="fingerprint_setup_screen_lock_setup">Siapkan kunci layar</string>
 </resources>

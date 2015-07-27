@@ -59,15 +59,22 @@
   <string name="services_explanation" product="default">Эти службы расширяют возможности вашего телефона. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
   <string name="services_privacy_policy">политикой конфиденциальности</string>
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматически отправляя данные диагностики и использования в Cyanogen. Данная информация не может быть использована для идентификации вашей личности, но может помочь в работе над оптимизацией расхода батареи, улучшением производительности приложений, а также разработке новых функций <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её значки, обои и шрифты.</string>
   <string name="services_os_nav_keys_label"><b>Использовать наэкранные навигационные кнопки</b> вместо аппаратных.</string>
   <string name="services_use_secure_sms">Использовать безопасные SMS</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> для шифрования сообщений, передаваемых другим пользователям устройств с <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Разблокировать</string>
   <string name="setup_device_locked">Устройство было заблокировано пользователем.</string>
   <string name="setup_require_cyanogen_label"><b>Требовать пароль аккаунта ОС Cyanogen</b> для использования устройства даже после удаления всех данных.</string>
   <string name="setup_device_locked_instructions"><i>Чтобы включить или отключить эту функцию, перейдите в меню «Настройки &gt; Безопасность»</i></string>
   <string name="setup_warning_skip_anyway">Без учетной записи Cyanogen вы не сможете:\n\nПерсонализировать телефон новыми обоями, иконками и другими компонентами в приложении «Темы»\n\nНайти или удалённо сбросить настройки на телефоне в случае его потери</string>
+  <string name="settings_fingerprint_setup_title">Выбрать резервный способ блокировки экрана</string>
+  <string name="settings_fingerprint_setup_details">Выберите способ блокировки экрана.</string>
+  <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
   <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
   <string name="fingerprint_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
+  <string name="fingerprint_setup_add_fingerprint">Добавить отпечаток пальца</string>
+  <string name="fingerprint_setup_screen_lock_setup">Настроить блокировку экрана</string>
 </resources>
