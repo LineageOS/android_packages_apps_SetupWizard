@@ -32,6 +32,7 @@
   <string name="setup_current_date">Data curentă</string>
   <string name="setup_current_time">Ora curentă</string>
   <string name="setup_mobile_data">Porniți datele mobile</string>
+  <string name="setup_mobile_data_no_service">Lipsă semnal</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
   <string name="no">Nu</string>
   <string name="yes">Da</string>

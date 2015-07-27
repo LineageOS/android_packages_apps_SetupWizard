@@ -59,10 +59,12 @@
   <string name="services_explanation" product="default">이 기능은 휴대전화의 성능 향상을 위해 작동합니다. 수집된 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
+  <string name="services_metrics_label">진단 및 사용 정보를 Cyanogen에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 배터리 수명, 앱 성능과 새 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 기능과 같이 사용자를 식별할 수 없는 정보입니다.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>은 독특한 아이콘, 배경화면과 폰트를 활성화합니다.</string>
   <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
   <string name="services_use_secure_sms">보안 SMS 사용</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="보안 SMS를 사용">%1$s</xliff:g>하여 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>기기에서 보안 SMS를 사용하는 다른 사용자와의 SMS 대화를 암호화함.</string>
   <string name="setup_unlock">잠금 해제</string>
   <string name="setup_device_locked">이 기기는 사용자에 의해 잠겨 있습니다.</string>
   <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>Cyanogen OS 계정의 비밀번호가 필요합니다</b> .</string>
@@ -72,6 +74,8 @@
   <string name="settings_fingerprint_setup_title">백업 화면 잠금 방법 선택</string>
   <string name="settings_fingerprint_setup_details">화면을 어떻게 잠그시겠습니까?</string>
   <string name="fingerprint_setup_title">지문 설정</string>
+  <string name="fingerprint_setup_summary">지문 인식 센서를 사용하여 화면 잠금을 해제하기 위해서는:</string>
+  <string name="fingerprint_setup_backup_lock_method">보조 잠금 해제 방법을 설정해야 합니다</string>
   <string name="fingerprint_setup_add_fingerprint">지문 추가</string>
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
 </resources>
