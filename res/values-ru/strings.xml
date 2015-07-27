@@ -32,11 +32,14 @@
   <string name="setup_datetime">Дата и время</string>
   <string name="setup_current_date">Текущая дата</string>
   <string name="setup_current_time">Текущее время</string>
+
   <string name="sim_missing_summary" product="tablet">Не обнаружено установленной SIM-карты в планшете. Чтобы узнать, как вставить SIM-карту, прочитайте инструкцию к вашему устройству.</string>
   <string name="sim_missing_summary" product="default">Не обнаружено установленной SIM-карты в телефоне. Чтобы узнать, как вставить SIM-карту, прочитайте инструкцию к вашему устройству.</string>
   <string name="choose_data_sim_summary" product="tablet">Какую SIM вы хотите использовать для передачи данных? Выбранная SIM может повлечь расходы, так как она будет использоваться для настройки планшета.</string>
   <string name="choose_data_sim_summary" product="default">Какую SIM вы хотите использовать для передачи данных? Выбранная SIM может повлечь расходы, так как она будет использоваться для настройки телефона.</string>
+
   <string name="date_time_summary">Установите свой часовой пояс и настройте текущую дату и время, если необходимо</string>
+
   <string name="backup_data_summary"><b>Сохранять</b> данные приложений, пароли Wi-Fi и другие параметры на сервера Google</string>
   <string name="other_services_summary">Эти службы позволяют Google расширить возможности устройства. Вы можете выключить их в любое время. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
   <string name="location_services_summary">Службы местоположения позволяют системе и установленным приложениям собирать и использовать такие данные, как ваше приблизительное местоположение. Например, приложение может искать кофейни поблизости, основываясь на данных о вашем местоположении.</string>
@@ -46,28 +49,41 @@
   <string name="location_network"><b>Использовать Wi-Fi</b> для определения местоположения.</string>
   <string name="location_network_telephony"><b>Использовать Wi-Fi и мобильные сети</b> для определения местоположения.</string>
   <string name="location_network_gms"><b>Использовать службы местоположения Google</b>, чтобы помочь приложениям определять ваше местоположение. Это означает, что они будут отправлять анонимные данные о местоположении в Google даже тогда, когда никакие приложения не запущены.</string>
+
   <string name="setup_mobile_data">Включить моб. данные</string>
   <string name="setup_mobile_data_no_service">Нет сети</string>
   <string name="setup_mobile_data_emergency_only">Только экстренные вызовы</string>
   <string name="enable_mobile_data_summary">Хотите использовать мобильную передачу данных во время настройки? Включение передачи данных по сотовым сетям может повлечь расходы.</string>
   <string name="no">Нет</string>
   <string name="yes">Да</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> — <xliff:g id="name">%s</xliff:g></string>
+
   <string name="emergency_call">Экстренный вызов</string>
+
   <string name="setup_services">Службы Cyanogen</string>
   <string name="services_explanation" product="tablet">Эти службы расширяют возможности вашего планшета. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
   <string name="services_explanation" product="default">Эти службы расширяют возможности вашего телефона. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
   <string name="services_privacy_policy">политикой конфиденциальности</string>
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, разрешив отправление данных диагностики в Cyanogen. Эта информация полностью анонимна и не может быть использована для вашей идентификации. Использование этих данных поможет в работе над энергосбережением, производительностью и многими деталями <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её значки, обои и шрифты.</string>
   <string name="services_os_nav_keys_label"><b>Использовать наэкранные навигационные кнопки</b> вместо аппаратных.</string>
+
   <string name="services_use_secure_sms">Использовать безопасные SMS</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> чтобы использовать шифровании сообщений при общении с другими пользователями безопасныъ SMS на <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> устройствах.</string>
+
   <string name="setup_unlock">Разблокировать</string>
   <string name="setup_device_locked">Устройство было заблокировано пользователем.</string>
   <string name="setup_require_cyanogen_label"><b>Требовать пароль аккаунта ОС Cyanogen</b> для использования устройства даже после удаления всех данных.</string>
   <string name="setup_device_locked_instructions"><i>Чтобы включить или отключить эту функцию, перейдите в меню «Настройки &gt; Безопасность»</i></string>
   <string name="setup_warning_skip_anyway">Без учетной записи Cyanogen вы не сможете:\n\nПерсонализировать телефон новыми обоями, иконками и другими компонентами в приложении «Темы»\n\nНайти или удалённо сбросить настройки на телефоне в случае его потери</string>
+
+  <string name="settings_fingerprint_setup_title">Выберите запасной режим блокировки экрана</string>
+  <string name="settings_fingerprint_setup_details">Как вы хотите заблокировать ваш экран?</string>
+  <string name="fingerprint_setup_title">Настройка сканера отпечатков пальцев</string>
   <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
   <string name="fingerprint_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
+  <string name="fingerprint_setup_add_fingerprint">Добавить ваши отпечатки</string>
+  <string name="fingerprint_setup_screen_lock_setup">Настроить экран блокировки</string>
 </resources>
