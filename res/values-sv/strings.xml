@@ -59,13 +59,22 @@
   <string name="services_explanation" product="default">Dessa tjänster ger dig fler användningsområden för din telefon. Datat kommer användas i överensstämmelse med Cyanogens <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Sekretesspolicy</string>
   <string name="services_help_improve_cm">Hjälp till att förbättra <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> genom att automatiskt skicka diagnostisk och användningsdata till Cyanogen. Denna information kan inte användas för att identifiera dig och kan hjälpa team att arbeta på saker så som batteritid, app-prestanda, och nya<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funktioner.</string>
   <string name="services_apply_theme">Tillämpa temat <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverar unika ikoner, bakgrunder, och typsnitt.</string>
   <string name="services_os_nav_keys_label"><b>Använder styrtangenter på skärmen</b> i stället för fysiska knappar.</string>
   <string name="services_use_secure_sms">Använd säker SMS</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> för att kryptera SMS-konversationer med andra användare med hjälp av säkra SMS på en<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> enhet.</string>
   <string name="setup_unlock">Lås upp</string>
   <string name="setup_device_locked">Denna enhet har blivit låst av användaren.</string>
   <string name="setup_require_cyanogen_label"><b>Kräver lösenordet till ditt Cyanogen-konto</b> för att använda enheten, även efter en fabriksåterställning.</string>
   <string name="setup_device_locked_instructions"><i>För att slå av/på denna funktion, gå till Inställningar &gt; Säkerhet</i></string>
   <string name="setup_warning_skip_anyway">Utan ett Cyanogen-konto kan du inte:\n\nAnpassa din telefon med nya ikoner, bakgrundsbilder med mer i Tema-applikationen\n\nLokalisera eller radera din telefon, om du förlorar den</string>
+  <string name="settings_fingerprint_setup_title">Välj alternativ skärmlåsningstyp</string>
+  <string name="settings_fingerprint_setup_details">Hur vill du låsa din skärm?</string>
+  <string name="fingerprint_setup_title">Konfigurering av fingeravtryck</string>
+  <string name="fingerprint_setup_summary">För att använda din fingeravtrycksavläsare för att låsa upp din skärm, behöver du:</string>
+  <string name="fingerprint_setup_backup_lock_method">Konfigurera en sekundär upplåsningsmetod</string>
+  <string name="fingerprint_setup_add_fingerprint">Lägga till ditt fingeravtryck</string>
+  <string name="fingerprint_setup_screen_lock_setup">Konfigurera skärmlås</string>
 </resources>

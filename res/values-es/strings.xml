@@ -73,6 +73,8 @@
   <string name="settings_fingerprint_setup_title">Selecciona el tipo de copia de seguridad de pantalla de bloqueo</string>
   <string name="settings_fingerprint_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
   <string name="fingerprint_setup_title">Ajustes de huella digital</string>
+  <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, necesitarás:</string>
+  <string name="fingerprint_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
   <string name="fingerprint_setup_add_fingerprint">Añade tu huella digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
 </resources>
