@@ -61,6 +61,7 @@
     <timezone id="Africa/Harare">Harare</timezone>
     <timezone id="Asia/Baghdad">Baghdad</timezone>
     <timezone id="Europe/Moscow">Moscow</timezone>
+    <timezone id="Europe/Kiev">Kiev</timezone>
     <timezone id="Asia/Kuwait">Kuwait</timezone>
     <timezone id="Africa/Nairobi">Nairobi</timezone>
     <timezone id="Asia/Tehran">Tehran</timezone>
