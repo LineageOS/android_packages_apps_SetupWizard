@@ -52,7 +52,7 @@
   <string name="enable_mobile_data_summary">هل تريد تشغيل بيانات الجوال أثناء عملية الإعداد؟ تشغيل بيانات الجوال قد تترتب عليه رسوم البيانات.</string>
   <string name="no">لا</string>
   <string name="yes">نعم</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة </string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة</string>
   <string name="emergency_call">مكالمة طوارئ</string>
   <string name="setup_services">ميزات Cyanogen</string>
   <string name="services_explanation" product="tablet">تعمل هذه الخدمات  على توسيع نطاق إمكانيات الكمبيوتر اللوحي الخاص بك. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
