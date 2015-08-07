@@ -32,6 +32,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.service.persistentdata.PersistentDataBlockManager;
 import android.util.Log;
 
 import com.cyanogenmod.setupwizard.R;
@@ -160,16 +161,20 @@ public class GmsAccountPage extends SetupPage {
                         SetupStats.Action.EXTERNAL_PAGE_RESULT,
                         requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS ?
                                 SetupStats.Label.GMS_ACCOUNT : SetupStats.Label.RESTORE, "success");
+                getCallbacks().onNextPage();
             } else {
-                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
-                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
-                        requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS ?
-                                SetupStats.Label.GMS_ACCOUNT : SetupStats.Label.RESTORE, "skipped");
+                if (canSkip()) {
+                    SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                            SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                            requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS ?
+                                    SetupStats.Label.GMS_ACCOUNT : SetupStats.Label.RESTORE, "skipped");
+                } else {
+                    getCallbacks().onPreviousPage();
+                }
             }
             if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
                 setHidden(true);
             }
-            getCallbacks().onNextPage();
         }
     }
 
@@ -201,14 +206,22 @@ public class GmsAccountPage extends SetupPage {
             e.printStackTrace();
             // XXX: In open source, we don't know what gms version a user has.
             // Bail if the restore activity is not found.
+            getCallbacks().onNextPage();
         }
-        getCallbacks().onNextPage();
+    }
+
+    private boolean canSkip() {
+        final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
+                mContext.getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
+        return pdbManager == null
+                || pdbManager.getDataBlockSize() == 0
+                || pdbManager.getOemUnlockEnabled();
     }
 
     private void launchGmsAccountSetup() {
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
-        bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+        bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, canSkip());
         bundle.putBoolean(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
         AccountManager
                 .get(mContext).addAccount(SetupWizardApp.ACCOUNT_TYPE_GMS, null, null,
@@ -239,7 +252,11 @@ public class GmsAccountPage extends SetupPage {
                         } finally {
                             if (error && getCallbacks().
                                     isCurrentPage(GmsAccountPage.this)) {
-                                getCallbacks().onNextPage();
+                                if (canSkip()) {
+                                    getCallbacks().onNextPage();
+                                } else {
+                                    getCallbacks().onPreviousPage();
+                                }
                             }
                         }
                     }
