@@ -38,7 +38,7 @@
   <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信用に使用しますか？選択したSIMを携帯電話のセットアップに使用しますので、パケット通信料が発生する恐れがあります。</string>
   <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
   <string name="backup_data_summary">アプリのデータ、Wi-Fiパスワード、その他の設定をGoogleのサーバーに<b>バックアップする</b></string>
-  <string name="other_services_summary">これらのサービスはGoogleアプリを動作させるもので、いつでもONまたはOFFにすることができます。データはGoogleの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>にしたがって使用されます。</string>
+  <string name="other_services_summary">これらのサービスはGoogleアプリを動作させるもので、いつでもONまたはOFFにすることができます。データはGoogleの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
   <string name="location_services_summary">位置情報サービスは、おおよその位置情報などのデータの収集や使用をマップやサードパーティーのアプリに許可します。例えば、アプリが最寄りの喫茶店を探すために、おおよその位置情報を使用するかもしれません。</string>
   <string name="location_access_summary">位置情報を使用する<b>権限を求めてきたアプリを許可します</b>。現在の位置情報と過去の位置情報を含む可能性があります。</string>
   <string name="location_gps" product="tablet">タブレットのGPSの使用をアプリに許可して<b>位置情報の精度を向上させます</b>。</string>
@@ -55,8 +55,8 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">緊急通報</string>
   <string name="setup_services">Cyanogenの機能</string>
-  <string name="services_explanation" product="tablet">これらのサービスはタブレットの機能を拡張するために動作します。データはCyanogenの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>にしたがって使用されます。</string>
-  <string name="services_explanation" product="default">これらのサービスは携帯電話の機能を拡張するために動作します。データはCyanogenの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>にしたがって使用されます。</string>
+  <string name="services_explanation" product="tablet">これらのサービスはタブレットの機能を拡張するために動作します。データはCyanogenの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
+  <string name="services_explanation" product="default">これらのサービスは携帯電話の機能を拡張するために動作します。データはCyanogenの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
   <string name="services_privacy_policy">プライバシーポリシー</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>の改善を支援します</string>
   <string name="services_metrics_label">診断と使用状況データを自動的にCyanogenに送信して<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>の新機能などへの取り組みに活用されます。</string>
