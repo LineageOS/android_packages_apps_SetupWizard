@@ -64,7 +64,7 @@ public class CMSetupWizardData extends AbstractSetupData {
                     .setHidden(!isSimInserted() || mMobileDataEnabled));
         }
         if (SetupWizardUtils.hasGMS(mContext)) {
-            pages.add(new GmsAccountPage(mContext, this));
+            pages.add(new GmsAccountPage(mContext, this).setHidden(true));
         }
         if (!SetupWizardUtils.hasLeanback(mContext)) {
             pages.add(new CyanogenServicesPage(mContext, this).setHidden(true));
@@ -109,7 +109,11 @@ public class CMSetupWizardData extends AbstractSetupData {
 
     private void showHideAccountPages() {
         boolean isConnected = SetupWizardUtils.isNetworkConnected(mContext);
-
+        GmsAccountPage gmsAccountPage =
+                (GmsAccountPage) getPage(GmsAccountPage.TAG);
+        if (gmsAccountPage != null) {
+            gmsAccountPage.setHidden(!isConnected && gmsAccountPage.canSkip());
+        }
         CyanogenServicesPage cyanogenServicesPage =
                 (CyanogenServicesPage) getPage(CyanogenServicesPage.TAG);
         if (cyanogenServicesPage != null) {
