@@ -214,6 +214,7 @@ public class GmsAccountPage extends SetupPage {
     public boolean canSkip() {
         final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
                 mContext.getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
+        Log.d(TAG,"GMS skip: OEM unlock is enabled: " + pdbManager.getOemUnlockEnabled() + " and amount of PST blocks is " + pdbManager.getDataBlockSize());
         return pdbManager == null
                 || pdbManager.getDataBlockSize() == 0
                 || pdbManager.getOemUnlockEnabled();
