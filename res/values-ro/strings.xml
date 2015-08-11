@@ -24,13 +24,21 @@
   <string name="loading">Doar o secundă\u2026</string>
   <string name="setup_complete">Configurarea este completă</string>
   <string name="setup_welcome">Bine ați venit</string>
-  <string name="setup_wifi">Selectaţi Wi-Fi</string>
+  <string name="setup_wifi">Selectați Wi-Fi</string>
   <string name="setup_sim_missing">Lipsă card SIM</string>
+  <string name="setup_choose_data_sim">Alege un SIM pentru date</string>
   <string name="setup_location">Servicii de localizare</string>
   <string name="setup_other">Alte servicii</string>
   <string name="setup_datetime">Dată &amp; oră</string>
   <string name="setup_current_date">Data curentă</string>
   <string name="setup_current_time">Ora curentă</string>
+  <string name="sim_missing_summary" product="tablet">O cartelă SIM nu a fost detectată în tableta dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
+  <string name="sim_missing_summary" product="default">O cartelă SIM nu a fost detectată în telefonul dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
+  <string name="choose_data_sim_summary" product="tablet">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura tableta dvs.</string>
+  <string name="choose_data_sim_summary" product="default">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura telefonul dvs.</string>
+  <string name="date_time_summary">Setați fusul orar și reglați data și ora curentă, dacă este necesar</string>
+  <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
   <string name="setup_mobile_data">Porniți datele mobile</string>
   <string name="setup_mobile_data_no_service">Lipsă semnal</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
@@ -40,4 +48,5 @@
   <string name="emergency_call">Apel de urgenţă</string>
   <string name="setup_services">Facilități Cyanogen</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
+  <string name="setup_unlock">Deblocare</string>
 </resources>
