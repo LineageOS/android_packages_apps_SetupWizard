@@ -39,6 +39,9 @@
   <string name="date_time_summary">Setați fusul orar și reglați data și ora curentă, dacă este necesar</string>
   <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
+  <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizeze informațiile despre locația dvs. Aceasta poate include locația curentă și locațiile precedente.</string>
+  <string name="location_network"><b>Folosește Wi-Fi</b> pentru a ajuta aplicațiile să vă determine locația.</string>
+  <string name="location_network_telephony"><b>Utilizează Wi-Fi și rețelele de telefonie mobilă</b> pentru a ajuta aplicațiile să vă determine locația.</string>
   <string name="setup_mobile_data">Porniți datele mobile</string>
   <string name="setup_mobile_data_no_service">Lipsă semnal</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
@@ -48,5 +51,7 @@
   <string name="emergency_call">Apel de urgenţă</string>
   <string name="setup_services">Facilități Cyanogen</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
+  <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
   <string name="setup_unlock">Deblocare</string>
+  <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
 </resources>
