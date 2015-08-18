@@ -24,7 +24,8 @@
     <color name="accent">#009789</color>
     <color name="primary_text">#8a000000</color>
     <color name="secondary_text">#727272</color>
-    <color name="button_bar_text">#1e1e1e</color>
+    <color name="button_bar_text_enabled">#ff1e1e1e</color>
+    <color name="button_bar_text_disabled">#321e1e1e</color>
     <color name="divider">#40000000</color>
     <color name="header_bg">@color/primary</color>
     <color name="header_condensed_bg">@color/primary_dark</color>
