@@ -17,14 +17,52 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">آموزش راه‌اندازی</string>
+  <string name="next">بعدی</string>
+  <string name="skip">رد شدن</string>
+  <string name="start">شروع</string>
   <string name="ok">بسیارخب</string>
+  <string name="loading">یک لحظه لطفا\u2026</string>
+  <string name="setup_complete">راه‌اندازی کامل شد</string>
+  <string name="setup_welcome">خوش آمدید</string>
   <string name="setup_wifi">انتخاب وای‌فای</string>
   <string name="setup_sim_missing">سیم کارت موجود نیست</string>
+  <string name="setup_choose_data_sim">انتخاب سیم کارت برای داده همراه</string>
   <string name="setup_location">خدمات مکان</string>
+  <string name="setup_other">سایر خدمات</string>
+  <string name="setup_datetime">تاریخ &amp; زمان</string>
+  <string name="setup_current_date">تاریخ کنونی</string>
+  <string name="setup_current_time">زمان کنونی</string>
   <string name="sim_missing_summary" product="tablet">سیم کارتی در تبلت شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
   <string name="sim_missing_summary" product="default">سیم کارتی در گوشی شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
+  <string name="choose_data_sim_summary" product="tablet">از کدام سیم کارت برای داده همراه می خواهید استفاده کنید؟ انتخاب سیم کارت ممکن است هزینه های شبکه ایجاد کند چرا که برای راه‌اندازی تبلت شما استفاده می شود.</string>
+  <string name="choose_data_sim_summary" product="default">از کدام سیم کارت برای داده همراه می خواهید استفاده کنید؟ انتخاب سیم کارت ممکن است هزینه های شبکه ایجاد کند چرا که برای راه‌اندازی گوشی شما استفاده می شود.</string>
+  <string name="date_time_summary">در صورت نیاز منطقه‌ی زمانی خود و تاریخ و زمان فعلی را تنظیم کنید</string>
   <string name="backup_data_summary">از داده‌های برنامه‌ها، گذرواژه وای‌فای و دیگر تنظیمات در سرورهای گوگل پشتیبان بگیر</string>
+  <string name="other_services_summary">این خدمات، گوگل را برای شما تنظیم می‌کنند و شما می‌توانید هر زمان آن‌ها را روشن یا خاموش کنید. از داده‌ها بر طبق <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گوگل استفاده خواهد شد.</string>
+  <string name="location_services_summary">سرویس‌های مکان به نقشه‌ها و برنامه‌های دیگر برای جمع‌آوری و استفاده از داده مانند محل تقریبی اجازه می‌دهند. به عنوان مثال، نقشه‌ها ممکن است مکان تقریبی شما را برای یافتن کافی‌شاپ‌های نزدیکتان استفاده کنند.</string>
+  <string name="location_access_summary"><b>به برنامه‌ها اجازه می‌دهد بدون اجازه شما</b> از اطلاعات موقعیت شما استفاده کنند. ممکن است این استفاده شامل موقعیت فعلی و قبلی شما شود.</string>
+  <string name="location_gps" product="tablet">با اجازه دادن به برنامه‌ها برای استفاده از GPS تبلت، <b>دقت موقعیت خود را بهبود بخشید</b>.</string>
+  <string name="location_gps" product="default">با اجازه دادن به برنامه‌ها برای استفاده از جی‌پی‌اس گوشی، <b>دقت موقعیت خود را بهبود بخشید</b>.</string>
   <string name="location_network">برای کمک به برنامه‌ها در تعیین مکانتان از وای‌فای استفاده کنید.</string>
   <string name="location_network_telephony">برای کمک به برنامه‌ها در تعیین مکانتان از وای‌فای وشبکه‌های همراه استفاده کنید.</string>
+  <string name="location_network_gms"><b>از سرویس‌های مکان گوگل استفاده کنید</b> تا به برنامه‌ها کمک شود که موقعیت شما را تعیین کنند. این به معنای ارسال داده‌های ناشناس موقعیت به گوگل است، حتی هنگامی که برنامه‌ای در حال اجرا نیست.</string>
+  <string name="setup_mobile_data">روشن کردن داده همراه</string>
+  <string name="setup_mobile_data_no_service">بدون سرویس</string>
+  <string name="setup_mobile_data_emergency_only">فقط تماس‌های اضطراری</string>
+  <string name="enable_mobile_data_summary">آیا می‌خواهید در طول راه‌اندازی از داده همراه استفاده کنید؟ ممکن است روشن کردن داده همراه مشمول هزینه شود.</string>
+  <string name="no">خیر</string>
+  <string name="yes">بله</string>
+  <string name="data_sim_name">سیم کارت <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">تماس اضطراری</string>
+  <string name="setup_services">ویژگی‌های سایانوژن</string>
+  <string name="services_explanation" product="tablet">این خدمات برای افزایش قابلیت‌های تبلت شما هستند. داده‌ها مطابق با <xliff:g id="name" example="Privacy Policy">%s</xliff:g> سایانوژن استفاده خواهند شد.</string>
+  <string name="services_explanation" product="default">این خدمات برای افزایش قابلیت‌های گوشی شما هستند. داده‌ها مطابق با <xliff:g id="name" example="Privacy Policy">%s</xliff:g> سایانوژن استفاده خواهند شد.</string>
   <string name="services_privacy_policy">سیاست حفظ حریم خصوصی</string>
+  <string name="services_help_improve_cm">به بهبود <xliff:g id="name" example="CyanogenMod">%s</xliff:g> کمک کنید</string>
+  <string name="services_metrics_label">به وسیله ارسال خودکار داده‌های تشخیصی و استفاده به سایانوژن، <xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g>. از این داده‌ها برای شناسایی شما استفاده نمی‌شود و تنها برای کمک به گروه‌هایی که روی مواردی مانند عمر باتری، عملکرد برنامه و قابلیت‌های جدید <xliff:g id="name" example="CyanogenMod">%s</xliff:g> features کار می‌کنند استفاده می‌شود.</string>
+  <string name="services_apply_theme">اعمال مضمون <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> فعال‌کردن آیکون‌ها، کاغذدیواری‌ها و فونت‌های خاص.</string>
+  <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
+  <string name="services_use_secure_sms">استفاده از پیامک امن</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> برای رمزگذاری گفتگوهای پیامکی با کاربران دیگر با استفاده ازپیامک امن در یک دستگاه <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
 </resources>

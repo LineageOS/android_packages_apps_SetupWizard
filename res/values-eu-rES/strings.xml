@@ -36,7 +36,7 @@
   <string name="sim_missing_summary" product="default">Ez da SIM txartelik antzeman zure telefonoan. SIM txartel bat sartzeko jarraitu zure gailuarekin zetozen argibideak.</string>
   <string name="choose_data_sim_summary" product="tablet">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure tableta ezartzeko erabiliko baita.</string>
   <string name="choose_data_sim_summary" product="default">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure telefonoa ezartzeko erabiliko baita.</string>
-  <string name="date_time_summary">Ezarri zure ordu zonaldea eta doitu oraingo data beharrezkoa bada</string>
+  <string name="date_time_summary">Ezarri zure ordu-zona eta doitu oraingo data beharrezkoa bada</string>
   <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>babeskopia</b> egin Google zerbitzarietan</string>
   <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
   <string name="location_services_summary">Kokaleku zerbitzuek zure kokalekua bezalako datuak eskuratzea ahalbidetzen diete sistemako eta instalatutako aplikazioei. Adibidez, aplikazio batek zure kokalekua erabili lezake inguruko kafetegiak aurkitzeko.</string>

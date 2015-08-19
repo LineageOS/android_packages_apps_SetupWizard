@@ -26,7 +26,7 @@
   <string name="setup_welcome">환영합니다</string>
   <string name="setup_wifi">Wi-Fi 연결</string>
   <string name="setup_sim_missing">SIM 카드 없음</string>
-  <string name="setup_choose_data_sim">데이터 통신용 SIM 카드 선택</string>
+  <string name="setup_choose_data_sim">모바일 데이터용 SIM 카드 선택</string>
   <string name="setup_location">위치 서비스</string>
   <string name="setup_other">기타 서비스</string>
   <string name="setup_datetime">날짜 및 시간</string>
@@ -34,8 +34,8 @@
   <string name="setup_current_time">현재 시간</string>
   <string name="sim_missing_summary" product="tablet">태블릿에서 SIM 카드가 감지되지 않았습니다. SIM 카드를 삽입하려면 기기와 함께 제공된 설명을 읽어보십시오.</string>
   <string name="sim_missing_summary" product="default">휴대전화에서 SIM 카드가 감지되지 않았습니다. SIM 카드를 삽입하려면 기기와 함께 제공된 설명을 읽어보십시오.</string>
-  <string name="choose_data_sim_summary" product="tablet">데이터 통신을 위해 어느 카드를 사용하시겠습니까? 태블릿을 설정하는 동안 선택한 SIM 카드에서 통신 요금이 발생할 수 있습니다.</string>
-  <string name="choose_data_sim_summary" product="default">데이터 통신을 위해 어느 카드를 사용하시겠습니까? 휴대전화를 설정하는 동안 선택한 SIM 카드에서 통신 요금이 발생할 수 있습니다.</string>
+  <string name="choose_data_sim_summary" product="tablet">모바일 데이터를 위해 어느 카드를 사용하시겠습니까? 태블릿을 설정하는 동안 선택한 SIM 카드에서 통신 요금이 발생할 수 있습니다.</string>
+  <string name="choose_data_sim_summary" product="default">모바일 데이터를 위해 어느 카드를 사용하시겠습니까? 휴대전화를 설정하는 동안 선택한 SIM 카드에서 통신 요금이 발생할 수 있습니다.</string>
   <string name="date_time_summary">시간대를 설정하고 필요한 경우 현재 날짜 및 시간을 조정</string>
   <string name="backup_data_summary">앱 데이터, Wi-Fi 비밀번호 그리고 기타 설정을 Google 서버에 <b>백업합니다</b></string>
   <string name="other_services_summary">이 Google 서비스는 사용자가 실행하며, 언제든지 켜고 끌 수 있습니다. 데이터는 Google의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
@@ -46,10 +46,10 @@
   <string name="location_network">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-FI를 사용합니다</b>.</string>
   <string name="location_network_telephony">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-FI와 모바일 네트워크를 사용합니다</b>.</string>
   <string name="location_network_gms">앱이 사용자의 위치를 정확하게 확인할 수 있도록 <b>Google 위치 서비스를 사용합니다</b>. 앱을 사용하지 않을때도 익명 위치 정보가 Google에 전송됩니다.</string>
-  <string name="setup_mobile_data">데이터 통신 켜기</string>
+  <string name="setup_mobile_data">모바일 데이터 켜기</string>
   <string name="setup_mobile_data_no_service">서비스 불가</string>
   <string name="setup_mobile_data_emergency_only">긴급 통화만 가능</string>
-  <string name="enable_mobile_data_summary">설정할 동안 데이터 통신을 사용하시겠습니까? 데이터 통신을 켜면 통신요금이 부과될 수 있습니다.</string>
+  <string name="enable_mobile_data_summary">설정할 동안 모바일 데이터를 사용하시겠습니까? 모바일 데이터를 켜면 통신요금이 부과될 수 있습니다.</string>
   <string name="no">아니오</string>
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
