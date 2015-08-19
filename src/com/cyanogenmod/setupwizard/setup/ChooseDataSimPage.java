@@ -51,8 +51,6 @@ public class ChooseDataSimPage extends SetupPage {
 
     public static final String TAG = "ChooseDataSimPage";
 
-    private static final String CHANGE_DATA_SIM_ID_EXTRA = ".changingToId";
-
     public ChooseDataSimPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
@@ -104,7 +102,13 @@ public class ChooseDataSimPage extends SetupPage {
         private SubscriptionManager mSubscriptionManager;
 
         private int mCurrentDataPhoneId;
-        private int mChangingToDataPhoneId;
+
+        // This is static because a user can click back mid operation.
+        // We want to persist what the user was changing to because of the
+        // async callback can sometimes take a long time.
+        private static int sChangingToDataPhoneId = -1;
+
+        private boolean mDisabledForSwitch = false;
 
         private final Handler mHandler = new Handler();
 
@@ -179,9 +183,9 @@ public class ChooseDataSimPage extends SetupPage {
             mContext = getActivity().getApplicationContext();
             mSubscriptionManager = SubscriptionManager.from(mContext);
             mCurrentDataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
-            mChangingToDataPhoneId = (savedInstanceState == null) ?
-                    mCurrentDataPhoneId :
-                    savedInstanceState.getInt(CHANGE_DATA_SIM_ID_EXTRA, mCurrentDataPhoneId);
+            if (sChangingToDataPhoneId == -1) {
+                sChangingToDataPhoneId = mCurrentDataPhoneId;
+            }
         }
 
         @Override
@@ -203,11 +207,6 @@ public class ChooseDataSimPage extends SetupPage {
             if (mRadioReady) {
                 checkSimChangingState();
             }
-        }
-
-        @Override
-        public void onSaveInstanceState(Bundle outState) {
-            outState.putInt(CHANGE_DATA_SIM_ID_EXTRA, mChangingToDataPhoneId);
         }
 
         @Override
@@ -238,7 +237,18 @@ public class ChooseDataSimPage extends SetupPage {
 
                 @Override
                 public void onDataConnectionStateChanged(int state) {
-                    mCurrentDataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
+                    final int dataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
+                    // In case the default sub changes from elsewhere. This shouldn't happen,
+                    // but testcases can induce this.
+                    if (dataPhoneId != mCurrentDataPhoneId &&
+                            dataPhoneId != sChangingToDataPhoneId) {
+                        sChangingToDataPhoneId = dataPhoneId;
+                        updateCurrentDataSub();
+                    }
+                    if (mCurrentDataPhoneId != dataPhoneId) {
+                        mCurrentDataPhoneId = dataPhoneId;
+                        updateCurrentDataSub();
+                    }
                     checkSimChangingState();
                 }
             };
@@ -247,15 +257,14 @@ public class ChooseDataSimPage extends SetupPage {
         private void checkForRadioReady() {
             if (mRadioReady) {
                 mHandler.removeCallbacks(mRadioReadyRunnable);
-                hideProgress();
-                mNextButton.setEnabled(true);
                 showPage();
+                checkSimChangingState();
                 return;
             } else {
                 if (mTitleView != null) {
                     mTitleView.setText(R.string.loading);
                 }
-                mNextButton.setEnabled(false);
+                enableViews(false);
                 showProgress();
                 if (!mHandler.hasCallbacks(mRadioReadyRunnable)) {
                     mHandler.postDelayed(mRadioReadyRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
@@ -302,8 +311,8 @@ public class ChooseDataSimPage extends SetupPage {
         }
 
         private void changeDataSub(SubscriptionInfo subInfoRecord) {
-            if (mChangingToDataPhoneId != subInfoRecord.getSimSlotIndex()) {
-                mChangingToDataPhoneId = subInfoRecord.getSimSlotIndex();
+            if (sChangingToDataPhoneId != subInfoRecord.getSimSlotIndex()) {
+                sChangingToDataPhoneId = subInfoRecord.getSimSlotIndex();
                 mSubscriptionManager.setDefaultDataSubId(subInfoRecord.getSubscriptionId());
                 setDataSubChecked(subInfoRecord);
             }
@@ -312,14 +321,12 @@ public class ChooseDataSimPage extends SetupPage {
 
         private void checkSimChangingState() {
             if (mIsAttached && mRadioReady) {
-                if (mCurrentDataPhoneId != mChangingToDataPhoneId) {
+                if (mCurrentDataPhoneId != sChangingToDataPhoneId) {
                     showProgress();
-                    mNextButton.setEnabled(false);
-                    enableRows(false);
+                    enableViews(false);
                 } else {
                     hideProgress();
-                    mNextButton.setEnabled(true);
-                    enableRows(true);
+                    enableViews(true);
                 }
             }
         }
@@ -350,9 +357,20 @@ public class ChooseDataSimPage extends SetupPage {
             }
         }
 
+        private void enableViews(boolean enabled) {
+            mDisabledForSwitch = !enabled;
+            enableRows(enabled);
+            mNextButton.setEnabled(enabled);
+        }
+
         private void enableRows(boolean enabled) {
             for (int i = 0; i < mRows.size(); i++) {
-                mRows.get(i).setEnabled(enabled);
+                final View v =  mRows.get(i);
+                v.setEnabled(enabled);
+                final SubscriptionInfo subInfoRecord = (SubscriptionInfo)v.getTag();
+                if (subInfoRecord != null) {
+                    updateCarrierText(subInfoRecord);
+                }
             }
         }
 
@@ -360,17 +378,26 @@ public class ChooseDataSimPage extends SetupPage {
             if (mIsAttached) {
                 String name = mPhone.getNetworkOperatorName(subInfoRecord.getSubscriptionId());
                 ServiceState serviceState = mServiceStates.get(subInfoRecord.getSimSlotIndex());
+                final int slot = subInfoRecord.getSimSlotIndex();
+                final View v = mRows.get(slot);
                 if (TextUtils.isEmpty(name)) {
                     if (serviceState != null && serviceState.isEmergencyOnly()) {
                         name = getString(R.string.setup_mobile_data_emergency_only);
                     } else {
                         name = getString(R.string.setup_mobile_data_no_service);
                     }
+                    if (v != null) {
+                        v.setEnabled(false);
+                    }
+                } else {
+                    if (v != null && !mDisabledForSwitch) {
+                        v.setEnabled(true);
+                    }
                 }
                 String formattedName =
                         getString(R.string.data_sim_name,
-                                  subInfoRecord.getSimSlotIndex() + 1, name);
-                mNameViews.get(subInfoRecord.getSimSlotIndex()).setText(formattedName);
+                                slot + 1, name);
+                mNameViews.get(slot).setText(formattedName);
             }
         }
 
