@@ -34,6 +34,24 @@
       "revId": "0e8671ef2925375d6992befbea69abcc5ac7cdd5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f201791_8475509b",
+        "filename": "res/color/button_bar_text.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1448
+      },
+      "writtenOn": "2015-08-19T04:43:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f201791_04402035",
+      "revId": "0e8671ef2925375d6992befbea69abcc5ac7cdd5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
