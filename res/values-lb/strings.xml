@@ -48,7 +48,7 @@
   <string name="setup_mobile_data">Mobil Daten uschalten</string>
   <string name="setup_mobile_data_no_service">Kee Service</string>
   <string name="setup_mobile_data_emergency_only">Just Noutriff</string>
-  <string name="enable_mobile_data_summary">Wëlls du mobil Date während der Installatioun benotzen? Duerch d\'Uschalte vu mobilen Date kënnen Zousazkäschten entstoen.</string>
+  <string name="enable_mobile_data_summary">Wëlls du mobil Date während der Installatioun benotzen? Duerch d\'Uschalte vu mobillen Date kënnen Zousazkäschten entstoen.</string>
   <string name="no">Nee</string>
   <string name="yes">Jo</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
