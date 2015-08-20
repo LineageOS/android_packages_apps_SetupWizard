@@ -16,9 +16,13 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.telephony.PhoneStateListener;
@@ -38,6 +42,8 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.android.internal.telephony.TelephonyIntents;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
@@ -207,6 +213,11 @@ public class ChooseDataSimPage extends SetupPage {
             if (mRadioReady) {
                 checkSimChangingState();
             }
+            // Register for DDS changes
+            IntentFilter filter = new IntentFilter();
+            filter.addAction(TelephonyIntents.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED);
+            getActivity().registerReceiver(mIntentReceiver, filter, null, null);
+
         }
 
         @Override
@@ -215,6 +226,15 @@ public class ChooseDataSimPage extends SetupPage {
             mIsAttached = false;
             for (int i = 0; i < mPhoneStateListeners.size(); i++) {
                 mPhone.listen(mPhoneStateListeners.valueAt(i), PhoneStateListener.LISTEN_NONE);
+            }
+            getActivity().unregisterReceiver(mIntentReceiver);
+        }
+
+        private void ddsHasChanged() {
+            mCurrentDataPhoneId = mSubscriptionManager.getDefaultDataPhoneId();
+            if (mCurrentDataPhoneId == sChangingToDataPhoneId) {
+                hideProgress();
+                enableViews(true);
             }
         }
 
@@ -458,6 +478,17 @@ public class ChooseDataSimPage extends SetupPage {
             }
             return retVal;
         }
+
+        private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                final Activity activity = getActivity();
+                if (activity != null) {
+                    ddsHasChanged();
+                }
+            }
+        };
+
     }
 
 }
