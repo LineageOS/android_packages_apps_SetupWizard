@@ -203,4 +203,15 @@ public class CMSetupWizardData extends AbstractSetupData {
         return simSlotCount == SubscriptionManager.from(mContext).getActiveSubscriptionInfoCount();
     }
 
+    @Override
+    public void onNextPage() {
+        // The loading page appears before Gms account launch. NOOP the skip if FRP locked.
+        GmsAccountPage gmsAccountPage = (GmsAccountPage)getPage(GmsAccountPage.TAG);
+        if (gmsAccountPage != null &&
+                isCurrentPage(gmsAccountPage) && !gmsAccountPage.canSkip()) {
+              return;
+        } else {
+            super.onNextPage();
+        }
+    }
 }
