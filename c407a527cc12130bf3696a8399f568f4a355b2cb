@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_12c85d53",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/GmsAccountPage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 6334
+      },
+      "writtenOn": "2015-08-21T23:15:06Z",
+      "side": 0,
+      "message": "Could combine this into a single runnable, and pass the responseCode as the parameter?",
+      "revId": "c407a527cc12130bf3696a8399f568f4a355b2cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
