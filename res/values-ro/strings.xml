@@ -58,5 +58,7 @@
   <string name="services_explanation" product="tablet">Aceste servicii extind capacitățile tabletei dumneavoastră. Datele vor fi folosite în conformitate cu Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_explanation" product="default">Aceste servicii extind capacitățile telefonului dumneavoastră. Datele vor fi folosite în conformitate cu Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g> prin trimiterea automată de date de diagnostic și de utilizare către Cyanogen. Aceste informații nu pot fi folosite pentru a vă identifica și ajută echipele ce lucrează la lucruri precum viața bateriei, performanța aplicațiilor și caracteristici noi <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> activând pictograme, imagini de fundal, și fonturi unice.</string>
   <string name="services_use_secure_sms">Utilizează SMS securizat</string>
 </resources>
