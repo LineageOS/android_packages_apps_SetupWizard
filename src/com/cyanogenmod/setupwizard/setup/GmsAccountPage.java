@@ -31,6 +31,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.util.Log;
@@ -42,6 +43,9 @@ import com.cyanogenmod.setupwizard.ui.LoadingFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -53,12 +57,19 @@ public class GmsAccountPage extends SetupPage {
     private static final String RESTORE_WIZARD_SCRIPT =
             "android.resource://com.google.android.setupwizard/xml/wizard_script";
 
+    private static final String GMS_SERVER = "clients3.google.com";
+    private static final int GMS_SOCKET_TIMEOUT_MS = 10000;
+    private URL mGmsUri;
+
     private ContentQueryMap mContentQueryMap;
     private Observer mSettingsObserver;
 
     private boolean mBackupEnabled = false;
+    private boolean mSignedIn = false;
 
-    private Fragment mFragment;
+    private final Handler mHandler = new Handler();
+
+    private LoadingFragment mFragment;
 
     public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -79,11 +90,16 @@ public class GmsAccountPage extends SetupPage {
                 null);
         mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
         mContentQueryMap.addObserver(mSettingsObserver);
+        try {
+            mGmsUri = new URL("http://" + GMS_SERVER + "/generate_204");
+        } catch (MalformedURLException e) {
+            Log.e(TAG, "Not a valid url" + e);
+        }
     }
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        mFragment = fragmentManager.findFragmentByTag(getKey());
+        mFragment = (LoadingFragment)fragmentManager.findFragmentByTag(getKey());
         if (mFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
@@ -115,24 +131,16 @@ public class GmsAccountPage extends SetupPage {
             getCallbacks().onPreviousPage();
         } else {
             super.doLoadAction(fragmentManager, action);
-            launchGmsAccountSetup();
+            checkForGmsConnection();
         }
     }
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
-            if (!mBackupEnabled && SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
-                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
-                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
-                        SetupStats.Label.GMS_ACCOUNT, "success");
-                launchGmsRestorePage();
-            } else {
-                handleResult(requestCode, resultCode);
-            }
+            handleAccountSetupResult(resultCode);
         } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
-            handleResult(requestCode, resultCode);
-            setHidden(true);
+            handleRestoreResult(resultCode);
         }
         return true;
     }
@@ -148,32 +156,53 @@ public class GmsAccountPage extends SetupPage {
         }
     }
 
-    private void handleResult(int requestCode, int resultCode) {
+    private void handleAccountSetupResult(int resultCode) {
+        mSignedIn = SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS);
+        if (!mBackupEnabled &&
+                SetupWizardUtils.isOwner() &&
+                mSignedIn &&
+                resultCode == Activity.RESULT_OK) {
+            SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                    SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                    SetupStats.Label.GMS_ACCOUNT, "success");
+            launchGmsRestorePage();
+        } else if (resultCode == Activity.RESULT_CANCELED) {
+            SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                    SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                    SetupStats.Label.GMS_ACCOUNT, "canceled");
+            getCallbacks().onPreviousPage();
+        } else {
+            if (canSkip()) {
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.GMS_ACCOUNT, "skipped");
+                getCallbacks().onNextPage();
+            } else {
+                getCallbacks().onPreviousPage();
+            }
+        }
+    }
+
+    private void handleRestoreResult(int resultCode) {
         if (resultCode == Activity.RESULT_CANCELED) {
             SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
                     SetupStats.Action.EXTERNAL_PAGE_RESULT,
-                    requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS ?
-                            SetupStats.Label.GMS_ACCOUNT : SetupStats.Label.RESTORE, "canceled");
+                    SetupStats.Label.RESTORE, "canceled");
             getCallbacks().onPreviousPage();
         }  else {
             if (resultCode == Activity.RESULT_OK) {
                 SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
                         SetupStats.Action.EXTERNAL_PAGE_RESULT,
-                        requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS ?
-                                SetupStats.Label.GMS_ACCOUNT : SetupStats.Label.RESTORE, "success");
+                        SetupStats.Label.RESTORE, "success");
                 getCallbacks().onNextPage();
             } else {
-                if (canSkip()) {
-                    SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
-                            SetupStats.Action.EXTERNAL_PAGE_RESULT,
-                            requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS ?
-                                    SetupStats.Label.GMS_ACCOUNT : SetupStats.Label.RESTORE, "skipped");
-                    getCallbacks().onNextPage();
-                } else {
-                    getCallbacks().onPreviousPage();
-                }
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.RESTORE, "skipped");
+                getCallbacks().onNextPage();
+
             }
-            if (SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
+            if (mSignedIn) {
                 setHidden(true);
             }
         }
@@ -201,7 +230,6 @@ public class GmsAccountPage extends SetupPage {
                 mFragment.startActivityForResult(
                         intent,
                         SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
-                return;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -214,9 +242,56 @@ public class GmsAccountPage extends SetupPage {
     public boolean canSkip() {
         final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
                 mContext.getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
-        return pdbManager == null
+        return mSignedIn
+                || pdbManager == null
                 || pdbManager.getDataBlockSize() == 0
                 || pdbManager.getOemUnlockEnabled();
+    }
+
+    private void checkForGmsConnection() {
+        if (!canSkip()) {
+            launchGmsAccountSetup();
+        } else {
+            new Thread() {
+                @Override
+                public void run() {
+                    HttpURLConnection urlConnection = null;
+                    try {
+                        urlConnection = (HttpURLConnection) mGmsUri.openConnection();
+                        urlConnection.setInstanceFollowRedirects(false);
+                        urlConnection.setConnectTimeout(GMS_SOCKET_TIMEOUT_MS);
+                        urlConnection.setReadTimeout(GMS_SOCKET_TIMEOUT_MS);
+                        urlConnection.setUseCaches(false);
+                        urlConnection.getInputStream();
+                        handleGmsCheck(urlConnection.getResponseCode());
+                    } catch (IOException e) {
+                        Log.e(TAG, "Gms connection check exception "
+                                + e);
+                        handleGmsCheck(-1);
+                    } finally {
+                        if (urlConnection != null) {
+                            urlConnection.disconnect();
+                        }
+                    }
+                }
+            }.start();
+        }
+    }
+
+    private void handleGmsCheck(final int responseCode) {
+        if (getCallbacks().isCurrentPage(GmsAccountPage.this)) {
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    // If FRP is enabled, we have to launch GMS
+                    if (responseCode != 204 && canSkip()) {
+                        getCallbacks().onNextPage();
+                    } else {
+                        launchGmsAccountSetup();
+                    }
+                }
+            });
+        }
     }
 
     private void launchGmsAccountSetup() {
