@@ -31,6 +31,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.util.Log;
@@ -42,6 +43,9 @@ import com.cyanogenmod.setupwizard.ui.LoadingFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -53,12 +57,36 @@ public class GmsAccountPage extends SetupPage {
     private static final String RESTORE_WIZARD_SCRIPT =
             "android.resource://com.google.android.setupwizard/xml/wizard_script";
 
+    private static final String GMS_SERVER = "clients3.google.com";
+    private static final int GMS_SOCKET_TIMEOUT_MS = 10000;
+    private URL mGmsUri;
+
     private ContentQueryMap mContentQueryMap;
     private Observer mSettingsObserver;
 
     private boolean mBackupEnabled = false;
 
+    private final Handler mHandler = new Handler();
+
     private Fragment mFragment;
+
+    private Runnable mNextPageRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (getCallbacks().isCurrentPage(GmsAccountPage.this)) {
+                getCallbacks().onNextPage();
+            }
+        }
+    };
+
+    private Runnable mLaunchGmsRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (getCallbacks().isCurrentPage(GmsAccountPage.this)) {
+                launchGmsAccountSetup();
+            }
+        }
+    };
 
     public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -79,6 +107,11 @@ public class GmsAccountPage extends SetupPage {
                 null);
         mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
         mContentQueryMap.addObserver(mSettingsObserver);
+        try {
+            mGmsUri = new URL("http://" + GMS_SERVER + "/generate_204");
+        } catch (MalformedURLException e) {
+            Log.e(TAG, "Not a valid url" + e);
+        }
     }
 
     @Override
@@ -115,12 +148,13 @@ public class GmsAccountPage extends SetupPage {
             getCallbacks().onPreviousPage();
         } else {
             super.doLoadAction(fragmentManager, action);
-            launchGmsAccountSetup();
+            checkForGmsConnection();
         }
     }
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
+        Log.d(TAG, "requestCode="+requestCode+" resultCode="+resultCode);
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS) {
             if (!mBackupEnabled && SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
                 SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
@@ -201,7 +235,6 @@ public class GmsAccountPage extends SetupPage {
                 mFragment.startActivityForResult(
                         intent,
                         SetupWizardApp.REQUEST_CODE_RESTORE_GMS, options.toBundle());
-                return;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -217,6 +250,36 @@ public class GmsAccountPage extends SetupPage {
         return pdbManager == null
                 || pdbManager.getDataBlockSize() == 0
                 || pdbManager.getOemUnlockEnabled();
+    }
+
+    private void checkForGmsConnection() {
+        new Thread() {
+            @Override
+            public void run() {
+                HttpURLConnection urlConnection = null;
+                try {
+                    urlConnection = (HttpURLConnection) mGmsUri.openConnection();
+                    urlConnection.setInstanceFollowRedirects(false);
+                    urlConnection.setConnectTimeout(GMS_SOCKET_TIMEOUT_MS);
+                    urlConnection.setReadTimeout(GMS_SOCKET_TIMEOUT_MS);
+                    urlConnection.setUseCaches(false);
+                    urlConnection.getInputStream();
+                    if (urlConnection.getResponseCode() != 204) {
+                        mHandler.post(mNextPageRunnable);
+                    } else {
+                        mHandler.post(mLaunchGmsRunnable);
+                    }
+                } catch (IOException e) {
+                    Log.e(TAG, "Gms connection check exception "
+                            + e);
+                    mHandler.post(mNextPageRunnable);
+                } finally {
+                    if (urlConnection != null) {
+                        urlConnection.disconnect();
+                    }
+                }
+            }
+        }.start();
     }
 
     private void launchGmsAccountSetup() {
