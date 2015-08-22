@@ -61,7 +61,7 @@
   <string name="services_help_improve_cm">به بهبود <xliff:g id="name" example="CyanogenMod">%s</xliff:g> کمک کنید</string>
   <string name="services_metrics_label">به وسیله ارسال خودکار داده‌های تشخیصی و استفاده به سایانوژن، <xliff:g id="name" example="Help improve CyanogenMod">%s</xliff:g>. از این داده‌ها برای شناسایی شما استفاده نمی‌شود و تنها برای کمک به گروه‌هایی که روی مواردی مانند عمر باتری، عملکرد برنامه و قابلیت‌های جدید <xliff:g id="name" example="CyanogenMod">%s</xliff:g> features کار می‌کنند استفاده می‌شود.</string>
   <string name="services_apply_theme">اعمال مضمون <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> فعال‌کردن آیکون‌ها، کاغذدیواری‌ها و فونت‌های خاص.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> که آیکون‌ها، کاغذدیواری‌ها و فونت‌هایی بی‌نظیر را فعال می‌کند.</string>
   <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
   <string name="services_use_secure_sms">استفاده از پیامک امن</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%s</xliff:g> برای رمزگذاری گفتگوهای پیامکی با کاربران دیگر با استفاده ازپیامک امن در یک دستگاه <xliff:g id="name" example="CyanogenMod">%s</xliff:g>.</string>
