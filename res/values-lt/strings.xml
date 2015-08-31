@@ -59,10 +59,12 @@
   <string name="services_explanation" product="default">Šios paslaugos dirba už jus, kad išplėstu jūsų telefono galimybes. Duomenys bus naudojami pagal „Cyanogen\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privatumo politika</string>
   <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatiškai siunčiant diagnostikos ir naudojimo duomenis „Cyanogen“. Ši informacija negali būti naudojama jūsų identifikavimui, pateikti duomenys padės komandoms dirbančioms prie akumuliatoriaus veikimo laiko, programų našumo ir naujų <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkcijų.</string>
   <string name="services_apply_theme">Taikyti <xliff:g id="name" example="Material">%s</xliff:g> temą</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> įgalina unikalias piktogramas, ekrano fonus ir šriftus.</string>
   <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
   <string name="services_use_secure_sms">Naudoti saugius SMS</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, kad užšifruoti SMS pokalbius su kitais vartotojais, naudojančiais saugius SMS <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> įrenginyje.</string>
   <string name="setup_unlock">Atrakinti</string>
   <string name="setup_device_locked">Šis įrenginys buvo užrakintas naudotojo.</string>
   <string name="setup_require_cyanogen_label"><b>Reikalauti jūsų „Cyanogen“ OS paskyros slaptažodžio</b> , kad būtų galima naudotis įrenginiu net ir po gamyklinių nustatymų iš naujo.</string>
@@ -71,6 +73,8 @@
   <string name="settings_fingerprint_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
   <string name="settings_fingerprint_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
   <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>
+  <string name="fingerprint_setup_summary">Norint naudotis pirštų atspaudų jutikliu, kad atrakinti ekraną, jums reikia:</string>
+  <string name="fingerprint_setup_backup_lock_method">Nustatyti antrinį atrakinimo metodą</string>
   <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
   <string name="fingerprint_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
 </resources>
