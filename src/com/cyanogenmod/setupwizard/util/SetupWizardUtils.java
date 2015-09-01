@@ -30,6 +30,7 @@ import android.os.IBinder;
 import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.service.persistentdata.PersistentDataBlockManager;
 import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
@@ -140,6 +141,14 @@ public class SetupWizardUtils {
             }
         }
         return false;
+    }
+
+    public static boolean frpEnabled(Context context) {
+        final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
+                context.getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
+        return pdbManager != null
+                && pdbManager.getDataBlockSize() > 0
+                && !pdbManager.getOemUnlockEnabled();
     }
 
     public static boolean hasKillSwitch() {

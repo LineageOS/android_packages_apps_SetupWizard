@@ -13,7 +13,7 @@ public class FinishSetupReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (SetupWizardUtils.isDeviceLocked()) {
+        if (SetupWizardUtils.isDeviceLocked() || SetupWizardUtils.frpEnabled(context)) {
             return;
         }
         Settings.Global.putInt(context.getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
