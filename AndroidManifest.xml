@@ -84,7 +84,7 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
 
-            <intent-filter android:priority="11">
+            <intent-filter android:priority="9">
 
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
