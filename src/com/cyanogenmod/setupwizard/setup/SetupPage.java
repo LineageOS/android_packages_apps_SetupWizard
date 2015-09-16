@@ -74,6 +74,7 @@ public abstract class SetupPage implements Page {
 
     @Override
     public void doLoadAction(FragmentManager fragmentManager, int action) {
+        android.util.Log.i("SetupPage", "load page: " + getKey());
         Fragment fragment = getFragment(fragmentManager, action);
         if (action == Page.ACTION_NEXT) {
             SetupStats.addEvent(SetupStats.Categories.BUTTON_CLICK,
