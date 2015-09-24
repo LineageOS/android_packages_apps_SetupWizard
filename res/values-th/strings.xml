@@ -59,13 +59,22 @@
   <string name="services_explanation" product="default">บริการเหล่านี้คุณสามารถเพิ่มความสามารถของโทรศัพท์ของคุณได้ ข้อมูลจะถูกใช้ตาม Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g></string>
   <string name="services_privacy_policy">นโยบายความเป็นส่วนตัว</string>
   <string name="services_help_improve_cm">ช่วยปรับปรุง <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ด้วยการส่งข้อมูลการวินิจฉัยและข้อมูลการใช้ให้กับ Cyanogen โดยอัตโนมัติ ข้อมูลนี้จะไม่สามารถนำไปใช้เพื่อระบุตัวตนของคุณและให้การช่วยเหลือทีมที่กำลังทำงานเกี่ยวกับช่วงอายุของแบตเตอร์รี่ ประสิทธิภาพการทำงานของแอพ และคุณสมบัติ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ใหม่</string>
   <string name="services_apply_theme">ใช้งานรูปแบบ  <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>  กำลังเปิดใช้งาน ไอคอน,ภาพพื้นหลัง และฟ้อนต์</string>
   <string name="services_os_nav_keys_label"><b>ใช้แถบนำทาง</b> แทนการใช้ปุ่มบนอุปกรณ์</string>
   <string name="services_use_secure_sms">ใช้ SMS แบบเข้ารหัส</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> เพื่อเข้ารหัสการสนทนาผ่าน SMS กับผู้ใช้คนอื่น ๆ โดยใช้ SMS แบบที่มีการเข้ารหัสบนอุปกรณ์ที่มี <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ติดตั้ง</string>
   <string name="setup_unlock">ปลดล็อก</string>
   <string name="setup_device_locked">อุปกรณ์นี้ถูกล็อคโดยผู้ใช้</string>
   <string name="setup_require_cyanogen_label"><b>กรุณาใส่รหัสผ่านบัญชี Cyanogen OS</b> แม้ว่าจะทำการคืนค่าโรงงานไปแล้วก็ตาม.</string>
   <string name="setup_device_locked_instructions"><i>เพื่อปิด/เปิดความสามารถนี้ กรุณาไปที่ การตั้งค่า &gt; ความปลอดภัย</i></string>
   <string name="setup_warning_skip_anyway">ถ้าหากไม่มีบัญชี Cyanogen OS แล้วคุณจะไม่สามารถ:\n\n ปรับเปลี่ยน ไอคอน,ภาพหน้าจอและอื่นๆผ่านแอปชุดรูปแบบ\n\nค้นหาและลบข้อมูลระยะไกลหากอุปกรณ์สูญหาย</string>
+  <string name="settings_fingerprint_setup_title">เลือกประเภทการล็อคหน้าจอสำรอง</string>
+  <string name="settings_fingerprint_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
+  <string name="fingerprint_setup_title">การตั้งค่าลายนิ้วมือ</string>
+  <string name="fingerprint_setup_summary">ในการใช้เซนเซอร์ลายนิ้วมือเพื่อปลดล็อคหน้าจอ คุณต้อง:</string>
+  <string name="fingerprint_setup_backup_lock_method">กำหนดวิธีปลดล็อคสำรอง</string>
+  <string name="fingerprint_setup_add_fingerprint">เพิ่มลายนิ้วมือของคุณ</string>
+  <string name="fingerprint_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
 </resources>
