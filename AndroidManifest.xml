@@ -49,6 +49,8 @@
     <uses-permission android:name="cyanogenmod.permission.LEGALESE" />
     <uses-permission android:name="com.cyngn.stats.SEND_ANALYTICS" />
     <uses-permission android:name="com.cyanogen.permission.REQUEST_KILL_SWITCH_OP" />
+    <uses-permission android:name="cyanogenmod.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="cyanogenmod.permission.WRITE_SECURE_SETTINGS"/>
 
     <permission
         android:name="cyanogenmod.permission.PROTECTED_APP"
