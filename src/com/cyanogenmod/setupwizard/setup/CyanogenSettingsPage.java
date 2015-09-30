@@ -54,6 +54,8 @@ import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
 
+import cyanogenmod.providers.CMSettings;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
@@ -169,8 +171,9 @@ public class CyanogenSettingsPage extends SetupPage {
         Bundle privacyData = getData();
         if (privacyData != null
                 && privacyData.containsKey(KEY_SEND_METRICS)) {
-            Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.STATS_COLLECTION,
-                    privacyData.getBoolean(KEY_SEND_METRICS) ? 1 : 0);
+            CMSettings.Secure.putInt(mContext.getContentResolver(),
+                    CMSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
+                            ? 1 : 0);
         }
     }
 
