@@ -54,6 +54,8 @@ import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
 
+import cyanogenmod.providers.CMSettings;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
@@ -105,8 +107,8 @@ public class CyanogenSettingsPage extends SetupPage {
         final int defaultBrightness = context.getResources().getInteger(
                 com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
 
-        Settings.Secure.putInt(context.getContentResolver(),
-                Settings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        CMSettings.Secure.putInt(context.getContentResolver(),
+                CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
         final CMHardwareManager hardware = CMHardwareManager.getInstance(context);
         hardware.set(CMHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
@@ -114,18 +116,18 @@ public class CyanogenSettingsPage extends SetupPage {
         SharedPreferences.Editor editor = prefs.edit();
 
         if (enabled) {
-            int currentBrightness = Settings.Secure.getInt(context.getContentResolver(),
-                    Settings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
+            int currentBrightness = CMSettings.Secure.getInt(context.getContentResolver(),
+                    CMSettings.Secure.BUTTON_BRIGHTNESS, defaultBrightness);
             if (!prefs.contains("pre_navbar_button_backlight")) {
                 editor.putInt("pre_navbar_button_backlight", currentBrightness);
             }
-            Settings.Secure.putInt(context.getContentResolver(),
-                    Settings.Secure.BUTTON_BRIGHTNESS, 0);
+            CMSettings.Secure.putInt(context.getContentResolver(),
+                    CMSettings.Secure.BUTTON_BRIGHTNESS, 0);
         } else {
             int oldBright = prefs.getInt("pre_navbar_button_backlight", -1);
             if (oldBright != -1) {
-                Settings.Secure.putInt(context.getContentResolver(),
-                        Settings.Secure.BUTTON_BRIGHTNESS, oldBright);
+                CMSettings.Secure.putInt(context.getContentResolver(),
+                        CMSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
                 editor.remove("pre_navbar_button_backlight");
             }
         }
@@ -169,8 +171,9 @@ public class CyanogenSettingsPage extends SetupPage {
         Bundle privacyData = getData();
         if (privacyData != null
                 && privacyData.containsKey(KEY_SEND_METRICS)) {
-            Settings.Secure.putInt(mContext.getContentResolver(), Settings.Secure.STATS_COLLECTION,
-                    privacyData.getBoolean(KEY_SEND_METRICS) ? 1 : 0);
+            CMSettings.Secure.putInt(mContext.getContentResolver(),
+                    CMSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
+                            ? 1 : 0);
         }
     }
 
@@ -437,8 +440,8 @@ public class CyanogenSettingsPage extends SetupPage {
         private void updateDisableNavkeysOption() {
             if (!mHideNavKeysRow) {
                 final Bundle myPageBundle = mPage.getData();
-                boolean enabled = Settings.Secure.getInt(getActivity().getContentResolver(),
-                        Settings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+                boolean enabled = CMSettings.Secure.getInt(getActivity().getContentResolver(),
+                        CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
                 boolean checked = myPageBundle.containsKey(KEY_ENABLE_NAV_KEYS) ?
                         myPageBundle.getBoolean(KEY_ENABLE_NAV_KEYS) :
                         enabled;
