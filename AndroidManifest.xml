@@ -80,7 +80,7 @@
                   android:label="@string/product_name"
                   android:launchMode="singleInstance"
                   android:excludeFromRecents="true"
-                  android:configChanges="themeChange|mcc|mnc"
+                  android:configChanges="mcc|mnc"
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
 
