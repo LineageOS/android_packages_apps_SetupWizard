@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">معالج الإعداد</string>
   <string name="next">التالي</string>
   <string name="skip">تخطي</string>
   <string name="start">البداية</string>
