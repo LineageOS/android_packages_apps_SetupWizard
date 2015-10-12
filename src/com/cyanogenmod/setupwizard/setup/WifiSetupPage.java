@@ -152,6 +152,7 @@ public class WifiSetupPage extends SetupPage {
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
+        Log.d("------------ED--------------", "resultCode="+resultCode+" requestCode="+requestCode);
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_WIFI) {
             if (resultCode == Activity.RESULT_CANCELED) {
                 SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
