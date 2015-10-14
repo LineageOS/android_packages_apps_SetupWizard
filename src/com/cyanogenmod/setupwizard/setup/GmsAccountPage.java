@@ -73,12 +73,12 @@ public class GmsAccountPage extends SetupPage {
                                 Settings.Secure.BACKUP_ENABLED, 0) == 1);
             }
         };
-        Cursor settingsCursor = res.query(Settings.Secure.CONTENT_URI, null,
-                "(" + Settings.System.NAME + "=? OR " + Settings.System.NAME + "=?)",
-                new String[]{Settings.Secure.BACKUP_AUTO_RESTORE, Settings.Secure.BACKUP_ENABLED},
-                null);
-        mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
-        mContentQueryMap.addObserver(mSettingsObserver);
+        //Cursor settingsCursor = res.query(Settings.Secure.CONTENT_URI, null,
+        //        "(" + Settings.System.NAME + "=? OR " + Settings.System.NAME + "=?)",
+        //        new String[]{Settings.Secure.BACKUP_AUTO_RESTORE, Settings.Secure.BACKUP_ENABLED},
+        //        null);
+        //mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
+        //mContentQueryMap.addObserver(mSettingsObserver);
     }
 
     @Override

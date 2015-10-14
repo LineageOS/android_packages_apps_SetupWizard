@@ -104,7 +104,7 @@ public class FingerprintSetupPage extends SetupPage {
             intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
             intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
             intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
-            intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);
+            /*intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);*/
             intent.putExtra(SetupWizardApp.EXTRA_TITLE,
                     getString(R.string.settings_fingerprint_setup_title));
             intent.putExtra(SetupWizardApp.EXTRA_DETAILS,
