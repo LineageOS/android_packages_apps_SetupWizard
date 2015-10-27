@@ -16,7 +16,7 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
-import com.android.internal.R;
+import com.cyanogenmod.setupwizard.R;
 
 import android.annotation.Widget;
 import android.content.Context;
@@ -98,7 +98,7 @@ public class LocalePicker extends LinearLayout {
     /**
      * The number of items show in the selector wheel.
      */
-    private static int SELECTOR_WHEEL_ITEM_COUNT = 3;
+    private static int sSelectorWheelItemCount = 3;
 
     /**
      * The default update interval during long press.
@@ -108,7 +108,7 @@ public class LocalePicker extends LinearLayout {
     /**
      * The index of the middle selector item.
      */
-    private static int SELECTOR_MIDDLE_ITEM_INDEX = SELECTOR_WHEEL_ITEM_COUNT / 2;
+    private static int sSelectorMiddleItemIndex = sSelectorWheelItemCount / 2;
 
     /**
      * The coefficient by which to adjust (divide) the max fling velocity.
@@ -144,7 +144,7 @@ public class LocalePicker extends LinearLayout {
      * The resource id for the default layout.
      */
     private static final int DEFAULT_LAYOUT_RESOURCE_ID =
-            com.cyanogenmod.setupwizard.R.layout.locale_picker;
+            R.layout.locale_picker;
 
     /**
      * Constant for unspecified size.
@@ -558,7 +558,7 @@ public class LocalePicker extends LinearLayout {
      * @param attrs A collection of attributes.
      */
     public LocalePicker(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.numberPickerStyle);
+        this(context, attrs, R.attr.localePickerStyle);
     }
 
     /**
@@ -570,44 +570,48 @@ public class LocalePicker extends LinearLayout {
      */
     public LocalePicker(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        SELECTOR_WHEEL_ITEM_COUNT = context.getResources().getInteger(com.cyanogenmod.setupwizard.R.integer.local_picker_items);
-        SELECTOR_MIDDLE_ITEM_INDEX = context.getResources().getInteger(com.cyanogenmod.setupwizard.R.integer.local_picker_items)/2;
-        mSelectorIndices= new int[SELECTOR_WHEEL_ITEM_COUNT];
+        sSelectorWheelItemCount = context.getResources().getInteger(R.integer.local_picker_items);
+        sSelectorMiddleItemIndex = context.getResources().getInteger(R.integer.local_picker_items)/2;
+        mSelectorIndices= new int[sSelectorWheelItemCount];
         // process style attributes
         TypedArray attributesArray = context.obtainStyledAttributes(
-                attrs, R.styleable.NumberPicker, defStyle, 0);
+                attrs, R.styleable.LocalePicker, defStyle, 0);
         final int layoutResId = attributesArray.getResourceId(
-                R.styleable.NumberPicker_internalLayout, DEFAULT_LAYOUT_RESOURCE_ID);
+                R.styleable.LocalePicker_internalLayout, DEFAULT_LAYOUT_RESOURCE_ID);
 
-        mHasSelectorWheel = (layoutResId != DEFAULT_LAYOUT_RESOURCE_ID);
+        mHasSelectorWheel = true;
 
-        mSolidColor = attributesArray.getColor(R.styleable.NumberPicker_solidColor, 0);
+        mSolidColor = attributesArray.getColor(R.styleable.LocalePicker_solidColor, 0);
 
-        mSelectionDivider = context.getDrawable(com.cyanogenmod.setupwizard.R.drawable.divider);
+        mSelectionDivider = attributesArray.getDrawable(R.styleable.LocalePicker_selectionDivider);
 
-        mSelectionDividerHeight = UNSCALED_DEFAULT_SELECTION_DIVIDER_HEIGHT;
+        final int defSelectionDividerHeight = (int) TypedValue.applyDimension(
+                TypedValue.COMPLEX_UNIT_DIP, UNSCALED_DEFAULT_SELECTION_DIVIDER_HEIGHT,
+                getResources().getDisplayMetrics());
+        mSelectionDividerHeight = attributesArray.getDimensionPixelSize(
+                R.styleable.LocalePicker_selectionDividerHeight, defSelectionDividerHeight);
 
         final int defSelectionDividerDistance = (int) TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP, UNSCALED_DEFAULT_SELECTION_DIVIDERS_DISTANCE,
                 getResources().getDisplayMetrics());
         mSelectionDividersDistance = attributesArray.getDimensionPixelSize(
-                R.styleable.NumberPicker_selectionDividersDistance, defSelectionDividerDistance);
+                R.styleable.LocalePicker_selectionDividersDistance, defSelectionDividerDistance);
 
         mMinHeight = attributesArray.getDimensionPixelSize(
-                R.styleable.NumberPicker_internalMinHeight, SIZE_UNSPECIFIED);
+                R.styleable.LocalePicker_internalMinHeight, SIZE_UNSPECIFIED);
 
         mMaxHeight = attributesArray.getDimensionPixelSize(
-                R.styleable.NumberPicker_internalMaxHeight, SIZE_UNSPECIFIED);
+                R.styleable.LocalePicker_internalMaxHeight, SIZE_UNSPECIFIED);
         if (mMinHeight != SIZE_UNSPECIFIED && mMaxHeight != SIZE_UNSPECIFIED
                 && mMinHeight > mMaxHeight) {
             throw new IllegalArgumentException("minHeight > maxHeight");
         }
 
         mMinWidth = attributesArray.getDimensionPixelSize(
-                R.styleable.NumberPicker_internalMinWidth, SIZE_UNSPECIFIED);
+                R.styleable.LocalePicker_internalMinWidth, SIZE_UNSPECIFIED);
 
         mMaxWidth = attributesArray.getDimensionPixelSize(
-                R.styleable.NumberPicker_internalMaxWidth, SIZE_UNSPECIFIED);
+                R.styleable.LocalePicker_internalMaxWidth, SIZE_UNSPECIFIED);
         if (mMinWidth != SIZE_UNSPECIFIED && mMaxWidth != SIZE_UNSPECIFIED
                 && mMinWidth > mMaxWidth) {
             throw new IllegalArgumentException("minWidth > maxWidth");
@@ -616,7 +620,7 @@ public class LocalePicker extends LinearLayout {
         mComputeMaxWidth = (mMaxWidth == SIZE_UNSPECIFIED);
 
         mVirtualButtonPressedDrawable = attributesArray.getDrawable(
-                R.styleable.NumberPicker_virtualButtonPressedDrawable);
+                R.styleable.LocalePicker_virtualButtonPressedDrawable);
 
         attributesArray.recycle();
 
@@ -637,7 +641,7 @@ public class LocalePicker extends LinearLayout {
             public void onClick(View v) {
                 hideSoftInput();
                 mInputText.clearFocus();
-                if (v.getId() == R.id.increment) {
+                if (v.getId() == R.id.lp__increment) {
                     changeValueByOne(true);
                 } else {
                     changeValueByOne(false);
@@ -649,7 +653,7 @@ public class LocalePicker extends LinearLayout {
             public boolean onLongClick(View v) {
                 hideSoftInput();
                 mInputText.clearFocus();
-                if (v.getId() == R.id.increment) {
+                if (v.getId() == R.id.lp__increment) {
                     postChangeCurrentByOneFromLongPress(true, 0);
                 } else {
                     postChangeCurrentByOneFromLongPress(false, 0);
@@ -660,7 +664,7 @@ public class LocalePicker extends LinearLayout {
 
         // increment button
         if (!mHasSelectorWheel) {
-            mIncrementButton = (ImageButton) findViewById(R.id.increment);
+            mIncrementButton = (ImageButton) findViewById(R.id.lp__increment);
             mIncrementButton.setOnClickListener(onClickListener);
             mIncrementButton.setOnLongClickListener(onLongClickListener);
         } else {
@@ -669,7 +673,7 @@ public class LocalePicker extends LinearLayout {
 
         // decrement button
         if (!mHasSelectorWheel) {
-            mDecrementButton = (ImageButton) findViewById(R.id.decrement);
+            mDecrementButton = (ImageButton) findViewById(R.id.lp__decrement);
             mDecrementButton.setOnClickListener(onClickListener);
             mDecrementButton.setOnLongClickListener(onLongClickListener);
         } else {
@@ -677,7 +681,7 @@ public class LocalePicker extends LinearLayout {
         }
 
         // input text
-        mInputText = (EditText) findViewById(R.id.numberpicker_input);
+        mInputText = (EditText) findViewById(R.id.localepicker_input);
         mInputText.setOnFocusChangeListener(new OnFocusChangeListener() {
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
@@ -903,7 +907,7 @@ public class LocalePicker extends LinearLayout {
                             showSoftInput();
                         } else {
                             int selectorIndexOffset = (eventY / mSelectorElementHeight)
-                                    - SELECTOR_MIDDLE_ITEM_INDEX;
+                                    - sSelectorMiddleItemIndex;
                             if (selectorIndexOffset > 0) {
                                 changeValueByOne(true);
                                 mPressedStateHelper.buttonTapped(
@@ -1075,12 +1079,12 @@ public class LocalePicker extends LinearLayout {
     public void scrollBy(int x, int y) {
         int[] selectorIndices = mSelectorIndices;
         if (!mWrapSelectorWheel && y > 0
-                && selectorIndices[SELECTOR_MIDDLE_ITEM_INDEX] <= mMinValue) {
+                && selectorIndices[sSelectorMiddleItemIndex] <= mMinValue) {
             mCurrentScrollOffset = mInitialScrollOffset;
             return;
         }
         if (!mWrapSelectorWheel && y < 0
-                && selectorIndices[SELECTOR_MIDDLE_ITEM_INDEX] >= mMaxValue) {
+                && selectorIndices[sSelectorMiddleItemIndex] >= mMaxValue) {
             mCurrentScrollOffset = mInitialScrollOffset;
             return;
         }
@@ -1088,16 +1092,16 @@ public class LocalePicker extends LinearLayout {
         while (mCurrentScrollOffset - mInitialScrollOffset > mSelectorTextGapHeight) {
             mCurrentScrollOffset -= mSelectorElementHeight;
             decrementSelectorIndices(selectorIndices);
-            setValueInternal(selectorIndices[SELECTOR_MIDDLE_ITEM_INDEX], true);
-            if (!mWrapSelectorWheel && selectorIndices[SELECTOR_MIDDLE_ITEM_INDEX] <= mMinValue) {
+            setValueInternal(selectorIndices[sSelectorMiddleItemIndex], true);
+            if (!mWrapSelectorWheel && selectorIndices[sSelectorMiddleItemIndex] <= mMinValue) {
                 mCurrentScrollOffset = mInitialScrollOffset;
             }
         }
         while (mCurrentScrollOffset - mInitialScrollOffset < -mSelectorTextGapHeight) {
             mCurrentScrollOffset += mSelectorElementHeight;
             incrementSelectorIndices(selectorIndices);
-            setValueInternal(selectorIndices[SELECTOR_MIDDLE_ITEM_INDEX], true);
-            if (!mWrapSelectorWheel && selectorIndices[SELECTOR_MIDDLE_ITEM_INDEX] >= mMaxValue) {
+            setValueInternal(selectorIndices[sSelectorMiddleItemIndex], true);
+            if (!mWrapSelectorWheel && selectorIndices[sSelectorMiddleItemIndex] >= mMaxValue) {
                 mCurrentScrollOffset = mInitialScrollOffset;
             }
         }
@@ -1468,7 +1472,7 @@ public class LocalePicker extends LinearLayout {
             // item. Otherwise, if the user starts editing the text via the
             // IME he may see a dimmed version of the old value intermixed
             // with the new one.
-            if (i != SELECTOR_MIDDLE_ITEM_INDEX || mInputText.getVisibility() != VISIBLE) {
+            if (i != sSelectorMiddleItemIndex || mInputText.getVisibility() != VISIBLE) {
                 canvas.drawText(scrollSelectorValue, x, y, mSelectorWheelPaint);
             }
             y += mSelectorElementHeight;
@@ -1564,7 +1568,7 @@ public class LocalePicker extends LinearLayout {
         int[] selectorIndices = mSelectorIndices;
         int current = getValue();
         for (int i = 0; i < mSelectorIndices.length; i++) {
-            int selectorIndex = current + (i - SELECTOR_MIDDLE_ITEM_INDEX);
+            int selectorIndex = current + (i - sSelectorMiddleItemIndex);
             if (mWrapSelectorWheel) {
                 selectorIndex = getWrappedSelectorIndex(selectorIndex);
             }
@@ -1641,7 +1645,7 @@ public class LocalePicker extends LinearLayout {
         // mInputText
         int editTextTextPosition = mInputText.getBaseline() + mInputText.getTop();
         mInitialScrollOffset = editTextTextPosition
-                - (mSelectorElementHeight * SELECTOR_MIDDLE_ITEM_INDEX);
+                - (mSelectorElementHeight * sSelectorMiddleItemIndex);
         mCurrentScrollOffset = mInitialScrollOffset;
         updateInputTextView();
     }

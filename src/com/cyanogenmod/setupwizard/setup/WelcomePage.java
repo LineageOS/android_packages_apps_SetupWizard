@@ -174,6 +174,7 @@ public class WelcomePage extends SetupPage {
         private final Runnable mUpdateLocale = new Runnable() {
             public void run() {
                 if (mCurrentLocale != null) {
+                    mLanguagePicker.setEnabled(false);
                     com.android.internal.app.LocalePicker.updateLocale(mCurrentLocale);
                 }
             }
@@ -224,6 +225,7 @@ public class WelcomePage extends SetupPage {
         }
 
         private void onLocaleChanged(Locale paramLocale) {
+            mLanguagePicker.setEnabled(true);
             Resources localResources = getActivity().getResources();
             Configuration localConfiguration1 = localResources.getConfiguration();
             Configuration localConfiguration2 = new Configuration();

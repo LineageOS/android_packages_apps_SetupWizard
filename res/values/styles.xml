@@ -26,6 +26,7 @@
         <item name="android:textColorLink">@color/accent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowAnimationStyle">@style/ActivityAnimations</item>
+        <item name="localePickerStyle">@style/LocaleWidget.Material.LocalePicker</item>
     </style>
 
     <style name="ActivityAnimations" parent="@android:style/Animation.Activity">
@@ -96,5 +97,25 @@
         <item name="android:paddingEnd">34dp</item>
         <item name="android:gravity">center_vertical|end</item>
         <item name="android:drawableRight">@drawable/ic_chevron_right_dark</item>
+    </style>
+
+    <style name="LocaleWidget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+    <style name="LocaleWidget.LocalePicker">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+    </style>
+
+    <style name="LocaleWidget.Material.LocalePicker" parent="LocaleWidget.LocalePicker">
+        <item name="solidColor">@android:color/transparent</item>
+        <item name="selectionDivider">@drawable/divider</item>
+        <item name="selectionDividerHeight">1dip</item>
+        <item name="internalLayout">@layout/locale_picker</item>
+        <item name="internalMinWidth">64dip</item>
+        <item name="internalMaxHeight">180dip</item>
+        <item name="virtualButtonPressedDrawable">@null</item>
     </style>
 </resources>
