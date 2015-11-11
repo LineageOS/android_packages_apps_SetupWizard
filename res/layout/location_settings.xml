@@ -118,7 +118,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/gps"
+                    android:id="@+id/battery_saving"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                     android:clickable="true">
 
                     <CheckBox
-                        android:id="@+id/gps_checkbox"
+                        android:id="@+id/battery_saving_checkbox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
@@ -138,7 +138,7 @@
 
 
                     <TextView
-                        android:id="@+id/gps_summary"
+                        android:id="@+id/battery_saving_summary"
                         android:layout_width="0px"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -148,7 +148,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
-                        android:text="@string/location_gps"
+                        android:text="@string/location_battery_saving"
                         android:maxLines="5" />
 
                 </LinearLayout>
