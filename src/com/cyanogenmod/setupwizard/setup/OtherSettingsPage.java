@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,12 +19,10 @@ package com.cyanogenmod.setupwizard.setup;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.backup.IBackupManager;
-import android.content.ComponentName;
-import android.content.ContentQueryMap;
+import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -44,11 +42,7 @@ import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
-
-import java.util.Observable;
-import java.util.Observer;
 
 public class OtherSettingsPage extends SetupPage {
 
@@ -92,22 +86,25 @@ public class OtherSettingsPage extends SetupPage {
 
         private View mBackupRow;
         private View mLocationRow;
-        private View mGpsRow;
+        private View mBatteryRow;
         private View mNetworkRow;
         private CheckBox mBackup;
         private CheckBox mNetwork;
-        private CheckBox mGps;
+        private CheckBox mBattery;
         private CheckBox mLocationAccess;
 
         private ContentResolver mContentResolver;
 
         private IBackupManager mBackupManager;
 
-        // These provide support for receiving notification when Location Manager settings change.
-        // This is necessary because the Network Location Provider can change settings
-        // if the user does not confirm enabling the provider.
-        private ContentQueryMap mContentQueryMap;
-        private Observer mSettingsObserver;
+        /** Broadcast intent action when the location mode is about to change. */
+        private static final String MODE_CHANGING_ACTION =
+                "com.android.settings.location.MODE_CHANGING";
+        private static final String CURRENT_MODE_KEY = "CURRENT_MODE";
+        private static final String NEW_MODE_KEY = "NEW_MODE";
+
+        private int mCurrentMode = Settings.Secure.LOCATION_MODE_OFF;
+        private BroadcastReceiver mReceiver;
 
 
         private View.OnClickListener mBackupClickListener = new View.OnClickListener() {
@@ -124,19 +121,17 @@ public class OtherSettingsPage extends SetupPage {
             }
         };
 
-        private View.OnClickListener mGpsClickListener = new View.OnClickListener() {
+        private View.OnClickListener mBatteryClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Settings.Secure.setLocationProviderEnabled(mContentResolver,
-                        LocationManager.GPS_PROVIDER, !mGps.isChecked());
+                onToggleBatterySaving(!mBattery.isChecked());
             }
         };
 
         private View.OnClickListener mNetworkClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Settings.Secure.setLocationProviderEnabled(mContentResolver,
-                        LocationManager.NETWORK_PROVIDER, !mNetwork.isChecked());
+                onToggleNetwork(!mNetwork.isChecked());
             }
         };
 
@@ -181,9 +176,9 @@ public class OtherSettingsPage extends SetupPage {
             mLocationRow = mRootView.findViewById(R.id.location);
             mLocationRow.setOnClickListener(mLocationClickListener);
             mLocationAccess = (CheckBox) mRootView.findViewById(R.id.location_checkbox);
-            mGpsRow = mRootView.findViewById(R.id.gps);
-            mGpsRow.setOnClickListener(mGpsClickListener);
-            mGps = (CheckBox) mRootView.findViewById(R.id.gps_checkbox);
+            mBatteryRow = mRootView.findViewById(R.id.battery_saving);
+            mBatteryRow.setOnClickListener(mBatteryClickListener);
+            mBattery = (CheckBox) mRootView.findViewById(R.id.battery_saving_checkbox);
             mNetworkRow = mRootView.findViewById(R.id.network);
             mNetworkRow.setOnClickListener(mNetworkClickListener);
             mNetwork = (CheckBox) mRootView.findViewById(R.id.network_checkbox);
@@ -205,40 +200,22 @@ public class OtherSettingsPage extends SetupPage {
         @Override
         public void onResume() {
             super.onResume();
-            updateLocationToggles();
+            refreshLocationMode();
             updateBackupToggle();
-            if (mSettingsObserver == null) {
-                mSettingsObserver = new Observer() {
-                    public void update(Observable o, Object arg) {
-                        updateLocationToggles();
-                        updateBackupToggle();
+        }
+
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            mReceiver = new BroadcastReceiver() {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    if (Log.isLoggable(TAG, Log.DEBUG)) {
+                        Log.d(TAG, "Received location mode change intent: " + intent);
                     }
-                };
-            }
-
-            mContentQueryMap.addObserver(mSettingsObserver);
-        }
-
-        @Override
-        public void onStart() {
-            super.onStart();
-            // listen for Location Manager settings changes
-            Cursor settingsCursor = getActivity().getContentResolver()
-                    .query(Settings.Secure.CONTENT_URI, null,
-                    "(" + Settings.System.NAME + "=?)",
-                    new String[]{Settings.Secure.LOCATION_PROVIDERS_ALLOWED},
-                    null);
-            mContentQueryMap =
-                    new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
-        }
-
-        @Override
-        public void onStop() {
-            super.onStop();
-            if (mSettingsObserver != null) {
-                mContentQueryMap.deleteObserver(mSettingsObserver);
-            }
-            mContentQueryMap.close();
+                    refreshLocationMode();
+                }
+            };
         }
 
         private boolean isBackupRestoreEnabled() {
@@ -263,40 +240,108 @@ public class OtherSettingsPage extends SetupPage {
             updateBackupToggle();
         }
 
-        private void updateLocationToggles() {
-            boolean gpsEnabled = Settings.Secure.isLocationProviderEnabled(
-                    mContentResolver, LocationManager.GPS_PROVIDER);
-            boolean networkEnabled = Settings.Secure.isLocationProviderEnabled(
-                    mContentResolver, LocationManager.NETWORK_PROVIDER);
-            mGps.setChecked(gpsEnabled);
-            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
-                    SetupStats.Action.ENABLE_GPS_LOCATION,
-                    SetupStats.Label.CHECKED, String.valueOf(gpsEnabled));
-            mNetwork.setChecked(networkEnabled);
-            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
-                    SetupStats.Action.ENABLE_NETWORK_LOCATION,
-                    SetupStats.Label.CHECKED, String.valueOf(networkEnabled));
-            mLocationAccess.setChecked(gpsEnabled || networkEnabled);
-            mGps.setEnabled(gpsEnabled || networkEnabled);
-            mGpsRow.setEnabled(gpsEnabled || networkEnabled);
-            mNetwork.setEnabled(gpsEnabled || networkEnabled);
-            mNetworkRow.setEnabled(gpsEnabled || networkEnabled);
+        private void setLocationMode(int mode) {
+            Intent intent = new Intent(MODE_CHANGING_ACTION);
+            intent.putExtra(CURRENT_MODE_KEY, mCurrentMode);
+            intent.putExtra(NEW_MODE_KEY, mode);
+            getActivity().sendBroadcast(intent, android.Manifest.permission.WRITE_SECURE_SETTINGS);
+            Settings.Secure.putInt(mContentResolver, Settings.Secure.LOCATION_MODE, mode);
+            refreshLocationMode();
+        }
+
+        private void refreshLocationMode() {
+            int mode = Settings.Secure.getInt(mContentResolver, Settings.Secure.LOCATION_MODE,
+                    Settings.Secure.LOCATION_MODE_OFF);
+
+            if (mCurrentMode != mode) {
+                mCurrentMode = mode;
+                if (Log.isLoggable(TAG, Log.INFO)) {
+                    Log.i(TAG, "Location mode has been changed");
+                }
+                updateLocationToggles(mode);
+            }
+        }
+
+        private void updateLocationToggles(int mode) {
+            switch (mode) {
+                case Settings.Secure.LOCATION_MODE_OFF:
+                    mLocationAccess.setChecked(false);
+                    mBattery.setChecked(false);
+                    mBattery.setEnabled(false);
+                    mBatteryRow.setEnabled(false);
+                    mNetwork.setChecked(false);
+                    mNetwork.setEnabled(false);
+                    mNetworkRow.setEnabled(false);
+                    break;
+                case Settings.Secure.LOCATION_MODE_SENSORS_ONLY:
+                    mLocationAccess.setChecked(true);
+                    mBattery.setChecked(false);
+                    mBattery.setEnabled(true);
+                    mBatteryRow.setEnabled(true);
+                    mNetwork.setChecked(false);
+                    mNetwork.setEnabled(true);
+                    mNetworkRow.setEnabled(true);
+                    break;
+                case Settings.Secure.LOCATION_MODE_BATTERY_SAVING:
+                    mLocationAccess.setChecked(true);
+                    mBattery.setChecked(true);
+                    mNetwork.setChecked(false);
+                    mNetwork.setEnabled(false);
+                    mNetworkRow.setEnabled(false);
+                    break;
+                case Settings.Secure.LOCATION_MODE_HIGH_ACCURACY:
+                    mLocationAccess.setChecked(true);
+                    mNetwork.setChecked(true);
+                    mBattery.setChecked(false);
+                    mBattery.setEnabled(false);
+                    mBatteryRow.setEnabled(false);
+                    break;
+                default:
+                    mLocationAccess.setChecked(false);
+                    mBattery.setChecked(false);
+                    mBattery.setEnabled(false);
+                    mBatteryRow.setEnabled(false);
+                    mNetwork.setChecked(false);
+                    mNetwork.setEnabled(false);
+                    mNetworkRow.setEnabled(false);
+                    break;
+            }
         }
 
         private void onToggleLocationAccess(boolean checked) {
             SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
                     SetupStats.Action.ENABLE_LOCATION,
                     SetupStats.Label.CHECKED, String.valueOf(checked));
-            Settings.Secure.setLocationProviderEnabled(mContentResolver,
-                    LocationManager.GPS_PROVIDER, checked);
-            mGps.setEnabled(checked);
-            mGpsRow.setEnabled(checked);
-            Settings.Secure.setLocationProviderEnabled(mContentResolver,
-                    LocationManager.NETWORK_PROVIDER, checked);
-            mNetwork.setEnabled(checked);
-            mNetworkRow.setEnabled(checked);
-            updateLocationToggles();
+
+            if (checked) {
+                setLocationMode(Settings.Secure.LOCATION_MODE_SENSORS_ONLY);
+            } else {
+                setLocationMode(Settings.Secure.LOCATION_MODE_OFF);
+            }
         }
 
+        private void onToggleBatterySaving(boolean checked) {
+            /* SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.ENABLE_BATTERY_SAVING_LOCATION,
+                    SetupStats.Label.CHECKED, String.valueOf(checked)); */
+
+            if (checked) {
+                setLocationMode(Settings.Secure.LOCATION_MODE_BATTERY_SAVING);
+            } else {
+                setLocationMode(Settings.Secure.LOCATION_MODE_SENSORS_ONLY);
+            }
+        }
+
+        private void onToggleNetwork(boolean checked) {
+            SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
+                    SetupStats.Action.ENABLE_NETWORK_LOCATION,
+                    SetupStats.Label.CHECKED, String.valueOf(checked));
+
+            if (checked) {
+                setLocationMode(Settings.Secure.LOCATION_MODE_HIGH_ACCURACY);
+            } else {
+                setLocationMode(Settings.Secure.LOCATION_MODE_SENSORS_ONLY);
+            }
+        }
     }
 }
