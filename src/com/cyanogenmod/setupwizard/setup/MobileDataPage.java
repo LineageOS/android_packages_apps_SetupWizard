@@ -24,6 +24,7 @@ import android.os.Handler;
 import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
+import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
@@ -40,6 +41,8 @@ import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+
+import java.util.List;
 
 public class MobileDataPage extends SetupPage {
 
@@ -122,6 +125,9 @@ public class MobileDataPage extends SetupPage {
             @Override
             public void onClick(View view) {
                 boolean checked = !mEnableMobileData.isChecked();
+                if (SetupWizardUtils.isMultiSimDevice(getActivity())) {
+                    setupDataSubscription();
+                }
                 SetupWizardUtils.setMobileDataEnabled(getActivity(), checked);
                 mEnableMobileData.setChecked(checked);
                 SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
@@ -261,5 +267,18 @@ public class MobileDataPage extends SetupPage {
             return retVal;
         }
 
+        private void setupDataSubscription() {
+            // Set the first subscription we can find as default data subscription
+            // if there is not one already set
+            SubscriptionManager sm = SubscriptionManager.from(getActivity());
+            int dataSubId = SubscriptionManager.getDefaultDataSubId();
+            if (dataSubId == SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
+                List<SubscriptionInfo> subInfoRecords = sm.getActiveSubscriptionInfoList();
+                // If there are no active subscriptions here, something is wrong
+                if (subInfoRecords != null && subInfoRecords.size() > 0) {
+                    sm.setDefaultDataSubId(subInfoRecords.get(0).getSubscriptionId());
+                }
+            }
+        }
     }
 }
