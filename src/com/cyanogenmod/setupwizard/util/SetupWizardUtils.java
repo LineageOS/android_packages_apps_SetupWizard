@@ -280,7 +280,8 @@ public class SetupWizardUtils {
     public static boolean hasFingerprint(Context context) {
         FingerprintManager fingerprintManager = (FingerprintManager)
                 context.getSystemService(Context.FINGERPRINT_SERVICE);
-        return fingerprintManager.isHardwareDetected();
+        // TEMP until settings activity SETUP_FINGERPRINT is back
+        return false; /* fingerprintManager.isHardwareDetected(); */
     }
 
     public static final ComponentName mTvwifisettingsActivity =
