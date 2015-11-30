@@ -23,17 +23,16 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-import com.android.internal.widget.LockPatternUtils;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
-import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.ui.LoadingFragment;
 
 public class FingerprintSetupPage extends SetupPage {
 
     private static final String TAG = "FingerprintSetupPage";
+
+    private LoadingFragment mLoadingFragment;
 
     public FingerprintSetupPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -41,15 +40,15 @@ public class FingerprintSetupPage extends SetupPage {
 
     @Override
     public Fragment getFragment(FragmentManager fragmentManager, int action) {
-        Fragment fragment = fragmentManager.findFragmentByTag(getKey());
-        if (fragment == null) {
+        mLoadingFragment = (LoadingFragment)fragmentManager.findFragmentByTag(getKey());
+        if (mLoadingFragment == null) {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new FingerprintSetupFragment();
-            fragment.setArguments(args);
+            mLoadingFragment = new LoadingFragment();
+            mLoadingFragment.setArguments(args);
         }
-        return fragment;
+        return mLoadingFragment;
     }
 
     @Override
@@ -64,60 +63,49 @@ public class FingerprintSetupPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        return R.string.fingerprint_setup_title;
+        return R.string.loading;
     }
 
     @Override
+    public void doLoadAction(FragmentManager fragmentManager, int action) {
+        super.doLoadAction(fragmentManager, action);
+        launchFingerprintSetup();
+    }
+
+    private void launchFingerprintSetup() {
+        Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_FINGERPRINT);
+        intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+        intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+        ActivityOptions options =
+                ActivityOptions.makeCustomAnimation(mContext,
+                        android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+        SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
+                SetupStats.Label.PAGE,  SetupStats.Label.FINGERPRINT_SETUP);
+        mLoadingFragment.startActivityForResult(intent,
+                SetupWizardApp.REQUEST_CODE_SETUP_FINGERPRINT, options.toBundle());
+    }
+    @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (SetupWizardApp.REQUEST_CODE_SETUP_FINGERPRINT == requestCode) {
-            if (resultCode == Activity.RESULT_OK) {
+            if (resultCode == Activity.RESULT_CANCELED) {
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.FINGERPRINT_SETUP, "canceled");
+                getCallbacks().onPreviousPage();
+            } else if (resultCode == Activity.RESULT_OK) {
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.FINGERPRINT_SETUP, "success");
+                getCallbacks().onNextPage();
+            } else {
+                SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
+                        SetupStats.Action.EXTERNAL_PAGE_RESULT,
+                        SetupStats.Label.FINGERPRINT_SETUP, "skipped");
                 getCallbacks().onNextPage();
             }
         }
         return true;
-    }
-
-    public static class FingerprintSetupFragment extends SetupPageFragment {
-
-        private TextView mSetupFingerprint;
-
-        @Override
-        protected void initializePage() {
-            mSetupFingerprint = (TextView) mRootView.findViewById(R.id.setup_fingerprint);
-            mSetupFingerprint.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    launchFingerprintSetup();
-                }
-            });
-        }
-
-        @Override
-        protected int getLayoutResource() {
-            return R.layout.setup_fingerprint;
-        }
-
-        private void launchFingerprintSetup() {
-            Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_FINGERPRINT);
-            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
-            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-            intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
-            intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
-            /*intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);*/
-            intent.putExtra(SetupWizardApp.EXTRA_TITLE,
-                    getString(R.string.settings_fingerprint_setup_title));
-            intent.putExtra(SetupWizardApp.EXTRA_DETAILS,
-                    getString(R.string.settings_fingerprint_setup_details));
-            ActivityOptions options =
-                    ActivityOptions.makeCustomAnimation(getActivity(),
-                            android.R.anim.fade_in,
-                            android.R.anim.fade_out);
-            SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
-                    SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
-                    SetupStats.Label.PAGE,  SetupStats.Label.FINGERPRINT_SETUP);
-            startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_FINGERPRINT,
-                    options.toBundle());
-        }
     }
 }
