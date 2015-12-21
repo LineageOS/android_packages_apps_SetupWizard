@@ -26,6 +26,7 @@ import android.telephony.TelephonyManager;
 
 import android.util.Log;
 import com.android.internal.telephony.TelephonyIntents;
+import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
@@ -66,7 +67,9 @@ public class CMSetupWizardData extends AbstractSetupData {
         if (SetupWizardUtils.hasGMS(mContext)) {
             pages.add(new GmsAccountPage(mContext, this).setHidden(true));
         }
-        if (!SetupWizardUtils.hasLeanback(mContext)) {
+        if (!SetupWizardUtils.hasLeanback(mContext) &&
+                SetupWizardUtils.isPackageInstalled(mContext,
+                    mContext.getString(R.string.cm_account_package_name))) {
             pages.add(new CyanogenServicesPage(mContext, this).setHidden(true));
         }
         if (SetupWizardUtils.hasFingerprint(mContext) && SetupWizardUtils.isOwner()) {
