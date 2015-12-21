@@ -199,6 +199,16 @@ public class SetupWizardUtils {
         return AccountManager.get(context).getAccountsByType(accountType).length > 0;
     }
 
+    public static boolean isPackageInstalled(Context context, String packageName) {
+        PackageManager pm = context.getPackageManager();
+        try {
+            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
     public static void disableSetupWizard(Context context) {
         disableComponent(context, context.getPackageName(),
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
