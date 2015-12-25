@@ -34,7 +34,7 @@
   <string name="setup_current_time">現在の時刻</string>
   <string name="sim_missing_summary" product="tablet">タブレットでSIMカードが検出されませんでした。SIMカードの挿入方法については、タブレットの付属の説明書をご覧ください。</string>
   <string name="sim_missing_summary" product="default">携帯電話でSIMカードが検出されませんでした。SIMカードの挿入方法については、携帯電話の付属の説明書をご覧ください。</string>
-  <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信用に使用しますか？選択したSIMをタブレットのセットアップに使用しますので、パケット通信料が発生する恐れがあります。</string>
+  <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信用に使用しますか？選択したSIMをタブレットのセットアップに使用するので、パケット通信料が発生する恐れがあります。</string>
   <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信用に使用しますか？選択したSIMを携帯電話のセットアップに使用しますので、パケット通信料が発生する恐れがあります。</string>
   <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
   <string name="backup_data_summary">アプリのデータ、Wi-Fiパスワード、その他の設定をGoogleのサーバーに<b>バックアップする</b></string>
