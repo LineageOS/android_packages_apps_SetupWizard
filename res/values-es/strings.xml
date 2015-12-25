@@ -18,11 +18,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Asistente de configuración</string>
   <string name="next">Siguiente</string>
-  <string name="skip">Saltar</string>
+  <string name="skip">Omitir</string>
   <string name="start">Iniciar</string>
   <string name="ok">Aceptar</string>
   <string name="loading">Un segundo\u2026</string>
-  <string name="setup_complete">Configuración completada</string>
   <string name="setup_welcome">¡Bienvenido/a!</string>
   <string name="setup_wifi">Selecciona una red Wi-Fi</string>
   <string name="setup_sim_missing">Falta la tarjeta SIM</string>
@@ -31,21 +30,19 @@
   <string name="setup_other">Otros servicios</string>
   <string name="setup_datetime">Fecha y hora</string>
   <string name="setup_current_date">Fecha actual</string>
-  <string name="setup_current_time">Hora actual</string>
   <string name="sim_missing_summary" product="tablet">No se ha detectado una tarjeta SIM en el tablet. Para insertar una tarjeta SIM, lee las instrucciones que vienen con el tablet.</string>
   <string name="sim_missing_summary" product="default">No se ha detectado una tarjeta SIM en el teléfono. Para insertar una tarjeta SIM, lee las instrucciones que vienen con el teléfono.</string>
   <string name="choose_data_sim_summary" product="tablet">¿Qué tarjeta SIM quieres utilizar para los datos? La tarjeta SIM seleccionada puede incurrir en cargos de red ya que se utilizará para configurar el tablet.</string>
   <string name="choose_data_sim_summary" product="default">¿Qué tarjeta SIM quieres utilizar para los datos? La tarjeta SIM seleccionada puede incurrir en cargos de red ya que se utilizará para configurar el teléfono.</string>
   <string name="date_time_summary">Configura la zona horaria y ajusta la fecha y hora actuales si es necesario</string>
   <string name="backup_data_summary"><b>Copia de seguridad</b> de los datos de aplicación, las contraseñas Wi-Fi y otros ajustes en los servidores de Google</string>
-  <string name="other_services_summary">Estos servicios hacen a Google trabajar para ti, y puedes activarlos o desactivarlos en cualquier momento. Los datos se utilizarán según la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
+  <string name="other_services_summary">Estos servicios hacen que Google trabajar para ti, y puedes activarlos o desactivarlos en cualquier momento. Los datos se utilizarán según la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
   <string name="location_services_summary">Los servicios de localización permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
   <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y ubicaciones recientes.</string>
   <string name="location_gps" product="tablet"><b>Mejorar la precisión de localización</b> al permitir que las aplicaciones usen el GPS del tablet.</string>
-  <string name="location_gps" product="default"><b>Mejorar la precisión de localización</b> al permitir que las aplicaciones usen el GPS del teléfono.</string>
-  <string name="location_network"><b>Uso de Wi-Fi</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
-  <string name="location_network_telephony"><b>Uso de Wi-Fi y redes móviles</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
-  <string name="location_network_gms"><b>Uso del servicio de localización de Google</b> para ayudar a las aplicaciones a determinar tu ubicación. Esto significa enviar información anónima de la localización a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
+  <string name="location_gps" product="default"><b>La precisión de localización es mejorada</b> al permitir que las aplicaciones usen el GPS del teléfono.</string>
+  <string name="location_network"><b>Uso de Wi-Fi</b> para ayudar a que las aplicaciones determinen tu ubicación.</string>
+  <string name="location_network_telephony"><b>Utiliza Wi-Fi y redes móviles</b> para ayudar a que las aplicaciones determinen tu ubicación.</string>
   <string name="setup_mobile_data">Activar datos móviles</string>
   <string name="setup_mobile_data_no_service">Sin servicio</string>
   <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>
@@ -53,28 +50,19 @@
   <string name="no">No</string>
   <string name="yes">Sí</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Llamada de emergencia</string>
   <string name="setup_services">Características de Cyanogen</string>
   <string name="services_explanation" product="tablet">Estos servicios sirven para extender las capacidades del tablet. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_explanation" product="default">Estos servicios sirven para extender las capacidades del teléfono. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Política de Privacidad</string>
-  <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automáticamente diagnósticos de depuración y uso de datos a Cyanogen. Esta información no puede ser utilizada para identificarte, y sirve para ayudar a mejorar la vida de la batería, el rendimiento de la aplicación y el desarrollo de nuevas características desarrolladas por <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos especiales, fondo de pantalla y fuentes.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> activando iconos especiales, fondos de pantalla y tipos de letra.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
-  <string name="services_use_secure_sms">Usar SMS seguros</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversaciones SMS con otros usuarios utilizando SMS seguros en un dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo ha sido bloqueado por el usuario.</string>
-  <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta Cyanogen OS</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
-  <string name="setup_device_locked_instructions"><i>Para activar o desactivar esta función, ve a Ajustes &gt; Seguridad</i></string>
   <string name="setup_warning_skip_anyway">Sin una cuenta de Cyanogen OS no podrás:\n\nPersonalizar tu teléfono con nuevos iconos, fondos de pantalla y mucho más a través de la aplicación de temas\n\nBorrar tu teléfono localmente o de manera remota si se ha perdido</string>
   <string name="settings_fingerprint_setup_title">Selecciona el tipo de copia de seguridad de pantalla de bloqueo</string>
-  <string name="settings_fingerprint_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
-  <string name="fingerprint_setup_title">Ajustes de huella digital</string>
   <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, necesitarás:</string>
   <string name="fingerprint_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
-  <string name="fingerprint_setup_add_fingerprint">Añade tu huella digital</string>
-  <string name="fingerprint_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
 </resources>
