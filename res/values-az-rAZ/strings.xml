@@ -41,8 +41,6 @@
   <string name="other_services_summary">Bu xidmətlər ilə Google sizin üçün işləməyə başlayar və istədiyiniz vaxt açıb bağlaya bilərsiniz. Verilənlər Google\'un <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'nə uyğun olaraq istifadə ediləcək.</string>
   <string name="location_services_summary">Yer xidmətləri sistem və üçüncü tərəf tətbiqetmələrə təxmini yeriniz kimi məlumatları götürmək və istifadə etmək icazəsi verər. Məsələn, bir tətbiqetmə yaxınlıqdakı əyləncə mərkəzini tapmaq üçün təxmini yerinizdən istifadə edə bilər.</string>
   <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqetmələrə icazə ver.</b> Bu hazırki yerinizi və keçmiş yerlərinizi ehtiva edə bilər.</string>
-  <string name="location_gps" product="tablet"><b>Yer dəqiqliyini təkmilləşdirin</b> tətbiqetmələrə planşetinizdəki GPS\'ni istifadə etmə icazəsi verin.</string>
-  <string name="location_gps" product="default"><b>Yer dəqiqliyini təkmilləşdirin</b> tətbiqetmələrə telefonunuzdakı GPS\'ni istifadə etmə icazəsi verin.</string>
   <string name="location_network"><b>Wi-Fi ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin.</string>
   <string name="location_network_telephony"><b>Wi-Fi və mobil şəbəkələr ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin.</string>
   <string name="location_network_gms"><b>Google\'un yer xidmətləri ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin. Bu heç bir tətbiqetmə işləməzkən belə, adsız yer verilənlərinin Google\'a göndərilməsi deməkdir.</string>

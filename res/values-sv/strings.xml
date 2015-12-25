@@ -41,8 +41,6 @@
   <string name="other_services_summary">Dessa tjänster låter Google arbeta för dig, och du kan sätta på eller stänga av tjänsterna när som helst. Data kommer användas i överensstämmelse med Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Platstjänster låter systemet och tredjepartsappar samla in och använda data såsom din ungefärliga plats. Till exempel så kan en app använda din ungefärliga plats för att hitta närbelägna kaféer.</string>
   <string name="location_access_summary"><b>Tillåt appar som du gett tillåtelse</b> att använda din platsinformation. Detta inkluderar din nuvarande plats och tidigare platser.</string>
-  <string name="location_gps" product="tablet"><b>Förbättra platsnogrannhet</b> genom att tillåta appar att använda GPS:en på din surfplatta.</string>
-  <string name="location_gps" product="default"><b>Förbättra platsnogrannhet</b> genom att tillåta appar att använda GPS:en på din telefon.</string>
   <string name="location_network"><b>Använd Wi-Fi</b> för att hjälpa appar fastställa din position.</string>
   <string name="location_network_telephony"><b>Använd Wi-Fi och mobila nät</b> för att hjälpa appar fastställa din position.</string>
   <string name="location_network_gms"><b>Använd Googles platstjänster</b> för att hjälpa appar fastställa din position. Detta innebär att skicka anonyma platsdata till Google, även om inga appar körs.</string>

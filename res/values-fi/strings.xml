@@ -41,8 +41,7 @@
   <string name="other_services_summary">Tämä ottaa Googlen palvelut käyttöön, ja voit ottaa ne käyttöön tai poistaa käytöstä milloin tahansa. Tietoja käytetään Googlen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
   <string name="location_services_summary">Sijaintipalvelut sallii järjestelmän ja muiden sovellusten kerätä ja käyttää tietoja kuten likimääräinen sijaintisi. Esimerkiksi sovellus voi paikantaa sinut ja etsiä lähistöllä olevia kahviloita.</string>
   <string name="location_access_summary"><b>Salli sovellusten, jotka ovat kysyneet sinulta lupaa</b> käyttää sijaintitietojasi. Tämä saattaa sisältää nykyisen sijaintisi ja aiemmat sijaintisi.</string>
-  <string name="location_gps" product="tablet"><b>Paranna paikannuksen tarkkuutta</b> sallimalla sovellusten käyttää GPS:ää tabletissasi.</string>
-  <string name="location_gps" product="default"><b>Paranna paikannuksen tarkkuutta</b> sallimalla sovellusten käyttää GPS:ää puhelimessasi.</string>
+  <string name="location_battery_saving"><b>Vähennä akun kulutusta</b> rajoittamalla GPS-paikannusten määrää per tunti.</string>
   <string name="location_network"><b>Käytä Wi-Fiä</b> auttaaksesi sovelluksia paikantamaan sijaintisi.</string>
   <string name="location_network_telephony"><b>Käytä Wi-Fi- ja mobiiliverkkoja</b> auttaaksesi sovelluksia määrittämään sijaintisi.</string>
   <string name="location_network_gms"><b>Käytä Googlen paikannusta</b> auttaaksesi sovellusten sijaintisi paikannusta. Tämä tarkoittaa nimettömien paikannustietojen lähettämistä Googlelle, jopa ilman sovellusten käynnissäolemista.</string>

@@ -41,8 +41,6 @@
   <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
   <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizeze informațiile despre locația dvs. Aceasta poate include locația curentă și locațiile precedente.</string>
-  <string name="location_gps" product="tablet"><b>Îmbunătățeste precizia locației</b> permițând aplicațiilor să folosească GPS-ul pe tabletă.</string>
-  <string name="location_gps" product="default"><b>Îmbunătățeste precizia locației</b> permițând aplicațiilor să folosească GPS-ul pe telefon.</string>
   <string name="location_network"><b>Folosește Wi-Fi</b> pentru a ajuta aplicațiile să vă determine locația.</string>
   <string name="location_network_telephony"><b>Utilizează Wi-Fi și rețelele de telefonie mobilă</b> pentru a ajuta aplicațiile să vă determine locația.</string>
   <string name="location_network_gms"><b>Folosește serviciile de locație Google</b> pentru a ajuta aplicațiile să vă determine locația. Acest lucru înseamnă trimiterea datelor anonime de localizare la Google, chiar și atunci când nu executați aplicații.</string>

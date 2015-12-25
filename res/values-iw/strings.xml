@@ -41,8 +41,7 @@
   <string name="other_services_summary">שירותים אלו נותנים ל-Google לעבוד בשבילך, ואתה יכול לכבות/להדליק אותם בכל זמן. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Google.</string>
   <string name="location_services_summary">שירותי מיקום מאפשרים ליישום המפות וליישומים אחרים להשתמש במיקומך. לדוגמא, יישום המפות עשוי להשתמש במידע זה על מנת להציג לך בתי קפה הנמצאים בקרבתך.</string>
   <string name="location_access_summary"><b>אפשר ליישומים שביקשו את רשותך</b> להשתמש במידע על מיקומך. הדבר עלול לכלול את מיקומך הנוכחי ומיקומים קודמים.</string>
-  <string name="location_gps" product="tablet"><b>שפר דיוק מיקום</b> על-ידי נתינת הרשאה ליישומים להשתמש ב-GPS בטאבלט.</string>
-  <string name="location_gps" product="default"><b>שפר דיוק מיקום</b> על-ידי נתינת הרשאה ליישומים להשתמש ב-GPS במכשירך.</string>
+  <string name="location_battery_saving"><b>הפחת צריכת הסוללה</b> על ידי הגבלת מספר עדכוני GPS בשעה.</string>
   <string name="location_network"><b>השתמש ב-Wi-Fi</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_telephony"><b>השתמש ב-Wi-Fi וברשתות סלולריות</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_gms"><b>השתמש בשירותי המיקום של Google</b> כדי לשלוח נתוני מיקום אנונימיים ל-Google, גם כאשר אין יישומים פועלים.</string>

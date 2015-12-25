@@ -41,8 +41,7 @@
   <string name="other_services_summary">Ове услуге дају Google-у да ради за вас, а можете их укључити или искључити у било ком тренутку. Подаци ће се користити у складу са Google-овим <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Сервис локације дозвољава системским и другим апликацијама да сакупљају и користе податке као што је приближна локација. Нпр. апликације могу користити приближну локацију да лоцирају кафиће у близини.</string>
   <string name="location_access_summary"><b>Дозволи апликацијама које траже твоју дозволу</b>да користе информације о твојој локацији. Ово може укључити твоју садашњу и прошле локације.</string>
-  <string name="location_gps" product="tablet"><b>Побољшај тачност локације</b> дозволивши апликацијама да користе GPS на твом таблету.</string>
-  <string name="location_gps" product="default"><b>Побољшај тачност локације</b> дозволивши апликацијама да користе GPS на твојем уређају.</string>
+  <string name="location_battery_saving"><b>Смањивање потрошње батерије</b> ограничењем броја ажурирања GPS-а по сату.</string>
   <string name="location_network"><b>Користи Wi-Fi</b> да помогнеш апликацијама да одреде твоју локацију.</string>
   <string name="location_network_telephony"><b>Користи Wi-Fi и мобилне мреже</b>да помогнеш апликацијама да одреде твоју локацију.</string>
   <string name="location_network_gms"><b>Користи Google сервис локације</b> да помогнеш апликацијама да одреде твоју локацију. Ово значи слање анонимних подака у Google, чак и кад нема покренутих апликација.</string>

@@ -41,8 +41,6 @@
   <string name="other_services_summary">Hierdie dienste word deur Google verskaf en jy kan dit aktiveer of deaktiveer op enige tyd. Data sal in ooreenstemming met Google se <xliff:g id="name" example="Privacy Policy">%s</xliff:g> gebruik word.</string>
   <string name="location_services_summary">Ligging dienste laat stelsel en ander 3rde party programme toe om data te gebruik soos jou benaderde ligging. Bv \'n program kan jou benaderde ligging gebruik om nabygeleë koffiewinkels op te spoor.</string>
   <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
-  <string name="location_gps" product="tablet"><b>Verbeter ligging akkuraatheid</b> deur programme toe te laat om jou GPS te kan gebruik op jou tablet.</string>
-  <string name="location_gps" product="default"><b>Verbeter ligging akkuraatheid</b> deur programme toe te laat om jou GPS te kan gebruik op jou foon.</string>
   <string name="location_network"><b>Gebruik Wi-Fi</b> om programme te help om jou ligging te bepaal.</string>
   <string name="location_network_telephony"><b>Gebruik Wi-Fi en mobiele netwerke</b> om programme te help om jou ligging te bepaal.</string>
   <string name="location_network_gms"><b>Gebruik Google se ligging diens</b> om programme te help om jou ligging te bepaal. Dit beteken dit stuur anonieme ligging data na Google, selfs wanneer daar geen programme aktief is nie.</string>

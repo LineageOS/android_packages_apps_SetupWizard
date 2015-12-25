@@ -41,8 +41,6 @@
   <string name="other_services_summary">Disse tjenester får Google til at arbejde for dig, og du kan slå dem til og fra på ethvert tidspunkt. Data vil blive anvendt i overensstemmelse med Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Placeringstjenester tillader Maps og andre apps at indsamle og bruge data såsom din omtrentlige placering. Maps kan for eksempel bruge din omtrentlige placering for at finde caféer i nærheden.</string>
   <string name="location_access_summary"><b>Tillad apps, der har bedt om din tilladelse</b> til at bruge dine placeringsoplysninger. Dette kan omfatte din aktuelle placering og tidligere placeringer.</string>
-  <string name="location_gps" product="tablet"><b>Forbedr placeringnøjagtighed</b> ved at tillade apps at bruge GPS på din tablet.</string>
-  <string name="location_gps" product="default"><b>Forbedr placeringnøjagtighed</b> ved at tillade apps at bruge GPS på din telefon.</string>
   <string name="location_network"><b>Brug Wi-Fi</b> til at hjælpe apps med at bestemme din placering.</string>
   <string name="location_network_telephony"><b>Brug Wi-Fi og mobile netværk</b> til at hjælpe apps med at bestemme din placering.</string>
   <string name="location_network_gms"><b>Brug Googles placeringtjeneste</b> til at hjælpe apps med at bestemme din placering. Dermed sendes anonyme placeringsdata til Google, selv når ingen apps kører.</string>

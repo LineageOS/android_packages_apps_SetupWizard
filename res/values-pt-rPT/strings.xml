@@ -41,8 +41,7 @@
   <string name="other_services_summary">Estes serviços colocam o Google a trabalhar para si, e pode ligá-los ou desligá-los a qualquer momento. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
   <string name="location_services_summary">Os serviços de localização permitem às aplicações de sistema e de terceiros reunir e utilizar dados tais como a sua localização aproximada. Por exemplo, uma aplicação pode usar a sua localização aproximada para localizar cafés ou bares nas proximidades.</string>
   <string name="location_access_summary"><b>Permitir às aplicações que pediram a sua permissão</b> para usar as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
-  <string name="location_gps" product="tablet"><b>Melhorar a precisão da localização</b>, permitindo que as aplicações usem o GPS do seu tablet.</string>
-  <string name="location_gps" product="default"><b>Melhorar a precisão de localização</b>, permitindo que as aplicações usem o GPS do seu telefone.</string>
+  <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
   <string name="location_network"><b>Usar Wi-Fi</b> para ajudar as aplicações a determinar a sua localização.</string>
   <string name="location_network_telephony"><b>Usar Wi-Fi e redes móveis</b> para ajudar as aplicações a determinar a sua localização.</string>
   <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar as aplicações a determinar a sua localização. Isto significa o envio de dados de localização anónimos para o Google, mesmo quando nenhuma aplicação estiver a funcionar.</string>

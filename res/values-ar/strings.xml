@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">معالج الإعداد</string>
   <string name="next">التالي</string>
   <string name="skip">تخطي</string>
   <string name="start">البداية</string>
@@ -40,8 +41,6 @@
   <string name="other_services_summary">هذه الخدمات  تجعل جوجل في خدمتك، ويمكنك تشغيلها أو إيقاف تشغيلها في أي وقت. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">تسمح خدمات الموقع لتطبيقات النظام والتطبيقات الخارجية بجمع واستخدام البيانات مثل موقعك التقريبي. على سبيل المثال، قد يستخدم تطبيق ما موقعك التقريبي لتحديد موقع  المقاهي القريبة.</string>
   <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
-  <string name="location_gps" product="tablet"><b>تحسين دقة الموقع</b> بالسماح للتطبيقات باستخدام نظام تحديد المواقع على الكمبيوتر اللوحي الخاص بك.</string>
-  <string name="location_gps" product="default"><b>تحسين دقة الموقع</b> بالسماح للتطبيقات باستخدام نظام تحديد المواقع على هاتفك.</string>
   <string name="location_network"><b>استخدام الواي فاي</b> لمساعدة التطبيقات على تحديد موقعك.</string>
   <string name="location_network_telephony"><b>استخدام الواي فاي وشبكات الجوال</b> لمساعدة التطبيقات على تحديد موقعك.</string>
   <string name="location_network_gms"><b>استخدام خدمة الموقع من جوجل</b> لمساعدة التطبيقات على تحديد موقعك. وهذا يعني إرسال بيانات مجهولة عن الموقع إلى جوجل، حتى في حالة عدم تشغيل أي تطبيقات.</string>

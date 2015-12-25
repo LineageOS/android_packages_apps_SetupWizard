@@ -41,8 +41,7 @@
   <string name="other_services_summary">Questi servizi consentono a Google di lavorare per te, ed è possibile attivarli o disattivarli in qualsiasi momento. I dati saranno utilizzati in conformità con la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> di Google.</string>
   <string name="location_services_summary">I servizi di localizzazione permettono a Maps e ad altre applicazioni di raccogliere ed utilizzare dati come la tua posizione. Ad esempio, Maps potrebbe utilizzare la tua posizione per individuare negozi di caffè nelle tue vicinanze.</string>
   <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> di utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
-  <string name="location_gps" product="tablet"><b>Migliora l\'accuratezza della localizzazione</b> consentendo alle app di usare il GPS sul tuo tablet.</string>
-  <string name="location_gps" product="default"><b>Migliora l\'accuratezza della localizzazione</b> permettendo alle applicazioni di utilizzare il GPS sul tuo telefono.</string>
+  <string name="location_battery_saving"><b>Riduci il consumo della batteria</b> limitando il numero di aggiornamenti del GPS ogni ora.</string>
   <string name="location_network"><b>Usa il Wi-Fi</b> per aiutare le app a determinare la tua posizione.</string>
   <string name="location_network_telephony"><b>Usa il Wi-Fi e le reti mobili</b> per aiutare le app a determinare la tua posizione.</string>
   <string name="location_network_gms"><b>Usa il servizio di localizzazione di Google</b> per aiutare le app a determinare la tua posizione. Questo significa spedire dati anonimi sulla tua posizione a Google, anche quando nessuna app è in esecuzione.</string>

@@ -41,8 +41,6 @@
   <string name="other_services_summary">Layanan ini menempatkan Google bekerja untuk Anda, dan Anda dapat mengubah mereka atau menonaktifkan setiap saat. Data akan digunakan sesuai dengan Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
   <string name="location_services_summary">Layanan lokasi mengizinkan Maps dan aplikasi lain untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi Anda. Misalnya, Maps dapat menggunakan perkiraan lokasi Anda untuk menemukan toko-toko kopi terdekat.</string>
   <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
-  <string name="location_gps" product="tablet"><b>Meningkatkan akurasi lokasi</b> dengan mengizinkan aplikasi untuk menggunakan GPS pada ponsel Anda.</string>
-  <string name="location_gps" product="default"><b>Meningkatkan akurasi lokasi</b> dengan mengizinkan aplikasi untuk menggunakan GPS pada ponsel Anda.</string>
   <string name="location_network"><b>Penggunaan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
   <string name="location_network_telephony"><b>Penggunaan Wi-Fi dan jaringan selular</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
   <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi Anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>

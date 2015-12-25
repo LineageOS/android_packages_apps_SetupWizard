@@ -41,8 +41,6 @@
   <string name="other_services_summary">Estos servicios ponen a Google a trabayar pot ti, y pues activalos o desactivalos en cualesquier momentu. Los datos usaránse acordies cola <xliff:g id="name" example="Política de privacidá">%s</xliff:g> de Google.</string>
   <string name="location_services_summary">Los servicios de llocalización permiten al sistema y les aplicaciones de terceres partes a recoyer y usar datos como\'l to allugamientu aproximáu. Por exemplu, una aplicación podría usar l\'allugamientu aproximáu p\'asitiate cerca d\'una cafetería.</string>
   <string name="location_access_summary"><b>Permitir a les tos aplicaciones entrugar pol to permisu</b> pa usar la to información d\'allugamientu. Esto podría incluyir los tos allugamientos recientes y pasaos.</string>
-  <string name="location_gps" product="tablet"><b>Ameyorar la precisión del allugamientu</b> permitiendo a les aplicaciones usar el GPS na to tableta.</string>
-  <string name="location_gps" product="default"><b>Ameyorar la precisión del allugamientu</b> permitiendo a les aplicaciones usar el GPS nel to móvil.</string>
   <string name="location_network"><b>Usar Wi-Fi</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
   <string name="location_network_telephony"><b>Usar Wi-Fi y redes móviles</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
   <string name="location_network_gms"><b>Usar el serviciu d\'allugamientu de Google</b> p\'ayudar a les aplicaciones a determinar el to allugamientu. Esto quier dicir que s\'unviarán datos anónimos a Google, incluso cuando nun se tea executándose denguna aplicación.</string>
@@ -63,4 +61,6 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos, fondos de pantalla y fontes únicos.</string>
   <string name="services_os_nav_keys_label"><b>Usar tecles de navegación na pantalla</b> en cuantes de tecles físiques.</string>
   <string name="services_use_secure_sms">Usar SMS seguru</string>
+  <string name="setup_device_locked">Esti preséu ta bloquiáu pol usuariu.</string>
+  <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
 </resources>

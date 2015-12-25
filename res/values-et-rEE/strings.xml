@@ -41,8 +41,6 @@
   <string name="other_services_summary">Need teenused panevad Google sinu heaks tööle ning sul on võimalus neid sätteid igal ajal sisse või välja lülitada. Andmeid kasutatakse vastavalt Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Asukohateenused võimaldavad süsteemil ja kolmandate osapoolte rakendustel koguda ja kasutada informatsiooni sinu umbkaudse asukoha kohta. Näiteks võib rakendus kasutada sinu umbkautset asukohta, et leida lähedal asuvaid kohvikuid.</string>
   <string name="location_access_summary"><b>Luba rakendustel, mis on küsinud Teie nõusolekut</b> kasutada Teie asukoha informatsiooni. See võib tähendada nii Teie praegust kui ka eelnevaid asukohti.</string>
-  <string name="location_gps" product="tablet"><b>Parandada asukoha täpsust</b> lubades rakendustel kasutada GPS-i Teie tahvelarvutis.</string>
-  <string name="location_gps" product="default"><b>Parandada asukoha täpsust</b> lubades rakendustel kasutada GPS-i Teie nutitelefonis.</string>
   <string name="location_network"><b>Kasuta Wi-Fi-t</b> aitamaks rakendustel asukohta kindlaks määrata .</string>
   <string name="location_network_telephony"><b>Kasuta Wi-Fi-t ja mobiilsidevõrke</b> aitamaks rakendustel asukohta kindlaks määrata.</string>
   <string name="location_network_gms"><b>Kasuta Google asukohateenuseid</b>, mis aitab rakendustel Teie asukohta kindlaks määrata. See tähendab anonüümsete asukoha andmete saatmist Google-sse, isegi kui ükski rakendus ei tööta.</string>

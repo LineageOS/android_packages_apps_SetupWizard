@@ -41,8 +41,6 @@
   <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
   <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
   <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
-  <string name="location_gps" product="tablet"><b>Konum doğruluğunu geliştirin</b> uygulamalara tabletinizdeki GPS\'i kullanma izni verin.</string>
-  <string name="location_gps" product="default"><b>Konum doğruluğunu geliştirin</b> uygulamalara telefonunuzdaki GPS\'i kullanma izni verin.</string>
   <string name="location_network"><b>Wi-Fi\'yi kullanarak uygulamaların konumunuzu bulmanıza yardımcı olun.</b></string>
   <string name="location_network_telephony"><b>Wi-Fi\'yi ve mobil şebekeleri kullanarak uygulamaların konumunuzu bulmanıza yardımcı olun.</b></string>
   <string name="location_network_gms"><b>Konumunuzu belirlemek için Google konum servislerini kullanın.</b> Bu hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
