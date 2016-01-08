@@ -93,7 +93,6 @@
 
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.SETUP_WIZARD" />
             </intent-filter>
         </activity>
 
