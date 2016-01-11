@@ -41,6 +41,7 @@
   <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
   <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
   <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
+  <string name="location_battery_saving"><b>Verlaag het accugebruik</b> door het aantal GPS-updates per uur te beperken.</string>
   <string name="location_network"><b>Wifi gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
   <string name="location_network_telephony"><b>Wifi en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
   <string name="location_network_gms"><b>Locatieservices van Google gebruiken</b> om apps te helpen uw locatie te bepalen. Dit betekent anonieme locatiegegevens verzenden naar Google, zelfs wanneer er geen apps worden uitgevoerd.</string>

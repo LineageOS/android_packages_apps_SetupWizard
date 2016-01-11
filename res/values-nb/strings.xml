@@ -41,6 +41,7 @@
   <string name="other_services_summary">Disse tjenestene lar Google jobbe for deg, og du kan slå dem på eller av når som helst. Data brukes i henhold til Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Lokasjonstjenester lar system og 3.parts apper å samle inn og bruke data som din omtrentlige posisjon. For eksempel, en app kan bruke din omtrentlige posisjon til å finne nærliggende kafeer.</string>
   <string name="location_access_summary"><b>Tillat programmer som har bedt om din tillatelse</b> å bruke stedsinformasjonen. Dette kan være din nåværende posisjon og siste steder.</string>
+  <string name="location_battery_saving"><b>Redusere batteriforbruket</b> ved å begrense antall GPS oppdateringer per time.</string>
   <string name="location_network"><b>Bruk Wi-Fi</b> for å hjelpe apper å finne din posisjon.</string>
   <string name="location_network_telephony"><b>Bruk Wi-Fi og mobile nettverk</b> for å hjelpe apper å finne din posisjon.</string>
   <string name="location_network_gms"><b>Bruk Googles lokasjonstjeneste</b> for å hjelpe apps finne din posisjon. Dette betyr å sende anonym stedsinformasjon til Google, selv når ingen programmer kjører.</string>

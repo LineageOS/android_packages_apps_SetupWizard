@@ -41,7 +41,7 @@
   <string name="other_services_summary">这些服务让 Google 为你工作，您可以在任何时候打开或关闭它们。数据将会按照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 来被使用。</string>
   <string name="location_services_summary">位置服务允许系统和第三方应用收集和使用数据（比如您的大致位置）。例如，某个应用可能会使用您的大致位置来查找附近的咖啡馆。</string>
   <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
-  <string name="location_battery_saving">通过限制 GPS 每小时的更新次数来<b>节约电池消耗</b>。</string>
+  <string name="location_battery_saving">通过限制 GPS 每小时的更新频率来<b>降低电池消耗</b>。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 来帮助应用确定您的位置。</string>
   <string name="location_network_telephony"><b>使用 Wi-Fi 和移动网络</b>来帮助应用确定您的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的位置服务</b>帮助应用确定您所在的位置。这意味着即使没有应用运行，也会发送匿名的位置数据给 Google。</string>

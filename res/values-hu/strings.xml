@@ -41,6 +41,7 @@
   <string name="other_services_summary">Ezek a szolgáltatások az Ön szolgálatába állítják a Google-t, amit bármikor ki- vagy bekapcsolhat. Az adatok felhasználása a Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
   <string name="location_services_summary">A helymeghatározási szolgáltatások engedélyezni fogják a rendszer és más harmadik féltől származó alkalmazások számára az adatok összegyűjtését és használatát a pozíciója pontosításához. Például egy alkalmazás a becsült helyzetét fogja használni a közeli kávézók meghatározásához.</string>
   <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
+  <string name="location_battery_saving"><b>Akkumulátor fogyasztás csökkentése</b> a GPS óránkénti frissítés számának korlátozásával.</string>
   <string name="location_network"><b>Wi-Fi használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
   <string name="location_network_telephony"><b>Wi-Fi és mobil hálózatok használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
   <string name="location_network_gms"><b>A Google helymeghatározó szolgáltatás használata</b> az alkalmazások helymeghatározásának segítésére. Ez névtelen helyadatok Google felé történő küldését jelenti, még akkor is, ha nincs futó alkalmazás.</string>

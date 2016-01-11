@@ -34,16 +34,17 @@
   <string name="setup_current_time">Şimdiki saat</string>
   <string name="sim_missing_summary" product="tablet">Tabletinizde bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
   <string name="sim_missing_summary" product="default">Telefonunuzda bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
-  <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Tabletinizin kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
+  <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Seçili SIM, tabletinizin kurulumunda kullanılacağı için şebeke ücretlerine tabi olabilir.</string>
   <string name="choose_data_sim_summary" product="default">Hangi SIM\'i veri için kullanmak istiyorsunuz? Telefonunuzun kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
   <string name="date_time_summary">Zaman diliminizi seçin ve gerekirse geçerli tarih ve saati ayarlayın</string>
-  <string name="backup_data_summary"><b>Uyg. verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına yedekle</b></string>
+  <string name="backup_data_summary">Uygulama verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına <b>yedekle</b></string>
   <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
   <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
   <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
-  <string name="location_network"><b>Wi-Fi\'yi kullanarak uygulamaların konumunuzu bulmanıza yardımcı olun.</b></string>
-  <string name="location_network_telephony"><b>Wi-Fi\'yi ve mobil şebekeleri kullanarak uygulamaların konumunuzu bulmanıza yardımcı olun.</b></string>
-  <string name="location_network_gms"><b>Konumunuzu belirlemek için Google konum servislerini kullanın.</b> Bu hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
+  <string name="location_battery_saving">Saatte yapılan GPS güncelleme sayısını kısıtlayarak <b>pil tüketimini azaltın</b>.</string>
+  <string name="location_network">Uygulamaların konumunuzu bulmanısına yardımcı olmak için <b>Wi-Fi\'yi kullanın</b>.</string>
+  <string name="location_network_telephony">Uygulamaların konumunuzu bulmasına yardımcı olmak için <b>Wi-Fi\'yi ve mobil şebekeleri kullanın</b>.</string>
+  <string name="location_network_gms">Konumunuzu belirlemek için <b>Google konum servislerini kullanın</b>. Bu, hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
   <string name="setup_mobile_data">Mobil veriyi aç</string>
   <string name="setup_mobile_data_no_service">Servis yok</string>
   <string name="setup_mobile_data_emergency_only">Sadece acil durum çağrıları</string>
@@ -54,20 +55,20 @@
   <string name="emergency_call">Acil durum çağrısı</string>
   <string name="setup_services">Cyanogen özellikleri</string>
   <string name="services_explanation" product="tablet">Bu hizmetler tabletinizin yeteneklerini arttırır. Veriler Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
-  <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
+  <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler, Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
   <string name="services_privacy_policy">Gizlilik Politikası</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
-  <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ifşah edecek şekilde kullanılmaz ancak pil ömrü, uyg. performansı, ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konularda takımımızın çalışmalarında kullanılır.</string>
+  <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ancak pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konulardaki ekip çalışmalarında kullanılır.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>nırken eşsiz simgeler, duvar kağıtları ve yazı tipleri etkinleştiriliyor.</string>
-  <string name="services_os_nav_keys_label"><b>Donanımsal tuşlar yerine ekran üstü dolaşım tuşlarını kullanın.</b></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> eşsiz simgeler, duvar kağıtları ve yazı tiplerini etkinleştiriyor.</string>
+  <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>ekran üstü dolaşım tuşlarını kullanın</b>.</string>
   <string name="services_use_secure_sms">Şifreli SMS kullanın</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> cihazında diğer kullanıcılarla olan sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g>.</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> cihazında güvenli SMS kullanan diğer kullanıcılarla olan SMS sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>.</string>
   <string name="setup_unlock">Kilidi kaldır</string>
   <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
-  <string name="setup_require_cyanogen_label"><b>Cyanogen İS hesap şifresi gerekir</b> ki cihazınızı fabrika ayarlarına sıfırladıktan sonra kullanabilin.</string>
-  <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için, lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
-  <string name="setup_warning_skip_anyway">Cyanogen İS Hesabı olmadan, aşağıdakiler mümkün olmayacaktır:\n\nTelefonunuzu yeni simgeler, duvar kağıtları ve Temalar uygulamasındaki daha fazla ögeyle özelleştirmek\n\nTelefonunuzu kaybedince uzaktan konumunu bulmak veya içeriğini silmek</string>
+  <string name="setup_require_cyanogen_label">Cihazınızı fabrika ayarlarına sıfırlandıktan sonra kullanabilmeniz için <b>Cyanogen OS hesap şifresi gerekir</b>.</string>
+  <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
+  <string name="setup_warning_skip_anyway">Cyanogen OS Hesabı olmadan, aşağıdakiler mümkün olmayacaktır:\n\nTelefonunuzu yeni simgeler, duvar kağıtları ve Temalar uygulamasındaki daha fazla ögeyle özelleştirmek\n\nTelefonunuzu kaybedince uzaktan konumunu bulmak veya içeriğini silmek</string>
   <string name="settings_fingerprint_setup_title">Yedek ekran kilidi türü seçin</string>
   <string name="settings_fingerprint_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
   <string name="fingerprint_setup_title">Parmak izi kurulumu</string>

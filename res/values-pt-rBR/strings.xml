@@ -41,6 +41,7 @@
   <string name="other_services_summary">Esses serviços colocam o Google para trabalhar para você, e você pode desligá-los a qualquer momento. Os dados serão usados de acordo com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
   <string name="location_services_summary">Serviços de localização permitem ao sistema e aplicativos de terceiros a obter e usar dados como a sua localização aproximada. Por exemplo, um aplicativo pode usar sua localização aproximada para localizar cafeterias perto de você.</string>
   <string name="location_access_summary"><b>Permitir aplicativos que pediram a sua permissão</b> para usar as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
+  <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
   <string name="location_network"><b>Usar Wi-Fi</b> para ajudar aplicativos a determinarem a sua localização.</string>
   <string name="location_network_telephony"><b>Usar Wi-Fi e redes móveis</b> para ajudar aplicativos a determinarem a sua localização.</string>
   <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar os aplicativos a determinarem a sua localização. Isto significa o envio de dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver aberto.</string>

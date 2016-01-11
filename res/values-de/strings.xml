@@ -41,6 +41,7 @@
   <string name="other_services_summary">Diese Dienste werden von Google zur Verfügung gestellt und können jederzeit aktiviert oder deaktiviert werden. Die Daten werden in Übereinstimmung mit Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g> genutzt.</string>
   <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern Daten, wie z. B. Ihren ungefähren Standort zu bestimmen und zu verwenden. Zum Beispiel könnte eine App Ihren ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
   <string name="location_access_summary"><b>Erlaubt Apps, die nach Ihrer Berechtigung gefragt haben,</b> Standortinformationen zu verwenden. Diese können Ihren derzeitigen und vergangenen Standort beinhalten.</string>
+  <string name="location_battery_saving"><b>Akkuverbrauch verringern</b>, indem die Aktualisierungsrate ihres Standortes beschränkt wird.</string>
   <string name="location_network"><b>WLAN nutzen</b>, um Apps zu helfen, Ihren Standort zu ermitteln.</string>
   <string name="location_network_telephony"><b>WLAN und mobiles Netzwerk aktivieren</b>, um Apps den Standortabruf zu ermöglichen.</string>
   <string name="location_network_gms"><b>Googles Standortdienst verwenden</b>, um Apps bei der Bestimmung Ihrer Position zu helfen. Das bedeutet, dass anonymisierte Standortdaten an Google gesendet werden, auch wenn keine App aktiv ist.</string>
