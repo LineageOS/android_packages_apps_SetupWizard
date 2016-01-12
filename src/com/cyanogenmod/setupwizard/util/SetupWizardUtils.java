@@ -251,7 +251,7 @@ public class SetupWizardUtils {
 
     private static void disableComponent(Context context, ComponentName component) {
         context.getPackageManager().setComponentEnabledSetting(component,
-                PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+                PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
     }
 
     private static void enableComponentArray(Context context, ComponentInfo[] components) {
