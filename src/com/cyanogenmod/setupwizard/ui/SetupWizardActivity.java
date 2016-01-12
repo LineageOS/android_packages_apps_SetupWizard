@@ -26,6 +26,7 @@ import android.content.res.Resources;
 /*import android.content.res.ThemeManager;*/
 import android.graphics.Bitmap;
 import android.graphics.Point;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
@@ -425,18 +426,40 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 tm.removeClient(SetupWizardActivity.this);*/
                 SetupStats.sendEvents(SetupWizardActivity.this);
                 SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                startActivity(intent);
                 final WallpaperManager wallpaperManager =
                         WallpaperManager.getInstance(SetupWizardActivity.this);
                 wallpaperManager.forgetLoadedWallpaper();
             }
         });
-        for (Runnable runnable : mFinishRunnables) {
-            runnable.run();
+        new FinishTask(this, mFinishRunnables).execute();
+    }
+
+    private static class FinishTask extends AsyncTask<Void, Void, Boolean> {
+
+        private final SetupWizardActivity mActivity;
+        private final ArrayList<Runnable> mFinishRunnables;
+
+        public FinishTask(SetupWizardActivity activity,
+                ArrayList<Runnable> finishRunnables) {
+            mActivity = activity;
+            mFinishRunnables = finishRunnables;
         }
-        finish();
-        SetupWizardUtils.disableSetupWizard(SetupWizardActivity.this);
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            for (Runnable runnable : mFinishRunnables) {
+                runnable.run();
+            }
+            SetupWizardUtils.disableSetupWizard(mActivity);
+            return Boolean.TRUE;
+        }
+
+        @Override
+        protected void onPostExecute(Boolean aBoolean) {
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            mActivity.startActivity(intent);
+            mActivity.finish();
+        }
     }
 }
