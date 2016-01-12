@@ -41,7 +41,7 @@
   <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
   <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
   <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
-  <string name="location_gps" product="tablet">Uygulamaların tabletinizdeki GPS\'i kullanmasına izin vererek <b>konum doğruluğunu geliştirin</b>.</string>
+  <string name="location_gps" product="tablet">Uygulamaların tabletinizdeki GPS\'i kullanmasına izni vererek <b>konum doğruluğunu geliştirin</b>.</string>
   <string name="location_gps" product="default">Uygulamalara telefonunuzdaki GPS\'i kullanma izni vererek <b>konum doğruluğunu geliştirin</b>.</string>
   <string name="location_network">Uygulamaların konumunuzu bulmanısına yardımcı olmak için <b>Wi-Fi\'yi kullanın</b>.</string>
   <string name="location_network_telephony">Uygulamaların konumunuzu bulmasına yardımcı olmak için <b>Wi-Fi\'yi ve mobil şebekeleri kullanın</b>.</string>
@@ -63,6 +63,7 @@
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> eşsiz simgeler, duvar kağıtları ve yazı tiplerini etkinleştiriyor.</string>
   <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>ekran üstü dolaşım tuşlarını kullanın</b>.</string>
+  <string name="services_use_secure_sms">Şifreli SMS kullanın</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> cihazında güvenli SMS kullanan diğer kullanıcılarla olan SMS sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>.</string>
   <string name="setup_unlock">Kilidi kaldır</string>
   <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
