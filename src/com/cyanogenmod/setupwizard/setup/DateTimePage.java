@@ -188,6 +188,18 @@ public class DateTimePage extends SetupPage {
                     });
                 }
             });
+            // Pre-select current/default date if epoch
+            mHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    final Calendar calendar = Calendar.getInstance();
+                    final boolean isEpoch = calendar.get(Calendar.YEAR) == 1970;
+                    if (isEpoch) {
+                        // If epoch, set date to a default date
+                        setDate(getActivity(), 2016, Calendar.JANUARY, 1);
+                    }
+                }
+            });
         }
 
         private void showDatePicker() {
