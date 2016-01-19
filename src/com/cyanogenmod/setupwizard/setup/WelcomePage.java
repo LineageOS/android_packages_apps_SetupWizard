@@ -29,6 +29,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -179,6 +180,17 @@ public class WelcomePage extends SetupPage {
                 }
             }
         };
+
+        @Override
+        public void onConfigurationChanged(Configuration newConfig) {
+            super.onConfigurationChanged(newConfig);
+            TelephonyManager telephonyManager = (TelephonyManager) getActivity().
+                    getSystemService(Context.TELEPHONY_SERVICE);
+            String locale = telephonyManager.getLocaleFromDefaultSim();
+            if (locale != null) {
+                onLocaleChanged(Locale.forLanguageTag(locale));
+            }
+        }
 
         @Override
         protected void initializePage() {
