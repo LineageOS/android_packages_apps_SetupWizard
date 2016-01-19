@@ -89,6 +89,7 @@ public class CMSetupWizardData extends AbstractSetupData {
             showHideDataSimPage();
             showHideSimMissingPage();
             showHideMobileDataPage();
+            updateWelcomePage();
         } else if (intent.getAction()
                 .equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
             showHideMobileDataPage();
@@ -157,6 +158,13 @@ public class CMSetupWizardData extends AbstractSetupData {
         DateTimePage dateTimePage = (DateTimePage) getPage(DateTimePage.TAG);
         if (dateTimePage != null) {
             dateTimePage.setHidden(mTimeZoneSet & mTimeSet);
+        }
+    }
+
+    private void updateWelcomePage() {
+        WelcomePage welcomePage = (WelcomePage) getPage(WelcomePage.TAG);
+        if (welcomePage != null) {
+            welcomePage.simChanged();
         }
     }
 
