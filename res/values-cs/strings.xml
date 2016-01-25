@@ -41,6 +41,7 @@
   <string name="other_services_summary">Tyto služby Vám nabízí Google a Vy je můžete kdykoliv povolit či zakázat. Data budou použita v souladu se zásadami ochrany osobních údajů Google - <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Určování polohy umožňuje systému a dalším aplikacím sbírat data a používat je jako vaši přibližnou polohu. Aplikace tak může například vaši přibližnou polohu k nalezení blízkých kaváren.</string>
   <string name="location_access_summary"><b>Povolí aplikacím, které žádaly oprávnění</b> použít vaše informace o poloze. To může zahrnovat vaši aktuální, ale i minulé polohy.</string>
+  <string name="location_battery_saving"><b>Snížit spotřebu baterie</b> omezením počtu GPS aktualizací během hodiny.</string>
   <string name="location_network">Pro zlepšení přibližné polohy používejte prosím <b>Wi-Fi</b>.</string>
   <string name="location_network_telephony">Pro zlepšení přibližné polohy používejte prosím <b>Wi-Fi a mobilní sítě</b>.</string>
   <string name="location_network_gms">Pro rychlejší určení vaší polohy <b>použijte lokační službu Google (Location Services)</b>. To znamená anonymní odesílání dat o poloze Googlu, i když žádné aplikace právě neběží.</string>
