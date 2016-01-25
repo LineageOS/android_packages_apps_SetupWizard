@@ -23,7 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
-/*import android.content.res.ThemeManager;*/
+import android.content.res.ThemeManager;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.AsyncTask;
@@ -52,7 +52,8 @@ import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 import java.util.ArrayList;
 
 
-public class SetupWizardActivity extends Activity implements SetupDataCallbacks {
+public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
+        ThemeManager.ThemeChangeListener {
 
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
@@ -305,12 +306,12 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
         mFinishingProgressBar.setVisibility(View.VISIBLE);
         mFinishingProgressBar.setIndeterminate(true);
         mFinishingProgressBar.startAnimation(fadeIn);
-        /*final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
-        tm.addClient(this);*/
+        final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
+        tm.addClient(this);
         mSetupData.finishPages();
     }
 
-    /*@Override
+    @Override
     public void onFinish(boolean isSuccess) {
         if (isResumed()) {
             mHandler.post(new Runnable() {
@@ -320,15 +321,15 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 }
             });
         }
-    }*/
+    }
 
-    /*@Override
+    @Override
     public void onProgress(int progress) {
         if (progress > 0) {
             mFinishingProgressBar.setIndeterminate(false);
             mFinishingProgressBar.setProgress(progress);
         }
-    }*/
+    }
 
     @Override
     public void finishSetup() {
@@ -421,9 +422,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks 
                 if (mEnableAccessibilityController != null) {
                     mEnableAccessibilityController.onDestroy();
                 }
-                /*final ThemeManager tm =
+                final ThemeManager tm =
                         (ThemeManager) SetupWizardActivity.this.getSystemService(THEME_SERVICE);
-                tm.removeClient(SetupWizardActivity.this);*/
+                tm.removeClient(SetupWizardActivity.this);
                 SetupStats.sendEvents(SetupWizardActivity.this);
                 SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
                 final WallpaperManager wallpaperManager =
