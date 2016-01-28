@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.os.SystemProperties;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
@@ -164,7 +163,7 @@ public class CMSetupWizardData extends AbstractSetupData {
     private void updateWelcomePage() {
         WelcomePage welcomePage = (WelcomePage) getPage(WelcomePage.TAG);
         if (welcomePage != null) {
-            welcomePage.simChanged();
+            welcomePage.simInserted();
         }
     }
 
