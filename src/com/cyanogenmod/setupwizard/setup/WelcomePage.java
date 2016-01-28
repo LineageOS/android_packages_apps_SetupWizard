@@ -322,6 +322,8 @@ public class WelcomePage extends SetupPage {
                     // If that fails, fall back to preferred languages reported
                     // by the sim
                     if (locale == null) {
+                        TelephonyManager telephonyManager = (TelephonyManager) activity.
+                                getSystemService(Context.TELEPHONY_SERVICE);
                         String localeString = telephonyManager.getLocaleFromDefaultSim();
                         if (localeString != null) {
                             locale = Locale.forLanguageTag(localeString);

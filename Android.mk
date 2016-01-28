@@ -16,7 +16,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v13 \
     play \
     libphonenumber \
-    org.cyanogenmod.platform.sdk
+    org.cyanogenmod.platform.sdk \
+    telephony-common
 
 LOCAL_JAVA_LIBRARIES := telephony-common
 
