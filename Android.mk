@@ -16,7 +16,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v13 \
     play \
     libphonenumber \
-    org.cyanogenmod.platform.sdk
+    org.cyanogenmod.platform.sdk \
+    telephony-common
 
 # Include res dir from chips
 google_play_dir := ../../../external/google/google_play_services/libproject/google-play-services_lib/res
