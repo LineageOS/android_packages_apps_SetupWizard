@@ -52,7 +52,6 @@ import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 import com.cyanogenmod.setupwizard.ui.WebViewDialogFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
-import com.cyanogenmod.setupwizard.util.WhisperPushUtils;
 
 import cyanogenmod.providers.CMSettings;
 
