@@ -40,7 +40,6 @@
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-permission android:name="cyanogenmod.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="android.permission.BACKUP" />
-    <uses-permission android:name="org.whispersystems.whisperpush.permissions.REGISTER" />
     <uses-permission android:name="cyanogenmod.permission.FINISH_SETUP" />
     <uses-permission android:name="cyanogenmod.permission.LEGALESE" />
     <uses-permission android:name="com.cyngn.stats.SEND_ANALYTICS" />
@@ -56,9 +55,6 @@
         android:name="cyanogenmod.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem"
         androidprv:allowViaWhitelist="true" />
-
-    <permission android:name="org.whispersystems.whisperpush.permissions.REGISTER"
-                android:protectionLevel="signature" />
 
     <protected-broadcast android:name="com.cyanogenmod.setupwizard.SETUP_FINISHED"
                          android:permission="cyanogenmod.permission.FINISH_SETUP"/>
