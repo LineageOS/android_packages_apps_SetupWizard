@@ -84,6 +84,10 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final boolean isOwner = SetupWizardUtils.isOwner();
+        if (!isOwner) {
+            finish();
+        }
         final View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(UI_FLAGS);
         decorView.setOnSystemUiVisibilityChangeListener(
@@ -157,6 +161,9 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         final View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(UI_FLAGS);
         super.onResume();
+        if (isFinishing()) {
+            return;
+        }
         if (mSetupData.isFinished()) {
             mHandler.postDelayed(new Runnable() {
                 @Override
@@ -174,15 +181,19 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
     @Override
     protected void onPause() {
         super.onPause();
-        mSetupData.onPause();
+        if (mSetupData != null) {
+            mSetupData.onPause();
+        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mSetupData.onDestroy();
-        mSetupData.unregisterListener(this);
-        unregisterReceiver(mSetupData);
+        if (mSetupData != null) {
+            mSetupData.onDestroy();
+            mSetupData.unregisterListener(this);
+            unregisterReceiver(mSetupData);
+        }
     }
 
     @Override
