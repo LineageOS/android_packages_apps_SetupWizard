@@ -99,14 +99,20 @@ public class SetupWizardApp extends Application {
             if (!isOwner
                     || Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.USER_SETUP_COMPLETE) == 1) {
-                Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
-                Settings.Secure.putInt(getContentResolver(),
-                        Settings.Secure.USER_SETUP_COMPLETE, 1);
-                SetupWizardUtils.disableGMSSetupWizard(this);
-                SetupWizardUtils.disableSetupWizard(this);
-                if (!isOwner) {
-                    disableThemeComponentsForSecondaryUser();
-                }
+                Thread t = new Thread(){
+                    @Override
+                    public void run() {
+                        Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
+                        Settings.Secure.putInt(getContentResolver(),
+                                Settings.Secure.USER_SETUP_COMPLETE, 1);
+                        SetupWizardUtils.disableGMSSetupWizard(SetupWizardApp.this);
+                        SetupWizardUtils.disableSetupWizard(SetupWizardApp.this);
+                        if (!isOwner) {
+                            disableThemeComponentsForSecondaryUser();
+                        }
+                    }
+                };
+                t.run();
             }  else {
                 disableCaptivePortalDetection();
             }
