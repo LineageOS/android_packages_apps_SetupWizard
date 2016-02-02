@@ -76,4 +76,5 @@
   <string name="fingerprint_setup_backup_lock_method">Postavljanje rezervne metode otključavanja</string>
   <string name="fingerprint_setup_add_fingerprint">Dodajte svoj ​​otisak</string>
   <string name="fingerprint_setup_screen_lock_setup">Postavljanje zaključavanja zaslona</string>
+  <string name="sim_locale_changed">%1$s SIM otkriven</string>
 </resources>
