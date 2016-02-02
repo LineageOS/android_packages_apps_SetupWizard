@@ -76,4 +76,5 @@
   <string name="fingerprint_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
   <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
   <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
+  <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
 </resources>
