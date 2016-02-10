@@ -25,15 +25,15 @@
   <string name="setup_complete">Настройването е завършено</string>
   <string name="setup_welcome">Добре дошли</string>
   <string name="setup_wifi">Изберете Wi-Fi</string>
-  <string name="setup_sim_missing">Липсва SIM карта</string>
+  <string name="setup_sim_missing">Липсва СИМ карта</string>
   <string name="setup_choose_data_sim">Изберете Карта за данни</string>
   <string name="setup_location">Услуги за местоположение</string>
   <string name="setup_other">Други услуги</string>
   <string name="setup_datetime">Дата &amp; час</string>
   <string name="setup_current_date">Днешна дата</string>
   <string name="setup_current_time">Текущото време</string>
-  <string name="sim_missing_summary" product="tablet">SIM картата не е била открита в таблета. За да поставите SIM карта, прочетете инструкциите, предоставени с устройството.</string>
-  <string name="sim_missing_summary" product="default">SIM картата не е била открита в телефона. За да поставите SIM карта, прочетете инструкциите, предоставени с устройството.</string>
+  <string name="sim_missing_summary" product="tablet">СИМ карта не е открита в таблета. За да научите как да поставите СИМ-карта, прочетете инструкциите на устройството.</string>
+  <string name="sim_missing_summary" product="default">СИМ карта не е открита в телефона. За да научите как да поставите СИМ-карта, прочетете инструкциите на устройството.</string>
   <string name="choose_data_sim_summary" product="tablet">Коя SIM искате да използвате за данни? Избраната СИМ може да добави разходи, тъй като тя ще се използва за настройване на таблета.</string>
   <string name="choose_data_sim_summary" product="default">Коя SIM искате да използвате за данни? Избраната СИМ може да добави разходи, тъй като тя ще се използва за настройване на телефона.</string>
   <string name="date_time_summary">Задайте часовата си зона и настройте текущата дата и час, ако е необходимо</string>
@@ -52,7 +52,7 @@
   <string name="enable_mobile_data_summary">Искате ли да използвате мобилен интернет по време на инсталирането? Включването на мобилния интернет може да добави разходи.</string>
   <string name="no">Не</string>
   <string name="yes">Да</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
+  <string name="data_sim_name">СИМ <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Спешни повиквания</string>
   <string name="setup_services">Cyanogen характеристики</string>
   <string name="services_explanation" product="tablet">Тези услуги работят за да разширят възможностите на таблета. Данните ще бъдат използвани в съгласие с Cyanogen в <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>

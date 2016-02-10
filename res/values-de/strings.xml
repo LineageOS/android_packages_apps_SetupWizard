@@ -29,7 +29,7 @@
   <string name="setup_choose_data_sim">SIM-Karte für Daten wählen</string>
   <string name="setup_location">Standortdienste</string>
   <string name="setup_other">Andere Dienste</string>
-  <string name="setup_datetime">Datum &amp; Zeit</string>
+  <string name="setup_datetime">Datum und Uhrzeit</string>
   <string name="setup_current_date">Aktuelles Datum</string>
   <string name="setup_current_time">Aktuelle Zeit</string>
   <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in Ihrem Tablet erkannt. Um eine SIM-Karte einzulegen, lesen Sie sich die Bedienungsanleitung durch, die Ihrem Tablet beiliegt.</string>
