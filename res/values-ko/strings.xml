@@ -43,8 +43,8 @@
   <string name="location_access_summary"><b>사용자에게 권한을 요청한 앱</b>이 위치 정보를 사용할 수 있도록 합니다. 현재 위치 정보와 예전 위치 정보가 포함됩니다.</string>
   <string name="location_gps" product="tablet"><b>앱이 태블릿의 GPS를 이용하도록 하여</b> 위치 정보의 정확성을 향상시킵니다.</string>
   <string name="location_gps" product="default"><b>앱이 휴대전화의 GPS를 이용하도록 하여</b> 위치 정보의 정확성을 향상시킵니다.</string>
-  <string name="location_network">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-FI를 사용합니다</b>.</string>
-  <string name="location_network_telephony">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-FI와 모바일 네트워크를 사용합니다</b>.</string>
+  <string name="location_network">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-Fi를 사용합니다</b>.</string>
+  <string name="location_network_telephony">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-Fi와 모바일 네트워크를 사용합니다</b>.</string>
   <string name="location_network_gms">앱이 사용자의 위치를 정확하게 확인할 수 있도록 <b>Google 위치 서비스를 사용합니다</b>. 앱을 사용하지 않을때도 익명 위치 정보가 Google에 전송됩니다.</string>
   <string name="setup_mobile_data">모바일 데이터 켜기</string>
   <string name="setup_mobile_data_no_service">서비스 불가</string>
