@@ -42,12 +42,9 @@
   <string name="location_services_summary">با استفاده از سرویس مکان، نقشه‌ها و برنامه‌های دیگر می‌توانند از داده‌هایی مثل مکان تقریبی شما استفاده کنند. به‌عنوان مثال، یک برنامه می‌تواند کافی‌شاپ‌های نزدیکتان را با استفاده از این داده‌ها مشخص کند.</string>
   <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
   <string name="location_network">از <b>وای‌فای</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید.</string>
-  <string name="location_network_telephony">از <b>وای‌فای و شبکه‌های همراه</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید.</string>
   <string name="location_network_gms">از <b>سرویس مکان گوگل</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید. این استفاده به معنای ارسال داده‌های ناشناس مکانی به گوگل است، حتی هنگامی که برنامه‌ای در حال اجرا نیست.</string>
-  <string name="setup_mobile_data">روشن کردن داده همراه</string>
   <string name="setup_mobile_data_no_service">بدون سرویس</string>
   <string name="setup_mobile_data_emergency_only">فقط تماس اضطراری</string>
-  <string name="enable_mobile_data_summary">آیا می‌خواهید در طول راه‌اندازی از داده همراه استفاده کنید؟ ممکن است روشن کردن داده همراه باعث هزینه‌های اضافی شود.</string>
   <string name="no">خیر</string>
   <string name="yes">بله</string>
   <string name="data_sim_name">سیم کارت <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

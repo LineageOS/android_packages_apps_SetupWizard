@@ -48,7 +48,7 @@
   <string name="setup_mobile_data">Ota mobiilidata käyttöön</string>
   <string name="setup_mobile_data_no_service">Ei palvelua</string>
   <string name="setup_mobile_data_emergency_only">Vain hätäpuhelut</string>
-  <string name="enable_mobile_data_summary">Haluatko käyttää mobiilidataa asennuksen aikana? Mobiilidatan kytkeminen päälle saattaa aiheuttaa tiedonsiirtokuluja.</string>
+  <string name="enable_mobile_data_summary">Haluatko käyttää mobiilidataa asennuksen aikana? Mobiilidatan käyttöönottaminen voi aiheuttaa tiedonsiirtokuluja.</string>
   <string name="no">Ei</string>
   <string name="yes">Kyllä</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

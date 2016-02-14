@@ -43,12 +43,12 @@
   <string name="location_access_summary"><b>Permitir aplicativos que pediram a sua permissão</b> para usar as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
   <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
   <string name="location_network"><b>Usar Wi-Fi</b> para ajudar aplicativos a determinarem a sua localização.</string>
-  <string name="location_network_telephony"><b>Usar Wi-Fi e redes móveis</b> para ajudar aplicativos a determinarem a sua localização.</string>
+  <string name="location_network_telephony"><b>Usar Wi-Fi e redes móveis</b> para ajudar apps a determinarem a sua localização.</string>
   <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar os aplicativos a determinarem a sua localização. Isto significa o envio de dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver aberto.</string>
-  <string name="setup_mobile_data">Ativar dados de redes móveis</string>
+  <string name="setup_mobile_data">Ativar dados celular</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
-  <string name="enable_mobile_data_summary">Quer usar os dados móveis durante a configuração? Ativar os dados móveis pode gerar cobranças de dados.</string>
+  <string name="enable_mobile_data_summary">Você quer usar dados moveis durante a instalação? Ao ligar os dados móveis, você estará sujeito a gastos de seu plano de dados contratado.</string>
   <string name="no">Não</string>
   <string name="yes">Sim</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

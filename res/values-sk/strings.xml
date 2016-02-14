@@ -42,12 +42,9 @@
   <string name="location_services_summary">Služby polohy umožňujú systému a ďalším aplikáciám tretích strán zhromažďovanie a používanie údajov súvisiacich s vašou približnou polohou. Napríklad aplikácia Mapy môže použiť vašu približnú polohu na nájdene kaviarní vo vašej blízkosti.</string>
   <string name="location_access_summary"><b>Povoliť aplikáciám, ktoré požiadali o vaše povolenie</b>, používať informácie o vašej polohe. To môže zahŕňať vašu aktuálnu polohu a minulé polohy.</string>
   <string name="location_network"><b>Použitie Wi-Fi</b> pomôže aplikáciám určiť vašu polohu.</string>
-  <string name="location_network_telephony"><b>Použite Wi-Fi a mobilné siete</b> pomôže aplikáciám určiť vašu polohu.</string>
   <string name="location_network_gms"><b>Používanie služieb polohy od spoločnosti Google</b> pomôže aplikáciám určiť vašu polohu. To znamená anonymné zasielanie údajov o polohe do spoločnosti Google, aj keď nie sú spustené žiadne aplikácie.</string>
-  <string name="setup_mobile_data">Povoliť mobilné dáta</string>
   <string name="setup_mobile_data_no_service">Žiadna sieť</string>
   <string name="setup_mobile_data_emergency_only">Len tiesňové hovory</string>
-  <string name="enable_mobile_data_summary">Zapnutie mobilných dát počas procesu inštalácie môže byť príčinou poplatkov za dátové prenosy.</string>
   <string name="no">Nie</string>
   <string name="yes">Áno</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

@@ -48,7 +48,7 @@
   <string name="setup_mobile_data">Ligar os dados móveis</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
-  <string name="enable_mobile_data_summary">Quer usar os dados móveis durante a instalação? Ligar os dados móveis pode estar sujeito a gastos adicionais.</string>
+  <string name="enable_mobile_data_summary">Pretende usar os dados móveis durante a configuração? Usar os dados móveis pode estar sujeito a taxas de dados.</string>
   <string name="no">Não</string>
   <string name="yes">Sim</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -63,7 +63,7 @@
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando ícones, imagens de fundo e tipos de letra únicos.</string>
   <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
   <string name="services_use_secure_sms">Usar SMS seguras</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversações SMS com outros utilizadores que também utilizem este serviço num dispositivo com <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversas SMS com outros utilizadores que também utilizem este serviço num dispositivo com <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo foi bloqueado pelo utilizador.</string>
   <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da conta Cyanogen OS</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>

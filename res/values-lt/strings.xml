@@ -42,12 +42,9 @@
   <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavines.</string>
   <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
   <string name="location_network"><b>Naudoti „Wi-Fi“</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
-  <string name="location_network_telephony"><b>Naudoti „Wi-Fi“ ir mobiliuosius duomenis</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
   <string name="location_network_gms"><b>Naudoti „Google“ vietos paslaugą</b>, kad padėti programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
-  <string name="setup_mobile_data">Įjungti mobiliuosius duomenis</string>
   <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
   <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
-  <string name="enable_mobile_data_summary">Ar norite naudoti mobiliuosius duomenis nustatymo metu? įjungiant mobiliuosius duomenis gali būti taikomi duomenų mokesčiai.</string>
   <string name="no">Ne</string>
   <string name="yes">Taip</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

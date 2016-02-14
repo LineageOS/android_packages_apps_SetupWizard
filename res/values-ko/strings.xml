@@ -42,13 +42,13 @@
   <string name="location_services_summary">위치 서비스는 시스템과 사용자 앱이 사용자의 대략적인 위치 정보와 같은 데이터를 수집하고 사용할 수 있게 해줍니다. 예를 들어, 어떤 앱은 사용자의 대략적인 위치 정보를 사용하여 근처에 있는 카페를 표시합니다.</string>
   <string name="location_access_summary"><b>사용자에게 권한을 요청한 앱</b>이 위치 정보를 사용할 수 있도록 합니다. 현재 위치 정보와 예전 위치 정보가 포함됩니다.</string>
   <string name="location_battery_saving">한 시간에 한 번으로 GPS 업데이트를 제한하여 <b>배터리 소모를 줄입니다</b>.</string>
-  <string name="location_network">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-FI를 사용합니다</b>.</string>
-  <string name="location_network_telephony">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-FI와 모바일 네트워크를 사용합니다</b>.</string>
+  <string name="location_network">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-Fi를 사용합니다</b>.</string>
+  <string name="location_network_telephony">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-Fi와 모바일 네트워크를 사용합니다</b>.</string>
   <string name="location_network_gms">앱이 사용자의 위치를 정확하게 확인할 수 있도록 <b>Google 위치 서비스를 사용합니다</b>. 앱을 사용하지 않을때도 익명 위치 정보가 Google에 전송됩니다.</string>
-  <string name="setup_mobile_data">모바일 데이터 켜기</string>
+  <string name="setup_mobile_data">셀룰러 데이터 켜기</string>
   <string name="setup_mobile_data_no_service">서비스 불가</string>
   <string name="setup_mobile_data_emergency_only">긴급 통화만 가능</string>
-  <string name="enable_mobile_data_summary">설정할 동안 모바일 데이터를 사용하시겠습니까? 모바일 데이터를 켜면 통신요금이 부과될 수 있습니다.</string>
+  <string name="enable_mobile_data_summary">장치를 설정하는 동안 셀룰러 데이터를 사용하겠습니까? 셀룰러 데이터를 켜면 데이터 요금이 부과될 수 있습니다.</string>
   <string name="no">아니오</string>
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_backup_lock_method">보조 잠금 해제 방법을 설정해야 합니다</string>
   <string name="fingerprint_setup_add_fingerprint">지문 추가</string>
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
+  <string name="sim_locale_changed">%1$s SIM 인식됨</string>
 </resources>

@@ -42,12 +42,9 @@
   <string name="location_services_summary">स्थान सेवाएँ आपके सिस्टम को तृतीय पक्षीय ऐपों का उपयोग करके डेटा संग्रहण करने और डेटा उपयोग करने देती हैं ताकि आपके स्थान का अंदाज़ा लगाया जा सके। उदाहरण के लिए, कोई ऐप आपके स्थान के अनुमान का उपयोग निकट के कॉफ़ी शॉपों का पता करने के लिए कर सकता है।</string>
   <string name="location_access_summary"><b>जिन ऐपों ने आपसे अनुमति ले ली है</b> उन्हें आपके स्थान संबंधी जानकारी का उपयोग करने दें। इस जानकारी में आपका वर्तमान स्थान और पहले के स्थान शामिल हो सकते हैं।</string>
   <string name="location_network">अपने स्थान को निर्धारित करने में ऐपों की मदद करने के लिए <b>वाई-फ़ाई</b> का उपयोग करें।</string>
-  <string name="location_network_telephony">ऐपों को आपके स्थान का निर्धारण करने में मदद करने के लिए <b>वाई-फ़ाई और मोबाइल नेटवर्कों का उपयोग करें।</b></string>
   <string name="location_network_gms">ऐपों को अपने स्थान का निर्धारण करने में मदद करने के लिए <b>गूगल की स्थान सेवा का उपयोग करें।</b> इसका मतलब है कि गूगल को गुमनाम स्थान डेटा तब भी भेजा जाएगा जब कोई भी ऐप नहीं चल रहा हो।</string>
-  <string name="setup_mobile_data">मोबाइल डेटा को चालू करें</string>
   <string name="setup_mobile_data_no_service">कोई सेवा नहीं है</string>
   <string name="setup_mobile_data_emergency_only">केवल आपातकालीन कॉल</string>
-  <string name="enable_mobile_data_summary">क्या आप सेटअप के दौरान मोबाइल डेटा का उपयोग करना चाहते हैं? मोबाइल डेटा को चालू करने पर डेटा शुल्क लग सकते हैं।</string>
   <string name="no">नहीं</string>
   <string name="yes">हाँ</string>
   <string name="data_sim_name">सिम <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

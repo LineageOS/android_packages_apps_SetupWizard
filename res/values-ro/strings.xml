@@ -41,10 +41,11 @@
   <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
   <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizeze informațiile despre locația dvs. Aceasta poate include locația curentă și locațiile precedente.</string>
+  <string name="location_battery_saving"><b>Reduce consumul bateriei</b> prin limitarea numărului de actualizări ale GPS-ului pe oră.</string>
   <string name="location_network"><b>Folosește Wi-Fi</b> pentru a ajuta aplicațiile să vă determine locația.</string>
   <string name="location_network_telephony"><b>Utilizează Wi-Fi și rețelele de telefonie mobilă</b> pentru a ajuta aplicațiile să vă determine locația.</string>
   <string name="location_network_gms"><b>Folosește serviciile de locație Google</b> pentru a ajuta aplicațiile să vă determine locația. Acest lucru înseamnă trimiterea datelor anonime de localizare la Google, chiar și atunci când nu executați aplicații.</string>
-  <string name="setup_mobile_data">Porniți datele mobile</string>
+  <string name="setup_mobile_data">Activare date mobile</string>
   <string name="setup_mobile_data_no_service">Lipsă semnal</string>
   <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
   <string name="enable_mobile_data_summary">Doriți să utilizați datele mobile în timpul instalării? Activarea datelor mobile poate fi supusă tarifelor de date.</string>
@@ -66,6 +67,7 @@
   <string name="setup_require_cyanogen_label"><b>Cere parola contului Cyanogen OS</b> pentru a utiliza aparatul dvs. chiar și după o resetare la setările din fabrică.</string>
   <string name="setup_device_locked_instructions"><i>Pentru a activa sau dezactiva această caracteristică, vă rugăm să mergeți la Setări &gt; securitate</i></string>
   <string name="setup_warning_skip_anyway">Fără un cont de Cyanogen OS, nu veți putea să: \n\nPersonalizați telefonul cu noi pictograme, imagini de fundal și mai multe în aplicația de Teme\n\nLocalizați sau ștergeți de la distanță telefonul dacă e pierdut</string>
+  <string name="settings_fingerprint_setup_details">Cum doriți să vă blocați ecranul?</string>
   <string name="fingerprint_setup_title">Configurare amprentă</string>
   <string name="sim_locale_changed">SIM %1$s detectat</string>
 </resources>

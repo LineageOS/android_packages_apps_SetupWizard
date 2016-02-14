@@ -42,12 +42,9 @@
   <string name="location_services_summary">Standuertservicer erlabe System-Appen an aneren Appen, Informatiounen zum Standuert ze sammelen an ze benotzen. Eng App ka beispillsweis däin ongeféiere Standuert benotzen, fir Caféen an der Géigend ze lokaliséieren.</string>
   <string name="location_access_summary"><b>Appen déi deng Berechtegung gefrot hunn</b> den Zougrëff op d\'Standuertinformatiounen erlaben. Dat ka fir den aktuelle Standuert an och fir fréier Standuerter gëllen.</string>
   <string name="location_network"><b>WLAN benotzen</b>, fir Appen ze hëllefen, de Standuert erauszefannen.</string>
-  <string name="location_network_telephony"><b>WLAN an Datennetzwierker benotzen</b>, fir Appen ze hëllefen, de Standuert erauszefannen.</string>
   <string name="location_network_gms"><b>De Standuertservice vu Google benotzen</b> fir Appen ze hëllefen de Standuert ze bestëmmen. Dat bedeit datt anonym Standuertdaten u Google geschéckt ginn, och wa keng Appe lafen.</string>
-  <string name="setup_mobile_data">Mobil Daten uschalten</string>
   <string name="setup_mobile_data_no_service">Kee Service</string>
   <string name="setup_mobile_data_emergency_only">Just Noutriff</string>
-  <string name="enable_mobile_data_summary">Wëlls du mobil Date während der Installatioun benotzen? Duerch d\'Uschalte vu mobillen Date kënnen Zousazkäschten entstoen.</string>
   <string name="no">Nee</string>
   <string name="yes">Jo</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

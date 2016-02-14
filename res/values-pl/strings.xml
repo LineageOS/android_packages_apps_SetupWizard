@@ -45,10 +45,10 @@
   <string name="location_network"><b>Użyj WiFi</b>, aby pomóc aplikacjom w określeniu twojej lokalizacji.</string>
   <string name="location_network_telephony"><b>Użyj WiFi i sieci komórkowych</b>, aby pomóc aplikacjom w określeniu twojej lokalizacji.</string>
   <string name="location_network_gms"><b>Użyj usług lokalizacji Google</b>, aby pomóc aplikacjom w określeniu twojej lokalizacji. Oznacza to wysyłanie anonimowych danych o twojej lokalizacji do Google, nawet jeśli żadna aplikacja nie jest uruchomiona.</string>
-  <string name="setup_mobile_data">Włącz dane mobilne</string>
+  <string name="setup_mobile_data">Włącz transmisję danych</string>
   <string name="setup_mobile_data_no_service">Brak usługi</string>
   <string name="setup_mobile_data_emergency_only">Tylko połączenia alarmowe</string>
-  <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włącznie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
+  <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włączenie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
   <string name="no">Nie</string>
   <string name="yes">Tak</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -76,4 +76,5 @@
   <string name="fingerprint_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
   <string name="fingerprint_setup_add_fingerprint">Dodać swój odcisk palca</string>
   <string name="fingerprint_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
+  <string name="sim_locale_changed">Wykryto %1$s SIM</string>
 </resources>

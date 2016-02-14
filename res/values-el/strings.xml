@@ -45,7 +45,7 @@
   <string name="location_network"><b>Χρήση Wi-Fi</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
   <string name="location_network_telephony"><b>Χρήση Wi-Fi και δικτύων τηλεφωνίας</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
   <string name="location_network_gms"><b>Χρήση των υπηρεσιών τοποθεσίας της Google</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας. Αυτό σημαίνει ότι θα αποστέλλονται ανώνυμα δεδομένα τοποθεσίας στη Google, ακόμα και όταν δεν εκτελείται καμία εφαρμογή.</string>
-  <string name="setup_mobile_data">Ενεργοποίηση δεδομένων</string>
+  <string name="setup_mobile_data">Ενεργοποίηση δεδομένων κινητής τηλεφωνίας</string>
   <string name="setup_mobile_data_no_service">Καμία υπηρεσία</string>
   <string name="setup_mobile_data_emergency_only">Μόνο κλήσεις έκτακτης ανάγκης</string>
   <string name="enable_mobile_data_summary">Θέλετε να χρησιμοποιήσετε τα δεδομένα κινητής τηλεφωνίας κατά την διάρκεια της εγκατάστασης;. Η ενεργοποίηση των δεδομένων κινητής τηλεφωνίας μπορεί να υπόκειται σε χρεώσεις από το πάροχο σας.</string>

@@ -24,7 +24,7 @@
   <string name="loading">Jen chvilku\u2026</string>
   <string name="setup_complete">Instalace je dokončena</string>
   <string name="setup_welcome">Vítejte</string>
-  <string name="setup_wifi">Vyberte Wi-Fi</string>
+  <string name="setup_wifi">Vyberte Wi\u2011Fi</string>
   <string name="setup_sim_missing">Chybí karta SIM</string>
   <string name="setup_choose_data_sim">Zvolte SIM pro data</string>
   <string name="setup_location">Služby určení polohy</string>
@@ -37,18 +37,18 @@
   <string name="choose_data_sim_summary" product="tablet">Kterou SIM kartu chcete použít pro mobilní data? Mohou být na ní účtovány poplatky.</string>
   <string name="choose_data_sim_summary" product="default">Kterou SIM kartu chcete použít pro mobilní data? Mohou být na ní účtovány poplatky.</string>
   <string name="date_time_summary">Je-li třeba, nastavte časové pásmo a upravte aktuální datum a čas</string>
-  <string name="backup_data_summary"><b>Zálohovat</b> data aplikací, hesla Wi-Fi a další nastavení do účtu Google</string>
+  <string name="backup_data_summary"><b>Zálohovat</b> data aplikací, hesla Wi\u2011Fi a další nastavení do účtu Google</string>
   <string name="other_services_summary">Tyto služby Vám nabízí Google a Vy je můžete kdykoliv povolit či zakázat. Data budou použita v souladu se zásadami ochrany osobních údajů Google - <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Určování polohy umožňuje systému a dalším aplikacím sbírat data a používat je jako vaši přibližnou polohu. Aplikace tak může například vaši přibližnou polohu k nalezení blízkých kaváren.</string>
   <string name="location_access_summary"><b>Povolí aplikacím, které žádaly oprávnění</b> použít vaše informace o poloze. To může zahrnovat vaši aktuální, ale i minulé polohy.</string>
   <string name="location_battery_saving"><b>Snížit spotřebu baterie</b> omezením počtu GPS aktualizací během hodiny.</string>
-  <string name="location_network">Pro zlepšení přibližné polohy používejte prosím <b>Wi-Fi</b>.</string>
-  <string name="location_network_telephony">Pro zlepšení přibližné polohy používejte prosím <b>Wi-Fi a mobilní sítě</b>.</string>
+  <string name="location_network"><b>Použít Wi\u2011Fi</b> pro zlepšení zjištění přibližné polohy.</string>
+  <string name="location_network_telephony"><b>Použít Wi\u2011Fi a mobilní sítě</b> pro zlepšení zjištění přibližné polohy.</string>
   <string name="location_network_gms">Pro rychlejší určení vaší polohy <b>použijte lokační službu Google (Location Services)</b>. To znamená anonymní odesílání dat o poloze Googlu, i když žádné aplikace právě neběží.</string>
   <string name="setup_mobile_data">Zapnout mobilní data</string>
   <string name="setup_mobile_data_no_service">Žádná síť</string>
   <string name="setup_mobile_data_emergency_only">Pouze tísňová volání</string>
-  <string name="enable_mobile_data_summary">Chcete používat mobilní data během instalace? Zapnutí mobilních dat vás může něco stát.</string>
+  <string name="enable_mobile_data_summary">Chcete využít mobilní data při prvotní nastavení? Mobilní data mohou být zpoplatněna.</string>
   <string name="no">Ne</string>
   <string name="yes">Ano</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

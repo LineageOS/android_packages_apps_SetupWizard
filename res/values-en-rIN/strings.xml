@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
   <string name="location_battery_saving"><b>Reduce battery consumption</b> by restricting the number of GPS updates per hour.</string>
   <string name="location_network"><b>Use Wi-Fi</b> to help apps determine your location.</string>
-  <string name="location_network_telephony"><b>Use Wi-Fi and mobile networks</b> to help apps determine your location.</string>
   <string name="location_network_gms"><b>Use Google\'s location service</b> to help apps determine your location. This means sending anonymous location data to Google, even when no apps are running.</string>
-  <string name="setup_mobile_data">Turn on mobile data</string>
   <string name="setup_mobile_data_no_service">No service</string>
   <string name="setup_mobile_data_emergency_only">Emergency calls only</string>
-  <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on mobile data may be subject to data charges.</string>
   <string name="no">No</string>
   <string name="yes">Yes</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

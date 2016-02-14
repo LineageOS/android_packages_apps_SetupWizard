@@ -45,7 +45,7 @@
   <string name="location_network"><b>Uporabite Wi-Fi</b>, da pomagate aplikacijam določiti vašo lokacijo.</string>
   <string name="location_network_telephony"><b>Uporabite Wi-Fi in mobilna omrežja</b>, da pomagate aplikacijam določiti vašo lokacijo.</string>
   <string name="location_network_gms"><b>Uporabite Googlove lokacijske storitve</b>, da pomagate aplikacijam določiti vašo lokacijo. To pomeni pošiljanje anonimnih podatkov o lokaciji Googlu tudi, ko se ne izvaja nobena aplikacija.</string>
-  <string name="setup_mobile_data">Vključite mobilne podatke</string>
+  <string name="setup_mobile_data">Vklop mobilnih podatkov</string>
   <string name="setup_mobile_data_no_service">Ni storitve</string>
   <string name="setup_mobile_data_emergency_only">Samo klici v sili</string>
   <string name="enable_mobile_data_summary">Ali želite med namestitvijo uporabiti mobilne podatke? Vklop mobilnih podatkov lahko povzroči dodatne stroške.</string>
