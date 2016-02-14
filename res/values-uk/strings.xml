@@ -42,12 +42,9 @@
   <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизиного розташування. Наприклад, додаток зможе шукати кав`ярні чи зупинки, що розташовані поруч, грунтуючись на отриманих даних.</string>
   <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
   <string name="location_network"><b>Використовувати Wi-Fi</b> для визначення вашого місцезнаходження.</string>
-  <string name="location_network_telephony"><b>Використовувати Wi-Fi та мобільні мережі</b> для визначення вашого місцезнаходження.</string>
   <string name="location_network_gms"><b>Використовувати служби місцезнаходження Google</b>, щоб допомогти додаткам визначити ваше розташування. Мається на увазі, що вони будуть відсилати анонімні дані, щодо вашого розташування, до Google навіть тоді, коли ніякі додатки не виконуються.</string>
-  <string name="setup_mobile_data">Увімкніть моб. дані</string>
   <string name="setup_mobile_data_no_service">Немає мережі</string>
   <string name="setup_mobile_data_emergency_only">Тільки екстрені виклики</string>
-  <string name="enable_mobile_data_summary">Бажаєте використовувати мобільні дані під час налаштування? Увімкнення мобільних даних може коштувати вам грошенят.</string>
   <string name="no">Ні</string>
   <string name="yes">Так</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

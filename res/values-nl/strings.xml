@@ -43,12 +43,10 @@
   <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
   <string name="location_battery_saving"><b>Verlaag het accugebruik</b> door het aantal GPS-updates per uur te beperken.</string>
   <string name="location_network"><b>Wifi gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
-  <string name="location_network_telephony"><b>Wifi en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
+  <string name="location_network_telephony"><b>Wifi- en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
   <string name="location_network_gms"><b>Locatieservices van Google gebruiken</b> om apps te helpen uw locatie te bepalen. Dit betekent anonieme locatiegegevens verzenden naar Google, zelfs wanneer er geen apps worden uitgevoerd.</string>
-  <string name="setup_mobile_data">Mobiele gegevens inschakelen</string>
   <string name="setup_mobile_data_no_service">Geen verbinding</string>
   <string name="setup_mobile_data_emergency_only">Alleen noodoproepen</string>
-  <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hiermee kunnen kosten gemoeid zijn.</string>
   <string name="no">Nee</string>
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

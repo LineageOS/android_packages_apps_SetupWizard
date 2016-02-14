@@ -41,12 +41,9 @@
   <string name="location_services_summary">定位服務允許系統和第三方應用程式取得及使用資料，如您的大致位置。例如，應用程式可能使用您的大致位置來尋找附近的咖啡店。</string>
   <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
-  <string name="location_network_telephony"><b>使用 Wi-Fi 和流動網絡</b>來幫助應用程式確定你的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會傳送匿名的位置資料給 Google。</string>
-  <string name="setup_mobile_data">開啟流動數據</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
-  <string name="enable_mobile_data_summary">您想在設定過程中使用流動數據嗎？使用流動數據可能會產生傳輸費用。</string>
   <string name="no">否</string>
   <string name="yes">是</string>
   <string name="data_sim_name">SIM 卡 <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

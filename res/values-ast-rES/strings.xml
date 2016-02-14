@@ -42,12 +42,9 @@
   <string name="location_services_summary">Los servicios de llocalización permiten al sistema y les aplicaciones de terceres partes a recoyer y usar datos como\'l to allugamientu aproximáu. Por exemplu, una aplicación podría usar l\'allugamientu aproximáu p\'asitiate cerca d\'una cafetería.</string>
   <string name="location_access_summary"><b>Permitir a les tos aplicaciones entrugar pol to permisu</b> pa usar la to información d\'allugamientu. Esto podría incluyir los tos allugamientos recientes y pasaos.</string>
   <string name="location_network"><b>Usar Wi-Fi</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
-  <string name="location_network_telephony"><b>Usar Wi-Fi y redes móviles</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
   <string name="location_network_gms"><b>Usar el serviciu d\'allugamientu de Google</b> p\'ayudar a les aplicaciones a determinar el to allugamientu. Esto quier dicir que s\'unviarán datos anónimos a Google, incluso cuando nun se tea executándose denguna aplicación.</string>
-  <string name="setup_mobile_data">Activar datos móviles</string>
   <string name="setup_mobile_data_no_service">Ensin serviciu</string>
   <string name="setup_mobile_data_emergency_only">Namái llamaes d\'emerxencia</string>
-  <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? Activar los datos móviles podría ser oxetu de cargos de datos.</string>
   <string name="no">Non</string>
   <string name="yes">Sí</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

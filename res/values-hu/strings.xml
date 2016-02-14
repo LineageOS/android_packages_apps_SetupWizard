@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
   <string name="location_battery_saving"><b>Akkumulátor fogyasztás csökkentése</b> a GPS óránkénti frissítés számának korlátozásával.</string>
   <string name="location_network"><b>Wi-Fi használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
-  <string name="location_network_telephony"><b>Wi-Fi és mobil hálózatok használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
   <string name="location_network_gms"><b>A Google helymeghatározó szolgáltatás használata</b> az alkalmazások helymeghatározásának segítésére. Ez névtelen helyadatok Google felé történő küldését jelenti, még akkor is, ha nincs futó alkalmazás.</string>
-  <string name="setup_mobile_data">Mobilinternet bekapcsolása</string>
   <string name="setup_mobile_data_no_service">Nincs szolgáltatás</string>
   <string name="setup_mobile_data_emergency_only">Csak segélyhívások</string>
-  <string name="enable_mobile_data_summary">Kívánja használni a mobilinternetet a telepítés során? A mobilinternet használata költségekkel járhat.</string>
   <string name="no">Nem</string>
   <string name="yes">Igen</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

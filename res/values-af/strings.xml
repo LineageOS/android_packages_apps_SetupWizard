@@ -41,13 +41,14 @@
   <string name="other_services_summary">Hierdie dienste word deur Google verskaf en jy kan dit aktiveer of deaktiveer op enige tyd. Data sal in ooreenstemming met Google se <xliff:g id="name" example="Privacy Policy">%s</xliff:g> gebruik word.</string>
   <string name="location_services_summary">Ligging dienste laat stelsel en ander 3rde party programme toe om data te gebruik soos jou benaderde ligging. Bv \'n program kan jou benaderde ligging gebruik om nabygeleë koffiewinkels op te spoor.</string>
   <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
+  <string name="location_battery_saving"><b>Verminder battery verbruik</b> deur die beperking van die aantal GPS opdaterings per uur.</string>
   <string name="location_network"><b>Gebruik Wi-Fi</b> om programme te help om jou ligging te bepaal.</string>
   <string name="location_network_telephony"><b>Gebruik Wi-Fi en mobiele netwerke</b> om programme te help om jou ligging te bepaal.</string>
   <string name="location_network_gms"><b>Gebruik Google se ligging diens</b> om programme te help om jou ligging te bepaal. Dit beteken dit stuur anonieme ligging data na Google, selfs wanneer daar geen programme aktief is nie.</string>
   <string name="setup_mobile_data">Skakel mobiele data aan</string>
   <string name="setup_mobile_data_no_service">Geen diens</string>
   <string name="setup_mobile_data_emergency_only">Net Noodoproepe</string>
-  <string name="enable_mobile_data_summary">Wil jy mobiele data gebruik tydens die opstelling? Aan skakeling van mobiele data kan onderworpe aan data koste wees.</string>
+  <string name="enable_mobile_data_summary">Wil jy sellulêre data aanskakel gedurende opstelling? Wanneer aangeskakel kan dit tot data kostes lui.</string>
   <string name="no">Nee</string>
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -75,4 +76,5 @@
   <string name="fingerprint_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
   <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
   <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
+  <string name="sim_locale_changed">%1$s SIM opgespoor</string>
 </resources>

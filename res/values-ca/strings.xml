@@ -43,12 +43,12 @@
   <string name="location_access_summary"><b>Permet a les aplicacions que han demanat el teu permís</b> utilitzar la teva informació d\'ubicació. Això pot incloure la teva ubicació i ubicacions anteriors.</string>
   <string name="location_battery_saving"><b>Redueix el consum de bateria</b> restringint el número d\'actualitzacions GPS per hora.</string>
   <string name="location_network"><b>Utilitza Wi-Fi</b> per ajudar a les aplicacions a determinar la teva ubicació.</string>
-  <string name="location_network_telephony"><b>Utilitza Wi-Fi i les xarxes mòbils</b> per ajudar a les aplicacions a determinar la teva ubicació.</string>
+  <string name="location_network_telephony"><b>Utilitza el Wi-Fi i les xarxes mòbils</b> per ajudar a les aplicacions a determinar la teva ubicació.</string>
   <string name="location_network_gms"><b>Utilitza el servei d\'ubicació de Google</b> per ajudar a les aplicacions a determinar la teva ubicació. Això implica l\'enviament de dades anònimes d\'ubicació a Google, fins i tot quan no hi ha aplicacions en execució.</string>
-  <string name="setup_mobile_data">Activa les dades mòbils</string>
+  <string name="setup_mobile_data">Encén les dades mòbils</string>
   <string name="setup_mobile_data_no_service">Sense servei</string>
   <string name="setup_mobile_data_emergency_only">Només trucades d\'emergència</string>
-  <string name="enable_mobile_data_summary">Vols utilitzar les dades mòbils durant la configuració? Encendre les dades mòbils pot estar subjecte a càrrecs a la tarifa de dades.</string>
+  <string name="enable_mobile_data_summary">Vols utilitzar les dades mòbils durant la instal·lació? Encendre les dades mòbils pot provocar càrrecs de dades.</string>
   <string name="no">No</string>
   <string name="yes">Sí</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

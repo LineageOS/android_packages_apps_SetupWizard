@@ -45,10 +45,10 @@
   <string name="location_network"><b>Usa il Wi-Fi</b> per aiutare le app a determinare la tua posizione.</string>
   <string name="location_network_telephony"><b>Usa il Wi-Fi e le reti mobili</b> per aiutare le app a determinare la tua posizione.</string>
   <string name="location_network_gms"><b>Usa il servizio di localizzazione di Google</b> per aiutare le app a determinare la tua posizione. Questo significa spedire dati anonimi sulla tua posizione a Google, anche quando nessuna app è in esecuzione.</string>
-  <string name="setup_mobile_data">Attiva i dati mobili</string>
+  <string name="setup_mobile_data">Attiva la rete mobile</string>
   <string name="setup_mobile_data_no_service">Nessun servizio</string>
   <string name="setup_mobile_data_emergency_only">Solo chiamate di emergenza</string>
-  <string name="enable_mobile_data_summary">Vuoi utilizzare la connessione dati durante la configurazione? Attivando la connessione dati potrebbero essere applicate tariffe dati.</string>
+  <string name="enable_mobile_data_summary">Vuoi utilizzare la rete mobile durante il setup? L\'attivazione della rete mobile potrebbe comportare costi aggiuntivi.</string>
   <string name="no">No</string>
   <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

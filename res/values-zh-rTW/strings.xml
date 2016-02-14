@@ -41,13 +41,11 @@
   <string name="other_services_summary">啟用這些服務讓 Google 來為您工作，您可以在任何時候開啟或關閉。您的資料將依照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="location_services_summary">位置服務允許系統和其他應用程式取得及使用您最近的位置。例如，應用程式可能是用您的位置來尋找附近的咖啡店。</string>
   <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
+  <string name="location_battery_saving">透過減少 GPS 每小時更新次數來<b>降低電池消耗</b>。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
-  <string name="location_network_telephony"><b>使用 Wi-Fi 和行動網路</b>來幫助應用程式確定您所在的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會發送匿名的位置資料給 Google。</string>
-  <string name="setup_mobile_data">開啟行動數據</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
-  <string name="enable_mobile_data_summary">您想在設定過程中使用行動網路嗎？使用行動網路可能會產生傳輸費用。</string>
   <string name="no">否</string>
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -71,4 +69,5 @@
   <string name="fingerprint_setup_backup_lock_method">設定第二個解鎖方式</string>
   <string name="fingerprint_setup_add_fingerprint">新增你的指紋感應</string>
   <string name="fingerprint_setup_screen_lock_setup">設置螢幕鎖定</string>
+  <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
 </resources>

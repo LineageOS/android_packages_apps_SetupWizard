@@ -42,12 +42,9 @@
   <string name="location_services_summary">Os servizos de localización permítenlle ao sistema e a aplicacións de terceiros reunir e utilizar datos como a súa localización aproximada. Por exemplo, unha aplicación pode utilizar a localización aproximada para determinar as cafetarías próximas.</string>
   <string name="location_access_summary"><b>Permite que as aplicacións se teñen o teu permiso</b> utilicen a información sobre a túa localización, o que pode incluír á presente e ás pasadas.</string>
   <string name="location_network"><b>Utiliza a Wi-Fi</b> para axudar as aplicacións a determinar a súa localización.</string>
-  <string name="location_network_telephony"><b>Utiliza a Wi-Fi e redes móbiles</b> para axudar as aplicacións a determinar a súa localización.</string>
   <string name="location_network_gms"><b>Utiliza o servizo de localización de Google</b> para axudar a determinar a súa localización.</string>
-  <string name="setup_mobile_data">Activar os datos móbiles</string>
   <string name="setup_mobile_data_no_service">Sen servizo</string>
   <string name="setup_mobile_data_emergency_only">Só chamadas de urxencia</string>
-  <string name="enable_mobile_data_summary">Quere empregar os datos móbiles durante a instalación? Activalos pode estar suxeito a cargos na tarifa de datos.</string>
   <string name="no">Non</string>
   <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

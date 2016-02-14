@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>Permettre aux applications ayant obtenu votre autorisation</b> d\'utiliser vos informations de localisation. Cela peut inclure votre position actuelle et les dernières positions.</string>
   <string name="location_battery_saving"><b>Réduire la consommation de la batterie</b> en limitant le nombre de mise à jour GPS par heure.</string>
   <string name="location_network"><b>Utiliser le Wi-Fi</b> pour aider les applications à déterminer votre position.</string>
-  <string name="location_network_telephony"><b>Utiliser le Wi-Fi et les réseaux mobiles</b> pour aider les applications à déterminer votre position.</string>
   <string name="location_network_gms"><b>Utiliser le service de localisation de Google</b> pour aider les applications à déterminer votre position. Cela signifie d\'envoyer anonymement des données de localisation à Google, même lorsque qu\'aucune application est en cours d\'exécution.</string>
-  <string name="setup_mobile_data">Activer les données mobiles</string>
   <string name="setup_mobile_data_no_service">Aucun service</string>
   <string name="setup_mobile_data_emergency_only">Appels d\'urgence uniquement</string>
-  <string name="enable_mobile_data_summary">Voulez-vous utiliser les données mobiles lors de l\'installation ? L\'activation des données mobiles peut-être être soumis à des frais de données.</string>
   <string name="no">Non</string>
   <string name="yes">Oui</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

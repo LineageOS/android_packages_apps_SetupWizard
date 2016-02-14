@@ -45,7 +45,7 @@
   <string name="location_network"><b>Koristi Wi-Fi</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
   <string name="location_network_telephony"><b>Koristi Wi-Fi i mobilne mreže</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
   <string name="location_network_gms"><b>Koristi Google servis lokacije</b>da pomogneš aplikacijama da odrede tvoju lokaciju. To znači slanje anonimnih podaka u Google, čak i kad nema pokrenutih aplikacija.</string>
-  <string name="setup_mobile_data">Uključite mobilne podatke</string>
+  <string name="setup_mobile_data">Uključi mobilne podatke</string>
   <string name="setup_mobile_data_no_service">Nema usluge</string>
   <string name="setup_mobile_data_emergency_only">Samo hitni pozivi</string>
   <string name="enable_mobile_data_summary">Želite li koristiti mobilne podatke tijekom postavljanja? Uključeni mobilni podaci mogu napraviti troškove.</string>

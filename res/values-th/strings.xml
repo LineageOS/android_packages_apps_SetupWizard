@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>อนุญาตให้แอปที่ขออนุญาต</b> ใช้ข้อมูลตำแหน่งที่ตั้งของคุณ ซึ่งอาจรวมถึงตำแหน่งที่ตั้งปัจจุบันและที่ผ่านมา</string>
   <string name="location_battery_saving"><b>ลดปริมาณการใช้แบตเตอรี่</b> โดยการจำกัดจำนวนครั้งการใช้จีพีเอส</string>
   <string name="location_network"><b>ใช้ Wi-Fi</b> เพื่อช่วยให้แอปหาตำแหน่งได้ง่ายขึ้น</string>
-  <string name="location_network_telephony"><b>ใช้ Wi-Fi และเครือข่ายมือถือ</b> เพื่อช่วยให้แอปหาตำแหน่งของคุณ</string>
   <string name="location_network_gms"><b>ใช้บริการตำแหน่งที่ตั้งของ Google</b> เพื่อช่วยแอปหาตำแหน่งที่ตั้ง ซึ่งหมายรวมถึงการส่งข้อมูลตำแหน่งที่ตั้งแบบไม่ระบุตัวตนให้ Google แม้ในกรณีที่ไม่มีแอปใดทำงานอยู่ก็ตาม</string>
-  <string name="setup_mobile_data">เปิดใช้งานข้อมูลมือถือ</string>
   <string name="setup_mobile_data_no_service">ไม่มีบริการ</string>
   <string name="setup_mobile_data_emergency_only">โทรฉุกเฉินเท่านั้น</string>
-  <string name="enable_mobile_data_summary">ต้องการใช้เครือข่ายมือถือขณะตั้งค่าหรือไม่ การเปิดใช้ข้อมูลมือถืออาจมีค่าใช้จ่ายข้อมูลจากผู้ให้บริการ</string>
   <string name="no">ไม่</string>
   <string name="yes">ใช่</string>
   <string name="data_sim_name">ซิม <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

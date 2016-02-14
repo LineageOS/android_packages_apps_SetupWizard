@@ -42,12 +42,9 @@
   <string name="location_services_summary">Yer xidmətləri sistem və üçüncü tərəf tətbiqetmələrə təxmini yeriniz kimi məlumatları götürmək və istifadə etmək icazəsi verər. Məsələn, bir tətbiqetmə yaxınlıqdakı əyləncə mərkəzini tapmaq üçün təxmini yerinizdən istifadə edə bilər.</string>
   <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqetmələrə icazə ver.</b> Bu hazırki yerinizi və keçmiş yerlərinizi ehtiva edə bilər.</string>
   <string name="location_network"><b>Wi-Fi ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin.</string>
-  <string name="location_network_telephony"><b>Wi-Fi və mobil şəbəkələr ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin.</string>
   <string name="location_network_gms"><b>Google\'un yer xidmətləri ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin. Bu heç bir tətbiqetmə işləməzkən belə, adsız yer verilənlərinin Google\'a göndərilməsi deməkdir.</string>
-  <string name="setup_mobile_data">Mobil verilənləri aç</string>
   <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
   <string name="setup_mobile_data_emergency_only">Yalnız fövqəladə vəziyyət zəngləri</string>
-  <string name="enable_mobile_data_summary">Quraşdırma vaxtı mobil verilənlərdən istifadə etmək istəyirsiniz? Mobil verilənləri açmaq əlavə ödənişə səbəb ola bilər.</string>
   <string name="no">Xeyr</string>
   <string name="yes">Bəli</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

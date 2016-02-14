@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>Дазволіць дадаткам, якія запыталі ваш дазвол</b> скарыстаць інфармацыю пра ваша месцазнаходжанне. Гэта можа ўлучаць ваша бягучае і мінулыя месцазнаходжанні.</string>
   <string name="location_battery_saving"><b>Зменшыць энергаспажыванне</b>, абмяжоўваючы колькасць абнаўленняў GPS у гадзіну.</string>
   <string name="location_network"><b>Скарыстаць Wi-F</b> для вызначэння месцазнаходжання.</string>
-  <string name="location_network_telephony"><b>Скарыстаць Wi-Fi і мабільныя сеткі</b> для вызначэння месцазнаходжання.</string>
   <string name="location_network_gms"><b>Скарыстаць службы месцазнаходжання Google</b>, каб дапамагчы дадаткам вызначаць ваша месцазнаходжанне. Гэта азначае, што яны будуць адпраўляць ананімныя дадзеныя пра месцазнаходжанне ў Google нават тады, калі ніякія дадаткі не запушчаны.</string>
-  <string name="setup_mobile_data">Уключыць мабільныя дадзеныя</string>
   <string name="setup_mobile_data_no_service">Няма сеткі</string>
   <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
-  <string name="enable_mobile_data_summary">Хочаце скарыстаць мабільную перадачу дадзеных падчас налады? Улучэнне перадачы дадзеных па сотавых сетках можа пацягнуць выдаткі.</string>
   <string name="no">Не</string>
   <string name="yes">Так</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

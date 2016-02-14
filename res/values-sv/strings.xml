@@ -41,13 +41,14 @@
   <string name="other_services_summary">Dessa tjänster låter Google arbeta för dig, och du kan sätta på eller stänga av tjänsterna när som helst. Data kommer användas i överensstämmelse med Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Platstjänster låter systemet och tredjepartsappar samla in och använda data såsom din ungefärliga plats. Till exempel så kan en app använda din ungefärliga plats för att hitta närbelägna kaféer.</string>
   <string name="location_access_summary"><b>Tillåt appar som du gett tillåtelse</b> att använda din platsinformation. Detta inkluderar din nuvarande plats och tidigare platser.</string>
+  <string name="location_battery_saving"><b>Minska batteriförbrukningen</b> genom att begränsa antalet GPS-uppdateringar per timme.</string>
   <string name="location_network"><b>Använd Wi-Fi</b> för att hjälpa appar fastställa din position.</string>
-  <string name="location_network_telephony"><b>Använd Wi-Fi och mobila nät</b> för att hjälpa appar fastställa din position.</string>
+  <string name="location_network_telephony"><b>Använd Wi\u2011Fi och mobila nät</b> för att hjälpa appar fastställa din position.</string>
   <string name="location_network_gms"><b>Använd Googles platstjänster</b> för att hjälpa appar fastställa din position. Detta innebär att skicka anonyma platsdata till Google, även om inga appar körs.</string>
-  <string name="setup_mobile_data">Aktivera mobildata</string>
+  <string name="setup_mobile_data">Slå på mobildata</string>
   <string name="setup_mobile_data_no_service">Ingen service</string>
   <string name="setup_mobile_data_emergency_only">Endast nödsamtal</string>
-  <string name="enable_mobile_data_summary">Vill du använda mobildata under installationen? Aktivering av mobildata kan medföra datakostnader.</string>
+  <string name="enable_mobile_data_summary">Vill du använda mobildata under installationen? Användning av mobildata kan ge upphov till dataavgifter.</string>
   <string name="no">Nej</string>
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

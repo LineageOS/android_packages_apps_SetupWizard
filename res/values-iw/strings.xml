@@ -45,10 +45,10 @@
   <string name="location_network"><b>השתמש ב-Wi-Fi</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_telephony"><b>השתמש ב-Wi-Fi וברשתות סלולריות</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_gms"><b>השתמש בשירותי המיקום של Google</b> כדי לשלוח נתוני מיקום אנונימיים ל-Google, גם כאשר אין יישומים פועלים.</string>
-  <string name="setup_mobile_data">הפעל נתונים ניידים</string>
+  <string name="setup_mobile_data">הפעל נתונים סלולריים</string>
   <string name="setup_mobile_data_no_service">אין שירות</string>
   <string name="setup_mobile_data_emergency_only">שיחות חירום בלבד</string>
-  <string name="enable_mobile_data_summary">האם ברצונך להשתמש באינטרנט הסלולרי במהלך ההתקנה? פעולה זו עלולה להיות כרוכה בתשלום עקב הפעלת נתונים ניידים.</string>
+  <string name="enable_mobile_data_summary">האם ברצונך להשתמש בתקשורת נתונים סלולרית במהלך ההתקנה? הפעלת נתונים סלולריים עשויה לעלות כסף.</string>
   <string name="no">לא</string>
   <string name="yes">כן</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

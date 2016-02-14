@@ -42,12 +42,9 @@
   <string name="location_services_summary">تسمح خدمات الموقع لتطبيقات النظام والتطبيقات الخارجية بجمع واستخدام البيانات مثل موقعك التقريبي. على سبيل المثال، قد يستخدم تطبيق ما موقعك التقريبي لتحديد موقع  المقاهي القريبة.</string>
   <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
   <string name="location_network"><b>استخدام الواي فاي</b> لمساعدة التطبيقات على تحديد موقعك.</string>
-  <string name="location_network_telephony"><b>استخدام الواي فاي وشبكات الجوال</b> لمساعدة التطبيقات على تحديد موقعك.</string>
   <string name="location_network_gms"><b>استخدام خدمة الموقع من جوجل</b> لمساعدة التطبيقات على تحديد موقعك. وهذا يعني إرسال بيانات مجهولة عن الموقع إلى جوجل، حتى في حالة عدم تشغيل أي تطبيقات.</string>
-  <string name="setup_mobile_data">تشغيل بيانات الجوال</string>
   <string name="setup_mobile_data_no_service">لا توجد خدمة</string>
   <string name="setup_mobile_data_emergency_only">مكالمات الطوارئ فقط</string>
-  <string name="enable_mobile_data_summary">هل تريد تشغيل بيانات الجوال أثناء عملية الإعداد؟ تشغيل بيانات الجوال قد تترتب عليه رسوم البيانات.</string>
   <string name="no">لا</string>
   <string name="yes">نعم</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة</string>

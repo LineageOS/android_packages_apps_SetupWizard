@@ -42,12 +42,9 @@
   <string name="location_services_summary">Layanan lokasi mengizinkan Maps dan aplikasi lain untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi Anda. Misalnya, Maps dapat menggunakan perkiraan lokasi Anda untuk menemukan toko-toko kopi terdekat.</string>
   <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
   <string name="location_network"><b>Penggunaan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
-  <string name="location_network_telephony"><b>Penggunaan Wi-Fi dan jaringan selular</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
   <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi Anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>
-  <string name="setup_mobile_data">Aktifkan data seluler</string>
   <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
-  <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan mobile data selama setup? Menyalakan mobile data mungkin akan dikenakan biaya data.</string>
   <string name="no">Tidak</string>
   <string name="yes">Ya</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

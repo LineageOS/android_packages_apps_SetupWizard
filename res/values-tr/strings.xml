@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
   <string name="location_battery_saving">Saatte yapılan GPS güncelleme sayısını kısıtlayarak <b>pil tüketimini azaltın</b>.</string>
   <string name="location_network">Uygulamaların konumunuzu bulmanısına yardımcı olmak için <b>Wi-Fi\'yi kullanın</b>.</string>
-  <string name="location_network_telephony">Uygulamaların konumunuzu bulmasına yardımcı olmak için <b>Wi-Fi\'yi ve mobil şebekeleri kullanın</b>.</string>
   <string name="location_network_gms">Konumunuzu belirlemek için <b>Google konum servislerini kullanın</b>. Bu, hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
-  <string name="setup_mobile_data">Mobil veriyi aç</string>
   <string name="setup_mobile_data_no_service">Servis yok</string>
   <string name="setup_mobile_data_emergency_only">Sadece acil durum çağrıları</string>
-  <string name="enable_mobile_data_summary">Kurulum sırasında mobil veriyi kullanmak istiyor musunuz? Mobil veriyi açarak veri ücretlerine tabi olabilirsiniz.</string>
   <string name="no">Hayır</string>
   <string name="yes">Evet</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

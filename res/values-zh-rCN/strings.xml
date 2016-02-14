@@ -48,7 +48,7 @@
   <string name="setup_mobile_data">打开移动数据</string>
   <string name="setup_mobile_data_no_service">无服务</string>
   <string name="setup_mobile_data_emergency_only">只能拨打紧急电话</string>
-  <string name="enable_mobile_data_summary">您想在设置过程中使用移动数据吗？您的运营商可能会收取费用。</string>
+  <string name="enable_mobile_data_summary">您想在设置过程中使用移动数据吗？启用移动数据可能会导致额外开销。</string>
   <string name="no">否</string>
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

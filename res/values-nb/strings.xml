@@ -43,12 +43,9 @@
   <string name="location_access_summary"><b>Tillat programmer som har bedt om din tillatelse</b> å bruke stedsinformasjonen. Dette kan være din nåværende posisjon og siste steder.</string>
   <string name="location_battery_saving"><b>Redusere batteriforbruket</b> ved å begrense antall GPS oppdateringer per time.</string>
   <string name="location_network"><b>Bruk Wi-Fi</b> for å hjelpe apper å finne din posisjon.</string>
-  <string name="location_network_telephony"><b>Bruk Wi-Fi og mobile nettverk</b> for å hjelpe apper å finne din posisjon.</string>
   <string name="location_network_gms"><b>Bruk Googles lokasjonstjeneste</b> for å hjelpe apps finne din posisjon. Dette betyr å sende anonym stedsinformasjon til Google, selv når ingen programmer kjører.</string>
-  <string name="setup_mobile_data">Slå på mobildata</string>
   <string name="setup_mobile_data_no_service">Ingen tjeneste</string>
   <string name="setup_mobile_data_emergency_only">Kun nødanrop</string>
-  <string name="enable_mobile_data_summary">Vil du bruke mobildata under installasjonen? Slå på mobildata kan tilføye ekstra kostnader.</string>
   <string name="no">Nei</string>
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
@@ -76,4 +73,5 @@
   <string name="fingerprint_setup_backup_lock_method">Konfigurere en sekundær opplåsingsmetode</string>
   <string name="fingerprint_setup_add_fingerprint">Legge til fingeravtrykket ditt</string>
   <string name="fingerprint_setup_screen_lock_setup">Konfigurere skjermlås</string>
+  <string name="sim_locale_changed">%1$s SIM oppdaget</string>
 </resources>

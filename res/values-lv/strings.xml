@@ -42,12 +42,9 @@
   <string name="location_services_summary">Atrašanās vietas pakalpojumi atļauj sistēmai un trešo pušu lietotnēm ievākt un izmantot ievākto informāciju, kā, piemēram, Jūsu aptuveno atrašanās vietu, lai atrastu tuvumā esošo kafejnīcu.</string>
   <string name="location_access_summary"><b>Atļaut lietotnēm kas ir lūgušas atļauju</b> izmantot Jūsu atrašanās vietu. Tas var ietvert Jūsu pašreizējo atrašanās vietu vai kādu no iepriekšējām.</string>
   <string name="location_network"><b>Izmantot Wi-Fi</b>, lai palīdzētu lietotnēm noteikt Jūsu atrašanās vietu.</string>
-  <string name="location_network_telephony"><b>Izmantot Wi-Fi un pakešdatus</b>, lai palīdzētu lietotnēm noteikt Jūsu atrašanās vietu.</string>
   <string name="location_network_gms"><b>Izmantot Google atrašanās vietas pakalpojumus</b>, lai palīdzētu lietotnēm noteikt Jūsu atrašanās vietu. Tas iekļauj anonīmu datu sūtīšanu uz Google serveriem, pat ja lietotnes nedarbojas.</string>
-  <string name="setup_mobile_data">Ieslēgt pakešdatus</string>
   <string name="setup_mobile_data_no_service">Nav signāla</string>
   <string name="setup_mobile_data_emergency_only">Tikai ārkārtas zvani</string>
-  <string name="enable_mobile_data_summary">Vai vēlaties ieslēgt pakešdatus uzstādīšanas laikā? Ieslēdzot pakešdatus var tik piemērota maksa.</string>
   <string name="no">Nē</string>
   <string name="yes">Jā</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

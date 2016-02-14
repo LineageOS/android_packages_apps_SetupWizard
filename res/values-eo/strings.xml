@@ -42,12 +42,9 @@
   <string name="location_services_summary">Lokiga servo permesas al sistemaj aplikaĵoj  kaj aliaj aplikaĵoj koni vian aproksiman lokigon. Ekzemple, aplikaĵo povas uzi vian aproksiman lokigon por trovi kafejojn en la ĉirkaŭaĵo.</string>
   <string name="location_access_summary"><b>Permesi al aplikaĵoj kiujn vi aprobis</b> koni vian lokigon. Tiu inkluzivas aktualan lokigon kaj pasintajn.</string>
   <string name="location_network"><b>Uzi Vifion</b> por helpi aplikaĵojn koni vian lokigon.</string>
-  <string name="location_network_telephony"><b>Uzi Vifion kaj porteblajn retojn</b> por helpi aplikaĵojn koni vian lokigon.</string>
   <string name="location_network_gms"><b>Uzi lokigan servon de Google</b> por helpi aplikaĵojn koni vian lokigon. Tio signifas sendi anonimajn lokigajn datumojn al Google, eĉ kiam neniu aplikaĵo funkcias.</string>
-  <string name="setup_mobile_data">Ŝalti poŝkomputilan reton</string>
   <string name="setup_mobile_data_no_service">Neniu servo</string>
   <string name="setup_mobile_data_emergency_only">Nur urĝaj alvokoj</string>
-  <string name="enable_mobile_data_summary">Ĉu vi deziras uzi retajn datumojn dum agordo ?  Ŝalti retan aliron povas okazi pliajn kostojn.</string>
   <string name="no">Ne</string>
   <string name="yes">Jes</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

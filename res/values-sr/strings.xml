@@ -45,10 +45,10 @@
   <string name="location_network"><b>Користи Wi-Fi</b> да помогнеш апликацијама да одреде твоју локацију.</string>
   <string name="location_network_telephony"><b>Користи Wi-Fi и мобилне мреже</b>да помогнеш апликацијама да одреде твоју локацију.</string>
   <string name="location_network_gms"><b>Користи Google сервис локације</b> да помогнеш апликацијама да одреде твоју локацију. Ово значи слање анонимних подака у Google, чак и кад нема покренутих апликација.</string>
-  <string name="setup_mobile_data">Укључи пренос података</string>
+  <string name="setup_mobile_data">Укључи мобилне податке</string>
   <string name="setup_mobile_data_no_service">Нема сервиса</string>
   <string name="setup_mobile_data_emergency_only">Само хитни позиви</string>
-  <string name="enable_mobile_data_summary">Да ли желите користити мобилне податке током подешавања? Укључивање мобилних података може бити наплаћено.</string>
+  <string name="enable_mobile_data_summary">Да ли желиш користити мобилне податке током инсталције? Укључење мобилних података може бити наплаћено.</string>
   <string name="no">Не</string>
   <string name="yes">Да</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>

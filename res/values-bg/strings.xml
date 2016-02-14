@@ -25,15 +25,15 @@
   <string name="setup_complete">Настройването е завършено</string>
   <string name="setup_welcome">Добре дошли</string>
   <string name="setup_wifi">Изберете Wi-Fi</string>
-  <string name="setup_sim_missing">Липсва SIM карта</string>
-  <string name="setup_choose_data_sim">Изберете Карта за данни</string>
+  <string name="setup_sim_missing">Липсва СИМ карта</string>
+  <string name="setup_choose_data_sim">Изберете СИМ-карта за данни</string>
   <string name="setup_location">Услуги за местоположение</string>
   <string name="setup_other">Други услуги</string>
   <string name="setup_datetime">Дата &amp; час</string>
   <string name="setup_current_date">Днешна дата</string>
   <string name="setup_current_time">Текущото време</string>
-  <string name="sim_missing_summary" product="tablet">SIM картата не е била открита в таблета. За да поставите SIM карта, прочетете инструкциите, предоставени с устройството.</string>
-  <string name="sim_missing_summary" product="default">SIM картата не е била открита в телефона. За да поставите SIM карта, прочетете инструкциите, предоставени с устройството.</string>
+  <string name="sim_missing_summary" product="tablet">СИМ карта не е открита в таблета. За да научите как да поставите СИМ-карта, прочетете инструкциите на устройството.</string>
+  <string name="sim_missing_summary" product="default">СИМ карта не е открита в телефона. За да научите как да поставите СИМ-карта, прочетете инструкциите на устройството.</string>
   <string name="choose_data_sim_summary" product="tablet">Коя SIM искате да използвате за данни? Избраната СИМ може да добави разходи, тъй като тя ще се използва за настройване на таблета.</string>
   <string name="choose_data_sim_summary" product="default">Коя SIM искате да използвате за данни? Избраната СИМ може да добави разходи, тъй като тя ще се използва за настройване на телефона.</string>
   <string name="date_time_summary">Задайте часовата си зона и настройте текущата дата и час, ако е необходимо</string>
@@ -45,13 +45,13 @@
   <string name="location_network"><b>Използвайте Wi-Fi</b> за да помогнете на приложенията да определят вашето местоположение.</string>
   <string name="location_network_telephony"><b>Използвайте Wi-Fi и мобилен интернет</b> за да помогнете на приложенията да определят вашето местоположение.</string>
   <string name="location_network_gms"><b>Използвайте Google услугите за местоположение</b> за да помогнете на приложенията да определят вашето местоположение. Това означава, че ще изпращате анонимно информация за местоположението си до Google, включително когато няма приложения използващи тази услуга.</string>
-  <string name="setup_mobile_data">Включване на мобилен интернет</string>
+  <string name="setup_mobile_data">Включване на мобилните данни</string>
   <string name="setup_mobile_data_no_service">Няма поддръжка</string>
   <string name="setup_mobile_data_emergency_only">Само спешни повиквания</string>
-  <string name="enable_mobile_data_summary">Искате ли да използвате мобилен интернет по време на инсталирането? Включването на мобилния интернет може да добави разходи.</string>
+  <string name="enable_mobile_data_summary">Желаете ли да се използват мобилни данни по време на инсталацията? Активирането на мобилните данни може да доведе до допълнителни такси.</string>
   <string name="no">Не</string>
   <string name="yes">Да</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
+  <string name="data_sim_name">СИМ <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Спешни повиквания</string>
   <string name="setup_services">Cyanogen характеристики</string>
   <string name="services_explanation" product="tablet">Тези услуги работят за да разширят възможностите на таблета. Данните ще бъдат използвани в съгласие с Cyanogen в <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
@@ -76,5 +76,5 @@
   <string name="fingerprint_setup_backup_lock_method">Настройка на втори метод за отключване</string>
   <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
   <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
-  <string name="sim_locale_changed">%1$s SIM намерена</string>
+  <string name="sim_locale_changed">Намерена СИМ %1$s карта</string>
 </resources>

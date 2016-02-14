@@ -42,12 +42,9 @@
   <string name="location_services_summary">ಸ್ಥಳ ಸೇವೆಗಳು ಸಿಸ್ಟಂ ಹಾಗು ತೃತೀಯ ಪಕ್ಷೀಯ ಆಪ್‍ಗಳಿಗೆ ನಿಮ್ಮ ಅಂದಾಜು ಸ್ಥಳದಂತಹ ಡೇಟಾವನ್ನು ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಉಪಯೋಗಿಸಲು ಅನುಮತಿಸುತ್ತದೆ. ಉದಾಹರಣೆಗೆ, ಒಂದು ಆಪ್ ನಿಮ್ಮ ಅಂದಾಜು ಸ್ಥಳವನ್ನು ಹತ್ತಿರದ ಕಾಫಿ ಶಾಪ್‍ಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲು ಉಪಯೋಗಿಸಬಹುದು.</string>
   <string name="location_access_summary"><b>ನಿಮ್ಮ ಅನುಮತಿಗಳನ್ನು ಕೇಳಿರುವ ಆಪ್‍ಗಳಿಗೆ</b> ನಿಮ್ಮ ಸ್ಥಳದ ಮಾಹಿತಿಯನ್ನು ಉಪಯೋಗಿಸಲು ಅನುಮತಿಸುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳ ಮತ್ತು ಹಿಂದಿನ ಸ್ಥಳಗಳನ್ನೂ ಒಳಗೊಂಡಿರಬಹುದು.</string>
   <string name="location_network">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಆಪ್‍ಗಳಿಗೆ ಸಹಕರಿಸಲು <b>ವೈಫೈ ಉಪಯೋಗಿಸಿ</b>.</string>
-  <string name="location_network_telephony">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಆಪ್‍ಗಳಿಗೆ ಸಹಕರಿಸಲು <b>ವೈಫೈ ಹಾಗು ಮೊಬೈಲ್ ನೆಟ್‍ವರ್ಕ್ ಉಪಯೋಗಿಸಿ</b>.</string>
   <string name="location_network_gms">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಆಪ್‍ಗಳಿಗೆ ಸಹಕರಿಸಲು <b>ಗೂಗಲ್‍ನ ಸ್ಥಳ ಸೇವೆಯನ್ನು ಉಪಯೋಗಿಸಿ</b>. ಇದರ ಅರ್ಥ ಅಜ್ಞಾತ ಸ್ಥಳ ಡೇಟಾವನ್ನು ಗೂಗಲ್‍ಗೆ ಕಳುಹಿಸುವುದು. ಯಾವುದೇ ಆಪ್‍ಗಳು ಚಾಲನೆಯಲ್ಲಿರದಿರುವಾಗಲೂ ಸಹ.</string>
-  <string name="setup_mobile_data">ಮೊಬೈಲ್ ಡೇಟಾ ಆನ್ ಮಾಡಿ</string>
   <string name="setup_mobile_data_no_service">ಯಾವುದೇ ಸೇವೆ ಇಲ್ಲ</string>
   <string name="setup_mobile_data_emergency_only">ತುರ್ತುಪರೀಸ್ಥಿತಿ ಕರೆಗಳು ಮಾತ್ರ</string>
-  <string name="enable_mobile_data_summary">ಸೆಟಪ್ ಮಾಡುವಾಗ ನೀವು ಮೊಬೈಲ್ ಡೇಟಾ ಉಪಯೋಗಿಸಲು ಬಯಸುವಿರಾ? ಮೊಬೈಲ್ ಡೇಟಾ ಆನ್ ಮಾಡುವುದರಿಂದ ನೀವು ಡೇಟಾ ಶುಲ್ಕಕ್ಕೆ ಗುರಿಯಾಗಬಹುದು.</string>
   <string name="no">ಬೇಡ</string>
   <string name="yes">ಹೌದು</string>
   <string name="data_sim_name">ಸಿಮ್ <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
