@@ -37,7 +37,7 @@
   <string name="choose_data_sim_summary" product="tablet">Quina SIM vols utilitzar per a les dades? La SIM seleccionada pot provocar càrrecs per part de l\'operador ja que servirà per configurar la teva tauleta.</string>
   <string name="choose_data_sim_summary" product="default">Quina SIM vols utilitzar per a les dades? La SIM seleccionada pot provocar càrrecs per part de l\'operador ja que servirà per configurar el teu telèfon.</string>
   <string name="date_time_summary">Estableix el teu fus horari i ajusta la data i hora actual si és necessari</string>
-  <string name="backup_data_summary"><b>Fes una còpia de seguretat</b> de les dades de les app, contrasenyes Wi-Fi, i altres ajustaments als servidors de Google</string>
+  <string name="backup_data_summary"><b>Fes una còpia de seguretat</b> de les dades de les aplicacions, contrasenyes Wi-Fi, i altres ajustaments als servidors de Google</string>
   <string name="other_services_summary">Aquests serveis posen a Google a treballar per a tu, i pots activar-los o desactivar-los en qualsevol moment. Les dades s\'utilitzaran d\'acord amb la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
   <string name="location_services_summary">Els serveis d\'ubicació permeten al sistema i a aplicacions de tercers recopilar i utilitzar dades com la teva ubicació aproximada. Per exemple, una aplicació pot utilitzar la teva ubicació aproximada per localitzar cafeteries als voltants.</string>
   <string name="location_access_summary"><b>Permet a les aplicacions que han demanat el teu permís</b> utilitzar la teva informació d\'ubicació. Això pot incloure la teva ubicació i ubicacions anteriors.</string>
