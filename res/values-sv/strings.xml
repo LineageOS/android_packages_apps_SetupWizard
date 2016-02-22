@@ -24,7 +24,7 @@
   <string name="loading">Vänta en liten stund\u2026</string>
   <string name="setup_complete">Konfigurationen är klar</string>
   <string name="setup_welcome">Välkommen</string>
-  <string name="setup_wifi">Välj Wi-Fi</string>
+  <string name="setup_wifi">Välj Wi\u2011Fi</string>
   <string name="setup_sim_missing">SIM-kort saknas</string>
   <string name="setup_choose_data_sim">Välj ett SIM-kort för data</string>
   <string name="setup_location">Platstjänster</string>
@@ -37,12 +37,12 @@
   <string name="choose_data_sim_summary" product="tablet">Vilket SIM-kort vill du använda för data? Det valda SIM-kortet kan medföra nätverkskostnader eftersom det används för att konfigurera din enhet.</string>
   <string name="choose_data_sim_summary" product="default">Vilket SIM-kort vill du använda för data? Det valda SIM-kortet kan medföra nätverkskostnader eftersom det används för att konfigurera din telefon.</string>
   <string name="date_time_summary">Ställ in din tidszon och justera datum och tid om det behövs</string>
-  <string name="backup_data_summary"><b>Backa upp</b> appdata, Wi-Fi-lösenord, och andra inställningar på Google-servrar</string>
+  <string name="backup_data_summary"><b>Säkerhetskopiera</b> appdata, Wi\u2011Fi-lösenord, och andra inställningar på Google-servrar</string>
   <string name="other_services_summary">Dessa tjänster låter Google arbeta för dig, och du kan sätta på eller stänga av tjänsterna när som helst. Data kommer användas i överensstämmelse med Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Platstjänster låter systemet och tredjepartsappar samla in och använda data såsom din ungefärliga plats. Till exempel så kan en app använda din ungefärliga plats för att hitta närbelägna kaféer.</string>
   <string name="location_access_summary"><b>Tillåt appar som du gett tillåtelse</b> att använda din platsinformation. Detta inkluderar din nuvarande plats och tidigare platser.</string>
   <string name="location_battery_saving"><b>Minska batteriförbrukningen</b> genom att begränsa antalet GPS-uppdateringar per timme.</string>
-  <string name="location_network"><b>Använd Wi-Fi</b> för att hjälpa appar fastställa din position.</string>
+  <string name="location_network"><b>Använd Wi\u2011Fi</b> för att hjälpa appar fastställa din position.</string>
   <string name="location_network_telephony"><b>Använd Wi\u2011Fi och mobila nät</b> för att hjälpa appar fastställa din position.</string>
   <string name="location_network_gms"><b>Använd Googles platstjänster</b> för att hjälpa appar fastställa din position. Detta innebär att skicka anonyma platsdata till Google, även om inga appar körs.</string>
   <string name="setup_mobile_data">Slå på mobildata</string>

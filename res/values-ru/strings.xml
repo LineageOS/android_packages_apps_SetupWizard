@@ -23,24 +23,24 @@
   <string name="ok">ОК</string>
   <string name="loading">Секунду\u2026</string>
   <string name="setup_complete">Настройка завершена</string>
-  <string name="setup_welcome">Добро пожаловать</string>
+  <string name="setup_welcome">Добро пожаловать!</string>
   <string name="setup_wifi">Выбрать сеть Wi-Fi</string>
-  <string name="setup_sim_missing">SIM-карта отсутствует</string>
+  <string name="setup_sim_missing">Нет SIM-карты</string>
   <string name="setup_choose_data_sim">Выберите SIM-карту для передачи данных</string>
   <string name="setup_location">Службы местоположения</string>
   <string name="setup_other">Другие службы</string>
   <string name="setup_datetime">Дата и время</string>
   <string name="setup_current_date">Текущая дата</string>
   <string name="setup_current_time">Текущее время</string>
-  <string name="sim_missing_summary" product="tablet">Не обнаружено установленной SIM-карты в планшете. Чтобы узнать, как вставить SIM-карту, прочитайте инструкцию к вашему устройству.</string>
-  <string name="sim_missing_summary" product="default">Не обнаружено установленной SIM-карты в телефоне. Чтобы узнать, как вставить SIM-карту, прочитайте инструкцию к вашему устройству.</string>
-  <string name="choose_data_sim_summary" product="tablet">Какую SIM вы хотите использовать для передачи данных? Выбранная SIM может повлечь расходы, так как она будет использоваться для настройки планшета.</string>
-  <string name="choose_data_sim_summary" product="default">Какую SIM вы хотите использовать для передачи данных? Выбранная SIM может повлечь расходы, так как она будет использоваться для настройки телефона.</string>
+  <string name="sim_missing_summary" product="tablet">В планшете не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
+  <string name="sim_missing_summary" product="default">В телефоне не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
+  <string name="choose_data_sim_summary" product="tablet">Какую SIM-карту использовать для передачи данных? Выбранная SIM-карта может повлечь расходы за сетевое подключение, так как она будет использоваться для настройки планшета.</string>
+  <string name="choose_data_sim_summary" product="default">Какую SIM-карту использовать для передачи данных? Выбранная SIM-карта может повлечь расходы за сетевое подключение, так как она будет использоваться для настройки телефона.</string>
   <string name="date_time_summary">Установите свой часовой пояс и настройте текущую дату и время, если необходимо</string>
-  <string name="backup_data_summary"><b>Сохранять</b> данные приложений, пароли Wi-Fi и другие параметры на сервера Google</string>
-  <string name="other_services_summary">Эти службы позволяют Google расширить возможности устройства. Вы можете выключить их в любое время. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-  <string name="location_services_summary">Службы местоположения позволяют системе и установленным приложениям собирать и использовать такие данные, как ваше приблизительное местоположение. Например, приложение может искать кофейни поблизости, основываясь на данных о вашем местоположении.</string>
-  <string name="location_access_summary"><b>Позволить приложениям, которые запросили ваше разрешение</b> использовать информацию о вашем местоположении. Это может включать ваше текущее и прошлые местоположения.</string>
+  <string name="backup_data_summary"><b>Сохранять</b> данные приложений, пароли Wi-Fi и другие параметры на серверах Google</string>
+  <string name="other_services_summary">Эти службы позволяют Google расширить возможности устройства. Вы можете выключить их в любое время. Данные будут использоваться в соответствии с правилами Google: <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="location_services_summary">Службы местоположения позволяют системе и установленным приложениям собирать и использовать такие данные, как ваше приблизительное местоположение. На основе этих данных приложение может искать, например, ближайшие к вам кофейни.</string>
+  <string name="location_access_summary"><b>Позволить приложениям, запросившим ваше разрешение</b>, использовать информацию о вашем местоположении. Это может включать ваше текущее и прошлые местоположения.</string>
   <string name="location_battery_saving"><b>Снизить энергопотребление</b>, ограничивая количество обновлений GPS в час.</string>
   <string name="location_network"><b>Использовать Wi-Fi</b> для определения местоположения.</string>
   <string name="location_network_telephony"><b>Использовать Wi-Fi и мобильные сети</b> для определения местоположения.</string>
@@ -54,21 +54,21 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> — <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Экстренный вызов</string>
   <string name="setup_services">Службы Cyanogen</string>
-  <string name="services_explanation" product="tablet">Эти службы расширяют возможности вашего планшета. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
-  <string name="services_explanation" product="default">Эти службы расширяют возможности вашего телефона. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
-  <string name="services_privacy_policy">политикой конфиденциальности</string>
+  <string name="services_explanation" product="tablet">Эти службы расширяют возможности планшета. Данные будут использоваться в соответствии с правилами Cyanogen: <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Эти службы расширяют возможности телефона. Данные будут использоваться в соответствии с правилами Cyanogen: <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_privacy_policy">Политика конфиденциальности</string>
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматически отправляя данные диагностики и использования в Cyanogen. Данная информация не может быть использована для идентификации вашей личности, но может помочь в работе над оптимизацией расхода батареи, улучшением производительности приложений, а также разработке новых функций <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её значки, обои и шрифты.</string>
-  <string name="services_os_nav_keys_label"><b>Использовать наэкранные навигационные кнопки</b> вместо аппаратных.</string>
+  <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
   <string name="services_use_secure_sms">Использовать безопасные SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> для шифрования сообщений, передаваемых другим пользователям устройств с <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Разблокировать</string>
-  <string name="setup_device_locked">Устройство было заблокировано пользователем.</string>
+  <string name="setup_device_locked">Устройство заблокировано пользователем.</string>
   <string name="setup_require_cyanogen_label"><b>Требовать пароль аккаунта ОС Cyanogen</b> для использования устройства даже после удаления всех данных.</string>
   <string name="setup_device_locked_instructions"><i>Чтобы включить или отключить эту функцию, перейдите в меню «Настройки &gt; Безопасность»</i></string>
-  <string name="setup_warning_skip_anyway">Без учетной записи Cyanogen вы не сможете:\n\nПерсонализировать телефон новыми обоями, иконками и другими компонентами в приложении «Темы»\n\nНайти или удалённо сбросить настройки на телефоне в случае его потери</string>
+  <string name="setup_warning_skip_anyway">Без аккаунта ОС Cyanogen вы не сможете:\n\nперсонализировать телефон новыми обоями, значками и другими компонентами в приложении «Темы»;\n\nнайти или удалённо сбросить настройки на телефоне в случае его потери.</string>
   <string name="settings_fingerprint_setup_title">Выбрать резервный способ блокировки экрана</string>
   <string name="settings_fingerprint_setup_details">Выберите способ блокировки экрана.</string>
   <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
