@@ -19,11 +19,9 @@ package com.cyanogenmod.setupwizard.ui;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.WallpaperManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
-import android.content.res.ThemeManager;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.AsyncTask;
@@ -48,6 +46,8 @@ import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+
+import cyanogenmod.themes.ThemeManager;
 
 import java.util.ArrayList;
 
@@ -317,7 +317,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mFinishingProgressBar.setVisibility(View.VISIBLE);
         mFinishingProgressBar.setIndeterminate(true);
         mFinishingProgressBar.startAnimation(fadeIn);
-        final ThemeManager tm = (ThemeManager) getSystemService(Context.THEME_SERVICE);
+        final ThemeManager tm = ThemeManager.getInstance();
         tm.addClient(this);
         mSetupData.finishPages();
     }
@@ -433,8 +433,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 if (mEnableAccessibilityController != null) {
                     mEnableAccessibilityController.onDestroy();
                 }
-                final ThemeManager tm =
-                        (ThemeManager) SetupWizardActivity.this.getSystemService(THEME_SERVICE);
+                final ThemeManager tm = ThemeManager.getInstance();
                 tm.removeClient(SetupWizardActivity.this);
                 SetupStats.sendEvents(SetupWizardActivity.this);
                 SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
