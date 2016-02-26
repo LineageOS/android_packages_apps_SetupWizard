@@ -19,11 +19,11 @@ package com.cyanogenmod.setupwizard.setup;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.FragmentManager;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.net.CaptivePortal;
 import android.net.ConnectivityManager;
-import android.net.Uri;
+import android.net.ICaptivePortal;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
@@ -64,15 +64,18 @@ public class WifiSetupPage extends SetupPage {
         public void run() {
             if (mIsCaptivePortal) {
                 try {
-                    int netId = ConnectivityManager.from(mContext)
-                            .getNetworkForType(ConnectivityManager.TYPE_WIFI).netId;
                     mResponseToken = String.valueOf(new Random().nextLong());
-                    Intent intent = new Intent();
-                    intent.setData(Uri.fromParts("netid", Integer.toString(netId),
-                            mResponseToken));
-                    intent.setComponent(new ComponentName("com.android.captiveportallogin",
-                            "com.android.captiveportallogin.CaptivePortalLoginActivity"));
-                    intent.putExtra(Intent.EXTRA_TEXT, String.valueOf(netId));
+                    final Intent intent = new Intent(
+                            ConnectivityManager.ACTION_CAPTIVE_PORTAL_SIGN_IN);
+                    intent.putExtra(Intent.EXTRA_TEXT, mResponseToken);
+                    intent.putExtra(ConnectivityManager.EXTRA_NETWORK,
+                            ConnectivityManager.from(mContext)
+                                    .getNetworkForType(ConnectivityManager.TYPE_WIFI));
+                    intent.putExtra(ConnectivityManager.EXTRA_CAPTIVE_PORTAL,
+                            new CaptivePortal(new ICaptivePortal.Stub() {
+                                @Override
+                                public void appResponse(int response) {}
+                            }));
                     intent.putExtra("status_bar_color",
                             mContext.getResources().getColor(R.color.primary_dark));
                     intent.putExtra("action_bar_color", mContext.getResources().getColor(
