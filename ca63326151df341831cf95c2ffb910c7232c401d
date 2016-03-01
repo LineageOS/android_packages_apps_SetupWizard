@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ffb9cba7_ae248dc7",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/WifiSetupPage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 10631
+      },
+      "writtenOn": "2016-03-01T06:44:51Z",
+      "side": 1,
+      "message": "Does this need to be final?",
+      "revId": "ca63326151df341831cf95c2ffb910c7232c401d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
