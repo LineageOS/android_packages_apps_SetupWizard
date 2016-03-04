@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label">برای استفاده از دستگاه حتی پس از بازگشت به تنظیمات کارخانه، <b>گذرواژه حساب سایانوژن شما نیاز می‌شود</b>.</string>
   <string name="setup_device_locked_instructions"><i>برای خاموش/روشن کردن این ویژگی، لطفا به تنظیمات > امنیت بروید</i></string>
   <string name="setup_warning_skip_anyway">بدون حساب کاربری سایانوژن نمی‌توانید:\n\nبه وسیله آیکون‌ها، کاغذدیواری‌ها و موارد بیشتر در برنامه تم، گوشی خود را طبق میل خود تغییر دهید\n\nدر صورت گم‌شدن گوشی، آن را از راه دور موقعیت‌یابی و اطلاعاتش را پاک کنید</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">انتخاب قفل پشتیبان صفحه</string>
   <string name="settings_fingerprint_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
   <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>

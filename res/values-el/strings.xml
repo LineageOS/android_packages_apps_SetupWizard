@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Απαίτηση του κωδικού πρόσβασης του λογαριασμού σας Cyanogen OS</b> για να χρησιμοποιήσετε τη συσκευή σας, ακόμα και μετά από επαναφορά εργοστασιακών ρυθμίσεων.</string>
   <string name="setup_device_locked_instructions"><i>Για να ενεργοποιήσετε/απενεργοποιήσετε αυτή τη λειτουργία, παρακαλώ πηγαίνετε στις Ρυθμίσεις &gt; Ασφάλεια</i></string>
   <string name="setup_warning_skip_anyway">Χωρίς ένα λογαριασμό Cyanogen OS, δεν θα είστε σε θέση να:\n\nΠροσαρμόσετε το τηλέφωνό σας με νέα εικονίδια, ταπετσαρίες και πολλά άλλα στην εφαρμογή Θεμάτων\n\nΕντοπίσετε ή διαγράψετε εξ αποστάσεως το τηλέφωνό σας εάν το χάσετε</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
   <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
   <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>

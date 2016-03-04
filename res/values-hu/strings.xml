@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Cyanogen OS fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
   <string name="setup_device_locked_instructions"><i>A szolgáltatás ki/be kapcsolásához, kérjük menjen ide: Beállítások &gt; Biztonság</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS fiók nélkül nem fog hozzáférni a következőkhöz:\n\nTelefon testreszabása új ikonokkal, háttérképekkel és egyebekkel a Téma kezelő alkalmazáson keresztül\n\nTelefon helyének maghatározása, vagy távolról való törlése, ha elveszett</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Válasszon másodlagos feloldási módot</string>
   <string name="settings_fingerprint_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
   <string name="fingerprint_setup_title">Ujjlenyomat beállítások</string>

@@ -20,7 +20,7 @@
   <string name="next">Следваща</string>
   <string name="skip">Пропусни</string>
   <string name="start">Старт</string>
-  <string name="ok">ОK</string>
+  <string name="ok">Добре</string>
   <string name="loading">Само секунда\u2026</string>
   <string name="setup_complete">Настройването е завършено</string>
   <string name="setup_welcome">Добре дошли</string>
@@ -31,7 +31,7 @@
   <string name="setup_other">Други услуги</string>
   <string name="setup_datetime">Дата &amp; час</string>
   <string name="setup_current_date">Днешна дата</string>
-  <string name="setup_current_time">Текущото време</string>
+  <string name="setup_current_time">Актуално време</string>
   <string name="sim_missing_summary" product="tablet">СИМ карта не е открита в таблета. За да научите как да поставите СИМ карта, прочетете инструкциите на устройството.</string>
   <string name="sim_missing_summary" product="default">СИМ карта не е открита в телефона. За да научите как да поставите СИМ карта, прочетете инструкциите на устройството.</string>
   <string name="choose_data_sim_summary" product="tablet">Коя СИМ карта искате да използвате за данни? Избраната СИМ карта може да добави разходи, тъй като тя ще се използва за настройване на таблета.</string>
@@ -62,13 +62,14 @@
   <string name="services_apply_theme">Прилагане на <xliff:g id="name" example="Material">%s </xliff:g> тема</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> позволява уникални икони, тапети и шрифтове.</string>
   <string name="services_os_nav_keys_label"><b>Използване на клавишите за навигация на екрана</b> вместо хардуерните бутони.</string>
-  <string name="services_use_secure_sms">Използвайте сигурен SMS</string>
+  <string name="services_use_secure_sms">Използвайте защитен SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s </xliff:g> за криптиране на SMS разговори с други потребители използвайте сигурни SMS на <xliff:g id="name" example="CyanogenMod">%2$s </xliff:g> устройството.</string>
   <string name="setup_unlock">Отключи</string>
   <string name="setup_device_locked">Това устройство е заключено от потребителя.</string>
   <string name="setup_require_cyanogen_label"><b>Изисква паролата на Cyanogen OS акаунта</b> за да използвате устройството дори след фабрично нулиране.</string>
   <string name="setup_device_locked_instructions"><i>За да включите тази функция, изключено/включено, моля отидете на Настройки &gt; Сигурност</i></string>
   <string name="setup_warning_skip_anyway">Без Cyanogen OS профил, няма да можете да: \n\nПерсонализирате телефона с нови икони, тапети и други чрез приложението за теми\n\nЛокално или отдалечено да изтриете всичко на телефона, ако го е загубите</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Изберете резервен метод за заключване на екрана</string>
   <string name="settings_fingerprint_setup_details">Как бихте желали да заключите вашият екран?</string>
   <string name="fingerprint_setup_title">Създаване на пръстов отпечатък</string>
@@ -76,5 +77,5 @@
   <string name="fingerprint_setup_backup_lock_method">Настройка на втори метод за отключване</string>
   <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
   <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
-  <string name="sim_locale_changed">Намерена СИМ %1$s карта</string>
+  <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
 </resources>

@@ -70,6 +70,7 @@
   <string name="setup_device_locked_instructions"><i>이 기능을 켜거나 끄려면, 설정 &gt; 보안으로 이동하세요</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS 계정이 없을 경우 사용할 수 없는 기능:\n\n
 테마 앱을 통한 새로운 아이콘, 배경화면 등의 적용\n\n기기를 잃어버렸을 경우 기기 찾기 또는 원격 개인정보 삭제</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">백업 화면 잠금 방법 선택</string>
   <string name="settings_fingerprint_setup_details">화면을 어떻게 잠그시겠습니까?</string>
   <string name="fingerprint_setup_title">지문 설정</string>

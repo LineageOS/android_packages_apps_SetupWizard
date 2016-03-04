@@ -48,4 +48,5 @@
   <string name="setup_services">شێوازی ساینەجن</string>
   <string name="services_privacy_policy">یاسای تایبەتی</string>
   <string name="setup_unlock">کردنەوە</string>
+  <!-- Fingerprint setup -->
 </resources>

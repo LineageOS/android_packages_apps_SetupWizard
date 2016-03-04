@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din Cyanogen konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
   <string name="setup_device_locked_instructions"><i>For at slå denne funktion til/fra, skal du gå til Indstillinger &gt; Sikkerhed</i></string>
   <string name="setup_warning_skip_anyway">Uden en Cyanogen konto kan du ikke:\n\nTilpasse din telefon med nye ikoner, tapeter og meget mere i Tema app\'en\n\nFinde eller slette din telefon, hvis du mister den</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Vælg alternativ skærmlåstype</string>
   <string name="settings_fingerprint_setup_details">Hvordan vil du gerne låse din skærm?</string>
   <string name="fingerprint_setup_title">Konfigurerring af fingeraftryk</string>

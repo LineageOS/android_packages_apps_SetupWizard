@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label"><b>Pieprasiet savu Cyanogen OS konta paroli</b>, lai Jūs varētu izmantot ierīci arī pēc rūpnīcas datu atiestatīšanas.</string>
   <string name="setup_device_locked_instructions"><i>Lai izslēgtu/ieslēgtu šo iespēju, lūdzu dodieties uz Iestatījumi &gt; Drošība</i></string>
   <string name="setup_warning_skip_anyway">Bez Cyanogen OS konta Jūs nevarēsiet:\n\nPielāgot Jūsu telefonu ar jaunam ikonām, ekrāntapetēm un vēl vairāk Tēmas lietotnē\n\nNoteikt atrašanās vietu un attālināti dzēst telefonu ja tas ir nozaudēts</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Izvēlieties dublējuma ekrānslēga tipu</string>
   <string name="settings_fingerprint_setup_details">Kādu Jūs vēlētos ekrānslēgu?</string>
   <string name="fingerprint_setup_title">Pirksta nospieduma iestatīšana</string>

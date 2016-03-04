@@ -63,6 +63,7 @@
   <string name="setup_device_locked">已被使用者鎖定此裝置。</string>
   <string name="setup_require_cyanogen_label"><b>需要您的Cyanogen OS帳戶密碼</b>以使用您的裝置，即使在重設裝置之後。</string>
   <string name="setup_device_locked_instructions"><i>如要開啟/關閉此功能，請到設定 &gt; 安全性</i></string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_details">你希望如何鎖定螢幕?</string>
   <string name="fingerprint_setup_title">指紋感應設置</string>
   <string name="fingerprint_setup_summary">若要使用您的指紋感應器解鎖您的螢幕，您需要:</string>
