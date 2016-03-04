@@ -62,6 +62,7 @@
   <string name="setup_require_cyanogen_label">即使恢復原廠設定後，您<b>仍須輸入 Cyanogen OS 帳戶密碼</b>才能使用此裝置。</string>
   <string name="setup_device_locked_instructions"><i>如要開啟/關閉此功能，請至設定 &gt; 安全性</i></string>
   <string name="setup_warning_skip_anyway">如果不創建 Cyanogen OS 帳戶，您將會：\n\n無法套用主題應用程式內的新圖示、牆紙和其他內容以自訂手機\n\n無法定位或在遺失手機時遠端清除手機內容</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">選擇備用螢幕鎖類型</string>
   <string name="settings_fingerprint_setup_details">您希望如何鎖定螢幕？</string>
   <string name="fingerprint_setup_title">指紋感應設定</string>

@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label"><b>Precísase o seu contrasinal do SO Cyanogen</b> para poder utilizar o seu dispositivo mesmo tras unha restauración de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para acender ou apagar esta funcionalidade, vaia a Configuración &gt; Seguranza</i></string>
   <string name="setup_warning_skip_anyway">Sen unha conta Cyanogen OS, non poderá:\n\nPersonalizar o seu teléfono con novas iconas, fondos de pantallas, etc. na aplicación de temas\n\nAtopar ou borrar de forma remota o seu teléfono se o perde</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Seleccione o tipo de copia de seguranza de pantalla de bloqueo</string>
   <string name="settings_fingerprint_setup_details">Como quere bloquear a súa pantalla?</string>
   <string name="fingerprint_setup_title">Configuración da pegada dactilar</string>

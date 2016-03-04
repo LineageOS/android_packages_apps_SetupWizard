@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Zahtijeva vašu Cyanogen lozinku</b>za korištenje vašeg uređaja čak i nakon resetiranja na tvorničke postavke.</string>
   <string name="setup_device_locked_instructions"><i>Da bi isključili/uključili ovo, idite u Postavke &gt; Privatnost</i></string>
   <string name="setup_warning_skip_anyway">Bez Cyanogen računa, nećete moći:\n\nPrilagoditi telefon s novim ikonama, pozadinama i ostalim u aplikaciji Teme\n\nLocirati ili obrisati telefon na daljinu ako ga izgubite</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Izaberite rezerni tip zaključavanja zaslona</string>
   <string name="settings_fingerprint_setup_details">Kako želite zaključati vaš zaslon?</string>
   <string name="fingerprint_setup_title">Postavljanje otiska prsta</string>

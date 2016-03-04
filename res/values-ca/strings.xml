@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Demana la contrasenya del teu compte Cyanogen OS</b> per utilitzar el teu dispositiu, fins i tot després de restaurar als ajustaments de fàbrica.</string>
   <string name="setup_device_locked_instructions"><i>Per activar/desactivar aquesta característica, si us plau ves a Configuració &gt; Seguretat</i></string>
   <string name="setup_warning_skip_anyway">Sense un compte Cyanogen OS, no podràs:\n\nPersonalitzar el teu telèfon amb noves icones, fons de pantalla i més en l\'aplicació de Temes\n\nLocalitzar o esborrar remotament el teu telèfon si el perds</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecciona el tipus de bloqueig de pantalla de reserva</string>
   <string name="settings_fingerprint_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
   <string name="fingerprint_setup_title">Configuració de l\'empremta digital</string>

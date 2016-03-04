@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Eskatu zure Cyanogen OS kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero.</string>
   <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo ezgaitzeko zoaz hona: Ezarpenak &gt; Segurtasuna</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS kontu bat gabe, ezin izango duzu:\n\nZure telefonoa ikono horma-irudi eta gai berriekin pertsonalizatu Gai aplikazioan\n\n.Telefonoa aurkitu eta ezabatu galtzen baduzu</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
   <string name="settings_fingerprint_setup_details">Nola blokeatu nahi duzu pantaila?</string>
   <string name="fingerprint_setup_title">Hatz-markaren ezarpena</string>

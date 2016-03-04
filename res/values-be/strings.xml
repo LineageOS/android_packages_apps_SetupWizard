@@ -66,6 +66,7 @@
   <string name="setup_require_cyanogen_label"><b>Патрабаваць пароль акаўнта АС Cyanogen</b> доўжачы выкарыстанні прылады нават пасля выдалення ўсіх дадзеных.</string>
   <string name="setup_device_locked_instructions"><i> Каб уключыць ці адключыць гэту функцыю, перайдзіце ў меню "Налады" &gt; "Бяспека"</i></string>
   <string name="setup_warning_skip_anyway">Без уліковага запісу Cyanogen вы не зможаце:\n\nПерсаналізоўваць тэлефон новымі шпалерамі, абразкамі і іншымі кампанентамі ў дадатку «Тэмы»\n\nЗнайсці ці выдалена скінуць налады на тэлефоне ў выпадку яго страты</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
   <string name="settings_fingerprint_setup_details">Абярыце спосаб блакавання экрана.</string>
   <string name="fingerprint_setup_title">Налада адбіткаў пальцаў</string>

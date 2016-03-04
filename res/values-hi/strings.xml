@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label">फ़ैक्टरी रीसेट के बाद भी आपके उपकरण का उपयोग करने के लिए <b>आपके सियानोजेन ओएस खाते का पासवर्ड आवश्यक होगा।</b></string>
   <string name="setup_device_locked_instructions"><i>इस सुविधा को बंद/चालू करने के लिए, कृपया सेटिंग &gt;सुरक्षा में जाएँ</i></string>
   <string name="setup_warning_skip_anyway">बिना सियानोजेन ओएस खाते के, आप निम्नलिखित नहीं कर सकेंगे:\n\nथीम ऐप में उपलब्ध नए आइकनों, वॉलपेपरों आदि से अपने फ़ोन को मनपसंद नहीं बना सकेंगे\n\nयदि आपका फ़ोन खो जाए, तो उसे दूर से खोज या मिटा नहीं पाएँगे</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">बैकअप स्क्रीन लॉक प्रकार चुनें</string>
   <string name="settings_fingerprint_setup_details">आप अपने स्क्रीन को किस तरह से लॉक करना चाहेंगे?</string>
   <string name="fingerprint_setup_title">अँगुली छाप सेटअप</string>

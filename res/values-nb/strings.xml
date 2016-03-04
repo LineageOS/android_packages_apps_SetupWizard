@@ -66,6 +66,7 @@
   <string name="setup_require_cyanogen_label"><b>Krever passordet til Cyanogen OS konto</b> for å bruke enheten etter en fabrikkgjennoppretting.</string>
   <string name="setup_device_locked_instructions"><i>For å slå denne funksjonen av/på, kan du gå til Innstillinger &gt; sikkerhet</i></string>
   <string name="setup_warning_skip_anyway">Uten en Cyanogen OS konto, vil du ikke kunne: \n\nEndre på telefonen med nye ikoner, bakgrunnsbilder og mer i temaer-app\n\nLokalisere eller eksternt slette telefonen hvis du har mistet den</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Velg alternativ skjermlåstype</string>
   <string name="settings_fingerprint_setup_details">Hvordan vil du låse skjermen din?</string>
   <string name="fingerprint_setup_title">Fingeravtrykksoppsett</string>

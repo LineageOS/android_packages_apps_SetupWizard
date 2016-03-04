@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Exigir a senha da conta Cyanogen</b> para usar o dispositivo mesmo depois da restauração de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá para Configurações e Segurança</i></string>
   <string name="setup_warning_skip_anyway">Sem uma conta Cyanogen, você não será capaz de:\n\nPersonalizar seu celular com novos ícones, papéis de parede e muito mais no app Temas\n\nLocalizar ou apagar remotamente o seu telefone se for perdido</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio de tela do backup</string>
   <string name="settings_fingerprint_setup_details">Como você gostaria de bloquear a tela?</string>
   <string name="fingerprint_setup_title">Configuração de impressão digital</string>

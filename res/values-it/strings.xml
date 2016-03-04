@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>È necessaria la password del tuo account Cyanogen OS</b> al fine di utilizzare il dispositivo anche dopo il ripristino di fabbrica.</string>
   <string name="setup_device_locked_instructions"><i>Per attivare e disattivare questa funzione, vai in Impostazioni &gt; Sicurezza</i></string>
   <string name="setup_warning_skip_anyway">\"Senza un account Cyanogen OS, non sarai in grado di:\n\nPersonalizzare il telefono con nuove icone, sfondi ed altro ancora dall\'app Temi\n\nLocalizzare o formattare da remoto il telefono se viene smarrito\"</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Seleziona la schermata di sicurezza di riserva</string>
   <string name="settings_fingerprint_setup_details">Come vuoi bloccare lo schermo?</string>
   <string name="fingerprint_setup_title">SetUp impronte digitali</string>
