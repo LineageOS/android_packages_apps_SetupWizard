@@ -66,6 +66,7 @@
   <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta Cyanogen OS</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para activar o desactivar esta función, ve a Ajustes &gt; Seguridad</i></string>
   <string name="setup_warning_skip_anyway">Sin una cuenta de Cyanogen OS no podrás:\n\nPersonalizar tu teléfono con nuevos iconos, fondos de pantalla y mucho más a través de la aplicación de temas\n\nBorrar tu teléfono localmente o de manera remota si se ha perdido</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecciona el tipo de copia de seguridad de pantalla de bloqueo</string>
   <string name="settings_fingerprint_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
   <string name="fingerprint_setup_title">Ajustes de huella digital</string>

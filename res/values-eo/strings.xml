@@ -63,4 +63,5 @@
   <string name="setup_require_cyanogen_label"><b>Postulas vian Cyanogen OS pasvorton</b> por uzi vian aparaton eĉ post rekomencigo al fabrika stato.</string>
   <string name="setup_device_locked_instructions"><i>Por mal-/ŝalti tiun funkcion, bonvolu iri en Agordoj &gt; Sekureco</i></string>
   <string name="setup_warning_skip_anyway">Sen Cyanogen konto, vi ne kapablos :\n\nAgordi vian telefonon per novaj piktogramoj, ekranfono kaj pli en la etosa aplikaĵo\n\nLokigi aŭ fore forviŝi vian telefonilon se vi perdas ĝin</string>
+  <!-- Fingerprint setup -->
 </resources>

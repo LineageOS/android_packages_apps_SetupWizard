@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label">工場出荷時の状態にリセットした後でも、この端末を使用するには<b>Cyanogen OSアカウントのパスワードの入力が必要です</b>。</string>
   <string name="setup_device_locked_instructions"><i>この機能をOFF/ONするには、設定→プライバシーを開いてください</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OSアカウントがないと、以下のことができません:\n\nテーマアプリで新しいアイコンや壁紙などで携帯電話をカスタマイズする\n\n紛失時に携帯電話を探したり遠隔操作でデータを消去する</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">予備の画面のロックの種類を選択</string>
   <string name="settings_fingerprint_setup_details">どのように画面をロックしますか？</string>
   <string name="fingerprint_setup_title">指紋のセットアップ</string>

@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da conta Cyanogen OS</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá a Definições &gt; Segurança</i></string>
   <string name="setup_warning_skip_anyway">Sem uma conta Cyanogen OS, não será capaz de: \n\nPersonalizar o telefone com novos ícones, imagens de fundo e muito mais na aplicação de Temas\n\nLocalizar ou apagar remotamente o seu telefone se estiver perdido</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio do ecrã da cópia de segurança</string>
   <string name="settings_fingerprint_setup_details">Como gostaria de bloquear o seu ecrã?</string>
   <string name="fingerprint_setup_title">Configuração de impressão digital</string>

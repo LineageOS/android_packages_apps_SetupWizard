@@ -59,5 +59,6 @@
   <string name="services_os_nav_keys_label"><b>Usar tecles de navegación na pantalla</b> en cuantes de tecles físiques.</string>
   <string name="services_use_secure_sms">Usar SMS seguru</string>
   <string name="setup_device_locked">Esti preséu ta bloquiáu pol usuariu.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
 </resources>

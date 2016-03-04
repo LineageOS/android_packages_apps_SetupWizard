@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label"><b>D\'Passwuert  vum Cyanogen-OS-Kont verlaange</b> fir däin Apparat ze benotzen, souguer no der Zrécksetzung op d\'Wierksastellungen.</string>
   <string name="setup_device_locked_instructions"><i>Fir dës Funktioun z\'aktivéieren/desaktivéieren, géi op Astellungen  &gt; Sécherheet</i></string>
   <string name="setup_warning_skip_anyway">Ouni en Cyanogen-OS-Kont kanns du däin Telefon net:\n\nMat neie Symboler, Hannergrondbiller a méi an der Design-App upassen\n\nLokaliséieren oder läschen, wann s du e verluer hues</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Wiel den Typ vun der Ersatz-Schirmspär aus</string>
   <string name="settings_fingerprint_setup_details">Wéi wëlls du däi Schierm spären?</string>
   <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>

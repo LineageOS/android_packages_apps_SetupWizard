@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa Cyanogen OS</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>
   <string name="setup_device_locked_instructions"><i>Za vklop/izklop te značilnosti pojdite v Nastavitve &gt; Varnost</i></string>
   <string name="setup_warning_skip_anyway">Brez računa Cyanogen OS ne boste mogli: \n\nPrilagoditi svojega telefona z novimi ikonami, ozadji in več v aplikaciji za teme\n\nNajti ali oddaljeno izbrisati telefona, če ste ga izgubili</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Izberite vrsto zaklepanja zaslona varnostnega kopiranja</string>
   <string name="settings_fingerprint_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
   <string name="fingerprint_setup_title">Nastavitev prstnega odtisa</string>

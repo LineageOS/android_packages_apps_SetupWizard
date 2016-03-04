@@ -66,6 +66,7 @@
   <string name="setup_require_cyanogen_label"><b>Require your Cyanogen OS account password</b> in order to use your device even after a factory reset.</string>
   <string name="setup_device_locked_instructions"><i>To turn this feature off/on, please go to Settings &gt; Security</i></string>
   <string name="setup_warning_skip_anyway">Without a Cyanogen OS Account, you won\'t be able to:\n\nCustomize your phone with new icons, wallpapers and more in the Themes app\n\nLocate or remotely erase your phone if it\'s lost</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Select backup screen lock type</string>
   <string name="settings_fingerprint_setup_details">How would you like to lock your screen?</string>
   <string name="fingerprint_setup_title">Fingerprint setup</string>

@@ -33,7 +33,7 @@
   <string name="setup_current_date">Aktuelles Datum</string>
   <string name="setup_current_time">Aktuelle Zeit</string>
   <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Tablet nachlesen.</string>
-  <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Smartphone nachlesen.</string>
+  <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Gerät nachlesen.</string>
   <string name="choose_data_sim_summary" product="tablet">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Tablets verwendet wird, können für Sie Kosten anfallen.</string>
   <string name="choose_data_sim_summary" product="default">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Smartphones verwendet wird, können für Sie Kosten anfallen.</string>
   <string name="date_time_summary">Zeitzone setzen und ggf. aktuelles Datum und Uhrzeit anpassen</string>
@@ -69,11 +69,12 @@
   <string name="setup_require_cyanogen_label"><b>Ihr Cyanogen OS-Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
   <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit.</i></string>
   <string name="setup_warning_skip_anyway">Ohne ein Cyanogen OS-Konto ist Folgendes nicht möglich:\n\nAnpassen Ihres Telefons mit neuen Symbolen, Hintergründen und mehr in der Design-App \n\nLokalisieren bzw. remotes Löschen Ihres Telefons, falls Sie es verloren haben.</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Wählen Sie den Typ der Ersatz-Bildschirmsperre.</string>
   <string name="settings_fingerprint_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
   <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
   <string name="fingerprint_setup_summary">Wenn Sie Ihren Fingerabdrucksensor zum Entsperren Ihres Bildschirms verwenden möchten, gehen Sie wie folgt vor:</string>
-  <string name="fingerprint_setup_backup_lock_method">Einrichten einer sekundären Entsperrmethode</string>
+  <string name="fingerprint_setup_backup_lock_method">Einrichtung einer sekundären Methode zum Entsperren</string>
   <string name="fingerprint_setup_add_fingerprint">Fügen Sie Ihren Fingerabdruck hinzu.</string>
   <string name="fingerprint_setup_screen_lock_setup">Die Bildschirmsperre einrichten</string>
   <string name="sim_locale_changed">%1$s SIM-Karte erkannt</string>

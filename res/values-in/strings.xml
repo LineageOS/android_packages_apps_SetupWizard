@@ -65,6 +65,7 @@
   <string name="setup_require_cyanogen_label"><b>Memerlukan sandi akun Cyanogen OS</b> untuk dapat menggunakan perangkat meskipun setelah pengaturan ulang ke pabrik.</string>
   <string name="setup_device_locked_instructions"><i>Untuk mengaktifkan/menonaktifkan fitur ini, silakan masuk ke Pengaturan &gt; Keamanan</i></string>
   <string name="setup_warning_skip_anyway">Tanpa Akun Cyanogen OS, anda tidak bisa:\n\nMenyesuaikan ponsel anda dengan ikon baru, wallpaper dan masih banyak lagi di aplikasi Tema\n\nMencari atau menghapus data jarak jauh jika ponsel anda hilang</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Pilih tipe kunci layar cadangan</string>
   <string name="settings_fingerprint_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
   <string name="fingerprint_setup_title">Penyiapan Sidik jari</string>

@@ -66,11 +66,12 @@
   <string name="setup_require_cyanogen_label"><b>Nécessite votre mot de passe du compte Cyanogen OS</b> afin d\'utiliser votre appareil même après une réinitialisation d\'usine.</string>
   <string name="setup_device_locked_instructions"><i>Pour activer/désactiver cette fonction, veuillez vous rendre dans Paramètres &gt; Sécurité</i></string>
   <string name="setup_warning_skip_anyway">Sans un compte Cyanogen OS, vous ne serez pas en mesure de :\n\nPersonnaliser votre téléphone avec de nouvelles icônes, fonds d\'écran et plus encore dans l\'application Thèmes\n\nLocaliser ou réinitialiser votre téléphone à distance s\'il est perdu</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Sélection du type de verrouillage d\'écran de sauvegarde</string>
   <string name="settings_fingerprint_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
   <string name="fingerprint_setup_title">Enregistrement d\'empreintes digitales</string>
   <string name="fingerprint_setup_summary">Pour utiliser le capteur d\'empreintes digitales pour déverrouiller votre écran, vous devrez :</string>
   <string name="fingerprint_setup_backup_lock_method">Configurer une méthode de déblocage secondaire</string>
-  <string name="fingerprint_setup_add_fingerprint">Ajouter vôtre empreinte digitale</string>
+  <string name="fingerprint_setup_add_fingerprint">Ajouter votre empreinte digitale</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'écran</string>
 </resources>

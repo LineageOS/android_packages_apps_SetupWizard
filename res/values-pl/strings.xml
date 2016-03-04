@@ -69,6 +69,7 @@
   <string name="setup_require_cyanogen_label"><b>Wymaga hasła twojego konta Cyanogen OS</b>, aby korzystać z urządzenia, nawet po przywróceniu ustawień fabrycznych.</string>
   <string name="setup_device_locked_instructions"><i>Aby włączyć/wyłączyć tę funkcję, przejdź do Ustawienia &gt; Zabezpieczenia</i></string>
   <string name="setup_warning_skip_anyway">Bez Konta Cyanogen OS nie będziesz w stanie:\n\nDostosować swojego telefonu wybierając nowe ikony, tapety oraz więcej innych opcji w aplikacji Motywy\n\nZlokalizować lub zdalnie wymazać pamięć telefonu w przypadku zgubienia</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Wybierz zapasową opcję blokady ekranu</string>
   <string name="settings_fingerprint_setup_details">Jak chcesz blokować swój ekran?</string>
   <string name="fingerprint_setup_title">Konfiguracja odcisków palców</string>
