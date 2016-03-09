@@ -23,3 +23,8 @@
 -dontwarn org.apache.http.**
 -dontwarn android.support.**
 -dontwarn com.google.android.gms.**
+
+-keep public class cyanogenmod.app.StatusBarPanelCustomTile
+-keep public class cyanogenmod.app.CustomTile
+
+-dontwarn cyanogenmod.app.*
