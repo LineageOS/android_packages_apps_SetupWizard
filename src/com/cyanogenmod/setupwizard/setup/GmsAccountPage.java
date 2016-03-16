@@ -25,12 +25,12 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.ContentQueryMap;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
+import android.database.ContentObserver;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.util.Log;
@@ -42,8 +42,6 @@ import com.cyanogenmod.setupwizard.ui.LoadingFragment;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.io.IOException;
-import java.util.Observable;
-import java.util.Observer;
 
 public class GmsAccountPage extends SetupPage {
 
@@ -53,32 +51,33 @@ public class GmsAccountPage extends SetupPage {
     private static final String RESTORE_WIZARD_SCRIPT =
             "android.resource://com.google.android.setupwizard/xml/wizard_script";
 
-    private ContentQueryMap mContentQueryMap;
-    private Observer mSettingsObserver;
-
     private boolean mBackupEnabled = false;
 
     private Fragment mFragment;
+    private ContentResolver mContentResolver;
 
     public GmsAccountPage(final Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
-        final ContentResolver res = context.getContentResolver();
-        mBackupEnabled = Settings.Secure.getInt(res,
-                Settings.Secure.BACKUP_ENABLED, 0) == 1;
-        mSettingsObserver = new Observer() {
-            public void update(Observable o, Object arg) {
-                mBackupEnabled = (Settings.Secure.getInt(res,
-                        Settings.Secure.BACKUP_AUTO_RESTORE, 0) == 1) ||
-                        (Settings.Secure.getInt(res,
-                                Settings.Secure.BACKUP_ENABLED, 0) == 1);
-            }
-        };
-        //Cursor settingsCursor = res.query(Settings.Secure.CONTENT_URI, null,
-        //        "(" + Settings.System.NAME + "=? OR " + Settings.System.NAME + "=?)",
-        //        new String[]{Settings.Secure.BACKUP_AUTO_RESTORE, Settings.Secure.BACKUP_ENABLED},
-        //        null);
-        //mContentQueryMap = new ContentQueryMap(settingsCursor, Settings.System.NAME, true, null);
-        //mContentQueryMap.addObserver(mSettingsObserver);
+        mContentResolver = context.getContentResolver();
+        mContentResolver.registerContentObserver(Settings.Secure.getUriFor(
+                Settings.Secure.BACKUP_AUTO_RESTORE), false, mSettingsObserver);
+        mContentResolver.registerContentObserver(Settings.Secure.getUriFor(
+                Settings.Secure.BACKUP_ENABLED), false, mSettingsObserver);
+    }
+
+    private ContentObserver mSettingsObserver = new ContentObserver(new Handler()) {
+        @Override
+        public void onChange(boolean selfChange) {
+            super.onChange(selfChange);
+            onBackupEnabledChanged();
+        }
+    };
+
+    private void onBackupEnabledChanged() {
+        mBackupEnabled = (Settings.Secure.getInt(mContentResolver,
+                Settings.Secure.BACKUP_AUTO_RESTORE, 0) == 1) ||
+                (Settings.Secure.getInt(mContentResolver,
+                        Settings.Secure.BACKUP_ENABLED, 0) == 1);
     }
 
     @Override
@@ -139,13 +138,7 @@ public class GmsAccountPage extends SetupPage {
 
     @Override
     public void onFinishSetup() {
-        try {
-            if (mContentQueryMap != null) {
-                mContentQueryMap.close();
-            }
-        } catch (Exception e) {
-            Log.wtf(TAG, e.toString());
-        }
+        mContentResolver.unregisterContentObserver(mSettingsObserver);
     }
 
     private void handleResult(int requestCode, int resultCode) {
