@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">அமைப்பு வழிகாட்டி</string>
+  <string name="next">அடுத்து</string>
+  <string name="skip">தவிர்</string>
+  <string name="start">தொடங்கு</string>
+  <string name="ok">சரி</string>
+  <string name="loading">வெறும் ஒரு வினாடி\u2026</string>
+  <string name="setup_complete">அமைப்பு நிறைவடைந்தது</string>
+  <string name="setup_welcome">நல்வரவு</string>
+  <string name="setup_wifi">தேர்வுசெய்யவும் Wi-fi</string>
+  <string name="setup_sim_missing">SIM கார்டு காணவில்லை</string>
+  <string name="setup_choose_data_sim">தரவுகளுக்காக SIM ஒன்றை தேர்வுசெய்க</string>
+  <string name="setup_location">இருப்பிடச் சேவைகள்</string>
+  <string name="setup_other">மற்ற சேவைகள்</string>
+  <string name="setup_datetime">தேதி &amp; நேரம்</string>
+  <string name="setup_current_date">நடப்பு தேதி</string>
+  <string name="setup_current_time">நடப்பு நேரம்</string>
+  <string name="sim_missing_summary" product="tablet">உங்கள் டேப்ளட்டில் ஒரு SIM கார்டு கண்டுபிடிக்கப்படவில்லை. ஒரு SIM கார்டை செருக, உங்கள் சாதனத்துடன் வரும் நெறிமுறைகளை படிக்கவும்.</string>
+  <string name="sim_missing_summary" product="default">உங்கள் தொலைப்பேசியில் ஒரு SIM கார்டு கண்டுபிடிக்கப்படவில்லை. ஒரு SIM கார்டை செருக, உங்கள் சாதனத்துடன் வரும் நெறிமுறைகளை படிக்கவும்.</string>
+  <string name="choose_data_sim_summary" product="tablet">தரவுகளுக்காக எந்த SIMஐ நீங்கள் பயன்படுத்த விரும்புகிறீர்கள்? தேர்வுசெய்யப்பட்ட SIM பிணைய கட்டணங்களை பெறலாம் மற்றும் அது உங்கள் டேப்ளட்டை அமைக்க பயன்படுத்தப்படும்.</string>
+  <string name="choose_data_sim_summary" product="default">தரவுகளுக்காக எந்த SIMஐ நீங்கள் பயன்படுத்த விரும்புகிறீர்கள்? தேர்வுசெய்யப்பட்ட SIM பிணைய கட்டணங்களை பெறலாம் மற்றும் அது உங்கள் தொலைப்பேசியை அமைக்க பயன்படுத்தப்படும்.</string>
+  <string name="date_time_summary">உங்கள் நேர மண்டலத்தையும் தேவைப்பட்டால் நடப்பு தேதி மற்றும் நேரத்தையும் அமைக்கவும்</string>
+  <string name="backup_data_summary">பயன்பாட்டு தரவுகள், Wi-Fi கடவுச்சொற்கள் மற்றும் Google சேவையகங்களுக்கான பிற அமைப்புகளை <b>மறுபிரதி எடு</b>.</string>
+  <string name="other_services_summary">இந்த சேவைகள் Googleஐ உங்களுக்காக வேலை செய்ய வைக்கும், மற்றும் அவற்றை எந்நேரத்திலும் நீங்கள் ஆன் அல்லது ஆஃப் செய்யலாம். தரவுகள் Googleஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்,</string>
+  <string name="location_services_summary">இருப்பிட சேவைகள் கணினி மற்றும் மூன்றாம் தரப்பு பயன்பாடுகள் உங்கள் சராசரி இருப்பிடம் போன்ற தரவுகளை சேகரிக்கவும் பயன்படுத்தவும் அனுமதிக்கும். உதாரணமாக, ஒரு பயன்ப்பாடானது உங்கள் சராசரி இருப்பிடத்தை பயன்படுத்தி அருகிலுள்ள காபி கடைகளைக் கண்டுபிடிக்கலாம்.</string>
+  <string name="location_access_summary">உங்கள் இருப்பிட தகவல்களை பயன்படுத்துவதற்கு <b>உங்களிடம் அனுமதி கேட்ட பயன்பாடுகளை அனுமதிக்கவும்.</b> இது உங்களது நடப்பு இருப்பிடம் மற்றும் முந்தைய இருப்பிடத்தை உள்ள்டக்கலாம்.</string>
+  <string name="location_battery_saving"><b>ஒரு மணி நேரத்திற்கான GPS</b> புதுப்பித்தல்களின் எண்ணிக்கையை கட்டுப்படுத்துவதன் மூலம் மின்கல நுகர்வை குறைக்கவும்.</string>
+  <string name="location_network">பயன்பாடுகள் உங்கள் இருப்பிடத்தை கண்டறிய உதவ <b>Wi-Fi பயன்படுத்துங்கள்</b>.</string>
+  <string name="location_network_telephony">பயன்பாடுகள் உங்கள் இருப்பிடத்தை கண்டறிய உதவ <b>Wi-Fi மற்றும் மொபைல் பிணையங்களைப்</b> பயன்படுத்துங்கள்</string>
+  <string name="location_network_gms">பயன்பாடுகள் உங்கள் இருப்பிடத்தை கண்டறிய உதவ <b>Googleஇன் இருப்பிட சேவையைப் பயன்படுத்துங்கள்</b> பயன்பாடுகள் எதுவும் தொடராதபோதும், Googleக்கு அறியப்படாத இருப்பிட தகவல்களை அனுப்புவதே இதன் அர்த்தம்.</string>
+  <string name="setup_mobile_data">மொபைல் தரவை ஆன் செய்</string>
+  <string name="setup_mobile_data_no_service">சேவை இல்லை</string>
+  <string name="setup_mobile_data_emergency_only">அவசர அழைப்புகள் மட்டும்</string>
+  <string name="enable_mobile_data_summary">நீங்கள் அமைப்பின் போது மொபைல் தரவைப் பயன்படுத்த விரும்புகிறீர்களா? மொபைல் தரவை ஆன் செய்தல் தரவு கட்டணங்களுக்கு உட்பட்டு இருக்கலாம்.</string>
+  <string name="no">அனுமதிக்கப்படவில்லை</string>
+  <string name="yes">அனுமதிக்கப்பட்டது</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">அவசரகால அழைப்பு</string>
+  <string name="setup_services">Cyanogen அம்சங்கள்</string>
+  <string name="services_explanation" product="tablet">இந்த சேவைகள் உங்கள் டேப்ளட்டின் திறன்களை விரிவுபடுத்துவதற்காக உங்களுக்காக பணிசெய்கின்றன. தரவானது Cyanogenஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்.</string>
+  <string name="services_explanation" product="default">இந்த சேவைகள் உங்கள் தொலைப்பேசியின் திறன்களை விரிவுபடுத்துவதற்காக உங்களுக்காக பணிசெய்கின்றன. தரவானது Cyanogenஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்.</string>
+  <string name="services_privacy_policy">தனியுரிமைக் கொள்கை</string>
+  <string name="services_help_improve_cm">மேம்படுத்த உதவுங்கள் <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label">தானியக்கமாக பகுப்பாய்வு மற்றும் பயன் தரவை Cyanogenக்கு அனுப்புவதன் மூலம் <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. இந்த தகவல் உங்களை அடையாளம் காண பயன்படுத்தப்பட முடியாது மற்றும் மின்கலன் ஆயுள், பயன்பாட்டின் செயல்திறன் மற்றும் புதிய <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> அம்சங்கள் போன்ற விடயங்களில் பணிசெய்யும் குழுக்களுக்கு ஒரு உதவிக்கரம் நீட்டும்.</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> கருப்பொருளை பயன்படுத்து</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> தனித்துவமான படவுருக்கள், வால்பேப்பர்கள் மற்றும் எழுத்துக்களை செயல்படுத்துகிறது.</string>
+  <string name="services_os_nav_keys_label"><b>வன்பொருள் விசைகளுக்கு பதிலாக திரையிலுள்ள</b> வழிச்செல்லுதல் விசைகளை பயன்படுத்தவும்</string>
+  <string name="services_use_secure_sms">பாதுகாப்பான SMSஐ பயன்படுத்தவும்</string>
+  <string name="services_secure_sms_label">பாதுகாப்பான SMSஐ <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> சாதனத்தில் பிற பயனர்களோடு SMS உரையாடல்களை <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> குறியாக்கவுள்ளது.</string>
+  <string name="setup_unlock">தடைநீக்கு</string>
+  <string name="setup_device_locked">இந்த சாதனமானது பயனரால் பூட்டப்பட்டது.</string>
+  <string name="setup_require_cyanogen_label"><b>ஒரு தொழிற்சாலை மீட்டமைப்புக்கு பிறகும் உங்கள் Cyanogen OS கணக்கு</b> கடவுச்சொல் தேவைப்படுகிறது.</string>
+  <string name="setup_device_locked_instructions"><i>இந்த அம்சத்தை ஆஃப்/ஆன் செய்ய, தயவுசெய்து செல்லுங்கள் அமைப்புகள் &gt; பாதுகாப்பு</i></string>
+  <string name="setup_warning_skip_anyway">ஒரு Cyanogen OS கணக்கு இல்லாமல்,உங்களால் இவற்றை செய்ய முடியாது: \n\n உங்கள் தொலைப்பேசியை புதிய படவுருக்கள், வால்பேப்பர்கள் மற்றும் கருப்பொருள் பயன்பாட்டிலுள்ள பலவற்றால் தனிப்பயனாக்க\n\n உங்கள் தொலைப்பேசி தொலைந்துவிட்டால் அதை கண்டறிய அல்லது தொலைநிலையில் அழிக்க</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">மறுபிரதி திரை பூட்டு வகையை தேர்வுசெய்க</string>
+  <string name="settings_fingerprint_setup_details">உங்கள் திரையை நீங்கள் எவ்வாறு பூட்ட விரும்புகிறீர்கள்?</string>
+  <string name="fingerprint_setup_title">கைரேகையை அமைக்கவும்</string>
+  <string name="fingerprint_setup_summary">உங்கள் கைரேகை உணர்வானைப் பயன்படுத்தி உங்கள் திரையை பூட்டுநீக்க, நீங்கள் இவற்றைச் செய்ய வேண்டும்:</string>
+  <string name="fingerprint_setup_backup_lock_method">ஒரு இரண்டாம்நிலை பூட்டுநீக்க முறையை அமை</string>
+  <string name="fingerprint_setup_add_fingerprint">கைரேகையைச் சேர்க்கவும்</string>
+  <string name="fingerprint_setup_screen_lock_setup">திரைப் பூட்டை அமை</string>
+  <string name="sim_locale_changed">%1$s SIM கண்டறியப்பட்டது.</string>
 </resources>

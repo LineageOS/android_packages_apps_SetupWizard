@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">ୱି୍ଜାର୍ଡ ସେଟଅପ୍‍ କରନ୍ତୁ</string>
+  <string name="next">ପରବର୍ତ୍ତୀ</string>
+  <string name="skip">ସ୍କିପ୍</string>
+  <string name="start">ଆରମ୍ଭ</string>
+  <string name="ok">ଓକେ</string>
+  <string name="loading">ଏକ ‍କ୍ଷଣ ମାତ୍ର\u2026</string>
+  <string name="setup_complete">ସେଟ୍‍ଅପ୍‍ ସମ୍ପୂର୍ଣ୍ଣ ହୋଇଛି</string>
+  <string name="setup_welcome">ସ୍ଵାଗତ</string>
+  <string name="setup_wifi">Wi-Fi ଚୟନ କର୍ନ୍ତୁ</string>
+  <string name="setup_sim_missing">SIM କାର୍ଡ ନାହିଁ</string>
+  <string name="setup_choose_data_sim">ଡାଟା ପାଇଁ ଏକ SIM ଚୟନ କରନ୍ତୁ</string>
+  <string name="setup_location">ଅବସ୍ଥାନ ସେବାଗୁଡିକ</string>
+  <string name="setup_other">ଅନ୍ୟନ୍ୟ ଦେବା</string>
+  <string name="setup_datetime">ତାରିଖ ଏବଂ ସମୟ</string>
+  <string name="setup_current_date">ସମ୍ପ୍ରତି ତାରିଖ</string>
+  <string name="setup_current_time">ସମ୍ପ୍ରତି ସମୟ</string>
+  <string name="sim_missing_summary" product="tablet">ଆପଣଙ୍କ ଟାବ୍‍ଲେଟ୍‍ରେ କୌଣସି SIM କାର୍ଡର ସନ୍ଧାନ ମିଳିନାହିଁ। ଏକ SIM କାର୍ଡ ଭର୍ତ୍ତି କରିବା ପାଇଁ, ଆପଣଙ୍କ ଡିଭାଇସ୍‍ ସହ ଆସିଥିବା ସୂଚନାବଳିକୁ ପଢନ୍ତୁ।</string>
+  <string name="sim_missing_summary" product="default">ଆପଣଙ୍କ ଫୋ‍ନ୍ରେ କୌଣସି SIM କାର୍ଡର ସନ୍ଧାନ ମିଳିନାହିଁ। ଏକ SIM କାର୍ଡ ଭର୍ତ୍ତି କରିବା ପାଇଁ, ଆପଣଙ୍କ ଡିଭାଇସ୍‍ ସହ ଆସିଥିବା ସୂଚନାବଳିକୁ ପଢନ୍ତୁ।</string>
+  <string name="choose_data_sim_summary" product="tablet">ଡାଟା ପାଇଁ ଆପଣ କେଉଁ SIM ବ୍ୟବହାର କରିବାକୁ ଚାହାଁନ୍ତି? ଆପଣଙ୍କ ଟାବ୍‍ଲେଟ୍‍ ସେଟ୍‍ ଅପ୍‍ରେ ବ୍ୟ୍ବହୃତ ହେଉଥିବାରୁ ଚୟନ କରାଯାଇଥିବା SIMରେ ନେଟ୍‍ୱାର୍କ୍‍ ଶୁଳ୍କ ଲାଗିପାରେ</string>
+  <string name="choose_data_sim_summary" product="default">ଡାଟା ପାଇଁ ଆପଣ କେଉଁ SIM ବ୍ୟବହାର କରିବାକୁ ଚାହାଁନ୍ତି? ଆପଣଙ୍କ ଫୋ‍ନ ୍ସେଟ୍‍ ଅପ୍‍ରେ ବ୍ୟ୍ବହୃତ ହେଉଥିବାରୁ ଚୟନ କରାଯାଇଥିବା SIMରେ ନେଟ୍‍ୱାର୍କ୍‍ ଶୁଳ୍କ ଲାଗିପାରେ</string>
+  <string name="date_time_summary">ଆପଣଙ୍କ ସମୟ ଜୋନ୍‍ ସେଟ୍‍ କରନ୍ତୁ ଓ ଯଦି ଆବଶ୍ୟକ ହୁଏ ସମୋପ୍ରତି ତାରିଖ ଓ ସମୟ ଆଡ୍‍ଜଷ୍ଟ କରନ୍ତୁ</string>
+  <string name="backup_data_summary">ଆପ୍ଲିକେସନ୍‍ ଡାଟା, Wi-Fi ପାସ୍‍ୱାର୍ଡ, ଓ Google ସଭ‍ର‍ର ଅନ୍ୟ ସେଟିଂସ୍ ପାଇଁ‍<b>ବ୍ୟାକ୍‍ ଅପ୍‍</b> ନିଅନ୍ତୁ</string>
+  <string name="other_services_summary">ଏହି ସେବାଗୁଡିକ Googleକୁ ଆପଣଙ୍କ ପାଇଁ ସଂଚାଳନ କ୍ରାଇବ, ଓ ଆପଣ ଯେ କୌଣସି ସମୟରେ ସେଗୁଡିକୁ ଅନ୍‍ ବା ଅଫ୍‍ କରିପାରିବେ। Google\ର <xliff:g id="name" example="Privacy Policy">%s</xliff:g>ସହିତ ସମାନ ଭାବେ ଡାଟା ବ୍ୟବହୃତ ହେବ।</string>
+  <string name="location_services_summary">ଅବ‍ସ୍ଥାନ ସେବା ସିଷ୍ଟମ୍‍କୁ ଓ ତୃତୀୟ ପ‍କ୍ଷ ଆପ୍ଲିକେସନ୍‍କୁ ଡାଟା ସଂଗ୍ରହ ଓ ବ୍ୟବହାର କରିବା ପାଇଁ ଅନୁମତି ଦେବ ଯଥା ଆପଣଙ୍କ ଆନୁମାନିକ ଅବ‍ସ୍ଥାନ। ଉଦାହରଣ ସ୍ୱରୂପ, ଆପ୍ଲିକେସନ୍‍ ଆପଣଙ୍କ ଆନୁମାନିକ ଅବ‍ସ୍ଥାନ ପାଖାପାଖି ଥିବା କଫି ସପ୍‍ ବିଷୟରେ ଜାଣିବା ପାଇଁ ବ୍ୟବହାର କରିପାରେ।</string>
+  <string name="location_access_summary">ଆପଣଙ୍କ ଅବ‍ସ୍ଥାନ ସୂଚନା ବ୍ୟବହାର କରିବା ପାଇଁ<b>ଯେଉଁ ଆପ୍ଲିକେସନ୍‍ ଆପଣଙ୍କ ଠାରୁ ଅନୁମତି ମା୍ଗିଛନ୍ତି। ତାଙ୍କୁ ଅନୁମତି ଦିଅନ୍ତୁ।</b> ଏହା ଆପଣଙ୍କ ସମ୍ପ୍ରତୋ ଅବ‍ସ୍ଥାନ ଓ ପୂର୍ବ ଅବ‍ସ୍ଥାନ ଅନ୍ତଭୁକ୍ତ କ୍ରିପାରେ।</string>
+  <string name="location_battery_saving">ପ୍ରତି ଘଣ୍ଟାରେ ହେଉଥିବା GPS ଅଦ୍ୟତନ ସଂଖ୍ୟା ଉପରେ କଟକଣା କରି<b>ବ୍ୟାଟେରୀ ବ୍ୟବହାର ହ୍ରାସ କରନ୍ତୁ</b> ।</string>
+  <string name="location_network">ଆପଣଙ୍କ ଅବ‍ସ୍ଥାନ ନି‍ର୍ଧାରଣରେ ସାହାଯ୍ୟ କରିବା ପାଇଁ<b>Wi-Fi ବ୍ୟବହାର କରନ୍ତୁ</b> ।</string>
+  <string name="location_network_telephony">ଆପଣଙ୍କ ଅବ‍ସ୍ଥାନ ନି‍ର୍ଧାରଣରେ ସାହାଯ୍ୟ କରିବା ପାଇଁ<b>Wi-Fi ଓ ମୋବାଇଲ୍‍ ନେଟ୍‍ୱାର୍କ୍‍ ବ୍ୟବହାର କରନ୍ତୁ </b> ।</string>
+  <string name="location_network_gms">ଆପଣଙ୍କ ଅବ‍ସ୍ଥାନ ନି‍ର୍ଧାରଣରେ ସାହାଯ୍ୟ କରିବା ପାଇଁ<b>Google\ର ଅବ‍ସ୍ଥାନ ସେବା ବ୍ୟବହାର କରନ୍ତୁ</b> । ଏହା ଅର୍ଥ Googleକୁ ବେନାମୀ ଅବସ୍ଥାନ ଡାଟା ପଠାଉଛି, ଏପରିକି ଯେବେ କୌଣସି ଆପ୍ଲିକେସନଗୁଡିକ ଦୌଡୁ ନାହାନ୍ତି।</string>
+  <string name="setup_mobile_data">ମୋବାଇଲ୍‍ ଡାଟା ବ୍ୟବହାର କରନ୍ତୁ</string>
+  <string name="setup_mobile_data_no_service">କୌଣସି ସେବା ନାହିଁ</string>
+  <string name="setup_mobile_data_emergency_only">କେବଳ ଇମରଜେନ୍ସି କଲ୍ସ</string>
+  <string name="enable_mobile_data_summary">ସେଟ୍‍ଅପ୍‍ ସମୟରେ ମୋବାଇଲ୍‍ ଡାଟା ବ୍ୟବହାର ପାଇଁ ଆପଣ ଚାହାଁନ୍ତି କି? ମୋବାଇଲ୍ ଡାଟା ଅନ୍‍ କାରଣରୁ ଡାଟା ଶୁଳ୍କ ଲାଗିପାରେ।</string>
+  <string name="no">ନାହିଁ</string>
+  <string name="yes">ହଁ</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">ଜରୁରୀକାଳୀନ କଲ୍</string>
+  <string name="setup_services">ସିଆନୋଜେନ୍‍ ବୈଶିଷ୍ଟ୍ୟ</string>
+  <string name="services_explanation" product="tablet">ଆପଣଙ୍କ ଟାବ୍‍ଲେଟ୍‍ର ‍କ୍ଷମତା ବଢାଇବା ପାଇଁ ଏହି ସେବା ଆପଣଙ୍କ ପାଇଁ ସଂଚାଳନ କରିବ। ଡାଟା ସିଆନୋଜେନ୍‍ର <xliff:g id="name" example="Privacy Policy">%s</xliff:g>ଅନୁଯାୟୀ ବ୍ୟବହୃତ ହେବ।</string>
+  <string name="services_explanation" product="default">ଆପଣଙ୍କ ଫୋ‍ନ୍‍‍ର ‍କ୍ଷମତା ବଢାଇବା ପାଇଁ ଏହି ସେବା ଆପଣଙ୍କ ପାଇଁ କାର୍ଯ୍ୟ କରିବ। ଡାଟା ସିଆନୋଜେନ୍‍ର <xliff:g id="name" example="Privacy Policy">%s</xliff:g>ଅନୁଯାୟୀ ବ୍ୟବହୃତ ହେବ।</string>
+  <string name="services_privacy_policy">ଗୋପନୀୟତା ନୀତି</string>
+  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>ଉନ୍ନତି କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ</string>
+  <string name="services_metrics_label">ଡାଇଗ୍ନୋଷ୍ଟିକ‍ ସ୍ୱତଃ ଭାବେ ପଠାଇ ଓ ସିଆନୋଜେନ୍‍କୁ ବ୍ୟବହୃତ ଡାଟା ପଠାଇ<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> । ଏହି ସୂଚନା ଆପଣଙ୍କୁ ଚିହ୍ନଟ କରିବା ପାଇଁ ବ୍ୟବହୃତ କରିହେବ ନା୍ହିଁ ଓ ବ୍ୟାଟେରୀ ବ୍ୟବହାର ଅବଧି, ଆପ୍ଲିକେସନ୍‍ କାର୍ଯ୍ୟକାରିତା, ଓ ନୂଆ  <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ବୈଶିଷ୍ଟ୍ୟ ଉପରେ କାର୍ଯ୍ୟ କରିବାରେ ସାହାଯ୍ୟ କରିବ।</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> ଥିମ୍‍ ଜାରି କରନ୍ତୁ</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ନିର୍ଦ୍ଦିଷ୍ଟ ଆଇକନ୍‍, ୱାଲ୍‍ପେପର୍‍, ଓ ଫଣ୍ଟ ସ‍କ୍ଷମ କରୁଛି।</string>
+  <string name="services_os_nav_keys_label">ହା୍ର୍ଡ୍‍ଓୟାର୍‍ କୀ ବଦଳରେ<b>ଅନ୍‍ସ୍କ୍ରିନ୍‍ ନେଭିଗେସନ୍‍ କୀ ବ୍ୟବହାର କରନ୍ତୁ</b> ।</string>
+  <string name="services_use_secure_sms">ସୁର‍କ୍ଷିତ SMS ବ୍ୟବହାର କରନ୍ତୁ</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$S</xliff:g> SMS କଥା୍ବାର୍ତ୍ତା ଅନ୍ୟ ଉପଭୋକ୍ତାଙ୍କ ସହିତ ସୁରଷିତ SMS  <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ଡିଭାଇସ୍‍ରେ ବ୍ୟବହାର କରିବା ପାଇଁ।</string>
+  <string name="setup_unlock">ଅନଲକ୍</string>
+  <string name="setup_device_locked">ଏହି ଡିଭାଇସ୍‍ ଉପଭୋକ୍ତାଙ୍କ ଦ୍ୱାରା ଲକ୍‍ ହୋଇଛି।</string>
+  <string name="setup_require_cyanogen_label">ଫ୍ୟାକ୍ଟରୀ ରିସେଟ୍‍ ପରେ ମଧ୍ୟ ଆପଣଙ୍କ ଡିଭାଇସ୍‍ ବ୍ୟବହାର କରିବା ପାଇଁ<b>ଆପଣଙ୍କ ସିଆନୋଜେନ୍‍ OS ଆକାଉଣ୍ଟ ପାସ୍‍ୱାର୍ଡ୍‍ ଆବଶ୍ୟକ କରେ</b> ।</string>
+  <string name="setup_device_locked_instructions"><i>ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଫ୍‍/ଅନ୍‍ କରିବା ପାଇଁ, ଦୟାକରି ସେଟିଂସ୍‍&gt;ସୁର‍କ୍ଷାକୁ ଯାଆନ୍ତୁ</i></string>
+  <string name="setup_warning_skip_anyway">ଏକ ସିଆନୋଜେନ୍‍ OS ଆକାଉଣ୍ଟ ବିନା,\n\n ଆପଣ ନୂଆ ଆଇକନ୍‍, ୱାଲ୍‍ପେପର୍‍ ଓ ବିଷୟଗୁଡିକ ଆ୍ପ୍ଲିକେସନ୍‍ରେ ଅଧିକ କିଛି ସହିତ ଆପଣଙ୍କ ଫୋନ୍‍ କଷ୍ଟମାଇଜ୍‍ କରିପାରିବେ ନାହିଁ\n\nଆପଣଙ୍କ ଫୋନ୍‍ ଯଦି ହଜିଯାଇଛି ତେବେ ତାହାର ଅବସ୍ଥାନ ବିଷୟରେ ଜାଣନ୍ତୁ ବା ଦୂରରୁ ଏଥିରୁ ଡାଟା ହଟାଇଦିଅନ୍ତୁ</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">ବ୍ୟାକ୍‍ଅପ୍‍ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ ପ୍ରକାର ଚୟନ କରନ୍ତୁ</string>
+  <string name="settings_fingerprint_setup_details">ଆପଣ କିପରି ଆପଣଙ୍କ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ କରିବାକୁ ଚାହିଁବେ?</string>
+  <string name="fingerprint_setup_title">ଫିଙ୍ଗର୍‍ପ୍ରିଣ୍ଟ ସେଟ୍‍ଅପ୍‍</string>
+  <string name="fingerprint_setup_summary">ଆପଣଙ୍କ ସ୍କ୍ରିନ୍‍ ଅନ୍‍ଲକ୍‍ କରିବା ପାଇଁ ଆପଣଙ୍କ ଫିଙ୍ଗର୍‍ପ୍ରିଣ୍ଟ ସେନ୍‍ସର୍‍ ବ୍ୟବହାର କରିବା ପାଇଁ, ଆପଣଙ୍କୁ ଏହା କରିବାକ୍ଲୁ ହେବ:</string>
+  <string name="fingerprint_setup_backup_lock_method">ଏକ ସେକେଣ୍ଡାରି ଅନ୍‍ଲକ୍‍ ପଧତି ସେଟ୍‍ଅପ୍‍ କରନ୍ତୁ</string>
+  <string name="fingerprint_setup_add_fingerprint">ଆପଣଙ୍କ ଫିଙ୍ଗର୍‍ପ୍ରିଣ୍ଟ ଯୋଗ କରନ୍ତୁ</string>
+  <string name="fingerprint_setup_screen_lock_setup">ସ୍କ୍ରିନ୍‍ ଲକ୍‍ ସେଟ୍‍ଅପ୍‍ କରନ୍ତୁ</string>
+  <string name="sim_locale_changed">%1$s SIM ସନ୍ଧାନ କରାଯାଇଛି</string>
 </resources>
