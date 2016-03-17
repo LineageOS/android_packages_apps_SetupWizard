@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7faddb67_6fc241ec",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/SetupWizardActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 1448
+      },
+      "writtenOn": "2016-03-17T20:02:35Z",
+      "side": 1,
+      "message": "Might want to lose this",
+      "revId": "83a537e3af60e873141b611c18b2837fa5c268ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
