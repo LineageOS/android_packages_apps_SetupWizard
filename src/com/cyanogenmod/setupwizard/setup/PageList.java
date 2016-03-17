@@ -16,6 +16,8 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
+import android.text.TextUtils;
+
 import java.util.LinkedHashMap;
 
 public class PageList extends LinkedHashMap<String, Page> {
@@ -28,6 +30,17 @@ public class PageList extends LinkedHashMap<String, Page> {
 
     public Page getPage(String key) {
         return get(key);
+    }
+
+    public int getPageIndex(String key) {
+        int i=0;
+        for (Page page : values()) {
+            if (TextUtils.equals(page.getKey(), key)) {
+                return i;
+            }
+            i++;
+        }
+        return i;
     }
 
     public Page getPage(int index) {
