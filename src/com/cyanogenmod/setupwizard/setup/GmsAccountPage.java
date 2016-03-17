@@ -28,6 +28,7 @@ import android.app.FragmentManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
@@ -47,7 +48,11 @@ public class GmsAccountPage extends SetupPage {
 
     public static final String TAG = "GmsAccountPage";
 
-    public static final String ACTION_RESTORE = "com.google.android.setupwizard.RESTORE";
+    public static final String ACTION_PROGRESS = "com.google.android.setupwizard.PROGRESS";
+    public static final String RESTORE_ACTION_ID = "mfm_restore_start";
+    public static final String FRAGMENT_START_RESTORE =
+            "com.google.android.setupwizard.account.StartRestoreFragment";
+
     private static final String RESTORE_WIZARD_SCRIPT =
             "android.resource://com.google.android.setupwizard/xml/wizard_script";
 
@@ -176,7 +181,9 @@ public class GmsAccountPage extends SetupPage {
         try {
             // GMS can disable this after logging in sometimes
             if (SetupWizardUtils.enableGMSSetupWizard(mContext)) {
-                Intent intent = new Intent(ACTION_RESTORE);
+                Intent intent = new Intent(ACTION_PROGRESS);
+                intent.putExtra(SetupWizardApp.EXTRA_FRAGMENT, FRAGMENT_START_RESTORE);
+                intent.putExtra(SetupWizardApp.EXTRA_ACTION_ID, RESTORE_ACTION_ID);
                 intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
                 intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
                 intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
