@@ -53,6 +53,8 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_LOGIN_FOR_KILL_SWITCH = "authCks";
     public static final String EXTRA_TITLE = "title";
     public static final String EXTRA_DETAILS = "details";
+    public static final String EXTRA_FRAGMENT = "fragment";
+    public static final String EXTRA_ACTION_ID = "actionId";
 
     public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
 
