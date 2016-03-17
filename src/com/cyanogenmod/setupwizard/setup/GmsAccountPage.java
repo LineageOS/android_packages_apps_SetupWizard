@@ -47,7 +47,10 @@ public class GmsAccountPage extends SetupPage {
 
     public static final String TAG = "GmsAccountPage";
 
-    public static final String ACTION_RESTORE = "com.google.android.setupwizard.RESTORE";
+    public static final String ACTION_RESTORE = "com.google.android.setupwizard.PROGRESS";
+    public static final String FRAGMENT_CHECK_RESTORE =
+            "com.google.android.setupwizard.account.CheckRestoreTokenFragment";
+
     private static final String RESTORE_WIZARD_SCRIPT =
             "android.resource://com.google.android.setupwizard/xml/wizard_script";
 
@@ -177,6 +180,7 @@ public class GmsAccountPage extends SetupPage {
             // GMS can disable this after logging in sometimes
             if (SetupWizardUtils.enableGMSSetupWizard(mContext)) {
                 Intent intent = new Intent(ACTION_RESTORE);
+                intent.putExtra(SetupWizardApp.EXTRA_FRAGMENT, FRAGMENT_CHECK_RESTORE);
                 intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
                 intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
                 intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
