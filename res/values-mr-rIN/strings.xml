@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">सेटअप विझार्ड</string>
+  <string name="next">पुढील</string>
+  <string name="skip">वगळा</string>
+  <string name="start">प्रारंभ करा</string>
+  <string name="ok">ठीक आहे</string>
+  <string name="loading">एक सेकंदांमध्ये\u2026</string>
+  <string name="setup_complete">सेटअप पूर्ण झाला आहे</string>
+  <string name="setup_welcome">सुस्वागतम</string>
+  <string name="setup_wifi">Wi-Fi निवडा</string>
+  <string name="setup_sim_missing">सिम कार्ड गहाळ आहे</string>
+  <string name="setup_choose_data_sim">डेटासाठी सिम निवडा</string>
+  <string name="setup_location">स्‍थान सेवा</string>
+  <string name="setup_other">इतर सेवा</string>
+  <string name="setup_datetime">तारीख व वेळ</string>
+  <string name="setup_current_date">चालू तारीख</string>
+  <string name="setup_current_time">चालू वेळ</string>
+  <string name="sim_missing_summary" product="tablet">तुमच्या टॅब्लेटमध्ये सिम कार्ड आढळले नाही. सिम कार्ड इन्सर्ट करण्यासाठी, तुमच्या डिव्हाइससह येणाऱ्या सूचना वाचा.</string>
+  <string name="sim_missing_summary" product="default">तुमच्या फोनमध्ये सिम कार्ड आढळले नाही. सिम कार्ड इन्सर्ट करण्यासाठी, तुमच्या डिव्हाइससह येणाऱ्या सूचना वाचा.</string>
+  <string name="choose_data_sim_summary" product="tablet">डेटासाठी तुम्हाला कोणते सिम वापरायचे आहे? निवडलेल्या सिम ला नेटवर्क शुल्क लागू शकते कारण ते तुमचा टॅब्लेट सेट करण्यासाठी वापरले जाईल.</string>
+  <string name="choose_data_sim_summary" product="default">डेटासाठी तुम्हाला कोणते सिम वापरायचे आहे? निवडलेल्या सिम ला नेटवर्क शुल्क लागू शकते कारण ते तुमचा फोन सेट करण्यासाठी वापरले जाईल.</string>
+  <string name="date_time_summary">तुमचे वेळ क्षेत्र सेट करा आणि गरज असल्यास चालू तारीख व वेळ समायोजित करा</string>
+  <string name="backup_data_summary">अनुप्रयोग डेटा, Wi-Fi पासवर्ड आणि इतर सेटिंग्ज Google सर्व्हर्सना <b>बॅक अप</b> करा</string>
+  <string name="other_services_summary">ह्या सेवा तुमच्यासाठी Google ला कामाला लावतात आणि तुम्ही त्यांना कधीही चालू किंवा बंद करू शकता. डेटा Googleच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g> अनुसार वापरला जाईल.</string>
+  <string name="location_services_summary">स्थान सेवा सिस्टिम आणि त्रयस्थ पक्षाच्या अनुप्रयोगांना अंदाजे स्थानासारखा डेटा गोळा करण्यास आणि वापरण्यास परवानगी देतात. उदाहरणार्थ, एखादा अनुप्रयोग आसपासची कॉफीची दुकाने शोधण्यासाठी तुमचे अंदाजे स्थान वापरू शकते.</string>
+  <string name="location_access_summary"><b>तुमची परवानगी विचारलेल्या अनुप्रयोगांना</b> तुमची स्थान माहिती वापरण्यास परवानगी द्या. यामध्ये तुमचे चालू स्थान आणि मागील स्थानांचा समावेश होऊ शकतो.</string>
+  <string name="location_battery_saving">दर तासाला होणाऱ्या GPS अद्यतनांची संख्या निर्बंधित करून <b>बॅटरी वापर कमी करा</b>.</string>
+  <string name="location_network">तुमचे स्थान ठरवण्यासाठी अनुप्रयोगांना मदत करण्यासाठी <b>Wi-Fi वापरा</b>.</string>
+  <string name="location_network_telephony">तुमचे स्थान ठरवण्यासाठी अनुप्रयोगांना मदत करण्यासाठी <b>Wi-Fi आणि मोबाईल नेटवर्क्स वापरा</b>.</string>
+  <string name="location_network_gms">तुमचे स्थान ठरवण्यासाठी अनुप्रयोगांना मदत करण्यासाठी <b>Googleची स्थान सेवा वापरा</b>. याचा अर्थ Googleला अनामिक डेटा पाठवणे, अनुप्रयोग चालू नसताना सुध्दा.</string>
+  <string name="setup_mobile_data">मोबाईल डेटा चालू करा</string>
+  <string name="setup_mobile_data_no_service">सेवा नाही.</string>
+  <string name="setup_mobile_data_emergency_only">फक्त आणीबाणीचे कॉल</string>
+  <string name="enable_mobile_data_summary">सेटअप दरम्यान तुम्हाला मोबाईल डेटा वापरायचा आहे का? मोबाईल डेटा चालू करणे डेटा शुल्काच्या आधीन असू शकते.</string>
+  <string name="no">नाही</string>
+  <string name="yes">होय</string>
+  <string name="data_sim_name">सिम <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">आणीबाणीचा कॉल</string>
+  <string name="setup_services">Cyanogen वैशिष्ट्ये</string>
+  <string name="services_explanation" product="tablet">तुमच्या टॅब्लेटवरील क्षमता विस्तारित करण्यासाठी ह्या सेवा तुमच्यासाठी काम करतात. Cyanogenच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g>नुसार डेटा वापरला जाईल.</string>
+  <string name="services_explanation" product="default">तुमच्या फोनवरील क्षमता विस्तारित करण्यासाठी ह्या सेवा तुमच्यासाठी काम करतात. Cyanogenच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g>नुसार डेटा वापरला जाईल.</string>
+  <string name="services_privacy_policy">गुप्तता धोरण</string>
+  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>सुधारण्यासाठी मदत करा</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> Cyanogen कडे निदानात्मक आणि वापर डेटा स्वयंचलितपणे पाठवून. तुम्हाला ओळखण्यासाठी ही माहिती वापरता येत नाही आणि बॅटरी आयु, अनुप्रयोगची कामगिरी आणि नवीन <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> वैशिष्ट्ये यांसारख्या गोष्टींवर काम करण्यासाठी संघांना हात देते.</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> थीम लागू करा</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> वैशिष्ट्यपूर्ण प्रतीके, वॉलपेपर्स आणि फाँट्स सक्षम करणे.</string>
+  <string name="services_os_nav_keys_label">हार्डवेअर कींच्या ऐवजी <b>स्क्रीन नॅविगेशन कींवर वापरा</b>.</string>
+  <string name="services_use_secure_sms">सुरक्षित SMS वापरा</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> SMS संभाषणे <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> डिव्हाइसवर सुरक्षित SMS वापरणाऱ्या इतर वापरकर्त्यांसह एनक्रिप्ट करण्यासाठी.</string>
+  <string name="setup_unlock">अनलॉक करा</string>
+  <string name="setup_device_locked">हे डिव्हाइस वापरकर्त्याने लॉक केले आहे.</string>
+  <string name="setup_require_cyanogen_label">फॅक्टरी रीसेटनंतरही तुमचे डिव्हाइस वापरण्यासाठी <b>तुमचा Cyanogen OS खाते पासवर्ड आवश्यक आहे</b>.</string>
+  <string name="setup_device_locked_instructions"><i>हे वैशिष्ट्य बंद/चालू करण्यासाठी, कृपया सेटिंग्ज &gt; सुरक्षा कडे जा</i></string>
+  <string name="setup_warning_skip_anyway">Cyanogen OS खात्याशिवाय, तुम्हाला हे करता येणार नाही:\n\nनवीन प्रतीके, वॉलपेपर्स आणि अधिकसह थीम अनुप्रयोगमध्ये तुमचा फोन सानुकूल करा\n\nतुमचा फोन शोधणे किंवा तो हरवला असल्यास दूरस्थपणे खोडणे</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">बॅकअप स्क्रीन लॉक टाईप निवडा</string>
+  <string name="settings_fingerprint_setup_details">तुम्हाला तुमचा स्क्रीन कसा लॉक करायला आवडेल?</string>
+  <string name="fingerprint_setup_title">बोटाचा ठसा सेटअप</string>
+  <string name="fingerprint_setup_summary">तुमचा स्क्रीन अनलॉक करण्यासाठी, तुमचा बोटाचा ठसा सेन्सर वापरण्यासाठी तुम्हाला हे करावे लागेल:</string>
+  <string name="fingerprint_setup_backup_lock_method">दुय्यम अनलॉक पध्दत सेटअप करा</string>
+  <string name="fingerprint_setup_add_fingerprint">तुमचा बोटाचा ठसा जोडा</string>
+  <string name="fingerprint_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करा</string>
+  <string name="sim_locale_changed">%1$s सिम आढळले</string>
 </resources>

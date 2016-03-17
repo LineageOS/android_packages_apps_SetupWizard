@@ -34,13 +34,13 @@
   <string name="setup_current_time">השעה הנוכחית</string>
   <string name="sim_missing_summary" product="tablet">לא זוהה כרטיס SIM בטאבלט שלך. כדי להכניס כרטיס SIM, קרא את הוראות ההפעלה שהגיעו יחד עם מכשירך.</string>
   <string name="sim_missing_summary" product="default">לא זוהה כרטיס SIM במכשיר. כדי להכניס כרטיס SIM, קרא את הוראות ההפעלה שהגיעו יחד עם מכשירך.</string>
-  <string name="choose_data_sim_summary" product="tablet">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? יתכן ויחולו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת הטאבלט שלך.</string>
-  <string name="choose_data_sim_summary" product="default">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? יתכן ויחולו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת מכשירך.</string>
+  <string name="choose_data_sim_summary" product="tablet">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? ייתכנו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת הטאבלט שלך.</string>
+  <string name="choose_data_sim_summary" product="default">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? ייתכנו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת מכשירך.</string>
   <string name="date_time_summary">הגדר את אזור הזמן שלך והתאם את התאריך ואת השעה הנוכחיים במידת הצורך</string>
   <string name="backup_data_summary"><b>גבה</b> נתוני יישומים, סיסמאות Wi-Fi והגדרות אחרות לשרתי Google</string>
-  <string name="other_services_summary">שירותים אלו נותנים ל-Google לעבוד בשבילך, ואתה יכול לכבות/להדליק אותם בכל זמן. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Google.</string>
+  <string name="other_services_summary">שירותים אלו מאפשרים ל-Google לעבוד עבורך, ובאפשרותך לכבות או להדליק אותם בכל עת. מידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Google.</string>
   <string name="location_services_summary">שירותי מיקום מאפשרים ליישום המפות וליישומים אחרים להשתמש במיקומך. לדוגמא, יישום המפות עשוי להשתמש במידע זה על מנת להציג לך בתי קפה הנמצאים בקרבתך.</string>
-  <string name="location_access_summary"><b>אפשר ליישומים שביקשו את רשותך</b> להשתמש במידע על מיקומך. הדבר עלול לכלול את מיקומך הנוכחי ומיקומים קודמים.</string>
+  <string name="location_access_summary"><b>אפשר ליישומים שביקשו את רשותך</b> להשתמש במידע על מיקומך. הפעולה עשויה לכלול את מיקומך הנוכחי ומיקומים קודמים.</string>
   <string name="location_battery_saving"><b>הפחת צריכת הסוללה</b> על ידי הגבלת מספר עדכוני GPS בשעה.</string>
   <string name="location_network"><b>השתמש ב-Wi-Fi</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_telephony"><b>השתמש ב-Wi-Fi וברשתות סלולריות</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
@@ -54,27 +54,27 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">שיחת חירום</string>
   <string name="setup_services">תכונות Cyanogen</string>
-  <string name="services_explanation" product="tablet">שירותים אלה עובדים בשבילך כדי להרחיב את יכולותיו של הטאבלט שלך. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
-  <string name="services_explanation" product="default">שירותים אלה עובדים בשבילך כדי להרחיב את יכולותיו של מכשירך. מידע ישומש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
+  <string name="services_explanation" product="tablet">שירותים אלה פועלים עבורך כדי להרחיב את יכולות מכשיר הטאבלט שלך. המידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
+  <string name="services_explanation" product="default">שירותים אלה עבורך כדי להרחיב את יכולותיו של הטלפון שלך. המידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
   <string name="services_privacy_policy">מדיניות הפרטיות</string>
-  <string name="services_help_improve_cm">עזור לשפר את <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> על-ידי שליחת נתוני אבחון ושימוש למפתחים. מידע זה לא יוכל לשמש כדי לזהותך, והוא תורם לצוותים העובדים על דברים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> על-ידי שליחת נתוני אבחון ושימוש אל Cyanogen. מידע זה לא יוכל לשמש כדי לזהותך, והוא תורם לצוותים העובדים על תחומים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">החל את ערכת העיצוב <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> הופך לזמין סמלים ייחודיים, טפטים וגופנים.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> מאפשר סמלים ייחודיים, טפטים וגופנים.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <string name="services_use_secure_sms">השתמש ב-SMS מאובטח</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> להצפנת שיחות SMS עם משתמשים אחרים באמצעות SMS מאובטח במכשיר <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="setup_unlock">שחרר</string>
+  <string name="setup_unlock">פתיחה</string>
   <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
   <string name="setup_require_cyanogen_label"><b>נדרשת סיסמת חשבון מערכת Cyanogen</b> על מנת להשתמש במכשירך, אפילו לאחר איפוס המכשיר להגדרות היצרן.</string>
   <string name="setup_device_locked_instructions"><i>כדי להפעיל/לכבות אפשרות זו, אנא גש להגדרות &gt; אבטחה</i></string>
-  <string name="setup_warning_skip_anyway">בלי חשבון מערכת Cyanogen, לא ניתן יהיה:\n\nלהתאים את מכשירך עם סמלים, רקעים ועוד ביישום ערכות העיצוב\n\nלאתר או למחוק מרחוק את מכשירך במקרה של אובדן</string>
+  <string name="setup_warning_skip_anyway">בלי חשבון מערכת Cyanogen, לא ניתן יהיה:\n\nלהתאים את מכשירך אישית עם סמלים, רקעים ועוד ביישום ערכות העיצוב\n\nלאתר או למחוק מרחוק את מכשירך במקרה של אובדן</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">בחר סוג שיטת נעילת מסך לגיבוי</string>
   <string name="settings_fingerprint_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
   <string name="fingerprint_setup_title">הגדרת טביעת אצבע</string>
-  <string name="fingerprint_setup_summary">בשביל להשתמש בחיישן טביעות האצבע שלך, יהיה עליך:</string>
-  <string name="fingerprint_setup_backup_lock_method">הגדר שיטת נעילה משנית</string>
+  <string name="fingerprint_setup_summary">כדי להשתמש בחיישן טביעות האצבע שלך, עליך:</string>
+  <string name="fingerprint_setup_backup_lock_method">הגדר שיטת פתיחה משנית</string>
   <string name="fingerprint_setup_add_fingerprint">הוסף את טביעת האצבע שלך</string>
   <string name="fingerprint_setup_screen_lock_setup">הגדרת מסך נעילה</string>
   <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>

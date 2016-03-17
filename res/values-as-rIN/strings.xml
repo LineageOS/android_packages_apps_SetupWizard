@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">ছেটআপ ৱিজাৰ্ড</string>
+  <string name="next">পৰৱৰ্তী</string>
+  <string name="skip">বাদ দিয়া</string>
+  <string name="start">আৰম্ভ</string>
+  <string name="ok">ঠিক</string>
+  <string name="loading">মাত্র একছেকেণ্ড\u2026</string>
+  <string name="setup_complete">ছেটআপ সম্পূৰ্ণ হৈছে</string>
+  <string name="setup_welcome">স্বাগতম</string>
+  <string name="setup_wifi">Wi-Fi চয়ন কৰক</string>
+  <string name="setup_sim_missing">SIM কার্ড হেৰাইছে</string>
+  <string name="setup_choose_data_sim">ডাটাৰ বাবে এখন SIM কাৰ্ড পচন্দ কৰক</string>
+  <string name="setup_location">স্থান সেৱাসমূহ</string>
+  <string name="setup_other">অন্যান্য সেৱাবোৰ</string>
+  <string name="setup_datetime">তাৰিখ আৰু সময়</string>
+  <string name="setup_current_date">চলিত তাৰিখ</string>
+  <string name="setup_current_time">চলিত সময়</string>
+  <string name="sim_missing_summary" product="tablet">আপোনাৰ টেবলেটত এখন SIM কাৰ্ড চিনাক্ত কৰা হোৱা নাই। এখন SIM কাৰ্ড আন্তঃসংযোগ কৰিবলৈ আপোনাৰ ডিভাইচৰ সৈতে অহা নিৰ্দেশনা পঢ়ক।</string>
+  <string name="sim_missing_summary" product="default">আপোনাৰ ফোনত এখন SIM কাৰ্ড চিনাক্ত কৰা হোৱা নাই। এখন SIM কাৰ্ড আন্তঃসংযোগ কৰিবলৈ আপোনাৰ ডিভাইচৰ সৈতে অহা নিৰ্দেশনা পঢ়ক।</string>
+  <string name="choose_data_sim_summary" product="tablet">ডাটাৰ বাবে আপুনি কোনখন SIM ব্যৱহাৰ কৰিবলৈ বিচাৰে? নিৰ্বাচিত SIM ৰ বাবে নেটৱৰ্ক মাচুল লাগিব পাৰে যিহেতু আপোনাৰ টেবলেট কম্পিউটাৰ ছেটআপ কৰিবলৈ ইয়াক ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="choose_data_sim_summary" product="default">ডাটাৰ বাবে আপুনি কোনখন SIM ব্যৱহাৰ কৰিবলৈ বিচাৰে? নিৰ্বাচিত SIM ৰ বাবে নেটৱৰ্ক মাচুল লাগিব পাৰে যিহেতু আপোনাৰ ফোনটো ছেটআপ কৰিবলৈ ইয়াক ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="date_time_summary">যদি প্ৰয়োজন হয় তেন্তে চলিত তাৰিখ আৰু সময় মিলাওক</string>
+  <string name="backup_data_summary">এপ্প ডাটা, Wi-Fi পাছৱৰ্ড আৰু অন্যান্য ছেটিংচ Google ছাৰ্ভাৰলৈ <b>বেক আপ কৰক</b></string>
+  <string name="other_services_summary">এই সেৱাবোৰে আপোনাৰ বাবে Google ক কাম কৰায় আৰু আপুনি সেইবোৰ যিকোনো সময়তে অন বা অফ কৰিব পাৰে। ডাটা Google ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="location_services_summary">অৱস্থান সেৱাই ছিষ্টেম আৰু তৃতীয় পক্ষৰ এপ্প্‌বোৰক আপোনাৰ মোটামুটি অৱস্থানৰ দৰে ডাটা সংগ্ৰহ আৰু ব্যৱহাৰ কৰিবলৈ অনুমতি দিয়ে। উদাহৰণ হিচাপে, নিকটতম কফি শ্বপ বিচাৰিবলৈ এটা এপ্পে্‌ আপোনাৰ মোটামুটি অৱস্থান ব্যৱহাৰ কৰিব পাৰে।</string>
+  <string name="location_access_summary">আপোনাৰ অৱস্থান তথ্য ব্যৱহাৰ কৰিবলৈ <b>অনুমতি বিচৰা এপ্প্‌বোৰক অনুমতি দিয়ক</b>। ইয়াত আপোনাৰ চলিত আৰু অতীতৰ অৱস্থান অন্তৰ্ভুক্ত থাকিব পাৰে।</string>
+  <string name="location_battery_saving">প্ৰতি ঘণ্টাত GPS আপডেট সীমাবদ্ধ কৰি <b>বেটাৰি ব্যয় হ্ৰাস কৰক</b>।</string>
+  <string name="location_network">আপোনাৰ অৱস্থান নিৰ্ণয় কৰাত এপ্প্‌ক সহায় কৰিবলৈ <b>Wi-Fi ব্যৱহাৰ কৰক</b>।</string>
+  <string name="location_network_telephony">আপোনাৰ অৱস্থান নিৰ্ণয় কৰাত এপ্প্‌ক সহায় কৰিবলৈ <b>Wi-Fi আৰু ম\'বাইল নেটৱৰ্ক ব্যৱহাৰ কৰক</b>।</string>
+  <string name="location_network_gms">আপোনাৰ অৱস্থান নিৰ্ণয় কৰাত এপ্প্‌ক সহায় কৰিবলৈ <b>Google সেৱা ব্যৱহাৰ কৰক</b>। ইয়াৰ অৰ্থ হৈছে Google-লৈ অজ্ঞাত অৱস্থান প্ৰেৰণ কৰা, আনকি কোনো এপ্প্‌ চলি নথকাৰ সময়তো।</string>
+  <string name="setup_mobile_data">ম\'বাইল ডাটা অন কৰক</string>
+  <string name="setup_mobile_data_no_service">ছাৰ্ভিচ নাই</string>
+  <string name="setup_mobile_data_emergency_only">কেৱলমাত্ৰ জৰুৰীকালীন ফোনসমূহ</string>
+  <string name="enable_mobile_data_summary">আপুনি ছেটআপৰ সময়ত ম\'বাইল ডাটা ব্যৱহাৰ কৰিব বিচাৰে নে? ম\'বাইল ডাটা অন কৰাটো ডাটা মাচুল সাপেক্ষ হ\'ব পাৰে।</string>
+  <string name="no">নহয়</string>
+  <string name="yes">হয়</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">জৰুৰীকালীন কল</string>
+  <string name="setup_services">Cyanogen বৈশিষ্ট্যবোৰ</string>
+  <string name="services_explanation" product="tablet">এই সেৱাবোৰে আপোনাৰ টেবলেট কম্পিউটাৰৰ সক্ষমতা সম্প্ৰসাৰিত কৰিবলৈ কাম কৰে। ডাটা Cyanogen ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="services_explanation" product="default">এই সেৱাবোৰে আপোনাৰ ফোনৰ সক্ষমতা সম্প্ৰসাৰিত কৰিবলৈ কাম কৰে। ডাটা Cyanogen ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="services_privacy_policy">গোপনীয়তা নীতি</string>
+  <string name="services_help_improve_cm">স্বয়ংক্ৰিয়ভাবে ডায়গনষ্টিক আৰু ব্যৱহাৰ ডাটা Cyanogen লৈ প্ৰেৰণ কৰি <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> উন্নত কৰাত সহায় কৰক এই তথ্য আপোনাক চিনাক্ত কৰিবলৈ ব্যৱহাৰ কৰিব পৰা নাযায় আৰু বেটাৰীৰ আয়ুস, এপ্প্‌ৰ কাৰ্যকাৰীতা আৰু নতুন <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> বৈশিষ্ট্যবোৰৰ ওপৰত কাম কৰি থকা দলবোৰক সহায় কৰে।</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> বিষয়বস্তুটো প্ৰয়োগ কৰক</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> এ অনন্য আইকন, ৱালপেপাৰ আৰু ফণ্ট সক্ষম কৰি আছে।</string>
+  <string name="services_os_nav_keys_label">হাৰ্ডৱেৰ কীবোৰৰ পৰিৱৰ্তে স্ক্ৰীণ <b>নেভিগেচন কীবোৰ ব্যৱহাৰ কৰক</b>।</string>
+  <string name="services_use_secure_sms">এটা</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ডিভাইচত সুৰক্ষিত SMS ব্যৱহাৰ কৰি থকা আন ব্যৱহাৰকৰ্তাৰ সৈতে SMS কথোপকথন এনক্ৰিপ্ট কৰিবলৈ সুৰক্ষিত SMS <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> ব্যৱহাৰ কৰক।</string>
+  <string name="setup_unlock">আনলক</string>
+  <string name="setup_device_locked">ডিভাইচটো ব্যৱহাৰকৰ্তাৰ দ্বাৰা লক কৰা হৈছে।</string>
+  <string name="setup_require_cyanogen_label">আনকি ফেক্টৰী ৰিছেটৰ পাছতো আপোনাৰ ডিভাইচটো ব্যৱহাৰ কৰিবলৈ <b>আপোনাৰ Cyanogen OS একাউণ্টৰ পাছৱৰ্ড প্ৰয়োজন</b>।</string>
+  <string name="setup_device_locked_instructions"><i>এই বৈশিষ্ট্যটো অন/অফ কৰিবলৈ অনুগ্ৰহ কৰি ছেটিংচ &gt; নিৰাপত্তা লৈ যাওক</i></string>
+  <string name="setup_warning_skip_anyway">Cyanogen OS একাউণ্ট অবিহনে, আপুনি এইবোৰ কৰিবলৈ সক্ষম নহ\'ব:\n\nআপোনাৰ ফোনটো নতুন আইকন, ৱালপেপাৰ আৰু বিষয়বস্তুচ্‌ এপ্পৰ বহুতৰ সৈতে অনুকূলিত কৰিবলৈ\n\n আপোনাৰ ফোন হেৰালে অৱস্থান নিৰূপণ কৰিব বা দূৰৰ পৰাই আপোনাৰ ফোনটো মচি পেলাব</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">স্ক্ৰীণৰ বেকআপ লকৰ প্ৰকাৰ চয়ন কৰক</string>
+  <string name="settings_fingerprint_setup_details">আপুনি আপোনাৰ স্ক্ৰীণ লক কেনেকৈ কৰিবলৈ বিচাৰিব?</string>
+  <string name="fingerprint_setup_title">আঙুলিৰছাপ ছেটআপ</string>
+  <string name="fingerprint_setup_summary">আপোনাৰ স্ক্ৰীণ আনলক কৰিবলৈ আঙুলিৰছাপ চেনচৰ ব্যৱহাৰ কৰিবলৈ, আপোনাৰ প্ৰয়োজন হ\'ব:</string>
+  <string name="fingerprint_setup_backup_lock_method">দ্বিতীয় এটা আনলক পদ্ধতি ছেটআপ কৰক</string>
+  <string name="fingerprint_setup_add_fingerprint">আপোনাৰ আঙুলিৰছাপ যোগ কৰক</string>
+  <string name="fingerprint_setup_screen_lock_setup">স্ক্ৰীণ লক ছেটআপ কৰক</string>
+  <string name="sim_locale_changed">%1$s SIM চিনাক্ত কৰা হৈছে</string>
 </resources>
