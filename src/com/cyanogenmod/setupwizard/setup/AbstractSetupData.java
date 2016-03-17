@@ -135,6 +135,21 @@ public abstract class AbstractSetupData extends BroadcastReceiver implements Set
         doPreviousNext(runnable);
     }
 
+    @Override
+    public void setCurrentPage(String key) {
+        if (mPageList.getPage(key) != null) {
+            mCurrentPageIndex = mPageList.getPageIndex(key);
+        }
+    }
+
+    public Page getNextPage(String key) {
+        if (mPageList.getPage(key) != null) {
+            int currentPageIndex = mPageList.getPageIndex(key);
+            return mPageList.getPage(currentPageIndex + 1);
+        }
+        return null;
+    }
+
     private boolean advanceToNextUnhidden() {
         while (mCurrentPageIndex < mPageList.size()) {
             mCurrentPageIndex++;
