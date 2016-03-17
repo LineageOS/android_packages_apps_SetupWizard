@@ -16,5 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="location_battery_saving"><b>Reduce el consumo de batería</b> restringiendo el número de actualizaciones del GPS por hora.</string>
+  <string name="location_network_telephony"><b>Utiliza el Wi-Fi y las redes móviles</b> para ayudar a las aplicaciones a determinar tu ubicación.</string>
+  <string name="setup_mobile_data">Activar datos móviles</string>
+  <string name="enable_mobile_data_summary">¿Deseas utilizar datos móviles durante la instalación? Activar los datos móviles puede provocar cargos de datos.</string>
   <!-- Fingerprint setup -->
+  <string name="sim_locale_changed">%1$s SIM detectada</string>
 </resources>

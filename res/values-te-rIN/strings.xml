@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">స్థాపక నిర్దేశకం</string>
+  <string name="next">తదుపరి</string>
+  <string name="skip">దాటవేయి</string>
+  <string name="start">ప్రారంభించు</string>
+  <string name="ok">సరే</string>
+  <string name="loading">కేవలం ఒక్క సెకను\u2026</string>
+  <string name="setup_complete">స్థాపన పూర్తయింది</string>
+  <string name="setup_welcome">స్వాగతం</string>
+  <string name="setup_wifi">Wi-Fiను ఎంచుకొనుము</string>
+  <string name="setup_sim_missing">SIM కార్డు లేదు</string>
+  <string name="setup_choose_data_sim">డేటా కొరకు ఒక SIM కార్డును ఎంచుకొనుము</string>
+  <string name="setup_location">స్థానం సేవలు</string>
+  <string name="setup_other">ఇతర సేవలు</string>
+  <string name="setup_datetime">తేదీ మరియు సమయం</string>
+  <string name="setup_current_date">ప్రస్తుత తేదీ</string>
+  <string name="setup_current_time">ప్రస్తుత సమయం</string>
+  <string name="sim_missing_summary" product="tablet">మీ టాబ్లెట్టులో SIM కార్డ్ గుర్తించబడలేదు. ఒక SIM కార్డును చొప్పించేందుకు, మీ పరికరంతో పాటుగా వచ్చిన సూచనలను చదవండి.</string>
+  <string name="sim_missing_summary" product="default">మీ ఫోనులో SIM కార్డ్ గుర్తించబడలేదు. ఒక SIM కార్డును చొప్పించేందుకు, మీ పరికరంతో పాటుగా వచ్చిన సూచనలను చదవండి.</string>
+  <string name="choose_data_sim_summary" product="tablet">డేటా కొరకు మీ యొక్క ఏ SIMను ఉపయోగించాలని అనుకుంటున్నారు? ఎంపిక చేయబడిన SIM కార్డుకు చార్జీలు వర్తించవచ్చు ఎందుకంటే అది మీ టాబ్లెట్టును అమర్చడానికి ఉపయోగించబడుతుంది.</string>
+  <string name="choose_data_sim_summary" product="default">డేటా కొరకు మీ యొక్క ఏ SIMను ఉపయోగించాలని అనుకుంటున్నారు? ఎంపిక చేయబడిన SIM కార్డుకు చార్జీలు వర్తించవచ్చు ఎందుకంటే అది మీ ఫోనును అమర్చడానికి ఉపయోగించబడుతుంది.</string>
+  <string name="date_time_summary">మీ సమయ మండలాన్ని అమర్చండి మరియు అవసరమయితే ప్రస్తుత తేదీ మరియు సమయాన్ని సవరించండి</string>
+  <string name="backup_data_summary">గూగుల్ సర్వర్లకు <b>బ్యాకప్</b> అనువర్తన డేటా, Wi-Fi పాస్వర్డులు, మరియు ఇతర సెట్టింగులు</string>
+  <string name="other_services_summary">ఈ సేవలు గూగులును మీ కొరకు పనిచేయడానికి నియమిస్తాయి, మరియు మీరు వాటిని ఏ సమయంలోనైనా ఆన్ మరియు ఆఫ్ చేయవచ్చు. గూగుల్ యొక్క <xliff:g id="name" example="Privacy Policy">%s</xliff:g> కు అనుకూలంగా డేటా వినియోగించబడుతుంది.</string>
+  <string name="location_services_summary">మీ యొక్క సమీప స్థానం వంటి డేటాను సేకరించేందుకు సిస్టమ్ మరియు మూడవ పార్టీ అనువర్తనాలకు స్థాన సేవలు అనుమతినిస్తాయి. ఉదాహరణకు, దగ్గరిలోని కాఫీ షాపులను గుర్తించేందుకు ఒక అనువర్తనం మీ యొక్క సమీప స్థానాన్ని ఉపయోగించవచ్చు.</string>
+  <string name="location_access_summary"><b>మీ యొక్క స్థాన సమాచారాన్ని ఉపయోగించుకునేందుకు</b> మీ అనుమతి కోసం అడిగిన అనువర్తనాలను అనుమతించుము. ఇది మీ యొక్క ప్రస్తుత స్థానం మరియు గత స్థానాలను కూడా కలిగి ఉండవచ్చు.</string>
+  <string name="location_battery_saving">గంటకు GPPS నవీకరణల సంఖ్యను నియంత్రించుట ద్వారా <b>బ్యాటరీ వినియోగాన్ని తగ్గించండి.</b></string>
+  <string name="location_network">అనువర్తనాలు మీ యొక్క స్థానాన్ని నిర్ధారించేందుకు సహాయపడటానికి <b>Wi-Fiను ఉపయోగించుము.</b></string>
+  <string name="location_network_telephony">అనువర్తనాలు మీ యొక్క స్థానాన్ని నిర్ధారించేందుకు <b>సహాయపడటానికి Wi-Fi మరియు మొబైల్ నెట్వర్కులను</b> ఉపయోగించుము.</string>
+  <string name="location_network_gms"><b>అనువర్తనాలు మీ యొక్క స్థానాన్ని నిర్ధారించేందుకు</b> సహాయపడటానికి గూగుల్ యొక్క స్థాన సర్వీసును ఉపయోగించుము. దీని అర్థం ఎటువంటి అనువర్తనాలు నడుస్తూ లేనప్పుడు కూడా గూగులుకు అజ్ఞాత స్థాన డేటాను పంపడం.</string>
+  <string name="setup_mobile_data">మొబైల్ డేటాను ప్రారంభించుము.</string>
+  <string name="setup_mobile_data_no_service">సేవ లేదు</string>
+  <string name="setup_mobile_data_emergency_only">అత్యవసర కాల్‌లు మాత్రమే</string>
+  <string name="enable_mobile_data_summary">సెటప్ సమయంలో మీరు మొబైల్ డేటాను ఉపయోగించాలనుకుంటున్నారా? మొబైల్ డేటాను ప్రారంభించినట్లయితే డేటా చార్జీలు వర్తించవచ్చు.</string>
+  <string name="no">లేదు</string>
+  <string name="yes">హాజరు అవుతాము అన్నవి</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">అత్యవసర కాల్</string>
+  <string name="setup_services">సయనోజెన్ లక్షణాలు</string>
+  <string name="services_explanation" product="tablet">మీ టాబ్లెట్ యొక్క సామర్థ్యాలను విస్తరించేందుకు మీకు ఈ సేవలు పనిచేస్తాయి. సయనోజెన్ యొక్క <xliff:g id="name" example="Privacy Policy">%s</xliff:g> కు అనుగుణంగా డేటా వినియోగించబడుతుంది.</string>
+  <string name="services_explanation" product="default">మీ ఫోన్ యొక్క సామర్థ్యాలను విస్తరించేందుకు మీకు ఈ సేవలు పనిచేస్తాయి. సయనోజెన్ యొక్క <xliff:g id="name" example="Privacy Policy">%s</xliff:g> కు అనుగుణంగా డేటా వినియోగించబడుతుంది.</string>
+  <string name="services_privacy_policy">గోప్యతా విధానం</string>
+  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> ను మెరుగుపరిచేందుకు సహాయం చేయుము</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> స్వయంచాలకంగా సయనోజెనుకు సమస్యా విశ్లేషణ మరియు వినియోగ డేటాను పంపడం ద్వారా. మిమ్మల్ని గుర్తించేందుకు ఈ సమాచారాన్ని ఉపయోగించుకోవడం కుదరదు మరియు బ్యాటరీ లైఫ్, అనువర్తనం పనితీరు, మరియు క్రొత్త <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> లక్షణాలపై పనిచేస్తున్న జట్టులకు సహాయపడుతుంది.</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> థీమును వర్తింపజేయుము</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> వినూత్న చిహ్నాలు, వాల్‌పేపర్లు, మరియు అక్షారాకృతులను ప్రారంభిస్తుంది.</string>
+  <string name="services_os_nav_keys_label"><b>హార్డ్‌వేర్ కీలకు బదులుగా ఆన్ స్క్రీన్ నావిగేషన్ కీలను</b> ఉపయోగించుము.</string>
+  <string name="services_use_secure_sms">సురక్షిత SMSను వినియోగించుము</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> పరికరంలో సురక్షిత SMS ఉపయోగిస్తున్న వినియోగదారులతో SMS సంభాషణలను గుప్తీకరించేందుకు <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g>.</string>
+  <string name="setup_unlock">అన్‌లాక్ చేయండి</string>
+  <string name="setup_device_locked">ఈ పరికరం వినియోగాదారునిచే లాక్ చేయబడింది.</string>
+  <string name="setup_require_cyanogen_label"><b>ఫ్యాక్టరీ రీసెట్ తరువాత కూడా మీ పరికరాన్ని ఉపయోగించేందుకు మీ</b> యొక్క సయనోజెన్ OS అకౌంట్ పాస్వర్డ్ అవసరం.</string>
+  <string name="setup_device_locked_instructions"><i>ఈ లక్షణాన్ని ఆఫ్/ఆన్ చేసేందుకు, దయచేసి సెట్టింగులు &gt; సెక్యూరిటీ కు వెళ్ళండి</i></string>
+  <string name="setup_warning_skip_anyway">సయనోజెన్ OS అకౌంట్ లేకుండా, మీరు ఈ విధంగా చేయడం సాధ్యపడదు: \n\nమీ ఫోనును క్రొత్త చిహ్నాలు, వాల్‌పేపర్లు మరియు థీముల అనువర్తనంలోని మరిన్ని అంశాలతో అనుకూలపరుచుము\n\nఒకవేళ పోయినట్లయితే ఫోనును గుర్తించుము లేదా దానిని రిమోటుగా చెరిపి వేయండి.</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">నకలు నిల్వ లాక్ రకాన్ని ఎంచుకొనుము</string>
+  <string name="settings_fingerprint_setup_details">మీరు మీ స్క్రీనును ఏ విధంగా లాక్ చేయాలని అనుకుంటున్నారు?</string>
+  <string name="fingerprint_setup_title">వేలిముద్ర సెటప్</string>
+  <string name="fingerprint_setup_summary">స్క్రీనును అన్లాక్ చేయడానికి మీ యొక్క వేలిముద్ర సెన్సరును ఉపయోగించేందుకు, మీరు ఈ విధంగా చేయాలి:</string>
+  <string name="fingerprint_setup_backup_lock_method">ద్వితీయ అన్లాకింగ్ ప్రక్రియను అమర్చుము</string>
+  <string name="fingerprint_setup_add_fingerprint">మీ వేలిముద్రను జోడించండి</string>
+  <string name="fingerprint_setup_screen_lock_setup">సెటప్ స్క్రీన్ లాక్</string>
+  <string name="sim_locale_changed">%1$s SIM కనుగొనబడింది</string>
 </resources>

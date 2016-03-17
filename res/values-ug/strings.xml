@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">تەڭشەك يېتەكچىسى</string>
+  <string name="next">كېيىنكى</string>
+  <string name="skip">ئاتلاش</string>
+  <string name="start">باشلاش</string>
+  <string name="ok">جەزملەش</string>
+  <string name="loading">سەل كۈتۈڭ\u2026</string>
+  <string name="setup_complete">تەڭشەش تاماملاندى</string>
+  <string name="setup_welcome">مەرھابا</string>
+  <string name="setup_wifi">Wi-Fi تاللاڭ</string>
+  <string name="setup_sim_missing">SIM كارتا يوق</string>
+  <string name="setup_choose_data_sim">سانلىق مەلۇماتقا ئىشلىتىدىغان SIM كارتىدىن بىرنى تاللاڭ</string>
+  <string name="setup_location">ئورۇن مۇلازىمەتلىرى</string>
+  <string name="setup_other">باشقا مۇلازىمەتلەر</string>
+  <string name="setup_datetime">چىسلا &amp; ۋاقىت</string>
+  <string name="setup_current_date">نۆۋەتتىكى چېسلا</string>
+  <string name="setup_current_time">نۆۋەتتىكى ۋاقىت</string>
+  <string name="sim_missing_summary" product="tablet">تاختا كومپىيوتېرىڭىزدا SIM كارتا بايقىمىدى. تاختا كومپىيوتېر ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
+  <string name="sim_missing_summary" product="default">يانفونىڭىزدا SIM كارتا بايقىمىدى. يانفون ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
+  <string name="choose_data_sim_summary" product="tablet">قايسى SIM كارتىنىڭ ئېقىمىنى ئىشلىتىسىز؟ سىز SIM كارتىڭىز تاختا كومپىيوتېرنى تەڭشەش سەۋەبلىك ئېقىم سەرپ قىلىشى مۇمكىن.</string>
+  <string name="choose_data_sim_summary" product="default">قايسى SIM كارتىنىڭ ئېقىمىنى ئىشلىتىسىز؟ سىز SIM كارتىڭىز تېلېفوننى تەڭشەش سەۋەبلىك ئېقىم سەرپ قىلىشى مۇمكىن.</string>
+  <string name="date_time_summary">ئەگەر لازىم بولسا، ۋاقىت رايونى. چىسلا ۋە ۋاقىتنى تەڭشەڭ</string>
+  <string name="backup_data_summary">ئەپ سانلىق مەلۇماتى، سىمسىز تور پارولى ۋە باشقا تەڭشەكلەرنى Google مۇلازىمىتىرىغا <b>زاپاسلاش</b></string>
+  <string name="other_services_summary">بۇ مۇلازىمەتلەرنى Google سىزگە تەمىنلەيدۇ، سىز ئۇلارنى خالىغان چاغدا تاقاپ ئاچسىڭىز بۇلىدۇ. ئېقىم Google نىڭ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> بۇيىچە ئىشلىتىلدۇ.</string>
+  <string name="location_services_summary">ئورۇن مۇلازىمىتى سىستېما ۋە ئۈچىنچى تەرەپ ئەپنىڭ سانلىق مەلۇماتنى يىغىشىغا ۋە ئىشلىتىشىگە رۇخسەت قىلىدۇ. مەسىلەن، مەلۇم بىر ئەپ سىزنىڭ تەخمىنىي ئورنىڭىزغا ئاساسەن يېقىن ئەتراپتىن قەھۋەخانا ئىزدەيدۇ.</string>
+  <string name="location_access_summary"><b>سىز ھوقۇق بەرگەن ئەپنىڭ</b> سىزنىڭ ئورۇن ئۇچۇرىڭىزنى ئىشلىتىشكە يول قويۇش، بۇ بەلكىم سىزنىڭ ھازىرقى ۋە ئۆتمۈشتىكى ئۇچۇرىڭىزنى ئۆز ئىچىگە ئېلىشى مۇمكىن.</string>
+  <string name="location_battery_saving">GPS نىڭ سائەتتە بىر يېڭىلىنىش چاستوتىسىنى چەكلەش ئارقىلىق <b>باتارىيە توك سەرپىياتىنى تۆۋەنلىتىش</b>.</string>
+  <string name="location_network"><b>سىمسىز تورنى ئىشلىتىپ</b> ئەپنىڭ ئورنىڭىزنى بېكىشىگە ياردەم قىلىڭ.</string>
+  <string name="location_network_telephony"><b>يۆتىلىشچان تور ۋە Wi-Fi نى ئىشلىتىپ</b> ئەپنىڭ ئورنىڭىزنى بېكىشىگە ياردەم قىلىڭ.</string>
+  <string name="location_network_gms"><b>گوگېل ئورۇن مۇلازىمىتىنى ئىشلىتىپ</b> ئەپنىڭ ئورنىڭىزنى بېكىشىگە ياردەم قىلىڭ. بۇ ئەپ قوزغالمىسىمۇ، گوگېلغا ئىسىمسىز ئورۇن ئۇچۇرى ئەۋەتىدىغانلىقىدىن دىرەك بېرىدۇ.</string>
+  <string name="setup_mobile_data">كۆچمە تورنى ئېچىش</string>
+  <string name="setup_mobile_data_no_service">مۇلازىمەت يوق</string>
+  <string name="setup_mobile_data_emergency_only">جىددىي تېلېفونلا ئۇرغىلى بولىدۇ</string>
+  <string name="enable_mobile_data_summary">سىز تەڭشەش جەريانىدا كۆچمە تورنى ئىشلىتەمسىز؟ كۆچمە تورنى قوزغاتسىڭىز بەلكىم ئېقىم چىقىم بۇلىشى مۇمكىن.</string>
+  <string name="no">ياق</string>
+  <string name="yes">ھەئە</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">جىددىي چاقىرىش</string>
+  <string name="setup_services">Cyanogen ئىقتىدارلىرى</string>
+  <string name="services_explanation" product="tablet">بۇ مۇلازىمەتلەر تاختا كومپىيوتېرىڭىزنىڭ ئىقتىدارىنى كېڭەيتىشكە ئىشلىتىلىدۇ. سانلىق مەلۇمات <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گە ئاساسەن ئىشلىتىلىدۇ.</string>
+  <string name="services_explanation" product="default">بۇ مۇلازىمەتلەر تېلېفونىڭىزنىڭ ئىقتىدارىنى كېڭەيتىشكە ئىشلىتىلىدۇ. سانلىق مەلۇمات <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گە ئاساسەن ئىشلىتىلىدۇ.</string>
+  <string name="services_privacy_policy">شەخسىيەت تەدبىرى</string>
+  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>نى ياخشىلاشقا ياردەم قىلىڭ</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ئارقىلىق Cyanogen غا ئاپتۇماتېك دىئاگىنوز ۋە سانلىق مەلۇمات ئەۋەتىدۇ. بۇ ئۇچۇرلار سىزنىڭ سالاھىتىڭىزنى ئېنىقلاشقا ئىشلىتىلمەيدۇ، بەلكى بىزنىڭ باتارىيە ئۆمۈرى، ئەپ ئىقتىدارى ۋە يېڭى <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ئىقتىدارنى تەتقىق قىلىشىمىزغا ياردەم قىلىدۇ.</string>
+  <string name="services_apply_theme">باش تېما <xliff:g id="name" example="Material">%s</xliff:g> نى ئىشلىتىش</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ئۆزگىچە سىنبەلگە، تەگلىك ۋە خەت نۇسخىسى قوزغىتىۋاتىدۇ.</string>
+  <string name="services_os_nav_keys_label"><b>مەۋھۇم كونۇپكىنى</b> ھەقىقىي كونۇپكىنىڭ ئورنىغا ئالماشتۇرۇش.</string>
+  <string name="services_use_secure_sms">بىخەتەر قىسقا ئۇچۇر ئىشلىتىڭ</string>
+  <string name="services_secure_sms_label">سىزنىڭ <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> ئۈسكىنىڭىزدە<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ئىلە باشقىلار بىلەن بولغان پاراڭغا پارول سېلىنىدۇ.</string>
+  <string name="setup_unlock">قۇلۇپ ئېچىش</string>
+  <string name="setup_device_locked">بۇ ئۈسكىنى باشقىلار قۇلۇپلاپ قويغان.</string>
+  <string name="setup_require_cyanogen_label">ئۈسكىنى زاۋۇتتىن چىققان ھالەتكە قايتۇرغان تەقدىردىمۇ، <b>سىزنىڭ Cyanogen OS ھېساباتى پارولىنى كىرگۈرۈش تەلەپ قىلىنىدۇ</b>.</string>
+  <string name="setup_device_locked_instructions"><i>بۇ ئىقىتىدارنى ئېچىپ تاقاش ئۈچۈن، تەڭشەكلەر&gt; بىخەتەرلىككە كىرىڭ</i></string>
+  <string name="setup_warning_skip_anyway">\"ئەگەر Cyanogen OS ھېساباتى قۇرمىسىڭىز، سىز: \n\n باش تېمىنى ئىشلىتىپ يېڭى سىنبەلگە، تەگلىك ۋە باشقا خاسلىقنى ئىشلىتەلمەيسىز\n\n ئورۇن بەلگىلىيەلمەيسىز ياكى يوقالغان تېلېفوننى تازىلىيالمايسىز\"</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">زاپاس قۇلۇپ تىپىنى تاللاڭ</string>
+  <string name="settings_fingerprint_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
+  <string name="fingerprint_setup_title">بارماق ئىزى تەڭشىكى</string>
+  <string name="fingerprint_setup_summary">ئۆزىڭىزنىڭ بارماق داتچىكنى ئىشلىتىپ قۇلۇپ ئاچماقچى بولسىڭىز، سىز چوقۇم:</string>
+  <string name="fingerprint_setup_backup_lock_method">زاپاس قۇلۇپ يىيىش ئۇسۇلىنى بېكىتىڭ</string>
+  <string name="fingerprint_setup_add_fingerprint">بارماق ئىزى قوشۇڭ</string>
+  <string name="fingerprint_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
+  <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
 </resources>

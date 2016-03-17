@@ -16,5 +16,66 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">സജ്ജമാക്കല്‍ വിസാർഡ്</string>
+  <string name="next">അടുത്തത്</string>
+  <string name="skip">ഒഴിവാക്കുക</string>
+  <string name="start">ആരംഭിക്കുക</string>
+  <string name="ok">ശരി</string>
+  <string name="loading">ഒരു സെക്കന്‍ഡ് മാത്രം\u2026</string>
+  <string name="setup_complete">സജ്ജമാക്കല്‍ പൂർത്തിയായി</string>
+  <string name="setup_welcome">സ്വാഗതം</string>
+  <string name="setup_wifi">Wi‑Fi തിരഞ്ഞെടുക്കുക</string>
+  <string name="setup_sim_missing">SIM കാർഡ് കാണുന്നില്ല</string>
+  <string name="setup_choose_data_sim">ഡാറ്റയ്ക്ക് വേണ്ടി ഒരു SIM തിരഞ്ഞെടുക്കുക</string>
+  <string name="setup_location">ലൊക്കേഷൻ സേവനങ്ങൾ</string>
+  <string name="setup_other">മറ്റ് സേവനങ്ങൾ</string>
+  <string name="setup_datetime">തീയതിയും സമയവും</string>
+  <string name="setup_current_date">നിലവിലെ തീയതി</string>
+  <string name="setup_current_time">നിലവിലെ സമയം</string>
+  <string name="sim_missing_summary" product="tablet">ഒരു SIM കാർഡ് നിങ്ങളുടെ ടാബ്ലെറ്റില്‍ കണ്ടെത്തിയില്ല. ഒരു SIM കാർഡ് ചേർക്കുന്നതിന്, നിങ്ങളുടെ ഉപകരണത്തിനൊപ്പം ലഭിച്ച നിർദ്ദേശങ്ങൾ വായിക്കുക.</string>
+  <string name="sim_missing_summary" product="default">ഒരു SIM കാർഡ് നിങ്ങളുടെ ഫോണില്‍ കണ്ടെത്തിയില്ല. ഒരു SIM കാർഡ് ചേർക്കുന്നതിന്, നിങ്ങളുടെ ഉപകരണത്തിനൊപ്പം ലഭിച്ച നിർദ്ദേശങ്ങൾ വായിക്കുക.</string>
+  <string name="choose_data_sim_summary" product="tablet">ഡാറ്റ ഉപയോഗിക്കുന്നതിനായി നിങ്ങള്‍ ഉപയോഗിക്കാന്‍ ആഗ്രഹിക്കുന്ന SIM ഏതാണ്? നിങ്ങളുടെ ടാബ്ലെറ്റ് സജ്ജമാക്കുന്നതിന് ഉപയോഗിക്കുമെന്നതിനാല്‍ തിരഞ്ഞെടുത്ത SIM നെറ്റ്‌വർക്ക് നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
+  <string name="choose_data_sim_summary" product="default">ഡാറ്റ ഉപയോഗിക്കുന്നതിനായി നിങ്ങള്‍ ഉപയോഗിക്കാന്‍ ആഗ്രഹിക്കുന്ന SIM ഏതാണ്? നിങ്ങളുടെ ഫോണ്‍ സജ്ജമാക്കുന്നതിന് ഉപയോഗിക്കുമെന്നതിനാല്‍ തിരഞ്ഞെടുത്ത SIM നെറ്റ്‌വർക്ക് നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
+  <string name="date_time_summary">ആവശ്യമെങ്കിൽ നിങ്ങളുടെ സമയ മേഖല സജ്ജമാക്കി നിലവിലെ തീയതിയും സമയവും ക്രമീകരിക്കുക</string>
+  <string name="backup_data_summary">അപ്ലിക്കേഷൻ ഡാറ്റ, Wi-Fi പാസ്‌വേഡുകൾ, മറ്റ് ക്രമീകരണങ്ങൾ എന്നിവ Google സെർവറുകളിൽ <b>ബാക്കപ്പുചെയ്യുക</b></string>
+  <string name="other_services_summary">ഈ സേവനങ്ങൾ നിങ്ങൾക്ക് വേണ്ടി പ്രവർത്തിക്കാന്‍ Google നെ ചുമതലപ്പെടുത്തുന്നു, നിങ്ങൾക്കിത് എപ്പോൾ വേണമെങ്കിലും ഓണ്‍ അല്ലെങ്കില്‍ ഓഫ് ചെയ്യാന്‍ കഴിയുന്നതാണ്. Google ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> പ്രകാരം ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
+  <string name="location_services_summary">നിങ്ങളുടെ ഏകദേശ സ്ഥാനം പോലുള്ള ഡാറ്റ ശേഖരിക്കുന്നതിനും ഉപയോഗിക്കുന്നതിനും സിസ്റ്റം, മൂന്നാം കക്ഷി ആപ്ലിക്കേഷനുകളെ സ്ഥാനം സേവനങ്ങൾ അനുവദിക്കുന്നു. ഉദാഹരണത്തിന്, സമീപത്തുള്ള കോഫി ഷോപ്പുകൾ കണ്ടെത്താൻ നിങ്ങളുടെ ഏകദേശ സ്ഥാനം ഒരു ആപ്ലിക്കേഷൻ ഉപയോഗിച്ചേക്കാം.</string>
+  <string name="location_access_summary"><b>നിങ്ങളുടെ സ്ഥാനം വിവരങ്ങൾ ഉപയോഗിക്കാൻ നിങ്ങളുടെ അനുമതി ആവശ്യപ്പെടുന്ന</b> ആപ്ലിക്കേഷനുകളെ അനുവദിക്കുക. ഇതില്‍ നിങ്ങളുടെ നിലവിലെ സ്ഥാനവും മുമ്പത്തെ ലൊക്കേഷനുകളും ഉൾപ്പെട്ടേക്കാം.</string>
+  <string name="location_battery_saving"><b>മണിക്കൂറിന് ജി. പി. എസ് അപ്ഡേറ്റുകൾ എണ്ണം കുറയ്ക്കുക</b> ബാറ്ററി ഉപഭോഗം നിയന്ത്രിയ്ക്കുന്നു.</string>
+  <string name="location_network">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Wi-Fi ഉപയോഗിക്കുക</b>.</string>
+  <string name="location_network_telephony">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Wi-Fi യും മൊബൈൽ നെറ്റ്‌വർക്കുകളും ഉപയോഗിക്കുക</b>.</string>
+  <string name="location_network_gms">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Google ന്റെ സ്ഥാന സേവനം ഉപയോഗിക്കുക</b>. ഒരു ആപ്ലിക്കേഷനും പ്രവര്‍ത്തിക്കുന്നില്ലെങ്കില്‍ പോലും അജ്ഞാത സ്ഥാന ഡാറ്റ Google ലേക്ക് അയയ്ക്കും എന്നതാണ് ഇതന്റെ അര്‍ത്ഥം.</string>
+  <string name="setup_mobile_data">സെല്ലുലാർ ഡാറ്റ ഓണാക്കുക</string>
+  <string name="setup_mobile_data_no_service">സേവനം ഇല്ല</string>
+  <string name="setup_mobile_data_emergency_only">അടിയന്തര കോളുകൾ മാത്രം</string>
+  <string name="enable_mobile_data_summary">നിങ്ങൾ സജ്ജീകരണത്തിനിടെ സെല്ലുലാർ ഡാറ്റ ഉപയോഗിക്കാൻ ആഗ്രഹിക്കുന്നുണ്ടോ? സെല്ലുലാർ ഡാറ്റ ഓണാക്കുന്നത് ഡേറ്റാ വില വിധേയമായിരിക്കാം.</string>
+  <string name="no">ഇല്ല</string>
+  <string name="yes">ഉണ്ട്</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">അടിയന്തര കോൾ</string>
+  <string name="setup_services">Cyanogen സവിശേഷതകൾ</string>
+  <string name="services_explanation" product="tablet">നിങ്ങളുടെ ടാബ്ലെറ്റിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. Cyanogen ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
+  <string name="services_explanation" product="default">നിങ്ങളുടെ ഫോണിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. Cyanogen ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
+  <string name="services_privacy_policy">സ്വകാര്യതാനയം</string>
+  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> മെച്ചപ്പെടുത്താൻ സഹായിക്കുക</string>
+  <string name="services_metrics_label">ഡയഗ്നോസ്റ്റിക്സ്, ഉപയോഗ ഡാറ്റ Cyanogen ലേക്ക് സ്വപ്രേരിതമായി അയക്കുന്നതിലൂടെ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ഈ വിവരങ്ങൾ നിങ്ങളെ തിരിച്ചറിയുന്നതിനായി ഉപയോഗിക്കാൻ കഴിയില്ല, ബാറ്ററിയുടെ ആയുസ്സ്, ആപ്ലിക്കേഷൻ പ്രകടനം, പുതിയ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> സവിശേഷതകൾ തുടങ്ങിയ കാര്യങ്ങളിൽ പ്രവർത്തിക്കുന്ന ടീമുകളെ ഇത് സഹായിക്കുന്നു</string>
+  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> തീം പ്രയോഗിക്കുക</string>
+  <string name="services_apply_theme_label">വിശിഷ്ട ഐക്കണുകൾ, വാൾപേപ്പറുകൾ, ഫോണ്ടുകള്‍ എന്നിവയെ <xliff:g id="name" example="Apply the Material theme">%s</xliff:g> പ്രാപ്തമാക്കുന്നു.</string>
+  <string name="services_os_nav_keys_label">ഹാര്‍ഡ്‌വെയര്‍ കീകൾക്ക് പകരം സ്ക്രീൻ <b>നാവിഗേഷൻ കീകൾ ഉപയോഗിക്കുക.</b></string>
+  <string name="services_use_secure_sms">സുരക്ഷിത SMS ഉപയോഗിക്കുക</string>
+  <string name="services_secure_sms_label">ഒരു <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> ഉപകരണത്തില്‍ സുരക്ഷിത SMS ഉപയോഗിച്ച് മറ്റ് ഉപയോക്താക്കളുമായി SMS സംഭാഷണങ്ങൾ എൻക്രിപ്റ്റ് ചെയ്യുന്നതിന് <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g>.</string>
+  <string name="setup_unlock">അൺലോക്കുചെയ്യുക</string>
+  <string name="setup_device_locked">ഈ ഉപകരണം ഉപയോക്താവ് ലോക്ക് ചെയ്തു.</string>
+  <string name="setup_require_cyanogen_label"><b>ഫാക്ടറി റീസെറ്റ് ചെയ്തതിന് ശേഷവും നിങ്ങളുടെ</b> ഉപകരണം ഉപയോഗിക്കാൻ നിങ്ങളുടെ Cyanogen OS പാസ്‌വേര്‍ഡ്‌ ആവശ്യമാണ്.</string>
+  <string name="setup_device_locked_instructions"><i>ഈ സവിശേഷത ഓഫ്/ഓൺ ചെയ്യുന്നതിന് ക്രമീകരണങ്ങൾ &gt; സുരക്ഷ എന്നതിലേക്ക് പോകുക</i></string>
+  <string name="setup_warning_skip_anyway">ഒരു Cyanogen OS അക്കൗണ്ട് ഇല്ലാതെ നിങ്ങള്‍ക്ക് ചെയ്യാനാവാത്തത്:\n\nപുതിയ ഐക്കണുകൾ, വാൾപേപ്പറുകൾ മറ്റും ഉപയോഗിച്ച് തീംസ് ആപ്ലിക്കേഷനില്‍ നിങ്ങളുടെ ഫോണ്‍ ഇഷ്ടാനുസൃതമാക്കുന്നത്\\n\nനിങ്ങളുടെ ഫോണ്‍ നഷ്ടപ്പെടുകയാണെങ്കില്‍ അതിന്റെ സ്ഥാനം കണ്ടെത്തി വിദൂരമായി അത് മായ്ക്കുന്നത്</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">ബാക്കപ്പ് സ്ക്രീൻ ലോക്ക് തരം തിരഞ്ഞെടുക്കുക</string>
+  <string name="settings_fingerprint_setup_details">നിങ്ങളുടെ സ്ക്രീന്‍ എങ്ങനെ ലോക്ക് ചെയ്യാനാണ് നിങ്ങള്‍ ആഗ്രഹിക്കുന്നത്?</string>
+  <string name="fingerprint_setup_title">വിരലടയാള സജ്ജീകരണം</string>
+  <string name="fingerprint_setup_summary">നിങ്ങളുടെ സ്ക്രീന്‍ അൺലോക്ക് ചെയ്യുന്നതിനായി നിങ്ങളുടെ ഫിംഗര്‍പ്രിന്റ്‌ സെൻസർ ഉപയോഗിക്കുന്നതിന്, നിങ്ങള്‍ക്ക് ആവശ്യമായവ:</string>
+  <string name="fingerprint_setup_backup_lock_method">ഒരു ദ്വിതീയ അൺലോക്ക് മാര്‍ഗ്ഗം സജ്ജമാക്കുക</string>
+  <string name="fingerprint_setup_add_fingerprint">നിങ്ങളുടെ വിരലടയാളം ചേർക്കുക</string>
+  <string name="fingerprint_setup_screen_lock_setup">സ്ക്രീൻ ലോക്ക് സജ്ജമാക്കുക</string>
+  <string name="sim_locale_changed">%1$s SIM കണ്ടെത്തി</string>
 </resources>
