@@ -124,9 +124,11 @@ public class GmsAccountPage extends SetupPage {
             } else {
                 handleResult(requestCode, resultCode);
             }
-        } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
+        } else {
+            if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
+                setHidden(true);
+            }
             handleResult(requestCode, resultCode);
-            setHidden(true);
         }
         return true;
     }
