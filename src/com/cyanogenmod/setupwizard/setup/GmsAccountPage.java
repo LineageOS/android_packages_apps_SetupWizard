@@ -121,12 +121,12 @@ public class GmsAccountPage extends SetupPage {
                         SetupStats.Action.EXTERNAL_PAGE_RESULT,
                         SetupStats.Label.GMS_ACCOUNT, "success");
                 launchGmsRestorePage(restorePicker);
-            } else {
-                handleResult(requestCode, resultCode);
             }
-        } else if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
+        } else {
             handleResult(requestCode, resultCode);
-            setHidden(true);
+            if (requestCode == SetupWizardApp.REQUEST_CODE_RESTORE_GMS) {
+                setHidden(true);
+            }
         }
         return true;
     }
