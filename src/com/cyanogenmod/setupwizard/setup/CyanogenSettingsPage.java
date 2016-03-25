@@ -148,7 +148,7 @@ public class CyanogenSettingsPage extends SetupPage {
                     SetupStats.Label.CHECKED,
                     String.valueOf(privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)));
             Log.i(TAG, "Applying default theme");
-            final ThemeManager tm = ThemeManager.getInstance();
+            final ThemeManager tm = ThemeManager.getInstance(mContext);
             tm.applyDefaultTheme();
 
         } else {
