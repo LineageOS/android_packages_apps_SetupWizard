@@ -33,7 +33,7 @@
   <string name="setup_current_date">Trenutni datum</string>
   <string name="setup_current_time">Trenutni čas</string>
   <string name="sim_missing_summary" product="tablet">V vaši tablici ni bila zaznana kartica SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
-  <string name="sim_missing_summary" product="default">V vašem telefonu ni bila zaznana kartica SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
+  <string name="sim_missing_summary" product="default">V vašem telefonu ni bilo zaznane kartice SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
   <string name="choose_data_sim_summary" product="tablet">Katero kartico SIM želite uporabiti za podatke? Izbrana kartica SIM lahko povzroči omrežne stroške, ker bo uporabljena za namestitev vaše tablice.</string>
   <string name="choose_data_sim_summary" product="default">Katero kartico SIM želite uporabiti za podatke? Izbrana kartica SIM lahko povzroči omrežne stroške, ker bo uporabljena za namestitev vašega telefona.</string>
   <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>

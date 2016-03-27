@@ -44,6 +44,7 @@
   <string name="location_battery_saving"><b>Redusere batteriforbruket</b> ved å begrense antall GPS oppdateringer per time.</string>
   <string name="location_network"><b>Bruk Wi-Fi</b> for å hjelpe apper å finne din posisjon.</string>
   <string name="location_network_gms"><b>Bruk Googles lokasjonstjeneste</b> for å hjelpe apps finne din posisjon. Dette betyr å sende anonym stedsinformasjon til Google, selv når ingen programmer kjører.</string>
+  <string name="setup_mobile_data">Slå på mobildata</string>
   <string name="setup_mobile_data_no_service">Ingen tjeneste</string>
   <string name="setup_mobile_data_emergency_only">Kun nødanrop</string>
   <string name="no">Nei</string>
