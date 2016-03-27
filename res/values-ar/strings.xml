@@ -41,10 +41,14 @@
   <string name="other_services_summary">هذه الخدمات  تجعل جوجل في خدمتك، ويمكنك تشغيلها أو إيقاف تشغيلها في أي وقت. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">تسمح خدمات الموقع لتطبيقات النظام والتطبيقات الخارجية بجمع واستخدام البيانات مثل موقعك التقريبي. على سبيل المثال، قد يستخدم تطبيق ما موقعك التقريبي لتحديد موقع  المقاهي القريبة.</string>
   <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
+  <string name="location_battery_saving"><b>قم بتقليل استهلاك البطارية</b> من خلال تقييد عدد تحديثات GPS في كل ساعة.</string>
   <string name="location_network"><b>استخدام الواي فاي</b> لمساعدة التطبيقات على تحديد موقعك.</string>
+  <string name="location_network_telephony"><b>استخدام Wi-Fi والشبكات الخلوية</b> لمساعدة التطبيقات على تحديد موقعك.</string>
   <string name="location_network_gms"><b>استخدام خدمة الموقع من جوجل</b> لمساعدة التطبيقات على تحديد موقعك. وهذا يعني إرسال بيانات مجهولة عن الموقع إلى جوجل، حتى في حالة عدم تشغيل أي تطبيقات.</string>
+  <string name="setup_mobile_data">تشغيل البيانات الخلوية</string>
   <string name="setup_mobile_data_no_service">لا توجد خدمة</string>
   <string name="setup_mobile_data_emergency_only">مكالمات الطوارئ فقط</string>
+  <string name="enable_mobile_data_summary">هل تريد استخدام البيانات الخلوية أثناء عملية الإعداد؟ قد يخضع تشغيل البيانات الخلوية إلى تطبيق رسوم بيانات.</string>
   <string name="no">لا</string>
   <string name="yes">نعم</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة</string>
@@ -73,4 +77,5 @@
   <string name="fingerprint_setup_backup_lock_method">إنشاء طريقة احتياطية لإلغاء إقفال الشاشة</string>
   <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
   <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
+  <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
 </resources>
