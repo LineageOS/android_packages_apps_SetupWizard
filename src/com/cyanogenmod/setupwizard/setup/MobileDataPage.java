@@ -30,6 +30,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Switch;
@@ -44,6 +45,8 @@ import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 public class MobileDataPage extends SetupPage {
 
     public static final String TAG = "MobileDataPage";
+
+    private static final int DC_READY_TIMEOUT = 20 * 1000;
 
     public MobileDataPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -80,6 +83,7 @@ public class MobileDataPage extends SetupPage {
         private Switch mEnableMobileData;
         private ImageView mSignalView;
         private TextView mNameView;
+        private Button mNextButton;
 
         private TelephonyManager mPhone;
         private SignalStrength mSignalStrength;
@@ -95,6 +99,13 @@ public class MobileDataPage extends SetupPage {
             @Override
             public void run() {
                 hideWaitForRadio();
+            }
+        };
+
+        private final Runnable mDataConnectionReadyRunnable = new Runnable() {
+            @Override
+            public void run() {
+                onDataStateReady();
             }
         };
 
@@ -116,6 +127,13 @@ public class MobileDataPage extends SetupPage {
                         updateSignalStrength();
                     }
 
+                    @Override
+                    public void onDataConnectionStateChanged(int state) {
+                         if (state == TelephonyManager.DATA_CONNECTED) {
+                             onDataStateReady();
+                         }
+                    }
+
                 };
 
         private View.OnClickListener mEnableDataClickListener = new View.OnClickListener() {
@@ -124,6 +142,11 @@ public class MobileDataPage extends SetupPage {
                 boolean checked = !mEnableMobileData.isChecked();
                 SetupWizardUtils.setMobileDataEnabled(getActivity(), checked);
                 mEnableMobileData.setChecked(checked);
+                if (checked) {
+                    waitForData();
+                } else {
+                    onDataStateReady();
+                }
                 SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
                         SetupStats.Action.ENABLE_MOBILE_DATA,
                         SetupStats.Label.CHECKED, String.valueOf(checked));
@@ -139,6 +162,7 @@ public class MobileDataPage extends SetupPage {
             mEnableMobileData = (Switch) mRootView.findViewById(R.id.data_switch);
             mSignalView =  (ImageView) mRootView.findViewById(R.id.signal);
             mNameView =  (TextView) mRootView.findViewById(R.id.enable_data_title);
+            mNextButton = (Button) getActivity().findViewById(R.id.next_button);
             updateDataConnectionStatus();
             updateSignalStrength();
         }
@@ -156,7 +180,8 @@ public class MobileDataPage extends SetupPage {
             mPhone = (TelephonyManager)getActivity().getSystemService(Context.TELEPHONY_SERVICE);
             mPhone.listen(mPhoneStateListener,
                     PhoneStateListener.LISTEN_SERVICE_STATE
-                            | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS);
+                            | PhoneStateListener.LISTEN_SIGNAL_STRENGTHS
+                            | PhoneStateListener.LISTEN_DATA_CONNECTION_STATE);
             updateDataConnectionStatus();
             updateSignalStrength();
             if (SetupWizardUtils.isRadioReady(mContext, null)) {
@@ -180,10 +205,32 @@ public class MobileDataPage extends SetupPage {
                 if (mTitleView != null) {
                     mTitleView.setText(mPage.getTitleResId());
                 }
-                mProgressBar.setVisibility(View.GONE);
+                mProgressBar.setVisibility(View.INVISIBLE);
                 mPageView.setVisibility(View.VISIBLE);
                 mPageView.startAnimation(
                         AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_enter));
+            }
+        }
+
+        private void waitForData() {
+            if (getUserVisibleHint() && !mProgressBar.isShown()) {
+                mProgressBar.setVisibility(View.VISIBLE);
+                mProgressBar.startAnimation(
+                        AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_enter));
+                mEnableDataRow.setEnabled(false);
+                mNextButton.setEnabled(false);
+                mHandler.postDelayed(mDataConnectionReadyRunnable, DC_READY_TIMEOUT);
+            }
+        }
+
+        private void onDataStateReady() {
+            mHandler.removeCallbacks(mDataConnectionReadyRunnable);
+            if (getUserVisibleHint() && mProgressBar.isShown()) {
+                mProgressBar.startAnimation(
+                        AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_exit));
+                mProgressBar.setVisibility(View.INVISIBLE);
+                mEnableDataRow.setEnabled(true);
+                mNextButton.setEnabled(true);
             }
         }
 
