@@ -100,12 +100,34 @@ public class GmsAccountPage extends SetupPage {
             getCallbacks().onPreviousPage();
         } else {
             super.doLoadAction(fragmentManager, action);
-            launchGmsAccountSetup();
+            if (!SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
+                launchGmsAccountSetup();
+            } else {
+                // This can happen if the user goes from setup -> restore, but chooses to set
+                // their device up as "new". Thus we need to not re-prompt this entire flow,
+                // skip ahead. CYNGNOS-2459
+                if (SetupWizardApp.DEBUG) {
+                    Log.d(TAG, "Google account already setup, skip gms setup");
+                }
+                setHidden(true);
+                getCallbacks().onNextPage();
+            }
         }
     }
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (SetupWizardApp.DEBUG) {
+            Log.d(TAG, "Received activity result from requestCode " + requestCode
+                    + " with a resultCode of " + resultCode);
+            if (data != null) {
+                Bundle extras = data.getExtras();
+                Log.d(TAG, "Within the activity result there were extras:");
+                for (String extra : extras.keySet()) {
+                    Log.d(TAG, "The key " + extra + " has a value of " + extras.get(extra));
+                }
+            }
+        }
         if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS && data != null) {
             if (SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
 
@@ -170,6 +192,9 @@ public class GmsAccountPage extends SetupPage {
     }
 
     private void launchGmsRestorePage(boolean restorePicker) {
+        if (SetupWizardApp.DEBUG) {
+            Log.d(TAG, "Launching gms restore page with restorePicker " + restorePicker);
+        }
         try {
             // GMS can disable this after logging in sometimes
             if (SetupWizardUtils.enableGMSSetupWizard(mContext)) {
@@ -219,6 +244,9 @@ public class GmsAccountPage extends SetupPage {
     }
 
     private void launchGmsAccountSetup() {
+        if (SetupWizardApp.DEBUG) {
+            Log.d(TAG, "Launching gms account page");
+        }
         Bundle bundle = new Bundle();
         bundle.putBoolean(SetupWizardApp.EXTRA_FIRST_RUN, true);
         bundle.putBoolean(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
