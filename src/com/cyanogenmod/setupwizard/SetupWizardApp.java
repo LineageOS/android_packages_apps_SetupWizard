@@ -26,6 +26,8 @@ import android.provider.Settings;
 
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
+import cyanogenmod.providers.CMSettings;
+
 public class SetupWizardApp extends Application {
 
     public static final String TAG = SetupWizardApp.class.getSimpleName();
@@ -108,6 +110,8 @@ public class SetupWizardApp extends Application {
                         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
                         Settings.Secure.putInt(getContentResolver(),
                                 Settings.Secure.USER_SETUP_COMPLETE, 1);
+                        CMSettings.Secure.putInt(getContentResolver(),
+                                CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 1);
                         SetupWizardUtils.disableGMSSetupWizard(SetupWizardApp.this);
                         SetupWizardUtils.disableSetupWizard(SetupWizardApp.this);
                         if (!isOwner) {
