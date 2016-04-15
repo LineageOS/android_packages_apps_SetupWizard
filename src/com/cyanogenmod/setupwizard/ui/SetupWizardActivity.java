@@ -51,6 +51,7 @@ import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
+import cyanogenmod.providers.CMSettings;
 import cyanogenmod.themes.ThemeManager;
 
 import java.util.ArrayList;
@@ -466,6 +467,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 1);
                 Settings.Secure.putInt(getContentResolver(),
                         Settings.Secure.USER_SETUP_COMPLETE, 1);
+                CMSettings.Secure.putInt(getContentResolver(),
+                        CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 1);
                 if (mEnableAccessibilityController != null) {
                     mEnableAccessibilityController.onDestroy();
                 }

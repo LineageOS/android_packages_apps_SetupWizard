@@ -30,6 +30,8 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.Toast;
 
+import cyanogenmod.providers.CMSettings;
+
 public class ManualTestActivity extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,8 @@ public class ManualTestActivity extends Activity {
     private void enableSetup() {
         Settings.Global.putInt(getContentResolver(), Settings.Global.DEVICE_PROVISIONED, 0);
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 0);
+        CMSettings.Secure.putInt(getContentResolver(),
+                CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 0);
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
@@ -117,6 +121,8 @@ public class ManualTestActivity extends Activity {
 
     private void setSetupComplete() {
         Settings.Secure.putInt(getContentResolver(), Settings.Secure.USER_SETUP_COMPLETE, 1);
+        CMSettings.Secure.putInt(getContentResolver(),
+                CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 1);
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
