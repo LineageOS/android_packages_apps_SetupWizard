@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm">Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání do Cyanogen. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností pro <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Použít motiv <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> povolí unikátní ikony, tapety a písma.</string>
   <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
   <string name="services_use_secure_sms">Použít zabezpečené SMS</string>
   <string name="services_secure_sms_label">Použijte aplikaci <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> pro šifrované SMS a zabezpečenou komunikaci na zařízení <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

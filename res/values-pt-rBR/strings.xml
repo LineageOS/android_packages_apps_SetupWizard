@@ -47,7 +47,7 @@
   <string name="setup_mobile_data">Ativar dados celular</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
-  <string name="enable_mobile_data_summary">Você quer usar dados moveis durante a instalação? Ao ligar os dados móveis, você estará sujeito a gastos de seu plano de dados contratado.</string>
+  <string name="enable_mobile_data_summary">Você quer usar dados móveis durante a instalação? Ao ligar os dados móveis, você estará sujeito a gastos de seu plano de dados contratado.</string>
   <string name="no">Não</string>
   <string name="yes">Sim</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -59,7 +59,7 @@
   <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automaticamente relatórios de uso de dados e diagnósticos para a Cyanogen. Esta informação não será usada para lhe identificar e ajuda as equipes responsáveis pela duração de bateria, desempenho dos aplicativos e novos recursos do <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando fontes, papéis de parede e ícones exclusivos.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando um estilo visual exclusivo para os seus ícones, papéis de parede, etc.</string>
   <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
   <string name="services_use_secure_sms">Usar SMS seguro</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para criptografar conversas SMS com outros usuários que usam o SMS seguro em um dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

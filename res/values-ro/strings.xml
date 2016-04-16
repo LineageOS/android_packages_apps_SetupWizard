@@ -59,7 +59,6 @@
   <string name="services_privacy_policy">Politica de confidențialitate</string>
   <string name="services_help_improve_cm">Ajută la îmbunătățirea <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">Aplică tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> activând pictograme, imagini de fundal, și fonturi unice.</string>
   <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
   <string name="services_use_secure_sms">Utilizează SMS securizat</string>
   <string name="setup_unlock">Deblocare</string>

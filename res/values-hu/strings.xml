@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm">Segítsen javítani <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> a Cyanogen részére történő automatikus diagnosztikai és használati adatok küldésével. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkciók fejlesztésében.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> téma alkalmazása</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> lehetővé teszi az egyéni ikonok, háttérképek és betűtípusok használatát.</string>
   <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
   <string name="services_use_secure_sms">Biztonságos SMS használata</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> az SMS beszélgetések titkosításához más olyan felhasználókkal, akik szintén biztonságos SMS-t használnak <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> eszközön.</string>

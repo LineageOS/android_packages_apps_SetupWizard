@@ -60,7 +60,7 @@
   <string name="services_help_improve_cm">Βοηθήστε στη βελτίωση του <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> στέλνοντας αυτόματα διαγνωστικά δεδομένα και στατιστικά χρήσης στη Cyanogen. Αυτές οι πληροφορίες δε μπορούν να χρησιμοποιηθούν για να σας αναγνωρίσουν και δίνουν ένα χέρι βοηθείας στις ομάδες που εργάζονται σε θέματα όπως η διάρκεια ζωής μπαταρίας, επιδόσεις εφαρμογών και νέα χαρακτηριστικά του <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Εφαρμογή του θέματος <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας μοναδικά εικονίδια, ταπετσαρίες και γραμματοσειρές.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας ένα μοναδικό στυλ εικονιδίων, ταπετσαριών και ακόμα περισσότερα.</string>
   <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
   <string name="services_use_secure_sms">Κάντε χρήση των ασφαλών SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> για να κρυπτογραφήσετε τις συνομιλίες SMS με άλλους χρήστες που χρησιμοποιούν ασφαλή SMS σε συσκευές <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

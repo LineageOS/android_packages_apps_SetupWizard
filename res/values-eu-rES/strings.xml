@@ -60,7 +60,7 @@
   <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="CyanogenMod">%s</xliff:g> hobetzen</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatikoki diagnostiko eta erabilera datuak bidaliz Cyanogeni. Informazio hau ezin da erabili zu identifikatzeko eta bateriaren iraupena, aplikazioen errendimendua, eta <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ezaugarri berrietan lanean dabilen taldearentzat lagungarria da.</string>
   <string name="services_apply_theme">Aplikatu <xliff:g id="name" example="Material">%s</xliff:g> gaia</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aparteko ikono, horma-paper eta letra-tipoak gaitzen.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zure ikono, horma-irudi eta bestelakoentzat estilo bisual paregabe bat gaituz.</string>
   <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
   <string name="services_use_secure_sms">Erabili SMS segurua</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> gailu batean SMS segurua erabiltzen duten beste erabiltzaileekin dituzun SMS elkarrizketak zifratzeko.</string>

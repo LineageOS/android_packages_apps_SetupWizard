@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm">স্বয়ংক্ৰিয়ভাবে ডায়গনষ্টিক আৰু ব্যৱহাৰ ডাটা Cyanogen লৈ প্ৰেৰণ কৰি <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> উন্নত কৰাত সহায় কৰক এই তথ্য আপোনাক চিনাক্ত কৰিবলৈ ব্যৱহাৰ কৰিব পৰা নাযায় আৰু বেটাৰীৰ আয়ুস, এপ্প্‌ৰ কাৰ্যকাৰীতা আৰু নতুন <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> বৈশিষ্ট্যবোৰৰ ওপৰত কাম কৰি থকা দলবোৰক সহায় কৰে।</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> বিষয়বস্তুটো প্ৰয়োগ কৰক</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> এ অনন্য আইকন, ৱালপেপাৰ আৰু ফণ্ট সক্ষম কৰি আছে।</string>
   <string name="services_os_nav_keys_label">হাৰ্ডৱেৰ কীবোৰৰ পৰিৱৰ্তে স্ক্ৰীণ <b>নেভিগেচন কীবোৰ ব্যৱহাৰ কৰক</b>।</string>
   <string name="services_use_secure_sms">এটা</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ডিভাইচত সুৰক্ষিত SMS ব্যৱহাৰ কৰি থকা আন ব্যৱহাৰকৰ্তাৰ সৈতে SMS কথোপকথন এনক্ৰিপ্ট কৰিবলৈ সুৰক্ষিত SMS <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> ব্যৱহাৰ কৰক।</string>

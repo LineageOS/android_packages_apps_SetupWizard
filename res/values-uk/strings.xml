@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm">Допомогти поліпшити <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматично надсилаючи дані щодо  використання та діагностики у Cyanogen. Ця інформація не може бути використана для ідентифікації користувача,  але дуже допоможе розробникам, що працюють над такими речами як життя батареї, продуктивність додатків і нові функції <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Застосувати тему <xliff:g id="name" example="Material">%s </xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> дає можливість використовувати унікальні іконки, шпалери і шрифти.</string>
   <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
   <string name="services_use_secure_sms">Використовувати безпечні SMS</string>
