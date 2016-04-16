@@ -58,7 +58,6 @@
   <string name="services_help_improve_cm">Hjelp til med å forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ved å sende diagnostikk- og bruksdata automatisk til Cyanogen. Denne informasjonen kan ikke brukes til å identifisere deg, men hjelper de som jobber med ting som batteritid, appytelse og nye <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-funksjoner.</string>
   <string name="services_apply_theme">Bruke <xliff:g id="name" example="Material">%s</xliff:g> temaet</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
   <string name="services_use_secure_sms">Bruk sikker SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> for å kryptere SMS-samtaler med andre brukere ved hjelp av sikker SMS på en <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-enhet.</string>

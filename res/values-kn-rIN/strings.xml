@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> ಸುಧಾರಿಸಲು ಸಹಕರಿಸಿ</string>
   <string name="services_metrics_label">Cyanogenಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ವಿಶ್ಲೇಷಣಾತ್ಮಕ ಮತ್ತು ಬಳಕೆಯ ಡೇಟಾವನ್ನು ಕಳುಹಿಸುವುದರಿಂದ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ಈ ಮಾಹಿತಿಯನ್ನು ನಿಮ್ಮನ್ನು ಗುರುತಿಸುವುದಕ್ಕಾಗಿ ಉಪಯೋಗಿಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ ಮತ್ತು ಇದನ್ನು ಬ್ಯಾಟರಿ ಲೈಫ್, ಆಪ್ ಕಾರ್ಯಕ್ಷಮತೆ, ಮತ್ತು ಹೊಸ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ವೈಶಿಷ್ಟ್ಯಗಳಲ್ಲಿ ಕೆಲಸಮಾಡುವ ತಂಡಗಳಿಗೆ ನೀಡಲಾಗುವುದು.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> ಥೀಮ್ ಅನ್ವಯಿಸಿ</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ವಿಶಿಷ್ಟ್ಯವಾದ ಐಕಾನ್ಸ್, ವಾಲ್‍ಪೇಪರ್‍ಗಳು, ಮತ್ತು ಫಾಂಟ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತಿದೆ.</string>
   <string name="services_os_nav_keys_label">ಹಾರ್ಡ್‍ವೇರ್ ಕೀಗಳ ಬದಲಾಗಿ <b>ಪರದೆಯ ಮೇಲಿನ ನಾವಿಗೇಶನ್ ಕೀಗಳನ್ನು ಉಪಯೋಗಿಸಿ</b>.</string>
   <string name="services_use_secure_sms">ಸುರಕ್ಷಿತ ಎಸ್ಎಂಎಸ್ ಉಪಯೋಗಿಸಿ</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ಸಾಧನದಲ್ಲಿ ಇತರೆ ಬಳಕೆದಾರರ ಜೊತೆಗಿನ ಎಸ್ಎಂಎಸ್ ಸಂಭಾಷಣೆಗಳನ್ನು ಸುರಕ್ಷಿತ ಎಸ್ಎಂಎಸ್ ಉಪಯೋಗಿಸಿ ಎನ್ಕ್ರಿಪ್ಟ್ ಮಾಡಲು <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>.</string>

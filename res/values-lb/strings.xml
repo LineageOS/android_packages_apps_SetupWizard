@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm">Hëllef <xliff:g id="name" example="CyanogenMod">%s</xliff:g> ze verbesseren</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> andeem s du automatesch Diagnos- a Benotzungsdaten u CyanogenMod schécks. Dës Informatioune kënnen net benotzt ginn, fir dech z\'identifiéieren. Et hëlleft eisen Equippen, déi u Saache wéi Akkulafzäit, App-Leeschtung oder un neie <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-Funktioune schaffen.</string>
   <string name="services_apply_theme">Den Design <xliff:g id="name" example="Material">%s</xliff:g> applizéieren</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>, fir spezifesch Symboler, Hannergrondbiller a Schrëften z\'aktivéieren.</string>
   <string name="services_os_nav_keys_label"><b>Schierm-Navigatiounstasten</b> amplaz Hardwaretaste benotzen.</string>
   <string name="services_use_secure_sms">Sécher SMSe benotzen</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, fir SMS-Konversatioune mat anere Benotzer op engem <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-Apparat ze verschlësselen.</string>

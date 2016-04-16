@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
   <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ancak pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konulardaki ekip çalışmalarında kullanılır.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> eşsiz simgeler, duvar kağıtları ve yazı tiplerini etkinleştiriyor.</string>
   <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>ekran üstü dolaşım tuşlarını kullanın</b>.</string>
   <string name="services_use_secure_sms">Şifreli SMS kullanın</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> cihazında güvenli SMS kullanan diğer kullanıcılarla olan SMS sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>.</string>

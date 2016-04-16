@@ -16,5 +16,65 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Panduan Penyiapan</string>
+  <string name="next">Berikutnya</string>
+  <string name="skip">Lewati</string>
+  <string name="start">Mulai</string>
+  <string name="ok">OKE</string>
+  <string name="loading">Hanya sec\u2026</string>
+  <string name="setup_complete">Penyiapan selesai</string>
+  <string name="setup_welcome">Selamat datang</string>
+  <string name="setup_wifi">Pilih Wi-Fi</string>
+  <string name="setup_sim_missing">SIM kartu hilang</string>
+  <string name="setup_choose_data_sim">Pilih SIM untuk Data</string>
+  <string name="setup_location">Layanan lokasi</string>
+  <string name="setup_other">Layanan lainnya</string>
+  <string name="setup_datetime">Tanggal &amp; waktu</string>
+  <string name="setup_current_date">Tanggal sekarang</string>
+  <string name="setup_current_time">Waktu saat ini</string>
+  <string name="sim_missing_summary" product="tablet">Kartu SIM tidak terdeteksi pada perangkat Anda.  Untuk menyisipkan kartu SIM, baca petunjuk yang datang dengan perangkat Anda.</string>
+  <string name="sim_missing_summary" product="default">Kartu SIM tidak terdeteksi pada perangkat Anda. Untuk menyisipkan kartu SIM, baca petunjuk yang disediakan dengan perangkat Anda.</string>
+  <string name="choose_data_sim_summary" product="tablet">Manakah SIM yang ingin Anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan perangkat Anda.</string>
+  <string name="choose_data_sim_summary" product="default">Manakah SIM yang ingin Anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan perangkat Anda.</string>
+  <string name="date_time_summary">Atur zona waktu dan sesuaikan tanggal dan waktu jika diperlukan</string>
+  <string name="backup_data_summary"><b>Membuat cadangan</b> data aplikasi, password Wi-Fi, dan pengaturan lainnya ke server Google</string>
+  <string name="other_services_summary">Layanan ini menggunakan Google, dan Anda dapat mengubahnya atau menonaktifkannya setiap saat. Data akan digunakan sesuai dengan <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
+  <string name="location_services_summary">Layanan lokasi mengizinkan sistem dan aplikasi pihak ketiga untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi Anda. Misalnya, sebuah aplikasi dapat menggunakan perkiraan lokasi Anda untuk menemukan kedai kopi terdekat.</string>
+  <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
+  <string name="location_battery_saving"><b>Mengurangi pemakaian baterai</b> dengan membatasi jumlah pembaruan GPS tiap jam.</string>
+  <string name="location_network"><b>Penggunaan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
+  <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan seluler</b> untuk membantu aplikasi menetukan lokasi Anda.</string>
+  <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi Anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>
+  <string name="setup_mobile_data">Nyalakan data seluler</string>
+  <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
+  <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
+  <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan data seluler selama penyiapan? Menyalakan data seluler dapat dikenakan biaya data.</string>
+  <string name="no">Tidak</string>
+  <string name="yes">Ya</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Panggilan darurat</string>
+  <string name="setup_services">Fitur Cyanogen</string>
+  <string name="services_explanation" product="tablet">Layanan ini bekerja untuk Anda untuk memperluas kemampuan perangkat tablet Anda. Data akan digunakan sesuai dengan sianogen di <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
+  <string name="services_explanation" product="default">Layanan ini bekerja untuk Anda untuk memperluas kemampuan perangkat tablet Anda. Data akan digunakan sesuai dengan sianogen di <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
+  <string name="services_privacy_policy">Kebijakan privasi</string>
+  <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> dengan mengirim data diagnostik dan penggunaan ke Cyanogen secara otomatis. Informasi ini tidak dapat mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja dengan hal-hal seperti masa pakai baterai, kinerja aplikasi, dan fitur <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> baru.</string>
+  <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
+  <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
+  <string name="services_use_secure_sms">Menggunakan SMS aman</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> untuk mengenkripsi percakapan SMS dengan pengguna lain menggunakan SMS aman pada perangkat <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="setup_unlock">Buka kunci</string>
+  <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
+  <string name="setup_require_cyanogen_label"><b>Memerlukan sandi akun Cyanogen OS</b> untuk dapat menggunakan perangkat meskipun setelah pengaturan ulang ke pabrik.</string>
+  <string name="setup_device_locked_instructions"><i>Untuk mengaktifkan/menonaktifkan fitur ini, silakan masuk ke Pengaturan &gt; Keamanan</i></string>
+  <string name="setup_warning_skip_anyway">Tanpa Akun Cyanogen OS, Anda tidak bisa:\n\nMenyesuaikan ponsel Anda dengan ikon, gambar latar baru dan masih banyak lagi di aplikasi Tema\n\nMencari atau menghapus data secara jarak jauh jika ponsel Anda hilang</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Pilih tipe kunci layar cadangan</string>
+  <string name="settings_fingerprint_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
+  <string name="fingerprint_setup_title">Penyiapan sidik jari</string>
+  <string name="fingerprint_setup_summary">Untuk menggunakan sensor sidik jari untuk membuka layar, Anda perlu:</string>
+  <string name="fingerprint_setup_backup_lock_method">Siapkan metode buka kunci kedua</string>
+  <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari Anda</string>
+  <string name="fingerprint_setup_screen_lock_setup">Siapkan kunci layar</string>
+  <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
 </resources>

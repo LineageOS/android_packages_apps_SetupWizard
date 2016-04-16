@@ -38,7 +38,7 @@
   <string name="choose_data_sim_summary" product="default">Katero kartico SIM želite uporabiti za podatke? Izbrana kartica SIM lahko povzroči omrežne stroške, ker bo uporabljena za namestitev vašega telefona.</string>
   <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>
   <string name="backup_data_summary"><b>Varnostno kopirajte</b> podatke aplikacij, gesla Wi-Fi in druge nastavitve na strežnike Google</string>
-  <string name="other_services_summary">Te storitve obremenijo Google in lahko jih vklopite ali izklopite kadarkoli. Podatki se bodo uporabljali v skladu s Googlovo <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="other_services_summary">Te storitve obremenijo Google in lahko jih vklopite ali izklopite kadarkoli. Podatki se bodo uporabljali v skladu s Googlovim <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Lokacijske storitve omogočajo sistemu in aplikacijam tretjih oseb, da zbirajo in uporabijo podatke, kot je vaša približna lokacija. Aplikacija lahko na primer uporabi približno lokacijo za iskanje bližnjih kavarn.</string>
   <string name="location_access_summary"><b>Dovolite aplikacijam, ki so zahtevale vaše dovoljenje</b>, da uporabijo podatke o vaši lokaciji. To lahko vključuje vašo trenutno lokacijo in prejšnje.</string>
   <string name="location_battery_saving"><b>Zmanjšajte porabo energije</b> z omejevanjem števila posodobitev GPS-a na uro.</string>
@@ -56,11 +56,11 @@
   <string name="setup_services">Značilnosti Cyanogen</string>
   <string name="services_explanation" product="tablet">Te storitve vam omogočajo, da razširite zmogljivosti svoje tablice. Podatki se uporabijo v skladu s <xliff:g id="name" example="Privacy Policy">%s </xliff:g> Cyanogen.</string>
   <string name="services_explanation" product="default">Te storitve vam omogočajo, da razširite zmogljivosti svojega telefona. Podatki se uporabijo v skladu s <xliff:g id="name" example="Privacy Policy">%s </xliff:g> Cyanogen.</string>
-  <string name="services_privacy_policy">Politiko zasebnosti</string>
+  <string name="services_privacy_policy">Pravilnikom o zasebnosti</string>
   <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe Cyanogenu. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Uveljavite temo <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>, ki omogoča edinstvene ikone, slike ozadja in pisave.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>, ki omogoča edinstven vidni slog za vaše ikone, sliko ozadja in še več.</string>
   <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
   <string name="services_use_secure_sms">Uporabite varne SMS-e</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, da šifrirate pogovore SMS z drugimi uporabniki z uporabo varnih SMS-ov na napravi <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

@@ -60,7 +60,7 @@
   <string name="services_help_improve_cm">Auta parantamaan <xliff:g id="name" example="CyanogenMod">%s</xliff:g>ia</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> lähettämällä vianmääritys- ja käyttötietoja Cyanogenille. Tietoja ei voi käyttää tunnistamiseen. Tiedot auttavat kehittäjiä muun muassa parantamaan akun kestoa, sovellusten suorituskykyä ja kehittämään <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>iin uusia ominaisuuksia.</string>
   <string name="services_apply_theme">Ota <xliff:g id="name" example="Material">%s</xliff:g>-teema käyttöön</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> käyttääksesi ainutlaatuisia kuvakkeita, taustakuvia ja fontteja.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> käyttääksesi ainutlaatuista ulkoasua kuvakkeissa, taustakuvissa ja fonteissa.</string>
   <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
   <string name="services_use_secure_sms">Käytä turvallisia tekstiviestejä</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> salataksesi tekstiviestikeskustelut muiden turvallisia tekstiviestejä ja <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>ia käyttävien henkilöiden kanssa.</string>
