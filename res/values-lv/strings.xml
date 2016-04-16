@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm">Palīdziet uzlabot <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Palīdziet uzlabot CyanogenMod">%1$s</xliff:g> automātiski sūtot diagnostikas informāciju un ierīces lietojumu uz Cyanogen serveriem. Šī informācija nevar tikt izmantota lai Jūs identificētu, bet gan palīdzēs komandām kas strādā pie baterijas taupīšana, lietotņu veiktspēja, jaunām <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> iespējām un citiem uzlabojumiem.</string>
   <string name="services_apply_theme">Lietot <xliff:g id="name" example="Material">%s</xliff:g> tēmu</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Lietot Materiālo tēmu">%s</xliff:g> ļaujot lietot unikālas ikonas, ekrāntapetes un fontus.</string>
   <string name="services_os_nav_keys_label"><b>Izmantot ekrānā redzamos navigācijas taustiņus</b> fizisko taustiņu vietā.</string>
   <string name="services_use_secure_sms">Izmantot drošu SIM</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Izmantot drošu SIM">%1$s</xliff:g> lai šifrētu SMS sarunas ar citiem lietotājiem, kas arī izmanto šifrētas SMS <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ierīcē.</string>

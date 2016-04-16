@@ -55,7 +55,6 @@
   <string name="services_privacy_policy">Privateca politiko</string>
   <string name="services_help_improve_cm">Helpu por plibonigi <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">Apliki la etoson <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ŝaltas unikajn piktogramojn, ekranfonojn kaj fontojn.</string>
   <string name="services_os_nav_keys_label"><b>Uzi ekran-klavojn </b> anstataŭ tiujn de la aparato.</string>
   <string name="services_use_secure_sms">Uzi sekurajn SMS</string>
   <string name="setup_unlock">Malŝlosi</string>

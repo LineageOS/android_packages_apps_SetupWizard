@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> təkmilləşməsinə kömək edin</string>
   <string name="services_metrics_label">Diaqnostika və istifadə verilənlərini Cyanogen\'ə göndərərək <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu məlumatlar kimliyinizdən istifadə məqsədilə götürülmür, ancaq batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özəllikləri kimi mövzularda komandamızın işlərində istifadə olunur.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını tətbiq et</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> fəal olduğu zaman təkrar olunmaz nişanlar, divar kağızları və yazı tipləri fəallaşdıralacaq.</string>
   <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
   <string name="services_use_secure_sms">Şifrəli SMS istifadə edin</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> cihazında digər istifadəçilərlə edilən söhbətlərinizi şifrələmək üçün <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g>.</string>

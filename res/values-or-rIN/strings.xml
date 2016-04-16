@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>ଉନ୍ନତି କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ</string>
   <string name="services_metrics_label">ଡାଇଗ୍ନୋଷ୍ଟିକ‍ ସ୍ୱତଃ ଭାବେ ପଠାଇ ଓ ସିଆନୋଜେନ୍‍କୁ ବ୍ୟବହୃତ ଡାଟା ପଠାଇ<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> । ଏହି ସୂଚନା ଆପଣଙ୍କୁ ଚିହ୍ନଟ କରିବା ପାଇଁ ବ୍ୟବହୃତ କରିହେବ ନା୍ହିଁ ଓ ବ୍ୟାଟେରୀ ବ୍ୟବହାର ଅବଧି, ଆପ୍ଲିକେସନ୍‍ କାର୍ଯ୍ୟକାରିତା, ଓ ନୂଆ  <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ବୈଶିଷ୍ଟ୍ୟ ଉପରେ କାର୍ଯ୍ୟ କରିବାରେ ସାହାଯ୍ୟ କରିବ।</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> ଥିମ୍‍ ଜାରି କରନ୍ତୁ</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ନିର୍ଦ୍ଦିଷ୍ଟ ଆଇକନ୍‍, ୱାଲ୍‍ପେପର୍‍, ଓ ଫଣ୍ଟ ସ‍କ୍ଷମ କରୁଛି।</string>
   <string name="services_os_nav_keys_label">ହା୍ର୍ଡ୍‍ଓୟାର୍‍ କୀ ବଦଳରେ<b>ଅନ୍‍ସ୍କ୍ରିନ୍‍ ନେଭିଗେସନ୍‍ କୀ ବ୍ୟବହାର କରନ୍ତୁ</b> ।</string>
   <string name="services_use_secure_sms">ସୁର‍କ୍ଷିତ SMS ବ୍ୟବହାର କରନ୍ତୁ</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$S</xliff:g> SMS କଥା୍ବାର୍ତ୍ତା ଅନ୍ୟ ଉପଭୋକ୍ତାଙ୍କ ସହିତ ସୁରଷିତ SMS  <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ଡିଭାଇସ୍‍ରେ ବ୍ୟବହାର କରିବା ପାଇଁ।</string>

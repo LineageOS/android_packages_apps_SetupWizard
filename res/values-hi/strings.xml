@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> को सुधारने में मदद करें</string>
   <string name="services_metrics_label">सियानोजेन को अपने आप ही निदानात्मक और उपयोग से संबंधित डेटा भेजकर <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>। इस जानकारी का उपयोग आपको पहचानने के लिए नहीं हो सकता है। वह केवल बैटरी की आयु, ऐप के निष्पादन और नए <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> प्रकार्यों पर काम करने वाली टीमों की मदद के लिए है।</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> थीम को लागू करें</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> जो अद्वितीय आइकन, वॉलपेपर, और फ़ॉन्टों को सक्षम करता है।</string>
   <string name="services_os_nav_keys_label">हार्डवेयर कुंजियों की जगह <b>स्क्रीन पर मौजूद नेविगेशन कुंजियों का उपयोग करें।</b></string>
   <string name="services_use_secure_sms">सुरक्षित एसएमएस का उपयोग करें</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> से सुरक्षित एसएमएस का उपयोग करने वाले अन्य उपयोगकर्ताओं के साथ के एसएमएस वार्तालापों को <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> उपकरण में कूटलेखित करें।</string>

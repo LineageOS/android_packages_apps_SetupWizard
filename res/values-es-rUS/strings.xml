@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automáticamente diagnósticos de depuración y uso de datos a Cyanogen. Esta información no puede ser utilizada para identificarte y sirve para mejorar la vida útil de la batería, el rendimiento de la aplicación y el desarrollo de nuevas características desarrolladas por <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> activando iconos especiales, fondos de pantalla y tipos de fuente.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
   <string name="services_use_secure_sms">Usar SMS seguros</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversaciones SMS con otros usuarios utilizando SMS seguros en un dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

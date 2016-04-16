@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatiškai siunčiant diagnostikos ir naudojimo duomenis „Cyanogen“. Ši informacija negali būti naudojama jūsų identifikavimui, pateikti duomenys padės komandoms dirbančioms prie akumuliatoriaus veikimo laiko, programų našumo ir naujų <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkcijų.</string>
   <string name="services_apply_theme">Taikyti <xliff:g id="name" example="Material">%s</xliff:g> temą</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> įgalina unikalias piktogramas, ekrano fonus ir šriftus.</string>
   <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
   <string name="services_use_secure_sms">Naudoti saugius SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, kad užšifruoti SMS pokalbius su kitais vartotojais, naudojančiais saugius SMS <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> įrenginyje.</string>

@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> ను మెరుగుపరిచేందుకు సహాయం చేయుము</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> స్వయంచాలకంగా సయనోజెనుకు సమస్యా విశ్లేషణ మరియు వినియోగ డేటాను పంపడం ద్వారా. మిమ్మల్ని గుర్తించేందుకు ఈ సమాచారాన్ని ఉపయోగించుకోవడం కుదరదు మరియు బ్యాటరీ లైఫ్, అనువర్తనం పనితీరు, మరియు క్రొత్త <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> లక్షణాలపై పనిచేస్తున్న జట్టులకు సహాయపడుతుంది.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> థీమును వర్తింపజేయుము</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> వినూత్న చిహ్నాలు, వాల్‌పేపర్లు, మరియు అక్షారాకృతులను ప్రారంభిస్తుంది.</string>
   <string name="services_os_nav_keys_label"><b>హార్డ్‌వేర్ కీలకు బదులుగా ఆన్ స్క్రీన్ నావిగేషన్ కీలను</b> ఉపయోగించుము.</string>
   <string name="services_use_secure_sms">సురక్షిత SMSను వినియోగించుము</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> పరికరంలో సురక్షిత SMS ఉపయోగిస్తున్న వినియోగదారులతో SMS సంభాషణలను గుప్తీకరించేందుకు <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g>.</string>

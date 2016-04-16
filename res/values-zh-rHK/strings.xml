@@ -54,7 +54,6 @@
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label">透過自動傳送診斷及使用資料給 Cyanogen 來<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於電池壽命、應用程式性能和增加<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>的新功能等方面。</string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 可以使用獨特的圖示、 桌布和字體。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>而非實體按鍵。</string>
   <string name="services_use_secure_sms">使用加密短訊</string>
   <string name="services_secure_sms_label">在<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>裝置上<xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>來加密您與其他人的短訊。</string>

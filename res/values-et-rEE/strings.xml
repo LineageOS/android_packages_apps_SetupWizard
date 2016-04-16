@@ -56,7 +56,6 @@
   <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> saates automatselt diagnostika ja kasutamise infot Cyanogenile. Andmeid ei ole võimalik kasutada isiku tuvastamiseks. Teave aitab arendajatel muu hulgas parandada aku eluiga, rakenduste jõudlust ning arendada uusi <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> võimalusi.</string>
   <string name="services_apply_theme">Rakenda <xliff:g id="name" example="Material">%s</xliff:g> teema</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> võimaldades unikaalseid ikoone , taustapilte ja fonte.</string>
   <string name="services_os_nav_keys_label"><b>Kasuta ekraanil olevaid navigeerimisklahve</b> riistvaraliste nuppude asemel.</string>
   <string name="services_use_secure_sms">Kasuta turvalist SMS-i</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> et krüpteerida SMS vestluseid teiste turvalise SMSi kasutajetga <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> seadmel.</string>

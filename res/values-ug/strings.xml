@@ -60,7 +60,6 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>نى ياخشىلاشقا ياردەم قىلىڭ</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ئارقىلىق Cyanogen غا ئاپتۇماتېك دىئاگىنوز ۋە سانلىق مەلۇمات ئەۋەتىدۇ. بۇ ئۇچۇرلار سىزنىڭ سالاھىتىڭىزنى ئېنىقلاشقا ئىشلىتىلمەيدۇ، بەلكى بىزنىڭ باتارىيە ئۆمۈرى، ئەپ ئىقتىدارى ۋە يېڭى <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ئىقتىدارنى تەتقىق قىلىشىمىزغا ياردەم قىلىدۇ.</string>
   <string name="services_apply_theme">باش تېما <xliff:g id="name" example="Material">%s</xliff:g> نى ئىشلىتىش</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ئۆزگىچە سىنبەلگە، تەگلىك ۋە خەت نۇسخىسى قوزغىتىۋاتىدۇ.</string>
   <string name="services_os_nav_keys_label"><b>مەۋھۇم كونۇپكىنى</b> ھەقىقىي كونۇپكىنىڭ ئورنىغا ئالماشتۇرۇش.</string>
   <string name="services_use_secure_sms">بىخەتەر قىسقا ئۇچۇر ئىشلىتىڭ</string>
   <string name="services_secure_sms_label">سىزنىڭ <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> ئۈسكىنىڭىزدە<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ئىلە باشقىلار بىلەن بولغان پاراڭغا پارول سېلىنىدۇ.</string>
