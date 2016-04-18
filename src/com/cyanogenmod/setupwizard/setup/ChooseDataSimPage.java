@@ -396,7 +396,10 @@ public class ChooseDataSimPage extends SetupPage {
 
         private void updateCarrierText(SubscriptionInfo subInfoRecord) {
             if (mIsAttached) {
-                String name = mPhone.getNetworkOperatorName(subInfoRecord.getSubscriptionId());
+                String name = mPhone.getSimOperatorNameForSubscription(subInfoRecord.getSubscriptionId());
+                if (TextUtils.isEmpty(name)) {
+                    name = mPhone.getNetworkOperatorName(subInfoRecord.getSubscriptionId());
+                }
                 ServiceState serviceState = mServiceStates.get(subInfoRecord.getSimSlotIndex());
                 final int slot = subInfoRecord.getSimSlotIndex();
                 final View v = mRows.get(slot);
