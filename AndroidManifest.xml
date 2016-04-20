@@ -43,8 +43,6 @@
     <uses-permission android:name="android.permission.BACKUP" />
     <uses-permission android:name="cyanogenmod.permission.FINISH_SETUP" />
     <uses-permission android:name="cyanogenmod.permission.LEGALESE" />
-    <uses-permission android:name="com.cyngn.stats.SEND_ANALYTICS" />
-    <uses-permission android:name="com.cyanogen.permission.REQUEST_KILL_SWITCH_OP" />
     <uses-permission android:name="cyanogenmod.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="cyanogenmod.permission.WRITE_SECURE_SETTINGS"/>
 
@@ -60,8 +58,6 @@
     <protected-broadcast android:name="com.cyanogenmod.setupwizard.SETUP_FINISHED"
                          android:permission="cyanogenmod.permission.FINISH_SETUP"/>
 
-    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
-
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
                  android:theme="@style/Theme.Setup"
@@ -69,7 +65,7 @@
                  android:taskAffinity="com.android.wizard"
                  android:name=".SetupWizardApp">
 
-        <activity android:name=".ui.SetupWizardActivity"
+       <activity android:name=".ui.SetupWizardActivity"
                   android:label="@string/product_name"
                   android:launchMode="singleInstance"
                   android:excludeFromRecents="true"
@@ -77,20 +73,67 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
 
-            <intent-filter android:priority="9">
+        <!--  <intent-filter android:priority="9">
 
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+             <action android:name="android.intent.action.MAIN" />
+             <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
 
-                <category android:name="android.intent.category.HOME" />
+             <category android:name="android.intent.category.HOME" />
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter> -->
+     </activity>
+
+        <activity android:name=".ui.WelcomeActivity"
+                  android:label="@string/product_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_WELCOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <receiver android:name=".setup.FinishSetupReceiver"
-                  android:exported="true">
+        <activity android:name=".ui.LocaleActivity"
+                  android:label="@string/product_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.cyanogenmod.setupwizard.ACTION_FINISH_SETUPWIZARD" />
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_LOCALE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.LineageSettingsActivity"
+                  android:label="@string/product_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.FinishActivity"
+                  android:label="@string/product_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".PartnerReceiver">
+            <intent-filter>
+                <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
             </intent-filter>
         </receiver>
     </application>
