@@ -31,7 +31,6 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -43,20 +42,20 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.android.setupwizardlib.util.SystemBarHelper;
+
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.setup.CMSetupWizardData;
-import com.cyanogenmod.setupwizard.setup.GmsAccountPage;
 import com.cyanogenmod.setupwizard.setup.Page;
 import com.cyanogenmod.setupwizard.setup.SetupDataCallbacks;
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
+import java.util.ArrayList;
+
 import cyanogenmod.providers.CMSettings;
 import cyanogenmod.themes.ThemeManager;
-
-import java.util.ArrayList;
 
 
 public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
@@ -103,7 +102,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mReveal = (ImageView)mRootView.findViewById(R.id.reveal);
         mButtonBar = findViewById(R.id.button_bar);
         mFinishingProgressBar = (ProgressBar)findViewById(R.id.finishing_bar);
-        ((SetupWizardApp)getApplicationContext()).disableStatusBar();
         mSetupData = (CMSetupWizardData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
             mSetupData = new CMSetupWizardData(getApplicationContext());
@@ -145,14 +143,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                     Settings.Secure.BACKUP_AUTO_RESTORE, 0) == 1) ||
                     (Settings.Secure.getInt(getContentResolver(),
                             Settings.Secure.BACKUP_ENABLED, 0) == 1);
-            if (TextUtils.equals(lastPage, GmsAccountPage.TAG) && backupEnabled) {
-                // We probably already restored, skip ahead!
-                mSetupData.setCurrentPage(mSetupData.getNextPage(lastPage).getKey());
-            } else {
-                // else just restore
-                mSetupData.setCurrentPage(sharedPreferences.getString(KEY_LAST_PAGE_TAG,
-                        mSetupData.getCurrentPage().getKey()));
-            }
+            mSetupData.setCurrentPage(sharedPreferences.getString(KEY_LAST_PAGE_TAG,
+                    mSetupData.getCurrentPage().getKey()));
             Page page = mSetupData.getCurrentPage();
             page.doLoadAction(getFragmentManager(), Page.ACTION_NEXT);
         }
@@ -323,7 +315,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mPrevButton.startAnimation(fadeOut);
         mPrevButton.setVisibility(View.INVISIBLE);
         final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
-        setupWizardApp.enableStatusBar();
         setupWizardApp.enableCaptivePortalDetection();
         Animation fadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         mFinishingProgressBar.setVisibility(View.VISIBLE);
@@ -454,7 +445,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                 final ThemeManager tm = ThemeManager.getInstance(SetupWizardActivity.this);
                 tm.unregisterThemeChangeListener(SetupWizardActivity.this);
                 SetupStats.sendEvents(SetupWizardActivity.this);
-                SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
                 final WallpaperManager wallpaperManager =
                         WallpaperManager.getInstance(SetupWizardActivity.this);
                 wallpaperManager.forgetLoadedWallpaper();
