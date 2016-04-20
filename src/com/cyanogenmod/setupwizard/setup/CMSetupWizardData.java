@@ -20,13 +20,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.os.SystemProperties;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
-
 import android.util.Log;
+
 import com.android.internal.telephony.TelephonyIntents;
-import com.cyanogenmod.setupwizard.R;
+
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.util.ArrayList;
@@ -51,7 +50,6 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new BluetoothSetupPage(mContext, this));
         }
         pages.add(new WelcomePage(mContext, this));
-        pages.add(new LocalePage(mContext, this));
         pages.add(new DateTimePage(mContext, this));
         if (SetupWizardUtils.hasWifi(mContext)) {
             pages.add(new WifiSetupPage(mContext, this));
@@ -69,15 +67,11 @@ public class CMSetupWizardData extends AbstractSetupData {
                     .setHidden(!isSimInserted() || mMobileDataEnabled));
         }
         final boolean hasGMS = SetupWizardUtils.hasGMS(mContext);
-        if (hasGMS) {
-            pages.add(new GmsAccountPage(mContext, this));
-        }
         pages.add(new OtherSettingsPage(mContext, this).setHidden(!hasGMS));
         if (SetupWizardUtils.hasFingerprint(mContext) && SetupWizardUtils.isOwner()) {
             pages.add(new FingerprintSetupPage(mContext, this));
         }
         pages.add(new ScreenLockSetupPage(mContext, this));
-        pages.add(new CyanogenSettingsPage(mContext, this));
         pages.add(new FinishPage(mContext, this));
         return new PageList(pages.toArray(new SetupPage[pages.size()]));
     }
@@ -89,7 +83,6 @@ public class CMSetupWizardData extends AbstractSetupData {
             showHideDataSimPage();
             showHideSimMissingPage();
             showHideMobileDataPage();
-            updateLocalePage();
         } else if (intent.getAction()
                 .equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
             showHideMobileDataPage();
@@ -143,13 +136,6 @@ public class CMSetupWizardData extends AbstractSetupData {
         DateTimePage dateTimePage = (DateTimePage) getPage(DateTimePage.TAG);
         if (dateTimePage != null) {
             dateTimePage.setHidden(mTimeZoneSet & mTimeSet);
-        }
-    }
-
-    private void updateLocalePage() {
-        LocalePage localePage = (LocalePage) getPage(LocalePage.TAG);
-        if (localePage != null) {
-            localePage.simChanged();
         }
     }
 

@@ -39,6 +39,7 @@ import android.util.Log;
 /*import com.android.internal.os.IKillSwitchService;*/
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
+import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import cyanogenmod.providers.CMSettings;
@@ -218,48 +219,15 @@ public class SetupWizardUtils {
 
     public static void disableSetupWizard(Context context) {
         disableComponent(context, context.getPackageName(),
-                "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+                SetupWizardActivity.class.getName());
         disableComponent(context, context.getPackageName(),
-                "com.cyanogenmod.setupwizard.setup.FinishSetupReceiver");
-    }
-
-    public static void disableGMSSetupWizard(Context context) {
-        try {
-            PackageInfo packageInfo = context.getPackageManager()
-                    .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
-                            PackageManager.GET_ACTIVITIES |
-                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
-            disableComponentArray(context, packageInfo.activities);
-            disableComponentArray(context, packageInfo.services);
-            disableComponentArray(context, packageInfo.receivers);
-        } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "Unable to disable GMS");
-        }
-    }
-
-    public static boolean enableGMSSetupWizard(Context context) {
-        try {
-            PackageInfo packageInfo = context.getPackageManager()
-                    .getPackageInfo(GOOGLE_SETUPWIZARD_PACKAGE,
-                            PackageManager.GET_ACTIVITIES |
-                                    PackageManager.GET_RECEIVERS | PackageManager.GET_SERVICES);
-            enableComponentArray(context, packageInfo.activities);
-            enableComponentArray(context, packageInfo.services);
-            enableComponentArray(context, packageInfo.receivers);
-            return true;
-        } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "Unable to enable GMS");
-            return false;
-        }
-    }
-
-    private static void disableComponentArray(Context context, ComponentInfo[] components) {
-        if(components != null) {
-            ComponentInfo[] componentInfos = components;
-            for(int i = 0; i < componentInfos.length; i++) {
-                disableComponent(context, componentInfos[i].packageName, componentInfos[i].name);
-            }
-        }
+                "com.cyanogenmod.setupwizard.ui.WelcomeActivity");
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.ui.LocaleActivity");
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.ui.LineageSettingsActivity");
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.ui.FinishActivity");
     }
 
     private static void disableComponent(Context context, String packageName, String name) {
@@ -269,24 +237,6 @@ public class SetupWizardUtils {
     private static void disableComponent(Context context, ComponentName component) {
         context.getPackageManager().setComponentEnabledSetting(component,
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-    }
-
-    private static void enableComponentArray(Context context, ComponentInfo[] components) {
-        if(components != null) {
-            ComponentInfo[] componentInfos = components;
-            for(int i = 0; i < componentInfos.length; i++) {
-                enableComponent(context, componentInfos[i].packageName, componentInfos[i].name);
-            }
-        }
-    }
-
-    private static void enableComponent(Context context, String packageName, String name) {
-        enableComponent(context, new ComponentName(packageName, name));
-    }
-
-    private static void enableComponent(Context context, ComponentName component) {
-        context.getPackageManager().setComponentEnabledSetting(component,
-                PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
     }
 
     public static boolean hasLeanback(Context context) {
