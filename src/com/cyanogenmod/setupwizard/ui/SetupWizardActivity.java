@@ -41,6 +41,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.android.setupwizardlib.util.SystemBarHelper;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
@@ -93,6 +94,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         if (!isOwner) {
             finish();
         }
+        SystemBarHelper.hideSystemBars(getWindow());
         final View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(UI_FLAGS);
         decorView.setOnSystemUiVisibilityChangeListener(
@@ -115,7 +117,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mReveal = (ImageView)mRootView.findViewById(R.id.reveal);
         mButtonBar = findViewById(R.id.button_bar);
         mFinishingProgressBar = (ProgressBar)findViewById(R.id.finishing_bar);
-        ((SetupWizardApp)getApplicationContext()).disableStatusBar();
         mSetupData = (CMSetupWizardData)getLastNonConfigurationInstance();
         if (mSetupData == null) {
             mSetupData = new CMSetupWizardData(getApplicationContext());
@@ -347,7 +348,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mPrevButton.startAnimation(fadeOut);
         mPrevButton.setVisibility(View.INVISIBLE);
         final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
-        setupWizardApp.enableStatusBar();
         setupWizardApp.enableCaptivePortalDetection();
         Animation fadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         mFinishingProgressBar.setVisibility(View.VISIBLE);

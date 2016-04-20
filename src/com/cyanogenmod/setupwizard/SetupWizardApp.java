@@ -80,8 +80,6 @@ public class SetupWizardApp extends Application {
 
     private boolean mIsAuthorized = false;
 
-    private StatusBarManager mStatusBarManager;
-
     private final Handler mHandler = new Handler();
 
     private final Runnable mRadioTimeoutRunnable = new Runnable() {
@@ -94,7 +92,6 @@ public class SetupWizardApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        mStatusBarManager = (StatusBarManager)getSystemService(Context.STATUS_BAR_SERVICE);
         try {
             // Since this is a new component, we need to disable here if the user
             // has already been through setup on a previous version.
@@ -143,16 +140,6 @@ public class SetupWizardApp extends Application {
 
     public void setIsAuthorized(boolean isAuthorized) {
         mIsAuthorized = isAuthorized;
-    }
-
-    public void disableStatusBar() {
-        mStatusBarManager.disable(StatusBarManager.DISABLE_EXPAND | StatusBarManager.DISABLE_NOTIFICATION_ALERTS
-                | StatusBarManager.DISABLE_NOTIFICATION_TICKER | StatusBarManager.DISABLE_RECENT | StatusBarManager.DISABLE_HOME
-                | StatusBarManager.DISABLE_SEARCH);
-    }
-
-    public void enableStatusBar() {
-        mStatusBarManager.disable(StatusBarManager.DISABLE_NONE);
     }
 
     public void disableCaptivePortalDetection() {

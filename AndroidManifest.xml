@@ -71,7 +71,7 @@
         <meta-data android:name="com.google.android.gms.version"
                    android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".ui.SetupWizardActivity"
+       <activity android:name=".ui.SetupWizardActivity"
                   android:label="@string/product_name"
                   android:launchMode="singleInstance"
                   android:excludeFromRecents="true"
@@ -79,12 +79,36 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
 
-            <intent-filter android:priority="9">
+        <!--  <intent-filter android:priority="9">
 
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+             <action android:name="android.intent.action.MAIN" />
+             <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
 
-                <category android:name="android.intent.category.HOME" />
+             <category android:name="android.intent.category.HOME" />
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter> -->
+     </activity>
+
+        <activity android:name=".ui.WelcomeActivity"
+                  android:label="@string/product_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc|themeChange"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.CYANOGEN_WELCOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.CyanogenAccountActivity"
+                  android:label="@string/cm_account_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc|themeChange"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.CYANOGEN_ACCOUNT_SETUP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -93,6 +117,12 @@
                   android:exported="true">
             <intent-filter>
                 <action android:name="com.cyanogenmod.setupwizard.ACTION_FINISH_SETUPWIZARD" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".PartnerReceiver">
+            <intent-filter>
+                <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
             </intent-filter>
         </receiver>
     </application>
