@@ -156,6 +156,11 @@ public class GmsAccountPage extends SetupPage {
     }
 
     @Override
+    public boolean doNextAction() {
+        return true;
+    }
+
+    @Override
     public void onFinishSetup() {
 
     }
