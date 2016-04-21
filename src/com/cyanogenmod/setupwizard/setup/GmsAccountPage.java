@@ -138,6 +138,13 @@ public class GmsAccountPage extends SetupPage {
     }
 
     @Override
+    public boolean doNextAction() {
+        final boolean canSkip = canSkip();
+        // return true to force this page to handle the next action.
+        return !canSkip;
+    }
+
+    @Override
     public void onFinishSetup() {
         try {
             if (mContentQueryMap != null) {
