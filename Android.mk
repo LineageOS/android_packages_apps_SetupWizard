@@ -5,9 +5,10 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_PACKAGE_NAME := CyanogenSetupWizard
+LOCAL_PACKAGE_NAME := LineageSetupWizard
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_OVERRIDES_PACKAGES := Provision
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
