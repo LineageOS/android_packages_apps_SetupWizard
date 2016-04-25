@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@ import android.app.Application;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.Settings;
 
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
@@ -30,6 +30,8 @@ public class SetupWizardApp extends Application {
     public static final String TAG = SetupWizardApp.class.getSimpleName();
     // Leave this off for release
     public static final boolean DEBUG = false;
+    /* Verbose Logging */
+    public static final boolean LOGV = true;
 
     public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
 
@@ -64,15 +66,15 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
-    public static final int REQUEST_CODE_UNLOCK = 6;
     public static final int REQUEST_CODE_SETUP_FINGERPRINT = 7;
     public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
     private boolean mIsRadioReady = false;
-    private boolean mIsAuthorized = false;
     private boolean mIgnoreSimLocale = false;
+    private boolean mSimInserted = false;
+    private boolean mBothSimsInserted = false;
 
     private final Bundle mSettingsBundle = new Bundle();
     private final Handler mHandler = new Handler();
@@ -88,17 +90,18 @@ public class SetupWizardApp extends Application {
     public void onCreate() {
         super.onCreate();
         final boolean isOwner = SetupWizardUtils.isOwner();
-        if (!isOwner) {
-            Thread t = new Thread(){
-                @Override
-                public void run() {
+        Thread t = new Thread(){
+            @Override
+            public void run() {
+                if (!isOwner) {
                     disableThemeComponentsForSecondaryUser();
                 }
-            };
-            t.run();
-        }  else {
-            disableCaptivePortalDetection();
-        }
+                disableComponentsForMissingFeatures();
+            }
+        };
+        t.start();
+        mSimInserted = SetupWizardUtils.isSimInserted(this);
+        mBothSimsInserted = SetupWizardUtils.allSimsInserted(this);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
 
@@ -113,14 +116,6 @@ public class SetupWizardApp extends Application {
         mIsRadioReady = radioReady;
     }
 
-    public boolean isAuthorized() {
-        return mIsAuthorized;
-    }
-
-    public void setIsAuthorized(boolean isAuthorized) {
-        mIsAuthorized = isAuthorized;
-    }
-
     public boolean ignoreSimLocale() {
         return mIgnoreSimLocale;
     }
@@ -133,12 +128,20 @@ public class SetupWizardApp extends Application {
         return mSettingsBundle;
     }
 
-    public void disableCaptivePortalDetection() {
-        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 0);
+    public boolean isSimInserted() {
+        return mSimInserted;
     }
 
-    public void enableCaptivePortalDetection() {
-        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
+    public void setSimInserted(boolean simInserted) {
+        mSimInserted = simInserted;
+    }
+
+    public boolean isBothSimsInserted() {
+        return mBothSimsInserted;
+    }
+
+    public void setBothSimsInserted(boolean bothSimsInserted) {
+        mBothSimsInserted = bothSimsInserted;
     }
 
     private void disableThemeComponentsForSecondaryUser() {
@@ -151,6 +154,32 @@ public class SetupWizardApp extends Application {
             } catch (PackageManager.NameNotFoundException e) {
                 // don't care
             }
+        }
+    }
+
+    private void disableComponentsForMissingFeatures() {
+        if (!SetupWizardUtils.hasLeanback(this)) {
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    BluetoothSetupActivity.class.getName());
+        }
+        if (!SetupWizardUtils.hasFingerprint(this)) {
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    FingerprintActivity.class.getName());
+        }
+        if (!SetupWizardUtils.hasTelephony(this)) {
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    MobileDataActivity.class.getName());
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    SimMissingActivity.class.getName());
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    ChooseDataSimActivity.class.getName());
+        } else if (!SetupWizardUtils.isMultiSimDevice(this)) {
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    ChooseDataSimActivity.class.getName());
+        }
+        if (!SetupWizardUtils.hasWifi(this)) {
+            SetupWizardUtils.disableComponent(this, getPackageName(),
+                    WifiSetupActivity.class.getName());
         }
     }
 }

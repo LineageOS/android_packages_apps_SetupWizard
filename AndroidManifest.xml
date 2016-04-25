@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -68,25 +69,52 @@
         <meta-data android:name="com.google.android.gms.version"
                    android:value="@integer/google_play_services_version" />
 
-       <activity android:name=".ui.SetupWizardActivity"
+        <activity android:theme="@style/NoDisplay"
+                  android:label="@string/activity_label_empty"
+                  android:name=".wizardmanager.WizardManager"
+                  android:exported="true"
+                  android:excludeFromRecents="true"
+                  android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
+                  android:immersive="true">
+            <intent-filter>
+                <action android:name="com.android.wizard.LOAD" />
+                <action android:name="com.android.wizard.NEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".wizardmanager.WizardActivity"
                   android:label="@string/product_name"
                   android:launchMode="singleInstance"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:windowSoftInputMode="stateAlwaysHidden">
+                  android:windowSoftInputMode="stateAlwaysHidden"
+                  android:theme="@style/NoDisplay">
 
-        <!--  <intent-filter android:priority="9">
+            <intent-filter android:priority="4">
 
-             <action android:name="android.intent.action.MAIN" />
-             <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
 
-             <category android:name="android.intent.category.HOME" />
-             <category android:name="android.intent.category.DEFAULT" />
-         </intent-filter> -->
-     </activity>
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
-        <activity android:name=".ui.WelcomeActivity"
+        <activity android:name=".BluetoothSetupActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_BLUETOOTH_SETUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WelcomeActivity"
                   android:label="@string/product_name"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -98,7 +126,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.LocaleActivity"
+        <activity android:name=".LocaleActivity"
                   android:label="@string/product_name"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -110,7 +138,79 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.LineageSettingsActivity"
+        <activity android:name=".DateTimeActivity"
+                  android:label="@string/product_name"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_DATETIME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WifiSetupActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_WIFI_SETUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SimMissingActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_SIM_MISSING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChooseDataSimActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_CHOOSE_DATA_SIM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MobileDataActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_ENABLE_MOBILE_DATA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LocationSettingsActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_LOCATION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LineageSettingsActivity"
                   android:label="@string/product_name"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -122,7 +222,31 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.FinishActivity"
+        <activity android:name=".FingerprintActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_FINGERPRINT_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ScreenLockActivity"
+            android:label="@string/product_name"
+            android:excludeFromRecents="true"
+            android:configChanges="mcc|mnc"
+            android:immersive="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".FinishActivity"
                   android:label="@string/product_name"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
@@ -137,6 +261,11 @@
         <receiver android:name=".PartnerReceiver">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SetupStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
             </intent-filter>
         </receiver>
     </application>
