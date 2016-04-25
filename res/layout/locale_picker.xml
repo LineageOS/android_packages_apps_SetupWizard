@@ -25,7 +25,7 @@
                  android:paddingTop="22dip"
                  android:paddingBottom="22dip"/>
 
-    <view class="com.cyanogenmod.setupwizard.ui.LocalePicker$CustomEditText"
+    <view class="com.cyanogenmod.setupwizard.widget.LocalePicker$CustomEditText"
           android:textAppearance="?android:attr/textAppearanceMedium"
           android:textColor="?android:attr/textColorPrimary"
           android:id="@+id/localepicker_input"
