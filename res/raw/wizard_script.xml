@@ -25,12 +25,8 @@
     adb shell am to-intent-uri -a com.android.setupwizard.WELCOME -f 0x10000000 \-\-ez firstRun true
 -->
 
-<WizardScript wizard:firstAction="oem_pre_setup"
+<WizardScript wizard:firstAction="welcome"
               xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard">
-    <!-- Preliminary setup for OEMs -->
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.OEM_PRE_SETUP;end" id="oem_pre_setup">
-        <result wizard:action="welcome" />
-    </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_WELCOME;end" id="welcome">
         <result wizard:action="locale" />
     </WizardAction>
@@ -80,5 +76,8 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
         <result wizard:action="exit" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit">
+        <result wizard:action="cm_exit" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.EXIT;end" id="cm_exit" />
 </WizardScript>

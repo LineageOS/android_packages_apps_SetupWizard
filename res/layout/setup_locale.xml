@@ -31,7 +31,7 @@
                     android:paddingLeft="@dimen/content_margin_left"
                     android:paddingRight="@dimen/content_margin_left">
 
-        <com.cyanogenmod.setupwizard.ui.LocalePicker
+        <com.cyanogenmod.setupwizard.widget.LocalePicker
             android:id="@+id/locale_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
