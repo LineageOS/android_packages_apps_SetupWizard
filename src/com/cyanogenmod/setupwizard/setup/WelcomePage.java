@@ -88,18 +88,6 @@ public class WelcomePage extends SetupPage {
     }
 
     @Override
-    public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == SetupWizardApp.REQUEST_CODE_UNLOCK) {
-            if (resultCode == Activity.RESULT_OK) {
-                ((SetupWizardApp) mContext.getApplicationContext()).setIsAuthorized(true);
-                getCallbacks().onNextPage();
-                return true;
-            }
-        }
-        return false;
-    }
-
-    @Override
     public String getKey() {
         return TAG;
     }

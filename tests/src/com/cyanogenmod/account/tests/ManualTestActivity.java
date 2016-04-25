@@ -67,7 +67,13 @@ public class ManualTestActivity extends Activity {
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
         ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard",
-                "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+                "com.cyanogenmod.setupwizard.ui.WizardActivity");
+        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP);
+        componentName = new ComponentName("com.cyanogenmod.setupwizard",
+                "com.cyanogenmod.setupwizard.ui.WizardManager");
+        pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                PackageManager.DONT_KILL_APP);
         pm.setComponentEnabledSetting(componentName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP);
         componentName = new ComponentName("com.cyanogenmod.setupwizard",
@@ -76,7 +82,7 @@ public class ManualTestActivity extends Activity {
                 PackageManager.DONT_KILL_APP);
         pm.clearApplicationUserData("com.cyanogenmod.setupwizard", null);
         ActivityManager am = (ActivityManager) getSystemService(Activity.ACTIVITY_SERVICE);
-        am.killBackgroundProcesses("com.cyanogenmod.setupwizard");
+//        am.killBackgroundProcesses("com.cyanogenmod.setupwizard");
         try {
             PackageInfo packageInfo = getPackageManager()
                     .getPackageInfo("com.google.android.setupwizard",
@@ -127,7 +133,7 @@ public class ManualTestActivity extends Activity {
         intent.addCategory("android.intent.category.HOME");
         final PackageManager pm = getPackageManager();
         ComponentName componentName = new ComponentName("com.cyanogenmod.setupwizard",
-                "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+                "com.cyanogenmod.setupwizard.ui.WizardActivity");
         pm.setComponentEnabledSetting(componentName,
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
         ActivityManager am = (ActivityManager) getSystemService(Activity.ACTIVITY_SERVICE);

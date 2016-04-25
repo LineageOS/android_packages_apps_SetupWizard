@@ -50,7 +50,7 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new BluetoothSetupPage(mContext, this));
         }
         pages.add(new WelcomePage(mContext, this));
-        pages.add(new DateTimePage(mContext, this));
+//        pages.add(new DateTimePage(mContext, this));
         if (SetupWizardUtils.hasWifi(mContext)) {
             pages.add(new WifiSetupPage(mContext, this));
         }
@@ -133,10 +133,10 @@ public class CMSetupWizardData extends AbstractSetupData {
     }
 
     private void showHideDateTimePage() {
-        DateTimePage dateTimePage = (DateTimePage) getPage(DateTimePage.TAG);
-        if (dateTimePage != null) {
-            dateTimePage.setHidden(mTimeZoneSet & mTimeSet);
-        }
+//        DateTimePage dateTimePage = (DateTimePage) getPage(DateTimePage.TAG);
+//        if (dateTimePage != null) {
+//            dateTimePage.setHidden(mTimeZoneSet & mTimeSet);
+//        }
     }
 
     public IntentFilter getIntentFilter() {

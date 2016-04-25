@@ -59,6 +59,9 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
     }
 
     @Override
+    public void onBackPressed() {}
+
+    @Override
     public void onNavigateBack() {
         Intent intent = new Intent(ACTION_EMERGENCY_DIAL);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK

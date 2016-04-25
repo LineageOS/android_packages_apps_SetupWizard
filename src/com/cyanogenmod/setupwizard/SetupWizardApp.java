@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +22,6 @@ import android.app.Application;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.Settings;
 
 import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
@@ -30,6 +30,8 @@ public class SetupWizardApp extends Application {
     public static final String TAG = SetupWizardApp.class.getSimpleName();
     // Leave this off for release
     public static final boolean DEBUG = false;
+    /* Verbose Logging */
+    public static final boolean LOGV = true;
 
     public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
 
@@ -64,14 +66,12 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
-    public static final int REQUEST_CODE_UNLOCK = 6;
     public static final int REQUEST_CODE_SETUP_FINGERPRINT = 7;
     public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
     private boolean mIsRadioReady = false;
-    private boolean mIsAuthorized = false;
     private boolean mIgnoreSimLocale = false;
 
     private final Bundle mSettingsBundle = new Bundle();
@@ -96,8 +96,6 @@ public class SetupWizardApp extends Application {
                 }
             };
             t.run();
-        }  else {
-            disableCaptivePortalDetection();
         }
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
@@ -113,14 +111,6 @@ public class SetupWizardApp extends Application {
         mIsRadioReady = radioReady;
     }
 
-    public boolean isAuthorized() {
-        return mIsAuthorized;
-    }
-
-    public void setIsAuthorized(boolean isAuthorized) {
-        mIsAuthorized = isAuthorized;
-    }
-
     public boolean ignoreSimLocale() {
         return mIgnoreSimLocale;
     }
@@ -131,14 +121,6 @@ public class SetupWizardApp extends Application {
 
     public Bundle getSettingsBundle() {
         return mSettingsBundle;
-    }
-
-    public void disableCaptivePortalDetection() {
-        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 0);
-    }
-
-    public void enableCaptivePortalDetection() {
-        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
     }
 
     private void disableThemeComponentsForSecondaryUser() {

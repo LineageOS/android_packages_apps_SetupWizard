@@ -17,10 +17,8 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
-import android.annotation.Nullable;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -28,22 +26,14 @@ import android.widget.Button;
 
 import com.android.setupwizard.navigationbar.SetupWizardNavBar;
 import com.android.setupwizard.navigationbar.SetupWizardNavBar.NavigationBarListener;
-import com.android.setupwizardlib.util.SystemBarHelper;
 
 public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener {
 
-    /* Logging */
-    public static final boolean LOGV = true;
+
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
 
     private SetupWizardNavBar mNavigationBar;
-
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        SystemBarHelper.hideSystemBars(getWindow());
-    }
 
     @Override
     public void onNavigationBarCreated(SetupWizardNavBar bar) {

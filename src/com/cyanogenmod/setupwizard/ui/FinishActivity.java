@@ -96,7 +96,7 @@ public class FinishActivity extends BaseSetupWizardActivity
 
     @Override
     public void onNavigateBack() {
-       onBackPressed();
+        onBackPressed();
     }
 
     @Override
@@ -118,7 +118,7 @@ public class FinishActivity extends BaseSetupWizardActivity
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         hideBackButton();
         hideNextButton();
-        mSetupWizardApp.enableCaptivePortalDetection();
+        SetupWizardUtils.enableCaptivePortalDetection(this);
         Animation fadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         mFinishingProgressBar.setVisibility(View.VISIBLE);
         mFinishingProgressBar.setIndeterminate(true);
@@ -297,6 +297,7 @@ public class FinishActivity extends BaseSetupWizardActivity
         @Override
         protected Boolean doInBackground(Void... params) {
             SetupWizardApp app = (SetupWizardApp)mActivity.getApplication();
+            SetupWizardUtils.enableNotifications(app);
             handlePrivacyGuard(app);
             handleEnableMetrics(app);
             handleNavKeys(app);

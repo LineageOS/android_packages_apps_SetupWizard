@@ -21,19 +21,13 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Messenger;
-import android.os.RemoteException;
-import android.util.Log;
-import android.view.View;
 
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.ui.SetupWizardActivity;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import java.lang.ref.WeakReference;
 

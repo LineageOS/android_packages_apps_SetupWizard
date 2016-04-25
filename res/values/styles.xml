@@ -111,4 +111,6 @@
         <item name="internalMaxHeight">180dip</item>
         <item name="virtualButtonPressedDrawable">@null</item>
     </style>
+
+    <style name="NoDisplay" parent="@android:style/Theme.NoDisplay" />
 </resources>
