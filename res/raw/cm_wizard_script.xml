@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Copyright (C) 2016 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<WizardScript xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard"
+    wizard:firstAction="bluetooth_setup">
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_BLUETOOTH_SETUP;end" id="bluetooth_setup">
+        <result wizard:action="welcome" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_WELCOME;end" id="welcome">
+        <result wizard:action="locale" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_LOCALE;end" id="locale">
+        <result wizard:action="datetime" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_DATETIME;end" id="datetime">
+        <result wizard:action="wifi_setup" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_WIFI_SETUP;end" id="wifi_setup">
+        <result wizard:resultCode="1" wizard:action="sim_missing" wizard:name="no_sim" />
+        <result wizard:action="choose_data_sim" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SIM_MISSING;end" id="sim_missing">
+        <result wizard:resultCode="1" wizard:action="location_settings" wizard:name="skip_sim" />
+        <result wizard:action="choose_data_sim" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_CHOOSE_DATA_SIM;end" id="choose_data_sim">
+        <result wizard:action="enable_mobile_data" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_ENABLE_MOBILE_DATA;end" id="enable_mobile_data">
+        <result wizard:action="location_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_LOCATION_SETTINGS;end" id="location_settings">
+        <result wizard:action="lineage_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETTINGS;end" id="lineage_settings">
+        <result wizard:action="fingerprint_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_FINGERPRINT_SETTINGS;end" id="fingerprint_settings">
+        <result wizard:action="lockscreen_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS;end" id="lockscreen_settings">
+        <result wizard:action="finish" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
+        <result wizard:action="exit" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.EXIT;end" id="exit" />
+
+</WizardScript>

@@ -21,10 +21,14 @@
     <string name="os_name" translatable="false">LineageOS</string>
     <string name="default_theme_name" translatable="false">Material</string>
 
+    <string name="cm_wizard_script_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/cm_wizard_script</string>
+    <string name="cm_wizard_script_user_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/cm_wizard_script_user</string>
+
     <!-- Partner SUW Strings -->
     <string name="theme_type" translatable="false">material_light</string>
     <string name="wizard_script_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/wizard_script_user</string>
+    <string name="activity_label_empty" />
 
     <string name="next">Next</string>
     <string name="skip">Skip</string>
