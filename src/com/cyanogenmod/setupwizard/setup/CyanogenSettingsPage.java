@@ -241,17 +241,10 @@ public class CyanogenSettingsPage extends SetupPage {
             mKillSwitchView = mRootView.findViewById(R.id.killswitch);
             mKillSwitchTitle = (TextView)mRootView.findViewById(R.id.killswitch_title);
             mKillSwitchStatus = (ImageView)mRootView.findViewById(R.id.killswitch_check);
-            if (hideKillSwitch()) {
-                mKillSwitchView.setVisibility(View.GONE);
-            } else {
-                if (SetupWizardUtils.isDeviceLocked()) {
-                    mKillSwitchTitle.setEnabled(true);
-                    mKillSwitchStatus.setImageResource(R.drawable.tick);
-                } else {
-                    mKillSwitchTitle.setEnabled(false);
-                    mKillSwitchStatus.setImageResource(R.drawable.cross);
-                }
-            }
+
+            mKillSwitchTitle.setEnabled(false);
+            mKillSwitchStatus.setImageResource(R.drawable.cross);
+
 
             mMetricsRow = mRootView.findViewById(R.id.metrics);
             mMetricsRow.setOnClickListener(mMetricsClickListener);
@@ -353,10 +346,6 @@ public class CyanogenSettingsPage extends SetupPage {
                 mNavKeys.setChecked(checked);
                 myPageBundle.putBoolean(DISABLE_NAV_KEYS, checked);
             }
-        }
-
-        private static boolean hideKillSwitch() {
-            return !SetupWizardUtils.hasKillSwitch();
         }
 
     }

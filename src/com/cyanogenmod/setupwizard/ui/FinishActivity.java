@@ -16,44 +16,32 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
-import com.android.setupwizard.navigationbar.SetupWizardNavBar;
-import com.android.setupwizard.navigationbar.SetupWizardNavBar.NavigationBarListener;
-import com.android.setupwizardlib.util.WizardManagerHelper;
 import com.cyanogenmod.setupwizard.R;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-public class WelcomeActivity extends SetupActivity {
+public class FinishActivity extends SetupActivity {
 
     /* Logging */
     public static final boolean LOGV = true;
 
-    public static final String TAG = "WelcomeActivity";
-
+    public static final String TAG = "FinishActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome_activity);
-        setNextText(R.string.next);
-        setBackAllowed(false);
+        setContentView(R.layout.finish_activity);
+        setNextText(R.string.start);
     }
 
     @Override
     public void onNavigateBack() {
-        // Do nothing.
+        onBackPressed();
     }
 
     @Override
     public void onNavigateNext() {
-        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-        startActivityForResult(intent, 1);
+       finalizeSetup();
     }
-
-
-
 
 }

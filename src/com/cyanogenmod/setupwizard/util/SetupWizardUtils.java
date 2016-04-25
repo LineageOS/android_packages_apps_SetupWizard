@@ -18,8 +18,10 @@ package com.cyanogenmod.setupwizard.util;
 
 import android.accounts.AccountManager;
 import android.app.AppGlobals;
+import android.app.StatusBarManager;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.ComponentInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -29,8 +31,10 @@ import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.os.IBinder;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.provider.Settings;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
@@ -45,13 +49,32 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import cyanogenmod.providers.CMSettings;
 
+import static android.app.StatusBarManager.DISABLE_BACK;
+import static android.app.StatusBarManager.DISABLE_CLOCK;
+import static android.app.StatusBarManager.DISABLE_EXPAND;
+import static android.app.StatusBarManager.DISABLE_HOME;
+import static android.app.StatusBarManager.DISABLE_NONE;
+import static android.app.StatusBarManager.DISABLE_NOTIFICATION_ALERTS;
+import static android.app.StatusBarManager.DISABLE_NOTIFICATION_ICONS;
+import static android.app.StatusBarManager.DISABLE_NOTIFICATION_TICKER;
+import static android.app.StatusBarManager.DISABLE_RECENT;
+import static android.app.StatusBarManager.DISABLE_SEARCH;
+import static android.app.StatusBarManager.DISABLE_SYSTEM_INFO;
 import static android.content.res.ThemeConfig.SYSTEM_DEFAULT;
+import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL;
 
 public class SetupWizardUtils {
 
     private static final String TAG = SetupWizardUtils.class.getSimpleName();
 
     private static final String GOOGLE_SETUPWIZARD_PACKAGE = "com.google.android.setupwizard";
+
+    private static final String LAST_ACTION_ID = "last_action";
+
+    public static final int DISABLE_MASK = DISABLE_EXPAND | DISABLE_NOTIFICATION_ICONS
+            | DISABLE_NOTIFICATION_ALERTS | DISABLE_NOTIFICATION_TICKER
+            | DISABLE_SYSTEM_INFO | DISABLE_RECENT | DISABLE_HOME | DISABLE_CLOCK
+            | DISABLE_SEARCH;
 
     private SetupWizardUtils(){}
 
@@ -134,19 +157,6 @@ public class SetupWizardUtils {
         return true;
     }
 
-    public static boolean isDeviceLocked() {
-        /* IBinder b = ServiceManager.getService(Context.KILLSWITCH_SERVICE);
-        IKillSwitchService service = IKillSwitchService.Stub.asInterface(b);
-        if (service != null) {
-            try {
-                return service.isDeviceLocked();
-            } catch (Exception e) {
-                // silently fail
-            }
-        }*/
-        return false;
-    }
-
     public static boolean frpEnabled(Context context) {
         final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
                 context.getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
@@ -155,22 +165,7 @@ public class SetupWizardUtils {
                 && !pdbManager.getOemUnlockEnabled();
     }
 
-    public static boolean hasKillSwitch() {
-        /* IBinder b = ServiceManager.getService(Context.KILLSWITCH_SERVICE);
-        IKillSwitchService service = IKillSwitchService.Stub.asInterface(b);
-        if (service != null) {
-            try {
-                return service.hasKillSwitch();
-            } catch (Exception e) {
-                // silently fail
-            }
-        } */
-        return false;
-    }
 
-    public static boolean hasAuthorized() {
-        return ((SetupWizardApp) AppGlobals.getInitialApplication()).isAuthorized();
-    }
 
     public static boolean isRadioReady(Context context, ServiceState state) {
         final SetupWizardApp setupWizardApp = (SetupWizardApp)context.getApplicationContext();
@@ -192,6 +187,45 @@ public class SetupWizardUtils {
 
     public static boolean isOwner() {
         return UserHandle.getCallingUserHandle().isOwner();
+    }
+
+    public static void disableCaptivePortalDetection(Context context) {
+        Settings.Global.putInt(context.getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 0);
+    }
+
+    public static void enableCaptivePortalDetection(Context context) {
+        Settings.Global.putInt(context.getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
+    }
+
+    public static void disableNotifications(Context context) {
+        StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
+        if (statusBarManager != null) {
+            statusBarManager.disable(DISABLE_MASK);
+        } else {
+            Log.w(SetupWizardApp.TAG,
+                    "Skip disabling notfications - could not get StatusBarManager");
+        }
+    }
+
+    public static void enableNotifications(Context context) {
+        StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
+        if(statusBarManager != null) {
+            statusBarManager.disable(DISABLE_NONE);
+        } else {
+            Log.i(SetupWizardApp.TAG, "Skip enabling notfications - StatusBarManager is null");
+        }
+    }
+
+    public static void setLastActionId(Context context, String actionId) {
+        SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(),
+                Context.MODE_PRIVATE);
+        preferences.edit().putString(LAST_ACTION_ID, actionId).apply();
+    }
+
+    public static String getLastActionId(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(context.getPackageName(),
+                Context.MODE_PRIVATE);
+        return preferences.getString(LAST_ACTION_ID, null);
     }
 
     public static boolean hasGMS(Context context) {
@@ -216,6 +250,10 @@ public class SetupWizardUtils {
     public static void disableSetupWizard(Context context) {
         disableComponent(context, context.getPackageName(),
                 "com.cyanogenmod.setupwizard.ui.SetupWizardActivity");
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.ui.WizardActivity");
+        disableComponent(context, context.getPackageName(),
+                "com.cyanogenmod.setupwizard.ui.WizardManager");
         disableComponent(context, context.getPackageName(),
                 "com.cyanogenmod.setupwizard.setup.FinishSetupReceiver");
     }

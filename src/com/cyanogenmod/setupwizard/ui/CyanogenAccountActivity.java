@@ -63,12 +63,6 @@ public class CyanogenAccountActivity extends Activity {
                         SetupStats.Action.EXTERNAL_PAGE_RESULT,
                         SetupStats.Label.CYANOGEN_ACCOUNT,
                         resultCode == Activity.RESULT_OK ? "success" : "skipped");
-                if (SetupWizardUtils.accountExists(this,
-                        getString(R.string.cm_account_type))) {
-                    if (SetupWizardUtils.isDeviceLocked()) {
-                        ((SetupWizardApp) getApplicationContext()).setIsAuthorized(true);
-                    }
-                }
                 done(true);
             } else if (resultCode == Activity.RESULT_CANCELED) {
                 SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,

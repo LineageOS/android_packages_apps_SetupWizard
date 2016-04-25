@@ -49,8 +49,6 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_USE_IMMERSIVE = "useImmersiveMode";
     public static final String EXTRA_THEME = "theme";
     public static final String EXTRA_MATERIAL_LIGHT = "material_light";
-    public static final String EXTRA_CKSOP = "cksOp";
-    public static final String EXTRA_LOGIN_FOR_KILL_SWITCH = "authCks";
     public static final String EXTRA_TITLE = "title";
     public static final String EXTRA_DETAILS = "details";
     public static final String EXTRA_FRAGMENT = "fragment";
@@ -77,8 +75,6 @@ public class SetupWizardApp extends Application {
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
     private boolean mIsRadioReady = false;
-
-    private boolean mIsAuthorized = false;
 
     private final Handler mHandler = new Handler();
 
@@ -114,11 +110,11 @@ public class SetupWizardApp extends Application {
                 };
                 t.run();
             }  else {
-                disableCaptivePortalDetection();
+                SetupWizardUtils.disableCaptivePortalDetection(getApplicationContext());
             }
         } catch (Settings.SettingNotFoundException e) {
             // Continue with setup
-            disableCaptivePortalDetection();
+            SetupWizardUtils.disableCaptivePortalDetection(getApplicationContext());
         }
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
@@ -132,22 +128,6 @@ public class SetupWizardApp extends Application {
             mHandler.removeCallbacks(mRadioTimeoutRunnable);
         }
         mIsRadioReady = radioReady;
-    }
-
-    public boolean isAuthorized() {
-        return mIsAuthorized;
-    }
-
-    public void setIsAuthorized(boolean isAuthorized) {
-        mIsAuthorized = isAuthorized;
-    }
-
-    public void disableCaptivePortalDetection() {
-        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 0);
-    }
-
-    public void enableCaptivePortalDetection() {
-        Settings.Global.putInt(getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
     }
 
     private void disableThemeComponentsForSecondaryUser() {
