@@ -32,6 +32,7 @@ import android.os.UserHandle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -355,7 +356,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         mFinishingProgressBar.setIndeterminate(true);
         mFinishingProgressBar.startAnimation(fadeIn);
         final ThemeManager tm = ThemeManager.getInstance(this);
-        tm.addClient(this);
+        try {
+            tm.registerThemeChangeListener(this);
+        } catch (Exception e) {
+            Log.w(TAG, "ThemeChangeListener already registered");
+        }
         mSetupData.finishPages();
     }
 
@@ -473,7 +478,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                     mEnableAccessibilityController.onDestroy();
                 }
                 final ThemeManager tm = ThemeManager.getInstance(SetupWizardActivity.this);
-                tm.removeClient(SetupWizardActivity.this);
+                tm.unregisterThemeChangeListener(SetupWizardActivity.this);
                 SetupStats.sendEvents(SetupWizardActivity.this);
                 SetupWizardUtils.disableGMSSetupWizard(SetupWizardActivity.this);
                 final WallpaperManager wallpaperManager =
