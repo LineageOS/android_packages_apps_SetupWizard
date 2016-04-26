@@ -16,40 +16,27 @@
 
 package com.cyanogenmod.setupwizard.setup;
 
+import com.cyanogenmod.setupwizard.R;
+import com.cyanogenmod.setupwizard.cmstats.SetupStats;
+import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
+import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.app.backup.IBackupManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.provider.Settings;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
-import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.SetupWizardApp;
-import com.cyanogenmod.setupwizard.cmstats.SetupStats;
-import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
-
 public class OtherSettingsPage extends SetupPage {
 
-    private static final String TAG = "OtherSettingsPage";
-
-    private static final String PRIVACY_POLICY_URI =
-            "https://www.google.com/intl/en/policies/privacy/?fg=1";
+    public static final String TAG = "OtherSettingsPage";
 
     public OtherSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -84,18 +71,15 @@ public class OtherSettingsPage extends SetupPage {
 
     public static class OtherSettingsFragment extends SetupPageFragment {
 
-        private View mBackupRow;
         private View mLocationRow;
         private View mBatteryRow;
         private View mNetworkRow;
-        private CheckBox mBackup;
         private CheckBox mNetwork;
         private CheckBox mBattery;
         private CheckBox mLocationAccess;
 
         private ContentResolver mContentResolver;
 
-        private IBackupManager mBackupManager;
 
         /** Broadcast intent action when the location mode is about to change. */
         private static final String MODE_CHANGING_ACTION =
@@ -106,13 +90,6 @@ public class OtherSettingsPage extends SetupPage {
         private int mCurrentMode = Settings.Secure.LOCATION_MODE_OFF;
         private BroadcastReceiver mReceiver;
 
-
-        private View.OnClickListener mBackupClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onToggleBackup(!mBackup.isChecked());
-            }
-        };
 
         private View.OnClickListener mLocationClickListener = new View.OnClickListener() {
             @Override
@@ -137,42 +114,10 @@ public class OtherSettingsPage extends SetupPage {
 
         @Override
         protected void initializePage() {
-            final boolean hasGms = SetupWizardUtils.hasGMS(getActivity());
             final boolean hasTelephony = SetupWizardUtils.hasTelephony(getActivity());
             mContentResolver = getActivity().getContentResolver();
-            mBackupManager = IBackupManager.Stub.asInterface(
-                    ServiceManager.getService(Context.BACKUP_SERVICE));
             TextView summaryView = (TextView) mRootView.findViewById(android.R.id.summary);
-            if (hasGms) {
-                String privacy_policy = getString(R.string.services_privacy_policy);
-                String otherSummary = getString(R.string.other_services_summary, privacy_policy);
-                SpannableString ss = new SpannableString(otherSummary);
-                ClickableSpan clickableSpan = new ClickableSpan() {
-                    @Override
-                    public void onClick(View textView) {
-                        final Intent intent = new Intent(SetupWizardApp.ACTION_VIEW_LEGAL);
-                        intent.setData(Uri.parse(PRIVACY_POLICY_URI));
-                        try {
-                            getActivity().startActivity(intent);
-                        } catch (Exception e) {
-                            Log.e(TAG, "Unable to start activity " + intent.toString());
-                        }
-                    }
-                };
-                ss.setSpan(clickableSpan,
-                        otherSummary.length() - privacy_policy.length() - 1,
-                        otherSummary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-                summaryView.setMovementMethod(LinkMovementMethod.getInstance());
-                summaryView.setText(ss);
-            } else {
-                summaryView.setText(R.string.location_services_summary);
-            }
-            mBackupRow = mRootView.findViewById(R.id.backup);
-            mBackupRow.setOnClickListener(mBackupClickListener);
-            boolean backupVisible = hasGms &&
-                    SetupWizardUtils.accountExists(getActivity(), SetupWizardApp.ACCOUNT_TYPE_GMS);
-            mBackupRow.setVisibility(backupVisible ? View.VISIBLE : View.GONE);
-            mBackup = (CheckBox) mRootView.findViewById(R.id.backup_checkbox);
+            summaryView.setText(R.string.location_services_summary);
             mLocationRow = mRootView.findViewById(R.id.location);
             mLocationRow.setOnClickListener(mLocationClickListener);
             mLocationAccess = (CheckBox) mRootView.findViewById(R.id.location_checkbox);
@@ -183,9 +128,7 @@ public class OtherSettingsPage extends SetupPage {
             mNetworkRow.setOnClickListener(mNetworkClickListener);
             mNetwork = (CheckBox) mRootView.findViewById(R.id.network_checkbox);
             TextView networkSummary = (TextView) mRootView.findViewById(R.id.network_summary);
-            if (hasGms) {
-                networkSummary.setText(R.string.location_network_gms);
-            } else if (hasTelephony) {
+            if (hasTelephony) {
                 networkSummary.setText(R.string.location_network_telephony);
             } else {
                 networkSummary.setText(R.string.location_network);
@@ -201,7 +144,6 @@ public class OtherSettingsPage extends SetupPage {
         public void onResume() {
             super.onResume();
             refreshLocationMode();
-            updateBackupToggle();
         }
 
         @Override
@@ -216,28 +158,6 @@ public class OtherSettingsPage extends SetupPage {
                     refreshLocationMode();
                 }
             };
-        }
-
-        private boolean isBackupRestoreEnabled() {
-            try {
-                return mBackupManager.isBackupEnabled();
-            } catch (Exception e) {
-                return false;
-            }
-        }
-
-        private void updateBackupToggle() {
-            mBackup.setChecked(isBackupRestoreEnabled());
-        }
-
-        private void onToggleBackup(boolean checked) {
-            try {
-                mBackupManager.setBackupEnabled(checked);
-                SetupStats.addEvent(SetupStats.Categories.SETTING_CHANGED,
-                        SetupStats.Action.ENABLE_BACKUP,
-                        SetupStats.Label.CHECKED, String.valueOf(checked));
-            } catch (RemoteException e) {}
-            updateBackupToggle();
         }
 
         private void setLocationMode(int mode) {

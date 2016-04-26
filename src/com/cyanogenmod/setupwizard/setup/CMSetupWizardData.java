@@ -113,8 +113,13 @@ public class CMSetupWizardData extends AbstractSetupData {
         boolean isConnected = SetupWizardUtils.isNetworkConnected(mContext);
         GmsAccountPage gmsAccountPage =
                 (GmsAccountPage) getPage(GmsAccountPage.TAG);
+        OtherSettingsPage otherSettingsPage = (OtherSettingsPage) getPage(OtherSettingsPage.TAG);
         if (gmsAccountPage != null) {
-            gmsAccountPage.setHidden(!isConnected && gmsAccountPage.canSkip());
+            boolean hidden = !isConnected && gmsAccountPage.canSkip();
+            gmsAccountPage.setHidden(hidden);
+            if (otherSettingsPage != null) {
+                otherSettingsPage.setHidden(!hidden);
+            }
         }
         CyanogenServicesPage cyanogenServicesPage =
                 (CyanogenServicesPage) getPage(CyanogenServicesPage.TAG);
