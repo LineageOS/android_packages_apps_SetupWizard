@@ -32,6 +32,7 @@ import android.os.Bundle;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.util.Log;
 
+import com.android.setupwizardlib.util.ResultCodes;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
@@ -46,6 +47,7 @@ public class GmsAccountPage extends SetupPage {
 
     public static final String ACTION_RESTORE = "com.google.android.setupwizard.RESTORE";
     public static final String ACTION_PROGRESS = "com.google.android.setupwizard.PROGRESS";
+    public static final String ACTION_VENDOR_SETUP = "com.google.android.setupwizard.VENDOR_SETUP";
     public static final String RESTORE_ACTION_ID = "mfm_restore_start";
     public static final String RESTORE_CHECK_ID = "restore_check";
     public static final String FRAGMENT_START_RESTORE =
@@ -128,7 +130,10 @@ public class GmsAccountPage extends SetupPage {
                 }
             }
         }
-        if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS && data != null) {
+        if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS &&
+                resultCode == ResultCodes.RESULT_SKIP) {
+            launchGmsVendorSetup();
+        } else if (requestCode == SetupWizardApp.REQUEST_CODE_SETUP_GMS && data != null) {
             if (SetupWizardUtils.isOwner() && resultCode == Activity.RESULT_OK) {
 
                 // If we don't have a restore token and a restore account, then we need to
@@ -238,6 +243,31 @@ public class GmsAccountPage extends SetupPage {
             e.printStackTrace();
             // XXX: In open source, we don't know what gms version a user has.
             // Bail if the restore activity is not found.
+            getCallbacks().onNextPage();
+        }
+    }
+
+    private void launchGmsVendorSetup() {
+        if (SetupWizardApp.DEBUG) {
+            Log.d(TAG, "Launching gms vendor setup page");
+        }
+        try {
+            Intent intent = new Intent(ACTION_VENDOR_SETUP);
+            intent.setPackage(SetupWizardUtils.GOOGLE_SETUPWIZARD_PACKAGE);
+            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
+            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
+            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
+            intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
+            ActivityOptions options =
+                    ActivityOptions.makeCustomAnimation(mContext,
+                            android.R.anim.fade_in,
+                            android.R.anim.fade_out);
+            mFragment.startActivityForResult(
+                    intent,
+                    SetupWizardApp.REQUEST_CODE_VENDOR_SETUP_GMS, options.toBundle());
+            return;
+        } catch (Exception e) {
+            // Move on if the vendor setup activity is not found.
             getCallbacks().onNextPage();
         }
     }
