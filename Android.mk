@@ -28,4 +28,6 @@ LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_FLAGS += --extra-packages com.google.android.gms
 
+include frameworks/opt/setupwizard/library/common.mk
+
 include $(BUILD_PACKAGE)
