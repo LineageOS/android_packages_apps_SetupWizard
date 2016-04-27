@@ -20,12 +20,46 @@
               android:layout_height="match_parent"
               android:background="@color/primary">
 
+    <Space android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"/>
+
     <ImageView
         android:id="@+id/brand_logo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:src="@drawable/brand_finish"
         android:scaleType="centerInside"
         android:padding="@dimen/content_margin_left"/>
+
+
+
+    <TextView android:id="@+id/mod_welcome"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="20sp"
+              android:layout_marginTop="105dp"
+              android:paddingLeft="@dimen/content_margin_left"
+              android:paddingRight="@dimen/content_margin_right"
+              android:text="@string/mod_welcome"
+              android:fontFamily="sans-serif-medium"
+              android:textColor="@color/white"
+              android:visibility="gone"/>
+
+
+    <TextView android:id="@+id/mod_desc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="16sp"
+              android:layout_marginTop="16dp"
+              android:paddingLeft="@dimen/content_margin_left"
+              android:paddingRight="@dimen/content_margin_right"
+              android:text="@string/mod_description"
+              android:textColor="@color/white"
+              android:visibility="gone"/>
+
+    <Space android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"/>
 
 </LinearLayout>
