@@ -95,4 +95,8 @@
     <string name="fingerprint_setup_add_fingerprint">Add your fingerprint</string>
     <string name="fingerprint_setup_screen_lock_setup">Setup screen lock</string>
     <string name="sim_locale_changed">%1$s SIM detected</string>
+
+    <!-- MOD stuff -->
+    <string name="mod_welcome">Welcome to the Post-App Era</string>
+    <string name="mod_description">Mods are intelligent, aware, and lightweight experiences built directly into the OS. When MOD thinks it can help, it will offer to activate them for you.</string>
 </resources>

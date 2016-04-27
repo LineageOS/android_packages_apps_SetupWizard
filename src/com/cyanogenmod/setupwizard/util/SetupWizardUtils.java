@@ -27,8 +27,6 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
-import android.os.IBinder;
-import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.service.persistentdata.PersistentDataBlockManager;
@@ -52,6 +50,7 @@ public class SetupWizardUtils {
     private static final String TAG = SetupWizardUtils.class.getSimpleName();
 
     public static final String GOOGLE_SETUPWIZARD_PACKAGE = "com.google.android.setupwizard";
+    private static final String MODMOD_PACKAGE = "com.cyanogen.ambient.core";
 
     private SetupWizardUtils(){}
 
@@ -197,6 +196,14 @@ public class SetupWizardUtils {
     public static boolean hasGMS(Context context) {
         return GooglePlayServicesUtil.isGooglePlayServicesAvailable(context) !=
                 ConnectionResult.SERVICE_MISSING;
+    }
+
+    /**
+     * The assumption here is that if ambient core is present, we have MODs.
+     * In the future we will link against the SDK and use the util there.
+     */
+    public static boolean canHasModMOD(Context context) {
+        return isPackageInstalled(context, MODMOD_PACKAGE);
     }
 
     public static boolean accountExists(Context context, String accountType) {
