@@ -72,4 +72,5 @@
   <string name="fingerprint_setup_add_fingerprint">Adăugați-vă amprenta</string>
   <string name="fingerprint_setup_screen_lock_setup">Setați blocarea de ecran</string>
   <string name="sim_locale_changed">SIM %1$s detectat</string>
+  <!-- MOD stuff -->
 </resources>

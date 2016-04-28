@@ -72,4 +72,5 @@
   <string name="fingerprint_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
   <string name="fingerprint_setup_add_fingerprint">Engadir a súa pegada dactilar</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurar o bloqueo da pantalla</string>
+  <!-- MOD stuff -->
 </resources>

@@ -72,4 +72,5 @@
   <string name="fingerprint_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
   <string name="fingerprint_setup_add_fingerprint">Lisa oma sõrmejälg</string>
   <string name="fingerprint_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
+  <!-- MOD stuff -->
 </resources>

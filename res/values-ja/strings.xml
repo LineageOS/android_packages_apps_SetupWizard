@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
   <string name="fingerprint_setup_screen_lock_setup">画面のロックをセットアップ</string>
   <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
+  <!-- MOD stuff -->
 </resources>

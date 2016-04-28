@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">帮助完善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通过自动发送诊断和使用数据给 Cyanogen。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
   <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 为图标、壁纸等启用独特的视觉风格。</string>
   <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
   <string name="services_use_secure_sms">使用安全短信</string>
   <string name="services_secure_sms_label">在您的 <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> 设备上 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 来加密您与其他用户的短信会话。</string>
@@ -77,4 +78,5 @@
   <string name="fingerprint_setup_add_fingerprint">添加您的指纹</string>
   <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
   <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
+  <!-- MOD stuff -->
 </resources>

@@ -70,4 +70,5 @@
   <string name="fingerprint_setup_add_fingerprint">新增你的指紋感應</string>
   <string name="fingerprint_setup_screen_lock_setup">設置螢幕鎖定</string>
   <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
+  <!-- MOD stuff -->
 </resources>

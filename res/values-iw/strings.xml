@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">הוסף את טביעת האצבע שלך</string>
   <string name="fingerprint_setup_screen_lock_setup">הגדרת מסך נעילה</string>
   <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>
+  <!-- MOD stuff -->
 </resources>

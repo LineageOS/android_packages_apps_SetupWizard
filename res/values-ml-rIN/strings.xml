@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">നിങ്ങളുടെ വിരലടയാളം ചേർക്കുക</string>
   <string name="fingerprint_setup_screen_lock_setup">സ്ക്രീൻ ലോക്ക് സജ്ജമാക്കുക</string>
   <string name="sim_locale_changed">%1$s SIM കണ്ടെത്തി</string>
+  <!-- MOD stuff -->
 </resources>

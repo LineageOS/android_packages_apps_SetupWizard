@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">तुमचा बोटाचा ठसा जोडा</string>
   <string name="fingerprint_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करा</string>
   <string name="sim_locale_changed">%1$s सिम आढळले</string>
+  <!-- MOD stuff -->
 </resources>

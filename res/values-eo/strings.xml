@@ -63,4 +63,5 @@
   <string name="setup_device_locked_instructions"><i>Por mal-/ŝalti tiun funkcion, bonvolu iri en Agordoj &gt; Sekureco</i></string>
   <string name="setup_warning_skip_anyway">Sen Cyanogen konto, vi ne kapablos :\n\nAgordi vian telefonon per novaj piktogramoj, ekranfono kaj pli en la etosa aplikaĵo\n\nLokigi aŭ fore forviŝi vian telefonilon se vi perdas ĝin</string>
   <!-- Fingerprint setup -->
+  <!-- MOD stuff -->
 </resources>

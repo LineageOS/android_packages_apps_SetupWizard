@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Помозите да побољшамо <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> аутоматским слањем дијагностике и коришћења података у Cyanogen. Ове информације се неће користити за вашу идентификацију и далазе у руку да тимова који раде на стварима као што су трајање батерије, перформансе апликација, и новим <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> карактеристикама.</string>
   <string name="services_apply_theme">Примени <xliff:g id="name" example="Material">%s</xliff:g> тему</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> омогућава јединствени визуелни стил за иконе, тапете и остало.</string>
   <string name="services_os_nav_keys_label"><b>Користите навигационе тастере на екрану</b> уместо хардверских тастера.</string>
   <string name="services_use_secure_sms">Користи безбедан SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> да заштитиш SMS преписку са другим корисницима користећи безбедан SMS на <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> уређају.</string>
@@ -77,4 +78,5 @@
   <string name="fingerprint_setup_add_fingerprint">Додај свој отисак</string>
   <string name="fingerprint_setup_screen_lock_setup">Подешавање закључавања екрана</string>
   <string name="sim_locale_changed">Откривен %1$s SIM</string>
+  <!-- MOD stuff -->
 </resources>

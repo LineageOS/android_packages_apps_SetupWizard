@@ -72,4 +72,5 @@
   <string name="fingerprint_setup_backup_lock_method">Nastaviť alternatívny spôsob odomknutia</string>
   <string name="fingerprint_setup_add_fingerprint">Pridať váš odtlačok prsta</string>
   <string name="fingerprint_setup_screen_lock_setup">Nastaviť zamknutie obrazovky</string>
+  <!-- MOD stuff -->
 </resources>

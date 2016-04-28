@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Pomozite poboljšati CyanogenMod">%1$s</xliff:g> automatskim slanjem dijagnostike i korištenja podataka u Cyanogen. Ove informacije se neće koristiti za vašu identifikaciju i pomaže timovima koji rade na stvarima kao što su trajanje baterije, performanse aplikacija, i novim <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> karakteristikama.</string>
   <string name="services_apply_theme">Primijeni <xliff:g id="name" example="Material">%s</xliff:g> temu</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> omogućuje jedinstven vizualni stil za vaše ikone, pozadine i više.</string>
   <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
   <string name="services_use_secure_sms">Koristi siguran SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> za zaštitu SMS razgovora s drugim korisnicima koristeći siguran SMS na<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> uređaju.</string>
@@ -77,4 +78,7 @@
   <string name="fingerprint_setup_add_fingerprint">Dodajte svoj ​​otisak</string>
   <string name="fingerprint_setup_screen_lock_setup">Postavljanje zaključavanja zaslona</string>
   <string name="sim_locale_changed">%1$s SIM otkriven</string>
+  <!-- MOD stuff -->
+  <string name="mod_welcome">Dobro došli u Post-App eru</string>
+  <string name="mod_description">Modovi su inteligentni, svjesni, laganim iskustvom ugrađeni izravno u OS. Kada MOD misli da može pomoći, ponudit će da vam ih aktivira.</string>
 </resources>

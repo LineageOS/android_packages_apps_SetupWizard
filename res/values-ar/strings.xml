@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
   <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
   <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
+  <!-- MOD stuff -->
 </resources>

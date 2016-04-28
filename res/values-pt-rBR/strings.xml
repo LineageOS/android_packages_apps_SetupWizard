@@ -77,4 +77,7 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
+  <!-- MOD stuff -->
+  <string name="mod_welcome">Bem-vindo à Era Post-App</string>
+  <string name="mod_description">Plugins são experiências inteligentes, conscientes e leves incluídos diretamente no sistema operacional. Quando um plugin acha que pode ajudar, ela se oferece para se ativar para você.</string>
 </resources>

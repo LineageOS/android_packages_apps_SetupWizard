@@ -78,4 +78,5 @@
   <string name="fingerprint_setup_add_fingerprint">Dodati svoj prstni odtis</string>
   <string name="fingerprint_setup_screen_lock_setup">Nastaviti zaklepanje zaslona</string>
   <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
+  <!-- MOD stuff -->
 </resources>
