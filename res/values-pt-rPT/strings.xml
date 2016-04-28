@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para a Cyanogen. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e no desenvolvimento novos recursos para a <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando ícones, imagens de fundo e tipos de letra únicos.</string>
   <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
   <string name="services_use_secure_sms">Usar SMS seguras</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversas SMS com outros utilizadores que também utilizem este serviço num dispositivo com <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -77,4 +78,5 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
+  <!-- MOD stuff -->
 </resources>

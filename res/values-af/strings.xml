@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
   <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
   <string name="sim_locale_changed">%1$s SIM opgespoor</string>
+  <!-- MOD stuff -->
 </resources>

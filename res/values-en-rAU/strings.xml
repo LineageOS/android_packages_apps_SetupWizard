@@ -58,4 +58,5 @@
   <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
   <string name="services_use_secure_sms">Use secure SMS</string>
   <!-- Fingerprint setup -->
+  <!-- MOD stuff -->
 </resources>

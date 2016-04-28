@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">Tilføje dit fingeraftryk</string>
   <string name="fingerprint_setup_screen_lock_setup">Konfigurere skærmlås</string>
   <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
+  <!-- MOD stuff -->
 </resources>

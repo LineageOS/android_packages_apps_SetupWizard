@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">கைரேகையைச் சேர்க்கவும்</string>
   <string name="fingerprint_setup_screen_lock_setup">திரைப் பூட்டை அமை</string>
   <string name="sim_locale_changed">%1$s SIM கண்டறியப்பட்டது.</string>
+  <!-- MOD stuff -->
 </resources>

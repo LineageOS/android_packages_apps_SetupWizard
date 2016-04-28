@@ -78,4 +78,5 @@
   <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
   <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
   <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
+  <!-- MOD stuff -->
 </resources>

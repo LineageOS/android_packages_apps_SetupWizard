@@ -72,4 +72,5 @@
   <string name="fingerprint_setup_backup_lock_method">Iestatīt sekundāro atbloķēšanas metodi</string>
   <string name="fingerprint_setup_add_fingerprint">Pievienot pirkstu nospiedumu</string>
   <string name="fingerprint_setup_screen_lock_setup">Iestatīt ekrānslēgu</string>
+  <!-- MOD stuff -->
 </resources>

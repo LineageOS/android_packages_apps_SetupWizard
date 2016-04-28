@@ -77,4 +77,5 @@
   <string name="fingerprint_setup_add_fingerprint">Ajouter votre empreinte digitale</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'écran</string>
   <string name="sim_locale_changed">%1$s carte SIM détectée</string>
+  <!-- MOD stuff -->
 </resources>

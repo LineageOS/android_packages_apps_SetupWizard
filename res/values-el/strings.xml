@@ -78,4 +78,5 @@
   <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
   <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
   <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
+  <!-- MOD stuff -->
 </resources>

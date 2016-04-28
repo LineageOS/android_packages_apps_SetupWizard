@@ -60,4 +60,5 @@
   <string name="setup_device_locked">Esti preséu ta bloquiáu pol usuariu.</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
+  <!-- MOD stuff -->
 </resources>
