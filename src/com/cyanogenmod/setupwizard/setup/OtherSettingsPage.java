@@ -38,6 +38,12 @@ public class OtherSettingsPage extends SetupPage {
 
     public static final String TAG = "OtherSettingsPage";
 
+    /** Broadcast intent action when the location mode is about to change. */
+    private static final String MODE_CHANGING_ACTION =
+            "com.android.settings.location.MODE_CHANGING";
+    private static final String CURRENT_MODE_KEY = "CURRENT_MODE";
+    private static final String NEW_MODE_KEY = "NEW_MODE";
+
     public OtherSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
@@ -69,6 +75,19 @@ public class OtherSettingsPage extends SetupPage {
         }
     }
 
+    @Override
+    public void onFinishSetup() {
+        getCallbacks().addFinishRunnable(new Runnable() {
+            @Override
+            public void run() {
+                int mode = Settings.Secure.getInt(mContext.getContentResolver(),
+                        Settings.Secure.LOCATION_MODE,
+                        Settings.Secure.LOCATION_MODE_OFF);
+                setLocationMode(mContext, Settings.Secure.LOCATION_MODE_OFF, mode);
+            }
+        });
+    }
+
     public static class OtherSettingsFragment extends SetupPageFragment {
 
         private View mLocationRow;
@@ -79,13 +98,6 @@ public class OtherSettingsPage extends SetupPage {
         private CheckBox mLocationAccess;
 
         private ContentResolver mContentResolver;
-
-
-        /** Broadcast intent action when the location mode is about to change. */
-        private static final String MODE_CHANGING_ACTION =
-                "com.android.settings.location.MODE_CHANGING";
-        private static final String CURRENT_MODE_KEY = "CURRENT_MODE";
-        private static final String NEW_MODE_KEY = "NEW_MODE";
 
         private int mCurrentMode = Settings.Secure.LOCATION_MODE_OFF;
         private BroadcastReceiver mReceiver;
@@ -161,11 +173,7 @@ public class OtherSettingsPage extends SetupPage {
         }
 
         private void setLocationMode(int mode) {
-            Intent intent = new Intent(MODE_CHANGING_ACTION);
-            intent.putExtra(CURRENT_MODE_KEY, mCurrentMode);
-            intent.putExtra(NEW_MODE_KEY, mode);
-            getActivity().sendBroadcast(intent, android.Manifest.permission.WRITE_SECURE_SETTINGS);
-            Settings.Secure.putInt(mContentResolver, Settings.Secure.LOCATION_MODE, mode);
+            OtherSettingsPage.setLocationMode(getContext(), mCurrentMode, mode);
             refreshLocationMode();
         }
 
@@ -263,5 +271,14 @@ public class OtherSettingsPage extends SetupPage {
                 setLocationMode(Settings.Secure.LOCATION_MODE_SENSORS_ONLY);
             }
         }
+    }
+
+    private static void setLocationMode(Context context, int oldMode, int newMode) {
+        Intent intent = new Intent(MODE_CHANGING_ACTION);
+        intent.putExtra(CURRENT_MODE_KEY, oldMode);
+        intent.putExtra(NEW_MODE_KEY, newMode);
+        context.sendBroadcast(intent, android.Manifest.permission.WRITE_SECURE_SETTINGS);
+        Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.LOCATION_MODE, newMode);
     }
 }
