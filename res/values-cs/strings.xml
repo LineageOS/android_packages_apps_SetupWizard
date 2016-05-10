@@ -79,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
   <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Vítejte v éře Post-App</string>
+  <string name="mod_description">Módy jsou inteligentní a nenáročné malé aplikace zabudované přímo do OS. Tyto MODy mohou v určitých situacích nabídnout svoji pomoc.</string>
 </resources>

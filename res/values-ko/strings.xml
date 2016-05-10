@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
   <string name="services_metrics_label">진단 및 사용 정보를 Cyanogen에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 배터리 수명, 앱 성능과 새 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 기능과 같이 사용자를 식별할 수 없는 정보입니다.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>은 독특한 아이콘, 배경화면 등을 제공합니다.</string>
   <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
   <string name="services_use_secure_sms">보안 SMS 사용</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="보안 SMS를 사용">%1$s</xliff:g>하여 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>기기에서 보안 SMS를 사용하는 다른 사용자와의 SMS 대화를 암호화함.</string>
@@ -79,4 +80,6 @@
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
   <string name="sim_locale_changed">%1$s SIM 인식됨</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">앱 이전 시대에 오신 것을 환영합니다</string>
+  <string name="mod_description">Mod는 운영 체제에 내장된 지능형이고, 인식할 수 있으며 가벼운 경험입니다. Mod가 도울 수 있다고 생각하면, 당신이 활성화할 수 있도록 제공할 것입니다.</string>
 </resources>

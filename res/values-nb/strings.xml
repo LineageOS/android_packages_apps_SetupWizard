@@ -43,10 +43,12 @@
   <string name="location_access_summary"><b>Tillat programmer som har bedt om din tillatelse</b> å bruke stedsinformasjonen. Dette kan være din nåværende posisjon og siste steder.</string>
   <string name="location_battery_saving"><b>Redusere batteriforbruket</b> ved å begrense antall GPS oppdateringer per time.</string>
   <string name="location_network"><b>Bruk Wi-Fi</b> for å hjelpe apper å finne din posisjon.</string>
+  <string name="location_network_telephony"><b>Bruk Wi-Fi og mobilnettverk</b> for å forbedre posisjonen din.</string>
   <string name="location_network_gms"><b>Bruk Googles lokasjonstjeneste</b> for å hjelpe apps finne din posisjon. Dette betyr å sende anonym stedsinformasjon til Google, selv når ingen programmer kjører.</string>
   <string name="setup_mobile_data">Slå på mobildata</string>
   <string name="setup_mobile_data_no_service">Ingen tjeneste</string>
   <string name="setup_mobile_data_emergency_only">Kun nødanrop</string>
+  <string name="enable_mobile_data_summary">Vil du bruke mobildata under installasjonen? Slå på mobildata kan tilføye ekstra kostnader.</string>
   <string name="no">Nei</string>
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
@@ -58,6 +60,7 @@
   <string name="services_help_improve_cm">Hjelp til med å forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ved å sende diagnostikk- og bruksdata automatisk til Cyanogen. Denne informasjonen kan ikke brukes til å identifisere deg, men hjelper de som jobber med ting som batteritid, appytelse og nye <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-funksjoner.</string>
   <string name="services_apply_theme">Bruke <xliff:g id="name" example="Material">%s</xliff:g> temaet</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
   <string name="services_use_secure_sms">Bruk sikker SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> for å kryptere SMS-samtaler med andre brukere ved hjelp av sikker SMS på en <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-enhet.</string>
@@ -76,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Konfigurere skjermlås</string>
   <string name="sim_locale_changed">%1$s SIM oppdaget</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Velkommen til Post-App Era</string>
+  <string name="mod_description">Mods er intelligente, godtvitende og små erfaringer bygget direkte inn i OSet. Når MOD tenker at den kan hjelpe, vil den anbefale deg å slå den på.</string>
 </resources>

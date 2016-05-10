@@ -79,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
   <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Καλώς ήρθατε στην εποχή μετά τις εφαρμογές</string>
+  <string name="mod_description">Τα Mod είναι ευφυείς, ενήμερες και ελαφριές βελτιώσεις ενσωματωμένες κατευθείαν στο σύστημα. Όταν το MOD νομίζει ότι μπορεί να βοηθήσει, θα προσφερθεί να τα ενεργοποιήσει για εσάς.</string>
 </resources>

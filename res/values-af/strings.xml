@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Help verbeter <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> deur outomaties diagnostiese en gebruikers data te stuur na Cyanogen. Hierdie inligting kan nie gebruik word om jou te identifiseer nie en help spanne werk op dinge soos battery lewe, program werkverrigting en nuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funksies.</string>
   <string name="services_apply_theme">Pas <xliff:g id="name" example="Material">%s</xliff:g> tema toe</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiveer \'n unieke visuele styl vir jou ikone, agtergrond en nog baie meer.</string>
   <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
   <string name="services_use_secure_sms">Maak gebruik van veilige SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> om SMS gesprekke met ander gebruikers te enkripteer met behulp van veilige SMS op \'n <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> toestel.</string>
@@ -78,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
   <string name="sim_locale_changed">%1$s SIM opgespoor</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Welkom by die Post-Toep Era</string>
+  <string name="mod_description">Mods is intelligente ervarings, direk ingebou in die BS. Wanneer die MOD dink dit kan help, sal dit aanbied om die ervaring te aktiveer vir jou.</string>
 </resources>

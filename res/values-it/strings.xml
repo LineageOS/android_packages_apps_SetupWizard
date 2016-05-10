@@ -79,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Imposta una schermata di blocco</string>
   <string name="sim_locale_changed">%1$s SIM rilevata</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Benvenuti nell\'Era Post-App</string>
+  <string name="mod_description">Le MOD sono funzioni intelligenti, consapevoli e leggere costruite direttamente nel sistema. Quando una MOD pensa di essere d\'aiuto, si offrirà di attivare delle funzioni per te.</string>
 </resources>

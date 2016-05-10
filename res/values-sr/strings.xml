@@ -79,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Подешавање закључавања екрана</string>
   <string name="sim_locale_changed">Откривен %1$s SIM</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Добродошли у доба после апликација</string>
+  <string name="mod_description">Режими су интелигентна, свесна и лагана искуства уграђена директно у ОС. Када режим мисли да може помоћи, он ће понудити да активира то за вас.</string>
 </resources>

@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>の改善を支援します</string>
   <string name="services_metrics_label">診断と使用状況データを自動的にCyanogenに送信して、<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>の新機能などへの取り組みに活用されます。</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g>テーマを適用</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>すると、アイコンや壁紙などに対してテーマ固有の外観スタイルが有効になります。</string>
   <string name="services_os_nav_keys_label">ハードウェアキーのかわりに<b>スクリーンナビゲーションキーを使用します</b>。</string>
   <string name="services_use_secure_sms">セキュアSMSを使用します</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>端末でセキュアSMSを使用している他のユーザーとのSMSの会話を自動的に暗号化するために<xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>。</string>
@@ -78,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">画面のロックをセットアップ</string>
   <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Post-App Eraへようこそ</string>
+  <string name="mod_description">MODはOSに直接組み込まれたスマートで、物分りが良く、軽量なエクスペリアンスです。MODが役に立つと考えたときは、MODを有効にすることを提案します。</string>
 </resources>

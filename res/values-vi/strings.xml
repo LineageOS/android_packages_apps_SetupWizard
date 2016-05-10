@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> bằng cách tự động gửi dữ liệu chẩn đoán và sử dụng đến Cyanogen. Thông tin này không được sử dụng để nhận dạng bạn và giúp nhóm thực hiện những thứ như tuổi thọ pin, hiệu suất ứng dụng và các tính năng <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> mới.</string>
   <string name="services_apply_theme">Áp dụng chủ đề <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> cho phép phong cách trực quan độc đáo cho các biểu tượng, hình nền của bạn và nhiều hơn nữa.</string>
   <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
   <string name="services_use_secure_sms">Sử dụng SMS an toàn</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> để mã hóa các cuộc trò chuyện qua tin nhắn SMS với những người dùng khác bằng cách sử dụng tin nhắn SMS an toàn trên thiết bị <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -78,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
   <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Chào mừng đến với Post-App Era</string>
+  <string name="mod_description">Mod là trải nghiệm thông minh, có nhận thức và trọng lượng nhẹ được tích hợp trực tiếp vào hệ điều hành. Khi MOD cho rằng nó có thể hỗ trợ, nó sẽ cung cấp để kích hoạt chúng cho bạn.</string>
 </resources>

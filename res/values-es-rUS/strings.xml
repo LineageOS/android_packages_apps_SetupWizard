@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Asistente de configuración</string>
-  <string name="next">Sig</string>
+  <string name="next">Siguiente</string>
   <string name="skip">Omitir</string>
   <string name="start">Inicio</string>
   <string name="ok">Aceptar</string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automáticamente diagnósticos de depuración y uso de datos a Cyanogen. Esta información no puede ser utilizada para identificarte y sirve para mejorar la vida útil de la batería, el rendimiento de la aplicación y el desarrollo de nuevas características desarrolladas por <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> permite un estilo visual único para sus iconos, fondo de pantalla y más.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
   <string name="services_use_secure_sms">Usar SMS seguros</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversaciones SMS con otros usuarios utilizando SMS seguros en un dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -78,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Configurar la pantalla bloqueada</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Bienvenido a la era posaplicaciones</string>
+  <string name="mod_description">Las Mods son experiencias inteligentes, conscientes y ligeras construidas directamente dentro del SO. Cuando una MOD cree que te puede ayudar, se ofrecerá para activarse.</string>
 </resources>

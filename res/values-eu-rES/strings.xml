@@ -79,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Ezarri pantaila blokeoa</string>
   <string name="sim_locale_changed">%1$s SIM antzeman da</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Ongi etorri aplikazioen osteko garaira</string>
+  <string name="mod_description">Mod-ak zuzenean sistema eragilean eraikitako esperienzia adimentsu, jakitun eta arinak dira. Mod batek lagundu dezakeela uste duenean aktibatzea eskainiko dizu.</string>
 </resources>

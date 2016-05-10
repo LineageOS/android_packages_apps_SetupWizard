@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, разрешив отправление данных диагностики в Cyanogen. Эта информация полностью анонимна и не может быть использована для вашей идентификации. Использование этих данных поможет в работе над энергосбережением, производительностью и многими деталями <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> предоставляет уникальный визуальный стиль для ваших значков, обоев и многого другого.</string>
   <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
   <string name="services_use_secure_sms">Использовать безопасные SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> для шифрования сообщений, передаваемых другим пользователям устройств с <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -78,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Настроить экран блокировки</string>
   <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Добро пожаловать в эпоху встроенных приложений</string>
+  <string name="mod_description">Моды — это интеллектуальные, контекстно-зависимые и легкие приложения, интегрированные непосредственно в операционную систему. Если MOD полагает, что вам нужна помощь, вам будет предложено активировать мод.</string>
 </resources>

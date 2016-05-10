@@ -16,6 +16,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="location_network_telephony"><b>Use Wi-Fi and mobile networks</b> to help apps determine your location.</string>
+  <string name="setup_mobile_data">Turn on mobile data</string>
+  <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on cellular data may be subject to data charges.</string>
   <!-- Fingerprint setup -->
   <!-- MOD stuff -->
 </resources>

@@ -44,6 +44,7 @@
   <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
   <string name="location_network"><b>Use Wi-Fi</b> para ajudar aplicativos a determinar a sua localização.</string>
   <string name="location_network_telephony"><b>Use Wi-Fi e redes móveis</b> para ajudar aplicativos a determinar sua localização.</string>
+  <string name="location_network_gms"><b>Use o serviço de localização do Google</b> para ajudar os aplicativos a determinarem sua localização. Isto significa enviar dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver em execução.</string>
   <string name="setup_mobile_data">Ativar dados celular</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
@@ -78,6 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Bem-vindo à Era Post-App</string>
-  <string name="mod_description">Plugins são experiências inteligentes, conscientes e leves incluídos diretamente no sistema operacional. Quando um plugin acha que pode ajudar, ela se oferece para se ativar para você.</string>
+  <string name="mod_welcome">Bem-vindo à Era Pós-Aplicativos</string>
+  <string name="mod_description">Mods são experiências inteligentes, conscientes e leves incluídas diretamente no sistema operacional. Quando uma MOD acha que pode ajudar, ela se oferece para ativar para você.</string>
 </resources>

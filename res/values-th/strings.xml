@@ -79,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
   <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">ขอต้อนรับสู่ Post-App Era</string>
+  <string name="mod_description">Mods คือประสบการณ์อันชาญฉลาด รอบรู้ และมีน้ำหนักเบา ซึ่งถูกสร้างขึ้นโดยตรงในระบบปฏิบัติการ เมื่อ MOD คิดว่าสามารถช่วยได้ โปรแกรมจะเปิดใช้งานความช่วยดังกล่าวให้คุณ</string>
 </resources>

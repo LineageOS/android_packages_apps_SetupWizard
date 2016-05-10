@@ -41,9 +41,9 @@
   <string name="other_services_summary">Estos servicios hacen que Google trabajar para ti, y puedes activarlos o desactivarlos en cualquier momento. Los datos se utilizarán según la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
   <string name="location_services_summary">Los servicios de localización permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
   <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y ubicaciones recientes.</string>
-  <string name="location_battery_saving"><b>Reducir consumo de batería</b> al restringir el número de actualizaciones GPS por hora.</string>
+  <string name="location_battery_saving"><b>Reduce el consumo de batería</b> al restringir el número de actualizaciones GPS por hora.</string>
   <string name="location_network"><b>Uso de Wi-Fi</b> para ayudar a que las aplicaciones determinen tu ubicación.</string>
-  <string name="location_network_telephony"><b>Utilizar Wi-Fi y redes móviles</b> para ayudar a que las aplicaciones determinen tu ubicación.</string>
+  <string name="location_network_telephony"><b>Utiliza Wi-Fi y redes móviles</b> para ayudar a que las aplicaciones determinen tu ubicación.</string>
   <string name="location_network_gms"><b>Uso del servicio de localización de Google</b> para ayudar a las aplicaciones a determinar tu ubicación. Esto significa enviar información anónima de la localización a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
   <string name="setup_mobile_data">Activar datos móviles</string>
   <string name="setup_mobile_data_no_service">Sin servicio</string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automáticamente diagnósticos de depuración y uso de datos a Cyanogen. Esta información no puede ser utilizada para identificarte, y sirve para ayudar a mejorar la vida de la batería, el rendimiento de la aplicación y el desarrollo de nuevas características desarrolladas por <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> permite un estilo visual único para sus iconos, fondo de pantalla y más.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
   <string name="services_use_secure_sms">Usar SMS seguros</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversaciones SMS con otros usuarios utilizando SMS seguros en un dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -78,4 +79,6 @@
   <string name="fingerprint_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Bienvenido a la era Post-Aplicaciones</string>
+  <string name="mod_description">Los Mods son experiencias inteligentes, conscientes y ligeras construidas directamente dentro del SO. Cuando un MOD piensa que te puede ayudar, se ofrecerá para activarse.</string>
 </resources>
