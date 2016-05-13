@@ -23,6 +23,8 @@ public class FinishSetupReceiver extends BroadcastReceiver {
                 StatusBarManager.DISABLE_NONE);
         Settings.Global.putInt(context.getContentResolver(),
                 SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL, 1);
+        cyanogenmod.providers.CMSettings.Secure.putInt(context.getContentResolver(),
+                cyanogenmod.providers.CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 1);
         SetupWizardUtils.disableGMSSetupWizard(context);
         SetupWizardUtils.disableSetupWizard(context);
     }
