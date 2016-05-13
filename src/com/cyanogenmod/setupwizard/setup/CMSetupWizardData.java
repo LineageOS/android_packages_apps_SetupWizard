@@ -64,8 +64,9 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new MobileDataPage(mContext, this)
                     .setHidden(!isSimInserted() || mMobileDataEnabled));
         }
-        if (SetupWizardUtils.hasGMS(mContext)) {
-            pages.add(new GmsAccountPage(mContext, this).setHidden(true));
+        final boolean hasGMS = SetupWizardUtils.hasGMS(mContext);
+        if (hasGMS) {
+            pages.add(new GmsAccountPage(mContext, this));
         }
         if (!SetupWizardUtils.hasLeanback(mContext) &&
                 SetupWizardUtils.isPackageInstalled(mContext,
@@ -76,7 +77,7 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new FingerprintSetupPage(mContext, this));
         }
         pages.add(new CyanogenSettingsPage(mContext, this));
-        pages.add(new OtherSettingsPage(mContext, this));
+        pages.add(new OtherSettingsPage(mContext, this).setHidden(!hasGMS));
         pages.add(new DateTimePage(mContext, this));
         pages.add(new FinishPage(mContext, this));
         return new PageList(pages.toArray(new SetupPage[pages.size()]));
@@ -111,16 +112,6 @@ public class CMSetupWizardData extends AbstractSetupData {
 
     private void showHideAccountPages() {
         boolean isConnected = SetupWizardUtils.isNetworkConnected(mContext);
-        GmsAccountPage gmsAccountPage =
-                (GmsAccountPage) getPage(GmsAccountPage.TAG);
-        OtherSettingsPage otherSettingsPage = (OtherSettingsPage) getPage(OtherSettingsPage.TAG);
-        if (gmsAccountPage != null) {
-            boolean hidden = !isConnected && gmsAccountPage.canSkip();
-            gmsAccountPage.setHidden(hidden);
-            if (otherSettingsPage != null) {
-                otherSettingsPage.setHidden(!hidden);
-            }
-        }
         CyanogenServicesPage cyanogenServicesPage =
                 (CyanogenServicesPage) getPage(CyanogenServicesPage.TAG);
         if (cyanogenServicesPage != null) {
