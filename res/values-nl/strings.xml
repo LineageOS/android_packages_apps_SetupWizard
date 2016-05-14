@@ -43,7 +43,7 @@
   <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
   <string name="location_battery_saving"><b>Verlaag het accugebruik</b> door het aantal GPS-updates per uur te beperken.</string>
   <string name="location_network"><b>Wifi gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
-  <string name="location_network_telephony"><b>Wifi- en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
+  <string name="location_network_telephony"><b>Wifi en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
   <string name="location_network_gms"><b>Locatieservices van Google gebruiken</b> om apps te helpen uw locatie te bepalen. Dit betekent anonieme locatiegegevens verzenden naar Google, zelfs wanneer er geen apps worden uitgevoerd.</string>
   <string name="setup_mobile_data">Mobiele gegevens inschakelen</string>
   <string name="setup_mobile_data_no_service">Geen verbinding</string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar Cyanogen. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-functies.</string>
   <string name="services_apply_theme">Thema <xliff:g id="name" example="Material">%s</xliff:g> toepassen</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> voor unieke pictogrammen, achtergronden en lettertypen.</string>
   <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
   <string name="services_use_secure_sms">Beveiligde sms-berichten gebruiken</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> om sms-gesprekken te versleutelen met anderen die ook beveiligde sms-berichten gebruiken op een <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-apparaat.</string>

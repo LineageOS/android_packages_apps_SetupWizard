@@ -42,9 +42,12 @@
   <string name="location_services_summary">Asukohateenused võimaldavad süsteemil ja kolmandate osapoolte rakendustel koguda ja kasutada informatsiooni sinu umbkaudse asukoha kohta. Näiteks võib rakendus kasutada sinu umbkautset asukohta, et leida lähedal asuvaid kohvikuid.</string>
   <string name="location_access_summary"><b>Luba rakendustel, mis on küsinud Teie nõusolekut</b> kasutada Teie asukoha informatsiooni. See võib tähendada nii Teie praegust kui ka eelnevaid asukohti.</string>
   <string name="location_network"><b>Kasuta Wi-Fi-t</b> aitamaks rakendustel asukohta kindlaks määrata .</string>
+  <string name="location_network_telephony"><b>Kasuta Wi-Fi-t ja mobiilsidevõrke</b> aitamaks rakendustel asukohta kindlaks määrata.</string>
   <string name="location_network_gms"><b>Kasuta Google asukohateenuseid</b>, mis aitab rakendustel Teie asukohta kindlaks määrata. See tähendab anonüümsete asukoha andmete saatmist Google-sse, isegi kui ükski rakendus ei tööta.</string>
+  <string name="setup_mobile_data">Lülita mobiilne andmeside sisse</string>
   <string name="setup_mobile_data_no_service">Teenus puudub</string>
   <string name="setup_mobile_data_emergency_only">Üksnes hädaabikõned</string>
+  <string name="enable_mobile_data_summary">Kas soovite kasutada mobiilandmesidet installeerimise ajal? Sisselülitatud mobiilandmesidega võivad kaasneda andmeside võrgutasud.</string>
   <string name="no">Ei</string>
   <string name="yes">Jah</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
@@ -56,6 +59,7 @@
   <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> saates automatselt diagnostika ja kasutamise infot Cyanogenile. Andmeid ei ole võimalik kasutada isiku tuvastamiseks. Teave aitab arendajatel muu hulgas parandada aku eluiga, rakenduste jõudlust ning arendada uusi <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> võimalusi.</string>
   <string name="services_apply_theme">Rakenda <xliff:g id="name" example="Material">%s</xliff:g> teema</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> võimaldades unikaalseid ikoone , taustapilte ja fonte.</string>
   <string name="services_os_nav_keys_label"><b>Kasuta ekraanil olevaid navigeerimisklahve</b> riistvaraliste nuppude asemel.</string>
   <string name="services_use_secure_sms">Kasuta turvalist SMS-i</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> et krüpteerida SMS vestluseid teiste turvalise SMSi kasutajetga <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> seadmel.</string>

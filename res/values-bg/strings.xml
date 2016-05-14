@@ -45,10 +45,10 @@
   <string name="location_network"><b>Използвайте Wi-Fi</b> за да помогнете на приложенията да определят вашето местоположение.</string>
   <string name="location_network_telephony"><b>Използвайте Wi-Fi и мобилен интернет</b> за да помогнете на приложенията да определят вашето местоположение.</string>
   <string name="location_network_gms"><b>Използвайте Google услугите за местоположение</b> за да помогнете на приложенията да определят вашето местоположение. Това означава, че ще изпращате анонимно информация за местоположението си до Google, включително когато няма приложения използващи тази услуга.</string>
-  <string name="setup_mobile_data">Включване на мобилните данни</string>
+  <string name="setup_mobile_data">Включване на мобилен интернет</string>
   <string name="setup_mobile_data_no_service">Няма поддръжка</string>
   <string name="setup_mobile_data_emergency_only">Само спешни повиквания</string>
-  <string name="enable_mobile_data_summary">Желаете ли да се използват мобилни данни по време на инсталацията? Активирането на мобилните данни може да доведе до допълнителни такси.</string>
+  <string name="enable_mobile_data_summary">Искате ли да използвате мобилен интернет по време на инсталирането? Включването на мобилния интернет може да добави разходи.</string>
   <string name="no">Не</string>
   <string name="yes">Да</string>
   <string name="data_sim_name">СИМ карта<xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>

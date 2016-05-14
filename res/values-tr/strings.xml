@@ -45,10 +45,10 @@
   <string name="location_network">Uygulamaların konumunuzu bulmanısına yardımcı olmak için <b>Wi-Fi\'yi kullanın</b>.</string>
   <string name="location_network_telephony">Uygulamaların konumunuzu bulmasına yardımcı olmak için <b>Wi-Fi\'yi ve mobil şebekeleri kullanın</b>.</string>
   <string name="location_network_gms">Konumunuzu belirlemek için <b>Google konum servislerini kullanın</b>. Bu, hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
-  <string name="setup_mobile_data">Hücresel veriyi etkinleştir</string>
+  <string name="setup_mobile_data">Mobil veriyi aç</string>
   <string name="setup_mobile_data_no_service">Servis yok</string>
   <string name="setup_mobile_data_emergency_only">Sadece acil durum çağrıları</string>
-  <string name="enable_mobile_data_summary">Kurulum sırasında hücresel veri kullanmak istiyor musunuz? Hücresel veriyi kullanmak ücrete tabi olabilir.</string>
+  <string name="enable_mobile_data_summary">Kurulum sırasında mobil veriyi kullanmak istiyor musunuz? Mobil veriyi açarak veri ücretlerine tabi olabilirsiniz.</string>
   <string name="no">Hayır</string>
   <string name="yes">Evet</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
   <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ancak pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konulardaki ekip çalışmalarında kullanılır.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> eşsiz simgeler, duvar kağıtları ve yazı tiplerini etkinleştiriyor.</string>
   <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>ekran üstü dolaşım tuşlarını kullanın</b>.</string>
   <string name="services_use_secure_sms">Şifreli SMS kullanın</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> cihazında güvenli SMS kullanan diğer kullanıcılarla olan SMS sohbetlerinizi şifrelemek için <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>.</string>

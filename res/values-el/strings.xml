@@ -45,7 +45,7 @@
   <string name="location_network"><b>Χρήση Wi-Fi</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
   <string name="location_network_telephony"><b>Χρήση Wi-Fi και δικτύων τηλεφωνίας</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
   <string name="location_network_gms"><b>Χρήση των υπηρεσιών τοποθεσίας της Google</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας. Αυτό σημαίνει ότι θα αποστέλλονται ανώνυμα δεδομένα τοποθεσίας στη Google, ακόμα και όταν δεν εκτελείται καμία εφαρμογή.</string>
-  <string name="setup_mobile_data">Ενεργοποίηση δεδομένων κινητής τηλεφωνίας</string>
+  <string name="setup_mobile_data">Ενεργοποίηση δεδομένων</string>
   <string name="setup_mobile_data_no_service">Καμία υπηρεσία</string>
   <string name="setup_mobile_data_emergency_only">Μόνο κλήσεις έκτακτης ανάγκης</string>
   <string name="enable_mobile_data_summary">Θέλετε να χρησιμοποιήσετε τα δεδομένα κινητής τηλεφωνίας κατά την διάρκεια της εγκατάστασης;. Η ενεργοποίηση των δεδομένων κινητής τηλεφωνίας μπορεί να υπόκειται σε χρεώσεις από το πάροχο σας.</string>
@@ -60,7 +60,7 @@
   <string name="services_help_improve_cm">Βοηθήστε στη βελτίωση του <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> στέλνοντας αυτόματα διαγνωστικά δεδομένα και στατιστικά χρήσης στη Cyanogen. Αυτές οι πληροφορίες δε μπορούν να χρησιμοποιηθούν για να σας αναγνωρίσουν και δίνουν ένα χέρι βοηθείας στις ομάδες που εργάζονται σε θέματα όπως η διάρκεια ζωής μπαταρίας, επιδόσεις εφαρμογών και νέα χαρακτηριστικά του <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Εφαρμογή του θέματος <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας ένα μοναδικό στυλ εικονιδίων, ταπετσαριών και ακόμα περισσότερα.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας μοναδικά εικονίδια, ταπετσαρίες και γραμματοσειρές.</string>
   <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
   <string name="services_use_secure_sms">Κάντε χρήση των ασφαλών SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> για να κρυπτογραφήσετε τις συνομιλίες SMS με άλλους χρήστες που χρησιμοποιούν ασφαλή SMS σε συσκευές <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

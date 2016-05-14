@@ -43,12 +43,12 @@
   <string name="location_access_summary"><b>ನಿಮ್ಮ ಅನುಮತಿಗಳನ್ನು ಕೇಳಿರುವ ಆಪ್‍ಗಳಿಗೆ</b> ನಿಮ್ಮ ಸ್ಥಳದ ಮಾಹಿತಿಯನ್ನು ಉಪಯೋಗಿಸಲು ಅನುಮತಿಸುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಸ್ಥಳ ಮತ್ತು ಹಿಂದಿನ ಸ್ಥಳಗಳನ್ನೂ ಒಳಗೊಂಡಿರಬಹುದು.</string>
   <string name="location_battery_saving"><b>ಪ್ರತಿ ಗಂಟೆಗೆ GPS ಅಪ್‌ಡೇಟ್‌ಗಳ ಸಂಖ್ಯೆಯನ್ನು</b> ಸೀಮಿತಗೊಳಿಸುವ ಮೂಲಕ ಬ್ಯಾಟರಿ ಬಳಕೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಿ.</string>
   <string name="location_network">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಆಪ್‍ಗಳಿಗೆ ಸಹಕರಿಸಲು <b>ವೈಫೈ ಉಪಯೋಗಿಸಿ</b>.</string>
-  <string name="location_network_telephony"><b>ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಆಪ್‌ಗಳು ನಿರ್ಧರಿಸಲು ನೆರವಾಗಲು Wi-Fi </b> ಮತ್ತು ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸಿ.</string>
+  <string name="location_network_telephony">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಆಪ್‍ಗಳಿಗೆ ಸಹಕರಿಸಲು <b>ವೈಫೈ ಹಾಗು ಮೊಬೈಲ್ ನೆಟ್‍ವರ್ಕ್ ಉಪಯೋಗಿಸಿ</b>.</string>
   <string name="location_network_gms">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಆಪ್‍ಗಳಿಗೆ ಸಹಕರಿಸಲು <b>ಗೂಗಲ್‍ನ ಸ್ಥಳ ಸೇವೆಯನ್ನು ಉಪಯೋಗಿಸಿ</b>. ಇದರ ಅರ್ಥ ಅಜ್ಞಾತ ಸ್ಥಳ ಡೇಟಾವನ್ನು ಗೂಗಲ್‍ಗೆ ಕಳುಹಿಸುವುದು. ಯಾವುದೇ ಆಪ್‍ಗಳು ಚಾಲನೆಯಲ್ಲಿರದಿರುವಾಗಲೂ ಸಹ.</string>
-  <string name="setup_mobile_data">ಮೊಬೈಲ್ ಡೇಟಾವನ್ನು ಆನ್ ಮಾಡಿ</string>
+  <string name="setup_mobile_data">ಮೊಬೈಲ್ ಡೇಟಾ ಆನ್ ಮಾಡಿ</string>
   <string name="setup_mobile_data_no_service">ಯಾವುದೇ ಸೇವೆ ಇಲ್ಲ</string>
   <string name="setup_mobile_data_emergency_only">ತುರ್ತುಪರೀಸ್ಥಿತಿ ಕರೆಗಳು ಮಾತ್ರ</string>
-  <string name="enable_mobile_data_summary">ಸೆಟಪ್ ವೇಳೆ ಮೊಬೈಲ್ ಡೇಟಾ ಉಪಯೋಗಿಸಲು ನೀವು ಬಯಸುತ್ತೀರಾ? ಮೊಬೈಲ್ ಡೇಟಾ ಆನ್ ಮಾಡುವುದು ಡೇಟಾ ಶುಲ್ಕಗಳಿಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.</string>
+  <string name="enable_mobile_data_summary">ಸೆಟಪ್ ಮಾಡುವಾಗ ನೀವು ಮೊಬೈಲ್ ಡೇಟಾ ಉಪಯೋಗಿಸಲು ಬಯಸುವಿರಾ? ಮೊಬೈಲ್ ಡೇಟಾ ಆನ್ ಮಾಡುವುದರಿಂದ ನೀವು ಡೇಟಾ ಶುಲ್ಕಕ್ಕೆ ಗುರಿಯಾಗಬಹುದು.</string>
   <string name="no">ಬೇಡ</string>
   <string name="yes">ಹೌದು</string>
   <string name="data_sim_name">ಸಿಮ್ <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> ಸುಧಾರಿಸಲು ಸಹಕರಿಸಿ</string>
   <string name="services_metrics_label">Cyanogenಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ವಿಶ್ಲೇಷಣಾತ್ಮಕ ಮತ್ತು ಬಳಕೆಯ ಡೇಟಾವನ್ನು ಕಳುಹಿಸುವುದರಿಂದ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ಈ ಮಾಹಿತಿಯನ್ನು ನಿಮ್ಮನ್ನು ಗುರುತಿಸುವುದಕ್ಕಾಗಿ ಉಪಯೋಗಿಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ ಮತ್ತು ಇದನ್ನು ಬ್ಯಾಟರಿ ಲೈಫ್, ಆಪ್ ಕಾರ್ಯಕ್ಷಮತೆ, ಮತ್ತು ಹೊಸ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ವೈಶಿಷ್ಟ್ಯಗಳಲ್ಲಿ ಕೆಲಸಮಾಡುವ ತಂಡಗಳಿಗೆ ನೀಡಲಾಗುವುದು.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> ಥೀಮ್ ಅನ್ವಯಿಸಿ</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ವಿಶಿಷ್ಟ್ಯವಾದ ಐಕಾನ್ಸ್, ವಾಲ್‍ಪೇಪರ್‍ಗಳು, ಮತ್ತು ಫಾಂಟ್ಸನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತಿದೆ.</string>
   <string name="services_os_nav_keys_label">ಹಾರ್ಡ್‍ವೇರ್ ಕೀಗಳ ಬದಲಾಗಿ <b>ಪರದೆಯ ಮೇಲಿನ ನಾವಿಗೇಶನ್ ಕೀಗಳನ್ನು ಉಪಯೋಗಿಸಿ</b>.</string>
   <string name="services_use_secure_sms">ಸುರಕ್ಷಿತ ಎಸ್ಎಂಎಸ್ ಉಪಯೋಗಿಸಿ</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ಸಾಧನದಲ್ಲಿ ಇತರೆ ಬಳಕೆದಾರರ ಜೊತೆಗಿನ ಎಸ್ಎಂಎಸ್ ಸಂಭಾಷಣೆಗಳನ್ನು ಸುರಕ್ಷಿತ ಎಸ್ಎಂಎಸ್ ಉಪಯೋಗಿಸಿ ಎನ್ಕ್ರಿಪ್ಟ್ ಮಾಡಲು <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>.</string>

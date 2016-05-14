@@ -45,10 +45,10 @@
   <string name="location_network"><b>השתמש ב-Wi-Fi</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_telephony"><b>השתמש ב-Wi-Fi וברשתות סלולריות</b> כדי לסייע ליישומים לקבוע את מיקומך.</string>
   <string name="location_network_gms"><b>השתמש בשירותי המיקום של Google</b> כדי לשלוח נתוני מיקום אנונימיים ל-Google, גם כאשר אין יישומים פועלים.</string>
-  <string name="setup_mobile_data">הפעל נתונים סלולריים</string>
+  <string name="setup_mobile_data">הפעל נתונים ניידים</string>
   <string name="setup_mobile_data_no_service">אין שירות</string>
   <string name="setup_mobile_data_emergency_only">שיחות חירום בלבד</string>
-  <string name="enable_mobile_data_summary">האם ברצונך להשתמש בתקשורת נתונים סלולרית במהלך ההתקנה? הפעלת נתונים סלולריים עשויה לעלות כסף.</string>
+  <string name="enable_mobile_data_summary">האם ברצונך להשתמש באינטרנט הסלולרי במהלך ההתקנה? פעולה זו עלולה להיות כרוכה בתשלום עקב הפעלת נתונים ניידים.</string>
   <string name="no">לא</string>
   <string name="yes">כן</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> על-ידי שליחת נתוני אבחון ושימוש אל Cyanogen. מידע זה לא יוכל לשמש כדי לזהותך, והוא תורם לצוותים העובדים על תחומים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">החל את ערכת העיצוב <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> מאפשר סמלים ייחודיים, טפטים וגופנים.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <string name="services_use_secure_sms">השתמש ב-SMS מאובטח</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> להצפנת שיחות SMS עם משתמשים אחרים באמצעות SMS מאובטח במכשיר <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

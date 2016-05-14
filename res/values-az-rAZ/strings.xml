@@ -42,9 +42,12 @@
   <string name="location_services_summary">Yer xidmətləri sistem və üçüncü tərəf tətbiqetmələrə təxmini yeriniz kimi məlumatları götürmək və istifadə etmək icazəsi verər. Məsələn, bir tətbiqetmə yaxınlıqdakı əyləncə mərkəzini tapmaq üçün təxmini yerinizdən istifadə edə bilər.</string>
   <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqetmələrə icazə ver.</b> Bu hazırki yerinizi və keçmiş yerlərinizi ehtiva edə bilər.</string>
   <string name="location_network"><b>Wi-Fi ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin.</string>
+  <string name="location_network_telephony"><b>Wi-Fi və mobil şəbəkələr ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin.</string>
   <string name="location_network_gms"><b>Google\'un yer xidmətləri ilə</b> tətbiqetmələrin yerinizi tapmasına kömək edin. Bu heç bir tətbiqetmə işləməzkən belə, adsız yer verilənlərinin Google\'a göndərilməsi deməkdir.</string>
+  <string name="setup_mobile_data">Mobil verilənləri aç</string>
   <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
   <string name="setup_mobile_data_emergency_only">Yalnız fövqəladə vəziyyət zəngləri</string>
+  <string name="enable_mobile_data_summary">Quraşdırma vaxtı mobil verilənlərdən istifadə etmək istəyirsiniz? Mobil verilənləri açmaq əlavə ödənişə səbəb ola bilər.</string>
   <string name="no">Xeyr</string>
   <string name="yes">Bəli</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -56,6 +59,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> təkmilləşməsinə kömək edin</string>
   <string name="services_metrics_label">Diaqnostika və istifadə verilənlərini Cyanogen\'ə göndərərək <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu məlumatlar kimliyinizdən istifadə məqsədilə götürülmür, ancaq batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özəllikləri kimi mövzularda komandamızın işlərində istifadə olunur.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını tətbiq et</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> fəal olduğu zaman təkrar olunmaz nişanlar, divar kağızları və yazı tipləri fəallaşdıralacaq.</string>
   <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
   <string name="services_use_secure_sms">Şifrəli SMS istifadə edin</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> cihazında digər istifadəçilərlə edilən söhbətlərinizi şifrələmək üçün <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g>.</string>

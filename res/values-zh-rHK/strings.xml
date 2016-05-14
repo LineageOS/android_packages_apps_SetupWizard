@@ -41,9 +41,12 @@
   <string name="location_services_summary">定位服務允許系統和第三方應用程式取得及使用資料，如您的大致位置。例如，應用程式可能使用您的大致位置來尋找附近的咖啡店。</string>
   <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
+  <string name="location_network_telephony"><b>使用 Wi-Fi 和流動網絡</b>來幫助應用程式確定你的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會傳送匿名的位置資料給 Google。</string>
+  <string name="setup_mobile_data">開啟流動數據</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
+  <string name="enable_mobile_data_summary">您想在設定過程中使用流動數據嗎？使用流動數據可能會產生傳輸費用。</string>
   <string name="no">否</string>
   <string name="yes">是</string>
   <string name="data_sim_name">SIM 卡 <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -54,6 +57,7 @@
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label">透過自動傳送診斷及使用資料給 Cyanogen 來<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於電池壽命、應用程式性能和增加<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>的新功能等方面。</string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 可以使用獨特的圖示、 桌布和字體。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>而非實體按鍵。</string>
   <string name="services_use_secure_sms">使用加密短訊</string>
   <string name="services_secure_sms_label">在<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>裝置上<xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>來加密您與其他人的短訊。</string>

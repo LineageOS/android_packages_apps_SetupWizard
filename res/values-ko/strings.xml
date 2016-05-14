@@ -45,10 +45,10 @@
   <string name="location_network">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-Fi를 사용합니다</b>.</string>
   <string name="location_network_telephony">앱이 사용자의 위치를 확인할 수 있도록 <b>Wi-Fi와 모바일 네트워크를 사용합니다</b>.</string>
   <string name="location_network_gms">앱이 사용자의 위치를 정확하게 확인할 수 있도록 <b>Google 위치 서비스를 사용합니다</b>. 앱을 사용하지 않을때도 익명 위치 정보가 Google에 전송됩니다.</string>
-  <string name="setup_mobile_data">셀룰러 데이터 켜기</string>
+  <string name="setup_mobile_data">모바일 데이터 켜기</string>
   <string name="setup_mobile_data_no_service">서비스 불가</string>
   <string name="setup_mobile_data_emergency_only">긴급 통화만 가능</string>
-  <string name="enable_mobile_data_summary">장치를 설정하는 동안 셀룰러 데이터를 사용하겠습니까? 셀룰러 데이터를 켜면 데이터 요금이 부과될 수 있습니다.</string>
+  <string name="enable_mobile_data_summary">설정할 동안 모바일 데이터를 사용하시겠습니까? 모바일 데이터를 켜면 통신요금이 부과될 수 있습니다.</string>
   <string name="no">아니오</string>
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
   <string name="services_metrics_label">진단 및 사용 정보를 Cyanogen에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 배터리 수명, 앱 성능과 새 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 기능과 같이 사용자를 식별할 수 없는 정보입니다.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>은 독특한 아이콘, 배경화면과 폰트를 활성화합니다.</string>
   <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
   <string name="services_use_secure_sms">보안 SMS 사용</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="보안 SMS를 사용">%1$s</xliff:g>하여 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>기기에서 보안 SMS를 사용하는 다른 사용자와의 SMS 대화를 암호화함.</string>

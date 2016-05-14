@@ -43,12 +43,12 @@
   <string name="location_access_summary"><b>നിങ്ങളുടെ സ്ഥാനം വിവരങ്ങൾ ഉപയോഗിക്കാൻ നിങ്ങളുടെ അനുമതി ആവശ്യപ്പെടുന്ന</b> ആപ്ലിക്കേഷനുകളെ അനുവദിക്കുക. ഇതില്‍ നിങ്ങളുടെ നിലവിലെ സ്ഥാനവും മുമ്പത്തെ ലൊക്കേഷനുകളും ഉൾപ്പെട്ടേക്കാം.</string>
   <string name="location_battery_saving"><b>മണിക്കൂറിന് ജി. പി. എസ് അപ്ഡേറ്റുകൾ എണ്ണം കുറയ്ക്കുക</b> ബാറ്ററി ഉപഭോഗം നിയന്ത്രിയ്ക്കുന്നു.</string>
   <string name="location_network">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Wi-Fi ഉപയോഗിക്കുക</b>.</string>
-  <string name="location_network_telephony">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Wi-Fi യും മൊബൈൽ നെറ്റ്‌വർക്കുകളും ഉപയോഗിക്കുക</b>.</string>
+  <string name="location_network_telephony">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Wi-Fi യും മൊബൈൽ നെറ്റ്‌വർക്കുകളും</b> ഉപയോഗിക്കുക.</string>
   <string name="location_network_gms">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാൻ ആപ്ലിക്കേഷനുകളെ സഹായിക്കുന്നതിന് <b>Google ന്റെ സ്ഥാന സേവനം ഉപയോഗിക്കുക</b>. ഒരു ആപ്ലിക്കേഷനും പ്രവര്‍ത്തിക്കുന്നില്ലെങ്കില്‍ പോലും അജ്ഞാത സ്ഥാന ഡാറ്റ Google ലേക്ക് അയയ്ക്കും എന്നതാണ് ഇതന്റെ അര്‍ത്ഥം.</string>
-  <string name="setup_mobile_data">സെല്ലുലാർ ഡാറ്റ ഓണാക്കുക</string>
+  <string name="setup_mobile_data">മൊബൈൽ ഡാറ്റ ഓണാക്കുക</string>
   <string name="setup_mobile_data_no_service">സേവനം ഇല്ല</string>
   <string name="setup_mobile_data_emergency_only">അടിയന്തര കോളുകൾ മാത്രം</string>
-  <string name="enable_mobile_data_summary">നിങ്ങൾ സജ്ജീകരണത്തിനിടെ സെല്ലുലാർ ഡാറ്റ ഉപയോഗിക്കാൻ ആഗ്രഹിക്കുന്നുണ്ടോ? സെല്ലുലാർ ഡാറ്റ ഓണാക്കുന്നത് ഡേറ്റാ വില വിധേയമായിരിക്കാം.</string>
+  <string name="enable_mobile_data_summary">സജ്ജമാക്കുന്ന സമയത്ത് നിങ്ങള്‍ക്ക് മൊബൈൽ ഡാറ്റ ഉപയോഗിക്കണോ? മൊബൈൽ ഡാറ്റ ഓണാക്കുന്നത് ഡേറ്റാ നിരക്കുകള്‍ക്ക് വിധേയമായേക്കാം.</string>
   <string name="no">ഇല്ല</string>
   <string name="yes">ഉണ്ട്</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> മെച്ചപ്പെടുത്താൻ സഹായിക്കുക</string>
   <string name="services_metrics_label">ഡയഗ്നോസ്റ്റിക്സ്, ഉപയോഗ ഡാറ്റ Cyanogen ലേക്ക് സ്വപ്രേരിതമായി അയക്കുന്നതിലൂടെ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ഈ വിവരങ്ങൾ നിങ്ങളെ തിരിച്ചറിയുന്നതിനായി ഉപയോഗിക്കാൻ കഴിയില്ല, ബാറ്ററിയുടെ ആയുസ്സ്, ആപ്ലിക്കേഷൻ പ്രകടനം, പുതിയ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> സവിശേഷതകൾ തുടങ്ങിയ കാര്യങ്ങളിൽ പ്രവർത്തിക്കുന്ന ടീമുകളെ ഇത് സഹായിക്കുന്നു</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> തീം പ്രയോഗിക്കുക</string>
+  <string name="services_apply_theme_label">വിശിഷ്ട ഐക്കണുകൾ, വാൾപേപ്പറുകൾ, ഫോണ്ടുകള്‍ എന്നിവയെ <xliff:g id="name" example="Apply the Material theme">%s</xliff:g> പ്രാപ്തമാക്കുന്നു.</string>
   <string name="services_os_nav_keys_label">ഹാര്‍ഡ്‌വെയര്‍ കീകൾക്ക് പകരം സ്ക്രീൻ <b>നാവിഗേഷൻ കീകൾ ഉപയോഗിക്കുക.</b></string>
   <string name="services_use_secure_sms">സുരക്ഷിത SMS ഉപയോഗിക്കുക</string>
   <string name="services_secure_sms_label">ഒരു <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> ഉപകരണത്തില്‍ സുരക്ഷിത SMS ഉപയോഗിച്ച് മറ്റ് ഉപയോക്താക്കളുമായി SMS സംഭാഷണങ്ങൾ എൻക്രിപ്റ്റ് ചെയ്യുന്നതിന് <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g>.</string>

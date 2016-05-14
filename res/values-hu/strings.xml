@@ -45,10 +45,10 @@
   <string name="location_network"><b>Wi-Fi használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
   <string name="location_network_telephony"><b>Wi-Fi és mobil hálózatok használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
   <string name="location_network_gms"><b>A Google helymeghatározó szolgáltatás használata</b> az alkalmazások helymeghatározásának segítésére. Ez névtelen helyadatok Google felé történő küldését jelenti, még akkor is, ha nincs futó alkalmazás.</string>
-  <string name="setup_mobile_data">Mobilnet bekapcsolása</string>
+  <string name="setup_mobile_data">Mobilinternet bekapcsolása</string>
   <string name="setup_mobile_data_no_service">Nincs szolgáltatás</string>
   <string name="setup_mobile_data_emergency_only">Csak segélyhívások</string>
-  <string name="enable_mobile_data_summary">Szeretné használni a mobilnetet a beállítás során? Bekapcsolás esetén díjat számíthatnak fel érte.</string>
+  <string name="enable_mobile_data_summary">Kívánja használni a mobilinternetet a telepítés során? A mobilinternet használata költségekkel járhat.</string>
   <string name="no">Nem</string>
   <string name="yes">Igen</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Segítsen javítani <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> a Cyanogen részére történő automatikus diagnosztikai és használati adatok küldésével. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkciók fejlesztésében.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> téma alkalmazása</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> lehetővé teszi az egyéni ikonok, háttérképek és betűtípusok használatát.</string>
   <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
   <string name="services_use_secure_sms">Biztonságos SMS használata</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> az SMS beszélgetések titkosításához más olyan felhasználókkal, akik szintén biztonságos SMS-t használnak <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> eszközön.</string>

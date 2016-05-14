@@ -45,10 +45,10 @@
   <string name="location_network"><b>Użyj WiFi</b>, aby pomóc aplikacjom w określeniu twojej lokalizacji.</string>
   <string name="location_network_telephony"><b>Użyj WiFi i sieci komórkowych</b>, aby pomóc aplikacjom w określeniu twojej lokalizacji.</string>
   <string name="location_network_gms"><b>Użyj usług lokalizacji Google</b>, aby pomóc aplikacjom w określeniu twojej lokalizacji. Oznacza to wysyłanie anonimowych danych o twojej lokalizacji do Google, nawet jeśli żadna aplikacja nie jest uruchomiona.</string>
-  <string name="setup_mobile_data">Włącz transmisję danych</string>
+  <string name="setup_mobile_data">Włącz dane mobilne</string>
   <string name="setup_mobile_data_no_service">Brak usługi</string>
   <string name="setup_mobile_data_emergency_only">Tylko połączenia alarmowe</string>
-  <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włączenie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
+  <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włącznie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
   <string name="no">Nie</string>
   <string name="yes">Tak</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Pomóż ulepszać <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Pomóż nam w ulepszaniu CyanogenMod">%1$s</xliff:g> zezwalając na automatyczne przesyłanie danych diagnostycznych oraz użytkowania do Cyanogen. Te informacje nie będą mogły zostać użyte do identyfikacji i stanowią pomoc dla zespołów pracujących nad czasem pracy baterii, wydajnością aplikacji oraz nowymi funkcjami <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Zastosuj motyw <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zawiera unikalne ikony, tapety oraz czcionki.</string>
   <string name="services_os_nav_keys_label"><b>Użyj ekranowych przycisków nawigacyjnych</b> zamiast klawiszy sprzętowych.</string>
   <string name="services_use_secure_sms">Używaj bezpiecznych wiadomości SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Użyj bezpiecznych SMS">%1$s</xliff:g>, aby prowadzić szyfrowane konwersacje z innymi użytkownikami korzystającymi z bezpiecznych SMS na urządzeniach z <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

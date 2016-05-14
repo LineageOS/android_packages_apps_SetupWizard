@@ -43,9 +43,12 @@
   <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
   <string name="location_battery_saving">透過減少 GPS 每小時更新次數來<b>降低電池消耗</b>。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
+  <string name="location_network_telephony"><b>使用 Wi-Fi 和行動網路</b>來幫助應用程式確定您所在的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會發送匿名的位置資料給 Google。</string>
+  <string name="setup_mobile_data">開啟行動數據</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
+  <string name="enable_mobile_data_summary">您想在設定過程中使用行動網路嗎？使用行動網路可能會產生傳輸費用。</string>
   <string name="no">否</string>
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -56,6 +59,7 @@
   <string name="services_privacy_policy">隱私權政策</string>
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 來使用獨特的圖示、 桌布和字體。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
   <string name="services_use_secure_sms">使用加密簡訊</string>
   <string name="setup_unlock">解鎖</string>

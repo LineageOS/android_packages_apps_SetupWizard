@@ -42,9 +42,12 @@
   <string name="location_services_summary">Atrašanās vietas pakalpojumi atļauj sistēmai un trešo pušu lietotnēm ievākt un izmantot ievākto informāciju, kā, piemēram, Jūsu aptuveno atrašanās vietu, lai atrastu tuvumā esošo kafejnīcu.</string>
   <string name="location_access_summary"><b>Atļaut lietotnēm kas ir lūgušas atļauju</b> izmantot Jūsu atrašanās vietu. Tas var ietvert Jūsu pašreizējo atrašanās vietu vai kādu no iepriekšējām.</string>
   <string name="location_network"><b>Izmantot Wi-Fi</b>, lai palīdzētu lietotnēm noteikt Jūsu atrašanās vietu.</string>
+  <string name="location_network_telephony"><b>Izmantot Wi-Fi un pakešdatus</b>, lai palīdzētu lietotnēm noteikt Jūsu atrašanās vietu.</string>
   <string name="location_network_gms"><b>Izmantot Google atrašanās vietas pakalpojumus</b>, lai palīdzētu lietotnēm noteikt Jūsu atrašanās vietu. Tas iekļauj anonīmu datu sūtīšanu uz Google serveriem, pat ja lietotnes nedarbojas.</string>
+  <string name="setup_mobile_data">Ieslēgt pakešdatus</string>
   <string name="setup_mobile_data_no_service">Nav signāla</string>
   <string name="setup_mobile_data_emergency_only">Tikai ārkārtas zvani</string>
+  <string name="enable_mobile_data_summary">Vai vēlaties ieslēgt pakešdatus uzstādīšanas laikā? Ieslēdzot pakešdatus var tik piemērota maksa.</string>
   <string name="no">Nē</string>
   <string name="yes">Jā</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -56,6 +59,7 @@
   <string name="services_help_improve_cm">Palīdziet uzlabot <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Palīdziet uzlabot CyanogenMod">%1$s</xliff:g> automātiski sūtot diagnostikas informāciju un ierīces lietojumu uz Cyanogen serveriem. Šī informācija nevar tikt izmantota lai Jūs identificētu, bet gan palīdzēs komandām kas strādā pie baterijas taupīšana, lietotņu veiktspēja, jaunām <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> iespējām un citiem uzlabojumiem.</string>
   <string name="services_apply_theme">Lietot <xliff:g id="name" example="Material">%s</xliff:g> tēmu</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Lietot Materiālo tēmu">%s</xliff:g> ļaujot lietot unikālas ikonas, ekrāntapetes un fontus.</string>
   <string name="services_os_nav_keys_label"><b>Izmantot ekrānā redzamos navigācijas taustiņus</b> fizisko taustiņu vietā.</string>
   <string name="services_use_secure_sms">Izmantot drošu SIM</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Izmantot drošu SIM">%1$s</xliff:g> lai šifrētu SMS sarunas ar citiem lietotājiem, kas arī izmanto šifrētas SMS <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ierīcē.</string>

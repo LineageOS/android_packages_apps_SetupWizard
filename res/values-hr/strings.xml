@@ -45,7 +45,7 @@
   <string name="location_network"><b>Koristi Wi-Fi</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
   <string name="location_network_telephony"><b>Koristi Wi-Fi i mobilne mreže</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
   <string name="location_network_gms"><b>Koristi Google servis lokacije</b>da pomogneš aplikacijama da odrede tvoju lokaciju. To znači slanje anonimnih podaka u Google, čak i kad nema pokrenutih aplikacija.</string>
-  <string name="setup_mobile_data">Uključi mobilne podatke</string>
+  <string name="setup_mobile_data">Uključite mobilne podatke</string>
   <string name="setup_mobile_data_no_service">Nema usluge</string>
   <string name="setup_mobile_data_emergency_only">Samo hitni pozivi</string>
   <string name="enable_mobile_data_summary">Želite li koristiti mobilne podatke tijekom postavljanja? Uključeni mobilni podaci mogu napraviti troškove.</string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Pomozite poboljšati CyanogenMod">%1$s</xliff:g> automatskim slanjem dijagnostike i korištenja podataka u Cyanogen. Ove informacije se neće koristiti za vašu identifikaciju i pomaže timovima koji rade na stvarima kao što su trajanje baterije, performanse aplikacija, i novim <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> karakteristikama.</string>
   <string name="services_apply_theme">Primijeni <xliff:g id="name" example="Material">%s</xliff:g> temu</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> omogućuje jedinstvene ikone, pozadine i fontove.</string>
   <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
   <string name="services_use_secure_sms">Koristi siguran SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> za zaštitu SMS razgovora s drugim korisnicima koristeći siguran SMS na<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> uređaju.</string>

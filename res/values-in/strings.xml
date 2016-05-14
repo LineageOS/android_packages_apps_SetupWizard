@@ -43,9 +43,9 @@
   <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
   <string name="location_battery_saving"><b>Mengurangi pemakaian baterai</b> dengan membatasi jumlah pembaruan GPS tiap jam.</string>
   <string name="location_network"><b>Penggunaan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
-  <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan seluler</b> untuk membantu aplikasi menetukan lokasi Anda.</string>
+  <string name="location_network_telephony"><b>Penggunaan Wi-Fi dan jaringan seluler</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
   <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi Anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>
-  <string name="setup_mobile_data">Nyalakan data seluler</string>
+  <string name="setup_mobile_data">Aktifkan data seluler</string>
   <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
   <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan data seluler selama penyiapan? Menyalakan data seluler dapat dikenakan biaya data.</string>
@@ -60,6 +60,7 @@
   <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> dengan mengirim data diagnostik dan penggunaan ke Cyanogen secara otomatis. Informasi ini tidak dapat mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja dengan hal-hal seperti masa pakai baterai, kinerja aplikasi, dan fitur <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> baru.</string>
   <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> memungkinkan ikon, gambar latar, dan fon unik.</string>
   <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
   <string name="services_use_secure_sms">Menggunakan SMS aman</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> untuk mengenkripsi percakapan SMS dengan pengguna lain menggunakan SMS aman pada perangkat <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>

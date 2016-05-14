@@ -42,9 +42,12 @@
   <string name="location_services_summary">با استفاده از سرویس مکان، نقشه‌ها و برنامه‌های دیگر می‌توانند از داده‌هایی مثل مکان تقریبی شما استفاده کنند. به‌عنوان مثال، یک برنامه می‌تواند کافی‌شاپ‌های نزدیکتان را با استفاده از این داده‌ها مشخص کند.</string>
   <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
   <string name="location_network">از <b>وای‌فای</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید.</string>
+  <string name="location_network_telephony">از <b>وای‌فای و شبکه‌های همراه</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید.</string>
   <string name="location_network_gms">از <b>سرویس مکان گوگل</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید. این استفاده به معنای ارسال داده‌های ناشناس مکانی به گوگل است، حتی هنگامی که برنامه‌ای در حال اجرا نیست.</string>
+  <string name="setup_mobile_data">روشن کردن داده همراه</string>
   <string name="setup_mobile_data_no_service">بدون سرویس</string>
   <string name="setup_mobile_data_emergency_only">فقط تماس اضطراری</string>
+  <string name="enable_mobile_data_summary">آیا می‌خواهید در طول راه‌اندازی از داده همراه استفاده کنید؟ ممکن است روشن کردن داده همراه باعث هزینه‌های اضافی شود.</string>
   <string name="no">خیر</string>
   <string name="yes">بله</string>
   <string name="data_sim_name">سیم کارت <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -56,6 +59,7 @@
   <string name="services_help_improve_cm">به بهبود <xliff:g id="name" example="CyanogenMod">%s</xliff:g> کمک کنید</string>
   <string name="services_metrics_label">با ارسال خودکار داده‌های تشخیصی ومیزان استفاده به سایانوژن <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. از این داده‌ها برای تعیین هویت شما استفاده نمی‌شود و صرفاً کمکی است به تیم‌هایی که بر روی قابلیت‌هایی نظیر عمر باتری، عملکرد برنامه‌ها و ویژگی‌های جدید <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> کار می‌کنند.</string>
   <string name="services_apply_theme">اعمال تم <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> که آیکون‌ها، کاغذدیواری‌ها و فونت‌هایی بی‌نظیر را فعال می‌کند.</string>
   <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
   <string name="services_use_secure_sms">استفاده از پیامک امن</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> تا مکالمات پیامکی با کاربران دیگری که از پیامک امن در دستگاه مبتنی بر <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> استفاده می‌کنند، رمزنگاری شود.</string>

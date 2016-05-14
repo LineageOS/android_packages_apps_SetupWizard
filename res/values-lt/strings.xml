@@ -42,9 +42,12 @@
   <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavines.</string>
   <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
   <string name="location_network"><b>Naudoti „Wi-Fi“</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
+  <string name="location_network_telephony"><b>Naudoti „Wi-Fi“ ir mobiliuosius duomenis</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
   <string name="location_network_gms"><b>Naudoti „Google“ vietos paslaugą</b>, kad padėti programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
+  <string name="setup_mobile_data">Įjungti mobiliuosius duomenis</string>
   <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
   <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
+  <string name="enable_mobile_data_summary">Ar norite naudoti mobiliuosius duomenis nustatymo metu? įjungiant mobiliuosius duomenis gali būti taikomi duomenų mokesčiai.</string>
   <string name="no">Ne</string>
   <string name="yes">Taip</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -56,6 +59,7 @@
   <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatiškai siunčiant diagnostikos ir naudojimo duomenis „Cyanogen“. Ši informacija negali būti naudojama jūsų identifikavimui, pateikti duomenys padės komandoms dirbančioms prie akumuliatoriaus veikimo laiko, programų našumo ir naujų <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkcijų.</string>
   <string name="services_apply_theme">Taikyti <xliff:g id="name" example="Material">%s</xliff:g> temą</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> įgalina unikalias piktogramas, ekrano fonus ir šriftus.</string>
   <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
   <string name="services_use_secure_sms">Naudoti saugius SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, kad užšifruoti SMS pokalbius su kitais vartotojais, naudojančiais saugius SMS <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> įrenginyje.</string>
