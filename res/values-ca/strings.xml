@@ -78,4 +78,7 @@
   <string name="fingerprint_setup_add_fingerprint">Afegeix la teva empremta digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
+  <!-- MOD stuff -->
+  <string name="mod_welcome">Benvinguts a l\'Era Post-Aplicacions</string>
+  <string name="mod_description">Els Mods són intel·ligents, conscients i experiències lleugeres construïts directament dins el SO. Quan un MOD pensi que et pot ajudar, s\'oferirà per activar-se.</string>
 </resources>
