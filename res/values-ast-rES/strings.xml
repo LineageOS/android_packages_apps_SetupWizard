@@ -59,11 +59,23 @@
   <string name="services_explanation" product="default">Estos servicios furrulen por ti pa estender les capacidaes del móvil. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Política de privacidá</string>
   <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> unviando automáticamente diagnósticos y usu de datos a Cyanogen. Esta información nun s\'usa pa indentificate y écha-yos un gabitu a los equipos pa trabayar en coses como\'l consumu de batería, el rindimientu d\'aplicaciones, y les nueves carauterístiques <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos, fondos de pantalla y fontes únicos.</string>
   <string name="services_os_nav_keys_label"><b>Usar tecles de navegación na pantalla</b> en cuantes de tecles físiques.</string>
   <string name="services_use_secure_sms">Usar SMS seguru</string>
+  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> pa cifrar conversaciones SMS con otros usuarios usando SMS seguru nun preséu <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="setup_unlock">Desbloquiar</string>
   <string name="setup_device_locked">Esti preséu ta bloquiáu pol usuariu.</string>
+  <string name="setup_require_cyanogen_label"><b>Riquir la to contraseña de la cuenta Cyanogen OS</b> pa usar el to preséu incluso dempués de reafitalu.</string>
+  <string name="setup_device_locked_instructions"><i>Pa apagar/prender esta carauterística, por favor vete a Axustes &gt; Seguranza</i></string>
+  <string name="setup_warning_skip_anyway">Ensin una cuenta de Cyanogen OS, nun vas poder: \n\nPersonalizar el to teléfonu con iconos nuevos, fondos de pantalla y muncho más al traviés de l\'aplicación de temes\n\nDesaniciar el teléfonu llocalmente o de manera remota si se perdió</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Esbilla\'l tipu de copia de seguranza de pantalla de bloquéu</string>
   <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
+  <string name="fingerprint_setup_title">Configuración del buelga</string>
+  <string name="fingerprint_setup_summary">Pa usar el to sensor de buelgues pa desbloquiar la to pantalla, necesitarás:</string>
+  <string name="fingerprint_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
+  <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
+  <string name="fingerprint_setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
 </resources>
