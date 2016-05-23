@@ -356,6 +356,9 @@ public class WelcomePage extends SetupPage {
         public void onResume() {
             super.onResume();
             mPaused = false;
+            if (mLanguagePicker != null) {
+                mLanguagePicker.setEnabled(true);
+            }
             if (mPendingLocaleUpdate) {
                 mPendingLocaleUpdate = false;
                 fetchAndUpdateSimLocale();
