@@ -34,8 +34,8 @@
   <string name="setup_current_time">現在の時刻</string>
   <string name="sim_missing_summary" product="tablet">お使いのタブレットでSIMカードが検出されませんでした。SIMカードの挿入方法については、タブレットに付属している説明書をご覧ください。</string>
   <string name="sim_missing_summary" product="default">お使いの携帯電話でSIMカードが検出されませんでした。SIMカードの挿入方法については、携帯電話に付属している説明書をご覧ください。</string>
-  <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信に使用しますか？選択したSIMをタブレットのセットアップに使用しますので、パケット通信料を請求される可能性があります。</string>
-  <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信に使用しますか？選択したSIMを携帯電話のセットアップに使用しますので、パケット通信料を請求される可能性があります。</string>
+  <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信に使用しますか？選択したSIMをタブレットのセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
+  <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信に使用しますか？選択したSIMを携帯電話のセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
   <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
   <string name="backup_data_summary">アプリのデータ、Wi-Fiパスワード、その他の設定をGoogleのサーバーに<b>バックアップする</b></string>
   <string name="other_services_summary">これらのサービスはGoogleアプリを動作させるもので、いつでもONまたはOFFにすることができます。データはGoogleの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
@@ -45,10 +45,10 @@
   <string name="location_network">アプリが位置情報を特定しやすくするために<b>Wi-Fiを使用します</b>。</string>
   <string name="location_network_telephony">アプリが位置情報を特定しやすくするために<b>Wi-Fiとモバイルネットワークを使用します</b>。</string>
   <string name="location_network_gms">アプリが位置情報を特定しやすくするために<b>Googleの位置情報サービスを使用します</b>。アプリが実行されていなくても、匿名の位置情報データをGoogleに送信することになります。</string>
-  <string name="setup_mobile_data">データ通信をON</string>
+  <string name="setup_mobile_data">モバイルデータをON</string>
   <string name="setup_mobile_data_no_service">サービスがありません</string>
   <string name="setup_mobile_data_emergency_only">緊急通報のみ</string>
-  <string name="enable_mobile_data_summary">セットアップでデータ通信を有効にしますか？データ通信をONにするとデータ通信料を請求される可能性があります。</string>
+  <string name="enable_mobile_data_summary">セットアップ中にモバイルデータを使用しますか？モバイルデータをONにすると、パケット通信料を請求される可能性があります。</string>
   <string name="no">いいえ</string>
   <string name="yes">はい</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
