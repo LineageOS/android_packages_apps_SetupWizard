@@ -39,17 +39,17 @@
   <string name="date_time_summary">Définir votre fuseau horaire et régler la date et l\'heure si nécessaire</string>
   <string name="backup_data_summary"><b>Sauvegarder</b> les données des applications, les mots de passe Wi-Fi et d\'autres paramètres sur les serveurs Google</string>
   <string name="other_services_summary">Ces services sont mis à disposition par Google, et vous pouvez les activer ou les désactiver à tout moment. Les données seront utilisées conformément à la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
-  <string name="location_services_summary">Le service de localisation permet aux applications systèmes et tiers de recueillir et d\'utiliser des données comme votre emplacement approximatif. Par exemple, une application peut utiliser votre emplacement approximatif pour localiser des cafés-restaurants à proximité.</string>
+  <string name="location_services_summary">Le service de localisation permet aux applications systèmes et de tiers de recueillir et d\'utiliser des données comme votre position approximative. Par exemple, une application peut utiliser votre position approximative pour localiser des cafés-restaurants à proximité.</string>
   <string name="location_access_summary"><b>Permettre aux applications ayant obtenu votre autorisation</b> d\'utiliser vos informations de localisation. Cela peut inclure votre position actuelle et les dernières positions.</string>
   <string name="location_gps" product="tablet"><b>Améliorer la précision de la localisation</b> en permettant aux applications d\'utiliser le GPS sur votre tablette.</string>
   <string name="location_gps" product="default"><b>Améliorer la précision de la localisation</b> en permettant aux applications d\'utiliser le GPS sur votre téléphone.</string>
   <string name="location_network"><b>Utiliser le Wi-Fi</b> pour aider les applications à déterminer votre position.</string>
   <string name="location_network_telephony"><b>Utiliser le Wi-Fi et les réseaux mobiles</b> pour aider les applications à déterminer votre position.</string>
-  <string name="location_network_gms"><b>Utiliser le service de localisation de Google</b> pour aider les applications à déterminer votre position. Cela signifie d\'envoyer anonymement des données de localisation à Google, même lorsque qu\'aucune application est en cours d\'exécution.</string>
+  <string name="location_network_gms"><b>Utiliser le service de localisation de Google</b> pour aider les applications à déterminer votre position. Cela signifie envoyer anonymement des données de localisation à Google, même lorsque qu\'aucune application n\'est en cours d\'exécution.</string>
   <string name="setup_mobile_data">Activer les données mobiles</string>
   <string name="setup_mobile_data_no_service">Aucun service</string>
   <string name="setup_mobile_data_emergency_only">Appels d\'urgence uniquement</string>
-  <string name="enable_mobile_data_summary">Voulez-vous utiliser les données mobiles lors de l\'installation ? L\'activation des données mobiles peut-être être soumis à des frais de données.</string>
+  <string name="enable_mobile_data_summary">Voulez-vous utiliser les données mobiles lors de l\'installation ? L\'activation des données mobiles peut entraîner des frais de données.</string>
   <string name="no">Non</string>
   <string name="yes">Oui</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -59,22 +59,21 @@
   <string name="services_explanation" product="default">Ces services fonctionnent pour étendre les fonctionnalités de votre téléphone. Les données seront utilisées conformément à la <xliff:g id="name" example="Politique de confidentialité">%s</xliff:g> de Cyanogen.</string>
   <string name="services_privacy_policy">Politique de confidentialité</string>
   <string name="services_help_improve_cm">Aider à améliorer <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Aider à l\'amélioration de CyanogenMod">%1$s</xliff:g> en envoyant automatiquement des données de diagnostics et d\'utilisation à Cyanogen. Ces informations ne peuvent pas être utilisées pour vous identifier et elles pourront aider les équipes qui travaillent sur des choses telles que la durée de vie de la batterie, les performances des applications et les nouvelles fonctionnalités de <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Appliquer le thème <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Appliquer le thème Material">%s</xliff:g> active les icônes uniques, fonds d\'écran, et polices.</string>
   <string name="services_os_nav_keys_label"><b>Utilisation des touches de navigation de l\'écran</b> au lieu des touches physiques.</string>
   <string name="services_use_secure_sms">Utiliser les SMS sécurisés</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> pour crypter les conversations SMS avec les autres utilisateurs utilisant les SMS sécurisés sur leurs appareils <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Déverrouiller</string>
   <string name="setup_device_locked">Cet appareil a été verrouillé par l\'utilisateur.</string>
   <string name="setup_require_cyanogen_label"><b>Nécessite votre mot de passe du compte Cyanogen OS</b> afin d\'utiliser votre appareil même après une réinitialisation d\'usine.</string>
   <string name="setup_device_locked_instructions"><i>Pour activer/désactiver cette fonction, veuillez vous rendre dans Paramètres &gt; Sécurité</i></string>
   <string name="setup_warning_skip_anyway">Sans un compte Cyanogen OS, vous ne serez pas en mesure de :\n\nPersonnaliser votre téléphone avec de nouvelles icônes, fonds d\'écran et plus encore dans l\'application Thèmes\n\nLocaliser ou réinitialiser votre téléphone à distance s\'il est perdu</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Sélection du type de verrouillage d\'écran de sauvegarde</string>
   <string name="settings_fingerprint_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
   <string name="fingerprint_setup_title">Enregistrement d\'empreintes digitales</string>
   <string name="fingerprint_setup_summary">Pour utiliser le capteur d\'empreintes digitales pour déverrouiller votre écran, vous devrez :</string>
   <string name="fingerprint_setup_backup_lock_method">Configurer une méthode de déblocage secondaire</string>
-  <string name="fingerprint_setup_add_fingerprint">Ajouter vôtre empreinte digitale</string>
+  <string name="fingerprint_setup_add_fingerprint">Ajouter votre empreinte digitale</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'écran</string>
 </resources>

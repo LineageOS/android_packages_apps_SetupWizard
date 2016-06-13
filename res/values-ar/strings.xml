@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">معالج التثبيت</string>
+  <string name="app_name">معالج الإعداد</string>
   <string name="next">التالي</string>
   <string name="skip">تخطي</string>
   <string name="start">البداية</string>
@@ -59,17 +59,16 @@
   <string name="services_explanation" product="default">تعمل هذه الخدمات  على توسيع نطاق إمكانيات هاتفك. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">سياسة الخصوصية</string>
   <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s </xliff:g> بإرسال بيانات تشخيص المشكلات وبيانات الاستخدام تلقائياً إلى Cyanogen. هذه المعلومات لا يمكن استخدامها للتعرف عليك، لكنها تقدم المساعدة للفرق العاملة على جوانب مثل عمر البطارية وأداء التطبيقات، وميزات  <xliff:g id="name" example="CyanogenMod"> %2$s </xliff:g> الجديدة.</string>
   <string name="services_apply_theme">تطبيق السمة <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> تمكين الرموز الفريدة والخلفيات والخطوط.</string>
   <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
   <string name="services_use_secure_sms">استخدام شريحة SIM آمنة</string>
-  <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s </xliff:g> لتشفير المحادثات عبر الرسائل القصيرة مع المستخدمين الآخرين باستخدام شريحة SMS آمنة على جهاز <xliff:g id="name" example="CyanogenMod"> %2$s </xliff:g>.</string>
   <string name="setup_unlock">فتح القفل</string>
   <string name="setup_device_locked">هذا الجهاز تم قفله من قبل المستخدم.</string>
   <string name="setup_require_cyanogen_label"><b>يتطلب كلمة مرور حساب Cyanogen OS </b>كي تتمكن من استخدام الجهاز حتى بعد إعادة تعيين المصنع.</string>
   <string name="setup_device_locked_instructions"><i>من أجل تشغيل/تعطيل هذه الميزة، الرجاء إذهب إلى إعدادات &gt; الأمان</i></string>
   <string name="setup_warning_skip_anyway">بدون حساب Cyanogen OS لن تستطيع أن:\n\nتخصص هاتفك بأيقونات وخلفيات جديدة والمزيد في تطبيق السمات\n\nأو تحديد مكان هاتفك أو مسح ذاكرته عن بعد إذا فُقد</string>
+  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">حدد نوعاً احتياطياً لشاشة القفل</string>
   <string name="settings_fingerprint_setup_details">كيف تريد إقفال الشاشة؟</string>
   <string name="fingerprint_setup_title">إنشاء بصمة الإصبع</string>
