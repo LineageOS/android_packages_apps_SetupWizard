@@ -487,6 +487,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
             for (Runnable runnable : mFinishRunnables) {
                 runnable.run();
             }
+
             SetupWizardUtils.disableSetupWizard(mActivity);
             return Boolean.TRUE;
         }
