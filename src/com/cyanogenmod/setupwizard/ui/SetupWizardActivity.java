@@ -19,6 +19,8 @@ package com.cyanogenmod.setupwizard.ui;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.WallpaperManager;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -484,8 +486,18 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
         @Override
         protected Boolean doInBackground(Void... params) {
+            // turn bluetooth on and off to let it initialize its databases
+            // and other things that take a _long_ time the first time around
+            // this way we are in a state ready to go (and beam!) on the first boot.
+            final BluetoothManager bt = mActivity.getSystemService(BluetoothManager.class);
+            if (bt != null && bt.getAdapter() != null) {
+                bt.getAdapter().enable();
+            }
             for (Runnable runnable : mFinishRunnables) {
                 runnable.run();
+            }
+            if (bt != null && bt.getAdapter() != null) {
+                bt.getAdapter().disable();
             }
             SetupWizardUtils.disableSetupWizard(mActivity);
             return Boolean.TRUE;
