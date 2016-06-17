@@ -45,6 +45,7 @@
   <string name="location_network"><b>Usar Wi-Fi</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
   <string name="location_network_telephony"><b>Usar Wi-Fi y redes móviles</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
   <string name="location_network_gms"><b>Usar el serviciu d\'allugamientu de Google</b> p\'ayudar a les aplicaciones a determinar el to allugamientu. Esto quier dicir que s\'unviarán datos anónimos a Google, incluso cuando nun se tea executándose denguna aplicación.</string>
+  <string name="setup_mobile_data">Prender datos móviles</string>
   <string name="setup_mobile_data_no_service">Ensin serviciu</string>
   <string name="setup_mobile_data_emergency_only">Namái llamaes d\'emerxencia</string>
   <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? Activalos quiciabes puean tar suxetos a cargos de datos.</string>
@@ -59,6 +60,7 @@
   <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> unviando automáticamente diagnósticos y usu de datos a Cyanogen. Esta información nun s\'usa pa indentificate y écha-yos un gabitu a los equipos pa trabayar en coses como\'l consumu de batería, el rindimientu d\'aplicaciones, y les nueves carauterístiques <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos, fondos de pantalla, fontes únicos y más.</string>
   <string name="services_os_nav_keys_label"><b>Usar tecles de navegación na pantalla</b> en cuantes de tecles físiques.</string>
   <string name="services_use_secure_sms">Usar SMS seguru</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> pa cifrar conversaciones SMS con otros usuarios usando SMS seguru nun preséu <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -75,5 +77,8 @@
   <string name="fingerprint_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
   <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
+  <string name="sim_locale_changed">%1$s SIM deteutada</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Bienllegáu a la dómina post-app</string>
+  <string name="mod_description">Los Mods son esperiencies intelixentes, conscientes y llixeres construyíes direutamente dientro del SO. Cuando un MOD camiente que pue ayudate, ufriráse p\'activase.</string>
 </resources>
