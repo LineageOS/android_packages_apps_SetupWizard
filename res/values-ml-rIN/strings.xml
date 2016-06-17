@@ -59,10 +59,12 @@
   <string name="services_explanation" product="default">നിങ്ങളുടെ ഫോണിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. Cyanogen ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
   <string name="services_privacy_policy">സ്വകാര്യതാനയം</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> മെച്ചപ്പെടുത്താൻ സഹായിക്കുക</string>
+  <string name="services_metrics_label">ഡയഗ്നോസ്റ്റിക്സ്, ഉപയോഗ ഡാറ്റ Cyanogen ലേക്ക് സ്വപ്രേരിതമായി അയക്കുന്നതിലൂടെ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ഈ വിവരങ്ങൾ നിങ്ങളെ തിരിച്ചറിയുന്നതിനായി ഉപയോഗിക്കാൻ കഴിയില്ല, ബാറ്ററിയുടെ ആയുസ്സ്, ആപ്ലിക്കേഷൻ പ്രകടനം, പുതിയ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> സവിശേഷതകൾ തുടങ്ങിയ കാര്യങ്ങളിൽ പ്രവർത്തിക്കുന്ന ടീമുകളെ ഇത് സഹായിക്കുന്നു</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> തീം പ്രയോഗിക്കുക</string>
   <string name="services_apply_theme_label">വിശിഷ്ട ഐക്കണുകൾ, വാൾപേപ്പറുകൾ, ഫോണ്ടുകള്‍ എന്നിവയെ <xliff:g id="name" example="Apply the Material theme">%s</xliff:g> പ്രാപ്തമാക്കുന്നു.</string>
   <string name="services_os_nav_keys_label">ഹാര്‍ഡ്‌വെയര്‍ കീകൾക്ക് പകരം സ്ക്രീൻ <b>നാവിഗേഷൻ കീകൾ ഉപയോഗിക്കുക.</b></string>
   <string name="services_use_secure_sms">സുരക്ഷിത SMS ഉപയോഗിക്കുക</string>
+  <string name="services_secure_sms_label">ഒരു <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> ഉപകരണത്തില്‍ സുരക്ഷിത SMS ഉപയോഗിച്ച് മറ്റ് ഉപയോക്താക്കളുമായി SMS സംഭാഷണങ്ങൾ എൻക്രിപ്റ്റ് ചെയ്യുന്നതിന് <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g>.</string>
   <string name="setup_unlock">അൺലോക്കുചെയ്യുക</string>
   <string name="setup_device_locked">ഈ ഉപകരണം ഉപയോക്താവ് ലോക്ക് ചെയ്തു.</string>
   <string name="setup_require_cyanogen_label"><b>ഫാക്ടറി റീസെറ്റ് ചെയ്തതിന് ശേഷവും നിങ്ങളുടെ</b> ഉപകരണം ഉപയോഗിക്കാൻ നിങ്ങളുടെ Cyanogen OS പാസ്‌വേര്‍ഡ്‌ ആവശ്യമാണ്.</string>
