@@ -317,6 +317,12 @@ public class WelcomePage extends SetupPage {
 
                     // Fetch locale for active sim's MCC
                     int mcc = activeSubs.get(0).getMcc();
+
+                    // Invalid mcc
+                    if (mcc == 0) {
+                        return null;
+                    }
+
                     locale = MccTable.getLocaleFromMcc(activity, mcc, null);
 
                     // If that fails, fall back to preferred languages reported
