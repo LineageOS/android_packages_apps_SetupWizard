@@ -88,6 +88,7 @@ public class WelcomePage extends SetupPage {
         } else {
             if (mWelcomeFragment != null) {
                 mWelcomeFragment.sendLocaleStats();
+                mWelcomeFragment.disableAutoSimLocale();
             }
             return super.doNextAction();
         }
@@ -279,17 +280,24 @@ public class WelcomePage extends SetupPage {
 
         public void fetchAndUpdateSimLocale() {
             if (mIgnoreSimLocale || isDetached()) {
+                Log.d(TAG, "fetchAndUpdateSimLocale ignore locale");
                 return;
             }
             if (mPaused) {
+                Log.d(TAG, "fetchAndUpdateSimLocale paused");
                 mPendingLocaleUpdate = true;
                 return;
             }
             if (mFetchUpdateSimLocaleTask != null) {
+                Log.d(TAG, "fetchAndUpdateSimLocale cancelling existing task");
                 mFetchUpdateSimLocaleTask.cancel(true);
             }
             mFetchUpdateSimLocaleTask = new FetchUpdateSimLocaleTask();
             mFetchUpdateSimLocaleTask.execute();
+        }
+
+        public void disableAutoSimLocale() {
+            mIgnoreSimLocale = true;
         }
 
         private class FetchUpdateSimLocaleTask extends AsyncTask<Void, Void, Locale> {
@@ -312,20 +320,28 @@ public class WelcomePage extends SetupPage {
                     List<SubscriptionInfo> activeSubs =
                             subscriptionManager.getActiveSubscriptionInfoList();
                     if (activeSubs == null || activeSubs.isEmpty()) {
+                        Log.d(TAG, "FetchUpdateSimLocaleTask active subs empty");
                         return null;
                     }
 
                     // Fetch locale for active sim's MCC
                     int mcc = activeSubs.get(0).getMcc();
+
+                    for (SubscriptionInfo sub : activeSubs) {
+                        Log.d(TAG, "Sub=" + sub + " mcc=" + sub.getMcc() + " mnc=" + sub.getMnc());
+                    }
+
                     locale = MccTable.getLocaleFromMcc(activity, mcc, null);
+
+                    Log.d(TAG, "FetchUpdateSimLocaleTask locale for " + mcc + " " + locale);
 
                     // If that fails, fall back to preferred languages reported
                     // by the sim
                     if (locale == null) {
                         String localeString = telephonyManager.getLocaleFromDefaultSim();
+                        Log.d(TAG, "FetchUpdateSimLocaleTask locale from default sim " + localeString);
                         if (localeString != null) {
                             locale = Locale.forLanguageTag(localeString);
-
                         }
                     }
                 }
@@ -340,7 +356,7 @@ public class WelcomePage extends SetupPage {
                                 simLocale.getDisplayName());
                         Toast.makeText(getActivity(), label, Toast.LENGTH_SHORT).show();
                         onLocaleChanged(simLocale);
-                        mIgnoreSimLocale = true;
+//                        mIgnoreSimLocale = true;
                     }
                 }
             }

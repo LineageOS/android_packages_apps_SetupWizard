@@ -86,6 +86,7 @@ public class CMSetupWizardData extends AbstractSetupData {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        Log.d(TAG, "onReceive " + intent.getAction());
         if (intent.getAction().equals(TelephonyIntents.ACTION_SIM_STATE_CHANGED)) {
             showHideDataSimPage();
             showHideSimMissingPage();
@@ -107,6 +108,8 @@ public class CMSetupWizardData extends AbstractSetupData {
                 intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIME)) {
             mTimeSet = true;
             showHideDateTimePage();
+        } else if (intent.getAction().equals(TelephonyIntents.ACTION_SERVICE_STATE_CHANGED)) {
+            updateWelcomePage();
         }
     }
 
@@ -167,6 +170,7 @@ public class CMSetupWizardData extends AbstractSetupData {
     public IntentFilter getIntentFilter() {
         IntentFilter filter = new IntentFilter();
         if (SetupWizardUtils.hasTelephony(mContext)) {
+            filter.addAction(TelephonyIntents.ACTION_SERVICE_STATE_CHANGED);
             filter.addAction(TelephonyIntents.ACTION_SIM_STATE_CHANGED);
             filter.addAction(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
         }
