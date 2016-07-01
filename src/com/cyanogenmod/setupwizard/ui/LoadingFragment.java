@@ -16,6 +16,7 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -74,8 +75,12 @@ public class LoadingFragment extends SetupPageFragment {
 
         @Override
         public void run() {
-            mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
-            mLoadingFragment.mStartActivityForResultRunnable = null;
+            try {
+                mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
+            }
+            catch(Exception e) {
+                throw new ActivityNotFoundException("Activity not found exception for intent " + mIntent.getDataString());
+            }
         }
     }
 }
