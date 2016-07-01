@@ -16,14 +16,18 @@
 
 package com.cyanogenmod.setupwizard.ui;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.util.Log;
 import com.cyanogenmod.setupwizard.R;
 
 public class LoadingFragment extends SetupPageFragment {
 
     private StartActivityForResultRunnable mStartActivityForResultRunnable;
+
+    private static final String TAG = "LoadingFragment";
 
     @Override
     public void startActivityForResult(Intent intent, int requestCode, Bundle options) {
@@ -74,8 +78,12 @@ public class LoadingFragment extends SetupPageFragment {
 
         @Override
         public void run() {
-            mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
-            mLoadingFragment.mStartActivityForResultRunnable = null;
+            try {
+                mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
+            }
+            catch(ActivityNotFoundException e) {
+                Log.e(TAG,"Activity not found to handle intent "+ mIntent.getDataString());
+            }
         }
     }
 }
