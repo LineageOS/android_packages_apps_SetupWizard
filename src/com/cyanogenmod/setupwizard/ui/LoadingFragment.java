@@ -74,8 +74,14 @@ public class LoadingFragment extends SetupPageFragment {
 
         @Override
         public void run() {
-            mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
-            mLoadingFragment.mStartActivityForResultRunnable = null;
+            try {
+                mLoadingFragment.startActivityForResult(mIntent, mRequestCode, mOptions);
+            }
+            catch(Exception e)
+            {
+
+            }
+                mLoadingFragment.mStartActivityForResultRunnable = null;
         }
     }
 }
