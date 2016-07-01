@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_04384bd1",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/LoadingFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2016-07-01T19:31:34Z",
+      "side": 1,
+      "message": "A few things of note. \n\nYou usually don\u0027t want to swallow any and every expection like this. Ideally, we\u0027re looking to handle the very specific scenario when ActivityNotFoundException is thrown when attempting to start an activity for result with the action of \"com.google.android.setupwizard.VENDOR_SETUP\"\n\nIt may be worth to have the runnable itself throw the exception in the signature and then have any user of this runnable handle the activity not found exception as needed.\n\nLikewise, please adapt to the code style of the project you\u0027re working in.",
+      "range": {
+        "startLine": 77,
+        "startChar": 0,
+        "endLine": 83,
+        "endChar": 13
+      },
+      "revId": "8f1f4b818dcf46de838b36aaa45c5c5a4a587f3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_c431d3ee",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/LoadingFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2016-07-01T19:31:34Z",
+      "side": 1,
+      "message": "there is probably no need to dereference the start activity for result runnable here.",
+      "range": {
+        "startLine": 84,
+        "startChar": 16,
+        "endLine": 84,
+        "endChar": 72
+      },
+      "revId": "8f1f4b818dcf46de838b36aaa45c5c5a4a587f3f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
