@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_4b5ba786",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/LoadingFragment.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2016-07-08T15:45:38Z",
+      "side": 1,
+      "message": "don\u0027t rethrow or throw in general (you never want to do that in the context of a runnable)\n\nWe should only be catching the activity not found exception and logging it as necessary.",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 83,
+        "endChar": 13
+      },
+      "revId": "555331ed42ab9868623bdfde765365c2383ff234",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
