@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_28ac278b",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/ChooseDataSimPage.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 9813
+      },
+      "writtenOn": "2016-07-12T16:03:12Z",
+      "side": 1,
+      "message": "does this clause make sense anymore?",
+      "range": {
+        "startLine": 138,
+        "startChar": 24,
+        "endLine": 138,
+        "endChar": 76
+      },
+      "revId": "4327f16c4fd0839054fc4a0353413eeb399b75d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
