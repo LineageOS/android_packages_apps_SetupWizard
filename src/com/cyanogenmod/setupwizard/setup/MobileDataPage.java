@@ -142,7 +142,7 @@ public class MobileDataPage extends SetupPage {
                 boolean checked = !mEnableMobileData.isChecked();
                 SetupWizardUtils.setMobileDataEnabled(getActivity(), checked);
                 mEnableMobileData.setChecked(checked);
-                if (checked) {
+                if (checked && !SetupWizardUtils.isWifiConnected(mContext)) {
                     waitForData();
                 } else {
                     onDataStateReady();
@@ -205,10 +205,14 @@ public class MobileDataPage extends SetupPage {
                 if (mTitleView != null) {
                     mTitleView.setText(mPage.getTitleResId());
                 }
-                mProgressBar.setVisibility(View.INVISIBLE);
-                mPageView.setVisibility(View.VISIBLE);
-                mPageView.startAnimation(
-                        AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_enter));
+                // Something else, like data enablement, may have grabbed
+                // the "hold" status. Kill it only if "Next" is active
+                if (mNextButton.isEnabled()) {
+                    mProgressBar.setVisibility(View.INVISIBLE);
+                    mPageView.setVisibility(View.VISIBLE);
+                    mPageView.startAnimation(
+                            AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_enter));
+                }
             }
         }
 
@@ -225,7 +229,8 @@ public class MobileDataPage extends SetupPage {
 
         private void onDataStateReady() {
             mHandler.removeCallbacks(mDataConnectionReadyRunnable);
-            if (getUserVisibleHint() && mProgressBar.isShown()) {
+            if ((getUserVisibleHint() && mProgressBar.isShown()) ||
+                  !mNextButton.isEnabled()) {
                 mProgressBar.startAnimation(
                         AnimationUtils.loadAnimation(getActivity(), R.anim.translucent_exit));
                 mProgressBar.setVisibility(View.INVISIBLE);
