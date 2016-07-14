@@ -85,6 +85,8 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
     private final ArrayList<Runnable> mFinishRunnables = new ArrayList<Runnable>();
 
+    private Intent mAfterFinishIntent;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final boolean isOwner = SetupWizardUtils.isOwner();
@@ -268,6 +270,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
     private void updateButtonBar() {
         Page page = mSetupData.getCurrentPage();
+        mButtonBar.setBackgroundColor(getColor(page.getButtonBarBackgroundColorId()));
         mNextButton.setText(page.getNextButtonTitleResId());
         if (page.getPrevButtonTitleResId() != -1) {
             mPrevButton.setText(page.getPrevButtonTitleResId());
@@ -285,7 +288,6 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
         }
         final Resources resources = getResources();
         if (mSetupData.isLastPage()) {
-            mButtonBar.setBackgroundResource(R.color.primary);
             mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
                     getDrawable(R.drawable.ic_chevron_right_wht), null);
             mNextButton.setTextColor(resources.getColor(R.color.white));
@@ -493,10 +495,23 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
 
         @Override
         protected void onPostExecute(Boolean aBoolean) {
-            Intent intent = new Intent(Intent.ACTION_MAIN);
-            intent.addCategory(Intent.CATEGORY_HOME);
-            mActivity.startActivity(intent);
+            if (mActivity.mAfterFinishIntent == null) {
+                final Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                mActivity.startActivity(intent);
+            } else {
+                mActivity.startActivity(mActivity.mAfterFinishIntent);
+            }
             mActivity.finish();
         }
+    }
+
+    /**
+     * Sets an intent to be started when the wizard finishes.
+     * By default, or null, it will go Home.
+     * @param intent Intent to start after wizard finishes.
+     */
+    public void setFinishIntent(final Intent intent) {
+        mAfterFinishIntent = intent;
     }
 }

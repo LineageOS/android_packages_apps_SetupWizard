@@ -31,6 +31,7 @@ public interface Page {
 
     public String getKey();
     public int getTitleResId();
+    public int getButtonBarBackgroundColorId();
     public int getPrevButtonTitleResId();
     public int getNextButtonTitleResId();
     public Fragment getFragment(FragmentManager fragmentManager, int action);

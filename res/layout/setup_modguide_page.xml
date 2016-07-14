@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mod_yellow">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="296dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_oobe_hero"
+                tools:ignore="ContentDescription"/>
+        <ImageView
+                android:layout_width="140dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_logo_mod_title"
+                android:tint="@color/white"
+                android:layout_marginTop="72dp"
+                android:layout_marginStart="24dp"
+                tools:ignore="ContentDescription"/>
+    </FrameLayout>
+
+    <TextView android:id="@+id/mod_welcome"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="20sp"
+              android:textSize="16sp"
+              android:fontFamily="sans-serif"
+              android:layout_marginTop="32dp"
+              android:paddingStart="24dp"
+              android:paddingEnd="24dp"
+              android:text="@string/mod_welcome"
+              android:textColor="@color/mod_title"/>
+
+    <TextView android:id="@+id/mod_desc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif"
+              android:textSize="14sp"
+              android:lineSpacingExtra="6sp"
+              android:layout_marginTop="3dp"
+              android:paddingStart="24dp"
+              android:paddingEnd="24dp"
+              android:text="@string/mod_description"
+              android:textColor="@color/mod_description"/>
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:minWidth="208dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/btn_mod_oobe">
+
+        <LinearLayout
+                android:id="@+id/explore_mod_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="176dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_modguide"
+                    android:layout_margin="8dp"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/mod_explore"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mod_title"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
