@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
   <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">مرحباً بكم في Post-App Era</string>
-  <string name="mod_description">الأوضاع عبارة عن تجارب ذكية، ومدركة وخفيفة الوزن تم بناؤها مباشرة في نظام التشغيل OS. عندما يرى MOD أنه يمكنه المساعدة، سيقوم بتنشيطه لك.</string>
 </resources>

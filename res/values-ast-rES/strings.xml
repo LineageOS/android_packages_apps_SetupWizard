@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
   <string name="sim_locale_changed">%1$s SIM deteutada</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Bienllegáu a la dómina post-app</string>
-  <string name="mod_description">Los Mods son esperiencies intelixentes, conscientes y llixeres construyíes direutamente dientro del SO. Cuando un MOD camiente que pue ayudate, ufriráse p\'activase.</string>
 </resources>

@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">הגדרת מסך נעילה</string>
   <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">ברוכים הבאים לעידן הפוסט-יישום</string>
-  <string name="mod_description">תוספים הם חוויות אינטליגנטיות, מודעות וקלות, שנבנו לתוך מערכת ההפעלה. כאשר תוסף חושב שביכולתו לסייע למשתמש/ת, הוא יציע לך להפעיל את עצמו למענך.</string>
 </resources>
