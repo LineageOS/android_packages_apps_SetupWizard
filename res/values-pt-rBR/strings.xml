@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Bem-vindo à Era Pós-Aplicativos</string>
-  <string name="mod_description">Mods são experiências inteligentes, conscientes e leves incluídas diretamente no sistema operacional. Quando uma MOD acha que pode ajudar, ela se oferece para ativar para você.</string>
 </resources>
