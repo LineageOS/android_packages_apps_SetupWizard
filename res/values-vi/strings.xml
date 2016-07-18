@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
   <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Chào mừng đến với Post-App Era</string>
-  <string name="mod_description">Mod là trải nghiệm thông minh, có nhận thức và trọng lượng nhẹ được tích hợp trực tiếp vào hệ điều hành. Khi MOD cho rằng nó có thể hỗ trợ, nó sẽ cung cấp để kích hoạt chúng cho bạn.</string>
 </resources>

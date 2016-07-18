@@ -80,6 +80,4 @@
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
   <string name="sim_locale_changed">%1$s SIM 인식됨</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">앱 이전 시대에 오신 것을 환영합니다</string>
-  <string name="mod_description">Mod는 운영 체제에 내장된 지능형이고, 인식할 수 있으며 가벼운 경험입니다. Mod가 도울 수 있다고 생각하면, 당신이 활성화할 수 있도록 제공할 것입니다.</string>
 </resources>

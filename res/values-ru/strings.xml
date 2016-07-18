@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">Настроить экран блокировки</string>
   <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Добро пожаловать в эпоху встроенных приложений</string>
-  <string name="mod_description">Моды — это интеллектуальные, контекстно-зависимые и легкие приложения, интегрированные непосредственно в операционную систему. Если MOD полагает, что вам нужна помощь, вам будет предложено активировать мод.</string>
 </resources>

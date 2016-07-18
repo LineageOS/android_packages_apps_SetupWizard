@@ -79,6 +79,4 @@
   <string name="fingerprint_setup_screen_lock_setup">画面のロックをセットアップ</string>
   <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Post-App Eraへようこそ</string>
-  <string name="mod_description">MODはOSに直接組み込まれたスマートで、物分りが良く、軽量なエクスペリアンスです。MODが役に立つと考えたときは、MODを有効にすることを提案します。</string>
 </resources>
