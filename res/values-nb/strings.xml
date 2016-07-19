@@ -20,6 +20,7 @@
   <string name="next">Neste</string>
   <string name="skip">Hopp over</string>
   <string name="start">Start</string>
+  <string name="done">OK</string>
   <string name="ok">Ok</string>
   <string name="loading">vent noen sekunder\u2026</string>
   <string name="setup_complete">Konfigureringen er ferdig</string>
@@ -79,6 +80,7 @@
   <string name="fingerprint_setup_screen_lock_setup">Konfigurere skjermlås</string>
   <string name="sim_locale_changed">%1$s SIM oppdaget</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Velkommen til Post-App Era</string>
-  <string name="mod_description">Mods er intelligente, godtvitende og små erfaringer bygget direkte inn i OSet. Når MOD tenker at den kan hjelpe, vil den anbefale deg å slå den på.</string>
+  <string name="mod_welcome">Enheten din er MOD Klargjort</string>
+  <string name="mod_description">Mods gjør telefonen din raskere, smartere og enklere å bruke. I denne veiledningen, kan du oppdage nye mods, lære om hva de gjør, og aktivere eller deaktivere dem.</string>
+  <string name="mod_explore">Utforsk MOD Veiledning</string>
 </resources>

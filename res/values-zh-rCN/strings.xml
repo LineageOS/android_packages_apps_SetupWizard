@@ -20,6 +20,7 @@
   <string name="next">下一步</string>
   <string name="skip">跳过</string>
   <string name="start">开始</string>
+  <string name="done">完成</string>
   <string name="ok">确定</string>
   <string name="loading">稍等片刻\u2026</string>
   <string name="setup_complete">设置完成</string>
@@ -79,6 +80,7 @@
   <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
   <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">欢迎来到后应用时代</string>
-  <string name="mod_description">模块是智能、有意识、轻量的体验，内置于操作系统中。当模块认为它能提供帮助时，将会自动激活并为您提供服务。</string>
+  <string name="mod_welcome">您的设备已经准备好使用模块</string>
+  <string name="mod_description">模块使您的手机更快、更智能并且更容易使用。在此指南中，您可以探索新的模块，学习它们做些什么，以及启用或禁用它们。</string>
+  <string name="mod_explore">探索模块指南</string>
 </resources>

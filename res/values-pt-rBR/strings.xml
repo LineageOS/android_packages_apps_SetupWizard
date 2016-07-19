@@ -20,6 +20,7 @@
   <string name="next">Próximo</string>
   <string name="skip">Pular</string>
   <string name="start">Início</string>
+  <string name="done">Concluído</string>
   <string name="ok">Ok</string>
   <string name="loading">Aguarde um segundo\u2026</string>
   <string name="setup_complete">Configuração concluída</string>
@@ -79,6 +80,7 @@
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Bem-vindo à Era Pós-Aplicativos</string>
-  <string name="mod_description">Mods são experiências inteligentes, conscientes e leves incluídas diretamente no sistema operacional. Quando uma MOD acha que pode ajudar, ela se oferece para ativar para você.</string>
+  <string name="mod_welcome">Seu dispositivo esta pronto para MOD</string>
+  <string name="mod_description">Mods deixa o seu telefone mais rápido, mais inteligente e mais fácil de usar. Neste guia, você pode descobrir novos mods, aprende o que eles fazem e os ativa ou desativa.</string>
+  <string name="mod_explore">Guia de exploração de MODs</string>
 </resources>
