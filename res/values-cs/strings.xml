@@ -20,6 +20,7 @@
   <string name="next">Další</string>
   <string name="skip">Přeskočit</string>
   <string name="start">Spustit</string>
+  <string name="done">Hotovo</string>
   <string name="ok">OK</string>
   <string name="loading">Jen chvilku\u2026</string>
   <string name="setup_complete">Instalace je dokončena</string>
@@ -79,4 +80,7 @@
   <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
   <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Zařízení je připraveno k použití modů</string>
+  <string name="mod_description">Mody zrychlují, zefektivňují a usnadňují používání telefonu. V této příručce můžete objevit nové mody, naučit se co dělají, povolit je nebo zakázat.</string>
+  <string name="mod_explore">Prozkoumat průvodce modů</string>
 </resources>
