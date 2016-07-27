@@ -20,6 +20,7 @@
   <string name="next">Próximo</string>
   <string name="skip">Saltar</string>
   <string name="start">Início</string>
+  <string name="done">Concluído</string>
   <string name="ok">OK</string>
   <string name="loading">Um momento\u2026</string>
   <string name="setup_complete">A configuração está completa</string>
@@ -79,4 +80,7 @@
   <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">O seu dispositivo está pronto para os MODS</string>
+  <string name="mod_description">Os Mods tornam o seu telefone mais rápido, mais inteligente e mais fácil de usar. Neste guia pode descobrir novos mods, aprender o que eles fazem e ativá-los ou desativá-los.</string>
+  <string name="mod_explore">Explorar o Guia MOD</string>
 </resources>

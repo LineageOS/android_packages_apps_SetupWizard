@@ -19,16 +19,16 @@
   <string name="app_name">Čarobnjak za postavljanje</string>
   <string name="next">Dalje</string>
   <string name="skip">Preskoči</string>
-  <string name="start">Start</string>
+  <string name="start">Započni</string>
   <string name="done">Gotovo</string>
   <string name="ok">U redu</string>
-  <string name="loading">Samo sek\u2026</string>
-  <string name="setup_complete">Postavljanje je završeno</string>
-  <string name="setup_welcome">Dobrodošli</string>
+  <string name="loading">Samo trenutak\u2026</string>
+  <string name="setup_complete">Postavljanje je završeno.</string>
+  <string name="setup_welcome">Dobro došli!</string>
   <string name="setup_wifi">Odaberite Wi-Fi</string>
-  <string name="setup_sim_missing">Nedostaje SIM kartica</string>
-  <string name="setup_choose_data_sim">Odaberite SIM za podatke</string>
-  <string name="setup_location">Lokacijske usluge</string>
+  <string name="setup_sim_missing">Nema SIM kartice</string>
+  <string name="setup_choose_data_sim">Odaberite SIM karticu za podatke</string>
+  <string name="setup_location">Usluge lokacije</string>
   <string name="setup_other">Ostale usluge</string>
   <string name="setup_datetime">Datum i vrijeme</string>
   <string name="setup_current_date">Današnji datum</string>
@@ -54,7 +54,7 @@
   <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Hitan poziv</string>
-  <string name="setup_services">Cijanogen značajke</string>
+  <string name="setup_services">Cyanogenove značajke</string>
   <string name="services_explanation" product="tablet">Ovi servisi rade za tebe da povećaju mogućnosti tvog tableta. Podaci će biti korišteni u suglasnosti sa Cyanogenovim <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_explanation" product="default">Ovi servisi rade za tebe da povećaju mogućnosti tvog telefona. Podaci će biti korišteni u suglasnosti sa Cyanogenovim <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Pravila privatnosti</string>
