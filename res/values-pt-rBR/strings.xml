@@ -45,7 +45,7 @@
   <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
   <string name="location_network"><b>Use Wi-Fi</b> para ajudar aplicativos a determinar a sua localização.</string>
   <string name="location_network_telephony"><b>Use Wi-Fi e redes móveis</b> para ajudar aplicativos a determinar sua localização.</string>
-  <string name="location_network_gms"><b>Use o serviço de localização do Google</b> para ajudar os aplicativos a determinarem sua localização. Isto significa enviar dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver em execução.</string>
+  <string name="location_network_gms"><b>Use o serviço de localização do Google</b> para ajudar os aplicativos a determinar sua localização. Isto significa enviar dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver aberto.</string>
   <string name="setup_mobile_data">Ativar dados celular</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
