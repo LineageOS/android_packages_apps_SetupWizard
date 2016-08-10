@@ -71,12 +71,12 @@
   <string name="setup_warning_skip_anyway">Без Cyanogen налога, нећеш моћи да:\n\nПрилагодиш телефон са новим иконама, тапетама и осталим у апликацији тема\n\nЛоцираш или обришеш телефон на даљину ако га изгубиш</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Изабери резерни тип закључавања екрана</string>
-  <string name="settings_fingerprint_setup_details">Како желиш закључати свој екран?</string>
+  <string name="secure_lockscreen_setup_details">Како желиш закључати свој екран?</string>
   <string name="fingerprint_setup_title">Подешавање отиска прста</string>
   <string name="fingerprint_setup_summary">Да би користили сензор отиска прста за откључавање екрана, требате да:</string>
   <string name="fingerprint_setup_backup_lock_method">Подешавање резервног метода откључавања</string>
   <string name="fingerprint_setup_add_fingerprint">Додај свој отисак</string>
-  <string name="fingerprint_setup_screen_lock_setup">Подешавање закључавања екрана</string>
+  <string name="setup_screen_lock_setup">Подешавање закључавања екрана</string>
   <string name="sim_locale_changed">Откривен %1$s SIM</string>
   <!-- MOD stuff -->
 </resources>

@@ -71,12 +71,12 @@
   <string name="setup_warning_skip_anyway">Χωρίς ένα λογαριασμό Cyanogen OS, δεν θα είστε σε θέση να:\n\nΠροσαρμόσετε το τηλέφωνό σας με νέα εικονίδια, ταπετσαρίες και πολλά άλλα στην εφαρμογή Θεμάτων\n\nΕντοπίσετε ή διαγράψετε εξ αποστάσεως το τηλέφωνό σας εάν το χάσετε</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
-  <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
+  <string name="secure_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
   <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
   <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
   <string name="fingerprint_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
   <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
-  <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
+  <string name="setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
   <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
   <!-- MOD stuff -->
 </resources>

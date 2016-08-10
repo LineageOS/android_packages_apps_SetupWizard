@@ -25,17 +25,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import com.android.internal.widget.LockPatternUtils;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
 import com.cyanogenmod.setupwizard.ui.SetupPageFragment;
 
-public class FingerprintSetupPage extends SetupPage {
+public class ScreenLockSetupPage extends SetupPage {
 
-    private static final String TAG = "FingerprintSetupPage";
+    private static final String TAG = "ScreenLockSetupPage";
 
-    public FingerprintSetupPage(Context context, SetupDataCallbacks callbacks) {
+    public ScreenLockSetupPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
     }
 
@@ -46,7 +45,7 @@ public class FingerprintSetupPage extends SetupPage {
             Bundle args = new Bundle();
             args.putString(Page.KEY_PAGE_ARGUMENT, getKey());
             args.putInt(Page.KEY_PAGE_ACTION, action);
-            fragment = new FingerprintSetupFragment();
+            fragment = new LockscreenSetupFragment();
             fragment.setArguments(args);
         }
         return fragment;
@@ -64,49 +63,43 @@ public class FingerprintSetupPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        return R.string.fingerprint_setup_title;
+        return R.string.lockscreen_setup_title;
     }
 
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (SetupWizardApp.REQUEST_CODE_SETUP_FINGERPRINT == requestCode) {
-            if (resultCode == Activity.RESULT_OK) {
+        if (SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN == requestCode) {
+            if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
                 getCallbacks().onNextPage();
             }
         }
         return true;
     }
 
-    public static class FingerprintSetupFragment extends SetupPageFragment {
+    public static class LockscreenSetupFragment extends SetupPageFragment {
 
-        private TextView mSetupFingerprint;
+        private TextView mSetupLockscreen;
 
         @Override
         protected void initializePage() {
-            mSetupFingerprint = (TextView) mRootView.findViewById(R.id.setup_fingerprint);
-            mSetupFingerprint.setOnClickListener(new View.OnClickListener() {
+            mSetupLockscreen = (TextView) mRootView.findViewById(R.id.setup_lockscreen);
+            mSetupLockscreen.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    launchFingerprintSetup();
+                    launchLockscreenSetup();
                 }
             });
         }
 
         @Override
         protected int getLayoutResource() {
-            return R.layout.setup_fingerprint;
+            return R.layout.setup_lockscreen;
         }
 
-        private void launchFingerprintSetup() {
-            Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_FINGERPRINT);
-            intent.putExtra(SetupWizardApp.EXTRA_FIRST_RUN, true);
-            intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
-            intent.putExtra(SetupWizardApp.EXTRA_USE_IMMERSIVE, true);
-            intent.putExtra(SetupWizardApp.EXTRA_THEME, SetupWizardApp.EXTRA_MATERIAL_LIGHT);
-            intent.putExtra(SetupWizardApp.EXTRA_AUTO_FINISH, false);
-            /*intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);*/
+        private void launchLockscreenSetup() {
+            Intent intent = new Intent(SetupWizardApp.ACTION_SETUP_LOCKSCREEN);
             intent.putExtra(SetupWizardApp.EXTRA_TITLE,
-                    getString(R.string.settings_fingerprint_setup_title));
+                    getString(R.string.settings_lockscreen_setup_title));
             intent.putExtra(SetupWizardApp.EXTRA_DETAILS,
                     getString(R.string.secure_lockscreen_setup_details));
             ActivityOptions options =
@@ -115,8 +108,8 @@ public class FingerprintSetupPage extends SetupPage {
                             android.R.anim.fade_out);
             SetupStats.addEvent(SetupStats.Categories.EXTERNAL_PAGE_LOAD,
                     SetupStats.Action.EXTERNAL_PAGE_LAUNCH,
-                    SetupStats.Label.PAGE,  SetupStats.Label.FINGERPRINT_SETUP);
-            startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_FINGERPRINT,
+                    SetupStats.Label.PAGE,  SetupStats.Label.LOCKSCREEN_SETUP);
+            startActivityForResult(intent, SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN,
                     options.toBundle());
         }
     }

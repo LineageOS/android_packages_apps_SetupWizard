@@ -66,11 +66,11 @@
   <string name="setup_warning_skip_anyway">Ilma Cyanogen OS kontota ei ole sul võimalik:\n\nkohandada oma telefoni ikoone, tasutapilte ja muud Themes rakenduses\n\nLeida või kaugelt puhastada oma kadunud seadet</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Valige alternatiivne ekraani luku tüüp</string>
-  <string name="settings_fingerprint_setup_details">Kuidas soovite ekraani lukustada?</string>
+  <string name="secure_lockscreen_setup_details">Kuidas soovite ekraani lukustada?</string>
   <string name="fingerprint_setup_title">Sõrmejälgede seadistamine</string>
   <string name="fingerprint_setup_summary">Et kasutada sõrmejäljelugejat ekraani avamiseks, peate:</string>
   <string name="fingerprint_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
   <string name="fingerprint_setup_add_fingerprint">Lisa oma sõrmejälg</string>
-  <string name="fingerprint_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
+  <string name="setup_screen_lock_setup">Ekraaniluku seadistamine</string>
   <!-- MOD stuff -->
 </resources>

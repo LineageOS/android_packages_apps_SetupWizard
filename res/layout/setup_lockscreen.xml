@@ -44,36 +44,10 @@
                     android:paddingLeft="@dimen/content_margin_left"
                     android:layout_marginBottom="@dimen/summary_margin_bottom"
                     android:paddingRight="@dimen/location_text_margin_right"
-                    android:text="@string/fingerprint_setup_summary" />
+                    android:text="@string/lockscreen_setup_summary" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="24dp"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:paddingRight="@dimen/location_text_margin_right"
-                    android:drawableStart="@drawable/ic_check_mark"
-                    android:drawablePadding="24dp"
-                    android:gravity="center_vertical"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="@string/fingerprint_setup_backup_lock_method"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="24dp"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:paddingRight="@dimen/location_text_margin_right"
-                    android:drawableStart="@drawable/ic_check_mark"
-                    android:drawablePadding="24dp"
-                    android:gravity="center_vertical"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="@string/fingerprint_setup_add_fingerprint"/>
-
-                <TextView
-                    android:id="@+id/setup_fingerprint"
+                    android:id="@+id/setup_lockscreen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/content_margin_left"
@@ -81,7 +55,7 @@
                     android:gravity="center_vertical"
                     android:textSize="16sp"
                     android:textAllCaps="true"
-                    android:textColor="@color/fingerprint_setup_text_color"
+                    android:textColor="@color/accent"
                     android:text="@string/setup_screen_lock_setup"/>
 
             </LinearLayout>

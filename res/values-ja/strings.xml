@@ -72,12 +72,12 @@
   <string name="setup_warning_skip_anyway">Cyanogen OSアカウントがないと、以下のことができません:\n\nテーマアプリで新しいアイコンや壁紙などで携帯電話をカスタマイズする\n\n紛失時に携帯電話を探したり遠隔操作でデータを消去する</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">予備の画面のロックの種類を選択</string>
-  <string name="settings_fingerprint_setup_details">どのように画面をロックしますか？</string>
+  <string name="secure_lockscreen_setup_details">どのように画面をロックしますか？</string>
   <string name="fingerprint_setup_title">指紋のセットアップ</string>
   <string name="fingerprint_setup_summary">指紋センターを画面のロック解除に使用するには、以下のことを行う必要があります:</string>
   <string name="fingerprint_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
   <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
-  <string name="fingerprint_setup_screen_lock_setup">画面のロックをセットアップ</string>
+  <string name="setup_screen_lock_setup">画面のロックをセットアップ</string>
   <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
   <!-- MOD stuff -->
 </resources>

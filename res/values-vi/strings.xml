@@ -71,12 +71,12 @@
   <string name="setup_warning_skip_anyway">Không có tài khoản Cyanogen OS, bạn sẽ không thể:\n\nTùy chỉnh điện thoại với những biểu tượng, hình nền và nhiều thứ khác trong ứng dụng Chủ đề\n\nĐịnh vị hoặc xoá điện thoại của bạn từ xa nếu bị mất</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Chọn kiểu khóa màn hình dự phòng</string>
-  <string name="settings_fingerprint_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
+  <string name="secure_lockscreen_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
   <string name="fingerprint_setup_title">Thiết lập vân tay</string>
   <string name="fingerprint_setup_summary">Để sử dụng cảm biến vân tay của bạn để mở khóa màn hình của bạn, bạn sẽ cần phải:</string>
   <string name="fingerprint_setup_backup_lock_method">Thiết lập phương thức mở khóa phụ</string>
   <string name="fingerprint_setup_add_fingerprint">Thêm vân tay của bạn</string>
-  <string name="fingerprint_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
+  <string name="setup_screen_lock_setup">Thiết lập khóa màn hình</string>
   <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
   <!-- MOD stuff -->
 </resources>

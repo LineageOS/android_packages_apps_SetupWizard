@@ -63,11 +63,11 @@
   <string name="setup_warning_skip_anyway">如果不創建 Cyanogen OS 帳戶，您將會：\n\n無法套用主題應用程式內的新圖示、牆紙和其他內容以自訂手機\n\n無法定位或在遺失手機時遠端清除手機內容</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">選擇備用螢幕鎖類型</string>
-  <string name="settings_fingerprint_setup_details">您希望如何鎖定螢幕？</string>
+  <string name="secure_lockscreen_setup_details">您希望如何鎖定螢幕？</string>
   <string name="fingerprint_setup_title">指紋感應設定</string>
   <string name="fingerprint_setup_summary">若要使用指紋感應器來解鎖螢幕，您需要：</string>
   <string name="fingerprint_setup_backup_lock_method">設定第二個解鎖方式</string>
   <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
-  <string name="fingerprint_setup_screen_lock_setup">設定螢幕鎖定</string>
+  <string name="setup_screen_lock_setup">設定螢幕鎖定</string>
   <!-- MOD stuff -->
 </resources>

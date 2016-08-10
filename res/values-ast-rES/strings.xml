@@ -71,12 +71,12 @@
   <string name="setup_warning_skip_anyway">Ensin una cuenta de Cyanogen OS, nun vas poder: \n\nPersonalizar el to teléfonu con iconos nuevos, fondos de pantalla y muncho más al traviés de l\'aplicación de temes\n\nDesaniciar el teléfonu llocalmente o de manera remota si se perdió</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Esbilla\'l tipu de copia de seguranza de pantalla de bloquéu</string>
-  <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
+  <string name="secure_lockscreen_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
   <string name="fingerprint_setup_title">Configuración del buelga</string>
   <string name="fingerprint_setup_summary">Pa usar el to sensor de buelgues pa desbloquiar la to pantalla, necesitarás:</string>
   <string name="fingerprint_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
   <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
-  <string name="fingerprint_setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
+  <string name="setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
   <string name="sim_locale_changed">%1$s SIM deteutada</string>
   <!-- MOD stuff -->
 </resources>

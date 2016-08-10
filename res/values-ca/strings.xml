@@ -72,12 +72,12 @@
   <string name="setup_warning_skip_anyway">Sense un compte Cyanogen OS, no podràs:\n\nPersonalitzar el teu telèfon amb noves icones, fons de pantalla i més en l\'aplicació de Temes\n\nLocalitzar o esborrar remotament el teu telèfon si el perds</string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecciona el tipus de bloqueig de pantalla de reserva</string>
-  <string name="settings_fingerprint_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
+  <string name="secure_lockscreen_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
   <string name="fingerprint_setup_title">Configuració de l\'empremta digital</string>
   <string name="fingerprint_setup_summary">Per utilitzar el teu sensor d\'empremtes digitals per desbloquejar la pantalla, hauràs de:</string>
   <string name="fingerprint_setup_backup_lock_method">Configura el mètode de desbloqueig alternatiu</string>
   <string name="fingerprint_setup_add_fingerprint">Afegeix la teva empremta digital</string>
-  <string name="fingerprint_setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
+  <string name="setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">El teu dispositiu està llest pel MOD</string>
