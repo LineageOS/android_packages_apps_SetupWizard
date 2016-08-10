@@ -77,5 +77,10 @@
   <string name="fingerprint_setup_add_fingerprint">Lägga till ditt fingeravtryck</string>
   <string name="fingerprint_setup_screen_lock_setup">Konfigurera skärmlås</string>
   <string name="sim_locale_changed">%1$s SIM upptäckt</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Skydda mobilen</string>
+  <string name="lockscreen_setup_summary"><b>Skydda den här enheten</b> och kräv pinkod, mönster eller lösenord för att låsa upp skärmen</string>
+  <string name="lockscreen_setup_screen_lock_setup">Konfigurera pinkod, mönster eller lösenord</string>
   <!-- MOD stuff -->
 </resources>

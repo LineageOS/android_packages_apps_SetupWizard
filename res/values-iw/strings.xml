@@ -79,5 +79,10 @@
   <string name="fingerprint_setup_add_fingerprint">הוסף את טביעת האצבע שלך</string>
   <string name="fingerprint_setup_screen_lock_setup">הגדרת מסך נעילה</string>
   <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">הגן על הטלפון שלך</string>
+  <string name="lockscreen_setup_summary"><b>הגן על מכשיר זה</b> ודרוש קוד אימות, קו או סיסמה לביטול נעילת המסך.</string>
+  <string name="lockscreen_setup_screen_lock_setup">‏הגדר PIN, קו ביטול נעילה או סיסמה</string>
   <!-- MOD stuff -->
 </resources>

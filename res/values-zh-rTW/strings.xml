@@ -70,5 +70,10 @@
   <string name="fingerprint_setup_add_fingerprint">新增你的指紋感應</string>
   <string name="fingerprint_setup_screen_lock_setup">設置螢幕鎖定</string>
   <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">保護您的手機</string>
+  <string name="lockscreen_setup_summary"><b>保護這個裝置</b>，並要求使用 PIN、解鎖圖形或密碼解除螢幕鎖定</string>
+  <string name="lockscreen_setup_screen_lock_setup">設定 PIN、解鎖圖形或密碼</string>
   <!-- MOD stuff -->
 </resources>

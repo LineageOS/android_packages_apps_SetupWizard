@@ -79,6 +79,11 @@
   <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
   <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
   <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Chraňte svůj telefon</string>
+  <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
+  <string name="lockscreen_setup_screen_lock_setup">Nastavit kód PIN, gesto nebo heslo</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">Zařízení je připraveno k použití modů</string>
   <string name="mod_description">Mody zrychlují, zefektivňují a usnadňují používání telefonu. V této příručce můžete objevit nové mody, naučit se co dělají, povolit je nebo zakázat.</string>

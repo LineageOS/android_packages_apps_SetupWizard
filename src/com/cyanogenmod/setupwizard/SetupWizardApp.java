@@ -43,6 +43,7 @@ public class SetupWizardApp extends Application {
     public static final String ACTION_VIEW_LEGAL = "cyanogenmod.intent.action.LEGALESE";
 
     public static final String ACTION_SETUP_FINGERPRINT = "android.settings.FINGERPRINT_SETUP";
+    public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
 
     public static final String EXTRA_FIRST_RUN = "firstRun";
     public static final String EXTRA_ALLOW_SKIP = "allowSkip";
@@ -76,6 +77,7 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_UNLOCK = 6;
     public static final int REQUEST_CODE_SETUP_FINGERPRINT = 7;
     public static final int REQUEST_CODE_VENDOR_SETUP_GMS = 8;
+    public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
