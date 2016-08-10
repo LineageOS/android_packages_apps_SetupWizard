@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">เพิ่มลายนิ้วมือของคุณ</string>
   <string name="fingerprint_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
   <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">ปกป้องโทรศัพท์ของคุณ</string>
+  <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>
+  <string name="lockscreen_setup_screen_lock_setup">ตั้งค่า PIN, รูปแบบ หรือรหัสผ่าน</string>
   <!-- MOD stuff -->
 </resources>

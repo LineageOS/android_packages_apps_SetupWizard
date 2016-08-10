@@ -77,5 +77,10 @@
   <string name="fingerprint_setup_add_fingerprint">Adja hozzá ujjlenyomatát</string>
   <string name="fingerprint_setup_screen_lock_setup">Képernyőzár beállítása</string>
   <string name="sim_locale_changed">%1$s SIM észlelve</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Óvja meg telefonját</string>
+  <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
+  <string name="lockscreen_setup_screen_lock_setup">PIN kód, minta vagy jelszó beállítása</string>
   <!-- MOD stuff -->
 </resources>
