@@ -77,5 +77,10 @@
   <string name="fingerprint_setup_add_fingerprint">तुमचा बोटाचा ठसा जोडा</string>
   <string name="fingerprint_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करा</string>
   <string name="sim_locale_changed">%1$s सिम आढळले</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">आपला फोन संरक्षित करा</string>
+  <string name="lockscreen_setup_summary"><b>हे डिव्हाइस संरक्षित करा</b> आणि स्क्रीन अनलॉक करण्यासाठी पिन, नमुना किंवा संकेतशब्द आवश्यक आहे</string>
+  <string name="lockscreen_setup_screen_lock_setup">पिन, नमुना किंवा संकेतशब्द सेट करा</string>
   <!-- MOD stuff -->
 </resources>

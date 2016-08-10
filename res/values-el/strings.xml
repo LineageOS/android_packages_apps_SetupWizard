@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
   <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
   <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Προστατέψτε το τηλέφωνό σας</string>
+  <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
+  <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση PIN, μοτίβου ή κωδικού πρόσβασης</string>
   <!-- MOD stuff -->
 </resources>

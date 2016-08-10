@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">Añade tu huella digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Protege tu teléfono</string>
+  <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> y establecer un PIN, un patrón o una contraseña para desbloquear la pantalla</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configurar PIN, patrón o contraseña</string>
   <!-- MOD stuff -->
 </resources>

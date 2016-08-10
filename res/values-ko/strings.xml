@@ -79,5 +79,10 @@
   <string name="fingerprint_setup_add_fingerprint">지문 추가</string>
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
   <string name="sim_locale_changed">%1$s SIM 인식됨</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">휴대전화 보호</string>
+  <string name="lockscreen_setup_summary"><b>이 기기를 보호</b>하고 화면 잠금 해제용 PIN, 패턴 또는 비밀번호 요청</string>
+  <string name="lockscreen_setup_screen_lock_setup">PIN, 패턴 또는 비밀번호 설정하기</string>
   <!-- MOD stuff -->
 </resources>
