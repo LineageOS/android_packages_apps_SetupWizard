@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">Thêm vân tay của bạn</string>
   <string name="fingerprint_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
   <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Bảo vệ điện thoại của bạn</string>
+  <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
+  <string name="lockscreen_setup_screen_lock_setup">Thiết lập mã PIN, hình hoặc mật khẩu</string>
   <!-- MOD stuff -->
 </resources>
