@@ -79,6 +79,11 @@
   <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
   <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
   <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Защитете телефона си</string>
+  <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
+  <string name="lockscreen_setup_screen_lock_setup">Настройване на ПИН код, фигура или парола</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">Вашето устройство е готово за модификация</string>
   <string name="mod_description">Модулите ще направят в телефона по-бърз, по-умен и лесен за употреба. В това ръководство можете да откриете нови модове, да научите какво те правят и как да ги активирате и деактивирате.</string>

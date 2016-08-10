@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">Додај свој отисак</string>
   <string name="fingerprint_setup_screen_lock_setup">Подешавање закључавања екрана</string>
   <string name="sim_locale_changed">Откривен %1$s SIM</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Заштитите телефон</string>
+  <string name="lockscreen_setup_summary"><b>Заштитите уређај</b> и поставите PIN, шаблон или лозинку за откључавање екрана</string>
+  <string name="lockscreen_setup_screen_lock_setup">Подеси PIN, шаблон или лозинку</string>
   <!-- MOD stuff -->
 </resources>

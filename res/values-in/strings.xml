@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari Anda</string>
   <string name="fingerprint_setup_screen_lock_setup">Siapkan kunci layar</string>
   <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Lindungi ponsel</string>
+  <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
+  <string name="lockscreen_setup_screen_lock_setup">Siapkan PIN, pola, atau sandi</string>
   <!-- MOD stuff -->
 </resources>
