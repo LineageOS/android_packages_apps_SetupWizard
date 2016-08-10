@@ -78,6 +78,11 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Proteger seu smartphone</string>
+  <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configurar PIN, padrão ou senha</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">Bem-vindo à Era Pós-Aplicativos</string>
   <string name="mod_description">Mods são experiências inteligentes, conscientes e leves incluídas diretamente no sistema operacional. Quando uma MOD acha que pode ajudar, ela se oferece para ativar para você.</string>

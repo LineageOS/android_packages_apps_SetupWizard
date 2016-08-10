@@ -78,5 +78,10 @@
   <string name="fingerprint_setup_add_fingerprint">Dodać swój odcisk palca</string>
   <string name="fingerprint_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
   <string name="sim_locale_changed">Wykryto %1$s SIM</string>
+
+  <!-- secure lock screen -->
+  <string name="lockscreen_setup_title">Zabezpiecz telefon</string>
+  <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
+  <string name="lockscreen_setup_screen_lock_setup">Ustaw PIN, wzorzec lub hasło</string>
   <!-- MOD stuff -->
 </resources>
