@@ -78,9 +78,6 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Proteger o seu telemóvel</string>
-  <string name="lockscreen_setup_summary"><b>Proteja este disp.</b> e exija um PIN, seq. ou palavra-passe para desbloq. o ecrã</string>
-  <string name="lockscreen_setup_screen_lock_setup">Configurar PIN, sequência ou palavra-passe</string>
+  <string name="settings_lockscreen_setup_details">Como gostaria de bloquear o seu ecrã?</string>
 </resources>
