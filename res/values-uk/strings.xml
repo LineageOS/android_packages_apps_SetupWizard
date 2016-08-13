@@ -73,5 +73,7 @@
   <string name="fingerprint_setup_backup_lock_method">Установка резервного методу розблокування</string>
   <string name="fingerprint_setup_add_fingerprint">Додати ваш відбиток пальця</string>
   <string name="fingerprint_setup_screen_lock_setup">Налаштування блокування екрану</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Як би ви хотіли блокувати екран?</string>
   <!-- MOD stuff -->
 </resources>

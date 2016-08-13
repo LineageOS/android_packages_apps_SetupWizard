@@ -73,5 +73,7 @@
   <string name="fingerprint_setup_backup_lock_method">Setup a secondary unlock method</string>
   <string name="fingerprint_setup_add_fingerprint">Add your fingerprint</string>
   <string name="fingerprint_setup_screen_lock_setup">Setup screen lock</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">How would you like to lock your screen?</string>
   <!-- MOD stuff -->
 </resources>

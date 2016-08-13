@@ -79,8 +79,8 @@
   <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
   <string name="fingerprint_setup_screen_lock_setup">画面のロックをセットアップ</string>
   <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
   <string name="lockscreen_setup_title">スマートフォンの保護</string>
   <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
   <string name="lockscreen_setup_screen_lock_setup">PIN、パターン、またはパスワードの設定</string>

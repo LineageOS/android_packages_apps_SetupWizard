@@ -72,5 +72,7 @@
   <string name="fingerprint_setup_backup_lock_method">Nustatyti antrinį atrakinimo metodą</string>
   <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
   <string name="fingerprint_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
   <!-- MOD stuff -->
 </resources>
