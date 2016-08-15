@@ -72,5 +72,7 @@
   <string name="fingerprint_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
   <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
   <string name="fingerprint_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
   <!-- MOD stuff -->
 </resources>

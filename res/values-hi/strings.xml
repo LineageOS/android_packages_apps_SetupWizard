@@ -72,5 +72,7 @@
   <string name="fingerprint_setup_backup_lock_method">अनलॉक करने की कोई दूसरी विधि भी सेट अप करें</string>
   <string name="fingerprint_setup_add_fingerprint">अपनी अँगुली छाप जोड़ें</string>
   <string name="fingerprint_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करें</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">आप अपने स्क्रीन को किस तरह से लॉक करना चाहेंगे?</string>
   <!-- MOD stuff -->
 </resources>

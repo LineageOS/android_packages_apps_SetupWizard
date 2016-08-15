@@ -20,5 +20,6 @@
   <string name="setup_mobile_data">Turn on mobile data</string>
   <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on mobile data may be subject to data charges.</string>
   <!-- Fingerprint setup -->
+  <!-- secure lock screen -->
   <!-- MOD stuff -->
 </resources>

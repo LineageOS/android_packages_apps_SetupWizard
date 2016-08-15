@@ -79,8 +79,9 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Selecione o tipo de bloqueio de tela</string>
+  <string name="settings_lockscreen_setup_details">Como você gostaria de bloquear a tela?</string>
   <string name="lockscreen_setup_title">Proteger seu smartphone</string>
   <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
   <string name="lockscreen_setup_screen_lock_setup">Configurar PIN, padrão ou senha</string>
