@@ -79,9 +79,12 @@
   <string name="fingerprint_setup_screen_lock_setup">Képernyőzár beállítása</string>
   <string name="sim_locale_changed">%1$s SIM észlelve</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
   <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
   <string name="lockscreen_setup_title">Óvja meg telefonját</string>
   <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
   <string name="lockscreen_setup_screen_lock_setup">PIN kód, minta vagy jelszó beállítása</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Üdvözöljük a Post-App korszakban</string>
+  <string name="mod_description">Módosítások közvetlenül a rendszerbe épített intelligens, tájékozott és könnyű tapasztalatok. Ha a MOD úgy gondolja, hogy hasznos lehet az Ön számára, fel fogja ajánlani, hogy aktiválja őket.</string>
 </resources>
