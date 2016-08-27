@@ -77,9 +77,9 @@
   <string name="fingerprint_setup_add_fingerprint">Uw vingerafdruk toe te voegen</string>
   <string name="fingerprint_setup_screen_lock_setup">Schermvergrendeling in te stellen</string>
   <string name="sim_locale_changed">%1$s simkaart gedetecteerd</string>
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Bescherm je telefoon</string>
+  <string name="settings_lockscreen_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
+  <string name="lockscreen_setup_title">Bescherm uw telefoon</string>
   <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
   <string name="lockscreen_setup_screen_lock_setup">Pincode, patroon of wachtwoord instellen</string>
   <!-- MOD stuff -->

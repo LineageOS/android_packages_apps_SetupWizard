@@ -79,11 +79,12 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Proteger o seu telemóvel</string>
-  <string name="lockscreen_setup_summary"><b>Proteja este disp.</b> e exija um PIN, seq. ou palavra-passe para desbloq. o ecrã</string>
-  <string name="lockscreen_setup_screen_lock_setup">Configurar PIN, sequência ou palavra-passe</string>
+  <string name="settings_lockscreen_setup_title">Selecionar o tipo de bloqueio do ecrã</string>
+  <string name="settings_lockscreen_setup_details">Como gostaria de bloquear o seu ecrã?</string>
+  <string name="lockscreen_setup_title">Proteja o seu telefone</string>
+  <string name="lockscreen_setup_summary"><b>Protejer este dispositivo</b> ao exigir um código PIN, padrão ou palavra-passe para desbloqueio do ecrã</string>
+  <string name="lockscreen_setup_screen_lock_setup">Definir um código PIN, padrão ou palavra-passe</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">O seu dispositivo está pronto para os MODS</string>
   <string name="mod_description">Os Mods tornam o seu telefone mais rápido, mais inteligente e mais fácil de usar. Neste guia pode descobrir novos mods, aprender o que eles fazem e ativá-los ou desativá-los.</string>

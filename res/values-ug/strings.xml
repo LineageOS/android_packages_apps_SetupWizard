@@ -77,5 +77,7 @@
   <string name="fingerprint_setup_add_fingerprint">بارماق ئىزى قوشۇڭ</string>
   <string name="fingerprint_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
   <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
   <!-- MOD stuff -->
 </resources>

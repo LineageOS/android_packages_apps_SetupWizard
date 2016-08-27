@@ -79,8 +79,9 @@
   <string name="fingerprint_setup_add_fingerprint">Afegeix la teva empremta digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
   <string name="sim_locale_changed">%1$s SIM detectada</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Selecciona el tipus de bloqueig de pantalla</string>
+  <string name="settings_lockscreen_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
   <string name="lockscreen_setup_title">Protegeix el teu telèfon</string>
   <string name="lockscreen_setup_summary"><b>Protegeix el dispositiu</b> i estableix un PIN, un patró o una contrasenya per desbloquejar la pantalla</string>
   <string name="lockscreen_setup_screen_lock_setup">Configura el PIN, el patró o la contrasenya</string>

@@ -20,6 +20,7 @@
   <string name="next">Следеће</string>
   <string name="skip">Прескочи</string>
   <string name="start">Почетак</string>
+  <string name="done">Завршено</string>
   <string name="ok">OK</string>
   <string name="loading">Само секунд\u2026</string>
   <string name="setup_complete">Подешавање је завршено</string>
@@ -78,8 +79,8 @@
   <string name="fingerprint_setup_add_fingerprint">Додај свој отисак</string>
   <string name="fingerprint_setup_screen_lock_setup">Подешавање закључавања екрана</string>
   <string name="sim_locale_changed">Откривен %1$s SIM</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Како желиш закључати свој екран?</string>
   <string name="lockscreen_setup_title">Заштитите телефон</string>
   <string name="lockscreen_setup_summary"><b>Заштитите уређај</b> и поставите PIN, шаблон или лозинку за откључавање екрана</string>
   <string name="lockscreen_setup_screen_lock_setup">Подеси PIN, шаблон или лозинку</string>

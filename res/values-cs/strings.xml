@@ -79,8 +79,9 @@
   <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
   <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
   <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
+  <string name="settings_lockscreen_setup_details">Jak chcete zamykat obrazovku?</string>
   <string name="lockscreen_setup_title">Chraňte svůj telefon</string>
   <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
   <string name="lockscreen_setup_screen_lock_setup">Nastavit kód PIN, gesto nebo heslo</string>

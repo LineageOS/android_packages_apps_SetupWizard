@@ -78,10 +78,8 @@
   <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
   <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
   <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">حماية هاتفك</string>
+  <string name="settings_lockscreen_setup_details">كيف تريد إقفال الشاشة؟</string>
   <string name="lockscreen_setup_summary"><b>حماية هذا الجهاز</b> وطلب رقم تعريف شخصي أو نمط أو كلمة مرور لإلغاء قفل الشاشة.</string>
-  <string name="lockscreen_setup_screen_lock_setup">إعداد رقم تعريف شخصي أو نمط أو كلمة مرور</string>
   <!-- MOD stuff -->
 </resources>
