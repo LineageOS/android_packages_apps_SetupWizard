@@ -79,8 +79,9 @@
   <string name="fingerprint_setup_add_fingerprint">Aggiungere un\'impronta</string>
   <string name="fingerprint_setup_screen_lock_setup">Imposta una schermata di blocco</string>
   <string name="sim_locale_changed">%1$s SIM rilevata</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Seleziona il tipo di schermata di blocco</string>
+  <string name="settings_lockscreen_setup_details">Come vuoi bloccare lo schermo?</string>
   <string name="lockscreen_setup_title">Proteggi il tuo telefono</string>
   <string name="lockscreen_setup_summary"><b>Proteggi il dispositivo</b> e richiedi PIN, sequenza o password per sbloccare schermo</string>
   <string name="lockscreen_setup_screen_lock_setup">Configura PIN, sequenza o password</string>

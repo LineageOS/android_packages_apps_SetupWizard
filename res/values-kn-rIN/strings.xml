@@ -77,8 +77,8 @@
   <string name="fingerprint_setup_add_fingerprint">ನಿಮ್ಮ ಫಿಂಗರ್‍ಪ್ರಿಂಟನ್ನು ಸೇರಿಸಿ</string>
   <string name="fingerprint_setup_screen_lock_setup">ಪರದೆ ಲಾಕ್ ಸೆಟಪ್ ಮಾಡಿ</string>
   <string name="sim_locale_changed">%1$s SIM ಗುರುತಿಸಲ್ಪಟ್ಟಿದೆ</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">ನಿಮ್ಮ ಪರದೆಯನ್ನು ನೀವು ಹೇಗೆ ಲಾಕ್ ಮಾಡಲು ಬಯಸುವಿರಿ?</string>
   <string name="lockscreen_setup_title">ನಿಮ್ಮ ಫೋನನ್ನು ರಕ್ಷಿಸಿ</string>
   <string name="lockscreen_setup_summary"><b>ಸಾಧನ ರಕ್ಷಿಸಿ</b>. ಸ್ಕ್ರೀನ್‌ ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಪಿನ್, ಪ್ಯಾಟರ್ನ್, ಪಾಸ್‌ವರ್ಡ್ ಬೇಕಾಗುತ್ತದೆ</string>
   <string name="lockscreen_setup_screen_lock_setup">ಪಿನ್, ನಮೂನೆ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್‌ ಹೊಂದಿಸಿ</string>

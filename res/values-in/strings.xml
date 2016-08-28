@@ -20,6 +20,7 @@
   <string name="next">Berikutnya</string>
   <string name="skip">Lewati</string>
   <string name="start">Mulai</string>
+  <string name="done">Selesai</string>
   <string name="ok">OKE</string>
   <string name="loading">Hanya sec\u2026</string>
   <string name="setup_complete">Penyiapan selesai</string>
@@ -45,10 +46,10 @@
   <string name="location_network"><b>Penggunaan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
   <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan seluler</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
   <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi Anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>
-  <string name="setup_mobile_data">Nyalakan data seluler</string>
+  <string name="setup_mobile_data">Hidupkan data selular</string>
   <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
   <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
-  <string name="enable_mobile_data_summary">Apakah Anda ingin menggunakan data seluler selama penyiapan? Menyalakan data seluler dapat dikenakan biaya data.</string>
+  <string name="enable_mobile_data_summary">Apakah anda ingin menggunakan data seluler selama penyiapan? Menghidupkan data seluler dapat dikenakan biaya data.</string>
   <string name="no">Tidak</string>
   <string name="yes">Ya</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -78,10 +79,14 @@
   <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari Anda</string>
   <string name="fingerprint_setup_screen_lock_setup">Siapkan kunci layar</string>
   <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
-
   <!-- secure lock screen -->
-  <string name="lockscreen_setup_title">Lindungi ponsel</string>
+  <string name="settings_lockscreen_setup_title">Pilih tipe kunci layar</string>
+  <string name="settings_lockscreen_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
+  <string name="lockscreen_setup_title">Lindungi telepon anda</string>
   <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
   <string name="lockscreen_setup_screen_lock_setup">Siapkan PIN, pola, atau sandi</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Perangkat anda sudah siap MOD</string>
+  <string name="mod_description">Modifikasi membuat telepon anda lebih cepat, lebih cerdas, dan mudah digunakan. Dalam panduan ini, anda dapat menemukan modifikasi baru, belajar apa yang mereka lakukan, dan mengaktifkan atau menonaktifkan mereka.</string>
+  <string name="mod_explore">Jelajahi panduan MOD</string>
 </resources>

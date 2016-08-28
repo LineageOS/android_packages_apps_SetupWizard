@@ -20,6 +20,7 @@
   <string name="next">Επόμενο</string>
   <string name="skip">Παράλειψη</string>
   <string name="start">Έναρξη</string>
+  <string name="done">Ολοκληρώθηκε</string>
   <string name="ok">ΟΚ</string>
   <string name="loading">Μισό λεπτό\u2026</string>
   <string name="setup_complete">Η εγκατάσταση ολοκληρώθηκε</string>
@@ -78,10 +79,14 @@
   <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
   <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
   <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
+  <string name="settings_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
   <string name="lockscreen_setup_title">Προστατέψτε το τηλέφωνό σας</string>
   <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
   <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση PIN, μοτίβου ή κωδικού πρόσβασης</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Η συσκευή σας είναι έτοιμη για MOD</string>
+  <string name="mod_description">Τα mod κάνουν το τηλέφωνό σας πιο γρήγορο, πιο έξυπνο και πιο εύκολο στη χρήση. Σε αυτόν τον οδηγό, μπορείτε να ανακαλύψετε νέα mod, να μάθετε τι κάνουν, και να τα ενεργοποιήσετε ή να τα απενεργοποιήσετε.</string>
+  <string name="mod_explore">Εξερευνήστε τον οδηγό MOD</string>
 </resources>

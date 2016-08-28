@@ -20,6 +20,7 @@
   <string name="next">Suivant</string>
   <string name="skip">Ignorer</string>
   <string name="start">Commencer</string>
+  <string name="done">Effectué</string>
   <string name="ok">OK</string>
   <string name="loading">Juste une seconde\u2026</string>
   <string name="setup_complete">Configuration terminée</string>
@@ -78,10 +79,10 @@
   <string name="fingerprint_setup_add_fingerprint">Ajouter votre empreinte digitale</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'écran</string>
   <string name="sim_locale_changed">%1$s carte SIM détectée</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
   <string name="lockscreen_setup_title">Protéger votre téléphone</string>
-  <string name="lockscreen_setup_summary"><b>"Protéger l'appareil"</b>" et exiger code, schéma ou mot de passe pour déverrouiller l'écran"</string>
+  <string name="lockscreen_setup_summary"><b>"Protéger l\'appareil"</b>\" et exiger code, schéma ou mot de passe pour déverrouiller l\'écran\"</string>
   <string name="lockscreen_setup_screen_lock_setup">Configurer un code, un schéma ou un mot de passe</string>
   <!-- MOD stuff -->
 </resources>

@@ -72,5 +72,7 @@
   <string name="fingerprint_setup_backup_lock_method">Eng zweet Entspärmethod ariichten</string>
   <string name="fingerprint_setup_add_fingerprint">Däi Fangerofdrock dobäisetzen</string>
   <string name="fingerprint_setup_screen_lock_setup">D\'Schiermspär ariichten</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Wéi wëlls du däi Schierm spären?</string>
   <!-- MOD stuff -->
 </resources>
