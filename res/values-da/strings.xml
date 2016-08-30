@@ -20,6 +20,7 @@
   <string name="next">Næste</string>
   <string name="skip">Spring over</string>
   <string name="start">Start</string>
+  <string name="done">Gem</string>
   <string name="ok">OK</string>
   <string name="loading">Lige et øjeblik\u2026</string>
   <string name="setup_complete">Installationen er fuldført</string>
@@ -79,9 +80,13 @@
   <string name="fingerprint_setup_screen_lock_setup">Konfigurere skærmlås</string>
   <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
   <string name="settings_lockscreen_setup_details">Hvordan vil du gerne låse din skærm?</string>
   <string name="lockscreen_setup_title">Beskyt din telefon</string>
   <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv pinkode, mønster eller adgangskode for at låse skærmen op</string>
   <string name="lockscreen_setup_screen_lock_setup">Konfigurer pinkode, mønster eller adgangskode</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Din enhed er MOD Klar</string>
+  <string name="mod_description">Mods gør din telefon hurtigere, smartere og nemmere at bruge. I denne guide kan du udforske nye mods, lære hvad de gør, og aktivere eller deaktivere dem.</string>
+  <string name="mod_explore">Udforsk MOD Guide</string>
 </resources>
