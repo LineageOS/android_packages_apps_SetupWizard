@@ -84,4 +84,6 @@
   <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
   <string name="lockscreen_setup_screen_lock_setup">Ustaw PIN, wzorzec lub hasło</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Witamy w erze Post-App</string>
+  <string name="mod_description">Modyfikacje są inteligentne, świadome i przyjemne a przy tym wbudowane bezpośrednio w system. Kiedy MOD pomyśli, że mogą być pożyteczne dla Ciebie, zaproponuje Ci ich aktywację.</string>
 </resources>
