@@ -188,7 +188,7 @@ public class ChooseDataSimPage extends SetupPage {
             super.onCreate(savedInstanceState);
             mContext = getActivity().getApplicationContext();
             mSubscriptionManager = SubscriptionManager.from(mContext);
-            mCurrentDataSubId = mSubscriptionManager.getDefaultDataSubId();
+            mCurrentDataSubId = mSubscriptionManager.getDefaultSubscriptionId();
             if (sChangingToDataSubId == -1) {
                 sChangingToDataSubId = mCurrentDataSubId;
             }
@@ -256,7 +256,7 @@ public class ChooseDataSimPage extends SetupPage {
 
                 @Override
                 public void onDataConnectionStateChanged(int state) {
-                    final int dataSubId = mSubscriptionManager.getDefaultDataSubId();
+                    final int dataSubId = mSubscriptionManager.getDefaultSubscriptionId();
                     // In case the default sub changes from elsewhere. This shouldn't happen,
                     // but testcases can induce this.
                     if (dataSubId != mCurrentDataSubId &&
@@ -370,7 +370,7 @@ public class ChooseDataSimPage extends SetupPage {
             if (mIsAttached) {
                 for (int i = 0; i < mSubInfoRecords.size(); i++) {
                     SubscriptionInfo subInfoRecord = mSubInfoRecords.valueAt(i);
-                    mCheckBoxes.get(i).setChecked(mSubscriptionManager.getDefaultDataSubId()
+                    mCheckBoxes.get(i).setChecked(mSubscriptionManager.getDefaultSubscriptionId()
                             == subInfoRecord.getSubscriptionId());
                 }
             }
@@ -395,7 +395,7 @@ public class ChooseDataSimPage extends SetupPage {
 
         private void updateCarrierText(SubscriptionInfo subInfoRecord) {
             if (mIsAttached) {
-                String name = mPhone.getSimOperatorNameForSubscription(subInfoRecord.getSubscriptionId());
+                String name = mPhone.getSimOperatorName(subInfoRecord.getSubscriptionId());
                 if (TextUtils.isEmpty(name)) {
                     name = mPhone.getNetworkOperatorName(subInfoRecord.getSubscriptionId());
                 }

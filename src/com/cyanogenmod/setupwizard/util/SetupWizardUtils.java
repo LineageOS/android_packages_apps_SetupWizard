@@ -27,7 +27,7 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
-import android.os.UserHandle;
+import android.os.Binder;
 import android.os.UserManager;
 import android.service.persistentdata.PersistentDataBlockManager;
 import android.telephony.ServiceState;
@@ -92,7 +92,7 @@ public class SetupWizardUtils {
             int phoneId = SubscriptionManager.from(context).getDefaultDataPhoneId();
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
-            int subId = SubscriptionManager.getDefaultDataSubId();
+            int subId = SubscriptionManager.getDefaultDataSubscriptionId();
             tm.setDataEnabled(subId, enabled);
         } else {
             android.provider.Settings.Global.putInt(context.getContentResolver(),
@@ -190,7 +190,7 @@ public class SetupWizardUtils {
     }
 
     public static boolean isOwner() {
-        return UserHandle.getCallingUserHandle().isOwner();
+        return Binder.getCallingUserHandle().isOwner();
     }
 
     public static boolean hasGMS(Context context) {

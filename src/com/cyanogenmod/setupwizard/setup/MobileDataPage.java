@@ -110,7 +110,7 @@ public class MobileDataPage extends SetupPage {
         };
 
         private PhoneStateListener mPhoneStateListener =
-                new PhoneStateListener(SubscriptionManager.getDefaultDataSubId()) {
+                new PhoneStateListener(SubscriptionManager.getDefaultSubscriptionId()) {
 
                     @Override
                     public void onSignalStrengthsChanged(SignalStrength signalStrength) {
@@ -241,10 +241,9 @@ public class MobileDataPage extends SetupPage {
 
         private void updateCarrierText() {
             if (mIsAttached) {
-                String name =
-                        mPhone.getSimOperatorNameForSubscription(SubscriptionManager.getDefaultDataSubId());
+                String name = mPhone.getSimOperatorName(SubscriptionManager.getDefaultSubscriptionId());
                 if (TextUtils.isEmpty(name)) {
-                    name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultDataSubId());
+                    name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultSubscriptionId());
                 }
                 if (TextUtils.isEmpty(name)) {
                     if (mServiceState != null && mServiceState.isEmergencyOnly()) {

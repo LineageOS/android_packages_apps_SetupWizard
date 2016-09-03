@@ -26,9 +26,9 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.AsyncTask;
+import android.os.Binder;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.UserHandle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -377,7 +377,7 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
             final SetupWizardApp setupWizardApp = (SetupWizardApp)getApplication();
             setupWizardApp.sendStickyBroadcastAsUser(
                     new Intent(SetupWizardApp.ACTION_FINISHED),
-                    UserHandle.getCallingUserHandle());
+                    Binder.getCallingUserHandle());
             mIsFinishing = true;
             setupRevealImage();
         }
