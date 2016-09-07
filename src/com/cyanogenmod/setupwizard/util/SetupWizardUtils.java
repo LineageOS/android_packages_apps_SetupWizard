@@ -101,6 +101,11 @@ public class SetupWizardUtils {
         }
     }
 
+    public static boolean hasWifi(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        return packageManager.hasSystemFeature(PackageManager.FEATURE_WIFI);
+    }
+
     public static boolean hasTelephony(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);

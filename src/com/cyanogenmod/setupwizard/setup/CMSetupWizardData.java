@@ -51,7 +51,9 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new BluetoothSetupPage(mContext, this));
         }
         pages.add(new WelcomePage(mContext, this));
-        pages.add(new WifiSetupPage(mContext, this));
+        if (SetupWizardUtils.hasWifi(mContext)) {
+            pages.add(new WifiSetupPage(mContext, this));
+        }
         if (SetupWizardUtils.hasTelephony(mContext)) {
             pages.add(new SimCardMissingPage(mContext, this)
                     .setHidden(isSimInserted()));
