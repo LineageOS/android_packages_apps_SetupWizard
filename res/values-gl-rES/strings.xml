@@ -41,10 +41,14 @@
   <string name="other_services_summary">Estes servizos fan que Google traballe para vostede e pode desactivalos ou activalos cando queira. Os datos utilizaranse de acordo coa<xliff:g id="name" example="Política de privacidade">%s</xliff:g> de Google.</string>
   <string name="location_services_summary">Os servizos de localización permítenlle ao sistema e a aplicacións de terceiros reunir e utilizar datos como a súa localización aproximada. Por exemplo, unha aplicación pode utilizar a localización aproximada para determinar as cafetarías próximas.</string>
   <string name="location_access_summary"><b>Permite que as aplicacións se teñen o teu permiso</b> utilicen a información sobre a túa localización, o que pode incluír á presente e ás pasadas.</string>
+  <string name="location_battery_saving"><b>Reducir o consumo da batería</b> reducindo as actualizacións do GPS por hora.</string>
   <string name="location_network"><b>Utiliza a Wi-Fi</b> para axudar as aplicacións a determinar a súa localización.</string>
+  <string name="location_network_telephony"><b>Utiliza a Wi-Fi e redes móbiles</b> para axudar ás aplicacións a determinar a túa localización.</string>
   <string name="location_network_gms"><b>Utiliza o servizo de localización de Google</b> para axudar a determinar a súa localización.</string>
+  <string name="setup_mobile_data">Activar os datos móbeis</string>
   <string name="setup_mobile_data_no_service">Sen servizo</string>
   <string name="setup_mobile_data_emergency_only">Só chamadas de urxencia</string>
+  <string name="enable_mobile_data_summary">Queres utilizar os datos móbeis durante a configuración? Ao facelo pódense producir gastos adicionais no plan de datos contratado.</string>
   <string name="no">Non</string>
   <string name="yes">Si</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -73,7 +77,14 @@
   <string name="fingerprint_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
   <string name="fingerprint_setup_add_fingerprint">Engadir a súa pegada dactilar</string>
   <string name="fingerprint_setup_screen_lock_setup">Configurar o bloqueo da pantalla</string>
+  <string name="sim_locale_changed">%1$s SIM detectado</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Seleccionar o tipo de bloqueo da pantalla</string>
   <string name="settings_lockscreen_setup_details">Como quere bloquear a súa pantalla?</string>
+  <string name="lockscreen_setup_title">Protexe o teu móbil</string>
+  <string name="lockscreen_setup_summary"><b>Protexe o dispositivo</b> e solicitar un PIN, patrón ou contrasinal para desbloquear a pantalla</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configurar un PIN, patrón ou contrasinal</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Benvido á era post-aplicacións</string>
+  <string name="mod_description">Os Mos son experiencias intelixentes, conscientes e lixeiras construídas directamente no SO. Cando un MOD pensa que pode axudar, ofreceralle activarse.</string>
 </resources>
