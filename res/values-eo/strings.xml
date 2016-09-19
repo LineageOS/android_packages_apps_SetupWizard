@@ -16,7 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Asistanto pri agordoj</string>
   <string name="next">Sekvonta</string>
   <string name="skip">Preterpasi</string>
   <string name="start">Lanĉi</string>
