@@ -85,4 +85,6 @@
   <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
   <string name="lockscreen_setup_screen_lock_setup">Pincode, patroon of wachtwoord instellen</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Welkom bij het einde van het app-tijdperk</string>
+  <string name="mod_description">Mods zijn intelligente, alerte en lichtgewicht ervaringen die direct in het OS zijn ingebouwd. Wanneer MOD denkt dat het zinvol is zal het aanbieden deze ervaringen voor u te activeren.</string>
 </resources>
