@@ -77,4 +77,6 @@
   <!-- secure lock screen -->
   <string name="settings_lockscreen_setup_details">Як би ви хотіли блокувати екран?</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Вітаємо у Післяпрограмній епосі</string>
+  <string name="mod_description">Моди освічені, передбачливі, з невеликим досвідом, вмонтовані безпосередньо в ОС. Коли моди вважають, що можуть допомогти, вони пропонують встановити їх.</string>
 </resources>
