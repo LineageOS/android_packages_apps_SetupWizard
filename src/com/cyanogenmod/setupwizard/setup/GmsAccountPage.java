@@ -102,7 +102,12 @@ public class GmsAccountPage extends SetupPage {
             getCallbacks().onPreviousPage();
         } else {
             super.doLoadAction(fragmentManager, action);
-            if (!SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
+            if (!SetupWizardUtils.isNetworkConnected(mContext) && !SetupWizardUtils.frpEnabled(mContext)) {
+                if (SetupWizardApp.DEBUG) {
+                    Log.d(TAG, "No network, no FRP enforcement, skip GMS account");
+                }
+                getCallbacks().onNextPage();
+            } else if (!SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
                 launchGmsAccountSetup();
             } else {
                 // This can happen if the user goes from setup -> restore, but chooses to set
