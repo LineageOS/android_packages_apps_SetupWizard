@@ -20,6 +20,7 @@
   <string name="next">Volgende</string>
   <string name="skip">Slaan oor</string>
   <string name="start">Begin</string>
+  <string name="done">Gedoen</string>
   <string name="ok">OK</string>
   <string name="loading">Net \'n sekonde\u2026</string>
   <string name="setup_complete">Opstelling is voltooi</string>
@@ -79,9 +80,13 @@
   <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
   <string name="sim_locale_changed">%1$s SIM opgespoor</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>
   <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
   <string name="lockscreen_setup_title">Beskerm jou foon</string>
   <string name="lockscreen_setup_summary"><b>Beskerm die toestel</b>\" en vereis \'n PIN, patroon of wagwoord om skerm te ontsluit\"</string>
   <string name="lockscreen_setup_screen_lock_setup">Stel PIN, patroon of wagwoord op</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Jou toestel is MOD gereed</string>
+  <string name="mod_description">Mods maak jou foon vinniger, slimmer, en makliker om te gebruik. In hierdie gids kan jy nuwe mods ontdek, leer wat hulle doen, en aktiveer of deaktiveer.</string>
+  <string name="mod_explore">Verken MOD gids</string>
 </resources>

@@ -80,9 +80,13 @@
   <string name="fingerprint_setup_screen_lock_setup">画面のロックをセットアップ</string>
   <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>
   <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
   <string name="lockscreen_setup_title">スマートフォンの保護</string>
   <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
   <string name="lockscreen_setup_screen_lock_setup">PIN、パターン、またはパスワードの設定</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">お使いの端末はMODに対応しています</string>
+  <string name="mod_description">Modはお使いの携帯電話を速く、賢く、使いやすくします。このガイドでは、新しいModを発見したり、何ができるのか知ることができたり、それらを有効または無効にすることができます。</string>
+  <string name="mod_explore">MODのガイドを表示</string>
 </resources>

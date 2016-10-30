@@ -80,9 +80,13 @@
   <string name="fingerprint_setup_screen_lock_setup">Подешавање закључавања екрана</string>
   <string name="sim_locale_changed">Откривен %1$s SIM</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Изабери тип закључавања екрана</string>
   <string name="settings_lockscreen_setup_details">Како желиш закључати свој екран?</string>
   <string name="lockscreen_setup_title">Заштитите телефон</string>
   <string name="lockscreen_setup_summary"><b>Заштитите уређај</b> и поставите PIN, шаблон или лозинку за откључавање екрана</string>
   <string name="lockscreen_setup_screen_lock_setup">Подеси PIN, шаблон или лозинку</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Уређај је спреман за модуле</string>
+  <string name="mod_description">Модули праве твој телефон бржим, паметнијим и лакшим за употребу. У овом водичуможеш открити нове модуле, научити шта они раде и укључити или искључити их.</string>
+  <string name="mod_explore">Истражи водич модула</string>
 </resources>

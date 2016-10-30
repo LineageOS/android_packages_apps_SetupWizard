@@ -16,51 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="next">Sekvonta</string>
-  <string name="skip">Preterpasi</string>
-  <string name="start">Lanĉi</string>
-  <string name="ok">Konfirmi</string>
-  <string name="loading">Nur unu sek.\u2026</string>
-  <string name="setup_complete">Agordo finiĝis</string>
-  <string name="setup_welcome">Bonvenon</string>
-  <string name="setup_wifi">Elektu vifion</string>
-  <string name="setup_sim_missing">SIM-karto mankas</string>
-  <string name="setup_choose_data_sim">Elektu SIM-karto por datumoj</string>
-  <string name="setup_location">Servo de lokigo</string>
-  <string name="setup_other">Aliaj servoj</string>
-  <string name="setup_datetime">Dato &amp; tempo</string>
-  <string name="setup_current_date">Aktuala dato</string>
-  <string name="setup_current_time">Aktuala tempo</string>
-  <string name="sim_missing_summary" product="tablet">SIM-karto ne troveblas en via tabulo. Por enmeti SIM karton, legu la informojn de via aparato.</string>
-  <string name="sim_missing_summary" product="default">SIM-karto ne troveblas en via telefono. Por enmeti SIM-karton, legu la informojn de via aparato.</string>
-  <string name="choose_data_sim_summary" product="tablet">Kiun SIM-karton vi deziras uzi por datumoj ? La elektita SIM-karto eble postulos kostojn ĉar agordoj uzos ĝin.</string>
-  <string name="choose_data_sim_summary" product="default">Kiun SIM-karton vi deziras uzi por datumoj ? La elektita SIM-karto eble postulos kostojn ĉar agordoj uzos ĝin.</string>
-  <string name="date_time_summary">Agordu vian horzonon kaj ĝustigu la aktualan daton kaj tempon laŭbezone</string>
-  <string name="backup_data_summary"><b>Savkopio</b> de aplikaĵaj datumoj, vifiaj pasvortoj kaj aliaj agordoj ĉe Google serviloj</string>
-  <string name="other_services_summary">Tiujn servoj disponigas Google al vi, kaj vi povas ŝalti aŭ malŝalti ilin iam ajn. Datumoj estos uzataj laŭ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
-  <string name="location_services_summary">Lokiga servo permesas al sistemaj aplikaĵoj  kaj aliaj aplikaĵoj koni vian aproksiman lokigon. Ekzemple, aplikaĵo povas uzi vian aproksiman lokigon por trovi kafejojn en la ĉirkaŭaĵo.</string>
-  <string name="location_access_summary"><b>Permesi al aplikaĵoj kiujn vi aprobis</b> koni vian lokigon. Tiu inkluzivas aktualan lokigon kaj pasintajn.</string>
-  <string name="location_network"><b>Uzi Vifion</b> por helpi aplikaĵojn koni vian lokigon.</string>
-  <string name="location_network_gms"><b>Uzi lokigan servon de Google</b> por helpi aplikaĵojn koni vian lokigon. Tio signifas sendi anonimajn lokigajn datumojn al Google, eĉ kiam neniu aplikaĵo funkcias.</string>
-  <string name="setup_mobile_data_no_service">Neniu servo</string>
-  <string name="setup_mobile_data_emergency_only">Nur urĝaj alvokoj</string>
-  <string name="no">Ne</string>
   <string name="yes">Jes</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Urĝa alvoko</string>
-  <string name="setup_services">Cyanogen funkcioj</string>
-  <string name="services_explanation" product="tablet">Tiuj servoj funkcias por etendi kapablojn de via tabulo. Datumoj estos uzataj laŭ la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
-  <string name="services_explanation" product="default">Tiuj servoj funkcias por etendi kapablojn de via telefono. Datumoj estos uzataj laŭ la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
-  <string name="services_privacy_policy">Privateca politiko</string>
-  <string name="services_help_improve_cm">Helpu por plibonigi <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Apliki la etoson <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_os_nav_keys_label"><b>Uzi ekran-klavojn </b> anstataŭ tiujn de la aparato.</string>
-  <string name="services_use_secure_sms">Uzi sekurajn SMS</string>
-  <string name="setup_unlock">Malŝlosi</string>
-  <string name="setup_device_locked">La aparato estas ŝlosita de la uzanto.</string>
-  <string name="setup_require_cyanogen_label"><b>Postulas vian Cyanogen OS pasvorton</b> por uzi vian aparaton eĉ post rekomencigo al fabrika stato.</string>
-  <string name="setup_device_locked_instructions"><i>Por mal-/ŝalti tiun funkcion, bonvolu iri en Agordoj &gt; Sekureco</i></string>
-  <string name="setup_warning_skip_anyway">Sen Cyanogen konto, vi ne kapablos :\n\nAgordi vian telefonon per novaj piktogramoj, ekranfono kaj pli en la etosa aplikaĵo\n\nLokigi aŭ fore forviŝi vian telefonilon se vi perdas ĝin</string>
   <!-- Fingerprint setup -->
   <!-- secure lock screen -->
   <!-- MOD stuff -->
