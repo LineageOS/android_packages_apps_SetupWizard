@@ -86,7 +86,7 @@
   <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
   <string name="lockscreen_setup_screen_lock_setup">Pincode, patroon of wachtwoord instellen</string>
   <!-- MOD stuff -->
-  <string name="mod_welcome">Uw apparaat is klaar voor Mods</string>
+  <string name="mod_welcome">Uw apparaat is klaar voor MOD</string>
   <string name="mod_description">Mods maken uw telefoon sneller, slimmer en gemakkelijker te gebruiken. In deze handleiding kunt u nieuwe Mods ontdekken, leren wat ze doen en ze in- of uitschakelen.</string>
-  <string name="mod_explore">Handleiding over Mods</string>
+  <string name="mod_explore">Handleiding over MOD</string>
 </resources>
