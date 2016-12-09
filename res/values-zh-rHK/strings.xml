@@ -69,5 +69,7 @@
   <string name="fingerprint_setup_backup_lock_method">設定第二個解鎖方式</string>
   <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
   <string name="fingerprint_setup_screen_lock_setup">設定螢幕鎖定</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">您希望如何鎖定螢幕？</string>
   <!-- MOD stuff -->
 </resources>

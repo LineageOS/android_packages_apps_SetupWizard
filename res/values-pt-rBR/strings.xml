@@ -45,7 +45,7 @@
   <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
   <string name="location_network"><b>Use Wi-Fi</b> para ajudar aplicativos a determinar a sua localização.</string>
   <string name="location_network_telephony"><b>Use Wi-Fi e redes móveis</b> para ajudar aplicativos a determinar sua localização.</string>
-  <string name="location_network_gms"><b>Use o serviço de localização do Google</b> para ajudar os aplicativos a determinarem sua localização. Isto significa enviar dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver em execução.</string>
+  <string name="location_network_gms"><b>Use o serviço de localização do Google</b> para ajudar os aplicativos a determinar sua localização. Isto significa enviar dados de localização anônimos para o Google, mesmo quando nenhum aplicativo estiver aberto.</string>
   <string name="setup_mobile_data">Ativar dados celular</string>
   <string name="setup_mobile_data_no_service">Sem serviço</string>
   <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
@@ -79,8 +79,9 @@
   <string name="fingerprint_setup_add_fingerprint">Adicionar sua impressão digital</string>
   <string name="fingerprint_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
   <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Selecione o tipo de bloqueio de tela</string>
+  <string name="settings_lockscreen_setup_details">Como você gostaria de bloquear a tela?</string>
   <string name="lockscreen_setup_title">Proteger seu smartphone</string>
   <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
   <string name="lockscreen_setup_screen_lock_setup">Configurar PIN, padrão ou senha</string>

@@ -79,8 +79,9 @@
   <string name="fingerprint_setup_add_fingerprint">Legge til fingeravtrykket ditt</string>
   <string name="fingerprint_setup_screen_lock_setup">Konfigurere skjermlås</string>
   <string name="sim_locale_changed">%1$s SIM oppdaget</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Velg skjermlåstype</string>
+  <string name="settings_lockscreen_setup_details">Hvordan vil du låse skjermen din?</string>
   <string name="lockscreen_setup_title">Beskytt telefonen</string>
   <string name="lockscreen_setup_summary"><b>Beskytt denne enheten</b> og krev PIN-kode, mønster eller passord for å låse opp skjermen</string>
   <string name="lockscreen_setup_screen_lock_setup">Konfigurer PIN-kode, mønster eller passord</string>

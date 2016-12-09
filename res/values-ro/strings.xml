@@ -72,8 +72,8 @@
   <string name="fingerprint_setup_add_fingerprint">Adăugați-vă amprenta</string>
   <string name="fingerprint_setup_screen_lock_setup">Setați blocarea de ecran</string>
   <string name="sim_locale_changed">SIM %1$s detectat</string>
-
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Cum doriți să vă blocați ecranul?</string>
   <string name="lockscreen_setup_title">Protejați telefonul</string>
   <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
   <string name="lockscreen_setup_screen_lock_setup">Configurați codul PIN, modelul sau parola</string>

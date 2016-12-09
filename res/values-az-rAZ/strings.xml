@@ -72,5 +72,7 @@
   <string name="fingerprint_setup_backup_lock_method">İkinci kilid açma üsulunu quraşdırın</string>
   <string name="fingerprint_setup_add_fingerprint">Barmaq izinizi əlavə edin</string>
   <string name="fingerprint_setup_screen_lock_setup">Ekran kilidi qurun</string>
+  <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_details">Ekranınızı necə kilidləmək istərdiniz?</string>
   <!-- MOD stuff -->
 </resources>
