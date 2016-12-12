@@ -78,9 +78,8 @@ public class CMSetupWizardData extends AbstractSetupData {
         pages.add(new OtherSettingsPage(mContext, this).setHidden(!hasGMS));
         if (SetupWizardUtils.hasFingerprint(mContext) && SetupWizardUtils.isOwner()) {
             pages.add(new FingerprintSetupPage(mContext, this));
-        } else if (SetupWizardUtils.frpEnabled(mContext)) {
-            pages.add(new ScreenLockSetupPage(mContext, this));
         }
+        pages.add(new ScreenLockSetupPage(mContext, this));
         pages.add(new CyanogenSettingsPage(mContext, this));
         pages.add(new FinishPage(mContext, this));
         return new PageList(pages.toArray(new SetupPage[pages.size()]));
