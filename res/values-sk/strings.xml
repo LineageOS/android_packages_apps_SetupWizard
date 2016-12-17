@@ -20,6 +20,7 @@
   <string name="next">Ďalej</string>
   <string name="skip">Preskočiť</string>
   <string name="start">Spustiť</string>
+  <string name="done">Hotovo</string>
   <string name="ok">OK</string>
   <string name="loading">Moment\u2026</string>
   <string name="setup_complete">Nastavenie je dokončené</string>
@@ -41,10 +42,14 @@
   <string name="other_services_summary">Tieto služby vám ponúka Google a môžete ich kedykoľvek zapnúť alebo vypnúť. Údaje sa použijú v súlade s Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Služby polohy umožňujú systému a ďalším aplikáciám tretích strán zhromažďovanie a používanie údajov súvisiacich s vašou približnou polohou. Napríklad aplikácia Mapy môže použiť vašu približnú polohu na nájdene kaviarní vo vašej blízkosti.</string>
   <string name="location_access_summary"><b>Povoliť aplikáciám, ktoré požiadali o vaše povolenie</b>, používať informácie o vašej polohe. To môže zahŕňať vašu aktuálnu polohu a minulé polohy.</string>
+  <string name="location_battery_saving"><b>Zníženie spotreby batérie</b> obmedzením počtu GPS aktualizácií za hodinu.</string>
   <string name="location_network"><b>Použitie Wi-Fi</b> pomôže aplikáciám určiť vašu polohu.</string>
+  <string name="location_network_telephony"><b>Použite Wi-Fi a mobilné siete</b> pre zlepšenie určenia vašej polohy.</string>
   <string name="location_network_gms"><b>Používanie služieb polohy od spoločnosti Google</b> pomôže aplikáciám určiť vašu polohu. To znamená anonymné zasielanie údajov o polohe do spoločnosti Google, aj keď nie sú spustené žiadne aplikácie.</string>
+  <string name="setup_mobile_data">Zapnúť mobilné dáta</string>
   <string name="setup_mobile_data_no_service">Žiadna sieť</string>
   <string name="setup_mobile_data_emergency_only">Len tiesňové hovory</string>
+  <string name="enable_mobile_data_summary">Chcete používať mobilné dáta počas inštalácie? Zapnutie mobilných dát môže byť spoplatnené.</string>
   <string name="no">Nie</string>
   <string name="yes">Áno</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -56,6 +61,7 @@
   <string name="services_help_improve_cm">Pomôcť vylepšovať <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatickým zasielaním diagnostických údajov a údajov o používaní do Cyanogenu. Tieto informácie sa nepoužijú na vašu identifikáciu, ale pomôžu tímom pracujúcim na výdrži, výkone aplikácií a nových funkciách <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Použiť tému <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Použiť materiálovú tému">%s </xliff:g> povolením jedinečných vizuálny štýlov ikon, tapiet a ďalších.</string>
   <string name="services_os_nav_keys_label"><b>Používajte navigačné tlačidlá na obrazovke</b> namiesto hardvérových tlačidiel.</string>
   <string name="services_use_secure_sms">Používajte zabezpečené SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> pre šifrovanie SMS konverzácií s ostatnými používateľmi prostredníctvom zabezpečených SMS na zariadení s <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -72,7 +78,16 @@
   <string name="fingerprint_setup_backup_lock_method">Nastaviť alternatívny spôsob odomknutia</string>
   <string name="fingerprint_setup_add_fingerprint">Pridať váš odtlačok prsta</string>
   <string name="fingerprint_setup_screen_lock_setup">Nastaviť zamknutie obrazovky</string>
+  <string name="sim_locale_changed">Zistená %1$s SIM</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
   <string name="settings_lockscreen_setup_details">Ako chcete zamknúť obrazovku?</string>
+  <string name="lockscreen_setup_title">Chráňte svoj telefón</string>
+  <string name="lockscreen_setup_summary"><b>Chrániť toto zariadenie</b> a pred odomknutím obrazovky vyžiadať kód PIN, gesto alebo heslo</string>
+  <string name="lockscreen_setup_screen_lock_setup">Nastaviť kód PIN, gesto alebo heslo</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">Zariadenie je pripravené na použitie MODov</string>
+  <string name="mod_description">MODy urýchľujú, zefektívňujú a uľahčujú používanie telefónu. V tejto príručke môžete nájsť nové režimy, 
+naučiť sa čo robia, povoliť ich alebo zakázať.</string>
+  <string name="mod_explore">Preskúmať sprievodcu MODov</string>
 </resources>
