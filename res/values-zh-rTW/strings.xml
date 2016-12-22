@@ -20,6 +20,7 @@
   <string name="next">下一步</string>
   <string name="skip">略過</string>
   <string name="start">開始</string>
+  <string name="done">已完成</string>
   <string name="ok">確定</string>
   <string name="loading">請稍候\u2026</string>
   <string name="setup_complete">設定已完成</string>
@@ -29,7 +30,7 @@
   <string name="setup_choose_data_sim">選取使用行動數據的 SIM 卡</string>
   <string name="setup_location">定位服務</string>
   <string name="setup_other">其他服務</string>
-  <string name="setup_datetime">日期與時間</string>
+  <string name="setup_datetime">日期和時間</string>
   <string name="setup_current_date">目前日期</string>
   <string name="setup_current_time">目前時間</string>
   <string name="sim_missing_summary" product="tablet">您的平板電腦中未發現 SIM 卡。若要插入一張 SIM 卡，請查閱您的裝置附贈的說明。</string>
@@ -43,9 +44,12 @@
   <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
   <string name="location_battery_saving">透過減少 GPS 每小時更新次數來<b>降低電池消耗</b>。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
+  <string name="location_network_telephony"><b>使用 Wi-Fi 和行動網路</b>來幫助應用程式確定您所在的位置。</string>
   <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會發送匿名的位置資料給 Google。</string>
+  <string name="setup_mobile_data">啟用行動數據</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
+  <string name="enable_mobile_data_summary">是否想在設定過程中啟用行動數據？啟用行動數據可能會被收取費用。</string>
   <string name="no">否</string>
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -55,25 +59,34 @@
   <string name="services_explanation" product="default">這些服務用來增強您的手機的功能。資料將根據 Cyanogen 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="services_privacy_policy">隱私權政策</string>
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通過自動發送診斷及使用資料給 Cyanogen。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式性能和新的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>正在幫把您的圖示、桌布…等變成個獨一無二的視覺效果。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
   <string name="services_use_secure_sms">使用加密簡訊</string>
+  <string name="services_secure_sms_label">在您的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 裝置上 <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> 來加密您與其他人的簡訊。</string>
   <string name="setup_unlock">解鎖</string>
   <string name="setup_device_locked">已被使用者鎖定此裝置。</string>
-  <string name="setup_require_cyanogen_label"><b>需要您的Cyanogen OS帳戶密碼</b>以使用您的裝置，即使在重設裝置之後。</string>
+  <string name="setup_require_cyanogen_label"><b>需要您的 Cyanogen OS 帳戶密碼</b>以使用您的裝置，即使在重設裝置之後。</string>
   <string name="setup_device_locked_instructions"><i>如要開啟/關閉此功能，請到設定 &gt; 安全性</i></string>
+  <string name="setup_warning_skip_anyway">如果不建立 Cyanogen OS 帳戶，您將無法：\n\n使用主題來套用新的圖示、桌布和其他內容來客製化您的手機\n\n在手機遺失時定位手機或清除手機上的個人資料</string>
   <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_details">你希望如何鎖定螢幕?</string>
-  <string name="fingerprint_setup_title">指紋感應設置</string>
-  <string name="fingerprint_setup_summary">若要使用您的指紋感應器解鎖您的螢幕，您需要:</string>
+  <string name="settings_fingerprint_setup_title">選擇備用螢幕鎖類型</string>
+  <string name="settings_fingerprint_setup_details">您希望如何鎖定螢幕?</string>
+  <string name="fingerprint_setup_title">指紋設定</string>
+  <string name="fingerprint_setup_summary">若要使用您的指紋感應器解鎖您的螢幕，您需要︰</string>
   <string name="fingerprint_setup_backup_lock_method">設定第二個解鎖方式</string>
-  <string name="fingerprint_setup_add_fingerprint">新增你的指紋感應</string>
-  <string name="fingerprint_setup_screen_lock_setup">設置螢幕鎖定</string>
+  <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
+  <string name="fingerprint_setup_screen_lock_setup">設定螢幕鎖定</string>
   <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
   <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">你希望如何鎖定螢幕?</string>
+  <string name="settings_lockscreen_setup_title">選擇螢幕鎖類型</string>
+  <string name="settings_lockscreen_setup_details">您希望如何鎖定螢幕?</string>
   <string name="lockscreen_setup_title">保護您的手機</string>
-  <string name="lockscreen_setup_summary"><b>保護這個裝置</b>，並要求使用 PIN、解鎖圖形或密碼解除螢幕鎖定</string>
+  <string name="lockscreen_setup_summary"><b>保護這個裝置</b>，並需要輸入 PIN 碼、解鎖圖形或密碼解除螢幕鎖定</string>
   <string name="lockscreen_setup_screen_lock_setup">設定 PIN、解鎖圖形或密碼</string>
   <!-- MOD stuff -->
+  <string name="mod_welcome">您的裝置已準備好使用模組</string>
+  <string name="mod_description">模組可使您的電話更快速、更智慧、以及更容易使用。在這個指南中，您將可以探索新的模組，學習它們做些什麼，並可以啟用或停用它們。</string>
+  <string name="mod_explore">探索模組指南</string>
 </resources>
