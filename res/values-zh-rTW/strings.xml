@@ -84,7 +84,7 @@
   <string name="settings_lockscreen_setup_details">您希望如何鎖定螢幕?</string>
   <string name="lockscreen_setup_title">保護您的手機</string>
   <string name="lockscreen_setup_summary"><b>保護這個裝置</b>，並需要輸入 PIN 碼、解鎖圖形或密碼解除螢幕鎖定</string>
-  <string name="lockscreen_setup_screen_lock_setup">設定 PIN、解鎖圖形或密碼</string>
+  <string name="lockscreen_setup_screen_lock_setup">設定 PIN 碼 、解鎖圖形或密碼</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">您的裝置已準備好使用模組</string>
   <string name="mod_description">模組可使您的電話更快速、更智慧、以及更容易使用。在這個指南中，您將可以探索新的模組，學習它們做些什麼，並可以啟用或停用它們。</string>
