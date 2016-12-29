@@ -45,11 +45,9 @@ public class FinishPage extends SetupPage {
     private static final String MODGUIDE_PACKAGE_NAME = "com.cyngn.modguide";
 
     private FinishFragment mFinishFragment;
-    private final boolean mShowingModGuide;
 
     public FinishPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
-        mShowingModGuide = SetupWizardUtils.canHasModMOD(context);
     }
 
     @Override
@@ -92,7 +90,7 @@ public class FinishPage extends SetupPage {
 
     @Override
     public int getButtonBarBackgroundColorId() {
-        return mShowingModGuide ? R.color.mod_button_bar_background : R.color.primary;
+        return R.color.primary;
     }
 
     @Override
@@ -117,44 +115,22 @@ public class FinishPage extends SetupPage {
 
     @Override
     public int getNextButtonTitleResId() {
-        return mShowingModGuide ? R.string.done : R.string.start;
+        return  R.string.start;
     }
 
     public static class FinishFragment extends SetupPageFragment {
 
-        private boolean mShowingModGuide;
-
         @Override
         protected void initializePage() {
             final Activity activity = getActivity();
-            if (!mShowingModGuide || (activity == null)) {
+            if (activity == null) {
                 return;
             }
-            mRootView.findViewById(R.id.explore_mod_guide)
-                    .setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    final Messenger messenger = getArguments().getParcelable(KEY_MESSENGER);
-                    if (messenger == null) {
-                        return;
-                    }
-                    final Message message = Message.obtain();
-                    message.what = WHAT_EXPLORE_MOD_GUIDE;
-                    try {
-                        messenger.send(message);
-                    } catch (final RemoteException e) {
-                        Log.e(TAG, "Couldn't send message to start MOD Guide", e);
-                    }
-                }
-            });
         }
 
         @Override
         protected int getLayoutResource() {
-            final Context context = getContext();
-            mShowingModGuide = (context != null) && SetupWizardUtils.canHasModMOD(context);
-            return mShowingModGuide ?
-                    R.layout.setup_modguide_page : R.layout.setup_finished_page;
+            return R.layout.setup_finished_page;
         }
     }
 

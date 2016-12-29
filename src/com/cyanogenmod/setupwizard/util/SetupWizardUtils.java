@@ -203,14 +203,6 @@ public class SetupWizardUtils {
                 ConnectionResult.SERVICE_MISSING;
     }
 
-    /**
-     * The assumption here is that if ambient core is present, we have MODs.
-     * In the future we will link against the SDK and use the util there.
-     */
-    public static boolean canHasModMOD(Context context) {
-        return isPackageInstalled(context, MODMOD_PACKAGE);
-    }
-
     public static boolean accountExists(Context context, String accountType) {
         return AccountManager.get(context).getAccountsByType(accountType).length > 0;
     }
