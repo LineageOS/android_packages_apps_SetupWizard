@@ -53,9 +53,9 @@
   <string name="yes">হয়</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">জৰুৰীকালীন কল</string>
-  <string name="setup_services">Cyanogen বৈশিষ্ট্যবোৰ</string>
-  <string name="services_explanation" product="tablet">এই সেৱাবোৰে আপোনাৰ টেবলেট কম্পিউটাৰৰ সক্ষমতা সম্প্ৰসাৰিত কৰিবলৈ কাম কৰে। ডাটা Cyanogen ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
-  <string name="services_explanation" product="default">এই সেৱাবোৰে আপোনাৰ ফোনৰ সক্ষমতা সম্প্ৰসাৰিত কৰিবলৈ কাম কৰে। ডাটা Cyanogen ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="setup_services">LineageOS বৈশিষ্ট্যবোৰ</string>
+  <string name="services_explanation" product="tablet">এই সেৱাবোৰে আপোনাৰ টেবলেট কম্পিউটাৰৰ সক্ষমতা সম্প্ৰসাৰিত কৰিবলৈ কাম কৰে। ডাটা LineageOS ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
+  <string name="services_explanation" product="default">এই সেৱাবোৰে আপোনাৰ ফোনৰ সক্ষমতা সম্প্ৰসাৰিত কৰিবলৈ কাম কৰে। ডাটা LineageOS ৰ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> অনুযায়ী ব্যৱহাৰ কৰা হ\'ব।</string>
   <string name="services_privacy_policy">গোপনীয়তা নীতি</string>
   <string name="services_help_improve_cm">স্বয়ংক্ৰিয়ভাবে ডায়গনষ্টিক আৰু ব্যৱহাৰ ডাটা Cyanogen লৈ প্ৰেৰণ কৰি <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> উন্নত কৰাত সহায় কৰক এই তথ্য আপোনাক চিনাক্ত কৰিবলৈ ব্যৱহাৰ কৰিব পৰা নাযায় আৰু বেটাৰীৰ আয়ুস, এপ্প্‌ৰ কাৰ্যকাৰীতা আৰু নতুন <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> বৈশিষ্ট্যবোৰৰ ওপৰত কাম কৰি থকা দলবোৰক সহায় কৰে।</string>
@@ -65,7 +65,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ডিভাইচত সুৰক্ষিত SMS ব্যৱহাৰ কৰি থকা আন ব্যৱহাৰকৰ্তাৰ সৈতে SMS কথোপকথন এনক্ৰিপ্ট কৰিবলৈ সুৰক্ষিত SMS <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> ব্যৱহাৰ কৰক।</string>
   <string name="setup_unlock">আনলক</string>
   <string name="setup_device_locked">ডিভাইচটো ব্যৱহাৰকৰ্তাৰ দ্বাৰা লক কৰা হৈছে।</string>
-  <string name="setup_require_cyanogen_label">আনকি ফেক্টৰী ৰিছেটৰ পাছতো আপোনাৰ ডিভাইচটো ব্যৱহাৰ কৰিবলৈ <b>আপোনাৰ Cyanogen OS একাউণ্টৰ পাছৱৰ্ড প্ৰয়োজন</b>।</string>
+  <string name="setup_require_cyanogen_label">আনকি ফেক্টৰী ৰিছেটৰ পাছতো আপোনাৰ ডিভাইচটো ব্যৱহাৰ কৰিবলৈ <b>আপোনাৰ একাউণ্টৰ পাছৱৰ্ড প্ৰয়োজন</b>।</string>
   <string name="setup_device_locked_instructions"><i>এই বৈশিষ্ট্যটো অন/অফ কৰিবলৈ অনুগ্ৰহ কৰি ছেটিংচ &gt; নিৰাপত্তা লৈ যাওক</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS একাউণ্ট অবিহনে, আপুনি এইবোৰ কৰিবলৈ সক্ষম নহ\'ব:\n\nআপোনাৰ ফোনটো নতুন আইকন, ৱালপেপাৰ আৰু বিষয়বস্তুচ্‌ এপ্পৰ বহুতৰ সৈতে অনুকূলিত কৰিবলৈ\n\n আপোনাৰ ফোন হেৰালে অৱস্থান নিৰূপণ কৰিব বা দূৰৰ পৰাই আপোনাৰ ফোনটো মচি পেলাব</string>
   <!-- Fingerprint setup -->

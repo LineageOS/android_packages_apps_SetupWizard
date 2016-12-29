@@ -54,9 +54,9 @@
   <string name="yes">Kyllä</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Hätäpuhelu</string>
-  <string name="setup_services">Cyanogen-ominaisuudet</string>
-  <string name="services_explanation" product="tablet">Nämä palvelut toimivat tablettisi ominaisuuksien parantamiseksi. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
-  <string name="services_explanation" product="default">Nämä palvelut toimivat puhelimesi ominaisuuksien parantamiseksi. Tietoja käytetään Cyanogenin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
+  <string name="setup_services">LineageOS-ominaisuudet</string>
+  <string name="services_explanation" product="tablet">Nämä palvelut toimivat tablettisi ominaisuuksien parantamiseksi. Tietoja käytetään LineageOSin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
+  <string name="services_explanation" product="default">Nämä palvelut toimivat puhelimesi ominaisuuksien parantamiseksi. Tietoja käytetään LineageOSin <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
   <string name="services_privacy_policy">Tietosuojakäytännön</string>
   <string name="services_help_improve_cm">Auta parantamaan <xliff:g id="name" example="CyanogenMod">%s</xliff:g>ia</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> lähettämällä vianmääritys- ja käyttötietoja Cyanogenille. Tietoja ei voi käyttää tunnistamiseen. Tiedot auttavat kehittäjiä muun muassa parantamaan akun kestoa, sovellusten suorituskykyä ja kehittämään <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>iin uusia ominaisuuksia.</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> salataksesi tekstiviestikeskustelut muiden turvallisia tekstiviestejä ja <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>ia käyttävien henkilöiden kanssa.</string>
   <string name="setup_unlock">Avaa lukitus</string>
   <string name="setup_device_locked">Käyttäjä on lukinnut laitteen.</string>
-  <string name="setup_require_cyanogen_label"><b>Vaadi Cyanogen OS-tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>
+  <string name="setup_require_cyanogen_label"><b>Vaadi tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>
   <string name="setup_device_locked_instructions"><i>Poistaaksesi tämän ominaisuuden käytöstä/ottaaksesi käyttöön, mene Asetukset &gt; Suojaus</i></string>
   <string name="setup_warning_skip_anyway">Ilman Cyanogen OS-tiliä, et voi:\n\nMukauttaa puhelintasi uusilla kuvakkeilla, taustakuvilla tai muilla käyttämällä Teemat-sovellusta\n\nPaikantaa tai etätyhjentää kadonnutta puhelintasi</string>
   <!-- Fingerprint setup -->

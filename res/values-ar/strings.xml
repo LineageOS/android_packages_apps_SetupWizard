@@ -53,7 +53,7 @@
   <string name="yes">نعم</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة</string>
   <string name="emergency_call">مكالمة طوارئ</string>
-  <string name="setup_services">ميزات Cyanogen</string>
+  <string name="setup_services">ميزات LineageOS</string>
   <string name="services_explanation" product="tablet">تعمل هذه الخدمات  على توسيع نطاق إمكانيات الكمبيوتر اللوحي الخاص بك. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_explanation" product="default">تعمل هذه الخدمات  على توسيع نطاق إمكانيات هاتفك. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">سياسة الخصوصية</string>
@@ -66,7 +66,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s </xliff:g> لتشفير المحادثات عبر الرسائل القصيرة مع المستخدمين الآخرين باستخدام شريحة SMS آمنة على جهاز <xliff:g id="name" example="CyanogenMod"> %2$s </xliff:g>.</string>
   <string name="setup_unlock">فتح القفل</string>
   <string name="setup_device_locked">هذا الجهاز تم قفله من قبل المستخدم.</string>
-  <string name="setup_require_cyanogen_label"><b>يتطلب كلمة مرور حساب Cyanogen OS </b>كي تتمكن من استخدام الجهاز حتى بعد إعادة تعيين المصنع.</string>
+  <string name="setup_require_cyanogen_label"><b>يتطلب كلمة مرور حساب </b>كي تتمكن من استخدام الجهاز حتى بعد إعادة تعيين المصنع.</string>
   <string name="setup_device_locked_instructions"><i>من أجل تشغيل/تعطيل هذه الميزة، الرجاء إذهب إلى إعدادات &gt; الأمان</i></string>
   <string name="setup_warning_skip_anyway">بدون حساب Cyanogen OS لن تستطيع أن:\n\nتخصص هاتفك بأيقونات وخلفيات جديدة والمزيد في تطبيق السمات\n\nأو تحديد مكان هاتفك أو مسح ذاكرته عن بعد إذا فُقد</string>
   <!-- Fingerprint setup -->

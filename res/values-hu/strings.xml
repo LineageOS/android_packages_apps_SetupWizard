@@ -54,9 +54,9 @@
   <string name="yes">Igen</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Segélyhívás</string>
-  <string name="setup_services">Cyanogen funkciók</string>
-  <string name="services_explanation" product="tablet">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön táblagépe képességeit. Az adatok felhasználása a Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
-  <string name="services_explanation" product="default">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön telefonja képességeit. Az adatok felhasználása a Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
+  <string name="setup_services">LineageOS funkciók</string>
+  <string name="services_explanation" product="tablet">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön táblagépe képességeit. Az adatok felhasználása a LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
+  <string name="services_explanation" product="default">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön telefonja képességeit. Az adatok felhasználása a LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
   <string name="services_privacy_policy">Adatvédelmi nyilatkozat</string>
   <string name="services_help_improve_cm">Segítsen javítani <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> a Cyanogen részére történő automatikus diagnosztikai és használati adatok küldésével. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkciók fejlesztésében.</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> az SMS beszélgetések titkosításához más olyan felhasználókkal, akik szintén biztonságos SMS-t használnak <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> eszközön.</string>
   <string name="setup_unlock">Feloldás</string>
   <string name="setup_device_locked">Ezt az eszközt a felhasználó zárolta.</string>
-  <string name="setup_require_cyanogen_label"><b>Cyanogen OS fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
+  <string name="setup_require_cyanogen_label"><b>fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
   <string name="setup_device_locked_instructions"><i>A szolgáltatás ki/be kapcsolásához, kérjük menjen ide: Beállítások &gt; Biztonság</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS fiók nélkül nem fog hozzáférni a következőkhöz:\n\nTelefon testreszabása új ikonokkal, háttérképekkel és egyebekkel a Téma kezelő alkalmazáson keresztül\n\nTelefon helyének maghatározása, vagy távolról való törlése, ha elveszett</string>
   <!-- Fingerprint setup -->

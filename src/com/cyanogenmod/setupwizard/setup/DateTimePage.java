@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -94,6 +95,11 @@ public class DateTimePage extends SetupPage {
     @Override
     public int getTitleResId() {
         return R.string.setup_datetime;
+    }
+
+    @Override
+    public int getIconResId() {
+        return R.drawable.ic_datetime;
     }
 
     public static class DateTimeFragment extends SetupPageFragment

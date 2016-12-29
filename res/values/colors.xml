@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,25 +16,20 @@
      limitations under the License.
 -->
 <resources>
-    <color name="black">#000000</color>
+    <color name="black">#21272b</color>
     <color name="white">#ffffff</color>
-    <color name="page_background">#efefef</color>
+    <color name="page_background">#e4e7e9</color>
 
-    <color name="primary">#00B1E5</color>
-    <color name="primary_dark">#00A2E5</color>
-    <color name="accent">#009789</color>
+    <color name="primary">@color/page_background</color>
+    <color name="primary_dark">#c2c5c7</color>
+    <color name="accent">#167C80</color>
     <color name="primary_text">#8a000000</color>
-    <color name="secondary_text">#727272</color>
+    <color name="secondary_text">#42000000</color>
     <color name="button_bar_text_enabled">#ff1e1e1e</color>
     <color name="button_bar_text_disabled">#321e1e1e</color>
     <color name="divider">#40000000</color>
     <color name="header_bg">@color/primary</color>
-    <color name="header_condensed_bg">@color/primary_dark</color>
-    <color name="button_bar_background">#e4e7e8</color>
-    <color name="fingerprint_setup_text_color">#356bc4</color>
-
-    <color name="mod_yellow">#f5d328</color>
-    <color name="mod_title">#dd000000</color>
-    <color name="mod_description">#89000000</color>
-    <color name="mod_button_bar_background">#d7b923</color>
+    <color name="header_condensed_bg">@color/primary</color>
+    <color name="button_bar_background">@color/primary</color>
+    <color name="fingerprint_setup_text_color">#167C80</color>
 </resources>

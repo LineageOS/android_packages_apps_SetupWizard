@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,8 +59,9 @@ public class CyanogenSettingsPage extends SetupPage {
     public static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     public static final String KEY_APPLY_DEFAULT_THEME = "apply_default_theme";
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
+    public static final String KEY_PRIVACY_GUARD = "privacy_guard_default";
 
-    public static final String PRIVACY_POLICY_URI = "https://cyngn.com/oobe-legal?hideHeader=1";
+    public static final String PRIVACY_POLICY_URI = "http://lineageos.org/legal";
 
     public CyanogenSettingsPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
@@ -86,6 +88,11 @@ public class CyanogenSettingsPage extends SetupPage {
     @Override
     public int getTitleResId() {
         return R.string.setup_services;
+    }
+
+    @Override
+    public int getIconResId() {
+        return R.drawable.ic_features;
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
@@ -126,6 +133,7 @@ public class CyanogenSettingsPage extends SetupPage {
         });
         handleEnableMetrics();
         handleDefaultThemeSetup();
+        handlePrivacyGuard();
     }
 
     private void handleEnableMetrics() {
@@ -156,6 +164,15 @@ public class CyanogenSettingsPage extends SetupPage {
         }
     }
 
+    private void handlePrivacyGuard() {
+        Bundle mPrivacyData = getData();
+        if (mPrivacyData != null && mPrivacyData.containsKey(KEY_PRIVACY_GUARD)) {
+            CMSettings.Secure.putInt(mContext.getContentResolver(),
+                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT,
+                    mPrivacyData.getBoolean(KEY_PRIVACY_GUARD) ? 1 : 0);
+        }
+    }
+
     private static boolean hideKeyDisabler(Context ctx) {
         final CMHardwareManager hardware = CMHardwareManager.getInstance(ctx);
         return !hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE);
@@ -179,9 +196,11 @@ public class CyanogenSettingsPage extends SetupPage {
         private View mMetricsRow;
         private View mDefaultThemeRow;
         private View mNavKeysRow;
+        private View mPrivacyGuardRow;
         private CheckBox mMetrics;
         private CheckBox mDefaultTheme;
         private CheckBox mNavKeys;
+        private CheckBox mPrivacyGuard;
 
         private boolean mHideNavKeysRow = false;
         private boolean mHideThemeRow = false;
@@ -214,6 +233,15 @@ public class CyanogenSettingsPage extends SetupPage {
             }
         };
 
+        private View.OnClickListener mPrivacyGuardClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean checked = !mPrivacyGuard.isChecked();
+                mPrivacyGuard.setChecked(checked);
+                mPage.getData().putBoolean(KEY_PRIVACY_GUARD, checked);
+            }
+        };
+
         @Override
         protected void initializePage() {
             String privacy_policy = getString(R.string.services_privacy_policy);
@@ -222,8 +250,10 @@ public class CyanogenSettingsPage extends SetupPage {
             ClickableSpan clickableSpan = new ClickableSpan() {
                 @Override
                 public void onClick(View textView) {
-                    final Intent intent = new Intent(SetupWizardApp.ACTION_VIEW_LEGAL);
-                    intent.setData(Uri.parse(PRIVACY_POLICY_URI));
+                    // At this point of the setup, the device has already been unlocked (if frp
+                    // had been enabled), so there should be no issues regarding security
+                    final Intent intent = new Intent(Intent.ACTION_VIEW,
+                            Uri.parse(PRIVACY_POLICY_URI));
                     try {
                         getActivity().startActivity(intent);
                     } catch (Exception e) {
@@ -303,6 +333,12 @@ public class CyanogenSettingsPage extends SetupPage {
                         isKeyDisablerActive(getActivity());
                 mNavKeys.setChecked(navKeysDisabled);
             }
+
+            mPrivacyGuardRow = mRootView.findViewById(R.id.privacy_guard);
+            mPrivacyGuardRow.setOnClickListener(mPrivacyGuardClickListener);
+            mPrivacyGuard = (CheckBox) mRootView.findViewById(R.id.privacy_guard_checkbox);
+            mPrivacyGuard.setChecked(CMSettings.Secure.getInt(getActivity().getContentResolver(),
+                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
         }
 
         @Override

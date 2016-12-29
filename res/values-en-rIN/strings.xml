@@ -50,19 +50,19 @@
   <string name="yes">Yes</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Emergency call</string>
-  <string name="setup_services">Cyanogen features</string>
-  <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">LineageOS features</string>
+  <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with LineageOS\' <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with LineageOS\' <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privacy Policy</string>
   <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> by automatically sending diagnostic and usage data to Cyanogen. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> features.</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> features.</string>
   <string name="services_apply_theme">Apply the <xliff:g id="name" example="Material">%s</xliff:g> theme</string>
   <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
   <string name="services_use_secure_sms">Use secure SMS</string>
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> to encrypt SMS conversations with other users using secure SMS on a <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> device.</string>
   <string name="setup_unlock">Unlock</string>
   <string name="setup_device_locked">This device has been locked by the user.</string>
-  <string name="setup_require_cyanogen_label"><b>Require your Cyanogen OS account password</b> in order to use your device even after a factory reset.</string>
+  <string name="setup_require_cyanogen_label"><b>Require your account password</b> in order to use your device even after a factory reset.</string>
   <string name="setup_device_locked_instructions"><i>To turn this feature off/on, please go to Settings &gt; Security</i></string>
   <string name="setup_warning_skip_anyway">Without a Cyanogen OS Account, you won\'t be able to:\n\nCustomize your phone with new icons, wallpapers and more in the Themes app\n\nLocate or remotely erase your phone if it\'s lost</string>
   <!-- Fingerprint setup -->

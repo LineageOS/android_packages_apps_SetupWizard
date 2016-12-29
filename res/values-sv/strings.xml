@@ -54,9 +54,9 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Nödsamtal</string>
-  <string name="setup_services">Cyanogen-funktioner</string>
-  <string name="services_explanation" product="tablet">Dessa tjänster ger dig fler användningsområden för din surfplatta. Datat kommer användas i överensstämmelse med Cyanogens <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Dessa tjänster ger dig fler användningsområden för din telefon. Datat kommer användas i överensstämmelse med Cyanogens <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">LineageOS-funktioner</string>
+  <string name="services_explanation" product="tablet">Dessa tjänster ger dig fler användningsområden för din surfplatta. Datat kommer användas i överensstämmelse med LineageOSs <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Dessa tjänster ger dig fler användningsområden för din telefon. Datat kommer användas i överensstämmelse med LineageOSs <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Sekretesspolicy</string>
   <string name="services_help_improve_cm">Hjälp till att förbättra <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> genom att automatiskt skicka diagnostisk och användningsdata till Cyanogen. Denna information kan inte användas för att identifiera dig och kan hjälpa team att arbeta på saker så som batteritid, app-prestanda, och nya<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funktioner.</string>
@@ -66,7 +66,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> för att kryptera SMS-konversationer med andra användare med hjälp av säkra SMS på en<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> enhet.</string>
   <string name="setup_unlock">Lås upp</string>
   <string name="setup_device_locked">Denna enhet har blivit låst av användaren.</string>
-  <string name="setup_require_cyanogen_label"><b>Kräver lösenordet till ditt Cyanogen-konto</b> för att använda enheten, även efter en fabriksåterställning.</string>
+  <string name="setup_require_cyanogen_label"><b>Kräver lösenordet till ditt konto</b> för att använda enheten, även efter en fabriksåterställning.</string>
   <string name="setup_device_locked_instructions"><i>För att slå av/på denna funktion, gå till Inställningar &gt; Säkerhet</i></string>
   <string name="setup_warning_skip_anyway">Utan ett Cyanogen-konto kan du inte:\n\nAnpassa din telefon med nya ikoner, bakgrundsbilder med mer i Tema-applikationen\n\nLokalisera eller radera din telefon, om du förlorar den</string>
   <!-- Fingerprint setup -->

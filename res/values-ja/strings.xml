@@ -54,9 +54,9 @@
   <string name="yes">はい</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">緊急通報</string>
-  <string name="setup_services">Cyanogenの機能</string>
-  <string name="services_explanation" product="tablet">これらのサービスはタブレットの機能を拡張するために動作します。データはCyanogenの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
-  <string name="services_explanation" product="default">これらのサービスは携帯電話の機能を拡張するために動作します。データはCyanogenの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
+  <string name="setup_services">LineageOSの機能</string>
+  <string name="services_explanation" product="tablet">これらのサービスはタブレットの機能を拡張するために動作します。データはLineageOSの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
+  <string name="services_explanation" product="default">これらのサービスは携帯電話の機能を拡張するために動作します。データはLineageOSの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
   <string name="services_privacy_policy">プライバシーポリシー</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>の改善に協力します</string>
   <string name="services_metrics_label">診断と使用状況データを自動的にCyanogenに送信して、<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>の新機能などへの取り組みに活用されます。</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>端末でセキュアSMSを使用している他のユーザーとのSMSのスレッドを自動的に暗号化するために<xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>。</string>
   <string name="setup_unlock">ロック解除</string>
   <string name="setup_device_locked">この端末はユーザーによってロックされています。</string>
-  <string name="setup_require_cyanogen_label">工場出荷時の状態にリセットした後でも、この端末を使用するには<b>Cyanogen OSアカウントのパスワードの入力が必要です</b>。</string>
+  <string name="setup_require_cyanogen_label">工場出荷時の状態にリセットした後でも、この端末を使用するには<b>アカウントのパスワードの入力が必要です</b>。</string>
   <string name="setup_device_locked_instructions"><i>この機能をOFF/ONするには、設定→プライバシーを開いてください</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OSアカウントがないと、以下のことができません:\n\nテーマアプリで新しいアイコンや壁紙などで携帯電話をカスタマイズする\n\n紛失時に携帯電話を探したり遠隔操作でデータを消去する</string>
   <!-- Fingerprint setup -->
