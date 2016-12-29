@@ -62,11 +62,7 @@ public class OtherSettingsPage extends SetupPage {
 
     @Override
     public int getTitleResId() {
-        if (SetupWizardUtils.hasGMS(mContext)) {
-            return R.string.setup_other;
-        } else {
-            return R.string.setup_location;
-        }
+        return R.string.setup_location;
     }
 
     public static class OtherSettingsFragment extends SetupPageFragment {

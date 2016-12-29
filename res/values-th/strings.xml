@@ -53,9 +53,9 @@
   <string name="yes">ใช่</string>
   <string name="data_sim_name">ซิม <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">โทรฉุกเฉิน</string>
-  <string name="setup_services">คุณสมบัติของ Cyanogen</string>
-  <string name="services_explanation" product="tablet">บริการเหล่านี้ทำงานเพื่อเพิ่มความสามารถให้แท็บเล็ตของคุณได้ ข้อมูลจะถูกใช้ตาม <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ของ Cyanogen</string>
-  <string name="services_explanation" product="default">บริการเหล่านี้ทำงานเพื่อขยายความสามารถของโทรศัพท์ของคุณได้ ข้อมูลจะถูกใช้ตาม <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ของ Cyanogen</string>
+  <string name="setup_services">คุณสมบัติของ LineageOS</string>
+  <string name="services_explanation" product="tablet">บริการเหล่านี้ทำงานเพื่อเพิ่มความสามารถให้แท็บเล็ตของคุณได้ ข้อมูลจะถูกใช้ตาม <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ของ LineageOS</string>
+  <string name="services_explanation" product="default">บริการเหล่านี้ทำงานเพื่อขยายความสามารถของโทรศัพท์ของคุณได้ ข้อมูลจะถูกใช้ตาม <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ของ LineageOS</string>
   <string name="services_privacy_policy">นโยบายความเป็นส่วนตัว</string>
   <string name="services_help_improve_cm">ช่วยปรับปรุง <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ด้วยการส่งข้อมูลการวินิจฉัยและข้อมูลการใช้ให้กับ Cyanogen โดยอัตโนมัติ ข้อมูลนี้จะไม่สามารถนำไปใช้เพื่อระบุตัวตนของคุณและให้การช่วยเหลือทีมที่กำลังทำงานเกี่ยวกับช่วงอายุของแบตเตอร์รี่ ประสิทธิภาพการทำงานของแอพ และคุณสมบัติ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ใหม่</string>

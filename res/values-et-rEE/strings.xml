@@ -49,9 +49,9 @@
   <string name="yes">Jah</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Hädaabinumbril helistamine</string>
-  <string name="setup_services">Cyanogen funktsioonid</string>
-  <string name="services_explanation" product="tablet">Need teenused töötavad sinu hüvanguks laiendades sinu tahvelarvuti võimalusi. Andmeid kasutatakse vastavalt Cyanogeni <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Need teenused töötavad sinu hüvanguks laiendades sinu nutitelefoni võimalusi. Andmeid kasutatakse vastavalt Cyanogeni <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">LineageOS funktsioonid</string>
+  <string name="services_explanation" product="tablet">Need teenused töötavad sinu hüvanguks laiendades sinu tahvelarvuti võimalusi. Andmeid kasutatakse vastavalt LineageOSi <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Need teenused töötavad sinu hüvanguks laiendades sinu nutitelefoni võimalusi. Andmeid kasutatakse vastavalt LineageOSi <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privaatsuspoliitika</string>
   <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> saates automatselt diagnostika ja kasutamise infot Cyanogenile. Andmeid ei ole võimalik kasutada isiku tuvastamiseks. Teave aitab arendajatel muu hulgas parandada aku eluiga, rakenduste jõudlust ning arendada uusi <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> võimalusi.</string>

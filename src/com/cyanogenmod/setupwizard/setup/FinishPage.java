@@ -40,16 +40,12 @@ public class FinishPage extends SetupPage {
 
     public static final String TAG = "FinishPage";
 
-    private static final int WHAT_EXPLORE_MOD_GUIDE = 1;
     private static final String KEY_MESSENGER = "key_messenger";
-    private static final String MODGUIDE_PACKAGE_NAME = "com.cyngn.modguide";
 
     private FinishFragment mFinishFragment;
-    private final boolean mShowingModGuide;
 
     public FinishPage(Context context, SetupDataCallbacks callbacks) {
         super(context, callbacks);
-        mShowingModGuide = SetupWizardUtils.canHasModMOD(context);
     }
 
     @Override
@@ -78,21 +74,12 @@ public class FinishPage extends SetupPage {
 
         @Override
         public void handleMessage(final Message msg) {
-            final FinishPage page = mPage.get();
-            if ((page != null) && (msg.what == WHAT_EXPLORE_MOD_GUIDE)) {
-                page.doExploreModGuide();
-            }
         }
     }
 
     @Override
     public String getKey() {
         return TAG;
-    }
-
-    @Override
-    public int getButtonBarBackgroundColorId() {
-        return mShowingModGuide ? R.color.mod_button_bar_background : R.color.primary;
     }
 
     @Override
@@ -106,55 +93,24 @@ public class FinishPage extends SetupPage {
         return true;
     }
 
-    private void doExploreModGuide() {
-        final SetupWizardActivity activity =
-                (SetupWizardActivity) mFinishFragment.getActivity();
-        final Intent intent =
-                activity.getPackageManager().getLaunchIntentForPackage(MODGUIDE_PACKAGE_NAME);
-        activity.setFinishIntent(intent);
-        getCallbacks().onFinish();
-    }
-
     @Override
     public int getNextButtonTitleResId() {
-        return mShowingModGuide ? R.string.done : R.string.start;
+        return  R.string.start;
     }
 
     public static class FinishFragment extends SetupPageFragment {
 
-        private boolean mShowingModGuide;
-
         @Override
         protected void initializePage() {
             final Activity activity = getActivity();
-            if (!mShowingModGuide || (activity == null)) {
+            if (activity == null) {
                 return;
             }
-            mRootView.findViewById(R.id.explore_mod_guide)
-                    .setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    final Messenger messenger = getArguments().getParcelable(KEY_MESSENGER);
-                    if (messenger == null) {
-                        return;
-                    }
-                    final Message message = Message.obtain();
-                    message.what = WHAT_EXPLORE_MOD_GUIDE;
-                    try {
-                        messenger.send(message);
-                    } catch (final RemoteException e) {
-                        Log.e(TAG, "Couldn't send message to start MOD Guide", e);
-                    }
-                }
-            });
         }
 
         @Override
         protected int getLayoutResource() {
-            final Context context = getContext();
-            mShowingModGuide = (context != null) && SetupWizardUtils.canHasModMOD(context);
-            return mShowingModGuide ?
-                    R.layout.setup_modguide_page : R.layout.setup_finished_page;
+            return R.layout.setup_finished_page;
         }
     }
 

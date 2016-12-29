@@ -222,8 +222,10 @@ public class CyanogenSettingsPage extends SetupPage {
             ClickableSpan clickableSpan = new ClickableSpan() {
                 @Override
                 public void onClick(View textView) {
-                    final Intent intent = new Intent(SetupWizardApp.ACTION_VIEW_LEGAL);
-                    intent.setData(Uri.parse(PRIVACY_POLICY_URI));
+                    // At this point of the setup, the device has already been unlocked (if frp
+                    // had been enabled), so there should be no issues regarding security
+                    final Intent intent = new Intent(Intent.ACTION_VIEW,
+                            Uri.parse(PRIVACY_POLICY_URI));
                     try {
                         getActivity().startActivity(intent);
                     } catch (Exception e) {
