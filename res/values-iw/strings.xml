@@ -54,9 +54,9 @@
   <string name="yes">כן</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">שיחת חירום</string>
-  <string name="setup_services">תכונות Cyanogen</string>
-  <string name="services_explanation" product="tablet">שירותים אלה פועלים עבורך כדי להרחיב את יכולות מכשיר הטאבלט שלך. המידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
-  <string name="services_explanation" product="default">שירותים אלה עבורך כדי להרחיב את יכולותיו של הטלפון שלך. המידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Cyanogen.</string>
+  <string name="setup_services">תכונות LineageOS</string>
+  <string name="services_explanation" product="tablet">שירותים אלה פועלים עבורך כדי להרחיב את יכולות מכשיר הטאבלט שלך. המידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של LineageOS.</string>
+  <string name="services_explanation" product="default">שירותים אלה עבורך כדי להרחיב את יכולותיו של הטלפון שלך. המידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של LineageOS.</string>
   <string name="services_privacy_policy">מדיניות הפרטיות</string>
   <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> על-ידי שליחת נתוני אבחון ושימוש אל Cyanogen. מידע זה לא יוכל לשמש כדי לזהותך, והוא תורם לצוותים העובדים על תחומים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> להצפנת שיחות SMS עם משתמשים אחרים באמצעות SMS מאובטח במכשיר <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">פתיחה</string>
   <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
-  <string name="setup_require_cyanogen_label"><b>נדרשת סיסמת חשבון מערכת Cyanogen</b> על מנת להשתמש במכשירך, אפילו לאחר איפוס המכשיר להגדרות היצרן.</string>
+  <string name="setup_require_cyanogen_label"><b>נדרשת סיסמת חשבון מערכת</b> על מנת להשתמש במכשירך, אפילו לאחר איפוס המכשיר להגדרות היצרן.</string>
   <string name="setup_device_locked_instructions"><i>כדי להפעיל/לכבות אפשרות זו, גש להגדרות &gt; אבטחה</i></string>
   <string name="setup_warning_skip_anyway">בלי חשבון מערכת Cyanogen, לא ניתן יהיה:\n\nלהתאים את מכשירך אישית עם סמלים, טפטים ועוד ביישום ערכות העיצוב\n\nלאתר או למחוק מרחוק את מכשירך במקרה של אובדן</string>
   <!-- Fingerprint setup -->

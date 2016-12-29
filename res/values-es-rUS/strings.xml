@@ -53,9 +53,9 @@
   <string name="yes">Sí</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Llamada de emergencia</string>
-  <string name="setup_services">Características de Cyanogen</string>
-  <string name="services_explanation" product="tablet">Estos servicios sirven para extender las capacidades de la tableta. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
-  <string name="services_explanation" product="default">Estos servicios sirven para extender las capacidades del teléfono. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Cyanogen.</string>
+  <string name="setup_services">Características de LineageOS</string>
+  <string name="services_explanation" product="tablet">Estos servicios sirven para extender las capacidades de la tableta. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
+  <string name="services_explanation" product="default">Estos servicios sirven para extender las capacidades del teléfono. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
   <string name="services_privacy_policy">Política de privacidad</string>
   <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> enviando automáticamente diagnósticos de depuración y uso de datos a Cyanogen. Esta información no puede ser utilizada para identificarte y sirve para mejorar la vida útil de la batería, el rendimiento de la aplicación y el desarrollo de nuevas características desarrolladas por <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -66,7 +66,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> para encriptar conversaciones SMS con otros usuarios utilizando SMS seguros en un dispositivo <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo ha sido bloqueado por el usuario.</string>
-  <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta Cyanogen OS</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
+  <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para activar y desactivar esta función, ve a Ajustes &gt; Seguridad</i></string>
   <string name="setup_warning_skip_anyway">Sin una cuenta de Cyanogen OS, no podrás: \n\nPersonalizar tu teléfono con nuevos iconos, fondos de pantalla y mucho más a través de la aplicación Temas\n\nLocalizar o formatear tu teléfono de manera remota si se ha perdido</string>
   <!-- Fingerprint setup -->

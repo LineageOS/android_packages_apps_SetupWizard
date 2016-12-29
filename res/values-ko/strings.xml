@@ -53,9 +53,9 @@
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">긴급 통화</string>
-  <string name="setup_services">Cyanogen 기능</string>
-  <string name="services_explanation" product="tablet">이 기능은 태블릿의 성능 향상을 위해 작동합니다. 수집된 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
-  <string name="services_explanation" product="default">이 기능은 휴대전화의 성능 향상을 위해 작동합니다. 수집된 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
+  <string name="setup_services">LineageOS 기능</string>
+  <string name="services_explanation" product="tablet">이 기능은 태블릿의 성능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
+  <string name="services_explanation" product="default">이 기능은 휴대전화의 성능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
   <string name="services_metrics_label">진단 및 사용 정보를 Cyanogen에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 배터리 수명, 앱 성능과 새 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 기능과 같이 사용자를 식별할 수 없는 정보입니다.</string>
@@ -66,7 +66,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="보안 SMS를 사용">%1$s</xliff:g>하여 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>기기에서 보안 SMS를 사용하는 다른 사용자와의 SMS 대화를 암호화함.</string>
   <string name="setup_unlock">잠금 해제</string>
   <string name="setup_device_locked">이 기기는 사용자에 의해 잠겨 있습니다.</string>
-  <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>Cyanogen OS 계정의 비밀번호가 필요합니다</b> .</string>
+  <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>계정의 비밀번호가 필요합니다</b> .</string>
   <string name="setup_device_locked_instructions"><i>이 기능을 켜거나 끄려면, 설정 &gt; 보안으로 이동하세요</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS 계정이 없을 경우 사용할 수 없는 기능:\n\n
 테마 앱을 통한 새로운 아이콘, 배경화면 등의 적용\n\n기기를 잃어버렸을 경우 기기 찾기 또는 원격 개인정보 삭제</string>

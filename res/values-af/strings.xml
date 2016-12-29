@@ -54,9 +54,9 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Noodoproep</string>
-  <string name="setup_services">Cyanogen funksies</string>
-  <string name="services_explanation" product="tablet">Hierdie dienste werk vir jou om die vermoëns van jou tablet uit te brei. Data sal in ooreenkomstig gebruik word met Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Hierdie dienste werk vir jou om die vermoëns van jou foon uit te brei. Data sal in ooreenkomstig gebruik word met Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">LineageOS funksies</string>
+  <string name="services_explanation" product="tablet">Hierdie dienste werk vir jou om die vermoëns van jou tablet uit te brei. Data sal in ooreenkomstig gebruik word met LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Hierdie dienste werk vir jou om die vermoëns van jou foon uit te brei. Data sal in ooreenkomstig gebruik word met LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privaatheid beleid</string>
   <string name="services_help_improve_cm">Help verbeter <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> deur outomaties diagnostiese en gebruikers data te stuur na Cyanogen. Hierdie inligting kan nie gebruik word om jou te identifiseer nie en help spanne werk op dinge soos battery lewe, program werkverrigting en nuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funksies.</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> om SMS gesprekke met ander gebruikers te enkripteer met behulp van veilige SMS op \'n <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> toestel.</string>
   <string name="setup_unlock">Ontsluit</string>
   <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
-  <string name="setup_require_cyanogen_label"><b>Benodig  jou Cyanogen wagwoord</b> om jou toestel te gebruik, selfs nadat \'n fabriek herstel gedoen is.</string>
+  <string name="setup_require_cyanogen_label"><b>Benodig  jou wagwoord</b> om jou toestel te gebruik, selfs nadat \'n fabriek herstel gedoen is.</string>
   <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
   <string name="setup_warning_skip_anyway">Sonder \'n Cyanogen bedryfstelsel rekening, sal jy nie in staat wees om:\n\nOm jou toestel met nuwe ikone, agtergronde en meer in die Temas program te verpersoonlik nie\n\nJou toestel te vind of op te spoor indien dit verlore gaan nie</string>
   <!-- Fingerprint setup -->

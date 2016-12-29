@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -25,38 +26,13 @@
            android:layout_weight="1"/>
 
     <ImageView
-        android:id="@+id/brand_logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/brand_finish"
-        android:scaleType="centerInside"
-        android:padding="@dimen/content_margin_left"/>
-
-
-
-    <TextView android:id="@+id/mod_welcome"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="20sp"
-              android:layout_marginTop="105dp"
-              android:paddingLeft="@dimen/content_margin_left"
-              android:paddingRight="@dimen/content_margin_right"
-              android:text="@string/mod_welcome"
-              android:fontFamily="sans-serif-medium"
-              android:textColor="@color/white"
-              android:visibility="gone"/>
-
-
-    <TextView android:id="@+id/mod_desc"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:textSize="16sp"
-              android:layout_marginTop="16dp"
-              android:paddingLeft="@dimen/content_margin_left"
-              android:paddingRight="@dimen/content_margin_right"
-              android:text="@string/mod_description"
-              android:textColor="@color/white"
-              android:visibility="gone"/>
+       android:id="@+id/brand_logo"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/logo"
+       android:adjustViewBounds="true"
+       android:scaleType="fitCenter"
+       android:padding="@dimen/content_margin_left"/>
 
     <Space android:layout_width="match_parent"
            android:layout_height="0px"

@@ -53,9 +53,9 @@
   <string name="yes">அனுமதிக்கப்பட்டது</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">அவசரகால அழைப்பு</string>
-  <string name="setup_services">Cyanogen அம்சங்கள்</string>
-  <string name="services_explanation" product="tablet">இந்த சேவைகள் உங்கள் டேப்ளட்டின் திறன்களை விரிவுபடுத்துவதற்காக உங்களுக்காக பணிசெய்கின்றன. தரவானது Cyanogenஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்.</string>
-  <string name="services_explanation" product="default">இந்த சேவைகள் உங்கள் தொலைப்பேசியின் திறன்களை விரிவுபடுத்துவதற்காக உங்களுக்காக பணிசெய்கின்றன. தரவானது Cyanogenஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்.</string>
+  <string name="setup_services">LineageOS அம்சங்கள்</string>
+  <string name="services_explanation" product="tablet">இந்த சேவைகள் உங்கள் டேப்ளட்டின் திறன்களை விரிவுபடுத்துவதற்காக உங்களுக்காக பணிசெய்கின்றன. தரவானது LineageOSஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்.</string>
+  <string name="services_explanation" product="default">இந்த சேவைகள் உங்கள் தொலைப்பேசியின் திறன்களை விரிவுபடுத்துவதற்காக உங்களுக்காக பணிசெய்கின்றன. தரவானது LineageOSஇன் <xliff:g id="name" example="Privacy Policy">%s</xliff:g>க்கு இணங்கி பயன்படுத்தப்படும்.</string>
   <string name="services_privacy_policy">தனியுரிமைக் கொள்கை</string>
   <string name="services_help_improve_cm">மேம்படுத்த உதவுங்கள் <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label">தானியக்கமாக பகுப்பாய்வு மற்றும் பயன் தரவை Cyanogenக்கு அனுப்புவதன் மூலம் <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. இந்த தகவல் உங்களை அடையாளம் காண பயன்படுத்தப்பட முடியாது மற்றும் மின்கலன் ஆயுள், பயன்பாட்டின் செயல்திறன் மற்றும் புதிய <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> அம்சங்கள் போன்ற விடயங்களில் பணிசெய்யும் குழுக்களுக்கு ஒரு உதவிக்கரம் நீட்டும்.</string>
@@ -65,7 +65,7 @@
   <string name="services_secure_sms_label">பாதுகாப்பான SMSஐ <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g> சாதனத்தில் பிற பயனர்களோடு SMS உரையாடல்களை <xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> குறியாக்கவுள்ளது.</string>
   <string name="setup_unlock">தடைநீக்கு</string>
   <string name="setup_device_locked">இந்த சாதனமானது பயனரால் பூட்டப்பட்டது.</string>
-  <string name="setup_require_cyanogen_label"><b>ஒரு தொழிற்சாலை மீட்டமைப்புக்கு பிறகும் உங்கள் Cyanogen OS கணக்கு</b> கடவுச்சொல் தேவைப்படுகிறது.</string>
+  <string name="setup_require_cyanogen_label"><b>ஒரு தொழிற்சாலை மீட்டமைப்புக்கு பிறகும் உங்கள் கணக்கு</b> கடவுச்சொல் தேவைப்படுகிறது.</string>
   <string name="setup_device_locked_instructions"><i>இந்த அம்சத்தை ஆஃப்/ஆன் செய்ய, தயவுசெய்து செல்லுங்கள் அமைப்புகள் &gt; பாதுகாப்பு</i></string>
   <string name="setup_warning_skip_anyway">ஒரு Cyanogen OS கணக்கு இல்லாமல்,உங்களால் இவற்றை செய்ய முடியாது: \n\n உங்கள் தொலைப்பேசியை புதிய படவுருக்கள், வால்பேப்பர்கள் மற்றும் கருப்பொருள் பயன்பாட்டிலுள்ள பலவற்றால் தனிப்பயனாக்க\n\n உங்கள் தொலைப்பேசி தொலைந்துவிட்டால் அதை கண்டறிய அல்லது தொலைநிலையில் அழிக்க</string>
   <!-- Fingerprint setup -->

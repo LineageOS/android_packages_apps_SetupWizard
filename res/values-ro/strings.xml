@@ -53,9 +53,9 @@
   <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Apel de urgenţă</string>
-  <string name="setup_services">Facilități Cyanogen</string>
-  <string name="services_explanation" product="tablet">Aceste servicii extind capacitățile tabletei dumneavoastră. Datele vor fi folosite în conformitate cu Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Aceste servicii extind capacitățile telefonului dumneavoastră. Datele vor fi folosite în conformitate cu Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">Facilități LineageOS</string>
+  <string name="services_explanation" product="tablet">Aceste servicii extind capacitățile tabletei dumneavoastră. Datele vor fi folosite în conformitate cu LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Aceste servicii extind capacitățile telefonului dumneavoastră. Datele vor fi folosite în conformitate cu LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Politica de confidențialitate</string>
   <string name="services_help_improve_cm">Ajută la îmbunătățirea <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">Aplică tema <xliff:g id="name" example="Material">%s</xliff:g></string>
@@ -63,7 +63,7 @@
   <string name="services_use_secure_sms">Utilizează SMS securizat</string>
   <string name="setup_unlock">Deblocare</string>
   <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
-  <string name="setup_require_cyanogen_label"><b>Cere parola contului Cyanogen OS</b> pentru a utiliza aparatul dvs. chiar și după o resetare la setările din fabrică.</string>
+  <string name="setup_require_cyanogen_label"><b>Cere parola contului</b> pentru a utiliza aparatul dvs. chiar și după o resetare la setările din fabrică.</string>
   <string name="setup_device_locked_instructions"><i>Pentru a activa sau dezactiva această caracteristică, vă rugăm să mergeți la Setări &gt; securitate</i></string>
   <string name="setup_warning_skip_anyway">Fără un cont de Cyanogen OS, nu veți putea să: \n\nPersonalizați telefonul cu noi pictograme, imagini de fundal și mai multe în aplicația de Teme\n\nLocalizați sau ștergeți de la distanță telefonul dacă e pierdut</string>
   <!-- Fingerprint setup -->

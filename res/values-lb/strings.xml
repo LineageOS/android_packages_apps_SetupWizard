@@ -49,9 +49,9 @@
   <string name="yes">Jo</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Noutruff</string>
-  <string name="setup_services">Cyanogen-Funktiounen</string>
-  <string name="services_explanation" product="tablet">Dës Servicer gi benotzt, fir d\'Funktioune vun denger Tablet z\'erweideren. D\'Date ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu Cyanogen benotzt.</string>
-  <string name="services_explanation" product="default">Dës Servicer gi benotzt, fir d\'Funktioune vun dengem Telefon z\'erweideren. D\'Date ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu Cyanogen benotzt.</string>
+  <string name="setup_services">LineageOS-Funktiounen</string>
+  <string name="services_explanation" product="tablet">Dës Servicer gi benotzt, fir d\'Funktioune vun denger Tablet z\'erweideren. D\'Date ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu LineageOS benotzt.</string>
+  <string name="services_explanation" product="default">Dës Servicer gi benotzt, fir d\'Funktioune vun dengem Telefon z\'erweideren. D\'Date ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu LineageOS benotzt.</string>
   <string name="services_privacy_policy">Dateschutzerklärung</string>
   <string name="services_help_improve_cm">Hëllef <xliff:g id="name" example="CyanogenMod">%s</xliff:g> ze verbesseren</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> andeem s du automatesch Diagnos- a Benotzungsdaten u CyanogenMod schécks. Dës Informatioune kënnen net benotzt ginn, fir dech z\'identifiéieren. Et hëlleft eisen Equippen, déi u Saache wéi Akkulafzäit, App-Leeschtung oder un neie <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-Funktioune schaffen.</string>
@@ -61,7 +61,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, fir SMS-Konversatioune mat anere Benotzer op engem <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-Apparat ze verschlësselen.</string>
   <string name="setup_unlock">Entspären</string>
   <string name="setup_device_locked">Dësen Apparat gouf duerch de Benotzer gespaart.</string>
-  <string name="setup_require_cyanogen_label"><b>D\'Passwuert  vum Cyanogen-OS-Kont verlaange</b> fir däin Apparat ze benotzen, souguer no der Zrécksetzung op d\'Wierksastellungen.</string>
+  <string name="setup_require_cyanogen_label"><b>D\'Passwuert  vum Kont verlaange</b> fir däin Apparat ze benotzen, souguer no der Zrécksetzung op d\'Wierksastellungen.</string>
   <string name="setup_device_locked_instructions"><i>Fir dës Funktioun z\'aktivéieren/desaktivéieren, géi op Astellungen  &gt; Sécherheet</i></string>
   <string name="setup_warning_skip_anyway">Ouni en Cyanogen-OS-Kont kanns du däin Telefon net:\n\nMat neie Symboler, Hannergrondbiller a méi an der Design-App upassen\n\nLokaliséieren oder läschen, wann s du e verluer hues</string>
   <!-- Fingerprint setup -->
