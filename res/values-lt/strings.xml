@@ -49,9 +49,9 @@
   <string name="yes">Taip</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Pagalbos skambutis</string>
-  <string name="setup_services">„Cyanogen“ funkcijos</string>
-  <string name="services_explanation" product="tablet">Šios paslaugos dirba už jus, kad išplėstu jūsų planšetinio kompiuterio galimybes. Duomenys bus naudojami pagal „Cyanogen\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Šios paslaugos dirba už jus, kad išplėstu jūsų telefono galimybes. Duomenys bus naudojami pagal „Cyanogen\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">„LineageOS“ funkcijos</string>
+  <string name="services_explanation" product="tablet">Šios paslaugos dirba už jus, kad išplėstu jūsų planšetinio kompiuterio galimybes. Duomenys bus naudojami pagal „LineageOS\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Šios paslaugos dirba už jus, kad išplėstu jūsų telefono galimybes. Duomenys bus naudojami pagal „LineageOS\'s“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privatumo politika</string>
   <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatiškai siunčiant diagnostikos ir naudojimo duomenis „Cyanogen“. Ši informacija negali būti naudojama jūsų identifikavimui, pateikti duomenys padės komandoms dirbančioms prie akumuliatoriaus veikimo laiko, programų našumo ir naujų <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkcijų.</string>
@@ -61,7 +61,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, kad užšifruoti SMS pokalbius su kitais vartotojais, naudojančiais saugius SMS <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> įrenginyje.</string>
   <string name="setup_unlock">Atrakinti</string>
   <string name="setup_device_locked">Šis įrenginys buvo užrakintas naudotojo.</string>
-  <string name="setup_require_cyanogen_label"><b>Reikalauti jūsų „Cyanogen“ OS paskyros slaptažodžio</b> , kad būtų galima naudotis įrenginiu net ir po gamyklinių nustatymų iš naujo.</string>
+  <string name="setup_require_cyanogen_label"><b>Reikalauti jūsų paskyros slaptažodžio</b> , kad būtų galima naudotis įrenginiu net ir po gamyklinių nustatymų iš naujo.</string>
   <string name="setup_device_locked_instructions"><i>Kad išjungtumėte / įjungtumėte šią funkciją, eikite į Nustatymai &gt; Sauga</i></string>
   <string name="setup_warning_skip_anyway">Be „Cyanogen“ OS paskyros, jums nebus suteikta galimybė:\n\nTemų programoje tinkinti savo telefoną su naujomis piktogramomis, ekrano fonais ir daugiau\n\nRasti arba nuotoliniu būdu ištrinti savo telefoną, jei jis yra prarastas</string>
   <!-- Fingerprint setup -->

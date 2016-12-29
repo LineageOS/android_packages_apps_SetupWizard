@@ -53,9 +53,9 @@
   <string name="yes">Так</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Экстранны выклік</string>
-  <string name="setup_services">Службы Cyanogen</string>
-  <string name="services_explanation" product="tablet">Гэтыя службы пашыраюць магчымасці вашага планшэта. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
-  <string name="services_explanation" product="default">Гэтыя службы пашыраюць магчымасці вашага тэлефона. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Cyanogen.</string>
+  <string name="setup_services">Службы LineageOS</string>
+  <string name="services_explanation" product="tablet">Гэтыя службы пашыраюць магчымасці вашага планшэта. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+  <string name="services_explanation" product="default">Гэтыя службы пашыраюць магчымасці вашага тэлефона. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
   <string name="services_privacy_policy">Палітыка прыватнасці</string>
   <string name="services_help_improve_cm">Дапамагчы палепшыць <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, аўтаматычна адпраўляючы дадзеныя дыягностыкі і выкарыстанні ў Cyanogen. Дадзеная інфармацыя не можа быць скарыстана для ідэнтыфікацыі вашай асобы, але можа дапамагчы ў працы над аптымізацыяй выдатку батарэі, паляпшэннем прадукцыйнасці дадаткаў, а таксама распрацоўцы новых функцый <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -65,7 +65,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> для шыфравання паведамленняў, што перадаюцца іншым карыстачам прылад з<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Разблакаваць</string>
   <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
-  <string name="setup_require_cyanogen_label"><b>Патрабаваць пароль акаўнта АС Cyanogen</b> доўжачы выкарыстанні прылады нават пасля выдалення ўсіх дадзеных.</string>
+  <string name="setup_require_cyanogen_label"><b>Патрабаваць пароль акаўнта</b> доўжачы выкарыстанні прылады нават пасля выдалення ўсіх дадзеных.</string>
   <string name="setup_device_locked_instructions"><i> Каб уключыць ці адключыць гэту функцыю, перайдзіце ў меню "Налады" &gt; "Бяспека"</i></string>
   <string name="setup_warning_skip_anyway">Без уліковага запісу Cyanogen вы не зможаце:\n\nПерсаналізоўваць тэлефон новымі шпалерамі, абразкамі і іншымі кампанентамі ў дадатку «Тэмы»\n\nЗнайсці ці выдалена скінуць налады на тэлефоне ў выпадку яго страты</string>
   <!-- Fingerprint setup -->

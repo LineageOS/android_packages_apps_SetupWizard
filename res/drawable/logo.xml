@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017 The LineageOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="320dp"
+    android:viewportWidth="512"
+    android:viewportHeight="320">
+
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M157.89,271.64a1.83,1.83,0,0,1-1.89-1.89V248.42h4.65v19.32H171v3.9Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M185,271.64V248.42h4.68v23.22Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M221.17,248.42h4.26v22a1.23,1.23,0,0,1-.67,1.09,3.17,3.17,0,0,1-1.67 .41
+,4,4,0,0,1-1.71-.29,3.11,3.11,0,0,1-1.12-1L210,256v15.61h-4.32v-21.5a1.56,1.56,0,0,1,.68-1.4,3.18,3.18,0,0,1,1.79-.46,3.59,3.59,0,0,1,1.9
+.39 ,5.91,5.91,0,0,1,1.41,1.56l9.72,13.59Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M256.9,252.36H246.2v5.5h9.63v3.93H246.2v5.89H256.6v4H241.51V250.31a1.74,1.74,0,0,1,.59-1.37,2,2,0,0,1,1.4-.52h13.4Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M286.38,271.64l-2-5.76h-8.49l-2,5.76h-4.85l7.87-21.5q.68-1.85,3.15-1.85t3.19,1.89l7.87,21.46ZM277.27,262h5.82l-2.93-8.62Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M314.33,272a11,11,0,0,1-8.36-3.19,11.93,11.93,0,0,1-3.06-8.62,12.12,12.12,0,0,1,3.25-8.89,11.56,11.56,0,0,1,8.62-3.3,11.44,11.44,0,0,1,6,1.5,9,9,0,0,1,3.63,3.93l-3.74,2q-1.69-3.41-6-3.41a6.53,6.53,0,0,0-5.14,2.16,8.58,8.58,0,0,0-1.92,5.9,8.67,8.67,0,0,0,1.79,5.8,6.11,6.11,0,0,0,4.91,2.1,6.74,6.74,0,0,0,4.6-1.58,5.26,5.26,0,0,0,1.87-4h-5.89v-3.67h10.5v2.57a10.19,10.19,0,0,1-3.12,7.72A11.12,11.12,0,0,1,314.33,272Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M356,252.36H345.3v5.5h9.63v3.93H345.3v5.89h10.41v4H340.62V250.31a1.74,1.74,0,0,1,.59-1.37,2,2,0,0,1,1.4-.52H356Z" />
+    <path
+        android:fillColor="@color/accent"
+        android:pathData="M416,128a39.92,39.92,0,0,0-31.11,14.87l-1.5-.6A294.79,294.79,0,0,0,336,128.14s0-.09,0-.14a80,80,0,1,0-160,0s0,.09,0,.13l-1.72
+.38 a293.48,293.48,0,0,0-45.67,13.76l-1.5 .6
+a40,40,0,1,0,7.39,14.28h0a277.33,277.33,0,0,1,43.1-13,80,80,0,0,0,156.73,0,277.3,277.3,0,0,1,43.11,13h0A40,40,0,1,0,416,128ZM96,192a24,24,0,1,1,24-24A24,24,0,0,1,96,192Zm160,0a64,64,0,1,1,64-64A64.07,64.07,0,0,1,256,192Zm160,0a24,24,0,1,1,24-24A24,24,0,0,1,416,192ZM288,128a32,32,0,1,1-32-32A32,32,0,0,1,288,128Z" />
+</vector>

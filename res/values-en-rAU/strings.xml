@@ -49,9 +49,9 @@
   <string name="yes">Yes</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Emergency call</string>
-  <string name="setup_services">Cyanogen features</string>
-  <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">LineageOS features</string>
+  <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Privacy Policy</string>
   <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">Apply the <xliff:g id="name" example="Material">%s</xliff:g> theme</string>

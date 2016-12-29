@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- *
+ * Copyright (C) 2017 The LineageOS Project
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -23,8 +24,8 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.view.View;
-import android.widget.TextView;
 import com.cyanogenmod.setupwizard.R;
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 import com.cyanogenmod.setupwizard.cmstats.SetupStats;
@@ -67,6 +68,11 @@ public class ScreenLockSetupPage extends SetupPage {
     }
 
     @Override
+    public int getIconResId() {
+        return R.drawable.ic_lock_screen;
+    }
+
+    @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if (SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN == requestCode) {
             if (resultCode == Activity.RESULT_OK || resultCode == Activity.RESULT_FIRST_USER) {
@@ -78,11 +84,11 @@ public class ScreenLockSetupPage extends SetupPage {
 
     public static class LockscreenSetupFragment extends SetupPageFragment {
 
-        private TextView mSetupLockscreen;
+        private Button mSetupLockscreen;
 
         @Override
         protected void initializePage() {
-            mSetupLockscreen = (TextView) mRootView.findViewById(R.id.setup_lockscreen);
+            mSetupLockscreen = (Button) mRootView.findViewById(R.id.setup_lockscreen);
             mSetupLockscreen.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

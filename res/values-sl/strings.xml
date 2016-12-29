@@ -54,9 +54,9 @@
   <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Klic v sili</string>
-  <string name="setup_services">Značilnosti Cyanogen</string>
-  <string name="services_explanation" product="tablet">Te storitve vam omogočajo, da razširite zmogljivosti svoje tablice. Podatki se uporabijo v skladu s <xliff:g id="name" example="Privacy Policy">%s </xliff:g> Cyanogen.</string>
-  <string name="services_explanation" product="default">Te storitve vam omogočajo, da razširite zmogljivosti svojega telefona. Podatki se uporabijo v skladu s <xliff:g id="name" example="Privacy Policy">%s </xliff:g> Cyanogen.</string>
+  <string name="setup_services">Značilnosti LineageOS</string>
+  <string name="services_explanation" product="tablet">Te storitve vam omogočajo, da razširite zmogljivosti svoje tablice. Podatki se uporabijo v skladu s <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
+  <string name="services_explanation" product="default">Te storitve vam omogočajo, da razširite zmogljivosti svojega telefona. Podatki se uporabijo v skladu s <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
   <string name="services_privacy_policy">Pravilnikom o zasebnosti</string>
   <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe Cyanogenu. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g>, da šifrirate pogovore SMS z drugimi uporabniki z uporabo varnih SMS-ov na napravi <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Odkleni</string>
   <string name="setup_device_locked">To napravo je zaklenil uporabnik.</string>
-  <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa Cyanogen OS</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>
+  <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>
   <string name="setup_device_locked_instructions"><i>Za vklop/izklop te značilnosti pojdite v Nastavitve &gt; Varnost</i></string>
   <string name="setup_warning_skip_anyway">Brez računa Cyanogen OS ne boste mogli: \n\nPrilagoditi svojega telefona z novimi ikonami, ozadji in več v aplikaciji za teme\n\nNajti ali oddaljeno izbrisati telefona, če ste ga izgubili</string>
   <!-- Fingerprint setup -->

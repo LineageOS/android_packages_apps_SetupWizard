@@ -23,6 +23,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cyanogenmod.setupwizard.R;
@@ -37,6 +38,7 @@ public abstract class SetupPageFragment extends Fragment {
     protected Page mPage;
     protected View mRootView;
     protected TextView mTitleView;
+    protected ImageView mIconView;
     protected ViewGroup mHeaderView;
 
     @Override
@@ -52,7 +54,8 @@ public abstract class SetupPageFragment extends Fragment {
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(getLayoutResource(), container, false);
         mTitleView = (TextView) mRootView.findViewById(android.R.id.title);
-        mHeaderView = (ViewGroup )  mRootView.findViewById(R.id.header);
+        mHeaderView = (ViewGroup) mRootView.findViewById(R.id.header);
+        mIconView = (ImageView) mRootView.findViewById(R.id.header_icon);
         initializePage();
         return mRootView;
     }
@@ -83,6 +86,13 @@ public abstract class SetupPageFragment extends Fragment {
         mPage = mCallbacks.getPage(mKey);
         if (mTitleView != null) {
             mTitleView.setText(mPage.getTitleResId());
+        }
+        if (mIconView != null) {
+            int mResId = mPage.getIconResId();
+            if (mResId != -1) {
+                mIconView.setImageResource(mResId);
+                mIconView.setVisibility(View.VISIBLE);
+            }
         }
         mCallbacks.onPageLoaded(mPage);
         getActivity().startPostponedEnterTransition();

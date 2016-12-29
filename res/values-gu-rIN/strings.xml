@@ -53,9 +53,9 @@
   <string name="yes">હા</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">કટોકટીનો કૉલ</string>
-  <string name="setup_services">Cyanogen ની સુવિધાઓ</string>
-  <string name="services_explanation" product="tablet">આ સેવાઓ તમારા ટૅબ્લેટની ક્ષમતાઓ વિસ્તારિત કરવાનું તમારા માટે કાર્ય કરે છે. ડેટાનો ઉપયોગ Cyanogen ના <xliff:g id="name" example="Privacy Policy">%s</xliff:g> અનુસાર થશે.</string>
-  <string name="services_explanation" product="default">આ સેવાઓ તમારા ફોનની ક્ષમતાઓ વિસ્તારિત કરવાનું તમારા માટે કાર્ય કરે છે. ડેટાનો ઉપયોગ Cyanogen ના <xliff:g id="name" example="Privacy Policy">%s</xliff:g> અનુસાર થશે.</string>
+  <string name="setup_services">LineageOS ની સુવિધાઓ</string>
+  <string name="services_explanation" product="tablet">આ સેવાઓ તમારા ટૅબ્લેટની ક્ષમતાઓ વિસ્તારિત કરવાનું તમારા માટે કાર્ય કરે છે. ડેટાનો ઉપયોગ LineageOS ના <xliff:g id="name" example="Privacy Policy">%s</xliff:g> અનુસાર થશે.</string>
+  <string name="services_explanation" product="default">આ સેવાઓ તમારા ફોનની ક્ષમતાઓ વિસ્તારિત કરવાનું તમારા માટે કાર્ય કરે છે. ડેટાનો ઉપયોગ LineageOS ના <xliff:g id="name" example="Privacy Policy">%s</xliff:g> અનુસાર થશે.</string>
   <string name="services_privacy_policy">ગોપનીયતા નીતિ સાથે સહમતિ દર્શાવો છો</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>ના સુધારામાં મદદ કરો</string>
   <string name="services_metrics_label">સ્વયંચાલિત રીતે ડાયગ્નોસ્ટિક અને વપરાશ ડેટા Cyanogen ને મોકલીને<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> . આ માહિતીનો ઉપયોગ તમને ઓળખવા માટે થઈ શકે નહીં અને એવી ટીમોને મદદરૂપ થશે જેઓ બૅટરી આવરદા, એપ્લિકેશન કામગીરી અને <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ફીચરો પર કાર્ય કરતી હોય.</string>
@@ -65,7 +65,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> અન્ય ઉપયોગકર્તાઓ સાથેના SMS વાર્તાલાપો <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ડિવાઇસ પર એન્ક્રિપ્ટ કરશે જે સુ‌રક્ષિત SMSનો ઉપયોગ કરીને કરશે.</string>
   <string name="setup_unlock">અનલૉક કરો</string>
   <string name="setup_device_locked">આ ડિવાઇસ ઉપયોગકર્તા દ્વારા લૉક કરવામાં આવી છે.</string>
-  <string name="setup_require_cyanogen_label"><b>ફેક્ટરી રિસેટ પછી તમારા Cyanogen OS ખાતાનો પાસવર્ડ</b> જરૂરી જેથી ફેક્ટરી રિસેટ પછી પણ તમારું ડિવાઇસ વાપરી શકાય.</string>
+  <string name="setup_require_cyanogen_label"><b>ફેક્ટરી રિસેટ પછી તમારા ખાતાનો પાસવર્ડ</b> જરૂરી જેથી ફેક્ટરી રિસેટ પછી પણ તમારું ડિવાઇસ વાપરી શકાય.</string>
   <string name="setup_device_locked_instructions"><i>આ ફીચર ઑફ/ઑન કરવા, કૃપા કરીને સેટિંગ્સ &gt; સિક્યોરિટી પર જાવ</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen OS ખાતા વિના, તમે આ બાબતો કરી શકશો નહીં:\n\nથીમ્સ ઍપમાં નવા આઇકૉન, વૉલપેપરો અને બીજી બધી બાબતોથી તમારા ફોનને કસ્ટમાઇઝ કરી શકશો નહીં\n\nજો તમારો ફોન ખોવાઇ જાય તો તે શોધો અથવા રિમોટ રીતે રદ કરો</string>
   <!-- Fingerprint setup -->
