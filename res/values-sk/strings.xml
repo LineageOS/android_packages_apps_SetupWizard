@@ -54,9 +54,9 @@
   <string name="yes">Áno</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Tiesňový hovor</string>
-  <string name="setup_services">Funkcie Cyanogen</string>
-  <string name="services_explanation" product="tablet">Tieto služby sú určené pre vás a rozširujú možnosti vášho tabletu. Údaje sa použijú v súlade s Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Tieto služby sú určené pre vás a rozširujú možnosti vášho telefónu. Údaje sa použijú v súlade s Cyanogen <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">Funkcie LineageOS</string>
+  <string name="services_explanation" product="tablet">Tieto služby sú určené pre vás a rozširujú možnosti vášho tabletu. Údaje sa použijú v súlade s LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Tieto služby sú určené pre vás a rozširujú možnosti vášho telefónu. Údaje sa použijú v súlade s LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Ochrana osobných údajov</string>
   <string name="services_help_improve_cm">Pomôcť vylepšovať <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatickým zasielaním diagnostických údajov a údajov o používaní do Cyanogenu. Tieto informácie sa nepoužijú na vašu identifikáciu, ale pomôžu tímom pracujúcim na výdrži, výkone aplikácií a nových funkciách <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> pre šifrovanie SMS konverzácií s ostatnými používateľmi prostredníctvom zabezpečených SMS na zariadení s <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Odomknúť</string>
   <string name="setup_device_locked">Toto zariadenie bolo uzamknuté používateľom.</string>
-  <string name="setup_require_cyanogen_label"><b>Vyžadovať heslo vášho účtu Cyanogen OS</b> na použitie vášho zariadenia aj po obnove továrenských nastavení.</string>
+  <string name="setup_require_cyanogen_label"><b>Vyžadovať heslo vášho účtu</b> na použitie vášho zariadenia aj po obnove továrenských nastavení.</string>
   <string name="setup_device_locked_instructions"><i>Na vypnutie/zapnutie tejto funkcie prejdite do Nastavenia &gt; Zabezpečenie</i></string>
   <string name="setup_warning_skip_anyway">Bez účtu Cyanogen OS nebudete môcť:\n\nPrispôsobiť si telefón s novými ikonami, tapetami a ďalším obsahom z aplikácie Témy\n\nNájsť alebo vzdialene vymazať váš telefón po jeho strate</string>
   <!-- Fingerprint setup -->
@@ -87,7 +87,7 @@
   <string name="lockscreen_setup_screen_lock_setup">Nastaviť kód PIN, gesto alebo heslo</string>
   <!-- MOD stuff -->
   <string name="mod_welcome">Zariadenie je pripravené na použitie MODov</string>
-  <string name="mod_description">MODy urýchľujú, zefektívňujú a uľahčujú používanie telefónu. V tejto príručke môžete nájsť nové režimy, 
+  <string name="mod_description">MODy urýchľujú, zefektívňujú a uľahčujú používanie telefónu. V tejto príručke môžete nájsť nové režimy,
 naučiť sa čo robia, povoliť ich alebo zakázať.</string>
   <string name="mod_explore">Preskúmať sprievodcu MODov</string>
 </resources>

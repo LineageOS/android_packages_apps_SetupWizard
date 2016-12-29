@@ -54,9 +54,9 @@
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">紧急电话</string>
-  <string name="setup_services">Cyanogen 功能</string>
-  <string name="services_explanation" product="tablet">这些服务用于扩展您的平板电脑的功能。数据将根据 Cyanogen 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
-  <string name="services_explanation" product="default">这些服务用于扩展您的手机的功能。数据将根据 Cyanogen 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+  <string name="setup_services">LineageOS 功能</string>
+  <string name="services_explanation" product="tablet">这些服务用于扩展您的平板电脑的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+  <string name="services_explanation" product="default">这些服务用于扩展您的手机的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
   <string name="services_privacy_policy">隐私政策</string>
   <string name="services_help_improve_cm">帮助完善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通过自动发送诊断和使用数据给 Cyanogen。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
@@ -67,7 +67,7 @@
   <string name="services_secure_sms_label">在您的 <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> 设备上 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 来加密您与其他用户的短信会话。</string>
   <string name="setup_unlock">解锁</string>
   <string name="setup_device_locked">此设备的持有者锁定了该设备。</string>
-  <string name="setup_require_cyanogen_label">即使您的设备被恢复出厂设置，<b>也要求输入您的 Cyanogen OS 帐户密码</b>。</string>
+  <string name="setup_require_cyanogen_label">即使您的设备被恢复出厂设置，<b>也要求输入您的 帐户密码</b>。</string>
   <string name="setup_device_locked_instructions"><i>要开启或关闭此功能，请进入设置 &gt; 安全</i></string>
   <string name="setup_warning_skip_anyway">“如果不创建 Cyanogen OS 帐户，您将：\n\n无法使用主题应用来使用新的图标、壁纸和其他内容来自定义您的手机\n\n无法定位或擦除遗失的手机”</string>
   <!-- Fingerprint setup -->

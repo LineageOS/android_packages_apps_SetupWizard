@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,27 +18,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="@color/primary">
 
-    <include layout="@layout/logo_header" />
+    <Space android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"/>
 
-    <RelativeLayout android:id="@+id/page"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1"
-                 android:gravity="center"
-                 android:paddingLeft="@dimen/content_margin_left"
-                 android:paddingRight="@dimen/content_margin_left"
-                 style="@style/PageContent">
+    <ImageView
+        android:id="@+id/brand_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/content_margin_left"/>
 
-        <com.cyanogenmod.setupwizard.ui.LocalePicker
-            android:id="@+id/locale_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:layout_centerInParent="true"/>
-
-    </RelativeLayout>
+    <Space android:layout_width="match_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"/>
 
 </LinearLayout>

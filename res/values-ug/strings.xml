@@ -53,7 +53,7 @@
   <string name="yes">ھەئە</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">جىددىي چاقىرىش</string>
-  <string name="setup_services">Cyanogen ئىقتىدارلىرى</string>
+  <string name="setup_services">LineageOS ئىقتىدارلىرى</string>
   <string name="services_explanation" product="tablet">بۇ مۇلازىمەتلەر تاختا كومپىيوتېرىڭىزنىڭ ئىقتىدارىنى كېڭەيتىشكە ئىشلىتىلىدۇ. سانلىق مەلۇمات <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گە ئاساسەن ئىشلىتىلىدۇ.</string>
   <string name="services_explanation" product="default">بۇ مۇلازىمەتلەر تېلېفونىڭىزنىڭ ئىقتىدارىنى كېڭەيتىشكە ئىشلىتىلىدۇ. سانلىق مەلۇمات <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گە ئاساسەن ئىشلىتىلىدۇ.</string>
   <string name="services_privacy_policy">شەخسىيەت تەدبىرى</string>
@@ -65,7 +65,7 @@
   <string name="services_secure_sms_label">سىزنىڭ <xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> ئۈسكىنىڭىزدە<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ئىلە باشقىلار بىلەن بولغان پاراڭغا پارول سېلىنىدۇ.</string>
   <string name="setup_unlock">قۇلۇپ ئېچىش</string>
   <string name="setup_device_locked">بۇ ئۈسكىنى باشقىلار قۇلۇپلاپ قويغان.</string>
-  <string name="setup_require_cyanogen_label">ئۈسكىنى زاۋۇتتىن چىققان ھالەتكە قايتۇرغان تەقدىردىمۇ، <b>سىزنىڭ Cyanogen OS ھېساباتى پارولىنى كىرگۈرۈش تەلەپ قىلىنىدۇ</b>.</string>
+  <string name="setup_require_cyanogen_label">ئۈسكىنى زاۋۇتتىن چىققان ھالەتكە قايتۇرغان تەقدىردىمۇ، <b>سىزنىڭ  ھېساباتى پارولىنى كىرگۈرۈش تەلەپ قىلىنىدۇ</b>.</string>
   <string name="setup_device_locked_instructions"><i>بۇ ئىقىتىدارنى ئېچىپ تاقاش ئۈچۈن، تەڭشەكلەر&gt; بىخەتەرلىككە كىرىڭ</i></string>
   <string name="setup_warning_skip_anyway">\"ئەگەر Cyanogen OS ھېساباتى قۇرمىسىڭىز، سىز: \n\n باش تېمىنى ئىشلىتىپ يېڭى سىنبەلگە، تەگلىك ۋە باشقا خاسلىقنى ئىشلىتەلمەيسىز\n\n ئورۇن بەلگىلىيەلمەيسىز ياكى يوقالغان تېلېفوننى تازىلىيالمايسىز\"</string>
   <!-- Fingerprint setup -->

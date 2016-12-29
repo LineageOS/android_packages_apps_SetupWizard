@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/header" />
+    <include layout="@layout/header_condensed" />
 
     <FrameLayout android:id="@+id/page"
         android:layout_width="match_parent"
@@ -34,6 +35,8 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingStart="@dimen/content_margin_left"
+                android:paddingEnd="@dimen/content_margin_left"
                 style="@style/PageContent">
 
                 <TextView
@@ -41,21 +44,23 @@
                     android:layout_height="wrap_content"
                     style="@style/PageSummaryText"
                     android:textSize="16sp"
-                    android:paddingLeft="@dimen/content_margin_left"
                     android:layout_marginBottom="@dimen/summary_margin_bottom"
                     android:paddingRight="@dimen/location_text_margin_right"
                     android:text="@string/lockscreen_setup_summary" />
 
-                <TextView
+                <Button
                     android:id="@+id/setup_lockscreen"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/content_margin_left"
                     android:paddingRight="@dimen/location_text_margin_right"
-                    android:gravity="center_vertical"
+                    android:gravity="center"
                     android:textSize="16sp"
                     android:textAllCaps="true"
-                    android:textColor="@color/accent"
+                    android:textColor="@color/white"
+                    android:background="@color/accent"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:text="@string/lockscreen_setup_screen_lock_setup"/>
 
             </LinearLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,11 +18,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Setup Wizard</string>
     <string name="product_name" translatable="false">cyanogenmod</string>
-    <string name="os_name" translatable="false">CyanogenMod</string>
+    <string name="os_name" translatable="false">LineageOS</string>
     <string name="default_theme_name" translatable="false">Material</string>
-
-    <string name="cm_account_type" translatable="false">com.cyanogenmod.account</string>
-    <string name="cm_account_package_name" translatable="false">com.cyanogenmod.account</string>
 
     <string name="next">Next</string>
     <string name="skip">Skip</string>
@@ -32,6 +30,7 @@
 
     <string name="setup_complete">Setup is complete</string>
     <string name="setup_welcome">Welcome</string>
+    <string name="setup_locale">Language</string>
     <string name="setup_wifi">Select Wi-Fi</string>
     <string name="setup_sim_missing">SIM card missing</string>
     <string name="setup_choose_data_sim">Choose a SIM for data</string>
@@ -69,23 +68,21 @@
 
     <string name="emergency_call">Emergency call</string>
 
-    <string name="setup_services">Cyanogen features</string>
-    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with Cyanogen\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="setup_services">LineageOS features</string>
+    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="services_privacy_policy">Privacy Policy</string>
     <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> by automatically sending diagnostic and usage data to Cyanogen. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> features.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> features.</string>
     <string name="services_apply_theme">Apply the <xliff:g id="name" example="Material">%s</xliff:g> theme</string>
     <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> enabling a unique visual style for your icons, wallpaper and more.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
-    <string name="services_use_secure_sms">Use secure SMS</string>
-    <string name="services_secure_sms_label"><xliff:g id="name" example="Use secure SMS">%1$s</xliff:g> to encrypt SMS conversations with other users using secure SMS on a <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> device.</string>
+    <string name="services_os_privacy_guard"><b>Enable Privacy guard</b> to make your personal data such as contacts, messages or call logs not available for newly installed apps</string>
 
     <string name="setup_unlock">Unlock</string>
     <string name="setup_device_locked">This device has been locked by the user.</string>
-    <string name="setup_require_cyanogen_label"><b>Require your Cyanogen OS account password</b> in order to use your device even after a factory reset.</string>
+    <string name="setup_require_cyanogen_label"><b>Require your account password</b> in order to use your device even after a factory reset.</string>
     <string name="setup_device_locked_instructions"><i>To turn this feature off/on, please go to Settings > Security</i></string>
-    <string name="setup_warning_skip_anyway">Without a Cyanogen OS Account, you won\'t be able to:\n\nCustomize your phone with new icons, wallpapers and more in the Themes app\n\nLocate or remotely erase your phone if it\'s lost</string>
 
     <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Select backup screen lock type</string>
@@ -102,11 +99,6 @@
     <string name="settings_lockscreen_setup_details">How would you like to lock your screen?</string>
     <string name="lockscreen_setup_title">Protect your phone</string>
     <string name="lockscreen_setup_summary"><b>Protect this device</b> and require a PIN, pattern, or password to unlock the screen</string>
-    <string name="lockscreen_setup_screen_lock_setup">Set up PIN, pattern or password</string>
-
-    <!-- MOD stuff -->
-    <string name="mod_welcome">Your device is MOD Ready</string>
-    <string name="mod_description">Mods make your phone faster, smarter, and easier to use. In this guide, you can discover new mods, learn what they do, and enable or disable them.</string>
-    <string name="mod_explore">Explore MOD Guide</string>
+    <string name="lockscreen_setup_screen_lock_setup">Set up</string>
 
 </resources>

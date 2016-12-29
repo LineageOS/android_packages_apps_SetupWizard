@@ -49,9 +49,9 @@
   <string name="yes">Bəli</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Fövqəladə vəziyyət zəngləri</string>
-  <string name="setup_services">Cyanogen özəllikləri</string>
-  <string name="services_explanation" product="tablet">Bu xidmətlər planşetinizin imkanlarını artırır. Verilənlər Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'nə uyğun olaraq istifadə ediləcək.</string>
-  <string name="services_explanation" product="default">Bu xidmətlər telefonunuzun imkanlarını artırır. Verilənlər Cyanogen\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'nə uyğun olaraq istifadə ediləcək.</string>
+  <string name="setup_services">LineageOS özəllikləri</string>
+  <string name="services_explanation" product="tablet">Bu xidmətlər planşetinizin imkanlarını artırır. Verilənlər LineageOS\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'nə uyğun olaraq istifadə ediləcək.</string>
+  <string name="services_explanation" product="default">Bu xidmətlər telefonunuzun imkanlarını artırır. Verilənlər LineageOS\'in <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'nə uyğun olaraq istifadə ediləcək.</string>
   <string name="services_privacy_policy">Gizlilik Siyasəti</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> təkmilləşməsinə kömək edin</string>
   <string name="services_metrics_label">Diaqnostika və istifadə verilənlərini Cyanogen\'ə göndərərək <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu məlumatlar kimliyinizdən istifadə məqsədilə götürülmür, ancaq batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özəllikləri kimi mövzularda komandamızın işlərində istifadə olunur.</string>
@@ -61,7 +61,7 @@
   <string name="services_secure_sms_label"><xliff:g id="name" example="CyanogenMod">%1$s</xliff:g> cihazında digər istifadəçilərlə edilən söhbətlərinizi şifrələmək üçün <xliff:g id="name" example="Use secure SMS">%2$s</xliff:g>.</string>
   <string name="setup_unlock">Kilidi aç</string>
   <string name="setup_device_locked">Bu cihaz istifadəçisi tərəfindən kilidlənib.</string>
-  <string name="setup_require_cyanogen_label"><b>Cyanogen ƏS hesab şifrəsi lazımdır</b>ki, cihazınızı zavod tənzimləmələrinə sıfırladıqdan sonra istifadə edə biləsiz.</string>
+  <string name="setup_require_cyanogen_label"><b>hesab şifrəsi lazımdır</b>ki, cihazınızı zavod tənzimləmələrinə sıfırladıqdan sonra istifadə edə biləsiz.</string>
   <string name="setup_device_locked_instructions"><i>Bu özəlliyi açıb bağlamaq üçün, zəhmət olmasa Tənzimləmələr &gt; Təhlükəsizlik bölməsinə gedin</i></string>
   <string name="setup_warning_skip_anyway">Cyanogen ƏS Hesabı olmadan, bunlar mümkün olmayacaq:\n\nTelefonunuzu Temalar tətbiqetməsindəki nişanlar, divar kağızları və daha çox elementlə özəlləşdirmək\n\nTelefonunuzu itirəndə, uzaqdan yerini tapmaq və ya içindəkiləri silmək</string>
   <!-- Fingerprint setup -->

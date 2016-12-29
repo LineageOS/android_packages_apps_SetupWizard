@@ -287,21 +287,11 @@ public class SetupWizardActivity extends Activity implements SetupDataCallbacks,
                     null, null, null);
         }
         final Resources resources = getResources();
-        if (mSetupData.isLastPage()) {
-            mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
-                    getDrawable(R.drawable.ic_chevron_right_wht), null);
-            mNextButton.setTextColor(resources.getColor(R.color.white));
-            mPrevButton.setCompoundDrawablesWithIntrinsicBounds(
-                    getDrawable(R.drawable.ic_chevron_left_wht), null,
-                    null, null);
-            mPrevButton.setTextColor(resources.getColor(R.color.white));
-        } else {
-            mButtonBar.setBackgroundResource(R.color.button_bar_background);
-            mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
-                    getDrawable(R.drawable.ic_chevron_right_dark), null);
-            mNextButton.setTextColor(resources.getColorStateList(R.color.button_bar_text));
-            mPrevButton.setTextColor(resources.getColorStateList(R.color.button_bar_text));
-        }
+        mButtonBar.setBackgroundResource(R.color.button_bar_background);
+        mNextButton.setCompoundDrawablesWithIntrinsicBounds(null, null,
+                getDrawable(R.drawable.ic_chevron_right_dark), null);
+        mNextButton.setTextColor(resources.getColorStateList(R.color.button_bar_text));
+        mPrevButton.setTextColor(resources.getColorStateList(R.color.button_bar_text));
     }
 
     @Override

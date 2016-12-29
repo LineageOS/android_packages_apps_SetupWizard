@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -209,6 +210,41 @@
                         android:text="@string/services_os_nav_keys_label"/>
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/privacy_guard"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/location_margin_left"
+                    android:paddingRight="@dimen/content_margin_right"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <CheckBox
+                        android:id="@+id/privacy_guard_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        android:duplicateParentState="true"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/privacy_guard_summary"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:lineSpacingExtra="@dimen/setup_line_spacing"
+                        android:gravity="top"
+                        android:layout_marginLeft="@dimen/location_text_margin_left"
+                        android:layout_marginRight="@dimen/location_text_margin_right"
+                        android:paddingBottom="@dimen/content_margin_bottom"
+                        android:text="@string/services_os_privacy_guard"/>
+
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
     </FrameLayout>
