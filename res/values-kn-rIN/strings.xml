@@ -53,9 +53,9 @@
   <string name="yes">ಹೌದು</string>
   <string name="data_sim_name">ಸಿಮ್ <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">ತುರುಪರೀಸ್ಥಿತಿ ಕರೆ</string>
-  <string name="setup_services">Cyanogen ವೈಶಿಷ್ಟ್ಯಗಳು</string>
-  <string name="services_explanation" product="tablet">ಈ ಸೇವೆಗಳು ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್‍ನ ಸಾಮಾರ್ಥ್ಯಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಡೇಟಾವನ್ನು Cyanogenನ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ಅನುಸಾರವಾಗಿ ಉಪಯೋಗಿಸಲಾಗುತ್ತದೆ.</string>
-  <string name="services_explanation" product="default">ಈ ಸೇವೆಗಳು ನಿಮ್ಮ ಫೋನ್‍ನ ಸಾಮಾರ್ಥ್ಯಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಡೇಟಾವನ್ನು Cyanogenನ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ಅನುಸಾರವಾಗಿ ಉಪಯೋಗಿಸಲಾಗುತ್ತದೆ.</string>
+  <string name="setup_services">LineageOS ವೈಶಿಷ್ಟ್ಯಗಳು</string>
+  <string name="services_explanation" product="tablet">ಈ ಸೇವೆಗಳು ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್‍ನ ಸಾಮಾರ್ಥ್ಯಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಡೇಟಾವನ್ನು LineageOSನ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ಅನುಸಾರವಾಗಿ ಉಪಯೋಗಿಸಲಾಗುತ್ತದೆ.</string>
+  <string name="services_explanation" product="default">ಈ ಸೇವೆಗಳು ನಿಮ್ಮ ಫೋನ್‍ನ ಸಾಮಾರ್ಥ್ಯಗಳನ್ನು ವಿಸ್ತರಿಸಲು ನಿಮಗಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಡೇಟಾವನ್ನು LineageOSನ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ಅನುಸಾರವಾಗಿ ಉಪಯೋಗಿಸಲಾಗುತ್ತದೆ.</string>
   <string name="services_privacy_policy">ಗೌಪ್ಯತಾ ನೀತಿ</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> ಸುಧಾರಿಸಲು ಸಹಕರಿಸಿ</string>
   <string name="services_metrics_label">Cyanogenಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ವಿಶ್ಲೇಷಣಾತ್ಮಕ ಮತ್ತು ಬಳಕೆಯ ಡೇಟಾವನ್ನು ಕಳುಹಿಸುವುದರಿಂದ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ಈ ಮಾಹಿತಿಯನ್ನು ನಿಮ್ಮನ್ನು ಗುರುತಿಸುವುದಕ್ಕಾಗಿ ಉಪಯೋಗಿಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ ಮತ್ತು ಇದನ್ನು ಬ್ಯಾಟರಿ ಲೈಫ್, ಆಪ್ ಕಾರ್ಯಕ್ಷಮತೆ, ಮತ್ತು ಹೊಸ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ವೈಶಿಷ್ಟ್ಯಗಳಲ್ಲಿ ಕೆಲಸಮಾಡುವ ತಂಡಗಳಿಗೆ ನೀಡಲಾಗುವುದು.</string>

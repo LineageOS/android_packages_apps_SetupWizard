@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -81,6 +82,10 @@ public class BluetoothSetupPage extends SetupPage {
         return R.string.loading;
     }
 
+    @Override
+    public int getIconResId() {
+        return -1;
+    }
 
     @Override
     public void doLoadAction(FragmentManager fragmentManager, int action) {

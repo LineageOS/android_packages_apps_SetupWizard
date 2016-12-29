@@ -64,6 +64,7 @@ public class SetupWizardApp extends Application {
 
     private static final String[] THEME_PACKAGES = {
             "org.cyanogenmod.theme.chooser",
+            "org.cyanogenmod.theme.chooser2",
             "com.cyngn.theme.chooser",
             "com.cyngn.themestore"
     };

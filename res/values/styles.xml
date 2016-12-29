@@ -26,6 +26,7 @@
         <item name="android:textColorLink">@color/accent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowAnimationStyle">@style/ActivityAnimations</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="localePickerStyle">@style/LocaleWidget.Material.LocalePicker</item>
     </style>
 
@@ -40,10 +41,6 @@
         <item name="android:taskToBackExitAnimation">@anim/translucent_exit</item>
     </style>
 
-    <style name="Header">
-        <item name="android:elevation">4dp</item>
-    </style>
-
     <style name="PageContainer">
         <item name="android:textColor">@color/primary_text</item>
         <item name="android:background">@color/page_background</item>
@@ -56,12 +53,8 @@
 
     <style name="PageTitle">
         <item name="android:id">@android:id/title</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:background">@color/primary_dark</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:gravity">left|center_vertical</item>
-        <item name="android:paddingLeft">@dimen/header_title_margin_left</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="PageSummaryText">

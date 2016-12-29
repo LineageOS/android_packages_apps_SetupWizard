@@ -53,9 +53,9 @@
   <string name="yes">ഉണ്ട്</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">അടിയന്തര കോൾ</string>
-  <string name="setup_services">Cyanogen സവിശേഷതകൾ</string>
-  <string name="services_explanation" product="tablet">നിങ്ങളുടെ ടാബ്ലെറ്റിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. Cyanogen ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
-  <string name="services_explanation" product="default">നിങ്ങളുടെ ഫോണിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. Cyanogen ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
+  <string name="setup_services">LineageOS സവിശേഷതകൾ</string>
+  <string name="services_explanation" product="tablet">നിങ്ങളുടെ ടാബ്ലെറ്റിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. LineageOS ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
+  <string name="services_explanation" product="default">നിങ്ങളുടെ ഫോണിന്റെ ക്ഷമത വിപുലപ്പെടുത്താന്‍ ഈ സേവനങ്ങൾ നിങ്ങള്‍ക്കായി പ്രവര്‍ത്തിക്കുന്നു. LineageOS ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ന് അനുസൃതമായി ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
   <string name="services_privacy_policy">സ്വകാര്യതാനയം</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> മെച്ചപ്പെടുത്താൻ സഹായിക്കുക</string>
   <string name="services_metrics_label">ഡയഗ്നോസ്റ്റിക്സ്, ഉപയോഗ ഡാറ്റ Cyanogen ലേക്ക് സ്വപ്രേരിതമായി അയക്കുന്നതിലൂടെ <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. ഈ വിവരങ്ങൾ നിങ്ങളെ തിരിച്ചറിയുന്നതിനായി ഉപയോഗിക്കാൻ കഴിയില്ല, ബാറ്ററിയുടെ ആയുസ്സ്, ആപ്ലിക്കേഷൻ പ്രകടനം, പുതിയ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> സവിശേഷതകൾ തുടങ്ങിയ കാര്യങ്ങളിൽ പ്രവർത്തിക്കുന്ന ടീമുകളെ ഇത് സഹായിക്കുന്നു</string>

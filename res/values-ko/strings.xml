@@ -53,9 +53,9 @@
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">긴급 통화</string>
-  <string name="setup_services">Cyanogen 기능</string>
-  <string name="services_explanation" product="tablet">이 기능은 태블릿의 성능 향상을 위해 작동합니다. 수집된 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
-  <string name="services_explanation" product="default">이 기능은 휴대전화의 성능 향상을 위해 작동합니다. 수집된 데이터는 Cyanogen의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
+  <string name="setup_services">LineageOS 기능</string>
+  <string name="services_explanation" product="tablet">이 기능은 태블릿의 성능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
+  <string name="services_explanation" product="default">이 기능은 휴대전화의 성능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
   <string name="services_metrics_label">진단 및 사용 정보를 Cyanogen에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 배터리 수명, 앱 성능과 새 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 기능과 같이 사용자를 식별할 수 없는 정보입니다.</string>

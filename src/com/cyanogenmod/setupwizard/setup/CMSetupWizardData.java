@@ -51,6 +51,8 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new BluetoothSetupPage(mContext, this));
         }
         pages.add(new WelcomePage(mContext, this));
+        pages.add(new LocalePage(mContext, this));
+        pages.add(new DateTimePage(mContext, this));
         if (SetupWizardUtils.hasWifi(mContext)) {
             pages.add(new WifiSetupPage(mContext, this));
         }
@@ -70,18 +72,12 @@ public class CMSetupWizardData extends AbstractSetupData {
         if (hasGMS) {
             pages.add(new GmsAccountPage(mContext, this));
         }
-        if (!SetupWizardUtils.hasLeanback(mContext) &&
-                SetupWizardUtils.isPackageInstalled(mContext,
-                    mContext.getString(R.string.cm_account_package_name))) {
-            pages.add(new CyanogenServicesPage(mContext, this).setHidden(true));
-        }
+        pages.add(new OtherSettingsPage(mContext, this).setHidden(!hasGMS));
         if (SetupWizardUtils.hasFingerprint(mContext) && SetupWizardUtils.isOwner()) {
             pages.add(new FingerprintSetupPage(mContext, this));
         }
         pages.add(new ScreenLockSetupPage(mContext, this));
         pages.add(new CyanogenSettingsPage(mContext, this));
-        pages.add(new OtherSettingsPage(mContext, this).setHidden(!hasGMS));
-        pages.add(new DateTimePage(mContext, this));
         pages.add(new FinishPage(mContext, this));
         return new PageList(pages.toArray(new SetupPage[pages.size()]));
     }
@@ -93,15 +89,13 @@ public class CMSetupWizardData extends AbstractSetupData {
             showHideDataSimPage();
             showHideSimMissingPage();
             showHideMobileDataPage();
-            updateWelcomePage();
+            updateLocalePage();
         } else if (intent.getAction()
                 .equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
             showHideMobileDataPage();
-            showHideAccountPages();
-        } else  if (intent.getAction()
+        } else if (intent.getAction()
                 .equals(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED)) {
             showHideMobileDataPage();
-            showHideAccountPages();
         } else if (intent.getAction().equals(Intent.ACTION_TIMEZONE_CHANGED) ||
                 intent.getAction().equals(TelephonyIntents.ACTION_NETWORK_SET_TIMEZONE)) {
             mTimeZoneSet = true;
@@ -113,14 +107,6 @@ public class CMSetupWizardData extends AbstractSetupData {
         }
     }
 
-    private void showHideAccountPages() {
-        boolean isConnected = SetupWizardUtils.isNetworkConnected(mContext);
-        CyanogenServicesPage cyanogenServicesPage =
-                (CyanogenServicesPage) getPage(CyanogenServicesPage.TAG);
-        if (cyanogenServicesPage != null) {
-            cyanogenServicesPage.setHidden(!isConnected);
-        }
-    }
 
     private void showHideSimMissingPage() {
         SimCardMissingPage simCardMissingPage =
@@ -160,10 +146,10 @@ public class CMSetupWizardData extends AbstractSetupData {
         }
     }
 
-    private void updateWelcomePage() {
-        WelcomePage welcomePage = (WelcomePage) getPage(WelcomePage.TAG);
-        if (welcomePage != null) {
-            welcomePage.simChanged();
+    private void updateLocalePage() {
+        LocalePage localePage = (LocalePage) getPage(LocalePage.TAG);
+        if (localePage != null) {
+            localePage.simChanged();
         }
     }
 
