@@ -53,9 +53,9 @@
   <string name="yes">होय</string>
   <string name="data_sim_name">सिम <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">आणीबाणीचा कॉल</string>
-  <string name="setup_services">Cyanogen वैशिष्ट्ये</string>
-  <string name="services_explanation" product="tablet">तुमच्या टॅब्लेटवरील क्षमता विस्तारित करण्यासाठी ह्या सेवा तुमच्यासाठी काम करतात. Cyanogenच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g>नुसार डेटा वापरला जाईल.</string>
-  <string name="services_explanation" product="default">तुमच्या फोनवरील क्षमता विस्तारित करण्यासाठी ह्या सेवा तुमच्यासाठी काम करतात. Cyanogenच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g>नुसार डेटा वापरला जाईल.</string>
+  <string name="setup_services">LineageOS वैशिष्ट्ये</string>
+  <string name="services_explanation" product="tablet">तुमच्या टॅब्लेटवरील क्षमता विस्तारित करण्यासाठी ह्या सेवा तुमच्यासाठी काम करतात. LineageOSच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g>नुसार डेटा वापरला जाईल.</string>
+  <string name="services_explanation" product="default">तुमच्या फोनवरील क्षमता विस्तारित करण्यासाठी ह्या सेवा तुमच्यासाठी काम करतात. LineageOSच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g>नुसार डेटा वापरला जाईल.</string>
   <string name="services_privacy_policy">गुप्तता धोरण</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>सुधारण्यासाठी मदत करा</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> Cyanogen कडे निदानात्मक आणि वापर डेटा स्वयंचलितपणे पाठवून. तुम्हाला ओळखण्यासाठी ही माहिती वापरता येत नाही आणि बॅटरी आयु, अनुप्रयोगची कामगिरी आणि नवीन <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> वैशिष्ट्ये यांसारख्या गोष्टींवर काम करण्यासाठी संघांना हात देते.</string>

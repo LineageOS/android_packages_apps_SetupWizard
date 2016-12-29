@@ -54,9 +54,9 @@
   <string name="yes">是</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">紧急电话</string>
-  <string name="setup_services">Cyanogen 功能</string>
-  <string name="services_explanation" product="tablet">这些服务用于扩展您的平板电脑的功能。数据将根据 Cyanogen 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
-  <string name="services_explanation" product="default">这些服务用于扩展您的手机的功能。数据将根据 Cyanogen 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+  <string name="setup_services">LineageOS 功能</string>
+  <string name="services_explanation" product="tablet">这些服务用于扩展您的平板电脑的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+  <string name="services_explanation" product="default">这些服务用于扩展您的手机的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
   <string name="services_privacy_policy">隐私政策</string>
   <string name="services_help_improve_cm">帮助完善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通过自动发送诊断和使用数据给 Cyanogen。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
