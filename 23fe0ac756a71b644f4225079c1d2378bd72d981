@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a1d315d_977d86b4",
+        "filename": "res/values-en-rIN/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2016-12-30T19:52:20Z",
+      "side": 1,
+      "message": "For some reason it still says Cyanogen here (this one locale).",
+      "revId": "23fe0ac756a71b644f4225079c1d2378bd72d981",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
