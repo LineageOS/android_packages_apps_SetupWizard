@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa3479d7_a78267fe",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-08T15:09:37Z",
+      "side": 1,
+      "message": "is this string required? if yes, rebrand",
+      "revId": "0f8f36278e2c814dc07915cadb9ab6d92ead90d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_8787630f",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-08T15:09:37Z",
+      "side": 1,
+      "message": "rebrand example",
+      "revId": "0f8f36278e2c814dc07915cadb9ab6d92ead90d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_47797b2e",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-08T15:09:37Z",
+      "side": 1,
+      "message": "string required? rebrand or remove",
+      "revId": "0f8f36278e2c814dc07915cadb9ab6d92ead90d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_677c7f21",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-08T15:09:37Z",
+      "side": 1,
+      "message": "string required? rebrand or remove",
+      "revId": "0f8f36278e2c814dc07915cadb9ab6d92ead90d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
