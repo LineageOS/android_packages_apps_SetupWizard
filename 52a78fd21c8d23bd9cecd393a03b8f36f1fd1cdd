@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa3479d7_fd7da2b2",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:30:28Z",
+      "side": 1,
+      "message": "rename?",
+      "range": {
+        "startLine": 20,
+        "startChar": 53,
+        "endLine": 20,
+        "endChar": 64
+      },
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
