@@ -2,6 +2,74 @@
   "comments": [
     {
       "key": {
+        "uuid": "fa3479d7_9d445675",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Add copyright? Not sure for the minimal change",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_9d3b36eb",
+        "filename": "res/drawable/ic_signal_4.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "One Copyright too much ;)",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_3d5b2a56",
+        "filename": "res/layout-land/setup_welcome_page.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Copyright",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_fd548222",
+        "filename": "res/layout-land/sim_missing_page.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Copyright",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa3479d7_fd7da2b2",
         "filename": "res/values/strings.xml",
         "patchSetId": 6
@@ -19,6 +87,120 @@
         "endLine": 20,
         "endChar": 64
       },
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_7d409256",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/CyanogenSettingsPage.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "maybe move url to strings?",
+      "range": {
+        "startLine": 64,
+        "startChar": 52,
+        "endLine": 64,
+        "endChar": 81
+      },
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_3d220aba",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/ScreenLockSetupPage.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Whitespace",
+      "range": {
+        "startLine": 4,
+        "startChar": 2,
+        "endLine": 4,
+        "endChar": 3
+      },
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_fd2b6292",
+        "filename": "src/com/cyanogenmod/setupwizard/setup/WelcomePage.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Copyright removed!",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_dd189e86",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/SetupPageFragment.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Copyright missing",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_bd1dda75",
+        "filename": "src/com/cyanogenmod/setupwizard/ui/SetupWizardActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Copyright missing",
+      "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_9d121661",
+        "filename": "src/com/cyanogenmod/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2017-01-09T12:38:43Z",
+      "side": 1,
+      "message": "Copyright missing",
       "revId": "52a78fd21c8d23bd9cecd393a03b8f36f1fd1cdd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
