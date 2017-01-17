@@ -150,14 +150,6 @@ public class SetupWizardUtils {
         return false;
     }
 
-    public static boolean frpEnabled(Context context) {
-        final PersistentDataBlockManager pdbManager = (PersistentDataBlockManager)
-                context.getSystemService(Context.PERSISTENT_DATA_BLOCK_SERVICE);
-        return pdbManager != null
-                && pdbManager.getDataBlockSize() > 0
-                && !pdbManager.getOemUnlockEnabled();
-    }
-
     public static boolean hasKillSwitch() {
         /* IBinder b = ServiceManager.getService(Context.KILLSWITCH_SERVICE);
         IKillSwitchService service = IKillSwitchService.Stub.asInterface(b);
