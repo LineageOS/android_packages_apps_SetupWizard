@@ -108,9 +108,9 @@ public class GmsAccountPage extends SetupPage {
             getCallbacks().onPreviousPage();
         } else {
             super.doLoadAction(fragmentManager, action);
-            if (!SetupWizardUtils.isNetworkConnected(mContext) && !SetupWizardUtils.frpEnabled(mContext)) {
+            if (!SetupWizardUtils.isNetworkConnected(mContext)) {
                 if (SetupWizardApp.DEBUG) {
-                    Log.d(TAG, "No network, no FRP enforcement, skip GMS account");
+                    Log.d(TAG, "No network, skip GMS account");
                 }
                 getCallbacks().onNextPage();
             } else if (!SetupWizardUtils.accountExists(mContext, SetupWizardApp.ACCOUNT_TYPE_GMS)) {
