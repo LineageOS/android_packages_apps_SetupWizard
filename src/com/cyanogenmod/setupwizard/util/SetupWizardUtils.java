@@ -39,8 +39,6 @@ import android.util.Log;
 /*import com.android.internal.os.IKillSwitchService;*/
 import com.cyanogenmod.setupwizard.SetupWizardApp;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 import cyanogenmod.providers.CMSettings;
 
 import static android.content.res.ThemeConfig.SYSTEM_DEFAULT;
@@ -197,23 +195,8 @@ public class SetupWizardUtils {
         return Binder.getCallingUserHandle().isOwner();
     }
 
-    public static boolean hasGMS(Context context) {
-        return GooglePlayServicesUtil.isGooglePlayServicesAvailable(context) !=
-                ConnectionResult.SERVICE_MISSING;
-    }
-
     public static boolean accountExists(Context context, String accountType) {
         return AccountManager.get(context).getAccountsByType(accountType).length > 0;
-    }
-
-    public static boolean isPackageInstalled(Context context, String packageName) {
-        PackageManager pm = context.getPackageManager();
-        try {
-            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
     }
 
     public static void disableSetupWizard(Context context) {
