@@ -68,7 +68,7 @@ public class CMSetupWizardData extends AbstractSetupData {
             pages.add(new MobileDataPage(mContext, this)
                     .setHidden(!isSimInserted() || mMobileDataEnabled));
         }
-        final boolean hasGMS = SetupWizardUtils.hasGMS(mContext);
+        final boolean hasGMS = SetupWizardUtils.isPackageInstalled(mContext, "com.google.android.gms");
         if (hasGMS) {
             pages.add(new GmsAccountPage(mContext, this));
         }
