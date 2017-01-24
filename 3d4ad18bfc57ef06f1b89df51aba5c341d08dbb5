@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a437d4f_a4ccae36",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 13914
+      },
+      "writtenOn": "2017-01-24T13:48:03Z",
+      "side": 1,
+      "message": "I tried without but it did not work, probably because the inclusion of framework/opt/setupwizard\u0027s common.mk that changes that var.",
+      "parentUuid": "9a437d4f_0477fa03",
+      "revId": "3d4ad18bfc57ef06f1b89df51aba5c341d08dbb5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a437d4f_c460d237",
         "filename": "src/com/cyanogenmod/setupwizard/util/SetupWizardUtils.java",
         "patchSetId": 1
