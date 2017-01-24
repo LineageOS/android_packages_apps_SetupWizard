@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_0477fa03",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2017-01-24T13:32:22Z",
+      "side": 1,
+      "message": "We might not need this line anymore? IIRC, LOCAL_RESOURCE_DIR is set to the res folder of the LOCAL_PATH by default.",
+      "revId": "3d4ad18bfc57ef06f1b89df51aba5c341d08dbb5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_c460d237",
+        "filename": "src/com/cyanogenmod/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2017-01-24T13:32:22Z",
+      "side": 1,
+      "message": "Can we get rid of this method and change the usages of hasGms() to call isPackageInstalled() directly?",
+      "revId": "3d4ad18bfc57ef06f1b89df51aba5c341d08dbb5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
