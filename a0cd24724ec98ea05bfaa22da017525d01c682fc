@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_59794a2e",
+        "filename": "src/com/cyanogenmod/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 1448
+      },
+      "writtenOn": "2017-02-01T16:24:20Z",
+      "side": 0,
+      "message": "There was no reason to remove this method. The updated check for GMS should have just been added here.",
+      "revId": "a0cd24724ec98ea05bfaa22da017525d01c682fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
