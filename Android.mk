@@ -15,10 +15,10 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4 \
     android-support-v13 \
     libphonenumber \
+    org.cyanogenmod.platform.internal \
     org.cyanogenmod.platform.sdk
 
 LOCAL_JAVA_LIBRARIES := \
-    org.cyanogenmod.platform.internal \
     telephony-common
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
