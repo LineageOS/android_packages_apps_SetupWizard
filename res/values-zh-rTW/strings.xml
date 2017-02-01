@@ -29,7 +29,7 @@
   <string name="setup_locale">語言</string>
   <string name="setup_wifi">選擇 Wi-Fi</string>
   <string name="setup_sim_missing">沒有 SIM 卡</string>
-  <string name="setup_choose_data_sim">選取使用行動數據的 SIM 卡</string>
+  <string name="setup_choose_data_sim">選擇使用行動數據的 SIM 卡</string>
   <string name="setup_location">定位服務</string>
   <string name="setup_other">其他服務</string>
   <string name="setup_datetime">日期和時間</string>
@@ -42,7 +42,7 @@
   <string name="date_time_summary">如果需要的話，請調整您的時區及日期與時間</string>
   <string name="backup_data_summary"><b>備份</b>應用程式資料、Wi-Fi 密碼及其他設定到 Google 伺服器</string>
   <string name="other_services_summary">啟用這些服務讓 Google 來為您工作，您可以在任何時候開啟或關閉。您的資料將依照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
-  <string name="location_services_summary">位置服務允許系統和其他應用程式取得及使用您最近的位置。例如，應用程式可能是用您的位置來尋找附近的咖啡店。</string>
+  <string name="location_services_summary">定位服務允許系統和其他應用程式取得及使用您最近的位置。例如，應用程式可能是用您的位置來尋找附近的咖啡店。</string>
   <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
   <string name="location_battery_saving">透過減少 GPS 每小時更新次數來<b>降低電池消耗</b>。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
