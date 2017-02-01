@@ -18,8 +18,10 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     org.cyanogenmod.platform.sdk
 
 LOCAL_JAVA_LIBRARIES := \
-    org.cyanogenmod.platform.internal \
     telephony-common
+
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    org.cyanogenmod.platform.internal \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_AAPT_FLAGS := --auto-add-overlay
