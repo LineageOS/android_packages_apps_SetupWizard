@@ -27,3 +27,5 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay
 include frameworks/opt/setupwizard/library/common.mk
 
 include $(BUILD_PACKAGE)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
