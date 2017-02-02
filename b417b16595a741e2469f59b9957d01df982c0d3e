@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_664eaa71",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2017-02-02T13:41:59Z",
+      "side": 1,
+      "message": "We may not add other subdirectories ever, but this just seems like the \u0027right\u0027 thing to do :P",
+      "revId": "b417b16595a741e2469f59b9957d01df982c0d3e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
