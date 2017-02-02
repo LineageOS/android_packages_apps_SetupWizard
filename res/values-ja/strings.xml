@@ -23,9 +23,10 @@
   <string name="start">開始</string>
   <string name="done">完了</string>
   <string name="ok">OK</string>
-  <string name="loading">しばらくお待ちください\u2026</string>
+  <string name="loading">しばらくお待ちください...</string>
   <string name="setup_complete">セットアップが完了しました</string>
   <string name="setup_welcome">ようこそ</string>
+  <string name="setup_locale">言語</string>
   <string name="setup_wifi">Wi-Fiの選択</string>
   <string name="setup_sim_missing">SIMカードがありません</string>
   <string name="setup_choose_data_sim">データ通信用のSIMを選択</string>
@@ -55,13 +56,19 @@
   <string name="yes">はい</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">緊急通報</string>
+  <string name="setup_services">LineageOS の機能</string>
+  <string name="services_explanation" product="tablet">これらのサービスはタブレットの機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
+  <string name="services_explanation" product="default">これらのサービスは携帯電話の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
   <string name="services_privacy_policy">プライバシーポリシー</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>の改善に協力します</string>
+  <string name="services_metrics_label">診断と使用状況データを自動的に LineageOS に送信して、<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>の新機能などへの取り組みに活用されます。</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g>テーマを適用</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>すると、アイコンや壁紙などに対してテーマ固有の外観スタイルが有効になります。</string>
   <string name="services_os_nav_keys_label">ハードウェアキーのかわりに<b>スクリーンナビゲーションキーを使用します</b>。</string>
+  <string name="services_os_privacy_guard"><b>プライバシーガードを有効化</b>すると連絡先やメッセージ、通話履歴などの個人情報を新しくインストールしたアプリに渡さないようにできます。</string>
   <string name="setup_unlock">ロック解除</string>
   <string name="setup_device_locked">この端末はユーザーによってロックされています。</string>
+  <string name="setup_require_cyanogen_label">工場出荷時の状態にリセットした後でも、この端末を使用するには<b>アカウントのパスワードの入力が必要です</b>。</string>
   <string name="setup_device_locked_instructions"><i>この機能をOFF/ONするには、設定→プライバシーを開いてください</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">予備の画面のロックの種類を選択</string>
@@ -77,4 +84,5 @@
   <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
   <string name="lockscreen_setup_title">スマートフォンの保護</string>
   <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
+  <string name="lockscreen_setup_screen_lock_setup">セットアップ</string>
 </resources>
