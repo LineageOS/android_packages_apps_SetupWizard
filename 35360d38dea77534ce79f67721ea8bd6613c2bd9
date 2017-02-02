@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_861aae6c",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2017-02-02T13:37:41Z",
+      "side": 1,
+      "message": "Should use\n include $(call all-makefiles-under,$(LOCAL_PATH))\ninstead, since tests may not always be the only subdirectory with a makefile.",
+      "revId": "35360d38dea77534ce79f67721ea8bd6613c2bd9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
