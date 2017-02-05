@@ -26,6 +26,7 @@
   <string name="loading">Hanya sec\u2026</string>
   <string name="setup_complete">Penyiapan selesai</string>
   <string name="setup_welcome">Selamat datang</string>
+  <string name="setup_locale">Bahasa</string>
   <string name="setup_wifi">Pilih Wi-Fi</string>
   <string name="setup_sim_missing">SIM kartu hilang</string>
   <string name="setup_choose_data_sim">Pilih SIM untuk Data</string>
@@ -55,6 +56,7 @@
   <string name="yes">Ya</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Panggilan darurat</string>
+  <string name="setup_services">Fitur LineageOS</string>
   <string name="services_privacy_policy">Kebijakan privasi</string>
   <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>

@@ -26,6 +26,7 @@
   <string name="loading">Секунду\u2026</string>
   <string name="setup_complete">Настройка завершена</string>
   <string name="setup_welcome">Добро пожаловать!</string>
+  <string name="setup_locale">Язык</string>
   <string name="setup_wifi">Выбрать сеть Wi-Fi</string>
   <string name="setup_sim_missing">Нет SIM-карты</string>
   <string name="setup_choose_data_sim">Выберите SIM-карту для передачи данных</string>
@@ -55,17 +56,23 @@
   <string name="yes">Да</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> — <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Экстренный вызов</string>
+  <string name="setup_services">Возможности LineageOS</string>
+  <string name="services_explanation" product="tablet">Эти службы расширяют возможности вашего планшета. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+  <string name="services_explanation" product="default">Эти службы расширяют возможности вашего телефона. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
   <string name="services_privacy_policy">политикой конфиденциальности</string>
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, разрешив отправку диагностических данных в LineageOS. Эта информация полностью анонимна и не может быть использована для вашей идентификации. Использование этих данных поможет в работе над повышением автономности, производительности и над новыми возможностями <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> предоставляет уникальный визуальный стиль для ваших значков, обоев и многого другого.</string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её стиль для значков, обоев и прочих элементов.</string>
   <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
+  <string name="services_os_privacy_guard"><b>Включите защищённый режим,</b> чтобы ограничить доступ новых приложений к вашим персональным данным — контактам, сообщениям или журналу вызовов.</string>
   <string name="setup_unlock">Разблокировать</string>
   <string name="setup_device_locked">Устройство заблокировано пользователем.</string>
+  <string name="setup_require_cyanogen_label"><b>Требовать пароль входа в аккаунт</b> для использования устройства даже после удаления всех данных.</string>
   <string name="setup_device_locked_instructions"><i>Чтобы включить или отключить эту функцию, перейдите в меню «Настройки &gt; Безопасность»</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Выберите запасной режим блокировки экрана</string>
-  <string name="settings_fingerprint_setup_details">Как вы хотите заблокировать ваш экран?</string>
+  <string name="settings_fingerprint_setup_details">Как следует блокировать экран?</string>
   <string name="fingerprint_setup_title">Настройка сканера отпечатков пальцев</string>
   <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
   <string name="fingerprint_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>

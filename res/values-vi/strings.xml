@@ -21,10 +21,12 @@
   <string name="next">Tiếp theo</string>
   <string name="skip">Bỏ qua</string>
   <string name="start">Bắt đầu</string>
+  <string name="done">Xong</string>
   <string name="ok">OK</string>
   <string name="loading">Vui lòng đợi một giây\u2026</string>
   <string name="setup_complete">Đã thiết lập xong</string>
   <string name="setup_welcome">Chào mừng</string>
+  <string name="setup_locale">Ngôn ngữ</string>
   <string name="setup_wifi">Chọn Wi-Fi</string>
   <string name="setup_sim_missing">Không có thẻ SIM</string>
   <string name="setup_choose_data_sim">Chọn một thẻ SIM sử dụng dữ liệu</string>
@@ -54,13 +56,19 @@
   <string name="yes">Có</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Cuộc gọi khẩn cấp</string>
+  <string name="setup_services">Các tính năng LineageOS</string>
+  <string name="services_explanation" product="tablet">Các dịch vụ này giúp mở rộng khả năng làm việc máy tính bảng của bạn. Dữ liệu sẽ được sử dụng theo LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Các dịch vụ này giúp mở rộng khả năng làm việc điện thoại của bạn. Dữ liệu sẽ được sử dụng theo LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Chính sách về quyền riêng tư</string>
   <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> bằng cách tự động gửi dữ liệu chẩn đoán và sử dụng đến LineageOS. Thông tin này không được sử dụng để nhận dạng bạn và giúp nhóm thực hiện những thứ như thời lượng pin, hiệu suất ứng dụng và các tính năng <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> mới.</string>
   <string name="services_apply_theme">Áp dụng chủ đề <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> cho phép phong cách trực quan độc đáo cho các biểu tượng, hình nền của bạn và nhiều hơn nữa.</string>
   <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
+  <string name="services_os_privacy_guard"><b>Cho phép bảo vệ sự riêng tư</b> để làm cho dữ liệu cá nhân của bạn như danh bạ, tin nhắn hay nhật ký cuộc gọi không có sẵn cho các ứng dụng mới được cài đặt</string>
   <string name="setup_unlock">Mở khóa</string>
   <string name="setup_device_locked">Thiết bị này đã bị khoá bởi người dùng.</string>
+  <string name="setup_require_cyanogen_label"><b>Yêu cầu mật khẩu tài khoản của bạn</b> để sử dụng thiết bị của bạn ngay cả sau khi đặt lại cài đặt gốc.</string>
   <string name="setup_device_locked_instructions"><i>Để bật/tắt tính năng này, hãy truy cập Cài đặt &gt; bảo mật</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Chọn kiểu khóa màn hình dự phòng</string>
@@ -72,6 +80,9 @@
   <string name="fingerprint_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
   <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Chọn kiểu khóa màn hình</string>
   <string name="settings_lockscreen_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
+  <string name="lockscreen_setup_title">Bảo vệ điện thoại của bạn</string>
   <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
+  <string name="lockscreen_setup_screen_lock_setup">Thiết lập</string>
 </resources>
