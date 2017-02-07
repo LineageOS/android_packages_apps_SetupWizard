@@ -84,4 +84,5 @@
   <string name="settings_lockscreen_setup_details">Как вы хотите заблокировать ваш экран?</string>
   <string name="lockscreen_setup_title">Защитите телефон</string>
   <string name="lockscreen_setup_summary"><b>Защитить устройство</b> и запрашивать PIN-код, графический ключ или пароль</string>
+  <string name="lockscreen_setup_screen_lock_setup">Настройка</string>
 </resources>

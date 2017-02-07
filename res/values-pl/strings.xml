@@ -26,6 +26,7 @@
   <string name="loading">Chwileczkę\u2026</string>
   <string name="setup_complete">Konfiguracja zakończona</string>
   <string name="setup_welcome">Witaj</string>
+  <string name="setup_locale">Język</string>
   <string name="setup_wifi">Wybierz Wi-Fi</string>
   <string name="setup_sim_missing">Brak karty SIM</string>
   <string name="setup_choose_data_sim">Wybierz kartę SIM dla danych mobilnych</string>
@@ -55,6 +56,7 @@
   <string name="yes">Tak</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Połączenie alarmowe</string>
+  <string name="setup_services">Funkcje LineageOS</string>
   <string name="services_privacy_policy">Polityka Prywatności</string>
   <string name="services_help_improve_cm">Pomóż ulepszać <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">Zastosuj motyw <xliff:g id="name" example="Material">%s</xliff:g></string>

@@ -60,7 +60,7 @@
   <string name="services_explanation" product="tablet">Deze diensten worden gebruikt om de mogelijkheden van uw tablet uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
   <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
   <string name="services_privacy_policy">Privacybeleid</string>
-  <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+  <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar LineageOS. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-functies.</string>
   <string name="services_apply_theme">Thema <xliff:g id="name" example="Material">%s</xliff:g> toepassen</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> voor een unieke stijl voor uw pictogrammen, achtergrond en meer.</string>
