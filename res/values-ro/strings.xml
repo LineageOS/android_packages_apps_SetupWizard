@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Expert de instalare</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Următoarea</string>
   <string name="skip">Omite</string>
   <string name="start">Pornire</string>

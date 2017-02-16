@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Sąrankos vediklis</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Kitas</string>
   <string name="skip">Praleisti</string>
   <string name="start">Pradėti</string>

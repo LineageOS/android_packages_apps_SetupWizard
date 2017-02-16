@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Ezarpen laguntzailea</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Hurrengoa</string>
   <string name="skip">Saltatu</string>
   <string name="start">Hasi</string>

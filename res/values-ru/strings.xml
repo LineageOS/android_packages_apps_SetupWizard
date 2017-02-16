@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Мастер настройки</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Далее</string>
   <string name="skip">Пропустить</string>
   <string name="start">Начать</string>

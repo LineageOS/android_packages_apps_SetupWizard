@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Съветник за инсталиране</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Следваща</string>
   <string name="skip">Пропусни</string>
   <string name="start">Старт</string>

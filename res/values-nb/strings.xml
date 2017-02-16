@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Installasjonsveiviseren</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Neste</string>
   <string name="skip">Hopp over</string>
   <string name="start">Start</string>

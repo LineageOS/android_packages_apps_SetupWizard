@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">सेटअप विझार्ड</string>
+  <!-- Partner SUW Strings -->
   <string name="next">पुढील</string>
   <string name="skip">वगळा</string>
   <string name="start">प्रारंभ करा</string>

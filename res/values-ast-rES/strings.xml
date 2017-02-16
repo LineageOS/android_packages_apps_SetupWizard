@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Encontu pa la configuración</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Siguiente</string>
   <string name="skip">Saltar</string>
   <string name="start">Aniciar</string>

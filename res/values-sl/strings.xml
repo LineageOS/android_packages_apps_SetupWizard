@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Čarovnik za namestitev</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Naprej</string>
   <string name="skip">Preskoči</string>
   <string name="start">Začni</string>

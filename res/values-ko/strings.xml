@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">설치 마법사</string>
+  <!-- Partner SUW Strings -->
   <string name="next">다음</string>
   <string name="skip">건너뛰기</string>
   <string name="start">시작</string>

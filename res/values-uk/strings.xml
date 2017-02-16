@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Майстер налаштування</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Далі</string>
   <string name="skip">Минути</string>
   <string name="start">Почати</string>

@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Sprievodca nastavením</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Ďalej</string>
   <string name="skip">Preskočiť</string>
   <string name="start">Spustiť</string>

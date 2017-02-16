@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Ohjattu asennus</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Seuraava</string>
   <string name="skip">Ohita</string>
   <string name="start">Aloita</string>

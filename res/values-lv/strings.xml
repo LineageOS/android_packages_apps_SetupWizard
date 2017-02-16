@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Uzstādīšanas vednis</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Tālāk</string>
   <string name="skip">Izlaist</string>
   <string name="start">Sākt</string>

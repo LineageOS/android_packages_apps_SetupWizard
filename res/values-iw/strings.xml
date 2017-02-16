@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">אשף ההגדרות</string>
+  <!-- Partner SUW Strings -->
   <string name="next">הבא</string>
   <string name="skip">דלג</string>
   <string name="start">התחל</string>
@@ -26,6 +27,7 @@
   <string name="loading">רק רגע\u2026</string>
   <string name="setup_complete">ההגדרה הושלמה</string>
   <string name="setup_welcome">ברוך הבא</string>
+  <string name="setup_locale">שפה</string>
   <string name="setup_wifi">בחר רשת Wi-Fi</string>
   <string name="setup_sim_missing">כרטיס SIM חסר</string>
   <string name="setup_choose_data_sim">בחר כרטיס SIM עבור נתונים</string>
@@ -55,13 +57,19 @@
   <string name="yes">כן</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">שיחת חירום</string>
+  <string name="setup_services">תכונות LineageOS</string>
+  <string name="services_explanation" product="tablet">שירותים אלה פועלים עבורך כדי להרחיב את יכולות המכשיר שלך. המידע ישומש בכפוף ל־<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של LineageOS.</string>
+  <string name="services_explanation" product="default">שירותים אלה פועלים עבורך כדי להרחיב את יכולות המכשיר שלך. המידע ישומש בכפוף ל־<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של LineageOS.</string>
   <string name="services_privacy_policy">מדיניות הפרטיות</string>
   <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> על-ידי שליחת נתוני אבחון ושימוש אל LineageOS. מידע זה לא יוכל לשמש כדי לזהותך, והוא תורם לצוותים העובדים על תחומים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">החל את ערכת העיצוב <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> מאפשר סגנון גרפי ייחודי לסמלים, טפטים ועוד.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
+  <string name="services_os_privacy_guard"><b>הפעל את שומר הפרטיות</b> כדי למנוע גישה לפרטיים האישים שלך מיישומים חדשים</string>
   <string name="setup_unlock">פתיחה</string>
   <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
+  <string name="setup_require_cyanogen_label"><b>דרוש את סיסמת החשבון שלך</b> כדי להשתמש במכשיר אפילו לאחר איפוס מלא.</string>
   <string name="setup_device_locked_instructions"><i>כדי להפעיל/לכבות אפשרות זו, גש להגדרות &gt; אבטחה</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">בחר סוג שיטת נעילת מסך לגיבוי</string>
@@ -77,4 +85,5 @@
   <string name="settings_lockscreen_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
   <string name="lockscreen_setup_title">הגן על הטלפון שלך</string>
   <string name="lockscreen_setup_summary"><b>הגן על מכשיר זה</b> ודרוש קוד אימות, קו או סיסמה לביטול נעילת המסך.</string>
+  <string name="lockscreen_setup_screen_lock_setup">הגדר</string>
 </resources>

@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Telepítő varázsló</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Következő</string>
   <string name="skip">Kihagyás</string>
   <string name="start">Indít</string>

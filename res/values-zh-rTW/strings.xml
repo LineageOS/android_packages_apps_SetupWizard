@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">設定精靈</string>
+  <!-- Partner SUW Strings -->
   <string name="next">下一步</string>
   <string name="skip">略過</string>
   <string name="start">開始</string>

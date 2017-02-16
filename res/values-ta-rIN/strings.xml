@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">அமைப்பு வழிகாட்டி</string>
+  <!-- Partner SUW Strings -->
   <string name="next">அடுத்து</string>
   <string name="skip">தவிர்</string>
   <string name="start">தொடங்கு</string>

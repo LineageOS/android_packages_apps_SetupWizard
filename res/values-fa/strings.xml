@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">راهنمای راه‌اندازی</string>
+  <!-- Partner SUW Strings -->
   <string name="next">مرحله بعد</string>
   <string name="skip">رد شدن</string>
   <string name="start">شروع</string>

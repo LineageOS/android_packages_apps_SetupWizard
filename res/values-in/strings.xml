@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Panduan Penyiapan</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Berikutnya</string>
   <string name="skip">Lewati</string>
   <string name="start">Mulai</string>

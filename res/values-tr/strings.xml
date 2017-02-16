@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Kurulum Sihirbazı</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Sonraki</string>
   <string name="skip">Atla</string>
   <string name="start">Başla</string>

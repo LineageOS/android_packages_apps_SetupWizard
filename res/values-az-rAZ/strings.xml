@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Quraşdırma Sehrbazı</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Sonrakı</string>
   <string name="skip">Ötür</string>
   <string name="start">Başla</string>

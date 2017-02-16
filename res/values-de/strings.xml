@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Einrichtungsassistent</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Weiter</string>
   <string name="skip">Überspringen</string>
   <string name="start">Start</string>

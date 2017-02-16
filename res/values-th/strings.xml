@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">เปิดใช้ครั้งแรก</string>
+  <!-- Partner SUW Strings -->
   <string name="next">ถัดไป</string>
   <string name="skip">ข้าม</string>
   <string name="start">เริ่มต้น</string>

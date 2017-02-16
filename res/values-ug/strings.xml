@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">تەڭشەك يېتەكچىسى</string>
+  <!-- Partner SUW Strings -->
   <string name="next">كېيىنكى</string>
   <string name="skip">ئاتلاش</string>
   <string name="start">باشلاش</string>

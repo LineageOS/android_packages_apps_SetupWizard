@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Opstel Ghoeroe</string>
+  <!-- Partner SUW Strings -->
   <string name="next">Volgende</string>
   <string name="skip">Slaan oor</string>
   <string name="start">Begin</string>

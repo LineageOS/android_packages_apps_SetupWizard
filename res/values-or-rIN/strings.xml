@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">ୱି୍ଜାର୍ଡ ସେଟଅପ୍‍ କରନ୍ତୁ</string>
+  <!-- Partner SUW Strings -->
   <string name="next">ପରବର୍ତ୍ତୀ</string>
   <string name="skip">ସ୍କିପ୍</string>
   <string name="start">ଆରମ୍ଭ</string>

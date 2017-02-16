@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">ಸೆಟಪ್ ವಿಝಾರ್ಡ್</string>
+  <!-- Partner SUW Strings -->
   <string name="next">ಮುಂದೆ</string>
   <string name="skip">ಸ್ಕಿಪ್</string>
   <string name="start">ಪ್ರಾರಂಭಿಸಿ</string>
