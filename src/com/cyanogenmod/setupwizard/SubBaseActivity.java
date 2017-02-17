@@ -48,10 +48,10 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
         }
         super.onCreate(savedInstanceState);
         setNextText(R.string.skip);
+        setNextAllowed(false);
         if (savedInstanceState == null) {
             onStartSubactivity();
         }
-        setNextAllowed(false);
     }
 
     @Override
