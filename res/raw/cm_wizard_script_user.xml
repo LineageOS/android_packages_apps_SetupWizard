@@ -17,11 +17,7 @@
 -->
 
 <WizardScript xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard"
-              wizard:firstAction="welcome">
-
-    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_WELCOME;end" id="welcome">
-        <result wizard:action="finish" />
-    </WizardAction>
+              wizard:firstAction="finish">
 
     <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
         <result wizard:action="exit" />
