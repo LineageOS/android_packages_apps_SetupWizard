@@ -119,7 +119,8 @@ public class WizardAction implements Parcelable {
         public WizardAction createFromParcel(Parcel source) {
             return new WizardAction(source.readString(),
                     source.readString(),
-                    source.readParcelable(WizardTransitions.class.getClassLoader()));
+                    (WizardTransitions) source
+                            .readParcelable(WizardTransitions.class.getClassLoader()));
         }
 
         public WizardAction[] newArray(int size) {

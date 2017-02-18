@@ -231,9 +231,10 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private void updateCarrierText() {
         if (mIsAttached) {
-            String name = mPhone.getSimOperatorName(SubscriptionManager.getDefaultSubscriptionId());
+            String name = mPhone.getSimOperatorNameForSubscription(
+                    SubscriptionManager.getDefaultDataSubId());
             if (TextUtils.isEmpty(name)) {
-                name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultSubscriptionId());
+                name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultDataSubId());
             }
             if (TextUtils.isEmpty(name)) {
                 if (mServiceState != null && mServiceState.isEmergencyOnly()) {
@@ -290,10 +291,6 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private boolean hasService() {
         boolean retVal;
-        if (mServiceState == null) {
-            mServiceState  =  TelephonyManager.from(this)
-                    .getServiceStateForSubscriber(SubscriptionManager.getDefaultSubscriptionId());
-        }
         if (mServiceState != null) {
             // Consider the device to be in service if either voice or data service is available.
             // Some SIM cards are marketed as data-only and do not support voice service, and on
