@@ -19,7 +19,7 @@ package com.cyanogenmod.setupwizard;
 import static android.content.pm.PackageManager.GET_ACTIVITIES;
 import static android.content.pm.PackageManager.GET_RECEIVERS;
 import static android.content.pm.PackageManager.GET_SERVICES;
-import static android.content.pm.PackageManager.MATCH_DISABLED_COMPONENTS;
+import static android.content.pm.PackageManager.GET_DISABLED_COMPONENTS;
 
 import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
 
@@ -49,7 +49,7 @@ public class SetupWizardTestActivity extends Activity {
         }
         Settings.Secure.putInt(getContentResolver(), "user_setup_complete", 0);
         SetupWizardUtils.resetComponentSets(this, GET_ACTIVITIES |
-                GET_RECEIVERS | GET_SERVICES | MATCH_DISABLED_COMPONENTS);
+                GET_RECEIVERS | GET_SERVICES | GET_DISABLED_COMPONENTS);
         forgetAllWifi();
         Intent setupIntent = new Intent("android.intent.action.MAIN")
                 .addCategory("android.intent.category.HOME")
