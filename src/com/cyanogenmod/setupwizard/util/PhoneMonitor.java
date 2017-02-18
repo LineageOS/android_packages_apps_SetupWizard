@@ -218,15 +218,11 @@ public class PhoneMonitor {
     }
 
     public String getSimOperatorName(int subId) {
-        return mTelephony.getSimOperatorName(subId);
+        return mTelephony.getSimOperatorNameForSubscription(subId);
     }
 
     public String getNetworkOperatorName(int subId) {
         return mTelephony.getNetworkOperatorName(subId);
-    }
-
-    public ServiceState getServiceStateForSubscriber(int subId) {
-        return mTelephony.getServiceStateForSubscriber(subId);
     }
 
     public void changeDataSub(int subId) {
