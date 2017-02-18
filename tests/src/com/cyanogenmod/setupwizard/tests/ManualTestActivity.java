@@ -23,7 +23,7 @@ import static android.content.pm.PackageManager.DONT_KILL_APP;
 import static android.content.pm.PackageManager.GET_ACTIVITIES;
 import static android.content.pm.PackageManager.GET_RECEIVERS;
 import static android.content.pm.PackageManager.GET_SERVICES;
-import static android.content.pm.PackageManager.MATCH_DISABLED_COMPONENTS;
+import static android.content.pm.PackageManager.GET_DISABLED_COMPONENTS;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -74,9 +74,9 @@ public class ManualTestActivity extends Activity {
             final Intent intent = new Intent("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.HOME");
             resetComponentSets("com.cyanogenmod.setupwizard", GET_ACTIVITIES |
-                    GET_RECEIVERS | GET_SERVICES | MATCH_DISABLED_COMPONENTS);
+                    GET_RECEIVERS | GET_SERVICES | GET_DISABLED_COMPONENTS);
             resetComponentSets("com.google.android.setupwizard", GET_ACTIVITIES |
-                    GET_RECEIVERS | GET_SERVICES | MATCH_DISABLED_COMPONENTS);
+                    GET_RECEIVERS | GET_SERVICES | GET_DISABLED_COMPONENTS);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
             startActivity(intent);
             finish();
@@ -94,7 +94,7 @@ public class ManualTestActivity extends Activity {
             Intent intent = new Intent("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.HOME");
             resetComponentSets("com.google.android.setupwizard", GET_ACTIVITIES |
-                    GET_RECEIVERS | GET_SERVICES | MATCH_DISABLED_COMPONENTS);
+                    GET_RECEIVERS | GET_SERVICES | GET_DISABLED_COMPONENTS);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | intent.getFlags());
             startActivity(intent);
             finish();

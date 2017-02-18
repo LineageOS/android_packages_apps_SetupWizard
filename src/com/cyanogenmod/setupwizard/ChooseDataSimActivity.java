@@ -125,7 +125,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
                                 "subId='" + subId + '\'' +
                                 '}');
                     }
-                    final int currentDataSubId = SubscriptionManager.getDefaultDataSubscriptionId();
+                    final int currentDataSubId = SubscriptionManager.getDefaultDataSubId();
                     if (currentDataSubId != subId) {
                         updateCurrentDataSub();
                         hideProgress();
@@ -230,7 +230,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         updateCurrentDataSub();
         checkForRadioReady();
         if (mRadioReady) {
-            final int currentDataSub = SubscriptionManager.getDefaultDataSubscriptionId();
+            final int currentDataSub = SubscriptionManager.getDefaultDataSubId();
             checkSimChangingState(currentDataSub, currentDataSub);
         }
     }
@@ -244,7 +244,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         if (mRadioReady) {
             mHandler.removeCallbacks(mRadioReadyRunnable);
             showPage();
-            final int currentDataSub = SubscriptionManager.getDefaultDataSubscriptionId();
+            final int currentDataSub = SubscriptionManager.getDefaultDataSubId();
             checkSimChangingState(currentDataSub, currentDataSub);
             return;
         } else {
@@ -289,7 +289,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
     }
 
     private void changeDataSub(SubscriptionInfo subInfoRecord) {
-        final int currentDataSub = SubscriptionManager.getDefaultDataSubscriptionId();
+        final int currentDataSub = SubscriptionManager.getDefaultDataSubId();
         final int requestedDataSub = subInfoRecord.getSubscriptionId();
         if (LOGV) {
             Log.v(TAG, "changeDataSub{" +
@@ -341,12 +341,12 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         if (mIsAttached) {
             for (int i = 0; i < mSubInfoRecords.size(); i++) {
                 SubscriptionInfo subInfoRecord = mSubInfoRecords.valueAt(i);
-                mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubscriptionId()
+                mCheckBoxes.get(i).setChecked(SubscriptionManager.getDefaultDataSubId()
                         == subInfoRecord.getSubscriptionId());
                 if (LOGV) {
                     Log.v(TAG, "updateCurrentDataSub{" +
                             "currentDataSubId='" + SubscriptionManager
-                            .getDefaultDataSubscriptionId() + '\'' +
+                            .getDefaultDataSubId() + '\'' +
                             "subInfoRecord.getSubscriptionId()='" +
                             subInfoRecord.getSubscriptionId() +
                             '}');
@@ -446,11 +446,6 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
     private boolean hasService(SubscriptionInfo subInfoRecord) {
         boolean retVal;
         ServiceState serviceState = mServiceStates.get(subInfoRecord.getSimSlotIndex());
-        if (serviceState == null) {
-            serviceState  = mPhoneMonitor
-                    .getServiceStateForSubscriber(subInfoRecord.getSubscriptionId());
-            mServiceStates.put(subInfoRecord.getSimSlotIndex(), serviceState);
-        }
         if (serviceState != null) {
             if (LOGV) {
                 Log.v(TAG, "hasService{" +
