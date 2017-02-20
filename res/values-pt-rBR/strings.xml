@@ -26,6 +26,7 @@
   <string name="loading">Aguarde um segundo\u2026</string>
   <string name="setup_complete">Configuração concluída</string>
   <string name="setup_welcome">Bem-vindo</string>
+  <string name="setup_locale">Idioma</string>
   <string name="setup_wifi">Selecionar rede Wi-Fi</string>
   <string name="setup_sim_missing">Não há cartão SIM</string>
   <string name="setup_choose_data_sim">Escolha um cartão SIM para dados</string>
@@ -55,8 +56,10 @@
   <string name="yes">Sim</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Chamada de emergência</string>
+  <string name="setup_services">Recursos LineageOS</string>
   <string name="services_privacy_policy">Política de Privacidade</string>
   <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> envia automaticamente dados de diagnóstico e utilização para a equipe do LineageOS. Esta informação não pode ser usada para identificá-lo e ajuda os desenvolvedores a melhorarem funções e serviços como duração da bateria, o desempenho dos aplicativos e desenvolvimento de novos recursos para o <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando um estilo visual exclusivo para os seus ícones, papéis de parede, etc.</string>
   <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
