@@ -21,6 +21,7 @@
   <string name="next">Далі</string>
   <string name="skip">Минути</string>
   <string name="start">Почати</string>
+  <string name="done">Готово</string>
   <string name="ok">Так</string>
   <string name="loading">Хвилинку\u2026</string>
   <string name="setup_complete">Усе налаштовано</string>
@@ -43,10 +44,14 @@
   <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Вы маєте можливість вимкнути їх у будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
   <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизиного розташування. Наприклад, додаток зможе шукати кав`ярні чи зупинки, що розташовані поруч, грунтуючись на отриманих даних.</string>
   <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
+  <string name="location_battery_saving"><b>Зменшення споживання батареї</b> шляхом обмеження оновлення GPS за годину.</string>
   <string name="location_network"><b>Використовувати Wi-Fi</b> для визначення вашого місцезнаходження.</string>
+  <string name="location_network_telephony"><b>Використовувати Wi-Fi та мобільні мережі</b> для визначення вашого місцезнаходження.</string>
   <string name="location_network_gms"><b>Використовувати служби місцезнаходження Google</b>, щоб допомогти додаткам визначити ваше розташування. Мається на увазі, що вони будуть відсилати анонімні дані, щодо вашого розташування, до Google навіть тоді, коли ніякі додатки не виконуються.</string>
+  <string name="setup_mobile_data">Увімкнути мобільні дані</string>
   <string name="setup_mobile_data_no_service">Немає мережі</string>
   <string name="setup_mobile_data_emergency_only">Тільки екстрені виклики</string>
+  <string name="enable_mobile_data_summary">Бажаєте використовувати мобільні дані під час налаштування? Увімкнення мобільних даних може коштувати вам грошей.</string>
   <string name="no">Ні</string>
   <string name="yes">Так</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
@@ -58,6 +63,7 @@
   <string name="services_help_improve_cm">Допомогти поліпшити <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматично надсилаючи дані щодо використання та діагностики у LineageOS. Ця інформація не може бути використана для ідентифікації користувача, але дуже допоможе розробникам, що працюють над такими речами як життя батареї, продуктивність додатків і нові функції <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Застосувати тему <xliff:g id="name" example="Material">%s </xliff:g></string>
+  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> та використовувати її стиль для значків, шпалер та інших елементів.</string>
   <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
   <string name="services_os_privacy_guard"><b>Увімкнути Вартового приватності</b> щоб зробити ваші особисті дані, такі як контакти, повідомлення або журнал викликів не доступними для додатків, що будуть встановлені</string>
@@ -73,7 +79,11 @@
   <string name="fingerprint_setup_backup_lock_method">Установка резервного методу розблокування</string>
   <string name="fingerprint_setup_add_fingerprint">Додати ваш відбиток пальця</string>
   <string name="fingerprint_setup_screen_lock_setup">Налаштування блокування екрану</string>
+  <string name="sim_locale_changed">%1$s SIM-карту виявлено</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Виберіть тип блокування екрану</string>
   <string name="settings_lockscreen_setup_details">Як би ви хотіли блокувати екран?</string>
+  <string name="lockscreen_setup_title">Захистіть свій телефон</string>
+  <string name="lockscreen_setup_summary"><b>Захистити цей пристрій</b> та запитувати PIN-код, графічний ключ або пароль для розблокування екрану</string>
   <string name="lockscreen_setup_screen_lock_setup">Налаштувати</string>
 </resources>

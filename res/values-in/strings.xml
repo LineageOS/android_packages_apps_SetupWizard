@@ -57,6 +57,8 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Panggilan darurat</string>
   <string name="setup_services">Fitur LineageOS</string>
+  <string name="services_explanation" product="tablet">Layanan ini bekerja untuk menambahkan kemampuan tablet Anda. Data yang digunakan tunduk pada <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+  <string name="services_explanation" product="default">Layanan ini bekerja untuk menambahkan kemampuan ponsel Anda. Data yang digunakan tunduk pada <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
   <string name="services_privacy_policy">Kebijakan privasi</string>
   <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> dengan mengirim data diagnostik dan penggunaan ke LineageOS secara otomatis. Informasi ini tidak dapat mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja dengan hal-hal seperti masa pakai baterai, kinerja aplikasi, dan fitur <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> baru.</string>
