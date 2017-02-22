@@ -73,6 +73,9 @@ public class SetupWizardUtils {
 
     private static final String TAG = SetupWizardUtils.class.getSimpleName();
 
+    private static final String GMS_PACKAGE = "com.google.android.gms";
+    private static final String GMS_SUW_PACKAGE = "com.google.android.setupwizard";
+
     private SetupWizardUtils(){}
 
     public static SharedPreferences getPrefs(Context context) {
@@ -166,15 +169,14 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasGMS(Context context) {
-        if (PackageManagerUtils
-                .isAppInstalled(context, "com.google.android.gms")) {
+        if (PackageManagerUtils.isAppInstalled(context, GMS_PACKAGE) &&
+                PackageManagerUtils.isAppInstalled(context, GMS_SUW_PACKAGE)) {
             PackageManager packageManager = context.getPackageManager();
             if (LOGV) {
-                Log.v(TAG, "com.google.android.setupwizard state =" + packageManager
-                        .getApplicationEnabledSetting("com.google.android.setupwizard"));
+                Log.v(TAG, GMS_SUW_PACKAGE + " state = " +
+                        packageManager.getApplicationEnabledSetting(GMS_SUW_PACKAGE));
             }
-            return packageManager
-                    .getApplicationEnabledSetting("com.google.android.setupwizard") !=
+            return packageManager.getApplicationEnabledSetting(GMS_SUW_PACKAGE) !=
                     COMPONENT_ENABLED_STATE_DISABLED;
         }
         return false;
