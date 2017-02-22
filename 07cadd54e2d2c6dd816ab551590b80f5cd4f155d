@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa5d592f_7faac2d5",
+        "filename": "src/com/cyanogenmod/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-02-22T13:26:33Z",
+      "side": 1,
+      "message": "Still wrong indentation. Requires 4 spaces.",
+      "range": {
+        "startLine": 170,
+        "startChar": 0,
+        "endLine": 170,
+        "endChar": 12
+      },
+      "revId": "07cadd54e2d2c6dd816ab551590b80f5cd4f155d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
