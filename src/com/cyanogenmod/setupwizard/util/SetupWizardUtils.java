@@ -166,8 +166,8 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasGMS(Context context) {
-        if (PackageManagerUtils
-                .isAppInstalled(context, "com.google.android.gms")) {
+        if (   PackageManagerUtils.isAppInstalled(context, "com.google.android.gms")
+            && PackageManagerUtils.isAppInstalled(context, "com.google.android.setupwizard")) {
             PackageManager packageManager = context.getPackageManager();
             if (LOGV) {
                 Log.v(TAG, "com.google.android.setupwizard state =" + packageManager
