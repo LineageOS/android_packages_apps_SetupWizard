@@ -18,7 +18,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
           package="com.cyanogenmod.setupwizard"
-          android:versionCode="4"
+          android:versionCode="5"
           android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
