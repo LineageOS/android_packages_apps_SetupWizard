@@ -58,14 +58,18 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Chamada de emergência</string>
   <string name="setup_services">Recursos LineageOS</string>
+  <string name="services_explanation" product="tablet">Estes serviços servem para ampliar os recursos do seu tablet. Os dados serão utilizados conforme a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do LineageOS.</string>
+  <string name="services_explanation" product="default">Estes serviços servem para ampliar os recursos do seu telefone. Os dados serão utilizados conforme a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do LineageOS.</string>
   <string name="services_privacy_policy">Política de Privacidade</string>
   <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> envia automaticamente dados de diagnóstico e utilização para a equipe do LineageOS. Esta informação não pode ser usada para identificá-lo e ajuda os desenvolvedores a melhorarem funções e serviços como duração da bateria, o desempenho dos aplicativos e desenvolvimento de novos recursos para o <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
   <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando um estilo visual exclusivo para os seus ícones, papéis de parede, etc.</string>
   <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
+  <string name="services_os_privacy_guard"><b>Ative a Proteção da Privacidade</b> para tornar dados pessoais como contatos, mensagens ou registro de chamadas indisponíveis para aplicativos recém-instalados</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo foi bloqueado pelo usuário.</string>
+  <string name="setup_require_cyanogen_label"><b>Exigir a senha de sua conta</b> para utilizar o dispositivo mesmo depois de restaurar os padrões de fábrica.</string>
   <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá para Configurações e Segurança</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio de tela do backup</string>
@@ -81,4 +85,5 @@
   <string name="settings_lockscreen_setup_details">Como você gostaria de bloquear a tela?</string>
   <string name="lockscreen_setup_title">Proteger seu smartphone</string>
   <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
 </resources>

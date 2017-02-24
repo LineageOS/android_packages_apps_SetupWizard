@@ -66,6 +66,7 @@
   <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> mengaktifkan gaya visual unik untuk ikon, gambar latar dan lainnya.</string>
   <string name="services_os_nav_keys_label"><b>Gunakan tombol navigasi pada layar</b> bukan tombol perangkat keras.</string>
+  <string name="services_os_privacy_guard"><b>Aktifkan keamanan privasi</b> untuk membuat data pribadi Anda seperti kontak, pesan atau log panggilan menjadi tidak tersedia untuk aplikasi baru yang terpasang</string>
   <string name="setup_unlock">Buka kunci</string>
   <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
   <string name="setup_require_cyanogen_label"><b>Memerlukan kata sandi akun Anda</b> untuk dapat menggunakan perangkat meskipun setelah pengaturan ulang ke pabrik.</string>
@@ -84,4 +85,5 @@
   <string name="settings_lockscreen_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
   <string name="lockscreen_setup_title">Lindungi telepon anda</string>
   <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau kata sandi untuk membuka kunci layar</string>
+  <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
 </resources>

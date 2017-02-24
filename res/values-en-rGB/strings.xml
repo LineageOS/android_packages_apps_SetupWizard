@@ -17,7 +17,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Setup Wizard</string>
   <!-- Partner SUW Strings -->
+  <string name="next">Next</string>
+  <string name="skip">Skip</string>
+  <string name="start">Start</string>
+  <string name="done">Done</string>
+  <string name="ok">OK</string>
+  <string name="setup_complete">Setup is complete</string>
   <string name="location_network_telephony"><b>Use Wi-Fi and mobile networks</b> to help apps determine your location.</string>
   <string name="setup_mobile_data">Turn on mobile data</string>
   <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on mobile data may be subject to data charges.</string>
