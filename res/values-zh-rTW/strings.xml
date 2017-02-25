@@ -48,7 +48,7 @@
   <string name="location_battery_saving">透過減少 GPS 每小時更新次數來<b>降低電池消耗</b>。</string>
   <string name="location_network"><b>使用 Wi-Fi</b> 來幫助應用程式確定您所在的位置。</string>
   <string name="location_network_telephony"><b>使用 Wi-Fi 和行動網路</b>來幫助應用程式確定您所在的位置。</string>
-  <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會發送匿名的位置資料給 Google。</string>
+  <string name="location_network_gms"><b>使用 Google 的定位服務</b>來幫助應用程式確定您所在的位置。這表示即使應用程式沒有運作，也會傳送匿名的位置資料給 Google。</string>
   <string name="setup_mobile_data">啟用行動數據</string>
   <string name="setup_mobile_data_no_service">沒有服務</string>
   <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
@@ -62,7 +62,7 @@
   <string name="services_explanation" product="default">這些服務用來增強您的手機的功能。資料將根據 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="services_privacy_policy">隱私權政策</string>
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通過自動發送診斷及使用資料給 LineageOS。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式性能和新的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 經由自動傳送診斷及使用資料給 LineageOS。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式效能和新的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
   <string name="services_apply_theme">套用 <xliff:g id="name" example="Material">%s</xliff:g> 主題</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>正在幫把您的圖示、桌布…等變成個獨一無二的視覺效果。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>

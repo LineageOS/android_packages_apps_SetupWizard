@@ -26,6 +26,7 @@
   <string name="loading">잠시만 기다려주세요\u2026</string>
   <string name="setup_complete">설정 완료</string>
   <string name="setup_welcome">환영합니다</string>
+  <string name="setup_locale">언어</string>
   <string name="setup_wifi">Wi-Fi 연결</string>
   <string name="setup_sim_missing">SIM 카드 없음</string>
   <string name="setup_choose_data_sim">모바일 데이터용 SIM 카드 선택</string>
@@ -55,6 +56,8 @@
   <string name="yes">예</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">긴급 통화</string>
+  <string name="setup_services">LineageOS 기능</string>
+  <string name="services_explanation" product="tablet">이 서비스는 태블릿의 기능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>
@@ -62,6 +65,7 @@
   <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
   <string name="setup_unlock">잠금 해제</string>
   <string name="setup_device_locked">이 기기는 사용자에 의해 잠겨 있습니다.</string>
+  <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>계정 비밀번호가 필요합니다</b>.</string>
   <string name="setup_device_locked_instructions"><i>이 기능을 켜거나 끄려면, 설정 &gt; 보안으로 이동하세요</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">백업 화면 잠금 방법 선택</string>
@@ -76,4 +80,5 @@
   <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
   <string name="lockscreen_setup_title">휴대전화 보호</string>
   <string name="lockscreen_setup_summary"><b>이 기기를 보호</b>하고 화면 잠금 해제용 PIN, 패턴 또는 비밀번호 요청</string>
+  <string name="lockscreen_setup_screen_lock_setup">설정</string>
 </resources>
