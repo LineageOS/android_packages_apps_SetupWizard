@@ -36,10 +36,9 @@
   <string name="setup_datetime">日付と時刻</string>
   <string name="setup_current_date">現在の日付</string>
   <string name="setup_current_time">現在の時刻</string>
-  <string name="sim_missing_summary" product="tablet">お使いのタブレットでSIMカードが検出されませんでした。SIMカードの挿入方法については、タブレットに付属している説明書をご覧ください。</string>
-  <string name="sim_missing_summary" product="default">お使いの携帯電話でSIMカードが検出されませんでした。SIMカードの挿入方法については、携帯電話に付属している説明書をご覧ください。</string>
-  <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信に使用しますか？選択したSIMをタブレットのセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
-  <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信に使用しますか？選択したSIMを携帯電話のセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
+  <string name="sim_missing_summary" product="tablet">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
+  <string name="sim_missing_summary" product="default">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
+  <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信に使用しますか？選択したSIMを端末のセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
   <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
   <string name="backup_data_summary">アプリのデータ、Wi-Fiパスワード、その他の設定をGoogleのサーバーに<b>バックアップする</b></string>
   <string name="other_services_summary">これらのサービスはGoogleアプリを動作させるもので、いつでもONまたはOFFにすることができます。データはGoogleの<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
@@ -58,8 +57,8 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">緊急通報</string>
   <string name="setup_services">LineageOS の機能</string>
-  <string name="services_explanation" product="tablet">これらのサービスはタブレットの機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
-  <string name="services_explanation" product="default">これらのサービスは携帯電話の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
+  <string name="services_explanation" product="tablet">これらのサービスは端末の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
+  <string name="services_explanation" product="default">これらのサービスは端末の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
   <string name="services_privacy_policy">プライバシーポリシー</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>の改善に協力します</string>
   <string name="services_metrics_label">診断と使用状況データを自動的に LineageOS に送信して、<xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>の新機能などへの取り組みに活用されます。</string>
