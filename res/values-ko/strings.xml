@@ -58,11 +58,14 @@
   <string name="emergency_call">긴급 통화</string>
   <string name="setup_services">LineageOS 기능</string>
   <string name="services_explanation" product="tablet">이 서비스는 태블릿의 기능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
+  <string name="services_explanation" product="default">이 서비스는 휴대전화의 기능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
+  <string name="services_metrics_label">진단 및 사용 정보를 LineageOS에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 개인을 식별하는 데 사용할 수 없으며 배터리 수명, 앱 성능 개선과 새로운 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>의 기능을 추가하는 작업을 하는 팀에게 도움을 줍니다.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> 테마 적용</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>은 독특한 아이콘, 배경화면 등을 제공합니다.</string>
   <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
+  <string name="services_os_privacy_guard">새로 설치한 앱에서 연락처, 메시지 또는 통화 기록과 같은 개인 정보를 사용하지 못하게 하기 위하여 <b>프라이버시 가드 활성화</b></string>
   <string name="setup_unlock">잠금 해제</string>
   <string name="setup_device_locked">이 기기는 사용자에 의해 잠겨 있습니다.</string>
   <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>계정 비밀번호가 필요합니다</b>.</string>

@@ -17,61 +17,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Encontu pa la configuración</string>
   <!-- Partner SUW Strings -->
-  <string name="next">Siguiente</string>
-  <string name="skip">Saltar</string>
-  <string name="start">Aniciar</string>
-  <string name="ok">Aceutar</string>
-  <string name="loading">Un segundu\u2026</string>
-  <string name="setup_complete">La configuración completóse</string>
-  <string name="setup_welcome">Bienllegáu</string>
-  <string name="setup_wifi">Esbillar Wi-Fi</string>
-  <string name="setup_sim_missing">Falta la tarxeta SIM</string>
-  <string name="setup_choose_data_sim">Escueyi una SIM pa datos</string>
-  <string name="setup_location">Servicios de llocalización</string>
-  <string name="setup_other">Otros servicios</string>
-  <string name="setup_datetime">Data y hora</string>
-  <string name="setup_current_date">Data actual</string>
-  <string name="setup_current_time">Hora actual</string>
-  <string name="sim_missing_summary" product="tablet">Nun se deteutó denguna tarxeta SIM na to tableta. Pa inxertar una tarxeta SIM, llei les instrucciones que vienen col preséu.</string>
-  <string name="sim_missing_summary" product="default">Nun se deteutó denguna tarxeta SIM nel to móvil. Pa inxertar una tarxeta SIM, llei les instrucciones que vienen col preséu.</string>
-  <string name="choose_data_sim_summary" product="tablet">¿Qué SIM quies usar pa los datos? La tarxeta SIM esbillada pue llevar cargos de rede yá que s\'usará pa configurar la to tableta.</string>
-  <string name="choose_data_sim_summary" product="default">¿Qué SIM quies usar pa los datos? La tarxeta SIM esbillada pue llevar cargos de rede yá que s\'usará pa configurar el to móvil.</string>
-  <string name="date_time_summary">Afita\'l to fusu horariu y axusta la data y hora actuales si ye necesario</string>
-  <string name="backup_data_summary"><b>Copia de seguranza</b> de los datos d\'aplicación, les contraseñes Wi-Fi y otros axustes nos sirvidores de Google</string>
-  <string name="other_services_summary">Estos servicios ponen a Google a trabayar pot ti, y pues activalos o desactivalos en cualesquier momentu. Los datos usaránse acordies cola <xliff:g id="name" example="Política de privacidá">%s</xliff:g> de Google.</string>
-  <string name="location_services_summary">Los servicios de llocalización permiten al sistema y les aplicaciones de terceres partes a recoyer y usar datos como\'l to allugamientu aproximáu. Por exemplu, una aplicación podría usar l\'allugamientu aproximáu p\'asitiate cerca d\'una cafetería.</string>
-  <string name="location_access_summary"><b>Permitir a les tos aplicaciones entrugar pol to permisu</b> pa usar la to información d\'allugamientu. Esto podría incluyir los tos allugamientos recientes y pasaos.</string>
-  <string name="location_battery_saving"><b>Amenorgar consumu de batería</b> restrinxendo\'l númberu d\'anovamientos GPS per hora.</string>
-  <string name="location_network"><b>Usar Wi-Fi</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
-  <string name="location_network_telephony"><b>Usar Wi-Fi y redes móviles</b> p\'ayudar a les aplicaciones a determinar el to allugamientu.</string>
-  <string name="location_network_gms"><b>Usar el serviciu d\'allugamientu de Google</b> p\'ayudar a les aplicaciones a determinar el to allugamientu. Esto quier dicir que s\'unviarán datos anónimos a Google, incluso cuando nun se tea executándose denguna aplicación.</string>
-  <string name="setup_mobile_data">Prender datos móviles</string>
-  <string name="setup_mobile_data_no_service">Ensin serviciu</string>
-  <string name="setup_mobile_data_emergency_only">Namái llamaes d\'emerxencia</string>
-  <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? Activalos quiciabes puean tar suxetos a cargos de datos.</string>
-  <string name="no">Non</string>
-  <string name="yes">Sí</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Llamada d\'emerxencia</string>
-  <string name="services_privacy_policy">Política de privacidá</string>
-  <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> habilitando iconos, fondos de pantalla, fontes únicos y más.</string>
-  <string name="services_os_nav_keys_label"><b>Usar tecles de navegación na pantalla</b> en cuantes de tecles físiques.</string>
-  <string name="setup_unlock">Desbloquiar</string>
-  <string name="setup_device_locked">Esti preséu ta bloquiáu pol usuariu.</string>
-  <string name="setup_device_locked_instructions"><i>Pa apagar/prender esta carauterística, por favor vete a Axustes &gt; Seguranza</i></string>
   <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Esbilla\'l tipu de copia de seguranza de pantalla de bloquéu</string>
-  <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
-  <string name="fingerprint_setup_title">Configuración del buelga</string>
-  <string name="fingerprint_setup_summary">Pa usar el to sensor de buelgues pa desbloquiar la to pantalla, necesitarás:</string>
-  <string name="fingerprint_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
-  <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
-  <string name="fingerprint_setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
-  <string name="sim_locale_changed">%1$s SIM deteutada</string>
   <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
 </resources>
