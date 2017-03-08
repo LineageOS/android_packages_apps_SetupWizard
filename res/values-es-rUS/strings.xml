@@ -31,7 +31,7 @@
   <string name="setup_wifi">Selecciona una red Wi-Fi</string>
   <string name="setup_sim_missing">Falta la tarjeta SIM</string>
   <string name="setup_choose_data_sim">Elige una SIM para datos</string>
-  <string name="setup_location">Servicios de localización</string>
+  <string name="setup_location">Servicios de ubicación</string>
   <string name="setup_other">Otros servicios</string>
   <string name="setup_datetime">Fecha y hora</string>
   <string name="setup_current_date">Fecha actual</string>
@@ -43,12 +43,12 @@
   <string name="date_time_summary">Configurar la zona horaria y ajustar la fecha y hora actuales si es necesario</string>
   <string name="backup_data_summary"><b>Copia de seguridad</b> de los datos de la aplicación, las contraseñas Wi-Fi y otros ajustes en los servidores de Google</string>
   <string name="other_services_summary">Estos servicios hacen que Google trabaje para ti y puedes activarlos o desactivarlos en cualquier momento. Los datos se utilizarán según la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
-  <string name="location_services_summary">Los servicios de localización permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
-  <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y otras ubicaciones recientes.</string>
+  <string name="location_services_summary">Los servicios de ubicación permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como la ubicación aproximada. Por ejemplo, una aplicación puede utilizar la ubicación aproximada para localizar cafeterías cercanas.</string>
+  <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado el permiso</b> para usar la información de ubicación. Esto puede incluir la ubicación actual y otras ubicaciones recientes.</string>
   <string name="location_battery_saving"><b>Reducir el consumo de batería</b> restringiendo el número de actualizaciones del GPS por hora.</string>
-  <string name="location_network"><b>Uso de Wi-Fi</b> para permitir que las aplicaciones determinen tu ubicación.</string>
-  <string name="location_network_telephony"><b>Utilizar Wi-Fi y las redes móviles</b> para que las aplicaciones puedan determinar tu ubicación.</string>
-  <string name="location_network_gms"><b>Uso del servicio de localización de Google</b> para permitir que las aplicaciones determinen tu ubicación. Esto significa enviar información anónima de la localización a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
+  <string name="location_network"><b>Uso de Wi-Fi</b> para permitir que las aplicaciones determinen la ubicación.</string>
+  <string name="location_network_telephony"><b>Utilizar Wi-Fi y redes móviles</b> para que las aplicaciones puedan determinar la ubicación.</string>
+  <string name="location_network_gms"><b>Uso del servicio de ubicación de Google</b> para permitir que las aplicaciones determinen la ubicación. Esto significa enviar información anónima de la ubicación a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
   <string name="setup_mobile_data">Activar datos móviles</string>
   <string name="setup_mobile_data_no_service">Sin servicio</string>
   <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>
@@ -58,7 +58,7 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Llamada de emergencia</string>
   <string name="setup_services">Características de LineageOS</string>
-  <string name="services_explanation" product="tablet">Estos servicios sirven para extender las capacidades de la tablet. Se utilizarán datos de acuerdo con las <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
+  <string name="services_explanation" product="tablet">Estos servicios sirven para extender las capacidades de la tableta. Se utilizarán datos de acuerdo con las <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
   <string name="services_explanation" product="default">Estos servicios sirven para extender las capacidades del teléfono. Se utilizarán datos de acuerdo con las <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
   <string name="services_privacy_policy">Política de privacidad</string>
   <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>

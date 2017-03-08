@@ -69,7 +69,7 @@
   <string name="services_os_privacy_guard"><b>Habilita el Guarda de privacitat</b> per assegurar que les teves dades personals com ara contactes, missatges o registres de trucades no estan disponibles per a les noves aplicacions instal·lades</string>
   <string name="setup_unlock">Desbloqueja</string>
   <string name="setup_device_locked">Aquest dispositiu ha estat bloquejat per l\'usuari.</string>
-  <string name="setup_require_cyanogen_label"><b>Demana la teva contrasenya del compte</b> per utilitzar el teu dispositiu, fins i tot després de restablir als ajustaments de fàbrica.</string>
+  <string name="setup_require_cyanogen_label"><b>Demana la teva contrasenya del compte</b> per utilitzar el teu dispositiu, fins i tot després de restablir les configuracions de fàbrica.</string>
   <string name="setup_device_locked_instructions"><i>Per activar/desactivar aquesta característica, si us plau ves a Configuració &gt; Seguretat</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Selecciona el tipus de bloqueig de pantalla de reserva</string>

@@ -27,6 +27,7 @@
   <string name="loading">Juste une seconde\u2026</string>
   <string name="setup_complete">Configuration terminée</string>
   <string name="setup_welcome">Bienvenue</string>
+  <string name="setup_locale">Langue</string>
   <string name="setup_wifi">Sélectionner le Wi-Fi</string>
   <string name="setup_sim_missing">Carte SIM manquante</string>
   <string name="setup_choose_data_sim">Choisir une carte SIM pour les données</string>
@@ -56,13 +57,18 @@
   <string name="yes">Oui</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Appel d\'urgence</string>
+  <string name="setup_services">Fonctionnalités de LineageOS</string>
+  <string name="services_explanation" product="tablet">Ces services fonctionnent pour étendre les fonctionnalités de votre tablette. Les données seront utilisées conformément à la <xliff:g id="name" example="Politique de confidentialité">%s</xliff:g> de LineageOS.</string>
+  <string name="services_explanation" product="default">Ces services fonctionnent pour étendre les fonctionnalités de votre téléphone. Les données seront utilisées conformément à la <xliff:g id="name" example="Politique de confidentialité">%s</xliff:g> de LineageOS.</string>
   <string name="services_privacy_policy">Politique de confidentialité</string>
   <string name="services_help_improve_cm">Aider à améliorer <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_apply_theme">Appliquer le thème <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> permettant l\'utilisation d\'un style visuel unique pour vos icônes, fond d\'écran et plus.</string>
   <string name="services_os_nav_keys_label"><b>Utilisation des touches de navigation de l\'écran</b> au lieu des touches physiques.</string>
+  <string name="services_os_privacy_guard"><b>Activer la protection des données</b> pour que vos données personnelles comme les contacts, messages ou les journaux d\'appels ne soient pas disponibles pour les applications nouvellement installées</string>
   <string name="setup_unlock">Déverrouiller</string>
   <string name="setup_device_locked">Cet appareil a été verrouillé par l\'utilisateur.</string>
+  <string name="setup_require_cyanogen_label"><b>Nécessite le mot de passe de votre compte</b> afin d\'utiliser votre appareil même après une réinitialisation d\'usine.</string>
   <string name="setup_device_locked_instructions"><i>Pour activer/désactiver cette fonction, veuillez vous rendre dans Paramètres &gt; Sécurité</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Sélection du type de verrouillage d\'écran de sauvegarde</string>
@@ -74,7 +80,9 @@
   <string name="fingerprint_setup_screen_lock_setup">Configurer le verrouillage de l\'écran</string>
   <string name="sim_locale_changed">%1$s carte SIM détectée</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Sélectionner le type de verrouillage de l\'écran</string>
   <string name="settings_lockscreen_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
   <string name="lockscreen_setup_title">Protéger votre téléphone</string>
   <string name="lockscreen_setup_summary"><b>"Protéger l\'appareil"</b>\" et exiger code, schéma ou mot de passe pour déverrouiller l\'écran\"</string>
+  <string name="lockscreen_setup_screen_lock_setup">Configurer</string>
 </resources>

@@ -17,7 +17,38 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Encontu pa la configuración</string>
   <!-- Partner SUW Strings -->
+  <string name="next">Siguiente</string>
+  <string name="skip">Saltar</string>
+  <string name="start">Aniciar</string>
+  <string name="done">Fecho</string>
+  <string name="ok">Aceutar</string>
+  <string name="loading">Un segundu\u2026</string>
+  <string name="setup_locale">Llingua</string>
+  <string name="setup_location">Servicios d\'allugamientu</string>
+  <string name="setup_other">Otros servicios</string>
+  <string name="setup_datetime">Data y hora</string>
+  <string name="setup_current_date">Data actual</string>
+  <string name="setup_current_time">Hora actual</string>
+  <string name="date_time_summary">Afita\'l to fusu horariu y axusta la data y hora actuales si ye preciso</string>
+  <string name="location_services_summary">Los servicios d\'allugamientu permiten al sistema y aplicaciones de terceros recoyer y usar datos como\'l to allugamientu aproximáu. Por exemplu, una aplicación pue usar l\'allugamientu aproximáu p\'allugar cafeteríes averaes.</string>
+  <string name="location_battery_saving"><b>Amenorgar consumu de batería</b> torgando\'l númberu d\'anovamientos GPS per hora.</string>
+  <string name="setup_mobile_data_no_service">Ensin serviciu</string>
+  <string name="setup_mobile_data_emergency_only">Namái llamaes d\'emerxencia</string>
+  <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? Activalos quiciabes puean tar suxetos a cargos de datos.</string>
+  <string name="no">Non</string>
+  <string name="yes">Sí</string>
+  <string name="emergency_call">Llamada d\'emerxencia</string>
+  <string name="setup_services">Carauterístiques de LineageOS</string>
+  <string name="services_privacy_policy">Política de privacidá</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> unviando automáticamente diagnósticos y usu de datos a LineageOS. Esta información nun pue usase pa indentificate y écha-yos un gabitu a los equipos pa trabayar en coses como\'l consumu de batería, el rindimientu d\'aplicaciones, y les carauterístiques nueves de <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="services_os_privacy_guard"><b>Habilitar Guardián de privacidá</b> pa facer que los tos datos personales como contautos, mensaxes, rexistros de llamaes... etc, nun tean disponibles p\'aplicaciones que teas acabante d\'instalar</string>
+  <string name="setup_unlock">Desbloquiar</string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
+  <string name="fingerprint_setup_title">Configuración de buelga</string>
+  <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
   <!-- secure lock screen -->
+  <string name="lockscreen_setup_summary"><b>Protexe esti preséu</b> y riquirá un PIN, patrón o contraseña pa desbloquiar la pantalla</string>
 </resources>

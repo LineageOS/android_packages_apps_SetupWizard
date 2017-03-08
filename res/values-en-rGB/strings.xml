@@ -24,7 +24,27 @@
   <string name="start">Start</string>
   <string name="done">Done</string>
   <string name="ok">OK</string>
+  <string name="loading">Just a sec\u2026</string>
   <string name="setup_complete">Setup is complete</string>
+  <string name="setup_welcome">Welcome</string>
+  <string name="setup_locale">Language</string>
+  <string name="setup_wifi">Select Wi-Fi</string>
+  <string name="setup_sim_missing">SIM card missing</string>
+  <string name="setup_choose_data_sim">Choose a SIM for data</string>
+  <string name="setup_location">Location services</string>
+  <string name="setup_other">Other services</string>
+  <string name="setup_datetime">Date &amp; time</string>
+  <string name="setup_current_date">Current date</string>
+  <string name="setup_current_time">Current time</string>
+  <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
+  <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
+  <string name="choose_data_sim_summary" product="tablet">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your tablet.</string>
+  <string name="choose_data_sim_summary" product="default">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your phone.</string>
+  <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
+  <string name="backup_data_summary"><b>Back up</b> app data, Wi-Fi passwords, and other settings to Google servers</string>
+  <string name="other_services_summary">These services put Google to work for you, and you can turn them on or off at any time. Data will be used in accordance with Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="location_services_summary">Location services allows system and third party apps to gather and use data such as your approximate location. For example, an app may use your approximate location to locate nearby coffee shops.</string>
+  <string name="location_network"><b>Use Wi-Fi</b> to help apps determine your location.</string>
   <string name="location_network_telephony"><b>Use Wi-Fi and mobile networks</b> to help apps determine your location.</string>
   <string name="setup_mobile_data">Turn on mobile data</string>
   <string name="enable_mobile_data_summary">Do you want to use mobile data during setup? Turning on mobile data may be subject to data charges.</string>

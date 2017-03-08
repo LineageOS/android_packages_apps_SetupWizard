@@ -66,7 +66,7 @@
   <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её стиль для значков, обоев и прочих элементов.</string>
   <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
-  <string name="services_os_privacy_guard"><b>Включите защищённый режим,</b> чтобы ограничить доступ новых приложений к вашим персональным данным — контактам, сообщениям или журналу вызовов.</string>
+  <string name="services_os_privacy_guard"><b>Включить защищённый режим,</b> чтобы ограничить доступ новых приложений к вашим персональным данным — контактам, сообщениям или журналу вызовов.</string>
   <string name="setup_unlock">Разблокировать</string>
   <string name="setup_device_locked">Устройство заблокировано пользователем.</string>
   <string name="setup_require_cyanogen_label"><b>Требовать пароль входа в аккаунт</b> для использования устройства даже после удаления всех данных.</string>
