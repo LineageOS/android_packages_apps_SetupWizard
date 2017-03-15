@@ -66,6 +66,7 @@
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> téma alkalmazása</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> engedélyezésével egyedi stílust alkalmaz az ikonokhoz, háttérképhez, stb.</string>
   <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
+  <string name="services_os_privacy_guard"><b>Engedélyezze az adatvédelmet</b>, hogy a személyes adatai, mint a névjegyek, üzenetek vagy hívásnaplók ne legyenek elérhetőek az újonnan telepített alkalmazások számára</string>
   <string name="setup_unlock">Feloldás</string>
   <string name="setup_device_locked">Ezt az eszközt a felhasználó zárolta.</string>
   <string name="setup_require_cyanogen_label"><b>Fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>

@@ -20,7 +20,7 @@
   <string name="app_name">Майстер налаштування</string>
   <!-- Partner SUW Strings -->
   <string name="next">Далі</string>
-  <string name="skip">Минути</string>
+  <string name="skip">Пропустити</string>
   <string name="start">Почати</string>
   <string name="done">Готово</string>
   <string name="ok">Так</string>
@@ -30,17 +30,17 @@
   <string name="setup_locale">Мова</string>
   <string name="setup_wifi">Оберіть мережу Wi-Fi</string>
   <string name="setup_sim_missing">SIM-карта відсутня</string>
-  <string name="setup_choose_data_sim">Оберіть SIM-карту для передачи даних</string>
+  <string name="setup_choose_data_sim">Оберіть SIM-карту для передачі даних</string>
   <string name="setup_location">Служби позиціювання</string>
   <string name="setup_other">Інші служби</string>
   <string name="setup_datetime">Дата та Час</string>
   <string name="setup_current_date">Поточна дата</string>
   <string name="setup_current_time">Поточний час</string>
-  <string name="sim_missing_summary" product="tablet">У вашому планшеті не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрію.</string>
-  <string name="sim_missing_summary" product="default">У вашому телефоні не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрію.</string>
-  <string name="choose_data_sim_summary" product="tablet">Яку SIM-карту використовувати для передачи даних? Це може коштувати вам грошей, тому що,  обрана SIM-карта буде використана для отримання налаштувань планшету.</string>
-  <string name="choose_data_sim_summary" product="default">Яку SIM-карту використовувати для передачи даних? Це може коштувати вам грошей, тому що,  обрана SIM-карта буде використана для отримання налаштувань вашого пристрою.</string>
-  <string name="date_time_summary">Встановити часовий пояс і настроїти поточноі дату та час, якщо це необхідно</string>
+  <string name="sim_missing_summary" product="tablet">У вашому планшеті не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
+  <string name="sim_missing_summary" product="default">У вашому телефоні не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
+  <string name="choose_data_sim_summary" product="tablet">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що обрана SIM-карта буде використана для отримання налаштувань планшету.</string>
+  <string name="choose_data_sim_summary" product="default">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що, обрана SIM-карта буде використана для отримання налаштувань вашого пристрою.</string>
+  <string name="date_time_summary">Встановіть часовий пояс і настройте поточну дату та час, якщо це необхідно</string>
   <string name="backup_data_summary"><b>Зберегти</b> дані додатків, Wi-Fi паролі та інші параметри на серверах Google</string>
   <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Ви маєте можливість вимкнути їх в будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
   <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизного розташування. Наприклад, додаток зможе шукати кав`ярні чи зупинки, що розташовані поруч, грунтуючись на отриманих даних.</string>

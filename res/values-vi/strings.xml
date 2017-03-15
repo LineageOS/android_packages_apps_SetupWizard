@@ -59,7 +59,7 @@
   <string name="emergency_call">Cuộc gọi khẩn cấp</string>
   <string name="setup_services">Các tính năng LineageOS</string>
   <string name="services_explanation" product="tablet">Các dịch vụ này giúp mở rộng khả năng làm việc máy tính bảng của bạn. Dữ liệu sẽ được sử dụng theo LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Các dịch vụ này giúp mở rộng khả năng làm việc điện thoại của bạn. Dữ liệu sẽ được sử dụng theo LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Các dịch vụ này giúp mở rộng khả năng làm việc điện thoại của bạn. Dữ liệu sẽ được sử dụng theo LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Chính sách về quyền riêng tư</string>
   <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> bằng cách tự động gửi dữ liệu chẩn đoán và sử dụng đến LineageOS. Thông tin này không được sử dụng để nhận dạng bạn và giúp nhóm thực hiện những thứ như thời lượng pin, hiệu suất ứng dụng và các tính năng <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> mới.</string>

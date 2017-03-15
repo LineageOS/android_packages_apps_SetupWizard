@@ -27,6 +27,7 @@
   <string name="loading">Une bat\u2026</string>
   <string name="setup_complete">Ezarpena burutu da</string>
   <string name="setup_welcome">Ongi etorri</string>
+  <string name="setup_locale">Hizkuntza</string>
   <string name="setup_wifi">Hautatu Wi-Fia</string>
   <string name="setup_sim_missing">SIM txartela falta da</string>
   <string name="setup_choose_data_sim">Aukeratu datuetarako SIM txartela</string>
@@ -56,13 +57,19 @@
   <string name="yes">Bai</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Larrialdi deia</string>
+  <string name="setup_services">LineageOS ezaugarriak</string>
+  <string name="services_explanation" product="tablet">Zerbitzu hauek tabletaren gaitasunak hobetzeko zure mesedetan egiten dute lan. Datuak LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
+  <string name="services_explanation" product="default">Zerbitzu hauek telefonoaren gaitasunak hobetzeko zure mesedetan egiten dute lan. Datuak LineageOSen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
   <string name="services_privacy_policy">Pribatutasun politika</string>
   <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="CyanogenMod">%s</xliff:g> hobetzen</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatikoki diagnostiko eta erabilera datuak bidaliz LineageOSi. Informazio hau ezin da erabili zu identifikatzeko eta bateriaren iraupena, aplikazioen errendimendua, eta <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ezaugarri berrietan lanean dabilen taldearentzat lagungarria da.</string>
   <string name="services_apply_theme">Aplikatu <xliff:g id="name" example="Material">%s</xliff:g> gaia</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zure ikono, horma-irudi eta bestelakoentzat estilo bisual paregabe bat gaituz.</string>
   <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
+  <string name="services_os_privacy_guard"><b>Gaitu Privacy guard</b> zure datu pertsonalak, esaterako kontaktuak, mezuak edo deien erregistroa instalatu berri dituzun aplikazioen eskura egon ez daitezen</string>
   <string name="setup_unlock">Desblokeatu</string>
   <string name="setup_device_locked">Erabiltzaileak gailu hau blokeatu du.</string>
+  <string name="setup_require_cyanogen_label"><b>Eskatu zure kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero ere.</string>
   <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo ezgaitzeko zoaz hona: Ezarpenak &gt; Segurtasuna</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
@@ -78,4 +85,5 @@
   <string name="settings_lockscreen_setup_details">Nola blokeatu nahi duzu pantaila?</string>
   <string name="lockscreen_setup_title">Babestu telefonoa</string>
   <string name="lockscreen_setup_summary"><b>Babestu gailua</b> eta eskatu PIN kode, eredu edo pasahitz bat pantaila desblokeatzeko</string>
+  <string name="lockscreen_setup_screen_lock_setup">Ezarri</string>
 </resources>
