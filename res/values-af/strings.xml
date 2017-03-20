@@ -27,6 +27,7 @@
   <string name="loading">Net \'n sekonde\u2026</string>
   <string name="setup_complete">Opstelling is voltooi</string>
   <string name="setup_welcome">Welkom</string>
+  <string name="setup_locale">Taal</string>
   <string name="setup_wifi">Kies Wi\u2011Fi</string>
   <string name="setup_sim_missing">SIM-kaart ontbreek</string>
   <string name="setup_choose_data_sim">Kies \'n SIM vir data</string>
@@ -56,13 +57,19 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Noodoproep</string>
+  <string name="setup_services">LineageOS kenmerke</string>
+  <string name="services_explanation" product="tablet">Hierdie dienste werk vir jou om die vermoëns van jou tablet uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
+  <string name="services_explanation" product="default">Hierdie dienste werk vir jou om die vermoëns van jou foon uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
   <string name="services_privacy_policy">Privaatheid beleid</string>
   <string name="services_help_improve_cm">Help verbeter <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> deur outomaties diagnostiese en gebruikersdata na LineageOS te stuur. Hierdie inligting kan nie gebruik word om jou te identifiseer nie en help spanne werk op dinge soos batterylewe, programwerkverrigting en nuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> kenmerke.</string>
   <string name="services_apply_theme">Pas <xliff:g id="name" example="Material">%s</xliff:g> tema toe</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiveer \'n unieke visuele styl vir jou ikone, agtergrond en nog baie meer.</string>
   <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
+  <string name="services_os_privacy_guard"><b>Aktiveer privatheidheidswag</b>om jou persoonlike data soos kontakte, boodskappe of oproepgeskiedenis nie beskikbaar vir nuut geïnstalleerde toepassings te maak nie</string>
   <string name="setup_unlock">Ontsluit</string>
   <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
+  <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
   <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Kies nog \'n skerm sluit tipe</string>
@@ -78,4 +85,5 @@
   <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
   <string name="lockscreen_setup_title">Beskerm jou foon</string>
   <string name="lockscreen_setup_summary"><b>Beskerm die toestel</b>\" en vereis \'n PIN, patroon of wagwoord om skerm te ontsluit\"</string>
+  <string name="lockscreen_setup_screen_lock_setup">Stel op</string>
 </resources>
