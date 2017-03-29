@@ -41,7 +41,7 @@
   <string name="choose_data_sim_summary" product="tablet">Hvilket SIM vil du bruke til data? Valgte SIM kan påløpe ekstra kostnader i nettverket da det brukes for å konfigurere enheten.</string>
   <string name="choose_data_sim_summary" product="default">Hvilket SIM vil du bruke til data? Valgte SIM kan påløpe ekstra kostnader i nettverket da det brukes for å konfigurere enheten.</string>
   <string name="date_time_summary">Angi tidssonen og Juster dato og tid hvis nødvendig</string>
-  <string name="backup_data_summary"><b>Backup</b> appdata, Wi-Fi passord og andre innstillinger til Google servere</string>
+  <string name="backup_data_summary"><b>Sikkerhetskopier</b> appdata, Wi-Fi-passord og andre innstillinger til Google-tjenerne</string>
   <string name="other_services_summary">Disse tjenestene lar Google jobbe for deg, og du kan slå dem på eller av når som helst. Data brukes i henhold til Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Lokasjonstjenester lar system og 3.parts apper å samle inn og bruke data som din omtrentlige posisjon. For eksempel, en app kan bruke din omtrentlige posisjon til å finne nærliggende kafeer.</string>
   <string name="location_access_summary"><b>Tillat programmer som har bedt om din tillatelse</b> å bruke stedsinformasjonen. Dette kan være din nåværende posisjon og siste steder.</string>
