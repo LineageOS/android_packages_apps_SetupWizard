@@ -66,8 +66,24 @@
   <string name="services_apply_theme">Apply the <xliff:g id="name" example="Material">%s</xliff:g> theme</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> enabling a unique visual style for your icons, wallpaper and more.</string>
   <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
+  <string name="services_os_privacy_guard"><b>Enable Privacy guard</b> to make your personal data such as contacts, messages or call logs not available for newly installed apps</string>
   <string name="setup_unlock">Unlock</string>
   <string name="setup_device_locked">This device has been locked by the user.</string>
+  <string name="setup_require_cyanogen_label"><b>Require your account password</b> in order to use your device even after a factory reset.</string>
+  <string name="setup_device_locked_instructions"><i>To turn this feature off/on, please go to Settings &gt; Security</i></string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Select backup screen lock type</string>
+  <string name="settings_fingerprint_setup_details">How would you like to lock your screen?</string>
+  <string name="fingerprint_setup_title">Fingerprint setup</string>
+  <string name="fingerprint_setup_summary">To use your fingerprint sensor to unlock your screen, you\'ll need to:</string>
+  <string name="fingerprint_setup_backup_lock_method">Set up a secondary unlock method</string>
+  <string name="fingerprint_setup_add_fingerprint">Add your fingerprint</string>
+  <string name="fingerprint_setup_screen_lock_setup">Setup screen lock</string>
+  <string name="sim_locale_changed">%1$s SIM detected</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Select screen lock type</string>
+  <string name="settings_lockscreen_setup_details">How would you like to lock your screen?</string>
+  <string name="lockscreen_setup_title">Protect your phone</string>
+  <string name="lockscreen_setup_summary"><b>Protect this device</b> and require a PIN, pattern, or password to unlock the screen</string>
+  <string name="lockscreen_setup_screen_lock_setup">Set up</string>
 </resources>

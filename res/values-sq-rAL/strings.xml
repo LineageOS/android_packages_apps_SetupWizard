@@ -17,7 +17,67 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Asistenti i Konfigurimit</string>
   <!-- Partner SUW Strings -->
+  <string name="next">Vazhdo</string>
+  <string name="skip">Jo tani</string>
+  <string name="start">Fillo</string>
+  <string name="done">Mbarova</string>
+  <string name="ok">OK</string>
+  <string name="loading">Një sekondë\u2026</string>
+  <string name="setup_complete">Konfigurimi u plotësua</string>
+  <string name="setup_welcome">Mirësevini</string>
+  <string name="setup_locale">Gjuha</string>
+  <string name="setup_wifi">Zgjidh Wi-Fi</string>
+  <string name="setup_sim_missing">Karta SIM mungon</string>
+  <string name="setup_choose_data_sim">Zgjidh një kartë SIM për internet</string>
+  <string name="setup_location">Shërbimet e vendndodhjes</string>
+  <string name="setup_other">Shërbime të tjera</string>
+  <string name="setup_datetime">Data &amp; ora</string>
+  <string name="setup_current_date">Data</string>
+  <string name="setup_current_time">Ora</string>
+  <string name="sim_missing_summary" product="tablet">Ju nuk keni futur asnjë kartë SIM në tabletë. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
+  <string name="sim_missing_summary" product="default">Ju nuk keni futur asnjë kartë SIM në telefon. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
+  <string name="choose_data_sim_summary" product="tablet">Kë kartë SIM doni të përdorni për t\'u lidhur me internetin? SIM-i i zgjedhur mund të rrisë pagesën që do i detyroheni operatorit pasi do të përdoret për të konfiguruar tabletën.</string>
+  <string name="choose_data_sim_summary" product="default">Kë kartë SIM doni të përdorni për t\'u lidhur me internetin? SIM-i i zgjedhur mund të rrisë pagesën që do i detyroheni operatorit pasi do të përdoret për të konfiguruar telefonin.</string>
+  <string name="date_time_summary">Cakto zonën kohore dhe rregullo datën dhe orën nëse është e nevojshme</string>
+  <string name="backup_data_summary"><b>Bëj një kopje</b> të të dhënave të aplikacioneve, fjalëkalimeve të Wi-Fi, dhe parametrave të tjerë dhe ruaji në serverat e Google</string>
+  <string name="location_network"><b>Përdor Wi-Fi</b> për të ndihmuar aplikacionet që të përcaktojnë vendndodhjen tënde.</string>
+  <string name="location_network_telephony"><b>Përdor Wi-Fi dhe rrjetet celulare</b> për të ndihmuar aplikacionet që të përcaktojnë vendndodhjen tënde.</string>
+  <string name="setup_mobile_data">Aktivizo internetin e celularit</string>
+  <string name="setup_mobile_data_no_service">Nuk ka shërbim</string>
+  <string name="setup_mobile_data_emergency_only">Vetëm thirrjet emergjente</string>
+  <string name="enable_mobile_data_summary">A doni të përdorni internetin e celularit gjatë instalimit? Aktivizimi i internetit të celularit mund të rrisë pagesën e përdorimit të internetit.</string>
+  <string name="no">Jo</string>
+  <string name="yes">Po</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+  <string name="emergency_call">Thirrje emergjente</string>
+  <string name="setup_services">Funksionet e LineageOS</string>
+  <string name="services_explanation" product="tablet">Këto shërbime punojnë që të rrisin aftësitë e tabletës suaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
+  <string name="services_explanation" product="default">Këto shërbime punojnë që të rrisin aftësitë e telefonit tuaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
+  <string name="services_privacy_policy">Politika e Privatësisë</string>
+  <string name="services_help_improve_cm">Ndihmo për të përmirësuar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> duke i dërguar automatikisht LineageOS të dhëna diagnostikimi dhe përdorimi. Ky informacion jo vetëm që nuk mund të përdoret për identifikimin tuaj, por ndihmon dhe ekipet që punojnë në gjëra si jeta e baterisë, përformanca e aplikacioneve, si dhe funksione të reja të <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="services_apply_theme">Apliko temën <xliff:g id="name" example="Material">%s</xliff:g></string>
+  <string name="services_os_nav_keys_label"><b>Përdor butonat virtualë të lundrimit</b> në vend të butonave fizikë.</string>
+  <string name="services_os_privacy_guard"><b>Aktivizo Mbrojtësin e të Dhënave</b> që të dhënat tuaja personale si kontaktet, mesazhet apo lista e thirrjeve të mos jenë të disponueshme për aplikacionet e reja të instaluara</string>
+  <string name="setup_unlock">Zhblloko</string>
+  <string name="setup_device_locked">Kjo pajisje është bllokuar nga përdoruesi.</string>
+  <string name="setup_require_cyanogen_label"><b>Kërko vendosjen e fjalëkalimit të llogarisë</b> për të përdorur pajisjen edhe pas rikthimit në gjëndjen e fabrikës.</string>
+  <string name="setup_device_locked_instructions"><i>Për të aktivizuar/çaktivizuar këtë funksion, shko tek Parametrat &gt; Siguria</i></string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Zgjidh mënyrën rezervë të bllokimit të ekranit</string>
+  <string name="settings_fingerprint_setup_details">Si doni që ta bllokoni ekranin?</string>
+  <string name="fingerprint_setup_title">Konfigurimi i shenjave të gishtave</string>
+  <string name="fingerprint_setup_summary">Për të përdorur sensorin e shenjave të gishtave që të zhbllokosh ekranin, duhet të:</string>
+  <string name="fingerprint_setup_backup_lock_method">Konfigurosh një metodë të dytë zhbllokimi</string>
+  <string name="fingerprint_setup_add_fingerprint">Shtosh shenjat e gishtave</string>
+  <string name="fingerprint_setup_screen_lock_setup">Konfigurosh bllokimin e ekranit</string>
+  <string name="sim_locale_changed">%1$s SIM u lidh</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Zgjidh mënyrën e bllokimit të ekranit</string>
+  <string name="settings_lockscreen_setup_details">Si doni ta bllokoni ekranin?</string>
+  <string name="lockscreen_setup_title">Mbro telefonin</string>
+  <string name="lockscreen_setup_summary"><b>Mbro këtë pajisje</b> dhe vendos një PIN, model, ose fjalëkalim për të zhbllokuar ekranin</string>
+  <string name="lockscreen_setup_screen_lock_setup">Konfiguro</string>
 </resources>

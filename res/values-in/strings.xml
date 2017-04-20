@@ -69,6 +69,7 @@
   <string name="services_os_privacy_guard"><b>Aktifkan keamanan privasi</b> untuk membuat data pribadi Anda seperti kontak, pesan atau log panggilan menjadi tidak tersedia untuk aplikasi baru yang terpasang</string>
   <string name="setup_unlock">Buka kunci</string>
   <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
+  <string name="setup_require_cyanogen_label"><b>Memerlukan kata sandi akun anda</b> untuk dapat menggunakan perangkat meskipun setelah di setel ulang ke pengaturan pabrik.</string>
   <string name="setup_device_locked_instructions"><i>Untuk mengaktifkan/menonaktifkan fitur ini, silakan masuk ke Pengaturan &gt; Keamanan</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Pilih tipe kunci layar cadangan</string>
