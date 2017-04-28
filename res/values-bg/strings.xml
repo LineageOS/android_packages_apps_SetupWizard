@@ -85,5 +85,5 @@
   <string name="settings_lockscreen_setup_details">Как бихте желали да заключите вашият екран?</string>
   <string name="lockscreen_setup_title">Защитете телефона си</string>
   <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
-  <string name="lockscreen_setup_screen_lock_setup">Конфигориране</string>
+  <string name="lockscreen_setup_screen_lock_setup">Конфигуриране</string>
 </resources>
