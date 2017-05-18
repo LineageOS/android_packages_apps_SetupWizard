@@ -41,7 +41,6 @@
   <string name="choose_data_sim_summary" product="tablet">Hvilket SIM vil du bruke til data? Valgte SIM kan påløpe ekstra kostnader i nettverket da det brukes for å konfigurere enheten.</string>
   <string name="choose_data_sim_summary" product="default">Hvilket SIM vil du bruke til data? Valgte SIM kan påløpe ekstra kostnader i nettverket da det brukes for å konfigurere enheten.</string>
   <string name="date_time_summary">Angi tidssonen og Juster dato og tid hvis nødvendig</string>
-  <string name="backup_data_summary"><b>Sikkerhetskopier</b> appdata, Wi-Fi-passord og andre innstillinger til Google-tjenerne</string>
   <string name="other_services_summary">Disse tjenestene lar Google jobbe for deg, og du kan slå dem på eller av når som helst. Data brukes i henhold til Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="location_services_summary">Lokasjonstjenester lar system og 3.parts apper å samle inn og bruke data som din omtrentlige posisjon. For eksempel, en app kan bruke din omtrentlige posisjon til å finne nærliggende kafeer.</string>
   <string name="location_access_summary"><b>Tillat programmer som har bedt om din tillatelse</b> å bruke stedsinformasjonen. Dette kan være din nåværende posisjon og siste steder.</string>
@@ -57,16 +56,16 @@
   <string name="yes">Ja</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Nødsamtale</string>
-  <string name="setup_services">LineageOS funksjoner</string>
-  <string name="services_explanation" product="tablet">Disse tjenestene fungerer for deg ved å utvide funksjonaliteten til nettbrettet ditt. Dataene vil bli brukt i samsvar med LineageOS\'s<xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Disse tjenestene fungerer for deg ved å utvide funksjonaliteten til telefonen din. Dataene vil bli brukt i samsvar med LineageOS\'s<xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="setup_services">LineageOS-funksjoner</string>
+  <string name="services_explanation" product="tablet">Disse tjenestene utvider funksjonaliteten til nettbrettet ditt. Dataene vil bli brukt i samsvar med LineageOS sin <xliff:g id="name" example="personvernspraksis">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Disse tjenestene utvider funksjonaliteten til telefonen din. Dataene vil bli brukt i samsvar med LineageOS sin <xliff:g id="name" example="personvernspraksis">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Personvern</string>
   <string name="services_help_improve_cm">Hjelp til med å forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ved å sende diagnostikk- og bruksdata automatisk til LineageOS. Denne informasjonen kan ikke brukes til å identifisere deg, men hjelper de som jobber med ting som batteritid, appytelse og nye <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-funksjoner.</string>
   <string name="services_apply_theme">Bruke <xliff:g id="name" example="Material">%s</xliff:g> temaet</string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiverer unike ikoner, bakgrunner og skrifttyper.</string>
   <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
-  <string name="services_os_privacy_guard"><b>Aktiver Personvernvakt</b> for å beskytte dine personopplysninger som kontakter, meldinger eller anropslister fra nylig installerte apper</string>
+  <string name="services_os_privacy_guard"><b>Skru på personvernsvakten</b> for å beskytte personvernsopplysninger som kontakter, meldinger eller anropslister fra nylig installerte programmer</string>
   <string name="setup_unlock">Lås opp</string>
   <string name="setup_device_locked">Denne enheten er låst av brukeren.</string>
   <string name="setup_require_cyanogen_label"><b>Krev passord til konto</b> for å bruke enheten etter en fabrikkgjennoppretting.</string>

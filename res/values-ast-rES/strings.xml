@@ -36,6 +36,7 @@
   <string name="setup_datetime">Data y hora</string>
   <string name="setup_current_date">Data actual</string>
   <string name="setup_current_time">Hora actual</string>
+  <string name="sim_missing_summary" product="default">Nun se deteutó denguna tarxeta SIM nel to teléfonu. Pa inxertar una, llei les instrucciones que vienen col preséu.</string>
   <string name="date_time_summary">Afita\'l to fusu horariu y axusta la data y hora actuales si ye preciso</string>
   <string name="location_services_summary">Los servicios d\'allugamientu permiten al sistema y aplicaciones de terceros recoyer y usar datos como\'l to allugamientu aproximáu. Por exemplu, una aplicación pue usar l\'allugamientu aproximáu p\'allugar cafeteríes averaes.</string>
   <string name="location_battery_saving"><b>Amenorgar consumu de batería</b> torgando\'l númberu d\'anovamientos GPS per hora.</string>
