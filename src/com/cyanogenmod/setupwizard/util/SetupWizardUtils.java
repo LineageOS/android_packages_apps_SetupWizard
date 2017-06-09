@@ -218,6 +218,11 @@ public class SetupWizardUtils {
         return fingerprintManager.isHardwareDetected();
     }
 
+    public static boolean simMissing() {
+        PhoneMonitor mPhoneMonitor =  PhoneMonitor.getInstance();
+        return mPhoneMonitor.simMissing();
+    }
+
     public static String getDefaultThemePackageName(Context context) {
         final String defaultThemePkg = CMSettings.Secure.getString(context.getContentResolver(),
                 CMSettings.Secure.DEFAULT_THEME_PACKAGE);
@@ -248,6 +253,9 @@ public class SetupWizardUtils {
             disableComponent(context, SimMissingActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
         } else if (!SetupWizardUtils.isMultiSimDevice(context)) {
+            disableComponent(context, ChooseDataSimActivity.class);
+        } else if (simMissing()) {
+            disableComponent(context, MobileDataActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
         }
         if (!SetupWizardUtils.hasWifi(context)) {
