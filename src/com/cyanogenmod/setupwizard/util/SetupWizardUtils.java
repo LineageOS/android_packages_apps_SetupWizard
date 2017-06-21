@@ -75,6 +75,7 @@ public class SetupWizardUtils {
 
     private static final String GMS_PACKAGE = "com.google.android.gms";
     private static final String GMS_SUW_PACKAGE = "com.google.android.setupwizard";
+    private static final String GMS_TV_SUW_PACKAGE = "com.google.android.tungsten.setupwraith";
 
     private SetupWizardUtils(){}
 
@@ -251,6 +252,13 @@ public class SetupWizardUtils {
         if (!SetupWizardUtils.hasWifi(context)) {
             disableComponent(context, WifiSetupActivity.class);
         }
+
+        // Googles ATV SUW crashes before finishing, leaving devices
+        // unprovisioned. Disable it for now.
+        if (hasLeanback(context) &&
+            PackageManagerUtils.isAppInstalled(context, GMS_TV_SUW_PACKAGE)) {
+            disableApplication(context, GMS_TV_SUW_PACKAGE);
+        }
     }
 
     public static void disableComponentsForGMS(Context context) {
@@ -276,6 +284,11 @@ public class SetupWizardUtils {
             Log.v(TAG, "resolveActivity for intent=" + intent + " returns " + comp);
         }
         return comp;
+    }
+
+    public static void disableApplication(Context context, String appname) {
+        context.getPackageManager().setApplicationEnabledSetting(appname,
+                COMPONENT_ENABLED_STATE_DISABLED, 0);
     }
 
     public static void disableComponentSets(Context context, int flags) {
