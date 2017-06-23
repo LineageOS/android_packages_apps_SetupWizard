@@ -45,7 +45,7 @@
   <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
   <string name="location_services_summary">Kokaleku zerbitzuek zure kokalekua bezalako datuak eskuratzea ahalbidetzen diete sistemako eta instalatutako aplikazioei. Adibidez, aplikazio batek zure kokalekua erabili lezake inguruko kafetegiak aurkitzeko.</string>
   <string name="location_access_summary"><b>Baimena eskatu dizuten aplikazioei</b> zure kokaleku informazioa erabiltzea ahalbidetu. Uneko zein iraganeko kokalekuak barne.</string>
-  <string name="location_battery_saving"><b>Gutxiagotu bateria kontsumoa</b> orduko GPS eguneraketak mugatuz.</string>
+  <string name="location_battery_saving"><b>Gutxiagotu bateria kontsumoa</b> orduko GPS eguneratzeak mugatuz.</string>
   <string name="location_network"><b>Erabili Wi-Fia</b> aplikazioei zure kokalekua zehazten laguntzeko.</string>
   <string name="location_network_telephony"><b>Erabili Wi-Fi eta sare mugikorrak</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
   <string name="location_network_gms"><b>Erabili Google kokaleku zerbitzua</b> aplikazioei zure kokalekua zehazten laguntzeko. Honek Googlei kokaleku informazio anonimoa bidaltzea dakar, aplikaziorik erabiltzen ez duzunean ere.</string>
