@@ -46,6 +46,7 @@ import android.content.pm.ServiceInfo;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Binder;
 import android.os.UserHandle;
+import android.net.ConnectivityManager;
 import android.provider.Settings;
 import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
@@ -249,8 +250,13 @@ public class SetupWizardUtils {
         } else if (!SetupWizardUtils.isMultiSimDevice(context)) {
             disableComponent(context, ChooseDataSimActivity.class);
         }
-        if (!SetupWizardUtils.hasWifi(context)) {
-            disableComponent(context, WifiSetupActivity.class);
+
+        ConnectivityManager cm = (ConnectivityManager) context.
+            getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (!SetupWizardUtils.hasWifi(context) ||
+            (cm.getActiveNetworkInfo() != null &&
+             cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_ETHERNET)) {
+             disableComponent(context, WifiSetupActivity.class);
         }
 
         // Googles ATV SUW crashes before finishing, leaving devices
