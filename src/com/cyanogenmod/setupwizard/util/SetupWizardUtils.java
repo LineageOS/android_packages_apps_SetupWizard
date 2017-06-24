@@ -46,6 +46,7 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.os.Binder;
 import android.os.SystemProperties;
 import android.os.UserHandle;
+import android.net.ConnectivityManager;
 import android.provider.Settings;
 import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
@@ -210,6 +211,14 @@ public class SetupWizardUtils {
         disableComponentSets(context, GET_RECEIVERS | GET_SERVICES);
     }
 
+    public static boolean isEthernetConnected(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.
+            getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return (cm.getActiveNetworkInfo() != null &&
+                cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_ETHERNET);
+    }
+
     public static boolean hasLeanback(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
@@ -243,7 +252,8 @@ public class SetupWizardUtils {
             disableComponent(context, MobileDataActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
         }
-        if (!SetupWizardUtils.hasWifi(context)) {
+        if (!SetupWizardUtils.hasWifi(context) ||
+            isEthernetConnected(context)) {
             disableComponent(context, WifiSetupActivity.class);
         }
 
