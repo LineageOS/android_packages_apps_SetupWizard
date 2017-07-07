@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da87b5cf_30ff6869",
+        "filename": "src/com/cyanogenmod/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-07-07T13:30:26Z",
+      "side": 1,
+      "message": "this could probably fit on the previous line right?",
+      "range": {
+        "startLine": 262,
+        "startChar": 12,
+        "endLine": 262,
+        "endChar": 43
+      },
+      "revId": "c962c6b8ebc4411eae9053b8d27e7b67f1faed64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
