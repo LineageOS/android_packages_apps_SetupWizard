@@ -51,7 +51,7 @@
   <string name="location_network_gms"><b>Uso del servicio de ubicación de Google</b> para permitir que las aplicaciones determinen la ubicación. Esto significa enviar información anónima de la ubicación a Google, incluso cuando no haya aplicaciones usando este servicio.</string>
   <string name="setup_mobile_data">Activar datos móviles</string>
   <string name="setup_mobile_data_no_service">Sin servicio</string>
-  <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>
+  <string name="setup_mobile_data_emergency_only">Sólo llamadas de emergencia</string>
   <string name="enable_mobile_data_summary">¿Quieres usar los datos móviles durante la instalación? Activar los datos móviles puede provocar cargos de datos.</string>
   <string name="no">No</string>
   <string name="yes">Sí</string>

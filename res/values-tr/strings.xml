@@ -51,12 +51,12 @@
   <string name="location_network_gms">Konumunuzu belirlemek için <b>Google konum servislerini kullanın</b>. Bu, hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
   <string name="setup_mobile_data">Hücresel veriyi etkinleştir</string>
   <string name="setup_mobile_data_no_service">Servis yok</string>
-  <string name="setup_mobile_data_emergency_only">Sadece acil durum çağrıları</string>
+  <string name="setup_mobile_data_emergency_only">Sadece acil durum aramaları</string>
   <string name="enable_mobile_data_summary">Kurulum sırasında hücresel veri kullanmak istiyor musunuz? Hücresel veriyi kullanmak ücrete tabi olabilir.</string>
   <string name="no">Hayır</string>
   <string name="yes">Evet</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Acil durum çağrısı</string>
+  <string name="emergency_call">Acil durum araması</string>
   <string name="setup_services">LineageOS özellikleri</string>
   <string name="services_explanation" product="tablet">Bu hizmetler tabletinizin yeteneklerini arttırır. Veriler LineageOS <xliff:g id="name" example="Gizlilik Politikası">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
   <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler LineageOS <xliff:g id="name" example="Gizlilik Politikası">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
@@ -65,7 +65,7 @@
   <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ancak pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konulardaki ekip çalışmalarında kullanılır.</string>
   <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
   <string name="services_apply_theme_label">Simgeleriniz, duvarkağıdınız ve daha fazlası için benzersiz bir görsel stil sağlayan <xliff:g id="name" example="Apply the Material theme">%s</xliff:g>.</string>
-  <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>ekran üstü dolaşım tuşlarını kullanın</b>.</string>
+  <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>yazılımsal gezinme tuşlarını kullanın</b>.</string>
   <string name="services_os_privacy_guard">Yeni yüklenecek uygulamaların kişileriniz, mesajlarınız ve arama kaydınızı görmemesi için <b>Gizlilik Koruması\'nı etkinleştir.</b></string>
   <string name="setup_unlock">Kilidi kaldır</string>
   <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
