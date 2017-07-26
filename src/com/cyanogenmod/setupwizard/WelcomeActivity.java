@@ -29,13 +29,16 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
 
     private View mRootView;
     private EnableAccessibilityController mEnableAccessibilityController;
+    final boolean DataOnly = getResources().getBoolean(R.bool.data_only);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mRootView = findViewById(R.id.root);
         setNextText(R.string.next);
-        setBackText(R.string.emergency_call);
+        if (!DataOnly) {
+            setBackText(R.string.emergency_call);
+        }
         setBackDrawable(null);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
@@ -54,7 +57,9 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
 
     @Override
     public void onNavigateBack() {
-        startEmergencyDialer();
+        if (!DataOnly) {
+            startEmergencyDialer();
+        }
     }
 
     @Override
