@@ -17,7 +17,9 @@
 
 package com.cyanogenmod.setupwizard;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -29,16 +31,21 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
 
     private View mRootView;
     private EnableAccessibilityController mEnableAccessibilityController;
+    private TelephonyManager mTelephonyManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Context mContext = getApplicationContext();
         mRootView = findViewById(R.id.root);
         setNextText(R.string.next);
-        setBackText(R.string.emergency_call);
+        mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        if (mTelephonyManager.isVoiceCapable()) {
+            setBackText(R.string.emergency_call);
+        }
         setBackDrawable(null);
         mEnableAccessibilityController =
-                EnableAccessibilityController.getInstance(getApplicationContext());
+                EnableAccessibilityController.getInstance(mContext);
         mRootView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -54,7 +61,9 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
 
     @Override
     public void onNavigateBack() {
-        startEmergencyDialer();
+        if (mTelephonyManager.isVoiceCapable()) {
+            startEmergencyDialer();
+        }
     }
 
     @Override
