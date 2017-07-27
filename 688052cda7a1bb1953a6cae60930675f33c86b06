@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e2014a32_dda22219",
+        "filename": "src/com/cyanogenmod/setupwizard/ChooseDataSimActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 329,
+      "author": {
+        "id": 13897
+      },
+      "writtenOn": "2017-07-27T15:12:33Z",
+      "side": 1,
+      "message": "What about this?",
+      "range": {
+        "startLine": 329,
+        "startChar": 0,
+        "endLine": 329,
+        "endChar": 58
+      },
+      "revId": "688052cda7a1bb1953a6cae60930675f33c86b06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
