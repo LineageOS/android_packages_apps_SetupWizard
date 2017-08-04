@@ -66,7 +66,7 @@
   <string name="services_apply_theme">Aplicar el tema <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> permite un estilo visual único para sus iconos, fondo de pantalla y más.</string>
   <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
-  <string name="services_os_privacy_guard"><b>Activar Guardián de privacidad</b> para sus datos personales como contactos, mensajes o llamada registros, no está disponible para aplicaciones recién instaladas</string>
+  <string name="services_os_privacy_guard"><b>Activar «Guardián de privacidad»</b> para sus datos personales como contactos, mensajes o llamada registros, no está disponible para aplicaciones recién instaladas</string>
   <string name="setup_unlock">Desbloquear</string>
   <string name="setup_device_locked">Este dispositivo ha sido bloqueado por el usuario.</string>
   <string name="setup_require_cyanogen_label"><b>Se requiere la contraseña de tu cuenta</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
