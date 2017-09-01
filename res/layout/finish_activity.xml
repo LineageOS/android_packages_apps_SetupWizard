@@ -56,12 +56,4 @@
                android:background="@drawable/reveal"
                android:visibility="invisible"/>
 
-    <ProgressBar
-        android:id="@+id/finishing_bar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_gravity="bottom"
-        android:visibility="gone"/>
-
 </com.cyanogenmod.setupwizard.widget.ScrimInsetsFrameLayout>

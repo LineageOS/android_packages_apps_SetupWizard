@@ -19,7 +19,6 @@ package com.cyanogenmod.setupwizard;
 
 
 import android.app.Application;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -102,10 +101,6 @@ public class SetupWizardApp extends Application {
         }
         NetworkMonitor.initInstance(this);
         PhoneMonitor.initInstance(this);
-        final boolean isOwner = SetupWizardUtils.isOwner();
-        if (!isOwner) {
-            disableThemeComponentsForSecondaryUser();
-        }
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
@@ -131,18 +126,5 @@ public class SetupWizardApp extends Application {
 
     public Bundle getSettingsBundle() {
         return mSettingsBundle;
-    }
-
-    private void disableThemeComponentsForSecondaryUser() {
-        PackageManager pm = getPackageManager();
-        for(String pkgName : THEME_PACKAGES) {
-            try {
-                pm.getApplicationInfo(pkgName, 0);
-                pm.setApplicationEnabledSetting(pkgName,
-                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER, 0);
-            } catch (PackageManager.NameNotFoundException e) {
-                // don't care
-            }
-        }
     }
 }
