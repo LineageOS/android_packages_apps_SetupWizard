@@ -219,7 +219,11 @@ public class FinishActivity extends BaseSetupWizardActivity
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
         final ThemeManager tm = ThemeManager.getInstance(mSetupWizardApp);
-        tm.unregisterThemeChangeListener(this);
+        try {
+            tm.unregisterThemeChangeListener(this);
+        } catch (Exception e) {
+            Log.w(TAG, "ThemeChangeListener already unregistered");
+        }
         final WallpaperManager wallpaperManager =
                 WallpaperManager.getInstance(mSetupWizardApp);
         wallpaperManager.forgetLoadedWallpaper();
