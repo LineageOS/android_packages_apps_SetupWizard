@@ -25,7 +25,6 @@ import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.ThemeConfig;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -46,7 +45,6 @@ import android.widget.TextView;
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import cyanogenmod.hardware.CMHardwareManager;
 import cyanogenmod.providers.CMSettings;
@@ -60,16 +58,13 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     private SetupWizardApp mSetupWizardApp;
 
     private View mMetricsRow;
-    private View mDefaultThemeRow;
     private View mNavKeysRow;
     private View mPrivacyGuardRow;
     private CheckBox mMetrics;
-    private CheckBox mDefaultTheme;
     private CheckBox mNavKeys;
     private CheckBox mPrivacyGuard;
 
     private boolean mHideNavKeysRow = false;
-    private boolean mHideThemeRow = false;
 
     private View.OnClickListener mMetricsClickListener = new View.OnClickListener() {
         @Override
@@ -77,15 +72,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
             boolean checked = !mMetrics.isChecked();
             mMetrics.setChecked(checked);
             mSetupWizardApp.getSettingsBundle().putBoolean(KEY_SEND_METRICS, checked);
-        }
-    };
-
-    private View.OnClickListener mDefaultThemeClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            boolean checked = !mDefaultTheme.isChecked();
-            mDefaultTheme.setChecked(checked);
-            mSetupWizardApp.getSettingsBundle().putBoolean(KEY_APPLY_DEFAULT_THEME, checked);
         }
     };
 
@@ -149,26 +135,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         metrics.setText(metricsSpan);
         mMetrics = (CheckBox) findViewById(R.id.enable_metrics_checkbox);
 
-        mDefaultThemeRow = findViewById(R.id.theme);
-        mHideThemeRow = hideThemeSwitch(this);
-        if (mHideThemeRow) {
-            mDefaultThemeRow.setVisibility(View.GONE);
-        } else {
-            mDefaultThemeRow.setOnClickListener(mDefaultThemeClickListener);
-            String defaultTheme =
-                    getString(R.string.services_apply_theme,
-                            getString(R.string.default_theme_name));
-            String defaultThemeSummary = getString(R.string.services_apply_theme_label,
-                    defaultTheme);
-            final SpannableStringBuilder themeSpan =
-                    new SpannableStringBuilder(defaultThemeSummary);
-            themeSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
-                    0, defaultTheme.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-            TextView theme = (TextView) findViewById(R.id.enable_theme_summary);
-            theme.setText(themeSpan);
-            mDefaultTheme = (CheckBox) findViewById(R.id.enable_theme_checkbox);
-        }
-
         mNavKeysRow = findViewById(R.id.nav_keys);
         mNavKeysRow.setOnClickListener(mNavKeysClickListener);
         mNavKeys = (CheckBox) findViewById(R.id.nav_keys_checkbox);
@@ -198,7 +164,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         super.onResume();
         updateDisableNavkeysOption();
         updateMetricsOption();
-        updateThemeOption();
         updatePrivacyGuardOption();
     }
 
@@ -242,21 +207,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         myPageBundle.putBoolean(KEY_SEND_METRICS, metricsChecked);
     }
 
-    private void updateThemeOption() {
-        if (!mHideThemeRow) {
-            final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
-            boolean themesChecked;
-            if (myPageBundle.containsKey(KEY_APPLY_DEFAULT_THEME)) {
-                themesChecked = myPageBundle.getBoolean(KEY_APPLY_DEFAULT_THEME);
-            } else {
-                themesChecked = getResources().getBoolean(
-                        R.bool.check_custom_theme_by_default);
-            }
-            mDefaultTheme.setChecked(themesChecked);
-            myPageBundle.putBoolean(KEY_APPLY_DEFAULT_THEME, themesChecked);
-        }
-    }
-
     private void updateDisableNavkeysOption() {
         if (!mHideNavKeysRow) {
             final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
@@ -289,10 +239,5 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     private static boolean isKeyDisablerActive(Context context) {
         final CMHardwareManager hardware = CMHardwareManager.getInstance(context);
         return hardware.get(CMHardwareManager.FEATURE_KEY_DISABLE);
-    }
-
-    private static boolean hideThemeSwitch(Context context) {
-        return SetupWizardUtils.getDefaultThemePackageName(context)
-                .equals(ThemeConfig.SYSTEM_DEFAULT);
     }
 }

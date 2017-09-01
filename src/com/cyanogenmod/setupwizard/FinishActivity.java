@@ -31,13 +31,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.content.res.ThemeConfig;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.Animation;
@@ -48,19 +46,15 @@ import android.widget.ProgressBar;
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
 
 import cyanogenmod.hardware.CMHardwareManager;
 import cyanogenmod.providers.CMSettings;
-import cyanogenmod.themes.ThemeManager;
 
-public class FinishActivity extends BaseSetupWizardActivity
-        implements ThemeManager.ThemeChangeListener {
+public class FinishActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = FinishActivity.class.getSimpleName();
 
     private ImageView mReveal;
-    private ProgressBar mFinishingProgressBar;
 
     private EnableAccessibilityController mEnableAccessibilityController;
 
@@ -79,7 +73,6 @@ public class FinishActivity extends BaseSetupWizardActivity
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
         mReveal = (ImageView) findViewById(R.id.reveal);
-        mFinishingProgressBar = (ProgressBar)findViewById(R.id.finishing_bar);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
         setNextText(R.string.start);
@@ -118,45 +111,10 @@ public class FinishActivity extends BaseSetupWizardActivity
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         hideBackButton();
         hideNextButton();
-        Animation fadeIn = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
-        mFinishingProgressBar.setVisibility(View.VISIBLE);
-        mFinishingProgressBar.setIndeterminate(true);
-        mFinishingProgressBar.startAnimation(fadeIn);
-        final ThemeManager tm = ThemeManager.getInstance(this);
-        try {
-            tm.registerThemeChangeListener(this);
-        } catch (Exception e) {
-            Log.w(TAG, "ThemeChangeListener already registered");
-        }
-        handleDefaultThemeSetup(this);
-    }
-
-    @Override
-    public void onFinish(boolean isSuccess) {
-        if (isResumed()) {
-            mHandler.post(new Runnable() {
-                @Override
-                public void run() {
-                    startFinishSequence();
-                }
-            });
-        }
-    }
-
-    @Override
-    public void onProgress(int progress) {
-        if (progress > 0) {
-            mFinishingProgressBar.setIndeterminate(false);
-            mFinishingProgressBar.setProgress(progress);
-        }
+        finishSetup();
     }
 
     private void setupRevealImage() {
-        mFinishingProgressBar.setProgress(100);
-        Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
-        mFinishingProgressBar.startAnimation(fadeOut);
-        mFinishingProgressBar.setVisibility(View.INVISIBLE);
-
         final Point p = new Point();
         getWindowManager().getDefaultDisplay().getRealSize(p);
         final WallpaperManager wallpaperManager =
@@ -218,8 +176,6 @@ public class FinishActivity extends BaseSetupWizardActivity
         handlePrivacyGuard(mSetupWizardApp);
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
-        final ThemeManager tm = ThemeManager.getInstance(mSetupWizardApp);
-        tm.unregisterThemeChangeListener(this);
         final WallpaperManager wallpaperManager =
                 WallpaperManager.getInstance(mSetupWizardApp);
         wallpaperManager.forgetLoadedWallpaper();
@@ -236,19 +192,6 @@ public class FinishActivity extends BaseSetupWizardActivity
             CMSettings.Secure.putInt(setupWizardApp.getContentResolver(),
                     CMSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
                             ? 1 : 0);
-        }
-    }
-
-    private static void handleDefaultThemeSetup(FinishActivity finishActivity) {
-        Bundle privacyData = finishActivity.mSetupWizardApp.getSettingsBundle();
-        if (!SetupWizardUtils.getDefaultThemePackageName(finishActivity.mSetupWizardApp)
-                .equals(ThemeConfig.SYSTEM_DEFAULT) && privacyData != null &&
-                privacyData.getBoolean(KEY_APPLY_DEFAULT_THEME)) {
-            Log.i(TAG, "Applying default theme");
-            final ThemeManager tm = ThemeManager.getInstance(finishActivity.mSetupWizardApp);
-            tm.applyDefaultTheme();
-        } else {
-            finishActivity.finishSetup();
         }
     }
 
