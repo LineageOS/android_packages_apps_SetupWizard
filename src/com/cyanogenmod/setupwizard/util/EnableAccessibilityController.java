@@ -90,7 +90,6 @@ public class EnableAccessibilityController {
     private final float mTouchSlop;
 
     private boolean mDestroyed;
-    private boolean mCanceled;
 
     private float mFirstPointerDownX;
     private float mFirstPointerDownY;
@@ -157,44 +156,29 @@ public class EnableAccessibilityController {
         mDestroyed = true;
     }
 
-    public boolean onInterceptTouchEvent(MotionEvent event) {
-        if (event.getActionMasked() == MotionEvent.ACTION_POINTER_DOWN
-                && event.getPointerCount() == 2) {
-            mFirstPointerDownX = event.getX(0);
-            mFirstPointerDownY = event.getY(0);
-            mSecondPointerDownX = event.getX(1);
-            mSecondPointerDownY = event.getY(1);
-            mHandler.sendEmptyMessageDelayed(MESSAGE_SPEAK_WARNING,
-                    SPEAK_WARNING_DELAY_MILLIS);
-            mHandler.sendEmptyMessageDelayed(MESSAGE_ENABLE_ACCESSIBILITY,
-                    ENABLE_ACCESSIBILITY_DELAY_MILLIS);
-            return true;
-        }
-        return false;
-    }
-
     public boolean onTouchEvent(MotionEvent event) {
         final int pointerCount = event.getPointerCount();
         final int action = event.getActionMasked();
-        if (mCanceled) {
-            if (action == MotionEvent.ACTION_UP) {
-                mCanceled = false;
-            }
+
+        if (pointerCount != 2) {
+            cancel();
             return true;
         }
+
         switch (action) {
+            case MotionEvent.ACTION_DOWN:
             case MotionEvent.ACTION_POINTER_DOWN: {
-                if (pointerCount > 2) {
-                    cancel();
-                }
+                mFirstPointerDownX = event.getX(0);
+                mFirstPointerDownY = event.getY(0);
+                mSecondPointerDownX = event.getX(1);
+                mSecondPointerDownY = event.getY(1);
+                mHandler.sendEmptyMessageDelayed(MESSAGE_SPEAK_WARNING,
+                        SPEAK_WARNING_DELAY_MILLIS);
+                mHandler.sendEmptyMessageDelayed(MESSAGE_ENABLE_ACCESSIBILITY,
+                        ENABLE_ACCESSIBILITY_DELAY_MILLIS);
             }
             break;
             case MotionEvent.ACTION_MOVE: {
-                //We only care about a 2 fingered move
-                if (pointerCount < 2) {
-                    cancel();
-                    return false;
-                }
                 final float firstPointerMove = MathUtils.dist(event.getX(0),
                         event.getY(0), mFirstPointerDownX, mFirstPointerDownY);
                 if (Math.abs(firstPointerMove) > mTouchSlop) {
@@ -207,6 +191,7 @@ public class EnableAccessibilityController {
                 }
             }
             break;
+            case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_POINTER_UP:
             case MotionEvent.ACTION_CANCEL: {
                 cancel();
@@ -217,7 +202,6 @@ public class EnableAccessibilityController {
     }
 
     private void cancel() {
-        mCanceled = true;
         if (mHandler.hasMessages(MESSAGE_SPEAK_WARNING)) {
             mHandler.removeMessages(MESSAGE_SPEAK_WARNING);
         } else if (mHandler.hasMessages(MESSAGE_ENABLE_ACCESSIBILITY)) {

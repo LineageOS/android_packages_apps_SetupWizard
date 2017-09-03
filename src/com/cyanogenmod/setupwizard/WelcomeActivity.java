@@ -42,9 +42,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
         mRootView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                boolean consumeIntercept = mEnableAccessibilityController.onInterceptTouchEvent(event);
-                boolean consumeTouch = mEnableAccessibilityController.onTouchEvent(event);
-                return consumeIntercept && consumeTouch;
+                return mEnableAccessibilityController.onTouchEvent(event);
             }
         });
     }
