@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Datenschutzerklärung</string>
   <string name="services_help_improve_cm">Helfen Sie <xliff:g id="name" example="CyanogenMod">%s</xliff:g> zu verbessern</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, indem Sie automatisch Diagnose-und Nutzungsdaten an LineageOS senden. Diese Informationen können nicht dazu verwendet werden, Sie zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g>-Design anwenden</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>, um einen besonderen visuellen Stil für Ihre Symbole, Ihren Hintergrund und mehr zu aktivieren.</string>
   <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
   <string name="services_os_privacy_guard"><b>Aktivieren Sie den Datenschutz</b>, um Ihre persönlichen Daten wie Kontakte, Nachrichten oder Anrufe nicht für neu installierte Anwendungen verfügbar zu machen</string>
   <string name="setup_unlock">Entsperren</string>

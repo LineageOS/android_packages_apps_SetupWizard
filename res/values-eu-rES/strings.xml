@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Pribatutasun politika</string>
   <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="CyanogenMod">%s</xliff:g> hobetzen</string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatikoki diagnostiko eta erabilera datuak bidaliz LineageOSi. Informazio hau ezin da erabili zu identifikatzeko eta bateriaren iraupena, aplikazioen errendimendua, eta <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ezaugarri berrietan lanean dabilen taldearentzat lagungarria da.</string>
-  <string name="services_apply_theme">Aplikatu <xliff:g id="name" example="Material">%s</xliff:g> gaia</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zure ikono, horma-irudi eta bestelakoentzat estilo bisual paregabe bat gaituz.</string>
   <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
   <string name="services_os_privacy_guard"><b>Gaitu Privacy guard</b> zure datu pertsonalak, esaterako kontaktuak, mezuak edo deien erregistroa instalatu berri dituzun aplikazioen eskura egon ez daitezen</string>
   <string name="setup_unlock">Desblokeatu</string>

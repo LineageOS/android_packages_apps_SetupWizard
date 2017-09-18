@@ -53,7 +53,6 @@
   <string name="emergency_call">Ārkārtas zvans</string>
   <string name="services_privacy_policy">Privātuma Politika</string>
   <string name="services_help_improve_cm">Palīdziet uzlabot <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Lietot <xliff:g id="name" example="Material">%s</xliff:g> tēmu</string>
   <string name="services_os_nav_keys_label"><b>Izmantot ekrānā redzamos navigācijas taustiņus</b> fizisko taustiņu vietā.</string>
   <string name="setup_unlock">Atbloķēt</string>
   <string name="setup_device_locked">Šo ierīci lietotājs ir bloķējis.</string>

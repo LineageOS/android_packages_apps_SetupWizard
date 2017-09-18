@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Kebijakan privasi</string>
   <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> dengan mengirim data diagnostik dan penggunaan ke LineageOS secara otomatis. Informasi ini tidak dapat mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja dengan hal-hal seperti masa pakai baterai, kinerja aplikasi, dan fitur <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> baru.</string>
-  <string name="services_apply_theme">Terapkan tema <xliff:g id="name" example="Material">%s </xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> mengaktifkan gaya visual unik untuk ikon, gambar latar dan lainnya.</string>
   <string name="services_os_nav_keys_label"><b>Gunakan tombol navigasi pada layar</b> bukan tombol perangkat keras.</string>
   <string name="services_os_privacy_guard"><b>Aktifkan keamanan privasi</b> untuk membuat data pribadi Anda seperti kontak, pesan atau log panggilan menjadi tidak tersedia untuk aplikasi baru yang terpasang</string>
   <string name="setup_unlock">Buka kunci</string>

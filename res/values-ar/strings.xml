@@ -57,8 +57,6 @@
   <string name="emergency_call">مكالمة طوارئ</string>
   <string name="services_privacy_policy">سياسة الخصوصية</string>
   <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">تطبيق السمة <xliff:g id="name" example="Material">%s </xliff:g></string>
-  <string name="services_apply_theme_label">يعمل <xliff:g id="name" example="Apply the Material theme">%s</xliff:g> على تمكين نمط مرئي فريد للأيقونات الخاصة بك، الخلفية والمزيد.</string>
   <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
   <string name="setup_unlock">فتح القفل</string>
   <string name="setup_device_locked">هذا الجهاز تم قفله من قبل المستخدم.</string>

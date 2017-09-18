@@ -58,7 +58,6 @@
   <string name="services_privacy_policy">Politika e Privatësisë</string>
   <string name="services_help_improve_cm">Ndihmo për të përmirësuar <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> duke i dërguar automatikisht LineageOS të dhëna diagnostikimi dhe përdorimi. Ky informacion jo vetëm që nuk mund të përdoret për identifikimin tuaj, por ndihmon dhe ekipet që punojnë në gjëra si jeta e baterisë, përformanca e aplikacioneve, si dhe funksione të reja të <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Apliko temën <xliff:g id="name" example="Material">%s</xliff:g></string>
   <string name="services_os_nav_keys_label"><b>Përdor butonat virtualë të lundrimit</b> në vend të butonave fizikë.</string>
   <string name="services_os_privacy_guard"><b>Aktivizo Mbrojtësin e të Dhënave</b> që të dhënat tuaja personale si kontaktet, mesazhet apo lista e thirrjeve të mos jenë të disponueshme për aplikacionet e reja të instaluara</string>
   <string name="setup_unlock">Zhblloko</string>

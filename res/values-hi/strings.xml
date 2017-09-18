@@ -53,7 +53,6 @@
   <string name="emergency_call">आपातकालीन कॉल</string>
   <string name="services_privacy_policy">गोपनीयता नीति</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> को सुधारने में मदद करें</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> थीम को लागू करें</string>
   <string name="services_os_nav_keys_label">हार्डवेयर कुंजियों की जगह <b>स्क्रीन पर मौजूद नेविगेशन कुंजियों का उपयोग करें।</b></string>
   <string name="setup_unlock">अनलॉक करें</string>
   <string name="setup_device_locked">इस उपकरण को उपयोगकर्ता ने लॉक किया है।</string>

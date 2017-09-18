@@ -57,7 +57,6 @@
   <string name="emergency_call">అత్యవసర కాల్</string>
   <string name="services_privacy_policy">గోప్యతా విధానం</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> ను మెరుగుపరిచేందుకు సహాయం చేయుము</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> థీమును వర్తింపజేయుము</string>
   <string name="services_os_nav_keys_label"><b>హార్డ్‌వేర్ కీలకు బదులుగా ఆన్ స్క్రీన్ నావిగేషన్ కీలను</b> ఉపయోగించుము.</string>
   <string name="setup_unlock">అన్‌లాక్ చేయండి</string>
   <string name="setup_device_locked">ఈ పరికరం వినియోగాదారునిచే లాక్ చేయబడింది.</string>

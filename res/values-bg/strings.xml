@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Декларация за поверителност</string>
   <string name="services_help_improve_cm">Помогне за подобряване на <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s </xliff:g> от автоматичното изпращане на данни за диагностика и използване на LineageOS\'s. Тази информация не може да се използва за идентифицирането ви и служи да помага на екипите работещи над неща като живот на батерията, производителността на приложенията и нови функции в <xliff:g id="name" example="CyanogenMod"> %2$s </xliff:g>.</string>
-  <string name="services_apply_theme">Прилагане на <xliff:g id="name" example="Material">%s </xliff:g> тема</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s </xliff:g> позволява уникални икони, тапети и шрифтове.</string>
   <string name="services_os_nav_keys_label"><b>Използване на клавишите за навигация на екрана</b> вместо хардуерните бутони.</string>
   <string name="services_os_privacy_guard"><b>Активирайте Privacy guard</b> за да направите вашите лични данни, като контакти, съобщения или регистъра с повиквания да не са налични за наскоро инсталирани приложения</string>
   <string name="setup_unlock">Отключи</string>

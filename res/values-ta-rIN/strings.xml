@@ -57,7 +57,6 @@
   <string name="emergency_call">அவசரகால அழைப்பு</string>
   <string name="services_privacy_policy">தனியுரிமைக் கொள்கை</string>
   <string name="services_help_improve_cm">மேம்படுத்த உதவுங்கள் <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> கருப்பொருளை பயன்படுத்து</string>
   <string name="services_os_nav_keys_label"><b>வன்பொருள் விசைகளுக்கு பதிலாக திரையிலுள்ள</b> வழிச்செல்லுதல் விசைகளை பயன்படுத்தவும்</string>
   <string name="setup_unlock">தடைநீக்கு</string>
   <string name="setup_device_locked">இந்த சாதனமானது பயனரால் பூட்டப்பட்டது.</string>

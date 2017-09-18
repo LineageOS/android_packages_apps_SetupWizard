@@ -58,8 +58,6 @@
   <string name="emergency_call">Hitan poziv</string>
   <string name="services_privacy_policy">Pravila privatnosti</string>
   <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Primijeni <xliff:g id="name" example="Material">%s</xliff:g> temu</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> omogućuje jedinstven vizualni stil za vaše ikone, pozadine i više.</string>
   <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
   <string name="setup_unlock">Otključaj</string>
   <string name="setup_device_locked">Uređaj je zaključao korisnik.</string>

@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Privatlivspolitik</string>
   <string name="services_help_improve_cm">Hjælpe med at forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ved automatisk at sende diagnosticerings- og brugsoplysninger til LineageOS. Denne information kan ikke bruges til at identificere dig, men hjælper udviklerne i arbejdet med eksempelvis batterilevetid, ydeevne og nye <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-funktioner.</string>
-  <string name="services_apply_theme">Anvend temaet <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> muliggør et unikt udseende til dine ikoner, baggrunde og meget mere.</string>
   <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærmen</b> i stedet for fysiske knapper.</string>
   <string name="services_os_privacy_guard"><b>Aktivér Privatlivsvagt</b> for at gøre dine personlige data såsom kontaktet, beskeder og opkaldsliste utilgængelige for apps installeret for nylig</string>
   <string name="setup_unlock">Lås op</string>

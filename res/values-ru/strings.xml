@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">политикой конфиденциальности</string>
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, разрешив отправку диагностических данных в LineageOS. Эта информация полностью анонимна и не может быть использована для вашей идентификации. Использование этих данных поможет в работе над повышением автономности, производительности и над новыми возможностями <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Применить тему «<xliff:g id="name" example="Material">%s</xliff:g>»</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> и использовать её стиль для значков, обоев и прочих элементов.</string>
   <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
   <string name="services_os_privacy_guard"><b>Включить защищённый режим,</b> чтобы ограничить доступ новых приложений к вашим персональным данным — контактам, сообщениям или журналу вызовов.</string>
   <string name="setup_unlock">Разблокировать</string>

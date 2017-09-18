@@ -57,7 +57,6 @@
   <string name="emergency_call">आणीबाणीचा कॉल</string>
   <string name="services_privacy_policy">गुप्तता धोरण</string>
   <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>सुधारण्यासाठी मदत करा</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> थीम लागू करा</string>
   <string name="services_os_nav_keys_label">हार्डवेअर कींच्या ऐवजी <b>स्क्रीन नॅविगेशन कींवर वापरा</b>.</string>
   <string name="setup_unlock">अनलॉक करा</string>
   <string name="setup_device_locked">हे डिव्हाइस वापरकर्त्याने लॉक केले आहे.</string>

@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Informativa sulla privacy</string>
   <string name="services_help_improve_cm">Aiuta a migliorare <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> inviando automaticamente dati diagnostici e di consumo agli svilupatori di LineageOS. Queste informazioni non possono essere utilizzate per identificare te ma danno una mano ai team che lavorano su cose come la durata della batteria, performance delle app e nuove funzioni di <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Applica il tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> attiverà uno stile unico per le tue icone, sfondi e altro.</string>
   <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
   <string name="services_os_privacy_guard"><b>Attiva Privacy guard</b> per rendere inaccessibili i dati personali come contatti, messaggi o il registro delle chiamate alle nuove app installate</string>
   <string name="setup_unlock">Sblocca</string>

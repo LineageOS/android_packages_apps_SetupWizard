@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">מדיניות הפרטיות</string>
   <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> על-ידי שליחת נתוני אבחון ושימוש אל LineageOS. מידע זה לא יוכל לשמש כדי לזהותך, והוא תורם לצוותים העובדים על תחומים כמו חיי סוללה, ביצועים ותכונות חדשות ל-<xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">החל את ערכת העיצוב <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> מאפשר סגנון גרפי ייחודי לסמלים, טפטים ועוד.</string>
   <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
   <string name="services_os_privacy_guard"><b>הפעל את שומר הפרטיות</b> כדי למנוע גישה לפרטיים האישים שלך מיישומים חדשים</string>
   <string name="setup_unlock">פתיחה</string>

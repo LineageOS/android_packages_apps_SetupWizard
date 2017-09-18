@@ -30,7 +30,7 @@
   <string name="setup_locale">Idioma</string>
   <string name="setup_wifi">Selecionar rede Wi-Fi</string>
   <string name="setup_sim_missing">Falta o cartão SIM</string>
-  <string name="setup_choose_data_sim">Escolha um SIM para os dados</string>
+  <string name="setup_choose_data_sim">Escolha um cartão SIM para os dados</string>
   <string name="setup_location">Serviços de localização</string>
   <string name="setup_other">Outros serviços</string>
   <string name="setup_datetime">Data e hora</string>
@@ -63,8 +63,6 @@
   <string name="services_privacy_policy">Política de Privacidade</string>
   <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para a LineageOS. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e no desenvolvimento de novos recursos para a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando ícones, imagens de fundo e tipos de letra únicos.</string>
   <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
   <string name="services_os_privacy_guard"><b>Ative a Proteção da Privacidade</b> para tornar os seus dados pessoais como contactos, mensagens ou registo de chamadas não disponíveis para aplicações recém-instaladas</string>
   <string name="setup_unlock">Desbloquear</string>
