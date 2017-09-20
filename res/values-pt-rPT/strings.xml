@@ -29,7 +29,7 @@
   <string name="setup_locale">Idioma</string>
   <string name="setup_wifi">Selecionar rede Wi-Fi</string>
   <string name="setup_sim_missing">Falta o cartão SIM</string>
-  <string name="setup_choose_data_sim">Escolha um SIM para os dados</string>
+  <string name="setup_choose_data_sim">Escolha um cartão SIM para os dados</string>
   <string name="setup_location">Serviços de localização</string>
   <string name="setup_other">Outros serviços</string>
   <string name="setup_datetime">Data e hora</string>
