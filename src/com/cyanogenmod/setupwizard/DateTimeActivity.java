@@ -40,6 +40,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.util.ArrayList;
@@ -140,8 +142,16 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
                 final Calendar calendar = Calendar.getInstance();
                 final boolean isEpoch = calendar.get(Calendar.YEAR) == 1970;
                 if (isEpoch) {
-                    // If epoch, set date to a default date
-                    setDate(DateTimeActivity.this, 2016, Calendar.JANUARY, 1);
+                    // If epoch, set date to build date
+                    long timestamp = SetupWizardUtils.getBuildDateTimestamp();
+                    if (timestamp > 0) {
+                        calendar.setTimeInMillis(timestamp * 1000);
+                        setDate(DateTimeActivity.this, calendar.get(Calendar.YEAR),
+                                calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+                    } else {
+                        // no build date available, use a sane default
+                        setDate(DateTimeActivity.this, 2017, Calendar.JANUARY, 1);
+                    }
                 }
             }
         });
