@@ -257,10 +257,10 @@ public class SetupWizardUtils {
             disableComponent(context, WifiSetupActivity.class);
         }
 
-        // Googles ATV SUW crashes before finishing, leaving devices
-        // unprovisioned. Disable it for now.
+        // Google's ATV SUW is shipped as it requires platform signature.
+        // Disable it if GMS is not installed by user.
         if (hasLeanback(context) &&
-            PackageManagerUtils.isAppInstalled(context, GMS_TV_SUW_PACKAGE)) {
+            !PackageManagerUtils.isAppInstalled(context, GMS_PACKAGE)) {
             disableApplication(context, GMS_TV_SUW_PACKAGE);
         }
     }
