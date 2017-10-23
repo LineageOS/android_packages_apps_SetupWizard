@@ -39,9 +39,8 @@ public class BluetoothSetupActivity extends SubBaseActivity {
             Intent intent = new Intent();
             intent.setComponent(SetupWizardUtils.mTvAddAccessorySettingsActivity);
             intent.setAction(ACTION_CONNECT_INPUT);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.putExtra(INTENT_EXTRA_NO_INPUT_MODE, true);
-            startSubactivity(intent, REQUEST_CODE_SETUP_BLUETOOTH);
+            startActivityForResult(intent, REQUEST_CODE_SETUP_BLUETOOTH);
         } catch (Exception e) {
             Log.e(TAG, "Error starting bluetooth setup", e);
             nextAction(RESULT_OK);
@@ -52,6 +51,7 @@ public class BluetoothSetupActivity extends SubBaseActivity {
 
     @Override
     protected int getSubactivityNextTransition() {
+        nextAction(RESULT_OK);
         return TRANSITION_ID_SLIDE;
     }
 }
