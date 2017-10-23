@@ -595,7 +595,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
                         sb.append("RESULT_CANCELED");
                         break;
                     case RESULT_SKIP:
-                        sb.append("RESULT_BLUETOOTH_SKIP");
+                        sb.append("RESULT_FINGERPRINT_SKIP");
                         break;
                     default:
                         break;
