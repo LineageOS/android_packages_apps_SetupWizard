@@ -62,7 +62,7 @@
   <string name="services_explanation" product="default">這些服務用來增強您的手機的功能。資料將根據 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="services_privacy_policy">隱私權政策</string>
   <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 經由自動傳送診斷及使用資料給 LineageOS。這些資料不會被用於識別您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式效能和新的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 經由自動傳送診斷及使用資料給 LineageOS。這些資料不會被用於辨識您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式效能和新的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
   <string name="services_os_privacy_guard"><b>啟用隱私守衛</b>，使您的個人資料，如聯絡人、訊息或通話記錄無法用於新安裝的應用程式</string>
   <string name="setup_unlock">解鎖</string>
@@ -76,7 +76,7 @@
   <string name="fingerprint_setup_summary">若要使用您的指紋感應器解鎖您的螢幕，您需要︰</string>
   <string name="fingerprint_setup_backup_lock_method">設定第二個解鎖方式</string>
   <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
-  <string name="fingerprint_setup_screen_lock_setup">設定螢幕鎖定</string>
+  <string name="fingerprint_setup_screen_lock_setup">設定畫面鎖定</string>
   <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
   <!-- secure lock screen -->
   <string name="settings_lockscreen_setup_title">選擇螢幕鎖類型</string>
