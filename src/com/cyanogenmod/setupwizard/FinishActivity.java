@@ -47,8 +47,8 @@ import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.providers.CMSettings;
+import lineageos.hardware.LineageHardwareManager;
+import lineageos.providers.LineageSettings;
 
 public class FinishActivity extends BaseSetupWizardActivity {
 
@@ -189,8 +189,8 @@ public class FinishActivity extends BaseSetupWizardActivity {
         Bundle privacyData = setupWizardApp.getSettingsBundle();
         if (privacyData != null
                 && privacyData.containsKey(KEY_SEND_METRICS)) {
-            CMSettings.Secure.putInt(setupWizardApp.getContentResolver(),
-                    CMSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
+            LineageSettings.Secure.putInt(setupWizardApp.getContentResolver(),
+                    LineageSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
                             ? 1 : 0);
         }
     }
@@ -198,8 +198,8 @@ public class FinishActivity extends BaseSetupWizardActivity {
     private static void handlePrivacyGuard(SetupWizardApp setupWizardApp) {
         Bundle mPrivacyData = setupWizardApp.getSettingsBundle();
         if (mPrivacyData != null && mPrivacyData.containsKey(KEY_PRIVACY_GUARD)) {
-            CMSettings.Secure.putInt(setupWizardApp.getContentResolver(),
-                    CMSettings.Secure.PRIVACY_GUARD_DEFAULT,
+            LineageSettings.Secure.putInt(setupWizardApp.getContentResolver(),
+                    LineageSettings.Secure.PRIVACY_GUARD_DEFAULT,
                     mPrivacyData.getBoolean(KEY_PRIVACY_GUARD) ? 1 : 0);
         }
     }
@@ -214,22 +214,22 @@ public class FinishActivity extends BaseSetupWizardActivity {
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 
-        CMSettings.Global.putInt(context.getContentResolver(),
-                CMSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
-        CMHardwareManager hardware = CMHardwareManager.getInstance(context);
-        hardware.set(CMHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        LineageSettings.Global.putInt(context.getContentResolver(),
+                LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, enabled ? 1 : 0);
+        LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        hardware.set(LineageHardwareManager.FEATURE_KEY_DISABLE, enabled);
 
         /* Save/restore button timeouts to disable them in softkey mode */
         if (enabled) {
-            CMSettings.Secure.putInt(context.getContentResolver(),
-                    CMSettings.Secure.BUTTON_BRIGHTNESS, 0);
+            LineageSettings.Secure.putInt(context.getContentResolver(),
+                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 0);
         } else {
-            int currentBrightness = CMSettings.Secure.getInt(context.getContentResolver(),
-                    CMSettings.Secure.BUTTON_BRIGHTNESS, 100);
+            int currentBrightness = LineageSettings.Secure.getInt(context.getContentResolver(),
+                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 100);
             int oldBright = prefs.getInt(KEY_BUTTON_BACKLIGHT,
                     currentBrightness);
-            CMSettings.Secure.putInt(context.getContentResolver(),
-                    CMSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
+            LineageSettings.Secure.putInt(context.getContentResolver(),
+                    LineageSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
         }
     }
 }
