@@ -46,8 +46,8 @@ import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import com.cyanogenmod.setupwizard.R;
 
-import cyanogenmod.hardware.CMHardwareManager;
-import cyanogenmod.providers.CMSettings;
+import lineageos.hardware.LineageHardwareManager;
+import lineageos.providers.LineageSettings;
 
 public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
@@ -155,8 +155,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         mPrivacyGuardRow = findViewById(R.id.privacy_guard);
         mPrivacyGuardRow.setOnClickListener(mPrivacyGuardClickListener);
         mPrivacyGuard = (CheckBox) findViewById(R.id.privacy_guard_checkbox);
-        mPrivacyGuard.setChecked(CMSettings.Secure.getInt(getContentResolver(),
-                CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
+        mPrivacyGuard.setChecked(LineageSettings.Secure.getInt(getContentResolver(),
+                LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
     }
 
     @Override
@@ -210,8 +210,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     private void updateDisableNavkeysOption() {
         if (!mHideNavKeysRow) {
             final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
-            boolean enabled = CMSettings.Secure.getInt(getContentResolver(),
-                    CMSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+            boolean enabled = LineageSettings.Secure.getInt(getContentResolver(),
+                    LineageSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
             boolean checked = myPageBundle.containsKey(DISABLE_NAV_KEYS) ?
                     myPageBundle.getBoolean(DISABLE_NAV_KEYS) :
                     enabled;
@@ -222,8 +222,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
     private void updatePrivacyGuardOption() {
         final Bundle bundle = mSetupWizardApp.getSettingsBundle();
-        boolean enabled = CMSettings.Secure.getInt(getContentResolver(),
-                CMSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) != 0;
+        boolean enabled = LineageSettings.Secure.getInt(getContentResolver(),
+                LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) != 0;
         boolean checked = bundle.containsKey(KEY_PRIVACY_GUARD) ?
                 bundle.getBoolean(KEY_PRIVACY_GUARD) :
                 enabled;
@@ -232,12 +232,12 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private static boolean hideKeyDisabler(Context context) {
-        final CMHardwareManager hardware = CMHardwareManager.getInstance(context);
-        return !hardware.isSupported(CMHardwareManager.FEATURE_KEY_DISABLE);
+        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        return !hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
     }
 
     private static boolean isKeyDisablerActive(Context context) {
-        final CMHardwareManager hardware = CMHardwareManager.getInstance(context);
-        return hardware.get(CMHardwareManager.FEATURE_KEY_DISABLE);
+        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        return hardware.get(LineageHardwareManager.FEATURE_KEY_DISABLE);
     }
 }
