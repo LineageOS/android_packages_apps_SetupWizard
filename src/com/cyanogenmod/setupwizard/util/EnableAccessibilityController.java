@@ -58,18 +58,19 @@ public class EnableAccessibilityController {
         public void handleMessage(Message message) {
             switch (message.what) {
                 case MESSAGE_SPEAK_WARNING: {
-                    String text = mContext.getString(R.string.continue_to_enable_accessibility);
-                    mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                    // TODO: Fix these or remove these
+                    //String text = mContext.getString(R.string.continue_to_enable_accessibility);
+                    //mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
                 } break;
                 case MESSAGE_SPEAK_ENABLE_CANCELED: {
-                    String text = mContext.getString(R.string.enable_accessibility_canceled);
-                    mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+                    //String text = mContext.getString(R.string.enable_accessibility_canceled);
+                    //mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
                 } break;
                 case MESSAGE_ENABLE_ACCESSIBILITY: {
                     enableAccessibility();
-                    mTone.play();
-                    mTts.speak(mContext.getString(R.string.accessibility_enabled),
-                            TextToSpeech.QUEUE_FLUSH, null);
+                    //mTone.play();
+                    //mTts.speak(mContext.getString(R.string.accessibility_enabled),
+                    //        TextToSpeech.QUEUE_FLUSH, null);
                 } break;
             }
         }
@@ -261,9 +262,6 @@ public class EnableAccessibilityController {
                 Settings.Secure.putIntForUser(resolver, Settings.Secure.TOUCH_EXPLORATION_ENABLED,
                         1, userId);
             }
-            // Enable accessibility script injection (AndroidVox) for web content.
-            Settings.Secure.putIntForUser(resolver, Settings.Secure.ACCESSIBILITY_SCRIPT_INJECTION,
-                    1, userId);
             // Turn on accessibility mode last.
             Settings.Secure.putIntForUser(resolver, Settings.Secure.ACCESSIBILITY_ENABLED,
                     1, userId);
