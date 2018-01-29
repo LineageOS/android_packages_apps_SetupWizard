@@ -52,8 +52,7 @@
 
     <permission
         android:name="cyanogenmod.permission.FINISH_SETUP"
-        android:protectionLevel="signatureOrSystem"
-        androidprv:allowViaWhitelist="true" />
+        android:protectionLevel="signatureOrSystem" />
 
     <protected-broadcast android:name="com.cyanogenmod.setupwizard.SETUP_FINISHED"
                          android:permission="cyanogenmod.permission.FINISH_SETUP"/>
