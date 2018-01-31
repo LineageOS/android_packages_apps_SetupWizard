@@ -288,7 +288,7 @@
 
         <activity android:name=".SetupWizardTestActivity"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
-                  android:exported="false"
+                  android:exported="true"
                   android:immersive="true"
                   android:label="@string/activity_label_empty"
                   android:launchMode="singleInstance"
