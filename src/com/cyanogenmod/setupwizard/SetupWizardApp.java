@@ -37,7 +37,7 @@ public class SetupWizardApp extends Application {
     public static final boolean LOGV = Log.isLoggable(TAG, Log.VERBOSE);
 
     public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
-    public static final String ACTION_SETUP_WIFI = "com.android.net.wifi.SETUP_WIFI_NETWORK";
+    public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";
     public static final String ACTION_SETUP_FINGERPRINT = "android.settings.FINGERPRINT_SETUP";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
     public static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
@@ -57,6 +57,8 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_SCRIPT_URI = "scriptUri";
     public static final String EXTRA_ACTION_ID = "actionId";
     public static final String EXTRA_RESULT_CODE = "com.android.setupwizard.ResultCode";
+    public static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
+    public static final String EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text";
 
     public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
     public static final String KEY_SEND_METRICS = "send_metrics";
