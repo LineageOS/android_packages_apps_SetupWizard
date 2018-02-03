@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.util;
+package org.lineageos.setupwizard.util;
 
 import static android.app.StatusBarManager.DISABLE_NONE;
 import static android.app.StatusBarManager.DISABLE_NOTIFICATION_ALERTS;
@@ -29,8 +29,8 @@ import static android.content.pm.PackageManager.GET_ACTIVITIES;
 import static android.content.pm.PackageManager.GET_RECEIVERS;
 import static android.content.pm.PackageManager.GET_SERVICES;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.app.StatusBarManager;
 import android.content.ComponentName;
@@ -54,14 +54,14 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.cyanogenmod.setupwizard.BluetoothSetupActivity;
-import com.cyanogenmod.setupwizard.ChooseDataSimActivity;
-import com.cyanogenmod.setupwizard.FingerprintActivity;
-import com.cyanogenmod.setupwizard.MobileDataActivity;
-import com.cyanogenmod.setupwizard.SetupWizardApp;
-import com.cyanogenmod.setupwizard.SimMissingActivity;
-import com.cyanogenmod.setupwizard.WifiSetupActivity;
-import com.cyanogenmod.setupwizard.wizardmanager.WizardManager;
+import org.lineageos.setupwizard.BluetoothSetupActivity;
+import org.lineageos.setupwizard.ChooseDataSimActivity;
+import org.lineageos.setupwizard.FingerprintActivity;
+import org.lineageos.setupwizard.MobileDataActivity;
+import org.lineageos.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.SimMissingActivity;
+import org.lineageos.setupwizard.WifiSetupActivity;
+import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 import org.lineageos.internal.util.PackageManagerUtils;
 

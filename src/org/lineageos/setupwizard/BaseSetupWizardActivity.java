@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import static com.android.setupwizardlib.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 import static com.android.setupwizardlib.util.ResultCodes.RESULT_RETRY;
 import static com.android.setupwizardlib.util.ResultCodes.RESULT_SKIP;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_NEXT;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_FIRST_RUN;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_HAS_MULTIPLE_USERS;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_USE_IMMERSIVE;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_FIRST_RUN;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_HAS_MULTIPLE_USERS;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_USE_IMMERSIVE;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
 import android.annotation.Nullable;
@@ -56,7 +56,7 @@ import com.android.setupwizard.navigationbar.SetupWizardNavBar.NavigationBarList
 import com.android.setupwizardlib.util.SystemBarHelper;
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 

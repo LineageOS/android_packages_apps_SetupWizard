@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.widget;
+package org.lineageos.setupwizard.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,7 +25,7 @@ import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-import com.cyanogenmod.setupwizard.R;
+import org.lineageos.setupwizard.R;
 
 /**
  * A layout that draws something in the insets passed to {@link #fitSystemWindows(android.graphics.Rect)}, i.e. the area above UI chrome

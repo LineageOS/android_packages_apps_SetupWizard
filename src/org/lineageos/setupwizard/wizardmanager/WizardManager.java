@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.wizardmanager;
+package org.lineageos.setupwizard.wizardmanager;
 
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_LOAD;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_NEXT;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_FIRST_RUN;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_LOAD;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_FIRST_RUN;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import com.android.setupwizardlib.util.ResultCodes;
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import android.annotation.Nullable;
 import android.app.Activity;
