@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 
 import android.app.Application;
@@ -23,10 +23,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 
-import com.cyanogenmod.setupwizard.util.NetworkMonitor;
-import com.cyanogenmod.setupwizard.util.PhoneMonitor;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
-import com.cyanogenmod.setupwizard.wizardmanager.WizardManager;
+import org.lineageos.setupwizard.util.NetworkMonitor;
+import org.lineageos.setupwizard.util.PhoneMonitor;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 public class SetupWizardApp extends Application {
 
@@ -36,7 +36,7 @@ public class SetupWizardApp extends Application {
     /* Verbose Logging */
     public static final boolean LOGV = Log.isLoggable(TAG, Log.VERBOSE);
 
-    public static final String ACTION_FINISHED = "com.cyanogenmod.setupwizard.SETUP_FINISHED";
+    public static final String ACTION_FINISHED = "org.lineageos.setupwizard.SETUP_FINISHED";
     public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";
     public static final String ACTION_SETUP_FINGERPRINT = "android.settings.FINGERPRINT_SETUP";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";

@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.wizardmanager;
+package org.lineageos.setupwizard.wizardmanager;
 
 import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.content.Intent;
 import android.os.Parcel;

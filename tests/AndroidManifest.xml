@@ -15,7 +15,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.cyanogenmod.setupwizard.tests">
+          package="org.lineageos.setupwizard.tests">
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.STATUS_BAR"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -34,7 +34,7 @@
 
     <application android:icon="@drawable/icon">
         <uses-library android:name="android.test.runner" />
-        <activity android:name="com.cyanogenmod.setupwizard.tests.ManualTestActivity"
+        <activity android:name="org.lineageos.setupwizard.tests.ManualTestActivity"
                   android:label="@string/app_test"
                   android:theme="@android:style/Theme.Material.NoActionBar"
                   android:launchMode="singleTask">
@@ -49,7 +49,7 @@
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.cyanogenmod.setupwizard"
-                     android:label="Tests for CMSetupWizard."/>
+                     android:targetPackage="org.lineageos.setupwizard"
+                     android:label="Tests for LineageSetupWizard."/>
 
 </manifest>

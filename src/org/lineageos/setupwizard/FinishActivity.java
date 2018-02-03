@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_APPLY_DEFAULT_THEME;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_BUTTON_BACKLIGHT;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_APPLY_DEFAULT_THEME;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_BUTTON_BACKLIGHT;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.animation.Animator;
 import android.app.Activity;
@@ -45,7 +45,7 @@ import android.widget.ProgressBar;
 
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
+import org.lineageos.setupwizard.util.EnableAccessibilityController;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;

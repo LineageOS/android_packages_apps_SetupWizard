@@ -28,7 +28,7 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.OEM_PRE_SETUP;end" id="oem_pre_setup">
         <result wizard:action="welcome" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_WELCOME;end" id="welcome">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end" id="welcome">
         <result wizard:action="secondary_user_warning" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.USER_WARNING;end" id="secondary_user_warning">
@@ -74,11 +74,11 @@
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_no_account_flow" id="no_account_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup">
         <result wizard:action="exit" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit">
-        <result wizard:action="cm_exit" />
+        <result wizard:action="lineage_exit" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.EXIT;end" id="cm_exit" />
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.EXIT;end" id="lineage_exit" />
 </WizardScript>

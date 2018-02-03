@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.Nullable;
 import android.content.Intent;
@@ -28,8 +28,8 @@ import android.util.Log;
 
 import com.android.setupwizardlib.util.SystemBarHelper;
 
-import com.cyanogenmod.setupwizard.util.PhoneMonitor;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.PhoneMonitor;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SetupWizardExitActivity extends BaseSetupWizardActivity {
 

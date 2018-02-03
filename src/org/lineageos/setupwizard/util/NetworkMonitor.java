@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.util;
+package org.lineageos.setupwizard.util;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -27,7 +27,7 @@ import android.net.NetworkInfo;
 import android.os.Handler;
 import android.util.Log;
 
-import com.cyanogenmod.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.SetupWizardApp;
 
 public class NetworkMonitor {
 
