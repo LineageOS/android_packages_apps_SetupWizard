@@ -44,11 +44,7 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             if (LOGV) {
                 Log.v(TAG, "Has GMS disabling local wizard manager");
             }
-            Intent intent = new Intent("android.intent.action.MAIN");
-            intent.addCategory("android.intent.category.HOME");
             SetupWizardUtils.disableComponentsForGMS(this);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
             finish();
         } else {
             onSetupStart();
