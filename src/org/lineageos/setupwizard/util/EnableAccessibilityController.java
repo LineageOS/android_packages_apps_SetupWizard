@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.cyanogenmod.setupwizard.util;
+package org.lineageos.setupwizard.util;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.app.ActivityManager;

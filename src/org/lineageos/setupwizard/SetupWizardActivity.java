@@ -15,21 +15,21 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_LOAD;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_LOAD;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
-import com.cyanogenmod.setupwizard.wizardmanager.WizardManager;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 public class SetupWizardActivity extends BaseSetupWizardActivity {
     private static final String TAG = SetupWizardActivity.class.getSimpleName();

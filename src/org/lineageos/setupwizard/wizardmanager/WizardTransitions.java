@@ -15,16 +15,16 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.wizardmanager;
+package org.lineageos.setupwizard.wizardmanager;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import android.util.SparseArray;
 
-import com.cyanogenmod.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.SetupWizardApp;
 
 public class WizardTransitions extends SparseArray<String> implements Parcelable {
 

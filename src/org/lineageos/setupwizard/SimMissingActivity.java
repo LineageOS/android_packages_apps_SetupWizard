@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.android.setupwizardlib.util.ResultCodes;
 
-import com.cyanogenmod.setupwizard.util.PhoneMonitor;
+import org.lineageos.setupwizard.util.PhoneMonitor;
 
 public class SimMissingActivity extends BaseSetupWizardActivity {
 

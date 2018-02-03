@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
@@ -40,7 +40,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import org.xmlpull.v1.XmlPullParserException;
 

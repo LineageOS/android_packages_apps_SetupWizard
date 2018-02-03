@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_APPLY_DEFAULT_THEME;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
+import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_APPLY_DEFAULT_THEME;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 
 import android.app.Activity;
 import android.content.Context;
@@ -44,7 +44,7 @@ import android.widget.TextView;
 
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import com.cyanogenmod.setupwizard.R;
+import org.lineageos.setupwizard.R;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
