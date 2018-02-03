@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static org.lineageos.setupwizard.SetupWizardApp.KEY_APPLY_DEFAULT_THEME;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_BUTTON_BACKLIGHT;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
