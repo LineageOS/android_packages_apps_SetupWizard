@@ -63,16 +63,8 @@ public class SetupWizardApp extends Application {
     public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
     public static final String KEY_SEND_METRICS = "send_metrics";
     public static final String DISABLE_NAV_KEYS = "disable_nav_keys";
-    public static final String KEY_APPLY_DEFAULT_THEME = "apply_default_theme";
     public static final String KEY_BUTTON_BACKLIGHT = "pre_navbar_button_backlight";
     public static final String KEY_PRIVACY_GUARD = "privacy_guard_default";
-
-    private static final String[] THEME_PACKAGES = {
-            "org.cyanogenmod.theme.chooser",
-            "org.cyanogenmod.theme.chooser2",
-            "com.cyngn.theme.chooser",
-            "com.cyngn.themestore"
-    };
 
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
