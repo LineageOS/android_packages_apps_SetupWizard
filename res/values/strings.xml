@@ -17,17 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Setup Wizard</string>
-    <string name="product_name" translatable="false">cyanogenmod</string>
     <string name="os_name" translatable="false">LineageOS</string>
-    <string name="default_theme_name" translatable="false">Material</string>
 
-    <string name="cm_wizard_script_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/cm_wizard_script</string>
-    <string name="cm_wizard_script_user_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/cm_wizard_script_user</string>
+    <string name="lineage_wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/lineage_wizard_script</string>
+    <string name="lineage_wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/lineage_wizard_script_user</string>
 
     <!-- Partner SUW Strings -->
     <string name="theme_type" translatable="false">material_light</string>
-    <string name="wizard_script_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/wizard_script</string>
-    <string name="wizard_script_user_uri" translatable="false">android.resource://com.cyanogenmod.setupwizard/raw/wizard_script_user</string>
     <string name="activity_label_empty" />
 
     <string name="next">Next</string>
@@ -81,8 +77,8 @@
     <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="services_privacy_policy">Privacy Policy</string>
-    <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> features.</string>
+    <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%2$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
     <string name="services_os_privacy_guard"><b>Enable Privacy guard</b> to make your personal data such as contacts, messages or call logs not available for newly installed apps</string>
 

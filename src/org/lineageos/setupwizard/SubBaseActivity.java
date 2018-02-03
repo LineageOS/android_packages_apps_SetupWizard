@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 
 import static android.content.Intent.FLAG_ACTIVITY_FORWARD_RESULT;
 
 import static com.android.setupwizardlib.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
 import android.content.ActivityNotFoundException;

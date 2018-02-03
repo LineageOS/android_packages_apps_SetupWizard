@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -41,8 +41,8 @@ import com.android.internal.telephony.MccTable;
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import com.cyanogenmod.setupwizard.R;
-import com.cyanogenmod.setupwizard.widget.LocalePicker;
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.widget.LocalePicker;
 
 import java.util.List;
 import java.util.Locale;

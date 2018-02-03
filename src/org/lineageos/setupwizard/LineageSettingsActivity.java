@@ -15,12 +15,11 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_APPLY_DEFAULT_THEME;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
+import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 
 import android.app.Activity;
 import android.content.Context;
@@ -44,7 +43,7 @@ import android.widget.TextView;
 
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
-import com.cyanogenmod.setupwizard.R;
+import org.lineageos.setupwizard.R;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
@@ -124,13 +123,13 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
         mMetricsRow = findViewById(R.id.metrics);
         mMetricsRow.setOnClickListener(mMetricsClickListener);
-        String metricsHelpImproveCM =
+        String metricsHelpImproveLineage =
                 getString(R.string.services_help_improve_cm, getString(R.string.os_name));
         String metricsSummary = getString(R.string.services_metrics_label,
-                metricsHelpImproveCM, getString(R.string.os_name));
+                metricsHelpImproveLineage, getString(R.string.os_name));
         final SpannableStringBuilder metricsSpan = new SpannableStringBuilder(metricsSummary);
         metricsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
-                0, metricsHelpImproveCM.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                0, metricsHelpImproveLineage.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         TextView metrics = (TextView) findViewById(R.id.enable_metrics_summary);
         metrics.setText(metricsSpan);
         mMetrics = (CheckBox) findViewById(R.id.enable_metrics_checkbox);

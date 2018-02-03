@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_SETUP_LOCKSCREEN;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_DETAILS;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_TITLE;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_LOCKSCREEN;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_DETAILS;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_TITLE;
+import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN;
 
 import android.content.Intent;
 import android.view.View;

@@ -61,7 +61,7 @@
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_no_account_flow" id="no_account_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.cyanogenmod.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup" />
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.KID_POST_SETUP;end" id="kid_post_setup" />
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit" />
     <WizardAction id="END_OF_SCRIPT" />

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -26,7 +26,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class LocationSettingsActivity extends BaseSetupWizardActivity {
 
