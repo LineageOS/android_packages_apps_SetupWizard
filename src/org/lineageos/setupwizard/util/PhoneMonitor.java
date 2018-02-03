@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.util;
+package org.lineageos.setupwizard.util;
 
 import static android.telephony.PhoneStateListener.LISTEN_DATA_CONNECTION_STATE;
 import static android.telephony.PhoneStateListener.LISTEN_NONE;
@@ -44,7 +44,7 @@ import static android.telephony.TelephonyManager.SIM_STATE_UNKNOWN;
 import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_TRUE;
 import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_UNKNOWN;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

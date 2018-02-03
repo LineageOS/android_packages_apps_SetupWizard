@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.cyanogenmod.setupwizard.util.EnableAccessibilityController;
+import org.lineageos.setupwizard.util.EnableAccessibilityController;
 
 public class WelcomeActivity extends BaseSetupWizardActivity {
 

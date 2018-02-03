@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard.widget;
+package org.lineageos.setupwizard.widget;
 
-import com.cyanogenmod.setupwizard.R;
+import org.lineageos.setupwizard.R;
 
 import android.annotation.Widget;
 import android.content.Context;

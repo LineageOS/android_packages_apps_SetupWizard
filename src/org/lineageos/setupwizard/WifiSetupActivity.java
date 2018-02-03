@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.ACTION_SETUP_WIFI;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.EXTRA_MATERIAL_LIGHT;
-import static com.cyanogenmod.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_WIFI;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_MATERIAL_LIGHT;
+import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
 
 import android.content.Intent;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class WifiSetupActivity extends SubBaseActivity {
 
