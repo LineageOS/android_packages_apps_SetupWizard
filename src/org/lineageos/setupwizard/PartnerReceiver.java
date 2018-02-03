@@ -1,4 +1,4 @@
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
 /*
  * Copyright (C) 2016 The CyanogenMod Project

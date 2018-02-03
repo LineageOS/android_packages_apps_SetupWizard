@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -38,8 +38,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.cyanogenmod.setupwizard.util.PhoneMonitor;
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.PhoneMonitor;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 

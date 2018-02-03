@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.setupwizard;
+package org.lineageos.setupwizard;
 
-import static com.cyanogenmod.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BLUETOOTH;
+import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BLUETOOTH;
 
 import android.content.Intent;
 import android.util.Log;
 
-import com.cyanogenmod.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class BluetoothSetupActivity extends SubBaseActivity {
 
