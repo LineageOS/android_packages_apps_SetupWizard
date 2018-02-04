@@ -225,9 +225,14 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasFingerprint(Context context) {
-        FingerprintManager fingerprintManager = (FingerprintManager)
-                context.getSystemService(Context.FINGERPRINT_SERVICE);
-        return fingerprintManager.isHardwareDetected();
+        PackageManager packageManager = context.getPackageManager();
+        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {
+            FingerprintManager fingerprintManager = (FingerprintManager)
+                    context.getSystemService(Context.FINGERPRINT_SERVICE);
+            return fingerprintManager.isHardwareDetected();
+        } else {
+            return false;
+        }
     }
 
     public static boolean simMissing() {
