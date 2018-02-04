@@ -209,8 +209,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     private void updateDisableNavkeysOption() {
         if (!mHideNavKeysRow) {
             final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
-            boolean enabled = LineageSettings.Secure.getInt(getContentResolver(),
-                    LineageSettings.Secure.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+            boolean enabled = LineageSettings.Global.getInt(getContentResolver(),
+                    LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
             boolean checked = myPageBundle.containsKey(DISABLE_NAV_KEYS) ?
                     myPageBundle.getBoolean(DISABLE_NAV_KEYS) :
                     enabled;
