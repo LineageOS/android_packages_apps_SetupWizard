@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c07b4b1a_12d482cd",
+        "filename": "res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2018-02-04T10:54:10Z",
+      "side": 1,
+      "message": "This is already in strings.xml",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 131
+      },
+      "revId": "44ce446b22a662c057f20331abe76fc999f7310b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
