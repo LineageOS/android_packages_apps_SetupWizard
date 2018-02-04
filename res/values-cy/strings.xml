@@ -17,7 +17,71 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Dewin gosod</string>
   <!-- Partner SUW Strings -->
+  <string name="next">Nesaf</string>
+  <string name="skip">Neidio</string>
+  <string name="start">Dechrau</string>
+  <string name="done">Cwblhau</string>
+  <string name="ok">Iawn</string>
+  <string name="loading">Un eiliad\u2026</string>
+  <string name="setup_complete">Mae\'r gosodiad wedi ei gwblhau.</string>
+  <string name="setup_welcome">Croeso</string>
+  <string name="setup_locale">Iaith</string>
+  <string name="setup_wifi">Dewis Wi-Fi</string>
+  <string name="setup_sim_missing">Cerdyn SIM ar goll</string>
+  <string name="setup_choose_data_sim">Dewis SIM ar gyfer data</string>
+  <string name="setup_location">Gwasanaethau lleoliad</string>
+  <string name="setup_other">Gwasanaethau eraill</string>
+  <string name="setup_datetime">Dyddiad ac amser</string>
+  <string name="setup_current_date">Dyddiad heddiw</string>
+  <string name="setup_current_time">Amser nawr</string>
+  <string name="sim_missing_summary" product="tablet">Nid yw\'n ymddangos bod cerdyn SIM yn dy lechen. I osod cerdyn SIM, gweler y cyfarwyddiadau a ddaeth gyda dy ddyfais.</string>
+  <string name="sim_missing_summary" product="default">Nid yw\'n ymddangos bod cerdyn SIM yn dy ffôn. I osod cerdyn SIM, gweler y cyfarwyddiadau a ddaeth gyda dy ddyfais.</string>
+  <string name="choose_data_sim_summary" product="tablet">Pa gerdyn SIM wyt ti am ddefnyddio ar gyfer data? Bydd y SIM hwn yn cael yn ei ddefnyddio wrth sefydlu dy lechen ac mae\'n bosib y bydd costau data, yn dibynnu ar dy gytundeb rhwydwaith symudol.</string>
+  <string name="choose_data_sim_summary" product="default">Pa gerdyn SIM wyt ti am ddefnyddio ar gyfer data? Bydd y SIM hwn yn cael yn ei ddefnyddio wrth sefydlu dy ffôn ac mae\'n bosib y bydd costau data, yn dibynnu ar dy gytundeb rhwydwaith symudol.</string>
+  <string name="date_time_summary">Gosoda dy gylchfa amser ac addasu’r dyddiad ac amser os oes angen.</string>
+  <string name="backup_data_summary"><b>Cadw copi wrth gefn</b> o ddata apiau, cyfrineiriau Wi-Fi, a gosodiadau eraill i weinyddion Google</string>
+  <string name="other_services_summary">Mae\'r gwasanaethau hyn yn rhoi Google ar waith i ti. Mae\'n bosib eu troi ymlaen ac i ffwrdd unrhyw bryd. Caiff data ei ddefnyddio yn ôl <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
+  <string name="location_services_summary">Mae gwasanaethau lleoliad yn caniatáu i apiau system a thrydydd parti medru casglu a defnyddio data megis dy leoliad bras. Er enghraifft, gall ap ddefnyddio dy leoliad bras er mwyn awgrymu llefydd gerllaw am banad, paned neu ddisgled.</string>
+  <string name="location_access_summary"><b>Caniatáu i apiau sydd wedi gofyn am dy ganiatâd</b> medru defnyddio gwybodaeth dy leoliad. Gall hyn gynnwys dy leoliad cyfredol a lleoliadau yn y gorffennol.</string>
+  <string name="location_battery_saving"><b>Lleihau defnydd batri</b> gan gyfyngu ar y nifer o ddiweddariadau GPS pob awr.</string>
+  <string name="location_network"><b>Defnyddio rhwydweithiau Wi-Fi</b> i helpu apiau gwybod dy leoliad.</string>
+  <string name="location_network_telephony"><b>Defnyddio rhwydweithiau Wi-Fi a symudol</b> i helpu apiau gwybod dy leoliad.</string>
+  <string name="location_network_gms"><b>Defnyddio gwasanaeth lleoliad Google</b> i helpu apiau gwybod dy leoliad. Mae hyn yn golygu anfon gwybodaeth yn ddienw at Google, hyd yn oed pan nad oes apiau yn rhedeg.</string>
+  <string name="setup_mobile_data">Defnyddio data symudol</string>
+  <string name="setup_mobile_data_no_service">Dim gwasanaeth</string>
+  <string name="setup_mobile_data_emergency_only">Galwadau brys yn unig</string>
+  <string name="enable_mobile_data_summary">Wyt ti am ddefnyddio data symudol yn ystod y gosod? Gall troi data symudol ymlaen arwain at gostau defnydd data.</string>
+  <string name="no">Ydw</string>
+  <string name="yes">Nac ydw</string>
+  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g>-<xliff:g id="name">%s </xliff:g></string>
+  <string name="emergency_call">Galwad brys</string>
+  <string name="setup_services">Nodweddion LineageOS</string>
+  <string name="services_explanation" product="tablet">Mae\'r nodweddion hyn yn gweithio er mwyn ymestyn galluoedd dy lechen. Caiff data ei ddefnyddio yn ôl <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+  <string name="services_explanation" product="default">Mae\'r nodweddion hyn yn gweithio er mwyn ymestyn galluoedd dy ffôn. Caiff data ei ddefnyddio yn ôl <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+  <string name="services_privacy_policy">Polisi Preifatrwydd</string>
+  <string name="services_help_improve_cm">Helpu i wella <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> gan anfon gwybodaeth ddiagnostig a defnydd data at LineageOS. Ni fydd yn bosib defnyddio\'r wybodaeth i dy adnabod di ac mi fydd o help mawr i\'r timau sy\'n gweithio ar bethau fel gwella perfformiad apiau a bywyd batri a chreu nodweddion newydd yn <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="services_os_nav_keys_label"><b>Defnyddio bysellau llywio ar y sgrin</b> yn hytrach na botymau\'r ddyfais.</string>
+  <string name="services_os_privacy_guard"><b>Galluoga\'r Gwarchodwr Preifatrwydd</b> fel nad yw dy ddata personol megis cysylltiadau, negeseuon na logiau galwadau ar gael i apiau newydd sy\'n cael eu gosod.</string>
+  <string name="setup_unlock">Datgloi</string>
+  <string name="setup_device_locked">Mae\'r ddyfais hon wedi ei chloi gan y defnyddiwr.</string>
+  <string name="setup_require_cyanogen_label"><b>Mynna bod angen cyfrinair dy gyfrif</b> er mwyn medru defnyddio\'r ddyfais, hyd yn oed os yw\'n cael ei ailosod i fel yr oedd yn gadael y ffatri.</string>
+  <string name="setup_device_locked_instructions"><i>I droi\'r nodwedd hon ymlaen/i ffwrdd, edrycha yn Gosodiadau &gt; Diogelwch</i></string>
   <!-- Fingerprint setup -->
+  <string name="settings_fingerprint_setup_title">Dewis math o glo sgrin wrth gefn</string>
+  <string name="settings_fingerprint_setup_details">Sut hoffet gloi dy sgrin?</string>
+  <string name="fingerprint_setup_title">Gosod ôl bys</string>
+  <string name="fingerprint_setup_summary">I ddefnyddio\'r synhwyrydd olion bysedd i ddatgloi dy sgrin, mae angen:</string>
+  <string name="fingerprint_setup_backup_lock_method">Gosod ail ddull o ddatgloi</string>
+  <string name="fingerprint_setup_add_fingerprint">Ychwanegu ôl dy fys</string>
+  <string name="fingerprint_setup_screen_lock_setup">Gosod clo\'r sgrin</string>
+  <string name="sim_locale_changed">Synhwyrwyd %1$s SIM</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Dewis math o sgrin cloi</string>
+  <string name="settings_lockscreen_setup_details">Sut hoffet gloi dy sgrin?</string>
+  <string name="lockscreen_setup_title">Diogelu dy ffôn</string>
+  <string name="lockscreen_setup_summary"><b>Diogela\'r ddyfais hon</b> gan osod PIN, patrwm, neu gyfrinair er mwyn datgloi\'r sgrin.</string>
+  <string name="lockscreen_setup_screen_lock_setup">Gosod</string>
 </resources>
