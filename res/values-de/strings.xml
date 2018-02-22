@@ -61,8 +61,8 @@
   <string name="services_explanation" product="tablet">Diese Dienste werden verwendet, um die Funktionen Ihres Tablets zu erweitern. Ihre Daten werden in Übereinstimmung mit den <xliff:g id="name" example="Datenschutzbestimmungen">%s</xliff:g> von LineageOS verwendet.</string>
   <string name="services_explanation" product="default">Diese Dienste werden verwendet, um die Funktionen Ihres Telefons zu erweitern. Ihre Daten werden in Übereinstimmung mit den <xliff:g id="name" example="Datenschutzbestimmungen">%s</xliff:g> von LineageOS verwendet.</string>
   <string name="services_privacy_policy">Datenschutzerklärung</string>
-  <string name="services_help_improve_cm">Helfen Sie <xliff:g id="name" example="CyanogenMod">%s</xliff:g> zu verbessern</string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, indem Sie automatisch Diagnose-und Nutzungsdaten an LineageOS senden. Diese Informationen können nicht dazu verwendet werden, Sie zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
+  <string name="services_help_improve_cm">Helfen Sie <xliff:g id="name" example="LineageOS">%s</xliff:g> zu verbessern</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Helfen Sie LineageOS zu verbessern">%1$s</xliff:g>, indem Sie automatisch Diagnose-und Nutzungsdaten an LineageOS senden. Diese Informationen können nicht dazu verwendet werden, Sie zu identifizieren. Vielmehr helfen Sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
   <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
   <string name="services_os_privacy_guard"><b>Aktivieren Sie den Datenschutz</b>, um Ihre persönlichen Daten wie Kontakte, Nachrichten oder Anrufe nicht für neu installierte Anwendungen verfügbar zu machen</string>
   <string name="setup_unlock">Entsperren</string>

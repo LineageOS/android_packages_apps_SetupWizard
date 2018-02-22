@@ -56,7 +56,6 @@
   <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
   <string name="emergency_call">Экстранны выклік</string>
   <string name="services_privacy_policy">Палітыка прыватнасці</string>
-  <string name="services_help_improve_cm">Дапамагчы палепшыць <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_os_nav_keys_label"><b>Скарыстаць на экранные навігацыйныя кнопкі</b> заміж апаратных.</string>
   <string name="setup_unlock">Разблакаваць</string>
   <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>

@@ -61,8 +61,8 @@
   <string name="services_explanation" product="tablet">這些服務用來增強您的平板的功能。資料將根據 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="services_explanation" product="default">這些服務用來增強您的手機的功能。資料將根據 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 來使用。</string>
   <string name="services_privacy_policy">隱私權政策</string>
-  <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 經由自動傳送診斷及使用資料給 LineageOS。這些資料不會被用於辨識您的身份，而是用於幫助團隊致力於諸如電池壽命、應用程式效能和新的 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
+  <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> 經由傳送錯誤報告及使用資料給 LineageOS，這些資料不會用於識別您的身分，而是用於幫助團隊改善電池壽命、應用程式效能和新的 <xliff:g id="name" example="LineageOS">%2$s</xliff:g> 功能。</string>
   <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
   <string name="services_os_privacy_guard"><b>啟用隱私守衛</b>，使您的個人資料，如聯絡人、訊息或通話記錄無法用於新安裝的應用程式</string>
   <string name="setup_unlock">解鎖</string>

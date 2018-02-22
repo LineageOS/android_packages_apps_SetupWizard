@@ -22,6 +22,7 @@
   <string name="next">다음</string>
   <string name="skip">건너뛰기</string>
   <string name="start">시작</string>
+  <string name="done">완료</string>
   <string name="ok">확인</string>
   <string name="loading">잠시만 기다려주세요\u2026</string>
   <string name="setup_complete">설정 완료</string>
@@ -60,8 +61,8 @@
   <string name="services_explanation" product="tablet">이 서비스는 태블릿의 기능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_explanation" product="default">이 서비스는 휴대전화의 기능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
   <string name="services_privacy_policy">개인 정보 보호 정책</string>
-  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g>의 개발 지원</string>
-  <string name="services_metrics_label">진단 및 사용 정보를 LineageOS에 보내 <xliff:g id="name" example="CyanogenMod 개선을 도와주십시오">%1$s</xliff:g>. 이 정보는 개인을 식별하는 데 사용할 수 없으며 배터리 수명, 앱 성능 개선과 새로운 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>의 기능을 추가하는 작업을 하는 팀에게 도움을 줍니다.</string>
+  <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> 개선을 도와주기</string>
+  <string name="services_metrics_label">진단 및 사용 정보를 LineageOS에 보내 <xliff:g id="name" example="LineageOS의 개선을 돕습니다">%1$s</xliff:g>. 이 정보로는 사용자를 식별할 수 없으며 배터리 수명, 앱 성능 개선과 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>에 새로운 기능을 추가하는 데 도움이 됩니다.</string>
   <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
   <string name="services_os_privacy_guard">새로 설치한 앱에서 연락처, 메시지 또는 통화 기록과 같은 개인 정보를 사용하지 못하도록 <b>프라이버시 가드 활성화</b></string>
   <string name="setup_unlock">잠금 해제</string>
@@ -78,6 +79,7 @@
   <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
   <string name="sim_locale_changed">%1$s SIM 인식됨</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">화면 잠금 방식 선택</string>
   <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
   <string name="lockscreen_setup_title">휴대전화 보호</string>
   <string name="lockscreen_setup_summary"><b>이 기기를 보호</b>하고 화면 잠금 해제용 PIN, 패턴 또는 비밀번호 요청</string>

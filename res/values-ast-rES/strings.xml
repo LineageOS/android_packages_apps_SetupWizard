@@ -50,7 +50,6 @@
   <string name="services_explanation" product="tablet">Esto servicios furrulen por ti pa estender les capacidaes de la to tableta. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
   <string name="services_explanation" product="default">Esto servicios furrulen por ti pa estender les capacidaes del to teléfonu. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
   <string name="services_privacy_policy">Política de privacidá</string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> unviando automáticamente diagnósticos y usu de datos a LineageOS. Esta información nun pue usase pa indentificate y écha-yos un gabitu a los equipos pa trabayar en coses como\'l consumu de batería, el rindimientu d\'aplicaciones, y les carauterístiques nueves de <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_os_privacy_guard"><b>Habilitar Guardián de privacidá</b> pa facer que los tos datos personales como contautos, mensaxes, rexistros de llamaes... etc, nun tean disponibles p\'aplicaciones que teas acabante d\'instalar</string>
   <string name="setup_unlock">Desbloquiar</string>
   <string name="setup_require_cyanogen_label"><b>Riquir la contraseña de la to cuenta</b> pa usar el to preséu incluso dempués de reafitalu.</string>

@@ -43,7 +43,7 @@
   <string name="date_time_summary">Встановіть часовий пояс і настройте поточну дату та час, якщо це необхідно</string>
   <string name="backup_data_summary"><b>Зберегти</b> дані додатків, Wi-Fi паролі та інші параметри на серверах Google</string>
   <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Ви маєте можливість вимкнути їх в будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-  <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизного розташування. Наприклад, додаток зможе шукати кав`ярні чи зупинки, що розташовані поруч, грунтуючись на отриманих даних.</string>
+  <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизного розташування. Наприклад, додаток зможе шукати кав\'ярні чи зупинки, що розташовані поруч, ґрунтуючись на отриманих даних.</string>
   <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
   <string name="location_battery_saving"><b>Зменшення споживання батареї</b> шляхом обмеження оновлення GPS за годину.</string>
   <string name="location_network"><b>Використовувати Wi-Fi</b> для визначення вашого місцезнаходження.</string>
@@ -61,8 +61,6 @@
   <string name="services_explanation" product="tablet">Ці послуги створено, щоб розширити можливості Вашого пристрою. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
   <string name="services_explanation" product="default">Ці послуги створено, щоб розширити можливості Вашого телефону. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
   <string name="services_privacy_policy">Політика Конфіденційності</string>
-  <string name="services_help_improve_cm">Допомогти поліпшити <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматично надсилаючи дані щодо використання та діагностики у LineageOS. Ця інформація не може бути використана для ідентифікації користувача, але дуже допоможе розробникам, що працюють над такими речами як життя батареї, продуктивність додатків і нові функції <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
   <string name="services_os_privacy_guard"><b>Увімкнути Вартового приватності</b> щоб зробити ваші особисті дані, такі як контакти, повідомлення або журнал викликів не доступними для застосунків, що будуть встановлені</string>

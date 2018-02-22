@@ -59,7 +59,6 @@
   <string name="emergency_call">Nödsamtal</string>
   <string name="setup_services">LineageOS funktioner</string>
   <string name="services_privacy_policy">Sekretesspolicy</string>
-  <string name="services_help_improve_cm">Hjälp till att förbättra <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
   <string name="services_os_nav_keys_label"><b>Använder styrtangenter på skärmen</b> i stället för fysiska knappar.</string>
   <string name="setup_unlock">Lås upp</string>
   <string name="setup_device_locked">Denna enhet har blivit låst av användaren.</string>
@@ -74,6 +73,7 @@
   <string name="fingerprint_setup_screen_lock_setup">Konfigurera skärmlås</string>
   <string name="sim_locale_changed">%1$s SIM upptäckt</string>
   <!-- secure lock screen -->
+  <string name="settings_lockscreen_setup_title">Välj skärmlåstyp</string>
   <string name="settings_lockscreen_setup_details">Hur vill du låsa din skärm?</string>
   <string name="lockscreen_setup_title">Skydda mobilen</string>
   <string name="lockscreen_setup_summary"><b>Skydda den här enheten</b> och kräv pinkod, mönster eller lösenord för att låsa upp skärmen</string>
