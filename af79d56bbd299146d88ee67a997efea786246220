@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f24ad8c6_f7da7ed9",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 16082
+      },
+      "writtenOn": "2018-02-28T14:19:24Z",
+      "side": 1,
+      "message": "Should go above v13",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 37
+      },
+      "revId": "af79d56bbd299146d88ee67a997efea786246220",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
