@@ -202,6 +202,10 @@ public class SetupWizardUtils {
                 Settings.Global.DEVICE_PROVISIONED, 1);
         Settings.Secure.putInt(contentResolver,
                 Settings.Secure.USER_SETUP_COMPLETE, 1);
+        if (hasLeanback(context)) {
+            Settings.Secure.putInt(contentResolver,
+                    Settings.Secure.TV_USER_SETUP_COMPLETE, 1);
+        }
 
         disableComponent(context, WizardManager.class);
         disableHome(context);
