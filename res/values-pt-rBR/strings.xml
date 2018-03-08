@@ -61,6 +61,8 @@
   <string name="services_explanation" product="tablet">Estes serviços servem para ampliar os recursos do seu tablet. Os dados serão utilizados conforme a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do LineageOS.</string>
   <string name="services_explanation" product="default">Estes serviços servem para ampliar os recursos do seu telefone. Os dados serão utilizados conforme a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do LineageOS.</string>
   <string name="services_privacy_policy">Política de Privacidade</string>
+  <string name="services_help_improve_cm">Ajude a melhorar o <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para a equipe do sistema. Esta informação não pode ser usada para identificá-lo e ajuda os desenvolvedores a melhorarem funções e serviços como a duração da bateria, o desempenho das aplicações e o desenvolvimento de novos recursos para o <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
   <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
   <string name="services_os_privacy_guard"><b>Ative a Proteção da Privacidade</b> para tornar dados pessoais como contatos, mensagens ou registro de chamadas indisponíveis para aplicativos recém-instalados</string>
   <string name="setup_unlock">Desbloquear</string>
