@@ -212,7 +212,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
             mProgressBar.startAnimation(
                     AnimationUtils.loadAnimation(this, R.anim.translucent_enter));
             mEnableDataRow.setEnabled(false);
-            setNextAllowed(false);
+            setNextAllowed(true);
             mHandler.postDelayed(mDataConnectionReadyRunnable, DC_READY_TIMEOUT);
         }
     }
