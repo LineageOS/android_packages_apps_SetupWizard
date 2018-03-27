@@ -62,7 +62,7 @@
   <string name="services_explanation" product="default">Te storitve vam omogočajo, da razširite zmogljivosti svojega telefona. Podatki se uporabijo v skladu z <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
   <string name="services_privacy_policy">Pravilnik o zasebnosti</string>
   <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe LineageOSa. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe LineageOS-a. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
   <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
   <string name="services_os_privacy_guard"><b>Omogočite Privacy guard</b>, da vaši osebni podatki, kot so stiki, sporočila ali dnevniki klicev ne bodo na voljo na novo nameščenim aplikacijam</string>
   <string name="setup_unlock">Odkleni</string>
@@ -82,6 +82,5 @@
   <string name="settings_lockscreen_setup_title">Izberite način zaklepanja zaslona</string>
   <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
   <string name="lockscreen_setup_title">Zaščitite vaš telefon</string>
-  <string name="lockscreen_setup_summary"><b>Zaščiti napravo</b> in za odklenitev zaslona zahtevaj kodo PIN, vzorec ali geslo</string>
   <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
 </resources>

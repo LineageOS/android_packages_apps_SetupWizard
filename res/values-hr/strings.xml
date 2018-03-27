@@ -27,6 +27,7 @@
   <string name="loading">Samo trenutak\u2026</string>
   <string name="setup_complete">Postavljanje je završeno.</string>
   <string name="setup_welcome">Dobro došli!</string>
+  <string name="setup_locale">Jezik</string>
   <string name="setup_wifi">Odaberite Wi-Fi</string>
   <string name="setup_sim_missing">Nema SIM kartice</string>
   <string name="setup_choose_data_sim">Odaberite SIM karticu za podatke</string>
@@ -56,11 +57,17 @@
   <string name="yes">Da</string>
   <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
   <string name="emergency_call">Hitan poziv</string>
+  <string name="setup_services">Značajke LineageOS-a</string>
+  <string name="services_explanation" product="tablet">Ove usluge rade za vas da povećaju mogućnosti vašeg tableta. Podatci će se upotrebljavati u suglasnosti s LineageOS-ovom <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+  <string name="services_explanation" product="default">Ove usluge rade za vas da povećaju mogućnosti vašeg telefona. Podatci će se upotrebljavati u suglasnosti s LineageOS-ovom <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
   <string name="services_privacy_policy">Pravila privatnosti</string>
   <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatskim slanjem dijagnostike i podataka o korištenju LineageOS-u. Ove se informacije ne mogu upotrebljavati kako bi vas identificirale i puno pomažu timovima koji rade na stvarima kao što su vijek baterije, izvedba aplikacija i nove <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> značajke.</string>
   <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
+  <string name="services_os_privacy_guard"><b>Omogućite Nadzor privatnosti</b> da biste učinili svoje osobne podatke poput kontakata, poruka ili zapisa poziva nedostupnima za novo instalirane aplikacije.</string>
   <string name="setup_unlock">Otključaj</string>
   <string name="setup_device_locked">Uređaj je zaključao korisnik.</string>
+  <string name="setup_require_cyanogen_label"><b>Zahtijeva lozinku vašeg računa</b>za korištenje vašim uređajem čak i nakon vraćanja na tvorničke postavke.</string>
   <string name="setup_device_locked_instructions"><i>Da bi isključili/uključili ovo, idite u Postavke &gt; Privatnost</i></string>
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Izaberite rezerni tip zaključavanja zaslona</string>
@@ -76,4 +83,5 @@
   <string name="settings_lockscreen_setup_details">Kako želite zaključati vaš zaslon?</string>
   <string name="lockscreen_setup_title">Zaštitite svoj telefon</string>
   <string name="lockscreen_setup_summary"><b>Zaštiti uređaj</b> i zahtijevaj PIN, uzorak ili zaporku za otključavanje zaslona</string>
+  <string name="lockscreen_setup_screen_lock_setup">Postavljanje</string>
 </resources>
