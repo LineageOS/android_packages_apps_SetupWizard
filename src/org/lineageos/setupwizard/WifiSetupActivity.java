@@ -38,7 +38,7 @@ public class WifiSetupActivity extends SubBaseActivity {
             intent.setComponent(SetupWizardUtils.mTvwifisettingsActivity);
         }
         intent.putExtra(SetupWizardApp.EXTRA_PREFS_SHOW_BUTTON_BAR, true);
-        intent.putExtra(SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT , false);
+        intent.putExtra(SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT, (String) null);
         startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
     }
 
