@@ -21,6 +21,8 @@
           android:versionCode="5"
           android:sharedUserId="android.uid.system">
 
+    <original-package android:name="com.cyanogenmod.setupwizard" />
+
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.STATUS_BAR" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
