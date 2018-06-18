@@ -309,6 +309,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             startSetupWizardExitActivity();
             setResult(RESULT_CANCELED, null);
             finishAllAppTasks();
+            SetupWizardUtils.disableComponent(this, WizardManager.class);
         }
     }
 
