@@ -28,6 +28,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.android.setupwizardlib.util.WizardManagerHelper;
+
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
@@ -45,6 +47,9 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
                 Log.v(TAG, "Has GMS disabling local wizard manager");
             }
             SetupWizardUtils.disableComponentsForGMS(this);
+            finish();
+        } else if (WizardManagerHelper.isUserSetupComplete(this)) {
+            SetupWizardUtils.finishSetupWizard(this);
             finish();
         } else {
             onSetupStart();
