@@ -64,7 +64,7 @@
   <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
   <string name="services_metrics_label"><xliff:g id="name" example="Помочь улучшить LineageOS">%1$s</xliff:g>, разрешив отправку диагностических данных в LineageOS. Эта не может быть использована для вашей идентификации и поможет в работе над повышением автономности, производительности и над новыми возможностями <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
   <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
-  <string name="services_os_privacy_guard"><b>Включить защищённый режим,</b> чтобы ограничить доступ новых приложений к вашим персональным данным — контактам, сообщениям или журналу вызовов.</string>
+  <string name="services_os_privacy_guard"><b>Включить защищенный режим,</b> чтобы ограничить доступ новых приложений к вашим персональным данным — контактам, сообщениям или журналу вызовов.</string>
   <string name="setup_unlock">Разблокировать</string>
   <string name="setup_device_locked">Устройство заблокировано пользователем.</string>
   <string name="setup_require_cyanogen_label"><b>Требовать пароль входа в аккаунт</b> для использования устройства даже после удаления всех данных.</string>
