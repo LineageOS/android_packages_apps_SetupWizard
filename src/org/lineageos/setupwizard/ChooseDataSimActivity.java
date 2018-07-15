@@ -67,24 +67,18 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
 
     private final Handler mHandler = new Handler();
 
-    private final Runnable mRadioReadyRunnable = new Runnable() {
-        @Override
-        public void run() {
-            // If we timeout out waiting for the radio, Oh well.
-            if (!mRadioReady) {
-                mRadioReady = true;
-                checkForRadioReady();
-            }
+    private final Runnable mRadioReadyRunnable = () -> {
+        // If we timeout out waiting for the radio, Oh well.
+        if (!mRadioReady) {
+            mRadioReady = true;
+            checkForRadioReady();
         }
     };
 
-    private View.OnClickListener mSetDataSimClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
-            if (subInfoRecord != null) {
-                changeDataSub(subInfoRecord);
-            }
+    private View.OnClickListener mSetDataSimClickListener = (view) -> {
+        SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
+        if (subInfoRecord != null) {
+            changeDataSub(subInfoRecord);
         }
     };
 
@@ -455,10 +449,12 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         if (serviceState != null) {
             if (LOGV) {
                 Log.v(TAG, "hasService{" +
-                        "serviceState.getVoiceRegState()='" + serviceState.getVoiceRegState() + '\'' +
-                        "serviceState.getVoiceRegState()='" + serviceState.getVoiceRegState() + '\'' +
-                        ", subInfoRecord.getSimSlotIndex() =" + subInfoRecord.getSimSlotIndex()  +
-                        '}');
+                        "serviceState.getVoiceRegState()='" + serviceState.getVoiceRegState()
+                        + '\''
+                        + "serviceState.getVoiceRegState()='" + serviceState.getVoiceRegState()
+                        + '\''
+                        + ", subInfoRecord.getSimSlotIndex() =" + subInfoRecord.getSimSlotIndex()
+                        + '}');
             }
             // Consider the device to be in service if either voice or data service is available.
             // Some SIM cards are marketed as data-only and do not support voice service, and on

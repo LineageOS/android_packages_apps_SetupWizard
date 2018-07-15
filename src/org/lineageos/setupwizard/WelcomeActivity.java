@@ -39,12 +39,9 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
         setBackDrawable(null);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
-        mRootView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                return mEnableAccessibilityController.onTouchEvent(event);
-            }
-        });
+        mRootView.setOnTouchListener((v, event) ->
+                mEnableAccessibilityController.onTouchEvent(event));
+
     }
 
     @Override

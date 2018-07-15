@@ -30,16 +30,12 @@ import android.os.Handler;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
-import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.NumberPicker;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.internal.telephony.MccTable;
 import com.android.internal.telephony.TelephonyIntents;
-import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.widget.LocalePicker;
@@ -151,11 +147,8 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         mLanguagePicker.setMaxValue(labels.length - 1);
         mLanguagePicker.setValue(currentLocaleIndex);
         mLanguagePicker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
-        mLanguagePicker.setOnValueChangedListener(new LocalePicker.OnValueChangeListener() {
-            public void onValueChange(LocalePicker picker, int oldVal, int newVal) {
-                setLocaleFromPicker();
-            }
-        });
+        mLanguagePicker.setOnValueChangedListener((pkr, oldVal, newVal) -> setLocaleFromPicker());
+
         mLanguagePicker.setOnScrollListener(new LocalePicker.OnScrollListener() {
             @Override
             public void onScrollStateChange(LocalePicker view, int scrollState) {
@@ -169,7 +162,8 @@ public class LocaleActivity extends BaseSetupWizardActivity {
     private void setLocaleFromPicker() {
         ((SetupWizardApp)getApplication()).setIgnoreSimLocale(true);
         int i = mAdapterIndices[mLanguagePicker.getValue()];
-        final com.android.internal.app.LocalePicker.LocaleInfo localLocaleInfo = mLocaleAdapter.getItem(i);
+        final com.android.internal.app.LocalePicker.LocaleInfo localLocaleInfo =
+                mLocaleAdapter.getItem(i);
         onLocaleChanged(localLocaleInfo.getLocale());
     }
 
