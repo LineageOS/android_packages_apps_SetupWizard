@@ -34,7 +34,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
-import android.widget.ImageView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -67,8 +66,6 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     private static final int HOURS_1 = 60 * 60000;
 
     private TimeZone mCurrentTimeZone;
-    private View mDateView;
-    private View mTimeView;
     private TextView mDateTextView;
     private TextView mTimeTextView;
 
@@ -90,68 +87,54 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         final Spinner spinner = (Spinner) findViewById(R.id.timezone_list);
         final SimpleAdapter adapter = constructTimezoneAdapter(this, false);
         mCurrentTimeZone = TimeZone.getDefault();
-        mDateView = findViewById(R.id.date_item);
-        mDateView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showDatePicker();
-            }
-        });
-        mTimeView = findViewById(R.id.time_item);
-        mTimeView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showTimePicker();
-            }
-        });
+        View dateView = findViewById(R.id.date_item);
+        dateView.setOnClickListener((view) -> showDatePicker());
+        View timeView = findViewById(R.id.time_item);
+        timeView.setOnClickListener((view) -> showTimePicker());
         mDateTextView = (TextView)findViewById(R.id.date_text);
         mTimeTextView = (TextView)findViewById(R.id.time_text);
         // Pre-select current/default timezone
-        mHandler.post(new Runnable() {
-            @Override
-            public void run() {
-                int tzIndex = getTimeZoneIndex(adapter, mCurrentTimeZone);
-                spinner.setAdapter(adapter);
-                if (tzIndex != -1) {
-                    spinner.setSelection(tzIndex);
-                }
-                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                    @Override
-                    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-                        final Map<?, ?> map = (Map<?, ?>) adapterView.getItemAtPosition(position);
-                        final String tzId = (String) map.get(KEY_ID);
-                        if (mCurrentTimeZone != null && !mCurrentTimeZone.getID().equals(tzId)) {
-                            // Update the system timezone value
-                            final AlarmManager alarm = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-                            alarm.setTimeZone(tzId);
-                            mCurrentTimeZone = TimeZone.getTimeZone(tzId);
-                        }
-
-                    }
-
-                    @Override
-                    public void onNothingSelected(AdapterView<?> adapterView) {
-                    }
-                });
+        mHandler.post(() -> {
+            int tzIndex = getTimeZoneIndex(adapter, mCurrentTimeZone);
+            spinner.setAdapter(adapter);
+            if (tzIndex != -1) {
+                spinner.setSelection(tzIndex);
             }
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int position,
+                                           long id) {
+                    final Map<?, ?> map = (Map<?, ?>) adapterView.getItemAtPosition(position);
+                    final String tzId = (String) map.get(KEY_ID);
+                    if (mCurrentTimeZone != null && !mCurrentTimeZone.getID().equals(tzId)) {
+                        // Update the system timezone value
+                        final AlarmManager alarm =
+                                (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+                        alarm.setTimeZone(tzId);
+                        mCurrentTimeZone = TimeZone.getTimeZone(tzId);
+                    }
+
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+                }
+            });
         });
         // Pre-select current/default date if epoch
-        mHandler.post(new Runnable() {
-            @Override
-            public void run() {
-                final Calendar calendar = Calendar.getInstance();
-                final boolean isEpoch = calendar.get(Calendar.YEAR) == 1970;
-                if (isEpoch) {
-                    // If epoch, set date to build date
-                    long timestamp = SetupWizardUtils.getBuildDateTimestamp();
-                    if (timestamp > 0) {
-                        calendar.setTimeInMillis(timestamp * 1000);
-                        setDate(DateTimeActivity.this, calendar.get(Calendar.YEAR),
-                                calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
-                    } else {
-                        // no build date available, use a sane default
-                        setDate(DateTimeActivity.this, 2017, Calendar.JANUARY, 1);
-                    }
+        mHandler.post(() -> {
+            final Calendar calendar = Calendar.getInstance();
+            final boolean isEpoch = calendar.get(Calendar.YEAR) == 1970;
+            if (isEpoch) {
+                // If epoch, set date to build date
+                long timestamp = SetupWizardUtils.getBuildDateTimestamp();
+                if (timestamp > 0) {
+                    calendar.setTimeInMillis(timestamp * 1000);
+                    setDate(DateTimeActivity.this, calendar.get(Calendar.YEAR),
+                            calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
+                } else {
+                    // no build date available, use a sane default
+                    setDate(DateTimeActivity.this, 2017, Calendar.JANUARY, 1);
                 }
             }
         });

@@ -38,12 +38,7 @@ public class FingerprintActivity extends SubBaseActivity {
     @Override
     protected void onStartSubactivity() {
         setNextAllowed(true);
-        findViewById(R.id.setup_fingerprint).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                launchFingerprintSetup();
-            }
-        });
+        findViewById(R.id.setup_fingerprint).setOnClickListener(view -> launchFingerprintSetup());
     }
 
     @Override

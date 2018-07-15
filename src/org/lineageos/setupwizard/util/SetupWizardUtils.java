@@ -51,7 +51,6 @@ import android.provider.Settings;
 import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
-import android.text.TextUtils;
 import android.util.Log;
 
 import org.lineageos.setupwizard.BluetoothSetupActivity;
@@ -67,8 +66,6 @@ import org.lineageos.internal.util.PackageManagerUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import lineageos.providers.LineageSettings;
 
 public class SetupWizardUtils {
 

@@ -30,7 +30,6 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 

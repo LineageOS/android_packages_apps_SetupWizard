@@ -38,7 +38,6 @@ import android.view.IWindowManager;
 import android.view.View;
 import android.view.WindowManagerGlobal;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.setupwizardlib.util.WizardManagerHelper;
@@ -56,40 +55,28 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
     private SetupWizardApp mSetupWizardApp;
 
-    private View mMetricsRow;
-    private View mNavKeysRow;
-    private View mPrivacyGuardRow;
     private CheckBox mMetrics;
     private CheckBox mNavKeys;
     private CheckBox mPrivacyGuard;
 
     private boolean mHideNavKeysRow = false;
 
-    private View.OnClickListener mMetricsClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            boolean checked = !mMetrics.isChecked();
-            mMetrics.setChecked(checked);
-            mSetupWizardApp.getSettingsBundle().putBoolean(KEY_SEND_METRICS, checked);
-        }
+    private View.OnClickListener mMetricsClickListener = view -> {
+        boolean checked = !mMetrics.isChecked();
+        mMetrics.setChecked(checked);
+        mSetupWizardApp.getSettingsBundle().putBoolean(KEY_SEND_METRICS, checked);
     };
 
-    private View.OnClickListener mNavKeysClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            boolean checked = !mNavKeys.isChecked();
-            mNavKeys.setChecked(checked);
-            mSetupWizardApp.getSettingsBundle().putBoolean(DISABLE_NAV_KEYS, checked);
-        }
+    private View.OnClickListener mNavKeysClickListener = view -> {
+        boolean checked = !mNavKeys.isChecked();
+        mNavKeys.setChecked(checked);
+        mSetupWizardApp.getSettingsBundle().putBoolean(DISABLE_NAV_KEYS, checked);
     };
 
-    private View.OnClickListener mPrivacyGuardClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            boolean checked = !mPrivacyGuard.isChecked();
-            mPrivacyGuard.setChecked(checked);
-            mSetupWizardApp.getSettingsBundle().putBoolean(KEY_PRIVACY_GUARD, checked);
-        }
+    private View.OnClickListener mPrivacyGuardClickListener = view -> {
+        boolean checked = !mPrivacyGuard.isChecked();
+        mPrivacyGuard.setChecked(checked);
+        mSetupWizardApp.getSettingsBundle().putBoolean(KEY_PRIVACY_GUARD, checked);
     };
 
     @Override
@@ -121,8 +108,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
         privacyPolicy.setText(ss);
 
-        mMetricsRow = findViewById(R.id.metrics);
-        mMetricsRow.setOnClickListener(mMetricsClickListener);
+        View metricsRow = findViewById(R.id.metrics);
+        metricsRow.setOnClickListener(mMetricsClickListener);
         String metricsHelpImproveLineage =
                 getString(R.string.services_help_improve_cm, getString(R.string.os_name));
         String metricsSummary = getString(R.string.services_metrics_label,
@@ -134,8 +121,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         metrics.setText(metricsSpan);
         mMetrics = (CheckBox) findViewById(R.id.enable_metrics_checkbox);
 
-        mNavKeysRow = findViewById(R.id.nav_keys);
-        mNavKeysRow.setOnClickListener(mNavKeysClickListener);
+        View navKeysRow = findViewById(R.id.nav_keys);
+        navKeysRow.setOnClickListener(mNavKeysClickListener);
         mNavKeys = (CheckBox) findViewById(R.id.nav_keys_checkbox);
         boolean needsNavBar = true;
         try {
@@ -145,14 +132,14 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         }
         mHideNavKeysRow = hideKeyDisabler(this);
         if (mHideNavKeysRow || needsNavBar) {
-            mNavKeysRow.setVisibility(View.GONE);
+            navKeysRow.setVisibility(View.GONE);
         } else {
             boolean navKeysDisabled = isKeyDisablerActive(this);
             mNavKeys.setChecked(navKeysDisabled);
         }
 
-        mPrivacyGuardRow = findViewById(R.id.privacy_guard);
-        mPrivacyGuardRow.setOnClickListener(mPrivacyGuardClickListener);
+        View privacyGuardRow = findViewById(R.id.privacy_guard);
+        privacyGuardRow.setOnClickListener(mPrivacyGuardClickListener);
         mPrivacyGuard = (CheckBox) findViewById(R.id.privacy_guard_checkbox);
         mPrivacyGuard.setChecked(LineageSettings.Secure.getInt(getContentResolver(),
                 LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);

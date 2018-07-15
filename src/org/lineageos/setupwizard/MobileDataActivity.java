@@ -28,7 +28,6 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -61,19 +60,9 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private final Handler mHandler = new Handler();
 
-    private final Runnable mRadioReadyRunnable = new Runnable() {
-        @Override
-        public void run() {
-            hideWaitForRadio();
-        }
-    };
+    private final Runnable mRadioReadyRunnable = this::hideWaitForRadio;
 
-    private final Runnable mDataConnectionReadyRunnable = new Runnable() {
-        @Override
-        public void run() {
-            onDataStateReady();
-        }
-    };
+    private final Runnable mDataConnectionReadyRunnable = this::onDataStateReady;
 
     private PhoneMonitor.SubscriptionStateListener mSubscriptionStateListener =
             new PhoneMonitor.SubscriptionStateListener() {
@@ -231,9 +220,9 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private void updateCarrierText() {
         if (mIsAttached) {
-            String name = mPhone.getSimOperatorName(SubscriptionManager.getDefaultSubscriptionId());
+            String name = mPhone.getSimOperatorName(getDefaultSubscriptionId());
             if (TextUtils.isEmpty(name)) {
-                name = mPhone.getNetworkOperatorName(SubscriptionManager.getDefaultSubscriptionId());
+                name = mPhone.getNetworkOperatorName(getDefaultSubscriptionId());
             }
             if (TextUtils.isEmpty(name)) {
                 if (mServiceState != null && mServiceState.isEmergencyOnly()) {
@@ -292,7 +281,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
         boolean retVal;
         if (mServiceState == null) {
             mServiceState  =  TelephonyManager.from(this)
-                    .getServiceStateForSubscriber(SubscriptionManager.getDefaultSubscriptionId());
+                    .getServiceStateForSubscriber(getDefaultSubscriptionId());
         }
         if (mServiceState != null) {
             // Consider the device to be in service if either voice or data service is available.
@@ -331,4 +320,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
         return R.drawable.ic_mobile_data;
     }
 
+    private int getDefaultSubscriptionId() {
+        return SubscriptionManager.getDefaultSubscriptionId();
+    }
 }

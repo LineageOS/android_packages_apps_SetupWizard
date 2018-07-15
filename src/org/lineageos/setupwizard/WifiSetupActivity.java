@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_WIFI;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_MATERIAL_LIGHT;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
 
 import android.content.Intent;
