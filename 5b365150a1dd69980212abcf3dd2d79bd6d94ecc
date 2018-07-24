@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "d8f6f060_34f67474",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2018-07-24T13:30:05Z",
+      "side": 1,
+      "message": "Anonymous classes? :P",
+      "range": {
+        "startLine": 11,
+        "startChar": 12,
+        "endLine": 11,
+        "endChar": 22
+      },
+      "revId": "5b365150a1dd69980212abcf3dd2d79bd6d94ecc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2a082e76_d1eb0c24",
         "filename": "src/org/lineageos/setupwizard/DateTimeActivity.java",
         "patchSetId": 1
