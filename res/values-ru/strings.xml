@@ -72,7 +72,7 @@
   <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">Выберите запасной режим блокировки экрана</string>
   <string name="settings_fingerprint_setup_details">Как следует блокировать экран?</string>
-  <string name="fingerprint_setup_title">Настройка сканера отпечатков пальцев</string>
+  <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
   <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
   <string name="fingerprint_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
   <string name="fingerprint_setup_add_fingerprint">Добавить ваши отпечатки</string>
