@@ -30,7 +30,7 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 include frameworks/opt/setupwizard/navigationbar/common.mk
-include frameworks/opt/setupwizard/library/common.mk
+include frameworks/opt/setupwizard/library/common-gingerbread.mk
 
 include $(BUILD_PACKAGE)
 
