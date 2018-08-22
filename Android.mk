@@ -20,8 +20,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v13 \
     android-support-v14-preference \
     libphonenumber \
-    org.lineageos.platform.internal \
-    org.lineageos.platform.sdk
+    org.lineageos.platform.internal
 
 LOCAL_JAVA_LIBRARIES := \
     telephony-common
