@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@ package org.lineageos.setupwizard;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -128,7 +129,8 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         Intent intent = new Intent(MODE_CHANGING_ACTION);
         intent.putExtra(CURRENT_MODE_KEY, mCurrentMode);
         intent.putExtra(NEW_MODE_KEY, mode);
-        sendBroadcast(intent, android.Manifest.permission.WRITE_SECURE_SETTINGS);
+        sendBroadcastAsUser(intent, new UserHandle(UserHandle.USER_CURRENT),
+                android.Manifest.permission.WRITE_SECURE_SETTINGS);
         Settings.Secure.putInt(mContentResolver, Settings.Secure.LOCATION_MODE, mode);
         refreshLocationMode();
     }
