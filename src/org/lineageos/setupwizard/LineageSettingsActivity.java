@@ -124,14 +124,14 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         View navKeysRow = findViewById(R.id.nav_keys);
         navKeysRow.setOnClickListener(mNavKeysClickListener);
         mNavKeys = (CheckBox) findViewById(R.id.nav_keys_checkbox);
-        boolean needsNavBar = true;
+        boolean hasNavBar = true;
         try {
             IWindowManager windowManager = WindowManagerGlobal.getWindowManagerService();
-            needsNavBar = windowManager.needsNavigationBar();
+            hasNavBar = windowManager.hasNavigationBar();
         } catch (RemoteException e) {
         }
         mHideNavKeysRow = hideKeyDisabler(this);
-        if (mHideNavKeysRow || needsNavBar) {
+        if (mHideNavKeysRow && hasNavBar) {
             navKeysRow.setVisibility(View.GONE);
         } else {
             boolean navKeysDisabled = isKeyDisablerActive(this);
