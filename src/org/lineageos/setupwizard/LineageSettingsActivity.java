@@ -27,6 +27,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.UserHandle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -190,8 +191,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     private void updateDisableNavkeysOption() {
         if (mSupportsKeyDisabler) {
             final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
-            boolean enabled = LineageSettings.Global.getInt(getContentResolver(),
-                    LineageSettings.Global.DEV_FORCE_SHOW_NAVBAR, 0) != 0;
+            boolean enabled = LineageSettings.System.getIntForUser(getContentResolver(),
+                    LineageSettings.System.FORCE_SHOW_NAVBAR, 0, UserHandle.USER_CURRENT) != 0;
             boolean checked = myPageBundle.containsKey(DISABLE_NAV_KEYS) ?
                     myPageBundle.getBoolean(DISABLE_NAV_KEYS) :
                     enabled;
