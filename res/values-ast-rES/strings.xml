@@ -17,37 +17,37 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Encontu pa la configuración</string>
-  <!-- Partner SUW Strings -->
-  <string name="next">Siguiente</string>
-  <string name="skip">Saltar</string>
-  <string name="start">Entamar</string>
-  <string name="done">Fecho</string>
-  <string name="ok">Aceutar</string>
-  <string name="loading">Un segundu\u2026</string>
-  <string name="setup_complete">Completóse la configuración</string>
-  <string name="setup_welcome">Afáyate</string>
-  <string name="setup_locale">Llingua</string>
-  <string name="setup_wifi">Esbilla de Wi-Fi</string>
-  <string name="setup_location">Servicios d\'allugamientu</string>
-  <string name="setup_other">Otros servicios</string>
-  <string name="setup_datetime">Data y hora</string>
-  <string name="setup_current_date">Data actual</string>
-  <string name="setup_current_time">Hora actual</string>
-  <string name="setup_mobile_data_no_service">Ensin serviciu</string>
-  <string name="setup_mobile_data_emergency_only">Namái llamaes d\'emerxencia</string>
-  <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? Activalos quiciabes puean tar suxetos a cargos de datos.</string>
-  <string name="no">Non</string>
-  <string name="yes">Sí</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Llamada d\'emerxencia</string>
-  <string name="setup_services">Carauterístiques de LineageOS</string>
-  <string name="services_explanation" product="tablet">Esto servicios furrulen por ti pa estender les capacidaes de la to tableta. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
-  <string name="services_explanation" product="default">Esto servicios furrulen por ti pa estender les capacidaes del to teléfonu. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
-  <string name="services_privacy_policy">Política de privacidá</string>
-  <string name="services_os_privacy_guard"><b>Habilitar Guardián de privacidá</b> pa facer que los tos datos personales como contautos, mensaxes, rexistros de llamaes... etc, nun tean disponibles p\'aplicaciones que teas acabante d\'instalar</string>
-  <string name="setup_require_cyanogen_label"><b>Riquir la contraseña de la to cuenta</b> pa usar el to preséu incluso dempués de reafitalu.</string>
-  <!-- Fingerprint setup -->
-  <!-- secure lock screen -->
-  <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="app_name">Encontu pa la configuración</string>
+    <!-- Partner SUW Strings -->
+    <string name="next">Siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Entamar</string>
+    <string name="done">Fecho</string>
+    <string name="ok">Aceutar</string>
+    <string name="loading">Un segundu\u2026</string>
+    <string name="setup_complete">Completóse la configuración</string>
+    <string name="setup_welcome">Afáyate</string>
+    <string name="setup_locale">Llingua</string>
+    <string name="setup_wifi">Esbilla de Wi-Fi</string>
+    <string name="setup_location">Servicios d\'allugamientu</string>
+    <string name="setup_other">Otros servicios</string>
+    <string name="setup_datetime">Data y hora</string>
+    <string name="setup_current_date">Data actual</string>
+    <string name="setup_current_time">Hora actual</string>
+    <string name="setup_mobile_data_no_service">Ensin serviciu</string>
+    <string name="setup_mobile_data_emergency_only">Namái llamaes d\'emerxencia</string>
+    <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? Activalos quiciabes puean tar suxetos a cargos de datos.</string>
+    <string name="no">Non</string>
+    <string name="yes">Sí</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Llamada d\'emerxencia</string>
+    <string name="setup_services">Carauterístiques de LineageOS</string>
+    <string name="services_explanation" product="tablet">Esto servicios furrulen por ti pa estender les capacidaes de la to tableta. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
+    <string name="services_explanation" product="default">Esto servicios furrulen por ti pa estender les capacidaes del to teléfonu. Los datos usaránse acordies cola <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
+    <string name="services_privacy_policy">Política de privacidá</string>
+    <string name="services_os_privacy_guard"><b>Habilitar Guardián de privacidá</b> pa facer que los tos datos personales como contautos, mensaxes, rexistros de llamaes... etc, nun tean disponibles p\'aplicaciones que teas acabante d\'instalar</string>
+    <string name="setup_require_cyanogen_label"><b>Riquir la contraseña de la to cuenta</b> pa usar el to preséu incluso dempués de reafitalu.</string>
+    <!-- Fingerprint setup -->
+    <!-- secure lock screen -->
+    <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
 </resources>
