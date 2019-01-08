@@ -45,8 +45,11 @@ import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.R;
 
-import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
+
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+
+import java.util.NoSuchElementException;
 
 public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
@@ -126,10 +129,7 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         navKeysRow.setOnClickListener(mNavKeysClickListener);
         mNavKeys = (CheckBox) findViewById(R.id.nav_keys_checkbox);
         mSupportsKeyDisabler = isKeyDisablerSupported(this);
-        if (mSupportsKeyDisabler) {
-            boolean navKeysDisabled = isKeyDisablerActive(this);
-            mNavKeys.setChecked(navKeysDisabled);
-        } else {
+        if (!mSupportsKeyDisabler) {
             navKeysRow.setVisibility(View.GONE);
         }
 
@@ -213,12 +213,11 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
-    }
-
-    private static boolean isKeyDisablerActive(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.get(LineageHardwareManager.FEATURE_KEY_DISABLE);
+        try {
+            IKeyDisabler keyDisabler = IKeyDisabler.getService(true /* retry */);
+            return true;
+        } catch (NoSuchElementException | RemoteException e) {
+            return false;
+        }
     }
 }
