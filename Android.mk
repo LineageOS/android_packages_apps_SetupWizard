@@ -26,6 +26,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     libphonenumber \
     org.lineageos.platform.internal
 
+LOCAL_STATIC_JAVA_LIBRARIES += \
+    vendor.lineage.touch-V1.0-java
+
 LOCAL_JAVA_LIBRARIES := \
     telephony-common
 

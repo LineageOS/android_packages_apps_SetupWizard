@@ -34,6 +34,7 @@ import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.RemoteException;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -42,10 +43,13 @@ import android.widget.ImageView;
 
 import com.android.setupwizardlib.util.WizardManagerHelper;
 
+import lineageos.providers.LineageSettings;
+
 import org.lineageos.setupwizard.util.EnableAccessibilityController;
 
-import lineageos.hardware.LineageHardwareManager;
-import lineageos.providers.LineageSettings;
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+
+import java.util.NoSuchElementException;
 
 public class FinishActivity extends BaseSetupWizardActivity {
 
@@ -213,8 +217,11 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
         LineageSettings.System.putIntForUser(context.getContentResolver(),
                 LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
-        LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        hardware.set(LineageHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        try {
+            IKeyDisabler keyDisabler = IKeyDisabler.getService(true /* retry */);
+            keyDisabler.setEnabled(enabled);
+        } catch (NoSuchElementException | RemoteException e) {
+        }
 
         /* Save/restore button timeouts to disable them in softkey mode */
         if (enabled) {
