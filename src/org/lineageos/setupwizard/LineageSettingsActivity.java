@@ -45,8 +45,11 @@ import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.R;
 
-import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
+
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+
+import java.util.NoSuchElementException;
 
 public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
@@ -213,7 +216,11 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+        try {
+            IKeyDisabler keyDisabler = IKeyDisabler.getService(true /* retry */);
+            return true;
+        } catch (NoSuchElementException | RemoteException e) {
+            return false;
+        }
     }
 }
