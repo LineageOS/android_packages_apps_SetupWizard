@@ -44,7 +44,8 @@ import com.android.setupwizardlib.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.EnableAccessibilityController;
 
-import lineageos.hardware.LineageHardwareManager;
+import vendor.lineage.touch.V1_0.IKeyDisabler;
+
 import lineageos.providers.LineageSettings;
 
 public class FinishActivity extends BaseSetupWizardActivity {
@@ -213,8 +214,11 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
         LineageSettings.System.putIntForUser(context.getContentResolver(),
                 LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
-        LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        hardware.set(LineageHardwareManager.FEATURE_KEY_DISABLE, enabled);
+        try {
+            IKeyDisabler keyDisabler = IKeyDisabler.getService(true /* retry */)
+            keyDisabler.setEnabled(enabled);
+        } catch (NoSuchElementException e) {
+        }
 
         /* Save/restore button timeouts to disable them in softkey mode */
         if (enabled) {
