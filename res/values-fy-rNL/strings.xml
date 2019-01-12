@@ -17,8 +17,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Partner SUW Strings -->
-  <string name="ok">OK</string>
-  <!-- Fingerprint setup -->
-  <!-- secure lock screen -->
+    <!-- Partner SUW Strings -->
+    <string name="ok">OK</string>
+    <!-- Fingerprint setup -->
+    <!-- secure lock screen -->
 </resources>

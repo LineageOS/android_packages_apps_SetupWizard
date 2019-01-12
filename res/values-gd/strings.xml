@@ -17,7 +17,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Partner SUW Strings -->
-  <!-- Fingerprint setup -->
-  <!-- secure lock screen -->
+    <!-- Partner SUW Strings -->
+    <string name="done">Deiseil</string>
+    <string name="no">Chan eil</string>
+    <string name="yes">Tha</string>
+    <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Cuidich gus piseach a thoirt air LineageOS">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu LineageOS gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="LineageOS">%2$s</xliff:g> ùra.</string>
+    <!-- Fingerprint setup -->
+    <!-- secure lock screen -->
+    <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
 </resources>
