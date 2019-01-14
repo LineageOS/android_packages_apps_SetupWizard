@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "51c51098_ac2cb852",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2019-01-14T23:15:21Z",
+      "side": 1,
+      "message": "This should go above org.lineageos, shouldn\u0027t it?",
+      "range": {
+        "startLine": 48,
+        "startChar": 7,
+        "endLine": 48,
+        "endChar": 16
+      },
+      "revId": "4519c67276fb8c7d543d675eb8d7a7adf106c032",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
