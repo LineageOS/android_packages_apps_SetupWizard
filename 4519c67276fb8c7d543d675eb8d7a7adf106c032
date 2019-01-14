@@ -22,6 +22,30 @@
       "revId": "4519c67276fb8c7d543d675eb8d7a7adf106c032",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe8e639b_14f99887",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-14T23:22:03Z",
+      "side": 1,
+      "message": "Hmmm, yea. Missed that.",
+      "parentUuid": "51c51098_ac2cb852",
+      "range": {
+        "startLine": 48,
+        "startChar": 7,
+        "endLine": 48,
+        "endChar": 16
+      },
+      "revId": "4519c67276fb8c7d543d675eb8d7a7adf106c032",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
