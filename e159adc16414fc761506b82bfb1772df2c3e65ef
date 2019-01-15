@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f4a34a6_e0a0864a",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-15T14:14:03Z",
+      "side": 0,
+      "message": "We should keep this. During SuW there\u0027s a checkbox for enabling/disabling KeyDisabler and we should take migrated user settings into account.\n\nmNavKeys.setcheked(LineageSettings.System.getIntForUser(getContentResolver(), LineageSettings.System.FORCE_SHOW_NAVBAR, 0, UserHandle.USER_CURRENT) !\u003d 0);",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 49
+      },
+      "revId": "e159adc16414fc761506b82bfb1772df2c3e65ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
