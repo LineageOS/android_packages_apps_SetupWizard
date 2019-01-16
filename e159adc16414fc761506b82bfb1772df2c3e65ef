@@ -22,6 +22,30 @@
       "revId": "e159adc16414fc761506b82bfb1772df2c3e65ef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d3ebb3c8_6f4215f9",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-01-16T21:38:42Z",
+      "side": 0,
+      "message": "Yes I wanted to say that. It is also broken and always resets to disabled on version upgrades, at least what I saw while going 14.1 -\u003e 15.1 and 15.1 -\u003e 16.0",
+      "parentUuid": "0f4a34a6_e0a0864a",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 49
+      },
+      "revId": "e159adc16414fc761506b82bfb1772df2c3e65ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
