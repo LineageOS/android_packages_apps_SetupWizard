@@ -46,6 +46,30 @@
       "revId": "e159adc16414fc761506b82bfb1772df2c3e65ef",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0c5f5940_f8c176c2",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-18T10:01:08Z",
+      "side": 0,
+      "message": "I think that the code snippet that I shared above addresses that issue once and for all. I\u0027ll put it in a separate change so that it can be shipped before the hidl conversion  goes in.",
+      "parentUuid": "d3ebb3c8_6f4215f9",
+      "range": {
+        "startLine": 131,
+        "startChar": 12,
+        "endLine": 131,
+        "endChar": 49
+      },
+      "revId": "e159adc16414fc761506b82bfb1772df2c3e65ef",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
