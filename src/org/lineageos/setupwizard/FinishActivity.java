@@ -210,8 +210,14 @@ public class FinishActivity extends BaseSetupWizardActivity {
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
 
-        LineageSettings.System.putIntForUser(context.getContentResolver(),
-                LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0, UserHandle.USER_CURRENT);
+        final boolean virtualKeysEnabled = LineageSettings.System.getIntForUser(
+                    context.getContentResolver(), LineageSettings.System.FORCE_SHOW_NAVBAR, 0,
+                    UserHandle.USER_CURRENT) != 0;
+        if (enabled != virtualKeysEnabled) {
+            LineageSettings.System.putIntForUser(context.getContentResolver(),
+                    LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+        }
 
         /* Save/restore button timeouts to disable them in softkey mode */
         if (enabled) {
