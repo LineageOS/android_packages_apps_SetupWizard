@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "793e1418_54244daf",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-18T12:07:21Z",
+      "side": 1,
+      "message": "Isn\u0027t this (and the code being replaced) actually redundant, if you already store the setting to LineageSettings.System.FORCE_SHOW_NAVBAR (lines 218-219). Or is it because it\u0027s a special usecase while SetupWizard is being executed?",
+      "range": {
+        "startLine": 220,
+        "startChar": 0,
+        "endLine": 224,
+        "endChar": 9
+      },
+      "revId": "b35f9520079da0cc35d2c70ad6ecd65bd24a73bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
