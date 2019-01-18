@@ -46,6 +46,30 @@
       "revId": "b35f9520079da0cc35d2c70ad6ecd65bd24a73bf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d98f146e_62d55600",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-18T14:15:07Z",
+      "side": 1,
+      "message": "Yea. For reference: https://github.com/LineageOS/android_frameworks_base/commit/271eae234fc1b37f6662776648036eebebcb76f9#diff-382679ddfe1aaefdd0a1e57b13ee83a3R2539",
+      "parentUuid": "dbcd6046_733d793c",
+      "range": {
+        "startLine": 220,
+        "startChar": 0,
+        "endLine": 224,
+        "endChar": 9
+      },
+      "revId": "b35f9520079da0cc35d2c70ad6ecd65bd24a73bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
