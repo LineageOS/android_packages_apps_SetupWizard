@@ -22,6 +22,30 @@
       "revId": "b35f9520079da0cc35d2c70ad6ecd65bd24a73bf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dbcd6046_733d793c",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-01-18T13:30:22Z",
+      "side": 1,
+      "message": "You\u0027re right, it should be indeed already handled",
+      "parentUuid": "793e1418_54244daf",
+      "range": {
+        "startLine": 220,
+        "startChar": 0,
+        "endLine": 224,
+        "endChar": 9
+      },
+      "revId": "b35f9520079da0cc35d2c70ad6ecd65bd24a73bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
