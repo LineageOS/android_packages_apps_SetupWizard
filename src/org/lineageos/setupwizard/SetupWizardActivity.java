@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017,2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,17 +43,14 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
         if (SetupWizardUtils.hasGMS(this)) {
-            if (LOGV) {
-                Log.v(TAG, "Has GMS disabling local wizard manager");
-            }
-            SetupWizardUtils.disableComponentsForGMS(this);
+            SetupWizardUtils.disableHome(this);
             finish();
         } else if (WizardManagerHelper.isUserSetupComplete(this)) {
             SetupWizardUtils.finishSetupWizard(this);
             finish();
         } else {
             onSetupStart();
-            SetupWizardUtils.resetComponent(this, WizardManager.class);
+            SetupWizardUtils.enableComponent(this, WizardManager.class);
             Intent intent = new Intent(ACTION_LOAD);
             if (isPrimaryUser()) {
                 intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));

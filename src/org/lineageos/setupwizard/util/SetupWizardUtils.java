@@ -263,11 +263,6 @@ public class SetupWizardUtils {
         }
     }
 
-    public static void disableComponentsForGMS(Context context) {
-        disableComponent(context, WizardManager.class);
-        disableHome(context);
-    }
-
     public static void disableHome(Context context) {
         ComponentName homeComponent = getHomeComponent(context);
         if (homeComponent != null) {
