@@ -72,7 +72,7 @@ public class SetupWizardUtils {
     private static final String TAG = SetupWizardUtils.class.getSimpleName();
 
     private static final String GMS_PACKAGE = "com.google.android.gms";
-    private static final String GMS_SUW_PACKAGE = "com.google.android.setupwizard";
+    private static final String GMS_SUW_PACKAGE = "com.google.android.gms.setup";
 
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
 
