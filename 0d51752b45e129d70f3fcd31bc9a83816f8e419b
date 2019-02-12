@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e4f01925_5e1e39f0",
+        "filename": "src/org/lineageos/setupwizard/SetupWizardActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-12T10:07:54Z",
+      "side": 1,
+      "message": "shouldn\u0027t this stop the else block execution?",
+      "range": {
+        "startLine": 45,
+        "startChar": 12,
+        "endLine": 45,
+        "endChar": 41
+      },
+      "revId": "0d51752b45e129d70f3fcd31bc9a83816f8e419b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
