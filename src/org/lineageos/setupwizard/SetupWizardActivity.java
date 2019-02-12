@@ -53,7 +53,7 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             finish();
         } else {
             onSetupStart();
-            SetupWizardUtils.resetComponent(this, WizardManager.class);
+            SetupWizardUtils.enableComponent(this, WizardManager.class);
             Intent intent = new Intent(ACTION_LOAD);
             if (isPrimaryUser()) {
                 intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));

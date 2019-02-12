@@ -63,6 +63,7 @@
         <activity android:theme="@style/NoDisplay"
                   android:label="@string/activity_label_empty"
                   android:name=".wizardmanager.WizardManager"
+                  android:enabled="false"
                   android:exported="false"
                   android:excludeFromRecents="true"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
