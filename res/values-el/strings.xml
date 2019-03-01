@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Οδηγός εγκατάστασης</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Επόμενο</string>
     <string name="skip">Παράλειψη</string>
     <string name="start">Έναρξη</string>
@@ -69,7 +68,6 @@
     <string name="setup_device_locked">Αυτή η συσκευή έχει κλειδωθεί από το χρήστη.</string>
     <string name="setup_require_cyanogen_label"><b>Απαίτηση του κωδικού πρόσβασης του λογαριασμού σας</b> για να χρησιμοποιήσετε τη συσκευή σας, ακόμα και μετά από επαναφορά εργοστασιακών ρυθμίσεων.</string>
     <string name="setup_device_locked_instructions"><i>Για να ενεργοποιήσετε/απενεργοποιήσετε αυτή τη λειτουργία, παρακαλώ πηγαίνετε στις Ρυθμίσεις &gt; Ασφάλεια</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
     <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
     <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
     <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
     <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
     <string name="settings_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
     <string name="lockscreen_setup_title">Προστατέψτε το τηλέφωνό σας</string>

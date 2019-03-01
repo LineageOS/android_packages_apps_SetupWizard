@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Průvodce instalací</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Další</string>
     <string name="skip">Přeskočit</string>
     <string name="start">Spustit</string>
@@ -64,12 +63,11 @@
     <string name="services_help_improve_cm">Pomozte vylepšit <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání do LineageOS. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností pro <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
-    <string name="services_os_privacy_guard"><b>Povolit Ochranu soukromí</b> aby vaše osobní údaje například kontakty, zprávy nebo záznamy hovorů nebyli dostupné pro nově instalované aplikace</string>
+    <string name="services_os_privacy_guard"><b>Povolit Ochranu soukromí</b>, aby vaše osobní údaje (například kontakty, zprávy nebo záznamy hovorů) nebyly dostupné pro nově instalované aplikace</string>
     <string name="setup_unlock">Odemknout</string>
     <string name="setup_device_locked">Toto zařízení bylo uzamčeno uživatelem.</string>
     <string name="setup_require_cyanogen_label">Po obnovení továrního nastavení bude <b>vyžadováno heslo k Vašemu účtu</b>.</string>
     <string name="setup_device_locked_instructions"><i>Pro zapnutí/vypnutí této funkce, přejděte do nastavení &gt; Zabezpečení</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Vyberte záložní typ zámku obrazovky</string>
     <string name="settings_fingerprint_setup_details">Jak chcete zamykat obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
     <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
     <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
     <string name="settings_lockscreen_setup_details">Jak chcete zamykat obrazovku?</string>
     <string name="lockscreen_setup_title">Chraňte svůj telefon</string>

@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">ಸೆಟಪ್ ವಿಝಾರ್ಡ್</string>
-    <!-- Partner SUW Strings -->
     <string name="next">ಮುಂದೆ</string>
     <string name="skip">ಸ್ಕಿಪ್</string>
     <string name="start">ಪ್ರಾರಂಭಿಸಿ</string>
@@ -60,7 +59,6 @@
     <string name="setup_unlock">ಅನ್‍ಲಾಕ್</string>
     <string name="setup_device_locked">ಸಾಧನವನ್ನು ಬಳಕೆದಾರನು ಲಾಕ್ ಮಾಡಿದ್ದಾರೆ.</string>
     <string name="setup_device_locked_instructions"><i>ಈ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಆಫ್/ಆನ್ ಮಾಡಲು. ದಯವಿಟ್ಟು ಸೆಟ್ಟಿಂಗ್ಸ್ &gt;: ಭದ್ರತೆಗೆ ಹೋಗಿ</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">ಬ್ಯಾಕಪ್ ಪರದೆ ಲಾಕ್ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="settings_fingerprint_setup_details">ನಿಮ್ಮ ಪರದೆಯನ್ನು ನೀವು ಹೇಗೆ ಲಾಕ್ ಮಾಡಲು ಬಯಸುವಿರಿ?</string>
     <string name="fingerprint_setup_title">ಫಿಂಗರ್‍ಪ್ರಿಂಟ್ ಸೆಟಪ್</string>
@@ -69,7 +67,6 @@
     <string name="fingerprint_setup_add_fingerprint">ನಿಮ್ಮ ಫಿಂಗರ್‍ಪ್ರಿಂಟನ್ನು ಸೇರಿಸಿ</string>
     <string name="fingerprint_setup_screen_lock_setup">ಪರದೆ ಲಾಕ್ ಸೆಟಪ್ ಮಾಡಿ</string>
     <string name="sim_locale_changed">%1$s SIM ಗುರುತಿಸಲ್ಪಟ್ಟಿದೆ</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">ನಿಮ್ಮ ಪರದೆಯನ್ನು ನೀವು ಹೇಗೆ ಲಾಕ್ ಮಾಡಲು ಬಯಸುವಿರಿ?</string>
     <string name="lockscreen_setup_title">ನಿಮ್ಮ ಫೋನನ್ನು ರಕ್ಷಿಸಿ</string>
     <string name="lockscreen_setup_summary"><b>ಸಾಧನ ರಕ್ಷಿಸಿ</b>. ಸ್ಕ್ರೀನ್‌ ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಪಿನ್, ಪ್ಯಾಟರ್ನ್, ಪಾಸ್‌ವರ್ಡ್ ಬೇಕಾಗುತ್ತದೆ</string>

@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Čarovnik za namestitev</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Naprej</string>
     <string name="skip">Preskoči</string>
     <string name="start">Začni</string>
@@ -69,7 +68,6 @@
     <string name="setup_device_locked">To napravo je zaklenil uporabnik.</string>
     <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>
     <string name="setup_device_locked_instructions"><i>Za vklop/izklop te značilnosti pojdite v Nastavitve &gt; Varnost</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Izberite nadomestni način zaklepanja zaslona</string>
     <string name="settings_fingerprint_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="fingerprint_setup_title">Nastavitev prstnega odtisa</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">Dodajte vaš prstni odtis</string>
     <string name="fingerprint_setup_screen_lock_setup">Nastavitev zaklepanja zaslona</string>
     <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Izberite način zaklepanja zaslona</string>
     <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="lockscreen_setup_title">Zaščitite vaš telefon</string>

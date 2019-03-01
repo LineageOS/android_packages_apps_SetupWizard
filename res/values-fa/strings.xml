@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">راهنمای راه‌اندازی</string>
-    <!-- Partner SUW Strings -->
     <string name="next">مرحله بعد</string>
     <string name="skip">رد شدن</string>
     <string name="start">شروع</string>
@@ -56,7 +55,6 @@
     <string name="setup_unlock">باز کردن</string>
     <string name="setup_device_locked">این دستگاه توسط کاربر قفل شده است.</string>
     <string name="setup_device_locked_instructions"><i>برای خاموش/روشن کردن این ویژگی، لطفا به تنظیمات &gt; امنیت بروید</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">انتخاب قفل پشتیبان صفحه</string>
     <string name="settings_fingerprint_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
     <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
@@ -64,6 +62,5 @@
     <string name="fingerprint_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
     <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
     <string name="fingerprint_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
 </resources>

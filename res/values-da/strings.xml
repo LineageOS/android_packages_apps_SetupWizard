@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Installationsguide</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Næste</string>
     <string name="skip">Spring over</string>
     <string name="start">Start</string>
@@ -67,7 +66,6 @@
     <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
     <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
     <string name="setup_device_locked_instructions"><i>For at slå denne funktion til/fra, skal du gå til Indstillinger &gt; Sikkerhed</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Vælg alternativ skærmlåstype</string>
     <string name="settings_fingerprint_setup_details">Hvordan vil du gerne låse din skærm?</string>
     <string name="fingerprint_setup_title">Konfigurerring af fingeraftryk</string>
@@ -76,7 +74,6 @@
     <string name="fingerprint_setup_add_fingerprint">Tilføje dit fingeraftryk</string>
     <string name="fingerprint_setup_screen_lock_setup">Konfigurere skærmlås</string>
     <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du gerne låse din skærm?</string>
     <string name="lockscreen_setup_title">Beskyt din telefon</string>
