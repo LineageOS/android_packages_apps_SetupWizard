@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">ୱି୍ଜାର୍ଡ ସେଟଅପ୍‍ କରନ୍ତୁ</string>
-  <!-- Partner SUW Strings -->
   <string name="next">ପରବର୍ତ୍ତୀ</string>
   <string name="skip">ସ୍କିପ୍</string>
   <string name="start">ଆରମ୍ଭ</string>
@@ -61,7 +60,6 @@
   <string name="setup_unlock">ଅନଲକ୍</string>
   <string name="setup_device_locked">ଏହି ଡିଭାଇସ୍‍ ଉପଭୋକ୍ତାଙ୍କ ଦ୍ୱାରା ଲକ୍‍ ହୋଇଛି।</string>
   <string name="setup_device_locked_instructions"><i>ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଫ୍‍/ଅନ୍‍ କରିବା ପାଇଁ, ଦୟାକରି ସେଟିଂସ୍‍&gt;ସୁର‍କ୍ଷାକୁ ଯାଆନ୍ତୁ</i></string>
-  <!-- Fingerprint setup -->
   <string name="settings_fingerprint_setup_title">ବ୍ୟାକ୍‍ଅପ୍‍ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ ପ୍ରକାର ଚୟନ କରନ୍ତୁ</string>
   <string name="settings_fingerprint_setup_details">ଆପଣ କିପରି ଆପଣଙ୍କ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ କରିବାକୁ ଚାହିଁବେ?</string>
   <string name="fingerprint_setup_title">ଫିଙ୍ଗର୍‍ପ୍ରିଣ୍ଟ ସେଟ୍‍ଅପ୍‍</string>
@@ -70,6 +68,5 @@
   <string name="fingerprint_setup_add_fingerprint">ଆପଣଙ୍କ ଫିଙ୍ଗର୍‍ପ୍ରିଣ୍ଟ ଯୋଗ କରନ୍ତୁ</string>
   <string name="fingerprint_setup_screen_lock_setup">ସ୍କ୍ରିନ୍‍ ଲକ୍‍ ସେଟ୍‍ଅପ୍‍ କରନ୍ତୁ</string>
   <string name="sim_locale_changed">%1$s SIM ସନ୍ଧାନ କରାଯାଇଛି</string>
-  <!-- secure lock screen -->
   <string name="settings_lockscreen_setup_details">ଆପଣ କିପରି ଆପଣଙ୍କ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ କରିବାକୁ ଚାହିଁବେ?</string>
 </resources>
