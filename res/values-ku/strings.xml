@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">دامەزراندنی گەزەک</string>
-    <!-- Partner SUW Strings -->
     <string name="next">دواتر</string>
     <string name="skip">تێپەڕاندن</string>
     <string name="start">دەستپێکردن</string>
@@ -49,6 +48,4 @@
     <string name="emergency_call">تەلەفۆنی فریاگوزاری</string>
     <string name="services_privacy_policy">یاسای تایبەتی</string>
     <string name="setup_unlock">کردنەوە</string>
-    <!-- Fingerprint setup -->
-    <!-- secure lock screen -->
 </resources>

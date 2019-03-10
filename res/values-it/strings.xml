@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Installazione guidata</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Avanti</string>
     <string name="skip">Salta</string>
     <string name="start">Inizia</string>
@@ -69,7 +68,6 @@
     <string name="setup_device_locked">Questo dispositivo è stato bloccato dall\'utente.</string>
     <string name="setup_require_cyanogen_label"><b>È necessaria la password del tuo account</b> al fine di utilizzare il dispositivo anche dopo il ripristino di fabbrica.</string>
     <string name="setup_device_locked_instructions"><i>Per attivare e disattivare questa funzione, vai in Impostazioni &gt; Sicurezza</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Seleziona la schermata di sicurezza di riserva</string>
     <string name="settings_fingerprint_setup_details">Come vuoi bloccare lo schermo?</string>
     <string name="fingerprint_setup_title">Setup impronte digitali</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">Aggiungere un\'impronta</string>
     <string name="fingerprint_setup_screen_lock_setup">Imposta un blocco schermo</string>
     <string name="sim_locale_changed">%1$s SIM rilevata</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Seleziona il tipo di blocco schermo</string>
     <string name="settings_lockscreen_setup_details">Come vuoi bloccare lo schermo?</string>
     <string name="lockscreen_setup_title">Proteggi il tuo telefono</string>

@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">معالج الإعداد</string>
-    <!-- Partner SUW Strings -->
     <string name="next">التالي</string>
     <string name="skip">تخطي</string>
     <string name="start">البداية</string>
@@ -69,7 +68,6 @@
     <string name="setup_device_locked">هذا الجهاز تم قفله من قبل المستخدم.</string>
     <string name="setup_require_cyanogen_label"><b>يتطلب كلمة مرور حسابك</b> حتى تتمكن من استخدام الجهاز حتى بعد إعادة تعيين المصنع.</string>
     <string name="setup_device_locked_instructions"><i>من أجل تشغيل/تعطيل هذه الميزة، الرجاء إذهب إلى إعدادات &gt; الأمان</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">حدد نوعاً احتياطياً لشاشة القفل</string>
     <string name="settings_fingerprint_setup_details">كيف تريد إقفال الشاشة؟</string>
     <string name="fingerprint_setup_title">إنشاء بصمة الإصبع</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
     <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
     <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">حدد نوع شاشة القفل</string>
     <string name="settings_lockscreen_setup_details">كيف تريد إقفال الشاشة؟</string>
     <string name="lockscreen_setup_title">حماية هاتفك</string>

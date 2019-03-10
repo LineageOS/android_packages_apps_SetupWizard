@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">เปิดใช้ครั้งแรก</string>
-    <!-- Partner SUW Strings -->
     <string name="next">ถัดไป</string>
     <string name="skip">ข้าม</string>
     <string name="start">เริ่มต้น</string>
@@ -60,7 +59,6 @@
     <string name="setup_unlock">ปลดล็อค</string>
     <string name="setup_device_locked">อุปกรณ์นี้ถูกล็อคโดยผู้ใช้</string>
     <string name="setup_device_locked_instructions"><i>เพื่อปิด/เปิดคุณสมบัตินี้ กรุณาไปที่ การตั้งค่า &gt; ความปลอดภัย</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">เลือกประเภทการล็อคหน้าจอสำรอง</string>
     <string name="settings_fingerprint_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
     <string name="fingerprint_setup_title">การตั้งค่าลายนิ้วมือ</string>
@@ -69,7 +67,6 @@
     <string name="fingerprint_setup_add_fingerprint">เพิ่มลายนิ้วมือของคุณ</string>
     <string name="fingerprint_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
     <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
     <string name="lockscreen_setup_title">ปกป้องโทรศัพท์ของคุณ</string>
     <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>

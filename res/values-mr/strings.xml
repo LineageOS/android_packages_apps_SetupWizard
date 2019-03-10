@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">सेटअप विझार्ड</string>
-    <!-- Partner SUW Strings -->
     <string name="next">पुढील</string>
     <string name="skip">वगळा</string>
     <string name="start">प्रारंभ करा</string>
@@ -60,7 +59,6 @@
     <string name="setup_unlock">अनलॉक करा</string>
     <string name="setup_device_locked">हे डिव्हाइस वापरकर्त्याने लॉक केले आहे.</string>
     <string name="setup_device_locked_instructions"><i>हे वैशिष्ट्य बंद/चालू करण्यासाठी, कृपया सेटिंग्ज &gt; सुरक्षा कडे जा</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">बॅकअप स्क्रीन लॉक टाईप निवडा</string>
     <string name="settings_fingerprint_setup_details">तुम्हाला तुमचा स्क्रीन कसा लॉक करायला आवडेल?</string>
     <string name="fingerprint_setup_title">बोटाचा ठसा सेटअप</string>
@@ -69,7 +67,6 @@
     <string name="fingerprint_setup_add_fingerprint">तुमचा बोटाचा ठसा जोडा</string>
     <string name="fingerprint_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करा</string>
     <string name="sim_locale_changed">%1$s सिम आढळले</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">तुम्हाला तुमचा स्क्रीन कसा लॉक करायला आवडेल?</string>
     <string name="lockscreen_setup_title">आपला फोन संरक्षित करा</string>
     <string name="lockscreen_setup_summary"><b>हे डिव्हाइस संरक्षित करा</b> आणि स्क्रीन अनलॉक करण्यासाठी पिन, नमुना किंवा संकेतशब्द आवश्यक आहे</string>

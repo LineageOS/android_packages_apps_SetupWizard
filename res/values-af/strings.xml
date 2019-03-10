@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Opstel Ghoeroe</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Volgende</string>
     <string name="skip">Slaan oor</string>
     <string name="start">Begin</string>
@@ -67,7 +66,6 @@
     <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
     <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
     <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Kies nog \'n skerm sluit tipe</string>
     <string name="settings_fingerprint_setup_details">Hoe wil jy jou skerm sluit?</string>
     <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>
@@ -76,7 +74,6 @@
     <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
     <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
     <string name="sim_locale_changed">%1$s SIM opgespoor</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>
     <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
     <string name="lockscreen_setup_title">Beskerm jou foon</string>

@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Asistente de configuración</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Seguinte</string>
     <string name="skip">Omitir</string>
     <string name="start">Comezar</string>
@@ -69,7 +68,6 @@
     <string name="setup_device_locked">Este dispositivo foi bloqueado polo usuario.</string>
     <string name="setup_require_cyanogen_label"><b>Precísase o seu contrasinal</b> para poder utilizar o seu dispositivo mesmo tras unha restauración de fábrica.</string>
     <string name="setup_device_locked_instructions"><i>Para acender ou apagar esta funcionalidade, vaia a Configuración &gt; Seguranza</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Seleccione o tipo de copia de seguranza de pantalla de bloqueo</string>
     <string name="settings_fingerprint_setup_details">Como quere bloquear a súa pantalla?</string>
     <string name="fingerprint_setup_title">Configuración da pegada dactilar</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">Engadir a súa pegada dactilar</string>
     <string name="fingerprint_setup_screen_lock_setup">Configurar o bloqueo da pantalla</string>
     <string name="sim_locale_changed">%1$s SIM detectado</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Seleccionar o tipo de bloqueo da pantalla</string>
     <string name="settings_lockscreen_setup_details">Como quere bloquear a súa pantalla?</string>
     <string name="lockscreen_setup_title">Protexe o teu móbil</string>

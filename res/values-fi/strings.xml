@@ -18,7 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Ohjattu asennus</string>
-    <!-- Partner SUW Strings -->
     <string name="next">Seuraava</string>
     <string name="skip">Ohita</string>
     <string name="start">Aloita</string>
@@ -69,7 +68,6 @@
     <string name="setup_device_locked">Käyttäjä on lukinnut laitteen.</string>
     <string name="setup_require_cyanogen_label"><b>Vaadi tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>
     <string name="setup_device_locked_instructions"><i>Poistaaksesi tämän ominaisuuden käytöstä/ottaaksesi käyttöön, mene Asetukset &gt; Suojaus</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Valitse toinen näytön lukitustapa</string>
     <string name="settings_fingerprint_setup_details">Miten haluat lukita näyttösi?</string>
     <string name="fingerprint_setup_title">Sormenjäljen asetus</string>
@@ -78,7 +76,6 @@
     <string name="fingerprint_setup_add_fingerprint">Lisää sormenjälkesi</string>
     <string name="fingerprint_setup_screen_lock_setup">Aseta näytön lukitus</string>
     <string name="sim_locale_changed">%1$s SIM tunnistettu</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Valitse näytön lukitustapa</string>
     <string name="settings_lockscreen_setup_details">Miten haluat lukita näyttösi?</string>
     <string name="lockscreen_setup_title">Suojaa puhelintasi</string>
