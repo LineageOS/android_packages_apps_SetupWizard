@@ -50,6 +50,9 @@
         android:name="lineageos.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem" />
 
+    <protected-broadcast android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE"
+                         android:permission="lineageos.permission.FINISH_SETUP"/>
+
     <protected-broadcast android:name="org.lineageos.setupwizard.SETUP_FINISHED"
                          android:permission="lineageos.permission.FINISH_SETUP"/>
 
