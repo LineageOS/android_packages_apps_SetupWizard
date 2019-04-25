@@ -2,7 +2,7 @@
 
 <!--
     Copyright (c) 2014 Google Inc.
-    Copyright (C) 2017 The LineageOS Project
+    Copyright (C) 2017,2019 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -49,22 +49,10 @@
         <result wizard:action="flow_choice" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.FLOW_CHOICE;end" id="flow_choice">
-        <result wizard:resultCode="-1" wizard:action="restore_choice" wizard:name="ok" />
         <result wizard:resultCode="1" wizard:action="setup_as_new_flow" wizard:name="skip" />
-        <result wizard:action="restore_with_account_flow" />
+        <result wizard:action="restore_flow" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.RESTORE_CHOICE;end" id="restore_choice">
-        <result wizard:resultCode="101" wizard:action="restore_with_device_flow" wizard:name="d2d" />
-        <result wizard:resultCode="102" wizard:action="restore_with_ios_flow" wizard:name="ios_restore" />
-        <result wizard:action="restore_with_account_flow" />
-    </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_restore_with_account_flow" id="restore_with_account_flow">
-        <result wizard:action="oem_post_setup" />
-    </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_restore_with_device_flow" id="restore_with_device_flow">
-        <result wizard:action="oem_post_setup" />
-    </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_restore_with_ios_flow" id="restore_with_ios_flow">
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_restore_flow" id="restore_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_setup_as_new_flow" id="setup_as_new_flow">
