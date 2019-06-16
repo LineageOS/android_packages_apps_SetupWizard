@@ -22,8 +22,12 @@ import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_DETAILS;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_TITLE;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN;
 
+import android.app.KeyguardManager;
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
+
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class ScreenLockActivity extends SubBaseActivity {
 
@@ -31,6 +35,13 @@ public class ScreenLockActivity extends SubBaseActivity {
 
     @Override
     protected void onStartSubactivity() {
+        if (isKeyguardSecure()) {
+            Log.v(TAG, "Screen lock already set up; skipping ScreenLockActivity");
+            nextAction(RESULT_OK);
+            SetupWizardUtils.disableComponent(this, ScreenLockActivity.class);
+            finish();
+            return;
+        }
         setNextAllowed(true);
         findViewById(R.id.setup_lockscreen).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,4 +86,7 @@ public class ScreenLockActivity extends SubBaseActivity {
         return TRANSITION_ID_SLIDE;
     }
 
+    private boolean isKeyguardSecure() {
+        return getSystemService(KeyguardManager.class).isKeyguardSecure();
+    }
 }
