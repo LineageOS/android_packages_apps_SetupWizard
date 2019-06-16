@@ -257,6 +257,19 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".DisplayExtrasActivity"
+                  android:label="@string/activity_label_empty"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:exported="false"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="org.lineageos.setupwizard.LINEAGE_DISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".FinishActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"

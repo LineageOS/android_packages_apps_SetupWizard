@@ -39,6 +39,8 @@ public class SetupWizardApp extends Application {
     public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";
     public static final String ACTION_SETUP_FINGERPRINT = "android.settings.FINGERPRINT_SETUP";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
+    public static final String ACTION_SETUP_AUTOBRIGHTNESS = "com.android.intent.action.SHOW_AUTOMATIC_BRIGHTNESS";
+    public static final String ACTION_SETUP_NIGHT_LIGHT = "android.settings.NIGHT_DISPLAY_SETTINGS";
     public static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
     public static final String ACTION_NEXT = "com.android.wizard.NEXT";
     public static final String ACTION_LOAD = "com.android.wizard.LOAD";
@@ -70,6 +72,8 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
     public static final int REQUEST_CODE_SETUP_FINGERPRINT = 7;
     public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
+    public static final int REQUEST_CODE_SETUP_NIGHT_LIGHT = 18;
+    public static final int REQUEST_CODE_SETUP_AUTOBRIGHTNESS = 19;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 

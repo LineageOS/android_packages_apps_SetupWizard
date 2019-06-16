@@ -102,4 +102,10 @@
     <string name="lockscreen_setup_summary"><b>Protect this device</b> and require a PIN, pattern, or password to unlock the screen</string>
     <string name="lockscreen_setup_screen_lock_setup">Set up</string>
 
+    <!-- Display extras screen -->
+    <string name="display_setup_title">Change display settings</string>
+    <string name="display_setup_summary">Enable adaptive brightness level or enable amber tinted display.</string>
+    <string name="display_setup_screen_brightness">Enable adaptive brightness</string>
+    <string name="display_setup_night_light">Enable Night Light</string>
+
 </resources>
