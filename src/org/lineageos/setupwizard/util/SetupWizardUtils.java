@@ -32,6 +32,7 @@ import static android.content.pm.PackageManager.GET_SERVICES;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
+import android.app.KeyguardManager;
 import android.app.StatusBarManager;
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -57,6 +58,7 @@ import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.ChooseDataSimActivity;
 import org.lineageos.setupwizard.FingerprintActivity;
 import org.lineageos.setupwizard.MobileDataActivity;
+import org.lineageos.setupwizard.ScreenLockActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
 import org.lineageos.setupwizard.WifiSetupActivity;
@@ -240,11 +242,16 @@ public class SetupWizardUtils {
     }
 
     public static void disableComponentsForMissingFeatures(Context context) {
+        KeyguardManager keyguardManager = (KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE);
+
         if (!hasLeanback(context)) {
             disableComponent(context, BluetoothSetupActivity.class);
         }
         if (!hasFingerprint(context)) {
             disableComponent(context, FingerprintActivity.class);
+        }
+        if (keyguardManager.isDeviceSecure()) {
+            disableComponent(context, ScreenLockActivity.class);
         }
         if (!hasTelephony(context)) {
             disableComponent(context, MobileDataActivity.class);
