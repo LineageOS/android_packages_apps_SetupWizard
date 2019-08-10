@@ -17,37 +17,35 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">دامەزراندنی گەزەک</string>
-  <string name="next">دواتر</string>
-  <string name="skip">تێپەڕاندن</string>
-  <string name="start">دەستپێکردن</string>
-  <string name="ok">باشه‌</string>
-  <string name="setup_complete">دامه‌زراندن ته‌واوبوو</string>
-  <string name="setup_welcome">بە خێربێيت</string>
-  <string name="setup_wifi">هەڵبژاردنی Wi-Fi</string>
-  <string name="setup_sim_missing">سیمکارتی تیا نیە</string>
-  <string name="setup_choose_data_sim">سیمکارتێک هەڵبژێرە بۆ داتا</string>
-  <string name="setup_location">خزمەتگوزاری ناوچەی</string>
-  <string name="setup_other">خزمەتگوزاری تر</string>
-  <string name="setup_datetime">ڕۆژ &amp; کات</string>
-  <string name="setup_current_date">ڕۆژی هه‌نووکه‌</string>
-  <string name="setup_current_time">کاتی هه‌نووکه‌</string>
-  <string name="sim_missing_summary" product="tablet">سیمکارت لە ناو تاتەبژمێر نیە. بۆ تێکردنی سیمکارت ، تێبینیەکان بخوێنەرەوە کە لەگەڵ ئامێرەکەت هاتوە.</string>
-  <string name="sim_missing_summary" product="default">سیمکارت لە ناو تەلەفۆنەکەت نیە. بۆ تێکردنی سیمکارت ، تێبینیەکان بخوێنەرەوە کە لەگەڵ ئامێرەکەت هاتوە.</string>
-  <string name="choose_data_sim_summary" product="tablet">کام سیمکارتت ئەوێ کار بکات لەسەر داتا? سیمکارتی دیاریکراو لەوانەیە پارەکەت ببات بە هەمان شێوەش لەسەر تاتەژمێرەکەت دادەمەزرێت.</string>
-  <string name="choose_data_sim_summary" product="default">کام سیمکارتت ئەوێ کار بکات لەسەر داتا? سیمکارتی دیاریکراو لەوانەیە پارەکەت ببات بە هەمان شێوەش لەسەر تەلەفۆنەکەت دادەمەزرێت.</string>
-  <string name="date_time_summary">کاتی ناوچەی دامەزرێنە و داتای ئێستا لە کاتی خۆی دیاری بکە ئەگەر پێویستی کرد</string>
-  <string name="backup_data_summary"><b>پاڵپشتی</b> داتای بەرنامە, Wi-Fi تێپەڕەوشە, و ڕێکخستنی تری خزمەتگووزاری گووگڵ</string>
-  <string name="other_services_summary">ئەم خزمەتگوزاریە گووگڵ دەخاتە یارمەتی تۆوە، و ئەتوانی بیانکەیتەوە یان بیانکوژێنیتەوە لە هەرکاتێکدا.
+    <string name="app_name">دامەزراندنی گەزەک</string>
+    <string name="next">دواتر</string>
+    <string name="skip">تێپەڕاندن</string>
+    <string name="start">دەستپێکردن</string>
+    <string name="ok">باشه‌</string>
+    <string name="setup_complete">دامه‌زراندن ته‌واوبوو</string>
+    <string name="setup_welcome">بە خێربێيت</string>
+    <string name="setup_wifi">هەڵبژاردنی Wi-Fi</string>
+    <string name="setup_sim_missing">سیمکارتی تیا نیە</string>
+    <string name="setup_choose_data_sim">سیمکارتێک هەڵبژێرە بۆ داتا</string>
+    <string name="setup_location">خزمەتگوزاری ناوچەی</string>
+    <string name="setup_other">خزمەتگوزاری تر</string>
+    <string name="setup_datetime">ڕۆژ &amp; کات</string>
+    <string name="setup_current_date">ڕۆژی هه‌نووکه‌</string>
+    <string name="setup_current_time">کاتی هه‌نووکه‌</string>
+    <string name="sim_missing_summary" product="tablet">سیمکارت لە ناو تاتەبژمێر نیە. بۆ تێکردنی سیمکارت ، تێبینیەکان بخوێنەرەوە کە لەگەڵ ئامێرەکەت هاتوە.</string>
+    <string name="sim_missing_summary" product="default">سیمکارت لە ناو تەلەفۆنەکەت نیە. بۆ تێکردنی سیمکارت ، تێبینیەکان بخوێنەرەوە کە لەگەڵ ئامێرەکەت هاتوە.</string>
+    <string name="choose_data_sim_summary" product="tablet">کام سیمکارتت ئەوێ کار بکات لەسەر داتا? سیمکارتی دیاریکراو لەوانەیە پارەکەت ببات بە هەمان شێوەش لەسەر تاتەژمێرەکەت دادەمەزرێت.</string>
+    <string name="choose_data_sim_summary" product="default">کام سیمکارتت ئەوێ کار بکات لەسەر داتا? سیمکارتی دیاریکراو لەوانەیە پارەکەت ببات بە هەمان شێوەش لەسەر تەلەفۆنەکەت دادەمەزرێت.</string>
+    <string name="date_time_summary">کاتی ناوچەی دامەزرێنە و داتای ئێستا لە کاتی خۆی دیاری بکە ئەگەر پێویستی کرد</string>
+    <string name="backup_data_summary"><b>پاڵپشتی</b> داتای بەرنامە, Wi-Fi تێپەڕەوشە, و ڕێکخستنی تری خزمەتگووزاری گووگڵ</string>
+    <string name="other_services_summary">ئەم خزمەتگوزاریە گووگڵ دەخاتە یارمەتی تۆوە، و ئەتوانی بیانکەیتەوە یان بیانکوژێنیتەوە لە هەرکاتێکدا.
 داتاکە لەگەڵ گووگڵ بەکارئەهێنرێت <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="setup_mobile_data_no_service">خزمەتگوزاری نیە</string>
-  <string name="setup_mobile_data_emergency_only">ته‌نها په‌یوه‌ندی كتوپڕ</string>
-  <string name="no">نەخێر</string>
-  <string name="yes">بەڵێ</string>
-  <string name="data_sim_name">سیم <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">تەلەفۆنی فریاگوزاری</string>
-  <string name="services_privacy_policy">یاسای تایبەتی</string>
-  <string name="setup_unlock">کردنەوە</string>
-  <!-- Fingerprint setup -->
-  <!-- secure lock screen -->
+    <string name="setup_mobile_data_no_service">خزمەتگوزاری نیە</string>
+    <string name="setup_mobile_data_emergency_only">ته‌نها په‌یوه‌ندی كتوپڕ</string>
+    <string name="no">نەخێر</string>
+    <string name="yes">بەڵێ</string>
+    <string name="data_sim_name">سیم <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">تەلەفۆنی فریاگوزاری</string>
+    <string name="services_privacy_policy">یاسای تایبەتی</string>
+    <string name="setup_unlock">کردنەوە</string>
 </resources>

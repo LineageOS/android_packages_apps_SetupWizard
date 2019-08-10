@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Assistente de configuração</string>
-  <string name="next">Próximo</string>
-  <string name="skip">Saltar</string>
-  <string name="start">Início</string>
-  <string name="done">Concluído</string>
-  <string name="ok">OK</string>
-  <string name="loading">Um momento\u2026</string>
-  <string name="setup_complete">A configuração está completa</string>
-  <string name="setup_welcome">Bem-vindo</string>
-  <string name="setup_locale">Idioma</string>
-  <string name="setup_wifi">Selecionar rede Wi-Fi</string>
-  <string name="setup_sim_missing">Falta o cartão SIM</string>
-  <string name="setup_choose_data_sim">Escolha um cartão SIM para os dados</string>
-  <string name="setup_location">Serviços de localização</string>
-  <string name="setup_other">Outros serviços</string>
-  <string name="setup_datetime">Data e hora</string>
-  <string name="setup_current_date">Data atual</string>
-  <string name="setup_current_time">Hora atual</string>
-  <string name="sim_missing_summary" product="tablet">Não foi detetado nenhum cartão SIM no seu tablet. Para inserir um cartão SIM, leia o manual de instruções que veio com o seu dispositivo.</string>
-  <string name="sim_missing_summary" product="default">Não foi detetado nenhum cartão SIM no seu telefone. Para inserir um cartão SIM, leia o manual de instruções que veio com o seu dispositivo.</string>
-  <string name="choose_data_sim_summary" product="tablet">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu tablet.</string>
-  <string name="choose_data_sim_summary" product="default">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu telefone.</string>
-  <string name="date_time_summary">Defina o fuso horário e ajuste a hora e a data atuais, se necessário</string>
-  <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, palavras-passe de acesso de redes sem fios e outras definições para os servidores da Google</string>
-  <string name="other_services_summary">Estes serviços colocam o Google a trabalhar para si, e pode ligá-los ou desligá-los a qualquer momento. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
-  <string name="location_services_summary">Os serviços de localização permitem às aplicações de sistema e de terceiros reunir e utilizar dados tais como a sua localização aproximada. Por exemplo, uma aplicação pode usar a sua localização aproximada para localizar cafés ou bares nas proximidades.</string>
-  <string name="location_access_summary"><b>Permitir que as aplicações que pediram a sua permissão</b> usem as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
-  <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
-  <string name="location_network"><b>Usar o Wi-Fi</b> para ajudar as aplicações a determinar a sua localização.</string>
-  <string name="location_network_telephony"><b>Usar o Wi-Fi e redes móveis</b> para ajudar as aplicações a determinar a sua localização.</string>
-  <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar as aplicações a determinar a sua localização. Isto implica o envio de dados anónimos de localização para o Google, mesmo quando nenhuma aplicação estiver a funcionar.</string>
-  <string name="setup_mobile_data">Ligar os dados móveis</string>
-  <string name="setup_mobile_data_no_service">Sem serviço</string>
-  <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
-  <string name="enable_mobile_data_summary">Pretende usar os dados móveis durante a configuração? Usar os dados móveis pode estar sujeito a taxas de dados.</string>
-  <string name="no">Não</string>
-  <string name="yes">Sim</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Chamada de emergência</string>
-  <string name="setup_services">Funcionalidades LineageOS</string>
-  <string name="services_explanation" product="tablet">Estes serviços servem para ampliar os recursos do seu tablet. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> da LineageOS.</string>
-  <string name="services_explanation" product="default">Estes serviços servem para ampliar os recursos do seu telefone. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> da LineageOS.</string>
-  <string name="services_privacy_policy">Política de Privacidade</string>
-  <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para a LineageOS. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e no desenvolvimento de novos recursos para a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando ícones, imagens de fundo e tipos de letra únicos.</string>
-  <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
-  <string name="services_os_privacy_guard"><b>Ative a Proteção da Privacidade</b> para tornar os seus dados pessoais como contactos, mensagens ou registo de chamadas não disponíveis para aplicações recém-instaladas</string>
-  <string name="setup_unlock">Desbloquear</string>
-  <string name="setup_device_locked">Este dispositivo foi bloqueado pelo utilizador.</string>
-  <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da sua conta</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>
-  <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá a Definições de Segurança</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio do ecrã da cópia de segurança</string>
-  <string name="settings_fingerprint_setup_details">Como gostaria de bloquear o seu ecrã?</string>
-  <string name="fingerprint_setup_title">Configuração de impressão digital</string>
-  <string name="fingerprint_setup_summary">Para usar o seu sensor de impressão digital para desbloquear o ecrã, precisará de:</string>
-  <string name="fingerprint_setup_backup_lock_method">Definir um método de desbloqueio secundário</string>
-  <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
-  <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
-  <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Selecionar o tipo de bloqueio do ecrã</string>
-  <string name="settings_lockscreen_setup_details">Como gostaria de bloquear o seu ecrã?</string>
-  <string name="lockscreen_setup_title">Proteja o seu telefone</string>
-  <string name="lockscreen_setup_summary"><b>Protejer este dispositivo</b> ao exigir um código PIN, padrão ou palavra-passe para desbloqueio do ecrã</string>
-  <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="app_name">Assistente de configuração</string>
+    <string name="next">Próximo</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Início</string>
+    <string name="done">Concluído</string>
+    <string name="ok">OK</string>
+    <string name="loading">Um momento\u2026</string>
+    <string name="setup_complete">A configuração está completa</string>
+    <string name="setup_welcome">Bem-vindo</string>
+    <string name="setup_locale">Idioma</string>
+    <string name="setup_wifi">Selecionar rede Wi-Fi</string>
+    <string name="setup_sim_missing">Falta o cartão SIM</string>
+    <string name="setup_choose_data_sim">Escolha um cartão SIM para os dados</string>
+    <string name="setup_location">Serviços de localização</string>
+    <string name="setup_other">Outros serviços</string>
+    <string name="setup_datetime">Data e hora</string>
+    <string name="setup_current_date">Data atual</string>
+    <string name="setup_current_time">Hora atual</string>
+    <string name="sim_missing_summary" product="tablet">Não foi detetado nenhum cartão SIM no seu tablet. Para inserir um cartão SIM, leia o manual de instruções que veio com o seu dispositivo.</string>
+    <string name="sim_missing_summary" product="default">Não foi detetado nenhum cartão SIM no seu telefone. Para inserir um cartão SIM, leia o manual de instruções que veio com o seu dispositivo.</string>
+    <string name="choose_data_sim_summary" product="tablet">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu tablet.</string>
+    <string name="choose_data_sim_summary" product="default">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu telefone.</string>
+    <string name="date_time_summary">Defina o fuso horário e ajuste a hora e a data atuais, se necessário</string>
+    <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, palavras-passe de acesso de redes sem fios e outras definições para os servidores da Google</string>
+    <string name="other_services_summary">Estes serviços colocam o Google a trabalhar para si, e pode ligá-los ou desligá-los a qualquer momento. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
+    <string name="location_services_summary">Os serviços de localização permitem às aplicações de sistema e de terceiros reunir e utilizar dados tais como a sua localização aproximada. Por exemplo, uma aplicação pode usar a sua localização aproximada para localizar cafés ou bares nas proximidades.</string>
+    <string name="location_access_summary"><b>Permitir que as aplicações que pediram a sua permissão</b> usem as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
+    <string name="location_battery_saving"><b>Reduzir o consumo da bateria</b>, restringindo o número de atualizações GPS por hora.</string>
+    <string name="location_network"><b>Usar o Wi-Fi</b> para ajudar as aplicações a determinar a sua localização.</string>
+    <string name="location_network_telephony"><b>Usar o Wi-Fi e redes móveis</b> para ajudar as aplicações a determinar a sua localização.</string>
+    <string name="location_network_gms"><b>Usar o serviço de localização do Google</b> para ajudar as aplicações a determinar a sua localização. Isto implica o envio de dados anónimos de localização para o Google, mesmo quando nenhuma aplicação estiver a funcionar.</string>
+    <string name="setup_mobile_data">Ligar os dados móveis</string>
+    <string name="setup_mobile_data_no_service">Sem serviço</string>
+    <string name="setup_mobile_data_emergency_only">Apenas chamadas de emergência</string>
+    <string name="enable_mobile_data_summary">Pretende usar os dados móveis durante a configuração? Usar os dados móveis pode estar sujeito a taxas de dados.</string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Chamada de emergência</string>
+    <string name="setup_services">Funcionalidades LineageOS</string>
+    <string name="services_explanation" product="tablet">Estes serviços servem para ampliar os recursos do seu tablet. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> da LineageOS.</string>
+    <string name="services_explanation" product="default">Estes serviços servem para ampliar os recursos do seu telefone. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> da LineageOS.</string>
+    <string name="services_privacy_policy">Política de Privacidade</string>
+    <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Ajude a melhorar a LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para a LineageOS. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e no desenvolvimento de novas funcionalidades para a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
+    <string name="services_apply_theme">Aplicar o tema <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ativando ícones, imagens de fundo e tipos de letra únicos.</string>
+    <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
+    <string name="services_os_privacy_guard"><b>Ative a Proteção da Privacidade</b> para tornar os seus dados pessoais como contactos, mensagens ou registo de chamadas não disponíveis para aplicações recém-instaladas</string>
+    <string name="setup_unlock">Desbloquear</string>
+    <string name="setup_device_locked">Este dispositivo foi bloqueado pelo utilizador.</string>
+    <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da sua conta</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>
+    <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá a Definições de Segurança</i></string>
+    <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio do ecrã da cópia de segurança</string>
+    <string name="settings_fingerprint_setup_details">Como gostaria de bloquear o seu ecrã?</string>
+    <string name="fingerprint_setup_title">Configuração de impressão digital</string>
+    <string name="fingerprint_setup_summary">Para usar o seu sensor de impressão digital para desbloquear o ecrã, precisará de:</string>
+    <string name="fingerprint_setup_backup_lock_method">Definir um método de desbloqueio secundário</string>
+    <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
+    <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
+    <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
+    <string name="settings_lockscreen_setup_title">Selecionar o tipo de bloqueio do ecrã</string>
+    <string name="settings_lockscreen_setup_details">Como gostaria de bloquear o seu ecrã?</string>
+    <string name="lockscreen_setup_title">Proteja o seu telefone</string>
+    <string name="lockscreen_setup_summary"><b>Protejer este dispositivo</b> ao exigir um código PIN, padrão ou palavra-passe para desbloqueio do ecrã</string>
+    <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
 </resources>

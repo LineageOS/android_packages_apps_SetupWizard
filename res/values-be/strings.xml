@@ -17,59 +17,57 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Майстар налады</string>
-  <string name="next">Далей</string>
-  <string name="skip">Прапусціць</string>
-  <string name="start">Пачаць</string>
-  <string name="ok">Добра</string>
-  <string name="loading">Секунду\u2026</string>
-  <string name="setup_complete">Налада завершана</string>
-  <string name="setup_welcome">Вітаем</string>
-  <string name="setup_wifi">Выбраць сетку Wi-Fi</string>
-  <string name="setup_sim_missing">SIM-карта адсутнічае</string>
-  <string name="setup_choose_data_sim">Абярыце SIM-карту для перадачы дадзеных</string>
-  <string name="setup_location">Службы месцазнаходжання</string>
-  <string name="setup_other">Іншыя службы</string>
-  <string name="setup_datetime">Дата і час</string>
-  <string name="setup_current_date">Бягучая дата</string>
-  <string name="setup_current_time">Бягучы час</string>
-  <string name="sim_missing_summary" product="tablet">Не выяўлена ўсталяванай SIM-карты ў планшэце. Каб пазнаць, як уставіць SIM-карту, прачытайце інструкцыю да вашай прылады.</string>
-  <string name="sim_missing_summary" product="default">Не выяўлена ўсталяванай SIM-карты ў тэлефоне. Каб пазнаць, як уставіць SIM-карту, прачытайце інструкцыю да вашай прылады.</string>
-  <string name="choose_data_sim_summary" product="tablet">Якую SIM вы хочаце скарыстаць для перадачы дадзеных? Абраная SIM можа пацягнуць выдаткі, бо яна будзе выкарыстоўвацца для налады планшэта.</string>
-  <string name="choose_data_sim_summary" product="default">Якую SIM вы хочаце скарыстаць для перадачы дадзеных? Абраная SIM можа пацягнуць выдаткі, бо яна будзе выкарыстоўвацца для налады тэлефона.</string>
-  <string name="date_time_summary">Усталюйце свой часавы пояс і наладзьце бягучую дату і час, калі трэба</string>
-  <string name="backup_data_summary"><b>Захоўваць</b> дадзеныя дадаткаў, паролі Wi-Fi і іншыя параметры на сервера Google</string>
-  <string name="other_services_summary">Гэтыя службы дазваляюць Google пашырыць магчымасці прылады. Вы можаце выключыць іх у кожны час. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">Службы месцазнаходжання дазваляюць сістэме і ўсталяваным дадаткам збіраць і скарыстаць такія дадзеныя, як ваша прыблізнае месцазнаходжанне. Прыкладам, дадатак можа шукаць кавярні паблізу, засноўваючыся на дадзеных пра ваша месцазнаходжанне.</string>
-  <string name="location_access_summary"><b>Дазволіць дадаткам, якія запыталі ваш дазвол</b> скарыстаць інфармацыю пра ваша месцазнаходжанне. Гэта можа ўлучаць ваша бягучае і мінулыя месцазнаходжанні.</string>
-  <string name="location_battery_saving"><b>Зменшыць энергаспажыванне</b>, абмяжоўваючы колькасць абнаўленняў GPS у гадзіну.</string>
-  <string name="location_network"><b>Скарыстаць Wi-F</b> для вызначэння месцазнаходжання.</string>
-  <string name="location_network_telephony"><b>Выкарыстоўваць Wi-Fi ды сотавую сетку</b> каб дапамагчы дадаткам вызначаць ваша месцазнаходжанне.</string>
-  <string name="location_network_gms"><b>Скарыстаць службы месцазнаходжання Google</b>, каб дапамагчы дадаткам вызначаць ваша месцазнаходжанне. Гэта азначае, што яны будуць адпраўляць ананімныя дадзеныя пра месцазнаходжанне ў Google нават тады, калі ніякія дадаткі не запушчаны.</string>
-  <string name="setup_mobile_data">Падлучыць мабільны трафік</string>
-  <string name="setup_mobile_data_no_service">Няма сеткі</string>
-  <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
-  <string name="enable_mobile_data_summary">Выкарыстоўваць мабільную сувязь падчас налады? Ўключэнне перадачы дадзеных па сотавых сетках можа пацягнуць выдаткі.</string>
-  <string name="no">Не</string>
-  <string name="yes">Так</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Экстранны выклік</string>
-  <string name="services_privacy_policy">Палітыка прыватнасці</string>
-  <string name="services_help_improve_cm">Дапамагчы палепшыць <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Ужыць тэму <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_os_nav_keys_label"><b>Скарыстаць на экранные навігацыйныя кнопкі</b> заміж апаратных.</string>
-  <string name="setup_unlock">Разблакаваць</string>
-  <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
-  <string name="setup_device_locked_instructions"><i> Каб уключыць ці адключыць гэту функцыю, перайдзіце ў меню "Налады" &gt; "Бяспека"</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
-  <string name="settings_fingerprint_setup_details">Абярыце спосаб блакавання экрана.</string>
-  <string name="fingerprint_setup_title">Налада адбіткаў пальцаў</string>
-  <string name="fingerprint_setup_summary">Каб скарыстаць сканар адбіткаў пальцаў для разблакоўкі экрана, трэба:</string>
-  <string name="fingerprint_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
-  <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
-  <string name="fingerprint_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
-  <string name="sim_locale_changed">%1$s SIM знойдзена</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">Абярыце спосаб блакавання экрана.</string>
+    <string name="app_name">Майстар налады</string>
+    <string name="next">Далей</string>
+    <string name="skip">Прапусціць</string>
+    <string name="start">Пачаць</string>
+    <string name="ok">Добра</string>
+    <string name="loading">Секунду\u2026</string>
+    <string name="setup_complete">Налада завершана</string>
+    <string name="setup_welcome">Вітаем</string>
+    <string name="setup_wifi">Выбраць сетку Wi-Fi</string>
+    <string name="setup_sim_missing">SIM-карта адсутнічае</string>
+    <string name="setup_choose_data_sim">Абярыце SIM-карту для перадачы дадзеных</string>
+    <string name="setup_location">Службы месцазнаходжання</string>
+    <string name="setup_other">Іншыя службы</string>
+    <string name="setup_datetime">Дата і час</string>
+    <string name="setup_current_date">Бягучая дата</string>
+    <string name="setup_current_time">Бягучы час</string>
+    <string name="sim_missing_summary" product="tablet">Не выяўлена ўсталяванай SIM-карты ў планшэце. Каб пазнаць, як уставіць SIM-карту, прачытайце інструкцыю да вашай прылады.</string>
+    <string name="sim_missing_summary" product="default">Не выяўлена ўсталяванай SIM-карты ў тэлефоне. Каб пазнаць, як уставіць SIM-карту, прачытайце інструкцыю да вашай прылады.</string>
+    <string name="choose_data_sim_summary" product="tablet">Якую SIM вы хочаце скарыстаць для перадачы дадзеных? Абраная SIM можа пацягнуць выдаткі, бо яна будзе выкарыстоўвацца для налады планшэта.</string>
+    <string name="choose_data_sim_summary" product="default">Якую SIM вы хочаце скарыстаць для перадачы дадзеных? Абраная SIM можа пацягнуць выдаткі, бо яна будзе выкарыстоўвацца для налады тэлефона.</string>
+    <string name="date_time_summary">Усталюйце свой часавы пояс і наладзьце бягучую дату і час, калі трэба</string>
+    <string name="backup_data_summary"><b>Захоўваць</b> дадзеныя дадаткаў, паролі Wi-Fi і іншыя параметры на сервера Google</string>
+    <string name="other_services_summary">Гэтыя службы дазваляюць Google пашырыць магчымасці прылады. Вы можаце выключыць іх у кожны час. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Службы месцазнаходжання дазваляюць сістэме і ўсталяваным дадаткам збіраць і скарыстаць такія дадзеныя, як ваша прыблізнае месцазнаходжанне. Прыкладам, дадатак можа шукаць кавярні паблізу, засноўваючыся на дадзеных пра ваша месцазнаходжанне.</string>
+    <string name="location_access_summary"><b>Дазволіць дадаткам, якія запыталі ваш дазвол</b> скарыстаць інфармацыю пра ваша месцазнаходжанне. Гэта можа ўлучаць ваша бягучае і мінулыя месцазнаходжанні.</string>
+    <string name="location_battery_saving"><b>Зменшыць энергаспажыванне</b>, абмяжоўваючы колькасць абнаўленняў GPS у гадзіну.</string>
+    <string name="location_network"><b>Скарыстаць Wi-F</b> для вызначэння месцазнаходжання.</string>
+    <string name="location_network_telephony"><b>Выкарыстоўваць Wi-Fi ды сотавую сетку</b> каб дапамагчы дадаткам вызначаць ваша месцазнаходжанне.</string>
+    <string name="location_network_gms"><b>Скарыстаць службы месцазнаходжання Google</b>, каб дапамагчы дадаткам вызначаць ваша месцазнаходжанне. Гэта азначае, што яны будуць адпраўляць ананімныя дадзеныя пра месцазнаходжанне ў Google нават тады, калі ніякія дадаткі не запушчаны.</string>
+    <string name="setup_mobile_data">Падлучыць мабільны трафік</string>
+    <string name="setup_mobile_data_no_service">Няма сеткі</string>
+    <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
+    <string name="enable_mobile_data_summary">Выкарыстоўваць мабільную сувязь падчас налады? Ўключэнне перадачы дадзеных па сотавых сетках можа пацягнуць выдаткі.</string>
+    <string name="no">Не</string>
+    <string name="yes">Так</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Экстранны выклік</string>
+    <string name="services_privacy_policy">Палітыка прыватнасці</string>
+    <string name="services_help_improve_cm">Дапамагчы палепшыць <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_apply_theme">Ужыць тэму <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_os_nav_keys_label"><b>Скарыстаць на экранные навігацыйныя кнопкі</b> заміж апаратных.</string>
+    <string name="setup_unlock">Разблакаваць</string>
+    <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
+    <string name="setup_device_locked_instructions"><i> Каб уключыць ці адключыць гэту функцыю, перайдзіце ў меню "Налады" &gt; "Бяспека"</i></string>
+    <string name="settings_fingerprint_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
+    <string name="settings_fingerprint_setup_details">Абярыце спосаб блакавання экрана.</string>
+    <string name="fingerprint_setup_title">Налада адбіткаў пальцаў</string>
+    <string name="fingerprint_setup_summary">Каб скарыстаць сканар адбіткаў пальцаў для разблакоўкі экрана, трэба:</string>
+    <string name="fingerprint_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
+    <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
+    <string name="fingerprint_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
+    <string name="sim_locale_changed">%1$s SIM знойдзена</string>
+    <string name="settings_lockscreen_setup_details">Абярыце спосаб блакавання экрана.</string>
 </resources>

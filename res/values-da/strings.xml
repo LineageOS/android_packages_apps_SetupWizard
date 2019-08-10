@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Installationsguide</string>
-  <string name="next">Næste</string>
-  <string name="skip">Spring over</string>
-  <string name="start">Start</string>
-  <string name="done">Gem</string>
-  <string name="ok">OK</string>
-  <string name="loading">Lige et øjeblik\u2026</string>
-  <string name="setup_complete">Installationen er fuldført</string>
-  <string name="setup_welcome">Velkommen</string>
-  <string name="setup_locale">Sprog</string>
-  <string name="setup_wifi">Vælg Wi-Fi</string>
-  <string name="setup_sim_missing">SIM-kort mangler</string>
-  <string name="setup_choose_data_sim">Vælg et SIM-kort til data</string>
-  <string name="setup_location">Placeringstjenester</string>
-  <string name="setup_other">Andre tjenester</string>
-  <string name="setup_datetime">Dato &amp; tid</string>
-  <string name="setup_current_date">Aktuel dato</string>
-  <string name="setup_current_time">Aktuel tid</string>
-  <string name="sim_missing_summary" product="tablet">Et SIM-kort blev ikke fundet i enheden. Læs de instruktioner der fulgte med enheden for informationer om hvordan du indsætter et SIM-kort.</string>
-  <string name="sim_missing_summary" product="default">Et SIM-kort blev ikke fundet i enheden. Læs de instruktioner der fulgte med enheden for informationer om hvordan du indsætter et SIM-kort.</string>
-  <string name="choose_data_sim_summary" product="tablet">Hvilket SIM-kort vil du bruge til data? Det valgte SIM-kort kan medføre netværksafgifter, da det skal bruges til at konfigurere enheden.</string>
-  <string name="choose_data_sim_summary" product="default">Hvilket SIM-kort vil du bruge til data? Det valgte SIM-kort kan medføre netværksafgifter, da det skal bruges til at konfigurere enheden.</string>
-  <string name="date_time_summary">Angiv din tidszone og juster aktuelle dato og tid, hvis det er nødvendigt</string>
-  <string name="backup_data_summary"><b>Sikkerhedskopier</b> app-data, WiFi-adgangskoder og andre indstillinger til Googles servere</string>
-  <string name="other_services_summary">Disse tjenester får Google til at arbejde for dig, og du kan slå dem til og fra på ethvert tidspunkt. Data vil blive anvendt i overensstemmelse med Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">Placeringstjenester tillader Maps og andre apps at indsamle og bruge data såsom din omtrentlige placering. Maps kan for eksempel bruge din omtrentlige placering for at finde caféer i nærheden.</string>
-  <string name="location_access_summary"><b>Tillad apps, der har bedt om din tilladelse</b> til at bruge dine placeringsoplysninger. Dette kan omfatte din aktuelle placering og tidligere placeringer.</string>
-  <string name="location_battery_saving"><b>Reducer batteriforbruget</b> ved at begrænse antallet af GPS opdateringer pr. time.</string>
-  <string name="location_network"><b>Brug Wi-Fi</b> til at hjælpe apps med at bestemme din placering.</string>
-  <string name="location_network_telephony"><b>Brug Wi-Fi og mobile netværk</b> til at hjælpe apps med at bestemme din placering.</string>
-  <string name="location_network_gms"><b>Brug Googles placeringtjeneste</b> til at hjælpe apps med at bestemme din placering. Dermed sendes anonyme placeringsdata til Google, selv når ingen apps kører.</string>
-  <string name="setup_mobile_data">Tænd mobildata</string>
-  <string name="setup_mobile_data_no_service">Ingen dækning</string>
-  <string name="setup_mobile_data_emergency_only">Kun nødopkald</string>
-  <string name="enable_mobile_data_summary">Vil du bruge mobildata under installationen? Aktivering af mobildata kan medføre dataafgifter.</string>
-  <string name="no">Nej</string>
-  <string name="yes">Ja</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Nødopkald</string>
-  <string name="setup_services">LineageOS-funktioner</string>
-  <string name="services_explanation" product="tablet">Disse tjenester giver dig flere muligheder med din tablet. Data bliver anvendt i overensstemmelse med LineageOS\' <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Disse tjenester giver dig flere muligheder med din telefon. Data bliver anvendt i overensstemmelse med LineageOS\' <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_privacy_policy">Privatlivspolitik</string>
-  <string name="services_help_improve_cm">Hjælpe med at forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ved automatisk at sende diagnosticerings- og brugsoplysninger til LineageOS. Denne information kan ikke bruges til at identificere dig, men hjælper udviklerne i arbejdet med eksempelvis batterilevetid, ydeevne og nye <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-funktioner.</string>
-  <string name="services_apply_theme">Anvend temaet <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> muliggør et unikt udseende til dine ikoner, baggrunde og meget mere.</string>
-  <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærmen</b> i stedet for fysiske knapper.</string>
-  <string name="services_os_privacy_guard"><b>Aktivér Privatlivsvagt</b> for at gøre dine personlige data såsom kontaktet, beskeder og opkaldsliste utilgængelige for apps installeret for nylig</string>
-  <string name="setup_unlock">Lås op</string>
-  <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
-  <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
-  <string name="setup_device_locked_instructions"><i>For at slå denne funktion til/fra, skal du gå til Indstillinger &gt; Sikkerhed</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Vælg alternativ skærmlåstype</string>
-  <string name="settings_fingerprint_setup_details">Hvordan vil du gerne låse din skærm?</string>
-  <string name="fingerprint_setup_title">Konfigurerring af fingeraftryk</string>
-  <string name="fingerprint_setup_summary">Hvis du vil bruge din fingeraftryksensor til at låse din skærm op, skal du:</string>
-  <string name="fingerprint_setup_backup_lock_method">Konfigurere en sekundær låsemetode</string>
-  <string name="fingerprint_setup_add_fingerprint">Tilføje dit fingeraftryk</string>
-  <string name="fingerprint_setup_screen_lock_setup">Konfigurere skærmlås</string>
-  <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
-  <string name="settings_lockscreen_setup_details">Hvordan vil du gerne låse din skærm?</string>
-  <string name="lockscreen_setup_title">Beskyt din telefon</string>
-  <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv pinkode, mønster eller adgangskode for at låse skærmen op</string>
-  <string name="lockscreen_setup_screen_lock_setup">Konfigurering</string>
+    <string name="app_name">Installationsguide</string>
+    <string name="next">Næste</string>
+    <string name="skip">Spring over</string>
+    <string name="start">Start</string>
+    <string name="done">Gem</string>
+    <string name="ok">OK</string>
+    <string name="loading">Lige et øjeblik\u2026</string>
+    <string name="setup_complete">Installationen er fuldført</string>
+    <string name="setup_welcome">Velkommen</string>
+    <string name="setup_locale">Sprog</string>
+    <string name="setup_wifi">Vælg Wi-Fi</string>
+    <string name="setup_sim_missing">SIM-kort mangler</string>
+    <string name="setup_choose_data_sim">Vælg et SIM-kort til data</string>
+    <string name="setup_location">Placeringstjenester</string>
+    <string name="setup_other">Andre tjenester</string>
+    <string name="setup_datetime">Dato &amp; tid</string>
+    <string name="setup_current_date">Aktuel dato</string>
+    <string name="setup_current_time">Aktuel tid</string>
+    <string name="sim_missing_summary" product="tablet">Et SIM-kort blev ikke fundet i enheden. Læs de instruktioner der fulgte med enheden for informationer om hvordan du indsætter et SIM-kort.</string>
+    <string name="sim_missing_summary" product="default">Et SIM-kort blev ikke fundet i enheden. Læs de instruktioner der fulgte med enheden for informationer om hvordan du indsætter et SIM-kort.</string>
+    <string name="choose_data_sim_summary" product="tablet">Hvilket SIM-kort vil du bruge til data? Det valgte SIM-kort kan medføre netværksafgifter, da det skal bruges til at konfigurere enheden.</string>
+    <string name="choose_data_sim_summary" product="default">Hvilket SIM-kort vil du bruge til data? Det valgte SIM-kort kan medføre netværksafgifter, da det skal bruges til at konfigurere enheden.</string>
+    <string name="date_time_summary">Angiv din tidszone og juster aktuelle dato og tid, hvis det er nødvendigt</string>
+    <string name="backup_data_summary"><b>Sikkerhedskopier</b> app-data, WiFi-adgangskoder og andre indstillinger til Googles servere</string>
+    <string name="other_services_summary">Disse tjenester får Google til at arbejde for dig, og du kan slå dem til og fra på ethvert tidspunkt. Data vil blive anvendt i overensstemmelse med Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Placeringstjenester tillader Maps og andre apps at indsamle og bruge data såsom din omtrentlige placering. Maps kan for eksempel bruge din omtrentlige placering for at finde caféer i nærheden.</string>
+    <string name="location_access_summary"><b>Tillad apps, der har bedt om din tilladelse</b> til at bruge dine placeringsoplysninger. Dette kan omfatte din aktuelle placering og tidligere placeringer.</string>
+    <string name="location_battery_saving"><b>Reducer batteriforbruget</b> ved at begrænse antallet af GPS opdateringer pr. time.</string>
+    <string name="location_network"><b>Brug Wi-Fi</b> til at hjælpe apps med at bestemme din placering.</string>
+    <string name="location_network_telephony"><b>Brug Wi-Fi og mobile netværk</b> til at hjælpe apps med at bestemme din placering.</string>
+    <string name="location_network_gms"><b>Brug Googles placeringtjeneste</b> til at hjælpe apps med at bestemme din placering. Dermed sendes anonyme placeringsdata til Google, selv når ingen apps kører.</string>
+    <string name="setup_mobile_data">Tænd mobildata</string>
+    <string name="setup_mobile_data_no_service">Ingen dækning</string>
+    <string name="setup_mobile_data_emergency_only">Kun nødopkald</string>
+    <string name="enable_mobile_data_summary">Vil du bruge mobildata under installationen? Aktivering af mobildata kan medføre dataafgifter.</string>
+    <string name="no">Nej</string>
+    <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Nødopkald</string>
+    <string name="setup_services">LineageOS-funktioner</string>
+    <string name="services_explanation" product="tablet">Disse tjenester arbejder for at du kan udvide din tablet-computers funktionalitet. Data vil blive brugt i overensstemmelse med LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">Disse tjenester arbejder for at du kan udvide din telefons funktionalitet. Data vil blive brugt i overensstemmelse med LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_privacy_policy">Privatlivspolitik</string>
+    <string name="services_help_improve_cm">Hjælpe med at forbedre <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> ved automatisk at sende diagnostik og brugsdata til LineageOS. Denne information kan ikke bruges til at identificere dig, og giver en hånd til hold, som arbejder på ting som batterilevetid, app-ydeevne, og nye <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>-funktioner.</string>
+    <string name="services_apply_theme">Anvend temaet <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> muliggør et unikt udseende til dine ikoner, baggrunde og meget mere.</string>
+    <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærm</b> i stedet for fysiske-taster.</string>
+    <string name="services_os_privacy_guard"><b>Aktivér Privatlivsvagt</b> for at gøre dine personlige data, så som kontaktpersoner, meddelelser, eller opkaldshistorik utilgængelige for nyinstallerede apps</string>
+    <string name="setup_unlock">Lås op</string>
+    <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
+    <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
+    <string name="setup_device_locked_instructions"><i>For at slå denne funktion til/fra, skal du gå til Indstillinger &gt; Sikkerhed</i></string>
+    <string name="settings_fingerprint_setup_title">Vælg sikkerheds-låseskærmtype</string>
+    <string name="settings_fingerprint_setup_details">Hvordan vil du gerne låse din skærm?</string>
+    <string name="fingerprint_setup_title">Konfigurerring af fingeraftryk</string>
+    <string name="fingerprint_setup_summary">Hvis du vil bruge din fingeraftryksensor til at låse din skærm op, skal du:</string>
+    <string name="fingerprint_setup_backup_lock_method">Konfigurere en sekundær låsemetode</string>
+    <string name="fingerprint_setup_add_fingerprint">Tilføje dit fingeraftryk</string>
+    <string name="fingerprint_setup_screen_lock_setup">Konfigurere skærmlås</string>
+    <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
+    <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
+    <string name="settings_lockscreen_setup_details">Hvordan vil du gerne låse din skærm?</string>
+    <string name="lockscreen_setup_title">Beskyt din telefon</string>
+    <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv pinkode, mønster eller adgangskode for at låse skærmen op</string>
+    <string name="lockscreen_setup_screen_lock_setup">Konfigurering</string>
 </resources>

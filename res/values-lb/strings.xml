@@ -17,54 +17,52 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Installatiounsassistent</string>
-  <string name="next">Weider</string>
-  <string name="skip">Iwwersprangen</string>
-  <string name="start">Start</string>
-  <string name="ok">OK</string>
-  <string name="loading">Ee Moment w.e.g.\u2026</string>
-  <string name="setup_complete">Installatioun ofgeschloss</string>
-  <string name="setup_welcome">Wëllkomm</string>
-  <string name="setup_wifi">WLAN auswielen</string>
-  <string name="setup_sim_missing">SIM-Kaart feelt</string>
-  <string name="setup_choose_data_sim">SIM fir d\'Daten auswielen</string>
-  <string name="setup_location">Standuertservicer</string>
-  <string name="setup_other">Aner Servicer</string>
-  <string name="setup_datetime">Datum an Zäit</string>
-  <string name="setup_current_date">Aktuellen Datum</string>
-  <string name="setup_current_time">Aktuell Zäit</string>
-  <string name="sim_missing_summary" product="tablet">Et gouf keng SIM-Kaart an dengem Tablet erkannt. Lies d\'Uleedungen déi mam Tablet komm sinn, fir eng SIM-Kaart anzesetzen.</string>
-  <string name="sim_missing_summary" product="default">Et gouf keng SIM-Kaart an dengem Telefon erkannt. Lies d\'Uleedungen déi mam Telefon komm sinn, fir eng SIM-Kaart anzesetzen.</string>
-  <string name="choose_data_sim_summary" product="tablet">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Tablet benotzt gëtt.</string>
-  <string name="choose_data_sim_summary" product="default">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Telefon benotzt gëtt.</string>
-  <string name="date_time_summary">Definéier deng Zäitzon an ajustéier falls néideg den aktuellen Datum an déi aktuell Zäit</string>
-  <string name="backup_data_summary">App-Daten, WLAN-Passwierder an aner Astellungen op de Google-Servere <b>sécheren</b></string>
-  <string name="other_services_summary">Dës Servicer gi vu Google zur Verfügung gestallt a kënnen all Moment aktivéiert oder desaktivéiert ginn. D\'Daten ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu Google benotzt.</string>
-  <string name="location_services_summary">Standuertservicer erlabe System-Appen an aneren Appen, Informatiounen zum Standuert ze sammelen an ze benotzen. Eng App ka beispillsweis däin ongeféiere Standuert benotzen, fir Caféen an der Géigend ze lokaliséieren.</string>
-  <string name="location_access_summary"><b>Appen déi deng Berechtegung gefrot hunn</b> den Zougrëff op d\'Standuertinformatiounen erlaben. Dat ka fir den aktuelle Standuert an och fir fréier Standuerter gëllen.</string>
-  <string name="location_network"><b>WLAN benotzen</b>, fir Appen ze hëllefen, de Standuert erauszefannen.</string>
-  <string name="location_network_gms"><b>De Standuertservice vu Google benotzen</b> fir Appen ze hëllefen de Standuert ze bestëmmen. Dat bedeit datt anonym Standuertdaten u Google geschéckt ginn, och wa keng Appe lafen.</string>
-  <string name="setup_mobile_data_no_service">Kee Service</string>
-  <string name="setup_mobile_data_emergency_only">Just Noutriff</string>
-  <string name="no">Nee</string>
-  <string name="yes">Jo</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Noutruff</string>
-  <string name="services_privacy_policy">Dateschutzerklärung</string>
-  <string name="services_help_improve_cm">Hëllef <xliff:g id="name" example="CyanogenMod">%s</xliff:g> ze verbesseren</string>
-  <string name="services_apply_theme">Den Design <xliff:g id="name" example="Material">%s</xliff:g> applizéieren</string>
-  <string name="services_os_nav_keys_label"><b>Schierm-Navigatiounstasten</b> amplaz Hardwaretaste benotzen.</string>
-  <string name="setup_unlock">Entspären</string>
-  <string name="setup_device_locked">Dësen Apparat gouf duerch de Benotzer gespaart.</string>
-  <string name="setup_device_locked_instructions"><i>Fir dës Funktioun z\'aktivéieren/desaktivéieren, géi op Astellungen  &gt; Sécherheet</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Wiel den Typ vun der Ersatz-Schirmspär aus</string>
-  <string name="settings_fingerprint_setup_details">Wéi wëlls du däi Schierm spären?</string>
-  <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>
-  <string name="fingerprint_setup_summary">Wann s du däi Fangerofdrocksensor fir d\'Entspäre vun dengem Schierm benotze wëlls, muss du:</string>
-  <string name="fingerprint_setup_backup_lock_method">Eng zweet Entspärmethod ariichten</string>
-  <string name="fingerprint_setup_add_fingerprint">Däi Fangerofdrock dobäisetzen</string>
-  <string name="fingerprint_setup_screen_lock_setup">D\'Schiermspär ariichten</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">Wéi wëlls du däi Schierm spären?</string>
+    <string name="app_name">Installatiounsassistent</string>
+    <string name="next">Weider</string>
+    <string name="skip">Iwwersprangen</string>
+    <string name="start">Start</string>
+    <string name="ok">OK</string>
+    <string name="loading">Ee Moment w.e.g.\u2026</string>
+    <string name="setup_complete">Installatioun ofgeschloss</string>
+    <string name="setup_welcome">Wëllkomm</string>
+    <string name="setup_wifi">WLAN auswielen</string>
+    <string name="setup_sim_missing">SIM-Kaart feelt</string>
+    <string name="setup_choose_data_sim">SIM fir d\'Daten auswielen</string>
+    <string name="setup_location">Standuertservicer</string>
+    <string name="setup_other">Aner Servicer</string>
+    <string name="setup_datetime">Datum an Zäit</string>
+    <string name="setup_current_date">Aktuellen Datum</string>
+    <string name="setup_current_time">Aktuell Zäit</string>
+    <string name="sim_missing_summary" product="tablet">Et gouf keng SIM-Kaart an dengem Tablet erkannt. Lies d\'Uleedungen déi mam Tablet komm sinn, fir eng SIM-Kaart anzesetzen.</string>
+    <string name="sim_missing_summary" product="default">Et gouf keng SIM-Kaart an dengem Telefon erkannt. Lies d\'Uleedungen déi mam Telefon komm sinn, fir eng SIM-Kaart anzesetzen.</string>
+    <string name="choose_data_sim_summary" product="tablet">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Tablet benotzt gëtt.</string>
+    <string name="choose_data_sim_summary" product="default">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Telefon benotzt gëtt.</string>
+    <string name="date_time_summary">Definéier deng Zäitzon an ajustéier falls néideg den aktuellen Datum an déi aktuell Zäit</string>
+    <string name="backup_data_summary">App-Daten, WLAN-Passwierder an aner Astellungen op de Google-Servere <b>sécheren</b></string>
+    <string name="other_services_summary">Dës Servicer gi vu Google zur Verfügung gestallt a kënnen all Moment aktivéiert oder desaktivéiert ginn. D\'Daten ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu Google benotzt.</string>
+    <string name="location_services_summary">Standuertservicer erlabe System-Appen an aneren Appen, Informatiounen zum Standuert ze sammelen an ze benotzen. Eng App ka beispillsweis däin ongeféiere Standuert benotzen, fir Caféen an der Géigend ze lokaliséieren.</string>
+    <string name="location_access_summary"><b>Appen déi deng Berechtegung gefrot hunn</b> den Zougrëff op d\'Standuertinformatiounen erlaben. Dat ka fir den aktuelle Standuert an och fir fréier Standuerter gëllen.</string>
+    <string name="location_network"><b>WLAN benotzen</b>, fir Appen ze hëllefen, de Standuert erauszefannen.</string>
+    <string name="location_network_gms"><b>De Standuertservice vu Google benotzen</b> fir Appen ze hëllefen de Standuert ze bestëmmen. Dat bedeit datt anonym Standuertdaten u Google geschéckt ginn, och wa keng Appe lafen.</string>
+    <string name="setup_mobile_data_no_service">Kee Service</string>
+    <string name="setup_mobile_data_emergency_only">Just Noutriff</string>
+    <string name="no">Nee</string>
+    <string name="yes">Jo</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Noutruff</string>
+    <string name="services_privacy_policy">Dateschutzerklärung</string>
+    <string name="services_help_improve_cm">Hëllef <xliff:g id="name" example="CyanogenMod">%s</xliff:g> ze verbesseren</string>
+    <string name="services_apply_theme">Den Design <xliff:g id="name" example="Material">%s</xliff:g> applizéieren</string>
+    <string name="services_os_nav_keys_label"><b>Schierm-Navigatiounstasten</b> amplaz Hardwaretaste benotzen.</string>
+    <string name="setup_unlock">Entspären</string>
+    <string name="setup_device_locked">Dësen Apparat gouf duerch de Benotzer gespaart.</string>
+    <string name="setup_device_locked_instructions"><i>Fir dës Funktioun z\'aktivéieren/desaktivéieren, géi op Astellungen  &gt; Sécherheet</i></string>
+    <string name="settings_fingerprint_setup_title">Wiel den Typ vun der Ersatz-Schirmspär aus</string>
+    <string name="settings_fingerprint_setup_details">Wéi wëlls du däi Schierm spären?</string>
+    <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>
+    <string name="fingerprint_setup_summary">Wann s du däi Fangerofdrocksensor fir d\'Entspäre vun dengem Schierm benotze wëlls, muss du:</string>
+    <string name="fingerprint_setup_backup_lock_method">Eng zweet Entspärmethod ariichten</string>
+    <string name="fingerprint_setup_add_fingerprint">Däi Fangerofdrock dobäisetzen</string>
+    <string name="fingerprint_setup_screen_lock_setup">D\'Schiermspär ariichten</string>
+    <string name="settings_lockscreen_setup_details">Wéi wëlls du däi Schierm spären?</string>
 </resources>

@@ -17,54 +17,52 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Sąrankos vediklis</string>
-  <string name="next">Kitas</string>
-  <string name="skip">Praleisti</string>
-  <string name="start">Pradėti</string>
-  <string name="ok">Gerai</string>
-  <string name="loading">Sekundėlę\u2026</string>
-  <string name="setup_complete">Sąranka baigta</string>
-  <string name="setup_welcome">Sveiki</string>
-  <string name="setup_wifi">Pasirinkite „Wi-Fi“</string>
-  <string name="setup_sim_missing">SIM kortelės nėra</string>
-  <string name="setup_choose_data_sim">Pasirinkite SIM dėl duomenų</string>
-  <string name="setup_location">Vietovės paslaugos</string>
-  <string name="setup_other">Kitos paslaugos</string>
-  <string name="setup_datetime">Data ir laikas</string>
-  <string name="setup_current_date">Dabartinė data</string>
-  <string name="setup_current_time">Dabartinis laikas</string>
-  <string name="sim_missing_summary" product="tablet">SIM kortelė nebuvo aptikta jūsų planšetiniame kompiuteryje. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo planšetiniu kompiuteriu.</string>
-  <string name="sim_missing_summary" product="default">SIM kortelė nebuvo aptikta jūsų telefone. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo telefonu.</string>
-  <string name="choose_data_sim_summary" product="tablet">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų planšetinį kompiuterį.</string>
-  <string name="choose_data_sim_summary" product="default">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų telefoną.</string>
-  <string name="date_time_summary">Jei reikia nustatykite savo laiko juostą ir koreguokite dabartinę datą ir laiką</string>
-  <string name="backup_data_summary"><b>Kurti</b> atsargines programos duomenų, „Wi-Fi“ slaptažodžių ir kitų nustatymų kopijas „Google“ serveriuose</string>
-  <string name="other_services_summary">Šios paslaugos leidžia „Google“ atlikti darbą už jus, jūs galite jas įjungti arba išjungti bet kuriuo metu. Duomenys bus naudojami pagal „Google“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavines.</string>
-  <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
-  <string name="location_network"><b>Naudoti „Wi-Fi“</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
-  <string name="location_network_gms"><b>Naudoti „Google“ vietos paslaugą</b>, kad padėti programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
-  <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
-  <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
-  <string name="no">Ne</string>
-  <string name="yes">Taip</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Pagalbos skambutis</string>
-  <string name="services_privacy_policy">Privatumo politika</string>
-  <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Taikyti <xliff:g id="name" example="Material">%s</xliff:g> temą</string>
-  <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
-  <string name="setup_unlock">Atrakinti</string>
-  <string name="setup_device_locked">Šis įrenginys buvo užrakintas naudotojo.</string>
-  <string name="setup_device_locked_instructions"><i>Kad išjungtumėte / įjungtumėte šią funkciją, eikite į Nustatymai &gt; Sauga</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
-  <string name="settings_fingerprint_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
-  <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>
-  <string name="fingerprint_setup_summary">Norint naudotis pirštų atspaudų jutikliu, kad atrakinti ekraną, jums reikia:</string>
-  <string name="fingerprint_setup_backup_lock_method">Nustatyti antrinį atrakinimo metodą</string>
-  <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
-  <string name="fingerprint_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
+    <string name="app_name">Sąrankos vediklis</string>
+    <string name="next">Kitas</string>
+    <string name="skip">Praleisti</string>
+    <string name="start">Pradėti</string>
+    <string name="ok">Gerai</string>
+    <string name="loading">Sekundėlę\u2026</string>
+    <string name="setup_complete">Sąranka baigta</string>
+    <string name="setup_welcome">Sveiki</string>
+    <string name="setup_wifi">Pasirinkite „Wi-Fi“</string>
+    <string name="setup_sim_missing">SIM kortelės nėra</string>
+    <string name="setup_choose_data_sim">Pasirinkite SIM dėl duomenų</string>
+    <string name="setup_location">Vietovės paslaugos</string>
+    <string name="setup_other">Kitos paslaugos</string>
+    <string name="setup_datetime">Data ir laikas</string>
+    <string name="setup_current_date">Dabartinė data</string>
+    <string name="setup_current_time">Dabartinis laikas</string>
+    <string name="sim_missing_summary" product="tablet">SIM kortelė nebuvo aptikta jūsų planšetiniame kompiuteryje. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo planšetiniu kompiuteriu.</string>
+    <string name="sim_missing_summary" product="default">SIM kortelė nebuvo aptikta jūsų telefone. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo telefonu.</string>
+    <string name="choose_data_sim_summary" product="tablet">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų planšetinį kompiuterį.</string>
+    <string name="choose_data_sim_summary" product="default">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų telefoną.</string>
+    <string name="date_time_summary">Jei reikia nustatykite savo laiko juostą ir koreguokite dabartinę datą ir laiką</string>
+    <string name="backup_data_summary"><b>Kurti</b> atsargines programos duomenų, „Wi-Fi“ slaptažodžių ir kitų nustatymų kopijas „Google“ serveriuose</string>
+    <string name="other_services_summary">Šios paslaugos leidžia „Google“ atlikti darbą už jus, jūs galite jas įjungti arba išjungti bet kuriuo metu. Duomenys bus naudojami pagal „Google“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavines.</string>
+    <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
+    <string name="location_network"><b>Naudoti „Wi-Fi“</b> , kad padėti programoms nustatyti jūsų buvimo vietą.</string>
+    <string name="location_network_gms"><b>Naudoti „Google“ vietos paslaugą</b>, kad padėti programoms nustatyti jūsų buvimo vietą. Tai reiškia, anoniminių vietos duomenų siuntimą į „Google“, net tada, kai neveikia jokios programos.</string>
+    <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
+    <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
+    <string name="no">Ne</string>
+    <string name="yes">Taip</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Pagalbos skambutis</string>
+    <string name="services_privacy_policy">Privatumo politika</string>
+    <string name="services_help_improve_cm">Padėti tobulinti <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_apply_theme">Taikyti <xliff:g id="name" example="Material">%s</xliff:g> temą</string>
+    <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
+    <string name="setup_unlock">Atrakinti</string>
+    <string name="setup_device_locked">Šis įrenginys buvo užrakintas naudotojo.</string>
+    <string name="setup_device_locked_instructions"><i>Kad išjungtumėte / įjungtumėte šią funkciją, eikite į Nustatymai &gt; Sauga</i></string>
+    <string name="settings_fingerprint_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
+    <string name="settings_fingerprint_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
+    <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>
+    <string name="fingerprint_setup_summary">Norint naudotis pirštų atspaudų jutikliu, kad atrakinti ekraną, jums reikia:</string>
+    <string name="fingerprint_setup_backup_lock_method">Nustatyti antrinį atrakinimo metodą</string>
+    <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
+    <string name="fingerprint_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
+    <string name="settings_lockscreen_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
 </resources>

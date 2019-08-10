@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Ezarpen laguntzailea</string>
-  <string name="next">Hurrengoa</string>
-  <string name="skip">Saltatu</string>
-  <string name="start">Hasi</string>
-  <string name="done">Eginda</string>
-  <string name="ok">Ados</string>
-  <string name="loading">Une bat\u2026</string>
-  <string name="setup_complete">Ezarpena burutu da</string>
-  <string name="setup_welcome">Ongi etorri</string>
-  <string name="setup_locale">Hizkuntza</string>
-  <string name="setup_wifi">Hautatu Wi-Fia</string>
-  <string name="setup_sim_missing">SIM txartela falta da</string>
-  <string name="setup_choose_data_sim">Aukeratu datuetarako SIM txartela</string>
-  <string name="setup_location">Kokaleku zerbitzuak</string>
-  <string name="setup_other">Bestelako zerbitzuak</string>
-  <string name="setup_datetime">Data eta ordua</string>
-  <string name="setup_current_date">Uneko data</string>
-  <string name="setup_current_time">Uneko ordua</string>
-  <string name="sim_missing_summary" product="tablet">Ez da SIM txartelik antzeman zure tabletan. SIM txartel bat sartzeko jarraitu zure gailuarekin zetozen argibideak.</string>
-  <string name="sim_missing_summary" product="default">Ez da SIM txartelik antzeman zure telefonoan. SIM txartel bat sartzeko jarraitu zure gailuarekin zetozen argibideak.</string>
-  <string name="choose_data_sim_summary" product="tablet">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure tableta ezartzeko erabiliko baita.</string>
-  <string name="choose_data_sim_summary" product="default">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure telefonoa ezartzeko erabiliko baita.</string>
-  <string name="date_time_summary">Ezarri zure ordu-zona eta doitu oraingo data beharrezkoa bada</string>
-  <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>babeskopia</b> egin Google zerbitzarietan</string>
-  <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
-  <string name="location_services_summary">Kokaleku zerbitzuek zure kokalekua bezalako datuak eskuratzea ahalbidetzen diete sistemako eta instalatutako aplikazioei. Adibidez, aplikazio batek zure kokalekua erabili lezake inguruko kafetegiak aurkitzeko.</string>
-  <string name="location_access_summary"><b>Baimena eskatu dizuten aplikazioei</b> zure kokaleku informazioa erabiltzea ahalbidetu. Uneko zein iraganeko kokalekuak barne.</string>
-  <string name="location_battery_saving"><b>Gutxiagotu bateria kontsumoa</b> orduko GPS eguneratzeak mugatuz.</string>
-  <string name="location_network"><b>Erabili Wi-Fia</b> aplikazioei zure kokalekua zehazten laguntzeko.</string>
-  <string name="location_network_telephony"><b>Erabili Wi-Fi eta sare mugikorrak</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
-  <string name="location_network_gms"><b>Erabili Google kokaleku zerbitzua</b> aplikazioei zure kokalekua zehazten laguntzeko. Honek Googlei kokaleku informazio anonimoa bidaltzea dakar, aplikaziorik erabiltzen ez duzunean ere.</string>
-  <string name="setup_mobile_data">Piztu datu mugikorrak</string>
-  <string name="setup_mobile_data_no_service">Zerbitzurik ez</string>
-  <string name="setup_mobile_data_emergency_only">Larrialdi deiak besterik ez</string>
-  <string name="enable_mobile_data_summary">Datu mugikorrak erabili nahi dituzu ezarpenean? Datu mugikorrak pizteak gastuak ekar ditzake.</string>
-  <string name="no">Ez</string>
-  <string name="yes">Bai</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Larrialdi deia</string>
-  <string name="setup_services">LineageOS ezaugarriak</string>
-  <string name="services_explanation" product="tablet">Zerbitzu hauek tabletaren gaitasunak hobetzeko zure mesedetan egiten dute lan. Datuak LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
-  <string name="services_explanation" product="default">Zerbitzu hauek telefonoaren gaitasunak hobetzeko zure mesedetan egiten dute lan. Datuak LineageOSen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
-  <string name="services_privacy_policy">Pribatutasun politika</string>
-  <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="CyanogenMod">%s</xliff:g> hobetzen</string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatikoki diagnostiko eta erabilera datuak bidaliz LineageOSi. Informazio hau ezin da erabili zu identifikatzeko eta bateriaren iraupena, aplikazioen errendimendua, eta <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ezaugarri berrietan lanean dabilen taldearentzat lagungarria da.</string>
-  <string name="services_apply_theme">Aplikatu <xliff:g id="name" example="Material">%s</xliff:g> gaia</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zure ikono, horma-irudi eta bestelakoentzat estilo bisual paregabe bat gaituz.</string>
-  <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
-  <string name="services_os_privacy_guard"><b>Gaitu Privacy guard</b> zure datu pertsonalak, esaterako kontaktuak, mezuak edo deien erregistroa instalatu berri dituzun aplikazioen eskura egon ez daitezen</string>
-  <string name="setup_unlock">Desblokeatu</string>
-  <string name="setup_device_locked">Erabiltzaileak gailu hau blokeatu du.</string>
-  <string name="setup_require_cyanogen_label"><b>Eskatu zure kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero ere.</string>
-  <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo ezgaitzeko zoaz hona: Ezarpenak &gt; Segurtasuna</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
-  <string name="settings_fingerprint_setup_details">Nola blokeatu nahi duzu pantaila?</string>
-  <string name="fingerprint_setup_title">Hatz-markaren ezarpena</string>
-  <string name="fingerprint_setup_summary">Zure hatz-marka sentsorea erabiliz zure pantaila desblokeatzeko, honako hau egin behar duzu:</string>
-  <string name="fingerprint_setup_backup_lock_method">Ezarri ordezko desblokeo metodo bat</string>
-  <string name="fingerprint_setup_add_fingerprint">Gehitu zure hatz-marka</string>
-  <string name="fingerprint_setup_screen_lock_setup">Ezarri pantaila blokeoa</string>
-  <string name="sim_locale_changed">%1$s SIM antzeman da</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Hautatu pantaila-blokeo mota</string>
-  <string name="settings_lockscreen_setup_details">Nola blokeatu nahi duzu pantaila?</string>
-  <string name="lockscreen_setup_title">Babestu telefonoa</string>
-  <string name="lockscreen_setup_summary"><b>Babestu gailua</b> eta eskatu PIN kode, eredu edo pasahitz bat pantaila desblokeatzeko</string>
-  <string name="lockscreen_setup_screen_lock_setup">Ezarri</string>
+    <string name="app_name">Ezarpen laguntzailea</string>
+    <string name="next">Hurrengoa</string>
+    <string name="skip">Saltatu</string>
+    <string name="start">Hasi</string>
+    <string name="done">Eginda</string>
+    <string name="ok">Ados</string>
+    <string name="loading">Une bat\u2026</string>
+    <string name="setup_complete">Ezarpena burutu da</string>
+    <string name="setup_welcome">Ongi etorri</string>
+    <string name="setup_locale">Hizkuntza</string>
+    <string name="setup_wifi">Hautatu Wi-Fia</string>
+    <string name="setup_sim_missing">SIM txartela falta da</string>
+    <string name="setup_choose_data_sim">Aukeratu datuetarako SIM txartela</string>
+    <string name="setup_location">Kokaleku zerbitzuak</string>
+    <string name="setup_other">Bestelako zerbitzuak</string>
+    <string name="setup_datetime">Data eta ordua</string>
+    <string name="setup_current_date">Uneko data</string>
+    <string name="setup_current_time">Uneko ordua</string>
+    <string name="sim_missing_summary" product="tablet">Ez da SIM txartelik antzeman zure tabletan. SIM txartel bat sartzeko jarraitu zure gailuarekin zetozen argibideak.</string>
+    <string name="sim_missing_summary" product="default">Ez da SIM txartelik antzeman zure telefonoan. SIM txartel bat sartzeko jarraitu zure gailuarekin zetozen argibideak.</string>
+    <string name="choose_data_sim_summary" product="tablet">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure tableta ezartzeko erabiliko baita.</string>
+    <string name="choose_data_sim_summary" product="default">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure telefonoa ezartzeko erabiliko baita.</string>
+    <string name="date_time_summary">Ezarri zure ordu-zona eta doitu oraingo data beharrezkoa bada</string>
+    <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>babeskopia</b> egin Google zerbitzarietan</string>
+    <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
+    <string name="location_services_summary">Kokaleku zerbitzuek zure kokalekua bezalako datuak eskuratzea ahalbidetzen diete sistemako eta instalatutako aplikazioei. Adibidez, aplikazio batek zure kokalekua erabili lezake inguruko kafetegiak aurkitzeko.</string>
+    <string name="location_access_summary"><b>Baimena eskatu dizuten aplikazioei</b> zure kokaleku informazioa erabiltzea ahalbidetu. Uneko zein iraganeko kokalekuak barne.</string>
+    <string name="location_battery_saving"><b>Gutxiagotu bateria kontsumoa</b> orduko GPS eguneratzeak mugatuz.</string>
+    <string name="location_network"><b>Erabili Wi-Fia</b> aplikazioei zure kokalekua zehazten laguntzeko.</string>
+    <string name="location_network_telephony"><b>Erabili Wi-Fi eta sare mugikorrak</b> aplikazioei zure kokapena zehazten laguntzeko.</string>
+    <string name="location_network_gms"><b>Erabili Google kokaleku zerbitzua</b> aplikazioei zure kokalekua zehazten laguntzeko. Honek Googlei kokaleku informazio anonimoa bidaltzea dakar, aplikaziorik erabiltzen ez duzunean ere.</string>
+    <string name="setup_mobile_data">Piztu datu mugikorrak</string>
+    <string name="setup_mobile_data_no_service">Zerbitzurik ez</string>
+    <string name="setup_mobile_data_emergency_only">Larrialdi deiak besterik ez</string>
+    <string name="enable_mobile_data_summary">Datu mugikorrak erabili nahi dituzu ezarpenean? Datu mugikorrak pizteak gastuak ekar ditzake.</string>
+    <string name="no">Ez</string>
+    <string name="yes">Bai</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Larrialdi deia</string>
+    <string name="setup_services">LineageOS ezaugarriak</string>
+    <string name="services_explanation" product="tablet">Zerbitzu hauek tabletaren gaitasunak hobetzeko zure mesedetan egiten dute lan. Datuak LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
+    <string name="services_explanation" product="default">Zerbitzu hauek telefonoaren gaitasunak hobetzeko zure mesedetan egiten dute lan. Datuak LineageOSen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
+    <string name="services_privacy_policy">Pribatutasun politika</string>
+    <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="CyanogenMod">%s</xliff:g> hobetzen</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatikoki diagnostiko eta erabilera datuak bidaliz LineageOSi. Informazio hau ezin da erabili zu identifikatzeko eta bateriaren iraupena, aplikazioen errendimendua, eta <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ezaugarri berrietan lanean dabilen taldearentzat lagungarria da.</string>
+    <string name="services_apply_theme">Aplikatu <xliff:g id="name" example="Material">%s</xliff:g> gaia</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> zure ikono, horma-paper eta bestelakoentzat estilo bisual paregabe bat gaituz.</string>
+    <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
+    <string name="services_os_privacy_guard"><b>Gaitu Privacy guard</b> zure datu pertsonalak, esaterako kontaktuak, mezuak edo deien erregistroa instalatu berri dituzun aplikazioen eskura egon ez daitezen</string>
+    <string name="setup_unlock">Desblokeatu</string>
+    <string name="setup_device_locked">Erabiltzaileak gailu hau blokeatu du.</string>
+    <string name="setup_require_cyanogen_label"><b>Eskatu zure kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero ere.</string>
+    <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo ezgaitzeko zoaz hona: Ezarpenak &gt; Segurtasuna</i></string>
+    <string name="settings_fingerprint_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
+    <string name="settings_fingerprint_setup_details">Nola blokeatu nahi duzu pantaila?</string>
+    <string name="fingerprint_setup_title">Hatz-markaren ezarpena</string>
+    <string name="fingerprint_setup_summary">Zure hatz-marka sentsorea erabiliz zure pantaila desblokeatzeko, honako hau egin behar duzu:</string>
+    <string name="fingerprint_setup_backup_lock_method">Ezarri ordezko desblokeo metodo bat</string>
+    <string name="fingerprint_setup_add_fingerprint">Gehitu zure hatz-marka</string>
+    <string name="fingerprint_setup_screen_lock_setup">Ezarri pantaila blokeoa</string>
+    <string name="sim_locale_changed">%1$s SIM antzeman da</string>
+    <string name="settings_lockscreen_setup_title">Hautatu pantaila-blokeo mota</string>
+    <string name="settings_lockscreen_setup_details">Nola blokeatu nahi duzu pantaila?</string>
+    <string name="lockscreen_setup_title">Babestu telefonoa</string>
+    <string name="lockscreen_setup_summary"><b>Babestu gailua</b> eta eskatu PIN kode, eredu edo pasahitz bat pantaila desblokeatzeko</string>
+    <string name="lockscreen_setup_screen_lock_setup">Ezarri</string>
 </resources>

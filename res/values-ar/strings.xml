@@ -17,61 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">معالج الإعداد</string>
-  <string name="next">التالي</string>
-  <string name="skip">تخطي</string>
-  <string name="start">البداية</string>
-  <string name="ok">موافق</string>
-  <string name="loading">ثانية واحدة</string>
-  <string name="setup_complete">الإعداد تم</string>
-  <string name="setup_welcome">مرحبا</string>
-  <string name="setup_wifi">تحديد الواي فاي</string>
-  <string name="setup_sim_missing">شريحة SIM مفقودة</string>
-  <string name="setup_choose_data_sim">اختر شريحة SIM للبيانات</string>
-  <string name="setup_location">خدمات الموقع</string>
-  <string name="setup_other">خدمات أخرى</string>
-  <string name="setup_datetime">التاريخ والوقت</string>
-  <string name="setup_current_date">التاريخ الحالي</string>
-  <string name="setup_current_time">الوقت الحالي</string>
-  <string name="sim_missing_summary" product="tablet">لم يتم العثور على شريحة SIM في الكمبيوتر اللوحي الخاص بك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
-  <string name="sim_missing_summary" product="default">لم يتم العثور على شريحة SIM في هاتفك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
-  <string name="choose_data_sim_summary" product="tablet">أي شريحة SIM تريد استخدامها للبيانات؟ شريحة SIM المحددة قد يترتب عليها رسوماً للشبكة لأنها ستُستخدم لإعداد الكمبيوتر اللوحي الخاص بك.</string>
-  <string name="choose_data_sim_summary" product="default">أي شريحة SIM تريد استخدامها للبيانات؟ شريحة SIM المحددة قد يترتب عليها رسوماً للشبكة لأنها ستُستخدم لإعداد هاتفك.</string>
-  <string name="date_time_summary">تعيين منطقتك الزمنية وضبط الوقت والتاريخ الحالي إذا لزم الأمر</string>
-  <string name="backup_data_summary"><b>إجراء نسخ احتياطي</b> لبيانات التطبيقات وكلمات مرور شبكات الواي فاي والإعدادات الأخرى على خوادم جوجل</string>
-  <string name="other_services_summary">هذه الخدمات  تجعل جوجل في خدمتك، ويمكنك تشغيلها أو إيقاف تشغيلها في أي وقت. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">تسمح خدمات الموقع لتطبيقات النظام والتطبيقات الخارجية بجمع واستخدام البيانات مثل موقعك التقريبي. على سبيل المثال، قد يستخدم تطبيق ما موقعك التقريبي لتحديد موقع  المقاهي القريبة.</string>
-  <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
-  <string name="location_battery_saving"><b>قم بتقليل استهلاك البطارية</b> من خلال تقييد عدد تحديثات GPS في كل ساعة.</string>
-  <string name="location_network"><b>استخدام الواي فاي</b> لمساعدة التطبيقات على تحديد موقعك.</string>
-  <string name="location_network_telephony"><b>استخدام Wi-Fi والشبكات الخلوية</b> لمساعدة التطبيقات على تحديد موقعك.</string>
-  <string name="location_network_gms"><b>استخدام خدمة الموقع من جوجل</b> لمساعدة التطبيقات على تحديد موقعك. وهذا يعني إرسال بيانات مجهولة عن الموقع إلى جوجل، حتى في حالة عدم تشغيل أي تطبيقات.</string>
-  <string name="setup_mobile_data">تشغيل البيانات الخلوية</string>
-  <string name="setup_mobile_data_no_service">لا توجد خدمة</string>
-  <string name="setup_mobile_data_emergency_only">مكالمات الطوارئ فقط</string>
-  <string name="enable_mobile_data_summary">هل تريد استخدام البيانات الخلوية أثناء عملية الإعداد؟ قد يخضع تشغيل البيانات الخلوية إلى تطبيق رسوم بيانات.</string>
-  <string name="no">لا</string>
-  <string name="yes">نعم</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة</string>
-  <string name="emergency_call">مكالمة طوارئ</string>
-  <string name="services_privacy_policy">سياسة الخصوصية</string>
-  <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">تطبيق السمة <xliff:g id="name" example="Material">%s </xliff:g></string>
-  <string name="services_apply_theme_label">يعمل <xliff:g id="name" example="Apply the Material theme">%s</xliff:g> على تمكين نمط مرئي فريد للأيقونات الخاصة بك، الخلفية والمزيد.</string>
-  <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
-  <string name="setup_unlock">فتح القفل</string>
-  <string name="setup_device_locked">هذا الجهاز تم قفله من قبل المستخدم.</string>
-  <string name="setup_device_locked_instructions"><i>من أجل تشغيل/تعطيل هذه الميزة، الرجاء إذهب إلى إعدادات &gt; الأمان</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">حدد نوعاً احتياطياً لشاشة القفل</string>
-  <string name="settings_fingerprint_setup_details">كيف تريد إقفال الشاشة؟</string>
-  <string name="fingerprint_setup_title">إنشاء بصمة الإصبع</string>
-  <string name="fingerprint_setup_summary">لاستخدام مستشعر بصمات الأصابع لفتح شاشتك، سيكون عليك:</string>
-  <string name="fingerprint_setup_backup_lock_method">إنشاء طريقة احتياطية لإلغاء إقفال الشاشة</string>
-  <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
-  <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
-  <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">كيف تريد إقفال الشاشة؟</string>
-  <string name="lockscreen_setup_summary"><b>حماية هذا الجهاز</b> وطلب رقم تعريف شخصي أو نمط أو كلمة مرور لإلغاء قفل الشاشة.</string>
+    <string name="app_name">معالج الإعداد</string>
+    <string name="next">التالي</string>
+    <string name="skip">تخطي</string>
+    <string name="start">البداية</string>
+    <string name="done">تم</string>
+    <string name="ok">موافق</string>
+    <string name="loading">ثانية واحدة</string>
+    <string name="setup_complete">الإعداد تم</string>
+    <string name="setup_welcome">مرحبا</string>
+    <string name="setup_locale">اللغة</string>
+    <string name="setup_wifi">تحديد الواي فاي</string>
+    <string name="setup_sim_missing">شريحة SIM مفقودة</string>
+    <string name="setup_choose_data_sim">اختر شريحة SIM للبيانات</string>
+    <string name="setup_location">خدمات الموقع</string>
+    <string name="setup_other">خدمات أخرى</string>
+    <string name="setup_datetime">التاريخ والوقت</string>
+    <string name="setup_current_date">التاريخ الحالي</string>
+    <string name="setup_current_time">الوقت الحالي</string>
+    <string name="sim_missing_summary" product="tablet">لم يتم العثور على شريحة SIM في الكمبيوتر اللوحي الخاص بك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
+    <string name="sim_missing_summary" product="default">لم يتم العثور على شريحة SIM في هاتفك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
+    <string name="choose_data_sim_summary" product="tablet">أي شريحة SIM تريد استخدامها للبيانات؟ شريحة SIM المحددة قد يترتب عليها رسوماً للشبكة لأنها ستُستخدم لإعداد الكمبيوتر اللوحي الخاص بك.</string>
+    <string name="choose_data_sim_summary" product="default">أي شريحة SIM تريد استخدامها للبيانات؟ شريحة SIM المحددة قد يترتب عليها رسوماً للشبكة لأنها ستُستخدم لإعداد هاتفك.</string>
+    <string name="date_time_summary">تعيين منطقتك الزمنية وضبط الوقت والتاريخ الحالي إذا لزم الأمر</string>
+    <string name="backup_data_summary"><b>إجراء نسخ احتياطي</b> لبيانات التطبيقات وكلمات مرور شبكات الواي فاي والإعدادات الأخرى على خوادم جوجل</string>
+    <string name="other_services_summary">هذه الخدمات  تجعل جوجل في خدمتك، ويمكنك تشغيلها أو إيقاف تشغيلها في أي وقت. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">تسمح خدمات الموقع لتطبيقات النظام والتطبيقات الخارجية بجمع واستخدام البيانات مثل موقعك التقريبي. على سبيل المثال، قد يستخدم تطبيق ما موقعك التقريبي لتحديد موقع  المقاهي القريبة.</string>
+    <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
+    <string name="location_battery_saving"><b>قم بتقليل استهلاك البطارية</b> من خلال تقييد عدد تحديثات GPS في كل ساعة.</string>
+    <string name="location_network"><b>استخدام الواي فاي</b> لمساعدة التطبيقات على تحديد موقعك.</string>
+    <string name="location_network_telephony"><b>استخدام Wi-Fi والشبكات الخلوية</b> لمساعدة التطبيقات على تحديد موقعك.</string>
+    <string name="location_network_gms"><b>استخدام خدمة الموقع من جوجل</b> لمساعدة التطبيقات على تحديد موقعك. وهذا يعني إرسال بيانات مجهولة عن الموقع إلى جوجل، حتى في حالة عدم تشغيل أي تطبيقات.</string>
+    <string name="setup_mobile_data">تشغيل البيانات الخلوية</string>
+    <string name="setup_mobile_data_no_service">لا توجد خدمة</string>
+    <string name="setup_mobile_data_emergency_only">مكالمات الطوارئ فقط</string>
+    <string name="enable_mobile_data_summary">هل تريد استخدام البيانات الخلوية أثناء عملية الإعداد؟ قد يخضع تشغيل البيانات الخلوية إلى تطبيق رسوم بيانات.</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g> شريحة</string>
+    <string name="emergency_call">مكالمة طوارئ</string>
+    <string name="setup_services">ميزات LineageOS</string>
+    <string name="services_explanation" product="tablet">تعمل هذه الخدمات على توسيع نطاق إمكانيات كمبيوترك اللوحي. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_explanation" product="default">تعمل هذه الخدمات على توسيع نطاق إمكانيات كمبيوترك اللوحي. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_privacy_policy">سياسة الخصوصية</string>
+    <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s </xliff:g> بإرسال بيانات تشخيص المشكلات وبيانات الاستخدام تلقائيًا إلى LineageOS. هذه المعلومات لا يمكن استخدامها للتعرف عليك، لكنها تقدم المساعدة للفرق العاملة على جوانب مثل عمر البطارية وأداء التطبيقات، وميزات <xliff:g id="name" example="CyanogenMod"> %2$s </xliff:g> الجديدة.</string>
+    <string name="services_apply_theme">تطبيق السمة <xliff:g id="name" example="Material">%s </xliff:g></string>
+    <string name="services_apply_theme_label">يعمل <xliff:g id="name" example="Apply the Material theme">%s</xliff:g> على تمكين نمط مرئي فريد للأيقونات الخاصة بك، الخلفية والمزيد.</string>
+    <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
+    <string name="services_os_privacy_guard"><b>تمكين حماية الخصوصية</b> لجعل بياناتك الشخصية مثل الرسائل أو جهات الاتصال، وسجلات المكالمات غير متوفرة للتطبيقات المثبتة حديثًا</string>
+    <string name="setup_unlock">فتح القفل</string>
+    <string name="setup_device_locked">هذا الجهاز تم قفله من قبل المستخدم.</string>
+    <string name="setup_require_cyanogen_label"><b>يتطلب كلمة مرور حسابك</b> حتى تتمكن من استخدام الجهاز حتى بعد إعادة تعيين المصنع.</string>
+    <string name="setup_device_locked_instructions"><i>من أجل تشغيل/تعطيل هذه الميزة، الرجاء إذهب إلى إعدادات &gt; الأمان</i></string>
+    <string name="settings_fingerprint_setup_title">حدد نوعاً احتياطياً لشاشة القفل</string>
+    <string name="settings_fingerprint_setup_details">كيف تريد إقفال الشاشة؟</string>
+    <string name="fingerprint_setup_title">إنشاء بصمة الإصبع</string>
+    <string name="fingerprint_setup_summary">لاستخدام مستشعر بصمات الأصابع لفتح شاشتك، سيكون عليك:</string>
+    <string name="fingerprint_setup_backup_lock_method">إنشاء طريقة احتياطية لإلغاء إقفال الشاشة</string>
+    <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
+    <string name="fingerprint_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
+    <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
+    <string name="settings_lockscreen_setup_title">حدد نوع شاشة القفل</string>
+    <string name="settings_lockscreen_setup_details">كيف تريد إقفال الشاشة؟</string>
+    <string name="lockscreen_setup_title">حماية هاتفك</string>
+    <string name="lockscreen_setup_summary"><b>حماية هذا الجهاز</b> وطلب رقم تعريف شخصي أو نمط أو كلمة مرور لإلغاء قفل الشاشة.</string>
+    <string name="lockscreen_setup_screen_lock_setup">إعداد</string>
 </resources>

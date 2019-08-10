@@ -17,62 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">เปิดใช้ครั้งแรก</string>
-  <string name="next">ถัดไป</string>
-  <string name="skip">ข้าม</string>
-  <string name="start">เริ่มต้น</string>
-  <string name="ok">ตกลง</string>
-  <string name="loading">รอสักครู่\u2026</string>
-  <string name="setup_complete">การตั้งค่าเสร็จสมบูรณ์</string>
-  <string name="setup_welcome">ยินดีต้อนรับ</string>
-  <string name="setup_wifi">เลือก Wi-Fi</string>
-  <string name="setup_sim_missing">ไม่พบซิมการ์ด</string>
-  <string name="setup_choose_data_sim">เลือกซิมการ์ดสำหรับข้อมูล</string>
-  <string name="setup_location">บริการตำแหน่งที่ตั้ง</string>
-  <string name="setup_other">บริการอื่น ๆ</string>
-  <string name="setup_datetime">วัน &amp; เวลา</string>
-  <string name="setup_current_date">วันที่ปัจจุบัน</string>
-  <string name="setup_current_time">เวลาปัจจุบัน</string>
-  <string name="sim_missing_summary" product="tablet">ไม่พบซิมการ์ดในแท็บเล็ตของคุณ ในการใส่ซิมการ์ด ให้อ่านคำแนะนำที่มาพร้อมกับอุปกรณ์ของคุณ</string>
-  <string name="sim_missing_summary" product="default">ไม่พบซิมการ์ดในโทรศัพท์ของคุณ การใส่ซิมการ์ดให้อ่านคำแนะนำที่มาพร้อมกับอุปกรณ์</string>
-  <string name="choose_data_sim_summary" product="tablet">กรุณาเลือกซิมการ์ดที่ต้องการใช้ข้อมูล ซิมที่เลือกอาจมีค่าบริการเครือข่ายเนื่องจากซิมดังกล่าวจะใช้ในการตั้งค่าแท็บเล็ตของคุณ</string>
-  <string name="choose_data_sim_summary" product="default">กรุณาเลือกซิมการ์ดที่ต้องการใช้ข้อมูล ซิมที่เลือกอาจมีค่าบริการเครือข่าย เนื่องจากซิมดังกล่าวจะใช้ในการตั้งค่าโทรศัพท์ของคุณ</string>
-  <string name="date_time_summary">ตั้งค่าเขตเวลาและวันที่ของคุณหากคุณต้องการ</string>
-  <string name="backup_data_summary"><b>สำรอง</b>ข้อมูลแอป รหัสผ่าน Wi-Fi และการตั้งค่าอื่น ๆ ไปยังเซิร์ฟเวอร์ของ Google</string>
-  <string name="other_services_summary">บริการเหล่านี้ทำให้ Google ทำงานเพื่อคุณ คุณสามารถเปิดหรือปิดบริการเหล่านั้นได้เสมอ โดยจะใช้ข้อมูลตาม <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ของ Google</string>
-  <string name="location_services_summary">บริการตำแหน่งที่ตั้งอนุญาตให้ระบบและแอปบุคคลที่สามเก็บและใช้ข้อมูล เช่น ตำแหน่งที่ตั้งของคุณได้ เช่น แอปสามารถใช้ตำแหน่งที่ตั้งของคุณเพื่อหาร้านกาแฟใกล้เคียง</string>
-  <string name="location_access_summary"><b>อนุญาตให้แอปที่ขออนุญาต</b> ใช้ข้อมูลตำแหน่งที่ตั้งของคุณ ซึ่งอาจรวมถึงตำแหน่งที่ตั้งปัจจุบันและที่ผ่านมา</string>
-  <string name="location_battery_saving"><b>ลดปริมาณการใช้แบตเตอรี่</b> โดยการจำกัดจำนวนครั้งการใช้จีพีเอส</string>
-  <string name="location_network"><b>ใช้ Wi-Fi</b> เพื่อช่วยให้แอปหาตำแหน่งได้ง่ายขึ้น</string>
-  <string name="location_network_telephony"><b>ใช้ Wi-Fi และเครือข่ายมือถือ</b> เพื่อช่วยให้แอปหาตำแหน่งของคุณ</string>
-  <string name="location_network_gms"><b>ใช้บริการตำแหน่งที่ตั้งของ Google</b> เพื่อช่วยแอปหาตำแหน่งที่ตั้ง ซึ่งหมายรวมถึงการส่งข้อมูลตำแหน่งที่ตั้งแบบไม่ระบุตัวตนให้ Google แม้ในกรณีที่ไม่มีแอปใดทำงานอยู่ก็ตาม</string>
-  <string name="setup_mobile_data">เปิดข้อมูลโทรศัพท์มือถือ</string>
-  <string name="setup_mobile_data_no_service">ไม่มีบริการ</string>
-  <string name="setup_mobile_data_emergency_only">โทรฉุกเฉินเท่านั้น</string>
-  <string name="enable_mobile_data_summary">คุณต้องการใช้ข้อมูลเครือข่ายมือถือระหว่างการติดตั้งหรือไม่ การเปิดข้อมูลโทรศัพท์มือถืออาจมีค่าบริการข้อมูล</string>
-  <string name="no">ไม่</string>
-  <string name="yes">ใช่</string>
-  <string name="data_sim_name">ซิม <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">โทรฉุกเฉิน</string>
-  <string name="services_privacy_policy">นโยบายความเป็นส่วนตัว</string>
-  <string name="services_help_improve_cm">ช่วยปรับปรุง <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">ใช้งานรูปแบบธีม <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> กำลังเปิดใช้งานรูปแบบสำหรับไอคอน วอลเปเปอร์ ฯลฯ</string>
-  <string name="services_os_nav_keys_label"><b>ใช้แถบนำทาง</b> แทนการใช้ปุ่มบนอุปกรณ์</string>
-  <string name="setup_unlock">ปลดล็อค</string>
-  <string name="setup_device_locked">อุปกรณ์นี้ถูกล็อคโดยผู้ใช้</string>
-  <string name="setup_device_locked_instructions"><i>เพื่อปิด/เปิดคุณสมบัตินี้ กรุณาไปที่ การตั้งค่า &gt; ความปลอดภัย</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">เลือกประเภทการล็อคหน้าจอสำรอง</string>
-  <string name="settings_fingerprint_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
-  <string name="fingerprint_setup_title">การตั้งค่าลายนิ้วมือ</string>
-  <string name="fingerprint_setup_summary">ในการใช้เซนเซอร์ลายนิ้วมือเพื่อปลดล็อคหน้าจอ คุณต้อง:</string>
-  <string name="fingerprint_setup_backup_lock_method">กำหนดวิธีปลดล็อคสำรอง</string>
-  <string name="fingerprint_setup_add_fingerprint">เพิ่มลายนิ้วมือของคุณ</string>
-  <string name="fingerprint_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
-  <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
-  <string name="lockscreen_setup_title">ปกป้องโทรศัพท์ของคุณ</string>
-  <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>
+    <string name="app_name">เปิดใช้ครั้งแรก</string>
+    <string name="next">ถัดไป</string>
+    <string name="skip">ข้าม</string>
+    <string name="start">เริ่มต้น</string>
+    <string name="done">เสร็จสิ้น</string>
+    <string name="ok">ตกลง</string>
+    <string name="loading">รอสักครู่\u2026</string>
+    <string name="setup_complete">การตั้งค่าเสร็จสมบูรณ์</string>
+    <string name="setup_welcome">ยินดีต้อนรับ</string>
+    <string name="setup_locale">ภาษา</string>
+    <string name="setup_wifi">เลือก Wi-Fi</string>
+    <string name="setup_sim_missing">ไม่พบซิมการ์ด</string>
+    <string name="setup_choose_data_sim">เลือกซิมการ์ดสำหรับข้อมูล</string>
+    <string name="setup_location">บริการตำแหน่งที่ตั้ง</string>
+    <string name="setup_other">บริการอื่น ๆ</string>
+    <string name="setup_datetime">วัน &amp; เวลา</string>
+    <string name="setup_current_date">วันที่ปัจจุบัน</string>
+    <string name="setup_current_time">เวลาปัจจุบัน</string>
+    <string name="sim_missing_summary" product="tablet">ไม่พบซิมการ์ดในแท็บเล็ตของคุณ ในการใส่ซิมการ์ด ให้อ่านคำแนะนำที่มาพร้อมกับอุปกรณ์ของคุณ</string>
+    <string name="sim_missing_summary" product="default">ไม่พบซิมการ์ดในโทรศัพท์ของคุณ การใส่ซิมการ์ดให้อ่านคำแนะนำที่มาพร้อมกับอุปกรณ์</string>
+    <string name="choose_data_sim_summary" product="tablet">กรุณาเลือกซิมการ์ดที่ต้องการใช้ข้อมูล ซิมที่เลือกอาจมีค่าบริการเครือข่ายเนื่องจากซิมดังกล่าวจะใช้ในการตั้งค่าแท็บเล็ตของคุณ</string>
+    <string name="choose_data_sim_summary" product="default">กรุณาเลือกซิมการ์ดที่ต้องการใช้ข้อมูล ซิมที่เลือกอาจมีค่าบริการเครือข่าย เนื่องจากซิมดังกล่าวจะใช้ในการตั้งค่าโทรศัพท์ของคุณ</string>
+    <string name="date_time_summary">ตั้งค่าเขตเวลาและวันที่ของคุณหากคุณต้องการ</string>
+    <string name="backup_data_summary"><b>สำรอง</b>ข้อมูลแอป รหัสผ่าน Wi-Fi และการตั้งค่าอื่น ๆ ไปยังเซิร์ฟเวอร์ของ Google</string>
+    <string name="other_services_summary">บริการเหล่านี้ทำให้ Google ทำงานเพื่อคุณ คุณสามารถเปิดหรือปิดบริการเหล่านั้นได้เสมอ โดยจะใช้ข้อมูลตาม <xliff:g id="name" example="Privacy Policy">%s</xliff:g> ของ Google</string>
+    <string name="location_services_summary">บริการตำแหน่งที่ตั้งอนุญาตให้ระบบและแอปบุคคลที่สามเก็บและใช้ข้อมูล เช่น ตำแหน่งที่ตั้งของคุณได้ เช่น แอปสามารถใช้ตำแหน่งที่ตั้งของคุณเพื่อหาร้านกาแฟใกล้เคียง</string>
+    <string name="location_access_summary"><b>อนุญาตให้แอปที่ขออนุญาต</b> ใช้ข้อมูลตำแหน่งที่ตั้งของคุณ ซึ่งอาจรวมถึงตำแหน่งที่ตั้งปัจจุบันและที่ผ่านมา</string>
+    <string name="location_battery_saving"><b>ลดปริมาณการใช้แบตเตอรี่</b> โดยการจำกัดจำนวนครั้งการใช้จีพีเอส</string>
+    <string name="location_network"><b>ใช้ Wi-Fi</b> เพื่อช่วยให้แอปหาตำแหน่งได้ง่ายขึ้น</string>
+    <string name="location_network_telephony"><b>ใช้ Wi-Fi และเครือข่ายมือถือ</b> เพื่อช่วยให้แอปหาตำแหน่งของคุณ</string>
+    <string name="location_network_gms"><b>ใช้บริการตำแหน่งที่ตั้งของ Google</b> เพื่อช่วยแอปหาตำแหน่งที่ตั้ง ซึ่งหมายรวมถึงการส่งข้อมูลตำแหน่งที่ตั้งแบบไม่ระบุตัวตนให้ Google แม้ในกรณีที่ไม่มีแอปใดทำงานอยู่ก็ตาม</string>
+    <string name="setup_mobile_data">เปิดข้อมูลโทรศัพท์มือถือ</string>
+    <string name="setup_mobile_data_no_service">ไม่มีบริการ</string>
+    <string name="setup_mobile_data_emergency_only">โทรฉุกเฉินเท่านั้น</string>
+    <string name="enable_mobile_data_summary">คุณต้องการใช้ข้อมูลเครือข่ายมือถือระหว่างการติดตั้งหรือไม่ การเปิดข้อมูลโทรศัพท์มือถืออาจมีค่าบริการข้อมูล</string>
+    <string name="no">ไม่</string>
+    <string name="yes">ใช่</string>
+    <string name="data_sim_name">ซิม <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">โทรฉุกเฉิน</string>
+    <string name="setup_services">คุณสมบัติ LineageOS</string>
+    <string name="services_explanation" product="tablet">บริการเหล่านี้ช่วยให้คุณสามารถขยายขีดความสามารถของแท็บเล็ตได้ ข้อมูลจะถูกนำไปใช้กับ LineageOS<xliff:g id="name" example="Privacy Policy">%s</xliff:g></string>
+    <string name="services_explanation" product="default">บริการเหล่านี้ช่วยให้คุณสามารถขยายขีดความสามารถของโทรศัพท์ได้ ข้อมูลจะถูกนำไปใช้กับ LineageOS<xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="services_help_improve_cm">ช่วยปรับปรุง <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> โดยการส่งข้อมูลการวินิจฉัยและการใช้งานไปยัง LineageOS โดยอัตโนมัติ ไม่สามารถใช้ข้อมูลนี้ในการระบุตัวคุณและให้ความช่วยเหลือแก่ทีมที่ทำงานเกี่ยวกับสิ่งต่าง ๆ เช่นอายุการใช้งานแบตเตอรี่ ประสิทธิภาพของแอป และคุณสมบัติ <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ใหม่</string>
+    <string name="services_apply_theme">ใช้งานรูปแบบธีม <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> กำลังเปิดใช้งานรูปแบบสำหรับไอคอน วอลเปเปอร์ ฯลฯ</string>
+    <string name="services_os_nav_keys_label"><b>ใช้แถบนำทาง</b> แทนการใช้ปุ่มบนอุปกรณ์</string>
+    <string name="services_os_privacy_guard"><b>เปิดใช้งานความเป็นส่วนตัว</b> เพื่อไม่ให้ข้อมูลส่วนบุคคลของคุณ เช่นรายชื่อติดต่อข้อความหรือบันทึกการโทร จะไม่พร้อมใช้งานสำหรับแอปที่ติดตั้งใหม่</string>
+    <string name="setup_unlock">ปลดล็อค</string>
+    <string name="setup_device_locked">อุปกรณ์นี้ถูกล็อคโดยผู้ใช้</string>
+    <string name="setup_require_cyanogen_label"><b>ต้องใช้รหัสผ่านบัญชีของคุณ</b> เพื่อใช้งานอุปกรณ์ของคุณแม้หลังจากรีเซ็ตเป็นค่าโรงงาน</string>
+    <string name="setup_device_locked_instructions"><i>เพื่อปิด/เปิดคุณสมบัตินี้ กรุณาไปที่ การตั้งค่า &gt; ความปลอดภัย</i></string>
+    <string name="settings_fingerprint_setup_title">เลือกประเภทการล็อคหน้าจอสำรอง</string>
+    <string name="settings_fingerprint_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
+    <string name="fingerprint_setup_title">การตั้งค่าลายนิ้วมือ</string>
+    <string name="fingerprint_setup_summary">ในการใช้เซนเซอร์ลายนิ้วมือเพื่อปลดล็อคหน้าจอ คุณต้อง:</string>
+    <string name="fingerprint_setup_backup_lock_method">กำหนดวิธีปลดล็อคสำรอง</string>
+    <string name="fingerprint_setup_add_fingerprint">เพิ่มลายนิ้วมือของคุณ</string>
+    <string name="fingerprint_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
+    <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
+    <string name="settings_lockscreen_setup_title">เลือกประเภทล็อคหน้าจอ</string>
+    <string name="settings_lockscreen_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
+    <string name="lockscreen_setup_title">ปกป้องโทรศัพท์ของคุณ</string>
+    <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>
+    <string name="lockscreen_setup_screen_lock_setup">ตั้งค่า</string>
 </resources>

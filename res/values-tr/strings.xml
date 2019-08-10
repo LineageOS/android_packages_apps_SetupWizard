@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Kurulum Sihirbazı</string>
-  <string name="next">Sonraki</string>
-  <string name="skip">Atla</string>
-  <string name="start">Başla</string>
-  <string name="done">Bitti</string>
-  <string name="ok">Tamam</string>
-  <string name="loading">Bir saniye\u2026</string>
-  <string name="setup_complete">Kurulum tamamlandı</string>
-  <string name="setup_welcome">Hoş geldiniz</string>
-  <string name="setup_locale">Dil</string>
-  <string name="setup_wifi">Wi-Fi seçin</string>
-  <string name="setup_sim_missing">SIM kart yok</string>
-  <string name="setup_choose_data_sim">Veri için bir SIM seçin</string>
-  <string name="setup_location">Konum servisleri</string>
-  <string name="setup_other">Diğer servisler</string>
-  <string name="setup_datetime">Tarih &amp; zaman</string>
-  <string name="setup_current_date">Şimdiki tarih</string>
-  <string name="setup_current_time">Şimdiki saat</string>
-  <string name="sim_missing_summary" product="tablet">Tabletinizde bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
-  <string name="sim_missing_summary" product="default">Telefonunuzda bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
-  <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Seçili SIM, tabletinizin kurulumunda kullanılacağı için şebeke ücretlerine tabi olabilir.</string>
-  <string name="choose_data_sim_summary" product="default">Hangi SIM\'i veri için kullanmak istiyorsunuz? Telefonunuzun kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
-  <string name="date_time_summary">Zaman diliminizi seçin ve gerekirse geçerli tarih ve saati ayarlayın</string>
-  <string name="backup_data_summary">Uygulama verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına <b>yedekle</b></string>
-  <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
-  <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
-  <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
-  <string name="location_battery_saving">Saatte yapılan GPS güncelleme sayısını kısıtlayarak <b>pil tüketimini azaltın</b>.</string>
-  <string name="location_network">Uygulamaların konumunuzu bulmanısına yardımcı olmak için <b>Wi-Fi\'yi kullanın</b>.</string>
-  <string name="location_network_telephony">Uygulamaların konumunuzu bulmasına yardımcı olmak için <b>Wi-Fi\'yi ve mobil şebekeleri kullanın</b>.</string>
-  <string name="location_network_gms">Konumunuzu belirlemek için <b>Google konum servislerini kullanın</b>. Bu, hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
-  <string name="setup_mobile_data">Hücresel veriyi etkinleştir</string>
-  <string name="setup_mobile_data_no_service">Servis yok</string>
-  <string name="setup_mobile_data_emergency_only">Sadece acil durum aramaları</string>
-  <string name="enable_mobile_data_summary">Kurulum sırasında hücresel veri kullanmak istiyor musunuz? Hücresel veriyi kullanmak ücrete tabi olabilir.</string>
-  <string name="no">Hayır</string>
-  <string name="yes">Evet</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Acil durum araması</string>
-  <string name="setup_services">LineageOS özellikleri</string>
-  <string name="services_explanation" product="tablet">Bu hizmetler tabletinizin yeteneklerini arttırır. Veriler LineageOS <xliff:g id="name" example="Gizlilik Politikası">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
-  <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler LineageOS <xliff:g id="name" example="Gizlilik Politikası">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
-  <string name="services_privacy_policy">Gizlilik Politikası</string>
-  <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
-  <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ancak pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konulardaki ekip çalışmalarında kullanılır.</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
-  <string name="services_apply_theme_label">Simgeleriniz, duvarkağıdınız ve daha fazlası için benzersiz bir görsel stil sağlayan <xliff:g id="name" example="Apply the Material theme">%s</xliff:g>.</string>
-  <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>yazılımsal gezinme tuşlarını kullanın</b>.</string>
-  <string name="services_os_privacy_guard">Yeni yüklenecek uygulamaların kişileriniz, mesajlarınız ve arama kaydınızı görmemesi için <b>Gizlilik Koruması\'nı etkinleştir.</b></string>
-  <string name="setup_unlock">Kilidi kaldır</string>
-  <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
-  <string name="setup_require_cyanogen_label"><b>Hesap parolanız</b> cihazınızı sıfırladıktan sonra kullanabilmek için gereklidir.</string>
-  <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Yedek ekran kilidi türü seçin</string>
-  <string name="settings_fingerprint_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
-  <string name="fingerprint_setup_title">Parmak izi kurulumu</string>
-  <string name="fingerprint_setup_summary">Ekran kilidini açarken parmak izi sensörünüzü kullanmak için:</string>
-  <string name="fingerprint_setup_backup_lock_method">İkinci kilit açma yönteminizi ayarlayın</string>
-  <string name="fingerprint_setup_add_fingerprint">Parmak izinizi ekleyin</string>
-  <string name="fingerprint_setup_screen_lock_setup">Ekran kilidini kurun</string>
-  <string name="sim_locale_changed">%1$s SIM tespit edildi</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Ekran kilidi türünü seçin</string>
-  <string name="settings_lockscreen_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
-  <string name="lockscreen_setup_title">Telefonunuzu koruyun</string>
-  <string name="lockscreen_setup_summary"><b>Bu cihazı koruyun</b> ve ekran kilidini açmak için bir PIN, desen ya da şifreyi gerekli kılın.</string>
-  <string name="lockscreen_setup_screen_lock_setup">Kur</string>
+    <string name="app_name">Kurulum Sihirbazı</string>
+    <string name="next">Sonraki</string>
+    <string name="skip">Atla</string>
+    <string name="start">Başla</string>
+    <string name="done">Bitti</string>
+    <string name="ok">Tamam</string>
+    <string name="loading">Bir saniye\u2026</string>
+    <string name="setup_complete">Kurulum tamamlandı</string>
+    <string name="setup_welcome">Hoş geldiniz</string>
+    <string name="setup_locale">Dil</string>
+    <string name="setup_wifi">Wi-Fi seçin</string>
+    <string name="setup_sim_missing">SIM kart yok</string>
+    <string name="setup_choose_data_sim">Veri için bir SIM seçin</string>
+    <string name="setup_location">Konum servisleri</string>
+    <string name="setup_other">Diğer servisler</string>
+    <string name="setup_datetime">Tarih &amp; zaman</string>
+    <string name="setup_current_date">Şimdiki tarih</string>
+    <string name="setup_current_time">Şimdiki saat</string>
+    <string name="sim_missing_summary" product="tablet">Tabletinizde bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
+    <string name="sim_missing_summary" product="default">Telefonunuzda bir SIM kart bulunamadı. SIM kart takmak için, cihazınız ile gelen talimatları okuyun.</string>
+    <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Seçili SIM, tabletinizin kurulumunda kullanılacağı için şebeke ücretlerine tabi olabilir.</string>
+    <string name="choose_data_sim_summary" product="default">Hangi SIM\'i veri için kullanmak istiyorsunuz? Telefonunuzun kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
+    <string name="date_time_summary">Zaman diliminizi seçin ve gerekirse geçerli tarih ve saati ayarlayın</string>
+    <string name="backup_data_summary">Uygulama verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına <b>yedekle</b></string>
+    <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
+    <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
+    <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
+    <string name="location_battery_saving">Saatte yapılan GPS güncelleme sayısını kısıtlayarak <b>pil tüketimini azaltın</b>.</string>
+    <string name="location_network">Uygulamaların konumunuzu bulmanısına yardımcı olmak için <b>Wi-Fi\'yi kullanın</b>.</string>
+    <string name="location_network_telephony">Uygulamaların konumunuzu bulmasına yardımcı olmak için <b>Wi-Fi\'yi ve mobil şebekeleri kullanın</b>.</string>
+    <string name="location_network_gms">Konumunuzu belirlemek için <b>Google konum servislerini kullanın</b>. Bu, hiç uygulama çalışmıyorken bile isimsiz konum verilerinin Google\'a gönderilmesi demektir.</string>
+    <string name="setup_mobile_data">Hücresel veriyi etkinleştir</string>
+    <string name="setup_mobile_data_no_service">Servis yok</string>
+    <string name="setup_mobile_data_emergency_only">Sadece acil durum aramaları</string>
+    <string name="enable_mobile_data_summary">Kurulum sırasında hücresel veri kullanmak istiyor musunuz? Hücresel veriyi kullanmak ücrete tabi olabilir.</string>
+    <string name="no">Hayır</string>
+    <string name="yes">Evet</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Acil durum araması</string>
+    <string name="setup_services">LineageOS özellikleri</string>
+    <string name="services_explanation" product="tablet">Bu hizmetler tabletinizin yeteneklerini arttırır. Veriler LineageOS <xliff:g id="name" example="Gizlilik Politikası">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
+    <string name="services_explanation" product="default">Bu hizmetler telefonunuzun yeteneklerini arttırır. Veriler LineageOS <xliff:g id="name" example="Gizlilik Politikası">%s</xliff:g> ilkelerine uygun olarak kullanılacaktır.</string>
+    <string name="services_privacy_policy">Gizlilik Politikası</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="CyanogenMod">%s</xliff:g> gelişimine yardım edin</string>
+    <string name="services_metrics_label">Tanılama ve kullanım verilerini Cyanogen\'e göndererek <xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ancak pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> özellikleri gibi konulardaki ekip çalışmalarında kullanılır.</string>
+    <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> temasını uygula</string>
+    <string name="services_apply_theme_label">Simgeleriniz, duvarkağıdınız ve daha fazlası için benzersiz bir görsel stil sağlayan <xliff:g id="name" example="Apply the Material theme">%s</xliff:g>.</string>
+    <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>yazılımsal gezinme tuşlarını kullanın</b>.</string>
+    <string name="services_os_privacy_guard">Yeni yüklenecek uygulamaların kişileriniz, mesajlarınız ve arama kaydınızı görmemesi için <b>Gizlilik Koruması\'nı etkinleştir.</b></string>
+    <string name="setup_unlock">Kilidi kaldır</string>
+    <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
+    <string name="setup_require_cyanogen_label"><b>Hesap parolanız</b> cihazınızı sıfırladıktan sonra kullanabilmek için gereklidir.</string>
+    <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
+    <string name="settings_fingerprint_setup_title">Yedek ekran kilidi türü seçin</string>
+    <string name="settings_fingerprint_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
+    <string name="fingerprint_setup_title">Parmak izi kurulumu</string>
+    <string name="fingerprint_setup_summary">Ekran kilidini açarken parmak izi sensörünüzü kullanmak için:</string>
+    <string name="fingerprint_setup_backup_lock_method">İkinci kilit açma yönteminizi ayarlayın</string>
+    <string name="fingerprint_setup_add_fingerprint">Parmak izinizi ekleyin</string>
+    <string name="fingerprint_setup_screen_lock_setup">Ekran kilidini kurun</string>
+    <string name="sim_locale_changed">%1$s SIM tespit edildi</string>
+    <string name="settings_lockscreen_setup_title">Ekran kilidi türünü seçin</string>
+    <string name="settings_lockscreen_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
+    <string name="lockscreen_setup_title">Telefonunuzu koruyun</string>
+    <string name="lockscreen_setup_summary"><b>Bu cihazı koruyun</b> ve ekran kilidini açmak için bir PIN, desen ya da şifreyi gerekli kılın.</string>
+    <string name="lockscreen_setup_screen_lock_setup">Kur</string>
 </resources>

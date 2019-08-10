@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Telepítő varázsló</string>
-  <string name="next">Következő</string>
-  <string name="skip">Kihagyás</string>
-  <string name="start">Indít</string>
-  <string name="done">Kész</string>
-  <string name="ok">OK</string>
-  <string name="loading">Csak egy pillanat\u2026</string>
-  <string name="setup_complete">Beállítás kész</string>
-  <string name="setup_welcome">Üdvözöljük</string>
-  <string name="setup_locale">Nyelv</string>
-  <string name="setup_wifi">Wi-Fi kiválasztása</string>
-  <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
-  <string name="setup_choose_data_sim">Válasszon SIM-kártyát az adatforgalomhoz</string>
-  <string name="setup_location">Helymeghatározó szolgáltatások</string>
-  <string name="setup_other">Egyéb szolgáltatások</string>
-  <string name="setup_datetime">Dátum &amp; idő</string>
-  <string name="setup_current_date">Aktuális dátum</string>
-  <string name="setup_current_time">Aktuális idő</string>
-  <string name="sim_missing_summary" product="tablet">SIM-kártya nem érzékelhető a táblagépében. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
-  <string name="sim_missing_summary" product="default">SIM-kártya nem érzékelhető a telefonjában. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
-  <string name="choose_data_sim_summary" product="tablet">Melyik SIM-kártyát kívánja a mobilinternet eléréshez használni? A kijelölt SIM-kártyára hálózati díjat is felszámolhatnak, mivel ezt fogjuk a készüléke beállítása során használni.</string>
-  <string name="choose_data_sim_summary" product="default">Melyik SIM-kártyát kívánja a mobilinternet eléréshez használni? A kijelölt SIM-kártyára hálózati díjat is felszámolhatnak, mivel ezt fogjuk a készüléke beállítása során használni.</string>
-  <string name="date_time_summary">Válasszon időzónát és állítsa be az aktuális dátumot és időt, ha szükséges</string>
-  <string name="backup_data_summary"><b>Biztonsági mentés készítése</b> az alkalmazások adatairól, Wi-Fi jelszavakról és egyéb beállításokról a Google szervereire</string>
-  <string name="other_services_summary">Ezek a szolgáltatások az Ön szolgálatába állítják a Google-t, amit bármikor ki- vagy bekapcsolhat. Az adatok felhasználása a Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
-  <string name="location_services_summary">A helymeghatározási szolgáltatások engedélyezni fogják a rendszer és más harmadik féltől származó alkalmazások számára az adatok összegyűjtését és használatát a pozíciója pontosításához. Például egy alkalmazás a becsült helyzetét fogja használni a közeli kávézók meghatározásához.</string>
-  <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
-  <string name="location_battery_saving"><b>Akkumulátor fogyasztás csökkentése</b> a GPS óránkénti frissítés számának korlátozásával.</string>
-  <string name="location_network"><b>Wi-Fi használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
-  <string name="location_network_telephony"><b>Wi-Fi és mobil hálózatok használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
-  <string name="location_network_gms"><b>A Google helymeghatározó szolgáltatás használata</b> az alkalmazások helymeghatározásának segítésére. Ez névtelen helyadatok Google felé történő küldését jelenti, még akkor is, ha nincs futó alkalmazás.</string>
-  <string name="setup_mobile_data">Mobilnet bekapcsolása</string>
-  <string name="setup_mobile_data_no_service">Nincs szolgáltatás</string>
-  <string name="setup_mobile_data_emergency_only">Csak segélyhívások</string>
-  <string name="enable_mobile_data_summary">Szeretné használni a mobilnetet a beállítás során? Bekapcsolás esetén díjat számíthatnak fel érte.</string>
-  <string name="no">Nem</string>
-  <string name="yes">Igen</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Segélyhívás</string>
-  <string name="setup_services">LineageOS újítások</string>
-  <string name="services_explanation" product="tablet">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön táblagépe képességeit. Az adatok felhasználása a LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
-  <string name="services_explanation" product="default">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön telefonja képességeit. Az adatok felhasználása a LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
-  <string name="services_privacy_policy">Adatvédelmi nyilatkozat</string>
-  <string name="services_help_improve_cm">Segítsen javítani <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> a LineageOS részére történő automatikus diagnosztikai és használati adatok küldésével. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkciók fejlesztésében.</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> téma alkalmazása</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> engedélyezésével egyedi stílust alkalmaz az ikonokhoz, háttérképhez, stb.</string>
-  <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
-  <string name="services_os_privacy_guard"><b>Engedélyezze az adatvédelmet</b>, hogy a személyes adatai, mint a névjegyek, üzenetek vagy hívásnaplók ne legyenek elérhetőek az újonnan telepített alkalmazások számára</string>
-  <string name="setup_unlock">Feloldás</string>
-  <string name="setup_device_locked">Ezt az eszközt a felhasználó zárolta.</string>
-  <string name="setup_require_cyanogen_label"><b>Fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
-  <string name="setup_device_locked_instructions"><i>A szolgáltatás ki/be kapcsolásához, kérjük menjen ide: Beállítások &gt; Biztonság</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Válasszon másodlagos feloldási módot</string>
-  <string name="settings_fingerprint_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
-  <string name="fingerprint_setup_title">Ujjlenyomat beállítások</string>
-  <string name="fingerprint_setup_summary">Az ujjlenyomat érzékelő használatával történő képernyő zárolás feloldásához, a következőre van szüksége:</string>
-  <string name="fingerprint_setup_backup_lock_method">Másodlagos feloldási mód beállításai</string>
-  <string name="fingerprint_setup_add_fingerprint">Adja hozzá ujjlenyomatát</string>
-  <string name="fingerprint_setup_screen_lock_setup">Képernyőzár beállítása</string>
-  <string name="sim_locale_changed">%1$s SIM észlelve</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
-  <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
-  <string name="lockscreen_setup_title">Óvja meg telefonját</string>
-  <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
-  <string name="lockscreen_setup_screen_lock_setup">Beállítás</string>
+    <string name="app_name">Telepítő varázsló</string>
+    <string name="next">Következő</string>
+    <string name="skip">Kihagyás</string>
+    <string name="start">Indít</string>
+    <string name="done">Kész</string>
+    <string name="ok">OK</string>
+    <string name="loading">Csak egy pillanat\u2026</string>
+    <string name="setup_complete">Beállítás kész</string>
+    <string name="setup_welcome">Üdvözöljük</string>
+    <string name="setup_locale">Nyelv</string>
+    <string name="setup_wifi">Wi-Fi kiválasztása</string>
+    <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
+    <string name="setup_choose_data_sim">Válasszon SIM-kártyát az adatforgalomhoz</string>
+    <string name="setup_location">Helymeghatározó szolgáltatások</string>
+    <string name="setup_other">Egyéb szolgáltatások</string>
+    <string name="setup_datetime">Dátum &amp; idő</string>
+    <string name="setup_current_date">Aktuális dátum</string>
+    <string name="setup_current_time">Aktuális idő</string>
+    <string name="sim_missing_summary" product="tablet">SIM-kártya nem érzékelhető a táblagépében. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
+    <string name="sim_missing_summary" product="default">SIM-kártya nem érzékelhető a telefonjában. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
+    <string name="choose_data_sim_summary" product="tablet">Melyik SIM-kártyát kívánja a mobilinternet eléréshez használni? A kijelölt SIM-kártyára hálózati díjat is felszámolhatnak, mivel ezt fogjuk a készüléke beállítása során használni.</string>
+    <string name="choose_data_sim_summary" product="default">Melyik SIM-kártyát kívánja a mobilinternet eléréshez használni? A kijelölt SIM-kártyára hálózati díjat is felszámolhatnak, mivel ezt fogjuk a készüléke beállítása során használni.</string>
+    <string name="date_time_summary">Válasszon időzónát és állítsa be az aktuális dátumot és időt, ha szükséges</string>
+    <string name="backup_data_summary"><b>Biztonsági mentés készítése</b> az alkalmazások adatairól, Wi-Fi jelszavakról és egyéb beállításokról a Google szervereire</string>
+    <string name="other_services_summary">Ezek a szolgáltatások az Ön szolgálatába állítják a Google-t, amit bármikor ki- vagy bekapcsolhat. Az adatok felhasználása a Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
+    <string name="location_services_summary">A helymeghatározási szolgáltatások engedélyezni fogják a rendszer és más harmadik féltől származó alkalmazások számára az adatok összegyűjtését és használatát a pozíciója pontosításához. Például egy alkalmazás a becsült helyzetét fogja használni a közeli kávézók meghatározásához.</string>
+    <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
+    <string name="location_battery_saving"><b>Akkumulátor fogyasztás csökkentése</b> a GPS óránkénti frissítés számának korlátozásával.</string>
+    <string name="location_network"><b>Wi-Fi használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
+    <string name="location_network_telephony"><b>Wi-Fi és mobil hálózatok használata</b> segítse az alkalmazásokat a helymeghatározásával.</string>
+    <string name="location_network_gms"><b>A Google helymeghatározó szolgáltatás használata</b> az alkalmazások helymeghatározásának segítésére. Ez névtelen helyadatok Google felé történő küldését jelenti, még akkor is, ha nincs futó alkalmazás.</string>
+    <string name="setup_mobile_data">Mobilnet bekapcsolása</string>
+    <string name="setup_mobile_data_no_service">Nincs szolgáltatás</string>
+    <string name="setup_mobile_data_emergency_only">Csak segélyhívások</string>
+    <string name="enable_mobile_data_summary">Szeretné használni a mobilnetet a beállítás során? Bekapcsolás esetén díjat számíthatnak fel érte.</string>
+    <string name="no">Nem</string>
+    <string name="yes">Igen</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Segélyhívás</string>
+    <string name="setup_services">LineageOS újítások</string>
+    <string name="services_explanation" product="tablet">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön táblagépe képességeit. Az adatok felhasználása a LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
+    <string name="services_explanation" product="default">Ezek a szolgáltatások azon dolgoznak, hogy kibővítsék az Ön telefonja képességeit. Az adatok felhasználása a LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g> alapján történik.</string>
+    <string name="services_privacy_policy">Adatvédelmi nyilatkozat</string>
+    <string name="services_help_improve_cm">Segítsen javítani <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> a LineageOS részére történő automatikus diagnosztikai és használati adatok küldésével. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> funkciók fejlesztésében.</string>
+    <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g> téma alkalmazása</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> engedélyezésével egyedi stílust alkalmaz az ikonokhoz, háttérképhez, stb.</string>
+    <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
+    <string name="services_os_privacy_guard"><b>Engedélyezze az adatvédelmet</b>, hogy a személyes adatai, mint a névjegyek, üzenetek vagy hívásnaplók ne legyenek elérhetőek az újonnan telepített alkalmazások számára</string>
+    <string name="setup_unlock">Feloldás</string>
+    <string name="setup_device_locked">Ezt az eszközt a felhasználó zárolta.</string>
+    <string name="setup_require_cyanogen_label"><b>Fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
+    <string name="setup_device_locked_instructions"><i>A szolgáltatás ki/be kapcsolásához, kérjük menjen ide: Beállítások &gt; Biztonság</i></string>
+    <string name="settings_fingerprint_setup_title">Válasszon másodlagos feloldási módot</string>
+    <string name="settings_fingerprint_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
+    <string name="fingerprint_setup_title">Ujjlenyomat beállítások</string>
+    <string name="fingerprint_setup_summary">Az ujjlenyomat érzékelő használatával történő képernyő zárolás feloldásához, a következőre van szüksége:</string>
+    <string name="fingerprint_setup_backup_lock_method">Másodlagos feloldási mód beállításai</string>
+    <string name="fingerprint_setup_add_fingerprint">Adja hozzá ujjlenyomatát</string>
+    <string name="fingerprint_setup_screen_lock_setup">Képernyőzár beállítása</string>
+    <string name="sim_locale_changed">%1$s SIM észlelve</string>
+    <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
+    <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
+    <string name="lockscreen_setup_title">Óvja meg telefonját</string>
+    <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
+    <string name="lockscreen_setup_screen_lock_setup">Beállítás</string>
 </resources>

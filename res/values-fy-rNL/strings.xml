@@ -17,7 +17,62 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="ok">OK</string>
-  <!-- Fingerprint setup -->
-  <!-- secure lock screen -->
+    <string name="app_name">Ynstelhelper</string>
+    <string name="next">Folgjende</string>
+    <string name="skip">Oerslaan</string>
+    <string name="start">Starte</string>
+    <string name="done">Foltôge</string>
+    <string name="ok">OK</string>
+    <string name="loading">In amerijke\u2026</string>
+    <string name="setup_complete">Ynstellen foltôge</string>
+    <string name="setup_welcome">Wolkom</string>
+    <string name="setup_wifi">Wifi selektearje</string>
+    <string name="setup_sim_missing">Simkaart ûntbrekt</string>
+    <string name="setup_choose_data_sim">Kies in simkaart foar gegevensferbining</string>
+    <string name="setup_location">Lokaasjetsjinsten</string>
+    <string name="setup_other">Oare tsjinsten</string>
+    <string name="setup_datetime">Datum &amp; tiid</string>
+    <string name="setup_current_date">Hjoeddeistige datum</string>
+    <string name="setup_current_time">Hjoeddeistige tiid</string>
+    <string name="sim_missing_summary" product="tablet">Gjin simkaart yn jo tablet detektearre. Om in simkaart te pleatsen, lês de ynstruksje dy\'t by jo tablet levere is.</string>
+    <string name="sim_missing_summary" product="default">Gjin simkaart yn jo telefoan detektearre. Om in simkaart te pleatsen, lês de ynstruksje dy\'t by jo telefoan levere is.</string>
+    <string name="choose_data_sim_summary" product="tablet">Hokker simkaart wolle jo brûke foar mobyl ynternet? Foar dizze simkaart kinne ekstra kosten yn rekkening brocht wurde, omdat dizze brûkt wurdt om jo tablet yn te stellen.</string>
+    <string name="choose_data_sim_summary" product="default">Hokker simkaart wolle jo brûke foar mobyl ynternet? Foar dizze simkaart kinne ekstra kosten yn rekkening brocht wurde, omdat dizze brûkt wurdt om jo telefoan yn te stellen.</string>
+    <string name="date_time_summary">Selektearje jo tiidssône en pas wannear nedich de hjoeddeistige datum en tiid oan</string>
+    <string name="backup_data_summary"><b>Reservekopy meitsje</b> fan app-gegevens, wifi-wachtwurden en oare ynstellingen nei de servers fan Google</string>
+    <string name="other_services_summary">Dizze tsjinsten litte Google it wurk dwaan en kinne op elk momint yn- of útskeakele wurde. De gegevens wurde brûkt konfoarm it <xliff:g id="name" example="Privacybelied">%s</xliff:g> fan Google.</string>
+    <string name="location_services_summary">Lokaasjetsjinsten stelle systeemapps en apps fan tredden yn steat gegevens lykas jo skatte lokaasje te sammeljen en te brûken. Sa kin in app jo lokaasje brûke om winkels yn de buert te finen.</string>
+    <string name="location_access_summary"><b>Apps tastean dy\'t jo tastimming frege hawwe</b> om ynformaasje oer jo lokaasje te brûken. Dit kin jo aktuele lokaasje en foargeande lokaasjes omfetsje.</string>
+    <string name="location_battery_saving"><b>Ferleegje it batterijgebrûk</b> troch it oantal GPS-fernijigen yn it oere te beheinen.</string>
+    <string name="location_network"><b>Wifi brûke</b> om apps te helpen jo lokaasje te bepalen.</string>
+    <string name="location_network_telephony"><b>Wifi- en mobile netwurken brûke</b> om apps te helpen jo lokaasje te bepalen.</string>
+    <string name="location_network_gms"><b>Lokaasjetsjinsten fan Google brûke</b> om apps te helpen jo lokaasje te bepalen. Dit betsjut anonime lokaasjegegevens ferstjoere nei Google, sels wannear der gjin apps útfierd wurde.</string>
+    <string name="setup_mobile_data">Mobile gegevens ynskeakelje</string>
+    <string name="setup_mobile_data_no_service">Gjin ferbining</string>
+    <string name="setup_mobile_data_emergency_only">Allinnich needoproppen</string>
+    <string name="enable_mobile_data_summary">Wolle jo mobile gegevens brûke wylst it ynstellen? Hjirmei kinne kosten oan ferbûn wêze.</string>
+    <string name="no">Nee</string>
+    <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Needoprop</string>
+    <string name="services_privacy_policy">Privacybelied</string>
+    <string name="services_help_improve_cm">Help mei mei it ferbetterjen fan <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_apply_theme">Tema <xliff:g id="name" example="Material">%s</xliff:g> tapasse</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> foar in unike styl foar jo piktogrammen, eftergrûn en mear.</string>
+    <string name="services_os_nav_keys_label"><b>On-screen navigaasjeknoppen</b> brûke yn stee fan de hardwareknoppen.</string>
+    <string name="setup_unlock">Untskoattelje</string>
+    <string name="setup_device_locked">Dit apparaat is beskoattele troch de brûker.</string>
+    <string name="setup_device_locked_instructions"><i>Om dizze funksje yn of út te skeakeljen, gean nei Ynstellingen &gt; Befeiliging</i></string>
+    <string name="settings_fingerprint_setup_title">Reservemetoade selektearje foar skermbeskoatteling</string>
+    <string name="settings_fingerprint_setup_details">Hoe wolle jo jo skerm beskoattelje?</string>
+    <string name="fingerprint_setup_title">Fingerôfdruk ynstelle</string>
+    <string name="fingerprint_setup_summary">Om de fingerôfdruksensor te brûken om jo skerm te ûntskoatteljen moatte jo:</string>
+    <string name="fingerprint_setup_backup_lock_method">In twaddde ûntskoattelmetoade ynstelle</string>
+    <string name="fingerprint_setup_add_fingerprint">Jo fingerôfdruk tafoegje</string>
+    <string name="fingerprint_setup_screen_lock_setup">Skermbeskoatteling ynstelle</string>
+    <string name="sim_locale_changed">%1$s simkaart detektearre</string>
+    <string name="settings_lockscreen_setup_title">Type skermbeskoatteling selektearje</string>
+    <string name="settings_lockscreen_setup_details">Hoe wolle jo jo skerm beskoattelje?</string>
+    <string name="lockscreen_setup_title">Beskermje jo telefoan</string>
+    <string name="lockscreen_setup_summary"><b>Beskermje dit apparaat</b> en freegje om in pinkoade, patroan of wachtwurd om it skerm te ûntskoatteljen</string>
 </resources>

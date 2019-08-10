@@ -17,54 +17,52 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">راهنمای راه‌اندازی</string>
-  <string name="next">مرحله بعد</string>
-  <string name="skip">رد شدن</string>
-  <string name="start">شروع</string>
-  <string name="ok">بسیارخب</string>
-  <string name="loading">یک لحظه لطفا\u2026</string>
-  <string name="setup_complete">راه‌اندازی کامل شد</string>
-  <string name="setup_welcome">خوش آمدید</string>
-  <string name="setup_wifi">انتخاب وای‌فای</string>
-  <string name="setup_sim_missing">دستگاه فاقد سیم کارت است</string>
-  <string name="setup_choose_data_sim">انتخاب سیم کارت برای داده همراه</string>
-  <string name="setup_location">خدمات مکان</string>
-  <string name="setup_other">سایر خدمات</string>
-  <string name="setup_datetime">تاریخ و زمان</string>
-  <string name="setup_current_date">تاریخ کنونی</string>
-  <string name="setup_current_time">زمان کنونی</string>
-  <string name="sim_missing_summary" product="tablet">سیم کارتی در تبلت شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
-  <string name="sim_missing_summary" product="default">سیم کارتی در گوشی شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
-  <string name="choose_data_sim_summary" product="tablet">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی تبلت شما استفاده می‌شود.</string>
-  <string name="choose_data_sim_summary" product="default">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی گوشی شما استفاده می‌شود.</string>
-  <string name="date_time_summary">منطقه‌ی زمانی و تاریخ فعلی را در صورت نیاز تنظیم کنید</string>
-  <string name="backup_data_summary"><b>پشتیبان‌گیری</b> از داده‌های برنامه، گذرواژه وای‌فای و تنظیمات دیگر در سرورهای گوگل</string>
-  <string name="other_services_summary">سرویس‌های پیش‌رو خدمات گوگل را به شما ارائه می‌کنند که هر زمان می‌توانید آن‌ها را روشن یا خاموش کنید. از داده‌ها مطابق با <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گوگل استفاده خواهد شد.</string>
-  <string name="location_services_summary">با استفاده از سرویس مکان، نقشه‌ها و برنامه‌های دیگر می‌توانند از داده‌هایی مثل مکان تقریبی شما استفاده کنند. به‌عنوان مثال، یک برنامه می‌تواند کافی‌شاپ‌های نزدیکتان را با استفاده از این داده‌ها مشخص کند.</string>
-  <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
-  <string name="location_network">از <b>وای‌فای</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید.</string>
-  <string name="location_network_gms">از <b>سرویس مکان گوگل</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید. این استفاده به معنای ارسال داده‌های ناشناس مکانی به گوگل است، حتی هنگامی که برنامه‌ای در حال اجرا نیست.</string>
-  <string name="setup_mobile_data_no_service">بدون سرویس</string>
-  <string name="setup_mobile_data_emergency_only">فقط تماس اضطراری</string>
-  <string name="no">خیر</string>
-  <string name="yes">بله</string>
-  <string name="data_sim_name">سیم کارت <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">تماس اضطراری</string>
-  <string name="services_privacy_policy">سیاست حفظ حریم خصوصی</string>
-  <string name="services_help_improve_cm">به بهبود <xliff:g id="name" example="CyanogenMod">%s</xliff:g> کمک کنید</string>
-  <string name="services_apply_theme">اعمال تم <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
-  <string name="setup_unlock">باز کردن</string>
-  <string name="setup_device_locked">این دستگاه توسط کاربر قفل شده است.</string>
-  <string name="setup_device_locked_instructions"><i>برای خاموش/روشن کردن این ویژگی، لطفا به تنظیمات &gt; امنیت بروید</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">انتخاب قفل پشتیبان صفحه</string>
-  <string name="settings_fingerprint_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
-  <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
-  <string name="fingerprint_setup_summary">برای استفاده از حسگر اثر انگشت برای باز کردن قفل صفحه، به این موارد نیاز دارید:</string>
-  <string name="fingerprint_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
-  <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
-  <string name="fingerprint_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
+    <string name="app_name">راهنمای راه‌اندازی</string>
+    <string name="next">مرحله بعد</string>
+    <string name="skip">رد شدن</string>
+    <string name="start">شروع</string>
+    <string name="ok">بسیارخب</string>
+    <string name="loading">یک لحظه لطفا\u2026</string>
+    <string name="setup_complete">راه‌اندازی کامل شد</string>
+    <string name="setup_welcome">خوش آمدید</string>
+    <string name="setup_wifi">انتخاب وای‌فای</string>
+    <string name="setup_sim_missing">دستگاه فاقد سیم کارت است</string>
+    <string name="setup_choose_data_sim">انتخاب سیم کارت برای داده همراه</string>
+    <string name="setup_location">خدمات مکان</string>
+    <string name="setup_other">سایر خدمات</string>
+    <string name="setup_datetime">تاریخ و زمان</string>
+    <string name="setup_current_date">تاریخ کنونی</string>
+    <string name="setup_current_time">زمان کنونی</string>
+    <string name="sim_missing_summary" product="tablet">سیم کارتی در تبلت شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
+    <string name="sim_missing_summary" product="default">سیم کارتی در گوشی شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
+    <string name="choose_data_sim_summary" product="tablet">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی تبلت شما استفاده می‌شود.</string>
+    <string name="choose_data_sim_summary" product="default">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی گوشی شما استفاده می‌شود.</string>
+    <string name="date_time_summary">منطقه‌ی زمانی و تاریخ فعلی را در صورت نیاز تنظیم کنید</string>
+    <string name="backup_data_summary"><b>پشتیبان‌گیری</b> از داده‌های برنامه، گذرواژه وای‌فای و تنظیمات دیگر در سرورهای گوگل</string>
+    <string name="other_services_summary">سرویس‌های پیش‌رو خدمات گوگل را به شما ارائه می‌کنند که هر زمان می‌توانید آن‌ها را روشن یا خاموش کنید. از داده‌ها مطابق با <xliff:g id="name" example="Privacy Policy">%s</xliff:g> گوگل استفاده خواهد شد.</string>
+    <string name="location_services_summary">با استفاده از سرویس مکان، نقشه‌ها و برنامه‌های دیگر می‌توانند از داده‌هایی مثل مکان تقریبی شما استفاده کنند. به‌عنوان مثال، یک برنامه می‌تواند کافی‌شاپ‌های نزدیکتان را با استفاده از این داده‌ها مشخص کند.</string>
+    <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
+    <string name="location_network">از <b>وای‌فای</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید.</string>
+    <string name="location_network_gms">از <b>سرویس مکان گوگل</b> برای بهبود مکان‌یابی در برنامه‌ها استفاده کنید. این استفاده به معنای ارسال داده‌های ناشناس مکانی به گوگل است، حتی هنگامی که برنامه‌ای در حال اجرا نیست.</string>
+    <string name="setup_mobile_data_no_service">بدون سرویس</string>
+    <string name="setup_mobile_data_emergency_only">فقط تماس اضطراری</string>
+    <string name="no">خیر</string>
+    <string name="yes">بله</string>
+    <string name="data_sim_name">سیم کارت <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">تماس اضطراری</string>
+    <string name="services_privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="services_help_improve_cm">به بهبود <xliff:g id="name" example="CyanogenMod">%s</xliff:g> کمک کنید</string>
+    <string name="services_apply_theme">اعمال تم <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
+    <string name="setup_unlock">باز کردن</string>
+    <string name="setup_device_locked">این دستگاه توسط کاربر قفل شده است.</string>
+    <string name="setup_device_locked_instructions"><i>برای خاموش/روشن کردن این ویژگی، لطفا به تنظیمات &gt; امنیت بروید</i></string>
+    <string name="settings_fingerprint_setup_title">انتخاب قفل پشتیبان صفحه</string>
+    <string name="settings_fingerprint_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
+    <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
+    <string name="fingerprint_setup_summary">برای استفاده از حسگر اثر انگشت برای باز کردن قفل صفحه، به این موارد نیاز دارید:</string>
+    <string name="fingerprint_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
+    <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
+    <string name="fingerprint_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
+    <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
 </resources>

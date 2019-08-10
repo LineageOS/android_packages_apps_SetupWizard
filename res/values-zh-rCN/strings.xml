@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">设置向导</string>
-  <string name="next">下一步</string>
-  <string name="skip">跳过</string>
-  <string name="start">开始</string>
-  <string name="done">完成</string>
-  <string name="ok">确定</string>
-  <string name="loading">稍等片刻\u2026</string>
-  <string name="setup_complete">设置完成</string>
-  <string name="setup_welcome">欢迎</string>
-  <string name="setup_locale">语言</string>
-  <string name="setup_wifi">选择 Wi-Fi</string>
-  <string name="setup_sim_missing">SIM 卡未找到</string>
-  <string name="setup_choose_data_sim">选择一张用于数据的 SIM 卡</string>
-  <string name="setup_location">位置服务</string>
-  <string name="setup_other">其他服务</string>
-  <string name="setup_datetime">日期和时间</string>
-  <string name="setup_current_date">当前日期</string>
-  <string name="setup_current_time">当前时间</string>
-  <string name="sim_missing_summary" product="tablet">在您的平板电脑上未检测到 SIM 卡。请按照您平板电脑附带说明书中的操作方法插入 SIM 卡。</string>
-  <string name="sim_missing_summary" product="default">在您的手机上未检测到 SIM 卡。请按照您手机附带说明书中的操作方法插入 SIM 卡。</string>
-  <string name="choose_data_sim_summary" product="tablet">您想使用哪张 SIM 卡进行数据连接？您选择的 SIM 卡可能会因设置您的平板电脑而产生流量费用。</string>
-  <string name="choose_data_sim_summary" product="default">您想使用哪张 SIM 卡用于数据连接？选择的 SIM 卡可能会因设置您的手机而产生流量费用。</string>
-  <string name="date_time_summary">如果需要，设置时区和调整日期和时间</string>
-  <string name="backup_data_summary"><b>备份</b>应用数据、无线网络密码和其他设置到 Google 服务器</string>
-  <string name="other_services_summary">这些服务使您能使用 Google 的服务。您可以随时开启或关闭它们。数据将按照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
-  <string name="location_services_summary">位置服务允许系统和第三方应用收集和使用数据（比如您的大致位置）。例如，某个应用可能会使用您的大致位置来查找附近的咖啡馆。</string>
-  <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
-  <string name="location_battery_saving">限制 GPS 的每小时更新次数来<b>降低电池消耗</b>。</string>
-  <string name="location_network"><b>使用 Wi-Fi</b> 来帮助应用确定您的位置。</string>
-  <string name="location_network_telephony"><b>使用 Wi-Fi 和移动网络</b>来帮助应用确定您的位置。</string>
-  <string name="location_network_gms"><b>使用 Google 的位置服务</b>帮助应用确定您所在的位置。这意味着即使没有应用运行，也会发送匿名的位置数据给 Google。</string>
-  <string name="setup_mobile_data">打开移动数据</string>
-  <string name="setup_mobile_data_no_service">无服务</string>
-  <string name="setup_mobile_data_emergency_only">只能拨打紧急电话</string>
-  <string name="enable_mobile_data_summary">您想在设置过程中使用移动数据吗？启用移动数据可能会导致额外开销。</string>
-  <string name="no">否</string>
-  <string name="yes">是</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">紧急电话</string>
-  <string name="setup_services">LineageOS 功能</string>
-  <string name="services_explanation" product="tablet">这些服务用于扩展您的平板电脑的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
-  <string name="services_explanation" product="default">这些服务用于扩展您手机的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
-  <string name="services_privacy_policy">隐私政策</string>
-  <string name="services_help_improve_cm">帮助完善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通过自动发送诊断和使用数据给 LineageOS。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
-  <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 为图标、壁纸等启用独特的视觉风格。</string>
-  <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
-  <string name="services_os_privacy_guard"><b>启用隐私防护</b>使新安装的应用不能获取您的联系人、信息或通话记录等个人数据</string>
-  <string name="setup_unlock">解锁</string>
-  <string name="setup_device_locked">此设备的持有者锁定了该设备。</string>
-  <string name="setup_require_cyanogen_label"><b>需要您的帐户密码</b>以使用您的设备，甚至在重置之后。</string>
-  <string name="setup_device_locked_instructions"><i>要开启或关闭此功能，请进入设置 &gt; 安全</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">选择备用屏幕锁定类型</string>
-  <string name="settings_fingerprint_setup_details">您希望如何锁定您的屏幕？</string>
-  <string name="fingerprint_setup_title">指纹设置</string>
-  <string name="fingerprint_setup_summary">若要使用您的指纹传感器解锁您的屏幕，您需要：</string>
-  <string name="fingerprint_setup_backup_lock_method">设置备用解锁方式</string>
-  <string name="fingerprint_setup_add_fingerprint">添加您的指纹</string>
-  <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
-  <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">选择屏幕锁定类型</string>
-  <string name="settings_lockscreen_setup_details">您希望如何锁定您的屏幕？</string>
-  <string name="lockscreen_setup_title">为您的手机启用保护功能</string>
-  <string name="lockscreen_setup_summary"><b>为此设备启用保护功能</b>，并要求输入 PIN 码、图案或密码才能解锁屏幕</string>
-  <string name="lockscreen_setup_screen_lock_setup">设置</string>
+    <string name="app_name">设置向导</string>
+    <string name="next">下一步</string>
+    <string name="skip">跳过</string>
+    <string name="start">开始</string>
+    <string name="done">完成</string>
+    <string name="ok">确定</string>
+    <string name="loading">稍等片刻\u2026</string>
+    <string name="setup_complete">设置完成</string>
+    <string name="setup_welcome">欢迎</string>
+    <string name="setup_locale">语言</string>
+    <string name="setup_wifi">选择 Wi-Fi</string>
+    <string name="setup_sim_missing">SIM 卡未找到</string>
+    <string name="setup_choose_data_sim">选择一张用于数据的 SIM 卡</string>
+    <string name="setup_location">位置服务</string>
+    <string name="setup_other">其他服务</string>
+    <string name="setup_datetime">日期和时间</string>
+    <string name="setup_current_date">当前日期</string>
+    <string name="setup_current_time">当前时间</string>
+    <string name="sim_missing_summary" product="tablet">在您的平板电脑上未检测到 SIM 卡。请按照您平板电脑附带说明书中的操作方法插入 SIM 卡。</string>
+    <string name="sim_missing_summary" product="default">在您的手机上未检测到 SIM 卡。请按照您手机附带说明书中的操作方法插入 SIM 卡。</string>
+    <string name="choose_data_sim_summary" product="tablet">您想使用哪张 SIM 卡进行数据连接？您选择的 SIM 卡可能会因设置您的平板电脑而产生流量费用。</string>
+    <string name="choose_data_sim_summary" product="default">您想使用哪张 SIM 卡用于数据连接？选择的 SIM 卡可能会因设置您的手机而产生流量费用。</string>
+    <string name="date_time_summary">如果需要，设置时区和调整日期和时间</string>
+    <string name="backup_data_summary"><b>备份</b>应用数据、无线网络密码和其他设置到 Google 服务器</string>
+    <string name="other_services_summary">这些服务使您能使用 Google 的服务。您可以随时开启或关闭它们。数据将按照 Google 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+    <string name="location_services_summary">位置服务允许系统和第三方应用收集和使用数据（比如您的大致位置）。例如，某个应用可能会使用您的大致位置来查找附近的咖啡馆。</string>
+    <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
+    <string name="location_battery_saving">限制 GPS 的每小时更新次数来<b>降低电池消耗</b>。</string>
+    <string name="location_network"><b>使用 Wi-Fi</b> 来帮助应用确定您的位置。</string>
+    <string name="location_network_telephony"><b>使用 Wi-Fi 和移动网络</b>来帮助应用确定您的位置。</string>
+    <string name="location_network_gms"><b>使用 Google 的位置服务</b>帮助应用确定您所在的位置。这意味着即使没有应用运行，也会发送匿名的位置数据给 Google。</string>
+    <string name="setup_mobile_data">打开移动数据</string>
+    <string name="setup_mobile_data_no_service">无服务</string>
+    <string name="setup_mobile_data_emergency_only">只能拨打紧急电话</string>
+    <string name="enable_mobile_data_summary">您想在设置过程中使用移动数据吗？启用移动数据可能会导致额外开销。</string>
+    <string name="no">否</string>
+    <string name="yes">是</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">紧急电话</string>
+    <string name="setup_services">LineageOS 功能</string>
+    <string name="services_explanation" product="tablet">这些服务用于扩展您的平板电脑的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+    <string name="services_explanation" product="default">这些服务用于扩展您手机的功能。数据将根据 LineageOS 的 <xliff:g id="name" example="Privacy Policy">%s</xliff:g> 使用。</string>
+    <string name="services_privacy_policy">隐私政策</string>
+    <string name="services_help_improve_cm">帮助完善 <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> 通过自动发送诊断和使用数据给 LineageOS。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> 功能。</string>
+    <string name="services_apply_theme">应用 <xliff:g id="name" example="Material">%s</xliff:g> 主题</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> 为图标、壁纸等启用独特的视觉风格。</string>
+    <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
+    <string name="services_os_privacy_guard"><b>启用隐私防护</b>使新安装的应用不能获取您的联系人、信息或通话记录等个人数据</string>
+    <string name="setup_unlock">解锁</string>
+    <string name="setup_device_locked">此设备的持有者锁定了该设备。</string>
+    <string name="setup_require_cyanogen_label"><b>需要您的帐户密码</b>以使用您的设备，甚至在重置之后。</string>
+    <string name="setup_device_locked_instructions"><i>要开启或关闭此功能，请进入设置 &gt; 安全</i></string>
+    <string name="settings_fingerprint_setup_title">选择备用屏幕锁定类型</string>
+    <string name="settings_fingerprint_setup_details">您希望如何锁定您的屏幕？</string>
+    <string name="fingerprint_setup_title">指纹设置</string>
+    <string name="fingerprint_setup_summary">若要使用您的指纹传感器解锁您的屏幕，您需要：</string>
+    <string name="fingerprint_setup_backup_lock_method">设置备用解锁方式</string>
+    <string name="fingerprint_setup_add_fingerprint">添加您的指纹</string>
+    <string name="fingerprint_setup_screen_lock_setup">设置屏幕锁定</string>
+    <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
+    <string name="settings_lockscreen_setup_title">选择屏幕锁定类型</string>
+    <string name="settings_lockscreen_setup_details">您希望如何锁定您的屏幕？</string>
+    <string name="lockscreen_setup_title">为您的手机启用保护功能</string>
+    <string name="lockscreen_setup_summary"><b>为此设备启用保护功能</b>，并要求输入 PIN 码、图案或密码才能解锁屏幕</string>
+    <string name="lockscreen_setup_screen_lock_setup">设置</string>
 </resources>

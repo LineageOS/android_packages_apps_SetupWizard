@@ -17,6 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint setup -->
-  <!-- secure lock screen -->
+    <string name="skip">Brinca</string>
+    <string name="start">Incumintza</string>
+    <string name="done">Fatu</string>
+    <string name="ok">AB</string>
+    <string name="setup_locale">Limba</string>
+    <string name="no">Nono</string>
+    <string name="yes">Eja</string>
+    <string name="services_privacy_policy">Polìtica de riservadesa</string>
 </resources>

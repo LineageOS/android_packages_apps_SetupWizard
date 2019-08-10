@@ -17,64 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Čarobnjak za postavljanje</string>
-  <string name="next">Dalje</string>
-  <string name="skip">Preskoči</string>
-  <string name="start">Započni</string>
-  <string name="done">Gotovo</string>
-  <string name="ok">U redu</string>
-  <string name="loading">Samo trenutak\u2026</string>
-  <string name="setup_complete">Postavljanje je završeno.</string>
-  <string name="setup_welcome">Dobro došli!</string>
-  <string name="setup_wifi">Odaberite Wi-Fi</string>
-  <string name="setup_sim_missing">Nema SIM kartice</string>
-  <string name="setup_choose_data_sim">Odaberite SIM karticu za podatke</string>
-  <string name="setup_location">Usluge lokacije</string>
-  <string name="setup_other">Ostale usluge</string>
-  <string name="setup_datetime">Datum i vrijeme</string>
-  <string name="setup_current_date">Današnji datum</string>
-  <string name="setup_current_time">Trenutno vrijeme</string>
-  <string name="sim_missing_summary" product="tablet">SIM kartica nije otkrivena u tabletu. Za umetanje SIM kartice, pročitajte upute koje ste dobili uz uređaj.</string>
-  <string name="sim_missing_summary" product="default">SIM kartica nije otkrivena u telefonu. Za umetanje SIM kartice, pročitajte upute koje ste dobili uz uređaj.</string>
-  <string name="choose_data_sim_summary" product="tablet">Koju SIM želite koristiti za prijenos podataka? Izabrani SIM može snositi troškove jer će biti korišten za postavljanje tvog tableta.</string>
-  <string name="choose_data_sim_summary" product="default">Koju SIM želite koristiti za prijenos podataka? Izabrani SIM može snositi troškove jer će biti korišten za postavljanje tvog telefona.</string>
-  <string name="date_time_summary">Postavite vremensku zonu i ako je potrebno prilagoditi trenutni datum i vrijeme</string>
-  <string name="backup_data_summary"><b>Spremi</b> podatke aplikacije, Wi-Fi lozinke, i ostale postavke na Google poslužitelje</string>
-  <string name="other_services_summary">Ove usluge daju Googleu da radi za vas, a možete ih uključiti ili isključiti u bilo kojem trenutku. Podaci će se koristiti u skladu sa Google-ovim <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">Servis lokacije dozvoljava sustavnim i drugim aplikacijama da sakupljaju i koriste podatke kao što je približna lokacija. Npr. aplikacije mogu koristiti vašu približnu lokaciju za lociranje kafića u blizini.</string>
-  <string name="location_access_summary"><b>Dopusti aplikacijama koje traže tvoju dozvolu</b> da koriste informacije o tvojoj lokaciji. Ovo može uključiti tvoju sadašnju i prošle lokacije.</string>
-  <string name="location_battery_saving"><b>Smanji potrošnju baterije</b> ograničavanjem GPS ažuriranja po satu.</string>
-  <string name="location_network"><b>Koristi Wi-Fi</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
-  <string name="location_network_telephony"><b>Koristi Wi-Fi i mobilne mreže</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
-  <string name="location_network_gms"><b>Koristi Google servis lokacije</b>da pomogneš aplikacijama da odrede tvoju lokaciju. To znači slanje anonimnih podaka u Google, čak i kad nema pokrenutih aplikacija.</string>
-  <string name="setup_mobile_data">Uključi mobilne podatke</string>
-  <string name="setup_mobile_data_no_service">Nema usluge</string>
-  <string name="setup_mobile_data_emergency_only">Samo hitni pozivi</string>
-  <string name="enable_mobile_data_summary">Želite li koristiti mobilne podatke tijekom postavljanja? Uključeni mobilni podaci mogu napraviti troškove.</string>
-  <string name="no">Ne</string>
-  <string name="yes">Da</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
-  <string name="emergency_call">Hitan poziv</string>
-  <string name="services_privacy_policy">Pravila privatnosti</string>
-  <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_apply_theme">Primijeni <xliff:g id="name" example="Material">%s</xliff:g> temu</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> omogućuje jedinstven vizualni stil za vaše ikone, pozadine i više.</string>
-  <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
-  <string name="setup_unlock">Otključaj</string>
-  <string name="setup_device_locked">Uređaj je zaključao korisnik.</string>
-  <string name="setup_device_locked_instructions"><i>Da bi isključili/uključili ovo, idite u Postavke &gt; Privatnost</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Izaberite rezerni tip zaključavanja zaslona</string>
-  <string name="settings_fingerprint_setup_details">Kako želite zaključati vaš zaslon?</string>
-  <string name="fingerprint_setup_title">Postavljanje otiska prsta</string>
-  <string name="fingerprint_setup_summary">Da bi koristili senzor otiska prsta za otključavanje zaslona, trebate:</string>
-  <string name="fingerprint_setup_backup_lock_method">Postavljanje rezervne metode otključavanja</string>
-  <string name="fingerprint_setup_add_fingerprint">Dodajte svoj ​​otisak</string>
-  <string name="fingerprint_setup_screen_lock_setup">Postavljanje zaključavanja zaslona</string>
-  <string name="sim_locale_changed">%1$s SIM otkriven</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Odaberite vrstu zaključavanja zaslona</string>
-  <string name="settings_lockscreen_setup_details">Kako želite zaključati vaš zaslon?</string>
-  <string name="lockscreen_setup_title">Zaštitite svoj telefon</string>
-  <string name="lockscreen_setup_summary"><b>Zaštiti uređaj</b> i zahtijevaj PIN, uzorak ili zaporku za otključavanje zaslona</string>
+    <string name="app_name">Čarobnjak za postavljanje</string>
+    <string name="next">Dalje</string>
+    <string name="skip">Preskoči</string>
+    <string name="start">Započni</string>
+    <string name="done">Gotovo</string>
+    <string name="ok">U redu</string>
+    <string name="loading">Samo trenutak\u2026</string>
+    <string name="setup_complete">Postavljanje je završeno.</string>
+    <string name="setup_welcome">Dobro došli!</string>
+    <string name="setup_locale">Jezik</string>
+    <string name="setup_wifi">Odaberite Wi-Fi</string>
+    <string name="setup_sim_missing">Nema SIM kartice</string>
+    <string name="setup_choose_data_sim">Odaberite SIM karticu za podatke</string>
+    <string name="setup_location">Usluge lokacije</string>
+    <string name="setup_other">Ostale usluge</string>
+    <string name="setup_datetime">Datum i vrijeme</string>
+    <string name="setup_current_date">Današnji datum</string>
+    <string name="setup_current_time">Trenutno vrijeme</string>
+    <string name="sim_missing_summary" product="tablet">SIM kartica nije otkrivena u tabletu. Za umetanje SIM kartice, pročitajte upute koje ste dobili uz uređaj.</string>
+    <string name="sim_missing_summary" product="default">SIM kartica nije otkrivena u telefonu. Za umetanje SIM kartice, pročitajte upute koje ste dobili uz uređaj.</string>
+    <string name="choose_data_sim_summary" product="tablet">Koju SIM želite koristiti za prijenos podataka? Izabrani SIM može snositi troškove jer će biti korišten za postavljanje tvog tableta.</string>
+    <string name="choose_data_sim_summary" product="default">Koju SIM želite koristiti za prijenos podataka? Izabrani SIM može snositi troškove jer će biti korišten za postavljanje tvog telefona.</string>
+    <string name="date_time_summary">Postavite vremensku zonu i ako je potrebno prilagoditi trenutni datum i vrijeme</string>
+    <string name="backup_data_summary"><b>Spremi</b> podatke aplikacije, Wi-Fi lozinke, i ostale postavke na Google poslužitelje</string>
+    <string name="other_services_summary">Ove usluge daju Googleu da radi za vas, a možete ih uključiti ili isključiti u bilo kojem trenutku. Podaci će se koristiti u skladu sa Google-ovim <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Servis lokacije dozvoljava sustavnim i drugim aplikacijama da sakupljaju i koriste podatke kao što je približna lokacija. Npr. aplikacije mogu koristiti vašu približnu lokaciju za lociranje kafića u blizini.</string>
+    <string name="location_access_summary"><b>Dopusti aplikacijama koje traže tvoju dozvolu</b> da koriste informacije o tvojoj lokaciji. Ovo može uključiti tvoju sadašnju i prošle lokacije.</string>
+    <string name="location_battery_saving"><b>Smanji potrošnju baterije</b> ograničavanjem GPS ažuriranja po satu.</string>
+    <string name="location_network"><b>Koristi Wi-Fi</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
+    <string name="location_network_telephony"><b>Koristi Wi-Fi i mobilne mreže</b> da pomogneš aplikacijama da odrede tvoju lokaciju.</string>
+    <string name="location_network_gms"><b>Koristi Google servis lokacije</b>da pomogneš aplikacijama da odrede tvoju lokaciju. To znači slanje anonimnih podaka u Google, čak i kad nema pokrenutih aplikacija.</string>
+    <string name="setup_mobile_data">Uključi mobilne podatke</string>
+    <string name="setup_mobile_data_no_service">Nema usluge</string>
+    <string name="setup_mobile_data_emergency_only">Samo hitni pozivi</string>
+    <string name="enable_mobile_data_summary">Želite li koristiti mobilne podatke tijekom postavljanja? Uključeni mobilni podaci mogu napraviti troškove.</string>
+    <string name="no">Ne</string>
+    <string name="yes">Da</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d </xliff:g> - <xliff:g id="name">%s </xliff:g></string>
+    <string name="emergency_call">Hitan poziv</string>
+    <string name="setup_services">Značajke LineageOS-a</string>
+    <string name="services_explanation" product="tablet">Ove usluge rade za vas da povećaju mogućnosti vašeg tableta. Podatci će se upotrebljavati u suglasnosti s LineageOS-ovom <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">Ove usluge rade za vas da povećaju mogućnosti vašeg telefona. Podatci će se upotrebljavati u suglasnosti s LineageOS-ovom <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_privacy_policy">Pravila privatnosti</string>
+    <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> automatskim slanjem dijagnostike i podataka o korištenju LineageOS-u. Ove se informacije ne mogu upotrebljavati kako bi vas identificirale i puno pomažu timovima koji rade na stvarima kao što su vijek baterije, izvedba aplikacija i nove <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> značajke.</string>
+    <string name="services_apply_theme">Primijeni <xliff:g id="name" example="Material">%s</xliff:g> temu</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> omogućuje jedinstven vizualni stil za vaše ikone, pozadine i više.</string>
+    <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
+    <string name="services_os_privacy_guard"><b>Omogućite Nadzor privatnosti</b> da biste učinili svoje osobne podatke poput kontakata, poruka ili zapisa poziva nedostupnima za novo instalirane aplikacije.</string>
+    <string name="setup_unlock">Otključaj</string>
+    <string name="setup_device_locked">Uređaj je zaključao korisnik.</string>
+    <string name="setup_require_cyanogen_label"><b>Zahtijeva lozinku vašeg računa</b>za korištenje vašim uređajem čak i nakon vraćanja na tvorničke postavke.</string>
+    <string name="setup_device_locked_instructions"><i>Da bi isključili/uključili ovo, idite u Postavke &gt; Privatnost</i></string>
+    <string name="settings_fingerprint_setup_title">Izaberite rezerni tip zaključavanja zaslona</string>
+    <string name="settings_fingerprint_setup_details">Kako želite zaključati vaš zaslon?</string>
+    <string name="fingerprint_setup_title">Postavljanje otiska prsta</string>
+    <string name="fingerprint_setup_summary">Da bi koristili senzor otiska prsta za otključavanje zaslona, trebate:</string>
+    <string name="fingerprint_setup_backup_lock_method">Postavljanje rezervne metode otključavanja</string>
+    <string name="fingerprint_setup_add_fingerprint">Dodajte svoj ​​otisak</string>
+    <string name="fingerprint_setup_screen_lock_setup">Postavljanje zaključavanja zaslona</string>
+    <string name="sim_locale_changed">%1$s SIM otkriven</string>
+    <string name="settings_lockscreen_setup_title">Odaberite vrstu zaključavanja zaslona</string>
+    <string name="settings_lockscreen_setup_details">Kako želite zaključati vaš zaslon?</string>
+    <string name="lockscreen_setup_title">Zaštitite svoj telefon</string>
+    <string name="lockscreen_setup_summary"><b>Zaštiti uređaj</b> i zahtijevaj PIN, uzorak ili zaporku za otključavanje zaslona</string>
+    <string name="lockscreen_setup_screen_lock_setup">Postavljanje</string>
 </resources>

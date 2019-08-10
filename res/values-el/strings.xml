@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Οδηγός εγκατάστασης</string>
-  <string name="next">Επόμενο</string>
-  <string name="skip">Παράλειψη</string>
-  <string name="start">Έναρξη</string>
-  <string name="done">Ολοκληρώθηκε</string>
-  <string name="ok">ΟΚ</string>
-  <string name="loading">Μισό λεπτό\u2026</string>
-  <string name="setup_complete">Η εγκατάσταση ολοκληρώθηκε</string>
-  <string name="setup_welcome">Καλώς ήλθατε</string>
-  <string name="setup_locale">Γλώσσα</string>
-  <string name="setup_wifi">Επιλέξτε Wi-Fi</string>
-  <string name="setup_sim_missing">Η κάρτα SIM λείπει</string>
-  <string name="setup_choose_data_sim">Επιλέξτε μια SIM για δεδομένα</string>
-  <string name="setup_location">Υπηρεσίες τοποθεσίας</string>
-  <string name="setup_other">Άλλες υπηρεσίες</string>
-  <string name="setup_datetime">Ημερομηνία &amp; ώρα</string>
-  <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
-  <string name="setup_current_time">Τρέχουσα ώρα</string>
-  <string name="sim_missing_summary" product="tablet">Δεν εντοπίστηκε κάρτα SIM στο tablet σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
-  <string name="sim_missing_summary" product="default">Δεν εντοπίστηκε κάρτα SIM στο τηλέφωνό σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
-  <string name="choose_data_sim_summary" product="tablet">Ποιά SIM θέλετε να χρησιμοποιήσετε για τα δεδομένα; Η επιλεγμένη SIM μπορεί να επιφέρει χρεώσεις δικτύου, αφού θα χρησιμοποιηθεί για τη ρύθμιση του tablet σας.</string>
-  <string name="choose_data_sim_summary" product="default">Ποιά SIM θέλετε να χρησιμοποιήσετε για τα δεδομένα; Η επιλεγμένη SIM μπορεί να επιφέρει χρεώσεις δικτύου, αφού θα χρησιμοποιηθεί για τη ρύθμιση του τηλεφώνου σας.</string>
-  <string name="date_time_summary">Ορίστε τη ζώνη ώρας σας και προσαρμόστε την τρέχουσα ημερομηνία και ώρα εάν χρειάζεται</string>
-  <string name="backup_data_summary"><b>Δημιουργία αντιγράφου ασφαλείας</b> των δεδομένων εφαρμογών, κωδικών πρόσβασης Wi-Fi, καθώς και άλλων ρυθμίσεων στους διακομιστές της Google</string>
-  <string name="other_services_summary">Οι υπηρεσίες αυτές βάζουν τη Google να δουλεύει για εσάς, και μπορείτε να τις απενεργοποιήσετε οποιαδήποτε στιγμή. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> της Google.</string>
-  <string name="location_services_summary">Οι υπηρεσίες τοποθεσίας επιτρέπουν σε εφαρμογές συστήματος και άλλες εφαρμογές να συγκεντρώσουν και να χρησιμοποιήσουν δεδομένα όπως η κατά προσέγγιση τοποθεσία σας. Για παράδειγμα, μια εφαρμογή μπορεί να χρησιμοποιήσει την κατά προσέγγιση τοποθεσία σας για να εντοπίσει κοντινές καφετέριες.</string>
-  <string name="location_access_summary"><b>Επιτρέπει σε εφαρμογές που έχουν ζητήσει την άδειά σας</b> να χρησιμοποιήσουν τις πληροφορίες τοποθεσίας σας. Αυτό μπορεί να περιλαμβάνει την τρέχουσα και τις προηγούμενες τοποθεσίες σας.</string>
-  <string name="location_battery_saving"><b>Μείωση κατανάλωσης μπαταρίας</b> περιορίζοντας τον αριθμό των ενημερώσεων GPS ανά ώρα.</string>
-  <string name="location_network"><b>Χρήση Wi-Fi</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
-  <string name="location_network_telephony"><b>Χρήση Wi-Fi και δικτύων τηλεφωνίας</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
-  <string name="location_network_gms"><b>Χρήση των υπηρεσιών τοποθεσίας της Google</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας. Αυτό σημαίνει ότι θα αποστέλλονται ανώνυμα δεδομένα τοποθεσίας στη Google, ακόμα και όταν δεν εκτελείται καμία εφαρμογή.</string>
-  <string name="setup_mobile_data">Ενεργοποίηση δεδομένων κινητής τηλεφωνίας</string>
-  <string name="setup_mobile_data_no_service">Καμία υπηρεσία</string>
-  <string name="setup_mobile_data_emergency_only">Μόνο κλήσεις έκτακτης ανάγκης</string>
-  <string name="enable_mobile_data_summary">Θέλετε να χρησιμοποιήσετε τα δεδομένα κινητής τηλεφωνίας κατά την διάρκεια της εγκατάστασης;. Η ενεργοποίηση των δεδομένων κινητής τηλεφωνίας μπορεί να υπόκειται σε χρεώσεις από το πάροχο σας.</string>
-  <string name="no">Όχι</string>
-  <string name="yes">Ναι</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Κλήση έκτακτης ανάγκης</string>
-  <string name="setup_services">Χαρακτηριστικά LineageOS</string>
-  <string name="services_explanation" product="tablet">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες του tablet σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> του LineageOS.</string>
-  <string name="services_explanation" product="default">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες του τηλεφώνου σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> του LineageOS.</string>
-  <string name="services_privacy_policy">Πολιτική απορρήτου</string>
-  <string name="services_help_improve_cm">Βοηθήστε στη βελτίωση του <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> στέλνοντας αυτόματα διαγνωστικά δεδομένα και στατιστικά χρήσης στο LineageOS. Αυτές οι πληροφορίες δε μπορούν να χρησιμοποιηθούν για να σας αναγνωρίσουν και δίνουν ένα χέρι βοηθείας στις ομάδες που εργάζονται σε θέματα όπως η διάρκεια ζωής μπαταρίας, επιδόσεις εφαρμογών και νέα χαρακτηριστικά του <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Εφαρμογή του θέματος <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας ένα μοναδικό στυλ εικονιδίων, ταπετσαριών και ακόμα περισσότερα.</string>
-  <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
-  <string name="services_os_privacy_guard"><b>Ενεργοποίηση της Προστασίας Απορρήτου</b> για την απόκρυψη των προσωπικών σας δεδομένων όπως όπως επαφές, μηνύματα ή το αρχείο κλήσεων από τις πρόσφατα εγκατεστημένες εφαρμογές</string>
-  <string name="setup_unlock">Ξεκλείδωμα</string>
-  <string name="setup_device_locked">Αυτή η συσκευή έχει κλειδωθεί από το χρήστη.</string>
-  <string name="setup_require_cyanogen_label"><b>Απαίτηση του κωδικού πρόσβασης του λογαριασμού σας</b> για να χρησιμοποιήσετε τη συσκευή σας, ακόμα και μετά από επαναφορά εργοστασιακών ρυθμίσεων.</string>
-  <string name="setup_device_locked_instructions"><i>Για να ενεργοποιήσετε/απενεργοποιήσετε αυτή τη λειτουργία, παρακαλώ πηγαίνετε στις Ρυθμίσεις &gt; Ασφάλεια</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
-  <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
-  <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
-  <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
-  <string name="fingerprint_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
-  <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
-  <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
-  <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
-  <string name="settings_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
-  <string name="lockscreen_setup_title">Προστατέψτε το τηλέφωνό σας</string>
-  <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
-  <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση</string>
+    <string name="app_name">Οδηγός εγκατάστασης</string>
+    <string name="next">Επόμενο</string>
+    <string name="skip">Παράλειψη</string>
+    <string name="start">Έναρξη</string>
+    <string name="done">Ολοκληρώθηκε</string>
+    <string name="ok">ΟΚ</string>
+    <string name="loading">Μισό λεπτό\u2026</string>
+    <string name="setup_complete">Η εγκατάσταση ολοκληρώθηκε</string>
+    <string name="setup_welcome">Καλώς ήλθατε</string>
+    <string name="setup_locale">Γλώσσα</string>
+    <string name="setup_wifi">Επιλέξτε Wi-Fi</string>
+    <string name="setup_sim_missing">Η κάρτα SIM λείπει</string>
+    <string name="setup_choose_data_sim">Επιλέξτε μια SIM για δεδομένα</string>
+    <string name="setup_location">Υπηρεσίες τοποθεσίας</string>
+    <string name="setup_other">Άλλες υπηρεσίες</string>
+    <string name="setup_datetime">Ημερομηνία &amp; ώρα</string>
+    <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
+    <string name="setup_current_time">Τρέχουσα ώρα</string>
+    <string name="sim_missing_summary" product="tablet">Δεν εντοπίστηκε κάρτα SIM στο tablet σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
+    <string name="sim_missing_summary" product="default">Δεν εντοπίστηκε κάρτα SIM στο τηλέφωνό σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
+    <string name="choose_data_sim_summary" product="tablet">Ποιά SIM θέλετε να χρησιμοποιήσετε για τα δεδομένα; Η επιλεγμένη SIM μπορεί να επιφέρει χρεώσεις δικτύου, αφού θα χρησιμοποιηθεί για τη ρύθμιση του tablet σας.</string>
+    <string name="choose_data_sim_summary" product="default">Ποιά SIM θέλετε να χρησιμοποιήσετε για τα δεδομένα; Η επιλεγμένη SIM μπορεί να επιφέρει χρεώσεις δικτύου, αφού θα χρησιμοποιηθεί για τη ρύθμιση του τηλεφώνου σας.</string>
+    <string name="date_time_summary">Ορίστε τη ζώνη ώρας σας και προσαρμόστε την τρέχουσα ημερομηνία και ώρα εάν χρειάζεται</string>
+    <string name="backup_data_summary"><b>Δημιουργία αντιγράφου ασφαλείας</b> των δεδομένων εφαρμογών, κωδικών πρόσβασης Wi-Fi, καθώς και άλλων ρυθμίσεων στους διακομιστές της Google</string>
+    <string name="other_services_summary">Οι υπηρεσίες αυτές βάζουν τη Google να δουλεύει για εσάς, και μπορείτε να τις απενεργοποιήσετε οποιαδήποτε στιγμή. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> της Google.</string>
+    <string name="location_services_summary">Οι υπηρεσίες τοποθεσίας επιτρέπουν σε εφαρμογές συστήματος και άλλες εφαρμογές να συγκεντρώσουν και να χρησιμοποιήσουν δεδομένα όπως η κατά προσέγγιση τοποθεσία σας. Για παράδειγμα, μια εφαρμογή μπορεί να χρησιμοποιήσει την κατά προσέγγιση τοποθεσία σας για να εντοπίσει κοντινές καφετέριες.</string>
+    <string name="location_access_summary"><b>Επιτρέπει σε εφαρμογές που έχουν ζητήσει την άδειά σας</b> να χρησιμοποιήσουν τις πληροφορίες τοποθεσίας σας. Αυτό μπορεί να περιλαμβάνει την τρέχουσα και τις προηγούμενες τοποθεσίες σας.</string>
+    <string name="location_battery_saving"><b>Μείωση κατανάλωσης μπαταρίας</b> περιορίζοντας τον αριθμό των ενημερώσεων GPS ανά ώρα.</string>
+    <string name="location_network"><b>Χρήση Wi-Fi</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
+    <string name="location_network_telephony"><b>Χρήση Wi-Fi και δικτύων τηλεφωνίας</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας.</string>
+    <string name="location_network_gms"><b>Χρήση των υπηρεσιών τοποθεσίας της Google</b> για να βοηθήσετε τις εφαρμογές να προσδιορίζουν την τοποθεσία σας. Αυτό σημαίνει ότι θα αποστέλλονται ανώνυμα δεδομένα τοποθεσίας στη Google, ακόμα και όταν δεν εκτελείται καμία εφαρμογή.</string>
+    <string name="setup_mobile_data">Ενεργοποίηση δεδομένων κινητής τηλεφωνίας</string>
+    <string name="setup_mobile_data_no_service">Καμία υπηρεσία</string>
+    <string name="setup_mobile_data_emergency_only">Μόνο κλήσεις έκτακτης ανάγκης</string>
+    <string name="enable_mobile_data_summary">Θέλετε να χρησιμοποιήσετε τα δεδομένα κινητής τηλεφωνίας κατά την διάρκεια της εγκατάστασης;. Η ενεργοποίηση των δεδομένων κινητής τηλεφωνίας μπορεί να υπόκειται σε χρεώσεις από το πάροχο σας.</string>
+    <string name="no">Όχι</string>
+    <string name="yes">Ναι</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Κλήση έκτακτης ανάγκης</string>
+    <string name="setup_services">Χαρακτηριστικά LineageOS</string>
+    <string name="services_explanation" product="tablet">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες του tablet σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> του LineageOS.</string>
+    <string name="services_explanation" product="default">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες του τηλεφώνου σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> του LineageOS.</string>
+    <string name="services_privacy_policy">Πολιτική απορρήτου</string>
+    <string name="services_help_improve_cm">Βοηθήστε στη βελτίωση του <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> στέλνοντας αυτόματα διαγνωστικά δεδομένα και στατιστικά χρήσης στο LineageOS. Αυτές οι πληροφορίες δε μπορούν να χρησιμοποιηθούν για να σας αναγνωρίσουν και δίνουν ένα χέρι βοηθείας στις ομάδες που εργάζονται σε θέματα όπως η διάρκεια ζωής μπαταρίας, επιδόσεις εφαρμογών και νέα χαρακτηριστικά του <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+    <string name="services_apply_theme">Εφαρμογή του θέματος <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> ενεργοποιώντας ένα μοναδικό στυλ εικονιδίων, ταπετσαριών και ακόμα περισσότερα.</string>
+    <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
+    <string name="services_os_privacy_guard"><b>Ενεργοποίηση της Προστασίας Απορρήτου</b> για την απόκρυψη των προσωπικών σας δεδομένων όπως όπως επαφές, μηνύματα ή το αρχείο κλήσεων από τις πρόσφατα εγκατεστημένες εφαρμογές</string>
+    <string name="setup_unlock">Ξεκλείδωμα</string>
+    <string name="setup_device_locked">Αυτή η συσκευή έχει κλειδωθεί από το χρήστη.</string>
+    <string name="setup_require_cyanogen_label"><b>Απαίτηση του κωδικού πρόσβασης του λογαριασμού σας</b> για να χρησιμοποιήσετε τη συσκευή σας, ακόμα και μετά από επαναφορά εργοστασιακών ρυθμίσεων.</string>
+    <string name="setup_device_locked_instructions"><i>Για να ενεργοποιήσετε/απενεργοποιήσετε αυτή τη λειτουργία, παρακαλώ πηγαίνετε στις Ρυθμίσεις &gt; Ασφάλεια</i></string>
+    <string name="settings_fingerprint_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
+    <string name="settings_fingerprint_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
+    <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
+    <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
+    <string name="fingerprint_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
+    <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
+    <string name="fingerprint_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
+    <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
+    <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
+    <string name="settings_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
+    <string name="lockscreen_setup_title">Προστατέψτε το τηλέφωνό σας</string>
+    <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
+    <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση</string>
 </resources>

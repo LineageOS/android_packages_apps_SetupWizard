@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Einrichtungsassistent</string>
-  <string name="next">Weiter</string>
-  <string name="skip">Überspringen</string>
-  <string name="start">Start</string>
-  <string name="done">Fertig</string>
-  <string name="ok">OK</string>
-  <string name="loading">Einen Moment\u2026</string>
-  <string name="setup_complete">Einrichtung abgeschlossen</string>
-  <string name="setup_welcome">Willkommen</string>
-  <string name="setup_locale">Sprache</string>
-  <string name="setup_wifi">WLAN auswählen</string>
-  <string name="setup_sim_missing">SIM-Karte fehlt</string>
-  <string name="setup_choose_data_sim">SIM-Karte für Daten wählen</string>
-  <string name="setup_location">Standortdienste</string>
-  <string name="setup_other">Andere Dienste</string>
-  <string name="setup_datetime">Datum und Uhrzeit</string>
-  <string name="setup_current_date">Aktuelles Datum</string>
-  <string name="setup_current_time">Aktuelle Zeit</string>
-  <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Tablet nachlesen.</string>
-  <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Gerät nachlesen.</string>
-  <string name="choose_data_sim_summary" product="tablet">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Tablets verwendet wird, können für Sie Kosten anfallen.</string>
-  <string name="choose_data_sim_summary" product="default">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Smartphones verwendet wird, können für Sie Kosten anfallen.</string>
-  <string name="date_time_summary">Zeitzone setzen und ggf. aktuelles Datum und Uhrzeit anpassen</string>
-  <string name="backup_data_summary"><b>Sichert</b> App-Daten, WLAN-Passwörter und andere Einstellungen auf Google-Servern</string>
-  <string name="other_services_summary">Diese Dienste werden von Google zur Verfügung gestellt und können jederzeit aktiviert oder deaktiviert werden. Die Daten werden in Übereinstimmung mit Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g> genutzt.</string>
-  <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern, Daten (z. B. zu Ihrem ungefähren Standort) zu sammeln und zu verwenden. Beispielweise könnte eine App Ihren ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
-  <string name="location_access_summary"><b>Erlaubt Apps, die um Ihre Erlaubnis gebeten haben, </b>Ihre Standortinformationen zu verwenden. Dies können Informationen zu Ihrem aktuellen Standort und zu vergangenen Standorten sein.</string>
-  <string name="location_battery_saving"><b>Akkuverbrauch verringern</b>, indem die Aktualisierungsrate Ihres Standortes beschränkt wird.</string>
-  <string name="location_network"><b>WLAN aktivieren</b>, um Apps den Standortabruf zu ermöglichen.</string>
-  <string name="location_network_telephony"><b>WLAN und Mobilfunknetz nutzen</b>, um die Genauigkeit der Standortbestimmung zu erhöhen.</string>
-  <string name="location_network_gms"><b>Googles Standortdienst verwenden</b>, um Apps den Standortabruf zu ermöglichen. Das bedeutet, dass anonymisierte Standortdaten an Google gesendet werden, auch wenn keine App aktiv ist.</string>
-  <string name="setup_mobile_data">Mobile Datenverbindung aktivieren</string>
-  <string name="setup_mobile_data_no_service">Kein Service</string>
-  <string name="setup_mobile_data_emergency_only">Nur Notrufe</string>
-  <string name="enable_mobile_data_summary">Möchten Sie Datenverbindungen über das Mobilfunknetz aktivieren? Dies kann eventuell Kosten verursachen.</string>
-  <string name="no">Nein</string>
-  <string name="yes">Ja</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> – <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Notruf</string>
-  <string name="setup_services">LineageOS-Funktionen</string>
-  <string name="services_explanation" product="tablet">Diese Dienste werden verwendet, um die Funktionen Ihres Tablets zu erweitern. Ihre Daten werden in Übereinstimmung mit den <xliff:g id="name" example="Datenschutzbestimmungen">%s</xliff:g> von LineageOS verwendet.</string>
-  <string name="services_explanation" product="default">Diese Dienste werden verwendet, um die Funktionen Ihres Telefons zu erweitern. Ihre Daten werden in Übereinstimmung mit den <xliff:g id="name" example="Datenschutzbestimmungen">%s</xliff:g> von LineageOS verwendet.</string>
-  <string name="services_privacy_policy">Datenschutzerklärung</string>
-  <string name="services_help_improve_cm">Helfen Sie <xliff:g id="name" example="CyanogenMod">%s</xliff:g> zu verbessern</string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, indem Sie automatisch Diagnose-und Nutzungsdaten an LineageOS senden. Diese Informationen können nicht dazu verwendet werden, Sie zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
-  <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g>-Design anwenden</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>, um einen besonderen visuellen Stil für Ihre Symbole, Ihren Hintergrund und mehr zu aktivieren.</string>
-  <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
-  <string name="services_os_privacy_guard"><b>Aktivieren Sie den Datenschutz</b>, um Ihre persönlichen Daten wie Kontakte, Nachrichten oder Anrufe nicht für neu installierte Anwendungen verfügbar zu machen</string>
-  <string name="setup_unlock">Entsperren</string>
-  <string name="setup_device_locked">Dieses Gerät wurde vom Benutzer gesperrt.</string>
-  <string name="setup_require_cyanogen_label"><b>Ihr Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
-  <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit.</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Wählen Sie den Typ der Ersatz-Bildschirmsperre.</string>
-  <string name="settings_fingerprint_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
-  <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
-  <string name="fingerprint_setup_summary">Wenn Sie Ihren Fingerabdrucksensor zum Entsperren Ihres Bildschirms verwenden möchten, gehen Sie wie folgt vor:</string>
-  <string name="fingerprint_setup_backup_lock_method">Einrichtung einer sekundären Methode zum Entsperren</string>
-  <string name="fingerprint_setup_add_fingerprint">Fügen Sie Ihren Fingerabdruck hinzu.</string>
-  <string name="fingerprint_setup_screen_lock_setup">Die Bildschirmsperre einrichten</string>
-  <string name="sim_locale_changed">%1$s SIM-Karte erkannt</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Wählen Sie einen Sperrbildschirm-Typ</string>
-  <string name="settings_lockscreen_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
-  <string name="lockscreen_setup_title">Schützen Sie Ihr Telefon</string>
-  <string name="lockscreen_setup_summary"><b>Gerät schützen</b> und PIN, Muster oder Passwort zur Display-Entsperrung verwenden</string>
-  <string name="lockscreen_setup_screen_lock_setup">Einrichten</string>
+    <string name="app_name">Einrichtungsassistent</string>
+    <string name="next">Weiter</string>
+    <string name="skip">Überspringen</string>
+    <string name="start">Start</string>
+    <string name="done">Fertig</string>
+    <string name="ok">OK</string>
+    <string name="loading">Einen Moment\u2026</string>
+    <string name="setup_complete">Einrichtung abgeschlossen</string>
+    <string name="setup_welcome">Willkommen</string>
+    <string name="setup_locale">Sprache</string>
+    <string name="setup_wifi">WLAN auswählen</string>
+    <string name="setup_sim_missing">SIM-Karte fehlt</string>
+    <string name="setup_choose_data_sim">SIM-Karte für Daten wählen</string>
+    <string name="setup_location">Standortdienste</string>
+    <string name="setup_other">Andere Dienste</string>
+    <string name="setup_datetime">Datum und Uhrzeit</string>
+    <string name="setup_current_date">Aktuelles Datum</string>
+    <string name="setup_current_time">Aktuelle Zeit</string>
+    <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Tablet nachlesen.</string>
+    <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Gerät nachlesen.</string>
+    <string name="choose_data_sim_summary" product="tablet">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Tablets verwendet wird, können für Sie Kosten anfallen.</string>
+    <string name="choose_data_sim_summary" product="default">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Smartphones verwendet wird, können für Sie Kosten anfallen.</string>
+    <string name="date_time_summary">Zeitzone setzen und ggf. aktuelles Datum und Uhrzeit anpassen</string>
+    <string name="backup_data_summary"><b>Sichert</b> App-Daten, WLAN-Passwörter und andere Einstellungen auf Google-Servern</string>
+    <string name="other_services_summary">Diese Dienste werden von Google zur Verfügung gestellt und können jederzeit aktiviert oder deaktiviert werden. Die Daten werden in Übereinstimmung mit Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g> genutzt.</string>
+    <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern, Daten (z. B. zu Ihrem ungefähren Standort) zu sammeln und zu verwenden. Beispielweise könnte eine App Ihren ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
+    <string name="location_access_summary"><b>Erlaubt Apps, die um Ihre Erlaubnis gebeten haben, </b>Ihre Standortinformationen zu verwenden. Dies können Informationen zu Ihrem aktuellen Standort und zu vergangenen Standorten sein.</string>
+    <string name="location_battery_saving"><b>Akkuverbrauch verringern</b>, indem die Aktualisierungsrate Ihres Standortes beschränkt wird.</string>
+    <string name="location_network"><b>WLAN aktivieren</b>, um Apps den Standortabruf zu ermöglichen.</string>
+    <string name="location_network_telephony"><b>WLAN und Mobilfunknetz nutzen</b>, um die Genauigkeit der Standortbestimmung zu erhöhen.</string>
+    <string name="location_network_gms"><b>Googles Standortdienst verwenden</b>, um Apps den Standortabruf zu ermöglichen. Das bedeutet, dass anonymisierte Standortdaten an Google gesendet werden, auch wenn keine App aktiv ist.</string>
+    <string name="setup_mobile_data">Mobile Datenverbindung aktivieren</string>
+    <string name="setup_mobile_data_no_service">Kein Service</string>
+    <string name="setup_mobile_data_emergency_only">Nur Notrufe</string>
+    <string name="enable_mobile_data_summary">Möchten Sie Datenverbindungen über das Mobilfunknetz aktivieren? Dies kann eventuell Kosten verursachen.</string>
+    <string name="no">Nein</string>
+    <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> – <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Notruf</string>
+    <string name="setup_services">LineageOS-Funktionen</string>
+    <string name="services_explanation" product="tablet">Diese Dienste werden verwendet, um die Funktionen Ihres Tablets zu erweitern. Ihre Daten werden in Übereinstimmung mit der <xliff:g id="name" example="Datenschutzerklärung">%s</xliff:g> von LineageOS verwendet.</string>
+    <string name="services_explanation" product="default">Diese Dienste werden verwendet, um die Funktionen Ihres Telefons zu erweitern. Ihre Daten werden in Übereinstimmung mit der <xliff:g id="name" example="Datenschutzerklärung">%s</xliff:g> von LineageOS verwendet.</string>
+    <string name="services_privacy_policy">Datenschutzerklärung</string>
+    <string name="services_help_improve_cm">Helfen Sie <xliff:g id="name" example="CyanogenMod">%s</xliff:g> zu verbessern</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, indem Sie automatisch Diagnose-und Nutzungsdaten an LineageOS senden. Diese Informationen können nicht dazu verwendet werden, Sie zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
+    <string name="services_apply_theme"><xliff:g id="name" example="Material">%s</xliff:g>-Design anwenden</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g>, um einen besonderen visuellen Stil für Ihre Symbole, Ihren Hintergrund und mehr zu aktivieren.</string>
+    <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
+    <string name="services_os_privacy_guard"><b>Aktivieren Sie den Datenschutz</b>, um Ihre persönlichen Daten wie Kontakte, Nachrichten oder Anrufe nicht für neu installierte Anwendungen verfügbar zu machen</string>
+    <string name="setup_unlock">Entsperren</string>
+    <string name="setup_device_locked">Dieses Gerät wurde vom Benutzer gesperrt.</string>
+    <string name="setup_require_cyanogen_label"><b>Ihr Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
+    <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit.</i></string>
+    <string name="settings_fingerprint_setup_title">Wählen Sie den Typ der Ersatz-Bildschirmsperre.</string>
+    <string name="settings_fingerprint_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
+    <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
+    <string name="fingerprint_setup_summary">Wenn Sie Ihren Fingerabdrucksensor zum Entsperren Ihres Bildschirms verwenden möchten, gehen Sie wie folgt vor:</string>
+    <string name="fingerprint_setup_backup_lock_method">Einrichtung einer sekundären Methode zum Entsperren</string>
+    <string name="fingerprint_setup_add_fingerprint">Fügen Sie Ihren Fingerabdruck hinzu.</string>
+    <string name="fingerprint_setup_screen_lock_setup">Die Bildschirmsperre einrichten</string>
+    <string name="sim_locale_changed">%1$s SIM-Karte erkannt</string>
+    <string name="settings_lockscreen_setup_title">Wählen Sie einen Sperrbildschirm-Typ</string>
+    <string name="settings_lockscreen_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
+    <string name="lockscreen_setup_title">Schützen Sie Ihr Telefon</string>
+    <string name="lockscreen_setup_summary"><b>Gerät schützen</b> und PIN, Muster oder Passwort zur Display-Entsperrung verwenden</string>
+    <string name="lockscreen_setup_screen_lock_setup">Einrichten</string>
 </resources>

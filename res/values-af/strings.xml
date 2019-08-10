@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Opstel Ghoeroe</string>
-  <string name="next">Volgende</string>
-  <string name="skip">Slaan oor</string>
-  <string name="start">Begin</string>
-  <string name="done">Gedoen</string>
-  <string name="ok">OK</string>
-  <string name="loading">Net \'n sekonde\u2026</string>
-  <string name="setup_complete">Opstelling is voltooi</string>
-  <string name="setup_welcome">Welkom</string>
-  <string name="setup_locale">Taal</string>
-  <string name="setup_wifi">Kies Wi\u2011Fi</string>
-  <string name="setup_sim_missing">SIM-kaart ontbreek</string>
-  <string name="setup_choose_data_sim">Kies \'n SIM vir data</string>
-  <string name="setup_location">Ligging dienste</string>
-  <string name="setup_other">Ander dienste</string>
-  <string name="setup_datetime">Datum &amp; tyd</string>
-  <string name="setup_current_date">Huidige datum</string>
-  <string name="setup_current_time">Huidige tyd</string>
-  <string name="sim_missing_summary" product="tablet">\'n SIM-kaart is nie bespeur in jou tablet. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou tablet.</string>
-  <string name="sim_missing_summary" product="default">\'n SIM-kaart is nie bespeur in jou foon. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou foon.</string>
-  <string name="choose_data_sim_summary" product="tablet">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou tablet.</string>
-  <string name="choose_data_sim_summary" product="default">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou foon.</string>
-  <string name="date_time_summary">Stel jou tydsone en pas huidige datum en tyd toe, indien nodig</string>
-  <string name="backup_data_summary"><b>Rugsteun</b> program data, Wi-Fi wagwoorde en ander instellings na Google-bedieners</string>
-  <string name="other_services_summary">Hierdie dienste word deur Google verskaf en jy kan dit aktiveer of deaktiveer op enige tyd. Data sal in ooreenstemming met Google se <xliff:g id="name" example="Privacy Policy">%s</xliff:g> gebruik word.</string>
-  <string name="location_services_summary">Ligging dienste laat stelsel en ander 3rde party programme toe om data te gebruik soos jou benaderde ligging. Bv \'n program kan jou benaderde ligging gebruik om nabygeleë koffiewinkels op te spoor.</string>
-  <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
-  <string name="location_battery_saving"><b>Verminder battery verbruik</b> deur die beperking van die aantal GPS opdaterings per uur.</string>
-  <string name="location_network"><b>Gebruik Wi-Fi</b> om programme te help om jou ligging te bepaal.</string>
-  <string name="location_network_telephony"><b>Gebruik Wi-Fi en mobiele netwerke</b> om programme te help om jou ligging te bepaal.</string>
-  <string name="location_network_gms"><b>Gebruik Google se ligging diens</b> om programme te help om jou ligging te bepaal. Dit beteken dit stuur anonieme ligging data na Google, selfs wanneer daar geen programme aktief is nie.</string>
-  <string name="setup_mobile_data">Skakel mobiele data aan</string>
-  <string name="setup_mobile_data_no_service">Geen diens</string>
-  <string name="setup_mobile_data_emergency_only">Net Noodoproepe</string>
-  <string name="enable_mobile_data_summary">Wil jy sellulêre data aanskakel gedurende opstelling? Wanneer aangeskakel kan dit tot data kostes lui.</string>
-  <string name="no">Nee</string>
-  <string name="yes">Ja</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Noodoproep</string>
-  <string name="setup_services">LineageOS kenmerke</string>
-  <string name="services_explanation" product="tablet">Hierdie dienste werk vir jou om die vermoëns van jou tablet uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
-  <string name="services_explanation" product="default">Hierdie dienste werk vir jou om die vermoëns van jou foon uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
-  <string name="services_privacy_policy">Privaatheid beleid</string>
-  <string name="services_help_improve_cm">Help verbeter <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> deur outomaties diagnostiese en gebruikersdata na LineageOS te stuur. Hierdie inligting kan nie gebruik word om jou te identifiseer nie en help spanne werk op dinge soos batterylewe, programwerkverrigting en nuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> kenmerke.</string>
-  <string name="services_apply_theme">Pas <xliff:g id="name" example="Material">%s</xliff:g> tema toe</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiveer \'n unieke visuele styl vir jou ikone, agtergrond en nog baie meer.</string>
-  <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
-  <string name="services_os_privacy_guard"><b>Aktiveer privatheidheidswag</b>om jou persoonlike data soos kontakte, boodskappe of oproepgeskiedenis nie beskikbaar vir nuut geïnstalleerde toepassings te maak nie</string>
-  <string name="setup_unlock">Ontsluit</string>
-  <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
-  <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
-  <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Kies nog \'n skerm sluit tipe</string>
-  <string name="settings_fingerprint_setup_details">Hoe wil jy jou skerm sluit?</string>
-  <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>
-  <string name="fingerprint_setup_summary">Om jou vingerafdruk sensor te gebruik om jou skerm te ontsluit, benodig jy:</string>
-  <string name="fingerprint_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
-  <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
-  <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
-  <string name="sim_locale_changed">%1$s SIM opgespoor</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>
-  <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
-  <string name="lockscreen_setup_title">Beskerm jou foon</string>
-  <string name="lockscreen_setup_summary"><b>Beskerm die toestel</b>\" en vereis \'n PIN, patroon of wagwoord om skerm te ontsluit\"</string>
-  <string name="lockscreen_setup_screen_lock_setup">Stel op</string>
+    <string name="app_name">Opstel Ghoeroe</string>
+    <string name="next">Volgende</string>
+    <string name="skip">Slaan oor</string>
+    <string name="start">Begin</string>
+    <string name="done">Gedoen</string>
+    <string name="ok">OK</string>
+    <string name="loading">Net \'n sekonde\u2026</string>
+    <string name="setup_complete">Opstelling is voltooi</string>
+    <string name="setup_welcome">Welkom</string>
+    <string name="setup_locale">Taal</string>
+    <string name="setup_wifi">Kies Wi\u2011Fi</string>
+    <string name="setup_sim_missing">SIM-kaart ontbreek</string>
+    <string name="setup_choose_data_sim">Kies \'n SIM vir data</string>
+    <string name="setup_location">Ligging dienste</string>
+    <string name="setup_other">Ander dienste</string>
+    <string name="setup_datetime">Datum &amp; tyd</string>
+    <string name="setup_current_date">Huidige datum</string>
+    <string name="setup_current_time">Huidige tyd</string>
+    <string name="sim_missing_summary" product="tablet">\'n SIM-kaart is nie bespeur in jou tablet. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou tablet.</string>
+    <string name="sim_missing_summary" product="default">\'n SIM-kaart is nie bespeur in jou foon. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou foon.</string>
+    <string name="choose_data_sim_summary" product="tablet">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou tablet.</string>
+    <string name="choose_data_sim_summary" product="default">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou foon.</string>
+    <string name="date_time_summary">Stel jou tydsone en pas huidige datum en tyd toe, indien nodig</string>
+    <string name="backup_data_summary"><b>Rugsteun</b> program data, Wi-Fi wagwoorde en ander instellings na Google-bedieners</string>
+    <string name="other_services_summary">Hierdie dienste word deur Google verskaf en jy kan dit aktiveer of deaktiveer op enige tyd. Data sal in ooreenstemming met Google se <xliff:g id="name" example="Privacy Policy">%s</xliff:g> gebruik word.</string>
+    <string name="location_services_summary">Ligging dienste laat stelsel en ander 3rde party programme toe om data te gebruik soos jou benaderde ligging. Bv \'n program kan jou benaderde ligging gebruik om nabygeleë koffiewinkels op te spoor.</string>
+    <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
+    <string name="location_battery_saving"><b>Verminder battery verbruik</b> deur die beperking van die aantal GPS opdaterings per uur.</string>
+    <string name="location_network"><b>Gebruik Wi-Fi</b> om programme te help om jou ligging te bepaal.</string>
+    <string name="location_network_telephony"><b>Gebruik Wi-Fi en mobiele netwerke</b> om programme te help om jou ligging te bepaal.</string>
+    <string name="location_network_gms"><b>Gebruik Google se ligging diens</b> om programme te help om jou ligging te bepaal. Dit beteken dit stuur anonieme ligging data na Google, selfs wanneer daar geen programme aktief is nie.</string>
+    <string name="setup_mobile_data">Skakel mobiele data aan</string>
+    <string name="setup_mobile_data_no_service">Geen diens</string>
+    <string name="setup_mobile_data_emergency_only">Net Noodoproepe</string>
+    <string name="enable_mobile_data_summary">Wil jy sellulêre data aanskakel gedurende opstelling? Wanneer aangeskakel kan dit tot data kostes lui.</string>
+    <string name="no">Nee</string>
+    <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Noodoproep</string>
+    <string name="setup_services">LineageOS kenmerke</string>
+    <string name="services_explanation" product="tablet">Hierdie dienste werk vir jou om die vermoëns van jou tablet uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
+    <string name="services_explanation" product="default">Hierdie dienste werk vir jou om die vermoëns van jou foon uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
+    <string name="services_privacy_policy">Privaatheid beleid</string>
+    <string name="services_help_improve_cm">Help verbeter <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> deur outomaties diagnostiese en gebruikersdata na LineageOS te stuur. Hierdie inligting kan nie gebruik word om jou te identifiseer nie en help spanne werk op dinge soos batterylewe, programwerkverrigting en nuwe <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> kenmerke.</string>
+    <string name="services_apply_theme">Pas <xliff:g id="name" example="Material">%s</xliff:g> tema toe</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> aktiveer \'n unieke visuele styl vir jou ikone, agtergrond en nog baie meer.</string>
+    <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
+    <string name="services_os_privacy_guard"><b>Aktiveer privatheidheidswag</b>om jou persoonlike data soos kontakte, boodskappe of oproepgeskiedenis nie beskikbaar vir nuut geïnstalleerde toepassings te maak nie</string>
+    <string name="setup_unlock">Ontsluit</string>
+    <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
+    <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
+    <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
+    <string name="settings_fingerprint_setup_title">Kies nog \'n skerm sluit tipe</string>
+    <string name="settings_fingerprint_setup_details">Hoe wil jy jou skerm sluit?</string>
+    <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>
+    <string name="fingerprint_setup_summary">Om jou vingerafdruk sensor te gebruik om jou skerm te ontsluit, benodig jy:</string>
+    <string name="fingerprint_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
+    <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
+    <string name="fingerprint_setup_screen_lock_setup">Stel skerm sluit op</string>
+    <string name="sim_locale_changed">%1$s SIM opgespoor</string>
+    <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>
+    <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
+    <string name="lockscreen_setup_title">Beskerm jou foon</string>
+    <string name="lockscreen_setup_summary"><b>Beskerm die toestel</b>\" en vereis \'n PIN, patroon of wagwoord om skerm te ontsluit\"</string>
+    <string name="lockscreen_setup_screen_lock_setup">Stel op</string>
 </resources>

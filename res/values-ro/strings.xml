@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Expert de instalare</string>
-  <string name="next">Următoarea</string>
-  <string name="skip">Omite</string>
-  <string name="start">Pornire</string>
-  <string name="done">Efectuat</string>
-  <string name="ok">OK</string>
-  <string name="loading">Doar o secundă\u2026</string>
-  <string name="setup_complete">Configurarea este completă</string>
-  <string name="setup_welcome">Bine ați venit</string>
-  <string name="setup_locale">Limba</string>
-  <string name="setup_wifi">Selectați Wi-Fi</string>
-  <string name="setup_sim_missing">Lipsă card SIM</string>
-  <string name="setup_choose_data_sim">Alege un SIM pentru date</string>
-  <string name="setup_location">Servicii de localizare</string>
-  <string name="setup_other">Alte servicii</string>
-  <string name="setup_datetime">Dată &amp; oră</string>
-  <string name="setup_current_date">Data curentă</string>
-  <string name="setup_current_time">Ora curentă</string>
-  <string name="sim_missing_summary" product="tablet">O cartelă SIM nu a fost detectată în tableta dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
-  <string name="sim_missing_summary" product="default">O cartelă SIM nu a fost detectată în telefonul dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
-  <string name="choose_data_sim_summary" product="tablet">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura tableta dvs.</string>
-  <string name="choose_data_sim_summary" product="default">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura telefonul dvs.</string>
-  <string name="date_time_summary">Setați fusul orar și reglați data și ora curentă, dacă este necesar</string>
-  <string name="backup_data_summary"><b>Back up</b> datele aplicațiilor, parolele Wi-Fi și alte setări pe serverele Google</string>
-  <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
-  <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizeze informațiile despre locația dvs. Aceasta poate include locația curentă și locațiile precedente.</string>
-  <string name="location_battery_saving"><b>Reduce consumul bateriei</b> prin limitarea numărului de actualizări ale GPS-ului pe oră.</string>
-  <string name="location_network"><b>Folosește Wi-Fi</b> pentru a ajuta aplicațiile să vă determine locația.</string>
-  <string name="location_network_telephony"><b>Utilizează Wi-Fi și rețelele de telefonie mobilă</b> pentru a ajuta aplicațiile să vă determine locația.</string>
-  <string name="location_network_gms"><b>Folosește serviciile de locație Google</b> pentru a ajuta aplicațiile să vă determine locația. Acest lucru înseamnă trimiterea datelor anonime de localizare la Google, chiar și atunci când nu executați aplicații.</string>
-  <string name="setup_mobile_data">Activare date mobile</string>
-  <string name="setup_mobile_data_no_service">Lipsă semnal</string>
-  <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
-  <string name="enable_mobile_data_summary">Doriți să utilizați datele mobile în timpul instalării? Activarea datelor mobile poate fi supusă tarifelor de date.</string>
-  <string name="no">Nu</string>
-  <string name="yes">Da</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Apel de urgenţă</string>
-  <string name="setup_services">Caracteristici LineageOS</string>
-  <string name="services_explanation" product="tablet">Aceste servicii extind capacitățile tabletei dumneavoastră. Datele vor fi folosite în conformitate cu LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Aceste servicii extind capacitățile telefonului dumneavoastră. Datele vor fi folosite în conformitate cu LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_privacy_policy">Politica de confidențialitate</string>
-  <string name="services_help_improve_cm">Ajută la îmbunătățirea <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> prin trimiterea automată a datelor de diagnosticare și utilizare la LineageOS. Aceste informații nu pot fi utilizate pentru a vă identifica și dau o mână de ajutor echipelor care lucrează la lucruri precum durata bateriei, performanțele aplicațiiilor și la noile caracteristici <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Aplică tema <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> activând un stil vizual unic pentru iconițele dvs., fundal și mai multe.</string>
-  <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
-  <string name="services_os_privacy_guard"><b>Activați Gardianul de Intimitate</b> pentru a vă face datele personale precum contactele, mesajele sau istoricul apelurilor indisponibile pentru aplicațiile nou instalate</string>
-  <string name="setup_unlock">Deblocare</string>
-  <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
-  <string name="setup_require_cyanogen_label"><b>Este necesară parola contului dvs.</b> pentru a vă utiliza dispozitivul după fiecare resetare la datele din fabrică.</string>
-  <string name="setup_device_locked_instructions"><i>Pentru a activa sau dezactiva această caracteristică, vă rugăm să mergeți la Setări &gt; securitate</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Selectați tipul de blocare ecran de rezervă</string>
-  <string name="settings_fingerprint_setup_details">Cum doriți să vă blocați ecranul?</string>
-  <string name="fingerprint_setup_title">Configurare amprentă</string>
-  <string name="fingerprint_setup_summary">Pentru a putea utiliza senzorul amprentei pentru a debloca ecranul, trebuie să:</string>
-  <string name="fingerprint_setup_backup_lock_method">Configurați o metodă secundară de deblocare</string>
-  <string name="fingerprint_setup_add_fingerprint">Adăugați-vă amprenta</string>
-  <string name="fingerprint_setup_screen_lock_setup">Setați blocarea de ecran</string>
-  <string name="sim_locale_changed">SIM %1$s detectat</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Selectați tipul de blocare ecran</string>
-  <string name="settings_lockscreen_setup_details">Cum doriți să vă blocați ecranul?</string>
-  <string name="lockscreen_setup_title">Protejați telefonul</string>
-  <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
-  <string name="lockscreen_setup_screen_lock_setup">Configurați</string>
+    <string name="app_name">Expert de instalare</string>
+    <string name="next">Următoarea</string>
+    <string name="skip">Omite</string>
+    <string name="start">Pornire</string>
+    <string name="done">Efectuat</string>
+    <string name="ok">OK</string>
+    <string name="loading">Doar o secundă\u2026</string>
+    <string name="setup_complete">Configurarea este completă</string>
+    <string name="setup_welcome">Bine ați venit</string>
+    <string name="setup_locale">Limba</string>
+    <string name="setup_wifi">Selectați Wi-Fi</string>
+    <string name="setup_sim_missing">Lipsă card SIM</string>
+    <string name="setup_choose_data_sim">Alege un SIM pentru date</string>
+    <string name="setup_location">Servicii de localizare</string>
+    <string name="setup_other">Alte servicii</string>
+    <string name="setup_datetime">Dată &amp; oră</string>
+    <string name="setup_current_date">Data curentă</string>
+    <string name="setup_current_time">Ora curentă</string>
+    <string name="sim_missing_summary" product="tablet">O cartelă SIM nu a fost detectată în tableta dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
+    <string name="sim_missing_summary" product="default">O cartelă SIM nu a fost detectată în telefonul dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
+    <string name="choose_data_sim_summary" product="tablet">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura tableta dvs.</string>
+    <string name="choose_data_sim_summary" product="default">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura telefonul dvs.</string>
+    <string name="date_time_summary">Setați fusul orar și reglați data și ora curentă, dacă este necesar</string>
+    <string name="backup_data_summary"><b>Back up</b> datele aplicațiilor, parolele Wi-Fi și alte setări pe serverele Google</string>
+    <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
+    <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizeze informațiile despre locația dvs. Aceasta poate include locația curentă și locațiile precedente.</string>
+    <string name="location_battery_saving"><b>Reduce consumul bateriei</b> prin limitarea numărului de actualizări ale GPS-ului pe oră.</string>
+    <string name="location_network"><b>Folosește Wi-Fi</b> pentru a ajuta aplicațiile să vă determine locația.</string>
+    <string name="location_network_telephony"><b>Utilizează Wi-Fi și rețelele de telefonie mobilă</b> pentru a ajuta aplicațiile să vă determine locația.</string>
+    <string name="location_network_gms"><b>Folosește serviciile de locație Google</b> pentru a ajuta aplicațiile să vă determine locația. Acest lucru înseamnă trimiterea datelor anonime de localizare la Google, chiar și atunci când nu executați aplicații.</string>
+    <string name="setup_mobile_data">Activare date mobile</string>
+    <string name="setup_mobile_data_no_service">Lipsă semnal</string>
+    <string name="setup_mobile_data_emergency_only">Numai apeluri de urgenţă</string>
+    <string name="enable_mobile_data_summary">Doriți să utilizați datele mobile în timpul instalării? Activarea datelor mobile poate fi supusă tarifelor de date.</string>
+    <string name="no">Nu</string>
+    <string name="yes">Da</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Apel de urgenţă</string>
+    <string name="setup_services">Caracteristici LineageOS</string>
+    <string name="services_explanation" product="tablet">Aceste servicii extind capacitățile tabletei dumneavoastră. Datele vor fi folosite în conformitate cu LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">Aceste servicii extind capacitățile telefonului dumneavoastră. Datele vor fi folosite în conformitate cu LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_privacy_policy">Politica de confidențialitate</string>
+    <string name="services_help_improve_cm">Ajută la îmbunătățirea <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> prin trimiterea automată a datelor de diagnosticare și utilizare la LineageOS. Aceste informații nu pot fi utilizate pentru a vă identifica și dau o mână de ajutor echipelor care lucrează la lucruri precum durata bateriei, performanțele aplicațiiilor și la noile caracteristici <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+    <string name="services_apply_theme">Aplică tema <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> activând un stil vizual unic pentru iconițele dvs., fundal și mai multe.</string>
+    <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
+    <string name="services_os_privacy_guard"><b>Activați Gardianul de Intimitate</b> pentru a vă face datele personale precum contactele, mesajele sau istoricul apelurilor indisponibile pentru aplicațiile nou instalate</string>
+    <string name="setup_unlock">Deblocare</string>
+    <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
+    <string name="setup_require_cyanogen_label"><b>Este necesară parola contului dvs.</b> pentru a vă utiliza dispozitivul după fiecare resetare la datele din fabrică.</string>
+    <string name="setup_device_locked_instructions"><i>Pentru a activa sau dezactiva această caracteristică, vă rugăm să mergeți la Setări &gt; securitate</i></string>
+    <string name="settings_fingerprint_setup_title">Selectați tipul de blocare ecran de rezervă</string>
+    <string name="settings_fingerprint_setup_details">Cum doriți să vă blocați ecranul?</string>
+    <string name="fingerprint_setup_title">Configurare amprentă</string>
+    <string name="fingerprint_setup_summary">Pentru a putea utiliza senzorul amprentei pentru a debloca ecranul, trebuie să:</string>
+    <string name="fingerprint_setup_backup_lock_method">Configurați o metodă secundară de deblocare</string>
+    <string name="fingerprint_setup_add_fingerprint">Adăugați-vă amprenta</string>
+    <string name="fingerprint_setup_screen_lock_setup">Setați blocarea de ecran</string>
+    <string name="sim_locale_changed">SIM %1$s detectat</string>
+    <string name="settings_lockscreen_setup_title">Selectați tipul de blocare ecran</string>
+    <string name="settings_lockscreen_setup_details">Cum doriți să vă blocați ecranul?</string>
+    <string name="lockscreen_setup_title">Protejați telefonul</string>
+    <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
+    <string name="lockscreen_setup_screen_lock_setup">Configurați</string>
 </resources>

@@ -17,73 +17,71 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Майстер налаштування</string>
-  <string name="next">Далі</string>
-  <string name="skip">Пропустити</string>
-  <string name="start">Почати</string>
-  <string name="done">Готово</string>
-  <string name="ok">Так</string>
-  <string name="loading">Хвилинку\u2026</string>
-  <string name="setup_complete">Усе налаштовано</string>
-  <string name="setup_welcome">Ласкаво просимо</string>
-  <string name="setup_locale">Мова</string>
-  <string name="setup_wifi">Оберіть мережу Wi-Fi</string>
-  <string name="setup_sim_missing">SIM-карта відсутня</string>
-  <string name="setup_choose_data_sim">Оберіть SIM-карту для передачі даних</string>
-  <string name="setup_location">Служби позиціювання</string>
-  <string name="setup_other">Інші служби</string>
-  <string name="setup_datetime">Дата та Час</string>
-  <string name="setup_current_date">Поточна дата</string>
-  <string name="setup_current_time">Поточний час</string>
-  <string name="sim_missing_summary" product="tablet">У вашому планшеті не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
-  <string name="sim_missing_summary" product="default">У вашому телефоні не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
-  <string name="choose_data_sim_summary" product="tablet">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що обрана SIM-карта буде використана для отримання налаштувань планшету.</string>
-  <string name="choose_data_sim_summary" product="default">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що, обрана SIM-карта буде використана для отримання налаштувань вашого пристрою.</string>
-  <string name="date_time_summary">Встановіть часовий пояс і настройте поточну дату та час, якщо це необхідно</string>
-  <string name="backup_data_summary"><b>Зберегти</b> дані додатків, Wi-Fi паролі та інші параметри на серверах Google</string>
-  <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Ви маєте можливість вимкнути їх в будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-  <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизного розташування. Наприклад, додаток зможе шукати кав\'ярні чи зупинки, що розташовані поруч, ґрунтуючись на отриманих даних.</string>
-  <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
-  <string name="location_battery_saving"><b>Зменшення споживання батареї</b> шляхом обмеження оновлення GPS за годину.</string>
-  <string name="location_network"><b>Використовувати Wi-Fi</b> для визначення вашого місцезнаходження.</string>
-  <string name="location_network_telephony"><b>Використовувати Wi-Fi та мобільні мережі</b> для визначення вашого місцезнаходження.</string>
-  <string name="location_network_gms"><b>Використовувати служби місцезнаходження Google</b>, щоб допомогти додаткам визначити ваше розташування. Мається на увазі, що вони будуть відсилати анонімні дані, щодо вашого розташування, до Google навіть тоді, коли ніякі додатки не виконуються.</string>
-  <string name="setup_mobile_data">Увімкнути мобільні дані</string>
-  <string name="setup_mobile_data_no_service">Немає мережі</string>
-  <string name="setup_mobile_data_emergency_only">Тільки екстрені виклики</string>
-  <string name="enable_mobile_data_summary">Бажаєте використовувати мобільні дані під час налаштування? Увімкнення мобільних даних може коштувати вам грошей.</string>
-  <string name="no">Ні</string>
-  <string name="yes">Так</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Екстрений виклик</string>
-  <string name="setup_services">Функції LineageOS</string>
-  <string name="services_explanation" product="tablet">Ці послуги створено, щоб розширити можливості Вашого пристрою. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
-  <string name="services_explanation" product="default">Ці послуги створено, щоб розширити можливості Вашого телефону. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
-  <string name="services_privacy_policy">Політика Конфіденційності</string>
-  <string name="services_help_improve_cm">Допомогти поліпшити <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматично надсилаючи дані щодо використання та діагностики у LineageOS. Ця інформація не може бути використана для ідентифікації користувача, але дуже допоможе розробникам, що працюють над такими речами як життя батареї, продуктивність додатків і нові функції <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Застосувати тему <xliff:g id="name" example="Material">%s </xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> та використовувати її стиль для значків, шпалер та інших елементів.</string>
-  <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
+    <string name="app_name">Майстер налаштування</string>
+    <string name="next">Далі</string>
+    <string name="skip">Пропустити</string>
+    <string name="start">Почати</string>
+    <string name="done">Готово</string>
+    <string name="ok">Так</string>
+    <string name="loading">Хвилинку\u2026</string>
+    <string name="setup_complete">Усе налаштовано</string>
+    <string name="setup_welcome">Ласкаво просимо</string>
+    <string name="setup_locale">Мова</string>
+    <string name="setup_wifi">Оберіть мережу Wi-Fi</string>
+    <string name="setup_sim_missing">SIM-карта відсутня</string>
+    <string name="setup_choose_data_sim">Оберіть SIM-карту для передачі даних</string>
+    <string name="setup_location">Служби позиціювання</string>
+    <string name="setup_other">Інші служби</string>
+    <string name="setup_datetime">Дата та Час</string>
+    <string name="setup_current_date">Поточна дата</string>
+    <string name="setup_current_time">Поточний час</string>
+    <string name="sim_missing_summary" product="tablet">У вашому планшеті не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
+    <string name="sim_missing_summary" product="default">У вашому телефоні не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
+    <string name="choose_data_sim_summary" product="tablet">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що обрана SIM-карта буде використана для отримання налаштувань планшету.</string>
+    <string name="choose_data_sim_summary" product="default">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що, обрана SIM-карта буде використана для отримання налаштувань вашого пристрою.</string>
+    <string name="date_time_summary">Встановіть часовий пояс і настройте поточну дату та час, якщо це необхідно</string>
+    <string name="backup_data_summary"><b>Зберегти</b> дані додатків, Wi-Fi паролі та інші параметри на серверах Google</string>
+    <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Ви маєте можливість вимкнути їх в будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
+    <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизного розташування. Наприклад, додаток зможе шукати кав\'ярні чи зупинки, що розташовані поруч, ґрунтуючись на отриманих даних.</string>
+    <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
+    <string name="location_battery_saving"><b>Зменшення споживання батареї</b> шляхом обмеження оновлення GPS за годину.</string>
+    <string name="location_network"><b>Використовувати Wi-Fi</b> для визначення вашого місцезнаходження.</string>
+    <string name="location_network_telephony"><b>Використовувати Wi-Fi та мобільні мережі</b> для визначення вашого місцезнаходження.</string>
+    <string name="location_network_gms"><b>Використовувати служби місцезнаходження Google</b>, щоб допомогти додаткам визначити ваше розташування. Мається на увазі, що вони будуть відсилати анонімні дані, щодо вашого розташування, до Google навіть тоді, коли ніякі додатки не виконуються.</string>
+    <string name="setup_mobile_data">Увімкнути мобільні дані</string>
+    <string name="setup_mobile_data_no_service">Немає мережі</string>
+    <string name="setup_mobile_data_emergency_only">Тільки екстрені виклики</string>
+    <string name="enable_mobile_data_summary">Бажаєте використовувати мобільні дані під час налаштування? Увімкнення мобільних даних може коштувати вам грошей.</string>
+    <string name="no">Ні</string>
+    <string name="yes">Так</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Екстрений виклик</string>
+    <string name="setup_services">Функції LineageOS</string>
+    <string name="services_explanation" product="tablet">Ці послуги створено, щоб розширити можливості Вашого пристрою. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
+    <string name="services_explanation" product="default">Ці послуги створено, щоб розширити можливості Вашого телефону. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
+    <string name="services_privacy_policy">Політика Конфіденційності</string>
+    <string name="services_help_improve_cm">Допомогти поліпшити <xliff:g id="name" example="CyanogenMod">%s </xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g>, автоматично надсилаючи дані щодо використання та діагностики у LineageOS. Ця інформація не може бути використана для ідентифікації користувача, але дуже допоможе розробникам, що працюють над такими речами як життя батареї, продуктивність додатків і нові функції <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+    <string name="services_apply_theme">Застосувати тему <xliff:g id="name" example="Material">%s </xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> та використовувати її стиль для значків, шпалер та інших елементів.</string>
+    <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
-  <string name="services_os_privacy_guard"><b>Увімкнути Вартового приватності</b> щоб зробити ваші особисті дані, такі як контакти, повідомлення або журнал викликів не доступними для застосунків, що будуть встановлені</string>
-  <string name="setup_unlock">Розблокувати</string>
-  <string name="setup_device_locked">Цей пристрій заблоковано користувачем.</string>
-  <string name="setup_require_cyanogen_label"><b>Необхідний пароль</b> для використання Вашого пристрою навіть після скидання до заводських налаштувань.</string>
-  <string name="setup_device_locked_instructions"><i>Щоб увімкнути/вимкнути цю функцію, будь ласка, перейдіть до Налаштування &gt; Безпека</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Виберіть резервний спосіб розблокування екрана</string>
-  <string name="settings_fingerprint_setup_details">Як би ви хотіли блокувати екран?</string>
-  <string name="fingerprint_setup_title">Налаштування відбитку пальця</string>
-  <string name="fingerprint_setup_summary">Щоб використовувати датчик відбитків пальців, ви маєте:</string>
-  <string name="fingerprint_setup_backup_lock_method">Встановлення резервного методу розблокування</string>
-  <string name="fingerprint_setup_add_fingerprint">Додати ваш відбиток пальця</string>
-  <string name="fingerprint_setup_screen_lock_setup">Налаштування блокування екрану</string>
-  <string name="sim_locale_changed">%1$s SIM-карту виявлено</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Виберіть тип блокування екрану</string>
-  <string name="settings_lockscreen_setup_details">Як би ви хотіли блокувати екран?</string>
-  <string name="lockscreen_setup_title">Захистіть свій телефон</string>
-  <string name="lockscreen_setup_summary"><b>Захистити цей пристрій</b> та запитувати PIN-код, графічний ключ або пароль для розблокування екрану</string>
-  <string name="lockscreen_setup_screen_lock_setup">Налаштувати</string>
+    <string name="services_os_privacy_guard"><b>Увімкнути Вартового приватності</b> щоб зробити ваші особисті дані, такі як контакти, повідомлення або журнал викликів не доступними для застосунків, що будуть встановлені</string>
+    <string name="setup_unlock">Розблокувати</string>
+    <string name="setup_device_locked">Цей пристрій заблоковано користувачем.</string>
+    <string name="setup_require_cyanogen_label"><b>Необхідний пароль</b> для використання Вашого пристрою навіть після скидання до заводських налаштувань.</string>
+    <string name="setup_device_locked_instructions"><i>Щоб увімкнути/вимкнути цю функцію, будь ласка, перейдіть до Налаштування &gt; Безпека</i></string>
+    <string name="settings_fingerprint_setup_title">Виберіть резервний спосіб розблокування екрана</string>
+    <string name="settings_fingerprint_setup_details">Як би ви хотіли блокувати екран?</string>
+    <string name="fingerprint_setup_title">Налаштування відбитку пальця</string>
+    <string name="fingerprint_setup_summary">Щоб використовувати датчик відбитків пальців, ви маєте:</string>
+    <string name="fingerprint_setup_backup_lock_method">Встановлення резервного методу розблокування</string>
+    <string name="fingerprint_setup_add_fingerprint">Додати ваш відбиток пальця</string>
+    <string name="fingerprint_setup_screen_lock_setup">Налаштування блокування екрану</string>
+    <string name="sim_locale_changed">%1$s SIM-карту виявлено</string>
+    <string name="settings_lockscreen_setup_title">Виберіть тип блокування екрану</string>
+    <string name="settings_lockscreen_setup_details">Як би ви хотіли блокувати екран?</string>
+    <string name="lockscreen_setup_title">Захистіть свій телефон</string>
+    <string name="lockscreen_setup_summary"><b>Захистити цей пристрій</b> та запитувати PIN-код, графічний ключ або пароль для розблокування екрану</string>
+    <string name="lockscreen_setup_screen_lock_setup">Налаштувати</string>
 </resources>

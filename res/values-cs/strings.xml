@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Průvodce instalací</string>
-  <string name="next">Další</string>
-  <string name="skip">Přeskočit</string>
-  <string name="start">Spustit</string>
-  <string name="done">Hotovo</string>
-  <string name="ok">OK</string>
-  <string name="loading">Jen chvilku\u2026</string>
-  <string name="setup_complete">Instalace je dokončena</string>
-  <string name="setup_welcome">Vítejte</string>
-  <string name="setup_locale">Jazyk</string>
-  <string name="setup_wifi">Vyberte Wi\u2011Fi</string>
-  <string name="setup_sim_missing">Chybí karta SIM</string>
-  <string name="setup_choose_data_sim">Zvolte SIM pro data</string>
-  <string name="setup_location">Služby určení polohy</string>
-  <string name="setup_other">Ostatní služby</string>
-  <string name="setup_datetime">Datum &amp; čas</string>
-  <string name="setup_current_date">Aktuální datum</string>
-  <string name="setup_current_time">Aktuální čas</string>
-  <string name="sim_missing_summary" product="tablet">SIM karta nebyla nalezena. Pro vložení SIM karty si přečtěte pokyny dodané s telefonem.</string>
-  <string name="sim_missing_summary" product="default">SIM karta nebyla nalezena. Pro vložení SIM karty si přečtěte pokyny dodané s telefonem.</string>
-  <string name="choose_data_sim_summary" product="tablet">Kterou SIM kartu chcete použít pro mobilní data? Mohou být na ní účtovány poplatky.</string>
-  <string name="choose_data_sim_summary" product="default">Kterou SIM kartu chcete použít pro mobilní data? Mohou být na ní účtovány poplatky.</string>
-  <string name="date_time_summary">Je-li třeba, nastavte časové pásmo a upravte aktuální datum a čas</string>
-  <string name="backup_data_summary"><b>Zálohovat</b> data aplikací, hesla Wi\u2011Fi a další nastavení do účtu Google</string>
-  <string name="other_services_summary">Tyto služby Vám nabízí Google a Vy je můžete kdykoliv povolit či zakázat. Data budou použita v souladu se zásadami ochrany osobních údajů Google - <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="location_services_summary">Určování polohy umožňuje systému a dalším aplikacím sbírat data a používat je jako vaši přibližnou polohu. Aplikace tak může například vaši přibližnou polohu k nalezení blízkých kaváren.</string>
-  <string name="location_access_summary"><b>Povolí aplikacím, které žádaly oprávnění</b> použít vaše informace o poloze. To může zahrnovat vaši aktuální, ale i minulé polohy.</string>
-  <string name="location_battery_saving"><b>Snížit spotřebu baterie</b> omezením počtu GPS aktualizací během hodiny.</string>
-  <string name="location_network"><b>Použít Wi\u2011Fi</b> pro zlepšení zjištění přibližné polohy.</string>
-  <string name="location_network_telephony"><b>Použít Wi\u2011Fi a mobilní sítě</b> pro zlepšení zjištění přibližné polohy.</string>
-  <string name="location_network_gms">Pro rychlejší určení vaší polohy <b>použijte lokační službu Google (Location Services)</b>. To znamená anonymní odesílání dat o poloze Googlu, i když žádné aplikace právě neběží.</string>
-  <string name="setup_mobile_data">Zapnout mobilní data</string>
-  <string name="setup_mobile_data_no_service">Žádná síť</string>
-  <string name="setup_mobile_data_emergency_only">Pouze tísňová volání</string>
-  <string name="enable_mobile_data_summary">Chcete využít mobilní data při prvotní nastavení? Mobilní data mohou být zpoplatněna.</string>
-  <string name="no">Ne</string>
-  <string name="yes">Ano</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Tísňové volání</string>
-  <string name="setup_services">LineageOS funkce</string>
-  <string name="services_explanation" product="tablet">Tyto služby rozšiřují funkce vašeho tabletu. Data budou použita v souladu se zásadami ochrany osobních údajů LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_explanation" product="default">Tyto služby rozšiřují funkce vašeho telefonu. Data budou použita v souladu se zásadami ochrany osobních údajů LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-  <string name="services_privacy_policy">Zásady ochrany osobních údajů</string>
-  <string name="services_help_improve_cm">Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání do LineageOS. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností pro <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
-  <string name="services_apply_theme">Použít motiv <xliff:g id="name" example="Material">%s</xliff:g></string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> povolí unikátní vizuální styl pro ikony, tapety, písma a další.</string>
-  <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
-  <string name="services_os_privacy_guard"><b>Povolit Ochranu soukromí</b> aby vaše osobní údaje například kontakty, zprávy nebo záznamy hovorů nebyli dostupné pro nově instalované aplikace</string>
-  <string name="setup_unlock">Odemknout</string>
-  <string name="setup_device_locked">Toto zařízení bylo uzamčeno uživatelem.</string>
-  <string name="setup_require_cyanogen_label">Po obnovení továrního nastavení bude <b>vyžadováno heslo k Vašemu účtu</b>.</string>
-  <string name="setup_device_locked_instructions"><i>Pro zapnutí/vypnutí této funkce, přejděte do nastavení &gt; Zabezpečení</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Vyberte záložní typ zámku obrazovky</string>
-  <string name="settings_fingerprint_setup_details">Jak chcete zamykat obrazovku?</string>
-  <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
-  <string name="fingerprint_setup_summary">Chcete-li použít snímač otisků prstů pro odemknutí obrazovky, budete potřeba:</string>
-  <string name="fingerprint_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
-  <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
-  <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
-  <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
-  <string name="settings_lockscreen_setup_details">Jak chcete zamykat obrazovku?</string>
-  <string name="lockscreen_setup_title">Chraňte svůj telefon</string>
-  <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
-  <string name="lockscreen_setup_screen_lock_setup">Nastavit</string>
+    <string name="app_name">Průvodce instalací</string>
+    <string name="next">Další</string>
+    <string name="skip">Přeskočit</string>
+    <string name="start">Spustit</string>
+    <string name="done">Hotovo</string>
+    <string name="ok">OK</string>
+    <string name="loading">Jen chvilku\u2026</string>
+    <string name="setup_complete">Instalace je dokončena</string>
+    <string name="setup_welcome">Vítejte</string>
+    <string name="setup_locale">Jazyk</string>
+    <string name="setup_wifi">Vyberte Wi\u2011Fi</string>
+    <string name="setup_sim_missing">Chybí karta SIM</string>
+    <string name="setup_choose_data_sim">Zvolte SIM pro data</string>
+    <string name="setup_location">Služby určení polohy</string>
+    <string name="setup_other">Ostatní služby</string>
+    <string name="setup_datetime">Datum &amp; čas</string>
+    <string name="setup_current_date">Aktuální datum</string>
+    <string name="setup_current_time">Aktuální čas</string>
+    <string name="sim_missing_summary" product="tablet">SIM karta nebyla nalezena. Pro vložení SIM karty si přečtěte pokyny dodané s telefonem.</string>
+    <string name="sim_missing_summary" product="default">SIM karta nebyla nalezena. Pro vložení SIM karty si přečtěte pokyny dodané s telefonem.</string>
+    <string name="choose_data_sim_summary" product="tablet">Kterou SIM kartu chcete použít pro mobilní data? Mohou být na ní účtovány poplatky.</string>
+    <string name="choose_data_sim_summary" product="default">Kterou SIM kartu chcete použít pro mobilní data? Mohou být na ní účtovány poplatky.</string>
+    <string name="date_time_summary">Je-li třeba, nastavte časové pásmo a upravte aktuální datum a čas</string>
+    <string name="backup_data_summary"><b>Zálohovat</b> data aplikací, hesla Wi\u2011Fi a další nastavení do účtu Google</string>
+    <string name="other_services_summary">Tyto služby Vám nabízí Google a Vy je můžete kdykoliv povolit či zakázat. Data budou použita v souladu se zásadami ochrany osobních údajů Google - <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Určování polohy umožňuje systému a dalším aplikacím sbírat data a používat je jako vaši přibližnou polohu. Aplikace tak může například vaši přibližnou polohu k nalezení blízkých kaváren.</string>
+    <string name="location_access_summary"><b>Povolí aplikacím, které žádaly oprávnění</b> použít vaše informace o poloze. To může zahrnovat vaši aktuální, ale i minulé polohy.</string>
+    <string name="location_battery_saving"><b>Snížit spotřebu baterie</b> omezením počtu GPS aktualizací během hodiny.</string>
+    <string name="location_network"><b>Použít Wi\u2011Fi</b> pro zlepšení zjištění přibližné polohy.</string>
+    <string name="location_network_telephony"><b>Použít Wi\u2011Fi a mobilní sítě</b> pro zlepšení zjištění přibližné polohy.</string>
+    <string name="location_network_gms">Pro rychlejší určení vaší polohy <b>použijte lokační službu Google (Location Services)</b>. To znamená anonymní odesílání dat o poloze Googlu, i když žádné aplikace právě neběží.</string>
+    <string name="setup_mobile_data">Zapnout mobilní data</string>
+    <string name="setup_mobile_data_no_service">Žádná síť</string>
+    <string name="setup_mobile_data_emergency_only">Pouze tísňová volání</string>
+    <string name="enable_mobile_data_summary">Chcete využít mobilní data při prvotní nastavení? Mobilní data mohou být zpoplatněna.</string>
+    <string name="no">Ne</string>
+    <string name="yes">Ano</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Tísňové volání</string>
+    <string name="setup_services">LineageOS funkce</string>
+    <string name="services_explanation" product="tablet">Tyto služby rozšiřují funkce vašeho tabletu. Data budou použita v souladu se zásadami ochrany osobních údajů LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">Tyto služby rozšiřují funkce vašeho telefonu. Data budou použita v souladu se zásadami ochrany osobních údajů LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="services_help_improve_cm">Pomozte zlepšovat <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání do LineageOS. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností pro <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
+    <string name="services_apply_theme">Použít motiv <xliff:g id="name" example="Material">%s</xliff:g></string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> povolí unikátní vizuální styl pro ikony, tapety, písma a další.</string>
+    <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
+    <string name="services_os_privacy_guard"><b>Povolit Ochranu soukromí</b>, aby vaše osobní údaje (například kontakty, zprávy nebo záznamy hovorů) nebyly dostupné pro nově instalované aplikace</string>
+    <string name="setup_unlock">Odemknout</string>
+    <string name="setup_device_locked">Toto zařízení bylo uzamčeno uživatelem.</string>
+    <string name="setup_require_cyanogen_label">Po obnovení továrního nastavení bude <b>vyžadováno heslo k Vašemu účtu</b>.</string>
+    <string name="setup_device_locked_instructions"><i>Pro zapnutí/vypnutí této funkce, přejděte do nastavení &gt; Zabezpečení</i></string>
+    <string name="settings_fingerprint_setup_title">Vyberte záložní typ zámku obrazovky</string>
+    <string name="settings_fingerprint_setup_details">Jak chcete zamykat obrazovku?</string>
+    <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
+    <string name="fingerprint_setup_summary">Chcete-li použít snímač otisků prstů pro odemknutí obrazovky, budete potřeba:</string>
+    <string name="fingerprint_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
+    <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
+    <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
+    <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
+    <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
+    <string name="settings_lockscreen_setup_details">Jak chcete zamykat obrazovku?</string>
+    <string name="lockscreen_setup_title">Chraňte svůj telefon</string>
+    <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
+    <string name="lockscreen_setup_screen_lock_setup">Nastavit</string>
 </resources>

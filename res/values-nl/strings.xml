@@ -17,72 +17,70 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Assistent voor instellen</string>
-  <string name="next">Volgende</string>
-  <string name="skip">Overslaan</string>
-  <string name="start">Start</string>
-  <string name="done">Gereed</string>
-  <string name="ok">OK</string>
-  <string name="loading">Even geduld\u2026</string>
-  <string name="setup_complete">Instellen voltooid</string>
-  <string name="setup_welcome">Welkom</string>
-  <string name="setup_locale">Taal</string>
-  <string name="setup_wifi">Wifi selecteren</string>
-  <string name="setup_sim_missing">Simkaart ontbreekt</string>
-  <string name="setup_choose_data_sim">Kies een simkaart voor gegevensverbinding</string>
-  <string name="setup_location">Locatieservices</string>
-  <string name="setup_other">Andere diensten</string>
-  <string name="setup_datetime">Datum &amp; tijd</string>
-  <string name="setup_current_date">Huidige datum</string>
-  <string name="setup_current_time">Huidige tijd</string>
-  <string name="sim_missing_summary" product="tablet">Geen simkaart gedetecteerd in uw tablet. Om een simkaart te plaatsen, lees de instructie die bij uw tablet is geleverd.</string>
-  <string name="sim_missing_summary" product="default">Geen simkaart gedetecteerd in uw telefoon. Om een simkaart te plaatsen, lees de instructie die bij uw telefoon is geleverd.</string>
-  <string name="choose_data_sim_summary" product="tablet">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw tablet in te stellen.</string>
-  <string name="choose_data_sim_summary" product="default">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw telefoon in te stellen.</string>
-  <string name="date_time_summary">Selecteer uw tijdzone en pas indien nodig de huidige datum en tijd aan.</string>
-  <string name="backup_data_summary"><b>Back-up maken</b> van app-gegevens, wifi-wachtwoorden en andere instellingen naar de servers van Google</string>
-  <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
-  <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
-  <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
-  <string name="location_battery_saving"><b>Verlaag het accugebruik</b> door het aantal GPS-updates per uur te beperken.</string>
-  <string name="location_network"><b>Wifi gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
-  <string name="location_network_telephony"><b>Wifi- en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
-  <string name="location_network_gms"><b>Locatieservices van Google gebruiken</b> om apps te helpen uw locatie te bepalen. Dit betekent anonieme locatiegegevens verzenden naar Google, zelfs wanneer er geen apps worden uitgevoerd.</string>
-  <string name="setup_mobile_data">Mobiele gegevens inschakelen</string>
-  <string name="setup_mobile_data_no_service">Geen verbinding</string>
-  <string name="setup_mobile_data_emergency_only">Alleen noodoproepen</string>
-  <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hiermee kunnen kosten gemoeid zijn.</string>
-  <string name="no">Nee</string>
-  <string name="yes">Ja</string>
-  <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
-  <string name="emergency_call">Noodoproep</string>
-  <string name="setup_services">Functies van LineageOS</string>
-  <string name="services_explanation" product="tablet">Deze diensten worden gebruikt om de mogelijkheden van uw tablet uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
-  <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
-  <string name="services_privacy_policy">Privacybeleid</string>
-  <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-  <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar LineageOS. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-functies.</string>
-  <string name="services_apply_theme">Thema <xliff:g id="name" example="Material">%s</xliff:g> toepassen</string>
-  <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> voor een unieke stijl voor uw pictogrammen, achtergrond en meer.</string>
-  <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
-  <string name="services_os_privacy_guard"><b>Privacybescherming inschakelen</b> om uw persoonlijke gegevens zoals contacten, berichten of oproepgeschiedenis niet beschikbaar te maken voor nieuw geïnstalleerde apps</string>
-  <string name="setup_unlock">Ontgrendelen</string>
-  <string name="setup_device_locked">Dit apparaat is vergrendeld door de gebruiker.</string>
-  <string name="setup_require_cyanogen_label"><b>Uw accountwachtwoord vereisen</b> om het apparaat te gebruiken, zelfs na terugzetten naar fabrieksinstellingen.</string>
-  <string name="setup_device_locked_instructions"><i>Om deze functie in of uit te schakelen, ga naar Instellingen &gt; Beveiliging</i></string>
-  <!-- Fingerprint setup -->
-  <string name="settings_fingerprint_setup_title">Back-up selecteren voor schermvergrendeling</string>
-  <string name="settings_fingerprint_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
-  <string name="fingerprint_setup_title">Vingerafdruk instellen</string>
-  <string name="fingerprint_setup_summary">Om de vingerafdruksensor te gebruiken om uw scherm te ontgrendelen dient u:</string>
-  <string name="fingerprint_setup_backup_lock_method">Een tweede ontgrendelmethode in te stellen</string>
-  <string name="fingerprint_setup_add_fingerprint">Uw vingerafdruk toe te voegen</string>
-  <string name="fingerprint_setup_screen_lock_setup">Schermvergrendeling in te stellen</string>
-  <string name="sim_locale_changed">%1$s simkaart gedetecteerd</string>
-  <!-- secure lock screen -->
-  <string name="settings_lockscreen_setup_title">Schermvergrendelingstype selecteren</string>
-  <string name="settings_lockscreen_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
-  <string name="lockscreen_setup_title">Bescherm uw telefoon</string>
-  <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
-  <string name="lockscreen_setup_screen_lock_setup">Instellen</string>
+    <string name="app_name">Assistent voor instellen</string>
+    <string name="next">Volgende</string>
+    <string name="skip">Overslaan</string>
+    <string name="start">Start</string>
+    <string name="done">Gereed</string>
+    <string name="ok">OK</string>
+    <string name="loading">Even geduld\u2026</string>
+    <string name="setup_complete">Instellen voltooid</string>
+    <string name="setup_welcome">Welkom</string>
+    <string name="setup_locale">Taal</string>
+    <string name="setup_wifi">Wifi selecteren</string>
+    <string name="setup_sim_missing">Simkaart ontbreekt</string>
+    <string name="setup_choose_data_sim">Kies een simkaart voor gegevensverbinding</string>
+    <string name="setup_location">Locatieservices</string>
+    <string name="setup_other">Andere diensten</string>
+    <string name="setup_datetime">Datum &amp; tijd</string>
+    <string name="setup_current_date">Huidige datum</string>
+    <string name="setup_current_time">Huidige tijd</string>
+    <string name="sim_missing_summary" product="tablet">Geen simkaart gedetecteerd in uw tablet. Om een simkaart te plaatsen, lees de instructie die bij uw tablet is geleverd.</string>
+    <string name="sim_missing_summary" product="default">Geen simkaart gedetecteerd in uw telefoon. Om een simkaart te plaatsen, lees de instructie die bij uw telefoon is geleverd.</string>
+    <string name="choose_data_sim_summary" product="tablet">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw tablet in te stellen.</string>
+    <string name="choose_data_sim_summary" product="default">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw telefoon in te stellen.</string>
+    <string name="date_time_summary">Selecteer uw tijdzone en pas indien nodig de huidige datum en tijd aan.</string>
+    <string name="backup_data_summary"><b>Back-up maken</b> van app-gegevens, wifi-wachtwoorden en andere instellingen naar de servers van Google</string>
+    <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
+    <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
+    <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
+    <string name="location_battery_saving"><b>Verlaag het accugebruik</b> door het aantal GPS-updates per uur te beperken.</string>
+    <string name="location_network"><b>Wifi gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
+    <string name="location_network_telephony"><b>Wifi- en mobiele netwerken gebruiken</b> om apps te helpen uw locatie te bepalen.</string>
+    <string name="location_network_gms"><b>Locatieservices van Google gebruiken</b> om apps te helpen uw locatie te bepalen. Dit betekent anonieme locatiegegevens verzenden naar Google, zelfs wanneer er geen apps worden uitgevoerd.</string>
+    <string name="setup_mobile_data">Mobiele gegevens inschakelen</string>
+    <string name="setup_mobile_data_no_service">Geen verbinding</string>
+    <string name="setup_mobile_data_emergency_only">Alleen noodoproepen</string>
+    <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hiermee kunnen kosten gemoeid zijn.</string>
+    <string name="no">Nee</string>
+    <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Noodoproep</string>
+    <string name="setup_services">Functies van LineageOS</string>
+    <string name="services_explanation" product="tablet">Deze diensten worden gebruikt om de mogelijkheden van uw tablet uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
+    <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
+    <string name="services_privacy_policy">Privacybeleid</string>
+    <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar LineageOS. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-functies.</string>
+    <string name="services_apply_theme">Thema <xliff:g id="name" example="Material">%s</xliff:g> toepassen</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> voor een unieke stijl voor uw pictogrammen, achtergrond en meer.</string>
+    <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
+    <string name="services_os_privacy_guard"><b>Privacybescherming inschakelen</b> om uw persoonlijke gegevens zoals contacten, berichten of oproepgeschiedenis niet beschikbaar te maken voor nieuw geïnstalleerde apps</string>
+    <string name="setup_unlock">Ontgrendelen</string>
+    <string name="setup_device_locked">Dit apparaat is vergrendeld door de gebruiker.</string>
+    <string name="setup_require_cyanogen_label"><b>Uw accountwachtwoord vereisen</b> om het apparaat te gebruiken, zelfs na terugzetten naar fabrieksinstellingen.</string>
+    <string name="setup_device_locked_instructions"><i>Om deze functie in of uit te schakelen, ga naar Instellingen &gt; Beveiliging</i></string>
+    <string name="settings_fingerprint_setup_title">Back-up selecteren voor schermvergrendeling</string>
+    <string name="settings_fingerprint_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
+    <string name="fingerprint_setup_title">Vingerafdruk instellen</string>
+    <string name="fingerprint_setup_summary">Om de vingerafdruksensor te gebruiken om uw scherm te ontgrendelen dient u:</string>
+    <string name="fingerprint_setup_backup_lock_method">Een tweede ontgrendelmethode in te stellen</string>
+    <string name="fingerprint_setup_add_fingerprint">Uw vingerafdruk toe te voegen</string>
+    <string name="fingerprint_setup_screen_lock_setup">Schermvergrendeling in te stellen</string>
+    <string name="sim_locale_changed">%1$s simkaart gedetecteerd</string>
+    <string name="settings_lockscreen_setup_title">Schermvergrendelingstype selecteren</string>
+    <string name="settings_lockscreen_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
+    <string name="lockscreen_setup_title">Bescherm uw telefoon</string>
+    <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
+    <string name="lockscreen_setup_screen_lock_setup">Instellen</string>
 </resources>
