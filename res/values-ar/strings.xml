@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">حدد نوع شاشة القفل</string>
     <string name="settings_lockscreen_setup_details">كيف تريد إقفال الشاشة؟</string>
-    <string name="lockscreen_setup_title">حماية هاتفك</string>
+    <string name="lockscreen_setup_title" product="default">حماية هاتفك</string>
     <string name="lockscreen_setup_summary"><b>حماية هذا الجهاز</b> وطلب رقم تعريف شخصي أو نمط أو كلمة مرور لإلغاء قفل الشاشة.</string>
     <string name="lockscreen_setup_screen_lock_setup">إعداد</string>
 </resources>

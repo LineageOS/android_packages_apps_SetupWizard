@@ -26,6 +26,7 @@
     <string name="loading">In amerijke\u2026</string>
     <string name="setup_complete">Ynstellen foltôge</string>
     <string name="setup_welcome">Wolkom</string>
+    <string name="setup_locale">Taal</string>
     <string name="setup_wifi">Wifi selektearje</string>
     <string name="setup_sim_missing">Simkaart ûntbrekt</string>
     <string name="setup_choose_data_sim">Kies in simkaart foar gegevensferbining</string>
@@ -55,10 +56,15 @@
     <string name="yes">Ja</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
     <string name="emergency_call">Needoprop</string>
+    <string name="setup_services">Funksjes fan LineageOS</string>
+    <string name="services_explanation" product="tablet">Dizze tsjinsten wurde brûkt om de mooglikheden fan jo tablet út te wreidzjen. Gegevens wurde brûkt konfoarm it ‘<xliff:g id="name" example="Privacybelied">%s</xliff:g>’ fan LineageOS.</string>
+    <string name="services_explanation" product="default">Dizze tsjinsten wurde brûkt om de mooglikheden fan jo telefoan út te wreidzjen. Gegevens wurde brûkt konfoarm it ‘<xliff:g id="name" example="Privacybelied">%s</xliff:g>’ fan LineageOS.</string>
     <string name="services_privacy_policy">Privacybelied</string>
     <string name="services_os_nav_keys_label"><b>On-screen navigaasjeknoppen</b> brûke yn stee fan de hardwareknoppen.</string>
+    <string name="services_os_privacy_guard"><b>Privacybeskerming ynskeakelje</b> om jo persoanlike gegevens lykas kontakten, berjochten of opropskiednis net beskikber te meitsjen foar nij ynstallearre apps</string>
     <string name="setup_unlock">Untskoattelje</string>
     <string name="setup_device_locked">Dit apparaat is beskoattele troch de brûker.</string>
+    <string name="setup_require_cyanogen_label"><b>Jo accountwachtwurd fereaskje</b> om it apparaat te brûken, sels nei weromsetten nei fabryksynstellingen.</string>
     <string name="setup_device_locked_instructions"><i>Om dizze funksje yn of út te skeakeljen, gean nei Ynstellingen &gt; Befeiliging</i></string>
     <string name="settings_fingerprint_setup_title">Reservemetoade selektearje foar skermbeskoatteling</string>
     <string name="settings_fingerprint_setup_details">Hoe wolle jo jo skerm beskoattelje?</string>
@@ -70,6 +76,7 @@
     <string name="sim_locale_changed">%1$s simkaart detektearre</string>
     <string name="settings_lockscreen_setup_title">Type skermbeskoatteling selektearje</string>
     <string name="settings_lockscreen_setup_details">Hoe wolle jo jo skerm beskoattelje?</string>
-    <string name="lockscreen_setup_title">Beskermje jo telefoan</string>
+    <string name="lockscreen_setup_title" product="default">Beskermje jo telefoan</string>
     <string name="lockscreen_setup_summary"><b>Beskermje dit apparaat</b> en freegje om in pinkoade, patroan of wachtwurd om it skerm te ûntskoatteljen</string>
+    <string name="lockscreen_setup_screen_lock_setup">Ynstelle</string>
 </resources>

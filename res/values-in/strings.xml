@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
     <string name="settings_lockscreen_setup_title">Pilih tipe kunci layar</string>
     <string name="settings_lockscreen_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
-    <string name="lockscreen_setup_title">Lindungi telepon anda</string>
+    <string name="lockscreen_setup_title" product="default">Lindungi telepon anda</string>
     <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
 </resources>

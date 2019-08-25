@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
     <string name="settings_lockscreen_setup_title">Выбрать способ блокировки экрана</string>
     <string name="settings_lockscreen_setup_details">Как вы хотите заблокировать ваш экран?</string>
-    <string name="lockscreen_setup_title">Защитите свой телефон</string>
+    <string name="lockscreen_setup_title" product="default">Защитите свой телефон</string>
     <string name="lockscreen_setup_summary"><b>Защитить это устройство</b> и запрашивать PIN-код, графический ключ или пароль для разблокировки экрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Настройка</string>
 </resources>

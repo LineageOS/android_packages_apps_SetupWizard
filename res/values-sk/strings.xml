@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">Zistená %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
     <string name="settings_lockscreen_setup_details">Ako chcete zamknúť obrazovku?</string>
-    <string name="lockscreen_setup_title">Chráňte svoj telefón</string>
+    <string name="lockscreen_setup_title" product="default">Chráňte svoj telefón</string>
     <string name="lockscreen_setup_summary"><b>Chrániť toto zariadenie</b> a pred odomknutím obrazovky vyžiadať kód PIN, gesto alebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastaviť</string>
 </resources>

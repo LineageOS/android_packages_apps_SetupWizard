@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">Препозната је %1$s SIM картица</string>
     <string name="settings_lockscreen_setup_title">Изаберите метод закључавања екрана</string>
     <string name="settings_lockscreen_setup_details">Како желите да закључате екран?</string>
-    <string name="lockscreen_setup_title">Заштитите телефон</string>
+    <string name="lockscreen_setup_title" product="default">Заштитите телефон</string>
     <string name="lockscreen_setup_summary"><b>Заштитите уређај</b> помоћу PIN кода, шаблона или лозинке.</string>
     <string name="lockscreen_setup_screen_lock_setup">Подеси</string>
 </resources>

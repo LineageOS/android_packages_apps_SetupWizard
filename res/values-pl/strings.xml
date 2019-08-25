@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">Wykryto %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Wybierz typ blokady ekranu</string>
     <string name="settings_lockscreen_setup_details">Jak chcesz blokować swój ekran?</string>
-    <string name="lockscreen_setup_title">Zabezpiecz telefon</string>
+    <string name="lockscreen_setup_title" product="default">Zabezpiecz telefon</string>
     <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguracja</string>
 </resources>

@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
     <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>
     <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
-    <string name="lockscreen_setup_title">スマートフォンの保護</string>
+    <string name="lockscreen_setup_title" product="default">スマートフォンの保護</string>
     <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
     <string name="lockscreen_setup_screen_lock_setup">セットアップ</string>
 </resources>

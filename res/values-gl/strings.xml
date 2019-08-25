@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">%1$s SIM detectado</string>
     <string name="settings_lockscreen_setup_title">Seleccionar o tipo de bloqueo da pantalla</string>
     <string name="settings_lockscreen_setup_details">Como quere bloquear a súa pantalla?</string>
-    <string name="lockscreen_setup_title">Protexe o teu móbil</string>
+    <string name="lockscreen_setup_title" product="default">Protexe o teu móbil</string>
     <string name="lockscreen_setup_summary"><b>Protexe o dispositivo</b> e solicitar un PIN, patrón ou contrasinal para desbloquear a pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
 </resources>

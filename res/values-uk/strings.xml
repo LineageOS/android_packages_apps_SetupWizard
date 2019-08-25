@@ -77,7 +77,7 @@
     <string name="sim_locale_changed">%1$s SIM-карту виявлено</string>
     <string name="settings_lockscreen_setup_title">Виберіть тип блокування екрану</string>
     <string name="settings_lockscreen_setup_details">Як би ви хотіли блокувати екран?</string>
-    <string name="lockscreen_setup_title">Захистіть свій телефон</string>
+    <string name="lockscreen_setup_title" product="default">Захистіть свій телефон</string>
     <string name="lockscreen_setup_summary"><b>Захистити цей пристрій</b> та запитувати PIN-код, графічний ключ або пароль для розблокування екрану</string>
     <string name="lockscreen_setup_screen_lock_setup">Налаштувати</string>
 </resources>

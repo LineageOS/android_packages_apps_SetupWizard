@@ -78,7 +78,8 @@
     <string name="sim_locale_changed">Synhwyrwyd %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Dewis math o sgrin cloi</string>
     <string name="settings_lockscreen_setup_details">Sut hoffet gloi dy sgrin?</string>
-    <string name="lockscreen_setup_title">Diogelu dy ffôn</string>
+    <string name="lockscreen_setup_title" product="tablet">Diogelu dy lechen</string>
+    <string name="lockscreen_setup_title" product="default">Diogelu dy ffôn</string>
     <string name="lockscreen_setup_summary"><b>Diogela\'r ddyfais hon</b> gan osod PIN, patrwm, neu gyfrinair er mwyn datgloi\'r sgrin.</string>
     <string name="lockscreen_setup_screen_lock_setup">Gosod</string>
 </resources>

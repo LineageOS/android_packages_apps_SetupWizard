@@ -78,7 +78,8 @@
     <string name="sim_locale_changed">%1$s SIM tespit edildi</string>
     <string name="settings_lockscreen_setup_title">Ekran kilidi türünü seçin</string>
     <string name="settings_lockscreen_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
-    <string name="lockscreen_setup_title">Telefonunuzu koruyun</string>
+    <string name="lockscreen_setup_title" product="tablet">Tabletinizi koruyun</string>
+    <string name="lockscreen_setup_title" product="default">Telefonunuzu koruyun</string>
     <string name="lockscreen_setup_summary"><b>Bu cihazı koruyun</b> ve ekran kilidini açmak için bir PIN, desen ya da şifreyi gerekli kılın.</string>
     <string name="lockscreen_setup_screen_lock_setup">Kur</string>
 </resources>

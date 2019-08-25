@@ -77,7 +77,7 @@
     <string name="sim_locale_changed">%1$s simkaart gedetecteerd</string>
     <string name="settings_lockscreen_setup_title">Schermvergrendelingstype selecteren</string>
     <string name="settings_lockscreen_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
-    <string name="lockscreen_setup_title">Bescherm uw telefoon</string>
+    <string name="lockscreen_setup_title" product="default">Bescherm uw telefoon</string>
     <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
     <string name="lockscreen_setup_screen_lock_setup">Instellen</string>
 </resources>

@@ -78,7 +78,7 @@
     <string name="sim_locale_changed">%1$s SIM-kort fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du gerne låse din skærm?</string>
-    <string name="lockscreen_setup_title">Beskyt din telefon</string>
+    <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
     <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv pinkode, mønster eller adgangskode for at låse skærmen op</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfigurering</string>
 </resources>

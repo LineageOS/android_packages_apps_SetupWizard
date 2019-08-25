@@ -78,7 +78,8 @@
     <string name="sim_locale_changed">SIM %1$s detectat</string>
     <string name="settings_lockscreen_setup_title">Selectați tipul de blocare ecran</string>
     <string name="settings_lockscreen_setup_details">Cum doriți să vă blocați ecranul?</string>
-    <string name="lockscreen_setup_title">Protejați telefonul</string>
+    <string name="lockscreen_setup_title" product="tablet">Protejați tableta dvs.</string>
+    <string name="lockscreen_setup_title" product="default">Protejați telefonul</string>
     <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurați</string>
 </resources>
