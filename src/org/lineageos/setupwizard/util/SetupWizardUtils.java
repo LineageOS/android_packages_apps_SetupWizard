@@ -60,6 +60,7 @@ import org.lineageos.setupwizard.MobileDataActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
 import org.lineageos.setupwizard.WifiSetupActivity;
+import org.lineageos.setupwizard.backup.RestoreIntroActivity;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 import org.lineageos.internal.util.PackageManagerUtils;
@@ -243,6 +244,9 @@ public class SetupWizardUtils {
     }
 
     public static void disableComponentsForMissingFeatures(Context context) {
+        // TODO enable when shipping backup app
+        disableComponent(context, RestoreIntroActivity.class);
+
         if (!hasLeanback(context)) {
             disableComponent(context, BluetoothSetupActivity.class);
         }
