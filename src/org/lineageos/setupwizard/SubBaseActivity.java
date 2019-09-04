@@ -141,9 +141,6 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
         } else if (mIsSubactivityNotFound) {
             nextAction(RESULT_ACTIVITY_NOT_FOUND);
             finish();
-        } else {
-            applyBackwardTransition(getSubactivityPreviousTransition());
-            finishAction(RESULT_CANCELED, data);
         }
     }
 
