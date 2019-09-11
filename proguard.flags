@@ -9,4 +9,4 @@
 
 # Needed when building against the Marshmallow SDK
 -dontwarn org.apache.http.**
--dontwarn android.support.**
+-dontwarn androidx.**
