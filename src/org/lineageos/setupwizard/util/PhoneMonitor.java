@@ -102,7 +102,7 @@ public class PhoneMonitor {
         private int mSubId = -1;
 
         public SubscriptionStateTracker(int subId) {
-            super(subId);
+            super();
             mSubId = subId;
         }
 
