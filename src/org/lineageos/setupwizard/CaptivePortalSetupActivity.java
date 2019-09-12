@@ -131,6 +131,8 @@ public class CaptivePortalSetupActivity extends SubBaseActivity {
                         new CaptivePortal(new ICaptivePortal.Stub() {
                             @Override
                             public void appResponse(int response) {}
+                            @Override
+                            public void logEvent(int eventId, String packageName) {}
                         }));
                 intent.putExtra("status_bar_color",
                         context.getResources().getColor(R.color.primary_dark));
