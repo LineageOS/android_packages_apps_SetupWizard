@@ -19,7 +19,7 @@ package org.lineageos.setupwizard;
 
 import static android.content.Intent.FLAG_ACTIVITY_FORWARD_RESULT;
 
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
