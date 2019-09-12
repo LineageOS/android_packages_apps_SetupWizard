@@ -17,9 +17,9 @@
 
 package org.lineageos.setupwizard;
 
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_RETRY;
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_SKIP;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_RETRY;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
@@ -51,10 +51,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.setupwizard.navigationbar.SetupWizardNavBar;
-import com.android.setupwizard.navigationbar.SetupWizardNavBar.NavigationBarListener;
-import com.android.setupwizardlib.util.SystemBarHelper;
-import com.android.setupwizardlib.util.WizardManagerHelper;
+import com.google.android.setupdesign.view.NavigationBar;
+import com.google.android.setupdesign.view.NavigationBar.NavigationBarListener;
+import com.google.android.setupcompat.util.SystemBarHelper;
+import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -76,7 +76,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int FINGERPRINT_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
 
-    private SetupWizardNavBar mNavigationBar;
+    private NavigationBar mNavigationBar;
 
     protected boolean mIsActivityVisible = false;
     protected boolean mIsExiting = false;
@@ -94,6 +94,10 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         super.onCreate(savedInstanceState);
         mIsPrimaryUser = UserHandle.myUserId() == 0;
         initLayout();
+        mNavigationBar = getNavigationBar();
+        if (mNavigationBar != null) {
+            mNavigationBar.setNavigationBarListener(this);
+        }
     }
 
     @Override
@@ -186,17 +190,13 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
     }
 
-    @Override
-    public void onNavigationBarCreated(SetupWizardNavBar bar) {
-        mNavigationBar = bar;
-        bar.setUseImmersiveMode(true);
-        bar.getView().addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
-            @Override
-            public void onLayoutChange(View view, int left, int top, int right, int bottom,
-                                       int oldLeft, int oldTop, int oldRight, int oldBottom) {
-                view.requestApplyInsets();
-            }
-        });
+    /**
+     * @return The navigation bar instance in the layout, or null if the layout does not have a
+     *     navigation bar.
+     */
+    public NavigationBar getNavigationBar() {
+        final View view = findViewById(R.id.navigation_bar);
+        return view instanceof NavigationBar ? (NavigationBar) view : null;
     }
 
     protected void setBackDrawable(Drawable drawable) {
@@ -431,7 +431,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected void applyForwardTransition(int transitionId) {
         if (transitionId == TRANSITION_ID_SLIDE) {
-            overridePendingTransition(R.anim.suw_slide_next_in, R.anim.suw_slide_next_out);
+            overridePendingTransition(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
         } else if (transitionId == TRANSITION_ID_FADE) {
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
@@ -448,7 +448,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected void applyBackwardTransition(int transitionId) {
         if (transitionId == TRANSITION_ID_SLIDE) {
-            overridePendingTransition(R.anim.suw_slide_back_in, R.anim.suw_slide_back_out);
+            overridePendingTransition(R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
         } else if (transitionId == TRANSITION_ID_FADE) {
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
