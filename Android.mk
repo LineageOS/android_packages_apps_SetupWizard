@@ -15,7 +15,9 @@ LOCAL_PRIVATE_PLATFORM_APIS := true
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
-    androidx.core_core
+    androidx.core_core \
+    setupcompat \
+    setupdesign
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     libphonenumber \
@@ -27,9 +29,6 @@ LOCAL_JAVA_LIBRARIES := \
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 LOCAL_USE_AAPT2 := true
-
-include frameworks/opt/setupwizard/navigationbar/common.mk
-include frameworks/opt/setupwizard/library/common-gingerbread.mk
 
 include $(BUILD_PACKAGE)
 
