@@ -26,8 +26,9 @@ import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
-import com.android.setupwizardlib.util.ResultCodes;
-import com.android.setupwizardlib.util.WizardManagerHelper;
+import com.google.android.setupcompat.util.ResultCodes;
+import com.google.android.setupcompat.util.WizardManagerHelper;
+import com.google.android.setupdesign.util.ThemeHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -88,7 +89,7 @@ public class WizardManager extends Activity {
     private void addExtras(Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_USE_IMMERSIVE_MODE, true);
         intent.putExtra(EXTRA_FIRST_RUN, true);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, WizardManagerHelper.THEME_MATERIAL_LIGHT);
+        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_MATERIAL_LIGHT);
     }
 
     private void doAction(String scriptUri, WizardAction action, Intent extras) {

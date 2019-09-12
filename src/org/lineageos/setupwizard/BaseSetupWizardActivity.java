@@ -17,9 +17,9 @@
 
 package org.lineageos.setupwizard;
 
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_RETRY;
-import static com.android.setupwizardlib.util.ResultCodes.RESULT_SKIP;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_RETRY;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
@@ -45,22 +45,24 @@ import android.os.UserHandle;
 import android.os.UserManager;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
+import android.view.ViewTreeObserver.OnPreDrawListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.setupwizard.navigationbar.SetupWizardNavBar;
-import com.android.setupwizard.navigationbar.SetupWizardNavBar.NavigationBarListener;
-import com.android.setupwizardlib.util.SystemBarHelper;
-import com.android.setupwizardlib.util.WizardManagerHelper;
+import com.google.android.setupdesign.view.NavigationBar;
+import com.google.android.setupdesign.view.NavigationBar.NavigationBarListener;
+import com.google.android.setupcompat.util.SystemBarHelper;
+import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 
-public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener {
+public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener, OnPreDrawListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
 
@@ -76,7 +78,11 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int FINGERPRINT_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
 
-    private SetupWizardNavBar mNavigationBar;
+    private static final int IMMERSIVE_FLAGS =
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+    private int mSystemUiFlags = IMMERSIVE_FLAGS | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+
+    private NavigationBar mNavigationBar;
 
     protected boolean mIsActivityVisible = false;
     protected boolean mIsExiting = false;
@@ -94,6 +100,20 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         super.onCreate(savedInstanceState);
         mIsPrimaryUser = UserHandle.myUserId() == 0;
         initLayout();
+        mNavigationBar = getNavigationBar();
+        if (mNavigationBar != null) {
+            mNavigationBar.setNavigationBarListener(this);
+            mNavigationBar.addOnLayoutChangeListener((View view,
+                    int left, int top, int right, int bottom,
+                    int oldLeft, int oldTop, int oldRight, int oldBottom) -> {
+                view.requestApplyInsets();
+            });
+            mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+            // Set the UI flags before draw because the visibility might change in unexpected /
+            // undetectable times, like transitioning from a finishing activity that had a keyboard
+            ViewTreeObserver viewTreeObserver = mNavigationBar.getViewTreeObserver();
+            viewTreeObserver.addOnPreDrawListener(this);
+        }
     }
 
     @Override
@@ -187,16 +207,43 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     }
 
     @Override
-    public void onNavigationBarCreated(SetupWizardNavBar bar) {
-        mNavigationBar = bar;
-        bar.setUseImmersiveMode(true);
-        bar.getView().addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
-            @Override
-            public void onLayoutChange(View view, int left, int top, int right, int bottom,
-                                       int oldLeft, int oldTop, int oldRight, int oldBottom) {
-                view.requestApplyInsets();
+    public boolean onPreDraw() {
+        // View.setSystemUiVisibility checks if the visibility changes before applying them
+        // so the performance impact is contained
+        mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+        return true;
+    }
+
+    /**
+     * @return The navigation bar instance in the layout, or null if the layout does not have a
+     *     navigation bar.
+     */
+    public NavigationBar getNavigationBar() {
+        final View view = findViewById(R.id.navigation_bar);
+        return view instanceof NavigationBar ? (NavigationBar) view : null;
+    }
+
+    /**
+     * Sets whether system navigation bar should be hidden.
+     * @param useImmersiveMode True to activate immersive mode and hide the system navigation bar
+     */
+    public void setUseImmersiveMode(boolean useImmersiveMode) {
+        // By default, enable layoutHideNavigation if immersive mode is used
+        setUseImmersiveMode(useImmersiveMode, useImmersiveMode);
+    }
+
+    public void setUseImmersiveMode(boolean useImmersiveMode, boolean layoutHideNavigation) {
+        if (useImmersiveMode) {
+            mSystemUiFlags |= IMMERSIVE_FLAGS;
+            if (layoutHideNavigation) {
+                mSystemUiFlags |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
             }
-        });
+        } else {
+            mSystemUiFlags &= ~(IMMERSIVE_FLAGS | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
+        }
+        if (mNavigationBar != null) {
+            mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+        }
     }
 
     protected void setBackDrawable(Drawable drawable) {
@@ -431,7 +478,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected void applyForwardTransition(int transitionId) {
         if (transitionId == TRANSITION_ID_SLIDE) {
-            overridePendingTransition(R.anim.suw_slide_next_in, R.anim.suw_slide_next_out);
+            overridePendingTransition(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
         } else if (transitionId == TRANSITION_ID_FADE) {
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
@@ -448,7 +495,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected void applyBackwardTransition(int transitionId) {
         if (transitionId == TRANSITION_ID_SLIDE) {
-            overridePendingTransition(R.anim.suw_slide_back_in, R.anim.suw_slide_back_out);
+            overridePendingTransition(R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
         } else if (transitionId == TRANSITION_ID_FADE) {
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
