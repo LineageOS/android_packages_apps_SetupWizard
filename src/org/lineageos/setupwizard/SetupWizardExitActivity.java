@@ -26,7 +26,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.android.setupwizardlib.util.SystemBarHelper;
+import com.google.android.setupcompat.util.SystemBarHelper;
 
 import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
