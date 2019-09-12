@@ -50,6 +50,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Handler;
+import android.os.HandlerExecutor;
+import android.os.Looper;
 import android.os.SystemProperties;
 import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
@@ -102,7 +105,7 @@ public class PhoneMonitor {
         private int mSubId = -1;
 
         public SubscriptionStateTracker(int subId) {
-            super(subId);
+            super(new HandlerExecutor(new Handler(Looper.myLooper())));
             mSubId = subId;
         }
 
@@ -193,7 +196,7 @@ public class PhoneMonitor {
             if (mTrackers.indexOfKey(subId) < 0) {
                 SubscriptionStateTracker tracker = new SubscriptionStateTracker(subId);
                 mTrackers.put(subId, tracker);
-                mTelephony.listen(tracker, LISTEN_SERVICE_STATE
+                mTelephony.createForSubscriptionId(subId).listen(tracker, LISTEN_SERVICE_STATE
                         | LISTEN_SIGNAL_STRENGTHS
                         | LISTEN_DATA_CONNECTION_STATE);
             }
@@ -218,11 +221,11 @@ public class PhoneMonitor {
     }
 
     public String getSimOperatorName(int subId) {
-        return mTelephony.getSimOperatorName(subId);
+        return mTelephony.createForSubscriptionId(subId).getSimOperatorName();
     }
 
     public String getNetworkOperatorName(int subId) {
-        return mTelephony.getNetworkOperatorName(subId);
+        return mTelephony.createForSubscriptionId(subId).getNetworkOperatorName();
     }
 
     public ServiceState getServiceStateForSubscriber(int subId) {
@@ -299,7 +302,7 @@ public class PhoneMonitor {
     }
 
     public boolean isGSM(int subId) {
-        return mTelephony.getCurrentPhoneType(subId) == PHONE_TYPE_GSM;
+        return mTelephony.createForSubscriptionId(subId).getCurrentPhoneType() == PHONE_TYPE_GSM;
     }
 
     public boolean isLte(int subId) {
@@ -307,10 +310,11 @@ public class PhoneMonitor {
     }
 
     public int getLteOnCdmaMode(int subId) {
-        if (mTelephony == null || mTelephony.getLteOnCdmaMode(subId) == LTE_ON_CDMA_UNKNOWN) {
+        if (mTelephony == null || mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode()
+                    == LTE_ON_CDMA_UNKNOWN) {
             return SystemProperties.getInt("telephony.lteOnCdmaDevice", LTE_ON_CDMA_UNKNOWN);
         }
-        return mTelephony.getLteOnCdmaMode(subId);
+        return mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode();
     }
 
     private void logPhoneState(String prefix) {
