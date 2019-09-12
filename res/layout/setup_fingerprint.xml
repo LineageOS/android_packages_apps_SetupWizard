@@ -89,7 +89,11 @@
             </LinearLayout>
         </ScrollView>
     </FrameLayout>
-    <fragment android:name="com.android.setupwizard.navigationbar.SetupWizardNavBar"
+
+    <com.google.android.setupdesign.view.NavigationBar
         android:id="@+id/navigation_bar"
-        style="@style/setup_wizard_navbar_style" />
+        style="@style/SudNavBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sud_navbar_height" />
+
 </LinearLayout>
