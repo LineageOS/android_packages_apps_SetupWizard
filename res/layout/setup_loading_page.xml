@@ -38,7 +38,7 @@
                  android:layout_weight="1"
                  style="@style/PageContent"/>
 
-    <fragment android:name="com.android.setupwizard.navigationbar.SetupWizardNavBar"
+    <fragment android:name="com.google.android.setupdesign.view.NavigationBar"
         android:id="@+id/navigation_bar"
-        style="@style/setup_wizard_navbar_style" />
+        style="@style/SudNavBarTheme" />
 </LinearLayout>
