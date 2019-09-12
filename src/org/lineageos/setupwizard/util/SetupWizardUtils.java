@@ -98,7 +98,7 @@ public class SetupWizardUtils {
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
             int subId = SubscriptionManager.getDefaultDataSubscriptionId();
-            tm.setDataEnabled(subId, enabled);
+            tm.createForSubscriptionId(subId).setDataEnabled(enabled);
         } else {
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA, enabled ? 1 : 0);
