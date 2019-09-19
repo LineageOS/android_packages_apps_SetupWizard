@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06885371_555f80a9",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2019-09-19T23:33:19Z",
+      "side": 1,
+      "message": "This breaks build.",
+      "revId": "cef0f6d2bdbd3f50d18a3ced4b64a89eb8e77433",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
