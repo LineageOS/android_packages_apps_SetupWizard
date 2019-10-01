@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84c3518a_d2abd2e6",
+        "filename": "src/org/lineageos/setupwizard/BaseSetupWizardActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-10-01T18:03:30Z",
+      "side": 1,
+      "message": "Can we use lambda here?",
+      "revId": "f6108eefb01a2997e6380efc31786496e999ce6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
