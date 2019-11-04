@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Pomozte vylepšit <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání do LineageOS. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností pro <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
-    <string name="services_os_privacy_guard"><b>Povolit Ochranu soukromí</b>, aby vaše osobní údaje (například kontakty, zprávy nebo záznamy hovorů) nebyly dostupné pro nově instalované aplikace</string>
     <string name="setup_unlock">Odemknout</string>
     <string name="setup_device_locked">Toto zařízení bylo uzamčeno uživatelem.</string>
     <string name="setup_require_cyanogen_label">Po obnovení továrního nastavení bude <b>vyžadováno heslo k Vašemu účtu</b>.</string>

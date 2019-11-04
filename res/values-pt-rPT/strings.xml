@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Ajude a melhorar a LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para a LineageOS. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e no desenvolvimento de novas funcionalidades para a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
-    <string name="services_os_privacy_guard"><b>Ative a Proteção da Privacidade</b> para tornar os seus dados pessoais como contactos, mensagens ou registo de chamadas não disponíveis para aplicações recém-instaladas</string>
     <string name="setup_unlock">Desbloquear</string>
     <string name="setup_device_locked">Este dispositivo foi bloqueado pelo utilizador.</string>
     <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da sua conta</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>

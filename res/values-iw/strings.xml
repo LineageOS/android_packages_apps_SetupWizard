@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> על ידי שליחת נתוני אבחון ושימוש אל LineageOS. מידע זה לא יוכל לשמש בכדי לזהותך, והוא תורם לצוותים העובדים על תחומים כמו חיי סוללה, ביצועים ותכונות חדשות ל־<xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
-    <string name="services_os_privacy_guard"><b>הפעל את שומר הפרטיות</b> כדי למנוע גישה לפרטיים האישים שלך מיישומים חדשים</string>
     <string name="setup_unlock">פתיחה</string>
     <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
     <string name="setup_require_cyanogen_label"><b>דרוש את סיסמת החשבון שלך</b> כדי להשתמש במכשיר אפילו לאחר איפוס מלא.</string>

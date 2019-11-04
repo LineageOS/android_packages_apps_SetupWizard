@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Auta parantamaan <xliff:g id="name" example="LineageOS">%s</xliff:g>ia</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> lähettämällä vianmääritys- ja käyttötietoja LineageOS:lle. Tietoja ei voi käyttää tunnistamiseen. Tiedot auttavat kehittäjiä muun muassa parantamaan akun kestoa, sovellusten suorituskykyä ja kehittämään <xliff:g id="name" example="LineageOS">%2$s</xliff:g>:iin uusia ominaisuuksia.</string>
     <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
-    <string name="services_os_privacy_guard"><b>Ota Yksityisyyden suojaus käyttöön</b> estääksesi uusia sovelluksia käyttämästä tietoja kuten yhteystietoja, viestejä tai puhelulokeja ilman lupaa</string>
     <string name="setup_unlock">Avaa lukitus</string>
     <string name="setup_device_locked">Käyttäjä on lukinnut laitteen.</string>
     <string name="setup_require_cyanogen_label"><b>Vaadi tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>
