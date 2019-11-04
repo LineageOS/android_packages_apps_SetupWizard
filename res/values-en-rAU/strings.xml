@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%2$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
-    <string name="services_os_privacy_guard"><b>Enable Privacy guard</b> to make your personal data such as contacts, messages or call logs not available for newly installed apps</string>
     <string name="setup_unlock">Unlock</string>
     <string name="setup_device_locked">This device has been locked by the user.</string>
     <string name="setup_require_cyanogen_label"><b>Require your account password</b> in order to use your device even after a factory reset.</string>

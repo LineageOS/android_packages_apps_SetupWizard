@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Contribuer à l\'amélioration de <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> en envoyant automatiquement des données de diagnostic et d\'utilisation à LineageOS. Ces informations ne peuvent pas être utilisées pour vous identifier et aident nos équipes à améliorer l\'autonomie de la batterie et les performances des applications, et à développer de nouvelles fonctionnalités pour <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Utilisation des touches de navigation de l\'écran</b> au lieu des touches physiques.</string>
-    <string name="services_os_privacy_guard"><b>Activer la protection des données</b> pour que vos données personnelles comme les contacts, messages ou les journaux d\'appels ne soient pas disponibles pour les applications nouvellement installées</string>
     <string name="setup_unlock">Déverrouiller</string>
     <string name="setup_device_locked">Cet appareil a été verrouillé par l\'utilisateur.</string>
     <string name="setup_require_cyanogen_label"><b>Nécessite le mot de passe de votre compte</b> afin d\'utiliser votre appareil même après une réinitialisation d\'usine.</string>

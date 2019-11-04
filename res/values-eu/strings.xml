@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="LineageOS">%s</xliff:g> hobetzen</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatikoki diagnostiko eta erabilera datuak bidaliz LineageOS-i. Informazio hau ezin da erabili zu identifikatzeko eta bateriaren iraupenean, aplikazioen errendimenduan, eta <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-en ezaugarri berrietan lanean dabilen taldearentzat lagungarria da.</string>
     <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
-    <string name="services_os_privacy_guard"><b>Gaitu Privacy guard</b> zure datu pertsonalak, esaterako kontaktuak, mezuak edo deien erregistroa instalatu berri dituzun aplikazioen eskura egon ez daitezen</string>
     <string name="setup_unlock">Desblokeatu</string>
     <string name="setup_device_locked">Erabiltzaileak gailu hau blokeatu du.</string>
     <string name="setup_require_cyanogen_label"><b>Eskatu zure kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero ere.</string>

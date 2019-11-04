@@ -61,7 +61,6 @@
     <string name="services_explanation" product="default">Hierdie dienste werk vir jou om die vermoëns van jou foon uit te brei. Data sal in ooreenkomstig met LineageOS se <xliff:g id="name" example="Privaatheidspolitiek">%s</xliff:g> gebruik word.</string>
     <string name="services_privacy_policy">Privaatheid beleid</string>
     <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
-    <string name="services_os_privacy_guard"><b>Aktiveer privatheidheidswag</b>om jou persoonlike data soos kontakte, boodskappe of oproepgeskiedenis nie beskikbaar vir nuut geïnstalleerde toepassings te maak nie</string>
     <string name="setup_unlock">Ontsluit</string>
     <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
     <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
