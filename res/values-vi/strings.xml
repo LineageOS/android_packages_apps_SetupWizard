@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu chẩn đoán và sử dụng đến LineageOS. Thông tin này không được sử dụng để nhận dạng bạn và giúp nhóm thực hiện những thứ như thời lượng pin, hiệu suất ứng dụng và các tính năng <xliff:g id="name" example="LineageOS">%2$s</xliff:g> mới.</string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
-    <string name="services_os_privacy_guard"><b>Cho phép bảo vệ sự riêng tư</b> để làm cho dữ liệu cá nhân của bạn như danh bạ, tin nhắn hay nhật ký cuộc gọi không có sẵn cho các ứng dụng mới được cài đặt</string>
     <string name="setup_unlock">Mở khóa</string>
     <string name="setup_device_locked">Thiết bị này đã bị khoá bởi người dùng.</string>
     <string name="setup_require_cyanogen_label"><b>Yêu cầu mật khẩu tài khoản của bạn</b> để sử dụng thiết bị của bạn ngay cả sau khi đặt lại cài đặt gốc.</string>

@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Hjælp med at forbedre <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ved automatisk at sende diagnostik and brugsdata to LineageOS. Denne information kan ikke bruges til at identificere dig og giver en hånd til hold, som arbejder på ting som batterilevetid, app-ydeevne, and nye <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-funktioner.</string>
     <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærm</b> i stedet for fysiske-taster.</string>
-    <string name="services_os_privacy_guard"><b>Aktivér Privatlivsvagt</b>, for at gøre dine personlige data, så som kontaktpersoner, meddelelser, og opkaldshistorik utilgængelige for nyinstallerede apps</string>
     <string name="setup_unlock">Lås op</string>
     <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
     <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>

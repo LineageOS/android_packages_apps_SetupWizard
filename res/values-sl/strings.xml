@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe LineageOS-a. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe akumulatorja, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
-    <string name="services_os_privacy_guard"><b>Omogočite Privacy guard</b>, da vaši osebni podatki, kot so stiki, sporočila ali dnevniki klicev ne bodo na voljo na novo nameščenim aplikacijam</string>
     <string name="setup_unlock">Odkleni</string>
     <string name="setup_device_locked">To napravo je zaklenil uporabnik.</string>
     <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>

@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm">Ajutați la îmbunătățirea <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> prin trimiterea automată a statisticilor se utilizare și de utilizare a datelor la LineageOS. Aceste informații nu pot fi utilizate pentru identificarea dvs., ci oferă o mână de ajutor echipei care lucrează la lucruri ca durata bateriei, performanța aplicațiilor și la noile caracteristici <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
-    <string name="services_os_privacy_guard"><b>Activați Gardianul de Intimitate</b> pentru a vă face datele personale precum contactele, mesajele sau istoricul apelurilor indisponibile pentru aplicațiile nou instalate</string>
     <string name="setup_unlock">Deblocare</string>
     <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
     <string name="setup_require_cyanogen_label"><b>Este necesară parola contului dvs.</b> pentru a vă utiliza dispozitivul după fiecare resetare la datele din fabrică.</string>

@@ -61,7 +61,6 @@
     <string name="services_explanation" product="default">Disse tjenestene utvider funksjonaliteten til telefonen din. Dataene vil bli brukt i samsvar med LineageOS sin <xliff:g id="name" example="personvernspraksis">%s</xliff:g>.</string>
     <string name="services_privacy_policy">Personvern</string>
     <string name="services_os_nav_keys_label"><b>Bruk navigasjonstaster på skjermen </b> istedenfor hardware knapper.</string>
-    <string name="services_os_privacy_guard"><b>Skru på personvernsvakten</b> for å beskytte personvernsopplysninger som kontakter, meldinger eller anropslister fra nylig installerte programmer</string>
     <string name="setup_unlock">Lås opp</string>
     <string name="setup_device_locked">Denne enheten er låst av brukeren.</string>
     <string name="setup_require_cyanogen_label"><b>Krev passord til konto</b> for å bruke enheten etter en fabrikkgjennoppretting.</string>

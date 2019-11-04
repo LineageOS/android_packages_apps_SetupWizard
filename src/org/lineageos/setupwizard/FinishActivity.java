@@ -19,7 +19,6 @@ package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_BUTTON_BACKLIGHT;
-import static org.lineageos.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
@@ -169,7 +168,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
         if (mEnableAccessibilityController != null) {
             mEnableAccessibilityController.onDestroy();
         }
-        handlePrivacyGuard(mSetupWizardApp);
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
         final WallpaperManager wallpaperManager =
@@ -188,15 +186,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
             LineageSettings.Secure.putInt(setupWizardApp.getContentResolver(),
                     LineageSettings.Secure.STATS_COLLECTION, privacyData.getBoolean(KEY_SEND_METRICS)
                             ? 1 : 0);
-        }
-    }
-
-    private static void handlePrivacyGuard(SetupWizardApp setupWizardApp) {
-        Bundle mPrivacyData = setupWizardApp.getSettingsBundle();
-        if (mPrivacyData != null && mPrivacyData.containsKey(KEY_PRIVACY_GUARD)) {
-            LineageSettings.Secure.putInt(setupWizardApp.getContentResolver(),
-                    LineageSettings.Secure.PRIVACY_GUARD_DEFAULT,
-                    mPrivacyData.getBoolean(KEY_PRIVACY_GUARD) ? 1 : 0);
         }
     }
 

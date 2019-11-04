@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static org.lineageos.setupwizard.SetupWizardApp.KEY_PRIVACY_GUARD;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 
 import android.app.Activity;
@@ -58,7 +57,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
     private CheckBox mMetrics;
     private CheckBox mNavKeys;
-    private CheckBox mPrivacyGuard;
 
     private boolean mSupportsKeyDisabler = false;
 
@@ -72,12 +70,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         boolean checked = !mNavKeys.isChecked();
         mNavKeys.setChecked(checked);
         mSetupWizardApp.getSettingsBundle().putBoolean(DISABLE_NAV_KEYS, checked);
-    };
-
-    private View.OnClickListener mPrivacyGuardClickListener = view -> {
-        boolean checked = !mPrivacyGuard.isChecked();
-        mPrivacyGuard.setChecked(checked);
-        mSetupWizardApp.getSettingsBundle().putBoolean(KEY_PRIVACY_GUARD, checked);
     };
 
     @Override
@@ -132,12 +124,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         } else {
             navKeysRow.setVisibility(View.GONE);
         }
-
-        View privacyGuardRow = findViewById(R.id.privacy_guard);
-        privacyGuardRow.setOnClickListener(mPrivacyGuardClickListener);
-        mPrivacyGuard = (CheckBox) findViewById(R.id.privacy_guard_checkbox);
-        mPrivacyGuard.setChecked(LineageSettings.Secure.getInt(getContentResolver(),
-                LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) == 1);
     }
 
     @Override
@@ -145,7 +131,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         super.onResume();
         updateDisableNavkeysOption();
         updateMetricsOption();
-        updatePrivacyGuardOption();
     }
 
     @Override
@@ -199,17 +184,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
             mNavKeys.setChecked(checked);
             myPageBundle.putBoolean(DISABLE_NAV_KEYS, checked);
         }
-    }
-
-    private void updatePrivacyGuardOption() {
-        final Bundle bundle = mSetupWizardApp.getSettingsBundle();
-        boolean enabled = LineageSettings.Secure.getInt(getContentResolver(),
-                LineageSettings.Secure.PRIVACY_GUARD_DEFAULT, 0) != 0;
-        boolean checked = bundle.containsKey(KEY_PRIVACY_GUARD) ?
-                bundle.getBoolean(KEY_PRIVACY_GUARD) :
-                enabled;
-        mPrivacyGuard.setChecked(checked);
-        bundle.putBoolean(KEY_PRIVACY_GUARD, checked);
     }
 
     private static boolean isKeyDisablerSupported(Context context) {

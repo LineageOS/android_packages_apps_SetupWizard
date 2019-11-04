@@ -63,7 +63,6 @@
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> geliştirmeye yardımcı olun</string>
     <string name="services_metrics_label">LineageOS\'a tanı ve kullanım verilerini otomatik olarak göndererek <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ve pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="LineageOS">%2$s</xliff:g> özellikleri gibi şeylerle uğraşan takımlara yardımcı olur.</string>
     <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>yazılımsal gezinme tuşlarını kullanın</b>.</string>
-    <string name="services_os_privacy_guard">Yeni yüklenecek uygulamaların kişileriniz, mesajlarınız ve arama kaydınızı görmemesi için <b>Gizlilik Koruması\'nı etkinleştir.</b></string>
     <string name="setup_unlock">Kilidi kaldır</string>
     <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
     <string name="setup_require_cyanogen_label"><b>Hesap parolanız</b> cihazınızı sıfırladıktan sonra kullanabilmek için gereklidir.</string>

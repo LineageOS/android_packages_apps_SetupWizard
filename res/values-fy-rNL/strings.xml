@@ -61,7 +61,6 @@
     <string name="services_explanation" product="default">Dizze tsjinsten wurde brûkt om de mooglikheden fan jo telefoan út te wreidzjen. Gegevens wurde brûkt konfoarm it ‘<xliff:g id="name" example="Privacybelied">%s</xliff:g>’ fan LineageOS.</string>
     <string name="services_privacy_policy">Privacybelied</string>
     <string name="services_os_nav_keys_label"><b>On-screen navigaasjeknoppen</b> brûke yn stee fan de hardwareknoppen.</string>
-    <string name="services_os_privacy_guard"><b>Privacybeskerming ynskeakelje</b> om jo persoanlike gegevens lykas kontakten, berjochten of opropskiednis net beskikber te meitsjen foar nij ynstallearre apps</string>
     <string name="setup_unlock">Untskoattelje</string>
     <string name="setup_device_locked">Dit apparaat is beskoattele troch de brûker.</string>
     <string name="setup_require_cyanogen_label"><b>Jo accountwachtwurd fereaskje</b> om it apparaat te brûken, sels nei weromsetten nei fabryksynstellingen.</string>
