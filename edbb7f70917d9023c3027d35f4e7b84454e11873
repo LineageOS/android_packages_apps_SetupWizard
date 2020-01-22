@@ -16,6 +16,24 @@
       "revId": "edbb7f70917d9023c3027d35f4e7b84454e11873",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e1fdc62a_b9261a7e",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-01-22T19:35:24Z",
+      "side": 1,
+      "message": "super(looper);\nsubId isn\u0027t part of the API",
+      "parentUuid": "206a9501_a1a3788b",
+      "revId": "edbb7f70917d9023c3027d35f4e7b84454e11873",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
