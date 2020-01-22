@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "206a9501_a1a3788b",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2020-01-22T18:53:05Z",
+      "side": 1,
+      "message": "Try:\n`super(subId, new HandlerExecutor(new Handler(Looper.myLooper())));`",
+      "revId": "edbb7f70917d9023c3027d35f4e7b84454e11873",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
