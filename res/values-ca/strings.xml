@@ -67,6 +67,7 @@
     <string name="setup_device_locked">Aquest dispositiu ha estat bloquejat per l\'usuari.</string>
     <string name="setup_require_cyanogen_label"><b>Demana la teva contrasenya del compte</b> per utilitzar el teu dispositiu, fins i tot després de restablir les configuracions de fàbrica.</string>
     <string name="setup_device_locked_instructions"><i>Per activar/desactivar aquesta característica, si us plau ves a Configuració &gt; Seguretat</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Selecciona el tipus de bloqueig de pantalla de reserva</string>
     <string name="settings_fingerprint_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
     <string name="fingerprint_setup_title">Configuració de l\'empremta digital</string>
@@ -75,6 +76,7 @@
     <string name="fingerprint_setup_add_fingerprint">Afegeix la teva empremta digital</string>
     <string name="fingerprint_setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
     <string name="sim_locale_changed">%1$s SIM detectada</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Selecciona el tipus de bloqueig de pantalla</string>
     <string name="settings_lockscreen_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
     <string name="lockscreen_setup_title" product="tablet">Protegeix la tauleta</string>

@@ -67,6 +67,7 @@
     <string name="setup_device_locked">Toto zariadenie bolo uzamknuté používateľom.</string>
     <string name="setup_require_cyanogen_label"><b>Vyžadovať heslo vášho účtu</b> na používanie vášho zariadenia aj po obnove továrenských nastavení.</string>
     <string name="setup_device_locked_instructions"><i>Na vypnutie/zapnutie tejto funkcie prejdite do Nastavenia &gt; Zabezpečenie</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Vyberte záložný typ zamknutia obrazovky</string>
     <string name="settings_fingerprint_setup_details">Ako chcete zamknúť obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavenie odtlačkov prstov</string>
@@ -75,6 +76,7 @@
     <string name="fingerprint_setup_add_fingerprint">Pridať váš odtlačok prsta</string>
     <string name="fingerprint_setup_screen_lock_setup">Nastaviť zamknutie obrazovky</string>
     <string name="sim_locale_changed">Zistená %1$s SIM</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
     <string name="settings_lockscreen_setup_details">Ako chcete zamknúť obrazovku?</string>
     <string name="lockscreen_setup_title" product="default">Chráňte svoj telefón</string>

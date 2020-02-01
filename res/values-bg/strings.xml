@@ -67,6 +67,7 @@
     <string name="setup_device_locked">Това устройство е заключено от потребителя.</string>
     <string name="setup_require_cyanogen_label"><b>Изисква паролата на акаунта</b> за да използвате устройството дори след фабрично нулиране.</string>
     <string name="setup_device_locked_instructions"><i>За да включите тази функция, изключено/включено, моля отидете на Настройки &gt; Сигурност</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Изберете резервен метод за заключване на екрана</string>
     <string name="settings_fingerprint_setup_details">Как бихте желали да заключите вашият екран?</string>
     <string name="fingerprint_setup_title">Създаване на пръстов отпечатък</string>
@@ -75,8 +76,10 @@
     <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
     <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
     <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Изберете метод на заключване на екрана</string>
     <string name="settings_lockscreen_setup_details">Как бихте желали да заключите вашият екран?</string>
+    <string name="lockscreen_setup_title" product="tablet">Защитете вашия таблет</string>
     <string name="lockscreen_setup_title" product="default">Защитете телефона си</string>
     <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Конфигуриране</string>

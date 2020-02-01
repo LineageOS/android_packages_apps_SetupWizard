@@ -59,6 +59,7 @@
     <string name="setup_unlock">قۇلۇپ ئېچىش</string>
     <string name="setup_device_locked">بۇ ئۈسكىنى باشقىلار قۇلۇپلاپ قويغان.</string>
     <string name="setup_device_locked_instructions"><i>بۇ ئىقىتىدارنى ئېچىپ تاقاش ئۈچۈن، تەڭشەكلەر&gt; بىخەتەرلىككە كىرىڭ</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">زاپاس قۇلۇپ تىپىنى تاللاڭ</string>
     <string name="settings_fingerprint_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
     <string name="fingerprint_setup_title">بارماق ئىزى تەڭشىكى</string>
@@ -67,5 +68,6 @@
     <string name="fingerprint_setup_add_fingerprint">بارماق ئىزى قوشۇڭ</string>
     <string name="fingerprint_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
     <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
 </resources>

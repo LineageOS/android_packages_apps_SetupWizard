@@ -52,6 +52,7 @@
     <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>而非實體按鍵。</string>
     <string name="setup_unlock">解鎖</string>
     <string name="setup_device_locked_instructions"><i>如要開啟/關閉此功能，請至設定 &gt; 安全性</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">選擇備用螢幕鎖類型</string>
     <string name="settings_fingerprint_setup_details">您希望如何鎖定螢幕？</string>
     <string name="fingerprint_setup_title">指紋感應設定</string>
@@ -59,5 +60,6 @@
     <string name="fingerprint_setup_backup_lock_method">設定第二個解鎖方式</string>
     <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
     <string name="fingerprint_setup_screen_lock_setup">設定螢幕鎖定</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">您希望如何鎖定螢幕？</string>
 </resources>

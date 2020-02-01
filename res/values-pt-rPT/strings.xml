@@ -67,6 +67,7 @@
     <string name="setup_device_locked">Este dispositivo foi bloqueado pelo utilizador.</string>
     <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da sua conta</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>
     <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá a Definições de Segurança</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Selecione o tipo de bloqueio do ecrã da cópia de segurança</string>
     <string name="settings_fingerprint_setup_details">Como gostaria de bloquear o seu ecrã?</string>
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
@@ -75,8 +76,10 @@
     <string name="fingerprint_setup_add_fingerprint">Adicionar a sua impressão digital</string>
     <string name="fingerprint_setup_screen_lock_setup">Configuração do ecrã de bloqueio</string>
     <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Selecionar o tipo de bloqueio do ecrã</string>
     <string name="settings_lockscreen_setup_details">Como gostaria de bloquear o seu ecrã?</string>
+    <string name="lockscreen_setup_title" product="tablet">Proteja o seu tablet</string>
     <string name="lockscreen_setup_title" product="default">Proteja o seu telefone</string>
     <string name="lockscreen_setup_summary"><b>Protejer este dispositivo</b> ao exigir um código PIN, padrão ou palavra-passe para desbloqueio do ecrã</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>

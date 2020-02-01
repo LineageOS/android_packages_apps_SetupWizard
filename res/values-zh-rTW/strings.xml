@@ -67,6 +67,7 @@
     <string name="setup_device_locked">已被使用者鎖定此裝置。</string>
     <string name="setup_require_cyanogen_label"><b>需要您的帳戶密碼</b> 即可使用您的裝置，即使在重設裝置之後。</string>
     <string name="setup_device_locked_instructions"><i>如要開啟/關閉此功能，請到設定 &gt; 安全性</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">選擇備用螢幕鎖定類型</string>
     <string name="settings_fingerprint_setup_details">您想如何鎖定畫面？</string>
     <string name="fingerprint_setup_title">指紋設定</string>
@@ -75,8 +76,10 @@
     <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
     <string name="fingerprint_setup_screen_lock_setup">設定畫面鎖定</string>
     <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">選擇螢幕鎖類型</string>
     <string name="settings_lockscreen_setup_details">您想如何鎖定畫面？</string>
+    <string name="lockscreen_setup_title" product="tablet">保護你的平板電腦</string>
     <string name="lockscreen_setup_title" product="default">保護您的手機</string>
     <string name="lockscreen_setup_summary"><b>保護這個裝置</b>，並需要輸入 PIN 碼、解鎖圖案或密碼解除螢幕鎖定</string>
     <string name="lockscreen_setup_screen_lock_setup">設定</string>

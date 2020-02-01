@@ -57,6 +57,7 @@
     <string name="setup_unlock">Ava lukustus</string>
     <string name="setup_device_locked">Seade on kasutaja poolt lukustatud.</string>
     <string name="setup_device_locked_instructions"><i>Funktsiooni sisse/välja lülitamiseks mine Seaded &gt; Turvalisus</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Valige alternatiivne ekraani luku tüüp</string>
     <string name="settings_fingerprint_setup_details">Kuidas soovite ekraani lukustada?</string>
     <string name="fingerprint_setup_title">Sõrmejälgede seadistamine</string>
@@ -64,5 +65,6 @@
     <string name="fingerprint_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
     <string name="fingerprint_setup_add_fingerprint">Lisa oma sõrmejälg</string>
     <string name="fingerprint_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">Kuidas soovite ekraani lukustada?</string>
 </resources>

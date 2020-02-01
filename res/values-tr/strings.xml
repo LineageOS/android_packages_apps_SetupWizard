@@ -67,6 +67,7 @@
     <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
     <string name="setup_require_cyanogen_label"><b>Hesap parolanız</b> cihazınızı sıfırladıktan sonra kullanabilmek için gereklidir.</string>
     <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Yedek ekran kilidi türü seçin</string>
     <string name="settings_fingerprint_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
     <string name="fingerprint_setup_title">Parmak izi kurulumu</string>
@@ -75,6 +76,7 @@
     <string name="fingerprint_setup_add_fingerprint">Parmak izinizi ekleyin</string>
     <string name="fingerprint_setup_screen_lock_setup">Ekran kilidini kurun</string>
     <string name="sim_locale_changed">%1$s SIM tespit edildi</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Ekran kilidi türünü seçin</string>
     <string name="settings_lockscreen_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
     <string name="lockscreen_setup_title" product="tablet">Tabletinizi koruyun</string>

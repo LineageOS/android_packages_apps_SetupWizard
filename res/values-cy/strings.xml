@@ -67,6 +67,7 @@
     <string name="setup_device_locked">Mae\'r ddyfais hon wedi ei chloi gan y defnyddiwr.</string>
     <string name="setup_require_cyanogen_label"><b>Mynna bod angen cyfrinair dy gyfrif</b> er mwyn medru defnyddio\'r ddyfais, hyd yn oed os yw\'n cael ei ailosod i fel yr oedd yn gadael y ffatri.</string>
     <string name="setup_device_locked_instructions"><i>I droi\'r nodwedd hon ymlaen/i ffwrdd, edrycha yn Gosodiadau &gt; Diogelwch</i></string>
+    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Dewis math o glo sgrin wrth gefn</string>
     <string name="settings_fingerprint_setup_details">Sut hoffet gloi dy sgrin?</string>
     <string name="fingerprint_setup_title">Gosod ôl bys</string>
@@ -75,6 +76,7 @@
     <string name="fingerprint_setup_add_fingerprint">Ychwanegu ôl dy fys</string>
     <string name="fingerprint_setup_screen_lock_setup">Gosod clo\'r sgrin</string>
     <string name="sim_locale_changed">Synhwyrwyd %1$s SIM</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Dewis math o sgrin cloi</string>
     <string name="settings_lockscreen_setup_details">Sut hoffet gloi dy sgrin?</string>
     <string name="lockscreen_setup_title" product="tablet">Diogelu dy lechen</string>
