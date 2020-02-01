@@ -25,6 +25,4 @@
     <string name="no">Nono</string>
     <string name="yes">Eja</string>
     <string name="services_privacy_policy">Polìtica de riservadesa</string>
-    <!-- Fingerprint setup -->
-    <!-- secure lock screen -->
 </resources>

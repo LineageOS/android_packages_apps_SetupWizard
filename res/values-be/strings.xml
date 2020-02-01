@@ -59,7 +59,6 @@
     <string name="setup_unlock">Разблакаваць</string>
     <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
     <string name="setup_device_locked_instructions"><i> Каб уключыць ці адключыць гэту функцыю, перайдзіце ў меню "Налады" &gt; "Бяспека"</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
     <string name="settings_fingerprint_setup_details">Абярыце спосаб блакавання экрана.</string>
     <string name="fingerprint_setup_title">Налада адбіткаў пальцаў</string>
@@ -68,6 +67,5 @@
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
     <string name="fingerprint_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
     <string name="sim_locale_changed">%1$s SIM знойдзена</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">Абярыце спосаб блакавання экрана.</string>
 </resources>

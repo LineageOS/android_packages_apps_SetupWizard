@@ -67,7 +67,6 @@
     <string name="setup_device_locked">이 기기는 사용자에 의해 잠겨 있습니다.</string>
     <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>계정 비밀번호가 필요합니다</b>.</string>
     <string name="setup_device_locked_instructions"><i>이 기능을 켜거나 끄려면, 설정 &gt; 보안으로 이동하세요</i></string>
-    <!-- Fingerprint setup -->
     <string name="settings_fingerprint_setup_title">백업 화면 잠금 방법 선택</string>
     <string name="settings_fingerprint_setup_details">화면을 어떻게 잠그시겠습니까?</string>
     <string name="fingerprint_setup_title">지문 설정</string>
@@ -76,7 +75,6 @@
     <string name="fingerprint_setup_add_fingerprint">지문 추가</string>
     <string name="fingerprint_setup_screen_lock_setup">화면 잠금 설정</string>
     <string name="sim_locale_changed">%1$s SIM 인식됨</string>
-    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">화면 잠금 방식 선택</string>
     <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
     <string name="lockscreen_setup_title" product="tablet">태블릿 보호</string>
