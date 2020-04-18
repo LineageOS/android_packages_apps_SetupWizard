@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -55,10 +55,6 @@
     <string name="other_services_summary">These services put Google to work for you, and you can turn them on or off at any time. Data will be used in accordance with Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="location_services_summary">Location services allows system and third party apps to gather and use data such as your approximate location. For example, an app may use your approximate location to locate nearby coffee shops.</string>
     <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
-    <string name="location_battery_saving"><b>Reduce battery consumption</b> by restricting the number of GPS updates per hour.</string>
-    <string name="location_network"><b>Use Wi-Fi</b> to help apps determine your location.</string>
-    <string name="location_network_telephony"><b>Use Wi-Fi and cellular networks</b> to help apps determine your location.</string>
-    <string name="location_network_gms"><b>Use Google\'s location service</b> to help apps determine your location. This means sending anonymous location data to Google, even when no apps are running.</string>
 
     <string name="setup_mobile_data">Turn on cellular data</string>
     <string name="setup_mobile_data_no_service">No service</string>
