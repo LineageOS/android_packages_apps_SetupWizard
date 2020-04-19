@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "89e24133_263a19c2",
+        "filename": "src/org/lineageos/setupwizard/LocationSettingsActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-04-19T11:45:56Z",
+      "side": 1,
+      "message": "can be final",
+      "revId": "92f16dc6ad656d1de53434015f18537bd349b66a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
