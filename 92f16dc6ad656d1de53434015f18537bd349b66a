@@ -16,6 +16,24 @@
       "revId": "92f16dc6ad656d1de53434015f18537bd349b66a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4c67228_26d8a269",
+        "filename": "src/org/lineageos/setupwizard/LocationSettingsActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-04-19T11:47:14Z",
+      "side": 1,
+      "message": "Not without being initialized at this point.",
+      "parentUuid": "89e24133_263a19c2",
+      "revId": "92f16dc6ad656d1de53434015f18537bd349b66a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
