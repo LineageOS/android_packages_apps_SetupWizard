@@ -34,6 +34,24 @@
       "revId": "92f16dc6ad656d1de53434015f18537bd349b66a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b06f0459_2a517831",
+        "filename": "src/org/lineageos/setupwizard/LocationSettingsActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2020-04-19T11:47:58Z",
+      "side": 1,
+      "message": "it\u0027s initialized onCreate",
+      "parentUuid": "a4c67228_26d8a269",
+      "revId": "92f16dc6ad656d1de53434015f18537bd349b66a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
