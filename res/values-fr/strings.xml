@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,10 +43,6 @@
     <string name="other_services_summary">Ces services sont mis à disposition par Google, et vous pouvez les activer ou les désactiver à tout moment. Les données seront utilisées conformément à la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
     <string name="location_services_summary">Le service de localisation permet aux applications systèmes et de tiers de recueillir et d\'utiliser des données comme votre position approximative. Par exemple, une application peut utiliser votre position approximative pour localiser des cafés-restaurants à proximité.</string>
     <string name="location_access_summary"><b>Permettre aux applications ayant obtenu votre autorisation</b> d\'utiliser vos informations de localisation. Cela peut inclure votre position actuelle et les dernières positions.</string>
-    <string name="location_battery_saving"><b>Réduire la consommation de la batterie</b> en limitant le nombre de mise à jour GPS par heure.</string>
-    <string name="location_network"><b>Utiliser le Wi-Fi</b> pour aider les applications à déterminer votre position.</string>
-    <string name="location_network_telephony"><b>Utiliser le Wi-Fi et les réseaux mobiles</b> pour aider les applications à déterminer votre position.</string>
-    <string name="location_network_gms"><b>Utiliser le service de localisation de Google</b> pour aider les applications à déterminer votre position. Cela signifie envoyer anonymement des données de localisation à Google, même lorsque qu\'aucune application n\'est en cours d\'exécution.</string>
     <string name="setup_mobile_data">Activer les données mobiles</string>
     <string name="setup_mobile_data_no_service">Aucun service</string>
     <string name="setup_mobile_data_emergency_only">Appels d\'urgence uniquement</string>

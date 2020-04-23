@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017,2019 The LineageOS Project
+     Copyright (C) 2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -43,10 +43,6 @@
     <string name="other_services_summary">Layanan ini menggunakan Google, dan Anda dapat mengubahnya atau menonaktifkannya setiap saat. Data akan digunakan sesuai dengan <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
     <string name="location_services_summary">Layanan lokasi mengizinkan sistem dan aplikasi pihak ketiga untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi Anda. Misalnya, sebuah aplikasi dapat menggunakan perkiraan lokasi Anda untuk menemukan kedai kopi terdekat.</string>
     <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
-    <string name="location_battery_saving"><b>Mengurangi pemakaian baterai</b> dengan membatasi jumlah pembaruan GPS tiap jam.</string>
-    <string name="location_network"><b>Penggunaan Wi-Fi</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
-    <string name="location_network_telephony"><b>Gunakan Wi-Fi dan jaringan seluler</b> untuk membantu aplikasi menentukan lokasi Anda.</string>
-    <string name="location_network_gms"><b>Gunakan layanan lokasi Google</b> untuk membantu aplikasi menentukan lokasi Anda. Ini berarti mengirimkan data lokasi anonim ke Google, bahkan ketika tidak ada aplikasi yang berjalan.</string>
     <string name="setup_mobile_data">Hidupkan data selular</string>
     <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
     <string name="setup_mobile_data_emergency_only">Panggilan darurat saja</string>
