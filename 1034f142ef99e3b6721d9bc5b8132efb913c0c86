@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d1b4965f_7887a224",
+        "filename": "src/org/lineageos/setupwizard/DateTimeActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-05-11T13:02:05Z",
+      "side": 1,
+      "message": "No longer used.",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 27
+      },
+      "revId": "1034f142ef99e3b6721d9bc5b8132efb913c0c86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ff8c424_c1feca80",
+        "filename": "src/org/lineageos/setupwizard/DateTimeActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-05-11T13:02:05Z",
+      "side": 1,
+      "message": "No longer used.",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 25
+      },
+      "revId": "1034f142ef99e3b6721d9bc5b8132efb913c0c86",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
