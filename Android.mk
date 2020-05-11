@@ -17,7 +17,8 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
     setupcompat \
-    setupdesign
+    setupdesign \
+    SettingsLib
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     libphonenumber \

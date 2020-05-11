@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2018,2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.format.DateFormat;
@@ -39,15 +38,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import com.android.settingslib.datetime.ZoneGetter;
+
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
@@ -85,7 +82,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         setNextText(R.string.next);
 
         final Spinner spinner = (Spinner) findViewById(R.id.timezone_list);
-        final SimpleAdapter adapter = constructTimezoneAdapter(this, false);
+        final SimpleAdapter adapter = constructTimezoneAdapter(this);
         mCurrentTimeZone = TimeZone.getDefault();
         View dateView = findViewById(R.id.date_item);
         dateView.setOnClickListener((view) -> showDatePicker());
@@ -208,14 +205,12 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         mDateTextView.setText(shortDateFormat.format(now.getTime()));
     }
 
-    private static SimpleAdapter constructTimezoneAdapter(Context context,
-            boolean sortedByName) {
+    private static SimpleAdapter constructTimezoneAdapter(Context context) {
         final String[] from = new String[] {KEY_DISPLAYNAME, KEY_GMT};
         final int[] to = new int[] {android.R.id.text1, android.R.id.text2};
 
-        final String sortKey = (sortedByName ? KEY_DISPLAYNAME : KEY_OFFSET);
-        final TimeZoneComparator comparator = new TimeZoneComparator(sortKey);
-        final List<HashMap<String, Object>> sortedList = getZones(context);
+        final TimeZoneComparator comparator = new TimeZoneComparator(KEY_OFFSET);
+        final List<Map<String, Object>> sortedList = ZoneGetter.getZonesList(context);
         Collections.sort(sortedList, comparator);
         final SimpleAdapter adapter = new SimpleAdapter(context,
                 sortedList,
@@ -226,81 +221,11 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         return adapter;
     }
 
-    private static List<HashMap<String, Object>> getZones(Context context) {
-        final List<HashMap<String, Object>> myData = new ArrayList();
-        final long date = Calendar.getInstance().getTimeInMillis();
-        try {
-            XmlResourceParser xrp = context.getResources().getXml(R.xml.timezones);
-            while (xrp.next() != XmlResourceParser.START_TAG)
-                continue;
-            xrp.next();
-            while (xrp.getEventType() != XmlResourceParser.END_TAG) {
-                while (xrp.getEventType() != XmlResourceParser.START_TAG) {
-                    if (xrp.getEventType() == XmlResourceParser.END_DOCUMENT) {
-                        return myData;
-                    }
-                    xrp.next();
-                }
-                if (xrp.getName().equals(XMLTAG_TIMEZONE)) {
-                    String id = xrp.getAttributeValue(0);
-                    String displayName = xrp.nextText();
-                    addItem(myData, id, displayName, date);
-                }
-                while (xrp.getEventType() != XmlResourceParser.END_TAG) {
-                    xrp.next();
-                }
-                xrp.next();
-            }
-            xrp.close();
-        } catch (XmlPullParserException xppe) {
-            Log.e(TAG, "Ill-formatted timezones.xml file");
-        } catch (java.io.IOException ioe) {
-            Log.e(TAG, "Unable to read timezones.xml file");
-        }
-
-        return myData;
-    }
-
-    private static void addItem(
-            List<HashMap<String, Object>> myData, String id, String displayName, long date) {
-        final HashMap<String, Object> map = new HashMap();
-        map.put(KEY_ID, id);
-        map.put(KEY_DISPLAYNAME, displayName);
-        final TimeZone tz = TimeZone.getTimeZone(id);
-        final int offset = tz.getOffset(date);
-        final int p = Math.abs(offset);
-        final StringBuilder name = new StringBuilder();
-        name.append("GMT");
-
-        if (offset < 0) {
-            name.append('-');
-        } else {
-            name.append('+');
-        }
-
-        name.append(p / (HOURS_1));
-        name.append(':');
-
-        int min = p / 60000;
-        min %= 60;
-
-        if (min < 10) {
-            name.append('0');
-        }
-        name.append(min);
-
-        map.put(KEY_GMT, name.toString());
-        map.put(KEY_OFFSET, offset);
-
-        myData.add(map);
-    }
-
     private static int getTimeZoneIndex(SimpleAdapter adapter, TimeZone tz) {
         final String defaultId = tz.getID();
         final int listSize = adapter.getCount();
         for (int i = 0; i < listSize; i++) {
-            // Using HashMap<String, Object> induces unnecessary warning.
-            final HashMap<?,?> map = (HashMap<?,?>)adapter.getItem(i);
+            final Map<?,?> map = (Map<?,?>)adapter.getItem(i);
             final String id = (String)map.get(KEY_ID);
             if (defaultId.equals(id)) {
                 // If current timezone is in this list, move focus to it
@@ -337,7 +262,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         }
     }
 
-    private static class TimeZoneComparator implements Comparator<HashMap<?, ?>> {
+    private static class TimeZoneComparator implements Comparator<Map<?, ?>> {
         private String mSortingKey;
 
         public TimeZoneComparator(String sortingKey) {
@@ -348,7 +273,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
             mSortingKey = sortingKey;
         }
 
-        public int compare(HashMap<?, ?> map1, HashMap<?, ?> map2) {
+        public int compare(Map<?, ?> map1, Map<?, ?> map2) {
             Object value1 = map1.get(mSortingKey);
             Object value2 = map2.get(mSortingKey);
 
