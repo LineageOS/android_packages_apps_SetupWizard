@@ -40,12 +40,16 @@
     <string name="choose_data_sim_summary" product="default">Kë kartë SIM doni të përdorni për t\'u lidhur me internetin? SIM-i i zgjedhur mund të rrisë pagesën që do i detyroheni operatorit pasi do të përdoret për të konfiguruar telefonin.</string>
     <string name="date_time_summary">Cakto zonën kohore dhe rregullo datën dhe orën nëse është e nevojshme</string>
     <string name="backup_data_summary"><b>Bëj një kopje</b> të të dhënave të aplikacioneve, fjalëkalimeve të Wi-Fi, dhe parametrave të tjerë dhe ruaji në serverat e Google</string>
+    <string name="other_services_summary">Këto shërbime bëjnë Google që të punojë për ju dhe ju mund t\'i fikni dhe ndizni kurdo të dëshironi. Të dhënat do të përdoren në respekt të <xliff:g id="name" example="Polica e Privatësisë">%s</xliff:g> së Google.</string>
+    <string name="location_services_summary">Shërbimet e vendndodhjes lejojnë sistemin dhe programe të palëve të treta, të mbledhin të dhëna si pozicionin tuaj të përafërt. Për shëmbull, një program mund të përdorë pozicionin tuaj të përafërt që të gjejë lokale pranë teje.</string>
+    <string name="location_access_summary"><b> Lejo programe që kanë kërkuar lejen tënde</b> të përdorin informacionin mbi vendndodhjen tuaj. Kjo mund të përfshijë vendndodhjen tuaj aktuale dhe vendodhje tuajat të mëparshme.</string>
     <string name="setup_mobile_data">Aktivizo internetin e celularit</string>
     <string name="setup_mobile_data_no_service">Nuk ka shërbim</string>
     <string name="setup_mobile_data_emergency_only">Vetëm thirrjet emergjente</string>
     <string name="enable_mobile_data_summary">A doni të përdorni internetin e celularit gjatë instalimit? Aktivizimi i internetit të celularit mund të rrisë pagesën e përdorimit të internetit.</string>
     <string name="no">Jo</string>
     <string name="yes">Po</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Thirrje emergjente</string>
     <string name="setup_services">Funksionet e LineageOS</string>
     <string name="services_explanation" product="tablet">Këto shërbime punojnë që të rrisin aftësitë e tabletës suaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
