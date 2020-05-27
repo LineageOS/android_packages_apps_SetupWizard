@@ -37,7 +37,7 @@ public class SetupWizardApp extends Application {
 
     public static final String ACTION_FINISHED = "org.lineageos.setupwizard.SETUP_FINISHED";
     public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";
-    public static final String ACTION_SETUP_FINGERPRINT = "android.settings.FINGERPRINT_SETUP";
+    public static final String ACTION_SETUP_BIOMETRIC = "android.settings.BIOMETRIC_ENROLL";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
     public static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
     public static final String ACTION_NEXT = "com.android.wizard.NEXT";
@@ -58,6 +58,7 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_RESULT_CODE = "com.android.setupwizard.ResultCode";
     public static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
     public static final String EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text";
+    public static final String EXTRA_IS_SETUP_FLOW = "";
 
     public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
     public static final String KEY_SEND_METRICS = "send_metrics";
@@ -67,7 +68,7 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
-    public static final int REQUEST_CODE_SETUP_FINGERPRINT = 7;
+    public static final int REQUEST_CODE_SETUP_BIOMETRIC = 7;
     public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
