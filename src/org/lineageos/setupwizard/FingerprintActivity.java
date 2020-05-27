@@ -31,6 +31,8 @@ import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_FINGER
 import android.content.Intent;
 import android.view.View;
 
+import com.google.android.setupcompat.util.WizardManagerHelper;
+
 public class FingerprintActivity extends SubBaseActivity {
 
     public static final String TAG = FingerprintActivity.class.getSimpleName();
@@ -68,6 +70,7 @@ public class FingerprintActivity extends SubBaseActivity {
                 getString(R.string.settings_fingerprint_setup_title));
         intent.putExtra(EXTRA_DETAILS,
                 getString(R.string.settings_fingerprint_setup_details));
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         startSubactivity(intent, REQUEST_CODE_SETUP_FINGERPRINT);
     }
 
