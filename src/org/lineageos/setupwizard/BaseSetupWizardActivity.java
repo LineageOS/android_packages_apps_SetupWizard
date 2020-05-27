@@ -80,7 +80,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int EMERGENCY_DIAL_ACTIVITY_REQUEST = 10038;
     protected static final int WIFI_ACTIVITY_REQUEST = 10004;
     protected static final int BLUETOOTH_ACTIVITY_REQUEST = 10100;
-    protected static final int FINGERPRINT_ACTIVITY_REQUEST = 10101;
+    protected static final int BIOMETRIC_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
 
     private static final int IMMERSIVE_FLAGS =
@@ -610,8 +610,8 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             case BLUETOOTH_ACTIVITY_REQUEST:
                 sb.append("BLUETOOTH_ACTIVITY_REQUEST");
                 break;
-            case FINGERPRINT_ACTIVITY_REQUEST:
-                sb.append("FINGERPRINT_ACTIVITY_REQUEST");
+            case BIOMETRIC_ACTIVITY_REQUEST:
+                sb.append("BIOMETRIC_ACTIVITY_REQUEST");
                 break;
             case SCREENLOCK_ACTIVITY_REQUEST:
                 sb.append("SCREENLOCK_ACTIVITY_REQUEST");
@@ -652,7 +652,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
                     default:
                         break;
                 }
-            case FINGERPRINT_ACTIVITY_REQUEST:
+            case BIOMETRIC_ACTIVITY_REQUEST:
                 switch (resultCode) {
                     case RESULT_OK:
                         sb.append("RESULT_OK");
@@ -661,7 +661,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
                         sb.append("RESULT_CANCELED");
                         break;
                     case RESULT_SKIP:
-                        sb.append("RESULT_FINGERPRINT_SKIP");
+                        sb.append("RESULT_BIOMETRIC_SKIP");
                         break;
                     default:
                         break;
