@@ -17,7 +17,7 @@
 
 package org.lineageos.setupwizard;
 
-import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_FINGERPRINT;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_BIOMETRIC;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ALLOW_SKIP;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_AUTO_FINISH;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_DETAILS;
@@ -26,49 +26,76 @@ import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_MATERIAL_LIGHT;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_THEME;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_TITLE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_USE_IMMERSIVE;
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_FINGERPRINT;
+import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BIOMETRIC;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
-public class FingerprintActivity extends SubBaseActivity {
+import com.google.android.setupcompat.util.WizardManagerHelper;
 
-    public static final String TAG = FingerprintActivity.class.getSimpleName();
+import org.lineageos.setupwizard.util.SetupWizardUtils;
+
+public class BiometricActivity extends SubBaseActivity {
+
+    public static final String TAG = BiometricActivity.class.getSimpleName();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        final TextView setupBiometricSummary = (TextView) findViewById(R.id.setup_biometric_summary);
+        final TextView setupAddBiometric = (TextView) findViewById(R.id.setup_add_biometric);
+        if (SetupWizardUtils.hasFace(this)) {
+            setupBiometricSummary.setText(getString(R.string.face_setup_summary));
+            setupAddBiometric.setText(R.string.face_setup_add_face);
+        } else {
+            setupBiometricSummary.setText(getString(R.string.fingerprint_setup_summary));
+            setupAddBiometric.setText(R.string.fingerprint_setup_add_fingerprint);
+        }
+    }
 
     @Override
     protected void onStartSubactivity() {
         setNextAllowed(true);
-        findViewById(R.id.setup_fingerprint).setOnClickListener(view -> launchFingerprintSetup());
+        findViewById(R.id.setup_biometric).setOnClickListener(view -> launchBiometricSetup());
     }
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.setup_fingerprint;
+        return R.layout.setup_biometric;
     }
 
     @Override
     protected int getTitleResId() {
+        if (SetupWizardUtils.hasFace(this)) {
+            return R.string.face_setup_title;
+        }
         return R.string.fingerprint_setup_title;
     }
 
     @Override
     protected int getIconResId() {
+        if (SetupWizardUtils.hasFace(this)) {
+            return R.drawable.ic_face;
+        }
         return R.drawable.ic_fingerprint;
     }
 
-    private void launchFingerprintSetup() {
-        Intent intent = new Intent(ACTION_SETUP_FINGERPRINT);
+    private void launchBiometricSetup() {
+        Intent intent = new Intent(ACTION_SETUP_BIOMETRIC);
         intent.putExtra(EXTRA_FIRST_RUN, true);
         intent.putExtra(EXTRA_ALLOW_SKIP, true);
         intent.putExtra(EXTRA_USE_IMMERSIVE, true);
         intent.putExtra(EXTRA_THEME, EXTRA_MATERIAL_LIGHT);
         intent.putExtra(EXTRA_AUTO_FINISH, false);
-            /*intent.putExtra(LockPatternUtils.LOCKSCREEN_FINGERPRINT_FALLBACK, true);*/
+            /*intent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_FALLBACK, true);*/
         intent.putExtra(EXTRA_TITLE,
-                getString(R.string.settings_fingerprint_setup_title));
+                getString(getTitleResId()));
         intent.putExtra(EXTRA_DETAILS,
-                getString(R.string.settings_fingerprint_setup_details));
-        startSubactivity(intent, REQUEST_CODE_SETUP_FINGERPRINT);
+                getString(R.string.settings_biometric_setup_details));
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
+        startSubactivity(intent, REQUEST_CODE_SETUP_BIOMETRIC);
     }
 
     @Override

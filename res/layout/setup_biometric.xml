@@ -39,14 +39,14 @@
                 style="@style/PageContent">
 
                 <TextView
+                    android:id="@+id/setup_biometric_summary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/PageSummaryText"
                     android:textSize="16sp"
                     android:paddingLeft="@dimen/content_margin_left"
                     android:layout_marginBottom="@dimen/summary_margin_bottom"
-                    android:paddingRight="@dimen/location_text_margin_right"
-                    android:text="@string/fingerprint_setup_summary" />
+                    android:paddingRight="@dimen/location_text_margin_right"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -59,9 +59,10 @@
                     android:gravity="center_vertical"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:text="@string/fingerprint_setup_backup_lock_method"/>
+                    android:text="@string/biometric_setup_backup_lock_method"/>
 
                 <TextView
+                    android:id="@+id/setup_add_biometric"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
@@ -71,11 +72,10 @@
                     android:drawablePadding="24dp"
                     android:gravity="center_vertical"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:text="@string/fingerprint_setup_add_fingerprint"/>
+                    android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/setup_fingerprint"
+                    android:id="@+id/setup_biometric"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/content_margin_left"
@@ -83,8 +83,8 @@
                     android:gravity="center_vertical"
                     android:textSize="16sp"
                     android:textAllCaps="true"
-                    android:textColor="@color/fingerprint_setup_text_color"
-                    android:text="@string/fingerprint_setup_screen_lock_setup"/>
+                    android:textColor="@color/biometric_setup_text_color"
+                    android:text="@string/biometric_setup_screen_lock_setup"/>
 
             </LinearLayout>
         </ScrollView>
