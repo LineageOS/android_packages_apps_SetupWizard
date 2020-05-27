@@ -42,6 +42,7 @@ import android.content.pm.ComponentInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
+import android.hardware.face.FaceManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Binder;
 import android.os.SystemProperties;
@@ -55,7 +56,7 @@ import android.util.Log;
 
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.ChooseDataSimActivity;
-import org.lineageos.setupwizard.FingerprintActivity;
+import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.MobileDataActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
@@ -227,12 +228,27 @@ public class SetupWizardUtils {
         return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
     }
 
+    public static boolean hasBiometric(Context context) {
+        return hasFingerprint(context) || hasFace(context);
+    }
+
     public static boolean hasFingerprint(Context context) {
         PackageManager packageManager = context.getPackageManager();
         if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {
             FingerprintManager fingerprintManager = (FingerprintManager)
                     context.getSystemService(Context.FINGERPRINT_SERVICE);
             return fingerprintManager.isHardwareDetected();
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean hasFace(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FACE)) {
+            FaceManager faceManager = (FaceManager)
+                    context.getSystemService(Context.FACE_SERVICE);
+            return faceManager.isHardwareDetected();
         } else {
             return false;
         }
@@ -246,8 +262,8 @@ public class SetupWizardUtils {
         if (!hasLeanback(context)) {
             disableComponent(context, BluetoothSetupActivity.class);
         }
-        if (!hasFingerprint(context)) {
-            disableComponent(context, FingerprintActivity.class);
+        if (!hasBiometric(context)) {
+            disableComponent(context, BiometricActivity.class);
         }
         if (!hasTelephony(context)) {
             disableComponent(context, MobileDataActivity.class);
