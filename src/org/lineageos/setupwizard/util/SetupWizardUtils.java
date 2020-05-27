@@ -224,17 +224,6 @@ public class SetupWizardUtils {
         return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
     }
 
-    public static boolean hasFingerprint(Context context) {
-        PackageManager packageManager = context.getPackageManager();
-        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {
-            FingerprintManager fingerprintManager = (FingerprintManager)
-                    context.getSystemService(Context.FINGERPRINT_SERVICE);
-            return fingerprintManager.isHardwareDetected();
-        } else {
-            return false;
-        }
-    }
-
     public static boolean simMissing() {
         return PhoneMonitor.getInstance().simMissing();
     }
@@ -242,9 +231,6 @@ public class SetupWizardUtils {
     public static void disableComponentsForMissingFeatures(Context context) {
         if (!hasLeanback(context)) {
             disableComponent(context, BluetoothSetupActivity.class);
-        }
-        if (!hasFingerprint(context)) {
-            disableComponent(context, FingerprintActivity.class);
         }
         if (!hasTelephony(context)) {
             disableComponent(context, MobileDataActivity.class);
