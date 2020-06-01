@@ -19,6 +19,29 @@
     },
     {
       "key": {
+        "uuid": "ff51c028_0b9311d0",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2020-06-01T20:10:57Z",
+      "side": 1,
+      "message": "\u003cstring name\u003d\"biometric_setup_backup_lock_method\"\u003eSetup a secondary unlock method\u003c/string\u003e\n    \u003cstring name\u003d\"biometric_setup_screen_lock_setup\"\u003eSetup screen lock\u003c/string\u003e\n    \u003cstring name\u003d\"face_setup_title\"\u003eFace setup\u003c/string\u003e\n    \u003cstring name\u003d\"face_setup_summary\"\u003eTo use your face to unlock your screen, you\\\u0027ll need to:\u003c/string\u003e\n    \u003cstring name\u003d\"face_setup_add_biometric\"\u003eAdd your face\u003c/string\u003e\n    \u003cstring name\u003d\"fingerprint_setup_title\"\u003eFingerprint setup\u003c/string\u003e\n    \u003cstring name\u003d\"fingerprint_setup_summary\"\u003eTo use your fingerprint sensor to unlock your screen, you\\\u0027ll need to:\u003c/string\u003e\n    \u003cstring name\u003d\"fingerprint_setup_add_biometric\"\u003eAdd your fingerprint\u003c/string\u003e",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 79
+      },
+      "revId": "3192f16bdf820cb4259e96497f329143d91b4c78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9563ad4f_94bfe8df",
         "filename": "src/org/lineageos/setupwizard/BiometricActivity.java",
         "patchSetId": 3
