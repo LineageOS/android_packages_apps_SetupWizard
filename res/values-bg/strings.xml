@@ -62,13 +62,13 @@
     <string name="setup_device_locked">Това устройство е заключено от потребителя.</string>
     <string name="setup_require_cyanogen_label"><b>Изисква паролата на акаунта</b> за да използвате устройството дори след фабрично нулиране.</string>
     <string name="setup_device_locked_instructions"><i>За да включите тази функция, изключено/включено, моля отидете на Настройки &gt; Сигурност</i></string>
-    <string name="settings_fingerprint_setup_title">Изберете резервен метод за заключване на екрана</string>
-    <string name="settings_fingerprint_setup_details">Как бихте желали да заключите вашият екран?</string>
+    <string name="settings_biometric_setup_title">Изберете резервен метод за заключване на екрана</string>
+    <string name="settings_biometric_setup_details">Как бихте желали да заключите вашият екран?</string>
     <string name="fingerprint_setup_title">Създаване на пръстов отпечатък</string>
     <string name="fingerprint_setup_summary">За да използвате сензора за пръстови отпечатъци за отключите вашият екран, ще трябва да:</string>
-    <string name="fingerprint_setup_backup_lock_method">Настройка на втори метод за отключване</string>
+    <string name="biometric_setup_backup_lock_method">Настройка на втори метод за отключване</string>
     <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
-    <string name="fingerprint_setup_screen_lock_setup">Настройка на екрана за заключване</string>
+    <string name="biometric_setup_screen_lock_setup">Настройка на екрана за заключване</string>
     <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
     <string name="settings_lockscreen_setup_title">Изберете метод на заключване на екрана</string>
     <string name="settings_lockscreen_setup_details">Как бихте желали да заключите вашият екран?</string>

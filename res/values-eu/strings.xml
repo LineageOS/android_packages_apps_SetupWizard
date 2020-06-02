@@ -61,13 +61,13 @@
     <string name="setup_device_locked">Erabiltzaileak gailu hau blokeatu du.</string>
     <string name="setup_require_cyanogen_label"><b>Eskatu zure kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero ere.</string>
     <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo ezgaitzeko zoaz hona: Ezarpenak &gt; Segurtasuna</i></string>
-    <string name="settings_fingerprint_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
-    <string name="settings_fingerprint_setup_details">Nola blokeatu nahi duzu pantaila?</string>
+    <string name="settings_biometric_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
+    <string name="settings_biometric_setup_details">Nola blokeatu nahi duzu pantaila?</string>
     <string name="fingerprint_setup_title">Hatz-markaren ezarpena</string>
     <string name="fingerprint_setup_summary">Zure hatz-marka sentsorea erabiliz zure pantaila desblokeatzeko, honako hau egin behar duzu:</string>
-    <string name="fingerprint_setup_backup_lock_method">Ezarri ordezko desblokeo metodo bat</string>
+    <string name="biometric_setup_backup_lock_method">Ezarri ordezko desblokeo metodo bat</string>
     <string name="fingerprint_setup_add_fingerprint">Gehitu zure hatz-marka</string>
-    <string name="fingerprint_setup_screen_lock_setup">Ezarri pantaila blokeoa</string>
+    <string name="biometric_setup_screen_lock_setup">Ezarri pantaila blokeoa</string>
     <string name="sim_locale_changed">%1$s SIM antzeman da</string>
     <string name="settings_lockscreen_setup_title">Hautatu pantaila-blokeo mota</string>
     <string name="settings_lockscreen_setup_details">Nola blokeatu nahi duzu pantaila?</string>
