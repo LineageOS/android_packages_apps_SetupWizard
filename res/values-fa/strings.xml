@@ -52,13 +52,13 @@
     <string name="setup_unlock">باز کردن</string>
     <string name="setup_device_locked">این دستگاه توسط کاربر قفل شده است.</string>
     <string name="setup_device_locked_instructions"><i>برای خاموش/روشن کردن این ویژگی، لطفا به تنظیمات &gt; امنیت بروید</i></string>
-    <string name="settings_fingerprint_setup_title">انتخاب قفل پشتیبان صفحه</string>
-    <string name="settings_fingerprint_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
+    <string name="settings_biometric_setup_title">انتخاب قفل پشتیبان صفحه</string>
+    <string name="settings_biometric_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
     <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
     <string name="fingerprint_setup_summary">برای استفاده از حسگر اثر انگشت برای باز کردن قفل صفحه، به این موارد نیاز دارید:</string>
-    <string name="fingerprint_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
+    <string name="biometric_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
     <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
-    <string name="fingerprint_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
+    <string name="biometric_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
     <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
     <string name="lockscreen_setup_screen_lock_setup">برپا سازی</string>
 </resources>
