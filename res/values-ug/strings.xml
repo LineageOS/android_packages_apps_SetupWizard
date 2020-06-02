@@ -53,13 +53,13 @@
     <string name="setup_unlock">قۇلۇپ ئېچىش</string>
     <string name="setup_device_locked">بۇ ئۈسكىنى باشقىلار قۇلۇپلاپ قويغان.</string>
     <string name="setup_device_locked_instructions"><i>بۇ ئىقىتىدارنى ئېچىپ تاقاش ئۈچۈن، تەڭشەكلەر&gt; بىخەتەرلىككە كىرىڭ</i></string>
-    <string name="settings_fingerprint_setup_title">زاپاس قۇلۇپ تىپىنى تاللاڭ</string>
-    <string name="settings_fingerprint_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
+    <string name="settings_biometric_setup_title">زاپاس قۇلۇپ تىپىنى تاللاڭ</string>
+    <string name="settings_biometric_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
     <string name="fingerprint_setup_title">بارماق ئىزى تەڭشىكى</string>
     <string name="fingerprint_setup_summary">ئۆزىڭىزنىڭ بارماق داتچىكنى ئىشلىتىپ قۇلۇپ ئاچماقچى بولسىڭىز، سىز چوقۇم:</string>
-    <string name="fingerprint_setup_backup_lock_method">زاپاس قۇلۇپ يىيىش ئۇسۇلىنى بېكىتىڭ</string>
+    <string name="biometric_setup_backup_lock_method">زاپاس قۇلۇپ يىيىش ئۇسۇلىنى بېكىتىڭ</string>
     <string name="fingerprint_setup_add_fingerprint">بارماق ئىزى قوشۇڭ</string>
-    <string name="fingerprint_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
+    <string name="biometric_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
     <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
     <string name="settings_lockscreen_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
 </resources>

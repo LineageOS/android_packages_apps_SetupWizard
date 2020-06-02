@@ -62,13 +62,13 @@
     <string name="setup_device_locked">Toto zařízení bylo uzamčeno uživatelem.</string>
     <string name="setup_require_cyanogen_label">Po obnovení továrního nastavení bude <b>vyžadováno heslo k Vašemu účtu</b>.</string>
     <string name="setup_device_locked_instructions"><i>Pro zapnutí/vypnutí této funkce, přejděte do nastavení &gt; Zabezpečení</i></string>
-    <string name="settings_fingerprint_setup_title">Vyberte záložní typ zámku obrazovky</string>
-    <string name="settings_fingerprint_setup_details">Jak chcete zamykat obrazovku?</string>
+    <string name="settings_biometric_setup_title">Vyberte záložní typ zámku obrazovky</string>
+    <string name="settings_biometric_setup_details">Jak chcete zamykat obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
     <string name="fingerprint_setup_summary">Chcete-li použít snímač otisků prstů pro odemknutí obrazovky, budete potřeba:</string>
-    <string name="fingerprint_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
+    <string name="biometric_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
     <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
-    <string name="fingerprint_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
+    <string name="biometric_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
     <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
     <string name="settings_lockscreen_setup_details">Jak chcete zamykat obrazovku?</string>

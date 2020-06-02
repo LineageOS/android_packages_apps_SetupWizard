@@ -61,13 +61,13 @@
     <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
     <string name="setup_require_cyanogen_label"><b>דרוש את סיסמת החשבון שלך</b> כדי להשתמש במכשיר אפילו לאחר איפוס מלא.</string>
     <string name="setup_device_locked_instructions"><i>כדי להפעיל/לכבות אפשרות זו, גש להגדרות &gt; אבטחה</i></string>
-    <string name="settings_fingerprint_setup_title">בחר סוג שיטת נעילת מסך לגיבוי</string>
-    <string name="settings_fingerprint_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
+    <string name="settings_biometric_setup_title">בחר סוג שיטת נעילת מסך לגיבוי</string>
+    <string name="settings_biometric_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
     <string name="fingerprint_setup_title">הגדרת טביעת אצבע</string>
     <string name="fingerprint_setup_summary">כדי להשתמש בחיישן טביעות האצבע שלך, עליך:</string>
-    <string name="fingerprint_setup_backup_lock_method">הגדר שיטת פתיחה משנית</string>
+    <string name="biometric_setup_backup_lock_method">הגדר שיטת פתיחה משנית</string>
     <string name="fingerprint_setup_add_fingerprint">הוסף את טביעת האצבע שלך</string>
-    <string name="fingerprint_setup_screen_lock_setup">הגדרת מסך נעילה</string>
+    <string name="biometric_setup_screen_lock_setup">הגדרת מסך נעילה</string>
     <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>
     <string name="settings_lockscreen_setup_title">בחר סוג נעילת מסך</string>
     <string name="settings_lockscreen_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
