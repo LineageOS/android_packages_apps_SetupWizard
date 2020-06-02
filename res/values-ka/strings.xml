@@ -37,12 +37,12 @@
     <string name="setup_unlock">გახსნა</string>
     <string name="setup_device_locked">მოწყობილობა ჩაკეტა მომხმარებლმა.</string>
     <string name="setup_device_locked_instructions"><i>ამ შესაძლებლობის ჩართვა/გამორთვისთვის, გთხოვთ იხილოთ პარამეტრები &gt; უსაფრთხოება</i></string>
-    <string name="settings_fingerprint_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
+    <string name="settings_biometric_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
     <string name="fingerprint_setup_title">თითის ანაბეჭდის გამართვა</string>
     <string name="fingerprint_setup_summary">თითის ანაბეჭდის აღმქმელის ეკრანის გასახსნელად გამოყენებისთვის, დაგჭირდებათ:</string>
-    <string name="fingerprint_setup_backup_lock_method">გასახსნელად დამატებითი საშუალების დაყენება</string>
+    <string name="biometric_setup_backup_lock_method">გასახსნელად დამატებითი საშუალების დაყენება</string>
     <string name="fingerprint_setup_add_fingerprint">თითის ანაბეჭდის დამატება</string>
-    <string name="fingerprint_setup_screen_lock_setup">ეკრანის ჩაკეტვის გამართვა</string>
+    <string name="biometric_setup_screen_lock_setup">ეკრანის ჩაკეტვის გამართვა</string>
     <string name="settings_lockscreen_setup_title">ეკრანის ჩამკეტის სახეობის არჩევა</string>
     <string name="settings_lockscreen_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
     <string name="lockscreen_setup_title" product="default">დაიცავით თქვენი ტელეფონი</string>

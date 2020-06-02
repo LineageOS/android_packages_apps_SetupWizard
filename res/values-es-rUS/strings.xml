@@ -61,13 +61,13 @@
     <string name="setup_device_locked">Este dispositivo ha sido bloqueado por el usuario.</string>
     <string name="setup_require_cyanogen_label"><b>Se necesita la contraseña de la cuenta</b> para poder utilizar el dispositivo incluso después de un restablecimiento de fábrica.</string>
     <string name="setup_device_locked_instructions"><i>Para activar y desactivar esta característica, ve a «Ajustes &gt; Seguridad»</i></string>
-    <string name="settings_fingerprint_setup_title">Selecciona el tipo de copia de seguridad de pantalla bloqueada</string>
-    <string name="settings_fingerprint_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
+    <string name="settings_biometric_setup_title">Selecciona el tipo de copia de seguridad de pantalla bloqueada</string>
+    <string name="settings_biometric_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
     <string name="fingerprint_setup_title">Ajustes de huella digital</string>
     <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, deberás:</string>
-    <string name="fingerprint_setup_backup_lock_method">Establecer un método secundario de desbloqueo</string>
+    <string name="biometric_setup_backup_lock_method">Establecer un método secundario de desbloqueo</string>
     <string name="fingerprint_setup_add_fingerprint">Añadir tu huella digital</string>
-    <string name="fingerprint_setup_screen_lock_setup">Configurar la pantalla bloqueada</string>
+    <string name="biometric_setup_screen_lock_setup">Configurar la pantalla bloqueada</string>
     <string name="sim_locale_changed">%1$s SIM detectada</string>
     <string name="settings_lockscreen_setup_title">Seleccione el tipo de bloqueo de pantalla</string>
     <string name="settings_lockscreen_setup_details">¿Cómo quieres bloquear tu pantalla?</string>

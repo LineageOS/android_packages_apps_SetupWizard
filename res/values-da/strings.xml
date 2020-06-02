@@ -60,11 +60,11 @@
     <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
     <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
     <string name="setup_device_locked_instructions"><i>Gå til Indstillinger &gt; Sikkerhed, for at slå denne funktion fra/til</i></string>
-    <string name="settings_fingerprint_setup_title">Vælg sikkerheds-låseskærmtype</string>
-    <string name="settings_fingerprint_setup_details">Hvordan vil du låse din skærm?</string>
+    <string name="settings_biometric_setup_title">Vælg sikkerheds-låseskærmtype</string>
+    <string name="settings_biometric_setup_details">Hvordan vil du låse din skærm?</string>
     <string name="fingerprint_setup_title">Fingeraftryksopsætning</string>
     <string name="fingerprint_setup_summary">For at bruge din fingeraftryks-sensor til at låse din skærm op, er du nødt til at:</string>
-    <string name="fingerprint_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
+    <string name="biometric_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
     <string name="sim_locale_changed">%1$s SIM fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
