@@ -25,7 +25,6 @@ import android.net.CaptivePortal;
 import android.net.ConnectivityManager;
 import android.net.ICaptivePortal;
 import android.os.AsyncTask;
-import android.provider.Settings;
 import android.util.Log;
 
 import java.io.IOException;
@@ -38,17 +37,16 @@ public class CaptivePortalSetupActivity extends SubBaseActivity {
 
     public static final String TAG = CaptivePortalSetupActivity.class.getSimpleName();
 
-    private static final String DEFAULT_SERVER = "clients3.google.com";
     private static final int CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS = 10000;
 
     private URL mCaptivePortalUrl;
 
     @Override
     protected void onStartSubactivity() {
-        String server = Settings.Global.getString(getContentResolver(), "captive_portal_server");
-        if (server == null) server = DEFAULT_SERVER;
+        ConnectivityManager connectivity = getSystemService(ConnectivityManager.class);
+
         try {
-            mCaptivePortalUrl = new URL("http://" + server + "/generate_204");
+            mCaptivePortalUrl = new URL(connectivity.getCaptivePortalServerUrl());
         } catch (MalformedURLException e) {
             Log.e(TAG, "Not a valid url" + e);
         }
