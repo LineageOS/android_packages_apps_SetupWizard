@@ -27,5 +27,6 @@
         <permission name="android.permission.SET_TIME_ZONE"/>
         <permission name="android.permission.STATUS_BAR"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
     </privapp-permissions>
 </permissions>
