@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "29d693ed_c15bbe66",
+        "filename": "privapp_whitelist_org.lineageos.setupwizard.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-06-19T07:39:40Z",
+      "side": 1,
+      "message": "Sort alphabetically.",
+      "range": {
+        "startLine": 30,
+        "startChar": 45,
+        "endLine": 30,
+        "endChar": 62
+      },
+      "revId": "9a7d3ad26b3d1508913bb900f3b4c9a5a52687dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ae0dc8e9_1b948ec3",
+        "filename": "src/org/lineageos/setupwizard/CaptivePortalSetupActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-06-19T07:39:40Z",
+      "side": 1,
+      "message": "You can drop the cast.",
+      "range": {
+        "startLine": 47,
+        "startChar": 43,
+        "endLine": 47,
+        "endChar": 64
+      },
+      "revId": "9a7d3ad26b3d1508913bb900f3b4c9a5a52687dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
