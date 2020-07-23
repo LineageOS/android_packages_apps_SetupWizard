@@ -102,6 +102,7 @@
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.android.setupwizard.action.HOOK_BEGIN" />
             </intent-filter>
         </activity>
 
@@ -292,6 +293,7 @@
         <receiver android:name=".PartnerReceiver">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
+                <action android:name="com.google.android.tvsetup.action.PARTNER_CUSTOMIZATION" />
             </intent-filter>
         </receiver>
 
