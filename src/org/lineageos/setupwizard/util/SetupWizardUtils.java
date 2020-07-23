@@ -73,6 +73,7 @@ public class SetupWizardUtils {
 
     private static final String GMS_PACKAGE = "com.google.android.gms";
     private static final String GMS_SUW_PACKAGE = "com.google.android.setupwizard";
+    private static final String GMS_TV_SUW_PACKAGE = "com.google.android.tungsten.setupwraith";
 
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
 
@@ -169,14 +170,16 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasGMS(Context context) {
+        String gmsSuwPackage = hasLeanback(context) ? GMS_TV_SUW_PACKAGE : GMS_SUW_PACKAGE;
+
         if (PackageManagerUtils.isAppInstalled(context, GMS_PACKAGE) &&
-                PackageManagerUtils.isAppInstalled(context, GMS_SUW_PACKAGE)) {
+                PackageManagerUtils.isAppInstalled(context, gmsSuwPackage)) {
             PackageManager packageManager = context.getPackageManager();
             if (LOGV) {
                 Log.v(TAG, GMS_SUW_PACKAGE + " state = " +
-                        packageManager.getApplicationEnabledSetting(GMS_SUW_PACKAGE));
+                        packageManager.getApplicationEnabledSetting(gmsSuwPackage));
             }
-            return packageManager.getApplicationEnabledSetting(GMS_SUW_PACKAGE) !=
+            return packageManager.getApplicationEnabledSetting(gmsSuwPackage) !=
                     COMPONENT_ENABLED_STATE_DISABLED;
         }
         return false;
