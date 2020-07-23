@@ -292,6 +292,7 @@
         <receiver android:name=".PartnerReceiver">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
+                <action android:name="com.google.android.tvsetup.action.PARTNER_CUSTOMIZATION" />
             </intent-filter>
         </receiver>
 
