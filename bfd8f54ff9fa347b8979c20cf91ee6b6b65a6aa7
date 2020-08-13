@@ -16,6 +16,29 @@
       "revId": "bfd8f54ff9fa347b8979c20cf91ee6b6b65a6aa7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5226b70_35ae3f41",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-08-13T10:57:18Z",
+      "side": 1,
+      "message": "String gmsSuwPackage \u003d hasLeanback(context) ? GMS_TV_SUW_PACKAGE : GMS_SUW_PACKAGE;",
+      "range": {
+        "startLine": 173,
+        "startChar": 8,
+        "endLine": 179,
+        "endChar": 2
+      },
+      "revId": "bfd8f54ff9fa347b8979c20cf91ee6b6b65a6aa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
