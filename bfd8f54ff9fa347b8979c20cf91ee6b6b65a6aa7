@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2e4ad609_228088c5",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-08-13T09:06:40Z",
+      "side": 1,
+      "message": "No tabs please.",
+      "revId": "bfd8f54ff9fa347b8979c20cf91ee6b6b65a6aa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
