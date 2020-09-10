@@ -40,8 +40,8 @@
     <string name="choose_data_sim_summary" product="default">Какую SIM-карту использовать для передачи данных? Выбранная SIM-карта может повлечь расходы за сетевое подключение, так как она будет использоваться для настройки телефона.</string>
     <string name="date_time_summary">Установите свой часовой пояс и настройте текущую дату и время, если необходимо</string>
     <string name="backup_data_summary"><b>Сохранять</b> данные приложений, пароли Wi-Fi и другие параметры на серверах Google</string>
-    <string name="other_services_summary">Эти службы позволяют Google расширить возможности устройства. Вы можете выключить их в любое время. Данные будут использоваться в соответствии с правилами Google: <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Службы определения местоположения позволяют системным и сторонним приложениям собирать и использовать такие данные, как примерное местоположение. Например, приложение может использовать ваше примерное местоположение, чтобы найти близлежащие кафе.</string>
+    <string name="other_services_summary">Эти службы обеспечивают работу Google, и вы можете включить или выключить их в любое время. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
+    <string name="location_services_summary">Службы местоположения позволяют системе и установленным приложениям собирать и использовать такие данные, как ваше приблизительное местоположение. Например, приложение может искать кофейни поблизости, основываясь на данных о вашем местоположении.</string>
     <string name="location_access_summary"><b>Разрешить приложениям, запросившим ваше разрешение</b>, использовать информацию о вашем местоположении. Это может включать ваше текущее и прошлые местоположения.</string>
     <string name="setup_mobile_data">Включить передачу данных</string>
     <string name="setup_mobile_data_no_service">Нет сети</string>
@@ -52,8 +52,8 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Экстренный вызов</string>
     <string name="setup_services">Возможности LineageOS</string>
-    <string name="services_explanation" product="tablet">Эти сервисы расширяют возможности вашего планшета. Данные будут использоваться в соответствии с политикой LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="services_explanation" product="default">Эти сервисы расширяют возможности вашего телефона. Данные будут использоваться в соответствии с политикой LineageOS <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="tablet">Эти сервисы предназначены для расширения возможностей вашего планшета. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_explanation" product="default">Эти сервисы предназначены для расширения возможностей вашего телефона. Данные будут использоваться в соответствии с <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
     <string name="services_privacy_policy">политикой конфиденциальности</string>
     <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, разрешив отправку данных диагностики и использования в LineageOS. Эта информация не может быть использована для вашей идентификации и поможет в работе над повышением автономности, производительности и новыми возможностями <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
