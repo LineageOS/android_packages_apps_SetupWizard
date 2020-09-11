@@ -49,6 +49,7 @@
     <string name="enable_mobile_data_summary">기기를 설정하는 동안 이동 통신망 데이터를 사용하겠습니까? 이동 통신망 데이터를 켜면 데이터 요금이 부과될 수 있습니다.</string>
     <string name="no">아니오</string>
     <string name="yes">예</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">긴급 통화</string>
     <string name="setup_services">LineageOS 기능</string>
     <string name="services_explanation" product="tablet">이 서비스는 태블릿의 기능 향상을 위해 작동합니다. 수집된 데이터는 LineageOS의 <xliff:g id="name" example="Privacy Policy">%s</xliff:g>에 따라 사용됩니다.</string>
