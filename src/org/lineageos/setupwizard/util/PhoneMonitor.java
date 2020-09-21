@@ -41,9 +41,6 @@ import static android.telephony.TelephonyManager.SIM_STATE_PUK_REQUIRED;
 import static android.telephony.TelephonyManager.SIM_STATE_READY;
 import static android.telephony.TelephonyManager.SIM_STATE_UNKNOWN;
 
-import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_TRUE;
-import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_UNKNOWN;
-
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.content.BroadcastReceiver;
@@ -306,15 +303,7 @@ public class PhoneMonitor {
     }
 
     public boolean isLte(int subId) {
-        return getLteOnCdmaMode(subId) == LTE_ON_CDMA_TRUE;
-    }
-
-    public int getLteOnCdmaMode(int subId) {
-        if (mTelephony == null || mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode()
-                    == LTE_ON_CDMA_UNKNOWN) {
-            return SystemProperties.getInt("telephony.lteOnCdmaDevice", LTE_ON_CDMA_UNKNOWN);
-        }
-        return mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode();
+        return mTelephony.createForSubscriptionId(subId).getCurrentPhoneType() == PHONE_TYPE_CDMA;
     }
 
     private void logPhoneState(String prefix) {
