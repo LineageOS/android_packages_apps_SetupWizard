@@ -34,8 +34,8 @@ import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
-import com.android.internal.telephony.MccTable;
 import com.android.internal.telephony.TelephonyIntents;
+import com.android.internal.telephony.util.LocaleUtils;
 
 import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.widget.LocalePicker;
@@ -217,7 +217,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
 
                 // Fetch locale for active sim's MCC
                 int mcc = activeSubs.get(0).getMcc();
-                locale = MccTable.getLocaleFromMcc(activity, mcc, null);
+                locale = LocaleUtils.getLocaleFromMcc(activity, mcc, null);
 
                 // If that fails, fall back to preferred languages reported
                 // by the sim
