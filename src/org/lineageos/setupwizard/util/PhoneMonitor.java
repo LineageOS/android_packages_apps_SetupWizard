@@ -29,7 +29,7 @@ import static android.telephony.TelephonyManager.DATA_CONNECTING;
 import static android.telephony.TelephonyManager.DATA_DISCONNECTED;
 import static android.telephony.TelephonyManager.DATA_SUSPENDED;
 import static android.telephony.TelephonyManager.DATA_UNKNOWN;
-import static android.telephony.TelephonyManager.PHONE_TYPE_CDMA;
+import static android.telephony.TelephonyManager.PHONE_TYPE_CDMA_LTE;
 import static android.telephony.TelephonyManager.PHONE_TYPE_GSM;
 import static android.telephony.TelephonyManager.PHONE_TYPE_NONE;
 import static android.telephony.TelephonyManager.PHONE_TYPE_SIP;
@@ -41,9 +41,6 @@ import static android.telephony.TelephonyManager.SIM_STATE_PUK_REQUIRED;
 import static android.telephony.TelephonyManager.SIM_STATE_READY;
 import static android.telephony.TelephonyManager.SIM_STATE_UNKNOWN;
 
-import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_TRUE;
-import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_UNKNOWN;
-
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.content.BroadcastReceiver;
@@ -53,7 +50,6 @@ import android.content.IntentFilter;
 import android.os.Handler;
 import android.os.HandlerExecutor;
 import android.os.Looper;
-import android.os.SystemProperties;
 import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
@@ -306,15 +302,8 @@ public class PhoneMonitor {
     }
 
     public boolean isLte(int subId) {
-        return getLteOnCdmaMode(subId) == LTE_ON_CDMA_TRUE;
-    }
-
-    public int getLteOnCdmaMode(int subId) {
-        if (mTelephony == null || mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode()
-                    == LTE_ON_CDMA_UNKNOWN) {
-            return SystemProperties.getInt("telephony.lteOnCdmaDevice", LTE_ON_CDMA_UNKNOWN);
-        }
-        return mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode();
+        return mTelephony.createForSubscriptionId(subId).getCurrentPhoneType() ==
+                PHONE_TYPE_CDMA_LTE;
     }
 
     private void logPhoneState(String prefix) {
