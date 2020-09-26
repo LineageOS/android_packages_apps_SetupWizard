@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1891e9f4_7b87851b",
+        "filename": "src/org/lineageos/setupwizard/CaptivePortalSetupActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-26T14:31:24Z",
+      "side": 1,
+      "message": "ConnectivityManager connectivity \u003d getSystemService(ConnectivityManager.class);",
+      "range": {
+        "startLine": 47,
+        "startChar": 8,
+        "endLine": 47,
+        "endChar": 109
+      },
+      "revId": "caf302282a50912a04278078cb7d42d4ae5f2c57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
