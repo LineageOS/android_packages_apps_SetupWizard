@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "52f33136_38dd7079",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-26T14:30:25Z",
+      "side": 1,
+      "message": "No longer used.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 80
+      },
+      "revId": "d9ec88b4089c29d21fa9a49eca4bde1db8a28c98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d1eba9c6_d4650975",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 310,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-09-26T14:30:25Z",
+      "side": 1,
+      "message": "This doesn\u0027t look proper.",
+      "revId": "d9ec88b4089c29d21fa9a49eca4bde1db8a28c98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
