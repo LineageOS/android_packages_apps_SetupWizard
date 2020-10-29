@@ -2,7 +2,7 @@
 
 <!--
     Copyright (c) 2014 Google Inc.
-    Copyright (C) 2017,2019 The LineageOS Project
+    Copyright (C) 2017,2019-2020 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -35,30 +35,43 @@
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.COMPLETE_IN_FLIGHT_UPDATES;end" id="complete_in_flight_updates" />
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.NETWORK_SETTINGS;end" id="network_settings">
         <result wizard:action="wifi_settings" wizard:name="see_all_wifi" wizard:resultCode="102" />
-        <result wizard:action="network_check" wizard:name="skip" wizard:resultCode="1" />
-        <result wizard:action="captive_portal" />
+        <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
+        <result wizard:action="consolidate_captive_portal" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.WIFI_SETTINGS;end" id="wifi_settings">
-        <result wizard:action="network_check" wizard:name="skip" wizard:resultCode="1" />
-    </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CAPTIVE_PORTAL;end" id="captive_portal" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.GMS_CHECKIN;end" id="gms_checkin" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.EARLY_UPDATE;end" id="early_update" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_CHECK;end" id="network_check">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
     </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_rollback_auth_early_update_flow" id="rollback_auth_early_update" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CONSOLIDATE_CAPTIVE_PORTAL;end" id="consolidate_captive_portal">
+        <result wizard:action="network_unavailable" wizard:name="timeout" wizard:resultCode="101" />
+        <result wizard:action="pre_checkin_and_update" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.PRE_CHECKIN_AND_UPDATE;end" id="pre_checkin_and_update">
+        <result wizard:action="network_timeout" wizard:name="timeout" wizard:resultCode="101" />
+        <result wizard:action="post_checkin_and_update" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_timeout" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.POST_CHECKIN_AND_UPDATE;end" id="post_checkin_and_update">
+        <result wizard:action="network_check" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_CHECK;end" id="network_check">
+        <result wizard:action="network_unavailable" wizard:name="no_connection" wizard:resultCode="1" />
+        <result wizard:action="load_account_intent" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_unavailable" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.LOAD_ADD_ACCOUNT_INTENT;end" id="load_account_intent" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.ACCOUNT_SETUP;end" id="account_setup">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
+        <result wizard:action="rollback_auth_early_update" wizard:name="unintentional_cancel" wizard:resultCode="102" />
         <result wizard:action="oem_post_setup" wizard:name="dpm_user_complete" wizard:resultCode="111" />
+        <result wizard:action="gms_account_checkin" />
+    </WizardAction>
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_rollback_auth_early_update_flow" id="rollback_auth_early_update">
+        <result wizard:action="load_account_intent" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.GMS_ACCOUNT_CHECKIN;end" id="gms_account_checkin">
-        <result wizard:action="mfm_check" wizard:name="skip" wizard:resultCode="1" />
-    </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.ACCOUNT_CHECK;end" id="mfm_check">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_account_flow" id="account_flow">
