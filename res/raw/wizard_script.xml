@@ -31,7 +31,19 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.WELCOME;end" id="welcome">
         <result wizard:action="check_user_unlock_qr" wizard:name="start_qr_provision" wizard:resultCode="101" />
         <result wizard:action="check_user_unlock_dpm_user_complete" wizard:name="dpm_user_complete" wizard:resultCode="111" />
+        <result wizard:action="check_user_unlock_work_setup_interrupted_qr_scan" wizard:name="check_user_unlock_work_setup_interrupted_qr_scan" wizard:resultCode="114" />
+        <result wizard:action="check_user_unlock_work_setup_interrupted_consumer_flow" wizard:name="check_user_unlock_work_setup_interrupted_consumer_flow" wizard:resultCode="115" />
         <result wizard:action="check_user_unlock" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock_work_setup_interrupted_qr_scan" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.WORK_SETUP_INTERRUPTED;end" id="work_setup_interrupted_qr_scan">
+        <result wizard:action="check_user_unlock_qr" wizard:name="continue_start_qr_scan" wizard:resultCode="1" />
+        <result wizard:action="factory_reset" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock_work_setup_interrupted_consumer_flow" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.WORK_SETUP_INTERRUPTED;end" id="work_setup_interrupted_consumer_flow">
+        <result wizard:action="check_user_unlock" wizard:name="continue_start_consumer_flow" wizard:resultCode="1" />
+        <result wizard:action="factory_reset" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock_qr">
         <result wizard:action="qr_provision_flow" />
@@ -40,12 +52,22 @@
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.SLOTS_SELECTION;end" id="slots_selection">
+        <result wizard:action="sim_missing" wizard:name="skip" wizard:resultCode="1" />
+        <result wizard:action="carrier_setup" />
+    </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.SIM_MISSING;end" id="sim_missing">
         <result wizard:action="esim_intro" wizard:name="esim" wizard:resultCode="101" />
+        <result wizard:action="carrier_setup" wizard:name="esim_only" wizard:resultCode="102" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.SIM_READY;end" id="sim_ready">
         <result wizard:action="carrier_setup" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.ESIM_INTRO;end" id="esim_intro" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CARRIER_SETUP;end" id="carrier_setup" />
+    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CARRIER_SETUP;end" id="carrier_setup">
+        <result wizard:action="sim_setup" wizard:name="all_subscriptions_completed" wizard:resultCode="98765" />
+        <result wizard:action="carrier_setup" />
+    </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.SIM_SETUP;end" id="sim_setup" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.DEVICE_OWNER_WARNING;end" id="device_owner_warning">
         <result wizard:action="check_frp" wizard:name="skip" wizard:resultCode="1" />
@@ -57,22 +79,19 @@
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_zero_touch_flow" id="zero_touch">
         <result wizard:action="post_dpm_user_flow" wizard:name="dpm_user_complete" wizard:resultCode="111" />
-    </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.FLOW_CHOICE;end" id="flow_choice">
-        <result wizard:action="setup_as_new_flow" wizard:name="skip" wizard:resultCode="1" />
-        <result wizard:action="exit" wizard:name="demo_mode_flow" wizard:resultCode="101" />
-        <result wizard:action="unified_restore_flow" wizard:name="unified_restore_flow" wizard:resultCode="102" />
-    </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_restore_flow" id="restore_flow">
-        <result wizard:action="oem_post_setup" />
+        <result wizard:action="add_personal_account_after_work_profile" wizard:name="add_personal_account_after_work_profile" wizard:resultCode="120" />
+        <result wizard:action="setup_as_new_flow" wizard:name="gmscore_zero_touch" wizard:resultCode="116" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_unified_restore_flow" id="unified_restore_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_setup_as_new_flow" id="setup_as_new_flow">
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_no_network_flow" id="no_network_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_no_network_flow" id="no_network_flow">
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_account_flow" id="add_personal_account_after_work_profile">
+        <result wizard:action="oem_post_setup" />
+    </WizardAction>
+    <WizardAction wizard:flow="SetupAsNewFlow" wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_account_flow" id="setup_as_new_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_post_dpm_user_flow" id="post_dpm_user_flow">
@@ -85,6 +104,7 @@
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
         <result wizard:action="exit" />
     </WizardAction>
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_post_dpm_provision_finalization_flow" id="enterprise_finalization_flow" />
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.KID_POST_SETUP;end" id="kid_post_setup" />
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit" />
 </WizardScript>
