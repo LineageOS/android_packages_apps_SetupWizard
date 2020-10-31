@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "25038642_c0a27c7b",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-10-31T09:31:37Z",
+      "side": 1,
+      "message": "This is actually the equivalent to what we had in Q.",
+      "revId": "5484d352dae0601d2f08044fb943b55cb46d113d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
