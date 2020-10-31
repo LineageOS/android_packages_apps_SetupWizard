@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b9d411b3_7d92b9dd",
+        "filename": "src/org/lineageos/setupwizard/LocaleActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-10-31T09:41:41Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "8611ed9075e1ccdb2d4a97e1a408bdfae69d07c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
