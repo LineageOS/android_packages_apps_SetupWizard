@@ -160,11 +160,6 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     }
 
     @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.setup_datetime_page;
     }
