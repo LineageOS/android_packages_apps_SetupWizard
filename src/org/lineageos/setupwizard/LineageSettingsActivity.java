@@ -134,14 +134,9 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    public void onNavigateBack() {
-        onBackPressed();
-    }
-
-    @Override
-    public void onNavigateNext() {
+    protected void onNextPressed() {
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-        startActivityForResult(intent, 1);
+        nextAction(NEXT_REQUEST, intent);
     }
 
     @Override
