@@ -89,7 +89,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     private boolean mIsFirstRun = true;
     protected boolean mIsGoingBack = false;
     private boolean mIsPrimaryUser;
-    private int mResultCode = 0;
+    protected int mResultCode = 0;
     private Intent mResultData;
 
     @Override
@@ -520,7 +520,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     }
 
     protected int getTransition() {
-        return TRANSITION_ID_DEFAULT;
+        return TRANSITION_ID_SLIDE;
     }
 
     protected boolean tryEnablingWifi() {
