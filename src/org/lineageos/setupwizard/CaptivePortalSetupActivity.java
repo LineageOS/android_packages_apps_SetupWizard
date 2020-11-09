@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,11 +54,6 @@ public class CaptivePortalSetupActivity extends SubBaseActivity {
         }
         CheckForCaptivePortalTask
                 .checkForCaptivePortal(mCaptivePortalUrl, this, true);
-    }
-
-    @Override
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_FADE;
     }
 
     private static class CheckForCaptivePortalTask extends AsyncTask<Void, Void, Boolean> {

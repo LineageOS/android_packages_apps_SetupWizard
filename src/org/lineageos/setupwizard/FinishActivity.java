@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2019 The LineageOS Project
+ * Copyright (C) 2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,11 +74,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.finish_activity;
     }
@@ -86,7 +81,9 @@ public class FinishActivity extends BaseSetupWizardActivity {
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
+        if (!isResumed() || mResultCode != RESULT_CANCELED) {
+            overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
+        }
     }
 
     @Override
