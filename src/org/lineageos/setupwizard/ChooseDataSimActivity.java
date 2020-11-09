@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2018,2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -227,11 +227,6 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
             final int currentDataSub = SubscriptionManager.getDefaultDataSubscriptionId();
             checkSimChangingState(currentDataSub, currentDataSub);
         }
-    }
-
-    @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
     }
 
     private void checkForRadioReady() {
