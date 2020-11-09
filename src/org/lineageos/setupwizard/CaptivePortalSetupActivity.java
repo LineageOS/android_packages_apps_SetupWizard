@@ -56,11 +56,6 @@ public class CaptivePortalSetupActivity extends SubBaseActivity {
                 .checkForCaptivePortal(mCaptivePortalUrl, this, true);
     }
 
-    @Override
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_FADE;
-    }
-
     private static class CheckForCaptivePortalTask extends AsyncTask<Void, Void, Boolean> {
 
         private final URL captivePortalUrl;

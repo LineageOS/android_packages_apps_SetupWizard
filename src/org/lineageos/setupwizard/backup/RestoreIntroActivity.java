@@ -47,11 +47,6 @@ public class RestoreIntroActivity extends SubBaseActivity {
         return R.drawable.ic_restore;
     }
 
-    @Override
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
     private void launchRestore() {
         Intent intent = new Intent(ACTION_RESTORE_FROM_BACKUP);
         startSubactivity(intent, REQUEST_CODE_RESTORE);
