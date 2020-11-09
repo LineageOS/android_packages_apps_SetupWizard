@@ -229,11 +229,6 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         }
     }
 
-    @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
     private void checkForRadioReady() {
         if (mRadioReady) {
             mHandler.removeCallbacks(mRadioReadyRunnable);

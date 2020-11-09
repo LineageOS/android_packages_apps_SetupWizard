@@ -148,16 +148,11 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
     }
 
     protected int getSubactivityPreviousTransition() {
-        return TRANSITION_ID_DEFAULT;
+        return TRANSITION_ID_SLIDE;
     }
 
     protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_DEFAULT;
-    }
-
-    @Override
-    protected int getTransition() {
-        return TRANSITION_ID_FADE;
+        return TRANSITION_ID_SLIDE;
     }
 
     @Override

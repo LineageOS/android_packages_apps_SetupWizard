@@ -40,10 +40,4 @@ public class WifiSetupActivity extends SubBaseActivity {
         intent.putExtra(SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT, (String) null);
         startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
     }
-
-    @Override
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
 }
