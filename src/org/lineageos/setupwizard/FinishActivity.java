@@ -74,11 +74,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.finish_activity;
     }
@@ -86,7 +81,9 @@ public class FinishActivity extends BaseSetupWizardActivity {
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
+        if (!isResumed() || mResultCode != RESULT_CANCELED) {
+            overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
+        }
     }
 
     @Override
