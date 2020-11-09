@@ -70,10 +70,4 @@ public class FingerprintActivity extends SubBaseActivity {
                 getString(R.string.settings_fingerprint_setup_details));
         startSubactivity(intent, REQUEST_CODE_SETUP_FINGERPRINT);
     }
-
-    @Override
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
 }

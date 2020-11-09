@@ -179,11 +179,6 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
         mPhoneMonitor.removeListener(mSubscriptionStateListener);
     }
 
-    @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
     private void hideWaitForRadio() {
         if (mProgressBar.isShown()) {
             mHandler.removeCallbacks(mRadioReadyRunnable);

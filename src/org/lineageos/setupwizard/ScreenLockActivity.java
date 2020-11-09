@@ -52,11 +52,6 @@ public class ScreenLockActivity extends SubBaseActivity {
     }
 
     @Override
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.setup_lockscreen;
     }
@@ -79,11 +74,6 @@ public class ScreenLockActivity extends SubBaseActivity {
                 getString(R.string.settings_lockscreen_setup_details));
         intent.putExtra(SetupWizardApp.EXTRA_ALLOW_SKIP, true);
         startSubactivity(intent, REQUEST_CODE_SETUP_LOCKSCREEN);
-    }
-
-    @Override
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_SLIDE;
     }
 
     private boolean isKeyguardSecure() {
