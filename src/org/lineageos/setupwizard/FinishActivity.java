@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2019 The LineageOS Project
+ * Copyright (C) 2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -210,14 +210,14 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
         /* Save/restore button timeouts to disable them in softkey mode */
         if (enabled) {
-            LineageSettings.Secure.putInt(context.getContentResolver(),
-                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 0);
+            LineageSettings.Secure.putFloat(context.getContentResolver(),
+                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 0.0f);
         } else {
-            int currentBrightness = LineageSettings.Secure.getInt(context.getContentResolver(),
-                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 100);
-            int oldBright = prefs.getInt(KEY_BUTTON_BACKLIGHT,
+            float currentBrightness = LineageSettings.Secure.getFloat(context.getContentResolver(),
+                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 1.0f);
+            float oldBright = prefs.getFloat(KEY_BUTTON_BACKLIGHT,
                     currentBrightness);
-            LineageSettings.Secure.putInt(context.getContentResolver(),
+            LineageSettings.Secure.putFloat(context.getContentResolver(),
                     LineageSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
         }
     }
