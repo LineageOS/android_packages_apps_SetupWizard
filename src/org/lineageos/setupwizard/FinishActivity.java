@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2019 The LineageOS Project
+ * Copyright (C) 2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static org.lineageos.setupwizard.SetupWizardApp.KEY_BUTTON_BACKLIGHT;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
@@ -206,19 +205,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
             LineageSettings.System.putIntForUser(context.getContentResolver(),
                     LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0,
                     UserHandle.USER_CURRENT);
-        }
-
-        /* Save/restore button timeouts to disable them in softkey mode */
-        if (enabled) {
-            LineageSettings.Secure.putInt(context.getContentResolver(),
-                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 0);
-        } else {
-            int currentBrightness = LineageSettings.Secure.getInt(context.getContentResolver(),
-                    LineageSettings.Secure.BUTTON_BRIGHTNESS, 100);
-            int oldBright = prefs.getInt(KEY_BUTTON_BACKLIGHT,
-                    currentBrightness);
-            LineageSettings.Secure.putInt(context.getContentResolver(),
-                    LineageSettings.Secure.BUTTON_BRIGHTNESS, oldBright);
         }
     }
 }
