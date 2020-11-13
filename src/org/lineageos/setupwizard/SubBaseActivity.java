@@ -40,6 +40,10 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 
     protected abstract void onStartSubactivity();
 
+    protected void onSubactivityCanceled(Intent data) {
+        // Do nothing.
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (LOGV) {
@@ -142,8 +146,7 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             nextAction(RESULT_ACTIVITY_NOT_FOUND);
             finish();
         } else {
-            applyBackwardTransition(getSubactivityPreviousTransition());
-            finishAction(RESULT_CANCELED, data);
+            onSubactivityCanceled(data);
         }
     }
 

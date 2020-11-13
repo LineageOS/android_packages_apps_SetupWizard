@@ -24,7 +24,7 @@ import android.content.Intent;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class WifiSetupActivity extends SubBaseActivity {
+public class WifiSetupActivity extends WrapperSubBaseActivity {
 
     public static final String TAG = WifiSetupActivity.class.getSimpleName();
 
