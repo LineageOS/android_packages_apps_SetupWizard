@@ -33,7 +33,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Random;
 
-public class CaptivePortalSetupActivity extends SubBaseActivity {
+public class CaptivePortalSetupActivity extends WrapperSubBaseActivity {
 
     public static final String TAG = CaptivePortalSetupActivity.class.getSimpleName();
 
