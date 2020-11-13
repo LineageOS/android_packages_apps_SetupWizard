@@ -37,6 +37,7 @@ import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.pm.ComponentInfo;
 import android.content.pm.PackageInfo;
@@ -60,11 +61,13 @@ import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.MobileDataActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
+import org.lineageos.setupwizard.UpdateRecoveryActivity;
 import org.lineageos.setupwizard.WifiSetupActivity;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 import org.lineageos.internal.util.PackageManagerUtils;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +78,10 @@ public class SetupWizardUtils {
     private static final String GMS_PACKAGE = "com.google.android.gms";
     private static final String GMS_SUW_PACKAGE = "com.google.android.setupwizard";
     private static final String GMS_TV_SUW_PACKAGE = "com.google.android.tungsten.setupwraith";
+    private static final String UPDATER_PACKAGE = "org.lineageos.updater";
 
+    private static final String UPDATE_RECOVERY_EXEC = "/vendor/bin/install-recovery.sh";
+    private static final String CONFIG_HIDE_RECOVERY_UPDATE = "config_hideRecoveryUpdate";
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
 
     private SetupWizardUtils(){}
@@ -116,6 +122,23 @@ public class SetupWizardUtils {
     public static boolean hasTelephony(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+    }
+
+    public static boolean hasRecoveryUpdater(Context context) {
+        boolean fileExists = new File(UPDATE_RECOVERY_EXEC).exists();
+        if (!fileExists) {
+            return false;
+        }
+
+        boolean featureHidden = false;
+        try {
+            PackageManager pm = context.getPackageManager();
+            Resources updaterResources = pm.getResourcesForApplication(UPDATER_PACKAGE);
+            int res = updaterResources.getIdentifier(
+                    CONFIG_HIDE_RECOVERY_UPDATE, "bool", UPDATER_PACKAGE);
+            featureHidden = updaterResources.getBoolean(res);
+        } catch (PackageManager.NameNotFoundException | Resources.NotFoundException ignored) { }
+        return !featureHidden;
     }
 
     public static boolean isMultiSimDevice(Context context) {
@@ -279,6 +302,9 @@ public class SetupWizardUtils {
         if (!SetupWizardUtils.hasWifi(context) ||
             isEthernetConnected(context)) {
             disableComponent(context, WifiSetupActivity.class);
+        }
+        if (!hasRecoveryUpdater(context)) {
+            disableComponent(context, UpdateRecoveryActivity.class);
         }
     }
 
