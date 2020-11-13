@@ -24,7 +24,7 @@ import android.util.Log;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class BluetoothSetupActivity extends SubBaseActivity {
+public class BluetoothSetupActivity extends WrapperSubBaseActivity {
 
     public static final String TAG = BluetoothSetupActivity.class.getSimpleName();
 
