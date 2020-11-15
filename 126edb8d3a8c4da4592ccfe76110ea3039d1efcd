@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "608b3d80_e1b1005d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-11-15T10:03:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ce9738de_b2dc88c0",
+      "range": {
+        "startLine": 112,
+        "startChar": 47,
+        "endLine": 112,
+        "endChar": 116
+      },
+      "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9b1af883_94ced971",
         "filename": "res/values/strings.xml",
         "patchSetId": 5
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "aab46302_bed0ef8c",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-11-15T10:03:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9b1af883_94ced971",
+      "range": {
+        "startLine": 113,
+        "startChar": 43,
+        "endLine": 113,
+        "endChar": 191
+      },
+      "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "870ffabb_1734c43a",
         "filename": "res/values/strings.xml",
         "patchSetId": 5
@@ -68,6 +116,30 @@
       "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3f02bc42_24f99095",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-11-15T10:03:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "870ffabb_1734c43a",
+      "range": {
+        "startLine": 114,
+        "startChar": 43,
+        "endLine": 114,
+        "endChar": 93
+      },
+      "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
