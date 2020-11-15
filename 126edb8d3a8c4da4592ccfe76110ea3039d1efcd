@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce9738de_b2dc88c0",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-11-15T00:18:48Z",
+      "side": 1,
+      "message": "Updates Lineage Recovery on first boot subsequent to every update.",
+      "range": {
+        "startLine": 112,
+        "startChar": 47,
+        "endLine": 112,
+        "endChar": 116
+      },
+      "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9b1af883_94ced971",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-11-15T00:18:48Z",
+      "side": 1,
+      "message": "Your recovery will be updated as soon as you proceed to the next step. If you wish to keep your installed recovery intact, disable this feature.",
+      "range": {
+        "startLine": 113,
+        "startChar": 43,
+        "endLine": 113,
+        "endChar": 191
+      },
+      "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "870ffabb_1734c43a",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-11-15T00:18:48Z",
+      "side": 1,
+      "message": "Update Lineage Recovery alongside the OS",
+      "range": {
+        "startLine": 114,
+        "startChar": 43,
+        "endLine": 114,
+        "endChar": 93
+      },
+      "revId": "126edb8d3a8c4da4592ccfe76110ea3039d1efcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
