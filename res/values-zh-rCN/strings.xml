@@ -66,8 +66,11 @@
     <string name="settings_biometric_setup_details">您希望如何锁定您的屏幕？</string>
     <string name="fingerprint_setup_title">指纹设置</string>
     <string name="fingerprint_setup_summary">若要使用您的指纹传感器解锁您的屏幕，您需要：</string>
-    <string name="biometric_setup_backup_lock_method">设置备用解锁方式</string>
     <string name="fingerprint_setup_add_fingerprint">添加您的指纹</string>
+    <string name="face_setup_title">人脸识别设置</string>
+    <string name="face_setup_summary">要使用您的脸来解锁您的屏幕，您需要：</string>
+    <string name="face_setup_add_face">添加您的脸</string>
+    <string name="biometric_setup_backup_lock_method">设置备用解锁方式</string>
     <string name="biometric_setup_screen_lock_setup">设置屏幕锁定</string>
     <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
     <string name="settings_lockscreen_setup_title">选择屏幕锁定类型</string>
@@ -76,4 +79,8 @@
     <string name="lockscreen_setup_title" product="default">为您的手机启用保护功能</string>
     <string name="lockscreen_setup_summary"><b>为此设备启用保护功能</b>，并要求输入 PIN 码、图案或密码才能解锁屏幕</string>
     <string name="lockscreen_setup_screen_lock_setup">设置</string>
+    <string name="intro_restore_title">恢复应用和数据</string>
+    <string name="intro_restore_subtitle" product="tablet">如果你有来自你上一台 LineageOS 平板的备份，你可以在这里还原它。</string>
+    <string name="intro_restore_subtitle" product="default">如果你有来自你上一台 LineageOS 手机的备份，你可以在这里还原它。</string>
+    <string name="intro_restore_button">从备份中还原</string>
 </resources>

@@ -65,8 +65,8 @@
     <string name="settings_biometric_setup_details">どのように画面をロックしますか？</string>
     <string name="fingerprint_setup_title">指紋のセットアップ</string>
     <string name="fingerprint_setup_summary">指紋センターを画面のロック解除に使用するには、以下のことを行う必要があります:</string>
-    <string name="biometric_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
     <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
+    <string name="biometric_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
     <string name="biometric_setup_screen_lock_setup">画面のロックをセットアップ</string>
     <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
     <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>

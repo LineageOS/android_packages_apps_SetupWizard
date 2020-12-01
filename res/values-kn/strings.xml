@@ -59,8 +59,8 @@
     <string name="settings_biometric_setup_details">ನಿಮ್ಮ ಪರದೆಯನ್ನು ನೀವು ಹೇಗೆ ಲಾಕ್ ಮಾಡಲು ಬಯಸುವಿರಿ?</string>
     <string name="fingerprint_setup_title">ಫಿಂಗರ್‍ಪ್ರಿಂಟ್ ಸೆಟಪ್</string>
     <string name="fingerprint_setup_summary">ನಿಮ್ಮ ಫಿಂಗರ್‍ಪ್ರಿಂಟ್ ಸಂವೇದಕವನ್ನು ಉಪಯೋಗಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಅನ್‍ಲಾಕ್ ಮಾಡಲು, ನೀವು ಹೀಗೆ ಮಾಡಬೇಕಾಗುತ್ತದೆ:</string>
-    <string name="biometric_setup_backup_lock_method">ಒಂದು ದ್ವಿತೀಯಕ ಅನ್‍ಲಾಕ್ ಪ್ರಕಾರವನ್ನು ಸೆಟಪ್ ಮಾಡಿ</string>
     <string name="fingerprint_setup_add_fingerprint">ನಿಮ್ಮ ಫಿಂಗರ್‍ಪ್ರಿಂಟನ್ನು ಸೇರಿಸಿ</string>
+    <string name="biometric_setup_backup_lock_method">ಒಂದು ದ್ವಿತೀಯಕ ಅನ್‍ಲಾಕ್ ಪ್ರಕಾರವನ್ನು ಸೆಟಪ್ ಮಾಡಿ</string>
     <string name="biometric_setup_screen_lock_setup">ಪರದೆ ಲಾಕ್ ಸೆಟಪ್ ಮಾಡಿ</string>
     <string name="sim_locale_changed">%1$s SIM ಗುರುತಿಸಲ್ಪಟ್ಟಿದೆ</string>
     <string name="settings_lockscreen_setup_details">ನಿಮ್ಮ ಪರದೆಯನ್ನು ನೀವು ಹೇಗೆ ಲಾಕ್ ಮಾಡಲು ಬಯಸುವಿರಿ?</string>

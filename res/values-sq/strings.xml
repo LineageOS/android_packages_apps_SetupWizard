@@ -66,8 +66,8 @@
     <string name="settings_biometric_setup_details">Si doni që ta bllokoni ekranin?</string>
     <string name="fingerprint_setup_title">Konfigurimi i shenjave të gishtave</string>
     <string name="fingerprint_setup_summary">Për të përdorur sensorin e shenjave të gishtave që të zhbllokosh ekranin, duhet të:</string>
-    <string name="biometric_setup_backup_lock_method">Konfigurosh një metodë të dytë zhbllokimi</string>
     <string name="fingerprint_setup_add_fingerprint">Shtosh shenjat e gishtave</string>
+    <string name="biometric_setup_backup_lock_method">Konfigurosh një metodë të dytë zhbllokimi</string>
     <string name="biometric_setup_screen_lock_setup">Konfigurosh bllokimin e ekranit</string>
     <string name="sim_locale_changed">%1$s SIM u lidh</string>
     <string name="settings_lockscreen_setup_title">Zgjidh mënyrën e bllokimit të ekranit</string>

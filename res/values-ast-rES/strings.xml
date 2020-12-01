@@ -65,8 +65,8 @@
     <string name="settings_biometric_setup_details">¿Cómo te prestaría bloquiar la to pantalla?</string>
     <string name="fingerprint_setup_title">Configuración de buelga</string>
     <string name="fingerprint_setup_summary">Pa usar el to sensor de buelgues pa desbloquiar la to pantalla, necesitarás:</string>
-    <string name="biometric_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
     <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
+    <string name="biometric_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
     <string name="biometric_setup_screen_lock_setup">Configuración del bloquéu de pantalla</string>
     <string name="sim_locale_changed">%1$s SIM deteutada</string>
     <string name="settings_lockscreen_setup_title">Esbillar triba de pantalla de blouquéu</string>

@@ -55,8 +55,8 @@
     <string name="settings_biometric_setup_details">Kādu Jūs vēlētos ekrānslēgu?</string>
     <string name="fingerprint_setup_title">Pirksta nospieduma iestatīšana</string>
     <string name="fingerprint_setup_summary">Lai atbloķētu ekrānu ar pirksta nospiedumu, Jums vajadzēs:</string>
-    <string name="biometric_setup_backup_lock_method">Iestatīt sekundāro atbloķēšanas metodi</string>
     <string name="fingerprint_setup_add_fingerprint">Pievienot pirkstu nospiedumu</string>
+    <string name="biometric_setup_backup_lock_method">Iestatīt sekundāro atbloķēšanas metodi</string>
     <string name="biometric_setup_screen_lock_setup">Iestatīt ekrānslēgu</string>
     <string name="settings_lockscreen_setup_details">Kādu Jūs vēlētos ekrānslēgu?</string>
 </resources>

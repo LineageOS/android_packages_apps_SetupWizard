@@ -58,8 +58,8 @@
     <string name="settings_biometric_setup_details">Kuidas soovite ekraani lukustada?</string>
     <string name="fingerprint_setup_title">Sõrmejälgede seadistamine</string>
     <string name="fingerprint_setup_summary">Et kasutada sõrmejäljelugejat ekraani avamiseks, peate:</string>
-    <string name="biometric_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
     <string name="fingerprint_setup_add_fingerprint">Lisa oma sõrmejälg</string>
+    <string name="biometric_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
     <string name="biometric_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
     <string name="settings_lockscreen_setup_details">Kuidas soovite ekraani lukustada?</string>
 </resources>

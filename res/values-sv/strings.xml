@@ -60,8 +60,8 @@
     <string name="settings_biometric_setup_details">Hur vill du låsa din skärm?</string>
     <string name="fingerprint_setup_title">Konfigurering av fingeravtryck</string>
     <string name="fingerprint_setup_summary">För att använda din fingeravtrycksavläsare för att låsa upp din skärm, behöver du:</string>
-    <string name="biometric_setup_backup_lock_method">Konfigurera en sekundär upplåsningsmetod</string>
     <string name="fingerprint_setup_add_fingerprint">Lägga till ditt fingeravtryck</string>
+    <string name="biometric_setup_backup_lock_method">Konfigurera en sekundär upplåsningsmetod</string>
     <string name="biometric_setup_screen_lock_setup">Konfigurera skärmlås</string>
     <string name="sim_locale_changed">%1$s SIM upptäckt</string>
     <string name="settings_lockscreen_setup_title">Välj skärmlåstyp</string>

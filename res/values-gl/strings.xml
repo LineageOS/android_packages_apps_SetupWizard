@@ -66,8 +66,8 @@
     <string name="settings_biometric_setup_details">Como quere bloquear a súa pantalla?</string>
     <string name="fingerprint_setup_title">Configuración da pegada dactilar</string>
     <string name="fingerprint_setup_summary">Para utilizar o sensor de pegada dactilar co que desbloquear a pantalla, precisará:</string>
-    <string name="biometric_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
     <string name="fingerprint_setup_add_fingerprint">Engadir a súa pegada dactilar</string>
+    <string name="biometric_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
     <string name="biometric_setup_screen_lock_setup">Configurar o bloqueo da pantalla</string>
     <string name="sim_locale_changed">%1$s SIM detectado</string>
     <string name="settings_lockscreen_setup_title">Seleccionar o tipo de bloqueo da pantalla</string>

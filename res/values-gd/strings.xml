@@ -65,8 +65,8 @@
     <string name="settings_biometric_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
     <string name="fingerprint_setup_title">Suidhich lorg-mheòir</string>
     <string name="fingerprint_setup_summary">Seo na dh’fheumas tu dèanamh mus cleachd thu mothaichear nan lorgan-meòir a chur a’ ghlas far an sgrìn:</string>
-    <string name="biometric_setup_backup_lock_method">Suidhich dòigh dhàrnach airson a’ ghlas a thoirt far na sgrìn</string>
     <string name="fingerprint_setup_add_fingerprint">Cuir do lorg-mheòir ris</string>
+    <string name="biometric_setup_backup_lock_method">Suidhich dòigh dhàrnach airson a’ ghlas a thoirt far na sgrìn</string>
     <string name="biometric_setup_screen_lock_setup">Suidhich glasadh na sgrìn</string>
     <string name="sim_locale_changed">Mhothaich sinn do SIM %1$s</string>
     <string name="settings_lockscreen_setup_title">Tagh seòrsa de ghlasadh na sgrìn</string>

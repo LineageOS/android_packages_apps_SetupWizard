@@ -55,8 +55,8 @@
     <string name="settings_biometric_setup_details">Wéi wëlls du däi Schierm spären?</string>
     <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>
     <string name="fingerprint_setup_summary">Wann s du däi Fangerofdrocksensor fir d\'Entspäre vun dengem Schierm benotze wëlls, muss du:</string>
-    <string name="biometric_setup_backup_lock_method">Eng zweet Entspärmethod ariichten</string>
     <string name="fingerprint_setup_add_fingerprint">Däi Fangerofdrock dobäisetzen</string>
+    <string name="biometric_setup_backup_lock_method">Eng zweet Entspärmethod ariichten</string>
     <string name="biometric_setup_screen_lock_setup">D\'Schiermspär ariichten</string>
     <string name="settings_lockscreen_setup_details">Wéi wëlls du däi Schierm spären?</string>
 </resources>

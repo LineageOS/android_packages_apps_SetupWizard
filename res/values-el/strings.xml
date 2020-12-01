@@ -66,8 +66,11 @@
     <string name="settings_biometric_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
     <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
     <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
-    <string name="biometric_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
     <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
+    <string name="face_setup_title">Ρύθμιση προσώπου</string>
+    <string name="face_setup_summary">Για να χρησιμοποιήσετε το πρόσωπό σας για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
+    <string name="face_setup_add_face">Προσθέστε το πρόσωπό σας</string>
+    <string name="biometric_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
     <string name="biometric_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
     <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
@@ -76,4 +79,8 @@
     <string name="lockscreen_setup_title" product="default">Προστατέψτε το τηλέφωνό σας</string>
     <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
     <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση</string>
+    <string name="intro_restore_title">Επαναφορά εφαρμογών και δεδομένων</string>
+    <string name="intro_restore_subtitle" product="tablet">Εάν έχετε αντίγραφο ασφαλείας από το τελευταίο LineageOS tablet σας, μπορείτε να το επαναφέρετε εδώ.</string>
+    <string name="intro_restore_subtitle" product="default">Εάν έχετε αντίγραφο ασφαλείας από το τελευταίο LineageOS τηλέφωνό σας, μπορείτε να το επαναφέρετε εδώ.</string>
+    <string name="intro_restore_button">Επαναφορά από αντίγραφο ασφαλείας</string>
 </resources>

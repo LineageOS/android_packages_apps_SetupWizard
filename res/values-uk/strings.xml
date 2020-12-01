@@ -64,8 +64,8 @@
     <string name="settings_biometric_setup_details">Як би ви хотіли блокувати екран?</string>
     <string name="fingerprint_setup_title">Налаштування відбитку пальця</string>
     <string name="fingerprint_setup_summary">Щоб використовувати датчик відбитків пальців, ви маєте:</string>
-    <string name="biometric_setup_backup_lock_method">Встановлення резервного методу розблокування</string>
     <string name="fingerprint_setup_add_fingerprint">Додати ваш відбиток пальця</string>
+    <string name="biometric_setup_backup_lock_method">Встановлення резервного методу розблокування</string>
     <string name="biometric_setup_screen_lock_setup">Налаштування блокування екрану</string>
     <string name="sim_locale_changed">%1$s SIM-карту виявлено</string>
     <string name="settings_lockscreen_setup_title">Виберіть тип блокування екрану</string>

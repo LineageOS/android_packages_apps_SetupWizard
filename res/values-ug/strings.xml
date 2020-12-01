@@ -57,8 +57,8 @@
     <string name="settings_biometric_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
     <string name="fingerprint_setup_title">بارماق ئىزى تەڭشىكى</string>
     <string name="fingerprint_setup_summary">ئۆزىڭىزنىڭ بارماق داتچىكنى ئىشلىتىپ قۇلۇپ ئاچماقچى بولسىڭىز، سىز چوقۇم:</string>
-    <string name="biometric_setup_backup_lock_method">زاپاس قۇلۇپ يىيىش ئۇسۇلىنى بېكىتىڭ</string>
     <string name="fingerprint_setup_add_fingerprint">بارماق ئىزى قوشۇڭ</string>
+    <string name="biometric_setup_backup_lock_method">زاپاس قۇلۇپ يىيىش ئۇسۇلىنى بېكىتىڭ</string>
     <string name="biometric_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
     <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
     <string name="settings_lockscreen_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
