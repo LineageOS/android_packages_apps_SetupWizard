@@ -95,6 +95,7 @@ public class SetupWizardApp extends Application {
         PhoneMonitor.initInstance(this);
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         SetupWizardUtils.setMobileDataEnabled(this, false);
+        SetupWizardUtils.disableStatusBar(this);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
 

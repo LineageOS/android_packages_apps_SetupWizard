@@ -84,6 +84,8 @@ public class SetupWizardUtils {
     private static final String CONFIG_HIDE_RECOVERY_UPDATE = "config_hideRecoveryUpdate";
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
 
+    private static StatusBarManager statusBarManager;
+
     private SetupWizardUtils(){}
 
     public static SharedPreferences getPrefs(Context context) {
@@ -173,21 +175,22 @@ public class SetupWizardUtils {
     }
 
     public static void disableStatusBar(Context context) {
-        StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
+        statusBarManager = context.getSystemService(StatusBarManager.class);
         if (statusBarManager != null) {
-            statusBarManager.disable(DISABLE_NOTIFICATION_ALERTS | DISABLE_SEARCH
-            );
+            statusBarManager.setDisabledForSetup(true);
         } else {
             Log.w(SetupWizardApp.TAG,
                     "Skip disabling notfications - could not get StatusBarManager");
         }
     }
 
-    public static void enableStatusBar(Context context) {
-        StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
-        if(statusBarManager != null) {
+    public static void enableStatusBar() {
+        if (statusBarManager != null) {
             Log.i(SetupWizardApp.TAG, "Enabling notfications - StatusBarManager");
-            statusBarManager.disable(DISABLE_NONE);
+            statusBarManager.setDisabledForSetup(false);
+
+            // Session must be destroyed if it's not used anymore
+            statusBarManager = null;
         } else {
             Log.i(SetupWizardApp.TAG, "Skip enabling notfications - StatusBarManager is null");
         }

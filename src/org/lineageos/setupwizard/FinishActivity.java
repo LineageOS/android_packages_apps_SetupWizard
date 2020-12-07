@@ -45,6 +45,7 @@ import android.widget.ImageView;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.EnableAccessibilityController;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import lineageos.providers.LineageSettings;
 
