@@ -19,6 +19,7 @@ package org.lineageos.setupwizard;
 
 
 import android.app.Application;
+import android.app.StatusBarManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -69,6 +70,8 @@ public class SetupWizardApp extends Application {
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
+    private static StatusBarManager sStatusBarManager;
+
     private boolean mIsRadioReady = false;
     private boolean mIgnoreSimLocale = false;
 
@@ -87,7 +90,12 @@ public class SetupWizardApp extends Application {
         PhoneMonitor.initInstance(this);
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         SetupWizardUtils.setMobileDataEnabled(this, false);
+        sStatusBarManager = SetupWizardUtils.disableStatusBar(this);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
+    }
+
+    public static StatusBarManager getStatusBarManager() {
+        return sStatusBarManager;
     }
 
     public boolean isRadioReady() {
