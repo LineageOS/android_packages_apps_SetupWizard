@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -83,6 +83,8 @@ public class SetupWizardUtils {
     private static final String UPDATE_RECOVERY_EXEC = "/vendor/bin/install-recovery.sh";
     private static final String CONFIG_HIDE_RECOVERY_UPDATE = "config_hideRecoveryUpdate";
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
+
+    private static StatusBarManager sStatusBarManager;
 
     private SetupWizardUtils(){}
 
@@ -173,23 +175,30 @@ public class SetupWizardUtils {
     }
 
     public static void disableStatusBar(Context context) {
-        StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
-        if (statusBarManager != null) {
-            statusBarManager.disable(DISABLE_NOTIFICATION_ALERTS | DISABLE_SEARCH
-            );
+        sStatusBarManager = context.getSystemService(StatusBarManager.class);
+        if (sStatusBarManager != null) {
+            if (LOGV) {
+                Log.v(SetupWizardApp.TAG, "Disabling status bar");
+            }
+            sStatusBarManager.setDisabledForSetup(true);
         } else {
             Log.w(SetupWizardApp.TAG,
-                    "Skip disabling notfications - could not get StatusBarManager");
+                    "Skip disabling status bar - could not get StatusBarManager");
         }
     }
 
-    public static void enableStatusBar(Context context) {
-        StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
-        if(statusBarManager != null) {
-            Log.i(SetupWizardApp.TAG, "Enabling notfications - StatusBarManager");
-            statusBarManager.disable(DISABLE_NONE);
+    public static void enableStatusBar() {
+        if (sStatusBarManager != null) {
+            if (LOGV) {
+                Log.v(SetupWizardApp.TAG, "Enabling status bar");
+            }
+            sStatusBarManager.setDisabledForSetup(false);
+
+            // Session must be destroyed if it's not used anymore
+            sStatusBarManager = null;
         } else {
-            Log.i(SetupWizardApp.TAG, "Skip enabling notfications - StatusBarManager is null");
+            Log.w(SetupWizardApp.TAG,
+                    "Skip enabling status bar - could not get StatusBarManager");
         }
     }
 
