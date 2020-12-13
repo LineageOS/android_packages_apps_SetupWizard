@@ -33,6 +33,8 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
     private static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
 
     private CheckBox mRecoveryUpdateCheckbox;
+    private View mCbView;
+    private boolean mHasProceeded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,16 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         setNextText(R.string.next);
         mRecoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox);
 
-        View cbView = findViewById(R.id.update_recovery_checkbox_view);
-        cbView.setOnClickListener(v -> {
+        mCbView = findViewById(R.id.update_recovery_checkbox_view);
+
+        if (SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, false)) {
+            // If user goes back after proceeding, recovery can still be updated
+            // but an already updated recovery cannot be restored
+            mCbView.setEnabled(false);
+            mHasProceeded = true;
+        }
+
+        mCbView.setOnClickListener(v -> {
             mRecoveryUpdateCheckbox.setChecked(!mRecoveryUpdateCheckbox.isChecked());
         });
     }
@@ -63,12 +73,17 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         // Default the checkbox to true, the effect will be reflected when going next
         mRecoveryUpdateCheckbox.setChecked(
                 SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, true));
+
+        mCbView.setEnabled(!mHasProceeded);
     }
 
     @Override
     protected void onNextPressed() {
         SystemProperties.set(UPDATE_RECOVERY_PROP,
                 String.valueOf(mRecoveryUpdateCheckbox.isChecked()));
+
+        mHasProceeded = true;
+        mCbView.setEnabled(!mHasProceeded);
 
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
         nextAction(NEXT_REQUEST, intent);
