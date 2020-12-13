@@ -71,6 +71,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top"
                         android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:duplicateParentState="true"
                         android:clickable="false" />
 
@@ -82,9 +83,9 @@
                         android:textStyle="bold"
                         android:lineSpacingExtra="@dimen/setup_line_spacing"
                         android:gravity="top"
+                        android:layout_gravity="center_vertical"
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
-                        android:paddingBottom="@dimen/content_margin_bottom"
                         android:text="@string/update_recovery_setting"
                         android:maxLines="5" />
                 </LinearLayout>
