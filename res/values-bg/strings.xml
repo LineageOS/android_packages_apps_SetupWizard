@@ -67,6 +67,9 @@
     <string name="fingerprint_setup_title">Създаване на пръстов отпечатък</string>
     <string name="fingerprint_setup_summary">За да използвате сензора за пръстови отпечатъци за отключите вашият екран, ще трябва да:</string>
     <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
+    <string name="face_setup_title">Настройка на лицево отключване</string>
+    <string name="face_setup_summary">За да използвате лицеви данни, за отключване на екрана, ще трябва:</string>
+    <string name="face_setup_add_face">Добави лицеви данни</string>
     <string name="biometric_setup_backup_lock_method">Настройка на втори метод за отключване</string>
     <string name="biometric_setup_screen_lock_setup">Настройка на екрана за заключване</string>
     <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
@@ -76,4 +79,8 @@
     <string name="lockscreen_setup_title" product="default">Защитете телефона си</string>
     <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Конфигуриране</string>
+    <string name="intro_restore_title">Възстановяване на приложения и данни</string>
+    <string name="intro_restore_subtitle" product="tablet">Ако имате резервно копие, направено на друг таблет с LineageOS, можете да го възстановите тук.</string>
+    <string name="intro_restore_subtitle" product="default">Ако имате резервно копие, направено на друг телефон с LineageOS, можете да го възстановите тук.</string>
+    <string name="intro_restore_button">Възстановяване от архив</string>
 </resources>

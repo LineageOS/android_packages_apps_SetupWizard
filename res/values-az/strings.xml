@@ -67,6 +67,9 @@
     <string name="fingerprint_setup_title">Barmaq izi quraşdırma</string>
     <string name="fingerprint_setup_summary">Ekran kilidini açmaq üçün barmaq izi sensorunuzun istifadəsi üçün:</string>
     <string name="fingerprint_setup_add_fingerprint">Barmaq izinizi əlavə edin</string>
+    <string name="face_setup_title">Üz quraşdırma</string>
+    <string name="face_setup_summary">Ekran kilidini açmaq üçün üzün istifadəsi üçün:</string>
+    <string name="face_setup_add_face">Üzünüzü əlavə edin</string>
     <string name="biometric_setup_backup_lock_method">İkinci kilid açma üsulunu quraşdırın</string>
     <string name="biometric_setup_screen_lock_setup">Ekran kilidi qurun</string>
     <string name="sim_locale_changed">%1$s SIM aşkarlandı</string>
@@ -76,4 +79,8 @@
     <string name="lockscreen_setup_title" product="default">Telefonunuzu qoruyun</string>
     <string name="lockscreen_setup_summary"><b>Bu cihazı qoruyun</b> və ekran kilidini açmaq üçün PIN, forma və ya şifrəni tələb edin</string>
     <string name="lockscreen_setup_screen_lock_setup">Qur</string>
+    <string name="intro_restore_title">Tətbiq və verilənləri bərpa edin</string>
+    <string name="intro_restore_subtitle" product="tablet">Son LineageOS planşetinizdən bir nüsxəniz varsa, burada bərpa edə bilərsiniz.</string>
+    <string name="intro_restore_subtitle" product="default">Son LineageOS telefonunuzdan bir nüsxəniz varsa, burada bərpa edə bilərsiniz.</string>
+    <string name="intro_restore_button">Nüsxədən bərpa et</string>
 </resources>

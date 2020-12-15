@@ -59,7 +59,14 @@
     <string name="fingerprint_setup_title">Sõrmejälgede seadistamine</string>
     <string name="fingerprint_setup_summary">Et kasutada sõrmejäljelugejat ekraani avamiseks, peate:</string>
     <string name="fingerprint_setup_add_fingerprint">Lisa oma sõrmejälg</string>
+    <string name="face_setup_title">Näo seadistus</string>
+    <string name="face_setup_summary">Näo kasutamiseks ekraani lahti lukustamisel pead sa:</string>
+    <string name="face_setup_add_face">Lisa oma nägu</string>
     <string name="biometric_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
     <string name="biometric_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
     <string name="settings_lockscreen_setup_details">Kuidas soovite ekraani lukustada?</string>
+    <string name="intro_restore_title">Taasta rakendused ja andmed</string>
+    <string name="intro_restore_subtitle" product="tablet">Kui sul on viimase LineageOSi tahvelarvuti varundus olemas, saad selle siin taastada.</string>
+    <string name="intro_restore_subtitle" product="default">Kui sul on viimase LineageOSi telefoni varundus olemas, saad selle siin taastada.</string>
+    <string name="intro_restore_button">Taasta varundusest</string>
 </resources>

@@ -76,4 +76,5 @@
     <string name="lockscreen_setup_title" product="default">Lindungi telepon anda</string>
     <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
+    <string name="intro_restore_button">Pulihkan dari cadangan</string>
 </resources>
