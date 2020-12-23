@@ -16,6 +16,8 @@
 
 package org.lineageos.setupwizard;
 
+import static org.lineageos.setupwizard.SetupWizardApp.ENABLE_RECOVERY_UPDATE;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,13 +32,13 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
 
-    private static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
-
     private CheckBox mRecoveryUpdateCheckbox;
+    private SetupWizardApp mSetupWizardApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mSetupWizardApp = (SetupWizardApp) getApplication();
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity");
@@ -54,21 +56,20 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         cbView.setOnClickListener(v -> {
             mRecoveryUpdateCheckbox.setChecked(!mRecoveryUpdateCheckbox.isChecked());
         });
+
+        updateRecoveryUpdateOption();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
-        // Default the checkbox to true, the effect will be reflected when going next
-        mRecoveryUpdateCheckbox.setChecked(
-                SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, true));
+        updateRecoveryUpdateOption();
     }
 
     @Override
     protected void onNextPressed() {
-        SystemProperties.set(UPDATE_RECOVERY_PROP,
-                String.valueOf(mRecoveryUpdateCheckbox.isChecked()));
+        mSetupWizardApp.getSettingsBundle().putBoolean(ENABLE_RECOVERY_UPDATE,
+                mRecoveryUpdateCheckbox.isChecked());
 
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
         nextAction(NEXT_REQUEST, intent);
@@ -87,5 +88,16 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
     @Override
     protected int getIconResId() {
         return R.drawable.ic_system_update;
+    }
+
+    private void updateRecoveryUpdateOption() {
+        final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
+        // Default the checkbox to true, the effect will be reflected when going next
+        boolean checked = myPageBundle.containsKey(ENABLE_RECOVERY_UPDATE) ?
+                myPageBundle.getBoolean(ENABLE_RECOVERY_UPDATE) :
+                true;
+
+        mRecoveryUpdateCheckbox.setChecked(checked);
+        myPageBundle.putBoolean(ENABLE_RECOVERY_UPDATE, checked);
     }
 }
