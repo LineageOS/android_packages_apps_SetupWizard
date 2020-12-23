@@ -110,6 +110,7 @@
     <!-- Update Recovery -->
     <string name="update_recovery_title">Update Lineage Recovery</string>
     <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
-    <string name="update_recovery_warning">Recovery will be updated as soon as you proceed to the next step. If you wish to keep it intact, disable this feature.</string>
+    <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
     <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
+    <string name="toast_updating_recovery">Installing Lineage Recovery</string>
 </resources>
