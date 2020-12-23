@@ -22,6 +22,52 @@
       "revId": "9abd985c194f75df69675f116ed0ca5b95506b3b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d1923ca1_3c8d654f",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-12-23T13:46:06Z",
+      "side": 1,
+      "message": "Unnecessary, onResume is always called",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 37
+      },
+      "revId": "9abd985c194f75df69675f116ed0ca5b95506b3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe5170c4_dbfcb917",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-12-23T13:46:06Z",
+      "side": 1,
+      "message": "?",
+      "range": {
+        "startLine": 101,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 65
+      },
+      "revId": "9abd985c194f75df69675f116ed0ca5b95506b3b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
