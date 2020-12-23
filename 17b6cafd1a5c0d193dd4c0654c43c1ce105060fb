@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "57021491_bad2a8f6",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-12-23T14:16:51Z",
+      "side": 1,
+      "message": "Lol oops, copied header from Seedvault suw activity probably",
+      "parentUuid": "8347fa31_85ffb87b",
+      "range": {
+        "startLine": 2,
+        "startChar": 27,
+        "endLine": 2,
+        "endChar": 46
+      },
+      "revId": "17b6cafd1a5c0d193dd4c0654c43c1ce105060fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5795ce57_f31e8dd2",
         "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
         "patchSetId": 1
