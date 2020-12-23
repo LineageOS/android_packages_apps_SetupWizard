@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5795ce57_f31e8dd2",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-12-23T13:01:56Z",
+      "side": 1,
+      "message": "Remove?",
+      "range": {
+        "startLine": 64,
+        "startChar": 8,
+        "endLine": 64,
+        "endChar": 85
+      },
+      "revId": "17b6cafd1a5c0d193dd4c0654c43c1ce105060fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3dbe3f2a_87defddd",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-12-23T13:01:56Z",
+      "side": 1,
+      "message": "final boolean",
+      "range": {
+        "startLine": 65,
+        "startChar": 8,
+        "endLine": 65,
+        "endChar": 15
+      },
+      "revId": "17b6cafd1a5c0d193dd4c0654c43c1ce105060fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
