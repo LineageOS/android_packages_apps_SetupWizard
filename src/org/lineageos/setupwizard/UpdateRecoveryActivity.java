@@ -16,10 +16,11 @@
 
 package org.lineageos.setupwizard;
 
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_UPDATE_RECOVERY;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.SystemProperties;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -30,8 +31,7 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
 
-    private static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
-
+    private SetupWizardApp mSetupWizardApp;
     private CheckBox mRecoveryUpdateCheckbox;
 
     @Override
@@ -47,6 +47,7 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
             return;
         }
 
+        mSetupWizardApp = (SetupWizardApp) getApplication();
         setNextText(R.string.next);
         mRecoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox);
 
@@ -61,14 +62,16 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         super.onResume();
 
         // Default the checkbox to true, the effect will be reflected when going next
-        mRecoveryUpdateCheckbox.setChecked(
-                SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, true));
+        boolean enabled = mSetupWizardApp.getSettingsBundle()
+                .getBoolean(KEY_UPDATE_RECOVERY, true);
+
+        mRecoveryUpdateCheckbox.setChecked(enabled);
     }
 
     @Override
     protected void onNextPressed() {
-        SystemProperties.set(UPDATE_RECOVERY_PROP,
-                String.valueOf(mRecoveryUpdateCheckbox.isChecked()));
+        mSetupWizardApp.getSettingsBundle().putBoolean(KEY_UPDATE_RECOVERY,
+                mRecoveryUpdateCheckbox.isChecked());
 
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
         nextAction(NEXT_REQUEST, intent);
