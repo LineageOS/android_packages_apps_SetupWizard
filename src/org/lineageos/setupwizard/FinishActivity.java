@@ -19,8 +19,10 @@ package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
+import static org.lineageos.setupwizard.SetupWizardApp.ENABLE_RECOVERY_UPDATE;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.UPDATE_RECOVERY_PROP;
 
 import android.animation.Animator;
 import android.app.Activity;
@@ -34,6 +36,7 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
+import android.os.SystemProperties;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -174,6 +177,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
         }
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
+        handleRecoveryUpdate(mSetupWizardApp);
         final WallpaperManager wallpaperManager =
                 WallpaperManager.getInstance(mSetupWizardApp);
         wallpaperManager.forgetLoadedWallpaper();
@@ -197,6 +201,15 @@ public class FinishActivity extends BaseSetupWizardActivity {
         if (setupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
             writeDisableNavkeysOption(setupWizardApp,
                     setupWizardApp.getSettingsBundle().getBoolean(DISABLE_NAV_KEYS));
+        }
+    }
+
+    private static void handleRecoveryUpdate(SetupWizardApp setupWizardApp) {
+        if (setupWizardApp.getSettingsBundle().containsKey(ENABLE_RECOVERY_UPDATE)) {
+            boolean update = setupWizardApp.getSettingsBundle()
+                    .getBoolean(ENABLE_RECOVERY_UPDATE);
+
+            SystemProperties.set(UPDATE_RECOVERY_PROP, String.valueOf(update));
         }
     }
 
