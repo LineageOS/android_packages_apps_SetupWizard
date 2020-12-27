@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "78072191_104ac9f6",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-12-27T00:04:40Z",
+      "side": 1,
+      "message": "This should be enough:\n\n import static SetupWizardApp.ENABLE_RECOVERY_UPDATE;",
+      "revId": "1f42c86ed853b5b7c199b9c2df231943c13ceeb7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
