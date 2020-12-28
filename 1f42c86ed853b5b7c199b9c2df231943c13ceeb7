@@ -16,6 +16,24 @@
       "revId": "1f42c86ed853b5b7c199b9c2df231943c13ceeb7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0539df90_fe0621ea",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 18205
+      },
+      "writtenOn": "2020-12-28T23:17:59Z",
+      "side": 1,
+      "message": "Apparently not",
+      "parentUuid": "78072191_104ac9f6",
+      "revId": "1f42c86ed853b5b7c199b9c2df231943c13ceeb7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
