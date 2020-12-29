@@ -14,6 +14,7 @@
 
     <string name="activity_label_empty" />
 
+    <string name="cancel">Cancel</string>
     <string name="next">Next</string>
     <string name="finish">Finish</string>
     <string name="skip">Skip</string>
@@ -39,9 +40,13 @@
     <string name="sim_locale_changed">%1$s SIM detected</string>
 
     <!-- Missing SIM page -->
+    <string name="setup_euicc">Set up eSIM</string>
     <string name="setup_sim_missing">SIM card missing</string>
+    <string name="esim_support_summary">Set up an eSIM or insert a SIM card. To insert a SIM card, read the instructions that came with your device.</string>
     <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
     <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
+    <string name="sim_missing_skip_title">Skip setting up a SIM?</string>
+    <string name="sim_missing_skip_message">If you skip this step, you won\'t be connected to a mobile network until you set up a SIM in Settings.</string>
 
     <!-- Date & time page -->
     <string name="setup_datetime">Date &amp; time</string>
