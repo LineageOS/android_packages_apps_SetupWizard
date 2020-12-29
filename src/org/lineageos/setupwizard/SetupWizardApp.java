@@ -74,6 +74,7 @@ public class SetupWizardApp extends Application {
     public static final int REQUEST_CODE_SETUP_BIOMETRIC = 7;
     public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
     public static final int REQUEST_CODE_RESTORE = 10;
+    public static final int REQUEST_CODE_SETUP_EUICC = 11;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
