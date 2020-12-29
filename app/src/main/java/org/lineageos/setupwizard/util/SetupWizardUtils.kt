@@ -31,6 +31,7 @@ import android.provider.Settings
 import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
 import android.telephony.TelephonyManager.PHONE_TYPE_GSM
+import android.telephony.euicc.EuiccManager
 import android.util.Log
 import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL
 import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY
@@ -390,4 +391,11 @@ object SetupWizardUtils {
             } ?: false
         return !hasGsmSim
     }
+
+    fun hasEuicc(context: Context): Boolean =
+        runCatching {
+            context.getSystemService(EuiccManager::class.java)?.isEnabled
+        }.onFailure { e ->
+            Log.e(TAG, "Failed to check if Euicc is enabled", e)
+        }.getOrNull() ?: false
 }
