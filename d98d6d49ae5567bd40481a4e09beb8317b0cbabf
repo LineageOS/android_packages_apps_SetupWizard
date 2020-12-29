@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f2d38e3a_8ba8fdc5",
+        "filename": "src/org/lineageos/setupwizard/UpdateRecoveryActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2020-12-29T00:25:39Z",
+      "side": 1,
+      "message": "sFirstTime",
+      "revId": "d98d6d49ae5567bd40481a4e09beb8317b0cbabf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
