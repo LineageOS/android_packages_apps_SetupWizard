@@ -36,8 +36,7 @@
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WIFI_SETUP;end" id="wifi_setup">
-        <result wizard:resultCode="1" wizard:action="sim_missing" wizard:name="no_sim" />
-        <result wizard:action="choose_data_sim" />
+        <result wizard:action="sim_missing" />
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SIM_MISSING;end" id="sim_missing">
