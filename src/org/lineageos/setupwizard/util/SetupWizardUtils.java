@@ -301,11 +301,10 @@ public class SetupWizardUtils {
             disableComponent(context, MobileDataActivity.class);
             disableComponent(context, SimMissingActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
+        } else if (!simMissing()) {
+            disableComponent(context, SimMissingActivity.class);
         }
         if (!SetupWizardUtils.isMultiSimDevice(context)) {
-            disableComponent(context, ChooseDataSimActivity.class);
-        } else if (simMissing()) {
-            disableComponent(context, MobileDataActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
         }
         if (!SetupWizardUtils.hasWifi(context) ||
