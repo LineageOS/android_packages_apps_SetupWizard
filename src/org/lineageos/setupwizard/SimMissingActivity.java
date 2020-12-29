@@ -23,6 +23,7 @@ import android.widget.ImageView;
 import com.google.android.setupcompat.util.ResultCodes;
 
 import org.lineageos.setupwizard.util.PhoneMonitor;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SimMissingActivity extends BaseSetupWizardActivity {
 
@@ -59,12 +60,19 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        SetupWizardUtils.enableComponent(this, ChooseDataSimActivity.class);
+        SetupWizardUtils.enableComponent(this, MobileDataActivity.class);
+    }
+
+    @Override
     public void onNavigateNext() {
         if (mPhoneMonitor.simMissing()) {
-            nextAction(ResultCodes.RESULT_SKIP);
-        } else {
-            super.onNavigateNext();
+            SetupWizardUtils.disableComponent(this, ChooseDataSimActivity.class);
+            SetupWizardUtils.disableComponent(this, MobileDataActivity.class);
         }
+        super.onNavigateNext();
     }
 
     @Override
