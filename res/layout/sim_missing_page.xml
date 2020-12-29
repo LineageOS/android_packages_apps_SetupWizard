@@ -46,14 +46,39 @@
                     android:text="@string/sim_missing_summary"
                     style="@style/SudItemTitle.GlifDescription" />
 
-                <ImageView
-                    android:id="@+id/sim_slot_image"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="0px"
-                    android:layout_weight="1"
-                    android:scaleType="fitEnd"
-                    android:src="@drawable/sim"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/euicc"
+                    android:text="@string/euicc_summary"
+                    style="@style/SudItemTitle.GlifDescription" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/sim_slot_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sim"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:gravity="center"
+                        android:padding="@dimen/content_margin_left" />
+
+                    <Button
+                        android:id="@+id/setup_euicc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/setup_euicc"
+                        style="@style/SudGlifButton.Primary" />
+
+                </LinearLayout>
             </LinearLayout>
         </FrameLayout>
 

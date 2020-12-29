@@ -17,15 +17,24 @@
 
 package org.lineageos.setupwizard;
 
+import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_EUICC;
+
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.service.euicc.EuiccService;
+import android.telephony.euicc.EuiccManager;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.setupcompat.util.ResultCodes;
+import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class SimMissingActivity extends BaseSetupWizardActivity {
+public class SimMissingActivity extends SubBaseActivity {
 
     public static final String TAG = SimMissingActivity.class.getSimpleName();
 
@@ -55,6 +64,18 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
             default:
                 simLogo.setImageResource(R.drawable.sim);
                 simLogo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        }
+    }
+
+    @Override
+    protected void onStartSubactivity() {
+        setNextAllowed(true);
+        EuiccManager euiccManager = (EuiccManager) getSystemService(Context.EUICC_SERVICE);
+        if (euiccManager.isEnabled()) {
+            findViewById(R.id.setup_euicc).setOnClickListener(v -> launchEuiccSetup());
+        } else {
+            findViewById(R.id.euicc).setVisibility(View.GONE);
+            findViewById(R.id.setup_euicc).setVisibility(View.GONE);
         }
     }
 
@@ -91,4 +112,15 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
         return R.drawable.ic_sim;
     }
 
+    private void launchEuiccSetup() {
+        Intent intent = new Intent(EuiccService.ACTION_PROVISION_EMBEDDED_SUBSCRIPTION);
+        intent.putExtra(EuiccManager.EXTRA_FORCE_PROVISION, true);
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, true);
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startSubactivity(intent, REQUEST_CODE_SETUP_EUICC);
+        } else {
+            Log.e(TAG, "No activity available to handle " + intent.getAction());
+        }
+    }
 }

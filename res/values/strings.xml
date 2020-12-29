@@ -107,4 +107,8 @@
 
     <!-- Toast show on skipping SetupWizard -->
     <string name="skip_setupwizard" translatable="false">Skipping setup wizard</string>
+
+    <!-- eSIM setup -->
+    <string name="euicc_summary">You can also add an eSIM to your device.</string>
+    <string name="setup_euicc">Setup eSIM</string>
 </resources>
