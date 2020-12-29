@@ -54,6 +54,24 @@
                 android:src="@drawable/sim"/>
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/setup_euicc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/location_text_margin_right"
+            android:background="@color/accent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/content_margin_left"
+            android:paddingRight="@dimen/location_text_margin_right"
+            android:text="@string/setup_euicc"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
     </FrameLayout>
 
     <com.google.android.setupdesign.view.NavigationBar
