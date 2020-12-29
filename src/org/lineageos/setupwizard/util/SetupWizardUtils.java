@@ -148,7 +148,7 @@ public class SetupWizardUtils {
     }
 
     public static boolean isRadioReady(Context context, ServiceState state) {
-        final SetupWizardApp setupWizardApp = (SetupWizardApp)context.getApplicationContext();
+        final SetupWizardApp setupWizardApp = (SetupWizardApp) context.getApplicationContext();
         if (setupWizardApp.isRadioReady()) {
             return true;
         } else {
@@ -185,7 +185,7 @@ public class SetupWizardUtils {
 
     public static void enableStatusBar(Context context) {
         StatusBarManager statusBarManager = context.getSystemService(StatusBarManager.class);
-        if(statusBarManager != null) {
+        if (statusBarManager != null) {
             Log.i(SetupWizardApp.TAG, "Enabling notfications - StatusBarManager");
             statusBarManager.disable(DISABLE_NONE);
         } else {
@@ -292,11 +292,10 @@ public class SetupWizardUtils {
             disableComponent(context, MobileDataActivity.class);
             disableComponent(context, SimMissingActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
+        } else if (!simMissing()) {
+            disableComponent(context, SimMissingActivity.class);
         }
         if (!SetupWizardUtils.isMultiSimDevice(context)) {
-            disableComponent(context, ChooseDataSimActivity.class);
-        } else if (simMissing()) {
-            disableComponent(context, MobileDataActivity.class);
             disableComponent(context, ChooseDataSimActivity.class);
         }
         if (!SetupWizardUtils.hasWifi(context) ||
