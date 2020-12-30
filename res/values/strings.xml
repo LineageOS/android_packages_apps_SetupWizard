@@ -104,4 +104,7 @@
     <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
     <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
     <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
+
+    <!-- Toast show on skipping SetupWizard -->
+    <string name="skip_setupwizard" translatable="false">Skipping setup wizard</string>
 </resources>
