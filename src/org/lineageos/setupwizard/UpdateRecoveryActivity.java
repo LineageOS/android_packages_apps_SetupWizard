@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,7 +62,7 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         // Allow overriding the default checkbox state
         if (sFirstTime) {
             mSetupWizardApp.getSettingsBundle().putBoolean(ENABLE_RECOVERY_UPDATE,
-                    SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, true));
+                    SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, false));
         }
 
         sFirstTime = false;
@@ -73,7 +73,7 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         super.onResume();
 
         final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
-        final boolean checked = myPageBundle.getBoolean(ENABLE_RECOVERY_UPDATE, true);
+        final boolean checked = myPageBundle.getBoolean(ENABLE_RECOVERY_UPDATE, false);
         mRecoveryUpdateCheckbox.setChecked(checked);
     }
 
