@@ -67,6 +67,9 @@
     <string name="fingerprint_setup_title">Configuración da pegada dactilar</string>
     <string name="fingerprint_setup_summary">Para utilizar o sensor de pegada dactilar co que desbloquear a pantalla, precisará:</string>
     <string name="fingerprint_setup_add_fingerprint">Engadir a súa pegada dactilar</string>
+    <string name="face_setup_title">Configurar faciana</string>
+    <string name="face_setup_summary">Para empregar a túa faciana para desbloquear a pantalla, precisarás:</string>
+    <string name="face_setup_add_face">Engade a túa faciana</string>
     <string name="biometric_setup_backup_lock_method">Configurar un método secundario de desbloqueo</string>
     <string name="biometric_setup_screen_lock_setup">Configurar o bloqueo da pantalla</string>
     <string name="sim_locale_changed">%1$s SIM detectado</string>
@@ -76,4 +79,8 @@
     <string name="lockscreen_setup_title" product="default">Protexe o teu móbil</string>
     <string name="lockscreen_setup_summary"><b>Protexe o dispositivo</b> e solicitar un PIN, patrón ou contrasinal para desbloquear a pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
+    <string name="intro_restore_title">Restaurar aplicacións e datos</string>
+    <string name="intro_restore_subtitle" product="tablet">Se tes unha copia de seguranza da túa última tableta con LineageOS, podes restaurala aquí.</string>
+    <string name="intro_restore_subtitle" product="default">Se tes unha copia de seguranza do teu último teléfono con LineageOS, podes restaurala aquí.</string>
+    <string name="intro_restore_button">Restaurar dende a copia de seguranza</string>
 </resources>
