@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
+     Copyright (C) 2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -23,4 +24,5 @@
     <string name="wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script_user</string>
 
+    <bool name="config_hasDeviceSpecificActivity">false</bool>
 </resources>
