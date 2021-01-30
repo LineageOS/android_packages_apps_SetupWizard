@@ -235,6 +235,17 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".DeviceSpecificActivity"
+                  android:label="@string/activity_label_empty"
+                  android:excludeFromRecents="true"
+                  android:immersive="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="org.lineageos.setupwizard.DEVICE_SPECIFIC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
         <activity android:name=".LineageSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
