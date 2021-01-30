@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9439f50a_b80eabf2",
+        "filename": "src/org/lineageos/setupwizard/DeviceSpecificActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-01-30T22:59:03Z",
+      "side": 1,
+      "message": "RESULT_OK",
+      "range": {
+        "startLine": 91,
+        "startChar": 71,
+        "endLine": 91,
+        "endChar": 89
+      },
+      "revId": "8f64a5f8bb026e5e7484029b5f43fdb7173f71e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
