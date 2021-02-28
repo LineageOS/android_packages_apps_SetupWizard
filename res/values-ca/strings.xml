@@ -66,8 +66,11 @@
     <string name="settings_biometric_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
     <string name="fingerprint_setup_title">Configuració de l\'empremta digital</string>
     <string name="fingerprint_setup_summary">Per utilitzar el teu sensor d\'empremtes digitals per desbloquejar la pantalla, hauràs de:</string>
-    <string name="biometric_setup_backup_lock_method">Configura el mètode de desbloqueig alternatiu</string>
     <string name="fingerprint_setup_add_fingerprint">Afegeix la teva empremta digital</string>
+    <string name="face_setup_title">Configuració facial</string>
+    <string name="face_setup_summary">Per utilitzar la cara per desbloquejar la pantalla, haureu de:</string>
+    <string name="face_setup_add_face">Afegiu la vostra cara</string>
+    <string name="biometric_setup_backup_lock_method">Configura el mètode de desbloqueig alternatiu</string>
     <string name="biometric_setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
     <string name="sim_locale_changed">%1$s SIM detectada</string>
     <string name="settings_lockscreen_setup_title">Selecciona el tipus de bloqueig de pantalla</string>
@@ -76,4 +79,12 @@
     <string name="lockscreen_setup_title" product="default">Protegeix el teu telèfon</string>
     <string name="lockscreen_setup_summary"><b>Protegeix el dispositiu</b> i estableix un PIN, un patró o una contrasenya per desbloquejar la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
+    <string name="intro_restore_title">Restauració d\'aplicacions i dades</string>
+    <string name="intro_restore_subtitle" product="tablet">Si teniu una còpia de seguretat de la vostra última tauleta LineageOS, podeu restaurar-la aquí.</string>
+    <string name="intro_restore_subtitle" product="default">Si teniu una còpia de seguretat de la vostra últim telèfon LineageOS, podeu restaurar-la aquí.</string>
+    <string name="intro_restore_button">Restaura des de la còpia de seguretat</string>
+    <string name="update_recovery_title">Actualització del recuperador del Lineage</string>
+    <string name="update_recovery_description">Actualitza el recuperador del Lineage en el primer inici posterior a cada actualització.</string>
+    <string name="update_recovery_warning">La recuperació s\'actualitzarà tan bon punt hàgiu acabat la configuració. Si voleu mantenir-lo intacte, desactiveu aquesta funció.</string>
+    <string name="update_recovery_setting">Actualitza el recuperador del Lineage juntament amb el sistema operatiu</string>
 </resources>

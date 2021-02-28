@@ -46,7 +46,6 @@
     <string name="no">خیر</string>
     <string name="yes">بله</string>
     <string name="emergency_call">تماس اضطراری</string>
-    <string name="setup_services">ویژگی‌های لینیِج اواِس</string>
     <string name="services_privacy_policy">سیاست حفظ حریم خصوصی</string>
     <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
     <string name="setup_unlock">باز کردن</string>
@@ -56,8 +55,8 @@
     <string name="settings_biometric_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
     <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
     <string name="fingerprint_setup_summary">برای استفاده از حسگر اثر انگشت برای باز کردن قفل صفحه، به این موارد نیاز دارید:</string>
-    <string name="biometric_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
     <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
+    <string name="biometric_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
     <string name="biometric_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
     <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
     <string name="lockscreen_setup_screen_lock_setup">برپا سازی</string>

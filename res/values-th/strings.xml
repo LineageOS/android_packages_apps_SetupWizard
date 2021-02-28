@@ -66,8 +66,8 @@
     <string name="settings_biometric_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
     <string name="fingerprint_setup_title">การตั้งค่าลายนิ้วมือ</string>
     <string name="fingerprint_setup_summary">ในการใช้เซนเซอร์ลายนิ้วมือเพื่อปลดล็อคหน้าจอ คุณต้อง:</string>
-    <string name="biometric_setup_backup_lock_method">กำหนดวิธีปลดล็อคสำรอง</string>
     <string name="fingerprint_setup_add_fingerprint">เพิ่มลายนิ้วมือของคุณ</string>
+    <string name="biometric_setup_backup_lock_method">กำหนดวิธีปลดล็อคสำรอง</string>
     <string name="biometric_setup_screen_lock_setup">ตั้งค่าการล็อคหน้าจอ</string>
     <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
     <string name="settings_lockscreen_setup_title">เลือกประเภทล็อคหน้าจอ</string>

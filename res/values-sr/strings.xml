@@ -65,8 +65,8 @@
     <string name="settings_biometric_setup_details">Како желите да закључате екран?</string>
     <string name="fingerprint_setup_title">Подешавање сензора за отисак прста</string>
     <string name="fingerprint_setup_summary">Да бисте користили отисак прста за откључавање екрана, неопходно је да:</string>
-    <string name="biometric_setup_backup_lock_method">Подесите алтернативни начин откључавања</string>
     <string name="fingerprint_setup_add_fingerprint">Додајте отисак прста</string>
+    <string name="biometric_setup_backup_lock_method">Подесите алтернативни начин откључавања</string>
     <string name="biometric_setup_screen_lock_setup">Подесите закључавање екрана</string>
     <string name="sim_locale_changed">Препозната је %1$s SIM картица</string>
     <string name="settings_lockscreen_setup_title">Изаберите метод закључавања екрана</string>

@@ -63,8 +63,8 @@
     <string name="settings_biometric_setup_details">Hoe wil jy jou skerm sluit?</string>
     <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>
     <string name="fingerprint_setup_summary">Om jou vingerafdruk sensor te gebruik om jou skerm te ontsluit, benodig jy:</string>
-    <string name="biometric_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
     <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
+    <string name="biometric_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
     <string name="biometric_setup_screen_lock_setup">Stel skerm sluit op</string>
     <string name="sim_locale_changed">%1$s SIM opgespoor</string>
     <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>

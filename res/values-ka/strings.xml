@@ -40,8 +40,8 @@
     <string name="settings_biometric_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
     <string name="fingerprint_setup_title">თითის ანაბეჭდის გამართვა</string>
     <string name="fingerprint_setup_summary">თითის ანაბეჭდის აღმქმელის ეკრანის გასახსნელად გამოყენებისთვის, დაგჭირდებათ:</string>
-    <string name="biometric_setup_backup_lock_method">გასახსნელად დამატებითი საშუალების დაყენება</string>
     <string name="fingerprint_setup_add_fingerprint">თითის ანაბეჭდის დამატება</string>
+    <string name="biometric_setup_backup_lock_method">გასახსნელად დამატებითი საშუალების დაყენება</string>
     <string name="biometric_setup_screen_lock_setup">ეკრანის ჩაკეტვის გამართვა</string>
     <string name="settings_lockscreen_setup_title">ეკრანის ჩამკეტის სახეობის არჩევა</string>
     <string name="settings_lockscreen_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>

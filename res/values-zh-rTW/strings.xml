@@ -65,8 +65,8 @@
     <string name="settings_biometric_setup_details">您想如何鎖定畫面？</string>
     <string name="fingerprint_setup_title">指紋設定</string>
     <string name="fingerprint_setup_summary">若要使用您的指紋感應器解鎖您的螢幕，您需要︰</string>
-    <string name="biometric_setup_backup_lock_method">設定第二個解鎖方式</string>
     <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
+    <string name="biometric_setup_backup_lock_method">設定第二個解鎖方式</string>
     <string name="biometric_setup_screen_lock_setup">設定畫面鎖定</string>
     <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
     <string name="settings_lockscreen_setup_title">選擇螢幕鎖類型</string>

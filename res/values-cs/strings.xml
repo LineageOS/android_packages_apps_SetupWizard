@@ -66,8 +66,11 @@
     <string name="settings_biometric_setup_details">Jak chcete zamykat obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
     <string name="fingerprint_setup_summary">Chcete-li použít snímač otisků prstů pro odemknutí obrazovky, budete potřeba:</string>
-    <string name="biometric_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
     <string name="fingerprint_setup_add_fingerprint">Přidat otisk prstu</string>
+    <string name="face_setup_title">Nastavení obličeje</string>
+    <string name="face_setup_summary">Chcete‑li k\u00a0odemknutí obrazovky použít obličej, budete muset:</string>
+    <string name="face_setup_add_face">Přidat svůj obličej</string>
+    <string name="biometric_setup_backup_lock_method">Nastavení alternativní metody odemčení</string>
     <string name="biometric_setup_screen_lock_setup">Nastavit zámek obrazovky</string>
     <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
@@ -76,4 +79,12 @@
     <string name="lockscreen_setup_title" product="default">Chraňte svůj telefon</string>
     <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavit</string>
+    <string name="intro_restore_title">Obnovit aplikace a\u00a0data</string>
+    <string name="intro_restore_subtitle" product="tablet">Pokud máte zálohu z\u00a0vašeho posledního tabletu s\u00a0LineageOS, můžete ji obnovit zde.</string>
+    <string name="intro_restore_subtitle" product="default">Pokud máte zálohu z\u00a0vašeho posledního telefonu s\u00a0LineageOS, můžete ji obnovit zde.</string>
+    <string name="intro_restore_button">Obnovit ze zálohy</string>
+    <string name="update_recovery_title">Aktualizovat Lineage recovery</string>
+    <string name="update_recovery_description">Aktualizace Lineage recovery při prvním spuštění po každé aktualizaci</string>
+    <string name="update_recovery_warning">Oddíl recovery bude aktualizován ihned poté, co dokončíte nastavení. Vypněte tuto funkci, jestliže si přejete ponechat oddíl nezměněný.</string>
+    <string name="update_recovery_setting">Aktualizovat Lineage recovery společně s OS</string>
 </resources>

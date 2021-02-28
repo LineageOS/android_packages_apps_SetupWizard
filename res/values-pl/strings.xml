@@ -65,8 +65,8 @@
     <string name="settings_biometric_setup_details">Jak chcesz blokować swój ekran?</string>
     <string name="fingerprint_setup_title">Konfiguracja odcisków palców</string>
     <string name="fingerprint_setup_summary">Aby użyć czujnika linii papilarnych do odblokowania ekranu, musisz:</string>
-    <string name="biometric_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
     <string name="fingerprint_setup_add_fingerprint">Dodać swój odcisk palca</string>
+    <string name="biometric_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
     <string name="biometric_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
     <string name="sim_locale_changed">Wykryto %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Wybierz typ blokady ekranu</string>

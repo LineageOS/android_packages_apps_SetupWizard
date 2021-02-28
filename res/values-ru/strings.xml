@@ -66,8 +66,11 @@
     <string name="settings_biometric_setup_details">Как следует блокировать экран?</string>
     <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
     <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
-    <string name="biometric_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
     <string name="fingerprint_setup_add_fingerprint">Добавить ваши отпечатки</string>
+    <string name="face_setup_title">Разблокировка по лицу</string>
+    <string name="face_setup_summary">Чтобы использовать ваше лицо для разблокировки экрана, необходимо:</string>
+    <string name="face_setup_add_face">Добавить ваше лицо</string>
+    <string name="biometric_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
     <string name="biometric_setup_screen_lock_setup">Настроить экран блокировки</string>
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
     <string name="settings_lockscreen_setup_title">Выбрать способ блокировки экрана</string>
@@ -76,4 +79,12 @@
     <string name="lockscreen_setup_title" product="default">Защитите свой телефон</string>
     <string name="lockscreen_setup_summary"><b>Защитить это устройство</b> и запрашивать PIN-код, графический ключ или пароль для разблокировки экрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Настройка</string>
+    <string name="intro_restore_title">Восстановить приложения и данные</string>
+    <string name="intro_restore_subtitle" product="tablet">Если у вас есть резервная копия, сделанная на другом планшете с LineageOS, вы можете восстановить ее здесь.</string>
+    <string name="intro_restore_subtitle" product="default">Если у вас есть резервная копия, сделанная на другом телефоне с LineageOS, вы можете восстановить ее здесь.</string>
+    <string name="intro_restore_button">Восстановить из резервной копии</string>
+    <string name="update_recovery_title">Обновить Lineage Recovery</string>
+    <string name="update_recovery_description">Обновление Lineage Recovery при первой загрузке после каждого обновления.</string>
+    <string name="update_recovery_warning">Linage Recovery будет обновлено по завершении установки. Если вы хотите сохранить его как есть, отключите эту функцию.</string>
+    <string name="update_recovery_setting">Обновить Lineage Recovery  вместе с ОС</string>
 </resources>

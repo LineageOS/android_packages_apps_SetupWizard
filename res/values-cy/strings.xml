@@ -66,8 +66,11 @@
     <string name="settings_biometric_setup_details">Sut hoffet gloi dy sgrin?</string>
     <string name="fingerprint_setup_title">Gosod ôl bys</string>
     <string name="fingerprint_setup_summary">I ddefnyddio\'r synhwyrydd olion bysedd i ddatgloi dy sgrin, mae angen:</string>
-    <string name="biometric_setup_backup_lock_method">Gosod ail ddull o ddatgloi</string>
     <string name="fingerprint_setup_add_fingerprint">Ychwanegu ôl dy fys</string>
+    <string name="face_setup_title">Gosod wyneb</string>
+    <string name="face_setup_summary">I ddefnyddio dy wyneb i ddatgloi dy sgrin, bydd angen i ti:</string>
+    <string name="face_setup_add_face">Ychwanegu dy wyneb</string>
+    <string name="biometric_setup_backup_lock_method">Gosod ail ddull o ddatgloi</string>
     <string name="biometric_setup_screen_lock_setup">Gosod clo\'r sgrin</string>
     <string name="sim_locale_changed">Synhwyrwyd %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Dewis math o sgrin cloi</string>
@@ -76,4 +79,8 @@
     <string name="lockscreen_setup_title" product="default">Diogelu dy ffôn</string>
     <string name="lockscreen_setup_summary"><b>Diogela\'r ddyfais hon</b> gan osod PIN, patrwm, neu gyfrinair er mwyn datgloi\'r sgrin.</string>
     <string name="lockscreen_setup_screen_lock_setup">Gosod</string>
+    <string name="intro_restore_title">Adfer apiau a data</string>
+    <string name="intro_restore_subtitle" product="tablet">Os oes gennyt gopi data wrth gefn o dy lechen LineageOS diwethaf, gellir ei adfer yma.</string>
+    <string name="intro_restore_subtitle" product="default">Os oes gennyt gopi data wrth gefn o dy ffôn LineageOS diwethaf, gellir ei adfer yma.</string>
+    <string name="intro_restore_button">Adfer o gopi wrth gefn</string>
 </resources>
