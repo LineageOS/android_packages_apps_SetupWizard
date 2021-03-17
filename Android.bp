@@ -1,0 +1,32 @@
+android_app {
+    name: "LineageSetupWizard",
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
+
+    overrides: ["Provision"],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+    static_libs: [
+        "androidx.core_core",
+        "setupcompat",
+        "setupdesign",
+        "org.lineageos.platform.internal",
+    ],
+
+    libs: ["telephony-common"],
+
+    required: ["privapp_whitelist_org.lineageos.setupwizard.xml"],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_org.lineageos.setupwizard.xml",
+    src: "privapp_whitelist_org.lineageos.setupwizard.xml",
+    sub_dir: "permissions",
+}
