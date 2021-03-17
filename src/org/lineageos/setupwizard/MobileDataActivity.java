@@ -44,6 +44,8 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private static final int DC_READY_TIMEOUT = 20 * 1000;
 
+    private static boolean sFirstTime = true;
+
     private ProgressBar mProgressBar;
     private View mEnableDataRow;
     private Switch mEnableMobileData;
@@ -154,6 +156,10 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
         updateDataConnectionStatus();
         updateSignalStrength();
 
+        if (sFirstTime) {
+            sFirstTime = false;
+            SetupWizardUtils.setMobileDataEnabled(MobileDataActivity.this, false);
+        }
     }
 
 
