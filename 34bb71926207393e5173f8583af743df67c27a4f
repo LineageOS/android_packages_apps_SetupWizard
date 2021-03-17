@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "21aaba91_ca4333c7",
+        "filename": "src/org/lineageos/setupwizard/SetupWizardApp.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-03-17T22:13:08Z",
+      "side": 1,
+      "message": "this",
+      "range": {
+        "startLine": 97,
+        "startChar": 46,
+        "endLine": 97,
+        "endChar": 69
+      },
+      "revId": "34bb71926207393e5173f8583af743df67c27a4f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
