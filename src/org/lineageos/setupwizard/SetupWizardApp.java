@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- * Copyright (C) 2017-2019 The LineageOS Project
+ * Copyright (C) 2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -93,6 +93,7 @@ public class SetupWizardApp extends Application {
         NetworkMonitor.initInstance(this);
         PhoneMonitor.initInstance(this);
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
+        SetupWizardUtils.setMobileDataEnabled(this, false);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
 
