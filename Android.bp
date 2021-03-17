@@ -21,6 +21,7 @@ android_app {
 
     certificate: "platform",
     privileged: true,
+    system_ext_specific: true,
     platform_apis: true,
 
     overrides: ["Provision"],
@@ -43,6 +44,7 @@ android_app {
 
 prebuilt_etc {
     name: "privapp_whitelist_org.lineageos.setupwizard",
+    system_ext_specific: true,
     src: "privapp_whitelist_org.lineageos.setupwizard.xml",
     sub_dir: "permissions",
     filename_from_src: true,
