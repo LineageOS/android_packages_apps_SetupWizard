@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9197ed7a_3edf635b",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2021-03-18T20:53:47Z",
+      "side": 1,
+      "message": "I guess we\u0027ll need to check for unnecessary imports. Not sure how this one landed here.",
+      "range": {
+        "startLine": 20,
+        "startChar": 7,
+        "endLine": 20,
+        "endChar": 31
+      },
+      "revId": "7ec08b2ba750b15140b0068fb5d1a7bf077850e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
