@@ -83,4 +83,8 @@
     <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last LineageOS tablet, you can restore it here.</string>
     <string name="intro_restore_subtitle" product="default">If you have a backup from your last LineageOS phone, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
+    <string name="update_recovery_title">Update Lineage Recovery</string>
+    <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
+    <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
+    <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
 </resources>

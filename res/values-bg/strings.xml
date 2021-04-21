@@ -83,4 +83,8 @@
     <string name="intro_restore_subtitle" product="tablet">Ако имате резервно копие, направено на друг таблет с LineageOS, можете да го възстановите тук.</string>
     <string name="intro_restore_subtitle" product="default">Ако имате резервно копие, направено на друг телефон с LineageOS, можете да го възстановите тук.</string>
     <string name="intro_restore_button">Възстановяване от архив</string>
+    <string name="update_recovery_title">Актуализиране на Lineage Recovery</string>
+    <string name="update_recovery_description">Актуализира Lineage Recovery при първо зареждане след всяка актуализация.</string>
+    <string name="update_recovery_warning">Recovery ще се актуализира веднага щом завършите настройката. Ако искате да го запазите непокътнат, деактивирайте тази функция.</string>
+    <string name="update_recovery_setting">Актуализирайте Lineage Recovery заедно с операционната система</string>
 </resources>
