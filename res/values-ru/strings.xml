@@ -83,8 +83,8 @@
     <string name="intro_restore_subtitle" product="tablet">Если у вас есть резервная копия, сделанная на другом планшете с LineageOS, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_subtitle" product="default">Если у вас есть резервная копия, сделанная на другом телефоне с LineageOS, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_button">Восстановить из резервной копии</string>
-    <string name="update_recovery_title">Обновить Lineage Recovery</string>
-    <string name="update_recovery_description">Обновление Lineage Recovery при первой загрузке после каждого обновления.</string>
-    <string name="update_recovery_warning">Linage Recovery будет обновлено по завершении установки. Если вы хотите сохранить его как есть, отключите эту функцию.</string>
+    <string name="update_recovery_title">Обновление Lineage Recovery</string>
+    <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>
+    <string name="update_recovery_warning">Recovery будет обновлен по завершении установки. Если вы хотите оставить его без изменений, отключите эту функцию.</string>
     <string name="update_recovery_setting">Обновить Lineage Recovery  вместе с ОС</string>
 </resources>

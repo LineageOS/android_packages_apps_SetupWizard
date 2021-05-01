@@ -67,6 +67,7 @@
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
     <string name="fingerprint_setup_summary">Para usar o sensor de impressão digital para desbloquear a tela, você vai precisar de:</string>
     <string name="fingerprint_setup_add_fingerprint">Adicionar sua impressão digital</string>
+    <string name="face_setup_add_face">Adicionar o seu rosto</string>
     <string name="biometric_setup_backup_lock_method">Configurar um método de desbloqueio secundário</string>
     <string name="biometric_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
     <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
