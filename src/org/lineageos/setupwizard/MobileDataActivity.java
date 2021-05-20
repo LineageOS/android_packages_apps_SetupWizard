@@ -58,7 +58,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private boolean mIsAttached = false;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mRadioReadyRunnable = this::hideWaitForRadio;
 

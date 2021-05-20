@@ -52,7 +52,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
     private int[] mAdapterIndices;
     private LocalePicker mLanguagePicker;
     private FetchUpdateSimLocaleTask mFetchUpdateSimLocaleTask;
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
     private boolean mPendingLocaleUpdate;
     private boolean mPaused = true;
 

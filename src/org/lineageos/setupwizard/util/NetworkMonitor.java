@@ -63,7 +63,7 @@ public class NetworkMonitor {
         IntentFilter filter = new IntentFilter();
         filter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         context.registerReceiver(mBroadcastReceiver, filter);
-        new Handler().post(new Runnable() {
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
             public void run() {
                 updateNetworkStatus(mContext);
             }

@@ -70,7 +70,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     private TextView mTimeTextView;
 
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override

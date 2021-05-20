@@ -65,7 +65,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
 
     private boolean mDisabledForSwitch = false;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mRadioReadyRunnable = () -> {
         // If we timeout out waiting for the radio, Oh well.

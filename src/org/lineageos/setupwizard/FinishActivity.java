@@ -61,7 +61,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     private SetupWizardApp mSetupWizardApp;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private volatile boolean mIsFinishing = false;
 
