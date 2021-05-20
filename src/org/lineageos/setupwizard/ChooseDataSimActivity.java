@@ -21,6 +21,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
 import android.telephony.SubscriptionInfo;
@@ -65,7 +66,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
 
     private boolean mDisabledForSwitch = false;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mRadioReadyRunnable = () -> {
         // If we timeout out waiting for the radio, Oh well.

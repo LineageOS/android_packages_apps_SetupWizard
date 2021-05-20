@@ -21,6 +21,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
 import android.telephony.SubscriptionManager;
@@ -58,7 +59,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private boolean mIsAttached = false;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mRadioReadyRunnable = this::hideWaitForRadio;
 

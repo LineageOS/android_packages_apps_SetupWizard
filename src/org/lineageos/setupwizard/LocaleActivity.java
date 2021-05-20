@@ -27,6 +27,7 @@ import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
@@ -52,7 +53,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
     private int[] mAdapterIndices;
     private LocalePicker mLanguagePicker;
     private FetchUpdateSimLocaleTask mFetchUpdateSimLocaleTask;
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
     private boolean mPendingLocaleUpdate;
     private boolean mPaused = true;
 

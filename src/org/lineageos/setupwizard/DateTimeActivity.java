@@ -29,6 +29,7 @@ import android.content.IntentFilter;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.View;
@@ -70,7 +71,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     private TextView mTimeTextView;
 
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override

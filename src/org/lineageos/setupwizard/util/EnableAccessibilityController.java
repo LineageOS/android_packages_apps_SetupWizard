@@ -26,6 +26,7 @@ import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -53,7 +54,7 @@ public class EnableAccessibilityController {
     public static final int MESSAGE_SPEAK_ENABLE_CANCELED = 2;
     public static final int MESSAGE_ENABLE_ACCESSIBILITY = 3;
 
-    private final Handler mHandler = new Handler() {
+    private final Handler mHandler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message message) {
             switch (message.what) {

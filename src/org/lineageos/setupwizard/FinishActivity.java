@@ -35,6 +35,7 @@ import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.UserHandle;
 import android.os.SystemProperties;
 import android.preference.PreferenceManager;
@@ -61,7 +62,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     private SetupWizardApp mSetupWizardApp;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private volatile boolean mIsFinishing = false;
 

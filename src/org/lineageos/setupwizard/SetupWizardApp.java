@@ -21,6 +21,7 @@ package org.lineageos.setupwizard;
 import android.app.Application;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 import org.lineageos.setupwizard.util.NetworkMonitor;
@@ -81,7 +82,7 @@ public class SetupWizardApp extends Application {
     private boolean mIgnoreSimLocale = false;
 
     private final Bundle mSettingsBundle = new Bundle();
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mRadioTimeoutRunnable = () ->  mIsRadioReady = true;
 

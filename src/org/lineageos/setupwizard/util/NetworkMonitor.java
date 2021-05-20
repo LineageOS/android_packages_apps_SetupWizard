@@ -25,6 +25,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
 public class NetworkMonitor {
@@ -63,7 +64,7 @@ public class NetworkMonitor {
         IntentFilter filter = new IntentFilter();
         filter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         context.registerReceiver(mBroadcastReceiver, filter);
-        new Handler().post(new Runnable() {
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
             public void run() {
                 updateNetworkStatus(mContext);
             }
