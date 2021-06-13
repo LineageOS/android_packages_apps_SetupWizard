@@ -95,7 +95,7 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
             }
         };
         ss.setSpan(clickableSpan,
-                policySummary.length() - privacy_policy.length() - 1,
+                policySummary.indexOf(privacy_policy),
                 policySummary.length() - 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         TextView privacyPolicy = (TextView) findViewById(R.id.privacy_policy);
         privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
