@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "90341f9d_242ed409",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-06-17T14:01:54Z",
+      "side": 1,
+      "message": "i don\u0027t really like these unrelated changes, even if small",
+      "revId": "c9745d6e1b7a7c2301a8e6489250b8f4645a51cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "63033b21_5294bf8a",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-06-17T14:01:54Z",
+      "side": 1,
+      "message": "same",
+      "revId": "c9745d6e1b7a7c2301a8e6489250b8f4645a51cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
