@@ -26,6 +26,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 import android.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserManager;
 import android.util.Log;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
@@ -54,6 +55,9 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             Intent intent = new Intent(ACTION_LOAD);
             if (isPrimaryUser()) {
                 intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));
+            } else if (getSystemService(UserManager.class).isManagedProfile()) {
+                intent.putExtra(EXTRA_SCRIPT_URI, getString(
+                        R.string.lineage_wizard_script_managed_profile_uri));
             } else {
                 intent.putExtra(EXTRA_SCRIPT_URI,
                         getString(R.string.lineage_wizard_script_user_uri));

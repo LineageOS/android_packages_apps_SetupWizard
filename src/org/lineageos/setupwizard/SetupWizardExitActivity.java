@@ -24,6 +24,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 import android.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserManager;
 import android.util.Log;
 
 import org.lineageos.setupwizard.util.PhoneMonitor;
@@ -41,7 +42,9 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
         }
         SetupWizardUtils.enableCaptivePortalDetection(this);
         PhoneMonitor.onSetupFinished();
-        launchHome();
+        if (!getSystemService(UserManager.class).isManagedProfile()) {
+            launchHome();
+        }
         finish();
         applyForwardTransition(TRANSITION_ID_FADE);
         Intent i = new Intent();
