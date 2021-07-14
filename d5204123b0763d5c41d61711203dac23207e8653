@@ -16,6 +16,24 @@
       "revId": "d5204123b0763d5c41d61711203dac23207e8653",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f3b2e389_c0773002",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2021-07-14T13:13:32Z",
+      "side": 0,
+      "message": "I\u0027m assuming you mean if there legitimately is a sim missing and the device is multi-sim. In that scenario the sim missing page would show and behave as seen in the wizard script. If the skip button is pressed it would jump to location settings and if a sim is inserted instead then it would go to the choose data sim activity. I would assume the same if two or more sims are inserted",
+      "parentUuid": "da8637ba_f02bc0eb",
+      "revId": "d5204123b0763d5c41d61711203dac23207e8653",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
