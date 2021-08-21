@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,30 +15,35 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<LinearLayout
+<com.google.android.setupdesign.GlifLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/primary">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/brand_logo"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:src="@drawable/logo"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:gravity="center"
-        android:padding="@dimen/content_margin_left"/>
+        android:layout_height="match_parent">
 
-    <com.google.android.setupdesign.view.NavigationBar
-        android:id="@+id/navigation_bar"
-        style="@style/SudNavBarTheme"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/sud_navbar_height" />
+        <ImageView
+            android:id="@+id/brand_logo"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:padding="@dimen/content_margin_left"
+            style="@style/SudContentFrame" />
+          
+        <com.google.android.setupdesign.view.NavigationBar
+            android:id="@+id/navigation_bar"
+            style="@style/SudNavBarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sud_navbar_height" />
 
-</LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
