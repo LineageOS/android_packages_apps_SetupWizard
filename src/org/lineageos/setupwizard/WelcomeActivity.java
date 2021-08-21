@@ -33,7 +33,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mRootView = findViewById(R.id.root);
+        mRootView = findViewById(R.id.setup_wizard_layout);
         setNextText(R.string.next);
         setBackText(R.string.emergency_call);
         setBackDrawable(null);
