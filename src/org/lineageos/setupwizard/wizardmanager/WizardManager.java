@@ -87,7 +87,6 @@ public class WizardManager extends Activity {
     }
 
     private void addExtras(Intent intent) {
-        intent.putExtra(WizardManagerHelper.EXTRA_USE_IMMERSIVE_MODE, true);
         intent.putExtra(EXTRA_FIRST_RUN, true);
         intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_MATERIAL_LIGHT);
     }
