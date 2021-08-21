@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,51 +15,53 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/primary">
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <include layout="@layout/header_condensed" />
-
-    <FrameLayout android:id="@+id/page"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1">
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            style="@style/PageContent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/sim_missing"
-                style="@style/PageSummaryText"
-                android:textSize="15sp"
-                android:layout_marginBottom="@dimen/summary_margin_bottom"
-                android:paddingLeft="@dimen/content_margin_left"
-                android:paddingRight="@dimen/content_margin_right"
-                android:text="@string/sim_missing_summary" />
-
-            <ImageView
-                android:id="@+id/sim_slot_image"
-                android:layout_width="match_parent"
-                android:layout_height="0px"
-                android:layout_weight="1"
-                android:scaleType="fitEnd"
-                android:src="@drawable/sim"/>
-
-        </LinearLayout>
-    </FrameLayout>
-
-    <com.google.android.setupdesign.view.NavigationBar
-        android:id="@+id/navigation_bar"
-        style="@style/SudNavBarTheme"
+    <LinearLayout 
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/sud_navbar_height" />
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <FrameLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/SudContentFrame">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sim_missing"
+                    android:text="@string/sim_missing_summary"
+                    style="@style/SudItemTitle.GlifDescription" />
+
+                <ImageView
+                    android:id="@+id/sim_slot_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/sim"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.google.android.setupdesign.view.NavigationBar
+            android:id="@+id/navigation_bar"
+            style="@style/SudNavBarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sud_navbar_height" />
+
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

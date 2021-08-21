@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -32,4 +32,8 @@
     <color name="header_condensed_bg">@color/primary</color>
     <color name="button_bar_background">@color/primary</color>
     <color name="biometric_setup_text_color">#167C80</color>
+
+    <!-- Partner customization -->
+    <color name="sud_glif_background_color_light">@color/white</color>
+    <color name="sud_color_accent_glif_v3_light">@color/accent</color>
 </resources>
