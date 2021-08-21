@@ -83,4 +83,8 @@
     <string name="intro_restore_subtitle" product="tablet">Se tes unha copia de seguranza da túa última tableta con LineageOS, podes restaurala aquí.</string>
     <string name="intro_restore_subtitle" product="default">Se tes unha copia de seguranza do teu último teléfono con LineageOS, podes restaurala aquí.</string>
     <string name="intro_restore_button">Restaurar dende a copia de seguranza</string>
+    <string name="update_recovery_title">Actualizar Recuperador de Lineage</string>
+    <string name="update_recovery_description">Actualiza o Recuperador do Lineage no primeiro arranque despois de cada actualización.</string>
+    <string name="update_recovery_warning">O Recuperador actualizarase axiña que remates a configuración. Se desexas mantelo intacto, desactiva esta función.</string>
+    <string name="update_recovery_setting">Actualizar o Recuperador de Lineage xunto co sistema operativo</string>
 </resources>

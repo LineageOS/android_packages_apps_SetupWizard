@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2015 The CyanogenMod Project
+     Copyright (C) 2017-2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="next">পরবর্তী</string>
+    <string name="start">শুরু</string>
+    <string name="done">সম্পন্ন</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="setup_complete">সেটাপ সম্পন্ন</string>
+    <string name="setup_welcome">স্বাগতম</string>
+    <string name="setup_locale">ভাষা</string>
+    <string name="setup_wifi">Wi-Fi নির্বাচন করুন</string>
+    <string name="setup_sim_missing">সিম কার্ড অনুপস্থিত</string>
+    <string name="setup_location">অবস্থান পরিষেবা</string>
+    <string name="setup_other">অন্যান্য পরিষেবা</string>
+    <string name="setup_datetime">তারিখ &amp; সময়</string>
+    <string name="setup_current_date">বর্তমান তারিখ</string>
+    <string name="setup_current_time">বর্তমান সময়</string>
+    <string name="no">না</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="data_sim_name">সিম <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="lockscreen_setup_screen_lock_setup">সেট আপ করুন</string>
+    <string name="update_recovery_warning">সেটআপটি সম্পন্ন করার সাথে সাথে রিকভারি আপডেট হয়ে যাবে। আপনি যদি রিকভারি আপডেট করতে না চান, এই ফিচারটি অক্ষম করুন।</string>
+</resources>

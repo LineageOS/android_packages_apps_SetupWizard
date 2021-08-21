@@ -52,15 +52,15 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Notruf</string>
     <string name="setup_services">LineageOS-Funktionen</string>
-    <string name="services_explanation" product="tablet">Diese Dienste werden verwendet, um die Funktionen Ihres Tablets zu erweitern. Ihre Daten werden in Übereinstimmung mit der <xliff:g id="name" example="Datenschutzerklärung">%s</xliff:g> von LineageOS verwendet.</string>
-    <string name="services_explanation" product="default">Diese Dienste werden verwendet, um die Funktionen Ihres Telefons zu erweitern. Ihre Daten werden in Übereinstimmung mit der <xliff:g id="name" example="Datenschutzerklärung">%s</xliff:g> von LineageOS verwendet.</string>
+    <string name="services_explanation" product="tablet">Diese Dienste werden verwendet, um die Funktionen deines Tablets zu erweitern. Deine Daten werden in Übereinstimmung mit der <xliff:g id="name" example="Datenschutzerklärung">%s</xliff:g> von LineageOS verwendet.</string>
+    <string name="services_explanation" product="default">Diese Dienste werden verwendet, um die Funktionen deines Telefons zu erweitern. Deine Daten werden in Übereinstimmung mit der <xliff:g id="name" example="Datenschutzerklärung">%s</xliff:g> von LineageOS verwendet.</string>
     <string name="services_privacy_policy">Datenschutzerklärung</string>
     <string name="services_help_improve_cm">Hilf <xliff:g id="name" example="LineageOS">%s</xliff:g> zu verbessern</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Hilf LineageOS zu verbessern">%1$s</xliff:g>, indem du automatisch Diagnose- und Nutzungsdaten an LineageOS sendest. Diese Informationen können nicht dazu verwendet werden, dich zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
     <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
     <string name="setup_unlock">Entsperren</string>
     <string name="setup_device_locked">Dieses Gerät wurde vom Benutzer gesperrt.</string>
-    <string name="setup_require_cyanogen_label"><b>Ihr Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
+    <string name="setup_require_cyanogen_label"><b>Dein Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
     <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit.</i></string>
     <string name="settings_biometric_setup_title">Wählen Sie den Typ der Ersatz-Bildschirmsperre.</string>
     <string name="settings_biometric_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>

@@ -83,4 +83,5 @@
     <string name="intro_restore_subtitle" product="tablet">Os oes gennyt gopi data wrth gefn o dy lechen LineageOS diwethaf, gellir ei adfer yma.</string>
     <string name="intro_restore_subtitle" product="default">Os oes gennyt gopi data wrth gefn o dy ffôn LineageOS diwethaf, gellir ei adfer yma.</string>
     <string name="intro_restore_button">Adfer o gopi wrth gefn</string>
+    <string name="update_recovery_title">Diweddaru Modd Adfer Lineage </string>
 </resources>

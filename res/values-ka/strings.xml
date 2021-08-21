@@ -47,4 +47,8 @@
     <string name="settings_lockscreen_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
     <string name="lockscreen_setup_title" product="default">დაიცავით თქვენი ტელეფონი</string>
     <string name="lockscreen_setup_summary"><b>დაიცავით მოწყობილობა</b> და ჩართეთ PIN-კოდის, მონახაზის ან პაროლის შეყვანის მოთხოვნა, ჩაკეტილი ეკრანის გასახსნელად</string>
+    <string name="update_recovery_title">Lineage-აღმდგენის განახლება</string>
+    <string name="update_recovery_description">განაახლებს Lineage-აღმდგენს პირველი ჩატვირთვისას, ყოველი განახლების შემდგომ.</string>
+    <string name="update_recovery_warning">აღმდგენი განახლდება გამართვის დასრულებისთანავე. თუ გსურთ, ხელუხლებელი დარჩეს, გათიშეთ ეს შესაძლებლობა.</string>
+    <string name="update_recovery_setting">განახლდეს Lineage-აღმდგენი სისტემასთან ერთად</string>
 </resources>
