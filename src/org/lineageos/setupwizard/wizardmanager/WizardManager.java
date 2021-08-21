@@ -87,7 +87,7 @@ public class WizardManager extends Activity {
 
     private void addExtras(Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, true);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_MATERIAL_LIGHT);
+        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V3);
     }
 
     private void doAction(String scriptUri, WizardAction action, Intent extras) {
