@@ -14,12 +14,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/setup_wizard_layout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+<LinearLayout
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
-    <include layout="@layout/header_condensed" />
 
     <FrameLayout android:id="@+id/page"
                  android:layout_width="match_parent"
@@ -55,3 +59,4 @@
         </LinearLayout>
     </FrameLayout>
 </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
