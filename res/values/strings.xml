@@ -25,6 +25,7 @@
     <string name="activity_label_empty" />
 
     <string name="next">Next</string>
+    <string name="back">Back</string>
     <string name="skip">Skip</string>
     <string name="start">Start</string>
     <string name="done">Done</string>
