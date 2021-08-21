@@ -28,8 +28,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/primary">
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/brand_logo"
@@ -40,7 +39,8 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
-            android:padding="@dimen/content_margin_left"/>
+            android:padding="@dimen/content_margin_left"
+            style="@style/SudContentFrame"/>
 
         <com.google.android.setupdesign.view.NavigationBar
             android:id="@+id/navigation_bar"
@@ -50,10 +50,11 @@
 
     </LinearLayout>
 
-    <ImageView android:id="@+id/reveal"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:background="@drawable/reveal"
-               android:visibility="invisible"/>
+    <ImageView 
+        android:id="@+id/reveal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/reveal"
+        android:visibility="invisible"/>
 
 </org.lineageos.setupwizard.widget.ScrimInsetsFrameLayout>
