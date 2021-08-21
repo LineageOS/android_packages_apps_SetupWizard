@@ -15,60 +15,63 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/primary">
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <include layout="@layout/header_condensed" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <FrameLayout android:id="@+id/page"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1">
+        <FrameLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-        <ScrollView android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fillViewport="true">
-
-            <LinearLayout
-                android:id="@+id/page_view"
-                android:orientation="vertical"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/PageContent"
-                android:visibility="gone">
+                android:layout_height="match_parent"
+                android:fillViewport="true">
 
-                <TextView
+                <LinearLayout
+                    android:id="@+id/page_view"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/PageSummaryText"
-                    android:textSize="15sp"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:paddingRight="@dimen/content_margin_right"
-                    android:paddingBottom="@dimen/summary_margin_bottom"
-                    android:text="@string/choose_data_sim_summary" />
+                    style="@style/SudContentFrame"
+                    android:visibility="gone">
 
-                <include layout="@layout/divider" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/SudDescription.Glif"
+                        android:text="@string/choose_data_sim_summary" />
 
-            </LinearLayout>
-        </ScrollView>
+                    <include layout="@layout/divider" />
 
-        <ProgressBar
-            android:id="@+id/progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:indeterminateOnly="true"
+                </LinearLayout>
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminateOnly="true"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_gravity="top"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.google.android.setupdesign.view.NavigationBar
+            android:id="@+id/navigation_bar"
+            style="@style/SudNavBarTheme"
             android:layout_width="match_parent"
-            android:layout_height="8dp"
-            android:layout_gravity="top"
-            android:visibility="gone"/>
-    </FrameLayout>
+            android:layout_height="@dimen/sud_navbar_height" />
 
-    <com.google.android.setupdesign.view.NavigationBar
-        android:id="@+id/navigation_bar"
-        style="@style/SudNavBarTheme"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/sud_navbar_height" />
-
-</LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
