@@ -15,30 +15,37 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<com.google.android.setupdesign.GlifLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/setup_wizard_layout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/primary">
+     <LinearLayout
+          android:id="@+id/root"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          style="@style/SudContentFrame">
 
-    <ImageView
-        android:id="@+id/brand_logo"
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:src="@drawable/logo"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:gravity="center"
-        android:padding="@dimen/content_margin_left"/>
+          <ImageView
+               android:id="@+id/brand_logo"
+               android:layout_width="match_parent"
+               android:layout_height="0px"
+               android:layout_weight="1"
+               android:src="@drawable/logo"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               android:gravity="center"
+               android:padding="@dimen/content_margin_left"/>
 
-    <com.google.android.setupdesign.view.NavigationBar
-        android:id="@+id/navigation_bar"
-        style="@style/SudNavBarTheme"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/sud_navbar_height" />
+     </LinearLayout>
+     
+     <com.google.android.setupdesign.view.NavigationBar
+          android:id="@+id/navigation_bar"
+          style="@style/SudNavBarTheme"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/sud_navbar_height" />
 
-</LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
