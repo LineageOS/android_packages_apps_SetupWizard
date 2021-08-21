@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "983b3a48_542fc23c",
+        "filename": "src/org/lineageos/setupwizard/BaseSetupWizardActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-21T07:15:43Z",
+      "side": 1,
+      "message": "forgot to adjust copyright",
+      "revId": "3badb2dc61f5f622abc357491653dd609afd709e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "26e66a6a_c80fc0f0",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-21T07:15:43Z",
+      "side": 1,
+      "message": "unused import?",
+      "revId": "3badb2dc61f5f622abc357491653dd609afd709e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e832a909_6ca8bae6",
+        "filename": "src/org/lineageos/setupwizard/SetupWizardExitActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-21T07:15:43Z",
+      "side": 1,
+      "message": "Copyright",
+      "revId": "3badb2dc61f5f622abc357491653dd609afd709e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cbfdb166_ba4a8608",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-21T07:15:43Z",
+      "side": 1,
+      "message": "Copyright",
+      "revId": "3badb2dc61f5f622abc357491653dd609afd709e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57d81994_9d9c26b8",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-08-21T07:15:43Z",
+      "side": 1,
+      "message": "sStatusbarManager would be correct for a static variable",
+      "revId": "3badb2dc61f5f622abc357491653dd609afd709e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
