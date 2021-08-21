@@ -14,12 +14,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/setup_wizard_layout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+<LinearLayout
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
-    <include layout="@layout/header_condensed" />
 
     <FrameLayout android:id="@+id/page"
                  android:layout_width="match_parent"
@@ -37,12 +41,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/sim_missing"
-                style="@style/PageSummaryText"
-                android:textSize="15sp"
-                android:layout_marginBottom="@dimen/summary_margin_bottom"
-                android:paddingLeft="@dimen/content_margin_left"
-                android:paddingRight="@dimen/content_margin_right"
-                android:text="@string/sim_missing_summary" />
+                android:text="@string/sim_missing_summary"
+                style="@style/SudItemTitle.GlifDescription" />
 
             <ImageView
                 android:id="@+id/sim_slot_image"
@@ -55,3 +55,4 @@
         </LinearLayout>
     </FrameLayout>
 </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
