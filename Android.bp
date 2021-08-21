@@ -32,6 +32,7 @@ android_app {
 
     static_libs: [
         "androidx.core_core",
+        "SettingsLib",
         "setupcompat",
         "setupdesign",
         "org.lineageos.platform.internal",

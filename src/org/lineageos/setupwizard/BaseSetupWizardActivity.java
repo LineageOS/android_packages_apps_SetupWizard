@@ -48,6 +48,7 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -57,6 +58,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.settingslib.Utils;
+
+import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.view.NavigationBar;
 import com.google.android.setupdesign.view.NavigationBar.NavigationBarListener;
 import com.google.android.setupcompat.util.SystemBarHelper;
@@ -709,14 +713,19 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             setContentView(getLayoutResId());
         }
         if (getTitleResId() != -1) {
-            TextView title = (TextView) findViewById(android.R.id.title);
-            title.setText(getTitleResId());
+            final CharSequence headerText = TextUtils.expandTemplate(getText(getTitleResId()));
+            getGlifLayout().setHeaderText(headerText);
         }
         if (getIconResId() != -1) {
-            ImageView icon = (ImageView) findViewById(R.id.header_icon);
-            icon.setImageResource(getIconResId());
-            icon.setVisibility(View.VISIBLE);
+            final GlifLayout layout = getGlifLayout();
+            final Drawable icon = getDrawable(getIconResId()).mutate();
+            icon.setTintList(Utils.getColorAccent(layout.getContext()));
+            layout.setIcon(icon);
         }
+    }
+
+    protected GlifLayout getGlifLayout() {
+        return requireViewById(R.id.setup_wizard_layout);
     }
 
     protected int getLayoutResId() {
