@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2020 The LineageOS Project
+ * Copyright (C) 2017-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,6 @@ import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_FIRST_RUN;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_HAS_MULTIPLE_USERS;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_USE_IMMERSIVE;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
@@ -48,6 +47,7 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -57,6 +57,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.settingslib.Utils;
+
+import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.view.NavigationBar;
 import com.google.android.setupdesign.view.NavigationBar.NavigationBarListener;
 import com.google.android.setupcompat.util.SystemBarHelper;
@@ -364,7 +367,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected void onSetupStart() {
         SetupWizardUtils.disableCaptivePortalDetection(getApplicationContext());
         SetupWizardUtils.disableStatusBar(getApplicationContext());
-        SystemBarHelper.hideSystemBars(getWindow());
         tryEnablingWifi();
     }
 
@@ -563,7 +565,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
         intent.putExtra(EXTRA_FIRST_RUN, isFirstRun());
         intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
-        intent.putExtra(EXTRA_USE_IMMERSIVE, true);
         startActivity(intent);
     }
 
@@ -573,7 +574,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
         intent.putExtra(EXTRA_FIRST_RUN, isFirstRun());
         intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
-        intent.putExtra(EXTRA_USE_IMMERSIVE, true);
         startActivityForResult(intent, requestCode);
     }
 
@@ -709,14 +709,19 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             setContentView(getLayoutResId());
         }
         if (getTitleResId() != -1) {
-            TextView title = (TextView) findViewById(android.R.id.title);
-            title.setText(getTitleResId());
+            final CharSequence headerText = TextUtils.expandTemplate(getText(getTitleResId()));
+            getGlifLayout().setHeaderText(headerText);
         }
         if (getIconResId() != -1) {
-            ImageView icon = (ImageView) findViewById(R.id.header_icon);
-            icon.setImageResource(getIconResId());
-            icon.setVisibility(View.VISIBLE);
+            final GlifLayout layout = getGlifLayout();
+            final Drawable icon = getDrawable(getIconResId()).mutate();
+            icon.setTintList(Utils.getColorAccent(layout.getContext()));
+            layout.setIcon(icon);
         }
+    }
+
+    protected GlifLayout getGlifLayout() {
+        return requireViewById(R.id.setup_wizard_layout);
     }
 
     protected int getLayoutResId() {
