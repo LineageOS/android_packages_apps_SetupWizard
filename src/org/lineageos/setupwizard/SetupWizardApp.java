@@ -52,7 +52,7 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_USE_IMMERSIVE = "useImmersiveMode";
     public static final String EXTRA_HAS_MULTIPLE_USERS = "hasMultipleUsers";
     public static final String EXTRA_THEME = "theme";
-    public static final String EXTRA_MATERIAL_LIGHT = "material_light";
+    public static final String EXTRA_MATERIAL_LIGHT = "glif_v3";
     public static final String EXTRA_TITLE = "title";
     public static final String EXTRA_DETAILS = "details";
     public static final String EXTRA_SCRIPT_URI = "scriptUri";
