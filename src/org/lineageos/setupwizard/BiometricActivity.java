@@ -79,7 +79,7 @@ public class BiometricActivity extends SubBaseActivity {
 
     private void launchBiometricSetup() {
         Intent intent = new Intent(ACTION_SETUP_BIOMETRIC);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_MATERIAL_LIGHT);
+        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V3_LIGHT);
         intent.putExtra(EXTRA_TITLE,
                 getString(getTitleResId()));
         intent.putExtra(EXTRA_DETAILS,
