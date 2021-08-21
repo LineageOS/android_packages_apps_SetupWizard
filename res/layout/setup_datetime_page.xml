@@ -15,107 +15,111 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/primary">
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <include layout="@layout/header_condensed" />
-
-    <FrameLayout android:id="@+id/page"
-                 android:layout_width="match_parent"
-                 android:layout_height="0dp"
-                 android:layout_weight="1">
-
-        <ScrollView android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fillViewport="true">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/PageContent">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/PageSummaryText"
-                    android:textSize="16sp"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:layout_marginBottom="@dimen/summary_margin_bottom"
-                    android:paddingRight="@dimen/location_text_margin_right"
-                    android:text="@string/date_time_summary" />
-
-                <Spinner
-                    android:id="@+id/timezone_list"
-                    android:layout_width="290dp"
-                    android:layout_height="wrap_content"
-                    android:saveEnabled="false"/>
-
-                <TwoLineListItem
-                    android:id="@+id/date_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    android:mode="twoLine"
-                    android:clickable="true"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:id="@+id/date_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/setup_current_date"
-                        style="@style/SpinnerItem" />
-
-                    <TextView
-                        android:id="@+id/date_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/date_title"
-                        android:layout_alignStart="@id/date_title"
-                        android:fontFamily="sans-serif-medium"
-                        style="@style/SpinnerItem" />
-                </TwoLineListItem>
-
-                <TwoLineListItem
-                    android:id="@+id/time_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:minHeight="?android:attr/listPreferredItemHeight"
-                    android:mode="twoLine"
-                    android:clickable="true"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:id="@+id/time_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/setup_current_time"
-                        style="@style/SpinnerItem" />
-
-                    <TextView
-                        android:id="@+id/time_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/time_title"
-                        android:layout_alignStart="@id/time_title"
-                        android:fontFamily="sans-serif-medium"
-                        style="@style/SpinnerItem" />
-                </TwoLineListItem>
-
-            </LinearLayout>
-        </ScrollView>
-    </FrameLayout>
-
-    <com.google.android.setupdesign.view.NavigationBar
-        android:id="@+id/navigation_bar"
-        style="@style/SudNavBarTheme"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/sud_navbar_height" />
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <FrameLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ScrollView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SudContentFrame">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date_time_summary"
+                        style="@style/SudItemTitle.GlifDescription" />
+
+                    <Spinner
+                        android:id="@+id/timezone_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:saveEnabled="false"/>
+
+                    <TwoLineListItem
+                        android:id="@+id/date_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:mode="twoLine"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/date_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_current_date"
+                            style="@style/SpinnerItem" />
+
+                        <TextView
+                            android:id="@+id/date_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/date_title"
+                            android:layout_alignStart="@id/date_title"
+                            android:fontFamily="sans-serif-medium"
+                            style="@style/SpinnerItem" />
+                    </TwoLineListItem>
+
+                    <TwoLineListItem
+                        android:id="@+id/time_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:mode="twoLine"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/time_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setup_current_time"
+                            style="@style/SpinnerItem" />
+
+                        <TextView
+                            android:id="@+id/time_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time_title"
+                            android:layout_alignStart="@id/time_title"
+                            android:fontFamily="sans-serif-medium"
+                            style="@style/SpinnerItem" />
+                    </TwoLineListItem>
+
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <com.google.android.setupdesign.view.NavigationBar
+            android:id="@+id/navigation_bar"
+            style="@style/SudNavBarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sud_navbar_height" />
+
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

@@ -15,37 +15,42 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/primary">
+<com.google.android.setupdesign.GlifLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/setup_wizard_layout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
 
-    <include layout="@layout/header_condensed" />
+     <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
 
-    <RelativeLayout android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:paddingLeft="@dimen/content_margin_left"
-                    android:paddingRight="@dimen/content_margin_left">
+          <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               style="@style/SudContentFrame">
 
-        <org.lineageos.setupwizard.widget.LocalePicker
-            android:id="@+id/locale_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"/>
+               <org.lineageos.setupwizard.widget.LocalePicker
+                    android:id="@+id/locale_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    style="@style/LocaleWidget.Material.LocalePicker" />
 
-    </RelativeLayout>
-
-    <com.google.android.setupdesign.view.NavigationBar
-        android:id="@+id/navigation_bar"
-        style="@style/SudNavBarTheme"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/sud_navbar_height" />
-
-</LinearLayout>
+          </RelativeLayout>
+     
+          <com.google.android.setupdesign.view.NavigationBar
+               android:id="@+id/navigation_bar"
+               style="@style/SudNavBarTheme"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/sud_navbar_height" />
+               
+     </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

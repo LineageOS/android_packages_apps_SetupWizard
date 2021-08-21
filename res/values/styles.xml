@@ -28,6 +28,7 @@
         <item name="android:windowAnimationStyle">@style/ActivityAnimations</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="localePickerStyle">@style/LocaleWidget.Material.LocalePicker</item>
+        <item name="android:colorBackground">#FFFFFF</item>
     </style>
 
     <style name="ActivityAnimations" parent="@android:style/Animation.Activity">
