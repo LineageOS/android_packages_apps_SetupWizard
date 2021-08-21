@@ -40,9 +40,6 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         setNextText(R.string.next);
 
-        TextView summaryView = (TextView) findViewById(android.R.id.summary);
-        summaryView.setText(R.string.location_services_summary);
-
         mLocationAccess = (CheckBox) findViewById(R.id.location_checkbox);
         mLocationManager = getSystemService(LocationManager.class);
         View locationAccessView = findViewById(R.id.location);

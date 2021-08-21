@@ -41,7 +41,6 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
         if (!mPhoneMonitor.simMissing()) {
             finishAction(RESULT_OK);
         }
-        setNextText(R.string.skip);
         final int simLocation = getResources().getInteger(
                 R.integer.sim_image_type);
         ImageView simLogo = ((ImageView)findViewById(R.id.sim_slot_image));

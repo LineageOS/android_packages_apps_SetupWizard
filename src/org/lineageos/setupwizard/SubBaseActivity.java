@@ -50,7 +50,6 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             Log.d(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
         super.onCreate(savedInstanceState);
-        setNextText(R.string.skip);
         setNextAllowed(false);
         if (savedInstanceState == null) {
             onStartSubactivity();
