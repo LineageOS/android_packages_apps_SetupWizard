@@ -25,7 +25,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/SudContentFrame">
 
         <FrameLayout android:id="@+id/page"
             android:layout_width="match_parent"
@@ -40,8 +41,7 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/SudContentFrame">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/setup_biometric_summary"
@@ -75,22 +75,15 @@
                         android:textSize="16sp"
                         android:textStyle="bold"/>
 
-                    <Button
-                        android:id="@+id/setup_biometric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/biometric_setup_screen_lock_setup"
-                        style="@style/SudGlifButton.Primary" />
-
                 </LinearLayout>
             </ScrollView>
         </FrameLayout>
 
-        <com.google.android.setupdesign.view.NavigationBar
+        <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+            android:layout_height="wrap_content"
+            app:showSkipButton="true" />
 
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>

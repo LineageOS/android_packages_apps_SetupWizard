@@ -51,9 +51,13 @@ public class BiometricActivity extends SubBaseActivity {
     }
 
     @Override
+    protected void onNextPressed() {
+        launchBiometricSetup();
+    }
+
+    @Override
     protected void onStartSubactivity() {
         setNextAllowed(true);
-        findViewById(R.id.setup_biometric).setOnClickListener(view -> launchBiometricSetup());
     }
 
     @Override
