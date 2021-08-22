@@ -25,14 +25,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        style="@style/SudContentFrame">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            style="@style/SudContentFrame">
+            android:gravity="center">
 
             <org.lineageos.setupwizard.widget.LocalePicker
                 android:id="@+id/locale_list"
@@ -46,11 +46,13 @@
 
         </RelativeLayout>
     
-        <com.google.android.setupdesign.view.NavigationBar
-            android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/next"
+            style="@style/SudGlifButton.Primary" />
             
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
