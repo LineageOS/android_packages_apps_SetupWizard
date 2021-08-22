@@ -25,7 +25,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/SudContentFrame">
 
         <FrameLayout android:id="@+id/page"
             android:layout_width="match_parent"
@@ -39,8 +40,7 @@
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    style="@style/SudContentFrame">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -48,23 +48,15 @@
                         android:text="@string/intro_restore_subtitle"
                         style="@style/SudItemTitle.GlifDescription" />
 
-                    <Button
-                        android:id="@+id/intro_restore_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
-                        android:text="@string/intro_restore_button"
-                        style="@style/SudGlifButton.Primary" />
-
                 </LinearLayout>
             </ScrollView>
         </FrameLayout>
 
-        <com.google.android.setupdesign.view.NavigationBar
+        <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+            android:layout_height="wrap_content"
+            showSkipButton="true" />
 
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
