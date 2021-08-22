@@ -34,9 +34,9 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mRootView = findViewById(R.id.setup_wizard_layout);
+        ((NavigationLayout) findViewById(R.id.navigation_bar)).enableSkipButton();
         setNextText(R.string.next);
-        setBackText(R.string.emergency_call);
-        setBackDrawable(null);
+        setSkipText(R.string.emergency_call);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
         mRootView.setOnTouchListener((v, event) ->
@@ -46,6 +46,11 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
 
     @Override
     public void onBackPressed() {}
+
+    @Override
+    public void onSkip() {
+        startEmergencyDialer();
+    }
 
     @Override
     public void onNavigateBack() {

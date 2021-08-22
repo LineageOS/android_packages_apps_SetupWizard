@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2019-2020 The Calyx Institute
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.SubBaseActivity;
+import org.lineageos.setupwizard.NavigationLayout;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
@@ -34,11 +35,16 @@ public class RestoreIntroActivity extends SubBaseActivity {
     protected void onStartSubactivity() {
         setNextAllowed(true);
 
-        findViewById(R.id.intro_restore_button).setOnClickListener(v -> launchRestore());
+        ((NavigationLayout) findViewById(R.id.navigation_bar)).enableSkipButton();
     }
 
     @Override
     protected void onNextPressed() {
+        launchRestore();
+    }
+
+    @Override
+    protected void onSkipPressed() {
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
         nextAction(NEXT_REQUEST, intent);
     }

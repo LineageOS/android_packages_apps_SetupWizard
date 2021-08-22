@@ -26,12 +26,24 @@ import android.app.KeyguardManager;
 import android.content.Intent;
 import android.util.Log;
 import android.view.View;
+import android.os.Bundle;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class ScreenLockActivity extends SubBaseActivity {
 
     public static final String TAG = ScreenLockActivity.class.getSimpleName();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ((NavigationLayout) findViewById(R.id.navigation_bar)).enableSkipButton();
+    }
+
+    @Override
+    protected void onNextPressed() {
+        launchLockscreenSetup();
+    }
 
     @Override
     protected void onStartSubactivity() {
@@ -43,12 +55,6 @@ public class ScreenLockActivity extends SubBaseActivity {
             return;
         }
         setNextAllowed(true);
-        findViewById(R.id.setup_lockscreen).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                launchLockscreenSetup();
-            }
-        });
     }
 
     @Override
