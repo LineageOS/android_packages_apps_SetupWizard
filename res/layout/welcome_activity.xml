@@ -25,7 +25,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/SudContentFrame">
 
         <ImageView
             android:id="@+id/brand_logo"
@@ -36,14 +37,15 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
-            android:padding="@dimen/content_margin_left"
-            style="@style/SudContentFrame" />
+            android:padding="@dimen/content_margin_left" />
           
-        <com.google.android.setupdesign.view.NavigationBar
-            android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/next"
+            style="@style/SudGlifButton.Primary" />
 
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>

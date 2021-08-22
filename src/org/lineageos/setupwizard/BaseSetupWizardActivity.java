@@ -70,8 +70,8 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 
-public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener,
-        ViewTreeObserver.OnPreDrawListener {
+public abstract class BaseSetupWizardActivity extends Activity
+        implements View.OnClickListener, ViewTreeObserver.OnPreDrawListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
 
@@ -87,11 +87,8 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int BIOMETRIC_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
 
-    private static final int IMMERSIVE_FLAGS =
-            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-    private int mSystemUiFlags = IMMERSIVE_FLAGS | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
-
-    private NavigationBar mNavigationBar;
+    private Button mNextButton;
+    private View mDecorView;
 
     protected boolean mIsActivityVisible = false;
     protected boolean mIsExiting = false;
@@ -105,10 +102,11 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         public void onReceive(Context context, Intent intent) {
             if (ACTION_SETUP_COMPLETE.equals(intent.getAction())) {
                 if (BaseSetupWizardActivity.this instanceof FinishActivity) return;
-                if (mNavigationBar != null) {
+//TODO
+      /*          if (mDecorView != null) {
                     // hide the activity's view, so it does not pop up again
-                    mNavigationBar.getRootView().setVisibility(INVISIBLE);
-                }
+                    mDecorView.getRootView().setVisibility(INVISIBLE);
+                }*/
             }
         }
     };
@@ -122,19 +120,10 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         registerReceiver(finishReceiver, new IntentFilter(ACTION_SETUP_COMPLETE));
         mIsPrimaryUser = UserHandle.myUserId() == 0;
         initLayout();
-        mNavigationBar = getNavigationBar();
-        if (mNavigationBar != null) {
-            mNavigationBar.setNavigationBarListener(this);
-            mNavigationBar.addOnLayoutChangeListener((View view,
-                    int left, int top, int right, int bottom,
-                    int oldLeft, int oldTop, int oldRight, int oldBottom) -> {
-                view.requestApplyInsets();
-            });
-            mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
-            // Set the UI flags before draw because the visibility might change in unexpected /
-            // undetectable times, like transitioning from a finishing activity that had a keyboard
-            ViewTreeObserver viewTreeObserver = mNavigationBar.getViewTreeObserver();
-            viewTreeObserver.addOnPreDrawListener(this);
+        mDecorView = getWindow().getDecorView();
+        mNextButton = findViewById(R.id.next);
+        if (mNextButton != null) {
+            mNextButton.setOnClickListener(this);
         }
     }
 
@@ -233,8 +222,17 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     public boolean onPreDraw() {
         // View.setSystemUiVisibility checks if the visibility changes before applying them
         // so the performance impact is contained
-        mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+//        mDecorView.setSystemUiVisibility(mSystemUiFlags);
         return true;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.next:
+                onNavigateNext();
+                break;
+        }
     }
 
     /**
@@ -250,12 +248,12 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
      * Sets whether system navigation bar should be hidden.
      * @param useImmersiveMode True to activate immersive mode and hide the system navigation bar
      */
-    public void setUseImmersiveMode(boolean useImmersiveMode) {
+/*    public void setUseImmersiveMode(boolean useImmersiveMode) {
         // By default, enable layoutHideNavigation if immersive mode is used
         setUseImmersiveMode(useImmersiveMode, useImmersiveMode);
-    }
+    }*/
 
-    public void setUseImmersiveMode(boolean useImmersiveMode, boolean layoutHideNavigation) {
+/*    public void setUseImmersiveMode(boolean useImmersiveMode, boolean layoutHideNavigation) {
         if (useImmersiveMode) {
             mSystemUiFlags |= IMMERSIVE_FLAGS;
             if (layoutHideNavigation) {
@@ -264,49 +262,51 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         } else {
             mSystemUiFlags &= ~(IMMERSIVE_FLAGS | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
         }
-        if (mNavigationBar != null) {
-            mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+        if (mDecorView != null) {
+            mDecorView.setSystemUiVisibility(mSystemUiFlags);
         }
-    }
+    }*/
 
     protected void setBackDrawable(Drawable drawable) {
-        if (mNavigationBar != null) {
+     /*   if (mNavigationBar != null) {
             mNavigationBar.getBackButton().setCompoundDrawables(drawable, null, null, null);
-        }
+        }*/
     }
 
     protected void setNextDrawable(Drawable drawable) {
-        if (mNavigationBar != null) {
+/*        if (mNavigationBar != null) {
             mNavigationBar.getBackButton().setCompoundDrawables(null, null, drawable, null);
-        }
+        }*/
     }
 
     public void setBackAllowed(boolean allowed) {
-        SystemBarHelper.setBackButtonVisible(getWindow(), allowed);
-        if (mNavigationBar != null) {
-            Button backButton = mNavigationBar.getBackButton();
+/*        SystemBarHelper.setBackButtonVisible(getWindow(), allowed);
+        if (mDecorView != null) {
+            Button backButton = mDecorView.getBackButton();
             backButton.setEnabled(allowed);
-        }
+        }*/
     }
 
     protected boolean isBackAllowed() {
-        if (mNavigationBar != null) {
-            mNavigationBar.getBackButton().isEnabled();
+/*        if (mDecorView != null) {
+            mDecorView.getBackButton().isEnabled();
         }
-        return false;
+        return false;*/
+        return true;
     }
 
     public void setNextAllowed(boolean allowed) {
-        if (mNavigationBar != null) {
-            mNavigationBar.getNextButton().setEnabled(allowed);
-        }
+/*        if (mDecorView != null) {
+            mDecorView.getNextButton().setEnabled(allowed);
+        }*/
     }
 
     protected boolean isNextAllowed() {
-        if (mNavigationBar != null) {
-            mNavigationBar.getNextButton().isEnabled();
+     /*   if (mDecorView != null) {
+            mDecorView.getNextButton().isEnabled();
         }
-        return false;
+        return false;*/
+        return true;
     }
 
     protected void onNextPressed() {
@@ -314,23 +314,22 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     }
 
     protected void setNextText(int resId) {
-        if (mNavigationBar != null) {
-            mNavigationBar.getNextButton().setText(resId);
+        if (mNextButton != null) {
+            mNextButton.setText(resId);
         }
     }
 
     protected void setBackText(int resId) {
-        if (mNavigationBar != null) {
+/*        if (mNavigationBar != null) {
             mNavigationBar.getBackButton().setText(resId);
-        }
+        }*/
     }
 
     protected void hideNextButton() {
-        if (mNavigationBar != null) {
+        if (mNextButton != null) {
             Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
-            final Button next = mNavigationBar.getNextButton();
-            next.startAnimation(fadeOut);
-            next.setVisibility(INVISIBLE);
+            mNextButton.startAnimation(fadeOut);
+            mNextButton.setVisibility(INVISIBLE);
         }
     }
 
@@ -534,12 +533,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     }
 
     protected void hideBackButton() {
-        if (mNavigationBar != null) {
-            Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
-            final Button back = mNavigationBar.getBackButton();
-            back.startAnimation(fadeOut);
-            back.setVisibility(INVISIBLE);
-        }
+        // TODO
     }
 
     protected int getTransition() {

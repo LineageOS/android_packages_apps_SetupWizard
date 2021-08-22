@@ -25,7 +25,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/SudContentFrame">
 
         <FrameLayout android:id="@+id/page"
             android:layout_width="match_parent"
@@ -41,8 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="@dimen/content_margin_left"
-                    android:paddingEnd="@dimen/content_margin_left"
-                    style="@style/SudContentFrame">
+                    android:paddingEnd="@dimen/content_margin_left">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -62,11 +62,13 @@
             </ScrollView>
         </FrameLayout>
 
-        <com.google.android.setupdesign.view.NavigationBar
-            android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/next"
+            style="@style/SudGlifButton.Primary" />
 
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
