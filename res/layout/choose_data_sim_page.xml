@@ -25,7 +25,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/SudContentFrame">
 
         <FrameLayout
             android:id="@+id/page"
@@ -43,7 +44,6 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/SudContentFrame"
                     android:visibility="gone">
 
                     <TextView
@@ -67,11 +67,10 @@
                 android:visibility="gone" />
         </FrameLayout>
 
-        <com.google.android.setupdesign.view.NavigationBar
+        <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
