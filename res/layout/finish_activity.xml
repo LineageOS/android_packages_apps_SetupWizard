@@ -28,7 +28,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        style="@style/SudContentFrame">
 
         <ImageView
             android:id="@+id/brand_logo"
@@ -39,14 +40,12 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
-            android:padding="@dimen/content_margin_left"
-            style="@style/SudContentFrame"/>
+            android:padding="@dimen/content_margin_left"/>
 
-        <com.google.android.setupdesign.view.NavigationBar
+        <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
-            style="@style/SudNavBarTheme"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/sud_navbar_height" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

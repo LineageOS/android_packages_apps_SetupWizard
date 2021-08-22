@@ -53,12 +53,17 @@ public class BiometricActivity extends SubBaseActivity {
             setupBiometricSummary.setText(getString(R.string.fingerprint_setup_summary));
             setupAddBiometric.setText(R.string.fingerprint_setup_add_fingerprint);
         }
+        ((NavigationLayout) findViewById(R.id.navigation_bar)).enableSkipButton();
+    }
+
+    @Override
+    protected void onNextPressed() {
+        launchBiometricSetup();
     }
 
     @Override
     protected void onStartSubactivity() {
         setNextAllowed(true);
-        findViewById(R.id.setup_biometric).setOnClickListener(view -> launchBiometricSetup());
     }
 
     @Override
