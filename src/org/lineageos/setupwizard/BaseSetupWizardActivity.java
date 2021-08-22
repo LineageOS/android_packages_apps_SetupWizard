@@ -62,10 +62,10 @@ import com.android.settingslib.Utils;
 
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.view.NavigationBar;
-import com.google.android.setupdesign.view.NavigationBar.NavigationBarListener;
 import com.google.android.setupcompat.util.SystemBarHelper;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
+import org.lineageos.setupwizard.NavigationLayout.NavigationBarListener;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
@@ -87,11 +87,10 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int BIOMETRIC_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
 
-    private static final int IMMERSIVE_FLAGS =
-            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-    private int mSystemUiFlags = IMMERSIVE_FLAGS | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+    private static final int IMMERSIVE_FLAGS = View.STATUS_BAR_DISABLE_HOME;
+    private int mSystemUiFlags = IMMERSIVE_FLAGS;
 
-    private NavigationBar mNavigationBar;
+    private NavigationLayout mNavigationBar;
 
     protected boolean mIsActivityVisible = false;
     protected boolean mIsExiting = false;
@@ -100,6 +99,9 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     private boolean mIsPrimaryUser;
     protected int mResultCode = 0;
     private Intent mResultData;
+
+    private boolean mIsBackAllowed = true;
+
     private final BroadcastReceiver finishReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -125,11 +127,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         mNavigationBar = getNavigationBar();
         if (mNavigationBar != null) {
             mNavigationBar.setNavigationBarListener(this);
-            mNavigationBar.addOnLayoutChangeListener((View view,
-                    int left, int top, int right, int bottom,
-                    int oldLeft, int oldTop, int oldRight, int oldBottom) -> {
-                view.requestApplyInsets();
-            });
             mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
             // Set the UI flags before draw because the visibility might change in unexpected /
             // undetectable times, like transitioning from a finishing activity that had a keyboard
@@ -241,9 +238,9 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
      * @return The navigation bar instance in the layout, or null if the layout does not have a
      *     navigation bar.
      */
-    public NavigationBar getNavigationBar() {
+    public NavigationLayout getNavigationBar() {
         final View view = findViewById(R.id.navigation_bar);
-        return view instanceof NavigationBar ? (NavigationBar) view : null;
+        return view instanceof NavigationLayout ? (NavigationLayout) view : null;
     }
 
     /**
@@ -269,31 +266,19 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
     }
 
-    protected void setBackDrawable(Drawable drawable) {
-        if (mNavigationBar != null) {
-            mNavigationBar.getBackButton().setCompoundDrawables(drawable, null, null, null);
-        }
-    }
-
     protected void setNextDrawable(Drawable drawable) {
         if (mNavigationBar != null) {
-            mNavigationBar.getBackButton().setCompoundDrawables(null, null, drawable, null);
+            mNavigationBar.getNextButton().setCompoundDrawables(null, null, drawable, null);
         }
     }
 
     public void setBackAllowed(boolean allowed) {
         SystemBarHelper.setBackButtonVisible(getWindow(), allowed);
-        if (mNavigationBar != null) {
-            Button backButton = mNavigationBar.getBackButton();
-            backButton.setEnabled(allowed);
-        }
+        mIsBackAllowed = allowed;
     }
 
     protected boolean isBackAllowed() {
-        if (mNavigationBar != null) {
-            mNavigationBar.getBackButton().isEnabled();
-        }
-        return false;
+        return mIsBackAllowed;
     }
 
     public void setNextAllowed(boolean allowed) {
@@ -313,15 +298,19 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         nextAction(NEXT_REQUEST);
     }
 
+    protected void onSkipPressed() {
+        nextAction(NEXT_REQUEST);
+    }
+
     protected void setNextText(int resId) {
         if (mNavigationBar != null) {
             mNavigationBar.getNextButton().setText(resId);
         }
     }
 
-    protected void setBackText(int resId) {
+    protected void setSkipText(int resId) {
         if (mNavigationBar != null) {
-            mNavigationBar.getBackButton().setText(resId);
+            mNavigationBar.getSkipButton().setText(resId);
         }
     }
 
@@ -353,6 +342,10 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     public void onNavigateNext() {
         onNextPressed();
+    }
+
+    public void onSkip() {
+        onSkipPressed();
     }
 
     protected void startEmergencyDialer() {
@@ -530,15 +523,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             typedArray.recycle();
         } else if (transitionId == TRANSITION_ID_NONE) {
             overridePendingTransition(0, 0);
-        }
-    }
-
-    protected void hideBackButton() {
-        if (mNavigationBar != null) {
-            Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
-            final Button back = mNavigationBar.getBackButton();
-            back.startAnimation(fadeOut);
-            back.setVisibility(INVISIBLE);
         }
     }
 
