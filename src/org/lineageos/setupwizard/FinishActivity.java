@@ -111,7 +111,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
         sendBroadcastAsUser(i, getCallingUserHandle(), FINISH_SETUP);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
-        hideBackButton();
         hideNextButton();
         finishSetup();
     }
