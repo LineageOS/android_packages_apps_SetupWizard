@@ -49,7 +49,6 @@ import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -68,8 +67,7 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 
-public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener,
-        ViewTreeObserver.OnPreDrawListener {
+public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
 
@@ -84,10 +82,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int BLUETOOTH_ACTIVITY_REQUEST = 10100;
     protected static final int BIOMETRIC_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
-
-    private static final int IMMERSIVE_FLAGS = View.STATUS_BAR_DISABLE_HOME
-            | View.STATUS_BAR_DISABLE_RECENT;
-    private int mSystemUiFlags = IMMERSIVE_FLAGS;
 
     private NavigationLayout mNavigationBar;
 
@@ -124,11 +118,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         mNavigationBar = getNavigationBar();
         if (mNavigationBar != null) {
             mNavigationBar.setNavigationBarListener(this);
-            mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
-            // Set the UI flags before draw because the visibility might change in unexpected /
-            // undetectable times, like transitioning from a finishing activity that had a keyboard
-            ViewTreeObserver viewTreeObserver = mNavigationBar.getViewTreeObserver();
-            viewTreeObserver.addOnPreDrawListener(this);
         }
     }
 
@@ -221,14 +210,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (LOGV) {
             Log.v(TAG, "onSaveInstanceState(" + outState + ")");
         }
-    }
-
-    @Override
-    public boolean onPreDraw() {
-        // View.setSystemUiVisibility checks if the visibility changes before applying them
-        // so the performance impact is contained
-        mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
-        return true;
     }
 
     /**
