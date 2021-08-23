@@ -45,13 +45,7 @@ public class SetupWizardApp extends Application {
     public static final String ACTION_NEXT = "com.android.wizard.NEXT";
     public static final String ACTION_LOAD = "com.android.wizard.LOAD";
 
-
-    public static final String EXTRA_FIRST_RUN = "firstRun";
-    public static final String EXTRA_ALLOW_SKIP = "allowSkip";
-    public static final String EXTRA_AUTO_FINISH = "wifi_auto_finish_on_connect";
     public static final String EXTRA_HAS_MULTIPLE_USERS = "hasMultipleUsers";
-    public static final String EXTRA_THEME = "theme";
-    public static final String EXTRA_MATERIAL_LIGHT = "material_light";
     public static final String EXTRA_TITLE = "title";
     public static final String EXTRA_DETAILS = "details";
     public static final String EXTRA_SCRIPT_URI = "scriptUri";
@@ -59,7 +53,6 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_RESULT_CODE = "com.android.setupwizard.ResultCode";
     public static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
     public static final String EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text";
-    public static final String EXTRA_IS_SETUP_FLOW = "isSetupFlow";
 
     public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
     public static final String KEY_SEND_METRICS = "send_metrics";
