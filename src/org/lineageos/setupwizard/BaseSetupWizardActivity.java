@@ -26,7 +26,6 @@ import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_FIRST_RUN;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_HAS_MULTIPLE_USERS;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
@@ -563,7 +562,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (LOGV) {
             Log.v(TAG, "starting activity " + intent);
         }
-        intent.putExtra(EXTRA_FIRST_RUN, isFirstRun());
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
         intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
         startActivity(intent);
     }
@@ -572,7 +571,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (LOGV) {
             Log.v(TAG, "startFirstRunActivityForResult requestCode=" + requestCode);
         }
-        intent.putExtra(EXTRA_FIRST_RUN, isFirstRun());
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
         intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
         startActivityForResult(intent, requestCode);
     }
