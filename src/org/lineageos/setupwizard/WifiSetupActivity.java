@@ -24,6 +24,8 @@ import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
 
 import android.content.Intent;
 
+import com.google.android.setupcompat.util.WizardManagerHelper;
+
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class WifiSetupActivity extends WrapperSubBaseActivity {
@@ -38,6 +40,7 @@ public class WifiSetupActivity extends WrapperSubBaseActivity {
         if (SetupWizardUtils.hasLeanback(this)) {
             intent.setComponent(SetupWizardUtils.mTvwifisettingsActivity);
         }
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         intent.putExtra(EXTRA_PREFS_SHOW_BUTTON_BAR, true);
         intent.putExtra(EXTRA_PREFS_SET_BACK_TEXT, (String) null);
         startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
