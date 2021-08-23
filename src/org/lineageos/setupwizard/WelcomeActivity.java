@@ -20,13 +20,17 @@ package org.lineageos.setupwizard;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 
 import org.lineageos.setupwizard.util.EnableAccessibilityController;
 
-public class WelcomeActivity extends BaseSetupWizardActivity {
+public class WelcomeActivity extends BaseSetupWizardActivity
+        implements View.OnClickListener {
 
     public static final String TAG = WelcomeActivity.class.getSimpleName();
 
+    private Button mStartButton;
+    private Button mEmergDialerButton;
     private View mRootView;
     private EnableAccessibilityController mEnableAccessibilityController;
 
@@ -34,27 +38,30 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mRootView = findViewById(R.id.setup_wizard_layout);
-        ((NavigationLayout) findViewById(R.id.navigation_bar)).enableSkipButton();
-        setNextText(R.string.next);
+        setNextText(R.string.start);
         setSkipText(R.string.emergency_call);
+        mStartButton = findViewById(R.id.start);
+        mEmergDialerButton = findViewById(R.id.emerg_dialer);
+        mStartButton.setOnClickListener(this);
+        mEmergDialerButton.setOnClickListener(this);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
         mRootView.setOnTouchListener((v, event) ->
                 mEnableAccessibilityController.onTouchEvent(event));
-
+        mStartButton.setSystemUiVisibility(View.STATUS_BAR_DISABLE_HOME
+                | View.STATUS_BAR_DISABLE_RECENT | View.STATUS_BAR_DISABLE_BACK);
     }
 
     @Override
     public void onBackPressed() {}
 
     @Override
-    public void onSkip() {
-        startEmergencyDialer();
-    }
-
-    @Override
-    public void onNavigateBack() {
-        startEmergencyDialer();
+    public void onClick(View view) {
+        if (view == mStartButton) {
+            onNextPressed();
+        } else if (view == mEmergDialerButton) {
+            startEmergencyDialer();
+        }
     }
 
     @Override

@@ -229,7 +229,9 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     public boolean onPreDraw() {
         // View.setSystemUiVisibility checks if the visibility changes before applying them
         // so the performance impact is contained
-        mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+        if (mNavigationBar != null) {
+            mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
+        }
         return true;
     }
 
