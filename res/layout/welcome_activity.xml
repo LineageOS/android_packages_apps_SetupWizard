@@ -55,13 +55,27 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/emerg_dialer"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/emergency_call"
-            style="@style/SudGlifButton.Secondary" />
+            android:orientation="horizontal"
+            android:gravity="center">
 
+            <Button
+                android:id="@+id/emerg_dialer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emergency_call"
+                style="@style/SudGlifButton.Secondary" />
+
+            <Button
+                android:id="@+id/launch_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_eye"
+                android:text="@string/accessibility_settings"
+                style="@style/SudGlifButton.Secondary" />
+
+        </LinearLayout>
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
