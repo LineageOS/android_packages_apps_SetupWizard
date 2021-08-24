@@ -22,6 +22,7 @@ import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NO
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_RETRY;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_ACCESSIBILITY_SETTINGS;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
@@ -82,6 +83,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int BLUETOOTH_ACTIVITY_REQUEST = 10100;
     protected static final int BIOMETRIC_ACTIVITY_REQUEST = 10101;
     protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
+    protected static final int ACCESSIBILITY_SETTINGS_REQUEST = 11;
 
     private NavigationLayout mNavigationBar;
 
@@ -298,6 +300,17 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
     }
 
+    protected void startAccessibilitySettings() {
+        try {
+            startFirstRunActivityForResult(new Intent(ACTION_ACCESSIBILITY_SETTINGS),
+                    ACCESSIBILITY_SETTINGS_REQUEST);
+            applyForwardTransition(TRANSITION_ID_DEFAULT);
+        } catch (ActivityNotFoundException e) {
+            Log.e(TAG, "Can't find the accessibility settings: " +
+                    "android.settings.ACCESSIBILITY_SETTINGS_FOR_SUW");
+        }
+    }
+
     protected void onSetupStart() {
         SetupWizardUtils.disableCaptivePortalDetection(getApplicationContext());
         tryEnablingWifi();
@@ -333,7 +346,8 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
         mIsGoingBack = true;
         if (requestCode != NEXT_REQUEST || resultCode != RESULT_CANCELED) {
-            if (requestCode == EMERGENCY_DIAL_ACTIVITY_REQUEST) {
+            if (requestCode == EMERGENCY_DIAL_ACTIVITY_REQUEST |
+                    requestCode == ACCESSIBILITY_SETTINGS_REQUEST) {
                 applyBackwardTransition(TRANSITION_ID_DEFAULT);
                 return;
             }
