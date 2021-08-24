@@ -38,6 +38,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity
 
     private Button mStartButton;
     private Button mEmergDialerButton;
+    private Button mAccessibilityButton;
     private View mRootView;
     private EnableAccessibilityController mEnableAccessibilityController;
     private GestureDetector mGestureDetector;
@@ -53,8 +54,10 @@ public class WelcomeActivity extends BaseSetupWizardActivity
         setSkipText(R.string.emergency_call);
         mStartButton = findViewById(R.id.start);
         mEmergDialerButton = findViewById(R.id.emerg_dialer);
+        mAccessibilityButton = findViewById(R.id.launch_accessibility);
         mStartButton.setOnClickListener(this);
         mEmergDialerButton.setOnClickListener(this);
+        mAccessibilityButton.setOnClickListener(this);
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
         mGestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener() {
@@ -107,6 +110,8 @@ public class WelcomeActivity extends BaseSetupWizardActivity
             onNextPressed();
         } else if (view == mEmergDialerButton) {
             startEmergencyDialer();
+        } else if (view == mAccessibilityButton) {
+            startAccessibilitySettings();
         }
     }
 
