@@ -35,6 +35,8 @@ public class SetupWizardApp extends Application {
     /* Verbose Logging */
     public static final boolean LOGV = Log.isLoggable(TAG, Log.VERBOSE);
 
+    public static final String ACTION_ACCESSIBILITY_SETTINGS =
+            "android.settings.ACCESSIBILITY_SETTINGS_FOR_SUW";
     public static final String ACTION_SETUP_COMPLETE = "org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE";
     public static final String ACTION_FINISHED = "org.lineageos.setupwizard.SETUP_FINISHED";
     public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";

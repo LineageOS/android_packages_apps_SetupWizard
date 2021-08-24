@@ -51,6 +51,8 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
         findViewById(R.id.start).setOnClickListener(view -> onNextPressed());
         findViewById(R.id.emerg_dialer)
                 .setOnClickListener(view -> startEmergencyDialer());
+        findViewById(R.id.launch_accessibility)
+                .setOnClickListener(view -> startAccessibilitySettings());
         mEnableAccessibilityController =
                 EnableAccessibilityController.getInstance(getApplicationContext());
         mGestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener() {
