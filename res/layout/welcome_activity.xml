@@ -65,6 +65,7 @@
                 android:id="@+id/emerg_dialer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_dialer"
                 android:text="@string/emergency_call"
                 style="@style/SudGlifButton.Secondary" />
 
