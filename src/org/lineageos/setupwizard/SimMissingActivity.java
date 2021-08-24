@@ -72,6 +72,9 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
             SetupWizardUtils.disableComponent(this, MobileDataActivity.class);
             nextAction(ResultCodes.RESULT_SKIP);
         } else {
+            if (!mPhoneMonitor.isMultiSimDevice() || mPhoneMonitor.singleSimInserted()) {
+                SetupWizardUtils.disableComponent(this, ChooseDataSimActivity.class);
+            }
             super.onNavigateNext();
         }
     }
