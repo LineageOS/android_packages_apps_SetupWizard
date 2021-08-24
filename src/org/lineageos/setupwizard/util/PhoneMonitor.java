@@ -289,6 +289,10 @@ public class PhoneMonitor {
         return true;
     }
 
+    public boolean singleSimInserted() {
+        return mSubscriptionManager.getActiveSubscriptionInfoCount() == 1;
+    }
+
     // We only care that each slot has a sim
     public boolean allSimsInserted() {
         int simSlotCount = mTelephony.getSimCount();
