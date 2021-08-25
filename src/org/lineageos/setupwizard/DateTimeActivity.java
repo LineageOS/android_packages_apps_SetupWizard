@@ -29,7 +29,6 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
@@ -54,10 +53,10 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
 
     public static final String TAG = DateTimeActivity.class.getSimpleName();
 
-    private static final String KEY_ID = "id";  // value: String
-    private static final String KEY_DISPLAYNAME = "name";  // value: String
-    private static final String KEY_GMT = "gmt";  // value: String
-    private static final String KEY_OFFSET = "offset";  // value: int (Integer)
+    private static final String KEY_ID = "id"; // value: String
+    private static final String KEY_DISPLAYNAME = "name"; // value: String
+    private static final String KEY_GMT = "gmt"; // value: String
+    private static final String KEY_OFFSET = "offset"; // value: int (Integer)
     private static final String XMLTAG_TIMEZONE = "timezone";
 
     private static final int HOURS_1 = 60 * 60000;
@@ -66,13 +65,12 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     private TextView mDateTextView;
     private TextView mTimeTextView;
 
-
     private final Handler mHandler = new Handler();
 
-    private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-                updateTimeAndDateDisplay();
+            updateTimeAndDateDisplay();
         }
     };
 
@@ -88,8 +86,8 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         dateView.setOnClickListener((view) -> showDatePicker());
         View timeView = findViewById(R.id.time_item);
         timeView.setOnClickListener((view) -> showTimePicker());
-        mDateTextView = (TextView)findViewById(R.id.date_text);
-        mTimeTextView = (TextView)findViewById(R.id.time_text);
+        mDateTextView = (TextView) findViewById(R.id.date_text);
+        mTimeTextView = (TextView) findViewById(R.id.time_text);
         // Pre-select current/default timezone
         mHandler.post(() -> {
             int tzIndex = getTimeZoneIndex(adapter, mCurrentTimeZone);
@@ -100,7 +98,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
             spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> adapterView, View view, int position,
-                                           long id) {
+                        long id) {
                     final Map<?, ?> map = (Map<?, ?>) adapterView.getItemAtPosition(position);
                     final String tzId = (String) map.get(KEY_ID);
                     if (mCurrentTimeZone != null && !mCurrentTimeZone.getID().equals(tzId)) {
@@ -173,14 +171,14 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
 
     @Override
     public void onDateSet(DatePicker view, int year, int month, int day) {
-            setDate(this, year, month, day);
-            updateTimeAndDateDisplay();
+        setDate(this, year, month, day);
+        updateTimeAndDateDisplay();
     }
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            setTime(this, hourOfDay, minute);
-            updateTimeAndDateDisplay();
+        setTime(this, hourOfDay, minute);
+        updateTimeAndDateDisplay();
     }
 
     private void showDatePicker() {
@@ -201,8 +199,8 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     }
 
     private static SimpleAdapter constructTimezoneAdapter(Context context) {
-        final String[] from = new String[] {KEY_DISPLAYNAME, KEY_GMT};
-        final int[] to = new int[] {android.R.id.text1, android.R.id.text2};
+        final String[] from = new String[]{KEY_DISPLAYNAME, KEY_GMT};
+        final int[] to = new int[]{android.R.id.text1, android.R.id.text2};
 
         final TimeZoneComparator comparator = new TimeZoneComparator(KEY_OFFSET);
         final List<Map<String, Object>> sortedList = ZoneGetter.getZonesList(context);
@@ -220,8 +218,8 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         final String defaultId = tz.getID();
         final int listSize = adapter.getCount();
         for (int i = 0; i < listSize; i++) {
-            final Map<?,?> map = (Map<?,?>)adapter.getItem(i);
-            final String id = (String)map.get(KEY_ID);
+            final Map<?, ?> map = (Map<?, ?>) adapter.getItem(i);
+            final String id = (String) map.get(KEY_ID);
             if (defaultId.equals(id)) {
                 // If current timezone is in this list, move focus to it
                 return i;
@@ -293,7 +291,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     public static class TimePickerFragment extends DialogFragment
             implements TimePickerDialog.OnTimeSetListener {
 
-        private static String TAG = TimePickerFragment.class.getSimpleName();
+        private static final String TAG = TimePickerFragment.class.getSimpleName();
 
         public static TimePickerFragment newInstance() {
             TimePickerFragment frag = new TimePickerFragment();
@@ -302,7 +300,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
 
         @Override
         public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            ((DateTimeActivity)getActivity()).onTimeSet(view, hourOfDay, minute);
+            ((DateTimeActivity) getActivity()).onTimeSet(view, hourOfDay, minute);
         }
 
         @Override
@@ -315,13 +313,12 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
                     calendar.get(Calendar.MINUTE),
                     DateFormat.is24HourFormat(getActivity()));
         }
-
     }
 
     public static class DatePickerFragment extends DialogFragment
             implements DatePickerDialog.OnDateSetListener {
 
-        private static String TAG = DatePickerFragment.class.getSimpleName();
+        private static final String TAG = DatePickerFragment.class.getSimpleName();
 
         public static DatePickerFragment newInstance() {
             DatePickerFragment frag = new DatePickerFragment();
@@ -330,7 +327,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
 
         @Override
         public void onDateSet(DatePicker view, int year, int month, int day) {
-            ((DateTimeActivity)getActivity()).onDateSet(view, year, month, day);
+            ((DateTimeActivity) getActivity()).onDateSet(view, year, month, day);
         }
 
         @Override

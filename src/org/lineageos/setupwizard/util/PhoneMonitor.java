@@ -77,15 +77,15 @@ public class PhoneMonitor {
     public static final String TAG = PhoneMonitor.class.getSimpleName();
 
     private static PhoneMonitor sInstance;
-    private Context mContext;
-    private TelephonyManager mTelephony;
+    private final Context mContext;
+    private final TelephonyManager mTelephony;
     private SubscriptionManager mSubscriptionManager;
-    private ArrayList<SubscriptionStateListener> mListeners = new ArrayList<>();
-    private SparseArray<SubscriptionStateTracker> mTrackers = new SparseArray<>();
+    private final ArrayList<SubscriptionStateListener> mListeners = new ArrayList<>();
+    private final SparseArray<SubscriptionStateTracker> mTrackers = new SparseArray<>();
 
     private int mChangingToDataSubId = -1;
 
-    private BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(TelephonyIntents.ACTION_SIM_STATE_CHANGED)) {
@@ -134,14 +134,14 @@ public class PhoneMonitor {
 
     private final OnSubscriptionsChangedListener mOnSubscriptionsChangedListener =
             new OnSubscriptionsChangedListener() {
-        public void onSubscriptionsChanged() {
-            if (LOGV) {
-                Log.d(TAG, "Subscriptions changed");
-            }
-            super.onSubscriptionsChanged();
-            updatePhoneStateTrackers();
-        }
-    };
+                public void onSubscriptionsChanged() {
+                    if (LOGV) {
+                        Log.d(TAG, "Subscriptions changed");
+                    }
+                    super.onSubscriptionsChanged();
+                    updatePhoneStateTrackers();
+                }
+            };
 
     public static void initInstance(Context context) {
         if (sInstance == null) {
@@ -319,7 +319,7 @@ public class PhoneMonitor {
 
     public int getLteOnCdmaMode(int subId) {
         if (mTelephony == null || mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode(subId)
-                    == LTE_ON_CDMA_UNKNOWN) {
+                == LTE_ON_CDMA_UNKNOWN) {
             return TelephonyProperties.lte_on_cdma_device().orElse(LTE_ON_CDMA_UNKNOWN);
         }
         return mTelephony.createForSubscriptionId(subId).getLteOnCdmaMode(subId);
@@ -489,10 +489,15 @@ public class PhoneMonitor {
 
     public interface SubscriptionStateListener {
         void onServiceStateChanged(int subId, ServiceState serviceState);
+
         void onDataConnectionStateChanged(int subId, int state, int networkType);
+
         void onDefaultDataSubscriptionChanged(int subId);
+
         void onDefaultDataSubscriptionChangeRequested(int currentSubId, int newSubId);
+
         void onSignalStrengthsChanged(int subId, SignalStrength signalStrength);
+
         void onSimStateChanged(int subId, int simState);
     }
 
