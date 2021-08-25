@@ -55,7 +55,8 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             if (isPrimaryUser()) {
                 intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));
             } else {
-                intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_user_uri));
+                intent.putExtra(EXTRA_SCRIPT_URI,
+                        getString(R.string.lineage_wizard_script_user_uri));
             }
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | FLAG_GRANT_READ_URI_PERMISSION);
             startActivity(intent);

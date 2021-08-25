@@ -64,7 +64,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
 
     private final Runnable mDataConnectionReadyRunnable = this::onDataStateReady;
 
-    private PhoneMonitor.SubscriptionStateListener mSubscriptionStateListener =
+    private final PhoneMonitor.SubscriptionStateListener mSubscriptionStateListener =
             new PhoneMonitor.SubscriptionStateListener() {
                 @Override
                 public void onServiceStateChanged(int subId, ServiceState serviceState) {
@@ -95,11 +95,13 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
                 }
 
                 @Override
-                public void onDefaultDataSubscriptionChanged(int subId) {}
+                public void onDefaultDataSubscriptionChanged(int subId) {
+                }
 
                 @Override
                 public void onDefaultDataSubscriptionChangeRequested(int currentSubId,
-                        int newSubId) {}
+                        int newSubId) {
+                }
 
                 @Override
                 public void onSignalStrengthsChanged(int subId, SignalStrength signalStrength) {
@@ -124,7 +126,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
                 }
             };
 
-    private View.OnClickListener mEnableDataClickListener = new View.OnClickListener() {
+    private final View.OnClickListener mEnableDataClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             boolean checked = !mEnableMobileData.isChecked();
@@ -149,13 +151,11 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
         mEnableDataRow = findViewById(R.id.data);
         mEnableDataRow.setOnClickListener(mEnableDataClickListener);
         mEnableMobileData = (Switch) findViewById(R.id.data_switch);
-        mSignalView =  (ImageView) findViewById(R.id.signal);
-        mNameView =  (TextView) findViewById(R.id.enable_data_title);
+        mSignalView = (ImageView) findViewById(R.id.signal);
+        mNameView = (TextView) findViewById(R.id.enable_data_title);
         updateDataConnectionStatus();
         updateSignalStrength();
-
     }
-
 
     @Override
     public void onResume() {
@@ -275,7 +275,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
     private boolean hasService() {
         boolean retVal;
         if (mServiceState == null) {
-            mServiceState  =  TelephonyManager.from(this)
+            mServiceState = TelephonyManager.from(this)
                     .getServiceStateForSubscriber(getDefaultSubscriptionId());
         }
         if (mServiceState != null) {
@@ -283,7 +283,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
             // Some SIM cards are marketed as data-only and do not support voice service, and on
             // these SIM cards, we want to show signal bars for data service as well as the "no
             // service" or "emergency calls only" text that indicates that voice is not available.
-            switch(mServiceState.getVoiceRegState()) {
+            switch (mServiceState.getVoiceRegState()) {
                 case ServiceState.STATE_POWER_OFF:
                     retVal = false;
                     break;
