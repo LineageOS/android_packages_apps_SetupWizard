@@ -25,7 +25,6 @@ import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
-import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
@@ -75,14 +74,14 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         }
     };
 
-    private View.OnClickListener mSetDataSimClickListener = view -> {
-        SubscriptionInfo subInfoRecord = (SubscriptionInfo)view.getTag();
+    private final View.OnClickListener mSetDataSimClickListener = view -> {
+        SubscriptionInfo subInfoRecord = (SubscriptionInfo) view.getTag();
         if (subInfoRecord != null) {
             changeDataSub(subInfoRecord);
         }
     };
 
-    private PhoneMonitor.SubscriptionStateListener mSubscriptionStateListener =
+    private final PhoneMonitor.SubscriptionStateListener mSubscriptionStateListener =
             new PhoneMonitor.SubscriptionStateListener() {
                 @Override
                 public void onServiceStateChanged(int subId, ServiceState serviceState) {
@@ -204,7 +203,6 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         }
         updateSignalStrengths();
         updateCurrentDataSub();
-
     }
 
     @Override
@@ -317,11 +315,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         if (mIsAttached) {
             for (int i = 0; i < mCheckBoxes.size(); i++) {
                 int key = mCheckBoxes.keyAt(i);
-                if (subInfoRecord.getSimSlotIndex() == key) {
-                    mCheckBoxes.get(key).setChecked(true);
-                } else {
-                    mCheckBoxes.get(key).setChecked(false);
-                }
+                mCheckBoxes.get(key).setChecked(subInfoRecord.getSimSlotIndex() == key);
             }
         }
     }
@@ -353,9 +347,9 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
 
     private void enableRows(boolean enabled) {
         for (int i = 0; i < mRows.size(); i++) {
-            final View v =  mRows.get(mRows.keyAt(i));
+            final View v = mRows.get(mRows.keyAt(i));
             v.setEnabled(enabled);
-            final SubscriptionInfo subInfoRecord = (SubscriptionInfo)v.getTag();
+            final SubscriptionInfo subInfoRecord = (SubscriptionInfo) v.getTag();
             if (subInfoRecord != null) {
                 updateCarrierText(subInfoRecord);
             }
@@ -401,7 +395,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
                         "signalStrength='" + signalStrength + '\'' +
                         "signalStrengthLevel='" + ((signalStrength != null) ?
                         signalStrength.getLevel() : "null") + '\'' +
-                        ", subInfoRecord.getSimSlotIndex() =" + subInfoRecord.getSimSlotIndex()  +
+                        ", subInfoRecord.getSimSlotIndex() =" + subInfoRecord.getSimSlotIndex() +
                         '}');
             }
             if (!hasService(subInfoRecord)) {
@@ -437,7 +431,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
         boolean retVal;
         ServiceState serviceState = mServiceStates.get(subInfoRecord.getSimSlotIndex());
         if (serviceState == null) {
-            serviceState  = mPhoneMonitor
+            serviceState = mPhoneMonitor
                     .getServiceStateForSubscriber(subInfoRecord.getSubscriptionId());
             mServiceStates.put(subInfoRecord.getSimSlotIndex(), serviceState);
         }
@@ -455,7 +449,7 @@ public class ChooseDataSimActivity extends BaseSetupWizardActivity {
             // Some SIM cards are marketed as data-only and do not support voice service, and on
             // these SIM cards, we want to show signal bars for data service as well as the "no
             // service" or "emergency calls only" text that indicates that voice is not available.
-            switch(serviceState.getVoiceRegState()) {
+            switch (serviceState.getVoiceRegState()) {
                 case ServiceState.STATE_POWER_OFF:
                     retVal = false;
                     break;
