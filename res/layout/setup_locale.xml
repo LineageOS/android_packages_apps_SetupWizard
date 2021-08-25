@@ -45,11 +45,11 @@
                 style="@style/LocaleWidget.Material.LocalePicker" />
 
         </RelativeLayout>
-    
+
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-            
+
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
