@@ -24,7 +24,6 @@ import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BIOMET
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
@@ -39,7 +38,8 @@ public class BiometricActivity extends SubBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final TextView setupBiometricSummary = (TextView) findViewById(R.id.setup_biometric_summary);
+        final TextView setupBiometricSummary = (TextView) findViewById(
+                R.id.setup_biometric_summary);
         final TextView setupAddBiometric = (TextView) findViewById(R.id.setup_add_biometric);
         if (SetupWizardUtils.hasFace(this)) {
             setupBiometricSummary.setText(getString(R.string.face_setup_summary));

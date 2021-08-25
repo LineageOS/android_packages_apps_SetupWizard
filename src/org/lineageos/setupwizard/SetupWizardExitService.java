@@ -16,7 +16,6 @@
 
 package org.lineageos.setupwizard;
 
-
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.Nullable;
