@@ -63,7 +63,7 @@ public class WizardAction implements Parcelable {
         Intent intent = null;
         try {
             intent = Intent.parseUri(mUri, FLAG_GRANT_READ_URI_PERMISSION);
-        } catch(URISyntaxException e) {
+        } catch (URISyntaxException e) {
             Log.e(TAG, "Bad URI: " + mUri);
         }
         return intent;
@@ -145,7 +145,8 @@ public class WizardAction implements Parcelable {
         }
     }
 
-    public static WizardAction parseWizardAction(XmlPullParser parser) throws XmlPullParserException,
+    public static WizardAction parseWizardAction(XmlPullParser parser)
+            throws XmlPullParserException,
             IOException {
         String id = parser.getAttributeValue(null, WizardScript.ATTR_ID);
         String uri = parser.getAttributeValue(WizardScript.WIZARD_SCRIPT_NAMESPACE,

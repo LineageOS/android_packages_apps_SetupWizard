@@ -44,7 +44,7 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
         }
         final int simLocation = getResources().getInteger(
                 R.integer.sim_image_type);
-        ImageView simLogo = ((ImageView)findViewById(R.id.sim_slot_image));
+        ImageView simLogo = ((ImageView) findViewById(R.id.sim_slot_image));
         switch (simLocation) {
             case SIM_SIDE:
                 simLogo.setImageResource(R.drawable.sim_side);

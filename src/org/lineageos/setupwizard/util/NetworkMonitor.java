@@ -106,7 +106,7 @@ public class NetworkMonitor {
         ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
         if (cm != null) {
             NetworkInfo ni = cm.getActiveNetworkInfo();
-            boolean isConnected = ni != null ? ni.isConnected() : false;
+            boolean isConnected = ni != null && ni.isConnected();
             if (isConnected && !mNetworkConnected) {
                 onNetworkConnected(ni);
             } else if (!isConnected && mNetworkConnected) {
