@@ -39,7 +39,6 @@ import com.android.internal.telephony.util.LocaleUtils;
 
 import com.google.android.setupcompat.util.SystemBarHelper;
 
-import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.widget.LocalePicker;
 
 import java.util.List;
@@ -75,7 +74,6 @@ public class LocaleActivity extends BaseSetupWizardActivity {
             }
         }
     };
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,8 +128,8 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         fetchAndUpdateSimLocale();
         mAdapterIndices = new int[mLocaleAdapter.getCount()];
         int currentLocaleIndex = 0;
-        String [] labels = new String[mLocaleAdapter.getCount()];
-        for (int i=0; i<mAdapterIndices.length; i++) {
+        String[] labels = new String[mLocaleAdapter.getCount()];
+        for (int i = 0; i < mAdapterIndices.length; i++) {
             com.android.internal.app.LocalePicker.LocaleInfo localLocaleInfo =
                     mLocaleAdapter.getItem(i);
             Locale localLocale = localLocaleInfo.getLocale();
@@ -149,13 +147,13 @@ public class LocaleActivity extends BaseSetupWizardActivity {
 
         mLanguagePicker.setOnScrollListener((view, scrollState) -> {
             if (scrollState == NumberPicker.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
-                ((SetupWizardApp)getApplication()).setIgnoreSimLocale(true);
+                ((SetupWizardApp) getApplication()).setIgnoreSimLocale(true);
             }
         });
     }
 
     private void setLocaleFromPicker() {
-        ((SetupWizardApp)getApplication()).setIgnoreSimLocale(true);
+        ((SetupWizardApp) getApplication()).setIgnoreSimLocale(true);
         int i = mAdapterIndices[mLanguagePicker.getValue()];
         final com.android.internal.app.LocalePicker.LocaleInfo localLocaleInfo =
                 mLocaleAdapter.getItem(i);
@@ -176,7 +174,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
     }
 
     private void fetchAndUpdateSimLocale() {
-        if (((SetupWizardApp)getApplication()).ignoreSimLocale() || isDestroyed()) {
+        if (((SetupWizardApp) getApplication()).ignoreSimLocale() || isDestroyed()) {
             return;
         }
         if (mPaused) {
@@ -200,7 +198,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 TelephonyManager telephonyManager = (TelephonyManager)
                         activity.getSystemService(Context.TELEPHONY_SERVICE);
                 int state = telephonyManager.getSimState();
-                if(state == TelephonyManager.SIM_STATE_PIN_REQUIRED ||
+                if (state == TelephonyManager.SIM_STATE_PIN_REQUIRED ||
                         state == TelephonyManager.SIM_STATE_PUK_REQUIRED) {
                     return null;
                 }
@@ -233,12 +231,12 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         @Override
         protected void onPostExecute(Locale simLocale) {
             if (simLocale != null && !simLocale.equals(mCurrentLocale)) {
-                if (!((SetupWizardApp)getApplication()).ignoreSimLocale() && !isDestroyed()) {
+                if (!((SetupWizardApp) getApplication()).ignoreSimLocale() && !isDestroyed()) {
                     String label = getString(R.string.sim_locale_changed,
                             simLocale.getDisplayName());
                     Toast.makeText(LocaleActivity.this, label, Toast.LENGTH_SHORT).show();
                     onLocaleChanged(simLocale);
-                    ((SetupWizardApp)getApplication()).setIgnoreSimLocale(true);
+                    ((SetupWizardApp) getApplication()).setIgnoreSimLocale(true);
                 }
             }
         }

@@ -17,19 +17,12 @@
 
 package org.lineageos.setupwizard.wizardmanager;
 
-
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_LOAD;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
-
-import com.google.android.setupcompat.util.ResultCodes;
-import com.google.android.setupcompat.util.WizardManagerHelper;
-import com.google.android.setupdesign.util.ThemeHelper;
-
-import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import android.annotation.Nullable;
 import android.app.Activity;
@@ -39,15 +32,19 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 
-import java.util.HashMap;
+import com.google.android.setupcompat.util.ResultCodes;
+import com.google.android.setupcompat.util.WizardManagerHelper;
+import com.google.android.setupdesign.util.ThemeHelper;
 
+import org.lineageos.setupwizard.util.SetupWizardUtils;
+
+import java.util.HashMap;
 
 public class WizardManager extends Activity {
 
     private static final String TAG = WizardManager.class.getSimpleName();
 
-    private static HashMap<String, WizardScript> sWizardScripts = new HashMap();
-
+    private static final HashMap<String, WizardScript> sWizardScripts = new HashMap();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -93,13 +90,13 @@ public class WizardManager extends Activity {
     private void doAction(String scriptUri, WizardAction action, Intent extras) {
         Intent intent = action.getIntent();
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        if(LOGV) {
+        if (LOGV) {
             Log.v(TAG, "doAction scriptUri=" + scriptUri + " extras=" + extras
                     + " intent=" + intent + " extras2=" + intent.getExtras() + " action=" + action);
         }
 
         addExtras(intent);
-        if(extras != null) {
+        if (extras != null) {
             intent.putExtras(extras);
         }
 
@@ -111,15 +108,15 @@ public class WizardManager extends Activity {
     private void load(String scriptUri, Intent extras) {
         WizardScript wizardScript = getWizardScript(this, scriptUri);
         WizardAction wizardAction;
-        for(wizardAction = wizardScript.getFirstAction();
-            wizardAction != null;
-            wizardAction = wizardScript.getNextAction(wizardAction.getId(),
-                    ResultCodes.RESULT_ACTIVITY_NOT_FOUND)) {
+        for (wizardAction = wizardScript.getFirstAction();
+                wizardAction != null;
+                wizardAction = wizardScript.getNextAction(wizardAction.getId(),
+                        ResultCodes.RESULT_ACTIVITY_NOT_FOUND)) {
             if (isActionAvailable(this, wizardAction)) {
                 break;
             }
 
-            if(LOGV) {
+            if (LOGV) {
                 Log.v(TAG, "load action not available " + wizardAction);
             }
         }
@@ -134,20 +131,20 @@ public class WizardManager extends Activity {
     }
 
     private void next(String scriptUri, String actionId, int resultCode, Intent extras) {
-        if(LOGV) {
+        if (LOGV) {
             Log.v(TAG, "next actionId=" + actionId + " resultCode=" + resultCode);
         }
         WizardAction wizardAction = checkNextAction(this, scriptUri,
                 actionId, resultCode);
         if (wizardAction != null) {
             doAction(scriptUri, wizardAction, extras);
-        }  else {
+        } else {
             exit(scriptUri);
         }
     }
 
     private void exit(String scriptUri) {
-        if(LOGV) {
+        if (LOGV) {
             Log.v(TAG, "exit scriptUri=" + scriptUri);
         }
         WizardManager.sWizardScripts.remove(scriptUri);
@@ -156,22 +153,22 @@ public class WizardManager extends Activity {
 
     private static WizardAction checkNextAction(Context context, String scriptUri, String actionId,
             int resultCode) {
-        if(LOGV) {
+        if (LOGV) {
             Log.v(TAG, "checkNextAction scriptUri=" + scriptUri + " actionId="
                     + actionId + " resultCode=" + resultCode);
         }
 
         WizardScript wizardScript = getWizardScript(context, scriptUri);
         WizardAction wizardAction;
-        for ( wizardAction = wizardScript.getNextAction(actionId, resultCode);
-             wizardAction != null;
-             wizardAction = wizardScript.getNextAction(wizardAction.getId(),
-                     ResultCodes.RESULT_ACTIVITY_NOT_FOUND)) {
+        for (wizardAction = wizardScript.getNextAction(actionId, resultCode);
+                wizardAction != null;
+                wizardAction = wizardScript.getNextAction(wizardAction.getId(),
+                        ResultCodes.RESULT_ACTIVITY_NOT_FOUND)) {
             if (WizardManager.isActionAvailable(context, wizardAction)) {
                 break;
             }
 
-            if(LOGV) {
+            if (LOGV) {
                 Log.v(TAG, "checkNextAction action not available " + wizardAction);
             }
         }
@@ -188,11 +185,8 @@ public class WizardManager extends Activity {
     }
 
     private static boolean isIntentAvailable(Context context, Intent intent) {
-        if (context.getPackageManager().queryIntentActivities(intent,
-                PackageManager.MATCH_DEFAULT_ONLY).size() > 0) {
-            return true;
-        }
-        return false;
+        return context.getPackageManager().queryIntentActivities(intent,
+                PackageManager.MATCH_DEFAULT_ONLY).size() > 0;
     }
 
     private static WizardScript getWizardScript(Context context, String scriptUri) {

@@ -19,11 +19,6 @@ package org.lineageos.setupwizard.wizardmanager;
 
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
-import com.android.internal.util.XmlUtils;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -32,6 +27,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import android.util.Xml;
+
+import com.android.internal.util.XmlUtils;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -88,12 +88,12 @@ public class WizardScript implements Parcelable {
 
     public String getNextActionId(String currentActionId, int resultCode) {
         String nextActionId = null;
-        if(resultCode != Activity.RESULT_CANCELED) {
+        if (resultCode != Activity.RESULT_CANCELED) {
             WizardAction wizardAction = mActions.get(currentActionId);
             if (LOGV) {
                 StringBuilder currentAction =
                         new StringBuilder().append("getNextActionId(").append(currentActionId)
-                        .append(",").append(resultCode).append(")").append(" current uri=");
+                                .append(",").append(resultCode).append(")").append(" current uri=");
                 String uri = wizardAction == null ? "n/a" : wizardAction.getUri();
                 Log.v(TAG, currentAction.append(uri).toString());
             }
@@ -139,8 +139,8 @@ public class WizardScript implements Parcelable {
         try {
             ContentResolver.OpenResourceIdResult openResourceIdResult =
                     context.getContentResolver().getResourceId(Uri
-                    .parse(uriString));
-            if("xml".equals(openResourceIdResult.r.getResourceTypeName(openResourceIdResult.id))) {
+                            .parse(uriString));
+            if ("xml".equals(openResourceIdResult.r.getResourceTypeName(openResourceIdResult.id))) {
                 xmlPullParser =
                         openResourceIdResult.r.getXml(openResourceIdResult.id);
             } else {
@@ -164,11 +164,11 @@ public class WizardScript implements Parcelable {
             Log.e(TAG, "Ill-formatted wizard_script: " + uriString);
             Log.e(TAG, e.getMessage());
             return wizardScript;
-        } catch(FileNotFoundException fnfe) {
+        } catch (FileNotFoundException fnfe) {
             Log.e(TAG, "Cannot find file: " + uriString);
             Log.e(TAG, fnfe.getMessage());
             return wizardScript;
-        } catch(IOException ioe) {
+        } catch (IOException ioe) {
             Log.e(TAG, "Unable to read wizard_script: " + uriString);
             Log.e(TAG, ioe.getMessage());
             return wizardScript;
@@ -178,14 +178,14 @@ public class WizardScript implements Parcelable {
     private static WizardScript parseWizardScript(XmlPullParser parser)
             throws XmlPullParserException, IOException {
         String startTag = parser.getName();
-        if(!TAG_WIZARD_SCRIPT.equals(startTag)) {
+        if (!TAG_WIZARD_SCRIPT.equals(startTag)) {
             throw new XmlPullParserException("XML document must start with " +
                     "<WizardScript> tag; found "
                     + startTag + " at " + parser.getPositionDescription());
         }
 
         String firstAction = parser.getAttributeValue(WIZARD_SCRIPT_NAMESPACE, ATTR_FIRST_ACTION);
-        if(firstAction == null) {
+        if (firstAction == null) {
             throw new XmlPullParserException("WizardScript must define a firstAction");
         }
 
