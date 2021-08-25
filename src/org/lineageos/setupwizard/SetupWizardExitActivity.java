@@ -53,7 +53,7 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
     private void launchHome() {
         startActivity(new Intent("android.intent.action.MAIN")
                 .addCategory("android.intent.category.HOME")
-                .addFlags(FLAG_ACTIVITY_NEW_TASK|FLAG_ACTIVITY_CLEAR_TASK));
+                .addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TASK));
     }
 
 }

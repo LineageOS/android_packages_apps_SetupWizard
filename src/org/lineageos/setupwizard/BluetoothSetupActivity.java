@@ -37,7 +37,7 @@ public class BluetoothSetupActivity extends WrapperSubBaseActivity {
     protected void onStartSubactivity() {
         try {
             Intent intent = new Intent();
-            intent.setComponent(SetupWizardUtils.mTvAddAccessorySettingsActivity);
+            intent.setComponent(SetupWizardUtils.sTvAddAccessorySettingsActivity);
             intent.setAction(ACTION_CONNECT_INPUT);
             intent.putExtra(INTENT_EXTRA_NO_INPUT_MODE, true);
             startActivityForResult(intent, REQUEST_CODE_SETUP_BLUETOOTH);

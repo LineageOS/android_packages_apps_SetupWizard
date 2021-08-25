@@ -30,13 +30,12 @@ public class WifiSetupActivity extends WrapperSubBaseActivity {
 
     public static final String TAG = WifiSetupActivity.class.getSimpleName();
 
-
     @Override
     protected void onStartSubactivity() {
         tryEnablingWifi();
         Intent intent = new Intent(ACTION_SETUP_WIFI);
         if (SetupWizardUtils.hasLeanback(this)) {
-            intent.setComponent(SetupWizardUtils.mTvwifisettingsActivity);
+            intent.setComponent(SetupWizardUtils.sTvWifiSetupSettingsActivity);
         }
         intent.putExtra(EXTRA_PREFS_SHOW_BUTTON_BAR, true);
         intent.putExtra(EXTRA_PREFS_SET_BACK_TEXT, (String) null);
