@@ -18,6 +18,7 @@
 package org.lineageos.setupwizard;
 
 import static android.view.View.INVISIBLE;
+
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_RETRY;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
@@ -83,7 +84,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected boolean mIsActivityVisible = false;
     protected boolean mIsExiting = false;
-    private boolean mIsFirstRun = true;
+    private final boolean mIsFirstRun = true;
     protected boolean mIsGoingBack = false;
     private boolean mIsPrimaryUser;
     protected int mResultCode = 0;
@@ -210,7 +211,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     /**
      * @return The navigation bar instance in the layout, or null if the layout does not have a
-     *     navigation bar.
+     * navigation bar.
      */
     public NavigationLayout getNavigationBar() {
         final View view = findViewById(R.id.navigation_bar);
@@ -298,7 +299,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         SetupWizardUtils.disableCaptivePortalDetection(getApplicationContext());
         tryEnablingWifi();
     }
-
 
     protected void exitIfSetupComplete() {
         if (WizardManagerHelper.isUserSetupComplete(this)) {
@@ -451,7 +451,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
             TypedArray typedArray = obtainStyledAttributes(android.R.style.Animation_Activity,
                     new int[]{android.R.attr.activityCloseEnterAnimation,
-                    android.R.attr.activityCloseExitAnimation});
+                            android.R.attr.activityCloseExitAnimation});
             overridePendingTransition(typedArray.getResourceId(0, 0),
                     typedArray.getResourceId(1, 0));
             typedArray.recycle();
@@ -496,7 +496,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
         startActivityForResult(intent, requestCode);
     }
-
 
     protected boolean isFirstRun() {
         return mIsFirstRun;

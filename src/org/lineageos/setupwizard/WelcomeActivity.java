@@ -70,7 +70,7 @@ public class WelcomeActivity extends BaseSetupWizardActivity
                 mRootView.getLocationOnScreen(leftTop);
                 viewRect.set(
                         leftTop[0], leftTop[1], leftTop[0] + mRootView.getWidth(), leftTop[1]
-                        + mRootView.getHeight());
+                                + mRootView.getHeight());
                 if (viewRect.contains((int) e.getX(), (int) e.getY())) {
                     if (isConsecutiveTap(e)) {
                         consecutiveTaps++;
@@ -99,7 +99,8 @@ public class WelcomeActivity extends BaseSetupWizardActivity
     }
 
     @Override
-    public void onBackPressed() {}
+    public void onBackPressed() {
+    }
 
     @Override
     public void onClick(View view) {

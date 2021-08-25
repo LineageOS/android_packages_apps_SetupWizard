@@ -17,7 +17,6 @@
 
 package org.lineageos.setupwizard;
 
-
 import android.app.Application;
 import android.os.Bundle;
 import android.os.Handler;
@@ -32,15 +31,17 @@ public class SetupWizardApp extends Application {
     public static final String TAG = SetupWizardApp.class.getSimpleName();
     // Leave this off for release
     public static final boolean DEBUG = false;
-    /* Verbose Logging */
+    // Verbose logging
     public static final boolean LOGV = Log.isLoggable(TAG, Log.VERBOSE);
 
-    public static final String ACTION_SETUP_COMPLETE = "org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE";
+    public static final String ACTION_SETUP_COMPLETE =
+            "org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE";
     public static final String ACTION_FINISHED = "org.lineageos.setupwizard.SETUP_FINISHED";
     public static final String ACTION_SETUP_WIFI = "android.net.wifi.PICK_WIFI_NETWORK";
     public static final String ACTION_SETUP_BIOMETRIC = "android.settings.BIOMETRIC_ENROLL";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
-    public static final String ACTION_RESTORE_FROM_BACKUP = "com.stevesoltys.seedvault.RESTORE_BACKUP";
+    public static final String ACTION_RESTORE_FROM_BACKUP =
+            "com.stevesoltys.seedvault.RESTORE_BACKUP";
     public static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
     public static final String ACTION_NEXT = "com.android.wizard.NEXT";
     public static final String ACTION_LOAD = "com.android.wizard.LOAD";
@@ -61,8 +62,8 @@ public class SetupWizardApp extends Application {
     public static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
 
     public static final int REQUEST_CODE_SETUP_WIFI = 0;
-    public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL= 4;
-    public static final int REQUEST_CODE_SETUP_BLUETOOTH= 5;
+    public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL = 4;
+    public static final int REQUEST_CODE_SETUP_BLUETOOTH = 5;
     public static final int REQUEST_CODE_SETUP_BIOMETRIC = 7;
     public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
     public static final int REQUEST_CODE_RESTORE = 10;
@@ -75,7 +76,7 @@ public class SetupWizardApp extends Application {
     private final Bundle mSettingsBundle = new Bundle();
     private final Handler mHandler = new Handler();
 
-    private final Runnable mRadioTimeoutRunnable = () ->  mIsRadioReady = true;
+    private final Runnable mRadioTimeoutRunnable = () -> mIsRadioReady = true;
 
     @Override
     public void onCreate() {
