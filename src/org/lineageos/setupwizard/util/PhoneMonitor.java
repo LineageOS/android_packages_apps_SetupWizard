@@ -301,6 +301,10 @@ public class PhoneMonitor {
         return simSlotCount == mSubscriptionManager.getActiveSubscriptionInfoCount();
     }
 
+    public boolean isMultiSimDevice() {
+        return mTelephony.isMultiSimEnabled();
+    }
+
     public boolean isGSM(int subId) {
         return mTelephony.createForSubscriptionId(subId).getCurrentPhoneType() == PHONE_TYPE_GSM;
     }
