@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3b95ab53_0f1ac3b9",
+        "filename": "src/org/lineageos/setupwizard/SimMissingActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-08-29T20:59:14Z",
+      "side": 1,
+      "message": "Can probably check for singleSimInserted alone?",
+      "range": {
+        "startLine": 74,
+        "startChar": 19,
+        "endLine": 74,
+        "endChar": 89
+      },
+      "revId": "25f9d6f94eb704df9f07994f32957663765865ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
