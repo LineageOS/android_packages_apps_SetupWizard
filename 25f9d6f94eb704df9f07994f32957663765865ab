@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "2bfffa59_18150282",
+        "filename": "src/org/lineageos/setupwizard/SimMissingActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-08-29T21:55:22Z",
+      "side": 1,
+      "message": "It\u0027s force enabled onResume so it needs to be disabled onNavigateNext for non-msim devices as well",
+      "parentUuid": "3b95ab53_0f1ac3b9",
+      "range": {
+        "startLine": 74,
+        "startChar": 19,
+        "endLine": 74,
+        "endChar": 89
+      },
+      "revId": "25f9d6f94eb704df9f07994f32957663765865ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6d97cbb2_36a3a7d9",
         "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
         "patchSetId": 2
