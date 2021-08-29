@@ -23,14 +23,11 @@ import android.view.View;
 
 import com.google.android.setupcompat.util.SystemBarHelper;
 
-import org.lineageos.setupwizard.util.EnableAccessibilityController;
-
 public class WelcomeActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = WelcomeActivity.class.getSimpleName();
 
     private View mRootView;
-    private EnableAccessibilityController mEnableAccessibilityController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +41,6 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
                 .setOnClickListener(view -> startEmergencyDialer());
         findViewById(R.id.launch_accessibility)
                 .setOnClickListener(view -> startAccessibilitySettings());
-        mEnableAccessibilityController =
-                EnableAccessibilityController.getInstance(getApplicationContext());
-        mRootView.setOnTouchListener((v, event) ->
-                mEnableAccessibilityController.onTouchEvent(event));
-
     }
 
     @Override
