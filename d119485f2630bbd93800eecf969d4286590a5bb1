@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a521441c_8d863b95",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-08-29T21:26:25Z",
+      "side": 1,
+      "message": "can you move this in SetupWizardApp?\nIt makes a bit more sense given the lifecycle is tied to the app not the utils\n\nMove the static methods there as I think they should belong there ( or make the utils return StatusBarManager and save the instance there )",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 54
+      },
+      "revId": "d119485f2630bbd93800eecf969d4286590a5bb1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
