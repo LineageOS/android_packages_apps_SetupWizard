@@ -69,6 +69,30 @@
       "revId": "25f9d6f94eb704df9f07994f32957663765865ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d7005fd1_1694d5cb",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-08-29T21:56:11Z",
+      "side": 1,
+      "message": "I took this from line 305, look below",
+      "parentUuid": "6d97cbb2_36a3a7d9",
+      "range": {
+        "startLine": 293,
+        "startChar": 0,
+        "endLine": 293,
+        "endChar": 74
+      },
+      "revId": "25f9d6f94eb704df9f07994f32957663765865ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
