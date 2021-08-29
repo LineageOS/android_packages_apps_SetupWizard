@@ -48,7 +48,6 @@ import android.widget.ImageView;
 import com.google.android.setupcompat.util.SystemBarHelper;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
-import org.lineageos.setupwizard.util.EnableAccessibilityController;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import lineageos.providers.LineageSettings;
@@ -58,8 +57,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     public static final String TAG = FinishActivity.class.getSimpleName();
 
     private ImageView mReveal;
-
-    private EnableAccessibilityController mEnableAccessibilityController;
 
     private SetupWizardApp mSetupWizardApp;
 
@@ -75,8 +72,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
         mReveal = (ImageView) findViewById(R.id.reveal);
-        mEnableAccessibilityController =
-                EnableAccessibilityController.getInstance(getApplicationContext());
         setNextText(R.string.start);
     }
 
@@ -174,9 +169,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private void completeSetup() {
-        if (mEnableAccessibilityController != null) {
-            mEnableAccessibilityController.onDestroy();
-        }
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
         handleRecoveryUpdate(mSetupWizardApp);
