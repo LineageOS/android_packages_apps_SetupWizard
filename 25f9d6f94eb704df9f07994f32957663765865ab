@@ -22,6 +22,29 @@
       "revId": "25f9d6f94eb704df9f07994f32957663765865ab",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d97cbb2_36a3a7d9",
+        "filename": "src/org/lineageos/setupwizard/util/PhoneMonitor.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-08-29T21:30:23Z",
+      "side": 1,
+      "message": "This is likely an API implementation detail but\ngetActiveSubscriptionInfoCount !\u003d getActiveSubscriptionInfoList.count()\nI\u0027m more accustomed to the latter ( as it\u0027s a bit more used in these kind of checks )",
+      "range": {
+        "startLine": 293,
+        "startChar": 0,
+        "endLine": 293,
+        "endChar": 74
+      },
+      "revId": "25f9d6f94eb704df9f07994f32957663765865ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
