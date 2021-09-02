@@ -29,12 +29,10 @@ public class NavigationLayout extends RelativeLayout {
      * namely when the user clicks on the back or next button.
      */
     public interface NavigationBarListener {
-        void onNavigateBack();
-        void onNavigateNext();
-        void onSkip();
+        View.OnClickListener onNavigateBack();
+        View.OnClickListener onNavigateNext();
+        View.OnClickListener onSkip();
     }
-
-    private NavigationBarListener mListener;
 
     private Button mNextButton;
     private Button mSkipButton;
@@ -69,10 +67,7 @@ public class NavigationLayout extends RelativeLayout {
     }
 
     public void setNavigationBarListener(NavigationBarListener listener) {
-        this.mListener = listener;
-        if (this.mListener != null) {
-            getSkipButton().setOnClickListener(listener.onNavigateNext);
-            getNextButton().setOnClickListener(listener.onSkip);
-        }
+        getSkipButton().setOnClickListener(listener.onSkip());
+        getNextButton().setOnClickListener(listener.onNavigateNext());
     }
 }

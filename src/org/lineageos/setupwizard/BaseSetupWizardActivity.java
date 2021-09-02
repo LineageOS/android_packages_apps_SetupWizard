@@ -275,15 +275,15 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         super.onBackPressed();
     }
 
-    public void onNavigateBack() {
+    public View.OnClickListener onNavigateBack() {
         onBackPressed();
     }
 
-    public void onNavigateNext() {
+    public View.OnClickListener onNavigateNext() {
         onNextPressed();
     }
 
-    public void onSkip() {
+    public View.OnClickListener onSkip() {
         onSkipPressed();
     }
 
