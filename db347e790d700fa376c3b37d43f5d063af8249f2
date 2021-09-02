@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0293ab07_1faffc3d",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T14:09:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8e37fba3_50cdc408",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 35,
+        "endChar": 39
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b3d6fd39_0bb02565",
         "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
         "patchSetId": 12
@@ -45,6 +69,30 @@
       "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4244feba_5f3ae9bd",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T14:09:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b3d6fd39_0bb02565",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 38
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "83d6f46d_453d630a",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T14:09:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7672edf0_c38a46e7",
+      "range": {
+        "startLine": 56,
+        "startChar": 40,
+        "endLine": 56,
+        "endChar": 44
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b32e37ac_44966158",
         "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
         "patchSetId": 12
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "27bb542b_52d50455",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T14:09:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b32e37ac_44966158",
+      "range": {
+        "startLine": 57,
+        "startChar": 46,
+        "endLine": 57,
+        "endChar": 50
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8147dc21_aada7052",
         "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
         "patchSetId": 12
@@ -114,6 +210,30 @@
       "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef2530ee_4c9163d3",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T14:09:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8147dc21_aada7052",
+      "range": {
+        "startLine": 104,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 5
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
