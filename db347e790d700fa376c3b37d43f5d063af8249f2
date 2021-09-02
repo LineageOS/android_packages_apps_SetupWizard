@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e37fba3_50cdc408",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-09-02T13:44:16Z",
+      "side": 1,
+      "message": "-",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 35,
+        "endChar": 39
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3d6fd39_0bb02565",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-09-02T13:44:16Z",
+      "side": 1,
+      "message": "Can be made local in ctor",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 38
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7672edf0_c38a46e7",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-09-02T13:44:16Z",
+      "side": 1,
+      "message": "view -\u003e onNextPressed()",
+      "range": {
+        "startLine": 56,
+        "startChar": 40,
+        "endLine": 56,
+        "endChar": 44
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b32e37ac_44966158",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-09-02T13:44:16Z",
+      "side": 1,
+      "message": "view -\u003e startEmergencyDialer()",
+      "range": {
+        "startLine": 57,
+        "startChar": 46,
+        "endLine": 57,
+        "endChar": 50
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8147dc21_aada7052",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 12
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-09-02T13:44:16Z",
+      "side": 1,
+      "message": "-",
+      "range": {
+        "startLine": 104,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 5
+      },
+      "revId": "db347e790d700fa376c3b37d43f5d063af8249f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
