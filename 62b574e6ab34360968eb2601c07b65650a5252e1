@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4e7fa26a_d5770c5e",
+        "filename": "src/org/lineageos/setupwizard/NavigationLayout.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T13:38:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8fb0e956_ed998d46",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 12
+      },
+      "revId": "62b574e6ab34360968eb2601c07b65650a5252e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "18ffc6c6_b2832e10",
         "filename": "src/org/lineageos/setupwizard/NavigationLayout.java",
         "patchSetId": 11
@@ -45,6 +69,30 @@
       "revId": "62b574e6ab34360968eb2601c07b65650a5252e1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4191f456_bd5a41b8",
+        "filename": "src/org/lineageos/setupwizard/NavigationLayout.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T13:38:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "18ffc6c6_b2832e10",
+      "range": {
+        "startLine": 55,
+        "startChar": 16,
+        "endLine": 55,
+        "endChar": 32
+      },
+      "revId": "62b574e6ab34360968eb2601c07b65650a5252e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "7afad0f7_4b0117f9",
+        "filename": "src/org/lineageos/setupwizard/NavigationLayout.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T13:38:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "75c4bf8d_96dc5e42",
+      "range": {
+        "startLine": 59,
+        "startChar": 16,
+        "endLine": 59,
+        "endChar": 33
+      },
+      "revId": "62b574e6ab34360968eb2601c07b65650a5252e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "949b1152_4377ff0b",
         "filename": "src/org/lineageos/setupwizard/NavigationLayout.java",
         "patchSetId": 11
@@ -91,6 +163,30 @@
       "revId": "62b574e6ab34360968eb2601c07b65650a5252e1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb814c52_74729784",
+        "filename": "src/org/lineageos/setupwizard/NavigationLayout.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-02T13:38:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "949b1152_4377ff0b",
+      "range": {
+        "startLine": 80,
+        "startChar": 16,
+        "endLine": 80,
+        "endChar": 23
+      },
+      "revId": "62b574e6ab34360968eb2601c07b65650a5252e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
