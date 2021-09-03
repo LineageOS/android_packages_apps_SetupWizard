@@ -16,6 +16,24 @@
       "revId": "9ff15f256b1a013a7e32903a66b0a6c2f96c190c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aaae1f89_1b5015da",
+        "filename": "src/org/lineageos/setupwizard/ScreenLockActivity.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2021-09-03T11:56:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2bfbcd75_e847d49d",
+      "revId": "9ff15f256b1a013a7e32903a66b0a6c2f96c190c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
