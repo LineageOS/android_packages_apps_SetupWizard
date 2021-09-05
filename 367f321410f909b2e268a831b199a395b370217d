@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdc6785c_91df1ca3",
+        "filename": "src/org/lineageos/setupwizard/backup/RestoreIntroActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2021-09-05T14:59:04Z",
+      "side": 1,
+      "message": "I wonder if we should always do onSkip if we receive this result?",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 52,
+        "endChar": 40
+      },
+      "revId": "367f321410f909b2e268a831b199a395b370217d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
