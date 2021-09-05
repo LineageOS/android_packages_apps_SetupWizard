@@ -24,6 +24,7 @@ import android.app.Activity;
 import android.content.Intent;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import org.lineageos.setupwizard.NavigationLayout;
 import org.lineageos.setupwizard.R;
@@ -45,6 +46,15 @@ public class RestoreIntroActivity extends SubBaseActivity {
     protected void onSkipPressed() {
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
         nextAction(NEXT_REQUEST, intent);
+    }
+
+    protected void onSubactivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_SKIP) {
+            applyForwardTransition(getSubactivityNextTransition());
+            onSkipPressed();
+        } else {
+            super.onSubactivityResult(requestCode, resultCode, data);
+        }
     }
 
     @Override
