@@ -72,8 +72,9 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         mSetupWizardApp = (SetupWizardApp) getApplication();
         setNextText(R.string.next);
+        String os_name = getString(R.string.os_name);
         String privacy_policy = getString(R.string.services_privacy_policy);
-        String policySummary = getString(R.string.services_explanation, privacy_policy);
+        String policySummary = getString(R.string.services_explanation, os_name, privacy_policy);
         SpannableString ss = new SpannableString(policySummary);
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
@@ -100,9 +101,9 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         View metricsRow = findViewById(R.id.metrics);
         metricsRow.setOnClickListener(mMetricsClickListener);
         String metricsHelpImproveLineage =
-                getString(R.string.services_help_improve_cm, getString(R.string.os_name));
+                getString(R.string.services_help_improve_cm, os_name);
         String metricsSummary = getString(R.string.services_metrics_label,
-                metricsHelpImproveLineage, getString(R.string.os_name));
+                metricsHelpImproveLineage, os_name, os_name);
         final SpannableStringBuilder metricsSpan = new SpannableStringBuilder(metricsSummary);
         metricsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
                 0, metricsHelpImproveLineage.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

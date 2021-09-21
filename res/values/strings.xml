@@ -65,11 +65,11 @@
     <string name="accessibility_settings">Accessibility settings</string>
 
     <string name="setup_services">LineageOS features</string>
-    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with <xliff:g id="name" example="LineageOS">%1$s</xliff:g>\'s <xliff:g id="name" example="Privacy Policy">%2$s</xliff:g>.</string>
+    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with <xliff:g id="name" example="LineageOS">%1$s</xliff:g>\'s <xliff:g id="name" example="Privacy Policy">%2$s</xliff:g>.</string>
     <string name="services_privacy_policy">Privacy Policy</string>
     <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%2$s</xliff:g> features.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%3$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
 
     <!-- Biometric setup -->
@@ -95,8 +95,8 @@
 
     <!-- Backup Restore -->
     <string name="intro_restore_title">Restore apps and data</string>
-    <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last LineageOS tablet, you can restore it here.</string>
-    <string name="intro_restore_subtitle" product="default">If you have a backup from your last LineageOS phone, you can restore it here.</string>
+    <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, you can restore it here.</string>
+    <string name="intro_restore_subtitle" product="default">If you have a backup from your last <xliff:g id="name" example="LineageOS">%s</xliff:g> phone, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
 
     <!-- Update Recovery -->

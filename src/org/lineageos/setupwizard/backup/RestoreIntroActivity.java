@@ -22,6 +22,8 @@ import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
@@ -31,6 +33,14 @@ import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.SubBaseActivity;
 
 public class RestoreIntroActivity extends SubBaseActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        final TextView restoreSubtitle = (TextView) findViewById(R.id.intro_restore_subtitle);
+        restoreSubtitle.setText(getString(R.string.intro_restore_subtitle,
+                getString(R.string.os_name)));
+    }
 
     @Override
     protected void onStartSubactivity() {
