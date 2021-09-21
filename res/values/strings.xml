@@ -50,10 +50,6 @@
 
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
 
-    <string name="backup_data_summary"><b>Back up</b> app data, Wi-Fi passwords, and other settings to Google servers</string>
-
-    <string name="other_services_summary">These services put Google to work for you, and you can turn them on or off at any time. Data will be used in accordance with Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Location services allows system and third party apps to gather and use data such as your approximate location. For example, an app may use your approximate location to locate nearby coffee shops.</string>
     <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
 
     <string name="setup_mobile_data">Turn on cellular data</string>
@@ -75,11 +71,6 @@
     <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%2$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
-
-    <string name="setup_unlock">Unlock</string>
-    <string name="setup_device_locked">This device has been locked by the user.</string>
-    <string name="setup_require_cyanogen_label"><b>Require your account password</b> in order to use your device even after a factory reset.</string>
-    <string name="setup_device_locked_instructions"><i>To turn this feature off/on, please go to Settings > Security</i></string>
 
     <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Select backup screen lock type</string>
