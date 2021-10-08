@@ -38,7 +38,7 @@ public class SetupWizardApp extends Application {
     public static final String ACTION_SETUP_COMPLETE =
             "org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE";
     public static final String ACTION_FINISHED = "org.lineageos.setupwizard.SETUP_FINISHED";
-    public static final String ACTION_SETUP_WIFI = "android.net.wifi.SETUP_WIFI_NETWORK";
+    public static final String ACTION_SETUP_WIFI = "android.settings.NETWORK_PROVIDER_SETTINGS";
     public static final String ACTION_SETUP_BIOMETRIC = "android.settings.BIOMETRIC_ENROLL";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
     public static final String ACTION_RESTORE_FROM_BACKUP =
