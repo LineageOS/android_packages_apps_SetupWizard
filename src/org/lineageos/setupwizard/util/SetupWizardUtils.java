@@ -55,11 +55,9 @@ import android.util.Log;
 import org.lineageos.internal.util.PackageManagerUtils;
 import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
-import org.lineageos.setupwizard.ChooseDataSimActivity;
-import org.lineageos.setupwizard.MobileDataActivity;
+import org.lineageos.setupwizard.NetworkSetupActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
-import org.lineageos.setupwizard.WifiSetupActivity;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 import java.io.File;
@@ -296,18 +294,11 @@ public class SetupWizardUtils {
         if (!hasBiometric(context)) {
             disableComponent(context, BiometricActivity.class);
         }
-        if (!hasTelephony(context)) {
-            disableComponent(context, MobileDataActivity.class);
-            disableComponent(context, SimMissingActivity.class);
-            disableComponent(context, ChooseDataSimActivity.class);
-        } else if (!simMissing()) {
+        if (!hasTelephony(context) || !simMissing()) {
             disableComponent(context, SimMissingActivity.class);
         }
-        if (!isMultiSimDevice() || singleSimInserted()) {
-            disableComponent(context, ChooseDataSimActivity.class);
-        }
-        if (!hasWifi(context) || isEthernetConnected(context)) {
-            disableComponent(context, WifiSetupActivity.class);
+        if ((!hasWifi(context) && !hasTelephony(context)) || isEthernetConnected(context)) {
+            disableComponent(context, NetworkSetupActivity.class);
         }
     }
 

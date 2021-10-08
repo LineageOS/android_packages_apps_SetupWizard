@@ -17,12 +17,12 @@
 
 package org.lineageos.setupwizard;
 
-import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_WIFI;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_NETWORK;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ENABLE_NEXT_ON_CONNECT;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_BUTTON_BAR;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_SKIP;
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
+import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_NETWORK;
 
 import android.content.Intent;
 
@@ -30,14 +30,14 @@ import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class WifiSetupActivity extends WrapperSubBaseActivity {
+public class NetworkSetupActivity extends WrapperSubBaseActivity {
 
-    public static final String TAG = WifiSetupActivity.class.getSimpleName();
+    public static final String TAG = NetworkSetupActivity.class.getSimpleName();
 
     @Override
     protected void onStartSubactivity() {
         tryEnablingWifi();
-        Intent intent = new Intent(ACTION_SETUP_WIFI);
+        Intent intent = new Intent(ACTION_SETUP_NETWORK);
         if (SetupWizardUtils.hasLeanback(this)) {
             intent.setComponent(SetupWizardUtils.sTvWifiSetupSettingsActivity);
         }
@@ -46,6 +46,6 @@ public class WifiSetupActivity extends WrapperSubBaseActivity {
         intent.putExtra(EXTRA_PREFS_SHOW_SKIP, true);
         intent.putExtra(EXTRA_PREFS_SET_BACK_TEXT, (String) null);
         intent.putExtra(EXTRA_ENABLE_NEXT_ON_CONNECT, true);
-        startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
+        startSubactivity(intent, REQUEST_CODE_SETUP_NETWORK);
     }
 }
