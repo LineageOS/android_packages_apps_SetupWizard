@@ -21,9 +21,13 @@ import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_CAPTIV
 
 import android.content.Context;
 import android.content.Intent;
+/*
 import android.net.CaptivePortal;
+*/
 import android.net.ConnectivityManager;
+/*
 import android.net.ICaptivePortal;
+*/
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -118,6 +122,7 @@ public class CaptivePortalSetupActivity extends WrapperSubBaseActivity {
                 final Intent intent = new Intent(
                         ConnectivityManager.ACTION_CAPTIVE_PORTAL_SIGN_IN);
                 intent.putExtra(Intent.EXTRA_TEXT, responseToken);
+                /*
                 intent.putExtra(ConnectivityManager.EXTRA_NETWORK,
                         ConnectivityManager.from(context)
                                 .getNetworkForType(ConnectivityManager.TYPE_WIFI));
@@ -135,6 +140,7 @@ public class CaptivePortalSetupActivity extends WrapperSubBaseActivity {
                             public void appRequest(int request) {
                             }
                         }));
+                */
                 intent.putExtra("status_bar_color",
                         context.getResources().getColor(R.color.primary_dark));
                 intent.putExtra("action_bar_color", context.getResources().getColor(
