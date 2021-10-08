@@ -26,6 +26,7 @@ import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.icu.text.DecimalFormatSymbols;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.text.InputType;
@@ -54,8 +55,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
-
-import libcore.icu.LocaleData;
 
 import org.lineageos.setupwizard.R;
 
@@ -185,7 +184,7 @@ public class LocalePicker extends LinearLayout {
         }
 
         private static char getZeroDigit(Locale locale) {
-            return LocaleData.get(locale).zeroDigit;
+            return DecimalFormatSymbols.getInstance(locale).getZeroDigit();
         }
 
         private java.util.Formatter createFormatter(Locale locale) {
