@@ -2,7 +2,7 @@
 
 <!--
      Copyright (C) 2016 The CyanogenMod Project
-     Copyright (C) 2017 The LineageOS Project
+     Copyright (C) 2017-2021 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -32,23 +32,14 @@
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_DATETIME;end" id="datetime">
-        <result wizard:action="wifi_setup" />
-    </WizardAction>
-
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WIFI_SETUP;end" id="wifi_setup">
         <result wizard:action="sim_missing" />
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SIM_MISSING;end" id="sim_missing">
-        <result wizard:resultCode="1" wizard:action="location_settings" wizard:name="skip_sim" />
-        <result wizard:action="choose_data_sim" />
+        <result wizard:action="network_setup" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_CHOOSE_DATA_SIM;end" id="choose_data_sim">
-        <result wizard:action="enable_mobile_data" />
-    </WizardAction>
-
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_ENABLE_MOBILE_DATA;end" id="enable_mobile_data">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end" id="network_setup">
         <result wizard:action="location_settings" />
     </WizardAction>
 
