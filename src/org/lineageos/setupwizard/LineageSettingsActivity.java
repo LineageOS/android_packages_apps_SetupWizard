@@ -174,7 +174,7 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private static boolean isKeyDisablerSupported(Context context) {
-        final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
-        return hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
+        //final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+        return false; //hardware.isSupported(LineageHardwareManager.FEATURE_KEY_DISABLE);
     }
 }

@@ -233,7 +233,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_RECOVERY_UPDATE"/>
@@ -245,7 +245,7 @@
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:immersive="true"
-                  android:exported="false"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.DEVICE_SPECIFIC"/>
@@ -258,7 +258,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_SETTINGS" />
@@ -297,7 +297,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP"/>
@@ -310,7 +310,7 @@
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
-                  android:exported="false"
+                  android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE" />
