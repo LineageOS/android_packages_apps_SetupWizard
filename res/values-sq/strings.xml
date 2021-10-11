@@ -52,11 +52,8 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Thirrje emergjente</string>
     <string name="setup_services">Funksionet e LineageOS</string>
-    <string name="services_explanation" product="tablet">Këto shërbime punojnë që të rrisin aftësitë e tabletës suaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
-    <string name="services_explanation" product="default">Këto shërbime punojnë që të rrisin aftësitë e telefonit tuaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
     <string name="services_privacy_policy">Politika e Privatësisë</string>
     <string name="services_help_improve_cm">Ndihmo në përmirësimin e <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> duke dërguar automatikisht të dhëna diagnostikuese si dhe përdorimin tek LineageOS. Ky informacion nuk do të përdoret për identifikimin tënd por i jep një dorë ekipeve të përmirësojnë gjëra si jetëgjatësinë e baterisë, performancën e app, dhe funksionet e reja të <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Përdor butonat virtualë të lundrimit</b> në vend të butonave fizikë.</string>
     <string name="setup_unlock">Zhblloko</string>
     <string name="setup_device_locked">Kjo pajisje është bllokuar nga përdoruesi.</string>

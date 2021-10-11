@@ -52,11 +52,8 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Gairm-èiginn</string>
     <string name="setup_services">Gleusan LineageOS</string>
-    <string name="services_explanation" product="tablet">Leudaichidh na seirbheisean seo comasan na tablaid agad. Thèid an dàta a chleachdadh a-rèir <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
-    <string name="services_explanation" product="default">Leudaichidh na seirbheisean seo comasan an fhòn agad. Thèid an dàta a chleachdadh a-rèir <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
     <string name="services_privacy_policy">Poileasaidh prìobhaideachd</string>
     <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu LineageOS gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="LineageOS">%2$s</xliff:g> ùra.</string>
     <string name="services_os_nav_keys_label"><b>Cleachd iuchraichean seòladaireachd air an sgrìn</b> seach iuchraichean bathair-chruaidh.</string>
     <string name="setup_unlock">Thoir a’ ghlas dheth</string>
     <string name="setup_device_locked">Chaidh an t-uidheam seo a ghlasadh leis a’ chleachdaiche.</string>
