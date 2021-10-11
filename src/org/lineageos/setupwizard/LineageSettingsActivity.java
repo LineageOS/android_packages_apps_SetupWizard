@@ -90,10 +90,13 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
                 }
             }
         };
+        Log.e("SUW", policySummary + ", " + privacy_policy);
         int ppStartIndex = policySummary.indexOf(privacy_policy);
-        ss.setSpan(clickableSpan,
-                ppStartIndex, ppStartIndex + privacy_policy.length(),
-                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        if (ppStartIndex >= 0) {
+            ss.setSpan(clickableSpan,
+                    ppStartIndex, ppStartIndex + privacy_policy.length(),
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        }
         TextView privacyPolicy = (TextView) findViewById(R.id.privacy_policy);
         privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
         privacyPolicy.setText(ss);
