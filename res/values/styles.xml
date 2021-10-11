@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.Setup" parent="@style/SudThemeGlifV3.Light" />
+    <style name="Theme.Setup" parent="@style/SudDynamicColorThemeGlifV3.Light" />
 
     <style name="SpinnerItem">
         <item name="android:textSize">15sp</item>
