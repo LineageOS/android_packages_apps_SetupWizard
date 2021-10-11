@@ -17,8 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="setup_mobile_data">Kveiktu á farsímagögnum</string>
-    <string name="services_explanation" product="tablet">Þessar þjónustur gera þér kleift að útvíkka eiginleika spjaldtölvunnar þinnar. Gögn verða notuð í samræmi við <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
-    <string name="services_explanation" product="default">Þessar þjónustur gera þér kleift að útvíkka eiginleika símans þíns. Gögn verða notuð í samræmi við <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
     <string name="setup_device_locked">Þessu tæki hefur verið læst af notandanum.</string>
     <string name="setup_device_locked_instructions"><i>Til að kveikja eða slökkva á þessum eiginleika, farðu í Stillingar &gt; Öryggi</i></string>

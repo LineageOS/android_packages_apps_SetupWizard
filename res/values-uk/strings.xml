@@ -51,8 +51,6 @@
     <string name="yes">Так</string>
     <string name="emergency_call">Екстрений виклик</string>
     <string name="setup_services">Функції LineageOS</string>
-    <string name="services_explanation" product="tablet">Ці послуги створено, щоб розширити можливості Вашого пристрою. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
-    <string name="services_explanation" product="default">Ці послуги створено, щоб розширити можливості Вашого телефону. Особисті дані буде використано у відповідності до <xliff:g id="name" example="Privacy Policy">%s </xliff:g> LineageOS.</string>
     <string name="services_privacy_policy">Політика Конфіденційності</string>
     <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>

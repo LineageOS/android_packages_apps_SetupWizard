@@ -49,7 +49,6 @@
     <string name="emergency_call">Hädaabinumbril helistamine</string>
     <string name="services_privacy_policy">Privaatsuspoliitika</string>
     <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="LineageOS">%s</xliff:g>i</string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> saates meile automatselt diagnostikat ja kasutusandmeid. Seda teavet ei saa kasutada sinu tuvastamiseks ning see aitab arendajatel muuhulgas parandada aku eluiga, rakenduste jõudlust ning arendada uusi <xliff:g id="name" example="LineageOS">%2$s</xliff:g>i võimalusi.</string>
     <string name="services_os_nav_keys_label"><b>Kasuta ekraanil olevaid navigeerimisklahve</b> riistvaraliste nuppude asemel.</string>
     <string name="setup_unlock">Ava lukustus</string>
     <string name="setup_device_locked">Seade on kasutaja poolt lukustatud.</string>
