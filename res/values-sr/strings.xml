@@ -51,11 +51,8 @@
     <string name="yes">Да</string>
     <string name="emergency_call">Хитан позив</string>
     <string name="setup_services">Функције LineageOS-а</string>
-    <string name="services_explanation" product="tablet">Ове услуге проширују могућности вашег таблета. Подаци ће бити коришћени у складу са <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS-а.</string>
-    <string name="services_explanation" product="default">Ове услуге проширују могућности вашег телефона. Подаци ће бити коришћени у складу са <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS-а.</string>
     <string name="services_privacy_policy">Политика приватности</string>
     <string name="services_help_improve_cm">Помозите нам да побољшамо <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> слањем дијагностичких података LineageOS-у. Ове информације вас не могу идентификовати и користе се у циљу побољшања трајања батерије, перформанси и додавања нових <xliff:g id="name" example="LineageOS">%2$s</xliff:g> могућности.</string>
     <string name="services_os_nav_keys_label"><b>Користите навигациону дугмад на екрану</b> уместо физичку.</string>
     <string name="setup_unlock">Откључај</string>
     <string name="setup_device_locked">Корисник је закључао уређај.</string>
