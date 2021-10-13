@@ -31,6 +31,7 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.WELCOME;end" id="welcome">
         <result wizard:action="check_user_unlock_qr" wizard:name="start_qr_provision" wizard:resultCode="101" />
         <result wizard:action="check_user_unlock_dpm_user_complete" wizard:name="dpm_user_complete" wizard:resultCode="111" />
+        <result wizard:action="check_user_unlock_dpm_user_complete" wizard:name="dpm_profile_complete" wizard:resultCode="112" />
         <result wizard:action="check_user_unlock_work_setup_interrupted_qr_scan" wizard:name="check_user_unlock_work_setup_interrupted_qr_scan" wizard:resultCode="114" />
         <result wizard:action="check_user_unlock_work_setup_interrupted_consumer_flow" wizard:name="check_user_unlock_work_setup_interrupted_consumer_flow" wizard:resultCode="115" />
         <result wizard:action="check_user_unlock" />
@@ -80,13 +81,22 @@
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_zero_touch_flow" id="zero_touch">
         <result wizard:action="post_dpm_user_flow" wizard:name="dpm_user_complete" wizard:resultCode="111" />
         <result wizard:action="add_personal_account_after_work_profile" wizard:name="add_personal_account_after_work_profile" wizard:resultCode="120" />
+        <result wizard:action="setup_as_new_flow" wizard:name="financed_device_provisioning_complete" wizard:resultCode="121" />
+        <result wizard:action="work_profile_setup" wizard:name="work_profile_setup" wizard:resultCode="122" />
+        <result wizard:action="post_dpm_user_flow" wizard:name="device_owner_setup" wizard:resultCode="123" />
         <result wizard:action="setup_as_new_flow" wizard:name="gmscore_zero_touch" wizard:resultCode="116" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_unified_restore_flow" id="unified_restore_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_post_dpm_provision_finalization_flow" id="work_profile_setup">
+        <result wizard:action="transition_to_personal_profile_setup" />
+    </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_no_network_flow" id="no_network_flow">
         <result wizard:action="oem_post_setup" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.TRANSITION_TO_PERSONAL_PROFILE_SETUP;end" id="transition_to_personal_profile_setup">
+        <result wizard:action="add_personal_account_after_work_profile" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_account_flow" id="add_personal_account_after_work_profile">
         <result wizard:action="oem_post_setup" />
