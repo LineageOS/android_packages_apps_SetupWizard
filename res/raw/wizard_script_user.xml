@@ -46,7 +46,6 @@
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CONSOLIDATE_CAPTIVE_PORTAL;end" id="consolidate_captive_portal">
         <result wizard:action="network_unavailable" wizard:name="timeout" wizard:resultCode="101" />
-        <result wizard:action="pre_checkin_and_update" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.PRE_CHECKIN_AND_UPDATE;end" id="pre_checkin_and_update">
         <result wizard:action="network_timeout" wizard:name="timeout" wizard:resultCode="101" />
@@ -74,10 +73,10 @@
     <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.GMS_ACCOUNT_CHECKIN;end" id="gms_account_checkin">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
     </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_account_flow" id="account_flow">
+    <WizardAction wizard:flow="UserAccountFlow" wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_account_flow" id="account_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_no_account_flow" id="no_account_flow">
+    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_account_flow" id="no_account_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup" />
