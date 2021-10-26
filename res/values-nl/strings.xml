@@ -49,12 +49,15 @@
     <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hiermee kunnen kosten gemoeid zijn.</string>
     <string name="no">Nee</string>
     <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Noodoproep</string>
+    <string name="accessibility_settings">Toegankelijkheidsinstellingen</string>
     <string name="setup_services">Functies van LineageOS</string>
     <string name="services_explanation" product="tablet">Deze diensten worden gebruikt om de mogelijkheden van uw tablet uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
     <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
     <string name="services_privacy_policy">Privacybeleid</string>
     <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar LineageOS. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-functies.</string>
     <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
     <string name="setup_unlock">Ontgrendelen</string>
     <string name="setup_device_locked">Dit apparaat is vergrendeld door de gebruiker.</string>
@@ -65,6 +68,9 @@
     <string name="fingerprint_setup_title">Vingerafdruk instellen</string>
     <string name="fingerprint_setup_summary">Om de vingerafdruksensor te gebruiken om uw scherm te ontgrendelen dient u:</string>
     <string name="fingerprint_setup_add_fingerprint">Uw vingerafdruk toe te voegen</string>
+    <string name="face_setup_title">Gezicht instellen</string>
+    <string name="face_setup_summary">Om met je gezicht te ontgrendelen moet je het volgende doen:</string>
+    <string name="face_setup_add_face">Voeg je gezicht toe</string>
     <string name="biometric_setup_backup_lock_method">Een tweede ontgrendelmethode in te stellen</string>
     <string name="biometric_setup_screen_lock_setup">Schermvergrendeling in te stellen</string>
     <string name="sim_locale_changed">%1$s simkaart gedetecteerd</string>
@@ -74,4 +80,12 @@
     <string name="lockscreen_setup_title" product="default">Bescherm uw telefoon</string>
     <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
     <string name="lockscreen_setup_screen_lock_setup">Instellen</string>
+    <string name="intro_restore_title">Herstel apps en gegevens</string>
+    <string name="intro_restore_subtitle" product="tablet">Als u een back-up heeft van uw laatste LineageOS tablet, kunt u deze hier herstellen.</string>
+    <string name="intro_restore_subtitle" product="default">Als u een back-up heeft van uw laatste LineageOS tablet, kunt u deze hier herstellen.</string>
+    <string name="intro_restore_button">Backup terugzetten</string>
+    <string name="update_recovery_title">Lineage Recovery bijwerken</string>
+    <string name="update_recovery_description">Lineage Recovery updaten bij de eerste start na elke update</string>
+    <string name="update_recovery_warning">Recovery zal worden bijgewerkt zodra u de installatie hebt voltooid. Als u dit intact wilt houden, schakelt u deze functie uit.</string>
+    <string name="update_recovery_setting">Update Lineage Recovery naast het besturingssysteem</string>
 </resources>

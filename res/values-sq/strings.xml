@@ -17,10 +17,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Asistenti i Konfigurimit</string>
-    <string name="next">Vazhdo</string>
-    <string name="skip">Jo tani</string>
+    <string name="next">Tjetra</string>
+    <string name="skip">Kapërce</string>
     <string name="start">Fillo</string>
-    <string name="done">Mbarova</string>
+    <string name="done">U krye</string>
     <string name="ok">OK</string>
     <string name="loading">Një sekondë\u2026</string>
     <string name="setup_complete">Konfigurimi u plotësua</string>
@@ -32,7 +32,7 @@
     <string name="setup_location">Shërbimet e vendndodhjes</string>
     <string name="setup_other">Shërbime të tjera</string>
     <string name="setup_datetime">Data &amp; ora</string>
-    <string name="setup_current_date">Data</string>
+    <string name="setup_current_date">Data aktuale</string>
     <string name="setup_current_time">Ora</string>
     <string name="sim_missing_summary" product="tablet">Ju nuk keni futur asnjë kartë SIM në tabletë. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
     <string name="sim_missing_summary" product="default">Ju nuk keni futur asnjë kartë SIM në telefon. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
@@ -45,12 +45,13 @@
     <string name="location_access_summary"><b> Lejo programe që kanë kërkuar lejen tënde</b> të përdorin informacionin mbi vendndodhjen tuaj. Kjo mund të përfshijë vendndodhjen tuaj aktuale dhe vendodhje tuajat të mëparshme.</string>
     <string name="setup_mobile_data">Aktivizo internetin e celularit</string>
     <string name="setup_mobile_data_no_service">Nuk ka shërbim</string>
-    <string name="setup_mobile_data_emergency_only">Vetëm thirrjet emergjente</string>
+    <string name="setup_mobile_data_emergency_only">Vetëm telefonata urgjente</string>
     <string name="enable_mobile_data_summary">A doni të përdorni internetin e celularit gjatë instalimit? Aktivizimi i internetit të celularit mund të rrisë pagesën e përdorimit të internetit.</string>
     <string name="no">Jo</string>
     <string name="yes">Po</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Thirrje emergjente</string>
+    <string name="accessibility_settings">Cilësimet e aksesueshmërisë</string>
     <string name="setup_services">Funksionet e LineageOS</string>
     <string name="services_explanation" product="tablet">Këto shërbime punojnë që të rrisin aftësitë e tabletës suaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
     <string name="services_explanation" product="default">Këto shërbime punojnë që të rrisin aftësitë e telefonit tuaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="Privacy Policy">%s</xliff:g> e LineageOS.</string>
@@ -83,8 +84,8 @@
     <string name="intro_restore_subtitle" product="tablet">Nëse keni një kopje rezervë nga tableti juaj i fundit LineageOS, mund ta ktheni këtu.</string>
     <string name="intro_restore_subtitle" product="default">Nëse keni një kopje rezervë nga tableti juaj i fundit LineageOS, mund ta ktheni këtu</string>
     <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
-    <string name="update_recovery_title">Azhornoni rikuperimin e Lineage</string>
+    <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>
     <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo azhornimi.</string>
-    <string name="update_recovery_warning">Rikuperimi do të azhornohet sapo të keni mbaruar konfigurimin. Nëse dëshironi ta mbani të paprekur, mbylleni këtë veçori.</string>
-    <string name="update_recovery_setting">Përditësoni Rimëkëmbjen Lineage krahas OS</string>
+    <string name="update_recovery_warning">Rikuperimi do të përditësohet sapo të keni mbaruar konfigurimin. Nëse dëshironi ta mbani të paprekur, mbylleni këtë veçori.</string>
+    <string name="update_recovery_setting">Përditësoni rikuperimin Lineage krahas OS</string>
 </resources>

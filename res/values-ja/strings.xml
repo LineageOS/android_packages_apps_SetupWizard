@@ -51,6 +51,7 @@
     <string name="yes">はい</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">緊急通報</string>
+    <string name="accessibility_settings">ユーザー補助設定</string>
     <string name="setup_services">LineageOS の機能</string>
     <string name="services_explanation" product="tablet">これらのサービスは端末の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
     <string name="services_explanation" product="default">これらのサービスは端末の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>

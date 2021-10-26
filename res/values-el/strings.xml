@@ -51,6 +51,7 @@
     <string name="yes">Ναι</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Κλήση έκτακτης ανάγκης</string>
+    <string name="accessibility_settings">Ρυθμίσεις προσβασιμότητας</string>
     <string name="setup_services">Χαρακτηριστικά LineageOS</string>
     <string name="services_explanation" product="tablet">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες του tablet σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> του LineageOS.</string>
     <string name="services_explanation" product="default">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες του τηλεφώνου σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την <xliff:g id="name" example="Privacy Policy">%s</xliff:g> του LineageOS.</string>

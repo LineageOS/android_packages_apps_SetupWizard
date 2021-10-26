@@ -74,4 +74,8 @@
     <string name="lockscreen_setup_title" product="default">Protexi\'l to teléfonu</string>
     <string name="lockscreen_setup_summary"><b>Protexe esti preséu</b> y riquirá un PIN, patrón o contraseña pa desbloquiar la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="update_recovery_title">Anovar el recovery de Lineage</string>
+    <string name="update_recovery_description">Anueva\'l recovery de Lineage nel primer arrique de cada anovamientu.</string>
+    <string name="update_recovery_warning">El recovery anuévase namás que fine la configuración. Si nun lu quies tocar, desactiva esta carauterística.</string>
+    <string name="update_recovery_setting">Anovar el recovery xunto con LineageOS</string>
 </resources>
