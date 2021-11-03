@@ -21,7 +21,9 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.google.android.setupcompat.util.SystemBarHelper;
 import org.lineageos.setupwizard.util.EnableAccessibilityController;
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class WelcomeActivity extends BaseSetupWizardActivity {
 
@@ -35,12 +37,16 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         mRootView = findViewById(R.id.root);
         setNextText(R.string.next);
-        setBackText(R.string.emergency_call);
-        setBackDrawable(null);
-        mEnableAccessibilityController =
-                EnableAccessibilityController.getInstance(getApplicationContext());
-        mRootView.setOnTouchListener((v, event) ->
-                mEnableAccessibilityController.onTouchEvent(event));
+        if (SetupWizardUtils.hasLeanback(this)) {
+            SystemBarHelper.setBackButtonVisible(getWindow(), false);
+        } else {
+            setBackText(R.string.emergency_call);
+            setBackDrawable(null);
+            mEnableAccessibilityController =
+                    EnableAccessibilityController.getInstance(getApplicationContext());
+            mRootView.setOnTouchListener((v, event) ->
+                    mEnableAccessibilityController.onTouchEvent(event));
+        }
 
     }
 
