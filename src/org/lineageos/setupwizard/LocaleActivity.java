@@ -37,6 +37,8 @@ import android.widget.Toast;
 import com.android.internal.telephony.MccTable;
 import com.android.internal.telephony.TelephonyIntents;
 
+import com.google.android.setupcompat.util.SystemBarHelper;
+
 import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.widget.LocalePicker;
 
@@ -78,6 +80,9 @@ public class LocaleActivity extends BaseSetupWizardActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (SetupWizardUtils.hasLeanback(this)) {
+            SystemBarHelper.setBackButtonVisible(getWindow(), true);
+        }
         setNextText(R.string.next);
         mLanguagePicker = (LocalePicker) findViewById(R.id.locale_list);
         loadLanguages();
