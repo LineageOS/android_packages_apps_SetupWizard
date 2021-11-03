@@ -16,6 +16,8 @@
      limitations under the License.
 -->
 <resources>
+    <style name="Theme.Setup" parent="SudThemeGlifV3.Light" />
+
     <style name="SpinnerItem">
         <item name="android:textSize">15sp</item>
         <item name="android:paddingLeft">@dimen/content_margin_left</item>
