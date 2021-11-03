@@ -58,7 +58,7 @@
 
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
-                 android:theme="@style/SudThemeGlifV3.Light"
+                 android:theme="@style/Theme.Setup"
                  android:uiOptions="none"
                  android:taskAffinity="com.android.wizard"
                  android:name=".SetupWizardApp">
