@@ -18,6 +18,7 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_WIFI;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_SKIP_TV;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
 
 import android.content.Intent;
@@ -38,6 +39,7 @@ public class WifiSetupActivity extends WrapperSubBaseActivity {
         }
         intent.putExtra(SetupWizardApp.EXTRA_PREFS_SHOW_BUTTON_BAR, true);
         intent.putExtra(SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT, (String) null);
+        intent.putExtra(EXTRA_PREFS_SHOW_SKIP_TV, true);
         startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
     }
 }
