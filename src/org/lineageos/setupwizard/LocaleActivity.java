@@ -31,6 +31,7 @@ import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.Toast;
 
@@ -82,6 +83,10 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         setNextText(R.string.next);
         mLanguagePicker = (LocalePicker) findViewById(R.id.locale_list);
         loadLanguages();
+
+        final Button next = ((NavigationLayout) findViewById(R.id.navigation_bar)).getNextButton();
+        next.setNextFocusLeftId(R.id.locale_list);
+        next.setNextFocusUpId(R.id.locale_list);
     }
 
     @Override
