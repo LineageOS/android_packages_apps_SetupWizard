@@ -59,6 +59,7 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_ACTION_ID = "actionId";
     public static final String EXTRA_RESULT_CODE = "com.android.setupwizard.ResultCode";
     public static final String EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar";
+    public static final String EXTRA_PREFS_SHOW_SKIP_TV = "extra_show_skip_network";
     public static final String EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text";
     public static final String EXTRA_IS_SETUP_FLOW = "isSetupFlow";
 
