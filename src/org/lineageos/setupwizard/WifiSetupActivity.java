@@ -22,6 +22,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ENABLE_NEXT_ON_CONN
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SET_BACK_TEXT;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_BUTTON_BAR;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_SKIP;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_SKIP_TV;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_WIFI;
 
 import android.content.Intent;
@@ -44,6 +45,7 @@ public class WifiSetupActivity extends WrapperSubBaseActivity {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         intent.putExtra(EXTRA_PREFS_SHOW_BUTTON_BAR, true);
         intent.putExtra(EXTRA_PREFS_SHOW_SKIP, true);
+        intent.putExtra(EXTRA_PREFS_SHOW_SKIP_TV, true);
         intent.putExtra(EXTRA_PREFS_SET_BACK_TEXT, (String) null);
         intent.putExtra(EXTRA_ENABLE_NEXT_ON_CONNECT, true);
         startSubactivity(intent, REQUEST_CODE_SETUP_WIFI);
