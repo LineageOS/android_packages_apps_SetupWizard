@@ -16,6 +16,29 @@
       "message": "I feel like we should at least try to cover our bases",
       "revId": "89c8deff378e7b4f6d086f6c92f2e20a6bbd77da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54aee422_92a4eb6b",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2021-11-14T15:24:40Z",
+      "side": 1,
+      "message": "at this point (actually even before this change) I\u0027d move all of this to it\u0027s own method:\n\nSpannableString ss \u003d getClickablePolicySummary(policySummary);\n\nprivate SpannableString getClickablePolicySummary(String policySummary) {\n    SpannableString ss \u003d new SpannableString(policySummary);\n    if (!getResources().getBoolean(R.bool.config_isLargeNoTouch)) {\n        return ss;\n    }\n    [...]\n    return ss;\n}",
+      "range": {
+        "startLine": 78,
+        "startChar": 8,
+        "endLine": 98,
+        "endChar": 9
+      },
+      "revId": "89c8deff378e7b4f6d086f6c92f2e20a6bbd77da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
