@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf5ddc38_857786f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-11-14T15:31:22Z",
+      "side": 1,
+      "message": "ATV has, and shouldn\u0027t have an app to handle this intent though? Google\u0027s SUW doesn\u0027t.",
+      "parentUuid": "c3d949ea_b7de8d5d",
+      "revId": "89c8deff378e7b4f6d086f6c92f2e20a6bbd77da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "54aee422_92a4eb6b",
