@@ -52,9 +52,6 @@
     <string name="data_sim_name">شريحة <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">مكالمة طوارئ</string>
     <string name="setup_services">ميزات LineageOS</string>
-    <string name="services_explanation" product="tablet">تعمل هذه الخدمات على توسيع نطاق إمكانيات كمبيوترك اللوحي. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
-    <string name="services_explanation" product="default">تعمل هذه الخدمات على توسيع نطاق إمكانيات كمبيوترك اللوحي. ستُستخدم البيانات بحسب <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
-    <string name="services_privacy_policy">سياسة الخصوصية</string>
     <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> بإرسال بيانات التشخيص و الاستعمال تلقائيا إلى LineageOS. لا يمكن استعمال هذه المعلومات لتحديد هويتك، لكنها تساعد الفرق المكلفة بـ: عمر البطارية، أداء التطبيقات، و مزايا <xliff:g id="name" example="LineageOS">%2$s</xliff:g> الجديدة.</string>
     <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
