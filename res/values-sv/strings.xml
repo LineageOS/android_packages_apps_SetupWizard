@@ -51,7 +51,6 @@
     <string name="yes">Ja</string>
     <string name="emergency_call">Nödsamtal</string>
     <string name="setup_services">LineageOS funktioner</string>
-    <string name="services_privacy_policy">Sekretesspolicy</string>
     <string name="services_os_nav_keys_label"><b>Använder styrtangenter på skärmen</b> i stället för fysiska knappar.</string>
     <string name="setup_unlock">Lås upp</string>
     <string name="setup_device_locked">Denna enhet har blivit låst av användaren.</string>
