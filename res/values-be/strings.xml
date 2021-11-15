@@ -48,7 +48,6 @@
     <string name="no">Не</string>
     <string name="yes">Так</string>
     <string name="emergency_call">Экстранны выклік</string>
-    <string name="services_privacy_policy">Палітыка прыватнасці</string>
     <string name="services_os_nav_keys_label"><b>Скарыстаць на экранные навігацыйныя кнопкі</b> заміж апаратных.</string>
     <string name="setup_unlock">Разблакаваць</string>
     <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
