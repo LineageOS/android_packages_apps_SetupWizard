@@ -49,9 +49,6 @@
     <string name="data_sim_name">সিম <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">জরুরী কল</string>
     <string name="setup_services">LineageOS এর বৈশিষ্ট্যসমূহ</string>
-    <string name="services_explanation" product="tablet">এই সেবা আপনার ট্যাবলেটের ক্ষমতা বাড়াতে কাজ করে। LineageOS\'র অনুসারে তথ্য ব্যবহার করা হবে<xliff:g id="name" example="Privacy Policy">%s </xliff:g>।</string>
-    <string name="services_explanation" product="default">এই সেবা আপনার ফোনের ক্ষমতা বাড়াতে কাজ করে। LineageOS\'র অনুসারে তথ্য ব্যবহার করা হবে<xliff:g id="name" example="Privacy Policy">%s </xliff:g>।</string>
-    <string name="services_privacy_policy">গোপনীয়তার নীতি</string>
     <string name="setup_unlock">আনলক</string>
     <string name="setup_require_cyanogen_label"><b>আপনার হিসাবের পাসওয়ার্ড প্রয়োজন</b> যাতে ফ্যাক্টরি রিসেট করার পরেেও আপনার ডিভাইসে ব্যবহার করতে পারেন।</string>
     <string name="fingerprint_setup_title">আঙ্গুলের ছাপ সেটআপ</string>

@@ -52,9 +52,6 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d </xliff:g> - <xliff:g id="name">%2$s </xliff:g></string>
     <string name="emergency_call">Hitan poziv</string>
     <string name="setup_services">Značajke LineageOS-a</string>
-    <string name="services_explanation" product="tablet">Ove usluge rade za vas da povećaju mogućnosti vašeg tableta. Podatci će se upotrebljavati u suglasnosti s LineageOS-ovom <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="services_explanation" product="default">Ove usluge rade za vas da povećaju mogućnosti vašeg telefona. Podatci će se upotrebljavati u suglasnosti s LineageOS-ovom <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="services_privacy_policy">Pravila privatnosti</string>
     <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>  automatskim slanjem dijagnostičkih podataka i podataka o korištenju LineageOS-u. Ove se informacije ne mogu upotrebljavati kako bi vas identificirale i puno pomažu timovima koji rade na stvarima kao što su vijek baterije, izvedba aplikacija i nove <xliff:g id="name" example="LineageOS">%2$s</xliff:g> značajke.</string>
     <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>

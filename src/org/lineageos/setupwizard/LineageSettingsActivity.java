@@ -72,8 +72,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         mSetupWizardApp = (SetupWizardApp) getApplication();
         setNextText(R.string.next);
-        String privacy_policy = getString(R.string.services_privacy_policy);
-        String policySummary = getString(R.string.services_explanation, privacy_policy);
+        TextView privacyPolicy = (TextView) findViewById(R.id.find_privacy_policy);
+        String policySummary = getString(R.string.services_find_privacy_policy, PRIVACY_POLICY_URI);
         SpannableString ss = new SpannableString(policySummary);
         if (!getResources().getBoolean(R.bool.config_isLargeNoTouch)) {
             ClickableSpan clickableSpan = new ClickableSpan() {
@@ -90,13 +90,13 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
                     }
                 }
             };
-            int ppStartIndex = policySummary.indexOf(privacy_policy);
+            int ppStartIndex = policySummary.indexOf(PRIVACY_POLICY_URI);
             ss.setSpan(clickableSpan,
-                    ppStartIndex, ppStartIndex + privacy_policy.length(),
+                    ppStartIndex, ppStartIndex + PRIVACY_POLICY_URI.length(),
                     Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            privacyPolicy.setClickable(true);
+            privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
         }
-        TextView privacyPolicy = (TextView) findViewById(R.id.privacy_policy);
-        privacyPolicy.setMovementMethod(LinkMovementMethod.getInstance());
         privacyPolicy.setText(ss);
 
         View metricsRow = findViewById(R.id.metrics);
