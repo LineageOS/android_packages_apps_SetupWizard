@@ -52,7 +52,6 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d </xliff:g> - <xliff:g id="name">%2$s </xliff:g></string>
     <string name="emergency_call">Hitan poziv</string>
     <string name="setup_services">Značajke LineageOS-a</string>
-    <string name="services_privacy_policy">Pravila privatnosti</string>
     <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
     <string name="setup_unlock">Otključaj</string>

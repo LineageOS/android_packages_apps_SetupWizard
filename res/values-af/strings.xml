@@ -51,7 +51,6 @@
     <string name="yes">Ja</string>
     <string name="emergency_call">Noodoproep</string>
     <string name="setup_services">LineageOS kenmerke</string>
-    <string name="services_privacy_policy">Privaatheid beleid</string>
     <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
     <string name="setup_unlock">Ontsluit</string>
     <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>

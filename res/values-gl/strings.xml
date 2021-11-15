@@ -52,7 +52,6 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Chamada de emerxencia</string>
     <string name="setup_services">Actualizacións de LineageOS</string>
-    <string name="services_privacy_policy">Política de privacidade</string>
     <string name="services_help_improve_cm">Axuda a mellorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Usar as teclas de navegación</b> en vez das do hardware.</string>
     <string name="setup_unlock">Desbloquear</string>

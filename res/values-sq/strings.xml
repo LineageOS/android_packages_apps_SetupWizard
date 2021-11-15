@@ -52,7 +52,6 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Thirrje emergjente</string>
     <string name="setup_services">Funksionet e LineageOS</string>
-    <string name="services_privacy_policy">Politika e Privatësisë</string>
     <string name="services_help_improve_cm">Ndihmo në përmirësimin e <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Përdor butonat virtualë të lundrimit</b> në vend të butonave fizikë.</string>
     <string name="setup_unlock">Zhblloko</string>

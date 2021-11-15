@@ -52,7 +52,6 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Tísňové volání</string>
     <string name="setup_services">LineageOS funkce</string>
-    <string name="services_privacy_policy">Zásady ochrany osobních údajů</string>
     <string name="services_help_improve_cm">Pomozte vylepšit <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
     <string name="setup_unlock">Odemknout</string>

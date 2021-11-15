@@ -52,7 +52,6 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">緊急通報</string>
     <string name="setup_services">LineageOS の機能</string>
-    <string name="services_privacy_policy">プライバシーポリシー</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>の改善に協力します</string>
     <string name="services_os_nav_keys_label">ハードウェアキーのかわりに<b>スクリーンナビゲーションキーを使用します</b>。</string>
     <string name="setup_unlock">ロック解除</string>

@@ -51,7 +51,6 @@
     <string name="yes">Sí</string>
     <string name="emergency_call">Llamada de emergencia</string>
     <string name="setup_services">Características de LineageOS</string>
-    <string name="services_privacy_policy">Política de privacidad</string>
     <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
     <string name="setup_unlock">Desbloquear</string>
