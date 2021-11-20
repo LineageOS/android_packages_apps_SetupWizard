@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c990699_0e8c1d7c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-11-20T11:52:53Z",
+      "side": 1,
+      "message": "I would make it unclickable on all devices. We shouldn\u0027t open a full blown browser during setup.",
+      "revId": "8e7cd293d026644d6279747155d7f68fbccc84d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
