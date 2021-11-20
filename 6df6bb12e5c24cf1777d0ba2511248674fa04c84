@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31e72594_488522f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-11-20T14:49:48Z",
+      "side": 1,
+      "message": "Since you are touching these strings, it would make sense to also port the related changes for these strings from https://review.lineageos.org/c/LineageOS/android_packages_apps_SetupWizard/+/316299 to make it easier for translators.",
+      "revId": "6df6bb12e5c24cf1777d0ba2511248674fa04c84",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
