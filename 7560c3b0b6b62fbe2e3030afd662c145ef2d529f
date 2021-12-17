@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "226ae851_2331900c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2021-12-17T11:48:19Z",
+      "side": 1,
+      "message": "Looks nice, but i think it will be more convenient if use HTTP.\n\nTo avoid page loading error, if one day SSL/TLS expire/renewing.\n\nMoreover, the Browser app will automatically redirect to HTTPS.",
+      "revId": "7560c3b0b6b62fbe2e3030afd662c145ef2d529f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
