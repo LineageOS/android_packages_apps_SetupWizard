@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88657183_99cdf142",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-12-17T21:34:47Z",
+      "side": 1,
+      "message": "This looks ugly but works without crashes for now. Need to revisit and match SUW style.",
+      "revId": "049502bd1772b79c043822f59b9fbd86a4794187",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
