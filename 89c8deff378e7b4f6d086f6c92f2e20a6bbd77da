@@ -81,6 +81,30 @@
       },
       "revId": "89c8deff378e7b4f6d086f6c92f2e20a6bbd77da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbf9a915_103c81f5",
+        "filename": "src/org/lineageos/setupwizard/LineageSettingsActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2021-12-19T19:13:02Z",
+      "side": 1,
+      "message": "This whole part is removed in the next commit",
+      "parentUuid": "3bc1f606_3890bc74",
+      "range": {
+        "startLine": 78,
+        "startChar": 8,
+        "endLine": 98,
+        "endChar": 9
+      },
+      "revId": "89c8deff378e7b4f6d086f6c92f2e20a6bbd77da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
