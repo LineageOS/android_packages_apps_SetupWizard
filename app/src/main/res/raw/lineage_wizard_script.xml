@@ -25,18 +25,18 @@
     <WizardAction
         id="locale"
         wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCALE;end">
-        <result wizard:action="sim_missing" />
-    </WizardAction>
-
-    <WizardAction
-        id="sim_missing"
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SIM_MISSING;end">
         <result wizard:action="network_setup" />
     </WizardAction>
 
     <WizardAction
         id="network_setup"
         wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end">
+        <result wizard:action="sim_missing" />
+    </WizardAction>
+
+    <WizardAction
+        id="sim_missing"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SIM_MISSING;end">
         <result wizard:action="datetime" />
     </WizardAction>
 
