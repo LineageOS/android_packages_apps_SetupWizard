@@ -49,6 +49,7 @@
     <string name="enable_mobile_data_summary">セットアップ中にモバイルデータを使用しますか？モバイルデータをONにすると、パケット通信料を請求される可能性があります。</string>
     <string name="no">いいえ</string>
     <string name="yes">はい</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">緊急通報</string>
     <string name="setup_services">LineageOS の機能</string>
     <string name="services_explanation" product="tablet">これらのサービスは端末の機能を拡張するために動作します。データは LineageOS の<xliff:g id="name" example="Privacy Policy">%s</xliff:g>に従って使用されます。</string>
@@ -66,12 +67,20 @@
     <string name="fingerprint_setup_title">指紋のセットアップ</string>
     <string name="fingerprint_setup_summary">指紋センターを画面のロック解除に使用するには、以下のことを行う必要があります:</string>
     <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
+    <string name="face_setup_title">顔認証の設定</string>
+    <string name="face_setup_summary">顔認証を画面のロック解除に使用するには、以下のことを行う必要があります:</string>
+    <string name="face_setup_add_face">顔を追加</string>
     <string name="biometric_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
     <string name="biometric_setup_screen_lock_setup">画面のロックをセットアップ</string>
     <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
     <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>
     <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
+    <string name="lockscreen_setup_title" product="tablet">タブレットの保護</string>
     <string name="lockscreen_setup_title" product="default">スマートフォンの保護</string>
     <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
     <string name="lockscreen_setup_screen_lock_setup">セットアップ</string>
+    <string name="intro_restore_title">アプリとデータを復元</string>
+    <string name="intro_restore_subtitle" product="tablet">以前の LineageOS タブレットからのバックアップがある場合は、こちらから復元できます。</string>
+    <string name="intro_restore_subtitle" product="default">以前の LineageOS スマートフォンからのバックアップがある場合は、こちらから復元できます。</string>
+    <string name="intro_restore_button">バックアップから復元</string>
 </resources>

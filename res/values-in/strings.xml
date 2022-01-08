@@ -67,6 +67,9 @@
     <string name="fingerprint_setup_title">Penyiapan sidik jari</string>
     <string name="fingerprint_setup_summary">Untuk menggunakan sensor sidik jari untuk membuka layar, Anda perlu:</string>
     <string name="fingerprint_setup_add_fingerprint">Tambahkan sidik jari Anda</string>
+    <string name="face_setup_title">Penyiapan wajah</string>
+    <string name="face_setup_summary">Untuk membuka kunci layar dengan wajah Anda, Anda perlu:</string>
+    <string name="face_setup_add_face">Tambahkan wajah Anda</string>
     <string name="biometric_setup_backup_lock_method">Siapkan metode buka kunci kedua</string>
     <string name="biometric_setup_screen_lock_setup">Siapkan kunci layar</string>
     <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
@@ -76,5 +79,8 @@
     <string name="lockscreen_setup_title" product="default">Lindungi telepon anda</string>
     <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
+    <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
+    <string name="intro_restore_subtitle" product="tablet">Jika Anda memiliki cadangan dari LineageOS terakhir pada tablet Anda, Anda dapat memulihkannya di sini.</string>
+    <string name="intro_restore_subtitle" product="default">Jika Anda memiliki cadangan dari LineageOS terakhir pada ponsel Anda, Anda dapat memulihkannya di sini.</string>
     <string name="intro_restore_button">Pulihkan dari cadangan</string>
 </resources>

@@ -23,6 +23,7 @@
     <string name="done">Færdig</string>
     <string name="ok">OK</string>
     <string name="loading">Lige et øjeblik\u2026</string>
+    <string name="setup_complete">Opsætning er fuldført</string>
     <string name="setup_welcome">Velkommen</string>
     <string name="setup_locale">Sprog</string>
     <string name="setup_wifi">Vælg Wi-Fi</string>
@@ -64,7 +65,9 @@
     <string name="settings_biometric_setup_details">Hvordan vil du låse din skærm?</string>
     <string name="fingerprint_setup_title">Fingeraftryksopsætning</string>
     <string name="fingerprint_setup_summary">For at bruge din fingeraftryks-sensor til at låse din skærm op, er du nødt til at:</string>
+    <string name="fingerprint_setup_add_fingerprint">Tilføj dit fingeraftryk</string>
     <string name="biometric_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
+    <string name="biometric_setup_screen_lock_setup">Indstil skærmlås</string>
     <string name="sim_locale_changed">%1$s SIM fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
