@@ -51,8 +51,13 @@
     <string name="setup_services">LineageOS এর বৈশিষ্ট্যসমূহ</string>
     <string name="setup_unlock">আনলক</string>
     <string name="setup_require_cyanogen_label"><b>আপনার হিসাবের পাসওয়ার্ড প্রয়োজন</b> যাতে ফ্যাক্টরি রিসেট করার পরেেও আপনার ডিভাইসে ব্যবহার করতে পারেন।</string>
+    <!-- Biometric setup -->
     <string name="fingerprint_setup_title">আঙ্গুলের ছাপ সেটআপ</string>
+    <!-- secure lock screen -->
+    <string name="lockscreen_setup_title" product="tablet">আপনার ট্যাবলেট সুরক্ষিত করুন</string>
     <string name="lockscreen_setup_screen_lock_setup">সেট আপ করুন</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
     <string name="update_recovery_title">লিনিয়েজ রিকভারি আপডেট করুন</string>
     <string name="update_recovery_description">প্রতিবার আপডেট সম্পন্ন হওয়ার পর প্রথম বুটে লিনিয়েজ রিকভারি আপডেট করে</string>
     <string name="update_recovery_warning">সেটআপটি সম্পন্ন করার সাথে সাথে রিকভারি আপডেট হয়ে যাবে। আপনি যদি রিকভারি আপডেট করতে না চান, এই ফিচারটি অক্ষম করুন।</string>

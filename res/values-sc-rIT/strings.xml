@@ -23,4 +23,8 @@
     <string name="setup_locale">Limba</string>
     <string name="no">Nono</string>
     <string name="yes">Eja</string>
+    <!-- Biometric setup -->
+    <!-- secure lock screen -->
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

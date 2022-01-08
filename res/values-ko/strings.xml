@@ -51,6 +51,7 @@
     <string name="yes">예</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">긴급 통화</string>
+    <string name="accessibility_settings">접근성 설정</string>
     <string name="setup_services">LineageOS 기능</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> 의 개선을 돕기 위해</string>
     <string name="services_metrics_label"><xliff:g id="name" example="LineageOS의 개선을 돕기 위해">%1$s</xliff:g> 진단 및 사용 정보를 LineageOS에 보냅니다. 이 정보로는 사용자를 식별할 수 없으며 배터리 수명, 앱 성능 개선과 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>에 새로운 기능을 추가하는 데 도움이 됩니다.</string>
@@ -59,6 +60,7 @@
     <string name="setup_device_locked">이 기기는 사용자에 의해 잠겨 있습니다.</string>
     <string name="setup_require_cyanogen_label">공장 초기화 후에도 기기를 사용하려면 <b>계정 비밀번호가 필요합니다</b>.</string>
     <string name="setup_device_locked_instructions"><i>이 기능을 켜거나 끄려면, 설정 &gt; 보안으로 이동하세요</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">백업 화면 잠금 방법 선택</string>
     <string name="settings_biometric_setup_details">화면을 어떻게 잠그시겠습니까?</string>
     <string name="fingerprint_setup_title">지문 설정</string>
@@ -70,16 +72,19 @@
     <string name="biometric_setup_backup_lock_method">보조 잠금 해제 방법 설정</string>
     <string name="biometric_setup_screen_lock_setup">화면 잠금 설정</string>
     <string name="sim_locale_changed">%1$s SIM 인식됨</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">화면 잠금 방식 선택</string>
     <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
     <string name="lockscreen_setup_title" product="tablet">태블릿 보호</string>
     <string name="lockscreen_setup_title" product="default">휴대전화 보호</string>
     <string name="lockscreen_setup_summary"><b>이 기기를 보호</b>하고 화면 잠금 해제에 PIN, 패턴 또는 비밀번호가 필요하도록 설정할 수 있습니다.</string>
     <string name="lockscreen_setup_screen_lock_setup">설정</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">앱 및 데이터 복원</string>
     <string name="intro_restore_subtitle" product="tablet">이전 LineageOS 태블릿에서 했던 백업을 가지고 있다면 여기에서 복원할 수 있습니다.</string>
     <string name="intro_restore_subtitle" product="default">이전 LineageOS 휴대전화에서 했던 백업을 가지고 있다면 여기에서 복원할 수 있습니다.</string>
     <string name="intro_restore_button">백업에서 복원</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Lineage 복구 모드 업데이트</string>
     <string name="update_recovery_description">매 업데이트 적용 후 첫 부팅 시 Lineage 복구 모드를 업데이트합니다.</string>
     <string name="update_recovery_warning">설정을 마치면 복구 모드를 즉시 업데이트합니다. 원치 않는 경우 이 기능을 비활성화하세요.</string>

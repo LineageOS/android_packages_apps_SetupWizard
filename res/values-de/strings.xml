@@ -51,6 +51,7 @@
     <string name="yes">Ja</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Notruf</string>
+    <string name="accessibility_settings">Einstellungen zur Barrierefreiheit</string>
     <string name="setup_services">LineageOS-Funktionen</string>
     <string name="services_help_improve_cm">Hilf <xliff:g id="name" example="LineageOS">%s</xliff:g> zu verbessern</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Hilf LineageOS zu verbessern">%1$s</xliff:g>, indem du automatisch Diagnose- und Nutzungsdaten an LineageOS sendest. Diese Informationen können nicht dazu verwendet werden, dich zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
@@ -59,6 +60,7 @@
     <string name="setup_device_locked">Dieses Gerät wurde vom Benutzer gesperrt.</string>
     <string name="setup_require_cyanogen_label"><b>Dein Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
     <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit.</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Wählen Sie den Typ der Ersatz-Bildschirmsperre.</string>
     <string name="settings_biometric_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
     <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
@@ -70,16 +72,19 @@
     <string name="biometric_setup_backup_lock_method">Einrichtung einer sekundären Methode zum Entsperren</string>
     <string name="biometric_setup_screen_lock_setup">Die Bildschirmsperre einrichten</string>
     <string name="sim_locale_changed">%1$s SIM-Karte erkannt</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Wählen Sie einen Sperrbildschirm-Typ</string>
     <string name="settings_lockscreen_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
     <string name="lockscreen_setup_title" product="tablet">Schütze dein Tablet</string>
     <string name="lockscreen_setup_title" product="default">Schützen Sie Ihr Telefon</string>
     <string name="lockscreen_setup_summary"><b>Gerät schützen</b> und PIN, Muster oder Passwort zur Display-Entsperrung verwenden</string>
     <string name="lockscreen_setup_screen_lock_setup">Einrichten</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Apps und Daten wiederherstellen</string>
     <string name="intro_restore_subtitle" product="tablet">Wenn du eine Datensicherung von deinem letzten LineageOS-Tablet hast, kannst du sie hier wiederherstellen.</string>
     <string name="intro_restore_subtitle" product="default">Wenn du eine Datensicherung von deinem letzten LineageOS- Telefon hast, kannst du sie hier wiederherstellen.</string>
     <string name="intro_restore_button">Aus Backup wiederherstellen</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Lineage-Recovery aktualisieren</string>
     <string name="update_recovery_description">Aktualisiert das Lineage-Recovery-Image beim ersten Start nach jedem Update.</string>
     <string name="update_recovery_warning">Das Recovery-Image wird aktualisiert, sobald du die Einrichtung abgeschlossen hast. Wenn es unverändert bleiben soll, deaktiviere diese Funktion.</string>

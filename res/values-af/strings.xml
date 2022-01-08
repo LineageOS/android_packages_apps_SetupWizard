@@ -56,6 +56,7 @@
     <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
     <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
     <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Kies nog \'n skerm sluit tipe</string>
     <string name="settings_biometric_setup_details">Hoe wil jy jou skerm sluit?</string>
     <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>
@@ -64,9 +65,12 @@
     <string name="biometric_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
     <string name="biometric_setup_screen_lock_setup">Stel skerm sluit op</string>
     <string name="sim_locale_changed">%1$s SIM opgespoor</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>
     <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
     <string name="lockscreen_setup_title" product="default">Beskerm jou foon</string>
     <string name="lockscreen_setup_summary"><b>Beskerm die toestel</b>\" en vereis \'n PIN, patroon of wagwoord om skerm te ontsluit\"</string>
     <string name="lockscreen_setup_screen_lock_setup">Stel op</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

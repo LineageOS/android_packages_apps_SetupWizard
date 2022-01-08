@@ -58,6 +58,7 @@
     <string name="setup_device_locked">Thiết bị này đã bị khoá bởi người dùng.</string>
     <string name="setup_require_cyanogen_label"><b>Yêu cầu mật khẩu tài khoản của bạn</b> để sử dụng thiết bị của bạn ngay cả sau khi đặt lại cài đặt gốc.</string>
     <string name="setup_device_locked_instructions"><i>Để bật/tắt tính năng này, hãy truy cập Cài đặt &gt; bảo mật</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Chọn kiểu khóa màn hình dự phòng</string>
     <string name="settings_biometric_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
     <string name="fingerprint_setup_title">Thiết lập vân tay</string>
@@ -66,9 +67,12 @@
     <string name="biometric_setup_backup_lock_method">Thiết lập phương thức mở khóa phụ</string>
     <string name="biometric_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
     <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Chọn kiểu khóa màn hình</string>
     <string name="settings_lockscreen_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
     <string name="lockscreen_setup_title" product="default">Bảo vệ điện thoại của bạn</string>
     <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
     <string name="lockscreen_setup_screen_lock_setup">Thiết lập</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

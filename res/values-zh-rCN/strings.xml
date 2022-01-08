@@ -60,6 +60,7 @@
     <string name="setup_device_locked">此设备的持有者锁定了该设备。</string>
     <string name="setup_require_cyanogen_label"><b>需要您的帐户密码</b>以使用您的设备，甚至在重置之后。</string>
     <string name="setup_device_locked_instructions"><i>要开启或关闭此功能，请进入设置 &gt; 安全</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">选择备用屏幕锁定类型</string>
     <string name="settings_biometric_setup_details">您希望如何锁定您的屏幕？</string>
     <string name="fingerprint_setup_title">指纹设置</string>
@@ -71,16 +72,19 @@
     <string name="biometric_setup_backup_lock_method">设置备用解锁方式</string>
     <string name="biometric_setup_screen_lock_setup">设置屏幕锁定</string>
     <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">选择屏幕锁定类型</string>
     <string name="settings_lockscreen_setup_details">您希望如何锁定您的屏幕？</string>
     <string name="lockscreen_setup_title" product="tablet">保护您的平板电脑</string>
     <string name="lockscreen_setup_title" product="default">为您的手机启用保护功能</string>
     <string name="lockscreen_setup_summary"><b>为此设备启用保护功能</b>，并要求输入 PIN 码、图案或密码才能解锁屏幕</string>
     <string name="lockscreen_setup_screen_lock_setup">设置</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">恢复应用和数据</string>
     <string name="intro_restore_subtitle" product="tablet">如果你有来自你上一台 LineageOS 平板的备份，你可以在这里还原它。</string>
     <string name="intro_restore_subtitle" product="default">如果你有来自你上一台 LineageOS 手机的备份，你可以在这里还原它。</string>
     <string name="intro_restore_button">从备份中还原</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">更新 Lineage 恢复</string>
     <string name="update_recovery_description">每次更新后在第一次启动时更新 Lineage 恢复。</string>
     <string name="update_recovery_warning">恢复程序将在您完成设置后立即更新。如果您想保持完整，请禁用此功能。</string>

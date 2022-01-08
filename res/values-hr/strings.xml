@@ -59,6 +59,7 @@
     <string name="setup_device_locked">Uređaj je zaključao korisnik.</string>
     <string name="setup_require_cyanogen_label"><b>Zahtijeva lozinku vašeg računa</b>za korištenje vašim uređajem čak i nakon vraćanja na tvorničke postavke.</string>
     <string name="setup_device_locked_instructions"><i>Da bi isključili/uključili ovo, idite u Postavke &gt; Privatnost</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Izaberite rezerni tip zaključavanja zaslona</string>
     <string name="settings_biometric_setup_details">Kako želite zaključati vaš zaslon?</string>
     <string name="fingerprint_setup_title">Postavljanje otiska prsta</string>
@@ -70,16 +71,19 @@
     <string name="biometric_setup_backup_lock_method">Postavljanje rezervne metode otključavanja</string>
     <string name="biometric_setup_screen_lock_setup">Postavljanje zaključavanja zaslona</string>
     <string name="sim_locale_changed">%1$s SIM otkriven</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Odaberite vrstu zaključavanja zaslona</string>
     <string name="settings_lockscreen_setup_details">Kako želite zaključati vaš zaslon?</string>
     <string name="lockscreen_setup_title" product="tablet">Zaštitite svoj tablet</string>
     <string name="lockscreen_setup_title" product="default">Zaštitite svoj telefon</string>
     <string name="lockscreen_setup_summary"><b>Zaštiti uređaj</b> i zahtijevaj PIN, uzorak ili zaporku za otključavanje zaslona</string>
     <string name="lockscreen_setup_screen_lock_setup">Postavljanje</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Vrati aplikacije i podatke</string>
     <string name="intro_restore_subtitle" product="tablet">Ako imate sigurnosnu kopiju sa svog posljednjeg LineageOS tableta, možete je vratiti ovdje.</string>
     <string name="intro_restore_subtitle" product="default">Ako imate sigurnosnu kopiju sa svog posljednjeg LineageOS teleona, možete je vratiti ovdje.</string>
     <string name="intro_restore_button">Vrati podatke iz sigurnosne kopije</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Ažuriraj Lineage Recovery</string>
     <string name="update_recovery_description">Ažuriraj Lineage Recovery pri prvom pokretanju nakon svakog ažuriranja.</string>
     <string name="update_recovery_warning">Recovery će se ažurirati čim završite s postavljanjem. Ako ga želite zadržati netaknutim, onemogućite ovu značajku.</string>

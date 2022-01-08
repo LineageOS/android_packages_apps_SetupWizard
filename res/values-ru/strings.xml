@@ -53,6 +53,8 @@
     <string name="emergency_call">Экстренный вызов</string>
     <string name="accessibility_settings">Настройки специальных возможностей</string>
     <string name="setup_services">Возможности LineageOS</string>
+    <string name="services_pp_explanation">Эти службы работают, чтобы расширить возможности вашего устройства. Данные будут использоваться в соответствии с политикой конфиденциальности <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Вы можете ознакомиться с политикой конфиденциальности на другом устройстве, посетив <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, разрешив отправку данных диагностики и использования в LineageOS. Эта информация не может быть использована для вашей идентификации и поможет в работе над повышением автономности, производительности и новыми возможностями <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
@@ -60,6 +62,7 @@
     <string name="setup_device_locked">Устройство заблокировано пользователем.</string>
     <string name="setup_require_cyanogen_label"><b>Требовать пароль входа в аккаунт</b> для использования устройства даже после сброса настроек.</string>
     <string name="setup_device_locked_instructions"><i>Чтобы включить или отключить эту функцию, перейдите в меню \'Настройки &gt; Безопасность\'</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Выберите запасной режим блокировки экрана</string>
     <string name="settings_biometric_setup_details">Как следует блокировать экран?</string>
     <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
@@ -71,16 +74,19 @@
     <string name="biometric_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
     <string name="biometric_setup_screen_lock_setup">Настроить экран блокировки</string>
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Выбрать способ блокировки экрана</string>
     <string name="settings_lockscreen_setup_details">Как вы хотите заблокировать ваш экран?</string>
     <string name="lockscreen_setup_title" product="tablet">Защитите ваш планшет</string>
     <string name="lockscreen_setup_title" product="default">Защитите свой телефон</string>
     <string name="lockscreen_setup_summary"><b>Защитить это устройство</b> и запрашивать PIN-код, графический ключ или пароль для разблокировки экрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Настройка</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Восстановить приложения и данные</string>
     <string name="intro_restore_subtitle" product="tablet">Если у вас есть резервная копия, сделанная на другом планшете с LineageOS, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_subtitle" product="default">Если у вас есть резервная копия, сделанная на другом телефоне с LineageOS, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_button">Восстановить из резервной копии</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Обновление Lineage Recovery</string>
     <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>
     <string name="update_recovery_warning">Recovery будет обновлен по завершении установки. Если вы хотите оставить его без изменений, отключите эту функцию.</string>

@@ -53,6 +53,8 @@
     <string name="emergency_call">Segélyhívás</string>
     <string name="accessibility_settings">Kisegítő beállítások</string>
     <string name="setup_services">LineageOS újítások</string>
+    <string name="services_pp_explanation">Ezek a szolgáltatások Önért dolgoznak, hogy kibővítsék telefonja képességeit. Az adatok felhasználása a <xliff:g id="name" example="LineageOS">%1$s</xliff:g> adatvédelmi szabályzata alapján történik.</string>
+    <string name="services_find_privacy_policy">Elolvashatja az adatvédelmi szabályokat, ha megnyitja a következő weboldalt <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>, segítsen a fejlesztésében</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> a LineageOS részére történő automatikus diagnosztikai és használati adatok küldésével. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="LineageOS">%2$s</xliff:g> funkciók fejlesztésében.</string>
     <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
@@ -60,6 +62,7 @@
     <string name="setup_device_locked">Ezt az eszközt a felhasználó zárolta.</string>
     <string name="setup_require_cyanogen_label"><b>Fiókjának jelszava szükséges</b> a készülék használatához, még a gyári beállítások visszaállítása után is.</string>
     <string name="setup_device_locked_instructions"><i>A szolgáltatás ki/be kapcsolásához, kérjük menjen ide: Beállítások &gt; Biztonság</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Válasszon másodlagos feloldási módot</string>
     <string name="settings_biometric_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
     <string name="fingerprint_setup_title">Ujjlenyomat beállítások</string>
@@ -71,16 +74,19 @@
     <string name="biometric_setup_backup_lock_method">Másodlagos feloldási mód beállításai</string>
     <string name="biometric_setup_screen_lock_setup">Képernyőzár beállítása</string>
     <string name="sim_locale_changed">%1$s SIM észlelve</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
     <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
     <string name="lockscreen_setup_title" product="tablet">Óvja meg táblagépét</string>
     <string name="lockscreen_setup_title" product="default">Óvja meg telefonját</string>
     <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
     <string name="lockscreen_setup_screen_lock_setup">Beállítás</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
     <string name="intro_restore_subtitle" product="tablet">Ha készült LineageOS mentés az előző tabletjéről, akkor azt itt visszaállíthatja.</string>
     <string name="intro_restore_subtitle" product="default">Ha készült LineageOS mentés az előző telefonjáról, akkor azt itt visszaállíthatja.</string>
     <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">A Lineage Recovery frissítése</string>
     <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
     <string name="update_recovery_warning">A Recovery frissítésre kerül, amint befejeződött a telepítést. Ha érintetlenül akarja hagyni, tiltsa le ezt a funkciót.</string>

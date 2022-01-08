@@ -17,4 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="yes">Jes</string>
+    <!-- Biometric setup -->
+    <!-- secure lock screen -->
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

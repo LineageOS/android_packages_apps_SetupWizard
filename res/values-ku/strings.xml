@@ -45,4 +45,8 @@
     <string name="yes">بەڵێ</string>
     <string name="emergency_call">تەلەفۆنی فریاگوزاری</string>
     <string name="setup_unlock">کردنەوە</string>
+    <!-- Biometric setup -->
+    <!-- secure lock screen -->
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

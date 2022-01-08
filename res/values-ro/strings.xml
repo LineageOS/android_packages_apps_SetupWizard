@@ -53,6 +53,8 @@
     <string name="emergency_call">Apel de urgenţă</string>
     <string name="accessibility_settings">Setări de accesibilitate</string>
     <string name="setup_services">Caracteristici LineageOS</string>
+    <string name="services_pp_explanation">Aceste servicii lucrează pentru dvs. pentru a extinde capabilitățile dispozitivului. Datele vor fi utilizate în concordanță cu politica de confidențialitate a <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Puteți citi politica de confidențialitate pe un alt dispozitiv accesând <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Ajutați la îmbunătățirea <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> prin trimiterea automată a statisticilor se utilizare și de utilizare a datelor la LineageOS. Aceste informații nu pot fi utilizate pentru identificarea dvs., ci oferă o mână de ajutor echipei care lucrează la lucruri ca durata bateriei, performanța aplicațiilor și la noile caracteristici <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
@@ -60,6 +62,7 @@
     <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
     <string name="setup_require_cyanogen_label"><b>Este necesară parola contului dvs.</b> pentru a vă utiliza dispozitivul după fiecare resetare la datele din fabrică.</string>
     <string name="setup_device_locked_instructions"><i>Pentru a activa sau dezactiva această caracteristică, vă rugăm să mergeți la Setări &gt; securitate</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Selectați tipul de blocare ecran de rezervă</string>
     <string name="settings_biometric_setup_details">Cum doriți să vă blocați ecranul?</string>
     <string name="fingerprint_setup_title">Configurare amprentă</string>
@@ -71,16 +74,19 @@
     <string name="biometric_setup_backup_lock_method">Configurați o metodă secundară de deblocare</string>
     <string name="biometric_setup_screen_lock_setup">Setați blocarea de ecran</string>
     <string name="sim_locale_changed">SIM %1$s detectat</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Selectați tipul de blocare ecran</string>
     <string name="settings_lockscreen_setup_details">Cum doriți să vă blocați ecranul?</string>
     <string name="lockscreen_setup_title" product="tablet">Protejați tableta dvs.</string>
     <string name="lockscreen_setup_title" product="default">Protejați telefonul</string>
     <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurați</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Restabiliți aplicațiile și datele</string>
     <string name="intro_restore_subtitle" product="tablet">Dacă aveţi o copie de rezervă de pe ultima dvs. tabletă LineageOS, o puteţi restaura aici.</string>
     <string name="intro_restore_subtitle" product="default">Dacă aveţi o copie de rezervă de pe ultimul dvs. telefon LineageOS, o puteţi restaura aici.</string>
     <string name="intro_restore_button">Restaurează din backup</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Actualizează Lineage Recovery</string>
     <string name="update_recovery_description">Actualizează Lineage Recovery la prima pornire după fiecare actualizare.</string>
     <string name="update_recovery_warning">Meniul de recuperare va fi actualizat imediat ce terminați configurarea. Dacă doriți să îl păstrați intact, dezactivați această caracteristică.</string>

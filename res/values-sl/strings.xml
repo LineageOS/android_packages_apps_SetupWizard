@@ -53,6 +53,8 @@
     <string name="emergency_call">Klic v sili</string>
     <string name="accessibility_settings">Nastavitve dostopnosti</string>
     <string name="setup_services">Značilnosti LineageOS</string>
+    <string name="services_pp_explanation">Te storitve služijo vam za razširitev zmogljivosti vaše naprave. Podatki bodo uporabljeni v skladu z <xliff:g id="name" example="LineageOS">%1$s</xliff:g> politiko zasebnosti.</string>
+    <string name="services_find_privacy_policy">Politiko zasebnosti lahko preberete na drugi napravi z obiskom <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe LineageOS-a. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
@@ -60,6 +62,7 @@
     <string name="setup_device_locked">To napravo je zaklenil uporabnik.</string>
     <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>
     <string name="setup_device_locked_instructions"><i>Za vklop/izklop te značilnosti pojdite v Nastavitve &gt; Varnost</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Izberite nadomestni način zaklepanja zaslona</string>
     <string name="settings_biometric_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="fingerprint_setup_title">Nastavitev prstnega odtisa</string>
@@ -71,16 +74,19 @@
     <string name="biometric_setup_backup_lock_method">Nastaviti dodatni način odklepanja</string>
     <string name="biometric_setup_screen_lock_setup">Nastavi zaklepanje zaslona</string>
     <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Izberite način zaklepanja zaslona</string>
     <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="lockscreen_setup_title" product="tablet">Zaščitite vaš tablični računalnik</string>
     <string name="lockscreen_setup_title" product="default">Zaščitite vaš telefon</string>
     <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in za odklep zaslona zahtevajte kodo PIN, vzorec ali geslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Obnovi aplikacije in podatke</string>
     <string name="intro_restore_subtitle" product="tablet">Če imate varnostno kopijo iz vašega zadnjega LineageOS tabličnega računalnika, jo lahko obnovite tukaj.</string>
     <string name="intro_restore_subtitle" product="default">Če imate varnostno kopijo iz vašega zadnjega LineageOS telefona, jo lahko obnovite tukaj.</string>
     <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Posodobi obnovitev Lineage</string>
     <string name="update_recovery_description">Posodobi obnovitev Lineage ob prvem zagonu vsake posodobitve.</string>
     <string name="update_recovery_warning">Obnovitev bo posodobljena takoj, ko zaključite namestitev. Če jo želite ohraniti nedotaknjeno, onemogočite to značilnost.</string>

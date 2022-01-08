@@ -60,6 +60,7 @@
     <string name="setup_device_locked">Kjo pajisje është bllokuar nga përdoruesi.</string>
     <string name="setup_require_cyanogen_label"><b>Kërko vendosjen e fjalëkalimit të llogarisë</b> për të përdorur pajisjen edhe pas rikthimit në gjëndjen e fabrikës.</string>
     <string name="setup_device_locked_instructions"><i>Për të aktivizuar/çaktivizuar këtë funksion, shko tek Parametrat &gt; Siguria</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Zgjidh mënyrën rezervë të bllokimit të ekranit</string>
     <string name="settings_biometric_setup_details">Si doni që ta bllokoni ekranin?</string>
     <string name="fingerprint_setup_title">Konfigurimi i shenjave të gishtave</string>
@@ -71,16 +72,19 @@
     <string name="biometric_setup_backup_lock_method">Konfigurosh një metodë të dytë zhbllokimi</string>
     <string name="biometric_setup_screen_lock_setup">Konfigurosh bllokimin e ekranit</string>
     <string name="sim_locale_changed">%1$s SIM u lidh</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Zgjidh mënyrën e bllokimit të ekranit</string>
     <string name="settings_lockscreen_setup_details">Si doni ta bllokoni ekranin?</string>
     <string name="lockscreen_setup_title" product="tablet">Mbro tabletin</string>
     <string name="lockscreen_setup_title" product="default">Mbro telefonin</string>
     <string name="lockscreen_setup_summary"><b>Mbro këtë pajisje</b> dhe vendos një PIN, model, ose fjalëkalim për të zhbllokuar ekranin</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguro</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Rikthe aplikacionet dhe të dhënat</string>
     <string name="intro_restore_subtitle" product="tablet">Nëse keni një kopje rezervë nga tableti juaj i fundit LineageOS, mund ta ktheni këtu.</string>
     <string name="intro_restore_subtitle" product="default">Nëse keni një kopje rezervë nga tableti juaj i fundit LineageOS, mund ta ktheni këtu</string>
     <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>
     <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo azhornimi.</string>
     <string name="update_recovery_warning">Rikuperimi do të përditësohet sapo të keni mbaruar konfigurimin. Nëse dëshironi ta mbani të paprekur, mbylleni këtë veçori.</string>

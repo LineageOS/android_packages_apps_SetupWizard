@@ -60,6 +60,7 @@
     <string name="setup_device_locked">この端末はユーザーによってロックされています。</string>
     <string name="setup_require_cyanogen_label">工場出荷時の状態にリセットした後でも、この端末を使用するには<b>アカウントのパスワードの入力が必要です</b>。</string>
     <string name="setup_device_locked_instructions"><i>この機能をOFF/ONするには、設定→プライバシーを開いてください</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">予備の画面のロックの種類を選択</string>
     <string name="settings_biometric_setup_details">どのように画面をロックしますか？</string>
     <string name="fingerprint_setup_title">指紋のセットアップ</string>
@@ -71,16 +72,19 @@
     <string name="biometric_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
     <string name="biometric_setup_screen_lock_setup">画面のロックをセットアップ</string>
     <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>
     <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
     <string name="lockscreen_setup_title" product="tablet">タブレットの保護</string>
     <string name="lockscreen_setup_title" product="default">スマートフォンの保護</string>
     <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
     <string name="lockscreen_setup_screen_lock_setup">セットアップ</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">アプリとデータを復元</string>
     <string name="intro_restore_subtitle" product="tablet">以前の LineageOS タブレットからのバックアップがある場合は、こちらから復元できます。</string>
     <string name="intro_restore_subtitle" product="default">以前の LineageOS スマートフォンからのバックアップがある場合は、こちらから復元できます。</string>
     <string name="intro_restore_button">バックアップから復元</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Lineage Recovery をアップデート</string>
     <string name="update_recovery_description">毎回のアップデートの最初の起動時に Lineage Recovery をアップデートします</string>
     <string name="update_recovery_warning">設定が完了したらすぐにリカバリーがアップデートされます。そのまま維持したい場合は、この機能を無効にしてください。</string>

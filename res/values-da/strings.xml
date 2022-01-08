@@ -58,6 +58,7 @@
     <string name="setup_device_locked">Denne enhed er blevet låst af brugeren.</string>
     <string name="setup_require_cyanogen_label"><b>Kræver adgangskoden til din konto</b> for at bruge enheden, selv efter en nulstilling til fabriksindstillinger.</string>
     <string name="setup_device_locked_instructions"><i>Gå til Indstillinger &gt; Sikkerhed, for at slå denne funktion fra/til</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Vælg sikkerheds-låseskærmtype</string>
     <string name="settings_biometric_setup_details">Hvordan vil du låse din skærm?</string>
     <string name="fingerprint_setup_title">Fingeraftryksopsætning</string>
@@ -66,11 +67,14 @@
     <string name="biometric_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
     <string name="biometric_setup_screen_lock_setup">Indstil skærmlås</string>
     <string name="sim_locale_changed">%1$s SIM fundet</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
     <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
     <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv en PIN, et mønster, eller en adgangskode, for at låse skærmen op</string>
     <string name="lockscreen_setup_screen_lock_setup">Opsætning</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Opdater Lineage Genddanelse</string>
     <string name="update_recovery_description">Opdateringer Lineage Recovery ved første opstart efter hver opdatering.</string>
     <string name="update_recovery_warning">Gendannelse vil blive opdateret, så snart du er færdig med opsætningen. Hvis du ønsker at holde det intakt, skal du deaktivere denne funktion.</string>

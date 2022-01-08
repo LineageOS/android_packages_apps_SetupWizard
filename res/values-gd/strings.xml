@@ -51,6 +51,7 @@
     <string name="yes">Tha</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Gairm-èiginn</string>
+    <string name="accessibility_settings">Roghainnean na so-inntrigeachd</string>
     <string name="setup_services">Gleusan LineageOS</string>
     <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu LineageOS gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="LineageOS">%2$s</xliff:g> ùra.</string>
@@ -59,6 +60,7 @@
     <string name="setup_device_locked">Chaidh an t-uidheam seo a ghlasadh leis a’ chleachdaiche.</string>
     <string name="setup_require_cyanogen_label"><b>Iarr facal-faire a’ chunntais agad</b> airson an t-uidheam agad a chleachdadh, fiù às dèidh tilleadh gu roghainnean an fhactaraidh.</string>
     <string name="setup_device_locked_instructions"><i>Airson an gleus seo a chur dheth no air, rach gu “Roghainnean” &gt; “Tèarainteachd”</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Tagh seòrsa dàrnach de ghlasadh na sgrìn</string>
     <string name="settings_biometric_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
     <string name="fingerprint_setup_title">Suidhich lorg-mheòir</string>
@@ -70,16 +72,19 @@
     <string name="biometric_setup_backup_lock_method">Suidhich dòigh dhàrnach airson a’ ghlas a thoirt far na sgrìn</string>
     <string name="biometric_setup_screen_lock_setup">Suidhich glasadh na sgrìn</string>
     <string name="sim_locale_changed">Mhothaich sinn do SIM %1$s</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Tagh seòrsa de ghlasadh na sgrìn</string>
     <string name="settings_lockscreen_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
     <string name="lockscreen_setup_title" product="tablet">Dìon an tablaid agad</string>
     <string name="lockscreen_setup_title" product="default">Dìon am fòn agad</string>
     <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
     <string name="lockscreen_setup_screen_lock_setup">Suidhich</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Aisig aplacaidean is dàta</string>
     <string name="intro_restore_subtitle" product="tablet">Ma tha lethbhreac-glèidhidh on tablaid LineageOS mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
     <string name="intro_restore_subtitle" product="default">Ma tha lethbhreac-glèidhidh on fhòn LineageOS mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
     <string name="intro_restore_button">Aisig o lethbhreac-glèidhidh</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Ùraich aiseag Lineage</string>
     <string name="update_recovery_description">Ùraichidh seo aiseag Lineage air a’ chiad bhùtadh às dèidh gach ùrachadh.</string>
     <string name="update_recovery_warning">Thèid an t-aiseag ùrachadh cho luath ’s a bhios tu deiseil leis an t-suidheachadh. Ma tha thu airson a chumail mar a bha e, cuir an gleus seo à comas.</string>

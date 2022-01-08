@@ -20,4 +20,8 @@
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
     <string name="setup_device_locked">Þessu tæki hefur verið læst af notandanum.</string>
     <string name="setup_device_locked_instructions"><i>Til að kveikja eða slökkva á þessum eiginleika, farðu í Stillingar &gt; Öryggi</i></string>
+    <!-- Biometric setup -->
+    <!-- secure lock screen -->
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

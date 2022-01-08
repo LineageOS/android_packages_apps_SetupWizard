@@ -60,6 +60,7 @@
     <string name="setup_device_locked">Este dispositivo foi bloqueado pelo usuário.</string>
     <string name="setup_require_cyanogen_label"><b>Exigir a senha de sua conta</b> para usar o dispositivo mesmo depois de restaurar os padrões de fábrica.</string>
     <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá para Configurações e Segurança</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Selecione o tipo de bloqueio de tela do backup</string>
     <string name="settings_biometric_setup_details">Como você gostaria de bloquear a tela?</string>
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
@@ -69,11 +70,14 @@
     <string name="biometric_setup_backup_lock_method">Configurar um método de desbloqueio secundário</string>
     <string name="biometric_setup_screen_lock_setup">Configuração de bloqueio de tela</string>
     <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Selecione o tipo de bloqueio de tela</string>
     <string name="settings_lockscreen_setup_details">Como você gostaria de bloquear a tela?</string>
     <string name="lockscreen_setup_title" product="tablet">Proteja o seu tablet</string>
     <string name="lockscreen_setup_title" product="default">Proteger seu smartphone</string>
     <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Atualizar Lineage Recovery</string>
 </resources>

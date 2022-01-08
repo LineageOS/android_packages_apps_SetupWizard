@@ -50,6 +50,7 @@
     <string name="setup_unlock">Atrakinti</string>
     <string name="setup_device_locked">Šis įrenginys buvo užrakintas naudotojo.</string>
     <string name="setup_device_locked_instructions"><i>Kad išjungtumėte / įjungtumėte šią funkciją, eikite į Nustatymai &gt; Sauga</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
     <string name="settings_biometric_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
     <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>
@@ -57,5 +58,8 @@
     <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
     <string name="biometric_setup_backup_lock_method">Nustatyti antrinį atrakinimo metodą</string>
     <string name="biometric_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

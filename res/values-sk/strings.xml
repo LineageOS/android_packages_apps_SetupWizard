@@ -59,6 +59,7 @@
     <string name="setup_device_locked">Toto zariadenie bolo uzamknuté používateľom.</string>
     <string name="setup_require_cyanogen_label"><b>Vyžadovať heslo vášho účtu</b> na používanie vášho zariadenia aj po obnove továrenských nastavení.</string>
     <string name="setup_device_locked_instructions"><i>Na vypnutie/zapnutie tejto funkcie prejdite do Nastavenia &gt; Zabezpečenie</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Vyberte záložný typ zamknutia obrazovky</string>
     <string name="settings_biometric_setup_details">Ako chcete zamknúť obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavenie odtlačkov prstov</string>
@@ -70,16 +71,19 @@
     <string name="biometric_setup_backup_lock_method">Nastaviť alternatívny spôsob odomknutia</string>
     <string name="biometric_setup_screen_lock_setup">Nastaviť zamknutie obrazovky</string>
     <string name="sim_locale_changed">Zistená %1$s SIM</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
     <string name="settings_lockscreen_setup_details">Ako chcete zamknúť obrazovku?</string>
     <string name="lockscreen_setup_title" product="tablet">Chráňte svoj tablet</string>
     <string name="lockscreen_setup_title" product="default">Chráňte svoj telefón</string>
     <string name="lockscreen_setup_summary"><b>Chrániť toto zariadenie</b> a pred odomknutím obrazovky vyžiadať kód PIN, gesto alebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastaviť</string>
+    <!-- Backup Restore -->
     <string name="intro_restore_title">Obnoviť aplikácie a dáta</string>
     <string name="intro_restore_subtitle" product="tablet">Ak máte zálohu zo svojho predošlého tabletu s LineageOS, môžete ju obnoviť tu.</string>
     <string name="intro_restore_subtitle" product="default">Ak máte zálohu zo svojho predošlého telefónu s LineageOS, môžete ju obnoviť tu.</string>
     <string name="intro_restore_button">Obnoviť zo záloh</string>
+    <!-- Update Recovery -->
     <string name="update_recovery_title">Aktualizovať Lineage recovery</string>
     <string name="update_recovery_description">Aktualizovať Lineage recovery pri prvom spustení po každej aktualizácii</string>
     <string name="update_recovery_warning">Oddiel recovery bude aktualizovaný ihneď potom, ako dokončíte nastavenie. Vypnite túto funkciu, ak si prajete ponechať oddiel nezmenený.</string>

@@ -58,6 +58,7 @@
     <string name="setup_device_locked">To urządzenie zostało zablokowane przez użytkownika.</string>
     <string name="setup_require_cyanogen_label"><b>Wymagaj hasła do konta</b>, aby korzystać z urządzenia nawet po przywróceniu ustawień fabrycznych.</string>
     <string name="setup_device_locked_instructions"><i>Aby włączyć/wyłączyć tę funkcję, przejdź do Ustawienia &gt; Zabezpieczenia</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Wybierz zapasową opcję blokady ekranu</string>
     <string name="settings_biometric_setup_details">Jak chcesz blokować swój ekran?</string>
     <string name="fingerprint_setup_title">Konfiguracja odcisków palców</string>
@@ -66,10 +67,13 @@
     <string name="biometric_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
     <string name="biometric_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
     <string name="sim_locale_changed">Wykryto %1$s SIM</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Wybierz typ blokady ekranu</string>
     <string name="settings_lockscreen_setup_details">Jak chcesz blokować swój ekran?</string>
     <string name="lockscreen_setup_title" product="tablet">Chroń swój tablet</string>
     <string name="lockscreen_setup_title" product="default">Zabezpiecz telefon</string>
     <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguracja</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>

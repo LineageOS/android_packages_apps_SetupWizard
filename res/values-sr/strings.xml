@@ -58,6 +58,7 @@
     <string name="setup_device_locked">Корисник је закључао уређај.</string>
     <string name="setup_require_cyanogen_label"><b>Захтевајте лозинку налога</b> за коришћење уређаја, чак и након враћања фабричких подешавања.</string>
     <string name="setup_device_locked_instructions"><i>Да бисте искључили или укључили ову функцију, идите у мени Подешавања &gt; Безбедност“</i></string>
+    <!-- Biometric setup -->
     <string name="settings_biometric_setup_title">Изаберите алтернативно закључавање екрана</string>
     <string name="settings_biometric_setup_details">Како желите да закључате екран?</string>
     <string name="fingerprint_setup_title">Подешавање сензора за отисак прста</string>
@@ -66,9 +67,12 @@
     <string name="biometric_setup_backup_lock_method">Подесите алтернативни начин откључавања</string>
     <string name="biometric_setup_screen_lock_setup">Подесите закључавање екрана</string>
     <string name="sim_locale_changed">Препозната је %1$s SIM картица</string>
+    <!-- secure lock screen -->
     <string name="settings_lockscreen_setup_title">Изаберите метод закључавања екрана</string>
     <string name="settings_lockscreen_setup_details">Како желите да закључате екран?</string>
     <string name="lockscreen_setup_title" product="default">Заштитите телефон</string>
     <string name="lockscreen_setup_summary"><b>Заштитите уређај</b> помоћу PIN кода, шаблона или лозинке.</string>
     <string name="lockscreen_setup_screen_lock_setup">Подеси</string>
+    <!-- Backup Restore -->
+    <!-- Update Recovery -->
 </resources>
