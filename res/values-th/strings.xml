@@ -51,6 +51,7 @@
     <string name="yes">ใช่</string>
     <string name="data_sim_name">ซิม <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">โทรฉุกเฉิน</string>
+    <string name="accessibility_settings">การตั้งค่าการเข้าถึง</string>
     <string name="setup_services">คุณสมบัติ LineageOS</string>
     <string name="services_help_improve_cm">ช่วยปรับปรุง <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> โดยการส่งข้อมูลการวินิจฉัยและการใช้งานไปยัง LineageOS โดยอัตโนมัติ ไม่สามารถใช้ข้อมูลนี้ในการระบุตัวคุณและให้ความช่วยเหลือแก่ทีมที่ทำงานเกี่ยวกับสิ่งต่าง ๆ เช่นอายุการใช้งานแบตเตอรี่ ประสิทธิภาพของแอป และคุณสมบัติ <xliff:g id="name" example="LineageOS">%2$s</xliff:g> ใหม่</string>
@@ -73,4 +74,5 @@
     <string name="lockscreen_setup_title" product="default">ปกป้องโทรศัพท์ของคุณ</string>
     <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>
     <string name="lockscreen_setup_screen_lock_setup">ตั้งค่า</string>
+    <string name="update_recovery_title">อัปเดตรุ่น Lineage Recovery</string>
 </resources>
