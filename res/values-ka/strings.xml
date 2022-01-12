@@ -34,9 +34,6 @@
     <string name="enable_mobile_data_summary">გსურთ გამართვისას, ფიჭური ინტერნეტის გამოყენება? ფიჭური ინტერნეტის ჩართვის შედეგად, შესაძლოა თანხა ჩამოგეჭრათ.</string>
     <string name="no">არა</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
-    <string name="setup_unlock">გახსნა</string>
-    <string name="setup_device_locked">მოწყობილობა ჩაკეტა მომხმარებლმა.</string>
-    <string name="setup_device_locked_instructions"><i>ამ შესაძლებლობის ჩართვა/გამორთვისთვის, გთხოვთ იხილოთ პარამეტრები &gt; უსაფრთხოება</i></string>
     <string name="settings_biometric_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
     <string name="fingerprint_setup_title">თითის ანაბეჭდის გამართვა</string>
     <string name="fingerprint_setup_summary">თითის ანაბეჭდის აღმქმელის ეკრანის გასახსნელად გამოყენებისთვის, დაგჭირდებათ:</string>

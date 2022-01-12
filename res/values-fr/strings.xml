@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Quelle carte SIM souhaitez-vous utiliser pour les données mobiles ? La carte SIM sélectionnée pourra engendrer des frais, car elle sera utilisée pour configurer votre tablette.</string>
     <string name="choose_data_sim_summary" product="default">Quelle carte SIM souhaitez-vous utiliser pour les données mobiles ? La carte SIM sélectionnée pourra engendrer des frais, car elle sera utilisée pour configurer votre téléphone.</string>
     <string name="date_time_summary">Définir votre fuseau horaire et régler la date et l\'heure si nécessaire</string>
-    <string name="backup_data_summary"><b>Sauvegarder</b> les données des applications, les mots de passe Wi-Fi et d\'autres paramètres sur les serveurs Google</string>
-    <string name="other_services_summary">Ces services sont mis à disposition par Google, et vous pouvez les activer ou les désactiver à tout moment. Les données seront utilisées conformément à la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
-    <string name="location_services_summary">Le service de localisation permet aux applications systèmes et de tiers de recueillir et d\'utiliser des données comme votre position approximative. Par exemple, une application peut utiliser votre position approximative pour localiser des cafés-restaurants à proximité.</string>
     <string name="location_access_summary"><b>Permettre aux applications ayant obtenu votre autorisation</b> d\'utiliser vos informations de localisation. Cela peut inclure votre position actuelle et les dernières positions.</string>
     <string name="setup_mobile_data">Activer les données mobiles</string>
     <string name="setup_mobile_data_no_service">Aucun service</string>
@@ -51,13 +48,10 @@
     <string name="yes">Oui</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Appel d\'urgence</string>
+    <string name="accessibility_settings">Paramètres d\'accessibilité</string>
     <string name="setup_services">Fonctionnalités de LineageOS</string>
     <string name="services_help_improve_cm">Contribuer à l\'amélioration de <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Utilisation des touches de navigation de l\'écran</b> au lieu des touches physiques.</string>
-    <string name="setup_unlock">Déverrouiller</string>
-    <string name="setup_device_locked">Cet appareil a été verrouillé par l\'utilisateur.</string>
-    <string name="setup_require_cyanogen_label"><b>Nécessite le mot de passe de votre compte</b> afin d\'utiliser votre appareil même après une réinitialisation d\'usine.</string>
-    <string name="setup_device_locked_instructions"><i>Pour activer/désactiver cette fonction, veuillez vous rendre dans Paramètres &gt; Sécurité</i></string>
     <string name="settings_biometric_setup_title">Sélection du type de verrouillage d\'écran de sauvegarde</string>
     <string name="settings_biometric_setup_details">Comment voulez-vous verrouiller votre écran ?</string>
     <string name="fingerprint_setup_title">Enregistrement d\'empreintes digitales</string>
@@ -76,10 +70,8 @@
     <string name="lockscreen_setup_summary"><b>Protéger l\'appareil</b> et exiger un code, schéma ou mot de passe pour déverrouiller l\'écran</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurer</string>
     <string name="intro_restore_title">Restaurer les applications et les données</string>
-    <string name="intro_restore_subtitle" product="tablet">Si vous avez une sauvegarde de votre précédente tablette LineageOS, vous pouvez la restaurer ici.</string>
-    <string name="intro_restore_subtitle" product="default">Si vous avez une sauvegarde de votre précédent téléphone LineageOS, vous pouvez la restaurer ici.</string>
     <string name="intro_restore_button">Restaurer depuis une sauvegarde</string>
-    <string name="update_recovery_title">Mettre à jour Lineage Recovery</string>
+    <string name="update_recovery_title">Mettre à jour la récupération de Lineage</string>
     <string name="update_recovery_description">Met à jour Lineage Recovery au premier démarrage après chaque mise à jour.</string>
     <string name="update_recovery_warning">La récupération sera mise à jour dès que vous aurez terminé la configuration. Si vous souhaitez la garder intacte, veuillez désactiver cette fonctionnalité.</string>
     <string name="update_recovery_setting">Mettre à jour Lineage Recovery en même temps que le système d\'exploitation</string>

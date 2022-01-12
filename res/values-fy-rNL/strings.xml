@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Hokker simkaart wolle jo brûke foar mobyl ynternet? Foar dizze simkaart kinne ekstra kosten yn rekkening brocht wurde, omdat dizze brûkt wurdt om jo tablet yn te stellen.</string>
     <string name="choose_data_sim_summary" product="default">Hokker simkaart wolle jo brûke foar mobyl ynternet? Foar dizze simkaart kinne ekstra kosten yn rekkening brocht wurde, omdat dizze brûkt wurdt om jo telefoan yn te stellen.</string>
     <string name="date_time_summary">Selektearje jo tiidssône en pas wannear nedich de hjoeddeistige datum en tiid oan</string>
-    <string name="backup_data_summary"><b>Reservekopy meitsje</b> fan app-gegevens, wifi-wachtwurden en oare ynstellingen nei de servers fan Google</string>
-    <string name="other_services_summary">Dizze tsjinsten litte Google it wurk dwaan en kinne op elk momint yn- of útskeakele wurde. De gegevens wurde brûkt konfoarm it <xliff:g id="name" example="Privacybelied">%s</xliff:g> fan Google.</string>
-    <string name="location_services_summary">Lokaasjetsjinsten stelle systeemapps en apps fan tredden yn steat gegevens lykas jo skatte lokaasje te sammeljen en te brûken. Sa kin in app jo lokaasje brûke om winkels yn de buert te finen.</string>
     <string name="location_access_summary"><b>Apps tastean dy\'t jo tastimming frege hawwe</b> om ynformaasje oer jo lokaasje te brûken. Dit kin jo aktuele lokaasje en foargeande lokaasjes omfetsje.</string>
     <string name="setup_mobile_data">Mobile gegevens ynskeakelje</string>
     <string name="setup_mobile_data_no_service">Gjin ferbining</string>
@@ -54,10 +51,6 @@
     <string name="setup_services">Funksjes fan LineageOS</string>
     <string name="services_help_improve_cm">Help mei mei it ferbetterjen fan <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>On-screen navigaasjeknoppen</b> brûke yn stee fan de hardwareknoppen.</string>
-    <string name="setup_unlock">Untskoattelje</string>
-    <string name="setup_device_locked">Dit apparaat is beskoattele troch de brûker.</string>
-    <string name="setup_require_cyanogen_label"><b>Jo accountwachtwurd fereaskje</b> om it apparaat te brûken, sels nei weromsetten nei fabryksynstellingen.</string>
-    <string name="setup_device_locked_instructions"><i>Om dizze funksje yn of út te skeakeljen, gean nei Ynstellingen &gt; Befeiliging</i></string>
     <string name="settings_biometric_setup_title">Reservemetoade selektearje foar skermbeskoatteling</string>
     <string name="settings_biometric_setup_details">Hoe wolle jo jo skerm beskoattelje?</string>
     <string name="fingerprint_setup_title">Fingerôfdruk ynstelle</string>

@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
     <string name="choose_data_sim_summary" product="default">Quale SIM vuoi utilizzare per la connessione dati? La SIM selezionata può incorrere in costi di rete durante la configurazione del dispositivo.</string>
     <string name="date_time_summary">Imposta il fuso orario e se necessario regola data e ora corrente</string>
-    <string name="backup_data_summary"><b>Esegui il Back-up</b> dei dati delle app, password Wi-Fi e altre impostazioni sui server di Google</string>
-    <string name="other_services_summary">Questi servizi consentono a Google di funzionare per te, ed è possibile attivarli o disattivarli in qualsiasi momento. I dati saranno utilizzati in conformità con la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> di Google.</string>
-    <string name="location_services_summary">I servizi di localizzazione permettono a Maps e ad altre applicazioni di raccogliere ed utilizzare dati come la tua posizione. Ad esempio, Maps potrebbe utilizzare la tua posizione per individuare bar nelle tue vicinanze.</string>
     <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> di utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
     <string name="setup_mobile_data">Attiva la rete mobile</string>
     <string name="setup_mobile_data_no_service">Nessun servizio</string>
@@ -51,13 +48,10 @@
     <string name="yes">Si</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Emergenza</string>
+    <string name="accessibility_settings">Impostazioni di accessibilità</string>
     <string name="setup_services">Funzioni LineageOS</string>
     <string name="services_help_improve_cm">Contribuisci a migliorare <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
-    <string name="setup_unlock">Sblocca</string>
-    <string name="setup_device_locked">Questo dispositivo è stato bloccato dall\'utente.</string>
-    <string name="setup_require_cyanogen_label"><b>È necessaria la password del tuo account</b> al fine di utilizzare il dispositivo anche dopo il ripristino di fabbrica.</string>
-    <string name="setup_device_locked_instructions"><i>Per attivare e disattivare questa funzione, vai in Impostazioni &gt; Sicurezza</i></string>
     <string name="settings_biometric_setup_title">Seleziona la schermata di sicurezza di riserva</string>
     <string name="settings_biometric_setup_details">Come vuoi bloccare lo schermo?</string>
     <string name="fingerprint_setup_title">Setup impronte digitali</string>
@@ -76,8 +70,6 @@
     <string name="lockscreen_setup_summary"><b>Proteggi il dispositivo</b> e richiedi PIN, sequenza o password per sbloccare schermo</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
     <string name="intro_restore_title">Ripristina app e dati</string>
-    <string name="intro_restore_subtitle" product="tablet">Se disponi di un backup da un altro tablet con LineageOS, puoi ripristinarlo qui.</string>
-    <string name="intro_restore_subtitle" product="default">Se disponi di un backup da un altro telefono con LineageOS, puoi ripristinarlo qui.</string>
     <string name="intro_restore_button">Ripristina dal backup</string>
     <string name="update_recovery_title">Aggiorna recovery Lineage</string>
     <string name="update_recovery_description">Aggiorna la recovery Lineage al primo avvio successivo ad ogni aggiornamento.</string>

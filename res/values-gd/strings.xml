@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Dè an SIM a bu toigh leat cleachdadh airson dàta? Dh’fhaoidte gun èirich cosgaisean lìonraidh an cois an t-SIM a thagh thu on a thèid a chleachdadh airson an tablaid agad a shuidheachadh.</string>
     <string name="choose_data_sim_summary" product="default">Dè an SIM a bu toigh leat cleachdadh airson dàta? Dh’fhaoidte gun èirich cosgaisean lìonraidh an cois an t-SIM a thagh thu on a thèid a chleachdadh airson an fhòn agad a shuidheachadh.</string>
     <string name="date_time_summary">Suidhich an roinn-tìde agad agus cuir an ceann-là ’s an t-àm air gleus ma bhios feum air</string>
-    <string name="backup_data_summary">Dèan <b>lethbhreac-ghlèidhidh</b> de dhàta nan aplacaidean, faclan-faire WiFi ’s roghainnean eile air frithealaichean Google</string>
-    <string name="other_services_summary">Nì Google obair dhut leis na seirbheisean seo agus ’s urrainn dhut an cur dheth uair sam bith. Thèid dàta a chleachdadh a-rèir <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-    <string name="location_services_summary">Leigidh seirbheisean ionaid le aplacaidean an t-siostaim is threas-phàrtaidhean dàta a chruinneachadh ’s a chleachdadh mar d’ ionad neo-phongail. Mar eisimpleir, ’s dòcha gun cleachd aplacaid fiosrachadh mu far a bheil thu airson cafaidhean a tha faisg ort a shealltainn dhut.</string>
     <string name="location_access_summary"><b>Leig le aplacaidean a dh’iarr cead uat</b> fiosrachadh mu d’ ionad a chleachdadh. Dh’fhaoidte gun gabh seo a-staigh an dà chuid d’ ionad làithreach agus far an robh thu roimhe.</string>
     <string name="setup_mobile_data">Cuir an dàta mobile air</string>
     <string name="setup_mobile_data_no_service">Chan eil seirbheis ann</string>
@@ -51,13 +48,10 @@
     <string name="yes">Tha</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Gairm-èiginn</string>
+    <string name="accessibility_settings">Roghainnean na so-inntrigeachd</string>
     <string name="setup_services">Gleusan LineageOS</string>
     <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Cleachd iuchraichean seòladaireachd air an sgrìn</b> seach iuchraichean bathair-chruaidh.</string>
-    <string name="setup_unlock">Thoir a’ ghlas dheth</string>
-    <string name="setup_device_locked">Chaidh an t-uidheam seo a ghlasadh leis a’ chleachdaiche.</string>
-    <string name="setup_require_cyanogen_label"><b>Iarr facal-faire a’ chunntais agad</b> airson an t-uidheam agad a chleachdadh, fiù às dèidh tilleadh gu roghainnean an fhactaraidh.</string>
-    <string name="setup_device_locked_instructions"><i>Airson an gleus seo a chur dheth no air, rach gu “Roghainnean” &gt; “Tèarainteachd”</i></string>
     <string name="settings_biometric_setup_title">Tagh seòrsa dàrnach de ghlasadh na sgrìn</string>
     <string name="settings_biometric_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
     <string name="fingerprint_setup_title">Suidhich lorg-mheòir</string>
@@ -76,8 +70,6 @@
     <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
     <string name="lockscreen_setup_screen_lock_setup">Suidhich</string>
     <string name="intro_restore_title">Aisig aplacaidean is dàta</string>
-    <string name="intro_restore_subtitle" product="tablet">Ma tha lethbhreac-glèidhidh on tablaid LineageOS mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
-    <string name="intro_restore_subtitle" product="default">Ma tha lethbhreac-glèidhidh on fhòn LineageOS mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
     <string name="intro_restore_button">Aisig o lethbhreac-glèidhidh</string>
     <string name="update_recovery_title">Ùraich aiseag Lineage</string>
     <string name="update_recovery_description">Ùraichidh seo aiseag Lineage air a’ chiad bhùtadh às dèidh gach ùrachadh.</string>

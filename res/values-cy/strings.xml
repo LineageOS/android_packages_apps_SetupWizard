@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Pa gerdyn SIM wyt ti am ddefnyddio ar gyfer data? Bydd y SIM hwn yn cael yn ei ddefnyddio wrth sefydlu dy lechen ac mae\'n bosib y bydd costau data, yn dibynnu ar dy gytundeb rhwydwaith symudol.</string>
     <string name="choose_data_sim_summary" product="default">Pa gerdyn SIM wyt ti am ddefnyddio ar gyfer data? Bydd y SIM hwn yn cael yn ei ddefnyddio wrth sefydlu dy ffôn ac mae\'n bosib y bydd costau data, yn dibynnu ar dy gytundeb rhwydwaith symudol.</string>
     <string name="date_time_summary">Gosoda dy gylchfa amser ac addasu’r dyddiad ac amser os oes angen.</string>
-    <string name="backup_data_summary"><b>Cadw copi wrth gefn</b> o ddata apiau, cyfrineiriau Wi-Fi, a gosodiadau eraill i weinyddion Google</string>
-    <string name="other_services_summary">Mae\'r gwasanaethau hyn yn rhoi Google ar waith i ti. Mae\'n bosib eu troi ymlaen ac i ffwrdd unrhyw bryd. Caiff data ei ddefnyddio yn ôl <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-    <string name="location_services_summary">Mae gwasanaethau lleoliad yn caniatáu i apiau system a thrydydd parti medru casglu a defnyddio data megis dy leoliad bras. Er enghraifft, gall ap ddefnyddio dy leoliad bras er mwyn awgrymu llefydd gerllaw am banad, paned neu ddisgled.</string>
     <string name="location_access_summary"><b>Caniatáu i apiau sydd wedi gofyn am dy ganiatâd</b> medru defnyddio gwybodaeth dy leoliad. Gall hyn gynnwys dy leoliad cyfredol a lleoliadau yn y gorffennol.</string>
     <string name="setup_mobile_data">Defnyddio data symudol</string>
     <string name="setup_mobile_data_no_service">Dim gwasanaeth</string>
@@ -54,10 +51,6 @@
     <string name="setup_services">Nodweddion LineageOS</string>
     <string name="services_help_improve_cm">Helpu i wella <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Defnyddio bysellau llywio ar y sgrin</b> yn hytrach na botymau\'r ddyfais.</string>
-    <string name="setup_unlock">Datgloi</string>
-    <string name="setup_device_locked">Mae\'r ddyfais hon wedi ei chloi gan y defnyddiwr.</string>
-    <string name="setup_require_cyanogen_label"><b>Mynna bod angen cyfrinair dy gyfrif</b> er mwyn medru defnyddio\'r ddyfais, hyd yn oed os yw\'n cael ei ailosod i fel yr oedd yn gadael y ffatri.</string>
-    <string name="setup_device_locked_instructions"><i>I droi\'r nodwedd hon ymlaen/i ffwrdd, edrycha yn Gosodiadau &gt; Diogelwch</i></string>
     <string name="settings_biometric_setup_title">Dewis math o glo sgrin wrth gefn</string>
     <string name="settings_biometric_setup_details">Sut hoffet gloi dy sgrin?</string>
     <string name="fingerprint_setup_title">Gosod ôl bys</string>
@@ -76,8 +69,6 @@
     <string name="lockscreen_setup_summary"><b>Diogela\'r ddyfais hon</b> gan osod PIN, patrwm, neu gyfrinair er mwyn datgloi\'r sgrin.</string>
     <string name="lockscreen_setup_screen_lock_setup">Gosod</string>
     <string name="intro_restore_title">Adfer apiau a data</string>
-    <string name="intro_restore_subtitle" product="tablet">Os oes gennyt gopi data wrth gefn o dy lechen LineageOS diwethaf, gellir ei adfer yma.</string>
-    <string name="intro_restore_subtitle" product="default">Os oes gennyt gopi data wrth gefn o dy ffôn LineageOS diwethaf, gellir ei adfer yma.</string>
     <string name="intro_restore_button">Adfer o gopi wrth gefn</string>
     <string name="update_recovery_title">Diweddaru Modd Adfer Lineage </string>
 </resources>

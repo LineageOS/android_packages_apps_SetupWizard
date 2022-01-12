@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų planšetinį kompiuterį.</string>
     <string name="choose_data_sim_summary" product="default">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų telefoną.</string>
     <string name="date_time_summary">Jei reikia nustatykite savo laiko juostą ir koreguokite dabartinę datą ir laiką</string>
-    <string name="backup_data_summary"><b>Kurti</b> atsargines programos duomenų, „Wi-Fi“ slaptažodžių ir kitų nustatymų kopijas „Google“ serveriuose</string>
-    <string name="other_services_summary">Šios paslaugos leidžia „Google“ atlikti darbą už jus, jūs galite jas įjungti arba išjungti bet kuriuo metu. Duomenys bus naudojami pagal „Google“ <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Vietos paslaugos leidžia žemėlapiams ir kitoms programoms rinkti ir naudoti duomenis, tokius kaip apytikslę jūsų buvimo vietą. Pavyzdžiui, žemėlapiai gali naudoti apytikslę jūsų buvimo vietą surandant netoliese esančias kavines.</string>
     <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
     <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
     <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
@@ -47,9 +44,6 @@
     <string name="yes">Taip</string>
     <string name="emergency_call">Pagalbos skambutis</string>
     <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
-    <string name="setup_unlock">Atrakinti</string>
-    <string name="setup_device_locked">Šis įrenginys buvo užrakintas naudotojo.</string>
-    <string name="setup_device_locked_instructions"><i>Kad išjungtumėte / įjungtumėte šią funkciją, eikite į Nustatymai &gt; Sauga</i></string>
     <string name="settings_biometric_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
     <string name="settings_biometric_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
     <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>

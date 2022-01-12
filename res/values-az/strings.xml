@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Hansı SIM-i verilənlər üçün istifadə etmək istəyirsiz? Şəbəkə planşetinizin quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
     <string name="choose_data_sim_summary" product="default">Hansı SIM-i verilənlər üçün istifadə etmək istəyirsiz? Şəbəkə telefonunuzun quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırki tarix və saatı tənzimləyin</string>
-    <string name="backup_data_summary">Tətbiqetmə verilənlərini, Wi-Fi şifrələri və digər tənzimləmələri Google serverlərinə <b>nüsxələ</b></string>
-    <string name="other_services_summary">Bu xidmətlər ilə Google sizin üçün işləməyə başlayar və istədiyiniz vaxt açıb bağlaya bilərsiniz. Verilənlər Google-un <xliff:g id="name" example="Privacy Policy">%s</xliff:g>nə uyğun olaraq istifadə ediləcək.</string>
-    <string name="location_services_summary">Yerləşmə xidmətləri sistem və üçüncü tərəf tətbiqetmələrə təxmini yeriniz kimi veriənləri götürmək və istifadə etmək icazəsi verər. Məsələn, bir tətbiqetmə yaxınlıqdakı əyləncə mərkəzini tapmaq üçün təxmini yerləşmənizdən istifadə edə bilər.</string>
     <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqetmələrə icazə ver.</b> Bu hazırki və keçmiş yerləşmənizi ehtiva edə bilər.</string>
     <string name="setup_mobile_data">Hüceyrəvi verilənləri işə sal</string>
     <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
@@ -51,13 +48,12 @@
     <string name="yes">Bəli</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Fövqəladə vəziyyət zəngləri</string>
+    <string name="accessibility_settings">Əlçatımlılıq tənzimləmələri</string>
     <string name="setup_services">LineageOS özəllikləri</string>
+    <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilənlər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="services_find_privacy_policy">Gizlilik siyasətini fərqli cihazda <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> ünvanını ziyarət edərək oxuya bilərsiniz</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
-    <string name="setup_unlock">Kilidi aç</string>
-    <string name="setup_device_locked">Bu cihaz istifadəçisi tərəfindən kilidlənib.</string>
-    <string name="setup_require_cyanogen_label"><b>Hesab şifrəniz</b> cihazınızı sıfırladıqdan sonra istifadə edə bilmək üçün lazımdır.</string>
-    <string name="setup_device_locked_instructions"><i>Bu özəlliyi açıb bağlamaq üçün, zəhmət olmasa Tənzimləmələr &gt; Təhlükəsizlik bölməsinə gedin</i></string>
     <string name="settings_biometric_setup_title">Ehtiyat ekran kilidi növünü seçin</string>
     <string name="settings_biometric_setup_details">Ekranınızı necə kilidləmək istərdiniz?</string>
     <string name="fingerprint_setup_title">Barmaq izi quraşdırma</string>
@@ -76,8 +72,6 @@
     <string name="lockscreen_setup_summary"><b>Bu cihazı qoruyun</b> və ekran kilidini açmaq üçün PIN, forma və ya şifrəni tələb edin</string>
     <string name="lockscreen_setup_screen_lock_setup">Qur</string>
     <string name="intro_restore_title">Tətbiq və verilənləri bərpa edin</string>
-    <string name="intro_restore_subtitle" product="tablet">Son LineageOS planşetinizdən bir nüsxəniz varsa, burada bərpa edə bilərsiniz.</string>
-    <string name="intro_restore_subtitle" product="default">Son LineageOS telefonunuzdan bir nüsxəniz varsa, burada bərpa edə bilərsiniz.</string>
     <string name="intro_restore_button">Nüsxədən bərpa et</string>
     <string name="update_recovery_title">Lineage Bərpa Rejimini Yenilə</string>
     <string name="update_recovery_description">Hər yeniləmədən sonrakı ilk açılışda Lineage Bərpa rejimini yeniləyər.</string>

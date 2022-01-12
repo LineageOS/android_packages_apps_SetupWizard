@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">Millist SIM-kaarti soovid andmeside kasutamiseks? Valitud SIM-ga võivad kaasneda võrgutasud, kuna seda kasutatakse tahvelarvuti seadistamiseks.</string>
     <string name="choose_data_sim_summary" product="default">Millist SIM-kaarti soovid andmeside kasutamiseks? Valitud SIM-ga võivad kaasneda võrgutasud, kuna seda kasutatakse nutitelefoni seadistamiseks.</string>
     <string name="date_time_summary">Määra ajavöönd ning kohandada vajadusel tänast kuupäeva ja kellaaega</string>
-    <string name="backup_data_summary"><b>Varunda</b> rakeduste andmeid, Wi-Fi salasõnasid ning muid sätteid Google serveritesse</string>
-    <string name="other_services_summary">Need teenused panevad Google sinu heaks tööle ning sul on võimalus neid sätteid igal ajal sisse või välja lülitada. Andmeid kasutatakse vastavalt Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Asukohateenused võimaldavad süsteemil ja kolmandate osapoolte rakendustel koguda ja kasutada informatsiooni sinu umbkaudse asukoha kohta. Näiteks võib rakendus kasutada sinu umbkaudset asukohta, et leida lähedal asuvaid kohvikuid.</string>
     <string name="location_access_summary"><b>Luba rakendustel, mis on küsinud Teie nõusolekut</b> kasutada Teie asukoha informatsiooni. See võib tähendada nii Teie praegust kui ka eelnevaid asukohti.</string>
     <string name="setup_mobile_data_no_service">Teenus puudub</string>
     <string name="setup_mobile_data_emergency_only">Üksnes hädaabikõned</string>
@@ -49,9 +46,6 @@
     <string name="emergency_call">Hädaabinumbril helistamine</string>
     <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="LineageOS">%s</xliff:g>i</string>
     <string name="services_os_nav_keys_label"><b>Kasuta ekraanil olevaid navigeerimisklahve</b> riistvaraliste nuppude asemel.</string>
-    <string name="setup_unlock">Ava lukustus</string>
-    <string name="setup_device_locked">Seade on kasutaja poolt lukustatud.</string>
-    <string name="setup_device_locked_instructions"><i>Funktsiooni sisse/välja lülitamiseks mine Seaded &gt; Turvalisus</i></string>
     <string name="settings_biometric_setup_title">Valige alternatiivne ekraani luku tüüp</string>
     <string name="settings_biometric_setup_details">Kuidas soovite ekraani lukustada?</string>
     <string name="fingerprint_setup_title">Sõrmejälgede seadistamine</string>
@@ -64,8 +58,6 @@
     <string name="biometric_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
     <string name="settings_lockscreen_setup_details">Kuidas soovite ekraani lukustada?</string>
     <string name="intro_restore_title">Taasta rakendused ja andmed</string>
-    <string name="intro_restore_subtitle" product="tablet">Kui sul on viimase LineageOSi tahvelarvuti varundus olemas, saad selle siin taastada.</string>
-    <string name="intro_restore_subtitle" product="default">Kui sul on viimase LineageOSi telefoni varundus olemas, saad selle siin taastada.</string>
     <string name="intro_restore_button">Taasta varundusest</string>
     <string name="update_recovery_title">Uuenda Lineage Recoveryt</string>
     <string name="update_recovery_setting">Uuenda Lineage Recoveryt koos OSiga</string>

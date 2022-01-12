@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Qual SIM você gostaria usar para dados? Pode haver cobranças no SIM escolhido, pois ele será usado para configurar o seu tablet.</string>
     <string name="choose_data_sim_summary" product="default">Qual SIM você gostaria usar para dados? Pode haver cobranças no SIM escolhido, pois ele será usado para configurar o seu celular.</string>
     <string name="date_time_summary">Defina o fuso horário e ajuste a data e a hora atual, se necessário</string>
-    <string name="backup_data_summary">Faça uma <b>cópia de segurança</b> dos dados de aplicativos, senhas de Wi-Fi e outras configuraçõess nos servidores do Google</string>
-    <string name="other_services_summary">Esses serviços colocam o Google para trabalhar para você e podem ser desligados a qualquer momento. Os dados serão usados de acordo com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
-    <string name="location_services_summary">Serviços de localização permitem ao sistema e a aplicativos de terceiros obter e usar dados como a sua localização aproximada. Por exemplo, um aplicativo pode usar sua localização aproximada para encontrar cafés perto de você.</string>
     <string name="location_access_summary"><b>Permitir que aplicativos que pediram a sua permissão</b> usem suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
     <string name="setup_mobile_data">Ativar dados celular</string>
     <string name="setup_mobile_data_no_service">Sem serviço</string>
@@ -51,13 +48,10 @@
     <string name="yes">Sim</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Chamada de emergência</string>
+    <string name="accessibility_settings">Configurações de acessibilidade</string>
     <string name="setup_services">Recursos LineageOS</string>
     <string name="services_help_improve_cm">Ajude a melhorar o <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
-    <string name="setup_unlock">Desbloquear</string>
-    <string name="setup_device_locked">Este dispositivo foi bloqueado pelo usuário.</string>
-    <string name="setup_require_cyanogen_label"><b>Exigir a senha de sua conta</b> para usar o dispositivo mesmo depois de restaurar os padrões de fábrica.</string>
-    <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá para Configurações e Segurança</i></string>
     <string name="settings_biometric_setup_title">Selecione o tipo de bloqueio de tela do backup</string>
     <string name="settings_biometric_setup_details">Como você gostaria de bloquear a tela?</string>
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
@@ -73,4 +67,5 @@
     <string name="lockscreen_setup_title" product="default">Proteger seu smartphone</string>
     <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="update_recovery_title">Atualizar Lineage Recovery</string>
 </resources>

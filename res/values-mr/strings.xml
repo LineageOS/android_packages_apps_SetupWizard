@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">डेटासाठी तुम्हाला कोणते सिम वापरायचे आहे? निवडलेल्या सिम ला नेटवर्क शुल्क लागू शकते कारण ते तुमचा टॅब्लेट सेट करण्यासाठी वापरले जाईल.</string>
     <string name="choose_data_sim_summary" product="default">डेटासाठी तुम्हाला कोणते सिम वापरायचे आहे? निवडलेल्या सिम ला नेटवर्क शुल्क लागू शकते कारण ते तुमचा फोन सेट करण्यासाठी वापरले जाईल.</string>
     <string name="date_time_summary">तुमचे वेळ क्षेत्र सेट करा आणि गरज असल्यास चालू तारीख व वेळ समायोजित करा</string>
-    <string name="backup_data_summary">अनुप्रयोग डेटा, Wi-Fi पासवर्ड आणि इतर सेटिंग्ज Google सर्व्हर्सना <b>बॅक अप</b> करा</string>
-    <string name="other_services_summary">ह्या सेवा तुमच्यासाठी Google ला कामाला लावतात आणि तुम्ही त्यांना कधीही चालू किंवा बंद करू शकता. डेटा Googleच्या <xliff:g id="name" example="Privacy Policy">%s</xliff:g> अनुसार वापरला जाईल.</string>
-    <string name="location_services_summary">स्थान सेवा सिस्टिम आणि त्रयस्थ पक्षाच्या अनुप्रयोगांना अंदाजे स्थानासारखा डेटा गोळा करण्यास आणि वापरण्यास परवानगी देतात. उदाहरणार्थ, एखादा अनुप्रयोग आसपासची कॉफीची दुकाने शोधण्यासाठी तुमचे अंदाजे स्थान वापरू शकते.</string>
     <string name="location_access_summary"><b>तुमची परवानगी विचारलेल्या अनुप्रयोगांना</b> तुमची स्थान माहिती वापरण्यास परवानगी द्या. यामध्ये तुमचे चालू स्थान आणि मागील स्थानांचा समावेश होऊ शकतो.</string>
     <string name="setup_mobile_data">मोबाईल डेटा चालू करा</string>
     <string name="setup_mobile_data_no_service">सेवा नाही.</string>
@@ -49,9 +46,6 @@
     <string name="yes">होय</string>
     <string name="emergency_call">आणीबाणीचा कॉल</string>
     <string name="services_os_nav_keys_label">हार्डवेअर कींच्या ऐवजी <b>स्क्रीन नॅविगेशन कींवर वापरा</b>.</string>
-    <string name="setup_unlock">अनलॉक करा</string>
-    <string name="setup_device_locked">हे डिव्हाइस वापरकर्त्याने लॉक केले आहे.</string>
-    <string name="setup_device_locked_instructions"><i>हे वैशिष्ट्य बंद/चालू करण्यासाठी, कृपया सेटिंग्ज &gt; सुरक्षा कडे जा</i></string>
     <string name="settings_biometric_setup_title">बॅकअप स्क्रीन लॉक टाईप निवडा</string>
     <string name="settings_biometric_setup_details">तुम्हाला तुमचा स्क्रीन कसा लॉक करायला आवडेल?</string>
     <string name="fingerprint_setup_title">बोटाचा ठसा सेटअप</string>

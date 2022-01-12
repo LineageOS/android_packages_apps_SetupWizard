@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">قايسى SIM كارتىنىڭ ئېقىمىنى ئىشلىتىسىز؟ سىز SIM كارتىڭىز تاختا كومپىيوتېرنى تەڭشەش سەۋەبلىك ئېقىم سەرپ قىلىشى مۇمكىن.</string>
     <string name="choose_data_sim_summary" product="default">قايسى SIM كارتىنىڭ ئېقىمىنى ئىشلىتىسىز؟ سىز SIM كارتىڭىز تېلېفوننى تەڭشەش سەۋەبلىك ئېقىم سەرپ قىلىشى مۇمكىن.</string>
     <string name="date_time_summary">ئەگەر لازىم بولسا، ۋاقىت رايونى. چىسلا ۋە ۋاقىتنى تەڭشەڭ</string>
-    <string name="backup_data_summary">ئەپ سانلىق مەلۇماتى، سىمسىز تور پارولى ۋە باشقا تەڭشەكلەرنى Google مۇلازىمىتىرىغا <b>زاپاسلاش</b></string>
-    <string name="other_services_summary">بۇ مۇلازىمەتلەرنى Google سىزگە تەمىنلەيدۇ، سىز ئۇلارنى خالىغان چاغدا تاقاپ ئاچسىڭىز بۇلىدۇ. ئېقىم Google نىڭ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> بۇيىچە ئىشلىتىلدۇ.</string>
-    <string name="location_services_summary">ئورۇن مۇلازىمىتى سىستېما ۋە ئۈچىنچى تەرەپ ئەپنىڭ سانلىق مەلۇماتنى يىغىشىغا ۋە ئىشلىتىشىگە رۇخسەت قىلىدۇ. مەسىلەن، مەلۇم بىر ئەپ سىزنىڭ تەخمىنىي ئورنىڭىزغا ئاساسەن يېقىن ئەتراپتىن قەھۋەخانا ئىزدەيدۇ.</string>
     <string name="location_access_summary"><b>سىز ھوقۇق بەرگەن ئەپنىڭ</b> سىزنىڭ ئورۇن ئۇچۇرىڭىزنى ئىشلىتىشكە يول قويۇش، بۇ بەلكىم سىزنىڭ ھازىرقى ۋە ئۆتمۈشتىكى ئۇچۇرىڭىزنى ئۆز ئىچىگە ئېلىشى مۇمكىن.</string>
     <string name="setup_mobile_data">كۆچمە تورنى ئېچىش</string>
     <string name="setup_mobile_data_no_service">مۇلازىمەت يوق</string>
@@ -49,9 +46,6 @@
     <string name="yes">ھەئە</string>
     <string name="emergency_call">جىددىي چاقىرىش</string>
     <string name="services_os_nav_keys_label"><b>مەۋھۇم كونۇپكىنى</b> ھەقىقىي كونۇپكىنىڭ ئورنىغا ئالماشتۇرۇش.</string>
-    <string name="setup_unlock">قۇلۇپ ئېچىش</string>
-    <string name="setup_device_locked">بۇ ئۈسكىنى باشقىلار قۇلۇپلاپ قويغان.</string>
-    <string name="setup_device_locked_instructions"><i>بۇ ئىقىتىدارنى ئېچىپ تاقاش ئۈچۈن، تەڭشەكلەر&gt; بىخەتەرلىككە كىرىڭ</i></string>
     <string name="settings_biometric_setup_title">زاپاس قۇلۇپ تىپىنى تاللاڭ</string>
     <string name="settings_biometric_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
     <string name="fingerprint_setup_title">بارماق ئىزى تەڭشىكى</string>

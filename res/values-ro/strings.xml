@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura tableta dvs.</string>
     <string name="choose_data_sim_summary" product="default">Ce cartelă SIM vreți să utilizați pentru date? Cartela SIM selectată v-ar putea costa adițional în timp ce e folosită pentru a configura telefonul dvs.</string>
     <string name="date_time_summary">Setați fusul orar și reglați data și ora curentă, dacă este necesar</string>
-    <string name="backup_data_summary"><b>Back up</b> datele aplicațiilor, parolele Wi-Fi și alte setări pe serverele Google</string>
-    <string name="other_services_summary">Aceste servicii pun Google să lucreze pentru tine, și puteți să le activați sau dezactivați în orice moment. Datele vor fi folosite în conformitate cu Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Serviciul de localizare permite Hărți și altor aplicații să adune și să folosească date precum locația aproximativă. De exemplu, Hărți poate utiliza locația aproximativă pentru a localiza cafenele în vecinătate.</string>
     <string name="location_access_summary"><b>Permite aplicațiilor care au cerut permisiunea</b> să utilizeze informațiile despre locația dvs. Aceasta poate include locația curentă și locațiile precedente.</string>
     <string name="setup_mobile_data">Activare date mobile</string>
     <string name="setup_mobile_data_no_service">Lipsă semnal</string>
@@ -51,13 +48,13 @@
     <string name="yes">Da</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Apel de urgenţă</string>
+    <string name="accessibility_settings">Setări de accesibilitate</string>
     <string name="setup_services">Caracteristici LineageOS</string>
+    <string name="services_pp_explanation">Aceste servicii lucrează pentru dvs. pentru a extinde capabilitățile dispozitivului. Datele vor fi utilizate în concordanță cu politica de confidențialitate a <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Puteți citi politica de confidențialitate pe un alt dispozitiv accesând <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Ajutați la îmbunătățirea <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> prin trimiterea automată a datelor de diagnosticare și utilizare la <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Aceste informații nu pot fi folosite pentru a te identifica și oferă o mână de ajutor echipelor care lucrează la lucruri precum durata bateriei, performanța aplicațiilor și noile caracteristici <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
-    <string name="setup_unlock">Deblocare</string>
-    <string name="setup_device_locked">Acest dispozitiv a fost blocat de utilizator.</string>
-    <string name="setup_require_cyanogen_label"><b>Este necesară parola contului dvs.</b> pentru a vă utiliza dispozitivul după fiecare resetare la datele din fabrică.</string>
-    <string name="setup_device_locked_instructions"><i>Pentru a activa sau dezactiva această caracteristică, vă rugăm să mergeți la Setări &gt; securitate</i></string>
     <string name="settings_biometric_setup_title">Selectați tipul de blocare ecran de rezervă</string>
     <string name="settings_biometric_setup_details">Cum doriți să vă blocați ecranul?</string>
     <string name="fingerprint_setup_title">Configurare amprentă</string>
@@ -76,8 +73,8 @@
     <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurați</string>
     <string name="intro_restore_title">Restabiliți aplicațiile și datele</string>
-    <string name="intro_restore_subtitle" product="tablet">Dacă aveţi o copie de rezervă de pe ultima dvs. tabletă LineageOS, o puteţi restaura aici.</string>
-    <string name="intro_restore_subtitle" product="default">Dacă aveţi o copie de rezervă de pe ultimul dvs. telefon LineageOS, o puteţi restaura aici.</string>
+    <string name="intro_restore_subtitle" product="tablet">Dacă aveți o copie de rezervă de pe ultima tabletă &lt;xliff:g id="name" example="LineageOS"&gt;&lt;xliff:g id="name" example="LineageOS"&gt;&lt;/xliff:g&gt;, o puteți restaura aici.</string>
+    <string name="intro_restore_subtitle" product="default">Dacă aveți o copie de rezervă de pe ultimul telefon &lt;xliff:g id="name" example="LineageOS"&gt;&lt;xliff:g id="name" example="LineageOS"&gt;&lt;/xliff:g&gt;, o puteți restaura aici.</string>
     <string name="intro_restore_button">Restaurează din backup</string>
     <string name="update_recovery_title">Actualizează Lineage Recovery</string>
     <string name="update_recovery_description">Actualizează Lineage Recovery la prima pornire după fiecare actualizare.</string>

@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu tablet.</string>
     <string name="choose_data_sim_summary" product="default">Qual o cartão SIM que quer usar para os dados? O SIM selecionado pode incorrer em custos de rede adicionais, pois será usado para configurar o seu telefone.</string>
     <string name="date_time_summary">Defina o fuso horário e ajuste a hora e a data atuais, se necessário</string>
-    <string name="backup_data_summary">Efetuar uma <b>cópia de segurança</b> dos dados das aplicações, palavras-passe de acesso de redes sem fios e outras definições para os servidores da Google</string>
-    <string name="other_services_summary">Estes serviços colocam o Google a trabalhar para si, e pode ligá-los ou desligá-los a qualquer momento. Os dados serão utilizados em conformidade com a <xliff:g id="name" example="Privacy Policy">%s</xliff:g> do Google.</string>
-    <string name="location_services_summary">Os serviços de localização permitem às aplicações de sistema e de terceiros reunir e utilizar dados tais como a sua localização aproximada. Por exemplo, uma aplicação pode usar a sua localização aproximada para localizar cafés ou bares nas proximidades.</string>
     <string name="location_access_summary"><b>Permitir que as aplicações que pediram a sua permissão</b> usem as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
     <string name="setup_mobile_data">Ligar os dados móveis</string>
     <string name="setup_mobile_data_no_service">Sem serviço</string>
@@ -51,13 +48,10 @@
     <string name="yes">Sim</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Chamada de emergência</string>
+    <string name="accessibility_settings">Definições de acessibilidade</string>
     <string name="setup_services">Funcionalidades LineageOS</string>
     <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
-    <string name="setup_unlock">Desbloquear</string>
-    <string name="setup_device_locked">Este dispositivo foi bloqueado pelo utilizador.</string>
-    <string name="setup_require_cyanogen_label"><b>Exigir a palavra-passe da sua conta</b> para usar o dispositivo mesmo depois da reposição dos dados de fábrica.</string>
-    <string name="setup_device_locked_instructions"><i>Para ativar ou desativar este recurso, por favor vá a Definições de Segurança</i></string>
     <string name="settings_biometric_setup_title">Selecione o tipo de bloqueio do ecrã da cópia de segurança</string>
     <string name="settings_biometric_setup_details">Como gostaria de bloquear o seu ecrã?</string>
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
@@ -76,8 +70,6 @@
     <string name="lockscreen_setup_summary"><b>Protejer este dispositivo</b> ao exigir um código PIN, padrão ou palavra-passe para desbloqueio do ecrã</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
     <string name="intro_restore_title">Restaurar aplicações e dados</string>
-    <string name="intro_restore_subtitle" product="tablet">Se tiver uma cópia de segurança do seu anterior tablet com LineageOS, pode restaurá-la aqui.</string>
-    <string name="intro_restore_subtitle" product="default">Se tiver uma cópia de segurança do seu anterior telefone com LineageOS, pode restaurá-la aqui.</string>
     <string name="intro_restore_button">Restaurar a partir de cópia de segurança</string>
     <string name="update_recovery_title">Atualizar a recuperação Lineage</string>
     <string name="update_recovery_description">Atualiza a recuperação Lineage na primeira inicialização subsequente a cada atualização.</string>

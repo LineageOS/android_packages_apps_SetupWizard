@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Hangi SIM\'i veri için kullanmak istiyorsunuz? Seçili SIM, tabletinizin kurulumunda kullanılacağı için şebeke ücretlerine tabi olabilir.</string>
     <string name="choose_data_sim_summary" product="default">Hangi SIM\'i veri için kullanmak istiyorsunuz? Telefonunuzun kurulumu için kullanılacağı için seçili SIM şebeke ücretlerine tabi olabilir.</string>
     <string name="date_time_summary">Zaman diliminizi seçin ve gerekirse geçerli tarih ve saati ayarlayın</string>
-    <string name="backup_data_summary">Uygulama verilerini, Wi-Fi şifrelerini ve diğer ayarları Google sunucularına <b>yedekle</b></string>
-    <string name="other_services_summary">Bu hizmetler ile Google sizin için çalışmaya başlar ve istediğiniz zaman açıp kapatabilirsiniz. Veriler Google\'ın <xliff:g id="name" example="Privacy Policy">%s</xliff:g>\'na uygun olarak kullanılacaktır.</string>
-    <string name="location_services_summary">Konum servisleri sistem ve üçüncü taraf uygulamalara yaklaşık konumunuz gibi bilgileri toplama ve kullanma izni verir. Örneğin, bir uygulama yakındaki eğlence merkezlerini belirlemek için yaklaşık konumunuzu kullanabilir.</string>
     <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
     <string name="setup_mobile_data">Hücresel veriyi etkinleştir</string>
     <string name="setup_mobile_data_no_service">Servis yok</string>
@@ -51,13 +48,12 @@
     <string name="yes">Evet</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Acil durum araması</string>
+    <string name="accessibility_settings">Erişilebilirlik ayarları</string>
     <string name="setup_services">LineageOS özellikleri</string>
+    <string name="services_pp_explanation">Bu hizmetler, cihazınızın özelliklerini genişletmeniz için çalışır. Veri <xliff:g id="name" example="LineageOS">%1$s</xliff:g>\'un gizlilik politikası ile kullanılacaktır.</string>
+    <string name="services_find_privacy_policy">Gizlilik politikasını farklı cihazla <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> adresini ziyaret ederek okuyabilirsiniz</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> geliştirmeye yardımcı olun</string>
     <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>yazılımsal gezinme tuşlarını kullanın</b>.</string>
-    <string name="setup_unlock">Kilidi kaldır</string>
-    <string name="setup_device_locked">Bu cihaz kullanıcı tarafından kilitlenmiş.</string>
-    <string name="setup_require_cyanogen_label"><b>Hesap parolanız</b> cihazınızı sıfırladıktan sonra kullanabilmek için gereklidir.</string>
-    <string name="setup_device_locked_instructions"><i>Bu özelliği açıp kapatmak için lütfen Ayarlar &gt; Güvenlik bölümüne gidin</i></string>
     <string name="settings_biometric_setup_title">Yedek ekran kilidi türü seçin</string>
     <string name="settings_biometric_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
     <string name="fingerprint_setup_title">Parmak izi kurulumu</string>
@@ -76,8 +72,6 @@
     <string name="lockscreen_setup_summary"><b>Bu cihazı koruyun</b> ve ekran kilidini açmak için bir PIN, desen ya da şifreyi gerekli kılın.</string>
     <string name="lockscreen_setup_screen_lock_setup">Kur</string>
     <string name="intro_restore_title">Uygulamaları ve verileri geri yükleyin</string>
-    <string name="intro_restore_subtitle" product="tablet">Son LineageOS tabletinizden bir yedeğiniz varsa, onu buradan geri yükleyebilirsiniz.</string>
-    <string name="intro_restore_subtitle" product="default">Son LineageOS telefonunuzdan bir yedeğiniz varsa, onu buradan geri yükleyebilirsiniz.</string>
     <string name="intro_restore_button">Yedekten geri yükle</string>
     <string name="update_recovery_title">Lineage Kurtarma Modunu Güncelle</string>
     <string name="update_recovery_description">Her güncellemeden sonraki ilk açılışta Lineage Kurtarma Modunu günceller.</string>

@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">ഡാറ്റ ഉപയോഗിക്കുന്നതിനായി നിങ്ങള്‍ ഉപയോഗിക്കാന്‍ ആഗ്രഹിക്കുന്ന SIM ഏതാണ്? നിങ്ങളുടെ ടാബ്ലെറ്റ് സജ്ജമാക്കുന്നതിന് ഉപയോഗിക്കുമെന്നതിനാല്‍ തിരഞ്ഞെടുത്ത SIM നെറ്റ്‌വർക്ക് നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
     <string name="choose_data_sim_summary" product="default">ഡാറ്റ ഉപയോഗിക്കുന്നതിനായി നിങ്ങള്‍ ഉപയോഗിക്കാന്‍ ആഗ്രഹിക്കുന്ന SIM ഏതാണ്? നിങ്ങളുടെ ഫോണ്‍ സജ്ജമാക്കുന്നതിന് ഉപയോഗിക്കുമെന്നതിനാല്‍ തിരഞ്ഞെടുത്ത SIM നെറ്റ്‌വർക്ക് നിരക്കുകൾക്ക് ഇടയാക്കിയേക്കാം.</string>
     <string name="date_time_summary">ആവശ്യമെങ്കിൽ നിങ്ങളുടെ സമയ മേഖല സജ്ജമാക്കി നിലവിലെ തീയതിയും സമയവും ക്രമീകരിക്കുക</string>
-    <string name="backup_data_summary">അപ്ലിക്കേഷൻ ഡാറ്റ, Wi-Fi പാസ്‌വേഡുകൾ, മറ്റ് ക്രമീകരണങ്ങൾ എന്നിവ Google സെർവറുകളിൽ <b>ബാക്കപ്പുചെയ്യുക</b></string>
-    <string name="other_services_summary">ഈ സേവനങ്ങൾ നിങ്ങൾക്ക് വേണ്ടി പ്രവർത്തിക്കാന്‍ Google നെ ചുമതലപ്പെടുത്തുന്നു, നിങ്ങൾക്കിത് എപ്പോൾ വേണമെങ്കിലും ഓണ്‍ അല്ലെങ്കില്‍ ഓഫ് ചെയ്യാന്‍ കഴിയുന്നതാണ്. Google ന്റെ <xliff:g id="name" example="Privacy Policy">%s</xliff:g> പ്രകാരം ഡാറ്റ ഉപയോഗിക്കുന്നതാണ്.</string>
-    <string name="location_services_summary">നിങ്ങളുടെ ഏകദേശ സ്ഥാനം പോലുള്ള ഡാറ്റ ശേഖരിക്കുന്നതിനും ഉപയോഗിക്കുന്നതിനും സിസ്റ്റം, മൂന്നാം കക്ഷി ആപ്ലിക്കേഷനുകളെ സ്ഥാനം സേവനങ്ങൾ അനുവദിക്കുന്നു. ഉദാഹരണത്തിന്, സമീപത്തുള്ള കോഫി ഷോപ്പുകൾ കണ്ടെത്താൻ നിങ്ങളുടെ ഏകദേശ സ്ഥാനം ഒരു ആപ്ലിക്കേഷൻ ഉപയോഗിച്ചേക്കാം.</string>
     <string name="location_access_summary"><b>നിങ്ങളുടെ സ്ഥാനം വിവരങ്ങൾ ഉപയോഗിക്കാൻ നിങ്ങളുടെ അനുമതി ആവശ്യപ്പെടുന്ന</b> ആപ്ലിക്കേഷനുകളെ അനുവദിക്കുക. ഇതില്‍ നിങ്ങളുടെ നിലവിലെ സ്ഥാനവും മുമ്പത്തെ ലൊക്കേഷനുകളും ഉൾപ്പെട്ടേക്കാം.</string>
     <string name="setup_mobile_data">സെല്ലുലാർ ഡാറ്റ ഓണാക്കുക</string>
     <string name="setup_mobile_data_no_service">സേവനം ഇല്ല</string>
@@ -49,9 +46,6 @@
     <string name="yes">ഉണ്ട്</string>
     <string name="emergency_call">അടിയന്തര കോൾ</string>
     <string name="services_os_nav_keys_label">ഹാര്‍ഡ്‌വെയര്‍ കീകൾക്ക് പകരം സ്ക്രീൻ <b>നാവിഗേഷൻ കീകൾ ഉപയോഗിക്കുക.</b></string>
-    <string name="setup_unlock">അൺലോക്കുചെയ്യുക</string>
-    <string name="setup_device_locked">ഈ ഉപകരണം ഉപയോക്താവ് ലോക്ക് ചെയ്തു.</string>
-    <string name="setup_device_locked_instructions"><i>ഈ സവിശേഷത ഓഫ്/ഓൺ ചെയ്യുന്നതിന് ക്രമീകരണങ്ങൾ &gt; സുരക്ഷ എന്നതിലേക്ക് പോകുക</i></string>
     <string name="settings_biometric_setup_title">ബാക്കപ്പ് സ്ക്രീൻ ലോക്ക് തരം തിരഞ്ഞെടുക്കുക</string>
     <string name="settings_biometric_setup_details">നിങ്ങളുടെ സ്ക്രീന്‍ എങ്ങനെ ലോക്ക് ചെയ്യാനാണ് നിങ്ങള്‍ ആഗ്രഹിക്കുന്നത്?</string>
     <string name="fingerprint_setup_title">വിരലടയാള സജ്ജീകരണം</string>

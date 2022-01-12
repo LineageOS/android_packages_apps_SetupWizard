@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure tableta ezartzeko erabiliko baita.</string>
     <string name="choose_data_sim_summary" product="default">Zein SIM erabili nahi duzu datu mugikorretarako? Hautatutako SIM txartelean gastuak sor litzake zure telefonoa ezartzeko erabiliko baita.</string>
     <string name="date_time_summary">Ezarri zure ordu-zona eta doitu oraingo data beharrezkoa bada</string>
-    <string name="backup_data_summary">Aplikazio datuen, Wi-Fi pasahitzen, eta bestelako ezarpenen <b>babeskopia</b> egin Google zerbitzarietan</string>
-    <string name="other_services_summary">Zerbitzu hauek Google zure mesedetan lanean jartzen dute, edozein unetan piztu edo itzali ditzakezu. Datuak Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g> arabera erabiliko dira.</string>
-    <string name="location_services_summary">Kokaleku zerbitzuek zure kokalekua bezalako datuak eskuratzea ahalbidetzen diete sistemako eta instalatutako aplikazioei. Adibidez, aplikazio batek zure kokalekua erabili lezake inguruko kafetegiak aurkitzeko.</string>
     <string name="location_access_summary"><b>Baimena eskatu dizuten aplikazioei</b> zure kokaleku informazioa erabiltzea ahalbidetu. Uneko zein iraganeko kokalekuak barne.</string>
     <string name="setup_mobile_data">Piztu datu mugikorrak</string>
     <string name="setup_mobile_data_no_service">Zerbitzurik ez</string>
@@ -53,10 +50,6 @@
     <string name="setup_services">LineageOS ezaugarriak</string>
     <string name="services_help_improve_cm">Lagundu <xliff:g id="name" example="LineageOS">%s</xliff:g> hobetzen</string>
     <string name="services_os_nav_keys_label"><b>Erabili pantailako nabigazio teklak</b> hardware teklen ordez.</string>
-    <string name="setup_unlock">Desblokeatu</string>
-    <string name="setup_device_locked">Erabiltzaileak gailu hau blokeatu du.</string>
-    <string name="setup_require_cyanogen_label"><b>Eskatu zure kontuaren pasahitza</b> gailua erabiltzeko lantegiko jatorrizko ezarpenetara berrezarri eta gero ere.</string>
-    <string name="setup_device_locked_instructions"><i>Ezaugarri hau gaitu edo ezgaitzeko zoaz hona: Ezarpenak &gt; Segurtasuna</i></string>
     <string name="settings_biometric_setup_title">Aukeratu ordezko pantaila blokeo mota</string>
     <string name="settings_biometric_setup_details">Nola blokeatu nahi duzu pantaila?</string>
     <string name="fingerprint_setup_title">Hatz-markaren ezarpena</string>

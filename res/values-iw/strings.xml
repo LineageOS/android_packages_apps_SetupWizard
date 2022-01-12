@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? ייתכנו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת הטאבלט שלך.</string>
     <string name="choose_data_sim_summary" product="default">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? ייתכנו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת מכשירך.</string>
     <string name="date_time_summary">הגדר את אזור הזמן שלך והתאם את התאריך ואת השעה הנוכחיים במידת הצורך</string>
-    <string name="backup_data_summary"><b>גבה</b> נתוני יישומים, סיסמאות Wi-Fi והגדרות אחרות לשרתי Google</string>
-    <string name="other_services_summary">שירותים אלו מאפשרים ל-Google לעבוד עבורך, ובאפשרותך לכבות או להדליק אותם בכל עת. מידע ישמש בכפוף ל<xliff:g id="name" example="Privacy Policy">%s</xliff:g> של Google.</string>
-    <string name="location_services_summary">שירותי מיקום מאפשרים ליישום המפות וליישומים אחרים להשתמש במיקומך. לדוגמא, יישום המפות עשוי להשתמש במידע זה על מנת להציג לך בתי קפה הנמצאים בקרבתך.</string>
     <string name="location_access_summary"><b>אפשר ליישומים שביקשו את רשותך</b> להשתמש במידע על מיקומך. הפעולה עשויה לכלול את מיקומך הנוכחי ומיקומים קודמים.</string>
     <string name="setup_mobile_data">הפעל נתונים סלולריים</string>
     <string name="setup_mobile_data_no_service">אין שירות</string>
@@ -53,10 +50,6 @@
     <string name="setup_services">תכונות LineageOS</string>
     <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
-    <string name="setup_unlock">פתיחה</string>
-    <string name="setup_device_locked">מכשיר זה ננעל על-ידי המשתמש.</string>
-    <string name="setup_require_cyanogen_label"><b>דרוש את סיסמת החשבון שלך</b> כדי להשתמש במכשיר אפילו לאחר איפוס מלא.</string>
-    <string name="setup_device_locked_instructions"><i>כדי להפעיל/לכבות אפשרות זו, גש להגדרות &gt; אבטחה</i></string>
     <string name="settings_biometric_setup_title">בחר סוג שיטת נעילת מסך לגיבוי</string>
     <string name="settings_biometric_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
     <string name="fingerprint_setup_title">הגדרת טביעת אצבע</string>

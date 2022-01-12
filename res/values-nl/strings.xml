@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw tablet in te stellen.</string>
     <string name="choose_data_sim_summary" product="default">Welke simkaart wilt u gebruiken voor mobiel internet? Voor deze simkaart kunnen extra kosten in rekening gebracht worden, omdat deze gebruikt wordt om uw telefoon in te stellen.</string>
     <string name="date_time_summary">Selecteer uw tijdzone en pas indien nodig de huidige datum en tijd aan.</string>
-    <string name="backup_data_summary"><b>Back-up maken</b> van app-gegevens, wifi-wachtwoorden en andere instellingen naar de servers van Google</string>
-    <string name="other_services_summary">Deze diensten laten Google het werk doen en kunnen op elk moment in- of uitgeschakeld worden. De gegevens worden gebruikt conform de <xliff:g id="name" example="Privacy Policy">%s</xliff:g> van Google.</string>
-    <string name="location_services_summary">Locatieservices stellen systeemapps en apps van derde partijen in staat gegevens zoals uw geschatte locatie te verzamelen en te gebruiken. Zo kan een app uw locatie gebruiken om winkels in de buurt te vinden.</string>
     <string name="location_access_summary"><b>Apps toestaan die uw toestemming hebben gevraagd</b> om informatie over uw locatie te gebruiken. Dit kan uw huidige locatie en voorgaande locaties omvatten.</string>
     <string name="setup_mobile_data">Mobiele gegevens inschakelen</string>
     <string name="setup_mobile_data_no_service">Geen verbinding</string>
@@ -49,19 +46,23 @@
     <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hiermee kunnen kosten gemoeid zijn.</string>
     <string name="no">Nee</string>
     <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Noodoproep</string>
+    <string name="accessibility_settings">Toegankelijkheidsinstellingen</string>
     <string name="setup_services">Functies van LineageOS</string>
+    <string name="services_pp_explanation">Deze diensten worden gebruikt om de mogelijkheden van uw apparaat uit te breiden. Gegevens zullen worden gebruikt conform het privacybeleid van <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">U kunt het privacybeleid op een ander apparaat lezen door <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> te bezoeken</string>
     <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar  <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="LineageOS">%3$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
-    <string name="setup_unlock">Ontgrendelen</string>
-    <string name="setup_device_locked">Dit apparaat is vergrendeld door de gebruiker.</string>
-    <string name="setup_require_cyanogen_label"><b>Uw accountwachtwoord vereisen</b> om het apparaat te gebruiken, zelfs na terugzetten naar fabrieksinstellingen.</string>
-    <string name="setup_device_locked_instructions"><i>Om deze functie in of uit te schakelen, ga naar Instellingen &gt; Beveiliging</i></string>
     <string name="settings_biometric_setup_title">Back-up selecteren voor schermvergrendeling</string>
     <string name="settings_biometric_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
     <string name="fingerprint_setup_title">Vingerafdruk instellen</string>
     <string name="fingerprint_setup_summary">Om de vingerafdruksensor te gebruiken om uw scherm te ontgrendelen dient u:</string>
     <string name="fingerprint_setup_add_fingerprint">Uw vingerafdruk toe te voegen</string>
+    <string name="face_setup_title">Gezicht instellen</string>
+    <string name="face_setup_summary">Om met je gezicht te ontgrendelen moet je het volgende doen:</string>
+    <string name="face_setup_add_face">Voeg je gezicht toe</string>
     <string name="biometric_setup_backup_lock_method">Een tweede ontgrendelmethode in te stellen</string>
     <string name="biometric_setup_screen_lock_setup">Schermvergrendeling in te stellen</string>
     <string name="sim_locale_changed">%1$s simkaart gedetecteerd</string>
@@ -71,4 +72,12 @@
     <string name="lockscreen_setup_title" product="default">Bescherm uw telefoon</string>
     <string name="lockscreen_setup_summary"><b>Bescherm dit apparaat</b> en vraag om een pincode, patroon of wachtwoord om het scherm te ontgrendelen</string>
     <string name="lockscreen_setup_screen_lock_setup">Instellen</string>
+    <string name="intro_restore_title">Herstel apps en gegevens</string>
+    <string name="intro_restore_subtitle" product="tablet">Als u een back-up heeft van uw laatste <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, kunt u deze hier herstellen.</string>
+    <string name="intro_restore_subtitle" product="default">Als u een back-up heeft van uw laatste <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, kunt u deze hier herstellen.</string>
+    <string name="intro_restore_button">Backup terugzetten</string>
+    <string name="update_recovery_title">Lineage Recovery bijwerken</string>
+    <string name="update_recovery_description">Lineage Recovery updaten bij de eerste start na elke update</string>
+    <string name="update_recovery_warning">Recovery zal worden bijgewerkt zodra u de installatie hebt voltooid. Als u dit intact wilt houden, schakelt u deze functie uit.</string>
+    <string name="update_recovery_setting">Update Lineage Recovery naast het besturingssysteem</string>
 </resources>

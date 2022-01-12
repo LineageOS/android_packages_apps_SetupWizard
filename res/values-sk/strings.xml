@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Ktorú SIM chcete použiť pre mobilné dáta? U vybranej SIM môžu byť účtované poplatky za dátové prenosy, ak bude použitá pri nastavovaní tabletu.</string>
     <string name="choose_data_sim_summary" product="default">Ktorú SIM chcete použiť pre mobilné dáta? U vybranej SIM môžu byť účtované poplatky za dátové prenosy, ak bude použitá pri nastavovaní telefónu.</string>
     <string name="date_time_summary">Nastavte vaše časové pásmo a upravte aktuálny dátum a čas, ak je to potrebné</string>
-    <string name="backup_data_summary"><b>Zálohovať</b> údaje aplikácií, Wi-Fi heslá a ďalšie nastavenia na servery Google</string>
-    <string name="other_services_summary">Tieto služby vám ponúka Google a môžete ich kedykoľvek zapnúť alebo vypnúť. Údaje sa použijú v súlade s Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Služby polohy umožňujú systému a ďalším aplikáciám tretích strán zhromažďovanie a používanie údajov súvisiacich s vašou približnou polohou. Napríklad aplikácia Mapy môže použiť vašu približnú polohu na nájdene kaviarní vo vašej blízkosti.</string>
     <string name="location_access_summary"><b>Povoliť aplikáciám, ktoré požiadali o vaše povolenie</b>, používať informácie o vašej polohe. To môže zahŕňať vašu aktuálnu polohu a minulé polohy.</string>
     <string name="setup_mobile_data">Zapnúť mobilné dáta</string>
     <string name="setup_mobile_data_no_service">Žiadna sieť</string>
@@ -54,10 +51,6 @@
     <string name="setup_services">LineageOS funkcie</string>
     <string name="services_help_improve_cm">Pomôžte vylepšiť <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Používajte navigačné tlačidlá na obrazovke</b> namiesto hardvérových tlačidiel.</string>
-    <string name="setup_unlock">Odomknúť</string>
-    <string name="setup_device_locked">Toto zariadenie bolo uzamknuté používateľom.</string>
-    <string name="setup_require_cyanogen_label"><b>Vyžadovať heslo vášho účtu</b> na používanie vášho zariadenia aj po obnove továrenských nastavení.</string>
-    <string name="setup_device_locked_instructions"><i>Na vypnutie/zapnutie tejto funkcie prejdite do Nastavenia &gt; Zabezpečenie</i></string>
     <string name="settings_biometric_setup_title">Vyberte záložný typ zamknutia obrazovky</string>
     <string name="settings_biometric_setup_details">Ako chcete zamknúť obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavenie odtlačkov prstov</string>
@@ -76,8 +69,6 @@
     <string name="lockscreen_setup_summary"><b>Chrániť toto zariadenie</b> a pred odomknutím obrazovky vyžiadať kód PIN, gesto alebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastaviť</string>
     <string name="intro_restore_title">Obnoviť aplikácie a dáta</string>
-    <string name="intro_restore_subtitle" product="tablet">Ak máte zálohu zo svojho predošlého tabletu s LineageOS, môžete ju obnoviť tu.</string>
-    <string name="intro_restore_subtitle" product="default">Ak máte zálohu zo svojho predošlého telefónu s LineageOS, môžete ju obnoviť tu.</string>
     <string name="intro_restore_button">Obnoviť zo záloh</string>
     <string name="update_recovery_title">Aktualizovať Lineage recovery</string>
     <string name="update_recovery_description">Aktualizovať Lineage recovery pri prvom spustení po každej aktualizácii</string>

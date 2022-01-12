@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Manakah SIM yang ingin Anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan perangkat Anda.</string>
     <string name="choose_data_sim_summary" product="default">Manakah SIM yang ingin Anda gunakan untuk data? SIM yang dipilih dapat dikenakan biaya jaringan karena akan digunakan untuk menyiapkan perangkat Anda.</string>
     <string name="date_time_summary">Atur zona waktu dan sesuaikan tanggal dan waktu jika diperlukan</string>
-    <string name="backup_data_summary"><b>Membuat cadangan</b> data aplikasi, password Wi-Fi, dan pengaturan lainnya ke server Google</string>
-    <string name="other_services_summary">Layanan ini menggunakan Google, dan Anda dapat mengubahnya atau menonaktifkannya setiap saat. Data akan digunakan sesuai dengan <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-    <string name="location_services_summary">Layanan lokasi mengizinkan sistem dan aplikasi pihak ketiga untuk mengumpulkan dan menggunakan data seperti perkiraan lokasi Anda. Misalnya, sebuah aplikasi dapat menggunakan perkiraan lokasi Anda untuk menemukan kedai kopi terdekat.</string>
     <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
     <string name="setup_mobile_data">Hidupkan data selular</string>
     <string name="setup_mobile_data_no_service">Tidak ada layanan</string>
@@ -51,13 +48,11 @@
     <string name="yes">Ya</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Panggilan darurat</string>
+    <string name="accessibility_settings">Pengaturan aksesibilitas</string>
     <string name="setup_services">Fitur LineageOS</string>
+    <string name="services_find_privacy_policy">Anda dapat membaca kebijakan privasi di perangkat lainnya dengan mengunjungi <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="LineageOS">%s </xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
-    <string name="setup_unlock">Buka kunci</string>
-    <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
-    <string name="setup_require_cyanogen_label"><b>Memerlukan kata sandi akun anda</b> untuk dapat menggunakan perangkat meskipun setelah di setel ulang ke pengaturan pabrik.</string>
-    <string name="setup_device_locked_instructions"><i>Untuk mengaktifkan/menonaktifkan fitur ini, silakan masuk ke Pengaturan &gt; Keamanan</i></string>
     <string name="settings_biometric_setup_title">Pilih tipe kunci layar cadangan</string>
     <string name="settings_biometric_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
     <string name="fingerprint_setup_title">Penyiapan sidik jari</string>
@@ -76,7 +71,5 @@
     <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
     <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
-    <string name="intro_restore_subtitle" product="tablet">Jika Anda memiliki cadangan dari LineageOS terakhir pada tablet Anda, Anda dapat memulihkannya di sini.</string>
-    <string name="intro_restore_subtitle" product="default">Jika Anda memiliki cadangan dari LineageOS terakhir pada ponsel Anda, Anda dapat memulihkannya di sini.</string>
     <string name="intro_restore_button">Pulihkan dari cadangan</string>
 </resources>

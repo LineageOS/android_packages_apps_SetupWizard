@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou tablet.</string>
     <string name="choose_data_sim_summary" product="default">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou foon.</string>
     <string name="date_time_summary">Stel jou tydsone en pas huidige datum en tyd toe, indien nodig</string>
-    <string name="backup_data_summary"><b>Rugsteun</b> program data, Wi-Fi wagwoorde en ander instellings na Google-bedieners</string>
-    <string name="other_services_summary">Hierdie dienste word deur Google verskaf en jy kan dit aktiveer of deaktiveer op enige tyd. Data sal in ooreenstemming met Google se <xliff:g id="name" example="Privacy Policy">%s</xliff:g> gebruik word.</string>
-    <string name="location_services_summary">Ligging dienste laat stelsel en ander 3rde party programme toe om data te gebruik soos jou benaderde ligging. Bv \'n program kan jou benaderde ligging gebruik om nabygeleë koffiewinkels op te spoor.</string>
     <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
     <string name="setup_mobile_data">Skakel mobiele data aan</string>
     <string name="setup_mobile_data_no_service">Geen diens</string>
@@ -52,10 +49,6 @@
     <string name="emergency_call">Noodoproep</string>
     <string name="setup_services">LineageOS kenmerke</string>
     <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
-    <string name="setup_unlock">Ontsluit</string>
-    <string name="setup_device_locked">Die toestel is gesluit deur die gebruiker.</string>
-    <string name="setup_require_cyanogen_label"><b>Jou rekening wagwoord sal vereis word</b> om jou toestel te gebruik, selfs na \'n fabriek herstel.</string>
-    <string name="setup_device_locked_instructions"><i>Om hierdie funksie te aan/af te skakel, gaan asseblief na Instellings &gt; Sekuriteit</i></string>
     <string name="settings_biometric_setup_title">Kies nog \'n skerm sluit tipe</string>
     <string name="settings_biometric_setup_details">Hoe wil jy jou skerm sluit?</string>
     <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>

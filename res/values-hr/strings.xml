@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Koju SIM želite koristiti za prijenos podataka? Izabrani SIM može snositi troškove jer će biti korišten za postavljanje tvog tableta.</string>
     <string name="choose_data_sim_summary" product="default">Koju SIM želite koristiti za prijenos podataka? Izabrani SIM može snositi troškove jer će biti korišten za postavljanje tvog telefona.</string>
     <string name="date_time_summary">Postavite vremensku zonu i ako je potrebno prilagoditi trenutni datum i vrijeme</string>
-    <string name="backup_data_summary"><b>Spremi</b> podatke aplikacije, Wi-Fi lozinke, i ostale postavke na Google poslužitelje</string>
-    <string name="other_services_summary">Ove usluge daju Googleu da radi za vas, a možete ih uključiti ili isključiti u bilo kojem trenutku. Podaci će se koristiti u skladu sa Google-ovim <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Servis lokacije dozvoljava sustavnim i drugim aplikacijama da sakupljaju i koriste podatke kao što je približna lokacija. Npr. aplikacije mogu koristiti vašu približnu lokaciju za lociranje kafića u blizini.</string>
     <string name="location_access_summary"><b>Dopusti aplikacijama koje traže tvoju dozvolu</b> da koriste informacije o tvojoj lokaciji. Ovo može uključiti tvoju sadašnju i prošle lokacije.</string>
     <string name="setup_mobile_data">Uključi mobilne podatke</string>
     <string name="setup_mobile_data_no_service">Nema usluge</string>
@@ -54,10 +51,6 @@
     <string name="setup_services">Značajke LineageOS-a</string>
     <string name="services_help_improve_cm">Pomozite poboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Koristite navigacijske tipke na zaslonu</b>umjesto hardverskih tipki.</string>
-    <string name="setup_unlock">Otključaj</string>
-    <string name="setup_device_locked">Uređaj je zaključao korisnik.</string>
-    <string name="setup_require_cyanogen_label"><b>Zahtijeva lozinku vašeg računa</b>za korištenje vašim uređajem čak i nakon vraćanja na tvorničke postavke.</string>
-    <string name="setup_device_locked_instructions"><i>Da bi isključili/uključili ovo, idite u Postavke &gt; Privatnost</i></string>
     <string name="settings_biometric_setup_title">Izaberite rezerni tip zaključavanja zaslona</string>
     <string name="settings_biometric_setup_details">Kako želite zaključati vaš zaslon?</string>
     <string name="fingerprint_setup_title">Postavljanje otiska prsta</string>
@@ -76,8 +69,6 @@
     <string name="lockscreen_setup_summary"><b>Zaštiti uređaj</b> i zahtijevaj PIN, uzorak ili zaporku za otključavanje zaslona</string>
     <string name="lockscreen_setup_screen_lock_setup">Postavljanje</string>
     <string name="intro_restore_title">Vrati aplikacije i podatke</string>
-    <string name="intro_restore_subtitle" product="tablet">Ako imate sigurnosnu kopiju sa svog posljednjeg LineageOS tableta, možete je vratiti ovdje.</string>
-    <string name="intro_restore_subtitle" product="default">Ako imate sigurnosnu kopiju sa svog posljednjeg LineageOS teleona, možete je vratiti ovdje.</string>
     <string name="intro_restore_button">Vrati podatke iz sigurnosne kopije</string>
     <string name="update_recovery_title">Ažuriraj Lineage Recovery</string>
     <string name="update_recovery_description">Ažuriraj Lineage Recovery pri prvom pokretanju nakon svakog ažuriranja.</string>

@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">ଡାଟା ପାଇଁ ଆପଣ କେଉଁ SIM ବ୍ୟବହାର କରିବାକୁ ଚାହାଁନ୍ତି? ଆପଣଙ୍କ ଟାବ୍‍ଲେଟ୍‍ ସେଟ୍‍ ଅପ୍‍ରେ ବ୍ୟ୍ବହୃତ ହେଉଥିବାରୁ ଚୟନ କରାଯାଇଥିବା SIMରେ ନେଟ୍‍ୱାର୍କ୍‍ ଶୁଳ୍କ ଲାଗିପାରେ</string>
     <string name="choose_data_sim_summary" product="default">ଡାଟା ପାଇଁ ଆପଣ କେଉଁ SIM ବ୍ୟବହାର କରିବାକୁ ଚାହାଁନ୍ତି? ଆପଣଙ୍କ ଫୋ‍ନ ୍ସେଟ୍‍ ଅପ୍‍ରେ ବ୍ୟ୍ବହୃତ ହେଉଥିବାରୁ ଚୟନ କରାଯାଇଥିବା SIMରେ ନେଟ୍‍ୱାର୍କ୍‍ ଶୁଳ୍କ ଲାଗିପାରେ</string>
     <string name="date_time_summary">ଆପଣଙ୍କ ସମୟ ଜୋନ୍‍ ସେଟ୍‍ କରନ୍ତୁ ଓ ଯଦି ଆବଶ୍ୟକ ହୁଏ ସମୋପ୍ରତି ତାରିଖ ଓ ସମୟ ଆଡ୍‍ଜଷ୍ଟ କରନ୍ତୁ</string>
-    <string name="backup_data_summary">ଆପ୍ଲିକେସନ୍‍ ଡାଟା, Wi-Fi ପାସ୍‍ୱାର୍ଡ, ଓ Google ସଭ‍ର‍ର ଅନ୍ୟ ସେଟିଂସ୍ ପାଇଁ‍<b>ବ୍ୟାକ୍‍ ଅପ୍‍</b> ନିଅନ୍ତୁ</string>
-    <string name="other_services_summary">ଏହି ସେବାଗୁଡିକ Googleକୁ ଆପଣଙ୍କ ପାଇଁ ସଂଚାଳନ କ୍ରାଇବ, ଓ ଆପଣ ଯେ କୌଣସି ସମୟରେ ସେଗୁଡିକୁ ଅନ୍‍ ବା ଅଫ୍‍ କରିପାରିବେ। Google\ର <xliff:g id="name" example="Privacy Policy">%s</xliff:g>ସହିତ ସମାନ ଭାବେ ଡାଟା ବ୍ୟବହୃତ ହେବ।</string>
-    <string name="location_services_summary">ଅବ‍ସ୍ଥାନ ସେବା ସିଷ୍ଟମ୍‍କୁ ଓ ତୃତୀୟ ପ‍କ୍ଷ ଆପ୍ଲିକେସନ୍‍କୁ ଡାଟା ସଂଗ୍ରହ ଓ ବ୍ୟବହାର କରିବା ପାଇଁ ଅନୁମତି ଦେବ ଯଥା ଆପଣଙ୍କ ଆନୁମାନିକ ଅବ‍ସ୍ଥାନ। ଉଦାହରଣ ସ୍ୱରୂପ, ଆପ୍ଲିକେସନ୍‍ ଆପଣଙ୍କ ଆନୁମାନିକ ଅବ‍ସ୍ଥାନ ପାଖାପାଖି ଥିବା କଫି ସପ୍‍ ବିଷୟରେ ଜାଣିବା ପାଇଁ ବ୍ୟବହାର କରିପାରେ।</string>
     <string name="location_access_summary">ଆପଣଙ୍କ ଅବ‍ସ୍ଥାନ ସୂଚନା ବ୍ୟବହାର କରିବା ପାଇଁ<b>ଯେଉଁ ଆପ୍ଲିକେସନ୍‍ ଆପଣଙ୍କ ଠାରୁ ଅନୁମତି ମା୍ଗିଛନ୍ତି। ତାଙ୍କୁ ଅନୁମତି ଦିଅନ୍ତୁ।</b> ଏହା ଆପଣଙ୍କ ସମ୍ପ୍ରତୋ ଅବ‍ସ୍ଥାନ ଓ ପୂର୍ବ ଅବ‍ସ୍ଥାନ ଅନ୍ତଭୁକ୍ତ କ୍ରିପାରେ।</string>
     <string name="setup_mobile_data">ମୋବାଇଲ୍‍ ଡାଟା ବ୍ୟବହାର କରନ୍ତୁ</string>
     <string name="setup_mobile_data_no_service">କୌଣସି ସେବା ନାହିଁ</string>
@@ -49,9 +46,6 @@
     <string name="yes">ହଁ</string>
     <string name="emergency_call">ଜରୁରୀକାଳୀନ କଲ୍</string>
     <string name="services_os_nav_keys_label">ହା୍ର୍ଡ୍‍ଓୟାର୍‍ କୀ ବଦଳରେ<b>ଅନ୍‍ସ୍କ୍ରିନ୍‍ ନେଭିଗେସନ୍‍ କୀ ବ୍ୟବହାର କରନ୍ତୁ</b> ।</string>
-    <string name="setup_unlock">ଅନଲକ୍</string>
-    <string name="setup_device_locked">ଏହି ଡିଭାଇସ୍‍ ଉପଭୋକ୍ତାଙ୍କ ଦ୍ୱାରା ଲକ୍‍ ହୋଇଛି।</string>
-    <string name="setup_device_locked_instructions"><i>ଏହି ବୈଶିଷ୍ଟ୍ୟ ଅଫ୍‍/ଅନ୍‍ କରିବା ପାଇଁ, ଦୟାକରି ସେଟିଂସ୍‍&gt;ସୁର‍କ୍ଷାକୁ ଯାଆନ୍ତୁ</i></string>
     <string name="settings_biometric_setup_title">ବ୍ୟାକ୍‍ଅପ୍‍ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ ପ୍ରକାର ଚୟନ କରନ୍ତୁ</string>
     <string name="settings_biometric_setup_details">ଆପଣ କିପରି ଆପଣଙ୍କ ସ୍କ୍ରିନ୍‍ ଲକ୍‍ କରିବାକୁ ଚାହିଁବେ?</string>
     <string name="fingerprint_setup_title">ଫିଙ୍ଗର୍‍ପ୍ରିଣ୍ଟ ସେଟ୍‍ଅପ୍‍</string>

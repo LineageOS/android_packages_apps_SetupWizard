@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що обрана SIM-карта буде використана для отримання налаштувань планшету.</string>
     <string name="choose_data_sim_summary" product="default">Яку SIM-карту використовувати для передачі даних? Це може коштувати вам грошей, тому що, обрана SIM-карта буде використана для отримання налаштувань вашого пристрою.</string>
     <string name="date_time_summary">Встановіть часовий пояс і настройте поточну дату та час, якщо це необхідно</string>
-    <string name="backup_data_summary"><b>Зберегти</b> дані додатків, Wi-Fi паролі та інші параметри на серверах Google</string>
-    <string name="other_services_summary">Ці служби дозволяють Google розширити можливості пристрою. Ви маєте можливість вимкнути їх в будь-який час. Дані будуть використані відповідно до <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
-    <string name="location_services_summary">Служби місцезнаходження дозволяють системі і додаткам збирати та використовувати дані, щодо вашого приблизного розташування. Наприклад, додаток зможе шукати кав\'ярні чи зупинки, що розташовані поруч, ґрунтуючись на отриманих даних.</string>
     <string name="location_access_summary"><b>Дозволити програмам, котрі запитали вашого дозволу</b> використовувати інформацію, щодо вашого місцезнаходження. Це може бути як ваше поточне, так і минулі розташування.</string>
     <string name="setup_mobile_data">Увімкнути мобільні дані</string>
     <string name="setup_mobile_data_no_service">Немає мережі</string>
@@ -53,10 +50,6 @@
     <string name="setup_services">Функції LineageOS</string>
     <string name="services_os_nav_keys_label"><b>Використовувати навігаційні кнопки на екрані
 </b> замість апаратних.</string>
-    <string name="setup_unlock">Розблокувати</string>
-    <string name="setup_device_locked">Цей пристрій заблоковано користувачем.</string>
-    <string name="setup_require_cyanogen_label"><b>Необхідний пароль</b> для використання Вашого пристрою навіть після скидання до заводських налаштувань.</string>
-    <string name="setup_device_locked_instructions"><i>Щоб увімкнути/вимкнути цю функцію, будь ласка, перейдіть до Налаштування &gt; Безпека</i></string>
     <string name="settings_biometric_setup_title">Виберіть резервний спосіб розблокування екрана</string>
     <string name="settings_biometric_setup_details">Як би ви хотіли блокувати екран?</string>
     <string name="fingerprint_setup_title">Налаштування відбитку пальця</string>

@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Bạn muốn sử dụng dữ liệu bằng SIM nào? SIM đã chọn có thể phát sinh chi phí mạng trong quá trình thiết lập máy tính bảng của bạn.</string>
     <string name="choose_data_sim_summary" product="default">Bạn muốn sử dụng dữ liệu bằng SIM nào? SIM đã chọn có thể phát sinh chi phí mạng trong quá trình thiết lập điện thoại của bạn.</string>
     <string name="date_time_summary">Đặt múi giờ của bạn và điều chỉnh ngày và thời gian hiện tại nếu cần thiết</string>
-    <string name="backup_data_summary"><b>Sao lưu</b> dữ liệu ứng dụng, mật khẩu Wi-Fi và các cài đặt khác vào máy chủ Google</string>
-    <string name="other_services_summary">Các dịch vụ này giúp Google làm việc cho bạn, và bạn có thể bật hoặc tắt chúng bất kì lúc nào. Dữ liệu sẽ được sử dụng theo <xliff:g id="name" example="Privacy Policy">%s</xliff:g> của Google.</string>
-    <string name="location_services_summary">Dịch vụ vị trí cho phép hệ thống và ứng dụng bên thứ ba thu thập và sử dụng dữ liệu chẳng hạn như vị trí gần đúng của bạn. Ví dụ, một ứng dụng có thể sử dụng vị trí gần đúng của bạn để xác định vị trí tiệm cà phê gần đó.</string>
     <string name="location_access_summary"><b>Cho phép những ứng dụng đã hỏi quyền</b> sử dụng thông tin vị trí của bạn. Những thông tin này có thể bao gồm vị trí hiện tại và trước đó của bạn.</string>
     <string name="setup_mobile_data">Bật dữ liệu di động</string>
     <string name="setup_mobile_data_no_service">Không có dịch vụ</string>
@@ -53,10 +50,6 @@
     <string name="setup_services">Các tính năng LineageOS</string>
     <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
-    <string name="setup_unlock">Mở khóa</string>
-    <string name="setup_device_locked">Thiết bị này đã bị khoá bởi người dùng.</string>
-    <string name="setup_require_cyanogen_label"><b>Yêu cầu mật khẩu tài khoản của bạn</b> để sử dụng thiết bị của bạn ngay cả sau khi đặt lại cài đặt gốc.</string>
-    <string name="setup_device_locked_instructions"><i>Để bật/tắt tính năng này, hãy truy cập Cài đặt &gt; bảo mật</i></string>
     <string name="settings_biometric_setup_title">Chọn kiểu khóa màn hình dự phòng</string>
     <string name="settings_biometric_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
     <string name="fingerprint_setup_title">Thiết lập vân tay</string>

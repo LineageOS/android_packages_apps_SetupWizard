@@ -39,9 +39,6 @@
     <string name="choose_data_sim_summary" product="tablet">Mitä SIM-korttia haluat käyttää mobiilitiedonsiirtoon? Mobiilidatan käyttö voi aiheuttaa tiedonsiirtokuluja.</string>
     <string name="choose_data_sim_summary" product="default">Mitä SIM-korttia haluat käyttää mobiilitiedonsiirtoon? Mobiilidatan käyttö voi aiheuttaa tiedonsiirtokuluja.</string>
     <string name="date_time_summary">Valitse aikavyöhyke ja määritä aika ja päivämäärä tarvittaessa</string>
-    <string name="backup_data_summary"><b>Varmuuskopioi</b> sovellusten tiedot, Wi-FI-salasanat ja muut asetukset Googlen palvelimille</string>
-    <string name="other_services_summary">Tämä ottaa Googlen palvelut käyttöön, ja voit ottaa ne käyttöön tai poistaa käytöstä milloin tahansa. Tietoja käytetään Googlen <xliff:g id="name" example="Privacy Policy">%s</xliff:g> mukaisesti.</string>
-    <string name="location_services_summary">Sijaintipalvelut sallii järjestelmän ja muiden sovellusten kerätä ja käyttää tietoja kuten likimääräinen sijaintisi. Esimerkiksi sovellus voi paikantaa sinut ja etsiä lähistöllä olevia kahviloita.</string>
     <string name="location_access_summary"><b>Salli sovellusten, jotka ovat kysyneet sinulta lupaa</b> käyttää sijaintitietojasi. Tämä saattaa sisältää nykyisen sijaintisi ja aiemmat sijaintisi.</string>
     <string name="setup_mobile_data">Ota mobiilidata käyttöön</string>
     <string name="setup_mobile_data_no_service">Ei palvelua</string>
@@ -54,10 +51,6 @@
     <string name="setup_services">LineageOS-ominaisuudet</string>
     <string name="services_help_improve_cm">Auta parantamaan <xliff:g id="name" example="LineageOS">%s</xliff:g>ia</string>
     <string name="services_os_nav_keys_label"><b>Käytä näytön navigointipalkkia</b> fyysisten näppäinten sijaan.</string>
-    <string name="setup_unlock">Avaa lukitus</string>
-    <string name="setup_device_locked">Käyttäjä on lukinnut laitteen.</string>
-    <string name="setup_require_cyanogen_label"><b>Vaadi tilin salasana</b> käyttääksesi laitetta myös tehdasasetusten palautuksen jälkeen.</string>
-    <string name="setup_device_locked_instructions"><i>Poistaaksesi tämän ominaisuuden käytöstä/ottaaksesi käyttöön, mene Asetukset &gt; Suojaus</i></string>
     <string name="settings_biometric_setup_title">Valitse toinen näytön lukitustapa</string>
     <string name="settings_biometric_setup_details">Miten haluat lukita näyttösi?</string>
     <string name="fingerprint_setup_title">Sormenjäljen asetus</string>
@@ -76,8 +69,6 @@
     <string name="lockscreen_setup_summary"><b>Suojaa laitetta</b> avaamalla näytön lukitus PIN-koodin, kuvion tai salasanan avulla</string>
     <string name="lockscreen_setup_screen_lock_setup">Asetusten määritys</string>
     <string name="intro_restore_title">Palauta sovellukset ja tiedot</string>
-    <string name="intro_restore_subtitle" product="tablet">Jos sinulla on varmuuskopio aiemmasta LineageOS-tabletista, voit palauttaa sen tässä.</string>
-    <string name="intro_restore_subtitle" product="default">Jos sinulla on varmuuskopio aiemmasta LineageOS-puhelimesta, voit palauttaa sen tässä.</string>
     <string name="intro_restore_button">Palauta varmuuskopiosta</string>
     <string name="update_recovery_title">Päivitä Lineage Recovery</string>
     <string name="update_recovery_description">Päivittää Lineage Recoveryn jokaisen päivityksen jälkeen ensimmäisellä käynnistyskerralla</string>
