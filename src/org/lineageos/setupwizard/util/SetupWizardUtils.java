@@ -234,6 +234,7 @@ public class SetupWizardUtils {
                 new Intent(SetupWizardApp.ACTION_FINISHED),
                 Binder.getCallingUserHandle());
         disableComponentSets(context, GET_RECEIVERS | GET_SERVICES);
+        enableStatusBar(context);
     }
 
     public static boolean isEthernetConnected(Context context) {
