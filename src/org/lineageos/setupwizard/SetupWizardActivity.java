@@ -44,9 +44,11 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
         }
         if (SetupWizardUtils.hasGMS(this)) {
             SetupWizardUtils.disableHome(this);
+            SetupWizardUtils.enableStatusBar(this);
             finish();
         } else if (WizardManagerHelper.isUserSetupComplete(this)) {
             SetupWizardUtils.finishSetupWizard(this);
+            SetupWizardUtils.enableStatusBar(this);
             finish();
         } else {
             onSetupStart();
