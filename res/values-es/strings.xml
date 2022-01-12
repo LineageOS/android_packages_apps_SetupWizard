@@ -41,14 +41,15 @@
     <string name="date_time_summary">Configura la zona horaria y ajusta la fecha y hora actuales si es necesario</string>
     <string name="backup_data_summary"><b>Copia de seguridad</b> de los datos de aplicación, las contraseñas Wi-Fi y otros ajustes en los servidores de Google</string>
     <string name="other_services_summary">Estos servicios hacen que Google trabajar para ti, y puedes activarlos o desactivarlos en cualquier momento. Los datos se utilizarán según la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de Google.</string>
-    <string name="location_services_summary">Los servicios de localización permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
-    <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y ubicaciones recientes.</string>
+    <string name="location_services_summary">Los servicios de ubicación permiten al sistema y a otras aplicaciones recopilar y utilizar datos tales como tu ubicación aproximada. Por ejemplo, una aplicación puede utilizar tu ubicación aproximada para localizar cafeterías cercanas.</string>
+    <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tus ubicaciones anteriores y la actual.</string>
     <string name="setup_mobile_data">Activar datos móviles</string>
     <string name="setup_mobile_data_no_service">Sin servicio</string>
     <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>
     <string name="enable_mobile_data_summary">¿Deseas utilizar los datos móviles durante la instalación? Activar los datos móviles puede provocar cargos de datos.</string>
     <string name="no">No</string>
     <string name="yes">Sí</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Llamada de emergencia</string>
     <string name="setup_services">Características de LineageOS</string>
     <string name="services_explanation" product="tablet">Estos servicios sirven para extender las capacidades del tablet. Se utilizarán datos de acuerdo a la <xliff:g id="name" example="Privacy Policy">%s</xliff:g> de LineageOS.</string>
@@ -66,6 +67,9 @@
     <string name="fingerprint_setup_title">Ajustes de huella digital</string>
     <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, necesitarás:</string>
     <string name="fingerprint_setup_add_fingerprint">Añade tu huella digital</string>
+    <string name="face_setup_title">Configuración facial</string>
+    <string name="face_setup_summary">Para utilizar su cara para desbloquear la pantalla, necesitarás:</string>
+    <string name="face_setup_add_face">Añadir su cara</string>
     <string name="biometric_setup_backup_lock_method">Establecer un método secundario de desbloqueo</string>
     <string name="biometric_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
     <string name="sim_locale_changed">%1$s SIM detectada</string>
@@ -74,4 +78,8 @@
     <string name="lockscreen_setup_title" product="default">Proteja su teléfono</string>
     <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> y establecer un PIN, un patrón o una contraseña para desbloquear la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="intro_restore_title">Restaurar aplicaciones y datos</string>
+    <string name="intro_restore_subtitle" product="tablet">Si tiene una copia de seguridad de su última tableta LineageOS, puede restaurarla aquí.</string>
+    <string name="intro_restore_subtitle" product="default">Si tiene una copia de seguridad de su último teléfono LineageOS, puede restaurarla aquí.</string>
+    <string name="intro_restore_button">Restaurar desde copia de seguridad</string>
 </resources>
