@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -84,7 +84,6 @@ public class WizardManager extends Activity {
 
     private void addExtras(Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, true);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V3_LIGHT);
     }
 
     private void doAction(String scriptUri, WizardAction action, Intent extras) {
