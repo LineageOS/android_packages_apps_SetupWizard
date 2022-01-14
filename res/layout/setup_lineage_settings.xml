@@ -26,7 +26,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/SudContentFrame">
+        style="@style/SudContentFrame"
+        android:layout_marginTop="@dimen/base_margin_top">
 
         <FrameLayout
             android:id="@+id/page"
@@ -43,21 +44,6 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
-                    <!-- The caption about privacy policy -->
-                    <TextView
-                        android:id="@+id/privacy_policy"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/SudItemTitle.GlifDescription"
-                        android:text="@string/services_pp_explanation" />
-
-                    <TextView
-                        android:id="@+id/find_privacy_policy"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/SudItemTitle.GlifDescription"
-                        android:text="@string/services_find_privacy_policy" />
 
                     <!-- Whether or not to enable metrics -->
                     <LinearLayout
