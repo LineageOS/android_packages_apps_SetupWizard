@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2020 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -77,8 +77,9 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         String privacyPolicy = getString(R.string.services_pp_explanation, os_name);
         String policySummary = getString(R.string.services_find_privacy_policy, PRIVACY_POLICY_URI);
 
-        ((TextView) findViewById(R.id.privacy_policy)).setText(privacyPolicy);
-        ((TextView) findViewById(R.id.find_privacy_policy)).setText(policySummary);
+        //((TextView) findViewById(R.id.privacy_policy)).setText(privacyPolicy);
+        //((TextView) findViewById(R.id.find_privacy_policy)).setText(policySummary);
+        getGlifLayout().setDescriptionText(privacyPolicy + "\n" + policySummary);
 
         View metricsRow = findViewById(R.id.metrics);
         metricsRow.setOnClickListener(mMetricsClickListener);
