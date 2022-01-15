@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020-2021 The LineageOS Project
+ * Copyright (C) 2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,6 +41,8 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mSetupWizardApp = (SetupWizardApp) getApplication();
+        getGlifLayout().setDescriptionText(getString(R.string.update_recovery_full_description,
+                R.string.update_recovery_description, R.string.update_recovery_warning));
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity");
