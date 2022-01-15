@@ -83,6 +83,7 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
         View metricsRow = findViewById(R.id.metrics);
         metricsRow.setOnClickListener(mMetricsClickListener);
+        metricsRow.requestFocus();
         String metricsHelpImproveLineage =
                 getString(R.string.services_help_improve_cm, os_name);
         String metricsSummary = getString(R.string.services_metrics_label,
