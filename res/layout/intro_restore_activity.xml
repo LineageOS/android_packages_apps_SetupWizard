@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015 The CyanogenMod Project
-     Copyright (C) 2017-2021 The LineageOS Project
+                   2017-2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,30 +28,10 @@
         android:layout_height="match_parent"
         style="@style/SudContentFrame">
 
-        <FrameLayout android:id="@+id/page"
+        <View android:id="@+id/page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <ScrollView android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fillViewport="true">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/intro_restore_subtitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/intro_restore_subtitle"
-                        style="@style/SudItemTitle.GlifDescription" />
-
-                </LinearLayout>
-            </ScrollView>
-        </FrameLayout>
+            android:layout_weight="1"/>
 
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"

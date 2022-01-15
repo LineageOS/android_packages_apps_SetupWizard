@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2019-2020 The Calyx Institute
- * Copyright (C) 2020-2021 The LineageOS Project
+ *               2020-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,8 +37,7 @@ public class RestoreIntroActivity extends SubBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final TextView restoreSubtitle = (TextView) findViewById(R.id.intro_restore_subtitle);
-        restoreSubtitle.setText(getString(R.string.intro_restore_subtitle,
+        getGlifLayout().setDescriptionText(getString(R.string.intro_restore_subtitle,
                 getString(R.string.os_name)));
     }
 

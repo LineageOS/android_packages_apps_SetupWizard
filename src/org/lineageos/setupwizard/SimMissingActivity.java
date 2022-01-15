@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
         mPhoneMonitor = PhoneMonitor.getInstance();
         if (!mPhoneMonitor.simMissing()) {
             finishAction(RESULT_OK);
