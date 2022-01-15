@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2021 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -245,6 +245,10 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (mNavigationBar != null) {
             mNavigationBar.getNextButton().setText(resId);
         }
+    }
+
+    public Button getNextButton() {
+        return mNavigationBar.getNextButton();
     }
 
     protected void setSkipText(int resId) {
