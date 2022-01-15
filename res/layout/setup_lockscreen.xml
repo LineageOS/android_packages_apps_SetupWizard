@@ -28,32 +28,6 @@
         android:layout_height="match_parent"
         style="@style/SudContentFrame">
 
-        <FrameLayout android:id="@+id/page"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <ScrollView android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fillViewport="true">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/content_margin_left"
-                    android:paddingEnd="@dimen/content_margin_left">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/lockscreen_setup_summary"
-                        style="@style/SudItemTitle.GlifDescription" />
-
-                </LinearLayout>
-            </ScrollView>
-        </FrameLayout>
-
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
             android:layout_width="match_parent"

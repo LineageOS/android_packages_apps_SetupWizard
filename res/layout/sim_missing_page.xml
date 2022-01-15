@@ -39,13 +39,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/sim_missing"
-                    android:text="@string/sim_missing_summary"
-                    style="@style/SudItemTitle.GlifDescription" />
-
                 <ImageView
                     android:id="@+id/sim_slot_image"
                     android:layout_width="match_parent"

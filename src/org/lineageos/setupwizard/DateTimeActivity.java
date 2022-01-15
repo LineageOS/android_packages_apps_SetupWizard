@@ -78,6 +78,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setNextText(R.string.next);
+        getGlifLayout().setDescriptionText(getString(R.string.date_time_summary));
 
         final Spinner spinner = (Spinner) findViewById(R.id.timezone_list);
         final SimpleAdapter adapter = constructTimezoneAdapter(this);

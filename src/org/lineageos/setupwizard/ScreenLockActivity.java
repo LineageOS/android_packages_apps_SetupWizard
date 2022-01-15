@@ -47,6 +47,7 @@ public class ScreenLockActivity extends SubBaseActivity {
             finish();
             return;
         }
+        getGlifLayout().setDescriptionText(getString(R.string.lockscreen_setup_summary));
         setNextAllowed(true);
     }
 

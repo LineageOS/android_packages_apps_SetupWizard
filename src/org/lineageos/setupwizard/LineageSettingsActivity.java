@@ -76,9 +76,7 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         String os_name = getString(R.string.os_name);
         String privacyPolicy = getString(R.string.services_pp_explanation, os_name);
         String policySummary = getString(R.string.services_find_privacy_policy, PRIVACY_POLICY_URI);
-
-        ((TextView) findViewById(R.id.privacy_policy)).setText(privacyPolicy);
-        ((TextView) findViewById(R.id.find_privacy_policy)).setText(policySummary);
+        getGlifLayout().setDescriptionText(getString(privacyPolicy + "\n" + policySummary));
 
         View metricsRow = findViewById(R.id.metrics);
         metricsRow.setOnClickListener(mMetricsClickListener);

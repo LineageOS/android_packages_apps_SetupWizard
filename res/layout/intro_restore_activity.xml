@@ -28,31 +28,6 @@
         android:layout_height="match_parent"
         style="@style/SudContentFrame">
 
-        <FrameLayout android:id="@+id/page"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <ScrollView android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fillViewport="true">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/intro_restore_subtitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/intro_restore_subtitle"
-                        style="@style/SudItemTitle.GlifDescription" />
-
-                </LinearLayout>
-            </ScrollView>
-        </FrameLayout>
-
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
             android:layout_width="match_parent"

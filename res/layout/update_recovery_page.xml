@@ -44,18 +44,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/SudItemTitle.GlifDescription"
-                        android:text="@string/update_recovery_description" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        style="@style/SudItemTitle.GlifDescription"
-                        android:text="@string/update_recovery_warning" />
-
                     <LinearLayout
                         android:id="@+id/update_recovery_checkbox_view"
                         android:orientation="horizontal"
