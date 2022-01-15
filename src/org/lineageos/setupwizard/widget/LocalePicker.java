@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
+ *               2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -55,6 +56,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
+
+import androidx.annotation.IdRes;
 
 import org.lineageos.setupwizard.R;
 
@@ -1173,6 +1176,14 @@ public class LocalePicker extends LinearLayout {
      */
     public void setValue(int value) {
         setValueInternal(value, false);
+    }
+
+    /**
+     * Sets the next focused item for a remote D-pad key right.
+     * @param id The ID of the next view.
+     */
+    public void setNextRight(@IdRes int id) {
+        setNextFocusRightId(id);
     }
 
     /**
