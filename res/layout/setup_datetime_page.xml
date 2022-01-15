@@ -44,12 +44,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/date_time_summary"
-                        style="@style/SudItemTitle.GlifDescription" />
-
                     <Spinner
                         android:id="@+id/timezone_list"
                         android:layout_width="match_parent"
