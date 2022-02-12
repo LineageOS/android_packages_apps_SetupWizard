@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2015 The CyanogenMod Project
+     Copyright (C) 2017,2019 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="setup_mobile_data">Kveiktu á farsímagögnum</string>
+    <string name="services_explanation" product="tablet">Þessar þjónustur gera þér kleift að útvíkka eiginleika spjaldtölvunnar þinnar. Gögn verða notuð í samræmi við <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_explanation" product="default">Þessar þjónustur gera þér kleift að útvíkka eiginleika símans þíns. Gögn verða notuð í samræmi við <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_help_improve_cm">Hjálpaðu okkur að bæta <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Hjálpaðu til við að bæta CyanogenMod">%1$s</xliff:g> með því að senda sjálfvirkt greiningargögn og upplýsingar um notkun til LineageOS. Þessar upplýsingar er ekki hægt að nota til að auðkenna þig og hjálpa þróunarteymum við vinnu varðandi ýmis atriði, eins og líftíma rafhlöðu, afköst forrita og nýja eiginleika í <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+    <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
+    <string name="services_os_privacy_guard"><b>Virkjaðu Privacy Guard</b> til að gera  persónuleg gögn þín á borð við eins og tengiliði, skilaboð eða símtalaskrár óaðgengileg fyrir nýuppsett forrit</string>
+    <string name="setup_device_locked">Þessu tæki hefur verið læst af notandanum.</string>
+    <string name="setup_device_locked_instructions"><i>Til að kveikja eða slökkva á þessum eiginleika, farðu í Stillingar &gt; Öryggi</i></string>
+</resources>
