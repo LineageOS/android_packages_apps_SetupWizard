@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07dd7bc9_c0ca81b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16914
+      },
+      "writtenOn": "2022-02-12T21:58:24Z",
+      "side": 1,
+      "message": "This fixes the problem with the missing \u0027Next\u0027 button in landscape mode on pro1",
+      "revId": "8f23c7e02a259338a614689451e4845c7a8e7288",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
