@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2015 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Draoidh stàlaidh</string>
+    <string name="next">Air adhart</string>
+    <string name="skip">Leum thairis air</string>
+    <string name="start">Tòisich</string>
+    <string name="done">Deiseil</string>
+    <string name="ok">Ceart ma-thà</string>
+    <string name="loading">Fuirich greiseag\u2026</string>
+    <string name="setup_complete">Tha an rèiteachadh deiseil</string>
+    <string name="setup_welcome">Fàilte ort</string>
+    <string name="setup_locale">Cànan</string>
+    <string name="setup_wifi">Tagh WiFi</string>
+    <string name="setup_sim_missing">Tha cairt SIM a dhìth</string>
+    <string name="setup_choose_data_sim">Tagh SIM airson dàta</string>
+    <string name="setup_location">Seirbheisean ionaid</string>
+    <string name="setup_other">Seirbheisean eile</string>
+    <string name="setup_datetime">Ceann-là ⁊ àm</string>
+    <string name="setup_current_date">An ceann-là an-diugh</string>
+    <string name="setup_current_time">An t-àm làithreach</string>
+    <string name="sim_missing_summary" product="tablet">Cha do mhothaich sinn do chairt SIM san tablaid agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
+    <string name="sim_missing_summary" product="default">Cha do mhothaich sinn do chairt SIM san fhòn agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
+    <string name="choose_data_sim_summary" product="tablet">Dè an SIM a bu toigh leat cleachdadh airson dàta? Dh’fhaoidte gun èirich cosgaisean lìonraidh an cois an t-SIM a thagh thu on a thèid a chleachdadh airson an tablaid agad a shuidheachadh.</string>
+    <string name="choose_data_sim_summary" product="default">Dè an SIM a bu toigh leat cleachdadh airson dàta? Dh’fhaoidte gun èirich cosgaisean lìonraidh an cois an t-SIM a thagh thu on a thèid a chleachdadh airson an fhòn agad a shuidheachadh.</string>
+    <string name="date_time_summary">Suidhich an roinn-tìde agad agus cuir an ceann-là ’s an t-àm air gleus ma bhios feum air</string>
+    <string name="backup_data_summary">Dèan <b>lethbhreac-ghlèidhidh</b> de dhàta nan aplacaidean, faclan-faire WiFi ’s roghainnean eile air frithealaichean Google</string>
+    <string name="other_services_summary">Nì Google obair dhut leis na seirbheisean seo agus ’s urrainn dhut an cur dheth uair sam bith. Thèid dàta a chleachdadh a-rèir <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
+    <string name="location_services_summary">Leigidh seirbheisean ionaid le aplacaidean an t-siostaim is threas-phàrtaidhean dàta a chruinneachadh ’s a chleachdadh mar d’ ionad neo-phongail. Mar eisimpleir, ’s dòcha gun cleachd aplacaid fiosrachadh mu far a bheil thu airson cafaidhean a tha faisg ort a shealltainn dhut.</string>
+    <string name="location_access_summary"><b>Leig le aplacaidean a dh’iarr cead uat</b> fiosrachadh mu d’ ionad a chleachdadh. Dh’fhaoidte gun gabh seo a-staigh an dà chuid d’ ionad làithreach agus far an robh thu roimhe.</string>
+    <string name="location_battery_saving"><b>Ìslich caitheamh a’ bhataraidh</b> le cuingeachadh air ùrachaidhean GPS gach uair a thìde.</string>
+    <string name="location_network"><b>Cleachd WiFi</b> airson aplacaidean a chuideachadh le mothachadh air d’ ionad.</string>
+    <string name="location_network_telephony"><b>Cleachd WiFi ’s lìonraidhean mobile</b> airson aplacaidean a chuideachadh le mothachadh air d’ ionad.</string>
+    <string name="location_network_gms"><b>Cleachd seirbheis ionad Google</b> airson aplacaidean a chuideachadh le mothachadh air d’ ionad. Is ciall dha seo gun dèid fiosrachadh gun urra mu d’ ionad a chur a-null gu Google, fiù mur eil aplacaid sam bith a’ ruith.</string>
+    <string name="setup_mobile_data">Cuir an dàta mobile air</string>
+    <string name="setup_mobile_data_no_service">Chan eil seirbheis ann</string>
+    <string name="setup_mobile_data_emergency_only">Gairmean-èiginn a-mhàin</string>
+    <string name="enable_mobile_data_summary">A bheil thu airson dàta mobile a chleachdadh rè an t-suidheachaidh? Ma chuireas tu dàta mobile air, dh’fhaoidte gun èirich cosgaisean dàta ’na lùib.</string>
+    <string name="no">Chan eil</string>
+    <string name="yes">Tha</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%d</xliff:g> - <xliff:g id="name">%s</xliff:g></string>
+    <string name="emergency_call">Gairm-èiginn</string>
+    <string name="setup_services">Gleusan LineageOS</string>
+    <string name="services_explanation" product="tablet">Leudaichidh na seirbheisean seo comasan na tablaid agad. Thèid an dàta a chleachdadh a-rèir <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_explanation" product="default">Leudaichidh na seirbheisean seo comasan an fhòn agad. Thèid an dàta a chleachdadh a-rèir <xliff:g id="name" example="Privacy Policy">%s</xliff:g> LineageOS.</string>
+    <string name="services_privacy_policy">Poileasaidh prìobhaideachd</string>
+    <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu LineageOS gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g> ùra.</string>
+    <string name="services_apply_theme">Cuir ùrlar <xliff:g id="name" example="Material">%s</xliff:g> an sàs</string>
+    <string name="services_apply_theme_label"><xliff:g id="name" example="Apply the Material theme">%s</xliff:g> a chur an comas stoidhle lèirsinneach àraidh air na h-ìomhaigheagan, a’ phàipear-bhalla ’s a bharrachd.</string>
+    <string name="services_os_nav_keys_label"><b>Cleachd iuchraichean seòladaireachd air an sgrìn</b> seach iuchraichean bathair-chruaidh.</string>
+    <string name="services_os_privacy_guard"><b>Cuir an comas freiceadan na prìobhaideachd</b> ach nach fhaigh aplacaidean air an ùr-stàladh grèim air an dàta phearsanta agad mar luchd-aithne, teachdaireachdan no logaichean nan gairmean</string>
+    <string name="setup_unlock">Thoir a’ ghlas dheth</string>
+    <string name="setup_device_locked">Chaidh an t-uidheam seo a ghlasadh leis a’ chleachdaiche.</string>
+    <string name="setup_require_cyanogen_label"><b>Iarr facal-faire a’ chunntais agad</b> airson an t-uidheam agad a chleachdadh, fiù às dèidh tilleadh gu roghainnean an fhactaraidh.</string>
+    <string name="setup_device_locked_instructions"><i>Airson an gleus seo a chur dheth no air, rach gu “Roghainnean” &gt; “Tèarainteachd”</i></string>
+    <string name="settings_fingerprint_setup_title">Tagh seòrsa dàrnach de ghlasadh na sgrìn</string>
+    <string name="settings_fingerprint_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
+    <string name="fingerprint_setup_title">Suidhich lorg-mheòir</string>
+    <string name="fingerprint_setup_summary">Seo na dh’fheumas tu dèanamh mus cleachd thu mothaichear nan lorgan-meòir a chur a’ ghlas far na sgrìn:</string>
+    <string name="fingerprint_setup_backup_lock_method">Suidhich dòigh dhàrnach airson a’ ghlas a thoirt far na sgrìn</string>
+    <string name="fingerprint_setup_add_fingerprint">Cuir do lorg-mheòir ris</string>
+    <string name="fingerprint_setup_screen_lock_setup">Suidhich glasadh na sgrìn</string>
+    <string name="sim_locale_changed">Mhothaich sinn do SIM %1$s</string>
+    <string name="settings_lockscreen_setup_title">Tagh seòrsa de ghlasadh na sgrìn</string>
+    <string name="settings_lockscreen_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
+    <string name="lockscreen_setup_title">Dìon am fòn agad</string>
+    <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
+    <string name="lockscreen_setup_screen_lock_setup">Suidhich</string>
+</resources>

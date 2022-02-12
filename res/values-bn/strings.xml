@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2015 The CyanogenMod Project
+     Copyright (C) 2017 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="next">পরবর্তী</string>
+    <string name="skip">এড়িয়ে যান</string>
+    <string name="start">শুরু</string>
+    <string name="done">সম্পন্ন</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="loading">মাত্র কয়েক মুহূর্ত\u2026</string>
+    <string name="setup_welcome">স্বাগতম</string>
+    <string name="setup_locale">ভাষা</string>
+    <string name="setup_wifi">Wi-Fi নির্বাচন করুন</string>
+    <string name="setup_location">অবস্থান পরিষেবা</string>
+    <string name="setup_other">অন্যান্য পরিষেবা</string>
+    <string name="setup_datetime">তারিখ &amp; সময়</string>
+    <string name="setup_current_date">বর্তমান তারিখ</string>
+    <string name="setup_current_time">বর্তমান সময়</string>
+    <string name="sim_missing_summary" product="tablet">আপনার ট্যাবলেটে সিমকার্ড অনুপস্থিত। সিমকার্ড ঢোকাতে, আপনার ডিভাইসের নির্দেশিকা পড়ুন।</string>
+    <string name="sim_missing_summary" product="default">আপনার ফোনে সিমকার্ড অনুপস্থিত। সিমকার্ড ঢোকাতে, আপনার ডিভাইসের নির্দেশিকা পড়ুন।</string>
+    <string name="choose_data_sim_summary" product="tablet">কোন সিম দিয়ে ডাটা ব্যবহার করতে চান? ট্যাবলেট সেটআপ করতে ডাটা ব্যবহারের কারণে নির্বাচিত সিমে মূল্য ব্যয় করা হতে পারে।</string>
+    <string name="choose_data_sim_summary" product="default">কোন সিম দিয়ে ডাটা ব্যবহার করতে চান? ফোন সেটআপ করতে ডাটা ব্যবহারের কারণে নির্বাচিত সিমে মূল্য ব্যয় করা হতে পারে।</string>
+    <string name="date_time_summary">আপনার সময় অঞ্চল নির্ধারণ করুন এবং প্রয়োজন হলে বর্তমান তারিখ এবং সময় ঠিক করুন</string>
+    <string name="backup_data_summary">অ্যাপের তথ্য, ওয়াই-ফাই পাসওয়ার্ড এবং অন্যান্য নিয়ন্ত্রণ গুগল সার্ভারে <b>ব্যাক আপ</b></string>
+    <string name="setup_mobile_data">সেলুলার ডাটা চালু করুন</string>
+    <string name="setup_mobile_data_no_service">কোনো পরিষেবা নেই</string>
+    <string name="setup_mobile_data_emergency_only">শুধুমাত্র জরুরী কল</string>
+    <string name="enable_mobile_data_summary">প্রথমবার প্রস্তুত করার সময় আপনি কি সেলুলার ডাটা ব্যবহার করতে চান? সেলুলার ডাটা চালু করলে মূল্য দিতে হতে পারে।</string>
+    <string name="no">না</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="emergency_call">জরুরী কল</string>
+    <string name="setup_services">LineageOS এর বৈশিষ্ট্যসমূহ</string>
+    <string name="services_explanation" product="tablet">এই সেবা আপনার ট্যাবলেটের ক্ষমতা বাড়াতে কাজ করে। LineageOS\'র অনুসারে তথ্য ব্যবহার করা হবে<xliff:g id="name" example="Privacy Policy">%s </xliff:g>।</string>
+    <string name="services_explanation" product="default">এই সেবা আপনার ফোনের ক্ষমতা বাড়াতে কাজ করে। LineageOS\'র অনুসারে তথ্য ব্যবহার করা হবে<xliff:g id="name" example="Privacy Policy">%s </xliff:g>।</string>
+    <string name="services_privacy_policy">গোপনীয়তার নীতি</string>
+    <string name="setup_unlock">আনলক</string>
+    <string name="setup_require_cyanogen_label"><b>আপনার হিসাবের পাসওয়ার্ড প্রয়োজন</b> যাতে ফ্যাক্টরি রিসেট করার পরেেও আপনার ডিভাইসে ব্যবহার করতে পারেন।</string>
+    <string name="lockscreen_setup_screen_lock_setup">সেট আপ করুন</string>
+</resources>
