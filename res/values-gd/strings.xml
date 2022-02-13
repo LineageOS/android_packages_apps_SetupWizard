@@ -31,7 +31,7 @@
     <string name="setup_choose_data_sim">Tagh SIM airson dàta</string>
     <string name="setup_location">Seirbheisean ionaid</string>
     <string name="setup_other">Seirbheisean eile</string>
-    <string name="setup_datetime">Ceann-là ⁊ an t-àm</string>
+    <string name="setup_datetime">Ceann-là ⁊ àm</string>
     <string name="setup_current_date">An ceann-là an-diugh</string>
     <string name="setup_current_time">An t-àm làithreach</string>
     <string name="sim_missing_summary" product="tablet">Cha do mhothaich sinn do chairt SIM san tablaid agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
