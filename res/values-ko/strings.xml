@@ -51,7 +51,10 @@
     <string name="yes">예</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">긴급 통화</string>
+    <string name="accessibility_settings">접근성 설정</string>
     <string name="setup_services">LineageOS 기능</string>
+    <string name="services_pp_explanation">이 서비스는 기기의 성능 향상을 위해 작동합니다. 수집한 데이터는 <xliff:g id="name" example="LineageOS">%1$s</xliff:g>의 개인 정보 보호 정책에 따라 사용됩니다.</string>
+    <string name="services_find_privacy_policy">다른 기기에서 <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> 페이지를 방문하여 개인 정보 보호 정책을 확인할 수 있습니다.</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> 의 개선을 돕기 위해</string>
     <string name="services_metrics_label"><xliff:g id="name" example="LineageOS의 개선을 돕기 위해">%1$s</xliff:g> 진단 및 사용 정보를 LineageOS에 보냅니다. 이 정보로는 사용자를 식별할 수 없으며 배터리 수명, 앱 성능 개선과 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>에 새로운 기능을 추가하는 데 도움이 됩니다.</string>
     <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>

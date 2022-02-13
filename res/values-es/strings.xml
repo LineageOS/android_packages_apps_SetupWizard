@@ -49,6 +49,7 @@
     <string name="enable_mobile_data_summary">¿Deseas utilizar los datos móviles durante la instalación? Activar los datos móviles puede provocar cargos de datos.</string>
     <string name="no">No</string>
     <string name="yes">Sí</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Llamada de emergencia</string>
     <string name="setup_services">Características de LineageOS</string>
     <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
@@ -63,6 +64,9 @@
     <string name="fingerprint_setup_title">Ajustes de huella digital</string>
     <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, necesitarás:</string>
     <string name="fingerprint_setup_add_fingerprint">Añade tu huella digital</string>
+    <string name="face_setup_title">Configuración facial</string>
+    <string name="face_setup_summary">Para utilizar su cara para desbloquear la pantalla, necesitarás:</string>
+    <string name="face_setup_add_face">Añadir su cara</string>
     <string name="biometric_setup_backup_lock_method">Establecer un método secundario de desbloqueo</string>
     <string name="biometric_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
     <string name="sim_locale_changed">%1$s SIM detectada</string>
@@ -71,4 +75,8 @@
     <string name="lockscreen_setup_title" product="default">Proteja su teléfono</string>
     <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> y establecer un PIN, un patrón o una contraseña para desbloquear la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="intro_restore_title">Restaurar aplicaciones y datos</string>
+    <string name="intro_restore_subtitle" product="tablet">Si tiene una copia de seguridad de su última tableta LineageOS, puede restaurarla aquí.</string>
+    <string name="intro_restore_subtitle" product="default">Si tiene una copia de seguridad de su último teléfono LineageOS, puede restaurarla aquí.</string>
+    <string name="intro_restore_button">Restaurar desde copia de seguridad</string>
 </resources>

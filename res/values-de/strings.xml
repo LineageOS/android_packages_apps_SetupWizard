@@ -34,46 +34,49 @@
     <string name="setup_datetime">Datum und Uhrzeit</string>
     <string name="setup_current_date">Aktuelles Datum</string>
     <string name="setup_current_time">Aktuelle Zeit</string>
-    <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Tablet nachlesen.</string>
-    <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in Ihrem Smartphone erkannt. Wie Sie eine SIM-Karte einlegen, können Sie in der Bedienungsanleitung zu Ihrem Gerät nachlesen.</string>
-    <string name="choose_data_sim_summary" product="tablet">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Tablets verwendet wird, können für Sie Kosten anfallen.</string>
-    <string name="choose_data_sim_summary" product="default">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Smartphones verwendet wird, können für Sie Kosten anfallen.</string>
+    <string name="sim_missing_summary" product="tablet">Es wurde keine SIM-Karte in deinem Tablet erkannt. Wie du eine SIM-Karte einlegst, kannst du in der Bedienungsanleitung deines Tablets nachlesen.</string>
+    <string name="sim_missing_summary" product="default">Es wurde keine SIM-Karte in deinem Telefon erkannt. Wie du eine SIM-Karte einlegst, kannst du in der Bedienungsanleitung des Telefons nachlesen.</string>
+    <string name="choose_data_sim_summary" product="tablet">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Tablets verwendet wird, können Kosten für dich anfallen.</string>
+    <string name="choose_data_sim_summary" product="default">Welche SIM-Karte soll für Daten verwendet werden? Da die ausgewählte SIM-Karte bei der Einrichtung des Smartphones verwendet wird, können Kosten für dich anfallen.</string>
     <string name="date_time_summary">Zeitzone setzen und ggf. aktuelles Datum und Uhrzeit anpassen</string>
     <string name="backup_data_summary"><b>Sichert</b> App-Daten, WLAN-Passwörter und andere Einstellungen auf Google-Servern</string>
     <string name="other_services_summary">Diese Dienste werden von Google zur Verfügung gestellt und können jederzeit aktiviert oder deaktiviert werden. Die Daten werden in Übereinstimmung mit Googles <xliff:g id="name" example="Privacy Policy">%s</xliff:g> genutzt.</string>
-    <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern, Daten (z. B. zu Ihrem ungefähren Standort) zu sammeln und zu verwenden. Beispielweise könnte eine App Ihren ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
-    <string name="location_access_summary"><b>Erlaubt Apps, die um Ihre Erlaubnis gebeten haben, </b>Ihre Standortinformationen zu verwenden. Dies können Informationen zu Ihrem aktuellen Standort und zu vergangenen Standorten sein.</string>
+    <string name="location_services_summary">Standortdienste erlauben es Systemapps oder Apps von Drittanbietern, Daten (z. B. zu deinem ungefähren Standort) zu sammeln und zu verwenden. Beispielweise könnte eine App deinen ungefähren Standort verwenden, um Cafés in der Nähe zu finden.</string>
+    <string name="location_access_summary"><b>Erlaubt Apps, die um deine Erlaubnis gebeten haben, </b>deine Standortinformationen zu verwenden. Dies können Informationen zu deinem aktuellen Standort und zu vergangenen Standorten sein.</string>
     <string name="setup_mobile_data">Mobile Datenverbindung aktivieren</string>
     <string name="setup_mobile_data_no_service">Kein Service</string>
     <string name="setup_mobile_data_emergency_only">Nur Notrufe</string>
-    <string name="enable_mobile_data_summary">Möchten Sie Datenverbindungen über das Mobilfunknetz aktivieren? Dies kann eventuell Kosten verursachen.</string>
+    <string name="enable_mobile_data_summary">Möchtest du Datenverbindungen über das Mobilfunknetz aktivieren? Dies kann eventuell Kosten verursachen.</string>
     <string name="no">Nein</string>
     <string name="yes">Ja</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Notruf</string>
+    <string name="accessibility_settings">Einstellungen zur Barrierefreiheit</string>
     <string name="setup_services">LineageOS-Funktionen</string>
+    <string name="services_pp_explanation">Diese Dienste werden verwendet, um die Funktionen deines Gerätes zu erweitern. Deine Daten werden in Übereinstimmung mit der <xliff:g id="name" example="LineageOS">%1$s</xliff:g> Datenschutzerklärung verwendet.</string>
+    <string name="services_find_privacy_policy">Du kannst die Datenschutzbestimmungen auf einem anderen Gerät lesen, indem du <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> aufrufst.</string>
     <string name="services_help_improve_cm">Hilf <xliff:g id="name" example="LineageOS">%s</xliff:g> zu verbessern</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Hilf LineageOS zu verbessern">%1$s</xliff:g>, indem du automatisch Diagnose- und Nutzungsdaten an LineageOS sendest. Diese Informationen können nicht dazu verwendet werden, dich zu identifizieren. Vielmehr helfen sie unserem Team bei der Arbeit an Dingen wie der Akkulaufzeit, der App-Leistung und <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-Funktionen.</string>
     <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
     <string name="setup_unlock">Entsperren</string>
     <string name="setup_device_locked">Dieses Gerät wurde vom Benutzer gesperrt.</string>
     <string name="setup_require_cyanogen_label"><b>Dein Konto-Passwort</b> wird auch nach einem Zurücksetzen auf Werkseinstellungen benötigt.</string>
-    <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehen Sie zu Einstellungen &gt; Sicherheit.</i></string>
-    <string name="settings_biometric_setup_title">Wählen Sie den Typ der Ersatz-Bildschirmsperre.</string>
-    <string name="settings_biometric_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
+    <string name="setup_device_locked_instructions"><i>Um diese Funktion zu aktivieren/deaktivieren, gehe zu Einstellungen &gt; Sicherheit.</i></string>
+    <string name="settings_biometric_setup_title">Wähle den Typ der Ersatz-Bildschirmsperre.</string>
+    <string name="settings_biometric_setup_details">Wie möchtest du deinen Bildschirm sperren?</string>
     <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
-    <string name="fingerprint_setup_summary">Wenn Sie Ihren Fingerabdrucksensor zum Entsperren Ihres Bildschirms verwenden möchten, gehen Sie wie folgt vor:</string>
-    <string name="fingerprint_setup_add_fingerprint">Fügen Sie Ihren Fingerabdruck hinzu.</string>
+    <string name="fingerprint_setup_summary">Wenn du deinen Fingerabdrucksensor zum Entsperren deines Bildschirms verwenden möchtest, gehe wie folgt vor:</string>
+    <string name="fingerprint_setup_add_fingerprint">Füge deinen Fingerabdruck hinzu</string>
     <string name="face_setup_title">Gesichtseinstellung</string>
     <string name="face_setup_summary">Um dein Gesicht zum Entsperren des Bildschirms verwenden zu können, musst du folgendes tun:</string>
     <string name="face_setup_add_face">Füge dein Gesicht hinzu</string>
     <string name="biometric_setup_backup_lock_method">Einrichtung einer sekundären Methode zum Entsperren</string>
-    <string name="biometric_setup_screen_lock_setup">Die Bildschirmsperre einrichten</string>
+    <string name="biometric_setup_screen_lock_setup">Bildschirmsperre einrichten</string>
     <string name="sim_locale_changed">%1$s SIM-Karte erkannt</string>
-    <string name="settings_lockscreen_setup_title">Wählen Sie einen Sperrbildschirm-Typ</string>
-    <string name="settings_lockscreen_setup_details">Wie möchten Sie Ihren Bildschirm sperren?</string>
+    <string name="settings_lockscreen_setup_title">Wähle einen Sperrbildschirm-Typ</string>
+    <string name="settings_lockscreen_setup_details">Wie möchtest du deinen Bildschirm sperren?</string>
     <string name="lockscreen_setup_title" product="tablet">Schütze dein Tablet</string>
-    <string name="lockscreen_setup_title" product="default">Schützen Sie Ihr Telefon</string>
+    <string name="lockscreen_setup_title" product="default">Schütze dein Telefon</string>
     <string name="lockscreen_setup_summary"><b>Gerät schützen</b> und PIN, Muster oder Passwort zur Display-Entsperrung verwenden</string>
     <string name="lockscreen_setup_screen_lock_setup">Einrichten</string>
     <string name="intro_restore_title">Apps und Daten wiederherstellen</string>

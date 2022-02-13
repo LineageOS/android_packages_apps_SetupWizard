@@ -53,6 +53,8 @@
     <string name="emergency_call">Fövqəladə vəziyyət zəngləri</string>
     <string name="accessibility_settings">Əlçatımlılıq tənzimləmələri</string>
     <string name="setup_services">LineageOS özəllikləri</string>
+    <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilənlər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="services_find_privacy_policy">Gizlilik siyasətini fərqli cihazda <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> ünvanını ziyarət edərək oxuya bilərsiniz</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
     <string name="services_metrics_label">LineageOS-a diaqnostikanı və istifadə verilənlərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlarda kimliyiniz istifadə edilmir və batereya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%2$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edər.</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>

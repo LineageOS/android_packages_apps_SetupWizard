@@ -53,6 +53,8 @@
     <string name="emergency_call">Экстренный вызов</string>
     <string name="accessibility_settings">Настройки специальных возможностей</string>
     <string name="setup_services">Возможности LineageOS</string>
+    <string name="services_pp_explanation">Эти службы работают, чтобы расширить возможности вашего устройства. Данные будут использоваться в соответствии с политикой конфиденциальности <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Вы можете ознакомиться с политикой конфиденциальности на другом устройстве, посетив <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, разрешив отправку данных диагностики и использования в LineageOS. Эта информация не может быть использована для вашей идентификации и поможет в работе над повышением автономности, производительности и новыми возможностями <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
