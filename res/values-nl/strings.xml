@@ -60,6 +60,7 @@
     <string name="services_explanation" product="default">Deze diensten worden gebruikt om de mogelijkheden van uw telefoon uit te breiden. Gegevens worden gebruikt conform de \'<xliff:g id="name" example="Privacy Policy">%s</xliff:g>\' van LineageOS.</string>
     <string name="services_privacy_policy">Privacybeleid</string>
     <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar LineageOS. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-functies.</string>
     <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
     <string name="services_os_privacy_guard"><b>Privacybescherming inschakelen</b> om uw persoonlijke gegevens zoals contacten, berichten of oproepgeschiedenis niet beschikbaar te maken voor nieuw geïnstalleerde apps</string>
     <string name="setup_unlock">Ontgrendelen</string>

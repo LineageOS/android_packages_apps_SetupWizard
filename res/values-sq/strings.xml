@@ -18,9 +18,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Asistenti i Konfigurimit</string>
     <string name="next">Vazhdo</string>
-    <string name="skip">Jo tani</string>
+    <string name="skip">Kapërce</string>
     <string name="start">Fillo</string>
-    <string name="done">Mbarova</string>
+    <string name="done">U krye</string>
     <string name="ok">OK</string>
     <string name="loading">Një sekondë\u2026</string>
     <string name="setup_complete">Konfigurimi u plotësua</string>
@@ -46,6 +46,7 @@
     <string name="location_battery_saving"><b>Ul konsumin e baterisë</b> duke kufizuar numrin e përditësimeve të GPS në orë.</string>
     <string name="location_network"><b>Përdor Wi-Fi</b> për të ndihmuar aplikacionet që të përcaktojnë vendndodhjen tënde.</string>
     <string name="location_network_telephony"><b>Përdor Wi-Fi dhe rrjetet celulare</b> për të ndihmuar aplikacionet që të përcaktojnë vendndodhjen tënde.</string>
+    <string name="location_network_gms"><b> Përdorni shërbimin e vendndodhjes së Google </b> për të ndihmuar aplikacionet të përcaktojnë vendndodhjen tuaj.  Kjo nënkupton dërgimin e të dhënave anonime të vendndodhjes te Google, edhe kur nuk ekzekutohen aplikacione.</string>
     <string name="setup_mobile_data">Aktivizo internetin e celularit</string>
     <string name="setup_mobile_data_no_service">Nuk ka shërbim</string>
     <string name="setup_mobile_data_emergency_only">Vetëm thirrjet emergjente</string>
