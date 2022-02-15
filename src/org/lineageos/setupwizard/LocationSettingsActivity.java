@@ -19,7 +19,8 @@ package org.lineageos.setupwizard;
 
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.os.UserHandle;
+import android.os.Process;
+import android.os.UserManager;
 import android.view.View;
 import android.widget.CheckBox;
 
@@ -32,6 +33,8 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
 
     private LocationManager mLocationManager;
 
+    private UserManager mUserManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,18 +42,27 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
 
         mLocationAccess = (CheckBox) findViewById(R.id.location_checkbox);
         mLocationManager = getSystemService(LocationManager.class);
+        mUserManager = getSystemService(UserManager.class);
         View locationAccessView = findViewById(R.id.location);
         locationAccessView.setOnClickListener(v -> {
-            mLocationManager.setLocationEnabledForUser(!mLocationAccess.isChecked(),
-                    new UserHandle(UserHandle.USER_CURRENT));
             mLocationAccess.setChecked(!mLocationAccess.isChecked());
+            mLocationManager.setLocationEnabledForUser(mLocationAccess.isChecked(),
+                    Process.myUserHandle());
+            if (mUserManager.isManagedProfile()) {
+                mUserManager.setUserRestriction(UserManager.DISALLOW_SHARE_LOCATION,
+                        !mLocationAccess.isChecked());
+            }
         });
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        mLocationAccess.setChecked(mLocationManager.isLocationEnabled());
+        boolean checked = mLocationManager.isLocationEnabled();
+        if (mUserManager.isManagedProfile()) {
+            checked &= mUserManager.hasUserRestriction(UserManager.DISALLOW_SHARE_LOCATION);
+        }
+        mLocationAccess.setChecked(checked);
     }
 
     @Override
