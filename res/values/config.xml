@@ -24,4 +24,44 @@
     <string name="wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script_user</string>
     <bool name="config_isLargeNoTouch">false</bool>
+    
+    <string name="setup_design_layout_gravity">start</string>
+    <integer name="setup_design_header_auto_size_max_line_of_max_size">2</integer>
+    <dimen name="setup_compat_footer_button_min_height">56.0dip</dimen>
+    <dimen name="setup_compat_footer_button_padding_bottom">6.0dip</dimen>
+    <dimen name="setup_compat_footer_button_padding_top">6.0dip</dimen>
+    <dimen name="setup_compat_footer_button_radius">26.0dip</dimen>
+    <dimen name="setup_compat_footer_button_text_size">14.0sp</dimen>
+    <dimen name="setup_design_content_info_icon_margin_end">16.0dip</dimen>
+    <dimen name="setup_design_content_info_icon_size">18.0dip</dimen>
+    <dimen name="setup_design_content_info_line_spacing_extra">8.0sp</dimen>
+    <dimen name="setup_design_content_info_padding_bottom">16.0dip</dimen>
+    <dimen name="setup_design_content_info_padding_top">16.0dip</dimen>
+    <dimen name="setup_design_content_info_text_size">16.0sp</dimen>
+    <dimen name="setup_design_content_padding_top">8.0dip</dimen>
+    <dimen name="setup_design_content_text_size">18.0sp</dimen>
+    <dimen name="setup_design_description_text_margin_bottom">0.0dip</dimen>
+    <dimen name="setup_design_description_text_margin_top">24.0dip</dimen>
+    <dimen name="setup_design_description_text_size">18.0sp</dimen>
+    <dimen name="setup_design_header_auto_size_line_spacing_extra">8.0sp</dimen>
+    <dimen name="setup_design_header_auto_size_max_text_size">36.0sp</dimen>
+    <dimen name="setup_design_header_auto_size_min_text_size">28.0sp</dimen>
+    <dimen name="setup_design_header_container_margin_bottom">24.0dip</dimen>
+    <dimen name="setup_design_header_text_margin_bottom">0.0dip</dimen>
+    <dimen name="setup_design_header_text_margin_top">24.0dip</dimen>
+    <dimen name="setup_design_header_text_size">36.0sp</dimen>
+    <dimen name="setup_design_icon_margin_top">32.0dip</dimen>
+    <dimen name="setup_design_icon_size">48.0dip</dimen>
+    <dimen name="setup_design_items_min_height">72.0dip</dimen>
+    <dimen name="setup_design_items_padding_bottom">16.0dip</dimen>
+    <dimen name="setup_design_items_padding_top">16.0dip</dimen>
+    <dimen name="setup_design_items_summary_margin_top">4.0dip</dimen>
+    <dimen name="setup_design_items_summary_text_size">14.0sp</dimen>
+    <dimen name="setup_design_items_title_text_size">20.0sp</dimen>
+    <dimen name="setup_design_layout_margin_end">24.0dip</dimen>
+    <dimen name="setup_design_layout_margin_start">40.0dip</dimen>
+    <bool name="dynamic_color_enabled">true</bool>
+    <bool name="extended_partner_config_enabled">true</bool>
+    <bool name="setup_design_header_auto_size_enabled">true</bool>
+    <bool name="setup_design_items_divider_shown">false</bool>
 </resources>
