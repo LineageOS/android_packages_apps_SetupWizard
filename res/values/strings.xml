@@ -33,6 +33,7 @@
 
     <string name="setup_complete">Setup is complete</string>
     <string name="setup_welcome">Welcome</string>
+    <string name="setup_welcome_message">Welcome to <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Language</string>
     <string name="setup_wifi">Select Wi-Fi</string>
     <string name="setup_sim_missing">SIM card missing</string>
