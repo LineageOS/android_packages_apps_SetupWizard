@@ -37,4 +37,14 @@
     <dimen name="setup_line_spacing">3sp</dimen>
     <dimen name="min_locale_picker_height">100dp</dimen>
     <dimen name="base_margin_top">0dp</dimen>
+
+    <dimen name="welcome_content_container_padding_top">100dp</dimen>
+    <dimen name="welcome_content_container_padding_bottom">30dp</dimen>
+    <dimen name="welcome_content_container_padding_end">24dp</dimen>
+    <dimen name="welcome_content_container_padding_start">40dp</dimen>
+    <dimen name="welcome_title_text_size">56sp</dimen>
+    <dimen name="welcome_title_padding_bottom">16dp</dimen>
+    <dimen name="welcome_title_line_height">64dp</dimen>
+    <dimen name="welcome_accessibility_text_size">20sp</dimen>
+
 </resources>
