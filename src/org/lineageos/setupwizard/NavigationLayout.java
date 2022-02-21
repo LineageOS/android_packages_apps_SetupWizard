@@ -23,6 +23,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.google.android.setupcompat.template.FooterButtonStyleUtils;
+
 public class NavigationLayout extends RelativeLayout {
     /*
      * An interface to listen to events of the navigation bar,
@@ -42,6 +44,8 @@ public class NavigationLayout extends RelativeLayout {
         View.inflate(context, R.layout.navigation_layout, this);
         mNextButton = findViewById(R.id.navbar_next);
         mSkipButton = findViewById(R.id.navbar_skip);
+        FooterButtonStyleUtils.applyPrimaryButtonPartnerResource(context, mNextButton, true);
+        FooterButtonStyleUtils.applySecondaryButtonPartnerResource(context, mSkipButton, true);
 
         TypedArray a = context.getTheme().obtainStyledAttributes(
              attrs, R.styleable.NavigationLayout, 0, 0);
