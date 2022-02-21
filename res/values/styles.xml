@@ -47,4 +47,12 @@
     </style>
 
     <style name="NoDisplay" parent="@android:style/Theme.NoDisplay" />
+
+    <style name="WelcomeTitle">
+        <item name="android:textSize">@dimen/welcome_title_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingBottom">@dimen/welcome_title_padding_bottom</item>
+        <item name="android:lineHeight">@dimen/welcome_title_line_height</item>
+    </style>
 </resources>

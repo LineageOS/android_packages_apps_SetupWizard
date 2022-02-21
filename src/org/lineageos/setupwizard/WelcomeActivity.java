@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.setupcompat.util.SystemBarHelper;
 import com.google.android.setupcompat.template.FooterButtonStyleUtils;
@@ -47,6 +48,12 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
 
         FooterButtonStyleUtils.applyPrimaryButtonPartnerResource(this, startButton, true);
         FooterButtonStyleUtils.applySecondaryButtonPartnerResource(this, emergButton, true);
+
+        TextView welcomeTitle = findViewById(R.id.welcome_title);
+        if (welcomeTitle != null) {
+            welcomeTitle.setText(getString(R.string.setup_welcome_message,
+                    getString(R.string.os_name)));
+        }
     }
 
     @Override
