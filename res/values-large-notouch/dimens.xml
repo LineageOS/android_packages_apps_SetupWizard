@@ -16,4 +16,6 @@
 -->
 <resources>
     <dimen name="base_margin_top">56dp</dimen>
+    <dimen name="content_margin_left">16dp</dimen>
+    <dimen name="welcome_title_padding_bottom">30dp</dimen>
 </resources>
