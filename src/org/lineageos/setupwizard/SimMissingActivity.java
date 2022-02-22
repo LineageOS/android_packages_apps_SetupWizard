@@ -28,9 +28,10 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SimMissingActivity.class.getSimpleName();
 
-    private static final int SIM_DEFAULT = 0;
-    private static final int SIM_SIDE = 1;
-    private static final int SIM_BACK = 2;
+    private static final int SIM_LEFT = 0;
+    private static final int SIM_TOP = 1;
+    private static final int SIM_RIGHT = 2;
+    private static final int SIM_BOTTOM = 3;
 
     private PhoneMonitor mPhoneMonitor;
 
@@ -42,19 +43,20 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
         if (!mPhoneMonitor.simMissing()) {
             finishAction(RESULT_OK);
         }
-        final int simLocation = getResources().getInteger(
-                R.integer.sim_image_type);
+        final int simLocation = getResources().getInteger(R.integer.config_simCardTrayLocation);
         ImageView simLogo = ((ImageView) findViewById(R.id.sim_slot_image));
         switch (simLocation) {
-            case SIM_SIDE:
-                simLogo.setImageResource(R.drawable.sim_side);
+            case SIM_TOP:
+                simLogo.setImageResource(R.drawable.ic_sim_top);
                 break;
-            case SIM_BACK:
-                simLogo.setImageResource(R.drawable.sim_back);
+            case SIM_RIGHT:
+                simLogo.setImageResource(R.drawable.ic_sim_right);
+                break;
+            case SIM_BOTTOM:
+                simLogo.setImageResource(R.drawable.ic_sim_bottom);
                 break;
             default:
-                simLogo.setImageResource(R.drawable.sim);
-                simLogo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+                simLogo.setImageResource(R.drawable.ic_sim_left);
         }
     }
 

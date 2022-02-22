@@ -44,8 +44,8 @@
                     android:layout_width="0px"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:scaleType="fitEnd"
-                    android:src="@drawable/sim" />
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_sim_left" />
 
             </LinearLayout>
         </FrameLayout>
