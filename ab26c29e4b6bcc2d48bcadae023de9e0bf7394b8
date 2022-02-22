@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e38c0bef_b9d0f119",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-22T14:14:54Z",
+      "side": 1,
+      "message": "Same thing as the Settings vector except the fillColor and size.",
+      "revId": "ab26c29e4b6bcc2d48bcadae023de9e0bf7394b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
