@@ -28,10 +28,6 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SimMissingActivity.class.getSimpleName();
 
-    private static final int SIM_DEFAULT = 0;
-    private static final int SIM_SIDE = 1;
-    private static final int SIM_BACK = 2;
-
     private PhoneMonitor mPhoneMonitor;
 
     @Override
@@ -42,20 +38,9 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
         if (!mPhoneMonitor.simMissing()) {
             finishAction(RESULT_OK);
         }
-        final int simLocation = getResources().getInteger(
-                R.integer.sim_image_type);
         ImageView simLogo = ((ImageView) findViewById(R.id.sim_slot_image));
-        switch (simLocation) {
-            case SIM_SIDE:
-                simLogo.setImageResource(R.drawable.sim_side);
-                break;
-            case SIM_BACK:
-                simLogo.setImageResource(R.drawable.sim_back);
-                break;
-            default:
-                simLogo.setImageResource(R.drawable.sim);
-                simLogo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        }
+        simLogo.setImageResource(R.drawable.sim);
+        simLogo.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
     }
 
     @Override
