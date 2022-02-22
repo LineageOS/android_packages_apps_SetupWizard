@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Android Open Source Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="260dp"
+        android:height="260dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M18,2h-8L4,8v12c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V4C20,2.9 19.1,2 18,2zM18,4v16H6V8.83L10.83,4L18,4L18,4z" />
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M7,17h2v2h-2z" />
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M15,17h2v2h-2z" />
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M7,11h2v4h-2z" />
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M11,15h2v4h-2z" />
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M11,11h2v2h-2z" />
+    <path
+        android:fillColor="?android:colorPrimary"
+        android:pathData="M15,11h2v4h-2z" />
+</vector>
