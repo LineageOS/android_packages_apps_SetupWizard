@@ -17,9 +17,6 @@
 -->
 <resources>
     <integer name="local_picker_items">3</integer>
-    <!-- The type of sim image to display.
-         0=default sim image, 1=sim on side, 2=sim on back-->
-    <integer name="sim_image_type">0</integer>
     <bool name="check_custom_theme_by_default">true</bool>
     <string name="wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script_user</string>
