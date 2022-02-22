@@ -36,4 +36,5 @@
     <!-- Partner customization -->
     <color name="sud_glif_background_color_light">@color/white</color>
     <color name="sud_color_accent_glif_v3_light">@color/accent</color>
+    <color name="sud_color_accent_glif_v3_dark">@color/accent</color>
 </resources>
