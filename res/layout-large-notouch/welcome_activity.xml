@@ -69,16 +69,16 @@
         <Button
             android:id="@+id/emerg_dialer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_dialer"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/ic_emergency_dial"
             android:text="@string/emergency_call"
             style="@style/SudGlifButton.Secondary" />
 
         <Button
             android:id="@+id/launch_accessibility"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/ic_eye"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/ic_accessibility"
             android:text="@string/accessibility_settings"
             style="@style/SudGlifButton.Secondary" />
 
