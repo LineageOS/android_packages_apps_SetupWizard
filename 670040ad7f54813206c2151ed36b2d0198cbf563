@@ -22,6 +22,30 @@
       },
       "revId": "670040ad7f54813206c2151ed36b2d0198cbf563",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa192e70_7b4677da",
+        "filename": "src/org/lineageos/setupwizard/SimMissingActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-23T18:32:15Z",
+      "side": 1,
+      "message": "I don\u0027t believe so? The only one in the layout XML is the default, we need all of them centered. If anyone knows how lemme know",
+      "parentUuid": "e8a5e9a9_0928713f",
+      "range": {
+        "startLine": 62,
+        "startChar": 8,
+        "endLine": 62,
+        "endChar": 64
+      },
+      "revId": "670040ad7f54813206c2151ed36b2d0198cbf563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
