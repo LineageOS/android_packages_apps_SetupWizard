@@ -3,6 +3,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "80e08857_411c6060",
+        "filename": "res/layout-land/sim_missing_page.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2022-02-23T18:57:30Z",
+      "side": 1,
+      "message": "here",
+      "range": {
+        "startLine": 47,
+        "startChar": 39,
+        "endLine": 47,
+        "endChar": 45
+      },
+      "revId": "670040ad7f54813206c2151ed36b2d0198cbf563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2c37c28e_a3eff369",
+        "filename": "res/layout/sim_missing_page.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2022-02-23T18:57:30Z",
+      "side": 1,
+      "message": "here",
+      "range": {
+        "startLine": 47,
+        "startChar": 39,
+        "endLine": 47,
+        "endChar": 45
+      },
+      "revId": "670040ad7f54813206c2151ed36b2d0198cbf563",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e8a5e9a9_0928713f",
         "filename": "src/org/lineageos/setupwizard/SimMissingActivity.java",
         "patchSetId": 1
