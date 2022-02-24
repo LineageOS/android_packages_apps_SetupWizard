@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d639ce3_0d426030",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-24T22:17:59Z",
+      "side": 1,
+      "message": "To be noted, Settings stuff doesn\u0027t open as dark mode when opened using the LOS SetupWizard script, however it does work on first boot. Not sure why, I think \u0027isAnySetupWizard\u0027 might be broken.",
+      "revId": "aac23a4ee4dcc75d61955bfb76f454dd78bc01ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
