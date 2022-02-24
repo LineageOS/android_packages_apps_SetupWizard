@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f116fd66_704cedc8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-24T03:52:44Z",
+      "side": 1,
+      "message": "This does away with SIM on back - which a LOT of my legacy devices have - we ought to leave that?",
+      "revId": "e5c9db7ca31e012f938e07246f6436b345ecbe5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
