@@ -34,6 +34,23 @@
       "parentUuid": "f116fd66_704cedc8",
       "revId": "e5c9db7ca31e012f938e07246f6436b345ecbe5f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3df878f3_e1e758ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-02-24T05:06:53Z",
+      "side": 1,
+      "message": "mkay, talked it through, these devices still /technically/ slide from the bottom so existing vector options work",
+      "revId": "e5c9db7ca31e012f938e07246f6436b345ecbe5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
