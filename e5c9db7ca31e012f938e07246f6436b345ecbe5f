@@ -16,6 +16,24 @@
       "message": "This does away with SIM on back - which a LOT of my legacy devices have - we ought to leave that?",
       "revId": "e5c9db7ca31e012f938e07246f6436b345ecbe5f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3be743e_4dc04052",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-24T05:03:31Z",
+      "side": 1,
+      "message": "The SIM on back illustration doesn\u0027t make much sense for any device that has it on the back, no device inserts it like that(?) Devices like that can use _top or _bottom for the same effect. Left/Bottom/Top/Right are meant to be vague on purpose so they can be interpreted for a vast variety of devices.",
+      "parentUuid": "f116fd66_704cedc8",
+      "revId": "e5c9db7ca31e012f938e07246f6436b345ecbe5f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
