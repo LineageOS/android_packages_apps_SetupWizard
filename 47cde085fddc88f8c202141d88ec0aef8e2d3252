@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39042e1d_273a88c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-02-25T20:30:58Z",
+      "side": 1,
+      "message": "Reverted back to patchset 5 so we don\u0027t break consistency with GMS SUW, as it\u0027s black there.",
+      "revId": "47cde085fddc88f8c202141d88ec0aef8e2d3252",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
