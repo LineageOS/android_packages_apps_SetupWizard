@@ -33,6 +33,23 @@
       "message": "Vision settings is still on white",
       "revId": "47cde085fddc88f8c202141d88ec0aef8e2d3252",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1500ce65_9058c262",
+        "filename": "res/drawable/ic_sim.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2022-03-03T21:49:35Z",
+      "side": 1,
+      "message": "this should be black",
+      "revId": "47cde085fddc88f8c202141d88ec0aef8e2d3252",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
