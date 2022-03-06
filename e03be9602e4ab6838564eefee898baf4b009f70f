@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4f573ef_63cd8b65",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-03-06T18:37:21Z",
+      "side": 1,
+      "message": "`Welcome to \u003cxliff:g id\u003d\"name\" example\u003d\"LineageOS\"\u003e%1$s\u003c/xliff:g\u003e`\n\nand set %1Ss to os_name (from line 20) programmatically",
+      "range": {
+        "startLine": 36,
+        "startChar": 52,
+        "endLine": 36,
+        "endChar": 61
+      },
+      "revId": "e03be9602e4ab6838564eefee898baf4b009f70f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
