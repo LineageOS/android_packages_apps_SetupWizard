@@ -50,6 +50,24 @@
       "message": "this should be black",
       "revId": "47cde085fddc88f8c202141d88ec0aef8e2d3252",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcb48117_0105a96c",
+        "filename": "res/drawable/ic_sim.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-08T21:04:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1500ce65_9058c262",
+      "revId": "47cde085fddc88f8c202141d88ec0aef8e2d3252",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
