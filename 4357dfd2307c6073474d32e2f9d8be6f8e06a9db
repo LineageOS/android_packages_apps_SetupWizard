@@ -16,6 +16,24 @@
       "message": "Why? I liked the previous patchset.",
       "revId": "4357dfd2307c6073474d32e2f9d8be6f8e06a9db",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62a96741_42289be4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-10T17:09:40Z",
+      "side": 1,
+      "message": "Back to dropping it all together",
+      "parentUuid": "69b0914e_c60d045a",
+      "revId": "4357dfd2307c6073474d32e2f9d8be6f8e06a9db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
