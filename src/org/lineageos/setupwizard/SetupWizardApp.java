@@ -65,6 +65,11 @@ public class SetupWizardApp extends Application {
     public static final String ENABLE_RECOVERY_UPDATE = "enable_recovery_update";
     public static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
 
+    public static final String NAVIGATION_OPTION_KEY = "navigation_option";
+    public static final int HW_NAVIGATION = 0;
+    public static final int GESTURE_NAVIGATION = 1;
+    public static final int NAVBAR_NAVIGATION = 2;
+
     public static final int REQUEST_CODE_SETUP_NETWORK = 0;
     public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL = 4;
     public static final int REQUEST_CODE_SETUP_BLUETOOTH = 5;
