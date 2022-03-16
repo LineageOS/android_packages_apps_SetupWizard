@@ -105,4 +105,10 @@
     <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
     <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+
+    <!-- Navigation settings -->
+    <string name="setup_navigation">Navigation</string>
+    <string name="navigation_summary">Choose your navigation method</string>
+    <string name="gesture_navigation">Gesture navigation</string>
+    <string name="navbar_navigation">Navigation bar</string>
 </resources>

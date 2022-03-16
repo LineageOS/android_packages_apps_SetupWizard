@@ -23,9 +23,17 @@ import static org.lineageos.setupwizard.Manifest.permission.FINISH_SETUP;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
 import static org.lineageos.setupwizard.SetupWizardApp.ENABLE_RECOVERY_UPDATE;
+import static org.lineageos.setupwizard.SetupWizardApp.GESTURE_NAVIGATION;
+import static org.lineageos.setupwizard.SetupWizardApp.HW_NAVIGATION;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.NAVBAR_NAVIGATION;
+import static org.lineageos.setupwizard.SetupWizardApp.NAVIGATION_OPTION_KEY;
 import static org.lineageos.setupwizard.SetupWizardApp.UPDATE_RECOVERY_PROP;
+
+import static android.os.UserHandle.USER_CURRENT;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY;
 
 import android.animation.Animator;
 import android.app.Activity;
@@ -33,11 +41,13 @@ import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.om.IOverlayManager;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.preference.PreferenceManager;
@@ -172,6 +182,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
         handleRecoveryUpdate(mSetupWizardApp);
+        handleNavigationOption(mSetupWizardApp);
         final WallpaperManager wallpaperManager =
                 WallpaperManager.getInstance(mSetupWizardApp);
         wallpaperManager.forgetLoadedWallpaper();
@@ -207,6 +218,32 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
             SystemProperties.set(UPDATE_RECOVERY_PROP, String.valueOf(update));
         }
+    }
+
+    private void handleNavigationOption(Context context) {
+        IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
+        String overlayPackage = NAV_BAR_MODE_GESTURAL_OVERLAY;
+        final Bundle myPageBundle = mSetupWizardApp.getSettingsBundle();
+        int selectedNavMode = myPageBundle.containsKey(NAVIGATION_OPTION_KEY) ?
+                myPageBundle.getInt(NAVIGATION_OPTION_KEY) :
+                GESTURE_NAVIGATION;
+
+        switch (selectedNavMode) {
+            case HW_NAVIGATION:
+                return;
+            case GESTURE_NAVIGATION:
+                overlayPackage = NAV_BAR_MODE_GESTURAL_OVERLAY;
+                break;
+            case NAVBAR_NAVIGATION:
+                overlayPackage = NAV_BAR_MODE_3BUTTON_OVERLAY;
+                break;
+        }
+
+        try {
+            overlayManager.setEnabledExclusiveInCategory(overlayPackage,
+                    USER_CURRENT);
+        } catch (Exception e) {}
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
