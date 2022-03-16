@@ -240,6 +240,19 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".NavigationSettingsActivity"
+                  android:label="@string/activity_label_empty"
+                  android:excludeFromRecents="true"
+                  android:configChanges="mcc|mnc"
+                  android:immersive="true"
+                  android:exported="true"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="org.lineageos.setupwizard.NAVIGATION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".BiometricActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
