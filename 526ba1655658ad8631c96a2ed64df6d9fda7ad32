@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8e2aded_6a0ae4a9",
+        "filename": "res/layout/setup_navigation.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-17T15:08:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "92dc58c1_19a86fff",
+      "range": {
+        "startLine": 3,
+        "startChar": 5,
+        "endLine": 4,
+        "endChar": 50
+      },
+      "revId": "526ba1655658ad8631c96a2ed64df6d9fda7ad32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e9825a9b_9b9f807c",
@@ -37,6 +61,30 @@
       "writtenOn": "2022-03-17T14:36:35Z",
       "side": 1,
       "message": "Don\u0027t you think that \"Choose preferred navigation method\" is bettter?",
+      "range": {
+        "startLine": 111,
+        "startChar": 38,
+        "endLine": 111,
+        "endChar": 67
+      },
+      "revId": "526ba1655658ad8631c96a2ed64df6d9fda7ad32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c11bffb_238f01ab",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-17T15:08:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e9825a9b_9b9f807c",
       "range": {
         "startLine": 111,
         "startChar": 38,
