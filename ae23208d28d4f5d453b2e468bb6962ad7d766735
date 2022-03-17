@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c413b9a_43cb1399",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-17T09:20:50Z",
+      "side": 1,
+      "message": "We also need to account for the fact that tablets no longer have 2-button navigation available.",
+      "revId": "ae23208d28d4f5d453b2e468bb6962ad7d766735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eea85c2d_04d36403",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-17T09:20:50Z",
+      "side": 1,
+      "message": "This goes above our static imports.",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 86
+      },
+      "revId": "ae23208d28d4f5d453b2e468bb6962ad7d766735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c489897c_bfe398c3",
+        "filename": "src/org/lineageos/setupwizard/NavigationSettingsActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-17T09:20:50Z",
+      "side": 1,
+      "message": "Copyright (C) 2022 The LineageOS Project",
+      "range": {
+        "startLine": 2,
+        "startChar": 3,
+        "endLine": 3,
+        "endChar": 53
+      },
+      "revId": "ae23208d28d4f5d453b2e468bb6962ad7d766735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2bcf0fa_dbfd37a7",
+        "filename": "src/org/lineageos/setupwizard/NavigationSettingsActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-17T09:20:50Z",
+      "side": 1,
+      "message": "Same, above our static imports.",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 86
+      },
+      "revId": "ae23208d28d4f5d453b2e468bb6962ad7d766735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a695d623_9ffefd20",
+        "filename": "src/org/lineageos/setupwizard/NavigationSettingsActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-17T09:20:50Z",
+      "side": 1,
+      "message": "Before line 44",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 43
+      },
+      "revId": "ae23208d28d4f5d453b2e468bb6962ad7d766735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
