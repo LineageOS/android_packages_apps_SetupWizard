@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7ff7496_570e1f13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-17T09:22:16Z",
+      "side": 1,
+      "message": "It does, in NavigationSettingsActivity line 75.",
+      "parentUuid": "9c413b9a_43cb1399",
+      "revId": "ae23208d28d4f5d453b2e468bb6962ad7d766735",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "eea85c2d_04d36403",
