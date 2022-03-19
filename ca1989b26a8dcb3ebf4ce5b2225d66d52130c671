@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3cd2872f_2f053549",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30677
+      },
+      "writtenOn": "2022-03-19T12:52:17Z",
+      "side": 1,
+      "message": "The welcome message looks wrong:\nhttps://i.imgur.com/L0ozN2a.png",
+      "revId": "ca1989b26a8dcb3ebf4ce5b2225d66d52130c671",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
