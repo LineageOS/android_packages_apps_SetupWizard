@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4bfee44_bc0cb1d7",
+        "filename": "res/drawable/logo.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-19T14:40:41Z",
+      "side": 1,
+      "message": "This is now too big.",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 0
+      },
+      "revId": "6ed6c87ce16236d72bd47a0487870bc6c04cc597",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "663f893f_dc17315d",
+        "filename": "res/layout/welcome_activity.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-19T14:40:41Z",
+      "side": 1,
+      "message": "Is there a reason for not using match_parent?",
+      "range": {
+        "startLine": 26,
+        "startChar": 30,
+        "endLine": 26,
+        "endChar": 41
+      },
+      "revId": "6ed6c87ce16236d72bd47a0487870bc6c04cc597",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
