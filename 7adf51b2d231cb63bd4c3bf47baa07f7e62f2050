@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "344d9943_d3752da4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-19T12:52:57Z",
+      "side": 1,
+      "message": "Probably not needed as this was likely caused by ril crashing.",
+      "revId": "7adf51b2d231cb63bd4c3bf47baa07f7e62f2050",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
