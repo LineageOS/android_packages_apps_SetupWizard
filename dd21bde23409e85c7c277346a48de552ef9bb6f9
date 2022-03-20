@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6a1542f_13d258ce",
+        "filename": "src/org/lineageos/setupwizard/SetupWizardActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-03-20T13:34:50Z",
+      "side": 1,
+      "message": "I can\u0027t test this case atm, but won\u0027t this enable the status bar at the beginning of the whole workflow with GMS?",
+      "range": {
+        "startLine": 47,
+        "startChar": 12,
+        "endLine": 47,
+        "endChar": 51
+      },
+      "revId": "dd21bde23409e85c7c277346a48de552ef9bb6f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
