@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2bb2d61c_9e966f83",
+        "filename": "res/drawable/logo.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-22T16:24:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e4bfee44_bc0cb1d7",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 0
+      },
+      "revId": "6ed6c87ce16236d72bd47a0487870bc6c04cc597",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "663f893f_dc17315d",
@@ -61,6 +85,30 @@
       "side": 1,
       "message": "no particular reason that i can remember",
       "parentUuid": "663f893f_dc17315d",
+      "range": {
+        "startLine": 26,
+        "startChar": 30,
+        "endLine": 26,
+        "endChar": 41
+      },
+      "revId": "6ed6c87ce16236d72bd47a0487870bc6c04cc597",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84c15c85_a35bfcae",
+        "filename": "res/layout/welcome_activity.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-22T16:24:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1af36f91_462e0577",
       "range": {
         "startLine": 26,
         "startChar": 30,
