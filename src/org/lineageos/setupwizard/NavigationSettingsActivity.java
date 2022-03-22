@@ -73,18 +73,18 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
 
         int available = 3;
         // Hide unavailable navigation modes
-        if (!isOverlayPackageAvailable(this, NAV_BAR_MODE_GESTURAL_OVERLAY)) {
+        if (!SetupWizardUtils.isPackageInstalled(this, NAV_BAR_MODE_GESTURAL_OVERLAY)) {
             findViewById(R.id.radio_gesture).setVisibility(View.GONE);
             ((RadioButton) findViewById(R.id.radio_sw_keys)).setChecked(true);
             available--;
         }
 
-        if (!isOverlayPackageAvailable(this, NAV_BAR_MODE_2BUTTON_OVERLAY)) {
+        if (!SetupWizardUtils.isPackageInstalled(this, NAV_BAR_MODE_2BUTTON_OVERLAY)) {
             findViewById(R.id.radio_two_button).setVisibility(View.GONE);
             available--;
         }
 
-        if (!isOverlayPackageAvailable(this, NAV_BAR_MODE_3BUTTON_OVERLAY)) {
+        if (!SetupWizardUtils.isPackageInstalled(this, NAV_BAR_MODE_3BUTTON_OVERLAY)) {
             findViewById(R.id.radio_sw_keys).setVisibility(View.GONE);
             available--;
         }
@@ -184,14 +184,5 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
     @Override
     protected int getIconResId() {
         return R.drawable.ic_navigation;
-    }
-
-    private static boolean isOverlayPackageAvailable(Context context, String overlayPackage) {
-        try {
-            return context.getPackageManager().getPackageInfo(overlayPackage, 0) != null;
-        } catch (Exception e) {
-            // Not found, just return unavailable
-            return false;
-        }
     }
 }
