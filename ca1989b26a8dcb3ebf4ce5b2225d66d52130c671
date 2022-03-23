@@ -92,6 +92,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1b97b806_c7b5d0a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-23T14:51:34Z",
+      "side": 1,
+      "message": "did you sync the manifest change?\n\nAlso what device and DPI?",
+      "parentUuid": "edb3ed0a_728ab287",
+      "revId": "ca1989b26a8dcb3ebf4ce5b2225d66d52130c671",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "429b7151_d214dde8",
         "filename": "res/layout/welcome_activity.xml",
         "patchSetId": 4
