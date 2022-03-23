@@ -110,6 +110,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5043271d_d5e1298b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30677
+      },
+      "writtenOn": "2022-03-23T15:09:56Z",
+      "side": 1,
+      "message": "Yeah, everything was fully synced using repo.\n\nIt\u0027s a 5.0-inch 1080x1920 pixels display. DPI before S was 480, but now it appears too big for S. So it was changed like in https://review.lineageos.org/c/LineageOS/android_device_fxtec_pro1/+/327110\n\nAAPT configuration:\nPRODUCT_AAPT_CONFIG :\u003d normal\nPRODUCT_AAPT_PREF_CONFIG :\u003d xxhdpi\n\nDensity:\nTARGET_SCREEN_DENSITY :\u003d 400",
+      "parentUuid": "1b97b806_c7b5d0a3",
+      "revId": "ca1989b26a8dcb3ebf4ce5b2225d66d52130c671",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "429b7151_d214dde8",
         "filename": "res/layout/welcome_activity.xml",
         "patchSetId": 4
