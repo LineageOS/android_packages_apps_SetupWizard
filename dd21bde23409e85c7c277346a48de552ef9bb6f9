@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "61e2a91a_e312abdf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-03-24T19:55:35Z",
+      "side": 1,
+      "message": "This doesn\u0027t enable statusbar on non GMS flow now",
+      "revId": "dd21bde23409e85c7c277346a48de552ef9bb6f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c6a1542f_13d258ce",
