@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "607d0630_733bc772",
+        "filename": "res/raw/lineage_wizard_script.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2022-03-25T19:33:20Z",
+      "side": 1,
+      "message": "Why not keep this last (i.e. after restore)",
+      "revId": "e83f9e12a1d40c3c9987491e2cd0ff922ba7fc6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
