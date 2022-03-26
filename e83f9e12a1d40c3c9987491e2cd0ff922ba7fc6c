@@ -16,6 +16,24 @@
       "message": "Why not keep this last (i.e. after restore)",
       "revId": "e83f9e12a1d40c3c9987491e2cd0ff922ba7fc6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad52ea83_265e855a",
+        "filename": "res/raw/lineage_wizard_script.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-03-26T06:31:56Z",
+      "side": 1,
+      "message": "I think it makes sense to be after choosing on screen nav vs hw nav. Though that\u0027s only a few devices anyways.",
+      "parentUuid": "607d0630_733bc772",
+      "revId": "e83f9e12a1d40c3c9987491e2cd0ff922ba7fc6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
