@@ -34,6 +34,24 @@
       "parentUuid": "607d0630_733bc772",
       "revId": "e83f9e12a1d40c3c9987491e2cd0ff922ba7fc6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "509a2574_3c2e2110",
+        "filename": "res/raw/lineage_wizard_script.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-03-28T02:39:43Z",
+      "side": 1,
+      "message": "I am not sure that I agree - plus in partner docs it really wants navigation mode last so that you can jump directly into launcher3 gesture nav walkthrough activity (not important for us, but still).",
+      "parentUuid": "ad52ea83_265e855a",
+      "revId": "e83f9e12a1d40c3c9987491e2cd0ff922ba7fc6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
