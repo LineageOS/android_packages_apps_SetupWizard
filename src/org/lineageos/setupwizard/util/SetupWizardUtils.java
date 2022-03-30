@@ -93,21 +93,6 @@ public class SetupWizardUtils {
         }
     }
 
-    public static void setMobileDataEnabled(Context context, boolean enabled) {
-        TelephonyManager tm = context.getSystemService(TelephonyManager.class);
-        if (tm.isMultiSimEnabled()) {
-            int phoneId = SubscriptionManager.from(context).getDefaultDataPhoneId();
-            android.provider.Settings.Global.putInt(context.getContentResolver(),
-                    android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
-            int subId = SubscriptionManager.getDefaultDataSubscriptionId();
-            tm.createForSubscriptionId(subId).setDataEnabled(enabled);
-        } else {
-            android.provider.Settings.Global.putInt(context.getContentResolver(),
-                    android.provider.Settings.Global.MOBILE_DATA, enabled ? 1 : 0);
-            tm.setDataEnabled(enabled);
-        }
-    }
-
     public static boolean hasWifi(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_WIFI);
