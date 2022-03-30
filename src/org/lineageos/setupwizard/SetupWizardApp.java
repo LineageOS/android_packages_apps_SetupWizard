@@ -70,9 +70,6 @@ public class SetupWizardApp extends Application {
             Log.v(TAG, "onCreate()");
         }
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
-        if (SetupWizardUtils.isOwner()) {
-            SetupWizardUtils.setMobileDataEnabled(this, false);
-        }
         sStatusBarManager = SetupWizardUtils.disableStatusBar(this);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
         if (SetupWizardUtils.hasGMS(this)) {

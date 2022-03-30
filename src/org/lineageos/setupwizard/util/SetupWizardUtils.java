@@ -85,18 +85,6 @@ public class SetupWizardUtils {
         return context.getSharedPreferences("SetupWizardPrefs", MODE_PRIVATE);
     }
 
-    public static void setMobileDataEnabled(Context context, boolean enabled) {
-        TelephonyManager tm = context.getSystemService(TelephonyManager.class);
-        if (tm.isMultiSimEnabled()) {
-            int subId = SubscriptionManager.getDefaultDataSubscriptionId();
-            int phoneId = SubscriptionManager.getPhoneId(subId);
-            tm.createForSubscriptionId(subId).setDataEnabledForReason(
-                    TelephonyManager.DATA_ENABLED_REASON_USER, enabled);
-        } else {
-            tm.setDataEnabledForReason(TelephonyManager.DATA_ENABLED_REASON_USER, enabled);
-        }
-    }
-
     public static boolean hasWifi(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_WIFI);
