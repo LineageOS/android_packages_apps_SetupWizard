@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -22,12 +22,12 @@
     <string name="start">Mulai</string>
     <string name="done">Selesai</string>
     <string name="ok">OKE</string>
-    <string name="loading">Hanya sec\u2026</string>
+    <string name="loading">Harap tunggu\u2026</string>
     <string name="setup_complete">Penyiapan selesai</string>
     <string name="setup_welcome">Selamat datang</string>
     <string name="setup_locale">Bahasa</string>
     <string name="setup_wifi">Pilih Wi-Fi</string>
-    <string name="setup_sim_missing">SIM kartu hilang</string>
+    <string name="setup_sim_missing">Kartu SIM hilang</string>
     <string name="setup_choose_data_sim">Pilih SIM untuk Data</string>
     <string name="setup_location">Layanan lokasi</string>
     <string name="setup_other">Layanan lainnya</string>
@@ -52,7 +52,7 @@
     <string name="setup_services">Fitur LineageOS</string>
     <string name="services_find_privacy_policy">Anda dapat membaca kebijakan privasi di perangkat lainnya dengan mengunjungi <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="LineageOS">%s </xliff:g></string>
-    <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
+    <string name="services_os_nav_keys_label"><b>Gunakan tombol navigasi pada layar</b> bukan tombol perangkat keras.</string>
     <string name="settings_biometric_setup_title">Pilih tipe kunci layar cadangan</string>
     <string name="settings_biometric_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
     <string name="fingerprint_setup_title">Penyiapan sidik jari</string>
@@ -68,7 +68,7 @@
     <string name="settings_lockscreen_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
     <string name="lockscreen_setup_title" product="tablet">Lindungi tablet Anda</string>
     <string name="lockscreen_setup_title" product="default">Lindungi telepon anda</string>
-    <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
+    <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau kata sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
     <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
     <string name="intro_restore_button">Pulihkan dari cadangan</string>

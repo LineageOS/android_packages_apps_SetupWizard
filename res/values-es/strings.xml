@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@
     <string name="choose_data_sim_summary" product="tablet">¿Qué tarjeta SIM quieres utilizar para los datos? La tarjeta SIM seleccionada puede incurrir en cargos de red ya que se utilizará para configurar el tablet.</string>
     <string name="choose_data_sim_summary" product="default">¿Qué tarjeta SIM quieres utilizar para los datos? La tarjeta SIM seleccionada puede incurrir en cargos de red ya que se utilizará para configurar el teléfono.</string>
     <string name="date_time_summary">Configura la zona horaria y ajusta la fecha y hora actuales si es necesario</string>
-    <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tu localización actual y ubicaciones recientes.</string>
+    <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tus ubicaciones anteriores y la actual.</string>
     <string name="setup_mobile_data">Activar datos móviles</string>
     <string name="setup_mobile_data_no_service">Sin servicio</string>
     <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>

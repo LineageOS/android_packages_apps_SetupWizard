@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@
     <string name="setup_choose_data_sim">Tagh SIM airson dàta</string>
     <string name="setup_location">Seirbheisean ionaid</string>
     <string name="setup_other">Seirbheisean eile</string>
-    <string name="setup_datetime">Ceann-là ⁊ an t-àm</string>
+    <string name="setup_datetime">Ceann-là ⁊ àm</string>
     <string name="setup_current_date">An ceann-là an-diugh</string>
     <string name="setup_current_time">An t-àm làithreach</string>
     <string name="sim_missing_summary" product="tablet">Cha do mhothaich sinn do chairt SIM san tablaid agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
@@ -50,7 +50,10 @@
     <string name="emergency_call">Gairm-èiginn</string>
     <string name="accessibility_settings">Roghainnean na so-inntrigeachd</string>
     <string name="setup_services">Gleusan LineageOS</string>
+    <string name="services_pp_explanation">Leudaichidh na seirbheisean seo comasan an uidheim agad. Thèid an dàta a chleachdadh a-rèir poileasaidh prìobhaideachd <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">’S urrainn dhut am poileasaidh a leughadh air uidheam eile is tu a’ tadhal air <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu <xliff:g id="name" example="LineageOS">%2$s</xliff:g> gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ùra.</string>
     <string name="services_os_nav_keys_label"><b>Cleachd iuchraichean seòladaireachd air an sgrìn</b> seach iuchraichean bathair-chruaidh.</string>
     <string name="settings_biometric_setup_title">Tagh seòrsa dàrnach de ghlasadh na sgrìn</string>
     <string name="settings_biometric_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
@@ -70,6 +73,8 @@
     <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
     <string name="lockscreen_setup_screen_lock_setup">Suidhich</string>
     <string name="intro_restore_title">Aisig aplacaidean is dàta</string>
+    <string name="intro_restore_subtitle" product="tablet">Ma tha lethbhreac-glèidhidh on tablaid <xliff:g id="name" example="LineageOS">%s</xliff:g> mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
+    <string name="intro_restore_subtitle" product="default">Ma tha lethbhreac-glèidhidh on fhòn <xliff:g id="name" example="LineageOS">%s</xliff:g> mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
     <string name="intro_restore_button">Aisig o lethbhreac-glèidhidh</string>
     <string name="update_recovery_title">Ùraich aiseag Lineage</string>
     <string name="update_recovery_description">Ùraichidh seo aiseag Lineage air a’ chiad bhùtadh às dèidh gach ùrachadh.</string>
