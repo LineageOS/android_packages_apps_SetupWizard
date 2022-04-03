@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -50,7 +50,10 @@
     <string name="emergency_call">Chamada de emerxencia</string>
     <string name="accessibility_settings">Configuración da accesibilidade</string>
     <string name="setup_services">Actualizacións de LineageOS</string>
+    <string name="services_pp_explanation">Estes servizos serven para mellorar as capacidades do seu dispositivo. Os datos utilizaranse de acordo coa <xliff:g id="name" example="Politica de privacidade">%1$s</xliff:g> de LineageOS</string>
+    <string name="services_find_privacy_policy">Podes ler a política de privacidade noutro dispositivo visitando <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Axuda a mellorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Axuda a mellorar LineageOS">%1$s</xliff:g> enviando automaticamente diagnóstico e uso de datos a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta información non se pode utilizar para identificalo a vostede e acaba nas mans dos equipos que traballan en cousas como a duración da batería, rendemento das aplicacións e novas características de <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usar as teclas de navegación</b> en vez das do hardware.</string>
     <string name="settings_biometric_setup_title">Seleccione o tipo de copia de seguranza de pantalla de bloqueo</string>
     <string name="settings_biometric_setup_details">Como quere bloquear a súa pantalla?</string>
@@ -70,6 +73,8 @@
     <string name="lockscreen_setup_summary"><b>Protexe o dispositivo</b> e solicitar un PIN, patrón ou contrasinal para desbloquear a pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
     <string name="intro_restore_title">Restaurar aplicacións e datos</string>
+    <string name="intro_restore_subtitle" product="tablet">Se tes unha copia de seguridade da túa última tablet <xliff:g id="name" example="LineageOS">%s</xliff:g>, podes restaurala aquí.</string>
+    <string name="intro_restore_subtitle" product="default">Se tes unha copia de seguridade do teu último teléfono <xliff:g id="name" example="LineageOS">%s</xliff:g>, podes restaurala aquí.</string>
     <string name="intro_restore_button">Restaurar dende a copia de seguranza</string>
     <string name="update_recovery_title">Actualizar Recuperador de Lineage</string>
     <string name="update_recovery_description">Actualiza o Recuperador do Lineage no primeiro arranque despois de cada actualización.</string>

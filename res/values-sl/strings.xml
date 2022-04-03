@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -70,7 +70,7 @@
     <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="lockscreen_setup_title" product="tablet">Zaščitite vaš tablični računalnik</string>
     <string name="lockscreen_setup_title" product="default">Zaščitite vaš telefon</string>
-    <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in za odklep zaslona zahtevajte kodo PIN, vzorec ali geslo</string>
+    <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in zahtevajte kodo PIN, vzorec ali geslo za odklep zaslona</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
     <string name="intro_restore_title">Obnovi aplikacije in podatke</string>
     <string name="intro_restore_subtitle" product="tablet">Če imate varnostno kopijo iz vašega zadnjega <xliff:g id="name" example="LineageOS">%s</xliff:g> tabličnega računalnika, jo lahko obnovite tukaj.</string>

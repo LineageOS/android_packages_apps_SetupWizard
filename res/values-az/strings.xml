@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -53,6 +53,7 @@
     <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilənlər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
     <string name="services_find_privacy_policy">Gizlilik siyasətini fərqli cihazda <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> ünvanını ziyarət edərək oxuya bilərsiniz</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%2$s</xliff:g>-a diaqnostikanı və istifadə verilənlərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlar, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
     <string name="settings_biometric_setup_title">Ehtiyat ekran kilidi növünü seçin</string>
     <string name="settings_biometric_setup_details">Ekranınızı necə kilidləmək istərdiniz?</string>
@@ -72,6 +73,8 @@
     <string name="lockscreen_setup_summary"><b>Bu cihazı qoruyun</b> və ekran kilidini açmaq üçün PIN, forma və ya şifrəni tələb edin</string>
     <string name="lockscreen_setup_screen_lock_setup">Qur</string>
     <string name="intro_restore_title">Tətbiq və verilənləri bərpa edin</string>
+    <string name="intro_restore_subtitle" product="tablet">Son <xliff:g id="name" example="LineageOS">%s</xliff:g> planşetinizdə bir nüsxəniz varsa, burada geri yükləyə bilərsiniz.</string>
+    <string name="intro_restore_subtitle" product="default">Son <xliff:g id="name" example="LineageOS">%s</xliff:g> telefonunuzda bir nüsxəniz varsa, burada geri yükləyə bilərsiniz.</string>
     <string name="intro_restore_button">Nüsxədən bərpa et</string>
     <string name="update_recovery_title">Lineage Bərpa Rejimini Yenilə</string>
     <string name="update_recovery_description">Hər yeniləmədən sonrakı ilk açılışda Lineage Bərpa rejimini yeniləyər.</string>

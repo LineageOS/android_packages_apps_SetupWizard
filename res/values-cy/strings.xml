@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -48,8 +48,12 @@
     <string name="yes">Iawn</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Galwad brys</string>
+    <string name="accessibility_settings">Gosodiadau hygyrchedd</string>
     <string name="setup_services">Nodweddion LineageOS</string>
+    <string name="services_pp_explanation">Mae\'r gwasanaethau hyn yn gweithio i ti fedru ymestyn gallu dy ddyfais. Caiff data ei ddefnyddio yn ôl polisi preifatrwydd <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Gellir darllen y polisi preifatrwydd ar ddyfais arall wrth ymweld â <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Helpu i wella <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> wrth anfon gwybodaeth ddiagnostig a defnydd data at <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Ni fydd yn bosib defnyddio\'r wybodaeth i dy adnabod di ac mi fydd o help mawr i\'r timau sy\'n gweithio ar bethau fel gwella perfformiad apiau a bywyd batri a chreu nodweddion newydd yn <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Defnyddio bysellau llywio ar y sgrin</b> yn hytrach na botymau\'r ddyfais.</string>
     <string name="settings_biometric_setup_title">Dewis math o glo sgrin wrth gefn</string>
     <string name="settings_biometric_setup_details">Sut hoffet gloi dy sgrin?</string>
@@ -69,6 +73,11 @@
     <string name="lockscreen_setup_summary"><b>Diogela\'r ddyfais hon</b> gan osod PIN, patrwm, neu gyfrinair er mwyn datgloi\'r sgrin.</string>
     <string name="lockscreen_setup_screen_lock_setup">Gosod</string>
     <string name="intro_restore_title">Adfer apiau a data</string>
+    <string name="intro_restore_subtitle" product="tablet">Os oes gennyt gopi wrth gefn o dy lechen <xliff:g id="name" example="LineageOS">%s</xliff:g> diwethaf, gellir ei adfer fan hyn.</string>
+    <string name="intro_restore_subtitle" product="default">Os oes gennyt gopi wrth gefn o dy ffôn <xliff:g id="name" example="LineageOS">%s</xliff:g> diwethaf, gellir ei adfer fan hyn.</string>
     <string name="intro_restore_button">Adfer o gopi wrth gefn</string>
     <string name="update_recovery_title">Diweddaru Modd Adfer Lineage </string>
+    <string name="update_recovery_description">Yn diweddaru Adfer Lineage wrth y cychwyn cyntaf wedi pob diweddariad</string>
+    <string name="update_recovery_warning">Bydd yr Adfer yn cael ei ddiweddaru cyn gynted ag y byddi wedi cwblhau\'r gosod. Os hoffet ti ei gadw\'n gyfan, analluoga\'r nodwedd hon.</string>
+    <string name="update_recovery_setting">Diweddara Adfer Lineage cohr yn ochr â\'r OS</string>
 </resources>
