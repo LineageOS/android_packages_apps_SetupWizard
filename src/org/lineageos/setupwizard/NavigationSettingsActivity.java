@@ -131,6 +131,8 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private void revealHintCheckbox() {
+        mHideGesturalHint.animate().cancel();
+
         if (mHideGesturalHint.getVisibility() == View.VISIBLE) {
             return;
         }
