@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c09bb67_361e00ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21651
+      },
+      "writtenOn": "2022-04-13T10:35:46Z",
+      "side": 1,
+      "message": "Fixes the alarm icon in statusbar.",
+      "revId": "7ffdf8d12c12b5a29a4dd5f98ae7f7dc53a97580",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
