@@ -212,8 +212,8 @@ public class SetupWizardUtils {
         ContentResolver contentResolver = context.getContentResolver();
         Settings.Global.putInt(contentResolver,
                 Settings.Global.DEVICE_PROVISIONED, 1);
-        Settings.Secure.putIntForUser(contentResolver,
-                Settings.Secure.USER_SETUP_COMPLETE, 1, contentResolver.getUserId());
+        Settings.Secure.putInt(contentResolver,
+                Settings.Secure.USER_SETUP_COMPLETE, 1);
         if (hasLeanback(context)) {
             Settings.Secure.putInt(contentResolver,
                     Settings.Secure.TV_USER_SETUP_COMPLETE, 1);
