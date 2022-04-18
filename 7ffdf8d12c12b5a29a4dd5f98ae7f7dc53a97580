@@ -16,6 +16,23 @@
       "message": "Fixes the alarm icon in statusbar.",
       "revId": "7ffdf8d12c12b5a29a4dd5f98ae7f7dc53a97580",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3e0108a_9f862eae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-04-18T14:37:00Z",
+      "side": 1,
+      "message": "All occurances of the getter of this don\u0027t specify a user, which indicates that this is not required.\nAlso, looking at the putInt-method, it does the exact same thing as this change already:\nhttps://github.com/LineageOS/android_frameworks_base/blob/lineage-19.1/core/java/android/provider/Settings.java#L6155-L6164\n-\u003e \nputInt(cr, key, value) \u003d\u003d putIntAsUser(cr, key, value, cr.getUserId())",
+      "revId": "7ffdf8d12c12b5a29a4dd5f98ae7f7dc53a97580",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
