@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
-     Copyright (C) 2017-2021 The LineageOS Project
+     Copyright (C) 2017-2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -23,66 +23,83 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/welcome_content_container_padding_top">
-
-        <ImageView
-            android:id="@+id/brand_logo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:gravity="center"
-            android:scaleType="centerCrop"
-            android:src="@drawable/logo" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
-            style="@style/SudContentFrame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:id="@+id/brand_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:orientation="vertical"
-            android:paddingStart="@dimen/welcome_content_container_padding_start"
-            android:paddingEnd="@dimen/welcome_content_container_padding_end"
-            android:paddingBottom="@dimen/welcome_content_container_padding_bottom">
-
-            <TextView
-                style="@style/WelcomeTitle"
-                android:id="@+id/welcome_title"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:hyphenationFrequency="none"
-                android:paddingBottom="@dimen/welcome_content_container_padding_bottom" />
+            android:orientation="vertical">
 
             <LinearLayout
+                style="@style/SudContentFrame"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                android:focusableInTouchMode="true"
-                android:importantForAccessibility="no"
-                android:orientation="vertical">
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/welcome_content_container_padding_start"
+                android:paddingEnd="@dimen/welcome_content_container_padding_end"
+                android:paddingBottom="@dimen/welcome_content_container_padding_bottom">
 
-                <Button
-                    android:id="@+id/launch_accessibility"
-                    style="@style/SudGlifButton.Secondary"
+                <TextView
+                    style="@style/WelcomeTitle"
+                    android:id="@+id/welcome_title"
                     android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center_vertical"
-                    android:drawableStart="@drawable/ic_eye"
-                    android:gravity="start|center"
-                    android:drawablePadding="@dimen/welcome_content_container_padding_end"
-                    android:textSize="@dimen/welcome_accessibility_text_size"
-                    android:textColor="?android:textColorPrimary"
-                    android:text="@string/accessibility_settings" />
+                    android:layout_height="wrap_content"
+                    android:hyphenationFrequency="none"
+                    android:paddingBottom="@dimen/welcome_content_container_padding_bottom"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:focusableInTouchMode="true"
+                    android:importantForAccessibility="no"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/launch_accessibility"
+                        style="@style/SudGlifButton.Secondary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:drawableStart="@drawable/ic_eye"
+                        android:gravity="start|center"
+                        android:drawablePadding="@dimen/welcome_content_container_padding_end"
+                        android:textSize="@dimen/welcome_accessibility_text_size"
+                        android:textColor="?android:textColorPrimary"
+                        android:text="@string/accessibility_settings" />
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
