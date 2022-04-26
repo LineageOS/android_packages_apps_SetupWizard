@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "421b902e_c435150d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2022-04-26T12:46:04Z",
+      "side": 1,
+      "message": "Fixes overlapping of logo and text on nubia TP1803.",
+      "revId": "cf12c85d822a9a6729e9bb79386665556cae8506",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
