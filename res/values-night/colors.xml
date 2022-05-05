@@ -6,4 +6,6 @@
 <resources>
     <color name="page_background">@color/sud_glif_background_color_dark</color>
     <color name="accent">?attr/colorAccent</color>
+
+    <color name="divider">#40ffffff</color>
 </resources>
