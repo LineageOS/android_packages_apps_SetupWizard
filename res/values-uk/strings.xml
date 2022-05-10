@@ -63,4 +63,7 @@
     <string name="lockscreen_setup_title" product="default">Захистіть свій телефон</string>
     <string name="lockscreen_setup_summary"><b>Захистити цей пристрій</b> та запитувати PIN-код, графічний ключ або пароль для розблокування екрану</string>
     <string name="lockscreen_setup_screen_lock_setup">Налаштувати</string>
+    <string name="intro_restore_subtitle" product="tablet">Якщо маєте резервну копію з вашого останнього планшета під керуванням <xliff:g id="name" example="LineageOS">%s</xliff:g>, її можна відновити тут.</string>
+    <string name="intro_restore_subtitle" product="default">Якщо маєте резервну копію з вашого останнього телефона під керуванням <xliff:g id="name" example="LineageOS">%s</xliff:g>, її можна відновити тут.</string>
+    <string name="hide_gesture_hint">Ховати панель навігації жестами</string>
 </resources>

@@ -25,6 +25,7 @@
     <string name="loading">Doar o secundă\u2026</string>
     <string name="setup_complete">Configurarea este completă</string>
     <string name="setup_welcome">Bine ați venit</string>
+    <string name="setup_welcome_message">Bun venit la <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Limba</string>
     <string name="setup_wifi">Selectați Wi-Fi</string>
     <string name="setup_sim_missing">Lipsă card SIM</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Ajutați la îmbunătățirea <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> prin trimiterea automată a datelor de diagnosticare și utilizare la <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Aceste informații nu pot fi folosite pentru a te identifica și oferă o mână de ajutor echipelor care lucrează la lucruri precum durata bateriei, performanța aplicațiilor și noile caracteristici <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Utilizează tastele de navigare de pe ecran</b> în locul tastelor fizice.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Selectați tipul de blocare ecran de rezervă</string>
     <string name="settings_biometric_setup_details">Cum doriți să vă blocați ecranul?</string>
     <string name="fingerprint_setup_title">Configurare amprentă</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Actualizează Lineage Recovery la prima pornire după fiecare actualizare.</string>
     <string name="update_recovery_warning">Meniul de recuperare va fi actualizat imediat ce terminați configurarea. Dacă doriți să îl păstrați intact, dezactivați această caracteristică.</string>
     <string name="update_recovery_setting">Actualizați Lineage Recovery alături de OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigare</string>
+    <string name="navigation_summary">Alegeți metoda preferată de navigare</string>
+    <string name="gesture_navigation">Navigare prin gesturi</string>
+    <string name="two_button_navigation">Navigare cu 2 butoane</string>
+    <string name="navbar_navigation">Navigare cu 3 butoane</string>
+    <string name="hide_gesture_hint">Ascunde indiciile navigării gestuale</string>
 </resources>

@@ -25,6 +25,7 @@
     <string name="loading">Even geduld\u2026</string>
     <string name="setup_complete">Instellen voltooid</string>
     <string name="setup_welcome">Welkom</string>
+    <string name="setup_welcome_message">Welkom bij <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Taal</string>
     <string name="setup_wifi">Wifi selecteren</string>
     <string name="setup_sim_missing">Simkaart ontbreekt</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Help mee met het verbeteren van <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> door automatisch diagnose- en verbruiksgegevens te verzenden naar  <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Deze informatie kan niet gebruikt worden om u te identificeren en helpt de teams om te werken aan zaken zoals levensduur van de accu, app-prestaties en nieuwe <xliff:g id="name" example="LineageOS">%3$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>On-screen navigatieknoppen</b> gebruiken in plaats van de hardwareknoppen.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Back-up selecteren voor schermvergrendeling</string>
     <string name="settings_biometric_setup_details">Hoe wilt u uw scherm vergrendelen?</string>
     <string name="fingerprint_setup_title">Vingerafdruk instellen</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Lineage Recovery updaten bij de eerste start na elke update</string>
     <string name="update_recovery_warning">Recovery zal worden bijgewerkt zodra u de installatie hebt voltooid. Als u dit intact wilt houden, schakelt u deze functie uit.</string>
     <string name="update_recovery_setting">Update Lineage Recovery naast het besturingssysteem</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigatie</string>
+    <string name="navigation_summary">Kies de voorkeurs navigatie methode</string>
+    <string name="gesture_navigation">Navigatie met gebaren</string>
+    <string name="two_button_navigation">Navigatie met twee knoppen</string>
+    <string name="navbar_navigation">Navigatie met drie knoppen</string>
+    <string name="hide_gesture_hint">Verberg gebaren navigatiehint</string>
 </resources>

@@ -25,6 +25,7 @@
     <string name="loading">Just a sec\u2026</string>
     <string name="setup_complete">Setup is complete</string>
     <string name="setup_welcome">Welcome</string>
+    <string name="setup_welcome_message">Welcome to <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Language</string>
     <string name="setup_wifi">Select Wi-Fi</string>
     <string name="setup_sim_missing">SIM card missing</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%3$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Select backup screen lock type</string>
     <string name="settings_biometric_setup_details">How would you like to lock your screen?</string>
     <string name="fingerprint_setup_title">Fingerprint setup</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
     <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
     <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigation</string>
+    <string name="navigation_summary">Choose preferred navigation method</string>
+    <string name="gesture_navigation">Gesture navigation</string>
+    <string name="two_button_navigation">2-button navigation</string>
+    <string name="navbar_navigation">3-button navigation</string>
+    <string name="hide_gesture_hint">Hide gestural navigation hint</string>
 </resources>

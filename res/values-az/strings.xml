@@ -25,6 +25,7 @@
     <string name="loading">Bir saniyə\u2026</string>
     <string name="setup_complete">Quraşdırma tamamlandı</string>
     <string name="setup_welcome">Xoş gəldiniz</string>
+    <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> xoş gəldiniz</string>
     <string name="setup_locale">Dil</string>
     <string name="setup_wifi">Wi-Fi seçin</string>
     <string name="setup_sim_missing">SIM kart yoxdur</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
     <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%2$s</xliff:g>-a diaqnostikanı və istifadə verilənlərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlar, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Ehtiyat ekran kilidi növünü seçin</string>
     <string name="settings_biometric_setup_details">Ekranınızı necə kilidləmək istərdiniz?</string>
     <string name="fingerprint_setup_title">Barmaq izi quraşdırma</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Hər yeniləmədən sonrakı ilk açılışda Lineage Bərpa rejimini yeniləyər.</string>
     <string name="update_recovery_warning">Quraşdırma bitən kimi Bərpa rejimi yeniləcək. Sağlam qalmasını istəyirsinizsə, bu özəlliyi sıradan çıxardın.</string>
     <string name="update_recovery_setting">ƏS ilə birgə Lineage Bərpa rejimini də yeniləyin</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Hərəkət</string>
+    <string name="navigation_summary">Tərcih edilən naviqasiya metodunu seçin</string>
+    <string name="gesture_navigation">Jest hərəkəti</string>
+    <string name="two_button_navigation">2 düyməli hərəkət</string>
+    <string name="navbar_navigation">3 düyməli hərəkət</string>
+    <string name="hide_gesture_hint">Jestlə hərəkət məsləhətini gizlət</string>
 </resources>

@@ -55,12 +55,16 @@
     <string name="fingerprint_setup_title">Ajustes de huella digital</string>
     <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, deberás:</string>
     <string name="fingerprint_setup_add_fingerprint">Añadir tu huella digital</string>
+    <string name="face_setup_title">Configuración facial</string>
+    <string name="face_setup_add_face">Añadir cara</string>
     <string name="biometric_setup_backup_lock_method">Establecer un método secundario de desbloqueo</string>
     <string name="biometric_setup_screen_lock_setup">Configurar la pantalla bloqueada</string>
     <string name="sim_locale_changed">%1$s SIM detectada</string>
     <string name="settings_lockscreen_setup_title">Seleccione el tipo de bloqueo de pantalla</string>
     <string name="settings_lockscreen_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
+    <string name="lockscreen_setup_title" product="tablet">Protege tu tableta</string>
     <string name="lockscreen_setup_title" product="default">Protege el teléfono</string>
     <string name="lockscreen_setup_summary"><b>Proteger dispositivo</b> y solicitar PIN/patrón/contraseña para desbloquear pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
+    <string name="intro_restore_button">Restaurar desde copia de seguridad</string>
 </resources>

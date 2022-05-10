@@ -25,6 +25,7 @@
     <string name="loading">稍等片刻\u2026</string>
     <string name="setup_complete">设置完成</string>
     <string name="setup_welcome">欢迎</string>
+    <string name="setup_welcome_message">欢迎使用 <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">语言</string>
     <string name="setup_wifi">选择 Wi-Fi</string>
     <string name="setup_sim_missing">SIM 卡未找到</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">帮助改进 <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> 通过自动发送诊断和使用数据给 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="LineageOS">%3$s</xliff:g> 功能。</string>
     <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">选择备用屏幕锁定类型</string>
     <string name="settings_biometric_setup_details">您希望如何锁定您的屏幕？</string>
     <string name="fingerprint_setup_title">指纹设置</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">每次更新后在第一次启动时更新 Lineage 恢复。</string>
     <string name="update_recovery_warning">恢复程序将在您完成设置后立即更新。如果您想保持完整，请禁用此功能。</string>
     <string name="update_recovery_setting">与操作系统一起更新 Lineage 恢复</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">导航栏</string>
+    <string name="navigation_summary">选择导航栏方式</string>
+    <string name="gesture_navigation">手势导航</string>
+    <string name="two_button_navigation">“双按钮”导航</string>
+    <string name="navbar_navigation">“三按钮”导航</string>
+    <string name="hide_gesture_hint">隐藏手势导航栏</string>
 </resources>

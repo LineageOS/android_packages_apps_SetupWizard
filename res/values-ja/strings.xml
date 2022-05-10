@@ -25,6 +25,7 @@
     <string name="loading">しばらくお待ちください...</string>
     <string name="setup_complete">セットアップが完了しました</string>
     <string name="setup_welcome">ようこそ</string>
+    <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> へようこそ</string>
     <string name="setup_locale">言語</string>
     <string name="setup_wifi">Wi-Fiの選択</string>
     <string name="setup_sim_missing">SIMカードがありません</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>の改善に協力します</string>
     <string name="services_metrics_label">診断と使用状況データを自動的に <xliff:g id="name" example="LineageOS">%2$s</xliff:g>に送信して、<xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="LineageOS">%3$s</xliff:g> の新機能などへの取り組みに活用されます。</string>
     <string name="services_os_nav_keys_label">ハードウェアキーのかわりに<b>スクリーンナビゲーションキーを使用します</b>。</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">予備の画面のロックの種類を選択</string>
     <string name="settings_biometric_setup_details">どのように画面をロックしますか？</string>
     <string name="fingerprint_setup_title">指紋のセットアップ</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">毎回のアップデートの最初の起動時に Lineage Recovery をアップデートします</string>
     <string name="update_recovery_warning">設定が完了したらすぐにリカバリーがアップデートされます。そのまま維持したい場合は、この機能を無効にしてください。</string>
     <string name="update_recovery_setting">OS と一緒に Lineage Recovery をアップデートする</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">ナビゲーション</string>
+    <string name="navigation_summary">優先するナビゲーション方法を選択してください</string>
+    <string name="gesture_navigation">ジェスチャー ナビゲーション</string>
+    <string name="two_button_navigation">2 ボタン ナビゲーション</string>
+    <string name="navbar_navigation">3 ボタン ナビゲーション</string>
+    <string name="hide_gesture_hint">ナビゲーションヒントを隠す</string>
 </resources>

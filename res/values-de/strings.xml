@@ -25,6 +25,7 @@
     <string name="loading">Einen Moment\u2026</string>
     <string name="setup_complete">Einrichtung abgeschlossen</string>
     <string name="setup_welcome">Willkommen</string>
+    <string name="setup_welcome_message">Willkommen bei <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Sprache</string>
     <string name="setup_wifi">WLAN auswählen</string>
     <string name="setup_sim_missing">SIM-Karte fehlt</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Hilf <xliff:g id="name" example="LineageOS">%s</xliff:g> zu verbessern</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Hilf LineageOS zu verbessern">%1$s</xliff:g>, indem du automatisch Diagnose- und Nutzungsdaten an <xliff:g id="name" example="LineageOS">%2$s</xliff:g> sendest. Diese Informationen können nicht verwendet werden, um dich zu identifizieren und helfen den Teams, die an Dingen wie Akkulaufzeit, App-Leistung und neuen <xliff:g id="name" example="LineageOS">%3$s</xliff:g>-Funktionen arbeiten.</string>
     <string name="services_os_nav_keys_label"><b>Bildschirm-Navigationstasten</b> statt Hardwaretasten verwenden.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Wähle den Typ der Ersatz-Bildschirmsperre.</string>
     <string name="settings_biometric_setup_details">Wie möchtest du deinen Bildschirm sperren?</string>
     <string name="fingerprint_setup_title">Fingerabdruck einrichten</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Aktualisiert das Lineage-Recovery-Image beim ersten Start nach jedem Update.</string>
     <string name="update_recovery_warning">Das Recovery-Image wird aktualisiert, sobald du die Einrichtung abgeschlossen hast. Wenn es unverändert bleiben soll, deaktiviere diese Funktion.</string>
     <string name="update_recovery_setting">Lineage-Recovery zusammen mit dem Betriebssystem aktualisieren</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigation</string>
+    <string name="navigation_summary">Bevorzugte Steuerungsmethode auswählen</string>
+    <string name="gesture_navigation">Steuerung durch Gesten</string>
+    <string name="two_button_navigation">2-Tasten-Steuerung</string>
+    <string name="navbar_navigation">3-Tasten-Steuerung</string>
+    <string name="hide_gesture_hint">Gestensteuerungshinweis ausblenden</string>
 </resources>

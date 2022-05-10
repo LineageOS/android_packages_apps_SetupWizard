@@ -25,6 +25,7 @@
     <string name="loading">Секунду\u2026</string>
     <string name="setup_complete">Настройка завершена</string>
     <string name="setup_welcome">Добро пожаловать!</string>
+    <string name="setup_welcome_message">Добро пожаловать в <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Язык</string>
     <string name="setup_wifi">Выбрать сеть Wi-Fi</string>
     <string name="setup_sim_missing">Нет SIM-карты</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, разрешив отправку данных диагностики и использования в <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Эта информация не может быть использована для идентификации вашей личности и поможет в работе над повышением автономности, производительности и новыми возможностями <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Выберите запасной режим блокировки экрана</string>
     <string name="settings_biometric_setup_details">Как следует блокировать экран?</string>
     <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>
     <string name="update_recovery_warning">Recovery будет обновлен по завершении установки. Если вы хотите оставить его без изменений, отключите эту функцию.</string>
     <string name="update_recovery_setting">Обновить Lineage Recovery  вместе с ОС</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Навигация</string>
+    <string name="navigation_summary">Выберите предпочтительный метод навигации</string>
+    <string name="gesture_navigation">Навигация жестами</string>
+    <string name="two_button_navigation">Навигация двумя кнопками</string>
+    <string name="navbar_navigation">Навигация тремя кнопками</string>
+    <string name="hide_gesture_hint">Скрыть подсказку навигации жестами</string>
 </resources>

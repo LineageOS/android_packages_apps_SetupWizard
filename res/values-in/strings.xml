@@ -25,6 +25,7 @@
     <string name="loading">Harap tunggu\u2026</string>
     <string name="setup_complete">Penyiapan selesai</string>
     <string name="setup_welcome">Selamat datang</string>
+    <string name="setup_welcome_message">Selamat datang di <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Bahasa</string>
     <string name="setup_wifi">Pilih Wi-Fi</string>
     <string name="setup_sim_missing">Kartu SIM hilang</string>
@@ -52,7 +53,9 @@
     <string name="setup_services">Fitur LineageOS</string>
     <string name="services_find_privacy_policy">Anda dapat membaca kebijakan privasi di perangkat lainnya dengan mengunjungi <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="LineageOS">%s </xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> dengan mengirim  data diagnosa dan penggunaan ke <xliff:g id="name" example="LineageOS">%2$s</xliff:g> secara otomatis. Informasi tersebut tidak untuk mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja pada hal-hal seperti masa pakai baterai, performa aplikasi dan fitur-fitur <xliff:g id="name" example="LineageOS">%3$s</xliff:g> yang baru.</string>
     <string name="services_os_nav_keys_label"><b>Gunakan tombol navigasi pada layar</b> bukan tombol perangkat keras.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Pilih tipe kunci layar cadangan</string>
     <string name="settings_biometric_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
     <string name="fingerprint_setup_title">Penyiapan sidik jari</string>
@@ -71,5 +74,16 @@
     <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau kata sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
     <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
+    <string name="intro_restore_subtitle" product="tablet">Jika Anda memiliki pencadangan <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet Anda sebelumnya, Anda dapat memulihkannya di sini.</string>
+    <string name="intro_restore_subtitle" product="default">Jika Anda memiliki pencadangan <xliff:g id="name" example="LineageOS">%s</xliff:g> ponsel Anda sebelumnya, Anda dapat memulihkannya di sini.</string>
     <string name="intro_restore_button">Pulihkan dari cadangan</string>
+    <string name="update_recovery_title">Perbarui Lineage Recovery</string>
+    <string name="update_recovery_warning">Recovery akan diupdate segera setelah Anda menyelesaikan penyiapan. Jika Anda ingin menjaganya tetap utuh, nonaktifkan fitur ini.</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigasi</string>
+    <string name="navigation_summary">Pilih metode navigasi yang disukai</string>
+    <string name="gesture_navigation">Navigasi gestur</string>
+    <string name="two_button_navigation">Navigasi 2 tombol</string>
+    <string name="navbar_navigation">Navigasi 3 tombol</string>
+    <string name="hide_gesture_hint">Sembunyikan petunjuk navigasi gestur</string>
 </resources>

@@ -25,6 +25,7 @@
     <string name="loading">Samo trenutek \u2026</string>
     <string name="setup_complete">Namestitev je končana</string>
     <string name="setup_welcome">Dobrodošli</string>
+    <string name="setup_welcome_message">Dobrodošli v <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Jezik</string>
     <string name="setup_wifi">Izberite Wi-Fi</string>
     <string name="setup_sim_missing">Kartica SIM ni prisotna</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-u. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih <xliff:g id="name" example="LineageOS">%3$s</xliff:g> značilnosti.</string>
     <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Izberite nadomestni način zaklepanja zaslona</string>
     <string name="settings_biometric_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="fingerprint_setup_title">Nastavitev prstnega odtisa</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Posodobi obnovitev Lineage ob prvem zagonu vsake posodobitve.</string>
     <string name="update_recovery_warning">Obnovitev bo posodobljena takoj, ko zaključite namestitev. Če jo želite ohraniti nedotaknjeno, onemogočite to značilnost.</string>
     <string name="update_recovery_setting">Posodobi obnovitev Lineage poleg OS-a</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Krmarjenje</string>
+    <string name="navigation_summary">Izberite željeni način krmarjenja</string>
+    <string name="gesture_navigation">Krmarjenje s potezami</string>
+    <string name="two_button_navigation">Krmarjenje z dvema gumboma</string>
+    <string name="navbar_navigation">Krmarjenje s tremi gumbi</string>
+    <string name="hide_gesture_hint">Skrij namig krmarjenja</string>
 </resources>
