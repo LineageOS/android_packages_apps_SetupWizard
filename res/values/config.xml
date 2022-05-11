@@ -23,5 +23,11 @@
     <bool name="check_custom_theme_by_default">true</bool>
     <string name="wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script_user</string>
+
+    <!-- ATV related -->
     <bool name="config_isLargeNoTouch">false</bool>
+
+    <!-- ATV GMS partner settings -->
+    <bool name="show_skip_network">true</bool>
+    <bool name="show_skip_signin">true</bool>
 </resources>
