@@ -16,6 +16,24 @@
       "message": "Does not work as intended. Partner overlays are not being read by setupwraith.",
       "revId": "040a56e604d3464f72ed89202849cb4c0f688a7e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "493fac84_466c1255",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-05-11T23:55:59Z",
+      "side": 1,
+      "message": "it needs to be a standalone RRO",
+      "parentUuid": "4799a412_e6e4b290",
+      "revId": "040a56e604d3464f72ed89202849cb4c0f688a7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
