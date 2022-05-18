@@ -11,5 +11,6 @@
 
         <item name="sucUsePartnerResource">true</item>
         <item name="sudUsePartnerHeavyTheme">true</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
 </resources>

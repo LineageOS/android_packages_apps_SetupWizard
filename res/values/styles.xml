@@ -19,6 +19,7 @@
     <style name="Theme.Setup" parent="@style/SudFullDynamicColorThemeGlifV3.DayNight">
         <item name="sucUsePartnerResource">true</item>
         <item name="sudUsePartnerHeavyTheme">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="SpinnerItem">
