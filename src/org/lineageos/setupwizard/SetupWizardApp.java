@@ -17,10 +17,16 @@
 
 package org.lineageos.setupwizard;
 
+import static android.os.UserHandle.USER_CURRENT;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY;
+
 import android.app.Application;
 import android.app.StatusBarManager;
+import android.content.Context;
+import android.content.om.IOverlayManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.ServiceManager;
 import android.util.Log;
 
 import org.lineageos.setupwizard.util.NetworkMonitor;
@@ -97,6 +103,14 @@ public class SetupWizardApp extends Application {
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         SetupWizardUtils.setMobileDataEnabled(this, false);
         sStatusBarManager = SetupWizardUtils.disableStatusBar(this);
+        if (SetupWizardUtils.isPackageInstalled(this, NAV_BAR_MODE_GESTURAL_OVERLAY)) {
+            IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
+                    ServiceManager.getService(Context.OVERLAY_SERVICE));
+            try {
+                overlayManager.setEnabledExclusiveInCategory(NAV_BAR_MODE_GESTURAL_OVERLAY,
+                    USER_CURRENT);
+            } catch (Exception e) {}
+        }
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
     }
 
