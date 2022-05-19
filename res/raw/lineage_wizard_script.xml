@@ -36,6 +36,15 @@
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SIM_MISSING;end" id="sim_missing">
+        <result wizard:resultCode="1" wizard:action="network_setup" wizard:name="skip_sim" />
+        <result wizard:action="choose_data_sim" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_CHOOSE_DATA_SIM;end" id="choose_data_sim">
+        <result wizard:action="enable_mobile_data" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_ENABLE_MOBILE_DATA;end" id="enable_mobile_data">
         <result wizard:action="network_setup" />
     </WizardAction>
 
