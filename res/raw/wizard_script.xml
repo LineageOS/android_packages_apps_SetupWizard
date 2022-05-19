@@ -115,12 +115,12 @@
         <result wizard:action="lineage_settings" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETTINGS;end" id="lineage_settings">
-        <result wizard:action="navigation_settings" />
-    </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
         <result wizard:action="restore" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end" id="restore">
+        <result wizard:action="navigation_settings" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
         <result wizard:action="finish" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
