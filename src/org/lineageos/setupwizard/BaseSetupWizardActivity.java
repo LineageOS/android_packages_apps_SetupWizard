@@ -233,6 +233,19 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         return false;
     }
 
+    public void setSkipAllowed(boolean allowed) {
+        if (mNavigationBar != null) {
+            mNavigationBar.getSkipButton().setEnabled(allowed);
+        }
+    }
+
+    protected boolean isSkipAllowed() {
+        if (mNavigationBar != null) {
+            mNavigationBar.getSkipButton().isEnabled();
+        }
+        return false;
+    }
+
     protected void onNextPressed() {
         nextAction(NEXT_REQUEST);
     }
@@ -257,12 +270,25 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
     }
 
+    public Button getSkipButton() {
+        return mNavigationBar.getSkipButton();
+    }
+
     protected void hideNextButton() {
         if (mNavigationBar != null) {
             Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
             final Button next = mNavigationBar.getNextButton();
             next.startAnimation(fadeOut);
             next.setVisibility(INVISIBLE);
+        }
+    }
+
+    protected void hideSkipButton() {
+        if (mNavigationBar != null) {
+            Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+            final Button skip = mNavigationBar.getSkipButton();
+            skip.startAnimation(fadeOut);
+            skip.setVisibility(INVISIBLE);
         }
     }
 
