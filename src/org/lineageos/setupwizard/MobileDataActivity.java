@@ -19,6 +19,8 @@ package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.telephony.ServiceState;
@@ -29,14 +31,18 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.google.android.setupcompat.util.WizardManagerHelper;
+
 import org.lineageos.setupwizard.util.NetworkMonitor;
 import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
+
 
 public class MobileDataActivity extends BaseSetupWizardActivity {
 
@@ -57,6 +63,8 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
     private NetworkMonitor mNetworkMonitor;
 
     private boolean mIsAttached = false;
+    private boolean mIsWifiConnected = false;
+    private boolean isDataReady = false;
 
     private final Handler mHandler = new Handler();
 
@@ -140,12 +148,39 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
         }
     };
 
+    private final View.OnClickListener mEnableMobileDataForSetupClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (mEnableMobileData.isChecked() && getIsDataReady()) {
+                SetupWizardUtils.setProvisioningMobileDataEnabled(MobileDataActivity.this, true);
+            }
+        }
+    };
+
+    public boolean getIsDataReady() {
+        return isDataReady;
+    }
+
+    public void setDataReady(boolean dataReady) {
+        isDataReady = dataReady;
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPhoneMonitor = PhoneMonitor.getInstance();
         mNetworkMonitor = NetworkMonitor.getInstance();
-        setNextText(R.string.next);
+        mIsWifiConnected = mNetworkMonitor.isWifiConnected();
+        final TextView setupMobileDataSummary = (TextView) findViewById(
+                R.id.mobile_data_summary);
+        if (!mIsWifiConnected) {
+            setNextText(R.string.mobile_network_for_setup);
+            setSkipText(R.string.button_setup_offline);
+            setupMobileDataSummary.setText(getString(R.string.enable_mobile_data_setup_summary));
+        } else {
+            hideSkipButton();
+        }
 
         mProgressBar = (ProgressBar) findViewById(R.id.progress);
         mEnableDataRow = findViewById(R.id.data);
@@ -196,6 +231,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
             mProgressBar.startAnimation(
                     AnimationUtils.loadAnimation(this, R.anim.translucent_enter));
             mEnableDataRow.setEnabled(false);
+            setDataReady(false);
             setNextAllowed(false);
             mHandler.postDelayed(mDataConnectionReadyRunnable, DC_READY_TIMEOUT);
         }
@@ -209,6 +245,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
                     AnimationUtils.loadAnimation(this, R.anim.translucent_exit));
             mProgressBar.setVisibility(View.INVISIBLE);
             mEnableDataRow.setEnabled(true);
+            setDataReady(true);
             setNextAllowed(true);
         }
     }
@@ -298,6 +335,19 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
             retVal = false;
         }
         return retVal;
+    }
+
+    @Override
+    protected void onNextPressed() {
+        boolean checked = !mEnableMobileData.isChecked();
+        SetupWizardUtils.setMobileDataEnabled(MobileDataActivity.this, checked);
+        mEnableMobileData.setChecked(checked);
+        waitForData();
+        onDataStateReady();
+        if (!mIsWifiConnected) {
+            SetupWizardUtils.setProvisioningMobileDataEnabled(MobileDataActivity.this, true);
+        }
+        nextAction(NEXT_REQUEST);
     }
 
     @Override

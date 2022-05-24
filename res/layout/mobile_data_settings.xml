@@ -110,7 +110,8 @@
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:showSkipButton="true" />
 
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>

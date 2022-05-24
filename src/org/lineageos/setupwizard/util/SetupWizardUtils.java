@@ -323,7 +323,7 @@ public class SetupWizardUtils {
         if (!isMultiSimDevice() || singleSimInserted()) {
             disableComponent(context, ChooseDataSimActivity.class);
         }
-        if ((!hasWifi(context) && !hasTelephony(context)) || isEthernetConnected(context)) {
+        if (!hasWifi(context) || isEthernetConnected(context)) {
             disableComponent(context, NetworkSetupActivity.class);
         }
     }
