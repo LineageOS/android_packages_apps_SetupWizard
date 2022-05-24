@@ -46,8 +46,8 @@
 
     <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
     <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
-    <string name="choose_data_sim_summary" product="tablet">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your tablet.</string>
-    <string name="choose_data_sim_summary" product="default">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your phone.</string>
+    <string name="choose_data_sim_summary" product="tablet">Which SIM do you want to use for data? The selected SIM may incur network charges if it is used to set up your tablet.</string>
+    <string name="choose_data_sim_summary" product="default">Which SIM do you want to use for data? The selected SIM may incur network charges if it is used to set up your phone.</string>
 
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
 
@@ -56,7 +56,9 @@
     <string name="setup_mobile_data">Turn on cellular data</string>
     <string name="setup_mobile_data_no_service">No service</string>
     <string name="setup_mobile_data_emergency_only">Emergency calls only</string>
-    <string name="enable_mobile_data_summary">Do you want to use cellular data during setup? Turning on cellular data may be subject to data charges.</string>
+    <string name="enable_mobile_data_summary">Do you want to use cellular data? Turning on cellular data may be subject to data charges.</string>
+    <string name="enable_mobile_data_setup_summary">Do you want to use cellular data, including during setup? Turning on cellular data may be subject to data charges.</string>
+    <string name="mobile_network_for_setup">Use cellular data for setup</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
 
