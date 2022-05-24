@@ -22,6 +22,7 @@ import android.widget.ImageView;
 
 import com.google.android.setupcompat.util.ResultCodes;
 
+import org.lineageos.setupwizard.util.NetworkMonitor;
 import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -29,12 +30,19 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SimMissingActivity.class.getSimpleName();
 
+    private NetworkMonitor mNetworkMonitor;
     private PhoneMonitor mPhoneMonitor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
+        mNetworkMonitor = NetworkMonitor.getInstance();
+        if (!mNetworkMonitor.isWifiConnected()) {
+            setNextText(R.string.button_setup_offline);
+        } else {
+            setNextText(R.string.skip);
+        }
         mPhoneMonitor = PhoneMonitor.getInstance();
         if (!mPhoneMonitor.simMissing()) {
             finishAction(RESULT_OK);
