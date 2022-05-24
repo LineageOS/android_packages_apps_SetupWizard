@@ -41,6 +41,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0884848e_4e321ef4",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:47:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "23ccfb7c_f1158e3b",
+      "range": {
+        "startLine": 61,
+        "startChar": 44,
+        "endLine": 61,
+        "endChar": 69
+      },
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dad57a5d_ccadb3a5",
@@ -139,6 +163,24 @@
       "writtenOn": "2022-05-24T01:36:22Z",
       "side": 1,
       "message": "100 chars",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b34d84f_9a3627cb",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:47:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a8efd13_5326791e",
       "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
