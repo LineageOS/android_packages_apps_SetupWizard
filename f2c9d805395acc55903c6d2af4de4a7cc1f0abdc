@@ -20,6 +20,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "23ccfb7c_f1158e3b",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-05-24T01:36:22Z",
+      "side": 1,
+      "message": "Use cellular data for setup",
+      "range": {
+        "startLine": 61,
+        "startChar": 44,
+        "endLine": 61,
+        "endChar": 69
+      },
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dad57a5d_ccadb3a5",
         "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
         "patchSetId": 1
@@ -99,6 +122,23 @@
       "writtenOn": "2022-05-24T01:33:43Z",
       "side": 1,
       "message": "And this...",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a8efd13_5326791e",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-05-24T01:36:22Z",
+      "side": 1,
+      "message": "100 chars",
       "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
