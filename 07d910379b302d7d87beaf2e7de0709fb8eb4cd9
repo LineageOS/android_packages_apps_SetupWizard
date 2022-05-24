@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed51f1b0_8f707a99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-05-24T01:33:30Z",
+      "side": 1,
+      "message": "You shouldn\u0027t need this, you should be able to use app:showSkipButton",
+      "revId": "07d910379b302d7d87beaf2e7de0709fb8eb4cd9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
