@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb26c32b_04e4e9f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:33:43Z",
+      "side": 1,
+      "message": "I forgot some cleanup...",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dad57a5d_ccadb3a5",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:33:43Z",
+      "side": 1,
+      "message": "Pretty sure this can go away",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c8f2013_139e1359",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:33:43Z",
+      "side": 1,
+      "message": "This can go away too",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3eb039f0_ea27fa32",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:33:43Z",
+      "side": 1,
+      "message": "And this",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "736c18de_7069b3b7",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:33:43Z",
+      "side": 1,
+      "message": "And this...",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df6ea751_beba7092",
+        "filename": "src/org/lineageos/setupwizard/MobileDataActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2022-05-24T01:33:43Z",
+      "side": 1,
+      "message": "And this...",
+      "revId": "f2c9d805395acc55903c6d2af4de4a7cc1f0abdc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
