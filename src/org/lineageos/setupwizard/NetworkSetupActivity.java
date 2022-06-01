@@ -37,7 +37,9 @@ public class NetworkSetupActivity extends WrapperSubBaseActivity {
 
     @Override
     protected void onStartSubactivity() {
-        tryEnablingWifi();
+        if (SetupWizardUtils.isOwner()) {
+            tryEnablingWifi();
+        }
         Intent intent = new Intent(ACTION_SETUP_NETWORK);
         if (SetupWizardUtils.hasLeanback(this)) {
             intent.setComponent(SetupWizardUtils.sTvWifiSetupSettingsActivity);
