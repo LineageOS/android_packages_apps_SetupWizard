@@ -40,7 +40,9 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
         if (LOGV) {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
-        SetupWizardUtils.enableCaptivePortalDetection(this);
+        if (SetupWizardUtils.isOwner()) {
+            SetupWizardUtils.enableCaptivePortalDetection(this);
+        }
         PhoneMonitor.onSetupFinished();
         if (!getSystemService(UserManager.class).isManagedProfile()) {
             launchHome();
