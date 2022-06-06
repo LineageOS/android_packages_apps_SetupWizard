@@ -75,6 +75,7 @@ public class SetupWizardUtils {
 
     private static final String UPDATE_RECOVERY_EXEC = "/vendor/bin/install-recovery.sh";
     private static final String CONFIG_HIDE_RECOVERY_UPDATE = "config_hideRecoveryUpdate";
+    private static final String PROP_DISABLE_BLUETOOTH = "config.disable_bluetooth";
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
 
     private SetupWizardUtils() {
@@ -240,6 +241,10 @@ public class SetupWizardUtils {
         return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
     }
 
+    public static boolean isBluetoothDisabled() {
+        return SystemProperties.getBoolean(PROP_DISABLE_BLUETOOTH, false);
+    }
+
     public static boolean hasBiometric(Context context) {
         return hasFingerprint(context) || hasFace(context);
     }
@@ -279,7 +284,7 @@ public class SetupWizardUtils {
     }
 
     public static void disableComponentsForMissingFeatures(Context context) {
-        if (!hasLeanback(context)) {
+        if (!hasLeanback(context) || isBluetoothDisabled()) {
             disableComponent(context, BluetoothSetupActivity.class);
         }
         if (!hasBiometric(context)) {
