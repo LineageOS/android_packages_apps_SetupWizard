@@ -240,6 +240,11 @@ public class SetupWizardUtils {
         return packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK);
     }
 
+    public static boolean hasBluetooth(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        return packageManager.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH);
+    }
+
     public static boolean hasBiometric(Context context) {
         return hasFingerprint(context) || hasFace(context);
     }
@@ -279,7 +284,7 @@ public class SetupWizardUtils {
     }
 
     public static void disableComponentsForMissingFeatures(Context context) {
-        if (!hasLeanback(context)) {
+        if (!hasLeanback(context) || !hasBluetooth(context)) {
             disableComponent(context, BluetoothSetupActivity.class);
         }
         if (!hasBiometric(context)) {
