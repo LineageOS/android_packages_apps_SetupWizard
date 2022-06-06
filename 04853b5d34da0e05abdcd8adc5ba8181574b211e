@@ -16,6 +16,24 @@
       "message": "remove context",
       "revId": "04853b5d34da0e05abdcd8adc5ba8181574b211e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "06d7590b_5ad6ca8d",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 18796
+      },
+      "writtenOn": "2022-06-06T15:33:13Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "30b4ccd0_6bdebef5",
+      "revId": "04853b5d34da0e05abdcd8adc5ba8181574b211e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
