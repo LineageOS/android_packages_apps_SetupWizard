@@ -33,6 +33,24 @@
       "message": "Works but idk who else will use this new weird prop",
       "revId": "2af9f05f0df51beaae813a40d34bfd254fd25fba",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4532dc5a_ae5a1e47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-08T14:00:49Z",
+      "side": 1,
+      "message": "It\u0027s an AOSP property, so...",
+      "parentUuid": "ba174ac7_044828bf",
+      "revId": "2af9f05f0df51beaae813a40d34bfd254fd25fba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
