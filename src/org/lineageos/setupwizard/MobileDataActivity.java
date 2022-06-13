@@ -164,6 +164,7 @@ public class MobileDataActivity extends BaseSetupWizardActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SetupWizardUtils.setMobileDataEnabled(MobileDataActivity.this, false);
         mPhoneMonitor = PhoneMonitor.getInstance();
         mNetworkMonitor = NetworkMonitor.getInstance();
         mIsWifiConnected = mNetworkMonitor.isWifiConnected();
