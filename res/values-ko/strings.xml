@@ -20,10 +20,12 @@
     <string name="next">다음</string>
     <string name="skip">건너뛰기</string>
     <string name="start">시작</string>
+    <string name="done">완료</string>
     <string name="ok">확인</string>
     <string name="loading">잠시만 기다려주세요\u2026</string>
     <string name="setup_complete">설정 완료</string>
     <string name="setup_welcome">환영합니다</string>
+    <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g>에 오신 것을 환영합니다</string>
     <string name="setup_locale">언어</string>
     <string name="setup_wifi">Wi-Fi 연결</string>
     <string name="setup_sim_missing">SIM 카드 없음</string>
@@ -54,6 +56,7 @@
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> 의 개선을 돕기 위해</string>
     <string name="services_metrics_label"><xliff:g id="name" example="LineageOS의 개선을 돕기 위해">%1$s</xliff:g> 진단 및 사용 정보를 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>에 보냅니다. 이 정보로는 사용자를 식별할 수 없으며 <xliff:g id="name" example="LineageOS">%3$s</xliff:g>에 새로운 기능을 추가하거나 배터리 수명, 앱 성능을 개선하는 데 도움이 됩니다.</string>
     <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">백업 화면 잠금 방법 선택</string>
     <string name="settings_biometric_setup_details">화면을 어떻게 잠그시겠습니까?</string>
     <string name="fingerprint_setup_title">지문 설정</string>
@@ -65,6 +68,7 @@
     <string name="biometric_setup_backup_lock_method">보조 잠금 해제 방법 설정</string>
     <string name="biometric_setup_screen_lock_setup">화면 잠금 설정</string>
     <string name="sim_locale_changed">%1$s SIM 인식됨</string>
+    <string name="settings_lockscreen_setup_title">화면 잠금 방식 선택</string>
     <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
     <string name="lockscreen_setup_title" product="tablet">태블릿 보호</string>
     <string name="lockscreen_setup_title" product="default">휴대전화 보호</string>
@@ -78,4 +82,11 @@
     <string name="update_recovery_description">매 업데이트 적용 후 첫 부팅 시 Lineage 복구 모드를 업데이트합니다.</string>
     <string name="update_recovery_warning">설정을 마치면 복구 모드를 즉시 업데이트합니다. 원치 않는 경우 이 기능을 비활성화하세요.</string>
     <string name="update_recovery_setting">OS와 함께 Lineage 복구 모드 업데이트</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">탐색</string>
+    <string name="navigation_summary">마음에 드는 탐색 방법을 선택하세요</string>
+    <string name="gesture_navigation">제스처 탐색</string>
+    <string name="two_button_navigation">2버튼 탐색</string>
+    <string name="navbar_navigation">3버튼 탐색</string>
+    <string name="hide_gesture_hint">제스처 탐색 도움말 숨기기</string>
 </resources>

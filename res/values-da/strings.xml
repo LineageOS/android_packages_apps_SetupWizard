@@ -25,6 +25,7 @@
     <string name="loading">Lige et øjeblik\u2026</string>
     <string name="setup_complete">Opsætning er fuldført</string>
     <string name="setup_welcome">Velkommen</string>
+    <string name="setup_welcome_message">Velkommen til <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Sprog</string>
     <string name="setup_wifi">Vælg Wi-Fi</string>
     <string name="setup_sim_missing">SIM-kort mangler</string>
@@ -46,30 +47,46 @@
     <string name="enable_mobile_data_summary">Vil du bruge mobildata under opsætning? Aktivering af mobildata kan medføre dataudgifter.</string>
     <string name="no">Nej</string>
     <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Nødopkald</string>
     <string name="accessibility_settings">Hjælpefunktioner</string>
     <string name="setup_services">LineageOS-funktioner</string>
     <string name="services_pp_explanation">&lt;xliff:g id="name" example="LineageOS"&gt;Disse tjenester virker for at udvide funktionerne på din enhed. Data vil blive brugt i overensstemmelse med  &lt;xliff:g id="name" example="LineageOS"&gt;%1$s&lt;/xliff:g&gt;\'s privatlivspolitik.</string>
     <string name="services_find_privacy_policy">Du kan læse privatlivspolitikken på en anden enhed ved at besøge <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Hjælp med at forbedre <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ved automatisk at sende diagnose og forbrugsdata til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Denne information kan ikke bruge til at identificere dig men giver en hjælpende hånd til de hold der arbejder med batteri levetid, app præstation og nye<xliff:g id="name" example="LineageOS">%3$s</xliff:g> funktioner.</string>
     <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærm</b> i stedet for fysiske-taster.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Vælg sikkerheds-låseskærmtype</string>
     <string name="settings_biometric_setup_details">Hvordan vil du låse din skærm?</string>
     <string name="fingerprint_setup_title">Fingeraftryksopsætning</string>
     <string name="fingerprint_setup_summary">For at bruge din fingeraftryks-sensor til at låse din skærm op, er du nødt til at:</string>
     <string name="fingerprint_setup_add_fingerprint">Tilføj dit fingeraftryk</string>
+    <string name="face_setup_title">Ansigt opsætning</string>
+    <string name="face_setup_summary">For at bruge dit ansigt til at låse din skærm op, skal du:</string>
+    <string name="face_setup_add_face">Tilføj dit ansigt</string>
     <string name="biometric_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
     <string name="biometric_setup_screen_lock_setup">Indstil skærmlås</string>
     <string name="sim_locale_changed">%1$s SIM fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
+    <string name="lockscreen_setup_title" product="tablet">Beskyt din tablet</string>
     <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
     <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv en PIN, et mønster, eller en adgangskode, for at låse skærmen op</string>
     <string name="lockscreen_setup_screen_lock_setup">Opsætning</string>
+    <string name="intro_restore_title">Gendan apps og data</string>
     <string name="intro_restore_subtitle" product="tablet">Hvis du har en sikkerhedskopi fra din sidste <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, kan du gendanne den her.</string>
     <string name="intro_restore_subtitle" product="default">Hvis du har en sikkerhedskopi fra din sidste <xliff:g id="name" example="LineageOS">%s</xliff:g> telefon, kan du gendanne den her.</string>
+    <string name="intro_restore_button">Gendan fra backup</string>
     <string name="update_recovery_title">Opdater Lineage Genddanelse</string>
     <string name="update_recovery_description">Opdateringer Lineage Recovery ved første opstart efter hver opdatering.</string>
     <string name="update_recovery_warning">Gendannelse vil blive opdateret, så snart du er færdig med opsætningen. Hvis du ønsker at holde det intakt, skal du deaktivere denne funktion.</string>
     <string name="update_recovery_setting">Opdater Lineage Recovery sammen med OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigation</string>
+    <string name="navigation_summary">Vælg foretrukken navigationsmetode</string>
+    <string name="gesture_navigation">Navigering med bevægelser</string>
+    <string name="two_button_navigation">Navigering med to knapper</string>
+    <string name="navbar_navigation">Navigering med tre knapper</string>
+    <string name="hide_gesture_hint">Skjul bevægelses navigerings hint</string>
 </resources>

@@ -16,6 +16,33 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="next">Ɣer zdat</string>
+    <string name="skip">Zgel</string>
+    <string name="start">Bdu</string>
+    <string name="done">Immed</string>
+    <string name="ok">IH</string>
+    <string name="loading">Yiwet tasint kan\u2026</string>
+    <string name="setup_complete">Ifukk usbadu</string>
+    <string name="setup_welcome">Anṣuf</string>
+    <string name="setup_locale">Tutlayt</string>
+    <string name="setup_wifi">Fren Wi-Fi</string>
+    <string name="setup_sim_missing">Ulac takarḍa n SIM</string>
+    <string name="setup_choose_data_sim">Fren takarḍa n SIM i-ysefka</string>
+    <string name="setup_location">Imeẓla n wadigg</string>
+    <string name="setup_other">Imeẓla nniḍen</string>
+    <string name="setup_datetime">Azemz d wakud</string>
+    <string name="setup_current_date">Azemz amiran</string>
+    <string name="setup_current_time">Akud amiran</string>
+    <string name="setup_mobile_data">Rmed isefka izirazen</string>
+    <string name="setup_mobile_data_no_service">Ulac ameẓlu</string>
+    <string name="setup_mobile_data_emergency_only">Isawalen uɛjilen kan</string>
+    <string name="no">Ala</string>
+    <string name="yes">Ih</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="emergency_call">Isawalen uɛjilen</string>
+    <string name="setup_services">Timahilin n LineageOS</string>
+    <string name="services_help_improve_cm">Muddet afus ad innerni <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="settings_biometric_setup_details">Amek tebγiḍ ad tzekkwreḍ agdil-ik?</string>
     <string name="fingerprint_setup_title">Asbadu n udsil umḍin</string>
     <string name="fingerprint_setup_add_fingerprint">Rnu adsil umdin-ik</string>
     <string name="sim_locale_changed">SIM %1$s tella</string>

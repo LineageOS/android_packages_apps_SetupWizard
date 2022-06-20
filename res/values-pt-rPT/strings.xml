@@ -25,6 +25,7 @@
     <string name="loading">Um momento\u2026</string>
     <string name="setup_complete">A configuração está completa</string>
     <string name="setup_welcome">Bem-vindo</string>
+    <string name="setup_welcome_message">Bem-vindo a <xliff:g id="nome" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Idioma</string>
     <string name="setup_wifi">Selecionar rede Wi-Fi</string>
     <string name="setup_sim_missing">Falta o cartão SIM</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Ajude a melhorar a LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e o desenvolvimento de novas funcionalidades para <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Selecione o tipo de bloqueio do ecrã da cópia de segurança</string>
     <string name="settings_biometric_setup_details">Como gostaria de bloquear o seu ecrã?</string>
     <string name="fingerprint_setup_title">Configuração de impressão digital</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Atualiza a recuperação Lineage na primeira inicialização subsequente a cada atualização.</string>
     <string name="update_recovery_warning">A recuperação será atualizada assim que terminar a configuração. Se desejar mantê-la intacta, desative esta opção.</string>
     <string name="update_recovery_setting">Atualizar a recuperação Lineage aquando a atualização do SO</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navegação</string>
+    <string name="navigation_summary">Escolher método de navegação preferido</string>
+    <string name="gesture_navigation">Navegação por gestos</string>
+    <string name="two_button_navigation">Navegação com 2 botões</string>
+    <string name="navbar_navigation">Navegação com 3 botões</string>
+    <string name="hide_gesture_hint">Ocultar dica de navegação por gestos</string>
 </resources>

@@ -25,6 +25,7 @@
     <string name="loading">Solo un secondo\u2026</string>
     <string name="setup_complete">Setup completato</string>
     <string name="setup_welcome">Benvenuto</string>
+    <string name="setup_welcome_message">Benvenuto in <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Lingua</string>
     <string name="setup_wifi">Seleziona Wi-Fi</string>
     <string name="setup_sim_missing">Scheda SIM mancante</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Contribuisci a migliorare <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> inviando automaticamente dati diagnostici e di consumo agli svilupatori di <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Queste informazioni non possono essere utilizzate per identificare te ma danno una mano ai team che lavorano su cose come la durata della batteria, performance delle app e nuove funzioni di <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Seleziona la schermata di sicurezza di riserva</string>
     <string name="settings_biometric_setup_details">Come vuoi bloccare lo schermo?</string>
     <string name="fingerprint_setup_title">Setup impronte digitali</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Aggiorna la recovery Lineage al primo avvio successivo ad ogni aggiornamento.</string>
     <string name="update_recovery_warning">La recovery verrà aggiornata non appena terminerai la configurazione. Se desideri mantenerla intatta, disabilita questa funzione.</string>
     <string name="update_recovery_setting">Aggiorna la recovery Lineage insieme al sistema operativo</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigazione</string>
+    <string name="navigation_summary">Scegli il metodo di navigazione preferito</string>
+    <string name="gesture_navigation">Navigazione tramite gesti</string>
+    <string name="two_button_navigation">Navigazione con due pulsanti</string>
+    <string name="navbar_navigation">Navigazione con tre pulsanti</string>
+    <string name="hide_gesture_hint">Nascondi i suggerimenti per la navigazione tramite gesti</string>
 </resources>
