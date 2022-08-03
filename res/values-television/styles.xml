@@ -1,7 +1,6 @@
-<<<<<<< HEAD   (a67a71 Automatic translation import)
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021-2022 The LineageOS Project
+     Copyright (C) 2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,7 +15,5 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.Setup" parent="SudDynamicColorThemeGlifV3.DayNight" />
+    <style name="Theme.Setup" parent="SudThemeGlifV3.DayNight" />
 </resources>
-=======
->>>>>>> CHANGE (d8caec Use -television instead of -large-notouch for atv resources)

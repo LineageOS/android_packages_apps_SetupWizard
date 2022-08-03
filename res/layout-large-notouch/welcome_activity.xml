@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (a67a71 Automatic translation import)
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
@@ -93,3 +94,5 @@
 
     </LinearLayout>
 </LinearLayout>
+=======
+>>>>>>> CHANGE (d8caec Use -television instead of -large-notouch for atv resources)
