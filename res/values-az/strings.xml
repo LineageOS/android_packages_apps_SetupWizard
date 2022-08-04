@@ -29,7 +29,7 @@
     <string name="setup_locale">Dil</string>
     <string name="setup_wifi">Wi-Fi seçin</string>
     <string name="setup_sim_missing">SIM kart yoxdur</string>
-    <string name="setup_choose_data_sim">Verilənlər üçün bir SIM seçin</string>
+    <string name="setup_choose_data_sim">İnternet üçün bir SIM seçin</string>
     <string name="setup_location">Yerləşmə xidmətləri</string>
     <string name="setup_other">Digər xidmətlər</string>
     <string name="setup_datetime">Tarix &amp; vaxt</string>
@@ -37,14 +37,14 @@
     <string name="setup_current_time">Hazırki vaxt</string>
     <string name="sim_missing_summary" product="tablet">Planşetinizdə SIM kart aşkarlanmadı. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
     <string name="sim_missing_summary" product="default">Telefonunuzda SIM kart aşkarlanmadı. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
-    <string name="choose_data_sim_summary" product="tablet">Hansı SIM-i verilənlər üçün istifadə etmək istəyirsiz? Şəbəkə planşetinizin quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
-    <string name="choose_data_sim_summary" product="default">Hansı SIM-i verilənlər üçün istifadə etmək istəyirsiz? Şəbəkə telefonunuzun quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
+    <string name="choose_data_sim_summary" product="tablet">Hansı SIM-i internet üçün istifadə etmək istəyirsiz? Şəbəkə planşetinizin quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
+    <string name="choose_data_sim_summary" product="default">Hansı SIM-i internet üçün istifadə etmək istəyirsiz? Şəbəkə telefonunuzun quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırki tarix və saatı tənzimləyin</string>
     <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqetmələrə icazə ver.</b> Bu hazırki və keçmiş yerləşmənizi ehtiva edə bilər.</string>
-    <string name="setup_mobile_data">Hüceyrəvi verilənləri işə sal</string>
+    <string name="setup_mobile_data">Mobil interneti aç</string>
     <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
     <string name="setup_mobile_data_emergency_only">Yalnız fövqəladə vəziyyət zəngləri</string>
-    <string name="enable_mobile_data_summary">Quraşdırma vaxtı hüceyrəvi verilənlərdən istifadə etmək istəyirsiniz? Hüceyrəvi verilənləri işə salmaq əlavə xərclərə səbəb ola bilər.</string>
+    <string name="enable_mobile_data_summary">Quraşdırma vaxtı mobil interneti istifadə etmək istəyirsiniz? Mobil interneti açmaq əlavə xərclərə səbəb ola bilər.</string>
     <string name="no">Xeyr</string>
     <string name="yes">Bəli</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
@@ -72,16 +72,16 @@
     <string name="settings_lockscreen_setup_details">Ekranınızı necə kilidləmək istərdiniz?</string>
     <string name="lockscreen_setup_title" product="tablet">Planşetinizi qoruyun</string>
     <string name="lockscreen_setup_title" product="default">Telefonunuzu qoruyun</string>
-    <string name="lockscreen_setup_summary"><b>Bu cihazı qoruyun</b> və ekran kilidini açmaq üçün PIN, forma və ya şifrəni tələb edin</string>
+    <string name="lockscreen_setup_summary"><b>Bu cihazı qoruyun</b> və ekran kilidini açmaq üçün PIN, forma və ya parol tələb edin</string>
     <string name="lockscreen_setup_screen_lock_setup">Qur</string>
     <string name="intro_restore_title">Tətbiq və verilənləri bərpa edin</string>
     <string name="intro_restore_subtitle" product="tablet">Son <xliff:g id="name" example="LineageOS">%s</xliff:g> planşetinizdə bir nüsxəniz varsa, burada geri yükləyə bilərsiniz.</string>
     <string name="intro_restore_subtitle" product="default">Son <xliff:g id="name" example="LineageOS">%s</xliff:g> telefonunuzda bir nüsxəniz varsa, burada geri yükləyə bilərsiniz.</string>
     <string name="intro_restore_button">Nüsxədən bərpa et</string>
-    <string name="update_recovery_title">Lineage Bərpa Rejimini Yenilə</string>
-    <string name="update_recovery_description">Hər yeniləmədən sonrakı ilk açılışda Lineage Bərpa rejimini yeniləyər.</string>
-    <string name="update_recovery_warning">Quraşdırma bitən kimi Bərpa rejimi yeniləcək. Sağlam qalmasını istəyirsinizsə, bu özəlliyi sıradan çıxardın.</string>
-    <string name="update_recovery_setting">ƏS ilə birgə Lineage Bərpa rejimini də yeniləyin</string>
+    <string name="update_recovery_title">Lineage Bərpa Rejimini Güncəllə</string>
+    <string name="update_recovery_description">Hər güncəlləmədən sonrakı ilk açılışda Lineage Bərpa rejimini güncəlləyir.</string>
+    <string name="update_recovery_warning">Quraşdırma bitən kimi Bərpa rejimi güncəllənəcək. Sağlam qalmasını istəyirsinizsə, bu özəlliyi sıradan çıxardın.</string>
+    <string name="update_recovery_setting">ƏS ilə birgə Lineage Bərpa rejimini də güncəllə</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Hərəkət</string>
     <string name="navigation_summary">Tərcih edilən naviqasiya metodunu seçin</string>
