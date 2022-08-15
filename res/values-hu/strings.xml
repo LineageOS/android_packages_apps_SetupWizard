@@ -25,6 +25,7 @@
     <string name="loading">Csak egy pillanat\u2026</string>
     <string name="setup_complete">Beállítás kész</string>
     <string name="setup_welcome">Üdvözöljük</string>
+    <string name="setup_welcome_message">Legyen üdvözölve a <xliff:g id="name" example="LineageOS">%1$s</xliff:g> rendszerben</string>
     <string name="setup_locale">Nyelv</string>
     <string name="setup_wifi">Wi-Fi kiválasztása</string>
     <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>, segítsen a fejlesztésében</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatikus diagnosztikai és használati adatok küldésével segíthet a <xliff:g id="name" example="LineageOS">%2$s</xliff:g> fejlesztőinek. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="LineageOS">%3$s</xliff:g> funkciók fejlesztésében.</string>
     <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Válasszon másodlagos feloldási módot</string>
     <string name="settings_biometric_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
     <string name="fingerprint_setup_title">Ujjlenyomat beállítások</string>
@@ -80,4 +82,5 @@
     <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
     <string name="update_recovery_warning">A Recovery frissítésre kerül, amint befejeződött a telepítést. Ha érintetlenül akarja hagyni, tiltsa le ezt a funkciót.</string>
     <string name="update_recovery_setting">A Lineage Recovery frissítése az operációs rendszer mellett</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
 </resources>
