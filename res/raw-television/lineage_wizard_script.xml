@@ -28,10 +28,10 @@
         <result wizard:action="locale" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCALE;end" id="locale">
-        <result wizard:action="wifi_setup" />
+        <result wizard:action="network_setup" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WIFI_SETUP;end" id="wifi_setup">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end" id="network_setup">
         <result wizard:action="device_specific" />
     </WizardAction>
 
