@@ -46,8 +46,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = LineageSettingsActivity.class.getSimpleName();
 
-    public static final String PRIVACY_POLICY_URI = "https://lineageos.org/legal";
-
     private SetupWizardApp mSetupWizardApp;
 
     private CheckBox mMetrics;
@@ -75,7 +73,8 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
         String os_name = getString(R.string.os_name);
         String privacyPolicy = getString(R.string.services_pp_explanation, os_name);
-        String policySummary = getString(R.string.services_find_privacy_policy, PRIVACY_POLICY_URI);
+        String privacyPolicyUri = getString(R.string.services_privacy_policy_uri);
+        String policySummary = getString(R.string.services_find_privacy_policy, privacyPolicyUri);
         String servicesFullDescription = getString(R.string.services_full_description,
                 privacyPolicy, policySummary);
         getGlifLayout().setDescriptionText(servicesFullDescription);
