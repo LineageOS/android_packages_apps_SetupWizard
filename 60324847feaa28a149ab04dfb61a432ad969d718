@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa9102c2_af92ed7f",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-10-20T16:28:09Z",
+      "side": 1,
+      "message": "We should probably make this reference os_name string as well, like the other strings below.",
+      "range": {
+        "startLine": 68,
+        "startChar": 18,
+        "endLine": 68,
+        "endChar": 32
+      },
+      "revId": "60324847feaa28a149ab04dfb61a432ad969d718",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
