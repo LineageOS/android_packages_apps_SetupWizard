@@ -88,7 +88,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected boolean mIsExiting = false;
     private final boolean mIsFirstRun = true;
     protected boolean mIsGoingBack = false;
-    private boolean mIsPrimaryUser;
     protected int mResultCode = 0;
     private Intent mResultData;
 
@@ -112,7 +111,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
         super.onCreate(savedInstanceState);
         registerReceiver(finishReceiver, new IntentFilter(ACTION_SETUP_COMPLETE));
-        mIsPrimaryUser = UserHandle.myUserId() == 0;
         initLayout();
         mNavigationBar = getNavigationBar();
         if (mNavigationBar != null) {
@@ -518,10 +516,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected boolean isFirstRun() {
         return mIsFirstRun;
-    }
-
-    protected boolean isPrimaryUser() {
-        return mIsPrimaryUser;
     }
 
     public boolean hasMultipleUsers() {
