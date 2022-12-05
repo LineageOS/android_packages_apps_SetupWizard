@@ -124,7 +124,9 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             logActivityState("onStart");
         }
         super.onStart();
-        exitIfSetupComplete();
+        if (!SetupWizardUtils.isManagedProfile(this)) {
+            exitIfSetupComplete();
+        }
     }
 
     @Override
