@@ -25,8 +25,8 @@
     <string name="setup_complete">Налада завершана</string>
     <string name="setup_welcome">Вітаем</string>
     <string name="setup_wifi">Выбраць сетку Wi-Fi</string>
-    <string name="setup_sim_missing">SIM-карта адсутнічае</string>
-    <string name="setup_choose_data_sim">Абярыце SIM-карту для перадачы дадзеных</string>
+    <string name="setup_sim_missing">SIM-картка адсутнічае</string>
+    <string name="setup_choose_data_sim">Выберыце SIM-картку для перадачы даных</string>
     <string name="setup_location">Службы месцазнаходжання</string>
     <string name="setup_other">Іншыя службы</string>
     <string name="setup_datetime">Дата і час</string>
@@ -34,10 +34,9 @@
     <string name="setup_current_time">Бягучы час</string>
     <string name="date_time_summary">Пры неабходнасці задайце часавы пояс і адкарэкціруйце бягучую дату і час</string>
     <string name="location_access_summary"><b>Дазволіць праграмам, якія запыталі ваш дазвол</b> выкарыстоўваць інфармацыю вашага месцазнаходжання. Гэта можа ўключаць ваша бягучыя і папярэднія месцазнаходжанні.</string>
-    <string name="setup_mobile_data">Падлучыць мабільны трафік</string>
     <string name="setup_mobile_data_no_service">Няма сеткі</string>
-    <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
-    <string name="enable_mobile_data_summary">Вы хочаце выкарыстоўваць сотавую перадачу даных падчас наладкі? Уключэнне сотавай перадачы даных можа спаганяць плату.</string>
+    <string name="setup_mobile_data_emergency_only">Толькі экстранныя выклікі</string>
+    <string name="enable_mobile_data_summary">Вы сапраўды хочаце выкарыстоўваць перадачу даных праз сотавую сетку падчас наладжвання? Уключэнне перадачы даных праз сотавую сетку можа стаць прычынай дадатковай платы.</string>
     <string name="no">Не</string>
     <string name="yes">Так</string>
     <string name="emergency_call">Экстранны выклік</string>
@@ -45,10 +44,8 @@
     <string name="settings_biometric_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
     <string name="settings_biometric_setup_details">Выберыце спосаб блакавання экрана.</string>
     <string name="fingerprint_setup_title">Налада адбіткаў пальцаў</string>
-    <string name="fingerprint_setup_summary">Каб скарыстаць сканар адбіткаў пальцаў для разблакоўкі экрана, трэба:</string>
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
     <string name="biometric_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
     <string name="biometric_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
-    <string name="sim_locale_changed">Выяўлена %1$s картка SIM</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакавання экрана.</string>
 </resources>
