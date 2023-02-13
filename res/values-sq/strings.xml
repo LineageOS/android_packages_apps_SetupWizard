@@ -54,7 +54,7 @@
     <string name="services_pp_explanation">Këto shërbime punojnë për ju për të zgjeruar aftësitë e pajisjes tuaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="LineageOS">%1$s</xliff:g> politikës së privatësisë</string>
     <string name="services_find_privacy_policy">Ju mund të lexoni politikën e privatësisë në një pajisje tjetër duke vizituar  <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Ndihmo në përmirësimin e <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label">&lt;xliff:g id="name" example="Ndihmoni në përmirësimin e LineageOS"&gt;%1$s&lt;/xliff:g&gt; duke dërguar automatikisht të dhëna diagnostikuese dhe të përdorimit te &lt;xliff:g id="name" example="LineageOS"&gt; %2$s&lt;/xliff:g&gt;. Ky informacion nuk mund të përdoret për të të identifikuar ty dhe u jep ndihmë ekipeve që punojnë në gjëra të tilla si jetëgjatësia e baterisë, performanca e aplikacionit dhe &lt;xliff:g id="name" example="LineageOS"&gt;%3$s&lt;/xliff :g&gt; veçoritë.</string>
+    <string name="services_metrics_label">&lt;xliff:g id="name" example="Ndihmoni në përmirësimin e LineageOS&gt;%1$s&lt;/xliff:g&gt; duke dërguar automatikisht të dhënat diagnostikuese dhe të përdorimit te &lt;xliff:g id="name" example="LineageOS"&gt;%2$s&lt;/xliff:g&gt;. Ky informacion nuk mund të përdoret për të të identifikuar ty dhe u jep ndihmë ekipeve që punojnë për gjëra të tilla si jetëgjatësia e baterisë, performanca e aplikacionit dhe të reja &lt;xliff:g id="name" example="LineageOS"&gt;%3$s&lt;/xliff:g&gt; veçoritë.</string>
     <string name="services_os_nav_keys_label"><b>Përdor butonat virtualë të lundrimit</b> në vend të butonave fizikë.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Zgjidh mënyrën rezervë të bllokimit të ekranit</string>
@@ -75,7 +75,7 @@
     <string name="lockscreen_setup_summary"><b>Mbro këtë pajisje</b> dhe vendos një PIN, model, ose fjalëkalim për të zhbllokuar ekranin</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguro</string>
     <string name="intro_restore_title">Rikthe aplikacionet dhe të dhënat</string>
-    <string name="intro_restore_subtitle" product="tablet">Nëse keni një kopje rezervë nga tableti juaj i fundit <xliff:g id="name" example="LineageOS">%s</xliff:g>, mund ta rivendosni këtu.</string>
+    <string name="intro_restore_subtitle" product="tablet">Nëse keni një kopje rezervë nga tableti juaj i fundit <xliff:g id="name" example="LineageOS">%s</xliff:g> mund ta rivendosni këtu.</string>
     <string name="intro_restore_subtitle" product="default">Nëse keni një kopje rezervë nga tableti juaj i fundit <xliff:g id="name" example="LineageOS">%s</xliff:g>, mund ta rivendosni këtu.</string>
     <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
     <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>

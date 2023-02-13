@@ -83,4 +83,10 @@
     <string name="update_recovery_warning">A Recovery frissítésre kerül, amint befejeződött a telepítést. Ha érintetlenül akarja hagyni, tiltsa le ezt a funkciót.</string>
     <string name="update_recovery_setting">A Lineage Recovery frissítése az operációs rendszer mellett</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigáció</string>
+    <string name="navigation_summary">Itt választhatja ki a kívánt navigációs módot</string>
+    <string name="gesture_navigation">Navigáció kézmozdulatokkal</string>
+    <string name="two_button_navigation">Kétgombos navigáció</string>
+    <string name="navbar_navigation">Háromgombos navigáció</string>
+    <string name="hide_gesture_hint">Mozdulatvezérlési navigációs-célsáv elrejtése</string>
 </resources>
