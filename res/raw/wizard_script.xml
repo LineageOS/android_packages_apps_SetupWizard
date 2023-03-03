@@ -78,13 +78,29 @@
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_connect_and_update_flow" id="connect_and_update">
         <result wizard:action="no_network_flow" wizard:name="no_connection" wizard:resultCode="1" />
     </WizardAction>
-    <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_zero_touch_flow" id="zero_touch">
-        <result wizard:action="post_dpm_user_flow" wizard:name="dpm_user_complete" wizard:resultCode="111" />
-        <result wizard:action="add_personal_account_after_work_profile" wizard:name="add_personal_account_after_work_profile" wizard:resultCode="120" />
-        <result wizard:action="setup_as_new_flow" wizard:name="financed_device_provisioning_complete" wizard:resultCode="121" />
-        <result wizard:action="work_profile_setup" wizard:name="work_profile_setup" wizard:resultCode="122" />
-        <result wizard:action="post_dpm_user_flow" wizard:name="device_owner_setup" wizard:resultCode="123" />
-        <result wizard:action="setup_as_new_flow" wizard:name="gmscore_zero_touch" wizard:resultCode="116" />
+    <!-- Zero touch provisioning (for enterprise). This feature depends on Android Checkin and Early update. Place this action after Android Checkin and Early update, but before restore. [REQUIRED]. -->
+    <WizardAction id="zero_touch"
+        wizard:script="android.resource://org.lineageos.setupwizard/raw/wizard_script_zero_touch_flow" >
+        <result wizard:name="dpm_user_complete"
+            wizard:resultCode="111"
+            wizard:action="post_dpm_user_flow" />
+        <!-- The restore flow would be set to cloud for COPE devices if the result code returned the adding personal account. -->
+        <result wizard:name="add_personal_account_after_work_profile"
+            wizard:resultCode="120"
+            wizard:action="add_personal_account_after_work_profile" />
+        <result wizard:name="financed_device_provisioning_complete"
+            wizard:resultCode="121"
+            wizard:action="setup_as_new_flow" />
+        <result wizard:name="work_profile_setup"
+            wizard:resultCode="122"
+            wizard:action="work_profile_setup" />
+        <result wizard:name="device_owner_setup"
+            wizard:resultCode="123"
+            wizard:action="post_dpm_user_flow" />
+        <!-- GmsCore will handle ZeroTouch. Go to setup_as_new flow, it will handle ZeroTouch and FRP -->
+        <result wizard:name="gmscore_zero_touch"
+            wizard:resultCode="116"
+            wizard:action="setup_as_new_flow"/>
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_unified_restore_flow" id="unified_restore_flow">
         <result wizard:action="oem_post_setup" />
