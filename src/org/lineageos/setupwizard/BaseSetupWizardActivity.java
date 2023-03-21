@@ -259,9 +259,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
 
     protected void hideNextButton() {
         if (mNavigationBar != null) {
-            Animation fadeOut = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
             final Button next = mNavigationBar.getNextButton();
-            next.startAnimation(fadeOut);
             next.setVisibility(INVISIBLE);
         }
     }
