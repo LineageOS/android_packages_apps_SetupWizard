@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1debab2b_0fe5142c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19282
+      },
+      "writtenOn": "2023-03-21T19:00:09Z",
+      "side": 1,
+      "message": "mike linked me to this: https://review.lineageos.org/c/LineageOS/android_packages_apps_SetupWizard/+/315193\n\nwas this done to prevent pressing anything while animating?",
+      "revId": "39d111583f6c4d03ba147ce87a1a64e71c84f88c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
