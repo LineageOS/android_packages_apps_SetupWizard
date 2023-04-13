@@ -16,6 +16,23 @@
       "message": "Ran through the SetupWizard multiple times in the last month, with and without, and did not notice any issues while fixing the annoying jump, which for some reason really bothers me.",
       "revId": "c502efee5bf4c410c03022d872a18ad5be1c434c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e676556_d08498b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-04-13T23:52:56Z",
+      "side": 1,
+      "message": "Let me restate it, I am really against \"optional\" signing options - either include them in the default instructions or don\u0027t please.",
+      "revId": "c502efee5bf4c410c03022d872a18ad5be1c434c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
