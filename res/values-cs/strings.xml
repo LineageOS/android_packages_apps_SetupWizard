@@ -25,6 +25,7 @@
     <string name="loading">Jen chvilku\u2026</string>
     <string name="setup_complete">Instalace je dokončena</string>
     <string name="setup_welcome">Vítejte</string>
+    <string name="setup_welcome_message">Vítejte v\u00a0<xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Jazyk</string>
     <string name="setup_wifi">Vyberte Wi\u2011Fi</string>
     <string name="setup_sim_missing">Chybí karta SIM</string>
@@ -48,9 +49,14 @@
     <string name="yes">Ano</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Tísňové volání</string>
+    <string name="accessibility_settings">Nastavení přístupnosti</string>
     <string name="setup_services">LineageOS funkce</string>
+    <string name="services_pp_explanation">Tyto služby rozšiřují funkce vašeho zařízení. Data budou použita v souladu se zásadami ochrany osobních údajů <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Zásady ochrany osobních údajů si můžete přečíst na jiném zařízení navštívením odkazu <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Pomozte vylepšit <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Pomozte vylepšit LineageOS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových funkcí pro <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Vyberte záložní typ zámku obrazovky</string>
     <string name="settings_biometric_setup_details">Jak chcete zamykat obrazovku?</string>
     <string name="fingerprint_setup_title">Nastavení otisku prstu</string>
@@ -69,9 +75,18 @@
     <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavit</string>
     <string name="intro_restore_title">Obnovit aplikace a\u00a0data</string>
+    <string name="intro_restore_subtitle" product="tablet">Pokud máte zálohu z předešlého tabletu <xliff:g id="name" example="LineageOS">%s</xliff:g> , můžete ji obnovit zde.</string>
+    <string name="intro_restore_subtitle" product="default">Pokud máte zálohu z předešlého telefonu <xliff:g id="name" example="LineageOS">%s</xliff:g> , můžete ji obnovit zde.</string>
     <string name="intro_restore_button">Obnovit ze zálohy</string>
     <string name="update_recovery_title">Aktualizovat Lineage recovery</string>
     <string name="update_recovery_description">Aktualizace Lineage recovery při prvním spuštění po každé aktualizaci</string>
     <string name="update_recovery_warning">Oddíl recovery bude aktualizován ihned poté, co dokončíte nastavení. Vypněte tuto funkci, jestliže si přejete ponechat oddíl nezměněný.</string>
     <string name="update_recovery_setting">Aktualizovat Lineage recovery společně s OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigace</string>
+    <string name="navigation_summary">Zvolte preferovanou metodu navigace</string>
+    <string name="gesture_navigation">Ovládání gesty</string>
+    <string name="two_button_navigation">Navigace dvěma tlačítky</string>
+    <string name="navbar_navigation">Navigace třemi tlačítky</string>
+    <string name="hide_gesture_hint">Skrýt napovědy navigačních gest</string>
 </resources>

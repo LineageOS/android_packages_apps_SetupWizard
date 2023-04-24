@@ -42,7 +42,7 @@
     <string name="yes">Sí</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Llamada d\'emerxencia</string>
-    <string name="accessibility_settings">Axustes de l\'accesibilidá</string>
+    <string name="accessibility_settings">Configuración de l\'accesibilidá</string>
     <string name="setup_services">Funciones de LineageOS</string>
     <string name="services_pp_explanation">Estos servicios funcionen p\'aumentar les funciones del preséu. Los datos van usase d\'acuerdu cola política de privacidá de <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="services_find_privacy_policy">Pues lleer la política de privacidá n\'otru preséu pente la visita a <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
