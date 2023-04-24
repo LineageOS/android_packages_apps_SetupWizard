@@ -49,8 +49,12 @@
     <string name="enable_mobile_data_summary">Bạn có muốn sử dụng dữ liệu di động trong lúc thiết lập? Bật dữ liệu di động có thể phải chịu phí dữ liệu.</string>
     <string name="no">Không</string>
     <string name="yes">Có</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Cuộc gọi khẩn cấp</string>
+    <string name="accessibility_settings">Cài đặt trợ năng</string>
     <string name="setup_services">Các tính năng LineageOS</string>
+    <string name="services_pp_explanation">Các dịch vụ này giúp bạn mở rộng khả năng của thiết bị. Dữ liệu sẽ được sử dụng theo chính sách bảo mật của <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Bạn có thể đọc chính sách bảo mật trên một thiết bị khác bằng cách truy cập <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu chẩn đoán và sử dụng đến LineageOS. Thông tin này không được sử dụng để nhận dạng bạn và giúp nhóm thực hiện những thứ như thời lượng pin, hiệu suất ứng dụng và các tính năng <xliff:g id="name" example="LineageOS">%2$s</xliff:g> mới.</string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
@@ -63,12 +67,24 @@
     <string name="fingerprint_setup_title">Thiết lập vân tay</string>
     <string name="fingerprint_setup_summary">Để sử dụng cảm biến vân tay của bạn để mở khóa màn hình của bạn, bạn sẽ cần phải:</string>
     <string name="fingerprint_setup_add_fingerprint">Thêm vân tay của bạn</string>
+    <string name="face_setup_title">Thiết lập khuôn mặt</string>
+    <string name="face_setup_summary">Để sử dụng mở khóa bằng khuôn mặt, bạn cần phải:</string>
+    <string name="face_setup_add_face">Thêm khuôn mặt của bạn</string>
     <string name="biometric_setup_backup_lock_method">Thiết lập phương thức mở khóa phụ</string>
     <string name="biometric_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
     <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Chọn kiểu khóa màn hình</string>
     <string name="settings_lockscreen_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
+    <string name="lockscreen_setup_title" product="tablet">Bảo vệ máy tính bảng của bạn</string>
     <string name="lockscreen_setup_title" product="default">Bảo vệ điện thoại của bạn</string>
     <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
     <string name="lockscreen_setup_screen_lock_setup">Thiết lập</string>
+    <string name="intro_restore_title">Khôi phục Sao lưu</string>
+    <string name="intro_restore_subtitle" product="tablet">Nếu bạn có bản sao lưu gần đây nhất từ máy tính bảng sử dụng LineageOS, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_subtitle" product="default">Nếu bạn có bản sao lưu gần đây nhất từ điện thoại sử dụng LineageOS, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_button">Khôi phục từ bản sao lưu</string>
+    <string name="update_recovery_title">Cập nhật Lineage Recovery</string>
+    <string name="update_recovery_description">Cập nhật Lineage Recovery khi bật máy lần đầu sau mỗi bản cập nhật.</string>
+    <string name="update_recovery_warning">Recovery sẽ được cập nhật sau khi bạn hoàn thành cài đặt. Nếu bạn muốn giữ nguyên, hãy tắt tính năng này.</string>
+    <string name="update_recovery_setting">Cập nhật Lineage Recovery song song với hệ điều hành</string>
 </resources>

@@ -24,41 +24,36 @@
     <string name="loading">Секунду\u2026</string>
     <string name="setup_complete">Налада завершана</string>
     <string name="setup_welcome">Вітаем</string>
+    <string name="setup_locale">Мова</string>
     <string name="setup_wifi">Выбраць сетку Wi-Fi</string>
-    <string name="setup_sim_missing">SIM-карта адсутнічае</string>
-    <string name="setup_choose_data_sim">Абярыце SIM-карту для перадачы дадзеных</string>
+    <string name="setup_sim_missing">SIM-картка адсутнічае</string>
+    <string name="setup_choose_data_sim">Выберыце SIM-картку для перадачы даных</string>
     <string name="setup_location">Службы месцазнаходжання</string>
     <string name="setup_other">Іншыя службы</string>
     <string name="setup_datetime">Дата і час</string>
     <string name="setup_current_date">Бягучая дата</string>
     <string name="setup_current_time">Бягучы час</string>
-    <string name="sim_missing_summary" product="tablet">Не выяўлена ўсталяванай SIM-карты ў планшэце. Каб пазнаць, як уставіць SIM-карту, прачытайце інструкцыю да вашай прылады.</string>
-    <string name="sim_missing_summary" product="default">Не выяўлена ўсталяванай SIM-карты ў тэлефоне. Каб пазнаць, як уставіць SIM-карту, прачытайце інструкцыю да вашай прылады.</string>
-    <string name="choose_data_sim_summary" product="tablet">Якую SIM вы хочаце скарыстаць для перадачы дадзеных? Абраная SIM можа пацягнуць выдаткі, бо яна будзе выкарыстоўвацца для налады планшэта.</string>
-    <string name="choose_data_sim_summary" product="default">Якую SIM вы хочаце скарыстаць для перадачы дадзеных? Абраная SIM можа пацягнуць выдаткі, бо яна будзе выкарыстоўвацца для налады тэлефона.</string>
-    <string name="date_time_summary">Усталюйце свой часавы пояс і наладзьце бягучую дату і час, калі трэба</string>
-    <string name="backup_data_summary"><b>Захоўваць</b> дадзеныя дадаткаў, паролі Wi-Fi і іншыя параметры на сервера Google</string>
+    <string name="date_time_summary">Пры неабходнасці задайце часавы пояс і адкарэкціруйце бягучую дату і час</string>
+    <string name="backup_data_summary"><b>Рабіць рэзервовую копію</b> даных праграмы, пароляў Wi-Fi і іншых наладаў на серверах Google</string>
     <string name="other_services_summary">Гэтыя службы дазваляюць Google пашырыць магчымасці прылады. Вы можаце выключыць іх у кожны час. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="location_services_summary">Службы месцазнаходжання дазваляюць сістэме і ўсталяваным дадаткам збіраць і скарыстаць такія дадзеныя, як ваша прыблізнае месцазнаходжанне. Прыкладам, дадатак можа шукаць кавярні паблізу, засноўваючыся на дадзеных пра ваша месцазнаходжанне.</string>
-    <string name="location_access_summary"><b>Дазволіць дадаткам, якія запыталі ваш дазвол</b> скарыстаць інфармацыю пра ваша месцазнаходжанне. Гэта можа ўлучаць ваша бягучае і мінулыя месцазнаходжанні.</string>
-    <string name="setup_mobile_data">Падлучыць мабільны трафік</string>
+    <string name="location_access_summary"><b>Дазволіць праграмам, якія запыталі ваш дазвол</b> выкарыстоўваць інфармацыю вашага месцазнаходжання. Гэта можа ўключаць ваша бягучыя і папярэднія месцазнаходжанні.</string>
     <string name="setup_mobile_data_no_service">Няма сеткі</string>
-    <string name="setup_mobile_data_emergency_only">Толькі экстраныя выклікі</string>
-    <string name="enable_mobile_data_summary">Выкарыстоўваць мабільную сувязь падчас налады? Ўключэнне перадачы дадзеных па сотавых сетках можа пацягнуць выдаткі.</string>
+    <string name="setup_mobile_data_emergency_only">Толькі экстранныя выклікі</string>
+    <string name="enable_mobile_data_summary">Вы сапраўды хочаце выкарыстоўваць перадачу даных праз сотавую сетку падчас наладжвання? Уключэнне перадачы даных праз сотавую сетку можа стаць прычынай дадатковай платы.</string>
     <string name="no">Не</string>
     <string name="yes">Так</string>
     <string name="emergency_call">Экстранны выклік</string>
-    <string name="services_os_nav_keys_label"><b>Скарыстаць на экранные навігацыйныя кнопкі</b> заміж апаратных.</string>
+    <string name="services_os_nav_keys_label"><b>Выкарыстоўваць кнопкі навігацыі на экране</b> замест апаратных.</string>
     <string name="setup_unlock">Разблакаваць</string>
     <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
-    <string name="setup_device_locked_instructions"><i> Каб уключыць ці адключыць гэту функцыю, перайдзіце ў меню \"Налады\" &gt; \"Бяспека\"</i></string>
+    <string name="setup_device_locked_instructions"><i> Для адключэння або ўключэння гэтай функцыі, перайдзіце ў меню \"Налады\" &gt; \"Бяспека\"</i></string>
     <string name="settings_biometric_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
-    <string name="settings_biometric_setup_details">Абярыце спосаб блакавання экрана.</string>
-    <string name="fingerprint_setup_title">Налада адбіткаў пальцаў</string>
-    <string name="fingerprint_setup_summary">Каб скарыстаць сканар адбіткаў пальцаў для разблакоўкі экрана, трэба:</string>
+    <string name="settings_biometric_setup_details">Выберыце спосаб блакіравання экрана.</string>
+    <string name="fingerprint_setup_title">Наладжванне адбітка пальца</string>
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
     <string name="biometric_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
     <string name="biometric_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
-    <string name="sim_locale_changed">%1$s SIM знойдзена</string>
-    <string name="settings_lockscreen_setup_details">Абярыце спосаб блакавання экрана.</string>
+    <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
+    <string name="intro_restore_subtitle" product="tablet">Калі ў вас засталася рэзервовая копія з папярэдняга планшэта, які працаваў на LineageOS, вы можаце аднавіць іх тут.</string>
+    <string name="intro_restore_subtitle" product="default">Калі ў вас засталася рэзервовая копія з папярэдняга тэлефона, які працаваў на LineageOS, вы можаце аднавіць іх тут.</string>
 </resources>

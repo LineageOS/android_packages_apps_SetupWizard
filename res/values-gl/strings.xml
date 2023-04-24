@@ -53,6 +53,8 @@
     <string name="emergency_call">Chamada de emerxencia</string>
     <string name="accessibility_settings">Configuración da accesibilidade</string>
     <string name="setup_services">Actualizacións de LineageOS</string>
+    <string name="services_pp_explanation">Estes servizos serven para mellorar as capacidades do seu dispositivo. Os datos utilizaranse de acordo coa <xliff:g id="name" example="Politica de privacidade">%1$s</xliff:g> de LineageOS</string>
+    <string name="services_find_privacy_policy">Podes ler a política de privacidade noutro dispositivo visitando <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Axuda a mellorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Axuda a mellorar LineageOS">%1$s</xliff:g> enviando automaticamente diagnóstico e uso de datos a LineageOS. Esta información non se pode utilizar para identificalo a vostede e acaba nas mans dos equipos que traballan en cousas como a duración da batería, rendemento das aplicacións e novas características de <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usar as teclas de navegación</b> en vez das do hardware.</string>

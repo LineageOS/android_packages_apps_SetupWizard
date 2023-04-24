@@ -51,7 +51,10 @@
     <string name="yes">Ano</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Tísňové volání</string>
+    <string name="accessibility_settings">Nastavení přístupnosti</string>
     <string name="setup_services">LineageOS funkce</string>
+    <string name="services_pp_explanation">Tyto služby rozšiřují funkce vašeho zařízení. Data budou použita v souladu se zásadami ochrany osobních údajů <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Zásady ochrany osobních údajů si můžete přečíst na jiném zařízení navštívením odkazu <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Pomozte vylepšit <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatickým odesíláním diagnostických dat a dat o používání do LineageOS. Tato data nelze použít pro Vaší identifikaci, ale pomohou vývojářskému týmu s informacemi o výdrži baterie, výkonu aplikací a vývoji nových vlastností pro <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Použít navigační klávesy na obrazovce</b> namísto hw kláves.</string>
