@@ -25,6 +25,7 @@
     <string name="loading">Vui lòng đợi một giây\u2026</string>
     <string name="setup_complete">Đã thiết lập xong</string>
     <string name="setup_welcome">Chào mừng</string>
+    <string name="setup_welcome_message">Chào mừng bạn đến <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Ngôn ngữ</string>
     <string name="setup_wifi">Chọn Wi-Fi</string>
     <string name="setup_sim_missing">Không có thẻ SIM</string>
@@ -55,6 +56,7 @@
     <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu sử dụng và chẩn đoán đến <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Thông tin này không thể được sử dụng để nhận dạng bạn và hỗ trợ các nhóm làm việc về những yếu tố như thời lượng pin, hiệu suất ứng dụng và <xliff:g id="name" example="LineageOS">%3$s</xliff:g> tính năng mới.</string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Chọn kiểu khóa màn hình dự phòng</string>
     <string name="settings_biometric_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
     <string name="fingerprint_setup_title">Thiết lập vân tay</string>
@@ -80,4 +82,11 @@
     <string name="update_recovery_description">Cập nhật Lineage Recovery khi bật máy lần đầu sau mỗi bản cập nhật.</string>
     <string name="update_recovery_warning">Recovery sẽ được cập nhật sau khi bạn hoàn thành cài đặt. Nếu bạn muốn giữ nguyên, hãy tắt tính năng này.</string>
     <string name="update_recovery_setting">Cập nhật Lineage Recovery song song với hệ điều hành</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Điều hướng</string>
+    <string name="navigation_summary">Chọn phương pháp điều hướng ưa thích</string>
+    <string name="gesture_navigation">Điều hướng bằng cử chỉ</string>
+    <string name="two_button_navigation">Điều hướng 2 nút</string>
+    <string name="navbar_navigation">Điều hướng 3 nút</string>
+    <string name="hide_gesture_hint">Ẩn gợi ý điều hướng cử chỉ</string>
 </resources>
