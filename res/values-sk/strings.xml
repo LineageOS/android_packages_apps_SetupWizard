@@ -24,7 +24,7 @@
     <string name="ok">OK</string>
     <string name="loading">Moment\u2026</string>
     <string name="setup_complete">Nastavenie je dokončené</string>
-    <string name="setup_welcome">Vitajte v CyanogenMode</string>
+    <string name="setup_welcome">Vitajte</string>
     <string name="setup_locale">Jazyk</string>
     <string name="setup_wifi">Vyberte Wi-Fi</string>
     <string name="setup_sim_missing">Vložte kartu SIM</string>

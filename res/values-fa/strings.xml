@@ -17,10 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">راهنمای راه‌اندازی</string>
-    <string name="next">مرحله بعد</string>
-    <string name="skip">رد شدن</string>
     <string name="start">شروع</string>
-    <string name="ok">بسیارخب</string>
     <string name="loading">یک لحظه لطفا\u2026</string>
     <string name="setup_complete">راه‌اندازی کامل شد</string>
     <string name="setup_welcome">خوش آمدید</string>
@@ -46,6 +43,7 @@
     <string name="no">خیر</string>
     <string name="yes">بله</string>
     <string name="emergency_call">تماس اضطراری</string>
+    <string name="setup_services">ویژگی‌های لینیِج اواِس</string>
     <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
     <string name="setup_unlock">باز کردن</string>
     <string name="setup_device_locked">این دستگاه توسط کاربر قفل شده است.</string>
