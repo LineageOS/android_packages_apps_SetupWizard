@@ -40,7 +40,7 @@
     <string name="choose_data_sim_summary" product="default">Коя СИМ карта искате да използвате за данни? Избраната СИМ карта може да добави разходи, тъй като тя ще се използва за настройване на телефона.</string>
     <string name="date_time_summary">Задайте часовата си зона и настройте текущата дата и час, ако е необходимо</string>
     <string name="backup_data_summary"><b>Архивиране на</b> данни за приложенията, Wi-Fi пароли и други настройки на Google сървърите</string>
-    <string name="other_services_summary">Google поставя тези услуги да работят за вас, и можете да ги включвате или изключвате по всяко време. Данните ще бъдат използвани в съгласие с Google <xliff:g id="name" example="Privacy Policy">%s </xliff:g>.</string>
+    <string name="other_services_summary">Google поставя тези услуги да работят за вас, и можете да ги включвате или изключвате по всяко време. Данните ще бъдат използвани в съгласие с Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="location_services_summary">Услугите за местоположение позволява системата и някой приложения да събират и използват данни като приблизителното ви местоположение. Например едно приложение може да използва приблизителното ви местоположение за да намерите близки кафенета.</string>
     <string name="location_access_summary"><b>Разреши приложения, които са поискали разрешение</b> за да използва информацията за вашето местоположение. Това може да включва текущото местоположение и последните места.</string>
     <string name="setup_mobile_data">Включване на мобилните данни</string>
@@ -51,9 +51,12 @@
     <string name="yes">Да</string>
     <string name="data_sim_name">СИМ карта<xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Спешни повиквания</string>
+    <string name="accessibility_settings">Настройки на достъпност</string>
     <string name="setup_services">LineageOS функции</string>
-    <string name="services_help_improve_cm">Помогне за подобряване на <xliff:g id="name" example="LineageOS">%s </xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s </xliff:g> от автоматичното изпращане на данни за диагностика и използване на LineageOS\'s. Тази информация не може да се използва за идентифицирането ви и служи да помага на екипите работещи над неща като живот на батерията, производителността на приложенията и нови функции в <xliff:g id="name" example="LineageOS"> %2$s </xliff:g>.</string>
+    <string name="services_pp_explanation">Тези услуги работят за вас, за да разширите възможностите на вашето устройство. Данните ще бъдат използвани в съответствие с<xliff:g id="name" example="LineageOS">%1$s</xliff:g> политика за поверителност.</string>
+    <string name="services_find_privacy_policy">Можете да прочетете политиката за поверителност на друго устройство, като посетите <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_help_improve_cm">Помогне за подобряване на <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> от автоматичното изпращане на данни за диагностика и използване на LineageOS\'s. Тази информация не може да се използва за идентифицирането ви и служи да помага на екипите работещи над неща като живот на батерията, производителността на приложенията и нови функции в <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Използване на клавишите за навигация на екрана</b> вместо хардуерните бутони.</string>
     <string name="setup_unlock">Отключи</string>
     <string name="setup_device_locked">Това устройство е заключено от потребителя.</string>

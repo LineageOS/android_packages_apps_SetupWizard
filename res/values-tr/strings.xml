@@ -55,7 +55,7 @@
     <string name="setup_services">LineageOS özellikleri</string>
     <string name="services_pp_explanation">Bu hizmetler, cihazınızın özelliklerini genişletmeniz için çalışır. Veri <xliff:g id="name" example="LineageOS">%1$s</xliff:g>\'un gizlilik politikası ile kullanılacaktır.</string>
     <string name="services_find_privacy_policy">Gizlilik politikasını farklı cihazla <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> adresini ziyaret ederek okuyabilirsiniz</string>
-    <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> geliştirmeye yardımcı olun</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>\'u geliştirmeye yardımcı olun</string>
     <string name="services_metrics_label">LineageOS\'a tanı ve kullanım verilerini otomatik olarak göndererek <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu bilgiler kimliğinizi ortaya çıkaracak şekilde kullanılmaz ve pil ömrü, uygulama performansı ve yeni <xliff:g id="name" example="LineageOS">%2$s</xliff:g> özellikleri gibi şeylerle uğraşan takımlara yardımcı olur.</string>
     <string name="services_os_nav_keys_label">Donanımsal tuşlar yerine <b>yazılımsal gezinme tuşlarını kullanın</b>.</string>
     <string name="setup_unlock">Kilidi kaldır</string>

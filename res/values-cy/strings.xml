@@ -51,7 +51,10 @@
     <string name="yes">Iawn</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Galwad brys</string>
+    <string name="accessibility_settings">Gosodiadau hygyrchedd</string>
     <string name="setup_services">Nodweddion LineageOS</string>
+    <string name="services_pp_explanation">Mae\'r gwasanaethau hyn yn gweithio i ti fedru ymestyn gallu dy ddyfais. Caiff data ei ddefnyddio yn ôl polisi preifatrwydd <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Gellir darllen y polisi preifatrwydd ar ddyfais arall wrth ymweld â <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Helpu i wella <xliff:g id="name" example="CyanogenMod">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> gan anfon gwybodaeth ddiagnostig a defnydd data at LineageOS. Ni fydd yn bosib defnyddio\'r wybodaeth i dy adnabod di ac mi fydd o help mawr i\'r timau sy\'n gweithio ar bethau fel gwella perfformiad apiau a bywyd batri a chreu nodweddion newydd yn <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Defnyddio bysellau llywio ar y sgrin</b> yn hytrach na botymau\'r ddyfais.</string>
@@ -81,4 +84,7 @@
     <string name="intro_restore_subtitle" product="default">Os oes gennyt gopi data wrth gefn o dy ffôn LineageOS diwethaf, gellir ei adfer yma.</string>
     <string name="intro_restore_button">Adfer o gopi wrth gefn</string>
     <string name="update_recovery_title">Diweddaru Modd Adfer Lineage </string>
+    <string name="update_recovery_description">Mae\'n diweddaru Lineage Recovery wrth y cychwyn cyntaf wedi pob diweddariad.</string>
+    <string name="update_recovery_warning">Caiff Recovery ei ddiweddaru yn syth ar ôl cwblhau\'r gosod. Os hoffet ti ei gadw\'n gyfan, analluoga\'r nodwedd hon.</string>
+    <string name="update_recovery_setting">Diweddaru Lineage Recovery ochr yn ochr â\'r OS</string>
 </resources>

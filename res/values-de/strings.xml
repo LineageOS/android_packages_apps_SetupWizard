@@ -81,7 +81,7 @@
     <string name="lockscreen_setup_screen_lock_setup">Einrichten</string>
     <string name="intro_restore_title">Apps und Daten wiederherstellen</string>
     <string name="intro_restore_subtitle" product="tablet">Wenn du eine Datensicherung von deinem letzten LineageOS-Tablet hast, kannst du sie hier wiederherstellen.</string>
-    <string name="intro_restore_subtitle" product="default">Wenn du eine Datensicherung von deinem letzten LineageOS- Telefon hast, kannst du sie hier wiederherstellen.</string>
+    <string name="intro_restore_subtitle" product="default">Wenn du eine Datensicherung von deinem letzten LineageOS-Telefon hast, kannst du sie hier wiederherstellen.</string>
     <string name="intro_restore_button">Aus Backup wiederherstellen</string>
     <string name="update_recovery_title">Lineage-Recovery aktualisieren</string>
     <string name="update_recovery_description">Aktualisiert das Lineage-Recovery-Image beim ersten Start nach jedem Update.</string>
