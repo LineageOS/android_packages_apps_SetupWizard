@@ -46,12 +46,6 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         View locationAccessView = findViewById(R.id.location);
         locationAccessView.setOnClickListener(v -> {
             mLocationAccess.setChecked(!mLocationAccess.isChecked());
-            mLocationManager.setLocationEnabledForUser(mLocationAccess.isChecked(),
-                    Process.myUserHandle());
-            if (mUserManager.isManagedProfile()) {
-                mUserManager.setUserRestriction(UserManager.DISALLOW_SHARE_LOCATION,
-                        !mLocationAccess.isChecked());
-            }
         });
     }
 
@@ -63,6 +57,17 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
             checked &= mUserManager.hasUserRestriction(UserManager.DISALLOW_SHARE_LOCATION);
         }
         mLocationAccess.setChecked(checked);
+    }
+
+    @Override
+    protected void onNextPressed() {
+        mLocationManager.setLocationEnabledForUser(mLocationAccess.isChecked(),
+                Process.myUserHandle());
+        if (mUserManager.isManagedProfile()) {
+            mUserManager.setUserRestriction(UserManager.DISALLOW_SHARE_LOCATION,
+                    !mLocationAccess.isChecked());
+        }
+        super.onNextPressed();
     }
 
     @Override
