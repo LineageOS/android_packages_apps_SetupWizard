@@ -49,18 +49,10 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         View locationAccessView = findViewById(R.id.location);
         locationAccessView.setOnClickListener(v -> {
             mLocationAccess.setChecked(!mLocationAccess.isChecked());
-            mLocationManager.setLocationEnabledForUser(mLocationAccess.isChecked(),
-                    Process.myUserHandle());
-            if (mUserManager.isManagedProfile()) {
-                mUserManager.setUserRestriction(UserManager.DISALLOW_SHARE_LOCATION,
-                        !mLocationAccess.isChecked());
-            }
         });
         View locationAgpsAccessView = findViewById(R.id.location_agps);
         locationAgpsAccessView.setOnClickListener(v -> {
             mLocationAgpsAccess.setChecked(!mLocationAgpsAccess.isChecked());
-            Settings.Global.putInt(getContentResolver(), Settings.Global.ASSISTED_GPS_ENABLED,
-                    mLocationAgpsAccess.isChecked() ? 1 : 0);
         });
     }
 
@@ -74,6 +66,19 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         mLocationAccess.setChecked(checked);
         mLocationAgpsAccess.setChecked(Settings.Global.getInt(getContentResolver(),
                 Settings.Global.ASSISTED_GPS_ENABLED, 0) == 1);
+    }
+
+    @Override
+    protected void onNextPressed() {
+        mLocationManager.setLocationEnabledForUser(mLocationAccess.isChecked(),
+                Process.myUserHandle());
+        if (mUserManager.isManagedProfile()) {
+            mUserManager.setUserRestriction(UserManager.DISALLOW_SHARE_LOCATION,
+                    !mLocationAccess.isChecked());
+        }
+        Settings.Global.putInt(getContentResolver(), Settings.Global.ASSISTED_GPS_ENABLED,
+                mLocationAgpsAccess.isChecked() ? 1 : 0);
+        super.onNextPressed();
     }
 
     @Override
