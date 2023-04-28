@@ -71,6 +71,34 @@
                             style="@style/SudCheckBox.Multiline" />
 
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/location_agps"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/location_margin_left"
+                        android:paddingRight="@dimen/content_margin_right"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <CheckBox
+                            android:id="@+id/location_agps_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:duplicateParentState="true"
+                            android:clickable="false"
+                            android:checked="true"
+                            style="@style/SudCheckBox.Multiline" />
+
+                        <TextView
+                            android:id="@+id/location_agps_summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location_agps_access_summary"
+                            style="@style/SudCheckBox.Multiline" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </ScrollView>
         </FrameLayout>

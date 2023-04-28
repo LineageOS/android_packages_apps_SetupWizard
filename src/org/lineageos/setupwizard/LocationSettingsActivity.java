@@ -21,6 +21,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Process;
 import android.os.UserManager;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.CheckBox;
 
@@ -30,6 +31,7 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
             LocationSettingsActivity.class.getSimpleName().substring(0, 22);
 
     private CheckBox mLocationAccess;
+    private CheckBox mLocationAgpsAccess;
 
     private LocationManager mLocationManager;
 
@@ -41,12 +43,21 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         setNextText(R.string.next);
 
         mLocationAccess = (CheckBox) findViewById(R.id.location_checkbox);
+        mLocationAgpsAccess = (CheckBox) findViewById(R.id.location_agps_checkbox);
         mLocationManager = getSystemService(LocationManager.class);
         mUserManager = getSystemService(UserManager.class);
         View locationAccessView = findViewById(R.id.location);
         locationAccessView.setOnClickListener(v -> {
             mLocationAccess.setChecked(!mLocationAccess.isChecked());
         });
+        View locationAgpsAccessView = findViewById(R.id.location_agps);
+        if (mUserManager.isPrimaryUser()) {
+            locationAgpsAccessView.setOnClickListener(v -> {
+                mLocationAgpsAccess.setChecked(!mLocationAgpsAccess.isChecked());
+            });
+        } else {
+            locationAgpsAccessView.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -67,6 +78,8 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
             mUserManager.setUserRestriction(UserManager.DISALLOW_SHARE_LOCATION,
                     !mLocationAccess.isChecked());
         }
+        Settings.Global.putInt(getContentResolver(), Settings.Global.ASSISTED_GPS_ENABLED,
+                mLocationAgpsAccess.isChecked() ? 1 : 0);
         super.onNextPressed();
     }
 
