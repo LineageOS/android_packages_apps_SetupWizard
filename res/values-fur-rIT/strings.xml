@@ -66,7 +66,7 @@
     <string name="settings_biometric_setup_details">Cemût desideristu blocâ il schermi?</string>
     <string name="fingerprint_setup_title">Configurazion impronts digjitâi</string>
     <string name="fingerprint_setup_summary">Par doprâ il sensôr di impronts digjitâi par sblocâ il schermi, ti varâs di:</string>
-    <string name="fingerprint_setup_add_fingerprint">Zontâ la tô impront</string>
+    <string name="fingerprint_setup_add_fingerprint">Zontâ il to impront</string>
     <string name="face_setup_title">Configurazion de muse</string>
     <string name="face_setup_summary">Par doprâ la tô muse par sblocâ il schermi, tu varâs di:</string>
     <string name="face_setup_add_face">Zontâ la tô muse</string>
