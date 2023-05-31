@@ -26,6 +26,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 import android.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
@@ -44,6 +45,10 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
         }
         if (SetupWizardUtils.hasGMS(this)) {
             SetupWizardUtils.disableHome(this);
+            if (SetupWizardUtils.isOwner()) {
+                Settings.Global.putInt(getContentResolver(),
+                        Settings.Global.ASSISTED_GPS_ENABLED, 1);
+            }
             finish();
         } else if (WizardManagerHelper.isUserSetupComplete(this)
                 && !SetupWizardUtils.isManagedProfile(this)) {
