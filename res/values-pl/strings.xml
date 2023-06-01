@@ -25,6 +25,7 @@
     <string name="loading">Chwileczkę\u2026</string>
     <string name="setup_complete">Konfiguracja zakończona</string>
     <string name="setup_welcome">Witaj</string>
+    <string name="setup_welcome_message">Witaj w <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Język</string>
     <string name="setup_wifi">Wybierz Wi-Fi</string>
     <string name="setup_sim_missing">Brak karty SIM</string>
@@ -46,15 +47,24 @@
     <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włączenie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
     <string name="no">Nie</string>
     <string name="yes">Tak</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Połączenie alarmowe</string>
+    <string name="accessibility_settings">Ustawienia ułatwień dostępu</string>
     <string name="setup_services">Funkcje LineageOS</string>
+    <string name="services_pp_explanation">Te usługi są uruchomione w celu rozszerzenia możliwości twojego urządzenia. Dane będą używane zgodnie z polityką prywatności <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Możesz przeczytać politykę prywatności na innym urządzeniu, odwiedzając <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Pomóż ulepszyć <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Pomóż ulepszyć LineageOS">%1$s</xliff:g>, automatycznie wysyłając dane diagnostyczne oraz dotyczące użytkowania do <xliff:g id="name" example="LineageOS"> %2$s</xliff:g>. Informacje te nie mogą być wykorzystane do identyfikacji użytkownika i pomagają zespołom pracującym nad takimi kwestiami, jak żywotność baterii, wydajność aplikacji i nowe funkcje <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Użyj ekranowych przycisków nawigacyjnych</b> zamiast klawiszy sprzętowych.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Wybierz zapasową opcję blokady ekranu</string>
     <string name="settings_biometric_setup_details">Jak chcesz blokować swój ekran?</string>
     <string name="fingerprint_setup_title">Konfiguracja odcisków palców</string>
     <string name="fingerprint_setup_summary">Aby użyć czujnika linii papilarnych do odblokowania ekranu, musisz:</string>
     <string name="fingerprint_setup_add_fingerprint">Dodać swój odcisk palca</string>
+    <string name="face_setup_title">Konfiguracja odblokowywania twarzą</string>
+    <string name="face_setup_summary">Aby używać twarzy do odblokowania ekranu, musisz:</string>
+    <string name="face_setup_add_face">Dodaj swoją twarz</string>
     <string name="biometric_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
     <string name="biometric_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
     <string name="sim_locale_changed">Wykryto %1$s SIM</string>
@@ -64,4 +74,19 @@
     <string name="lockscreen_setup_title" product="default">Zabezpiecz telefon</string>
     <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguracja</string>
+    <string name="intro_restore_title">Przywróć aplikacje i dane</string>
+    <string name="intro_restore_subtitle" product="tablet">Jeśli masz kopię zapasową z poprzedniego tabletu z systemem <xliff:g id="name" example="LineageOS">%s</xliff:g>, możesz ją przywrócić tutaj.</string>
+    <string name="intro_restore_subtitle" product="default">Jeśli masz kopię zapasową z poprzedniego telefonu z systemem <xliff:g id="name" example="LineageOS">%s</xliff:g>, możesz ją przywrócić tutaj.</string>
+    <string name="intro_restore_button">Przywróć z kopii zapasowej</string>
+    <string name="update_recovery_title">Aktualizuj Lineage Recovery</string>
+    <string name="update_recovery_description">Aktualizuje Lineage Recovery przy pierwszym uruchomieniu, po każdej aktualizacji.</string>
+    <string name="update_recovery_warning">Recovery zostanie zaktualizowane po zakończeniu konfiguracji. Jeśli chcesz zachować obecną wersję, wyłącz tę funkcję.</string>
+    <string name="update_recovery_setting">Aktualizuj Lineage Recovery razem z aktualizacją systemu</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Nawigacja w systemie</string>
+    <string name="navigation_summary">Wybierz preferowaną metodę nawigacji w systemie</string>
+    <string name="gesture_navigation">Nawigacja przy użyciu gestów</string>
+    <string name="two_button_navigation">Nawigacja przy użyciu dwóch przycisków</string>
+    <string name="navbar_navigation">Nawigacja przy użyciu trzech przycisków</string>
+    <string name="hide_gesture_hint">Ukryj podpowiedź dotyczącą nawigacji gestami</string>
 </resources>
