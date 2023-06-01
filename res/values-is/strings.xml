@@ -16,8 +16,76 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Uppsetningarleiðarvísir</string>
+    <string name="next">Næsta</string>
+    <string name="skip">Sleppa</string>
+    <string name="start">Byrja</string>
+    <string name="done">Lokið</string>
+    <string name="ok">Í lagi</string>
+    <string name="loading">Bíddu aðeins\u2026</string>
+    <string name="setup_complete">Uppsetningu er lokið</string>
+    <string name="setup_welcome">Velkomin</string>
+    <string name="setup_locale">Tungumál</string>
+    <string name="setup_wifi">Veldu Wi-Fi-net</string>
+    <string name="setup_sim_missing">SIM-kortið vantar</string>
+    <string name="setup_choose_data_sim">Veldu SIM-kort undir gögn</string>
+    <string name="setup_location">Staðsetningarþjónustur</string>
+    <string name="setup_other">Aðrar þjónustur</string>
+    <string name="setup_datetime">Dagsetning og tími</string>
+    <string name="setup_current_date">Núverandi dagsetning</string>
+    <string name="setup_current_time">Núverandi tími</string>
+    <string name="sim_missing_summary" product="tablet">SIM-kort fannst ekki í spjaldtölvunni þinni. Til að setja inn SIM-kort skaltu lesa leiðbeiningarnar sem komu með tækinu þínu.</string>
+    <string name="sim_missing_summary" product="default">SIM-kort fannst ekki í símanum þínum. Til að setja inn SIM-kort skaltu lesa leiðbeiningarnar sem komu með tækinu þínu.</string>
+    <string name="choose_data_sim_summary" product="tablet">Hvaða SIM-kort viltu nota undir gögn? Valda SIM-kortið gæti valdið útgjöldum vegna netsambands þar sem það verður notað til að setja upp spjaldtölvuna þína.</string>
+    <string name="choose_data_sim_summary" product="default">Hvaða SIM-kort viltu nota undir gögn? Valda SIM-kortið gæti valdið útgjöldum vegna netsambands þar sem það verður notað til að setja upp símann þinn.</string>
+    <string name="date_time_summary">Settu tímabeltið þitt og lagaðu núverandi dags- og tímasetningu ef þörf krefur</string>
+    <string name="backup_data_summary">Vistaðu <b>öryggisafrit</b> af gögnum forrita, Wi-Fi aðgangsorðum og öðrum 
+stillingum á þjóna Google</string>
+    <string name="other_services_summary">Þessar þjónustur reiða sig á Google, þú getur kveikt eða slökkt á þeim hvenær sem er. Gögn verða notuð í samræmi við <xliff:g id="name" example="Privacy Policy">%s</xliff:g> hjá Google.</string>
+    <string name="location_services_summary">Staðsetningarþjónustur gera kerfinu og utanaðkomandi forritum kleift að safna og nota gögn á borð við áætlaða staðsetningu þína. Sem dæmi, forrit gæti notað áætlaða staðsetningu þína til að finna nálæg kaffihús.</string>
+    <string name="location_access_summary"><b>Leyfa forrit sem hafa beðið um heimild þína</b> til að nota staðsetningarupplýsingar. Þetta gæti falið í sér aðgang að upplýsingum um núverandi jafnt sem fyrri staðsetningar.</string>
     <string name="setup_mobile_data">Kveiktu á farsímagögnum</string>
+    <string name="setup_mobile_data_no_service">Engin þjónusta</string>
+    <string name="setup_mobile_data_emergency_only">Einungis neyðarsímtöl</string>
+    <string name="enable_mobile_data_summary">Viltu nota farsímagögn á meðan uppsetningu stendur? Sé kveikt á farsímagögnum getur það haft aukakostnað í för með sér.</string>
+    <string name="no">Nei</string>
+    <string name="yes">Já</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="emergency_call">Neyðarsímtal</string>
+    <string name="accessibility_settings">Stillingar fyrir altækan aðgang</string>
+    <string name="setup_services">Eiginleikar LineageOS</string>
+    <string name="services_pp_explanation">Þessar þjónustur gera þér kleift að útvíkka eiginleika tækisins þíns. Gögn verða notuð í samræmi við persónuverndarstefnu <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Lestu stefnu varðandi meðferð persónulegra gagna með því að fara á <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_help_improve_cm">Hjálpaðu okkur að bæta <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Hjálpaðu til við að bæta LineageOS">%1$s</xliff:g> með því að senda sjálfvirkt greiningargögn og upplýsingar um notkun til LineageOS. Þessar upplýsingar er ekki hægt að nota til að auðkenna þig og hjálpa þróunarteymum við vinnu varðandi ýmis atriði, eins og líftíma rafhlöðu, afköst forrita og nýja eiginleika í <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
+    <string name="setup_unlock">Aflæsa</string>
     <string name="setup_device_locked">Þessu tæki hefur verið læst af notandanum.</string>
+    <string name="setup_require_cyanogen_label"><b>Krefjast lykilorðs að aðgangnum þinum</b> til að geta notað tækið þitt, jafnvel eftir endurstillingu á verksmiðjustillingar.</string>
     <string name="setup_device_locked_instructions"><i>Til að kveikja eða slökkva á þessum eiginleika, farðu í Stillingar &gt; Öryggi</i></string>
+    <string name="settings_biometric_setup_title">Veldu gerð skjálæsingar til vara</string>
+    <string name="settings_biometric_setup_details">Hvernig viltu læsa skjánum þínum?</string>
+    <string name="fingerprint_setup_title">Uppsetning fingrafaraskanna</string>
+    <string name="fingerprint_setup_summary">Til að nota fingrafaraskanna til að aflæsa skjánum, þarftu að:</string>
+    <string name="fingerprint_setup_add_fingerprint">Bættu við fingrafarinu þínu</string>
+    <string name="face_setup_title">Uppsetning andlitskennsla</string>
+    <string name="face_setup_summary">Til að nota andlitaskanna til að aflæsa skjánum, þarftu að:</string>
+    <string name="face_setup_add_face">Bæta við andlitinu þínu</string>
+    <string name="biometric_setup_backup_lock_method">Settu upp aðra aðferð til að aflæsa</string>
+    <string name="biometric_setup_screen_lock_setup">Setja upp skjálæsingu</string>
+    <string name="sim_locale_changed">Fann %1$s SIM-kort</string>
+    <string name="settings_lockscreen_setup_title">Veldu gerð skjálæsingar</string>
+    <string name="settings_lockscreen_setup_details">Hvernig viltu læsa skjánum þínum?</string>
+    <string name="lockscreen_setup_title" product="tablet">Verndaðu spjaldtölvuna þína</string>
+    <string name="lockscreen_setup_title" product="default">Verndaðu símann þinn</string>
+    <string name="lockscreen_setup_summary"><b>Verndaðu tækið</b> og krefstu þess að sett sé inn PIN-númer, mynstur eða lykilorð til að aflæsa skjánum</string>
+    <string name="lockscreen_setup_screen_lock_setup">Setja upp</string>
+    <string name="intro_restore_title">Endurheimta forrit og gögn</string>
+    <string name="intro_restore_subtitle" product="tablet">Ef þú ert með öryggisafrit af síðustu LineageOS-spjaldtölvunni þinni, þá geturðu endurheimt það hér.</string>
+    <string name="intro_restore_subtitle" product="default">Ef þú ert með öryggisafrit af síðasta LineageOS-símanum þínum, þá geturðu endurheimt það hér.</string>
+    <string name="intro_restore_button">Endurheimta úr öryggisafriti</string>
+    <string name="update_recovery_title">Uppfæra endurheimtingu LineageOS</string>
+    <string name="update_recovery_description">Uppfærir LineageOS endurheimtingarmynd í fyrstu ræsingu á eftir hverri uppfærslu.</string>
+    <string name="update_recovery_warning">Endurheimtudiskmyndin verður uppfærð um leið og þú lýkur uppsetningunni. Ef þú vilt halda henni ósnertri, skaltu gera þetta óvirkt.</string>
+    <string name="update_recovery_setting">Uppfæra endurheimtingu LineageOS samhliða uppfærslum stýrikerfis</string>
 </resources>

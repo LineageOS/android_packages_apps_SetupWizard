@@ -49,8 +49,12 @@
     <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włączenie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
     <string name="no">Nie</string>
     <string name="yes">Tak</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Połączenie alarmowe</string>
+    <string name="accessibility_settings">Ustawienia ułatwień dostępu</string>
     <string name="setup_services">Funkcje LineageOS</string>
+    <string name="services_pp_explanation">Te usługi są uruchomione w celu rozszerzenia możliwości twojego urządzenia. Dane będą używane zgodnie z polityką prywatności <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Możesz przeczytać politykę prywatności na innym urządzeniu, odwiedzając <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Pomóż ulepszyć <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Pomóż ulepszyć LineageOS">%1$s</xliff:g> zezwalając na automatyczne przesyłanie danych diagnostycznych oraz użytkowania do LineageOS. Te informacje nie będą mogły zostać użyte do identyfikacji i stanowią pomoc dla zespołów pracujących nad czasem pracy baterii, wydajnością aplikacji oraz nowymi <xliff:g id="name" example="LineageOS">%2$s</xliff:g> funkcjami.</string>
     <string name="services_os_nav_keys_label"><b>Użyj ekranowych przycisków nawigacyjnych</b> zamiast klawiszy sprzętowych.</string>
@@ -63,6 +67,9 @@
     <string name="fingerprint_setup_title">Konfiguracja odcisków palców</string>
     <string name="fingerprint_setup_summary">Aby użyć czujnika linii papilarnych do odblokowania ekranu, musisz:</string>
     <string name="fingerprint_setup_add_fingerprint">Dodać swój odcisk palca</string>
+    <string name="face_setup_title">Konfiguracja odblokowywania twarzą</string>
+    <string name="face_setup_summary">Aby używać twarzy do odblokowania ekranu, musisz:</string>
+    <string name="face_setup_add_face">Dodaj swoją twarz</string>
     <string name="biometric_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
     <string name="biometric_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
     <string name="sim_locale_changed">Wykryto %1$s SIM</string>
@@ -72,4 +79,12 @@
     <string name="lockscreen_setup_title" product="default">Zabezpiecz telefon</string>
     <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguracja</string>
+    <string name="intro_restore_title">Przywróć aplikacje i dane</string>
+    <string name="intro_restore_subtitle" product="tablet">Jeśli masz kopię zapasową ze swojego poprzedniego tabletu z systemem LineageOS, możesz ją tutaj przywrócić.</string>
+    <string name="intro_restore_subtitle" product="default">Jeśli masz kopię zapasową ze swojego poprzedniego telefonu z systemem LineageOS, możesz ją tutaj przywrócić.</string>
+    <string name="intro_restore_button">Przywróć z kopii zapasowej</string>
+    <string name="update_recovery_title">Aktualizuj Lineage Recovery</string>
+    <string name="update_recovery_description">Aktualizuje Lineage Recovery przy pierwszym uruchomieniu, po każdej aktualizacji.</string>
+    <string name="update_recovery_warning">Recovery zostanie zaktualizowane po zakończeniu konfiguracji. Jeśli chcesz zachować obecną wersję, wyłącz tę funkcję.</string>
+    <string name="update_recovery_setting">Aktualizuj Lineage Recovery razem z aktualizacją systemu</string>
 </resources>
