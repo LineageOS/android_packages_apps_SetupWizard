@@ -75,27 +75,8 @@
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
 
-    <!-- Biometric setup -->
-    <string name="settings_biometric_setup_title">Select backup screen lock type</string>
-    <string name="settings_biometric_setup_details">How would you like to lock your screen?</string>
-    <string name="fingerprint_setup_title">Fingerprint setup</string>
-    <string name="fingerprint_setup_summary">To use your fingerprint sensor to unlock your screen, you\'ll need to:</string>
-    <string name="fingerprint_setup_add_fingerprint">Add your fingerprint</string>
-    <string name="face_setup_title">Face setup</string>
-    <string name="face_setup_summary">To use your face to unlock your screen, you\'ll need to:</string>
-    <string name="face_setup_add_face">Add your face</string>
-    <string name="biometric_setup_backup_lock_method">Setup a secondary unlock method</string>
-    <string name="biometric_setup_screen_lock_setup">Setup screen lock</string>
+    <!-- Locale setup -->
     <string name="sim_locale_changed">%1$s SIM detected</string>
-
-    <!-- Secure lock screen -->
-    <string name="settings_lockscreen_setup_title">Select screen lock type</string>
-    <string name="settings_lockscreen_setup_details">How would you like to lock your screen?</string>
-    <string name="lockscreen_setup_title" product="default">Protect your phone</string>
-    <string name="lockscreen_setup_title" product="device">Protect your device</string>
-    <string name="lockscreen_setup_title" product="tablet">Protect your tablet</string>
-    <string name="lockscreen_setup_summary"><b>Protect this device</b> and require a PIN, pattern, or password to unlock the screen</string>
-    <string name="lockscreen_setup_screen_lock_setup">Set up</string>
 
     <!-- Backup Restore -->
     <string name="intro_restore_title">Restore apps and data</string>
