@@ -56,6 +56,7 @@ import org.lineageos.internal.util.PackageManagerUtils;
 import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.NetworkSetupActivity;
+import org.lineageos.setupwizard.ScreenLockActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
@@ -277,6 +278,8 @@ public class SetupWizardUtils {
         }
         if (!hasBiometric(context)) {
             disableComponent(context, BiometricActivity.class);
+        } else {
+            disableComponent(context, ScreenLockActivity.class);
         }
         if (!hasTelephony(context) || !simMissing()) {
             disableComponent(context, SimMissingActivity.class);
