@@ -86,4 +86,10 @@
     <string name="two_button_navigation">2-button navigation</string>
     <string name="navbar_navigation">3-button navigation</string>
     <string name="hide_gesture_hint">Hide gestural navigation hint</string>
+
+    <!-- Theme page -->
+    <string name="setup_theme">Save battery with Dark theme</string>
+    <string name="theme_summary">Keep your battery alive longer with a dark background</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
 </resources>
