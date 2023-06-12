@@ -18,64 +18,17 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_LOCKSCREEN;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_DETAILS;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_TITLE;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN;
 
-import android.app.KeyguardManager;
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 
-import org.lineageos.setupwizard.util.SetupWizardUtils;
-
-public class ScreenLockActivity extends SubBaseActivity {
+public class ScreenLockActivity extends WrapperSubBaseActivity {
 
     public static final String TAG = ScreenLockActivity.class.getSimpleName();
 
     @Override
-    protected void onNextPressed() {
-        launchLockscreenSetup();
-    }
-
-    @Override
     protected void onStartSubactivity() {
-        if (isKeyguardSecure()) {
-            Log.v(TAG, "Screen lock already set up; skipping ScreenLockActivity");
-            nextAction(RESULT_OK);
-            SetupWizardUtils.disableComponent(this, ScreenLockActivity.class);
-            finish();
-            return;
-        }
-        getGlifLayout().setDescriptionText(getString(R.string.lockscreen_setup_summary));
-        setNextAllowed(true);
-    }
-
-    @Override
-    protected int getLayoutResId() {
-        return R.layout.setup_lockscreen;
-    }
-
-    @Override
-    protected int getTitleResId() {
-        return R.string.lockscreen_setup_title;
-    }
-
-    @Override
-    protected int getIconResId() {
-        return R.drawable.ic_lock_screen;
-    }
-
-    private void launchLockscreenSetup() {
         Intent intent = new Intent(ACTION_SETUP_LOCKSCREEN);
-        intent.putExtra(EXTRA_TITLE,
-                getString(R.string.settings_lockscreen_setup_title));
-        intent.putExtra(EXTRA_DETAILS,
-                getString(R.string.settings_lockscreen_setup_details));
         startSubactivity(intent, REQUEST_CODE_SETUP_LOCKSCREEN);
-    }
-
-    private boolean isKeyguardSecure() {
-        return getSystemService(KeyguardManager.class).isKeyguardSecure();
     }
 }
