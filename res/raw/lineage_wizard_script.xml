@@ -27,11 +27,8 @@
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end" id="welcome">
         <result wizard:action="locale" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCALE;end" id="locale">
-        <result wizard:action="datetime" />
-    </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_DATETIME;end" id="datetime">
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCALE;end" id="locale">
         <result wizard:action="sim_missing" />
     </WizardAction>
 
@@ -40,6 +37,10 @@
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end" id="network_setup">
+        <result wizard:action="datetime" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_DATETIME;end" id="datetime">
         <result wizard:action="location_settings" />
     </WizardAction>
 
@@ -56,22 +57,22 @@
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETTINGS;end" id="lineage_settings">
-        <result wizard:action="navigation_settings" />
-    </WizardAction>
-
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
-        <result wizard:action="biometric_settings" />
-    </WizardAction>
-
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BIOMETRIC_SETTINGS;end" id="biometric_settings">
         <result wizard:action="lockscreen_settings" />
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS;end" id="lockscreen_settings">
+        <result wizard:action="biometric_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BIOMETRIC_SETTINGS;end" id="biometric_settings">
         <result wizard:action="restore" />
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end" id="restore">
+        <result wizard:action="navigation_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
         <result wizard:action="finish" />
     </WizardAction>
 
