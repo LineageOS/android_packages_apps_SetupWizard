@@ -100,4 +100,10 @@
 
     <!-- Assisted GPS -->
     <string name="location_agps_access_summary">When location is on, <b>download satellite assistance data from the internet</b>, which can greatly improve the GPS startup performance.</string>
+
+    <!-- Theme page -->
+    <string name="setup_theme">Save battery with Dark theme</string>
+    <string name="theme_summary">Keep your battery alive longer with a dark background</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
 </resources>
