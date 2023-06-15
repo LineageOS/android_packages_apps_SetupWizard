@@ -31,16 +31,16 @@
     <string name="setup_choose_data_sim">Wybierz kartę SIM dla danych mobilnych</string>
     <string name="setup_location">Usługi lokalizacyjne</string>
     <string name="setup_other">Inne usługi</string>
-    <string name="setup_datetime">Data &amp; czas</string>
+    <string name="setup_datetime">Data i czas</string>
     <string name="setup_current_date">Aktualna data</string>
     <string name="setup_current_time">Aktualny czas</string>
     <string name="sim_missing_summary" product="tablet">Karta SIM nie została wykryta w tablecie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do tabletu.</string>
     <string name="sim_missing_summary" product="default">Karta SIM nie została wykryta w twoim telefonie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do telefonu.</string>
     <string name="choose_data_sim_summary" product="tablet">Której karty SIM chcesz użyć do transmisji danych? Wybrana karta SIM może spowodować dodatkowe koszty, ponieważ zostanie ona użyta do skonfigurowania tabletu.</string>
     <string name="choose_data_sim_summary" product="default">Której karty SIM chcesz użyć do transmisji danych? Wybrana karta SIM może spowodować dodatkowe koszty, ponieważ zostanie ona użyta do skonfigurowania telefonu.</string>
-    <string name="date_time_summary">Ustaw strefę czasową, bieżącą datę i czas jeśli jest potrzebna</string>
+    <string name="date_time_summary">Ustaw swoją strefę czasową i dostosuj bieżącą datę i godzinę w razie potrzeby</string>
     <string name="backup_data_summary">Wykonaj <b>kopię zapasową</b> danych aplikacji, haseł WiFi i innych ustawień na serwerach Google</string>
-    <string name="other_services_summary">Usługi te umożliwiają działanie aplikacjom Google, możesz jest włączyć lub wyłączyć kiedy chcesz. Dane będą wykorzystywane zgodnie z Google <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="other_services_summary">Usługi te umożliwiają działanie aplikacjom Google, możesz je włączyć lub wyłączyć, kiedy zechcesz. Dane będą wykorzystywane zgodnie z <xliff:g id="name" example="Privacy Policy">%s</xliff:g> Google.</string>
     <string name="location_services_summary">Usługi lokalizacji umożliwiają systemowi i innym aplikacjom na zbieranie danych o użytkowniku w celu szybszego ustalenia przybliżonej lokalizacji. Np. jakaś aplikacja może użyć twojej przybliżonej lokalizacji w celu zlokalizowania kawiarni, które znajdują się w pobliżu.</string>
     <string name="location_access_summary"><b>Zezwalaj aplikacjom, które zapytały cię o zezwolenie</b> do używania informacji o twojej lokalizacji. Może to obejmować twoje poprzednie, ale i bieżącą lokalizację.</string>
     <string name="setup_mobile_data">Włącz transmisję danych</string>

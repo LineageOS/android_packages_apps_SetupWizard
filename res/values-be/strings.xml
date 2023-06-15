@@ -36,6 +36,7 @@
     <string name="date_time_summary">Пры неабходнасці задайце часавы пояс і адкарэкціруйце бягучую дату і час</string>
     <string name="backup_data_summary"><b>Рабіць рэзервовую копію</b> даных праграмы, пароляў Wi-Fi і іншых наладаў на серверах Google</string>
     <string name="other_services_summary">Гэтыя службы дазваляюць Google пашырыць магчымасці прылады. Вы можаце выключыць іх у кожны час. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="location_services_summary">Службы вызначэння месцазнаходжання дазваляюць сістэмным і староннім праграмам збіраць і выкарыстоўваць такія даныя, як ваша прыблізнае месцазнаходжанне. Напрыклад, праграма можа выкарыстоўваць ваша прыблізнае месцазнаходжанне, каб знайсці бліжэйшыя кавярні.</string>
     <string name="location_access_summary"><b>Дазволіць праграмам, якія запыталі ваш дазвол</b> выкарыстоўваць інфармацыю вашага месцазнаходжання. Гэта можа ўключаць ваша бягучыя і папярэднія месцазнаходжанні.</string>
     <string name="setup_mobile_data_no_service">Няма сеткі</string>
     <string name="setup_mobile_data_emergency_only">Толькі экстранныя выклікі</string>
@@ -51,9 +52,8 @@
     <string name="settings_biometric_setup_details">Выберыце спосаб блакіравання экрана.</string>
     <string name="fingerprint_setup_title">Наладжванне адбітка пальца</string>
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
+    <string name="face_setup_title">Разблакіроўка па твары</string>
     <string name="biometric_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
     <string name="biometric_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
-    <string name="intro_restore_subtitle" product="tablet">Калі ў вас засталася рэзервовая копія з папярэдняга планшэта, які працаваў на LineageOS, вы можаце аднавіць іх тут.</string>
-    <string name="intro_restore_subtitle" product="default">Калі ў вас засталася рэзервовая копія з папярэдняга тэлефона, які працаваў на LineageOS, вы можаце аднавіць іх тут.</string>
 </resources>

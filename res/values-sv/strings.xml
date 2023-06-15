@@ -67,4 +67,5 @@
     <string name="settings_lockscreen_setup_details">Hur vill du låsa din skärm?</string>
     <string name="lockscreen_setup_title" product="default">Skydda mobilen</string>
     <string name="lockscreen_setup_summary"><b>Skydda den här enheten</b> och kräv pinkod, mönster eller lösenord för att låsa upp skärmen</string>
+    <string name="intro_restore_title">Återställ appar och data</string>
 </resources>

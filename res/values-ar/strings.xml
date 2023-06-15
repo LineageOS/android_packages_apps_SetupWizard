@@ -51,7 +51,9 @@
     <string name="yes">نعم</string>
     <string name="data_sim_name">شريحة <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">مكالمة طوارئ</string>
+    <string name="accessibility_settings">إعدادات إمكانية الوصول</string>
     <string name="setup_services">ميزات LineageOS</string>
+    <string name="services_find_privacy_policy">يمكنك قراءة سياسة الخصوصية على جهاز آخر بزيارة <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> بإرسال بيانات التشخيص و الاستعمال تلقائيا إلى LineageOS. لا يمكن استعمال هذه المعلومات لتحديد هويتك، لكنها تساعد الفرق المكلفة بـ: عمر البطارية، أداء التطبيقات، و مزايا <xliff:g id="name" example="LineageOS">%2$s</xliff:g> الجديدة.</string>
     <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
