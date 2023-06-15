@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Πλοήγηση με δύο πλήκτρα</string>
     <string name="navbar_navigation">Πλοήγηση με τρία πλήκτρα</string>
     <string name="hide_gesture_hint">Απόκρυψη υποδείξεων πλοήγησης με χειρονομίες</string>
+    <string name="location_agps_access_summary">Όταν η τοποθεσία είναι ενεργοποιημένη, <b>λήψη δεδομένων δορυφορικής βοήθειας από το διαδίκτυο</b>, τα οποία μπορούν να βελτιώσουν σημαντικά την απόδοση εκκίνησης GPS.</string>
 </resources>

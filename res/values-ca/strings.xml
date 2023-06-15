@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navegació de 2 botons</string>
     <string name="navbar_navigation">Navegació de 3 botons</string>
     <string name="hide_gesture_hint">Amaga l\'indicador de navegació gestual</string>
+    <string name="location_agps_access_summary">Quan la ubicació està activada, <b>baixa dades d\'assistència satelital d\'Internet</b>, cosa que pot millorar en gran mesura el rendiment inicial del GPS.</string>
 </resources>

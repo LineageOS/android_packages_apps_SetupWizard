@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navigation à deux boutons</string>
     <string name="navbar_navigation">Navigation à trois boutons</string>
     <string name="hide_gesture_hint">Cacher l\'indice de navigation gestuelle</string>
+    <string name="location_agps_access_summary">Lorsque la localisation est activée, <b>téléchargez les données d\'assistance par satellite depuis internet</b>, ce qui peut grandement améliorer les performances de démarrage du GPS.</string>
 </resources>

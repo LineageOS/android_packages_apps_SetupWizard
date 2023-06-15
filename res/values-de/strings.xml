@@ -89,4 +89,5 @@
     <string name="two_button_navigation">2-Tasten-Steuerung</string>
     <string name="navbar_navigation">3-Tasten-Steuerung</string>
     <string name="hide_gesture_hint">Gestensteuerungshinweis ausblenden</string>
+    <string name="location_agps_access_summary">Wenn die Standortbestimmung eingeschaltet ist, kannst du <b>Satellitenhilfsdaten aus dem Internet herunterladen</b>, wodurch der Startvorgang von GPS deutlich beschleunigt werden kann.</string>
 </resources>

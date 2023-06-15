@@ -89,4 +89,5 @@
     <string name="two_button_navigation">2 düyməli hərəkət</string>
     <string name="navbar_navigation">3 düyməli hərəkət</string>
     <string name="hide_gesture_hint">Jestlə hərəkət məsləhətini gizlət</string>
+    <string name="location_agps_access_summary">Yerləşmə açıq olduqda, <b>peyk köməkçi datalarını internetdən endirin</b>, bu GPS-in başlatma performansını əhəmiyyətli dərəcədə artıra bilər.</string>
 </resources>

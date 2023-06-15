@@ -89,4 +89,5 @@
     <string name="two_button_navigation">2-ღილაკიანი სამოძრაო</string>
     <string name="navbar_navigation">3-ღილაკიანი სამოძრაო</string>
     <string name="hide_gesture_hint">ჟესტებით სამოძრაო მანიშნებლის დამალვა</string>
+    <string name="location_agps_access_summary">მდებარეობა როცა ჩართულია, <b>ინტერნეტიდან ჩამოიტვირთება დამხმარე თანამგზავრული მონაცემები</b>, რომლებიც მეტად აუმჯობესებს შედეგიანობას GPS-ის ამუშავებისთანავე.</string>
 </resources>

@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navigare cu 2 butoane</string>
     <string name="navbar_navigation">Navigare cu 3 butoane</string>
     <string name="hide_gesture_hint">Ascunde indiciile navigării gestuale</string>
+    <string name="location_agps_access_summary">Când locația este activată, <b>descarcă date de asistență prin satelit de pe internet</b>, ceea ce poate îmbunătăți considerabil performanța de pornire a GPS-ului.</string>
 </resources>

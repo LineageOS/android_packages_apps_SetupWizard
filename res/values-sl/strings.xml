@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Krmarjenje z dvema gumboma</string>
     <string name="navbar_navigation">Krmarjenje s tremi gumbi</string>
     <string name="hide_gesture_hint">Skrij namig krmarjenja</string>
+    <string name="location_agps_access_summary">Ko je lokacija vklopljena, <b>prenesi pomožne podatke satelita iz interneta</b>, kateri lahko močno izboljšajo zagonsko zmogljivost GPS-a</string>
 </resources>
