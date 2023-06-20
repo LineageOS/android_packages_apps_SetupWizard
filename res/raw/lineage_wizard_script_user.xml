@@ -36,6 +36,10 @@
     </WizardAction>
 
     <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end" id="restore">
+        <result wizard:action="navigation_settings" />
+    </WizardAction>
+
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
         <result wizard:action="finish" />
     </WizardAction>
 
