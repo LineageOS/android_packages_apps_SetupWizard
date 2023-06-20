@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Навигация двумя кнопками</string>
     <string name="navbar_navigation">Навигация тремя кнопками</string>
     <string name="hide_gesture_hint">Скрыть подсказку навигации жестами</string>
+    <string name="location_agps_access_summary">При включении определения местоположения <b>из интернета будут загружаться вспомогательные спутниковые данные</b>. Это поможет значительно ускорить подключение к GPS.</string>
 </resources>

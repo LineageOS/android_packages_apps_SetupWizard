@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navigazione con due pulsanti</string>
     <string name="navbar_navigation">Navigazione con tre pulsanti</string>
     <string name="hide_gesture_hint">Nascondi i suggerimenti per la navigazione tramite gesti</string>
+    <string name="location_agps_access_summary">Quando la geolocalizzazione è attiva, <b>scarica da internet i dati di assistenza satellitare</b>, che possono migliorare notevolmente le prestazioni di avvio del GPS.</string>
 </resources>

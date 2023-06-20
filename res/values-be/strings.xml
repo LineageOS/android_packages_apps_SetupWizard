@@ -42,13 +42,16 @@
     <string name="yes">Так</string>
     <string name="emergency_call">Экстранны выклік</string>
     <string name="services_os_nav_keys_label"><b>Выкарыстоўваць кнопкі навігацыі на экране</b> замест апаратных.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
     <string name="settings_biometric_setup_details">Выберыце спосаб блакіравання экрана.</string>
     <string name="fingerprint_setup_title">Наладжванне адбітка пальца</string>
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
+    <string name="face_setup_title">Разблакіроўка па твары</string>
     <string name="biometric_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
     <string name="biometric_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
-    <string name="intro_restore_subtitle" product="tablet">Калі ў вас засталася рэзервовая копія з папярэдняга планшэта, які працаваў на <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можаце аднавіць іх тут.</string>
-    <string name="intro_restore_subtitle" product="default">Калі ў вас засталася рэзервовая копія з папярэдняга тэлефона, які працаваў на <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можаце аднавіць іх тут.</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Навігацыя</string>
+    <string name="gesture_navigation">Навігацыя жэстамі</string>
 </resources>

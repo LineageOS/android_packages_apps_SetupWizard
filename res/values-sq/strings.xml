@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navigimi me 2 butona</string>
     <string name="navbar_navigation">Navigimi me 3 butona</string>
     <string name="hide_gesture_hint">Fshih këshillën e navigimit gjestik</string>
+    <string name="location_agps_access_summary">Kur vendndodhja është aktive, <b>shkarko të dhënat e ndihmës satelitore nga interneti</b>, të cilat mund të përmirësojnë shumë performancën e nisjes së GPS-së.</string>
 </resources>
