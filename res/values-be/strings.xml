@@ -20,7 +20,6 @@
     <string name="next">Далей</string>
     <string name="skip">Прапусціць</string>
     <string name="start">Пачаць</string>
-    <string name="ok">Добра</string>
     <string name="loading">Секунду\u2026</string>
     <string name="setup_complete">Налада завершана</string>
     <string name="setup_welcome">Вітаем</string>
@@ -29,7 +28,6 @@
     <string name="setup_sim_missing">SIM-картка адсутнічае</string>
     <string name="setup_choose_data_sim">Выберыце SIM-картку для перадачы даных</string>
     <string name="setup_location">Службы месцазнаходжання</string>
-    <string name="setup_other">Іншыя службы</string>
     <string name="setup_datetime">Дата і час</string>
     <string name="setup_current_date">Бягучая дата</string>
     <string name="setup_current_time">Бягучы час</string>
@@ -56,4 +54,6 @@
     <string name="biometric_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
     <string name="biometric_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
+    <string name="lockscreen_setup_title" product="tablet">Абараніце свой планшэт</string>
+    <string name="lockscreen_setup_title" product="default">Абараніце свой тэлефон</string>
 </resources>
