@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navigazion a 2 botons</string>
     <string name="navbar_navigation">Navigazion a 3 botons</string>
     <string name="hide_gesture_hint">Plate i sugjeriments pe navigazion a mots</string>
+    <string name="location_agps_access_summary">Cuant che la gjeolocalizazion e je ative, <b>discjame di internet i dâts di assistence satelitâr</b>, che a puedin miorâ une vore lis prestazions di inviament dal GPS.</string>
 </resources>

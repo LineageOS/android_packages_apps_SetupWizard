@@ -47,6 +47,7 @@
     <string name="enable_mobile_data_summary">Vil du bruge mobildata under opsætning? Aktivering af mobildata kan medføre dataudgifter.</string>
     <string name="no">Nej</string>
     <string name="yes">Ja</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Nødopkald</string>
     <string name="accessibility_settings">Hjælpefunktioner</string>
     <string name="setup_services">LineageOS-funktioner</string>
@@ -61,16 +62,22 @@
     <string name="fingerprint_setup_title">Fingeraftryksopsætning</string>
     <string name="fingerprint_setup_summary">For at bruge din fingeraftryks-sensor til at låse din skærm op, er du nødt til at:</string>
     <string name="fingerprint_setup_add_fingerprint">Tilføj dit fingeraftryk</string>
+    <string name="face_setup_title">Ansigt opsætning</string>
+    <string name="face_setup_summary">For at bruge dit ansigt til at låse din skærm op, skal du:</string>
+    <string name="face_setup_add_face">Tilføj dit ansigt</string>
     <string name="biometric_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
     <string name="biometric_setup_screen_lock_setup">Indstil skærmlås</string>
     <string name="sim_locale_changed">%1$s SIM fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
+    <string name="lockscreen_setup_title" product="tablet">Beskyt din tablet</string>
     <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
     <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv en PIN, et mønster, eller en adgangskode, for at låse skærmen op</string>
     <string name="lockscreen_setup_screen_lock_setup">Opsætning</string>
+    <string name="intro_restore_title">Gendan apps og data</string>
     <string name="intro_restore_subtitle" product="tablet">Hvis du har en sikkerhedskopi fra din sidste <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, kan du gendanne den her.</string>
     <string name="intro_restore_subtitle" product="default">Hvis du har en sikkerhedskopi fra din sidste <xliff:g id="name" example="LineageOS">%s</xliff:g> telefon, kan du gendanne den her.</string>
+    <string name="intro_restore_button">Gendan fra backup</string>
     <string name="update_recovery_title">Opdater Lineage Genddanelse</string>
     <string name="update_recovery_description">Opdateringer Lineage Recovery ved første opstart efter hver opdatering.</string>
     <string name="update_recovery_warning">Gendannelse vil blive opdateret, så snart du er færdig med opsætningen. Hvis du ønsker at holde det intakt, skal du deaktivere denne funktion.</string>
@@ -82,4 +89,5 @@
     <string name="two_button_navigation">Navigering med to knapper</string>
     <string name="navbar_navigation">Navigering med tre knapper</string>
     <string name="hide_gesture_hint">Skjul bevægelses navigerings hint</string>
+    <string name="location_agps_access_summary">Når lokation er tændt, <b>download satellit hjælpedata fra internettet</b>, som kan hjælpe meget med GPS opstartsfunktion</string>
 </resources>
