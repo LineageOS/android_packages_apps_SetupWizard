@@ -42,7 +42,9 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
         if (SetupWizardUtils.isOwner()) {
             SetupWizardUtils.enableCaptivePortalDetection(this);
         }
-        PhoneMonitor.onSetupFinished();
+        if (SetupWizardUtils.hasTelephony(this)) {
+            PhoneMonitor.onSetupFinished();
+        }
         if (!SetupWizardUtils.isManagedProfile(this)) {
             launchHome();
         }

@@ -93,7 +93,9 @@ public class SetupWizardApp extends Application {
             Log.v(TAG, "onCreate()");
         }
         NetworkMonitor.initInstance(this);
-        PhoneMonitor.initInstance(this);
+        if (SetupWizardUtils.hasTelephony(this)) {
+            PhoneMonitor.initInstance(this);
+        }
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         if (SetupWizardUtils.isOwner()) {
             SetupWizardUtils.setMobileDataEnabled(this, false);
