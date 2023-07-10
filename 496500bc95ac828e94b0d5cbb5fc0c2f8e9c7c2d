@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86a59b97_34a97a8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-10T14:52:07Z",
+      "side": 1,
+      "message": "add the check here instead : https://github.com/LineageOS/android_packages_apps_SetupWizard/blob/lineage-20.0/src/org/lineageos/setupwizard/util/PhoneMonitor.java#L146",
+      "revId": "496500bc95ac828e94b0d5cbb5fc0c2f8e9c7c2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
