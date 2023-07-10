@@ -67,6 +67,8 @@ import android.util.SparseArray;
 import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.TelephonyIntents;
 
+import org.lineageos.setupwizard.util.SetupWizardUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -144,6 +146,9 @@ public class PhoneMonitor {
             };
 
     public static void initInstance(Context context) {
+        if (!SetupWizardUtils.hasTelephony(context)) {
+            return;
+        }
         if (sInstance == null) {
             sInstance = new PhoneMonitor(context.getApplicationContext());
         }
