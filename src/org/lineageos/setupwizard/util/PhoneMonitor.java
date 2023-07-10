@@ -144,6 +144,9 @@ public class PhoneMonitor {
             };
 
     public static void initInstance(Context context) {
+        if (!SetupWizardUtils.hasTelephony(context)) {
+            return;
+        }
         if (sInstance == null) {
             sInstance = new PhoneMonitor(context.getApplicationContext());
         }
