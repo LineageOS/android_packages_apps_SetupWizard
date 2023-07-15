@@ -89,5 +89,5 @@
     <string name="two_button_navigation">“双按钮”导航</string>
     <string name="navbar_navigation">“三按钮”导航</string>
     <string name="hide_gesture_hint">隐藏手势导航栏</string>
-    <string name="location_agps_access_summary">当位置服务开启时， <b>将会从互联网下载微星辅助数据</b>，浙江大幅提升 GPS 的准确度以及性能。</string>
+    <string name="location_agps_access_summary">当位置信息开启时，<b>将会从互联网下载卫星辅助数据</b>，这将大幅提升 GPS 的启动性能。</string>
 </resources>
