@@ -53,6 +53,8 @@
     <string name="emergency_call">緊急電話</string>
     <string name="accessibility_settings">無障礙設定</string>
     <string name="setup_services">LineageOS 功能</string>
+    <string name="services_pp_explanation">這些服務可協助您強化裝置的功能。資料將會根據 <xliff:g id="name" example="LineageOS">%1$s</xliff:g> 的隱私權政策使用。</string>
+    <string name="services_find_privacy_policy">您可以透過在其他裝置上造訪 <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> 來閱讀隱私權政策</string>
     <string name="services_help_improve_cm">協助改善 <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> 經由傳送錯誤報告及使用資料給 LineageOS，這些資料不會用於識別您的身分，而是用於幫助團隊改善電池壽命、應用程式效能和新的 <xliff:g id="name" example="LineageOS">%2$s</xliff:g> 功能。</string>
     <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>

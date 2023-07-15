@@ -16,12 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Майстар налады</string>
     <string name="next">Далей</string>
     <string name="skip">Прапусціць</string>
     <string name="start">Пачаць</string>
     <string name="loading">Секунду\u2026</string>
-    <string name="setup_complete">Налада завершана</string>
     <string name="setup_welcome">Вітаем</string>
     <string name="setup_locale">Мова</string>
     <string name="setup_wifi">Выбраць сетку Wi-Fi</string>
@@ -31,29 +29,26 @@
     <string name="setup_datetime">Дата і час</string>
     <string name="setup_current_date">Бягучая дата</string>
     <string name="setup_current_time">Бягучы час</string>
-    <string name="date_time_summary">Пры неабходнасці задайце часавы пояс і адкарэкціруйце бягучую дату і час</string>
     <string name="backup_data_summary"><b>Рабіць рэзервовую копію</b> даных праграмы, пароляў Wi-Fi і іншых наладаў на серверах Google</string>
-    <string name="other_services_summary">Гэтыя службы дазваляюць Google пашырыць магчымасці прылады. Вы можаце выключыць іх у кожны час. Дадзеныя будуць выкарыстоўвацца ў адпаведнасці з <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="location_services_summary">Службы вызначэння месцазнаходжання дазваляюць сістэмным і староннім праграмам збіраць і выкарыстоўваць такія даныя, як ваша прыблізнае месцазнаходжанне. Напрыклад, праграма можа выкарыстоўваць ваша прыблізнае месцазнаходжанне, каб знайсці бліжэйшыя кавярні.</string>
     <string name="location_access_summary"><b>Дазволіць праграмам, якія запыталі ваш дазвол</b> выкарыстоўваць інфармацыю вашага месцазнаходжання. Гэта можа ўключаць ваша бягучыя і папярэднія месцазнаходжанні.</string>
+    <string name="setup_mobile_data">Уключыць мабільную перадачу даных</string>
     <string name="setup_mobile_data_no_service">Няма сеткі</string>
     <string name="setup_mobile_data_emergency_only">Толькі экстранныя выклікі</string>
     <string name="enable_mobile_data_summary">Вы сапраўды хочаце выкарыстоўваць перадачу даных праз сотавую сетку падчас наладжвання? Уключэнне перадачы даных праз сотавую сетку можа стаць прычынай дадатковай платы.</string>
     <string name="no">Не</string>
     <string name="yes">Так</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Экстранны выклік</string>
     <string name="services_os_nav_keys_label"><b>Выкарыстоўваць кнопкі навігацыі на экране</b> замест апаратных.</string>
-    <string name="setup_unlock">Разблакаваць</string>
-    <string name="setup_device_locked">Прылада была заблакавана карыстальнікам.</string>
     <string name="setup_device_locked_instructions"><i> Для адключэння або ўключэння гэтай функцыі, перайдзіце ў меню \"Налады\" &gt; \"Бяспека\"</i></string>
-    <string name="settings_biometric_setup_title">Выбраць рэзервовы спосаб блакавання экрана</string>
     <string name="settings_biometric_setup_details">Выберыце спосаб блакіравання экрана.</string>
     <string name="fingerprint_setup_title">Наладжванне адбітка пальца</string>
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
     <string name="face_setup_title">Разблакіроўка па твары</string>
-    <string name="biometric_setup_backup_lock_method">Наладзіць дадатковы спосаб разблакоўкі</string>
-    <string name="biometric_setup_screen_lock_setup">Наладзіць блакаванне экрану</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
     <string name="lockscreen_setup_title" product="tablet">Абараніце свой планшэт</string>
     <string name="lockscreen_setup_title" product="default">Абараніце свой тэлефон</string>
+    <string name="lockscreen_setup_screen_lock_setup">Наладзіць</string>
+    <string name="intro_restore_title">Аднавіць праграмы і даныя</string>
 </resources>
