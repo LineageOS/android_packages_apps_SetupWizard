@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50fc60f8_7fb21da0",
+        "filename": "src/org/lineageos/setupwizard/NavigationSettingsActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-07-15T20:28:09Z",
+      "side": 0,
+      "message": "unrelated but probably intentional?",
+      "revId": "ee6b5c03684cd0b11fae2b357769edac4c344a75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
