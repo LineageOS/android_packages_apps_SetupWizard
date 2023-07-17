@@ -16,6 +16,24 @@
       "message": "unrelated but probably intentional?",
       "revId": "ee6b5c03684cd0b11fae2b357769edac4c344a75",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8dfec24a_0d5dc0dd",
+        "filename": "src/org/lineageos/setupwizard/NavigationSettingsActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-07-17T12:49:54Z",
+      "side": 0,
+      "message": "Intentional",
+      "parentUuid": "50fc60f8_7fb21da0",
+      "revId": "ee6b5c03684cd0b11fae2b357769edac4c344a75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
