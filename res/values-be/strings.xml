@@ -45,6 +45,7 @@
     <string name="fingerprint_setup_title">Наладжванне адбітка пальца</string>
     <string name="fingerprint_setup_add_fingerprint">Дадаць адбітак пальца</string>
     <string name="face_setup_title">Разблакіроўка па твары</string>
+    <string name="face_setup_add_face">Дадаць твар</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
     <string name="lockscreen_setup_title" product="tablet">Абараніце свой планшэт</string>
     <string name="lockscreen_setup_title" product="default">Абараніце свой тэлефон</string>
