@@ -89,4 +89,5 @@
     <string name="two_button_navigation">Navigace dvěma tlačítky</string>
     <string name="navbar_navigation">Navigace třemi tlačítky</string>
     <string name="hide_gesture_hint">Skrýt napovědy navigačních gest</string>
+    <string name="location_agps_access_summary">Když je poloha zapnutá, <b>stahujte data satelitní asistence z internetu</b>, což může výrazně zlepšit výkon spuštění systému GPS.</string>
 </resources>

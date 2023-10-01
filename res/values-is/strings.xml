@@ -56,6 +56,7 @@
     <string name="services_help_improve_cm">Hjálpaðu okkur að bæta <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> með því að senda sjálfvirkt greiningargögn og upplýsingar um notkun til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Þessar upplýsingar er ekki hægt að nota til að auðkenna þig og hjálpa þróunarteymum við vinnu varðandi ýmis atriði, eins og líftíma rafhlöðu, afköst forrita og nýja eiginleika í <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Veldu gerð skjálæsingar til vara</string>
     <string name="settings_biometric_setup_details">Hvernig viltu læsa skjánum þínum?</string>
     <string name="fingerprint_setup_title">Uppsetning fingrafaraskanna</string>
