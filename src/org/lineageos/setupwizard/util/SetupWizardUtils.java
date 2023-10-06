@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- *               2017-2022 The LineageOS Project
+ *               2017-2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -88,10 +88,10 @@ public class SetupWizardUtils {
     public static void setMobileDataEnabled(Context context, boolean enabled) {
         TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         if (tm.isMultiSimEnabled()) {
-            int phoneId = SubscriptionManager.from(context).getDefaultDataPhoneId();
+            int subId = SubscriptionManager.getDefaultDataSubscriptionId();
+            int phoneId = SubscriptionManager.from(context).getPhoneId(subId);
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
-            int subId = SubscriptionManager.getDefaultDataSubscriptionId();
             tm.createForSubscriptionId(subId).setDataEnabled(enabled);
         } else {
             android.provider.Settings.Global.putInt(context.getContentResolver(),
