@@ -36,10 +36,11 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:src="@drawable/logo"
+            android:src="@drawable/slogan_logo"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
+            android:layout_marginLeft="100dp"
             android:padding="@dimen/content_margin_left"/>
 
         <org.lineageos.setupwizard.NavigationLayout

@@ -78,7 +78,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
         mReveal = (ImageView) findViewById(R.id.reveal);
-        setNextText(R.string.start);
+        setNextText(R.string.finish);
     }
 
     @Override

@@ -27,7 +27,7 @@
     <dimen name="welcome_content_container_padding_bottom">30dp</dimen>
     <dimen name="welcome_content_container_padding_end">24dp</dimen>
     <dimen name="welcome_content_container_padding_start">40dp</dimen>
-    <dimen name="welcome_title_text_size">56sp</dimen>
+    <dimen name="welcome_title_text_size">40sp</dimen>
     <dimen name="welcome_title_padding_bottom">16dp</dimen>
     <dimen name="welcome_title_line_height">64dp</dimen>
     <dimen name="welcome_accessibility_text_size">20sp</dimen>
