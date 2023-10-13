@@ -40,7 +40,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:gravity="center"
-            android:paddingTop="@dimen/content_margin_left"
+            android:paddingTop="@dimen/content_margin_top"
             android:paddingRight="@dimen/content_margin_left"
             android:paddingLeft="@dimen/content_margin_left"
             android:paddingBottom="0dp"/>
