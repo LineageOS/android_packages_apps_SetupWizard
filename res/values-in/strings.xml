@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
     <string name="settings_lockscreen_setup_title">Pilih tipe kunci layar</string>
     <string name="settings_lockscreen_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
-    <string name="lockscreen_setup_title" product="tablet">Lindungi tablet Anda</string>
     <string name="lockscreen_setup_title" product="default">Lindungi telepon anda</string>
+    <string name="lockscreen_setup_title" product="tablet">Lindungi tablet Anda</string>
     <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau kata sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
     <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
-    <string name="intro_restore_subtitle" product="tablet">Jika Anda memiliki pencadangan <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet Anda sebelumnya, Anda dapat memulihkannya di sini.</string>
-    <string name="intro_restore_subtitle" product="default">Jika Anda memiliki pencadangan <xliff:g id="name" example="LineageOS">%s</xliff:g> ponsel Anda sebelumnya, Anda dapat memulihkannya di sini.</string>
     <string name="intro_restore_button">Pulihkan dari cadangan</string>
     <string name="update_recovery_title">Perbarui Lineage Recovery</string>
     <string name="update_recovery_description">Memperbarui Lineage Recovery saat boot pertama untuk setiap update selanjutnya.</string>

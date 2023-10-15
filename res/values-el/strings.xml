@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
     <string name="settings_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
-    <string name="lockscreen_setup_title" product="tablet">Προστατέψτε το tablet σας</string>
     <string name="lockscreen_setup_title" product="default">Προστατέψτε το τηλέφωνό σας</string>
+    <string name="lockscreen_setup_title" product="tablet">Προστατέψτε το tablet σας</string>
     <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
     <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση</string>
     <string name="intro_restore_title">Επαναφορά εφαρμογών και δεδομένων</string>
-    <string name="intro_restore_subtitle" product="tablet">Εάν έχετε αντίγραφο ασφαλείας από το τελευταίο <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet σας, μπορείτε να το επαναφέρετε εδώ.</string>
-    <string name="intro_restore_subtitle" product="default">Εάν έχετε αντίγραφο ασφαλείας από το τελευταίο <xliff:g id="name" example="LineageOS">%s</xliff:g> τηλέφωνό σας, μπορείτε να το επαναφέρετε εδώ.</string>
     <string name="intro_restore_button">Επαναφορά από αντίγραφο ασφαλείας</string>
     <string name="update_recovery_title">Ενημέρωση Lineage Recovery</string>
     <string name="update_recovery_description">Ενημέρωση της Lineage Recovery στην πρώτη εκκίνηση μετά από κάθε ενημέρωση.</string>

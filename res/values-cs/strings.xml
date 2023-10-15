@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">Zjištěna %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
     <string name="settings_lockscreen_setup_details">Jak chcete zamykat obrazovku?</string>
-    <string name="lockscreen_setup_title" product="tablet">Zabezpečte svůj tablet</string>
     <string name="lockscreen_setup_title" product="default">Chraňte svůj telefon</string>
+    <string name="lockscreen_setup_title" product="device">Ochraňte své zařízení</string>
+    <string name="lockscreen_setup_title" product="tablet">Zabezpečte svůj tablet</string>
     <string name="lockscreen_setup_summary"><b>Chránit toto zařízení</b> a před odemknutím obrazovky požadovat kód PIN, gesto nebo heslo</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavit</string>
     <string name="intro_restore_title">Obnovit aplikace a\u00a0data</string>
-    <string name="intro_restore_subtitle" product="tablet">Pokud máte zálohu z předešlého tabletu <xliff:g id="name" example="LineageOS">%s</xliff:g> , můžete ji obnovit zde.</string>
-    <string name="intro_restore_subtitle" product="default">Pokud máte zálohu z předešlého telefonu <xliff:g id="name" example="LineageOS">%s</xliff:g> , můžete ji obnovit zde.</string>
+    <string name="intro_restore_subtitle">Jestliže máte zálohu z předešlého <xliff:g id="name" example="LineageOS">%s</xliff:g> zařízení, můžete ji obnovit zde.</string>
     <string name="intro_restore_button">Obnovit ze zálohy</string>
     <string name="update_recovery_title">Aktualizovat Lineage recovery</string>
     <string name="update_recovery_description">Aktualizace Lineage recovery při prvním spuštění po každé aktualizaci</string>

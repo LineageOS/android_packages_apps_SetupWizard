@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">%1$s SIM 인식됨</string>
     <string name="settings_lockscreen_setup_title">화면 잠금 방식 선택</string>
     <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
-    <string name="lockscreen_setup_title" product="tablet">태블릿 보호</string>
     <string name="lockscreen_setup_title" product="default">휴대전화 보호</string>
+    <string name="lockscreen_setup_title" product="tablet">태블릿 보호</string>
     <string name="lockscreen_setup_summary"><b>이 기기를 보호</b>하고 화면 잠금 해제에 PIN, 패턴 또는 비밀번호가 필요하도록 설정할 수 있습니다.</string>
     <string name="lockscreen_setup_screen_lock_setup">설정</string>
     <string name="intro_restore_title">앱 및 데이터 복원</string>
-    <string name="intro_restore_subtitle" product="tablet">최근에 <xliff:g id="name" example="LineageOS">%s</xliff:g> 태블릿에서 진행한 백업이 있는 경우 여기에서 복원할 수 있습니다.</string>
-    <string name="intro_restore_subtitle" product="default">최근에 <xliff:g id="name" example="LineageOS">%s</xliff:g> 휴대전화에서 진행한 백업이 있는 경우 여기에서 복원할 수 있습니다.</string>
     <string name="intro_restore_button">백업에서 복원</string>
     <string name="update_recovery_title">Lineage 복구 모드 업데이트</string>
     <string name="update_recovery_description">매 업데이트 적용 후 첫 부팅 시 Lineage 복구 모드를 업데이트합니다.</string>

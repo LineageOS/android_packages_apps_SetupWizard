@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
     <string name="settings_lockscreen_setup_title">选择屏幕锁定类型</string>
     <string name="settings_lockscreen_setup_details">您希望如何锁定您的屏幕？</string>
-    <string name="lockscreen_setup_title" product="tablet">保护您的平板电脑</string>
     <string name="lockscreen_setup_title" product="default">为您的手机启用保护功能</string>
+    <string name="lockscreen_setup_title" product="device">保护您的设备</string>
+    <string name="lockscreen_setup_title" product="tablet">保护您的平板电脑</string>
     <string name="lockscreen_setup_summary"><b>为此设备启用保护功能</b>，并要求输入 PIN 码、图案或密码才能解锁屏幕</string>
     <string name="lockscreen_setup_screen_lock_setup">设置</string>
     <string name="intro_restore_title">恢复应用和数据</string>
-    <string name="intro_restore_subtitle" product="tablet">如果你从你最后的 <xliff:g id="name" example="LineageOS">%s</xliff:g> 平板电脑备份，你可以在这里还原它。</string>
-    <string name="intro_restore_subtitle" product="default">如果你从你最后的 <xliff:g id="name" example="LineageOS">%s</xliff:g> 手机备份，你可以在这里还原它。</string>
+    <string name="intro_restore_subtitle">如果您从您最后的 <xliff:g id="name" example="LineageOS">%s</xliff:g> 设备备份，您可以在这里还原它。</string>
     <string name="intro_restore_button">从备份中还原</string>
     <string name="update_recovery_title">更新 Lineage 恢复</string>
     <string name="update_recovery_description">每次更新后在第一次启动时更新 Lineage 恢复。</string>

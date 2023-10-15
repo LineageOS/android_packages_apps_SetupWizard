@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">%1$s SIM fundet</string>
     <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
     <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
-    <string name="lockscreen_setup_title" product="tablet">Beskyt din tablet</string>
     <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
+    <string name="lockscreen_setup_title" product="tablet">Beskyt din tablet</string>
     <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv en PIN, et mønster, eller en adgangskode, for at låse skærmen op</string>
     <string name="lockscreen_setup_screen_lock_setup">Opsætning</string>
     <string name="intro_restore_title">Gendan apps og data</string>
-    <string name="intro_restore_subtitle" product="tablet">Hvis du har en sikkerhedskopi fra din sidste <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, kan du gendanne den her.</string>
-    <string name="intro_restore_subtitle" product="default">Hvis du har en sikkerhedskopi fra din sidste <xliff:g id="name" example="LineageOS">%s</xliff:g> telefon, kan du gendanne den her.</string>
     <string name="intro_restore_button">Gendan fra backup</string>
     <string name="update_recovery_title">Opdater Lineage Genddanelse</string>
     <string name="update_recovery_description">Opdateringer Lineage Recovery ved første opstart efter hver opdatering.</string>

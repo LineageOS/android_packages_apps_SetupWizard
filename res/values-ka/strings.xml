@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">%1$s SIM-ბარათია აღმოჩენილი</string>
     <string name="settings_lockscreen_setup_title">ეკრანის ჩამკეტის სახეობის არჩევა</string>
     <string name="settings_lockscreen_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
-    <string name="lockscreen_setup_title" product="tablet">დაიცავით თქვენი პლანშეტი</string>
     <string name="lockscreen_setup_title" product="default">დაიცავით თქვენი ტელეფონი</string>
+    <string name="lockscreen_setup_title" product="device">დაიცავით მოწყობილობა</string>
+    <string name="lockscreen_setup_title" product="tablet">დაიცავით თქვენი პლანშეტი</string>
     <string name="lockscreen_setup_summary"><b>დაიცავით მოწყობილობა</b> და ჩართეთ PIN-კოდის, მონახაზის ან პაროლის შეყვანის მოთხოვნა, ჩაკეტილი ეკრანის გასახსნელად</string>
     <string name="lockscreen_setup_screen_lock_setup">გამართვა</string>
     <string name="intro_restore_title">აპებისა და მონაცემების აღდგენა</string>
-    <string name="intro_restore_subtitle" product="tablet">თუ თქვენი წინა <xliff:g id="name" example="LineageOS">%s</xliff:g>-პლანშეტის სამარქაფო ასლი გაქვთ, აქედან შეძლებთ აღდგენას.</string>
-    <string name="intro_restore_subtitle" product="default">თუ თქვენი წინა <xliff:g id="name" example="LineageOS">%s</xliff:g>-ტელეფონის სამარქაფო ასლი გაქვთ, აქედან შეძლებთ აღდგენას.</string>
+    <string name="intro_restore_subtitle">თუ თქვენი წინა <xliff:g id="name" example="LineageOS">%s</xliff:g>-მოწყობილობის სამარქაფო ასლი გაქვთ, აქედან შეძლებთ აღდგენას.</string>
     <string name="intro_restore_button">აღდგენა მარქაფიდან</string>
     <string name="update_recovery_title">Lineage-აღმდგენის განახლება</string>
     <string name="update_recovery_description">განაახლებს Lineage-აღმდგენს პირველი ჩატვირთვისას, ყოველი განახლების შემდგომ.</string>

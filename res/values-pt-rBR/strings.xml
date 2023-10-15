@@ -65,8 +65,8 @@
     <string name="sim_locale_changed">Cartão SIM %1$s detectado</string>
     <string name="settings_lockscreen_setup_title">Selecione o tipo de bloqueio de tela</string>
     <string name="settings_lockscreen_setup_details">Como você gostaria de bloquear a tela?</string>
-    <string name="lockscreen_setup_title" product="tablet">Proteja o seu tablet</string>
     <string name="lockscreen_setup_title" product="default">Proteger seu smartphone</string>
+    <string name="lockscreen_setup_title" product="tablet">Proteja o seu tablet</string>
     <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> e pedir PIN, padrão ou senha para desbloquear a tela</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
     <string name="update_recovery_title">Atualizar Lineage Recovery</string>

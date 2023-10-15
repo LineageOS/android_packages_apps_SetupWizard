@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">%1$s SIM rilevata</string>
     <string name="settings_lockscreen_setup_title">Seleziona il tipo di blocco schermo</string>
     <string name="settings_lockscreen_setup_details">Come vuoi bloccare lo schermo?</string>
-    <string name="lockscreen_setup_title" product="tablet">Proteggi il tuo tablet</string>
     <string name="lockscreen_setup_title" product="default">Proteggi il tuo telefono</string>
+    <string name="lockscreen_setup_title" product="device">Proteggi il tuo dispositivo</string>
+    <string name="lockscreen_setup_title" product="tablet">Proteggi il tuo tablet</string>
     <string name="lockscreen_setup_summary"><b>Proteggi il dispositivo</b> e richiedi PIN, sequenza o password per sbloccare schermo</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
     <string name="intro_restore_title">Ripristina app e dati</string>
-    <string name="intro_restore_subtitle" product="tablet">Se disponi di un backup da un altro tablet con <xliff:g id="name" example="LineageOS">%s</xliff:g>, puoi ripristinarlo ora.</string>
-    <string name="intro_restore_subtitle" product="default">Se disponi di un backup da un altro telefono con <xliff:g id="name" example="LineageOS">%s</xliff:g>, puoi ripristinarlo ora.</string>
+    <string name="intro_restore_subtitle">Se disponi di un backup di un altro telefono con <xliff:g id="name" example="LineageOS">%s</xliff:g>, puoi ripristinarlo ora.</string>
     <string name="intro_restore_button">Ripristina dal backup</string>
     <string name="update_recovery_title">Aggiorna recovery Lineage</string>
     <string name="update_recovery_description">Aggiorna la recovery Lineage al primo avvio successivo ad ogni aggiornamento.</string>

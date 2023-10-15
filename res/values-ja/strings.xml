@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
     <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>
     <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
-    <string name="lockscreen_setup_title" product="tablet">タブレットの保護</string>
     <string name="lockscreen_setup_title" product="default">スマートフォンの保護</string>
+    <string name="lockscreen_setup_title" product="device">デバイスの保護</string>
+    <string name="lockscreen_setup_title" product="tablet">タブレットの保護</string>
     <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
     <string name="lockscreen_setup_screen_lock_setup">セットアップ</string>
     <string name="intro_restore_title">アプリとデータを復元</string>
-    <string name="intro_restore_subtitle" product="tablet"><xliff:g id="name" example="LineageOS">%s</xliff:g> デバイスのバックアップがあれば、ここで復元できます。</string>
-    <string name="intro_restore_subtitle" product="default"><xliff:g id="name" example="LineageOS">%s</xliff:g> デバイスのバックアップがあれば、ここで復元できます。</string>
+    <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> デバイスのバックアップがあれば、ここで復元できます。</string>
     <string name="intro_restore_button">バックアップから復元</string>
     <string name="update_recovery_title">Lineage Recovery をアップデート</string>
     <string name="update_recovery_description">毎回のアップデートの最初の起動時に Lineage Recovery をアップデートします</string>

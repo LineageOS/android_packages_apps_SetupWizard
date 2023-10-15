@@ -61,8 +61,8 @@
     <string name="sim_locale_changed">%1$s simkaart detektearre</string>
     <string name="settings_lockscreen_setup_title">Type skermbeskoatteling selektearje</string>
     <string name="settings_lockscreen_setup_details">Hoe wolle jo jo skerm beskoattelje?</string>
-    <string name="lockscreen_setup_title" product="tablet">Beskermje jo tablet</string>
     <string name="lockscreen_setup_title" product="default">Beskermje jo telefoan</string>
+    <string name="lockscreen_setup_title" product="tablet">Beskermje jo tablet</string>
     <string name="lockscreen_setup_summary"><b>Beskermje dit apparaat</b> en freegje om in pinkoade, patroan of wachtwurd om it skerm te ûntskoatteljen</string>
     <string name="lockscreen_setup_screen_lock_setup">Ynstelle</string>
 </resources>

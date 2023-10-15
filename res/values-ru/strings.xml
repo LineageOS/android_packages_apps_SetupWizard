@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
     <string name="settings_lockscreen_setup_title">Выбрать способ блокировки экрана</string>
     <string name="settings_lockscreen_setup_details">Как вы хотите заблокировать ваш экран?</string>
-    <string name="lockscreen_setup_title" product="tablet">Защитите ваш планшет</string>
     <string name="lockscreen_setup_title" product="default">Защитите свой телефон</string>
+    <string name="lockscreen_setup_title" product="device">Защитите свое устройство</string>
+    <string name="lockscreen_setup_title" product="tablet">Защитите ваш планшет</string>
     <string name="lockscreen_setup_summary"><b>Защитить это устройство</b> и запрашивать PIN-код, графический ключ или пароль для разблокировки экрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Настройка</string>
     <string name="intro_restore_title">Восстановить приложения и данные</string>
-    <string name="intro_restore_subtitle" product="tablet">Если у вас есть резервная копия с вашего последнего планшета с <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можете восстановить ее здесь.</string>
-    <string name="intro_restore_subtitle" product="default">Если у вас есть резервная копия с вашего последнего телефона с <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можете восстановить ее здесь.</string>
+    <string name="intro_restore_subtitle">Если у вас есть резервная копия с вашего последнего устройства с <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_button">Восстановить из резервной копии</string>
     <string name="update_recovery_title">Обновление Lineage Recovery</string>
     <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>

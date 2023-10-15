@@ -47,8 +47,8 @@
     <string name="face_setup_title">Разблакіроўка па твары</string>
     <string name="face_setup_add_face">Дадаць твар</string>
     <string name="settings_lockscreen_setup_details">Выберыце спосаб блакіравання экрана.</string>
-    <string name="lockscreen_setup_title" product="tablet">Абараніце свой планшэт</string>
     <string name="lockscreen_setup_title" product="default">Абараніце свой тэлефон</string>
+    <string name="lockscreen_setup_title" product="tablet">Абараніце свой планшэт</string>
     <string name="lockscreen_setup_screen_lock_setup">Наладзіць</string>
     <string name="intro_restore_title">Аднавіць праграмы і даныя</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>

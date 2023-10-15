@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">SIM %1$s detectat</string>
     <string name="settings_lockscreen_setup_title">Selectați tipul de blocare ecran</string>
     <string name="settings_lockscreen_setup_details">Cum doriți să vă blocați ecranul?</string>
-    <string name="lockscreen_setup_title" product="tablet">Protejați tableta dvs.</string>
     <string name="lockscreen_setup_title" product="default">Protejați telefonul</string>
+    <string name="lockscreen_setup_title" product="device">Protejați-vă dispozitivul</string>
+    <string name="lockscreen_setup_title" product="tablet">Protejați tableta dvs.</string>
     <string name="lockscreen_setup_summary"><b>Protejați dispozitivul</b> cu PIN, model sau parolă necesară pt. a debloca ecranul</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurați</string>
     <string name="intro_restore_title">Restabiliți aplicațiile și datele</string>
-    <string name="intro_restore_subtitle" product="tablet">Dacă aveți o copie de rezervă de pe ultima tabletă &lt;xliff:g id="name" example="LineageOS"&gt;&lt;xliff:g id="name" example="LineageOS"&gt;&lt;/xliff:g&gt;, o puteți restaura aici.</string>
-    <string name="intro_restore_subtitle" product="default">Dacă aveți o copie de rezervă de pe ultimul telefon &lt;xliff:g id="name" example="LineageOS"&gt;&lt;xliff:g id="name" example="LineageOS"&gt;&lt;/xliff:g&gt;, o puteți restaura aici.</string>
+    <string name="intro_restore_subtitle">Dacă aveţi o copie de rezervă de pe ultimul dispozitiv <xliff:g id="name" example="LineageOS">%s</xliff:g>, îl puteţi restaura aici.</string>
     <string name="intro_restore_button">Restaurează din backup</string>
     <string name="update_recovery_title">Actualizează Lineage Recovery</string>
     <string name="update_recovery_description">Actualizează Lineage Recovery la prima pornire după fiecare actualizare.</string>

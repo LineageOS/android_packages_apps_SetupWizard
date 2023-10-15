@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">%1$s SIM detectada</string>
     <string name="settings_lockscreen_setup_title">Selecciona el tipus de bloqueig de pantalla</string>
     <string name="settings_lockscreen_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
-    <string name="lockscreen_setup_title" product="tablet">Protegeix la tauleta</string>
     <string name="lockscreen_setup_title" product="default">Protegeix el teu telèfon</string>
+    <string name="lockscreen_setup_title" product="device">Protegiu el vostre dispositiu</string>
+    <string name="lockscreen_setup_title" product="tablet">Protegeix la tauleta</string>
     <string name="lockscreen_setup_summary"><b>Protegeix el dispositiu</b> i estableix un PIN, un patró o una contrasenya per desbloquejar la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configura</string>
     <string name="intro_restore_title">Restauració d\'aplicacions i dades</string>
-    <string name="intro_restore_subtitle" product="tablet">Si teniu una còpia de seguretat de la vostra darrera tauleta &lt;xliff:g id="name" example="LineageOS"&gt;, podeu restaurar-la aquí.</string>
-    <string name="intro_restore_subtitle" product="default">Si teniu una còpia de seguretat del vostre darrer telèfon &lt;xliff:g id="name" example="LineageOS"&gt;, podeu restaurar-la aquí.</string>
+    <string name="intro_restore_subtitle">Si teniu una còpia de seguretat del vostre darrer dispositiu <xliff:g id="name" example="LineageOS">%s</xliff:g>, podeu restaurar-la aquí.</string>
     <string name="intro_restore_button">Restaura des de la còpia de seguretat</string>
     <string name="update_recovery_title">Actualització del recuperador del Lineage</string>
     <string name="update_recovery_description">Actualitza el recuperador del Lineage en el primer inici posterior a cada actualització.</string>

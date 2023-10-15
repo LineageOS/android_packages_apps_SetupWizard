@@ -68,13 +68,11 @@
     <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
     <string name="settings_lockscreen_setup_title">Изберете метод на заключване на екрана</string>
     <string name="settings_lockscreen_setup_details">Как бихте желали да заключите вашият екран?</string>
-    <string name="lockscreen_setup_title" product="tablet">Защитете вашия таблет</string>
     <string name="lockscreen_setup_title" product="default">Защитете телефона си</string>
+    <string name="lockscreen_setup_title" product="tablet">Защитете вашия таблет</string>
     <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
     <string name="lockscreen_setup_screen_lock_setup">Конфигуриране</string>
     <string name="intro_restore_title">Възстановяване на приложения и данни</string>
-    <string name="intro_restore_subtitle" product="tablet">Ако имате резервно копие от последния си <xliff:g id="name" example="LineageOS">%s</xliff:g> таблет, тук може да го възстановите.</string>
-    <string name="intro_restore_subtitle" product="default">Ако имате резервно копие от последния си <xliff:g id="name" example="LineageOS">%s</xliff:g> телефон, тук може да го възстановите.</string>
     <string name="intro_restore_button">Възстановяване от архив</string>
     <string name="update_recovery_title">Актуализиране на Lineage Recovery</string>
     <string name="update_recovery_description">Актуализира Lineage Recovery при първо зареждане след всяка актуализация.</string>

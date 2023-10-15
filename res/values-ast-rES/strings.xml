@@ -59,13 +59,11 @@
     <string name="biometric_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
     <string name="sim_locale_changed">Detectóse la locale «%1$s» de la SIM</string>
     <string name="settings_lockscreen_setup_details">¿Cómo quies bloquiar la pantalla?</string>
-    <string name="lockscreen_setup_title" product="tablet">Proteición de la tableta</string>
     <string name="lockscreen_setup_title" product="default">Proteición del teléfonu</string>
+    <string name="lockscreen_setup_title" product="tablet">Proteición de la tableta</string>
     <string name="lockscreen_setup_summary"><b>Protexi esti preséu</b> y riqui un PIN, una contraseña o un patrón pa desbloquiar la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
     <string name="intro_restore_title">Restauración d\'aplicaciones y datos</string>
-    <string name="intro_restore_subtitle" product="tablet">Si tienes dalguna copia de seguranza de <xliff:g id="name" example="LineageOS">%s</xliff:g> pa la tableta, pues restaurala equí.</string>
-    <string name="intro_restore_subtitle" product="default">Si tienes dalguna copia de seguranza de <xliff:g id="name" example="LineageOS">%s</xliff:g> pal teléfonu, pues restaurala equí.</string>
     <string name="update_recovery_title">Anovar el recovery de Lineage</string>
     <string name="update_recovery_description">Anueva\'l recovery de Lineage nel primer arrinque de cada anovamientu.</string>
     <string name="update_recovery_warning">El recovery anuévase namás que fine la configuración. Si nun lu quies tocar, desactiva esta función.</string>

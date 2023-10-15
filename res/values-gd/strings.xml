@@ -68,13 +68,11 @@
     <string name="sim_locale_changed">Mhothaich sinn do SIM %1$s</string>
     <string name="settings_lockscreen_setup_title">Tagh seòrsa de ghlasadh na sgrìn</string>
     <string name="settings_lockscreen_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
-    <string name="lockscreen_setup_title" product="tablet">Dìon an tablaid agad</string>
     <string name="lockscreen_setup_title" product="default">Dìon am fòn agad</string>
+    <string name="lockscreen_setup_title" product="tablet">Dìon an tablaid agad</string>
     <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
     <string name="lockscreen_setup_screen_lock_setup">Suidhich</string>
     <string name="intro_restore_title">Aisig aplacaidean is dàta</string>
-    <string name="intro_restore_subtitle" product="tablet">Ma tha lethbhreac-glèidhidh on tablaid <xliff:g id="name" example="LineageOS">%s</xliff:g> mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
-    <string name="intro_restore_subtitle" product="default">Ma tha lethbhreac-glèidhidh on fhòn <xliff:g id="name" example="LineageOS">%s</xliff:g> mu dheireadh agad, ’s urrainn dhut aiseag an-seo.</string>
     <string name="intro_restore_button">Aisig o lethbhreac-glèidhidh</string>
     <string name="update_recovery_title">Ùraich aiseag Lineage</string>
     <string name="update_recovery_description">Ùraichidh seo aiseag Lineage air a’ chiad bhùtadh às dèidh gach ùrachadh.</string>

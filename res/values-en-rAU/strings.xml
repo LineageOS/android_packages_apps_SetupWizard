@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">%1$s SIM detected</string>
     <string name="settings_lockscreen_setup_title">Select screen lock type</string>
     <string name="settings_lockscreen_setup_details">How would you like to lock your screen?</string>
-    <string name="lockscreen_setup_title" product="tablet">Protect your tablet</string>
     <string name="lockscreen_setup_title" product="default">Protect your phone</string>
+    <string name="lockscreen_setup_title" product="tablet">Protect your tablet</string>
     <string name="lockscreen_setup_summary"><b>Protect this device</b> and require a PIN, pattern, or password to unlock the screen</string>
     <string name="lockscreen_setup_screen_lock_setup">Set up</string>
     <string name="intro_restore_title">Restore apps and data</string>
-    <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last <xliff:g id="name" example="LineageOS">%s</xliff:g> tablet, you can restore it here.</string>
-    <string name="intro_restore_subtitle" product="default">If you have a backup from your last <xliff:g id="name" example="LineageOS">%s</xliff:g> phone, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
     <string name="update_recovery_title">Update Lineage Recovery</string>
     <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>

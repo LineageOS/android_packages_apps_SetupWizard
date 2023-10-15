@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
     <string name="settings_lockscreen_setup_title">Izberite način zaklepanja zaslona</string>
     <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
-    <string name="lockscreen_setup_title" product="tablet">Zaščitite vaš tablični računalnik</string>
     <string name="lockscreen_setup_title" product="default">Zaščitite vaš telefon</string>
+    <string name="lockscreen_setup_title" product="device">Zaščitite vašo napravo</string>
+    <string name="lockscreen_setup_title" product="tablet">Zaščitite vaš tablični računalnik</string>
     <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in zahtevajte kodo PIN, vzorec ali geslo za odklep zaslona</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
     <string name="intro_restore_title">Obnovi aplikacije in podatke</string>
-    <string name="intro_restore_subtitle" product="tablet">Če imate varnostno kopijo iz vašega zadnjega <xliff:g id="name" example="LineageOS">%s</xliff:g> tabličnega računalnika, jo lahko obnovite tukaj.</string>
-    <string name="intro_restore_subtitle" product="default">Če imate varnostno kopijo iz vašega zadnjega <xliff:g id="name" example="LineageOS">%s</xliff:g> telefona, jo lahko obnovite tukaj.</string>
+    <string name="intro_restore_subtitle">Če imate varnostno kopijo iz vaše zadnje <xliff:g id="name" example="LineageOS">%s</xliff:g> naprave, jo lahko obnovite tukaj.</string>
     <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
     <string name="update_recovery_title">Posodobi obnovitev Lineage</string>
     <string name="update_recovery_description">Posodobi obnovitev Lineage ob prvem zagonu vsake posodobitve.</string>

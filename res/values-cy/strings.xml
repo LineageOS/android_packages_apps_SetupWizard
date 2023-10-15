@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">Synhwyrwyd %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Dewis math o sgrin cloi</string>
     <string name="settings_lockscreen_setup_details">Sut hoffet gloi dy sgrin?</string>
-    <string name="lockscreen_setup_title" product="tablet">Diogelu dy lechen</string>
     <string name="lockscreen_setup_title" product="default">Diogelu dy ffôn</string>
+    <string name="lockscreen_setup_title" product="tablet">Diogelu dy lechen</string>
     <string name="lockscreen_setup_summary"><b>Diogela\'r ddyfais hon</b> gan osod PIN, patrwm, neu gyfrinair er mwyn datgloi\'r sgrin.</string>
     <string name="lockscreen_setup_screen_lock_setup">Gosod</string>
     <string name="intro_restore_title">Adfer apiau a data</string>
-    <string name="intro_restore_subtitle" product="tablet">Os oes gennyt gopi wrth gefn o dy lechen <xliff:g id="name" example="LineageOS">%s</xliff:g> diwethaf, gellir ei adfer fan hyn.</string>
-    <string name="intro_restore_subtitle" product="default">Os oes gennyt gopi wrth gefn o dy ffôn <xliff:g id="name" example="LineageOS">%s</xliff:g> diwethaf, gellir ei adfer fan hyn.</string>
     <string name="intro_restore_button">Adfer o gopi wrth gefn</string>
     <string name="update_recovery_title">Diweddaru Modd Adfer Lineage </string>
     <string name="update_recovery_description">Mae\'n diweddaru Lineage Recovery wrth y cychwyn cyntaf wedi pob diweddariad.</string>

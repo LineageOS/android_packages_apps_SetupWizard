@@ -53,8 +53,6 @@
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> ကိုတိုးတက်လာအောင် ကူညီပါ။</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> သည် ပြဿနာများနှင့် အသုံးပြုမှုဆိုင်ရာအချက်အလက်များကို <xliff:g id="name" example="LineageOS">%2$s</xliff:g> သို့ပေးပို့ပါမည်။ အချက်အလက်များသည် သင်မည်သူမည်ဝါဖြစ်သည်ကို မခွဲခြားနိုင်ဘဲ ဘက်ထရီသက်တမ်း, အက်ပ်များ၏ စွမ်းဆောင်ရည်များနှင့် <xliff:g id="name" example="LineageOS">%3$s</xliff:g>၏ လုပ်ဆောင်မှုအသစ်များကဲ့သို့သော အချက်အလက်များကို အလုပ်လုပ်နေသောအဖွဲ့ထံသို့သာ လွှဲပြောင်းပါမည်။</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="intro_restore_subtitle" product="tablet">အကယ်၍ သင်နောက်ဆုံးသုံးခဲ့သော <xliff:g id="name" example="LineageOS">%s</xliff:g> တက်ဘလပ်မှ အရန်သိမ်းဆည်းထားမှုများရှိပါက ဤနေရာတွင် ပြန်ကူးသွင်းနိုင်သည်။</string>
-    <string name="intro_restore_subtitle" product="default">အကယ်၍ သင်နောက်ဆုံးသုံးခဲ့သော <xliff:g id="name" example="LineageOS">%s</xliff:g> ဖုန်းမှ အရန်သိမ်းဆည်းထားမှုများရှိပါက ဤနေရာတွင် ပြန်ကူးသွင်းနိုင်သည်။</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">လမ်းညွှန်</string>
     <string name="navigation_summary">သင်အားသာသော လမ်းညွှန်မှုနည်းလမ်းကို ရွေးချယ်ပါ</string>

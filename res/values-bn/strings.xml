@@ -50,8 +50,6 @@
 <xliff:g id="name" example="LineageOS">%2$s</xliff:g> কে পাঠানোর মাধ্যমে। এই তথ্য দ্বারা আপনাকে চিহ্নিত করা যাবে না এবং আপনি এর মাধ্যমে প্রজেক্ট এর দলকে বিভিন্ন <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ফিচার তৈরিতে সাহায্য করতে পারবেন।</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="lockscreen_setup_screen_lock_setup">সেট আপ করুন</string>
-    <string name="intro_restore_subtitle" product="tablet">আপনার যদি পুরানো <xliff:g id="name" example="LineageOS">%s</xliff:g> ট্যাবলেট এর কোনো ব্যাকআপ থাকে, আপনি তা এখানে রিস্টোর করতে পারেন।</string>
-    <string name="intro_restore_subtitle" product="default">আপনার যদি পুরানো <xliff:g id="name" example="LineageOS">%s</xliff:g> ফোন এর কোনো ব্যাকআপ থাকে তাহলে আপনি তা রিস্টোর করতে পারেন</string>
     <string name="update_recovery_title">লিনিয়েজ রিকভারি আপডেট করুন</string>
     <string name="update_recovery_description">প্রতিবার আপডেট সম্পন্ন হওয়ার পর প্রথম বুটে লিনিয়েজ রিকভারি আপডেট করে</string>
     <string name="update_recovery_warning">সেটআপটি সম্পন্ন করার সাথে সাথে রিকভারি আপডেট হয়ে যাবে। আপনি যদি রিকভারি আপডেট করতে না চান, এই ফিচারটি অক্ষম করুন।</string>

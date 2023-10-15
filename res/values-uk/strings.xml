@@ -68,8 +68,6 @@
     <string name="lockscreen_setup_summary"><b>Захистити цей пристрій</b> та запитувати PIN-код, графічний ключ або пароль для розблокування екрану</string>
     <string name="lockscreen_setup_screen_lock_setup">Налаштувати</string>
     <string name="intro_restore_title">Відновіть застосунки й дані</string>
-    <string name="intro_restore_subtitle" product="tablet">Якщо маєте резервну копію з вашого останнього планшета під керуванням <xliff:g id="name" example="LineageOS">%s</xliff:g>, її можна відновити тут.</string>
-    <string name="intro_restore_subtitle" product="default">Якщо маєте резервну копію з вашого останнього телефона під керуванням <xliff:g id="name" example="LineageOS">%s</xliff:g>, її можна відновити тут.</string>
     <string name="update_recovery_title">Оновлювати режим відновлення Lineage</string>
     <string name="update_recovery_description">Оновлює режим відновлення Lineage за першого запуску після кожного оновлення.</string>
     <string name="update_recovery_warning">Режим відновлення оновиться, щойно ви завершите налаштування. Якщо ви хочете зберегти наявний режим оновлення, вимкніть цю функцію.</string>

@@ -70,13 +70,13 @@
     <string name="sim_locale_changed">%1$s SIM u lidh</string>
     <string name="settings_lockscreen_setup_title">Zgjidh mënyrën e bllokimit të ekranit</string>
     <string name="settings_lockscreen_setup_details">Si doni ta bllokoni ekranin?</string>
-    <string name="lockscreen_setup_title" product="tablet">Mbro tabletin</string>
     <string name="lockscreen_setup_title" product="default">Mbro telefonin</string>
+    <string name="lockscreen_setup_title" product="device">Mbroje pajisjen tënde</string>
+    <string name="lockscreen_setup_title" product="tablet">Mbro tabletin</string>
     <string name="lockscreen_setup_summary"><b>Mbro këtë pajisje</b> dhe vendos një PIN, model, ose fjalëkalim për të zhbllokuar ekranin</string>
     <string name="lockscreen_setup_screen_lock_setup">Konfiguro</string>
     <string name="intro_restore_title">Rikthe aplikacionet dhe të dhënat</string>
-    <string name="intro_restore_subtitle" product="tablet">Nëse keni një kopje rezervë nga tableti juaj i fundit <xliff:g id="name" example="LineageOS">%s</xliff:g> mund ta rivendosni këtu.</string>
-    <string name="intro_restore_subtitle" product="default">Nëse keni një kopje rezervë nga tableti juaj i fundit <xliff:g id="name" example="LineageOS">%s</xliff:g>, mund ta rivendosni këtu.</string>
+    <string name="intro_restore_subtitle">Nëse keni një kopje rezervë nga pajisja juaj e fundit <xliff:g id="name" example="LineageOS">%s</xliff:g>, mund ta rivendosni këtu.</string>
     <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
     <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>
     <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo azhornimi.</string>

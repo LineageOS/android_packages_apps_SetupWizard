@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">Fann %1$s SIM-kort</string>
     <string name="settings_lockscreen_setup_title">Veldu gerð skjálæsingar</string>
     <string name="settings_lockscreen_setup_details">Hvernig viltu læsa skjánum þínum?</string>
-    <string name="lockscreen_setup_title" product="tablet">Verndaðu spjaldtölvuna þína</string>
     <string name="lockscreen_setup_title" product="default">Verndaðu símann þinn</string>
+    <string name="lockscreen_setup_title" product="tablet">Verndaðu spjaldtölvuna þína</string>
     <string name="lockscreen_setup_summary"><b>Verndaðu tækið</b> og krefstu þess að sett sé inn PIN-númer, mynstur eða lykilorð til að aflæsa skjánum</string>
     <string name="lockscreen_setup_screen_lock_setup">Setja upp</string>
     <string name="intro_restore_title">Endurheimta forrit og gögn</string>
-    <string name="intro_restore_subtitle" product="tablet">Ef þú ert með öryggisafrit af síðustu <xliff:g id="name" example="LineageOS">%s</xliff:g>-spjaldtölvunni þinni, þá geturðu endurheimt það hér.</string>
-    <string name="intro_restore_subtitle" product="default">Ef þú ert með öryggisafrit af síðasta <xliff:g id="name" example="LineageOS">%s</xliff:g>-símanum þinum, þá geturðu endurheimt það hér.</string>
     <string name="intro_restore_button">Endurheimta úr öryggisafriti</string>
     <string name="update_recovery_title">Uppfæra endurheimtingu LineageOS</string>
     <string name="update_recovery_description">Uppfærir LineageOS endurheimtingarmynd í fyrstu ræsingu á eftir hverri uppfærslu.</string>

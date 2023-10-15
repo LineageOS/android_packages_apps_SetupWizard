@@ -62,8 +62,8 @@
     <string name="sim_locale_changed">ตรวจพบซิม %1$s</string>
     <string name="settings_lockscreen_setup_title">เลือกประเภทล็อคหน้าจอ</string>
     <string name="settings_lockscreen_setup_details">คุณต้องการล็อคหน้าจอด้วยวิธีใด</string>
-    <string name="lockscreen_setup_title" product="tablet">ปกป้องแท็บเล็ตของคุณ</string>
     <string name="lockscreen_setup_title" product="default">ปกป้องโทรศัพท์ของคุณ</string>
+    <string name="lockscreen_setup_title" product="tablet">ปกป้องแท็บเล็ตของคุณ</string>
     <string name="lockscreen_setup_summary"><b>ปกป้องอุปกรณ์นี้</b>และกำหนดให้มีการใช้ PIN, รูปแบบ หรือรหัสผ่านเพื่อปลดล็อกหน้าจอ</string>
     <string name="lockscreen_setup_screen_lock_setup">ตั้งค่า</string>
     <string name="update_recovery_title">อัปเดตรุ่น Lineage Recovery</string>

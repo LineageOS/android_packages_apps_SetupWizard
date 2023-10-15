@@ -70,13 +70,11 @@
     <string name="sim_locale_changed">%1$s SIM észlelve</string>
     <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
     <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
-    <string name="lockscreen_setup_title" product="tablet">Óvja meg táblagépét</string>
     <string name="lockscreen_setup_title" product="default">Óvja meg telefonját</string>
+    <string name="lockscreen_setup_title" product="tablet">Óvja meg táblagépét</string>
     <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
     <string name="lockscreen_setup_screen_lock_setup">Beállítás</string>
     <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
-    <string name="intro_restore_subtitle" product="tablet">Amennyiben van régebbi <xliff:g id="name" example="LineageOS">%s</xliff:g>-mentése, itt állithatja helyre a tabletjét.</string>
-    <string name="intro_restore_subtitle" product="default">Amennyiben van régebbi <xliff:g id="name" example="LineageOS">%s</xliff:g>-mentése, itt állithatja helyre a telefonját.</string>
     <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
     <string name="update_recovery_title">A Lineage Recovery frissítése</string>
     <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
