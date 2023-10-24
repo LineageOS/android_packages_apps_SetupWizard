@@ -26,42 +26,42 @@
 -->
 <WizardScript wizard:version="2"
   xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard">
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.OEM_PRE_SETUP;end" id="oem_pre_setup" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.USER_WARNING;end" id="secondary_user_warning">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.OEM_PRE_SETUP;end" id="oem_pre_setup" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.USER_WARNING;end" id="secondary_user_warning">
         <result wizard:action="check_user_unlock_dpm_user_complete" wizard:name="dpm_user_complete" wizard:resultCode="111" />
         <result wizard:action="check_user_unlock" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock_dpm_user_complete">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock_dpm_user_complete">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.COMPLETE_IN_FLIGHT_UPDATES;end" id="complete_in_flight_updates" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.NETWORK_SETTINGS;end" id="network_settings">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.CHECK_USER_UNLOCK;end" id="check_user_unlock" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.COMPLETE_IN_FLIGHT_UPDATES;end" id="complete_in_flight_updates" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.NETWORK_SETTINGS;end" id="network_settings">
         <result wizard:action="wifi_settings" wizard:name="see_all_wifi" wizard:resultCode="102" />
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
         <result wizard:action="consolidate_captive_portal" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.WIFI_SETTINGS;end" id="wifi_settings">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.WIFI_SETTINGS;end" id="wifi_settings">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.CONSOLIDATE_CAPTIVE_PORTAL;end" id="consolidate_captive_portal">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.CONSOLIDATE_CAPTIVE_PORTAL;end" id="consolidate_captive_portal">
         <result wizard:action="network_unavailable" wizard:name="timeout" wizard:resultCode="101" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.PRE_CHECKIN_AND_UPDATE;end" id="pre_checkin_and_update">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.PRE_CHECKIN_AND_UPDATE;end" id="pre_checkin_and_update">
         <result wizard:action="network_timeout" wizard:name="timeout" wizard:resultCode="101" />
         <result wizard:action="post_checkin_and_update" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_timeout" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.POST_CHECKIN_AND_UPDATE;end" id="post_checkin_and_update">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_timeout" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.POST_CHECKIN_AND_UPDATE;end" id="post_checkin_and_update">
         <result wizard:action="network_check" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_CHECK;end" id="network_check">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.NETWORK_CHECK;end" id="network_check">
         <result wizard:action="network_unavailable" wizard:name="no_connection" wizard:resultCode="1" />
         <result wizard:action="load_account_intent" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_unavailable" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.LOAD_ADD_ACCOUNT_INTENT;end" id="load_account_intent" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.ACCOUNT_SETUP;end" id="account_setup">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_unavailable" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.LOAD_ADD_ACCOUNT_INTENT;end" id="load_account_intent" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.ACCOUNT_SETUP;end" id="account_setup">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
         <result wizard:action="rollback_auth_early_update" wizard:name="unintentional_cancel" wizard:resultCode="102" />
         <result wizard:action="oem_post_setup" wizard:name="dpm_user_complete" wizard:resultCode="111" />
@@ -70,7 +70,7 @@
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_rollback_auth_early_update_flow" id="rollback_auth_early_update">
         <result wizard:action="load_account_intent" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.GMS_ACCOUNT_CHECKIN;end" id="gms_account_checkin">
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.GMS_ACCOUNT_CHECKIN;end" id="gms_account_checkin">
         <result wizard:action="no_account_flow" wizard:name="skip" wizard:resultCode="1" />
     </WizardAction>
     <WizardAction wizard:flow="UserAccountFlow" wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_account_flow" id="account_flow">
@@ -79,8 +79,8 @@
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_user_account_flow" id="no_account_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.google.android.setupwizard.KID_POST_SETUP;end" id="kid_post_setup" />
-    <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.EXIT;end" id="exit" />
+    <WizardAction wizard:uri="intent:#Intent;package=org.lineageos.setupwizard;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.KID_POST_SETUP;end" id="kid_post_setup" />
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.EXIT;end" id="exit" />
     <WizardAction id="END_OF_SCRIPT" />
 </WizardScript>
