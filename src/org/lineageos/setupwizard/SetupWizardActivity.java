@@ -68,6 +68,7 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
                         getString(R.string.lineage_wizard_script_user_uri));
             }
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setPackage(getPackageName());
             startActivity(intent);
             finish();
         }
