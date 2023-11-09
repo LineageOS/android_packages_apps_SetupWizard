@@ -85,19 +85,7 @@ public class PhoneMonitor {
 
     private int mChangingToDataSubId = -1;
 
-    private final BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(TelephonyIntents.ACTION_SIM_STATE_CHANGED)) {
-                final int sub = intent.getIntExtra(PhoneConstants.SUBSCRIPTION_KEY, -1);
-                final int state = mTelephony.getSimState(sub);
-                simStateChanged(sub, state);
-            } else if (intent.getAction()
-                    .equals(TelephonyIntents.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED)) {
-                ddsHasChanged(intent.getIntExtra(PhoneConstants.SUBSCRIPTION_KEY, -1));
-            }
-        }
-    };
+    private final BroadcastReceiver mIntentReceiver;
 
     private class SubscriptionStateTracker extends PhoneStateListener {
 
@@ -173,6 +161,19 @@ public class PhoneMonitor {
             mSubscriptionManager.addOnSubscriptionsChangedListener(mOnSubscriptionsChangedListener);
             updatePhoneStateTrackers();
         }
+        mIntentReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if (intent.getAction().equals(TelephonyIntents.ACTION_SIM_STATE_CHANGED)) {
+                    final int sub = intent.getIntExtra(PhoneConstants.SUBSCRIPTION_KEY, -1);
+                    final int state = mTelephony.getSimState(sub);
+                    simStateChanged(sub, state);
+                } else if (intent.getAction()
+                        .equals(TelephonyIntents.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED)) {
+                    ddsHasChanged(intent.getIntExtra(PhoneConstants.SUBSCRIPTION_KEY, -1));
+                }
+            }
+        };
         // Register for DDS changes
         IntentFilter filter = new IntentFilter();
         filter.addAction(TelephonyIntents.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED);
