@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57559e2c_e494c535",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2023-11-20T12:45:24Z",
+      "side": 1,
+      "message": "From: https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/23043",
+      "revId": "d1f8c99ea276654b600417a2933283a38776a245",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
