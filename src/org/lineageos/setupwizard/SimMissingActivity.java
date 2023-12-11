@@ -54,5 +54,4 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
     protected int getIconResId() {
         return R.drawable.ic_sim;
     }
-
 }
