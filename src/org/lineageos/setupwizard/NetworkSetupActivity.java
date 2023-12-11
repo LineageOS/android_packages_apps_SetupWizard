@@ -44,7 +44,6 @@ public class NetworkSetupActivity extends WrapperSubBaseActivity {
         if (SetupWizardUtils.hasLeanback(this)) {
             intent.setComponent(SetupWizardUtils.sTvWifiSetupSettingsActivity);
         }
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         intent.putExtra(EXTRA_PREFS_SHOW_BUTTON_BAR, true);
         intent.putExtra(EXTRA_PREFS_SHOW_SKIP, true);
         intent.putExtra(EXTRA_PREFS_SHOW_SKIP_TV, true);
