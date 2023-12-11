@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "61b8e7ee_eab3f78f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-12-11T23:23:07Z",
+      "side": 1,
+      "message": "Also \"Simplify\" instead of \"Update\" will be better.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 6
+      },
+      "revId": "9e570891d9271dcf199d1c5fc2372326cd7512f6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4a6dfc58_dc05ea5b",
         "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
         "patchSetId": 1
