@@ -18,6 +18,7 @@
 package org.lineageos.setupwizard.wizardmanager;
 
 import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
+import static android.content.Intent.URI_INTENT_SCHEME;
 
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
@@ -62,7 +63,8 @@ public class WizardAction implements Parcelable {
     public Intent getIntent() {
         Intent intent = null;
         try {
-            intent = Intent.parseUri(mUri, FLAG_GRANT_READ_URI_PERMISSION);
+            intent = Intent.parseUri(mUri, URI_INTENT_SCHEME);
+            intent.addFlags(FLAG_GRANT_READ_URI_PERMISSION);
         } catch (URISyntaxException e) {
             Log.e(TAG, "Bad URI: " + mUri);
         }
