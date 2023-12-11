@@ -40,8 +40,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 import android.content.res.Resources;
-import android.hardware.face.FaceManager;
-import android.hardware.fingerprint.FingerprintManager;
+import android.hardware.biometrics.BiometricManager;
 import android.net.ConnectivityManager;
 import android.os.Binder;
 import android.os.SystemProperties;
@@ -250,29 +249,9 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasBiometric(Context context) {
-        return hasFingerprint(context) || hasFace(context);
-    }
-
-    public static boolean hasFingerprint(Context context) {
-        PackageManager packageManager = context.getPackageManager();
-        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {
-            FingerprintManager fingerprintManager = (FingerprintManager)
-                    context.getSystemService(Context.FINGERPRINT_SERVICE);
-            return fingerprintManager.isHardwareDetected();
-        } else {
-            return false;
-        }
-    }
-
-    public static boolean hasFace(Context context) {
-        PackageManager packageManager = context.getPackageManager();
-        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FACE)) {
-            FaceManager faceManager = (FaceManager)
-                    context.getSystemService(Context.FACE_SERVICE);
-            return faceManager.isHardwareDetected();
-        } else {
-            return false;
-        }
+        BiometricManager biometricManager = context.getSystemService(BiometricManager.class);
+        return biometricManager.canAuthenticate(BiometricManager.Authenticators.BIOMETRIC_WEAK)
+                != BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE;
     }
 
     public static boolean simMissing() {
