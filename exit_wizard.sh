@@ -3,7 +3,7 @@
 adb root
 wait ${!}
 has_google_suw=$(adb shell pm list packages com.google.android.setupwizard)
-adb shell pm enable org.lineageos.setupwizard/org.lineageos.setupwizard.SetupWizardExitActivity || true
+adb shell pm enable org.lineageos.setupwizard/org.lineageos.setupwizard.FinishActivity || true
 if [[ ! -z "$has_google_suw" ]]
 then
     wait ${!}
@@ -11,7 +11,7 @@ then
     wait ${!}
 fi
 sleep 1
-adb shell am start org.lineageos.setupwizard/org.lineageos.setupwizard.SetupWizardExitActivity || true
+adb shell am start org.lineageos.setupwizard/org.lineageos.setupwizard.FinishActivity || true
 if [[ ! -z "$has_google_suw" ]]
 then
     wait ${!}

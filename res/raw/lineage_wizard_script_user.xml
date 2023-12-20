@@ -47,9 +47,6 @@
         <result wizard:action="finish" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
-        <result wizard:action="exit" />
-    </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.EXIT;end" id="exit" />
+    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish" />
 
 </WizardScript>

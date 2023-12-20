@@ -113,9 +113,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
             logActivityState("onStart");
         }
         super.onStart();
-        if (!SetupWizardUtils.isManagedProfile(this)) {
-            exitIfSetupComplete();
-        }
     }
 
     @Override
@@ -263,15 +260,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         }
     }
 
-    private void exitIfSetupComplete() {
-        if (WizardManagerHelper.isUserSetupComplete(this)) {
-            Log.i(TAG, "Starting activity with USER_SETUP_COMPLETE=true");
-            startSetupWizardExitActivity();
-            setResult(RESULT_CANCELED, null);
-            finishAllAppTasks();
-        }
-    }
-
     protected final void finishAllAppTasks() {
         List<ActivityManager.AppTask> appTasks =
                 getSystemService(ActivityManager.class).getAppTasks();
@@ -390,13 +378,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
     protected final boolean tryEnablingWifi() {
         WifiManager wifiManager = getSystemService(WifiManager.class);
         return wifiManager.setWifiEnabled(true);
-    }
-
-    private void startSetupWizardExitActivity() {
-        if (LOGV) {
-            Log.v(TAG, "startSetupWizardExitActivity()");
-        }
-        startActivity(new Intent(this, SetupWizardExitActivity.class));
     }
 
     private boolean isFirstRun() {
