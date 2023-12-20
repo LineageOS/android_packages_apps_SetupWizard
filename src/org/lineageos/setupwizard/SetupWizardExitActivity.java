@@ -16,19 +16,11 @@
 
 package org.lineageos.setupwizard;
 
-import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK;
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.Nullable;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-
-import androidx.work.OneTimeWorkRequest;
-import androidx.work.OutOfQuotaPolicy;
-import androidx.work.WorkManager;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -42,20 +34,8 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
         if (LOGV) {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
-        if (!SetupWizardUtils.isManagedProfile(this)) {
-            launchHome();
-        }
+        SetupWizardUtils.startSetupWizardExitProcedure(this);
         finish();
-        applyForwardTransition(TRANSITION_ID_FADE);
-        WorkManager.getInstance(this).enqueue(new OneTimeWorkRequest.Builder(
-                SetupWizardExitWorker.class).setExpedited(
-                OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST).build());
-    }
-
-    private void launchHome() {
-        startActivity(new Intent("android.intent.action.MAIN")
-                .addCategory("android.intent.category.HOME")
-                .addFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TASK));
     }
 
 }
