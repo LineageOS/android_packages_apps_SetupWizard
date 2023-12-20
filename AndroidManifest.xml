@@ -52,6 +52,9 @@
     <protected-broadcast android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE"
                          android:permission="lineageos.permission.FINISH_SETUP"/>
 
+    <protected-broadcast android:name="org.lineageos.setupwizard.SETUP_FINISHED"
+        android:permission="lineageos.permission.FINISH_SETUP"/>
+
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
                  android:theme="@style/Theme.Setup"
@@ -297,6 +300,7 @@
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE" />
+                <action android:name="org.lineageos.setupwizard.SETUP_FINISHED"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
