@@ -54,7 +54,7 @@ public class SetupWizardActivity extends AppCompatActivity {
             finish();
         } else if (WizardManagerHelper.isUserSetupComplete(this)
                 && !SetupWizardUtils.isManagedProfile(this)) {
-            SetupWizardUtils.finishSetupWizard(this);
+            SetupWizardUtils.startSetupWizardExitProcedure(this);
             finish();
         } else {
             SetupWizardUtils.enableComponent(this, WizardManager.class);
