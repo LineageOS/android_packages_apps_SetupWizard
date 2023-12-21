@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016 The CyanogenMod Project
-     Copyright (C) 2017-2021 The LineageOS Project
+     Copyright (C) 2017-2024 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -25,7 +25,15 @@
     android:fitsSystemWindows="true"
     app:insetForeground="@android:color/transparent">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:visibility="visible"/>
+
     <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -48,12 +56,5 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/reveal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/reveal"
-        android:visibility="invisible"/>
 
 </android.widget.FrameLayout>
