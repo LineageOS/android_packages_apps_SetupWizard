@@ -62,4 +62,12 @@
         <item name="android:paddingBottom">@dimen/welcome_title_padding_bottom</item>
         <item name="android:lineHeight">@dimen/welcome_title_line_height</item>
     </style>
+
+    <style name="EdgeToEdgeWallpaperBackground" parent="Theme.Setup">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?attr/android:windowBackground</item>
+        <item name="android:navigationBarColor">?attr/android:windowBackground</item>
+    </style>
 </resources>
