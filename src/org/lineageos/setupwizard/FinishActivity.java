@@ -51,7 +51,13 @@ import android.os.UserHandle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewAnimationUtils;
+import android.view.ViewGroup.MarginLayoutParams;
+import android.view.Window;
 import android.widget.ImageView;
+
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -61,7 +67,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = FinishActivity.class.getSimpleName();
 
-    private ImageView mReveal;
+    private ImageView mBackground;
 
     private SetupWizardApp mSetupWizardApp;
 
@@ -85,12 +91,34 @@ public class FinishActivity extends BaseSetupWizardActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
         if (LOGV) {
             logActivityState("onCreate savedInstanceState=" + savedInstanceState);
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
-        mReveal = (ImageView) findViewById(R.id.reveal);
+        mBackground = (ImageView) findViewById(R.id.background);
         setNextText(R.string.start);
+
+        // Edge-to-edge. Needed for the background view to fill the full screen.
+        final Window window = getWindow();
+        window.setDecorFitsSystemWindows(false);
+
+        // Make sure 3-button navigation bar is the same color as the rest of the screen.
+        window.setNavigationBarContrastEnforced(false);
+
+        // Ensure the main layout (not including the background view) does not get obscured by bars.
+        final View rootView = findViewById(R.id.root);
+        ViewCompat.setOnApplyWindowInsetsListener(rootView, (view, windowInsets) -> {
+            final View linearLayout = findViewById(R.id.linear_layout);
+            final Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+            final MarginLayoutParams params = (MarginLayoutParams) linearLayout.getLayoutParams();
+            params.leftMargin = insets.left;
+            params.topMargin = insets.top;
+            params.rightMargin = insets.right;
+            params.bottomMargin = insets.bottom;
+            linearLayout.setLayoutParams(params);
+            return WindowInsetsCompat.CONSUMED;
+        });
     }
 
     @Override
@@ -122,47 +150,26 @@ public class FinishActivity extends BaseSetupWizardActivity {
         hideNextButton();
 
         // Begin outro animation.
-        setupRevealImage();
-    }
-
-    private void setupRevealImage() {
-        Rect rect = getWindowManager().getCurrentWindowMetrics().getBounds();
-        final Point p = new Point(rect.width(), rect.height());
-        final WallpaperManager wallpaperManager =
-                WallpaperManager.getInstance(this);
-        wallpaperManager.forgetLoadedWallpaper();
-        final Bitmap wallpaper = wallpaperManager.getBitmap();
-        Bitmap cropped = null;
-        if (wallpaper != null) {
-            cropped = Bitmap.createBitmap(wallpaper, 0,
-                    0, Math.min(p.x, wallpaper.getWidth()),
-                    Math.min(p.y, wallpaper.getHeight()));
-        }
-        if (cropped != null) {
-            mReveal.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            mReveal.setImageBitmap(cropped);
-        } else {
-            mReveal.setBackground(wallpaperManager
-                    .getBuiltInDrawable(p.x, p.y, false, 0, 0));
-        }
         animateOut();
     }
 
     private void animateOut() {
-        int cx = (mReveal.getLeft() + mReveal.getRight()) / 2;
-        int cy = (mReveal.getTop() + mReveal.getBottom()) / 2;
-        int finalRadius = Math.max(mReveal.getWidth(), mReveal.getHeight());
+        final View rootView = findViewById(R.id.root);
+        final int cx = (rootView.getLeft() + rootView.getRight()) / 2;
+        final int cy = (rootView.getTop() + rootView.getBottom()) / 2;
+        final float fullRadius = (float) Math.hypot(cx, cy);
         Animator anim =
-                ViewAnimationUtils.createCircularReveal(mReveal, cx, cy, 0, finalRadius);
+                ViewAnimationUtils.createCircularReveal(rootView, cx, cy, fullRadius, 0f);
         anim.setDuration(900);
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationStart(Animator animation) {
-                mReveal.setVisibility(View.VISIBLE);
+                rootView.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onAnimationEnd(Animator animation) {
+                rootView.setVisibility(View.INVISIBLE);
                 mHandler.post(() -> {
                     if (LOGV) {
                         Log.v(TAG, "Animation ended");

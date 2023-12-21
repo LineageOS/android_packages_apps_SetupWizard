@@ -25,7 +25,15 @@
     android:fitsSystemWindows="true"
     app:insetForeground="@android:color/transparent">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:visibility="visible"/>
+
     <LinearLayout
+        android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -48,12 +56,5 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/reveal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/reveal"
-        android:visibility="invisible"/>
 
 </android.widget.FrameLayout>
