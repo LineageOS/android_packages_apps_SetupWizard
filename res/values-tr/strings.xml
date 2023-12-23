@@ -71,10 +71,12 @@
     <string name="settings_lockscreen_setup_title">Ekran kilidi türünü seçin</string>
     <string name="settings_lockscreen_setup_details">Ekranınızı nasıl kilitlemek istersiniz?</string>
     <string name="lockscreen_setup_title" product="default">Telefonunuzu koruyun</string>
+    <string name="lockscreen_setup_title" product="device">Cihazınızı koruyun</string>
     <string name="lockscreen_setup_title" product="tablet">Tabletinizi koruyun</string>
     <string name="lockscreen_setup_summary"><b>Bu cihazı koruyun</b> ve ekran kilidini açmak için bir PIN, desen ya da şifreyi gerekli kılın.</string>
     <string name="lockscreen_setup_screen_lock_setup">Kur</string>
     <string name="intro_restore_title">Uygulamaları ve verileri geri yükleyin</string>
+    <string name="intro_restore_subtitle">Kullandığınız son <xliff:g id="name" example="LineageOS">%s</xliff:g> cihazınızda yedekleme varsa onu burada geri yükleyebilirsiniz. </string>
     <string name="intro_restore_button">Yedekten geri yükle</string>
     <string name="update_recovery_title">Lineage Kurtarma Modunu Güncelle</string>
     <string name="update_recovery_description">Her güncellemeden sonraki ilk açılışta Lineage Kurtarma Modunu günceller.</string>
@@ -87,4 +89,5 @@
     <string name="two_button_navigation">2 düğmeli gezinme</string>
     <string name="navbar_navigation">3 düğmeli gezinme</string>
     <string name="hide_gesture_hint">Hareketle gezinme ipucunu gizle</string>
+    <string name="location_agps_access_summary">GPS\'inizin başlama süresini büyük ölçüde hızlandırmak için &lt;b&gt;internetten uydu yardım verilerini indirin.&lt;b&gt;</string>
 </resources>
