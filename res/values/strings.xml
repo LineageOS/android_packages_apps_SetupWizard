@@ -32,40 +32,39 @@
     <string name="ok">OK</string>
     <string name="loading">Just a sec\u2026</string>
 
-    <string name="setup_complete">Setup is complete</string>
-    <string name="setup_welcome">Welcome</string>
+    <!-- Welcome page -->
     <string name="setup_welcome_message">Welcome to <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Language</string>
-    <string name="setup_wifi">Select Wi-Fi</string>
-    <string name="setup_sim_missing">SIM card missing</string>
-    <string name="setup_choose_data_sim">Choose a SIM for data</string>
-    <string name="setup_location">Location services</string>
-    <string name="setup_other">Other services</string>
-    <string name="setup_datetime">Date &amp; time</string>
-    <string name="setup_current_date">Current date</string>
-    <string name="setup_current_time">Current time</string>
-
-    <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
-    <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
-    <string name="choose_data_sim_summary" product="tablet">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your tablet.</string>
-    <string name="choose_data_sim_summary" product="default">Which SIM do you want to use for data? The selected SIM may incur network charges as it will be used to set up your phone.</string>
-
-    <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
-
-    <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
-
-    <string name="setup_mobile_data">Turn on cellular data</string>
-    <string name="setup_mobile_data_no_service">No service</string>
-    <string name="setup_mobile_data_emergency_only">Emergency calls only</string>
-    <string name="enable_mobile_data_summary">Do you want to use cellular data during setup? Turning on cellular data may be subject to data charges.</string>
-    <string name="no">No</string>
-    <string name="yes">Yes</string>
-
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
-
     <string name="emergency_call">Emergency call</string>
     <string name="accessibility_settings">Accessibility settings</string>
 
+    <!-- Locale page -->
+    <string name="setup_locale">Language</string>
+    <string name="sim_locale_changed">%1$s SIM detected</string>
+
+    <!-- Missing SIM page -->
+    <string name="setup_sim_missing">SIM card missing</string>
+    <string name="sim_missing_summary" product="tablet">A SIM card has not been detected in your tablet. To insert a SIM card, read the instructions that came with your device.</string>
+    <string name="sim_missing_summary" product="default">A SIM card has not been detected in your phone. To insert a SIM card, read the instructions that came with your device.</string>
+
+    <!-- Date & time page -->
+    <string name="setup_datetime">Date &amp; time</string>
+    <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
+    <string name="setup_current_date">Current date</string>
+    <string name="setup_current_time">Current time</string>
+
+    <!-- Location page -->
+    <string name="setup_location">Location services</string>
+    <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
+    <string name="location_agps_access_summary">When location is on, <b>download satellite assistance data from the internet</b>, which can greatly improve the GPS startup performance.</string>
+
+    <!-- Recovery update page -->
+    <string name="update_recovery_title">Update Lineage Recovery</string>
+    <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
+    <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
+    <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+
+    <!-- LineageOS features page -->
     <string name="setup_services">LineageOS features</string>
     <string name="services_pp_explanation">These services work for you to extend the capabilities of your device. Data will be used in accordance with <xliff:g id="name" example="LineageOS">%1$s</xliff:g>\'s privacy policy.</string>
     <string name="services_find_privacy_policy">You can read the privacy policy on another device by visiting <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -75,31 +74,18 @@
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
 
-    <!-- Locale setup -->
-    <string name="sim_locale_changed">%1$s SIM detected</string>
-
-    <!-- Backup Restore -->
+    <!-- Restore backup page -->
     <string name="intro_restore_title">Restore apps and data</string>
     <string name="intro_restore_subtitle">If you have a backup from your last <xliff:g id="name" example="LineageOS">%s</xliff:g> device, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
 
-    <!-- Update Recovery -->
-    <string name="update_recovery_title">Update Lineage Recovery</string>
-    <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
-    <string name="update_recovery_warning">Recovery will be updated as soon as you finish the setup. If you wish to keep it intact, disable this feature.</string>
-    <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
-
-    <!-- Navigation settings -->
+    <!-- Navigation page -->
     <string name="setup_navigation">Navigation</string>
     <string name="navigation_summary">Choose preferred navigation method</string>
     <string name="gesture_navigation">Gesture navigation</string>
     <string name="two_button_navigation">2-button navigation</string>
     <string name="navbar_navigation">3-button navigation</string>
     <string name="hide_gesture_hint">Hide gestural navigation hint</string>
-
-    <!-- Assisted GPS -->
-    <string name="location_agps_access_summary">When location is on, <b>download satellite assistance data from the internet</b>, which can greatly improve the GPS startup performance.</string>
 
     <!-- Theme page -->
     <string name="setup_theme">Save battery with Dark theme</string>
