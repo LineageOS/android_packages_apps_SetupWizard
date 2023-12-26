@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d2bf2ca_b80fd178",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2644
+      },
+      "writtenOn": "2023-12-26T16:13:15Z",
+      "side": 1,
+      "message": "Still fixes the build error:\npackages/apps/SetupWizard/src/org/lineageos/setupwizard/BiometricActivity.java:44: error: cannot find symbol\n        if (SetupWizardUtils.hasFace(this)) {",
+      "revId": "bfa9a5b0f0c796055ef093e56071259bbf13a7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
