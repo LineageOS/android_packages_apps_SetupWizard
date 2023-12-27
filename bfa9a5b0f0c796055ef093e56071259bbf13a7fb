@@ -34,6 +34,24 @@
       "parentUuid": "8d2bf2ca_b80fd178",
       "revId": "bfa9a5b0f0c796055ef093e56071259bbf13a7fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81d02443_433bfc0b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2023-12-27T16:51:34Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_packages_apps_SetupWizard/+/378275/1",
+      "parentUuid": "40f9d865_83ac28c0",
+      "revId": "bfa9a5b0f0c796055ef093e56071259bbf13a7fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
