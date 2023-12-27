@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "243721b8_7dabf7f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2644
+      },
+      "writtenOn": "2023-12-27T21:00:36Z",
+      "side": 1,
+      "message": "This patch now fixes the build error previously fixed by 371960 : \npackages/apps/SetupWizard/src/org/lineageos/setupwizard/BiometricActivity.java:44: error: cannot find symbol\nif (SetupWizardUtils.hasFace(this)) {",
+      "revId": "9b3f1afb50de1dc5a802b3b3c0ec4225f3b04929",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
