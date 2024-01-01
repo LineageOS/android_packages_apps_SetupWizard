@@ -40,9 +40,9 @@
     <string name="choose_data_sim_summary" product="default">Hansı SIM-i internet üçün istifadə etmək istəyirsiz? Şəbəkə telefonunuzun quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırkı tarix və saatı ayarlayın</string>
     <string name="backup_data_summary">Tətbiq datasını, Wi-Fi parollarını və digər ayarları Google serverlərinə <b>nüsxələyin</b></string>
-    <string name="other_services_summary">Bu xidmətlər ilə Google sizin üçün işləməyə başlayır və istədiyiniz vaxt açıb bağlaya bilərsiniz. Verilənlər, Google-un <xliff:g id="name" example="Privacy Policy">%s</xliff:g>nə uyğun olaraq istifadə ediləcək.</string>
-    <string name="location_services_summary">Yerləşmə xidmətləri, sistem və üçüncü tərəf tətbiqlərinə təxmini yerləşməniz kimi verilənləri yığmaq və istifadə etmək icazəsi verər. Məsələn, bir tətbiq yaxınlıqdakı əyləncə mərkəzini tapmaq üçün təxmini yerinizi istifadə edə bilər.</string>
-    <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqetmələrə icazə ver.</b> Bu hazırki və keçmiş yerləşmənizi ehtiva edə bilər.</string>
+    <string name="other_services_summary">Bu xidmətlər ilə Google sizin üçün işləməyə başlayır və istədiyiniz vaxt açıb bağlaya bilərsiniz. Datalar, Google-un <xliff:g id="name" example="Privacy Policy">%s</xliff:g>nə uyğun olaraq istifadə ediləcək.</string>
+    <string name="location_services_summary">Yerləşmə xidmətləri, sistem və üçüncü tərəf tətbiqlərinə təxmini yerləşməniz kimi dataları yığmaq və istifadə etmək icazəsi verir. Məsələn, bir tətbiq yaxınlıqdakı əyləncə mərkəzini tapmaq üçün təxmini yerinizi istifadə edə bilər.</string>
+    <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırki və keçmiş yerləşmənizi ehtiva edə bilər.</string>
     <string name="setup_mobile_data">Mobil interneti aç</string>
     <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
     <string name="setup_mobile_data_emergency_only">Yalnız fövqəladə hal zəngləri</string>
@@ -53,10 +53,10 @@
     <string name="emergency_call">Fövqəladə hal zəngləri</string>
     <string name="accessibility_settings">Əlçatımlılıq ayarları</string>
     <string name="setup_services">LineageOS özəllikləri</string>
-    <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilənlər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Datalar, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
     <string name="services_find_privacy_policy">Gizlilik siyasətini fərqli cihazda <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> ünvanını ziyarət edərək oxuya bilərsiniz</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
-    <string name="services_metrics_label">LineageOS-a diaqnostikanı və istifadə verilənlərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlarda kimliyiniz istifadə edilmir və batereya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%2$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edər.</string>
+    <string name="services_metrics_label">LineageOS-a diaqnostikanı və istifadə datasını avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlarda kimliyiniz istifadə edilmir və batereya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%2$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edər.</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
     <string name="setup_unlock">Kilidi aç</string>
     <string name="setup_device_locked">Bu cihaz istifadəçisi tərəfindən kilidlənib.</string>
