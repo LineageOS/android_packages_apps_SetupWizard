@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86a49ae0_4eb79bad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2024-01-05T21:16:54Z",
+      "side": 1,
+      "message": "Works better on non-bio devices like gta4lwifi",
+      "revId": "0dc2e90fad89200dd60469ff531d66f4ecb66e4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
