@@ -251,7 +251,7 @@ public class SetupWizardUtils {
     public static boolean hasBiometric(Context context) {
         BiometricManager biometricManager = context.getSystemService(BiometricManager.class);
         return biometricManager.canAuthenticate(BiometricManager.Authenticators.BIOMETRIC_WEAK)
-                != BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE;
+                == BiometricManager.BIOMETRIC_SUCCESS;
     }
 
     public static boolean simMissing() {
