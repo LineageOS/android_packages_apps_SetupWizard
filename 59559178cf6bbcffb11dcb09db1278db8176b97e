@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e239c6d_852f7b1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2024-01-06T10:55:40Z",
+      "side": 1,
+      "message": "Crashes SUW now (at least with GMS and current MTG).",
+      "revId": "59559178cf6bbcffb11dcb09db1278db8176b97e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
