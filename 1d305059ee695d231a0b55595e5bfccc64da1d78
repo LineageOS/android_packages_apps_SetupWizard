@@ -16,6 +16,24 @@
       "message": "Not sure if my device(tree) is in OK shape, but it doesn\u0027t seem to be triggered with GMS SUW",
       "revId": "1d305059ee695d231a0b55595e5bfccc64da1d78",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31be562f_2d06c362",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-06T03:35:18Z",
+      "side": 1,
+      "message": "Should be addressed now",
+      "parentUuid": "91544543_668ccb5b",
+      "revId": "1d305059ee695d231a0b55595e5bfccc64da1d78",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
