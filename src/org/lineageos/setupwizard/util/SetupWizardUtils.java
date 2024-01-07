@@ -170,9 +170,8 @@ public class SetupWizardUtils {
         return statusBarManager;
     }
 
-    public static void enableStatusBar(Context context) {
-        final SetupWizardApp setupWizardApp = (SetupWizardApp)context.getApplicationContext();
-        StatusBarManager statusBarManager = setupWizardApp.getStatusBarManager();
+    public static void enableStatusBar() {
+        StatusBarManager statusBarManager = SetupWizardApp.getStatusBarManager();
         if (statusBarManager != null) {
             if (LOGV) {
                 Log.v(SetupWizardApp.TAG, "Enabling status bar");

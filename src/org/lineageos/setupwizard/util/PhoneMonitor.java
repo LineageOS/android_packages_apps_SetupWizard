@@ -69,6 +69,7 @@ import com.android.internal.telephony.TelephonyIntents;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -184,7 +185,7 @@ public class PhoneMonitor {
     private void updatePhoneStateTrackers() {
         int i = 0;
         int[] subIds = mSubscriptionManager.getActiveSubscriptionIdList();
-        HashSet<Integer> subIdSet = new HashSet(Arrays.asList(subIds));
+        HashSet<Integer> subIdSet = new HashSet(Collections.singletonList(subIds));
         if (LOGV) {
             Log.v(TAG, "Register PhoneStateListeners for " + subIdSet);
         }
@@ -482,7 +483,7 @@ public class PhoneMonitor {
             states.append(" ").append(getPhoneState(subId));
         }
         return getPhoneTypeName() + " \"" + getNetworkTypeName() + "\"" + " mcc" + getMcc() +
-                "mnc" + getMnc() + " " + getDataStateName() + " " + states.toString();
+                "mnc" + getMnc() + " " + getDataStateName() + " " + states;
     }
 
     private String getPhoneState(int subId) {
