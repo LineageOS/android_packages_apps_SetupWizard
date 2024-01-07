@@ -20,24 +20,14 @@ package org.lineageos.setupwizard;
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.text.Spannable;
-import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
-import android.text.Spanned;
-import android.text.method.LinkMovementMethod;
-import android.text.style.ClickableSpan;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
-
-import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
@@ -110,12 +100,6 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         super.onResume();
         updateDisableNavkeysOption();
         updateMetricsOption();
-    }
-
-    @Override
-    protected void onNextPressed() {
-        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-        nextAction(NEXT_REQUEST, intent);
     }
 
     @Override

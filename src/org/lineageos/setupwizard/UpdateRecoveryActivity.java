@@ -16,18 +16,16 @@
 
 package org.lineageos.setupwizard;
 
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
+
 import static org.lineageos.setupwizard.SetupWizardApp.ENABLE_RECOVERY_UPDATE;
 import static org.lineageos.setupwizard.SetupWizardApp.UPDATE_RECOVERY_PROP;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
-
-import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -47,9 +45,7 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity");
-
-            Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-            nextAction(NEXT_REQUEST, intent);
+            nextAction(RESULT_SKIP);
             finish();
             return;
         }
@@ -84,9 +80,7 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
     protected void onNextPressed() {
         mSetupWizardApp.getSettingsBundle().putBoolean(ENABLE_RECOVERY_UPDATE,
                 mRecoveryUpdateCheckbox.isChecked());
-
-        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-        nextAction(NEXT_REQUEST, intent);
+        super.onNextPressed();
     }
 
     @Override
