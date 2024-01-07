@@ -18,9 +18,6 @@
 package org.lineageos.setupwizard;
 
 import android.os.Bundle;
-import android.widget.ImageView;
-
-import com.google.android.setupcompat.util.ResultCodes;
 
 import org.lineageos.setupwizard.util.PhoneMonitor;
 
