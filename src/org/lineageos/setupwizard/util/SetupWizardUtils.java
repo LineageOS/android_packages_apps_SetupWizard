@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- *               2017-2023 The LineageOS Project
+ *               2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -170,9 +170,8 @@ public class SetupWizardUtils {
         return statusBarManager;
     }
 
-    public static void enableStatusBar(Context context) {
-        final SetupWizardApp setupWizardApp = (SetupWizardApp)context.getApplicationContext();
-        StatusBarManager statusBarManager = setupWizardApp.getStatusBarManager();
+    public static void enableStatusBar() {
+        StatusBarManager statusBarManager = SetupWizardApp.getStatusBarManager();
         if (statusBarManager != null) {
             if (LOGV) {
                 Log.v(SetupWizardApp.TAG, "Enabling status bar");

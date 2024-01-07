@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017-2018,2020,2022 The LineageOS Project
+ *               2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -80,15 +80,15 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         setNextText(R.string.next);
         getGlifLayout().setDescriptionText(getString(R.string.date_time_summary));
 
-        final Spinner spinner = (Spinner) findViewById(R.id.timezone_list);
+        final Spinner spinner = findViewById(R.id.timezone_list);
         final SimpleAdapter adapter = constructTimezoneAdapter(this);
         mCurrentTimeZone = TimeZone.getDefault();
         View dateView = findViewById(R.id.date_item);
         dateView.setOnClickListener((view) -> showDatePicker());
         View timeView = findViewById(R.id.time_item);
         timeView.setOnClickListener((view) -> showTimePicker());
-        mDateTextView = (TextView) findViewById(R.id.date_text);
-        mTimeTextView = (TextView) findViewById(R.id.time_text);
+        mDateTextView = findViewById(R.id.date_text);
+        mTimeTextView = findViewById(R.id.time_text);
         // Pre-select current/default timezone
         mHandler.post(() -> {
             int tzIndex = getTimeZoneIndex(adapter, mCurrentTimeZone);
