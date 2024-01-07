@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
- *               2022 The LineageOS Project
+ *               2022-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -655,7 +655,7 @@ public class LocalePicker extends LinearLayout {
 
         // increment button
         if (!mHasSelectorWheel) {
-            mIncrementButton = (ImageButton) findViewById(R.id.lp__increment);
+            mIncrementButton = findViewById(R.id.lp__increment);
             mIncrementButton.setOnClickListener(onClickListener);
             mIncrementButton.setOnLongClickListener(onLongClickListener);
         } else {
@@ -664,7 +664,7 @@ public class LocalePicker extends LinearLayout {
 
         // decrement button
         if (!mHasSelectorWheel) {
-            mDecrementButton = (ImageButton) findViewById(R.id.lp__decrement);
+            mDecrementButton = findViewById(R.id.lp__decrement);
             mDecrementButton.setOnClickListener(onClickListener);
             mDecrementButton.setOnLongClickListener(onLongClickListener);
         } else {
@@ -672,7 +672,7 @@ public class LocalePicker extends LinearLayout {
         }
 
         // input text
-        mInputText = (EditText) findViewById(R.id.localepicker_input);
+        mInputText = findViewById(R.id.localepicker_input);
         mInputText.setOnFocusChangeListener(new OnFocusChangeListener() {
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
@@ -2477,7 +2477,6 @@ public class LocalePicker extends LinearLayout {
                         outResult.add(createAccessibilityNodeInfo(VIRTUAL_VIEW_ID_INCREMENT));
                     }
                 }
-                return;
             }
         }
 

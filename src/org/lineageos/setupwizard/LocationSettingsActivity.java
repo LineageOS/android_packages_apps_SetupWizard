@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017-2021 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,8 +42,8 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         setNextText(R.string.next);
 
-        mLocationAccess = (CheckBox) findViewById(R.id.location_checkbox);
-        mLocationAgpsAccess = (CheckBox) findViewById(R.id.location_agps_checkbox);
+        mLocationAccess = findViewById(R.id.location_checkbox);
+        mLocationAgpsAccess = findViewById(R.id.location_agps_checkbox);
         mLocationManager = getSystemService(LocationManager.class);
         mUserManager = getSystemService(UserManager.class);
         View locationAccessView = findViewById(R.id.location);

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017-2020,2022 The LineageOS Project
+ *               2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -79,13 +79,13 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         final SpannableStringBuilder metricsSpan = new SpannableStringBuilder(metricsSummary);
         metricsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
                 0, metricsHelpImproveLineage.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        TextView metrics = (TextView) findViewById(R.id.enable_metrics_summary);
+        TextView metrics = findViewById(R.id.enable_metrics_summary);
         metrics.setText(metricsSpan);
-        mMetrics = (CheckBox) findViewById(R.id.enable_metrics_checkbox);
+        mMetrics = findViewById(R.id.enable_metrics_checkbox);
 
         View navKeysRow = findViewById(R.id.nav_keys);
         navKeysRow.setOnClickListener(mNavKeysClickListener);
-        mNavKeys = (CheckBox) findViewById(R.id.nav_keys_checkbox);
+        mNavKeys = findViewById(R.id.nav_keys_checkbox);
         mSupportsKeyDisabler = isKeyDisablerSupported(this);
         if (mSupportsKeyDisabler) {
             mNavKeys.setChecked(LineageSettings.System.getIntForUser(getContentResolver(),

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Objects;
 
 public class WizardAction implements Parcelable {
 
@@ -87,15 +88,11 @@ public class WizardAction implements Parcelable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof WizardAction)) return false;
+        if (!(o instanceof WizardAction that)) return false;
 
-        WizardAction that = (WizardAction) o;
-
-        if (mId != null ? !mId.equals(that.mId) : that.mId != null) return false;
-        if (mUri != null ? !mUri.equals(that.mUri) : that.mUri != null) return false;
-        return mTransitions != null ?
-                mTransitions.equals(that.mTransitions) :
-                that.mTransitions == null;
+        if (!Objects.equals(mId, that.mId)) return false;
+        if (!Objects.equals(mUri, that.mUri)) return false;
+        return Objects.equals(mTransitions, that.mTransitions);
 
     }
 

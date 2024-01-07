@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 import android.util.SparseArray;
+
+import java.util.Objects;
 
 public class WizardTransitions extends SparseArray<String> implements Parcelable {
 
@@ -76,8 +78,7 @@ public class WizardTransitions extends SparseArray<String> implements Parcelable
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         WizardTransitions that = (WizardTransitions) o;
-        return mDefaultAction != null ? mDefaultAction.equals(that.mDefaultAction)
-                : that.mDefaultAction == null;
+        return Objects.equals(mDefaultAction, that.mDefaultAction);
 
     }
 
