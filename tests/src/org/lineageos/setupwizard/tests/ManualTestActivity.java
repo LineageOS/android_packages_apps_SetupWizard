@@ -81,7 +81,7 @@ public class ManualTestActivity extends Activity {
             startActivity(intent);
             finish();
         } catch (Exception e) {
-            Toast.makeText(this, "Error enabling setup " + e.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Error enabling setup " + e, Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
     }

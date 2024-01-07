@@ -24,6 +24,8 @@ import android.os.Parcelable;
 import android.util.Log;
 import android.util.SparseArray;
 
+import java.util.Objects;
+
 public class WizardTransitions extends SparseArray<String> implements Parcelable {
 
     private static final String TAG = "WizardTransitions";
@@ -76,8 +78,7 @@ public class WizardTransitions extends SparseArray<String> implements Parcelable
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         WizardTransitions that = (WizardTransitions) o;
-        return mDefaultAction != null ? mDefaultAction.equals(that.mDefaultAction)
-                : that.mDefaultAction == null;
+        return Objects.equals(mDefaultAction, that.mDefaultAction);
 
     }
 

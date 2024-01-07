@@ -81,7 +81,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         super.onCreate(savedInstanceState);
         SystemBarHelper.setBackButtonVisible(getWindow(), true);
         setNextText(R.string.next);
-        mLanguagePicker = (LocalePicker) findViewById(R.id.locale_list);
+        mLanguagePicker = findViewById(R.id.locale_list);
         mLanguagePicker.setNextRight(getNextButton().getId());
         mLanguagePicker.requestFocus();
         if (getResources().getBoolean(R.bool.config_isLargeNoTouch)) {
