@@ -32,7 +32,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.content.Context;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -42,9 +41,9 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
-import lineageos.providers.LineageSettings;
-
 import org.lineageos.setupwizard.util.SetupWizardUtils;
+
+import lineageos.providers.LineageSettings;
 
 public class NavigationSettingsActivity extends BaseSetupWizardActivity {
 
@@ -190,8 +189,7 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
                     LineageSettings.System.NAVIGATION_BAR_HINT, hideHint ? 0 : 1,
                     UserHandle.USER_CURRENT);
         }
-        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-        nextAction(NEXT_REQUEST, intent);
+        super.onNextPressed();
     }
 
     @Override

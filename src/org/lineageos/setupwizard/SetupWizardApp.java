@@ -44,7 +44,6 @@ public class SetupWizardApp extends Application {
     public static final String ACTION_RESTORE_FROM_BACKUP =
             "com.stevesoltys.seedvault.RESTORE_BACKUP";
     public static final String ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL";
-    public static final String ACTION_NEXT = "com.android.wizard.NEXT";
     public static final String ACTION_LOAD = "com.android.wizard.LOAD";
 
     public static final String EXTRA_HAS_MULTIPLE_USERS = "hasMultipleUsers";
