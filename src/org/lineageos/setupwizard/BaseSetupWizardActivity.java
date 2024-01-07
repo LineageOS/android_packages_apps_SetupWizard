@@ -25,12 +25,8 @@ import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_ACCESSIBILITY_SETTINGS;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
-import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_HAS_MULTIPLE_USERS;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
-import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
@@ -46,13 +42,10 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 import com.android.settingslib.Utils;
@@ -234,11 +227,11 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     }
 
     protected void onNextPressed() {
-        nextAction(NEXT_REQUEST);
+        nextAction(RESULT_OK);
     }
 
     protected void onSkipPressed() {
-        nextAction(NEXT_REQUEST);
+        nextAction(RESULT_SKIP);
     }
 
     protected void setNextText(int resId) {
@@ -436,13 +429,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (LOGV) {
             Log.v(TAG, "sendActionResults resultCode=" + mResultCode + " data=" + mResultData);
         }
-        Intent intent = new Intent(ACTION_NEXT);
-        intent.putExtra(EXTRA_SCRIPT_URI, getIntent().getStringExtra(EXTRA_SCRIPT_URI));
-        intent.putExtra(EXTRA_ACTION_ID, getIntent().getStringExtra(EXTRA_ACTION_ID));
-        intent.putExtra(EXTRA_RESULT_CODE, mResultCode);
-        if (!(mResultData == null || mResultData.getExtras() == null)) {
-            intent.putExtras(mResultData.getExtras());
-        }
+        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), mResultCode, mResultData);
         startActivityForResult(intent, NEXT_REQUEST);
     }
 
