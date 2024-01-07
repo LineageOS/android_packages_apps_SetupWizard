@@ -16,12 +16,9 @@
 
 package org.lineageos.setupwizard;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -40,7 +37,7 @@ public class DeviceSpecificActivity extends BaseSetupWizardActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE_SETUP_DEVICE) {
             if (resultCode == RESULT_OK) {
-                goToNextPage();
+                nextAction(RESULT_OK);
             } else {
                 finish();
             }
@@ -63,14 +60,8 @@ public class DeviceSpecificActivity extends BaseSetupWizardActivity {
             startActivityForResult(intent, REQUEST_CODE_SETUP_DEVICE);
         } else {
             SetupWizardUtils.disableComponent(this, DeviceSpecificActivity.class);
-            goToNextPage();
+            nextAction(RESULT_OK);
             finish();
         }
-    }
-
-    private void goToNextPage() {
-        applyForwardTransition(TRANSITION_ID_SLIDE);
-        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-        nextAction(NEXT_REQUEST, intent);
     }
 }
