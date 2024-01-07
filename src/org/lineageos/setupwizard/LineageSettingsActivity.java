@@ -79,13 +79,13 @@ public class LineageSettingsActivity extends BaseSetupWizardActivity {
         final SpannableStringBuilder metricsSpan = new SpannableStringBuilder(metricsSummary);
         metricsSpan.setSpan(new android.text.style.StyleSpan(android.graphics.Typeface.BOLD),
                 0, metricsHelpImproveLineage.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        TextView metrics = (TextView) findViewById(R.id.enable_metrics_summary);
+        TextView metrics = findViewById(R.id.enable_metrics_summary);
         metrics.setText(metricsSpan);
-        mMetrics = (CheckBox) findViewById(R.id.enable_metrics_checkbox);
+        mMetrics = findViewById(R.id.enable_metrics_checkbox);
 
         View navKeysRow = findViewById(R.id.nav_keys);
         navKeysRow.setOnClickListener(mNavKeysClickListener);
-        mNavKeys = (CheckBox) findViewById(R.id.nav_keys_checkbox);
+        mNavKeys = findViewById(R.id.nav_keys_checkbox);
         mSupportsKeyDisabler = isKeyDisablerSupported(this);
         if (mSupportsKeyDisabler) {
             mNavKeys.setChecked(LineageSettings.System.getIntForUser(getContentResolver(),
