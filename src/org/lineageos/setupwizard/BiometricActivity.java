@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017-2022 The LineageOS Project
+ *               2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,17 +18,16 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_BIOMETRIC;
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BIOMETRIC;
 
 import android.content.Intent;
 
-public class BiometricActivity extends WrapperSubBaseActivity {
+public class BiometricActivity extends SubBaseActivity {
 
     public static final String TAG = BiometricActivity.class.getSimpleName();
 
     @Override
     protected void onStartSubactivity() {
         Intent intent = new Intent(ACTION_SETUP_BIOMETRIC);
-        startSubactivity(intent, REQUEST_CODE_SETUP_BIOMETRIC);
+        startSubactivity(intent);
     }
 }

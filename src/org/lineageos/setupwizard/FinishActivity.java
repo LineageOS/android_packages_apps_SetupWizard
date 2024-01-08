@@ -31,30 +31,27 @@ import static org.lineageos.setupwizard.SetupWizardApp.UPDATE_RECOVERY_PROP;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.om.IOverlayManager;
 import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.Point;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.ImageView;
 
-import com.google.android.setupcompat.util.WizardManagerHelper;
+import lineageos.providers.LineageSettings;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
-
-import lineageos.providers.LineageSettings;
 
 public class FinishActivity extends BaseSetupWizardActivity {
 
@@ -64,7 +61,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     private SetupWizardApp mSetupWizardApp;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private volatile boolean mIsFinishing = false;
 
@@ -80,23 +77,8 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        if (!mIsFinishing) {
-            super.onBackPressed();
-        }
-    }
-
-    @Override
     protected int getLayoutResId() {
         return R.layout.finish_activity;
-    }
-
-    @Override
-    public void finish() {
-        super.finish();
-        if (!isResumed() || mResultCode != RESULT_CANCELED) {
-            overridePendingTransition(R.anim.translucent_enter, R.anim.translucent_exit);
-        }
     }
 
     @Override
@@ -123,8 +105,8 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private void setupRevealImage() {
-        final Point p = new Point();
-        getWindowManager().getDefaultDisplay().getRealSize(p);
+        Rect rect = getWindowManager().getCurrentWindowMetrics().getBounds();
+        final Point p = new Point(rect.width(), rect.height());
         final WallpaperManager wallpaperManager =
                 WallpaperManager.getInstance(this);
         wallpaperManager.forgetLoadedWallpaper();
@@ -160,12 +142,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
             @Override
             public void onAnimationEnd(Animator animation) {
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        completeSetup();
-                    }
-                });
+                mHandler.post(() -> completeSetup());
             }
         });
         anim.start();
@@ -181,9 +158,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
         wallpaperManager.forgetLoadedWallpaper();
         finishAllAppTasks();
         SetupWizardUtils.enableStatusBar();
-        Intent intent = WizardManagerHelper.getNextIntent(getIntent(),
-                Activity.RESULT_OK);
-        startActivityForResult(intent, NEXT_REQUEST);
+        finishAction(RESULT_OK);
     }
 
     private static void handleEnableMetrics(SetupWizardApp setupWizardApp) {
@@ -227,8 +202,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-
         final boolean virtualKeysEnabled = LineageSettings.System.getIntForUser(
                 context.getContentResolver(), LineageSettings.System.FORCE_SHOW_NAVBAR, 0,
                 UserHandle.USER_CURRENT) != 0;

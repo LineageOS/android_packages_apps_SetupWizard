@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022-2023 The LineageOS Project
+ * Copyright (C) 2022-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,8 +28,6 @@ import static org.lineageos.setupwizard.SetupWizardApp.NAVIGATION_OPTION_KEY;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.view.View;
@@ -39,7 +37,6 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import lineageos.providers.LineageSettings;
 
@@ -99,8 +96,7 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         if (!navBarEnabled && hasHomeKey || available <= 1) {
             mSetupWizardApp.getSettingsBundle().putString(NAVIGATION_OPTION_KEY,
                     NAV_BAR_MODE_3BUTTON_OVERLAY);
-            Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-            finishAction(RESULT_OK, intent);
+            finishAction(RESULT_OK);
         }
 
         final LottieAnimationView navigationIllustration =
