@@ -26,6 +26,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.OutOfQuotaPolicy;
+import androidx.work.WorkManager;
+
 import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -39,18 +43,15 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
         if (LOGV) {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
-        if (SetupWizardUtils.isOwner()) {
-            SetupWizardUtils.enableCaptivePortalDetection(this);
-        }
         PhoneMonitor.onSetupFinished();
         if (!SetupWizardUtils.isManagedProfile(this)) {
             launchHome();
         }
         finish();
         applyForwardTransition(TRANSITION_ID_FADE);
-        Intent i = new Intent();
-        i.setClassName(getPackageName(), SetupWizardExitService.class.getName());
-        startService(i);
+        WorkManager.getInstance(this).enqueue(new OneTimeWorkRequest.Builder(
+                SetupWizardExitWorker.class).setExpedited(
+                OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST).build());
     }
 
     private void launchHome() {

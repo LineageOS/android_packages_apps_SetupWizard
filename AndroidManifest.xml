@@ -52,9 +52,6 @@
     <protected-broadcast android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE"
                          android:permission="lineageos.permission.FINISH_SETUP"/>
 
-    <protected-broadcast android:name="org.lineageos.setupwizard.SETUP_FINISHED"
-                         android:permission="lineageos.permission.FINISH_SETUP"/>
-
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
                  android:theme="@style/Theme.Setup"
@@ -171,19 +168,6 @@
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".CaptivePortalSetupActivity"
-                  android:label="@string/activity_label_empty"
-                  android:excludeFromRecents="true"
-                  android:configChanges="mcc|mnc"
-                  android:immersive="true"
-                  android:exported="false"
-                  android:windowSoftInputMode="stateAlwaysHidden">
-            <intent-filter>
-                <action android:name="org.lineageos.setupwizard.LINEAGE_CAPTIVE_PORTAL_SETUP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -330,14 +314,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SetupWizardTestActivity"
-                  android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
-                  android:exported="false"
-                  android:immersive="true"
-                  android:label="@string/activity_label_empty"
-                  android:launchMode="singleInstance"
-                  android:theme="@style/NoDisplay"/>
-
         <receiver android:name=".PartnerReceiver"
                   android:exported="true">
             <intent-filter>
@@ -347,7 +323,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".SetupWizardExitService"
+        <service android:name=".SetupWizardExitWorker"
                  android:exported="false"/>
     </application>
 </manifest>
