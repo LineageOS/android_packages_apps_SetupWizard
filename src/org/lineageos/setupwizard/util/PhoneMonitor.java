@@ -16,10 +16,6 @@
 
 package org.lineageos.setupwizard.util;
 
-import static android.telephony.PhoneStateListener.LISTEN_DATA_CONNECTION_STATE;
-import static android.telephony.PhoneStateListener.LISTEN_NONE;
-import static android.telephony.PhoneStateListener.LISTEN_SERVICE_STATE;
-import static android.telephony.PhoneStateListener.LISTEN_SIGNAL_STRENGTHS;
 import static android.telephony.ServiceState.STATE_EMERGENCY_ONLY;
 import static android.telephony.ServiceState.STATE_IN_SERVICE;
 import static android.telephony.ServiceState.STATE_OUT_OF_SERVICE;
@@ -54,12 +50,12 @@ import android.os.Handler;
 import android.os.HandlerExecutor;
 import android.os.Looper;
 import android.sysprop.TelephonyProperties;
-import android.telephony.PhoneStateListener;
 import android.telephony.ServiceState;
 import android.telephony.SignalStrength;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.SubscriptionManager.OnSubscriptionsChangedListener;
+import android.telephony.TelephonyCallback;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.util.SparseArray;
@@ -68,7 +64,6 @@ import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.TelephonyIntents;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -88,13 +83,14 @@ public class PhoneMonitor {
 
     private final BroadcastReceiver mIntentReceiver;
 
-    private class SubscriptionStateTracker extends PhoneStateListener {
+    private class SubscriptionStateTracker extends TelephonyCallback implements
+            TelephonyCallback.ServiceStateListener, TelephonyCallback.DataConnectionStateListener,
+            TelephonyCallback.SignalStrengthsListener {
 
         private ServiceState mServiceState;
         private int mSubId = -1;
 
         public SubscriptionStateTracker(int subId) {
-            super(new HandlerExecutor(new Handler(Looper.myLooper())));
             mSubId = subId;
         }
 
@@ -120,17 +116,6 @@ public class PhoneMonitor {
             }
         }
     }
-
-    private final OnSubscriptionsChangedListener mOnSubscriptionsChangedListener =
-            new OnSubscriptionsChangedListener() {
-                public void onSubscriptionsChanged() {
-                    if (LOGV) {
-                        Log.d(TAG, "Subscriptions changed");
-                    }
-                    super.onSubscriptionsChanged();
-                    updatePhoneStateTrackers();
-                }
-            };
 
     public static void initInstance(Context context) {
         if (!SetupWizardUtils.hasTelephony(context)) {
@@ -158,8 +143,20 @@ public class PhoneMonitor {
         }
         mTelephony = mContext.getSystemService(TelephonyManager.class);
         if (mTelephony != null) {
-            mSubscriptionManager = SubscriptionManager.from(mContext);
-            mSubscriptionManager.addOnSubscriptionsChangedListener(mOnSubscriptionsChangedListener);
+            mSubscriptionManager = mContext.getSystemService(SubscriptionManager.class);
+            OnSubscriptionsChangedListener onSubscriptionsChangedListener =
+                    new OnSubscriptionsChangedListener() {
+                        public void onSubscriptionsChanged() {
+                            if (LOGV) {
+                                Log.d(TAG, "Subscriptions changed");
+                            }
+                            super.onSubscriptionsChanged();
+                            updatePhoneStateTrackers();
+                        }
+                    };
+            mSubscriptionManager.addOnSubscriptionsChangedListener(
+                    new HandlerExecutor(new Handler(Looper.myLooper())),
+                    onSubscriptionsChangedListener);
             updatePhoneStateTrackers();
         }
         mIntentReceiver = new BroadcastReceiver() {
@@ -191,7 +188,7 @@ public class PhoneMonitor {
         }
         for (int i2 = 0; i2 < mTrackers.size(); i2++) {
             if (!subIdSet.contains(Integer.valueOf(mTrackers.keyAt(i2)))) {
-                mTelephony.listen(mTrackers.valueAt(i2), LISTEN_NONE);
+                mTelephony.unregisterTelephonyCallback(mTrackers.valueAt(i2));
                 mTrackers.removeAt(i2);
             }
         }
@@ -201,9 +198,10 @@ public class PhoneMonitor {
             if (mTrackers.indexOfKey(subId) < 0) {
                 SubscriptionStateTracker tracker = new SubscriptionStateTracker(subId);
                 mTrackers.put(subId, tracker);
-                mTelephony.createForSubscriptionId(subId).listen(tracker, LISTEN_SERVICE_STATE
-                        | LISTEN_SIGNAL_STRENGTHS
-                        | LISTEN_DATA_CONNECTION_STATE);
+                TelephonyManager telephonyManager = mTelephony.createForSubscriptionId(subId);
+                telephonyManager.registerTelephonyCallback(
+                        new HandlerExecutor(new Handler(Looper.myLooper())),
+                        new SubscriptionStateTracker(subId));
             }
             i++;
         }

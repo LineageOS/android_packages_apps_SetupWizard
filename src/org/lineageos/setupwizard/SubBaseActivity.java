@@ -30,12 +30,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.activity.result.ActivityResult;
+
 public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SubBaseActivity.class.getSimpleName();
 
     private boolean mIsSubactivityNotFound = false;
-    private int mRequestCode;
 
     protected abstract void onStartSubactivity();
 
@@ -58,23 +59,19 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
     @Override
     public void onStart() {
         super.onStart();
-        mIsActivityVisible = true;
     }
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
-        outState.putInt("request_code", mRequestCode);
         super.onSaveInstanceState(outState);
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        mRequestCode = savedInstanceState.getInt("request_code");
     }
 
-    protected void startSubactivity(Intent subactivityIntent, int requestCode) {
-        mRequestCode = requestCode;
+    protected void startSubactivity(Intent subactivityIntent) {
         Intent intent = getIntent();
         if (intent.hasExtra(EXTRA_SCRIPT_URI)) {
             subactivityIntent.putExtra(EXTRA_SCRIPT_URI, intent.getStringExtra(EXTRA_SCRIPT_URI));
@@ -84,76 +81,34 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
                 (subactivityIntent.getFlags() & FLAG_ACTIVITY_FORWARD_RESULT) != 0;
         if (activityForwardsResult) {
             try {
-                startFirstRunActivity(subactivityIntent);
-                setResultCode(RESULT_OK);
-                finish();
+                startActivity(subactivityIntent);
+                finishAction(RESULT_OK);
             } catch (ActivityNotFoundException e) {
                 Log.w(TAG, "activity not found; start next screen and finish; intent="
                         + intent);
                 mIsSubactivityNotFound = true;
-                nextAction(RESULT_ACTIVITY_NOT_FOUND);
-                finish();
+                finishAction(RESULT_ACTIVITY_NOT_FOUND);
                 return;
             }
         }
-        startFirstRunActivityForResult(subactivityIntent, requestCode);
+        startActivityForResult(subactivityIntent);
         mIsSubactivityNotFound = false;
-        applyForwardTransition(getSubactivityPreviousTransition());
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Bundle extras = null;
-        if (LOGV) {
-            Log.v(TAG, "onActivityResult(" + getRequestName(requestCode) +
-                    ", " + getResultName(requestCode, resultCode));
-        }
-        if (requestCode == mRequestCode) {
-            StringBuilder append = new StringBuilder().append("subactivity result {")
-                    .append(getRequestName(requestCode)).append(", ")
-                    .append(getResultName(mRequestCode, resultCode)).append(", ");
-            if (data != null) {
-                extras = data.getExtras();
-            }
-            Log.i(TAG, append.append(extras).append("}").toString());
-            onSubactivityResult(requestCode, resultCode, data);
-        } else if (resultCode == RESULT_CANCELED) {
-            onStartSubactivity();
-            mIsGoingBack = true;
-            applyBackwardTransition(getSubactivityNextTransition());
-        } else {
-            super.onActivityResult(requestCode, resultCode, data);
-        }
-    }
-
-    protected void onSubactivityResult(int requestCode, int resultCode, Intent data) {
-        if (LOGV) {
-            StringBuilder append = new StringBuilder().append("onSubactivityResult(")
-                    .append(getRequestName(requestCode)).append(", ")
-                    .append(getResultName(requestCode, resultCode)).append(", ");
-            Bundle extras = null;
-            if (data != null) {
-                extras = data.getExtras();
-            }
-            Log.v(TAG, append.append(extras).append(")").toString());
-        }
+    protected void onActivityResult(ActivityResult activityResult) {
+        super.onActivityResult(activityResult);
+        int resultCode = activityResult.getResultCode();
+        Intent data = activityResult.getData();
         if (resultCode != RESULT_CANCELED) {
-            applyForwardTransition(getSubactivityNextTransition());
             nextAction(resultCode, data);
         } else if (mIsSubactivityNotFound) {
-            nextAction(RESULT_ACTIVITY_NOT_FOUND);
-            finish();
+            finishAction(RESULT_ACTIVITY_NOT_FOUND);
+        } else if (data != null && data.getBooleanExtra("onBackPressed", false)) {
+            onStartSubactivity();
         } else {
-            onSubactivityCanceled(data);
+            finishAction(RESULT_CANCELED);
         }
-    }
-
-    protected int getSubactivityPreviousTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    protected int getSubactivityNextTransition() {
-        return TRANSITION_ID_SLIDE;
     }
 
     @Override

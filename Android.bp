@@ -31,7 +31,8 @@ android_app {
     },
 
     static_libs: [
-        "androidx.core_core",
+        "androidx.activity_activity",
+        "androidx.work_work-runtime-ktx",
         "SettingsLib",
         "setupcompat",
         "setupdesign",

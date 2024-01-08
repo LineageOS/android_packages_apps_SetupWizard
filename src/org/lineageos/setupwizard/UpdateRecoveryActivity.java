@@ -45,8 +45,7 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity");
-            nextAction(RESULT_SKIP);
-            finish();
+            finishAction(RESULT_SKIP);
             return;
         }
 
