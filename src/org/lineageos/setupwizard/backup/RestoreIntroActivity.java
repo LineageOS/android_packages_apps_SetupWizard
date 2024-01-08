@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2019-2020 The Calyx Institute
- *               2020-2022 The LineageOS Project
+ *               2020-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,9 @@ import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKU
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import org.lineageos.setupwizard.R;
 import org.lineageos.setupwizard.SubBaseActivity;
@@ -60,9 +62,25 @@ public class RestoreIntroActivity extends SubBaseActivity {
         return R.drawable.ic_restore;
     }
 
+    private boolean isPackageInstalled(String packageName, PackageManager packageManager) {
+        try {
+            packageManager.getPackageInfo(packageName, 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
     private void launchRestore() {
-        Intent intent = new Intent(ACTION_RESTORE_FROM_BACKUP);
-        startSubactivity(intent, REQUEST_CODE_RESTORE);
+        PackageManager pm = getPackageManager();
+        boolean is_Restore_installed = isPackageInstalled("org.stevesoltys.seedvault", pm);
+        if (is_Restore_installed) {
+            Intent intent = new Intent(ACTION_RESTORE_FROM_BACKUP);
+            startSubactivity(intent, REQUEST_CODE_RESTORE);
+        } else {
+            Toast.makeText(RestoreIntroActivity.this, "Seedvault app not found", Toast.LENGTH_LONG).show();
+            //put code to trigger skip here
+        }
     }
 
 }
