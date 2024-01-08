@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2021 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,8 +15,6 @@
  */
 
 package org.lineageos.setupwizard;
-
-import static android.content.Intent.FLAG_ACTIVITY_FORWARD_RESULT;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 
@@ -80,25 +78,13 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             subactivityIntent.putExtra(EXTRA_SCRIPT_URI, intent.getStringExtra(EXTRA_SCRIPT_URI));
             subactivityIntent.putExtra(EXTRA_ACTION_ID, intent.getStringExtra(EXTRA_ACTION_ID));
         }
-        boolean activityForwardsResult =
-                (subactivityIntent.getFlags() & FLAG_ACTIVITY_FORWARD_RESULT) != 0;
-        if (activityForwardsResult) {
-            try {
-                startFirstRunActivity(subactivityIntent);
-                setResultCode(RESULT_OK);
-                finish();
-            } catch (ActivityNotFoundException e) {
-                Log.w(TAG, "activity not found; start next screen and finish; intent="
-                        + intent);
-                mIsSubactivityNotFound = true;
-                nextAction(RESULT_ACTIVITY_NOT_FOUND);
-                finish();
-                return;
-            }
+        try {
+            startActivityForResult(subactivityIntent);
+        } catch (ActivityNotFoundException e) {
+            Log.w(TAG, "activity not found; start next screen and finish; intent=" + intent);
+            mIsSubactivityNotFound = true;
+            finishAction(RESULT_ACTIVITY_NOT_FOUND);
         }
-        startFirstRunActivityForResult(subactivityIntent, requestCode);
-        mIsSubactivityNotFound = false;
-        applyForwardTransition(getSubactivityPreviousTransition());
     }
 
     @Override
