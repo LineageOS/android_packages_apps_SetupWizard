@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- *               2017-2022 The LineageOS Project
+ *               2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -101,6 +101,7 @@ public class WizardManager extends Activity {
 
         intent.putExtra(EXTRA_SCRIPT_URI, scriptUri);
         intent.putExtra(EXTRA_ACTION_ID, action.getId());
+        intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
         startActivity(intent);
     }
 

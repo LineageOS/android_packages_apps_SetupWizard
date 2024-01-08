@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2019-2020 The Calyx Institute
- *               2020-2022 The LineageOS Project
+ *               2020-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard.backup;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP;
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,7 +61,7 @@ public class RestoreIntroActivity extends SubBaseActivity {
 
     private void launchRestore() {
         Intent intent = new Intent(ACTION_RESTORE_FROM_BACKUP);
-        startSubactivity(intent, REQUEST_CODE_RESTORE);
+        startSubactivity(intent);
     }
 
 }

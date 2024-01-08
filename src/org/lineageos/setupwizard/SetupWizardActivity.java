@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
- * Copyright (C) 2017,2019 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,12 +29,14 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
-public class SetupWizardActivity extends BaseSetupWizardActivity {
+public class SetupWizardActivity extends AppCompatActivity {
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
     @Override
@@ -55,7 +57,6 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             SetupWizardUtils.finishSetupWizard(this);
             finish();
         } else {
-            onSetupStart();
             SetupWizardUtils.enableComponent(this, WizardManager.class);
             Intent intent = new Intent(ACTION_LOAD);
             if (SetupWizardUtils.isOwner()) {
