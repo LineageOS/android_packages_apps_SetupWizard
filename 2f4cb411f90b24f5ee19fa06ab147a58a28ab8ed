@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ddd1c3e_2e8edd25",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-01-08T02:13:24Z",
+      "side": 1,
+      "message": "the default style for namespace in AS is wrong, namespace should be, like every attribute, in a separate line, not in the same as the opening tag",
+      "revId": "2f4cb411f90b24f5ee19fa06ab147a58a28ab8ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
