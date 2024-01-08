@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9b0b7b8_3e060899",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-01-08T02:09:41Z",
+      "side": 1,
+      "message": "update copyrights additionally?",
+      "revId": "8e3dddf974986e4a490e751a50b4118d39e9dc18",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6a6c218_e9c0f085",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-01-08T02:09:41Z",
+      "side": 1,
+      "message": "var is unused now?",
+      "revId": "8e3dddf974986e4a490e751a50b4118d39e9dc18",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
