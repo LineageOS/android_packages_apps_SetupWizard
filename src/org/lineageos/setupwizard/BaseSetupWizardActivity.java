@@ -19,25 +19,27 @@ package org.lineageos.setupwizard;
 
 import static android.view.View.INVISIBLE;
 
-import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
-import static com.google.android.setupcompat.util.ResultCodes.RESULT_RETRY;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_ACCESSIBILITY_SETTINGS;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_NEXT;
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_HAS_MULTIPLE_USERS;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
 import android.annotation.Nullable;
-import android.app.Activity;
 import android.app.ActivityManager;
-import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -46,14 +48,23 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import android.os.UserHandle;
 import android.os.UserManager;
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+
+import androidx.activity.OnBackPressedCallback;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.settingslib.Utils;
 
@@ -65,7 +76,8 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.List;
 
-public abstract class BaseSetupWizardActivity extends Activity implements NavigationBarListener {
+public abstract class BaseSetupWizardActivity extends AppCompatActivity implements
+        NavigationBarListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
 
@@ -74,22 +86,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     protected static final int TRANSITION_ID_SLIDE = 2;
     protected static final int TRANSITION_ID_FADE = 3;
 
-    protected static final int NEXT_REQUEST = 10000;
-    protected static final int EMERGENCY_DIAL_ACTIVITY_REQUEST = 10038;
-    protected static final int ACCESSIBILITY_SETTINGS_ACTIVITY_REQUEST = 10039;
-    protected static final int WIFI_ACTIVITY_REQUEST = 10004;
-    protected static final int BLUETOOTH_ACTIVITY_REQUEST = 10100;
-    protected static final int BIOMETRIC_ACTIVITY_REQUEST = 10101;
-    protected static final int SCREENLOCK_ACTIVITY_REQUEST = 10102;
-
     private NavigationLayout mNavigationBar;
-
-    protected boolean mIsActivityVisible = false;
-    protected boolean mIsExiting = false;
-    private final boolean mIsFirstRun = true;
-    protected boolean mIsGoingBack = false;
-    protected int mResultCode = 0;
-    private Intent mResultData;
 
     private final BroadcastReceiver finishReceiver = new BroadcastReceiver() {
         @Override
@@ -103,6 +100,9 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             }
         }
     };
+    private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            BaseSetupWizardActivity.this::onActivityResult);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -116,6 +116,15 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (mNavigationBar != null) {
             mNavigationBar.setNavigationBarListener(this);
         }
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (LOGV) {
+                    Log.v(TAG, "handleOnBackPressed()");
+                }
+                finishAction(RESULT_CANCELED, new Intent().putExtra("onBackPressed", true));
+            }
+        });
     }
 
     @Override
@@ -143,13 +152,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             logActivityState("onResume");
         }
         super.onResume();
-        if (mIsGoingBack) {
-            if (!mIsExiting) {
-                applyBackwardTransition(getTransition());
-            }
-        } else if (!mIsExiting) {
-            applyForwardTransition(getTransition());
-        }
     }
 
     @Override
@@ -182,7 +184,6 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         if (LOGV) {
             logActivityState("onAttachedToWindow");
         }
-        mIsActivityVisible = true;
         super.onAttachedToWindow();
     }
 
@@ -220,7 +221,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         return view instanceof NavigationLayout ? (NavigationLayout) view : null;
     }
 
-    public void setNextAllowed(boolean allowed) {
+    public final void setNextAllowed(boolean allowed) {
         if (mNavigationBar != null) {
             mNavigationBar.getNextButton().setEnabled(allowed);
         }
@@ -241,7 +242,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         nextAction(NEXT_REQUEST);
     }
 
-    protected void setNextText(int resId) {
+    protected final void setNextText(int resId) {
         if (mNavigationBar != null) {
             mNavigationBar.getNextButton().setText(resId);
         }
@@ -251,34 +252,21 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         return mNavigationBar.getNextButton();
     }
 
-    protected void setSkipText(int resId) {
+    protected final void setSkipText(int resId) {
         if (mNavigationBar != null) {
             mNavigationBar.getSkipButton().setText(resId);
         }
     }
 
-    protected void hideNextButton() {
+    protected final void hideNextButton() {
         if (mNavigationBar != null) {
             final Button next = mNavigationBar.getNextButton();
             next.setVisibility(INVISIBLE);
         }
     }
 
-    protected Intent getResultData() {
-        return null;
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (LOGV) {
-            Log.v(TAG, "onBackPressed()");
-        }
-        setResultCode(RESULT_CANCELED, getResultData());
-        super.onBackPressed();
-    }
-
     public void onNavigateBack() {
-        onBackPressed();
+        getOnBackPressedDispatcher().onBackPressed();
     }
 
     public void onNavigateNext() {
@@ -289,6 +277,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         onSkipPressed();
     }
 
+<<<<<<< HEAD   (4190f0 Automatic translation import)
     protected void startEmergencyDialer() {
         try {
             startFirstRunActivityForResult(new Intent(ACTION_EMERGENCY_DIAL),
@@ -312,13 +301,15 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
     }
 
     protected void onSetupStart() {
+=======
+    protected final void onSetupStart() {
+>>>>>>> CHANGE (7ef422 Update deprecated code)
         if (SetupWizardUtils.isOwner()) {
-            SetupWizardUtils.disableCaptivePortalDetection(getApplicationContext());
             tryEnablingWifi();
         }
     }
 
-    protected void exitIfSetupComplete() {
+    private void exitIfSetupComplete() {
         if (WizardManagerHelper.isUserSetupComplete(this)) {
             Log.i(TAG, "Starting activity with USER_SETUP_COMPLETE=true");
             startSetupWizardExitActivity();
@@ -327,7 +318,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         }
     }
 
-    protected void finishAllAppTasks() {
+    protected final void finishAllAppTasks() {
         List<ActivityManager.AppTask> appTasks =
                 getSystemService(ActivityManager.class).getAppTasks();
 
@@ -340,101 +331,81 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
         finish();
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (LOGV) {
-            Log.v(TAG, "onActivityResult(" + getRequestName(requestCode) + ", " +
-                    getResultName(requestCode, resultCode) + ")");
-        }
-        mIsGoingBack = true;
-        if (requestCode != NEXT_REQUEST || resultCode != RESULT_CANCELED) {
-            if (requestCode == EMERGENCY_DIAL_ACTIVITY_REQUEST |
-                    requestCode == ACCESSIBILITY_SETTINGS_ACTIVITY_REQUEST) {
-                applyBackwardTransition(TRANSITION_ID_DEFAULT);
-                return;
-            }
-            if (resultCode == RESULT_CANCELED) {
-                finish();
-            } else {
-                nextAction(resultCode);
-            }
-        }
-    }
-
     public void finish() {
         if (LOGV) {
             Log.v(TAG, "finish");
         }
         super.finish();
-        if (isResumed() && mResultCode == RESULT_CANCELED) {
-            applyBackwardTransition(getTransition());
-        }
-        mIsExiting = true;
     }
 
-    protected void finishAction() {
-        finishAction(RESULT_CANCELED);
-    }
-
-    protected void finishAction(int resultCode) {
+    protected final void finishAction(int resultCode) {
         finishAction(resultCode, null);
     }
 
-    protected void finishAction(int resultCode, Intent data) {
-        if (resultCode != 0) {
+    protected final void finishAction(int resultCode, Intent data) {
+        if (resultCode != RESULT_CANCELED) {
             nextAction(resultCode, data);
+        } else {
+            setResult(resultCode, data);
         }
         finish();
     }
 
-    protected void setResultCode(int resultCode) {
-        setResultCode(resultCode, getResultData());
-    }
-
-    protected void setResultCode(int resultCode, Intent data) {
-        if (LOGV) {
-            Log.v(TAG, "setResultCode result=" + getResultName(0, resultCode) + " data=" + data);
-        }
-        mResultCode = resultCode;
-        mResultData = data;
-        setResult(resultCode, data);
-    }
-
-    protected void nextAction(int resultCode) {
+    protected final void nextAction(int resultCode) {
         nextAction(resultCode, null);
     }
 
-    protected void nextAction(int resultCode, Intent data) {
+    protected final void nextAction(int resultCode, Intent data) {
         if (LOGV) {
             Log.v(TAG, "nextAction resultCode=" + resultCode +
                     " data=" + data + " this=" + this);
         }
-        if (resultCode == 0) {
+        if (resultCode == RESULT_CANCELED) {
             throw new IllegalArgumentException("Cannot call nextAction with RESULT_CANCELED");
         }
-        setResultCode(resultCode, data);
-        sendActionResults();
+        setResult(resultCode, data);
+        Intent intent = WizardManagerHelper.getNextIntent(getIntent(), resultCode, data);
+        startActivityForResult(intent);
     }
 
+    @Override
     public void startActivity(Intent intent) {
+<<<<<<< HEAD   (4190f0 Automatic translation import)
+=======
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
         super.startActivity(intent);
-        if (isResumed() && mIsActivityVisible) {
-            applyForwardTransition(getTransition());
-        }
-        mIsExiting = true;
     }
 
+<<<<<<< HEAD   (4190f0 Automatic translation import)
     public void startActivityForResult(Intent intent, int requestCode) {
         super.startActivityForResult(intent, requestCode);
         if (isResumed() && mIsActivityVisible) {
             applyForwardTransition(getTransition());
         }
         mIsExiting = true;
+=======
+    protected final void startActivityForResult(@NonNull Intent intent) {
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
+        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
+        activityResultLauncher.launch(intent);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
     }
 
-    protected void sendActionResults() {
+    protected void onActivityResult(ActivityResult activityResult) {
+        int resultCode = activityResult.getResultCode();
+        Intent data = activityResult.getData();
         if (LOGV) {
-            Log.v(TAG, "sendActionResults resultCode=" + mResultCode + " data=" + mResultData);
+            StringBuilder append = new StringBuilder().append("onActivityResult(")
+                    .append(resultCode).append(", ");
+            Bundle extras = null;
+            if (data != null) {
+                extras = data.getExtras();
+            }
+            Log.v(TAG, append.append(extras).append(")").toString());
         }
+<<<<<<< HEAD   (4190f0 Automatic translation import)
         Intent intent = new Intent(ACTION_NEXT);
         intent.putExtra(EXTRA_SCRIPT_URI, getIntent().getStringExtra(EXTRA_SCRIPT_URI));
         intent.putExtra(EXTRA_ACTION_ID, getIntent().getStringExtra(EXTRA_ACTION_ID));
@@ -443,199 +414,67 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             intent.putExtras(mResultData.getExtras());
         }
         startActivityForResult(intent, NEXT_REQUEST);
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
     }
 
-    protected void applyForwardTransition(int transitionId) {
+    protected final void applyForwardTransition(int transitionId) {
         if (transitionId == TRANSITION_ID_SLIDE) {
-            overridePendingTransition(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
+            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, R.anim.sud_slide_next_in,
+                    R.anim.sud_slide_next_out);
         } else if (transitionId == TRANSITION_ID_FADE) {
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, android.R.anim.fade_in,
+                    android.R.anim.fade_out);
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
             TypedArray typedArray = obtainStyledAttributes(android.R.style.Animation_Activity,
                     new int[]{android.R.attr.activityOpenEnterAnimation,
                             android.R.attr.activityOpenExitAnimation});
-            overridePendingTransition(typedArray.getResourceId(0, 0),
+            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, typedArray.getResourceId(0, 0),
                     typedArray.getResourceId(1, 0));
             typedArray.recycle();
         } else if (transitionId == TRANSITION_ID_NONE) {
-            overridePendingTransition(0, 0);
+            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, 0, 0);
         }
     }
 
-    protected void applyBackwardTransition(int transitionId) {
+    protected final void applyBackwardTransition(int transitionId) {
         if (transitionId == TRANSITION_ID_SLIDE) {
-            overridePendingTransition(R.anim.sud_slide_back_in, R.anim.sud_slide_back_out);
+            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, R.anim.sud_slide_back_in,
+                    R.anim.sud_slide_back_out);
         } else if (transitionId == TRANSITION_ID_FADE) {
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, android.R.anim.fade_in,
+                    android.R.anim.fade_out);
         } else if (transitionId == TRANSITION_ID_DEFAULT) {
             TypedArray typedArray = obtainStyledAttributes(android.R.style.Animation_Activity,
                     new int[]{android.R.attr.activityCloseEnterAnimation,
                             android.R.attr.activityCloseExitAnimation});
-            overridePendingTransition(typedArray.getResourceId(0, 0),
+            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, typedArray.getResourceId(0, 0),
                     typedArray.getResourceId(1, 0));
             typedArray.recycle();
         } else if (transitionId == TRANSITION_ID_NONE) {
-            overridePendingTransition(0, 0);
+            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, 0, 0);
         }
     }
 
-    protected int getTransition() {
-        return TRANSITION_ID_SLIDE;
-    }
-
-    protected boolean tryEnablingWifi() {
+    protected final boolean tryEnablingWifi() {
         WifiManager wifiManager = getSystemService(WifiManager.class);
-        if (wifiManager != null && !wifiManager.isWifiEnabled()) {
-            return wifiManager.setWifiEnabled(true);
-        }
-        return false;
+        return wifiManager.setWifiEnabled(true);
     }
 
     private void startSetupWizardExitActivity() {
         if (LOGV) {
             Log.v(TAG, "startSetupWizardExitActivity()");
         }
-        startFirstRunActivity(new Intent(this, SetupWizardExitActivity.class));
+        startActivity(new Intent(this, SetupWizardExitActivity.class));
     }
 
-    protected void startFirstRunActivity(Intent intent) {
-        if (LOGV) {
-            Log.v(TAG, "starting activity " + intent);
-        }
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
-        intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
-        startActivity(intent);
+    private boolean isFirstRun() {
+        return true;
     }
 
-    protected void startFirstRunActivityForResult(Intent intent, int requestCode) {
-        if (LOGV) {
-            Log.v(TAG, "startFirstRunActivityForResult requestCode=" + requestCode);
-        }
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
-        intent.putExtra(EXTRA_HAS_MULTIPLE_USERS, hasMultipleUsers());
-        startActivityForResult(intent, requestCode);
-    }
-
-    protected boolean isFirstRun() {
-        return mIsFirstRun;
-    }
-
-    public boolean hasMultipleUsers() {
-        return ((UserManager) getSystemService(USER_SERVICE)).getUsers().size() > 1;
-    }
-
-    protected void logActivityState(String prefix) {
+    protected final void logActivityState(String prefix) {
         Log.v(TAG, prefix + " isResumed=" + isResumed() + " isFinishing=" +
                 isFinishing() + " isDestroyed=" + isDestroyed());
-    }
-
-    protected static String getRequestName(int requestCode) {
-        StringBuilder sb = new StringBuilder();
-        switch (requestCode) {
-            case NEXT_REQUEST:
-                sb.append("NEXT_REQUEST");
-                break;
-            case EMERGENCY_DIAL_ACTIVITY_REQUEST:
-                sb.append("EMERGENCY_DIAL_ACTIVITY_REQUEST");
-                break;
-            case WIFI_ACTIVITY_REQUEST:
-                sb.append("WIFI_ACTIVITY_REQUEST");
-                break;
-            case BLUETOOTH_ACTIVITY_REQUEST:
-                sb.append("BLUETOOTH_ACTIVITY_REQUEST");
-                break;
-            case BIOMETRIC_ACTIVITY_REQUEST:
-                sb.append("BIOMETRIC_ACTIVITY_REQUEST");
-                break;
-            case SCREENLOCK_ACTIVITY_REQUEST:
-                sb.append("SCREENLOCK_ACTIVITY_REQUEST");
-                break;
-        }
-        sb.append("(").append(requestCode).append(")");
-        return sb.toString();
-    }
-
-    protected static String getResultName(int requestCode, int resultCode) {
-        StringBuilder sb = new StringBuilder();
-        switch (requestCode) {
-            case WIFI_ACTIVITY_REQUEST:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        sb.append("RESULT_OK");
-                        break;
-                    case RESULT_CANCELED:
-                        sb.append("RESULT_CANCELED");
-                        break;
-                    case RESULT_SKIP:
-                        sb.append("RESULT_WIFI_SKIP");
-                        break;
-                    default:
-                        break;
-                }
-            case BLUETOOTH_ACTIVITY_REQUEST:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        sb.append("RESULT_OK");
-                        break;
-                    case RESULT_CANCELED:
-                        sb.append("RESULT_CANCELED");
-                        break;
-                    case RESULT_SKIP:
-                        sb.append("RESULT_BLUETOOTH_SKIP");
-                        break;
-                    default:
-                        break;
-                }
-            case BIOMETRIC_ACTIVITY_REQUEST:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        sb.append("RESULT_OK");
-                        break;
-                    case RESULT_CANCELED:
-                        sb.append("RESULT_CANCELED");
-                        break;
-                    case RESULT_SKIP:
-                        sb.append("RESULT_BIOMETRIC_SKIP");
-                        break;
-                    default:
-                        break;
-                }
-            case SCREENLOCK_ACTIVITY_REQUEST:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        sb.append("RESULT_OK");
-                        break;
-                    case RESULT_CANCELED:
-                        sb.append("RESULT_CANCELED");
-                        break;
-                    case RESULT_SKIP:
-                        sb.append("RESULT_SCREENLOCK_SKIP");
-                        break;
-                    default:
-                        break;
-                }
-            default:
-                switch (resultCode) {
-                    case RESULT_OK:
-                        sb.append("RESULT_OK");
-                        break;
-                    case RESULT_CANCELED:
-                        sb.append("RESULT_CANCELED");
-                        break;
-                    case RESULT_SKIP:
-                        sb.append("RESULT_SKIP");
-                        break;
-                    case RESULT_RETRY:
-                        sb.append("RESULT_RETRY");
-                        break;
-                    case RESULT_ACTIVITY_NOT_FOUND:
-                        sb.append("RESULT_ACTIVITY_NOT_FOUND");
-                        break;
-                }
-                break;
-        }
-        sb.append("(").append(resultCode).append(")");
-        return sb.toString();
     }
 
     private void initLayout() {

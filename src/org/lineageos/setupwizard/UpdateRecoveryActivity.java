@@ -47,10 +47,14 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity");
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 
             Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
             nextAction(NEXT_REQUEST, intent);
             finish();
+=======
+            finishAction(RESULT_SKIP);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
             return;
         }
 

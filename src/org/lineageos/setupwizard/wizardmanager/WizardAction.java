@@ -115,11 +115,12 @@ public class WizardAction implements Parcelable {
         dest.writeParcelable(mTransitions, flags);
     }
 
-    public static final Creator<WizardAction> CREATOR = new Creator<WizardAction>() {
+    public static final Creator<WizardAction> CREATOR = new Creator<>() {
         public WizardAction createFromParcel(Parcel source) {
             return new WizardAction(source.readString(),
                     source.readString(),
-                    source.readParcelable(WizardTransitions.class.getClassLoader()));
+                    source.readParcelable(WizardTransitions.class.getClassLoader(),
+                            WizardTransitions.class));
         }
 
         public WizardAction[] newArray(int size) {

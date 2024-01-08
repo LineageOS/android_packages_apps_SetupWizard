@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard.backup;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP;
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_RESTORE;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -82,7 +81,7 @@ public class RestoreIntroActivity extends SubBaseActivity {
 
     private void launchRestore() {
         Intent intent = new Intent(ACTION_RESTORE_FROM_BACKUP);
-        startSubactivity(intent, REQUEST_CODE_RESTORE);
+        startSubactivity(intent);
     }
 
 }

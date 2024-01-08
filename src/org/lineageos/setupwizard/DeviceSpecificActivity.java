@@ -19,17 +19,16 @@ package org.lineageos.setupwizard;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
-import android.os.Bundle;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class DeviceSpecificActivity extends BaseSetupWizardActivity {
+public class DeviceSpecificActivity extends SubBaseActivity {
 
     private static final String ACTION_SETUP_DEVICE = "org.lineageos.settings.device.SUW_SETTINGS";
-    private static final int REQUEST_CODE_SETUP_DEVICE = 90000;
 
+<<<<<<< HEAD   (4190f0 Automatic translation import)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,15 +55,21 @@ public class DeviceSpecificActivity extends BaseSetupWizardActivity {
     }
 
     private void onStartSubactivity() {
+=======
+    protected void onStartSubactivity() {
+>>>>>>> CHANGE (7ef422 Update deprecated code)
         Intent intent = new Intent(ACTION_SETUP_DEVICE);
         ComponentName name = intent.resolveActivity(getPackageManager());
         if (name != null) {
-            applyForwardTransition(TRANSITION_ID_SLIDE);
-            startActivityForResult(intent, REQUEST_CODE_SETUP_DEVICE);
+            startSubactivity(intent);
         } else {
             SetupWizardUtils.disableComponent(this, DeviceSpecificActivity.class);
+<<<<<<< HEAD   (4190f0 Automatic translation import)
             goToNextPage();
             finish();
+=======
+            finishAction(RESULT_OK);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
         }
     }
 

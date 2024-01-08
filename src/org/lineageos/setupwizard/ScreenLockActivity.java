@@ -18,17 +18,23 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_LOCKSCREEN;
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_DETAILS;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_TITLE;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN;
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 
 import android.app.KeyguardManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 public class ScreenLockActivity extends SubBaseActivity {
 
     public static final String TAG = ScreenLockActivity.class.getSimpleName();
@@ -68,11 +74,15 @@ public class ScreenLockActivity extends SubBaseActivity {
 
     private void launchLockscreenSetup() {
         Intent intent = new Intent(ACTION_SETUP_LOCKSCREEN);
+<<<<<<< HEAD   (4190f0 Automatic translation import)
         intent.putExtra(EXTRA_TITLE,
                 getString(R.string.settings_lockscreen_setup_title));
         intent.putExtra(EXTRA_DETAILS,
                 getString(R.string.settings_lockscreen_setup_details));
         startSubactivity(intent, REQUEST_CODE_SETUP_LOCKSCREEN);
+=======
+        startSubactivity(intent);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
     }
 
     private boolean isKeyguardSecure() {

@@ -18,19 +18,25 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_BIOMETRIC;
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_DETAILS;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_TITLE;
 import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BIOMETRIC;
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+<<<<<<< HEAD   (4190f0 Automatic translation import)
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.util.ThemeHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
+=======
+>>>>>>> CHANGE (7ef422 Update deprecated code)
 public class BiometricActivity extends SubBaseActivity {
 
     public static final String TAG = BiometricActivity.class.getSimpleName();
@@ -83,11 +89,15 @@ public class BiometricActivity extends SubBaseActivity {
 
     private void launchBiometricSetup() {
         Intent intent = new Intent(ACTION_SETUP_BIOMETRIC);
+<<<<<<< HEAD   (4190f0 Automatic translation import)
         intent.putExtra(EXTRA_TITLE,
                 getString(getTitleResId()));
         intent.putExtra(EXTRA_DETAILS,
                 getString(R.string.settings_biometric_setup_details));
         intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         startSubactivity(intent, REQUEST_CODE_SETUP_BIOMETRIC);
+=======
+        startSubactivity(intent);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
     }
 }

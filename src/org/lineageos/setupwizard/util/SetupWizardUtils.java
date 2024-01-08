@@ -26,7 +26,6 @@ import static android.content.pm.PackageManager.GET_ACTIVITIES;
 import static android.content.pm.PackageManager.GET_RECEIVERS;
 import static android.content.pm.PackageManager.GET_SERVICES;
 
-import static org.lineageos.setupwizard.SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.app.StatusBarManager;
@@ -43,7 +42,7 @@ import android.content.res.Resources;
 import android.hardware.face.FaceManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.ConnectivityManager;
-import android.os.Binder;
+import android.net.NetworkCapabilities;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -88,15 +87,20 @@ public class SetupWizardUtils {
     public static void setMobileDataEnabled(Context context, boolean enabled) {
         TelephonyManager tm = context.getSystemService(TelephonyManager.class);
         if (tm.isMultiSimEnabled()) {
+<<<<<<< HEAD   (4190f0 Automatic translation import)
             int phoneId = SubscriptionManager.from(context).getDefaultDataPhoneId();
             android.provider.Settings.Global.putInt(context.getContentResolver(),
                     android.provider.Settings.Global.MOBILE_DATA + phoneId, enabled ? 1 : 0);
             int subId = SubscriptionManager.getDefaultDataSubscriptionId();
             tm.createForSubscriptionId(subId).setDataEnabled(enabled);
+=======
+            int subId = SubscriptionManager.getDefaultDataSubscriptionId();
+            int phoneId = SubscriptionManager.getPhoneId(subId);
+            tm.createForSubscriptionId(subId).setDataEnabledForReason(
+                    TelephonyManager.DATA_ENABLED_REASON_USER, enabled);
+>>>>>>> CHANGE (7ef422 Update deprecated code)
         } else {
-            android.provider.Settings.Global.putInt(context.getContentResolver(),
-                    android.provider.Settings.Global.MOBILE_DATA, enabled ? 1 : 0);
-            tm.setDataEnabled(enabled);
+            tm.setDataEnabledForReason(TelephonyManager.DATA_ENABLED_REASON_USER, enabled);
         }
     }
 
@@ -146,14 +150,6 @@ public class SetupWizardUtils {
 
     public static boolean isManagedProfile(Context context) {
         return context.getSystemService(UserManager.class).isManagedProfile();
-    }
-
-    public static void disableCaptivePortalDetection(Context context) {
-        Settings.Global.putInt(context.getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 0);
-    }
-
-    public static void enableCaptivePortalDetection(Context context) {
-        Settings.Global.putInt(context.getContentResolver(), KEY_DETECT_CAPTIVE_PORTAL, 1);
     }
 
     public static StatusBarManager disableStatusBar(Context context) {
@@ -226,9 +222,6 @@ public class SetupWizardUtils {
 
         disableComponent(context, WizardManager.class);
         disableHome(context);
-        context.sendStickyBroadcastAsUser(
-                new Intent(SetupWizardApp.ACTION_FINISHED),
-                Binder.getCallingUserHandle());
         disableComponentSets(context, GET_RECEIVERS | GET_SERVICES);
     }
 
@@ -239,9 +232,11 @@ public class SetupWizardUtils {
     public static boolean isEthernetConnected(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.
                 getSystemService(Context.CONNECTIVITY_SERVICE);
-
-        return (cm.getActiveNetworkInfo() != null &&
-                cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_ETHERNET);
+        NetworkCapabilities networkCapabilities = cm.getNetworkCapabilities(cm.getActiveNetwork());
+        if (networkCapabilities != null) {
+            return networkCapabilities.hasCapability(NetworkCapabilities.TRANSPORT_ETHERNET);
+        }
+        return false;
     }
 
     public static boolean hasLeanback(Context context) {

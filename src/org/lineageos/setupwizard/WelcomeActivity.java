@@ -17,6 +17,10 @@
 
 package org.lineageos.setupwizard;
 
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_ACCESSIBILITY_SETTINGS;
+import static org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -28,29 +32,35 @@ import com.google.android.setupcompat.util.SystemBarHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class WelcomeActivity extends BaseSetupWizardActivity {
+public class WelcomeActivity extends SubBaseActivity {
 
     public static final String TAG = WelcomeActivity.class.getSimpleName();
 
-    private View mRootView;
+    @Override
+    protected void onStartSubactivity() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        onSetupStart();
         SystemBarHelper.setBackButtonVisible(getWindow(), false);
-        mRootView = findViewById(R.id.setup_wizard_layout);
+        View rootView = findViewById(R.id.setup_wizard_layout);
         setNextText(R.string.start);
         Button startButton = findViewById(R.id.start);
         Button emergButton = findViewById(R.id.emerg_dialer);
         startButton.setOnClickListener(view -> onNextPressed());
         findViewById(R.id.launch_accessibility)
-                .setOnClickListener(view -> startAccessibilitySettings());
+                .setOnClickListener(
+                        view -> startSubactivity(new Intent(ACTION_ACCESSIBILITY_SETTINGS)));
 
         FooterButtonStyleUtils.applyPrimaryButtonPartnerResource(this, startButton, true);
 
         if (SetupWizardUtils.hasTelephony(this)) {
             setSkipText(R.string.emergency_call);
-            emergButton.setOnClickListener(view -> startEmergencyDialer());
+            emergButton.setOnClickListener(
+                    view -> startSubactivity(new Intent(ACTION_EMERGENCY_DIAL)));
 
             FooterButtonStyleUtils.applySecondaryButtonPartnerResource(this, emergButton, true);
         } else {
@@ -63,11 +73,12 @@ public class WelcomeActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    public void onBackPressed() {
+    protected int getLayoutResId() {
+        return R.layout.welcome_activity;
     }
 
     @Override
-    protected int getLayoutResId() {
-        return R.layout.welcome_activity;
+    protected int getTitleResId() {
+        return -1;
     }
 }
