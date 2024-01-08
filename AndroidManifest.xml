@@ -1,14 +1,12 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013 The CyanogenMod Project
      Copyright (C) 2017-2022 The LineageOS Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,7 +17,6 @@
     package="org.lineageos.setupwizard"
     android:versionCode="5"
     android:sharedUserId="android.uid.system">
-
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.STATUS_BAR" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -44,25 +41,19 @@
     <uses-permission android:name="lineageos.permission.FINISH_SETUP" />
     <uses-permission android:name="lineageos.permission.WRITE_SETTINGS" />
     <uses-permission android:name="lineageos.permission.WRITE_SECURE_SETTINGS" />
-
     <permission
         android:name="lineageos.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem" />
-
     <protected-broadcast android:name="org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE"
                          android:permission="lineageos.permission.FINISH_SETUP"/>
-
     <protected-broadcast android:name="org.lineageos.setupwizard.SETUP_FINISHED"
         android:permission="lineageos.permission.FINISH_SETUP"/>
-
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
                  android:theme="@style/Theme.Setup"
                  android:uiOptions="none"
                  android:taskAffinity="com.android.wizard"
                  android:name=".SetupWizardApp">
-
-
         <activity android:theme="@style/NoDisplay"
                   android:label="@string/activity_label_empty"
                   android:name=".wizardmanager.WizardManager"
@@ -77,7 +68,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SetupWizardActivity"
                   android:label="@string/activity_label_empty"
                   android:lockTaskMode="normal"
@@ -88,7 +78,6 @@
                   android:exported="true"
                   android:windowSoftInputMode="stateAlwaysHidden"
                   android:theme="@style/NoDisplay">
-
             <intent-filter android:priority="9">
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
@@ -96,7 +85,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".BluetoothSetupActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -109,7 +97,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".WelcomeActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -122,7 +109,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".LocaleActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -135,7 +121,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".DateTimeActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -148,7 +133,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SimMissingActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -161,7 +145,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".NetworkSetupActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -174,7 +157,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".LocationSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -187,7 +169,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".UpdateRecoveryActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -200,7 +181,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".DeviceSpecificActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -212,7 +192,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".LineageSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -225,7 +204,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".NavigationSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -238,7 +216,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".BiometricActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -251,7 +228,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ScreenLockActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -264,7 +240,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".backup.RestoreIntroActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -277,7 +252,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".ThemeSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -290,7 +264,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".FinishActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
@@ -304,7 +277,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".SetupWizardExitActivity"
                   android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
                   android:excludeFromRecents="true"
@@ -317,7 +289,6 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-
         <receiver android:name=".PartnerReceiver"
                   android:exported="true">
             <intent-filter>
@@ -326,7 +297,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
         <service android:name=".SetupWizardExitWorker"
                  android:exported="false"/>
     </application>
