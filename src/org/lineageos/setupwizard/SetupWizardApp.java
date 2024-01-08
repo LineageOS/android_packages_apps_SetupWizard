@@ -21,9 +21,9 @@ import android.app.Application;
 import android.app.StatusBarManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 
-import org.lineageos.setupwizard.util.NetworkMonitor;
 import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -37,7 +37,6 @@ public class SetupWizardApp extends Application {
             "android.settings.ACCESSIBILITY_SETTINGS_FOR_SUW";
     public static final String ACTION_SETUP_COMPLETE =
             "org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE";
-    public static final String ACTION_FINISHED = "org.lineageos.setupwizard.SETUP_FINISHED";
     public static final String ACTION_SETUP_NETWORK = "android.settings.NETWORK_PROVIDER_SETUP";
     public static final String ACTION_SETUP_BIOMETRIC = "android.settings.BIOMETRIC_ENROLL";
     public static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
@@ -58,20 +57,12 @@ public class SetupWizardApp extends Application {
     public static final String EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text";
     public static final String EXTRA_ENABLE_NEXT_ON_CONNECT = "wifi_enable_next_on_connect";
 
-    public static final String KEY_DETECT_CAPTIVE_PORTAL = "captive_portal_detection_enabled";
     public static final String KEY_SEND_METRICS = "send_metrics";
     public static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     public static final String ENABLE_RECOVERY_UPDATE = "enable_recovery_update";
     public static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
 
     public static final String NAVIGATION_OPTION_KEY = "navigation_option";
-
-    public static final int REQUEST_CODE_SETUP_NETWORK = 0;
-    public static final int REQUEST_CODE_SETUP_CAPTIVE_PORTAL = 4;
-    public static final int REQUEST_CODE_SETUP_BLUETOOTH = 5;
-    public static final int REQUEST_CODE_SETUP_BIOMETRIC = 7;
-    public static final int REQUEST_CODE_SETUP_LOCKSCREEN = 9;
-    public static final int REQUEST_CODE_RESTORE = 10;
 
     public static final int RADIO_READY_TIMEOUT = 10 * 1000;
 
@@ -81,7 +72,7 @@ public class SetupWizardApp extends Application {
     private boolean mIgnoreSimLocale = false;
 
     private final Bundle mSettingsBundle = new Bundle();
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable mRadioTimeoutRunnable = () -> mIsRadioReady = true;
 
@@ -91,7 +82,6 @@ public class SetupWizardApp extends Application {
         if (LOGV) {
             Log.v(TAG, "onCreate()");
         }
-        NetworkMonitor.initInstance(this);
         PhoneMonitor.initInstance(this);
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         if (SetupWizardUtils.isOwner()) {

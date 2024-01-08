@@ -200,7 +200,7 @@ public class LocalePicker extends LinearLayout {
     /**
      * @hide
      */
-    public static final Formatter getTwoDigitFormatter() {
+    public static Formatter getTwoDigitFormatter() {
         return sTwoDigitFormatter;
     }
 
@@ -1190,7 +1190,7 @@ public class LocalePicker extends LinearLayout {
      * Shows the soft input for its input text.
      */
     private void showSoftInput() {
-        InputMethodManager inputMethodManager = InputMethodManager.peekInstance();
+        InputMethodManager inputMethodManager = mContext.getSystemService(InputMethodManager.class);
         if (inputMethodManager != null) {
             if (mHasSelectorWheel) {
                 mInputText.setVisibility(View.VISIBLE);
@@ -1204,7 +1204,7 @@ public class LocalePicker extends LinearLayout {
      * Hides the soft input if it is active for the input text.
      */
     private void hideSoftInput() {
-        InputMethodManager inputMethodManager = InputMethodManager.peekInstance();
+        InputMethodManager inputMethodManager = mContext.getSystemService(InputMethodManager.class);
         if (inputMethodManager != null && inputMethodManager.isActive(mInputText)) {
             inputMethodManager.hideSoftInputFromWindow(getWindowToken(), 0);
             if (mHasSelectorWheel) {
@@ -2039,11 +2039,11 @@ public class LocalePicker extends LinearLayout {
             LocalePicker.this.removeCallbacks(this);
             if (mIncrementVirtualButtonPressed) {
                 mIncrementVirtualButtonPressed = false;
-                invalidate(0, mBottomSelectionDividerBottom, mRight, mBottom);
+                invalidate();
             }
             mDecrementVirtualButtonPressed = false;
             if (mDecrementVirtualButtonPressed) {
-                invalidate(0, 0, mRight, mTopSelectionDividerTop);
+                invalidate();
             }
         }
 
@@ -2068,12 +2068,12 @@ public class LocalePicker extends LinearLayout {
                     switch (mManagedButton) {
                         case BUTTON_INCREMENT: {
                             mIncrementVirtualButtonPressed = true;
-                            invalidate(0, mBottomSelectionDividerBottom, mRight, mBottom);
+                            invalidate();
                         }
                         break;
                         case BUTTON_DECREMENT: {
                             mDecrementVirtualButtonPressed = true;
-                            invalidate(0, 0, mRight, mTopSelectionDividerTop);
+                            invalidate();
                         }
                     }
                 }
@@ -2086,7 +2086,7 @@ public class LocalePicker extends LinearLayout {
                                         ViewConfiguration.getPressedStateDuration());
                             }
                             mIncrementVirtualButtonPressed ^= true;
-                            invalidate(0, mBottomSelectionDividerBottom, mRight, mBottom);
+                            invalidate();
                         }
                         break;
                         case BUTTON_DECREMENT: {
@@ -2095,7 +2095,7 @@ public class LocalePicker extends LinearLayout {
                                         ViewConfiguration.getPressedStateDuration());
                             }
                             mDecrementVirtualButtonPressed ^= true;
-                            invalidate(0, 0, mRight, mTopSelectionDividerTop);
+                            invalidate();
                         }
                     }
                 }
@@ -2340,7 +2340,7 @@ public class LocalePicker extends LinearLayout {
                                 mAccessibilityFocusedView = virtualViewId;
                                 sendAccessibilityEventForVirtualView(virtualViewId,
                                         AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED);
-                                invalidate(0, mBottomSelectionDividerBottom, mRight, mBottom);
+                                invalidate();
                                 return true;
                             }
                         }
@@ -2350,7 +2350,7 @@ public class LocalePicker extends LinearLayout {
                                 mAccessibilityFocusedView = UNDEFINED;
                                 sendAccessibilityEventForVirtualView(virtualViewId,
                                         AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED);
-                                invalidate(0, mBottomSelectionDividerBottom, mRight, mBottom);
+                                invalidate();
                                 return true;
                             }
                         }
@@ -2376,7 +2376,7 @@ public class LocalePicker extends LinearLayout {
                                 mAccessibilityFocusedView = virtualViewId;
                                 sendAccessibilityEventForVirtualView(virtualViewId,
                                         AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED);
-                                invalidate(0, 0, mRight, mTopSelectionDividerTop);
+                                invalidate();
                                 return true;
                             }
                         }
@@ -2386,7 +2386,7 @@ public class LocalePicker extends LinearLayout {
                                 mAccessibilityFocusedView = UNDEFINED;
                                 sendAccessibilityEventForVirtualView(virtualViewId,
                                         AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUS_CLEARED);
-                                invalidate(0, 0, mRight, mTopSelectionDividerTop);
+                                invalidate();
                                 return true;
                             }
                         }
@@ -2423,7 +2423,7 @@ public class LocalePicker extends LinearLayout {
 
         private void sendAccessibilityEventForVirtualText(int eventType) {
             if (AccessibilityManager.getInstance(mContext).isEnabled()) {
-                AccessibilityEvent event = AccessibilityEvent.obtain(eventType);
+                AccessibilityEvent event = new AccessibilityEvent(eventType);
                 mInputText.onInitializeAccessibilityEvent(event);
                 mInputText.onPopulateAccessibilityEvent(event);
                 event.setSource(LocalePicker.this, VIRTUAL_VIEW_ID_INPUT);
@@ -2434,7 +2434,7 @@ public class LocalePicker extends LinearLayout {
         private void sendAccessibilityEventForVirtualButton(int virtualViewId, int eventType,
                 String text) {
             if (AccessibilityManager.getInstance(mContext).isEnabled()) {
-                AccessibilityEvent event = AccessibilityEvent.obtain(eventType);
+                AccessibilityEvent event = new AccessibilityEvent(eventType);
                 event.setClassName(Button.class.getName());
                 event.setPackageName(mContext.getPackageName());
                 event.getText().add(text);
@@ -2485,15 +2485,14 @@ public class LocalePicker extends LinearLayout {
             AccessibilityNodeInfo info = mInputText.createAccessibilityNodeInfo();
             info.setSource(LocalePicker.this, VIRTUAL_VIEW_ID_INPUT);
             if (mAccessibilityFocusedView != VIRTUAL_VIEW_ID_INPUT) {
-                info.addAction(AccessibilityNodeInfo.ACTION_ACCESSIBILITY_FOCUS);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
             }
             if (mAccessibilityFocusedView == VIRTUAL_VIEW_ID_INPUT) {
-                info.addAction(AccessibilityNodeInfo.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
             }
             Rect boundsInParent = mTempRect;
             boundsInParent.set(left, top, right, bottom);
             info.setVisibleToUser(isVisibleToUser(boundsInParent));
-            info.setBoundsInParent(boundsInParent);
             Rect boundsInScreen = boundsInParent;
             int[] locationOnScreen = mTempArray;
             getLocationOnScreen(locationOnScreen);
@@ -2516,7 +2515,6 @@ public class LocalePicker extends LinearLayout {
             Rect boundsInParent = mTempRect;
             boundsInParent.set(left, top, right, bottom);
             info.setVisibleToUser(isVisibleToUser(boundsInParent));
-            info.setBoundsInParent(boundsInParent);
             Rect boundsInScreen = boundsInParent;
             int[] locationOnScreen = mTempArray;
             getLocationOnScreen(locationOnScreen);
@@ -2524,13 +2522,13 @@ public class LocalePicker extends LinearLayout {
             info.setBoundsInScreen(boundsInScreen);
 
             if (mAccessibilityFocusedView != virtualViewId) {
-                info.addAction(AccessibilityNodeInfo.ACTION_ACCESSIBILITY_FOCUS);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
             }
             if (mAccessibilityFocusedView == virtualViewId) {
-                info.addAction(AccessibilityNodeInfo.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
             }
             if (LocalePicker.this.isEnabled()) {
-                info.addAction(AccessibilityNodeInfo.ACTION_CLICK);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLICK);
             }
 
             return info;
@@ -2538,7 +2536,7 @@ public class LocalePicker extends LinearLayout {
 
         private AccessibilityNodeInfo createAccessibilityNodeInfoForNumberPicker(int left, int top,
                 int right, int bottom) {
-            AccessibilityNodeInfo info = AccessibilityNodeInfo.obtain();
+            AccessibilityNodeInfo info = new AccessibilityNodeInfo();
             info.setClassName(LocalePicker.class.getName());
             info.setPackageName(mContext.getPackageName());
             info.setSource(LocalePicker.this);
@@ -2561,7 +2559,6 @@ public class LocalePicker extends LinearLayout {
             Rect boundsInParent = mTempRect;
             boundsInParent.set(left, top, right, bottom);
             boundsInParent.scale(applicationScale);
-            info.setBoundsInParent(boundsInParent);
 
             info.setVisibleToUser(isVisibleToUser());
 
@@ -2573,17 +2570,17 @@ public class LocalePicker extends LinearLayout {
             info.setBoundsInScreen(boundsInScreen);
 
             if (mAccessibilityFocusedView != View.NO_ID) {
-                info.addAction(AccessibilityNodeInfo.ACTION_ACCESSIBILITY_FOCUS);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
             }
             if (mAccessibilityFocusedView == View.NO_ID) {
-                info.addAction(AccessibilityNodeInfo.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
+                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
             }
             if (LocalePicker.this.isEnabled()) {
                 if (getWrapSelectorWheel() || getValue() < getMaxValue()) {
-                    info.addAction(AccessibilityNodeInfo.ACTION_SCROLL_FORWARD);
+                    info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_FORWARD);
                 }
                 if (getWrapSelectorWheel() || getValue() > getMinValue()) {
-                    info.addAction(AccessibilityNodeInfo.ACTION_SCROLL_BACKWARD);
+                    info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_BACKWARD);
                 }
             }
 
