@@ -16,28 +16,28 @@
 
 package org.lineageos.setupwizard;
 
-import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
+import android.content.Context;
 
-import android.annotation.Nullable;
-import android.app.IntentService;
-import android.content.Intent;
-import android.util.Log;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.work.CoroutineWorker;
+import androidx.work.WorkerParameters;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class SetupWizardExitService extends IntentService {
+import kotlin.coroutines.Continuation;
 
-    private static final String TAG = "SUWExitService";
+public class SetupWizardExitWorker extends CoroutineWorker {
 
-    public SetupWizardExitService() {
-        super(TAG);
+    public SetupWizardExitWorker(@NonNull Context appContext,
+            @NonNull WorkerParameters params) {
+        super(appContext, params);
     }
 
+    @Nullable
     @Override
-    protected void onHandleIntent(@Nullable Intent intent) {
-        if (LOGV) {
-            Log.v(TAG, "onHandleIntent intent=" + intent.toString());
-        }
-        SetupWizardUtils.finishSetupWizard(this);
+    public Object doWork(@NonNull Continuation<? super Result> continuation) {
+        SetupWizardUtils.finishSetupWizard(getApplicationContext());
+        return Result.success();
     }
 }

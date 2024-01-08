@@ -17,8 +17,6 @@
 
 package org.lineageos.setupwizard;
 
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_BLUETOOTH;
-
 import android.content.Intent;
 import android.util.Log;
 
@@ -40,18 +38,11 @@ public class BluetoothSetupActivity extends WrapperSubBaseActivity {
             intent.setComponent(SetupWizardUtils.sTvAddAccessorySettingsActivity);
             intent.setAction(ACTION_CONNECT_INPUT);
             intent.putExtra(INTENT_EXTRA_NO_INPUT_MODE, true);
-            startActivityForResult(intent, REQUEST_CODE_SETUP_BLUETOOTH);
+            startSubactivity(intent);
         } catch (Exception e) {
             Log.e(TAG, "Error starting bluetooth setup", e);
-            nextAction(RESULT_OK);
+            finishAction(RESULT_OK);
             SetupWizardUtils.disableComponent(this, BluetoothSetupActivity.class);
-            finish();
         }
-    }
-
-    @Override
-    protected int getSubactivityNextTransition() {
-        nextAction(RESULT_OK);
-        return TRANSITION_ID_SLIDE;
     }
 }

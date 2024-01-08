@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_LOCKSCREEN;
-import static org.lineageos.setupwizard.SetupWizardApp.REQUEST_CODE_SETUP_LOCKSCREEN;
 
 import android.content.Intent;
 
@@ -29,6 +28,6 @@ public class ScreenLockActivity extends WrapperSubBaseActivity {
     @Override
     protected void onStartSubactivity() {
         Intent intent = new Intent(ACTION_SETUP_LOCKSCREEN);
-        startSubactivity(intent, REQUEST_CODE_SETUP_LOCKSCREEN);
+        startSubactivity(intent);
     }
 }
