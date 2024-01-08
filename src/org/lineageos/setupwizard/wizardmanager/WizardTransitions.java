@@ -32,10 +32,10 @@ public class WizardTransitions extends SparseArray<String> implements Parcelable
 
     private String mDefaultAction;
 
-    public static final Creator<WizardTransitions> CREATOR = new Creator<WizardTransitions>() {
+    public static final Creator<WizardTransitions> CREATOR = new Creator<>() {
         public WizardTransitions createFromParcel(Parcel source) {
             WizardTransitions transitions = new WizardTransitions(source);
-            SparseArray<String> actions = source.readSparseArray(null);
+            SparseArray<String> actions = source.readSparseArray(null, String.class);
             for (int i = 0; i < actions.size(); i++) {
                 transitions.put(actions.keyAt(i), actions.valueAt(i));
             }
