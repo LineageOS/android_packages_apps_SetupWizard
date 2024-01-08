@@ -16,8 +16,6 @@
 
 package org.lineageos.setupwizard;
 
-import static android.content.Intent.FLAG_ACTIVITY_FORWARD_RESULT;
-
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
@@ -77,22 +75,14 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             subactivityIntent.putExtra(EXTRA_SCRIPT_URI, intent.getStringExtra(EXTRA_SCRIPT_URI));
             subactivityIntent.putExtra(EXTRA_ACTION_ID, intent.getStringExtra(EXTRA_ACTION_ID));
         }
-        boolean activityForwardsResult =
-                (subactivityIntent.getFlags() & FLAG_ACTIVITY_FORWARD_RESULT) != 0;
-        if (activityForwardsResult) {
-            try {
-                startActivity(subactivityIntent);
-                finishAction(RESULT_OK);
-            } catch (ActivityNotFoundException e) {
-                Log.w(TAG, "activity not found; start next screen and finish; intent="
-                        + intent);
-                mIsSubactivityNotFound = true;
-                finishAction(RESULT_ACTIVITY_NOT_FOUND);
-                return;
-            }
+        try {
+            startActivityForResult(subactivityIntent);
+        } catch (ActivityNotFoundException e) {
+            Log.w(TAG, "activity not found; start next screen and finish; intent="
+                    + intent);
+            mIsSubactivityNotFound = true;
+            finishAction(RESULT_ACTIVITY_NOT_FOUND);
         }
-        startActivityForResult(subactivityIntent);
-        mIsSubactivityNotFound = false;
     }
 
     @Override
