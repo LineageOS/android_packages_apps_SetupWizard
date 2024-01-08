@@ -20,7 +20,6 @@ package org.lineageos.setupwizard;
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.app.TimePickerDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -28,6 +27,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.AdapterView;
@@ -36,6 +36,8 @@ import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
+
+import androidx.fragment.app.DialogFragment;
 
 import com.android.settingslib.datetime.ZoneGetter;
 
@@ -65,7 +67,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     private TextView mDateTextView;
     private TextView mTimeTextView;
 
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     private final BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
         @Override
@@ -184,12 +186,12 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
 
     private void showDatePicker() {
         DatePickerFragment datePickerFragment = DatePickerFragment.newInstance();
-        datePickerFragment.show(getFragmentManager(), DatePickerFragment.TAG);
+        datePickerFragment.show(getSupportFragmentManager(), DatePickerFragment.TAG);
     }
 
     private void showTimePicker() {
         TimePickerFragment timePickerFragment = TimePickerFragment.newInstance();
-        timePickerFragment.show(getFragmentManager(), TimePickerFragment.TAG);
+        timePickerFragment.show(getSupportFragmentManager(), TimePickerFragment.TAG);
     }
 
     private void updateTimeAndDateDisplay() {

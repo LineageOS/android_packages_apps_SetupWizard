@@ -101,6 +101,7 @@ public class WizardManager extends Activity {
 
         intent.putExtra(EXTRA_SCRIPT_URI, scriptUri);
         intent.putExtra(EXTRA_ACTION_ID, action.getId());
+        intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
         startActivity(intent);
     }
 

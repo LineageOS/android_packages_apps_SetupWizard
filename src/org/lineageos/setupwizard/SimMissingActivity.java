@@ -25,14 +25,12 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SimMissingActivity.class.getSimpleName();
 
-    private PhoneMonitor mPhoneMonitor;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
-        mPhoneMonitor = PhoneMonitor.getInstance();
-        if (!mPhoneMonitor.simMissing()) {
+        PhoneMonitor phoneMonitor = PhoneMonitor.getInstance();
+        if (!phoneMonitor.simMissing()) {
             finishAction(RESULT_OK);
         }
     }
