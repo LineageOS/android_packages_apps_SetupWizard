@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2021 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -77,22 +77,21 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             subactivityIntent.putExtra(EXTRA_SCRIPT_URI, intent.getStringExtra(EXTRA_SCRIPT_URI));
             subactivityIntent.putExtra(EXTRA_ACTION_ID, intent.getStringExtra(EXTRA_ACTION_ID));
         }
-        boolean activityForwardsResult =
+        try {
+            boolean activityForwardsResult =
                 (subactivityIntent.getFlags() & FLAG_ACTIVITY_FORWARD_RESULT) != 0;
-        if (activityForwardsResult) {
-            try {
+            if (activityForwardsResult) {
                 startActivity(subactivityIntent);
                 finishAction(RESULT_OK);
-            } catch (ActivityNotFoundException e) {
-                Log.w(TAG, "activity not found; start next screen and finish; intent="
-                        + intent);
-                mIsSubactivityNotFound = true;
-                finishAction(RESULT_ACTIVITY_NOT_FOUND);
-                return;
+            } else {
+                startActivityForResult(subactivityIntent);
             }
+        } catch (ActivityNotFoundException e) {
+            Log.w(TAG, "activity not found; start next screen and finish; intent=" + intent);
+            mIsSubactivityNotFound = true;
+            finishAction(RESULT_ACTIVITY_NOT_FOUND);
+            return;
         }
-        startActivityForResult(subactivityIntent);
-        mIsSubactivityNotFound = false;
     }
 
     @Override
