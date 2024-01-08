@@ -23,10 +23,6 @@ public abstract class WrapperSubBaseActivity extends SubBaseActivity {
     @Override
     protected void onSubactivityCanceled(Intent data) {
         super.onSubactivityCanceled(data);
-
-        // As the subactivity we're wrapping finishes, we finish too
-        applyBackwardTransition(getSubactivityPreviousTransition());
         finishAction(RESULT_CANCELED, data);
     }
-
 }

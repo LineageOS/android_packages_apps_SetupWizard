@@ -18,50 +18,21 @@ package org.lineageos.setupwizard;
 
 import android.content.ComponentName;
 import android.content.Intent;
-import android.os.Bundle;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class DeviceSpecificActivity extends BaseSetupWizardActivity {
+public class DeviceSpecificActivity extends WrapperSubBaseActivity {
 
     private static final String ACTION_SETUP_DEVICE = "org.lineageos.settings.device.SUW_SETTINGS";
-    private static final int REQUEST_CODE_SETUP_DEVICE = 90000;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        onStartSubactivity();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_CODE_SETUP_DEVICE) {
-            if (resultCode == RESULT_OK) {
-                nextAction(RESULT_OK);
-            } else {
-                finish();
-            }
-        } else if (resultCode == RESULT_CANCELED) {
-            onStartSubactivity();
-            applyBackwardTransition(TRANSITION_ID_NONE);
-        }
-    }
-
-    @Override
-    protected int getLayoutResId() {
-        return R.layout.setup_device_specific;
-    }
-
-    private void onStartSubactivity() {
+    protected void onStartSubactivity() {
         Intent intent = new Intent(ACTION_SETUP_DEVICE);
         ComponentName name = intent.resolveActivity(getPackageManager());
         if (name != null) {
-            applyForwardTransition(TRANSITION_ID_SLIDE);
-            startActivityForResult(intent, REQUEST_CODE_SETUP_DEVICE);
+            startSubactivity(intent);
         } else {
             SetupWizardUtils.disableComponent(this, DeviceSpecificActivity.class);
-            nextAction(RESULT_OK);
-            finish();
+            finishAction(RESULT_OK);
         }
     }
 }

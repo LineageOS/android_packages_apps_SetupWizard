@@ -99,8 +99,7 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         if (!navBarEnabled && hasHomeKey || available <= 1) {
             mSetupWizardApp.getSettingsBundle().putString(NAVIGATION_OPTION_KEY,
                     NAV_BAR_MODE_3BUTTON_OVERLAY);
-            Intent intent = WizardManagerHelper.getNextIntent(getIntent(), Activity.RESULT_OK);
-            finishAction(RESULT_OK, intent);
+            finishAction(RESULT_OK);
         }
 
         final LottieAnimationView navigationIllustration =

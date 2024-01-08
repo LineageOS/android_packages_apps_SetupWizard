@@ -29,12 +29,14 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
-public class SetupWizardActivity extends BaseSetupWizardActivity {
+public class SetupWizardActivity extends AppCompatActivity {
     private static final String TAG = SetupWizardActivity.class.getSimpleName();
 
     @Override
@@ -55,7 +57,6 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
             SetupWizardUtils.finishSetupWizard(this);
             finish();
         } else {
-            onSetupStart();
             SetupWizardUtils.enableComponent(this, WizardManager.class);
             Intent intent = new Intent(ACTION_LOAD);
             if (SetupWizardUtils.isOwner()) {

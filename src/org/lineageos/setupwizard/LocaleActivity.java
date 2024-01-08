@@ -17,16 +17,17 @@
 
 package org.lineageos.setupwizard;
 
+import static androidx.appcompat.app.AppCompatDelegate.setApplicationLocales;
+
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
@@ -34,6 +35,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
 import android.widget.Toast;
+
+import androidx.core.os.LocaleListCompat;
 
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.util.LocaleUtils;
@@ -54,7 +57,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
     private int[] mAdapterIndices;
     private LocalePicker mLanguagePicker;
     private FetchUpdateSimLocaleTask mFetchUpdateSimLocaleTask;
-    private final Handler mHandler = new Handler();
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
     private boolean mPendingLocaleUpdate;
     private boolean mPaused = true;
 
@@ -62,7 +65,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         public void run() {
             if (mCurrentLocale != null) {
                 mLanguagePicker.setEnabled(false);
-                com.android.internal.app.LocalePicker.updateLocale(mCurrentLocale);
+                setApplicationLocales(LocaleListCompat.create(mCurrentLocale));
             }
         }
     };
@@ -170,12 +173,6 @@ public class LocaleActivity extends BaseSetupWizardActivity {
 
     private void onLocaleChanged(Locale paramLocale) {
         mLanguagePicker.setEnabled(true);
-        Resources localResources = getResources();
-        Configuration localConfiguration1 = localResources.getConfiguration();
-        Configuration localConfiguration2 = new Configuration();
-        localConfiguration2.locale = paramLocale;
-        localResources.updateConfiguration(localConfiguration2, null);
-        localResources.updateConfiguration(localConfiguration1, null);
         mHandler.removeCallbacks(mUpdateLocale);
         mCurrentLocale = paramLocale;
         mHandler.postDelayed(mUpdateLocale, 1000);
@@ -212,7 +209,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 }
 
                 final SubscriptionManager subscriptionManager =
-                        SubscriptionManager.from(activity);
+                        activity.getSystemService(SubscriptionManager.class);
                 List<SubscriptionInfo> activeSubs =
                         subscriptionManager.getActiveSubscriptionInfoList();
                 if (activeSubs == null || activeSubs.isEmpty()) {
@@ -220,7 +217,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 }
 
                 // Fetch locale for active sim's MCC
-                int mcc = activeSubs.get(0).getMcc();
+                int mcc = Integer.parseInt(activeSubs.get(0).getMccString());
                 locale = LocaleUtils.getLocaleFromMcc(activity, mcc, null);
 
                 // If that fails, fall back to preferred languages reported
