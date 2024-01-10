@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2021-2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,5 +14,6 @@
      limitations under the License.
 -->
 <resources>
+
     <style name="Theme.Setup" parent="SudDynamicColorThemeGlifV3.DayNight" />
 </resources>
