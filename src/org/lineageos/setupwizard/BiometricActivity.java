@@ -23,8 +23,6 @@ import android.content.Intent;
 
 public class BiometricActivity extends SubBaseActivity {
 
-    public static final String TAG = BiometricActivity.class.getSimpleName();
-
     @Override
     protected void onStartSubactivity() {
         Intent intent = new Intent(ACTION_SETUP_BIOMETRIC);
