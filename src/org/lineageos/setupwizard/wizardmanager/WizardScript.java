@@ -113,14 +113,14 @@ public class WizardScript implements Parcelable {
 
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.mFirstActionId);
-        dest.writeTypedList(new ArrayList(this.mActions.values()));
+        dest.writeTypedList(new ArrayList<>(this.mActions.values()));
     }
 
-    public static final Creator<WizardScript> CREATOR = new Creator<WizardScript>() {
+    public static final Creator<WizardScript> CREATOR = new Creator<>() {
         public WizardScript createFromParcel(Parcel source) {
             String firstActionId = source.readString();
-            HashMap<String, WizardAction> actions = new HashMap();
-            ArrayList<WizardAction> actionList = new ArrayList();
+            HashMap<String, WizardAction> actions = new HashMap<>();
+            ArrayList<WizardAction> actionList = new ArrayList<>();
             source.readTypedList(actionList, WizardAction.CREATOR);
             for (WizardAction action : actionList) {
                 actions.put(action.getId(), action);
@@ -135,7 +135,6 @@ public class WizardScript implements Parcelable {
 
     public static WizardScript loadFromUri(Context context, String uriString) {
         XmlPullParser xmlPullParser;
-        WizardScript wizardScript = null;
         try {
             ContentResolver.OpenResourceIdResult openResourceIdResult =
                     context.getContentResolver().getResourceId(Uri
@@ -163,15 +162,15 @@ public class WizardScript implements Parcelable {
         } catch (XmlPullParserException e) {
             Log.e(TAG, "Ill-formatted wizard_script: " + uriString);
             Log.e(TAG, e.getMessage());
-            return wizardScript;
+            return null;
         } catch (FileNotFoundException fnfe) {
             Log.e(TAG, "Cannot find file: " + uriString);
             Log.e(TAG, fnfe.getMessage());
-            return wizardScript;
+            return null;
         } catch (IOException ioe) {
             Log.e(TAG, "Unable to read wizard_script: " + uriString);
             Log.e(TAG, ioe.getMessage());
-            return wizardScript;
+            return null;
         }
     }
 
@@ -189,7 +188,7 @@ public class WizardScript implements Parcelable {
             throw new XmlPullParserException("WizardScript must define a firstAction");
         }
 
-        HashMap wizardActions = new HashMap();
+        HashMap<String, WizardAction> wizardActions = new HashMap<>();
         int type;
         final int depth = parser.getDepth();
         while (((type = parser.next()) != XmlPullParser.END_TAG ||
@@ -198,9 +197,7 @@ public class WizardScript implements Parcelable {
             if (next != XmlPullParser.END_TAG || next != XmlPullParser.TEXT) {
                 if (TAG_WIZARD_ACTION.equals(parser.getName())) {
                     WizardAction action = WizardAction.parseWizardAction(parser);
-                    if (action != null) {
-                        wizardActions.put(action.getId(), action);
-                    }
+                    wizardActions.put(action.getId(), action);
                 } else {
                     XmlUtils.skipCurrentTag(parser);
                 }

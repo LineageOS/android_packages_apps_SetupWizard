@@ -44,7 +44,7 @@ public class WizardManager extends Activity {
 
     private static final String TAG = WizardManager.class.getSimpleName();
 
-    private static final HashMap<String, WizardScript> sWizardScripts = new HashMap();
+    private static final HashMap<String, WizardScript> sWizardScripts = new HashMap<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -185,8 +185,8 @@ public class WizardManager extends Activity {
     }
 
     private static boolean isIntentAvailable(Context context, Intent intent) {
-        return context.getPackageManager().queryIntentActivities(intent,
-                PackageManager.MATCH_DEFAULT_ONLY).size() > 0;
+        return !context.getPackageManager().queryIntentActivities(intent,
+                PackageManager.MATCH_DEFAULT_ONLY).isEmpty();
     }
 
     private static WizardScript getWizardScript(Context context, String scriptUri) {

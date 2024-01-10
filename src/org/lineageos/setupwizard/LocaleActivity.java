@@ -51,8 +51,6 @@ import java.util.concurrent.Executors;
 
 public class LocaleActivity extends BaseSetupWizardActivity {
 
-    public static final String TAG = LocaleActivity.class.getSimpleName();
-
     private ArrayAdapter<com.android.internal.app.LocalePicker.LocaleInfo> mLocaleAdapter;
     private Locale mCurrentLocale;
     private int[] mAdapterIndices;
@@ -89,9 +87,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         mLanguagePicker.setNextRight(getNextButton().getId());
         mLanguagePicker.requestFocus();
         if (getResources().getBoolean(R.bool.config_isLargeNoTouch)) {
-            mLanguagePicker.setOnClickListener((View v) -> {
-                getNextButton().performClick();
-            });
+            mLanguagePicker.setOnClickListener((View v) -> getNextButton().performClick());
         }
         loadLanguages();
     }
