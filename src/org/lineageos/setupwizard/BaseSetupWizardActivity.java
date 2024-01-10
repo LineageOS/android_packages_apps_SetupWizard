@@ -31,7 +31,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -60,11 +59,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         NavigationBarListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
-
-    protected static final int TRANSITION_ID_NONE = -1;
-    protected static final int TRANSITION_ID_DEFAULT = 1;
-    protected static final int TRANSITION_ID_SLIDE = 2;
-    protected static final int TRANSITION_ID_FADE = 3;
 
     private NavigationLayout mNavigationBar;
 
@@ -207,13 +201,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         }
     }
 
-    protected boolean isNextAllowed() {
-        if (mNavigationBar != null) {
-            mNavigationBar.getNextButton().isEnabled();
-        }
-        return false;
-    }
-
     protected void onNextPressed() {
         nextAction(RESULT_OK);
     }
@@ -243,10 +230,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
             final Button next = mNavigationBar.getNextButton();
             next.setVisibility(INVISIBLE);
         }
-    }
-
-    public void onNavigateBack() {
-        getOnBackPressedDispatcher().onBackPressed();
     }
 
     public void onNavigateNext() {
@@ -346,44 +329,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
                 extras = data.getExtras();
             }
             Log.v(TAG, append.append(extras).append(")").toString());
-        }
-    }
-
-    protected final void applyForwardTransition(int transitionId) {
-        if (transitionId == TRANSITION_ID_SLIDE) {
-            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, R.anim.sud_slide_next_in,
-                    R.anim.sud_slide_next_out);
-        } else if (transitionId == TRANSITION_ID_FADE) {
-            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, android.R.anim.fade_in,
-                    android.R.anim.fade_out);
-        } else if (transitionId == TRANSITION_ID_DEFAULT) {
-            TypedArray typedArray = obtainStyledAttributes(android.R.style.Animation_Activity,
-                    new int[]{android.R.attr.activityOpenEnterAnimation,
-                            android.R.attr.activityOpenExitAnimation});
-            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, typedArray.getResourceId(0, 0),
-                    typedArray.getResourceId(1, 0));
-            typedArray.recycle();
-        } else if (transitionId == TRANSITION_ID_NONE) {
-            overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, 0, 0);
-        }
-    }
-
-    protected final void applyBackwardTransition(int transitionId) {
-        if (transitionId == TRANSITION_ID_SLIDE) {
-            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, R.anim.sud_slide_back_in,
-                    R.anim.sud_slide_back_out);
-        } else if (transitionId == TRANSITION_ID_FADE) {
-            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, android.R.anim.fade_in,
-                    android.R.anim.fade_out);
-        } else if (transitionId == TRANSITION_ID_DEFAULT) {
-            TypedArray typedArray = obtainStyledAttributes(android.R.style.Animation_Activity,
-                    new int[]{android.R.attr.activityCloseEnterAnimation,
-                            android.R.attr.activityCloseExitAnimation});
-            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, typedArray.getResourceId(0, 0),
-                    typedArray.getResourceId(1, 0));
-            typedArray.recycle();
-        } else if (transitionId == TRANSITION_ID_NONE) {
-            overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, 0, 0);
         }
     }
 

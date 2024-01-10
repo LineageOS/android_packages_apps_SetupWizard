@@ -23,8 +23,6 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SimMissingActivity extends BaseSetupWizardActivity {
 
-    public static final String TAG = SimMissingActivity.class.getSimpleName();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
