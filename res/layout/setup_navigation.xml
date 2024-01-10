@@ -44,13 +44,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/navigation_illustration"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"
-                    app:lottie_autoPlay="true"
-                    app:lottie_loop="true" />
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/navigation_illustration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
 
                     <RadioGroup
                         android:id="@+id/navigation_radio_group"
