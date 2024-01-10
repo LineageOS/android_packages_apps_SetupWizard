@@ -24,7 +24,6 @@ import android.widget.RadioGroup;
 import androidx.annotation.Nullable;
 
 public class ThemeSettingsActivity extends BaseSetupWizardActivity {
-    public static final String TAG = ThemeSettingsActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

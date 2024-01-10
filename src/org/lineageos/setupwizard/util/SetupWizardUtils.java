@@ -18,7 +18,6 @@
 package org.lineageos.setupwizard.util;
 
 import static android.content.Context.MODE_PRIVATE;
-import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DEFAULT;
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
 import static android.content.pm.PackageManager.DONT_KILL_APP;
@@ -46,7 +45,6 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
-import android.telephony.ServiceState;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -129,18 +127,6 @@ public class SetupWizardUtils {
         } catch (PackageManager.NameNotFoundException | Resources.NotFoundException ignored) {
         }
         return !featureHidden;
-    }
-
-    public static boolean isRadioReady(Context context, ServiceState state) {
-        final SetupWizardApp setupWizardApp = (SetupWizardApp) context.getApplicationContext();
-        if (setupWizardApp.isRadioReady()) {
-            return true;
-        } else {
-            final boolean ready = state != null
-                    && state.getState() != ServiceState.STATE_POWER_OFF;
-            setupWizardApp.setRadioReady(ready);
-            return ready;
-        }
     }
 
     public static boolean isOwner() {
@@ -289,14 +275,6 @@ public class SetupWizardUtils {
         return PhoneMonitor.getInstance().simMissing();
     }
 
-    public static boolean singleSimInserted() {
-        return PhoneMonitor.getInstance().singleSimInserted();
-    }
-
-    public static boolean isMultiSimDevice() {
-        return PhoneMonitor.getInstance().isMultiSimDevice();
-    }
-
     public static void disableComponentsForMissingFeatures(Context context) {
         if (!hasLeanback(context) || isBluetoothDisabled()) {
             disableComponent(context, BluetoothSetupActivity.class);
@@ -339,7 +317,7 @@ public class SetupWizardUtils {
                 COMPONENT_ENABLED_STATE_DISABLED);
     }
 
-    public static void disableComponent(Context context, Class cls) {
+    public static void disableComponent(Context context, Class<?> cls) {
         setComponentEnabledState(context, new ComponentName(context, cls),
                 COMPONENT_ENABLED_STATE_DISABLED);
     }
@@ -347,16 +325,6 @@ public class SetupWizardUtils {
     public static void enableComponent(Context context, Class<?> cls) {
         setComponentEnabledState(context, new ComponentName(context, cls),
                 COMPONENT_ENABLED_STATE_ENABLED);
-    }
-
-    public static void resetComponentSets(Context context, int flags) {
-        setComponentListEnabledState(context, getComponentSets(context, flags),
-                COMPONENT_ENABLED_STATE_DEFAULT);
-    }
-
-    public static void resetComponent(Context context, Class<?> cls) {
-        setComponentEnabledState(context, new ComponentName(context, cls),
-                COMPONENT_ENABLED_STATE_DEFAULT);
     }
 
     public static void setComponentEnabledState(Context context, ComponentName componentName,
@@ -374,7 +342,7 @@ public class SetupWizardUtils {
 
     public static List<ComponentName> getComponentSets(Context context, int flags) {
         int i = 0;
-        List<ComponentName> componentNames = new ArrayList();
+        List<ComponentName> componentNames = new ArrayList<>();
         try {
             PackageInfo allInfo = context.getPackageManager()
                     .getPackageInfo(context.getPackageName(), flags);
@@ -398,7 +366,7 @@ public class SetupWizardUtils {
                     }
                 }
             }
-        } catch (PackageManager.NameNotFoundException e) {
+        } catch (PackageManager.NameNotFoundException ignored) {
         }
         return componentNames;
     }

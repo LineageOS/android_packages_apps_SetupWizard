@@ -64,9 +64,10 @@ import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.TelephonyIntents;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PhoneMonitor {
 
@@ -78,8 +79,6 @@ public class PhoneMonitor {
     private SubscriptionManager mSubscriptionManager;
     private final ArrayList<SubscriptionStateListener> mListeners = new ArrayList<>();
     private final SparseArray<SubscriptionStateTracker> mTrackers = new SparseArray<>();
-
-    private int mChangingToDataSubId = -1;
 
     private final BroadcastReceiver mIntentReceiver;
 
@@ -182,12 +181,13 @@ public class PhoneMonitor {
     private void updatePhoneStateTrackers() {
         int i = 0;
         int[] subIds = mSubscriptionManager.getActiveSubscriptionIdList();
-        HashSet<Integer> subIdSet = new HashSet(Collections.singletonList(subIds));
+        HashSet<Integer> subIdSet = Arrays.stream(subIds).boxed().collect(
+                Collectors.toCollection(HashSet::new));
         if (LOGV) {
             Log.v(TAG, "Register PhoneStateListeners for " + subIdSet);
         }
         for (int i2 = 0; i2 < mTrackers.size(); i2++) {
-            if (!subIdSet.contains(Integer.valueOf(mTrackers.keyAt(i2)))) {
+            if (!subIdSet.contains(mTrackers.keyAt(i2))) {
                 mTelephony.unregisterTelephonyCallback(mTrackers.valueAt(i2));
                 mTrackers.removeAt(i2);
             }
@@ -204,51 +204,6 @@ public class PhoneMonitor {
                         new SubscriptionStateTracker(subId));
             }
             i++;
-        }
-    }
-
-    public void addListener(SubscriptionStateListener listener) {
-        mListeners.add(listener);
-    }
-
-    public void removeListener(SubscriptionStateListener listener) {
-        mListeners.remove(listener);
-    }
-
-    public SubscriptionInfo getActiveSubscriptionInfo(int subId) {
-        return mSubscriptionManager.getActiveSubscriptionInfo(subId);
-    }
-
-    public List<SubscriptionInfo> getActiveSubscriptionInfoList() {
-        return mSubscriptionManager.getActiveSubscriptionInfoList();
-    }
-
-    public String getSimOperatorName(int subId) {
-        return mTelephony.createForSubscriptionId(subId).getSimOperatorName();
-    }
-
-    public String getNetworkOperatorName(int subId) {
-        return mTelephony.createForSubscriptionId(subId).getNetworkOperatorName();
-    }
-
-    public ServiceState getServiceStateForSubscriber(int subId) {
-        return mTelephony.getServiceStateForSubscriber(subId);
-    }
-
-    public void changeDataSub(int subId) {
-        if (LOGV) {
-            Log.v(TAG, "changeDataSub{" +
-                    "subId='" + subId + '\'' +
-                    ", mChangingToDataSubId=" + mChangingToDataSubId +
-                    '}');
-        }
-        if (mChangingToDataSubId != subId) {
-            mSubscriptionManager.setDefaultDataSubId(subId);
-            for (SubscriptionStateListener subscriptionStateListener : mListeners) {
-                subscriptionStateListener
-                        .onDefaultDataSubscriptionChangeRequested(mChangingToDataSubId, subId);
-            }
-            mChangingToDataSubId = subId;
         }
     }
 
@@ -290,26 +245,6 @@ public class PhoneMonitor {
             }
         }
         return true;
-    }
-
-    public boolean singleSimInserted() {
-        return mSubscriptionManager.getActiveSubscriptionInfoCount() == 1;
-    }
-
-    // We only care that each slot has a sim
-    public boolean allSimsInserted() {
-        int simSlotCount = mTelephony.getSimCount();
-        for (int i = 0; i < simSlotCount; i++) {
-            int state = mTelephony.getSimState(i);
-            if (state == TelephonyManager.SIM_STATE_ABSENT) {
-                return false;
-            }
-        }
-        return simSlotCount == mSubscriptionManager.getActiveSubscriptionInfoCount();
-    }
-
-    public boolean isMultiSimDevice() {
-        return mTelephony.isMultiSimEnabled();
     }
 
     public boolean isGSM(int subId) {
@@ -496,8 +431,6 @@ public class PhoneMonitor {
         void onDataConnectionStateChanged(int subId, int state, int networkType);
 
         void onDefaultDataSubscriptionChanged(int subId);
-
-        void onDefaultDataSubscriptionChangeRequested(int currentSubId, int newSubId);
 
         void onSignalStrengthsChanged(int subId, SignalStrength signalStrength);
 

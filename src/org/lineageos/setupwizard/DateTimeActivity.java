@@ -37,6 +37,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
 import com.android.settingslib.datetime.ZoneGetter;
@@ -44,7 +45,6 @@ import com.android.settingslib.datetime.ZoneGetter;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 import java.util.Calendar;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -53,15 +53,10 @@ import java.util.TimeZone;
 public class DateTimeActivity extends BaseSetupWizardActivity implements
         TimePickerDialog.OnTimeSetListener, DatePickerDialog.OnDateSetListener {
 
-    public static final String TAG = DateTimeActivity.class.getSimpleName();
-
     private static final String KEY_ID = "id"; // value: String
     private static final String KEY_DISPLAYNAME = "name"; // value: String
     private static final String KEY_GMT = "gmt"; // value: String
     private static final String KEY_OFFSET = "offset"; // value: int (Integer)
-    private static final String XMLTAG_TIMEZONE = "timezone";
-
-    private static final int HOURS_1 = 60 * 60000;
 
     private TimeZone mCurrentTimeZone;
     private TextView mDateTextView;
@@ -207,14 +202,13 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
 
         final TimeZoneComparator comparator = new TimeZoneComparator(KEY_OFFSET);
         final List<Map<String, Object>> sortedList = ZoneGetter.getZonesList(context);
-        Collections.sort(sortedList, comparator);
-        final SimpleAdapter adapter = new SimpleAdapter(context,
+        sortedList.sort(comparator);
+
+        return new SimpleAdapter(context,
                 sortedList,
                 R.layout.date_time_setup_custom_list_item_2,
                 from,
                 to);
-
-        return adapter;
     }
 
     private static int getTimeZoneIndex(SimpleAdapter adapter, TimeZone tz) {
@@ -259,13 +253,9 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
     }
 
     private static class TimeZoneComparator implements Comparator<Map<?, ?>> {
-        private String mSortingKey;
+        private final String mSortingKey;
 
         public TimeZoneComparator(String sortingKey) {
-            mSortingKey = sortingKey;
-        }
-
-        public void setSortingKey(String sortingKey) {
             mSortingKey = sortingKey;
         }
 
@@ -287,7 +277,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         }
 
         private boolean isComparable(Object value) {
-            return (value != null) && (value instanceof Comparable);
+            return (value instanceof Comparable);
         }
     }
 
@@ -297,8 +287,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         private static final String TAG = TimePickerFragment.class.getSimpleName();
 
         public static TimePickerFragment newInstance() {
-            TimePickerFragment frag = new TimePickerFragment();
-            return frag;
+            return new TimePickerFragment();
         }
 
         @Override
@@ -306,6 +295,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
             ((DateTimeActivity) getActivity()).onTimeSet(view, hourOfDay, minute);
         }
 
+        @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             final Calendar calendar = Calendar.getInstance();
@@ -324,8 +314,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
         private static final String TAG = DatePickerFragment.class.getSimpleName();
 
         public static DatePickerFragment newInstance() {
-            DatePickerFragment frag = new DatePickerFragment();
-            return frag;
+            return new DatePickerFragment();
         }
 
         @Override
@@ -333,6 +322,7 @@ public class DateTimeActivity extends BaseSetupWizardActivity implements
             ((DateTimeActivity) getActivity()).onDateSet(view, year, month, day);
         }
 
+        @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             final Calendar calendar = Calendar.getInstance();

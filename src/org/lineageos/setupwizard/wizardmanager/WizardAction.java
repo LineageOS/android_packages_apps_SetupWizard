@@ -141,7 +141,7 @@ public class WizardAction implements Parcelable {
         if (resultCode == null) {
             transitions.setDefaultAction(action);
         } else {
-            transitions.put(Integer.valueOf(resultCode).intValue(), action);
+            transitions.put(Integer.parseInt(resultCode), action);
         }
     }
 

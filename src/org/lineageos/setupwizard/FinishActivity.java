@@ -75,7 +75,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
             if (LOGV) {
                 Log.v(TAG, "onReceive intent=" + intent);
             }
-            if (intent != null && intent.getAction() == ACTION_FINISHED) {
+            if (intent != null && intent.getAction().equals(ACTION_FINISHED)) {
                 unregisterReceiver(mIntentReceiver);
                 completeSetup();
             }
@@ -89,7 +89,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
             logActivityState("onCreate savedInstanceState=" + savedInstanceState);
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
-        mReveal = (ImageView) findViewById(R.id.reveal);
+        mReveal = findViewById(R.id.reveal);
         setNextText(R.string.start);
     }
 
@@ -224,7 +224,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
             try {
                 overlayManager.setEnabledExclusiveInCategory(selectedNavMode, USER_CURRENT);
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
         }
     }
