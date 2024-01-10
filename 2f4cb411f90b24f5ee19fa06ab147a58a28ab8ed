@@ -16,6 +16,24 @@
       "message": "the default style for namespace in AS is wrong, namespace should be, like every attribute, in a separate line, not in the same as the opening tag",
       "revId": "2f4cb411f90b24f5ee19fa06ab147a58a28ab8ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "afe4e36f_45e960ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-10T21:10:10Z",
+      "side": 1,
+      "message": "Does this apply for layouts only? There are various other files that have it on the same line already. With this patch they all match",
+      "parentUuid": "4ddd1c3e_2e8edd25",
+      "revId": "2f4cb411f90b24f5ee19fa06ab147a58a28ab8ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
