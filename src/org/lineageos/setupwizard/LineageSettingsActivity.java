@@ -34,8 +34,6 @@ import lineageos.providers.LineageSettings;
 
 public class LineageSettingsActivity extends BaseSetupWizardActivity {
 
-    public static final String TAG = LineageSettingsActivity.class.getSimpleName();
-
     private SetupWizardApp mSetupWizardApp;
 
     private CheckBox mMetrics;
