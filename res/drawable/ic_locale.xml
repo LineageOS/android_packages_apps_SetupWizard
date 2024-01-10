@@ -20,8 +20,7 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
 
-    <path
-        android:pathData="M0 0h24v24H0z" />
+    <path android:pathData="M0 0h24v24H0z" />
     <path
         android:fillColor="@color/black"
         android:pathData="M12.87 15.07l-2.54-2.51 .03 -.03c1.74-1.94 2.98-4.17
