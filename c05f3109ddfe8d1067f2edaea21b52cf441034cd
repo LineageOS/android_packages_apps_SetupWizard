@@ -18,6 +18,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4fd665c_95acc1bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-01-10T08:56:47Z",
+      "side": 1,
+      "message": "For the tests removal I wouldn\u0027t call it update. Do that in a separate change.",
+      "revId": "c05f3109ddfe8d1067f2edaea21b52cf441034cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "319ec5e2_1b5712c7",
