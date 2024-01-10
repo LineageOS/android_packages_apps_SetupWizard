@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f3a7685_f5679169",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-10T09:12:49Z",
+      "side": 1,
+      "message": "Since the reveal animation isn\u0027t quite working I\u0027m tempted to remove it",
+      "revId": "409f0b992200e92df6882ec733cd264941eacc63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
