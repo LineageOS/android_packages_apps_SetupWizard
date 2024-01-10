@@ -1180,6 +1180,7 @@ public class LocalePicker extends LinearLayout {
 
     /**
      * Sets the next focused item for a remote D-pad key right.
+     *
      * @param id The ID of the next view.
      */
     public void setNextRight(@IdRes int id) {
@@ -2485,10 +2486,12 @@ public class LocalePicker extends LinearLayout {
             AccessibilityNodeInfo info = mInputText.createAccessibilityNodeInfo();
             info.setSource(LocalePicker.this, VIRTUAL_VIEW_ID_INPUT);
             if (mAccessibilityFocusedView != VIRTUAL_VIEW_ID_INPUT) {
-                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
+                info.addAction(
+                        AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
             }
             if (mAccessibilityFocusedView == VIRTUAL_VIEW_ID_INPUT) {
-                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
+                info.addAction(
+                        AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
             }
             Rect boundsInParent = mTempRect;
             boundsInParent.set(left, top, right, bottom);
@@ -2522,10 +2525,12 @@ public class LocalePicker extends LinearLayout {
             info.setBoundsInScreen(boundsInScreen);
 
             if (mAccessibilityFocusedView != virtualViewId) {
-                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
+                info.addAction(
+                        AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
             }
             if (mAccessibilityFocusedView == virtualViewId) {
-                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
+                info.addAction(
+                        AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
             }
             if (LocalePicker.this.isEnabled()) {
                 info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLICK);
@@ -2570,17 +2575,20 @@ public class LocalePicker extends LinearLayout {
             info.setBoundsInScreen(boundsInScreen);
 
             if (mAccessibilityFocusedView != View.NO_ID) {
-                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
+                info.addAction(
+                        AccessibilityNodeInfo.AccessibilityAction.ACTION_ACCESSIBILITY_FOCUS);
             }
             if (mAccessibilityFocusedView == View.NO_ID) {
-                info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
+                info.addAction(
+                        AccessibilityNodeInfo.AccessibilityAction.ACTION_CLEAR_ACCESSIBILITY_FOCUS);
             }
             if (LocalePicker.this.isEnabled()) {
                 if (getWrapSelectorWheel() || getValue() < getMaxValue()) {
                     info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_FORWARD);
                 }
                 if (getWrapSelectorWheel() || getValue() > getMinValue()) {
-                    info.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_BACKWARD);
+                    info.addAction(
+                            AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_BACKWARD);
                 }
             }
 

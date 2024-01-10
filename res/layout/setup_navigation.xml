@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2024 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.google.android.setupdesign.GlifLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
@@ -44,13 +42,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/navigation_illustration"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"
-                    app:lottie_autoPlay="true"
-                    app:lottie_loop="true" />
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/navigation_illustration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
 
                     <RadioGroup
                         android:id="@+id/navigation_radio_group"

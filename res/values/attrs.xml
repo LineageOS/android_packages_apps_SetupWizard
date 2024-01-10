@@ -30,7 +30,7 @@
         <attr name="internalMinWidth" format="dimension" />
         <attr name="internalMaxWidth" format="dimension" />
         <attr name="internalLayout" format="reference" />
-        <attr name="virtualButtonPressedDrawable" format="reference"/>
+        <attr name="virtualButtonPressedDrawable" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="NavigationLayout">
