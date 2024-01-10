@@ -30,8 +30,6 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class NetworkSetupActivity extends SubBaseActivity {
 
-    public static final String TAG = NetworkSetupActivity.class.getSimpleName();
-
     @Override
     protected void onStartSubactivity() {
         if (SetupWizardUtils.isOwner()) {

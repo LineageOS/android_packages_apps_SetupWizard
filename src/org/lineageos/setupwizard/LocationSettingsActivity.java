@@ -27,9 +27,6 @@ import android.widget.CheckBox;
 
 public class LocationSettingsActivity extends BaseSetupWizardActivity {
 
-    public static final String TAG =
-            LocationSettingsActivity.class.getSimpleName().substring(0, 22);
-
     private CheckBox mLocationAccess;
     private CheckBox mLocationAgpsAccess;
 
@@ -47,14 +44,10 @@ public class LocationSettingsActivity extends BaseSetupWizardActivity {
         mLocationManager = getSystemService(LocationManager.class);
         mUserManager = getSystemService(UserManager.class);
         View locationAccessView = findViewById(R.id.location);
-        locationAccessView.setOnClickListener(v -> {
-            mLocationAccess.setChecked(!mLocationAccess.isChecked());
-        });
+        locationAccessView.setOnClickListener(v -> mLocationAccess.setChecked(!mLocationAccess.isChecked()));
         View locationAgpsAccessView = findViewById(R.id.location_agps);
         if (mUserManager.isMainUser()) {
-            locationAgpsAccessView.setOnClickListener(v -> {
-                mLocationAgpsAccess.setChecked(!mLocationAgpsAccess.isChecked());
-            });
+            locationAgpsAccessView.setOnClickListener(v -> mLocationAgpsAccess.setChecked(!mLocationAgpsAccess.isChecked()));
         } else {
             locationAgpsAccessView.setVisibility(View.GONE);
         }
