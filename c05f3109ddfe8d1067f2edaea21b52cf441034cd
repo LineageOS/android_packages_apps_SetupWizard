@@ -56,6 +56,30 @@
       },
       "revId": "c05f3109ddfe8d1067f2edaea21b52cf441034cd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6656fce_7b947070",
+        "filename": "src/org/lineageos/setupwizard/SetupWizardExitWorker.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 32911
+      },
+      "writtenOn": "2024-01-10T10:08:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "319ec5e2_1b5712c7",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "c05f3109ddfe8d1067f2edaea21b52cf441034cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
