@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,19 +14,19 @@
      limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:gravity="left"
-        android:paddingStart="16dp"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp"
-        android:paddingEnd="16dp">
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="left"
+    android:paddingStart="16dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingEnd="16dp">
 
     <TextView
         android:id="@+id/locale"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 </LinearLayout>

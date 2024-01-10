@@ -17,39 +17,57 @@
 -->
 
 <WizardScript xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard"
-              wizard:firstAction="welcome">
+    wizard:firstAction="welcome">
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end" id="welcome">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end"
+        id="welcome">
         <result wizard:action="restore" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end" id="restore">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end"
+        id="restore">
         <result wizard:action="location_settings" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCATION_SETTINGS;end" id="location_settings">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCATION_SETTINGS;end"
+        id="location_settings">
         <result wizard:action="lockscreen_settings" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS;end" id="lockscreen_settings">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS;end"
+        id="lockscreen_settings">
         <result wizard:action="biometric_settings" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BIOMETRIC_SETTINGS;end" id="biometric_settings">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BIOMETRIC_SETTINGS;end"
+        id="biometric_settings">
         <result wizard:action="theme_settings" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.THEME_SETTINGS;end" id="theme_settings">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.THEME_SETTINGS;end"
+        id="theme_settings">
         <result wizard:action="navigation_settings" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end"
+        id="navigation_settings">
         <result wizard:action="finish" />
     </WizardAction>
 
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end"
+        id="finish">
         <result wizard:action="exit" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.EXIT;end" id="exit" />
+    <WizardAction
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.EXIT;end"
+        id="exit" />
 
 </WizardScript>

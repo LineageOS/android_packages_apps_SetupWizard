@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2013-2015 The CyanogenMod Project
      Copyright (C) 2017-2024 The LineageOS Project
 
@@ -56,7 +55,7 @@
     <string name="services_help_improve_cm">Ajuda a millorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label">&lt;xliff:g id="name" example="Help improve LineageOS"&gt; enviant automàticament dades de diagnòstic i d\'ús a &lt;xliff:g id="name" example="LineageOS"&gt;. Aquesta informació no es pot utilitzar per identificar-vos i dóna un cop de mà als equips que treballen en coses com ara la durada de la bateria, el rendiment de les aplicacions i les noves característiques de &lt;xliff:g id="name" example="LineageOS"&gt;.</string>
     <string name="services_os_nav_keys_label"><b>Utilitza les tecles de navegació en pantalla</b> enlloc de les tecles físiques.</string>
-    <string name="services_full_description"><xliff:g id="pp_explanation"/>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
+    <string name="services_full_description"><xliff:g id="pp_explanation" />\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Selecciona el tipus de bloqueig de pantalla de reserva</string>
     <string name="settings_biometric_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
     <string name="fingerprint_setup_title">Configuració de l\'empremta digital</string>
