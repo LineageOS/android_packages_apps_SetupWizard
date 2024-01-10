@@ -33,8 +33,6 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class WelcomeActivity extends SubBaseActivity {
 
-    public static final String TAG = WelcomeActivity.class.getSimpleName();
-
     @Override
     protected void onStartSubactivity() {
 

@@ -31,7 +31,6 @@ public class NavigationLayout extends RelativeLayout {
      * namely when the user clicks on the back or next button.
      */
     public interface NavigationBarListener {
-        void onNavigateBack();
 
         void onNavigateNext();
 

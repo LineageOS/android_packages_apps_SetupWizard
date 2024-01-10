@@ -81,7 +81,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
             if (LOGV) {
                 Log.v(TAG, "onReceive intent=" + intent);
             }
-            if (intent != null && intent.getAction() == ACTION_FINISHED) {
+            if (intent != null && intent.getAction().equals(ACTION_FINISHED)) {
                 unregisterReceiver(mIntentReceiver);
                 completeSetup();
             }
@@ -95,7 +95,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
             logActivityState("onCreate savedInstanceState=" + savedInstanceState);
         }
         mSetupWizardApp = (SetupWizardApp) getApplication();
-        mBackground = (ImageView) findViewById(R.id.background);
+        mBackground = findViewById(R.id.background);
         setNextText(R.string.start);
 
         // Edge-to-edge. Needed for the background view to fill the full screen.
@@ -231,7 +231,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
             try {
                 overlayManager.setEnabledExclusiveInCategory(selectedNavMode, USER_CURRENT);
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
         }
     }
