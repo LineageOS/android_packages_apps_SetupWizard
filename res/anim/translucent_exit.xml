@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
 ** Copyright 2009, The Android Open Source Project
 **
@@ -18,7 +17,9 @@
 -->
 
 <set xmlns:android="http://schemas.android.com/apk/res/android"
-     android:interpolator="@android:interpolator/accelerate_quad">
-    <alpha android:fromAlpha="1.0" android:toAlpha="0"
-           android:duration="@android:integer/config_shortAnimTime"/>
+    android:interpolator="@android:interpolator/accelerate_quad">
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0"
+        android:duration="@android:integer/config_shortAnimTime" />
 </set>

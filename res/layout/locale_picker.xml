@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 **
 ** Copyright 2008, The Android Open Source Project
 **
@@ -19,26 +18,29 @@
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageButton android:id="@+id/lp__increment"
-                 android:layout_width="fill_parent"
-                 android:layout_height="wrap_content"
-                 android:paddingTop="22dip"
-                 android:paddingBottom="22dip"/>
+    <ImageButton
+        android:id="@+id/lp__increment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dip"
+        android:paddingBottom="22dip" />
 
-    <view class="org.lineageos.setupwizard.widget.LocalePicker$CustomEditText"
-          android:textAppearance="?android:attr/textAppearanceMedium"
-          android:textColor="?android:attr/textColorPrimary"
-          android:id="@+id/localepicker_input"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:gravity="center"
-          android:singleLine="true"
-          android:background="@null" />
+    <view
+        class="org.lineageos.setupwizard.widget.LocalePicker$CustomEditText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/localepicker_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:background="@null" />
 
-    <ImageButton android:id="@+id/lp__decrement"
-                 android:layout_width="fill_parent"
-                 android:layout_height="wrap_content"
-                 android:paddingTop="22dip"
-                 android:paddingBottom="22dip"/>
+    <ImageButton
+        android:id="@+id/lp__decrement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="22dip"
+        android:paddingBottom="22dip" />
 
 </merge>

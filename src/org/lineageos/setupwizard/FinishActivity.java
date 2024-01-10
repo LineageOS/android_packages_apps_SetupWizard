@@ -224,7 +224,8 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
             try {
                 overlayManager.setEnabledExclusiveInCategory(selectedNavMode, USER_CURRENT);
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         }
     }
 

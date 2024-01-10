@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2013 The CyanogenMod Project
      Copyright (C) 2017-2024 The LineageOS Project
 
@@ -16,6 +15,7 @@
      limitations under the License.
 -->
 <resources>
+
     <style name="Theme.Setup" parent="@style/SudFullDynamicColorThemeGlifV3.DayNight">
         <item name="sucUsePartnerResource">true</item>
         <item name="sudUsePartnerHeavyTheme">true</item>
