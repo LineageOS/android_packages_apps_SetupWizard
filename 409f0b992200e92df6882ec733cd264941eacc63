@@ -16,6 +16,29 @@
       "message": "Since the reveal animation isn\u0027t quite working I\u0027m tempted to remove it",
       "revId": "409f0b992200e92df6882ec733cd264941eacc63",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79f51da7_390b3c14",
+        "filename": "src/org/lineageos/setupwizard/SetupWizardApp.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-10T09:13:51Z",
+      "side": 1,
+      "message": "Oops",
+      "range": {
+        "startLine": 34,
+        "startChar": 39,
+        "endLine": 34,
+        "endChar": 43
+      },
+      "revId": "409f0b992200e92df6882ec733cd264941eacc63",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
