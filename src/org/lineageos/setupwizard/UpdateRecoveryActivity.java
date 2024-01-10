@@ -53,9 +53,8 @@ public class UpdateRecoveryActivity extends BaseSetupWizardActivity {
         mRecoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox);
 
         View cbView = findViewById(R.id.update_recovery_checkbox_view);
-        cbView.setOnClickListener(v -> {
-            mRecoveryUpdateCheckbox.setChecked(!mRecoveryUpdateCheckbox.isChecked());
-        });
+        cbView.setOnClickListener(
+                v -> mRecoveryUpdateCheckbox.setChecked(!mRecoveryUpdateCheckbox.isChecked()));
 
         // Allow overriding the default checkbox state
         if (sFirstTime) {

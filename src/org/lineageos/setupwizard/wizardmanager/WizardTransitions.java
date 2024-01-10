@@ -24,6 +24,8 @@ import android.os.Parcelable;
 import android.util.Log;
 import android.util.SparseArray;
 
+import androidx.annotation.NonNull;
+
 import java.util.Objects;
 
 public class WizardTransitions extends SparseArray<String> implements Parcelable {
@@ -69,6 +71,7 @@ public class WizardTransitions extends SparseArray<String> implements Parcelable
         super.put(key, value);
     }
 
+    @NonNull
     public String toString() {
         return super.toString() + " mDefaultAction: " + mDefaultAction;
     }
@@ -95,7 +98,7 @@ public class WizardTransitions extends SparseArray<String> implements Parcelable
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(mDefaultAction);
         int size = size();
-        SparseArray sparseArray = new SparseArray<>(size);
+        SparseArray<String> sparseArray = new SparseArray<>(size);
         for (int i = 0; i < size; i++) {
             sparseArray.put(keyAt(i), valueAt(i));
         }
