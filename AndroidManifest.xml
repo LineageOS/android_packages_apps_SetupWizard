@@ -330,14 +330,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SetupWizardTestActivity"
-                  android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
-                  android:exported="false"
-                  android:immersive="true"
-                  android:label="@string/activity_label_empty"
-                  android:launchMode="singleInstance"
-                  android:theme="@style/NoDisplay"/>
-
         <receiver android:name=".PartnerReceiver"
                   android:exported="true">
             <intent-filter>
