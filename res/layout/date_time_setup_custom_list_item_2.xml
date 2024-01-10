@@ -16,11 +16,11 @@
 -->
 <!-- Based on simple_list_item_2.xml in framework -->
 <TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="?android:attr/listPreferredItemHeight"
-        android:mode="twoLine"
-        android:gravity="center_vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:mode="twoLine"
+    android:gravity="center_vertical">
 
     <TextView
         android:id="@android:id/text1"
