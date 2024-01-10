@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      Copyright (C) 2015 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +14,11 @@
      limitations under the License.
 -->
 <transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
-               android:transitionOrdering="sequential">
-<changeBounds/>
-<slide  android:slideEdge="left" >
-     <targets>
-          <target android:targetId="@id/page" />
-     </targets>
-</slide>
+    android:transitionOrdering="sequential">
+    <changeBounds />
+    <slide android:slideEdge="left">
+        <targets>
+            <target android:targetId="@id/page" />
+        </targets>
+    </slide>
 </transitionSet>

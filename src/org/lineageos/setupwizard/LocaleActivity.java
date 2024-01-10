@@ -24,7 +24,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -229,7 +228,8 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 Locale finalLocale = locale;
                 mHandler.post(() -> {
                     if (finalLocale != null && !finalLocale.equals(mCurrentLocale)) {
-                        if (!((SetupWizardApp) getApplication()).ignoreSimLocale() && !isDestroyed()) {
+                        if (!((SetupWizardApp) getApplication()).ignoreSimLocale()
+                                && !isDestroyed()) {
                             String label = getString(R.string.sim_locale_changed,
                                     finalLocale.getDisplayName());
                             Toast.makeText(LocaleActivity.this, label, Toast.LENGTH_SHORT).show();
