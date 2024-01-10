@@ -34,6 +34,24 @@
       "parentUuid": "7f6a9004_b557d667",
       "revId": "0ef4a1a9d2142adc2d8cbaa84f4823a943c4b145",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "09235ac8_c22f35ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-10T20:59:44Z",
+      "side": 1,
+      "message": "No, probably was marked resolved. Nothing that I can do about it since it\u0027s not a setup wizard activity. Would have to be resolved elsewhere",
+      "parentUuid": "18e832a5_7658c1c9",
+      "revId": "0ef4a1a9d2142adc2d8cbaa84f4823a943c4b145",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
