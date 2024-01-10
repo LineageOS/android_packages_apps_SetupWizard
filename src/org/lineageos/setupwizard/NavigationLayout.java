@@ -32,7 +32,9 @@ public class NavigationLayout extends RelativeLayout {
      */
     public interface NavigationBarListener {
         void onNavigateBack();
+
         void onNavigateNext();
+
         void onSkip();
     }
 
@@ -48,7 +50,7 @@ public class NavigationLayout extends RelativeLayout {
         FooterButtonStyleUtils.applySecondaryButtonPartnerResource(context, mSkipButton, true);
 
         TypedArray a = context.getTheme().obtainStyledAttributes(
-             attrs, R.styleable.NavigationLayout, 0, 0);
+                attrs, R.styleable.NavigationLayout, 0, 0);
         final boolean showSkipButton;
         try {
             showSkipButton = a.getBoolean(

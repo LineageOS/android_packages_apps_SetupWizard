@@ -16,11 +16,11 @@
      limitations under the License.
 -->
 <com.google.android.setupdesign.GlifLayout
-     xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:app="http://schemas.android.com/apk/res-auto"
-     android:id="@+id/setup_wizard_layout"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:orientation="vertical"
@@ -28,10 +28,11 @@
         android:layout_height="match_parent"
         style="@style/SudContentFrame">
 
-        <View android:id="@+id/page"
+        <View
+            android:id="@+id/page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"

@@ -109,10 +109,8 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
             mHideGesturalHint.setVisibility(View.GONE);
         }
 
-        radioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId) {
+        radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
+            switch (checkedId) {
                 case R.id.radio_gesture:
                     mSelection = NAV_BAR_MODE_GESTURAL_OVERLAY;
                     navigationIllustration
@@ -129,16 +127,15 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
                     navigationIllustration.setAnimation(R.raw.lottie_system_nav_3_button);
                     hideHintCheckBox();
                     break;
-                }
-
-                navigationIllustration.playAnimation();
             }
+
+            navigationIllustration.playAnimation();
         });
     }
 
     private void revealHintCheckbox() {
         if (mIsTaskbarEnabled) {
-           return;
+            return;
         }
 
         mHideGesturalHint.animate().cancel();
@@ -150,14 +147,14 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         mHideGesturalHint.setVisibility(View.VISIBLE);
         mHideGesturalHint.setAlpha(0.0f);
         mHideGesturalHint.animate()
-            .translationY(0)
-            .alpha(1.0f)
-            .setListener(null);
+                .translationY(0)
+                .alpha(1.0f)
+                .setListener(null);
     }
 
     private void hideHintCheckBox() {
         if (mIsTaskbarEnabled) {
-           return;
+            return;
         }
 
         if (mHideGesturalHint.getVisibility() == View.INVISIBLE) {
@@ -165,15 +162,15 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         }
 
         mHideGesturalHint.animate()
-            .translationY(-mHideGesturalHint.getHeight())
-            .alpha(0.0f)
-            .setListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    super.onAnimationEnd(animation);
-                    mHideGesturalHint.setVisibility(View.INVISIBLE);
-                }
-            });
+                .translationY(-mHideGesturalHint.getHeight())
+                .alpha(0.0f)
+                .setListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                        mHideGesturalHint.setVisibility(View.INVISIBLE);
+                    }
+                });
     }
 
     @Override
