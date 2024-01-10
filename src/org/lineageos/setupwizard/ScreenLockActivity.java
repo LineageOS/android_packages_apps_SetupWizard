@@ -23,8 +23,6 @@ import android.content.Intent;
 
 public class ScreenLockActivity extends SubBaseActivity {
 
-    public static final String TAG = ScreenLockActivity.class.getSimpleName();
-
     @Override
     protected void onStartSubactivity() {
         Intent intent = new Intent(ACTION_SETUP_LOCKSCREEN);
