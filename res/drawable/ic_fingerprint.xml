@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
     Copyright (c) 2017-2024 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,6 +46,5 @@ s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44 .32
 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08 .87 -2.08 1.94c0 1.71
 .66 3.31 1.87 4.51 .95 .94 1.86 1.46 3.27 1.85 .27 .07 .42 .35 .35 .61-.05 .23
 -.26 .38 -.47 .38 z" />
-    <path
-        android:pathData="M0 0h24v24H0z" />
+    <path android:pathData="M0 0h24v24H0z" />
 </vector>
