@@ -16,6 +16,24 @@
       "message": "Hangs for a bit and status bar isn\u0027t present",
       "revId": "2508482e25c9da7de1df477bbee85180d20d2907",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b74fe9ff_291892d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-01-11T19:40:19Z",
+      "side": 1,
+      "message": "Done. This was caused by the missing broadcast mentioned in my other comment.",
+      "parentUuid": "3f270962_ece75824",
+      "revId": "2508482e25c9da7de1df477bbee85180d20d2907",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
