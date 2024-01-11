@@ -24,7 +24,6 @@ import android.os.Handler;
 import android.util.Log;
 
 import org.lineageos.setupwizard.util.NetworkMonitor;
-import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SetupWizardApp extends Application {
@@ -92,7 +91,6 @@ public class SetupWizardApp extends Application {
             Log.v(TAG, "onCreate()");
         }
         NetworkMonitor.initInstance(this);
-        PhoneMonitor.initInstance(this);
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         if (SetupWizardUtils.isOwner()) {
             SetupWizardUtils.setMobileDataEnabled(this, false);

@@ -26,7 +26,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SetupWizardExitActivity extends BaseSetupWizardActivity {
@@ -42,7 +41,6 @@ public class SetupWizardExitActivity extends BaseSetupWizardActivity {
         if (SetupWizardUtils.isOwner()) {
             SetupWizardUtils.enableCaptivePortalDetection(this);
         }
-        PhoneMonitor.onSetupFinished();
         if (!SetupWizardUtils.isManagedProfile(this)) {
             launchHome();
         }
