@@ -33,6 +33,24 @@
       "message": "This only disables components, it doesn\u0027t send the broadcast.\n\nThis was removed in the \"Update deprecated code\" change, but we need it here now (was under disableHome):\n```\n        context.sendStickyBroadcastAsUser(\n                new Intent(SetupWizardApp.ACTION_FINISHED),\n                Binder.getCallingUserHandle());\n```",
       "revId": "5a70e949e00909a890f6ccf3b137c925b2ef1ef3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b949f4a_ff364717",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-01-11T15:27:41Z",
+      "side": 1,
+      "message": "Some background, from my understanding and recollection:\n\nThe reason to return control back to FinishActivity this way is so that the Activity doesn\u0027t go away until everything is done. Otherwise, SUW is still the Home screen, so it will be launched again once the activity finishes. The appearance of this was worked around by exiting if setup was marked complete, but it\u0027s not optimal having it happen at all and it could sometimes happen multiple times.\n\nAnd the reason we avoid SetupWizardExitActivity (and move stuff out of it, for wider user) is that it doesn\u0027t have a UI and is meant to finish immediately, so it can\u0027t be used to solve this problem. It looked like it was still useful to have for wizard scripts, though.",
+      "parentUuid": "b5ff54a1_460601ce",
+      "revId": "5a70e949e00909a890f6ccf3b137c925b2ef1ef3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
