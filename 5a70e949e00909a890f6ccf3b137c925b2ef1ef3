@@ -16,6 +16,23 @@
       "message": "Also hit ```                                                                                                    java.lang.RuntimeException: Unable to start activity ComponentInfo{org.lineageos.setupwizard/org.lineageos.setupwizard.SetupWizardExitActivity}: java.lang.IllegalArgumentException: Receiver not registered: org.lineageos.setupwizard.util.PhoneMonitor$2@121d272\n``` with GMS occasionally",
       "revId": "5a70e949e00909a890f6ccf3b137c925b2ef1ef3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5ff54a1_460601ce",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-01-11T15:16:10Z",
+      "side": 1,
+      "message": "This only disables components, it doesn\u0027t send the broadcast.\n\nThis was removed in the \"Update deprecated code\" change, but we need it here now (was under disableHome):\n```\n        context.sendStickyBroadcastAsUser(\n                new Intent(SetupWizardApp.ACTION_FINISHED),\n                Binder.getCallingUserHandle());\n```",
+      "revId": "5a70e949e00909a890f6ccf3b137c925b2ef1ef3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
