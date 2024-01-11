@@ -25,6 +25,11 @@ import static android.content.pm.PackageManager.DONT_KILL_APP;
 import static android.content.pm.PackageManager.GET_ACTIVITIES;
 import static android.content.pm.PackageManager.GET_RECEIVERS;
 import static android.content.pm.PackageManager.GET_SERVICES;
+import static android.telephony.TelephonyManager.PHONE_TYPE_GSM;
+import static android.telephony.TelephonyManager.SIM_STATE_ABSENT;
+
+import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_TRUE;
+import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_UNKNOWN;
 
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_DETECT_CAPTIVE_PORTAL;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
@@ -47,7 +52,9 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
+import android.sysprop.TelephonyProperties;
 import android.telephony.ServiceState;
+import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -259,18 +266,6 @@ public class SetupWizardUtils {
         };
     }
 
-    public static boolean simMissing() {
-        return PhoneMonitor.getInstance().simMissing();
-    }
-
-    public static boolean singleSimInserted() {
-        return PhoneMonitor.getInstance().singleSimInserted();
-    }
-
-    public static boolean isMultiSimDevice() {
-        return PhoneMonitor.getInstance().isMultiSimDevice();
-    }
-
     public static void disableComponentsForMissingFeatures(Context context) {
         if (!hasLeanback(context) || isBluetoothDisabled()) {
             disableComponent(context, BluetoothSetupActivity.class);
@@ -280,7 +275,7 @@ public class SetupWizardUtils {
         } else {
             disableComponent(context, ScreenLockActivity.class);
         }
-        if (!hasTelephony(context) || !simMissing()) {
+        if (!hasTelephony(context) || !simMissing(context)) {
             disableComponent(context, SimMissingActivity.class);
         }
         if ((!hasWifi(context) && !hasTelephony(context)) || isEthernetConnected(context)) {
@@ -387,5 +382,43 @@ public class SetupWizardUtils {
 
     public static long getBuildDateTimestamp() {
         return SystemProperties.getLong(PROP_BUILD_DATE, 0);
+    }
+
+    public static boolean simMissing(Context context) {
+        TelephonyManager tm = context.getSystemService(TelephonyManager.class);
+        SubscriptionManager sm = context.getSystemService(SubscriptionManager.class);
+        if (tm == null || sm == null) {
+            return false;
+        }
+        List<SubscriptionInfo> subs = sm.getActiveSubscriptionInfoList();
+        if (subs != null) {
+            for (SubscriptionInfo sub : subs) {
+                int simState = tm.getSimState(sub.getSimSlotIndex());
+                if (LOGV) {
+                    Log.v(TAG, "getSimState(" + sub.getSubscriptionId() + ") == " + simState);
+                }
+                if (simState != -1) {
+                    final int subId = sub.getSubscriptionId();
+                    final TelephonyManager subTm = tm.createForSubscriptionId(subId);
+                    if (isGSM(subTm) || isLteOnCdma(subTm, subId)) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
+    private static boolean isGSM(TelephonyManager subTelephonyManager) {
+        return subTelephonyManager.getCurrentPhoneType() == PHONE_TYPE_GSM;
+    }
+
+    private static boolean isLteOnCdma(TelephonyManager subTelephonyManager, int subId) {
+        final int lteOnCdmaMode = subTelephonyManager.getLteOnCdmaMode(subId);
+        if (lteOnCdmaMode == LTE_ON_CDMA_UNKNOWN) {
+            return TelephonyProperties.lte_on_cdma_device().orElse(LTE_ON_CDMA_UNKNOWN)
+                    == LTE_ON_CDMA_TRUE;
+        }
+        return lteOnCdmaMode == LTE_ON_CDMA_TRUE;
     }
 }

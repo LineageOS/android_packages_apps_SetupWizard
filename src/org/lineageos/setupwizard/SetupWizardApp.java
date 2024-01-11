@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2013 The CyanogenMod Project
- * Copyright (C) 2017-2022 The LineageOS Project
+ * Copyright (C) 2017-2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,6 @@ import android.os.Handler;
 import android.util.Log;
 
 import org.lineageos.setupwizard.util.NetworkMonitor;
-import org.lineageos.setupwizard.util.PhoneMonitor;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SetupWizardApp extends Application {
@@ -92,7 +91,6 @@ public class SetupWizardApp extends Application {
             Log.v(TAG, "onCreate()");
         }
         NetworkMonitor.initInstance(this);
-        PhoneMonitor.initInstance(this);
         SetupWizardUtils.disableComponentsForMissingFeatures(this);
         if (SetupWizardUtils.isOwner()) {
             SetupWizardUtils.setMobileDataEnabled(this, false);
