@@ -88,6 +88,24 @@
       "parentUuid": "75d802a7_eb52b7b3",
       "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43529bc0_ebdbdb20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-14T17:19:21Z",
+      "side": 1,
+      "message": "No. I\u0027m testing locally. I\u0027ll upload whatever works. So far if I remove Seedvault from build and use PS25 I don\u0027t see a crash (no Google apps). I\u0027ll try with Google apps too",
+      "parentUuid": "abef0eb0_d8189327",
+      "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
