@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "153749b7_4ca4eb69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2024-01-14T12:43:10Z",
+      "side": 1,
+      "message": "this looks wrong tbh. the reason it might crash before the patch is that startactivity() is called without a try-catch block around. your patch removes that and always calls startactivityforresult() unconditionally.\nmaybe move the check for activityForwardsResult into the try-block and either call startactivity or startactivityforresult there",
+      "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
