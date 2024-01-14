@@ -106,6 +106,24 @@
       "parentUuid": "abef0eb0_d8189327",
       "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "adae53bb_3ce67c2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-14T17:34:55Z",
+      "side": 1,
+      "message": "So this patch works as expected. `SubBaseActivity         org.lineageos.setupwizard            W  activity not found; start next screen and finish; intent\u003dIntent { act\u003dorg.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP flg\u003d0x6800001 cmp\u003dorg.lineageos.setupwizard/.backup.RestoreIntroActivity (has extras) }`\nNo crash on this chain. If you\u0027re making your own local builds, if you don\u0027t want the seedvault screen to appear at all I\u0027d suggest making a local patch applied on top of this one to remove the screen or conditionally hide it as you had done in previous patch sets. Since we do ship Seedvault, I think PS25 would cover our needs",
+      "parentUuid": "43529bc0_ebdbdb20",
+      "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
