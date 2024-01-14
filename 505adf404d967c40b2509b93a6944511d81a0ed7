@@ -52,6 +52,24 @@
       "parentUuid": "000a70fa_5eb9d7c5",
       "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75d802a7_eb52b7b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-01-14T16:27:39Z",
+      "side": 1,
+      "message": "`activityForwardsResult` was never used (except it should have in wizard script which I\u0027ve fixed). `startActivtyForResult` should always be used (except for wizard script). I\u0027ll test my patch without seedvault installed. Need to see what the logs say",
+      "parentUuid": "77b0ff67_fbc375ba",
+      "revId": "505adf404d967c40b2509b93a6944511d81a0ed7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
