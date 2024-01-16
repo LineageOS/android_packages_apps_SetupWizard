@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99018b45_8126d59a",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-01-16T16:25:01Z",
+      "side": 1,
+      "message": "Moved this here because this activity was seemingly appearing with no transition, which was jarring. I see a fade from the last activity now.",
+      "revId": "322f6460cc2be8ad42f8f6a495276073a8faa15a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
