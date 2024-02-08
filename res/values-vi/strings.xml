@@ -49,6 +49,7 @@
     <string name="enable_mobile_data_summary">Bạn có muốn sử dụng dữ liệu di động trong lúc thiết lập? Bật dữ liệu di động có thể phải chịu phí dữ liệu.</string>
     <string name="no">Không</string>
     <string name="yes">Có</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Cuộc gọi khẩn cấp</string>
     <string name="setup_services">Các tính năng LineageOS</string>
     <string name="services_explanation" product="tablet">Các dịch vụ này giúp mở rộng khả năng làm việc máy tính bảng của bạn. Dữ liệu sẽ được sử dụng theo LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
@@ -66,12 +67,20 @@
     <string name="fingerprint_setup_title">Thiết lập vân tay</string>
     <string name="fingerprint_setup_summary">Để sử dụng cảm biến vân tay của bạn để mở khóa màn hình của bạn, bạn sẽ cần phải:</string>
     <string name="fingerprint_setup_add_fingerprint">Thêm vân tay của bạn</string>
+    <string name="face_setup_title">Thiết lập khuôn mặt</string>
+    <string name="face_setup_summary">Để sử dụng mở khóa bằng khuôn mặt, bạn cần phải:</string>
+    <string name="face_setup_add_face">Thêm khuôn mặt của bạn</string>
     <string name="biometric_setup_backup_lock_method">Thiết lập phương thức mở khóa phụ</string>
     <string name="biometric_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
     <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
     <string name="settings_lockscreen_setup_title">Chọn kiểu khóa màn hình</string>
     <string name="settings_lockscreen_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
+    <string name="lockscreen_setup_title" product="tablet">Bảo vệ máy tính bảng của bạn</string>
     <string name="lockscreen_setup_title" product="default">Bảo vệ điện thoại của bạn</string>
     <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
     <string name="lockscreen_setup_screen_lock_setup">Thiết lập</string>
+    <string name="intro_restore_title">Khôi phục Sao lưu</string>
+    <string name="intro_restore_subtitle" product="tablet">Nếu bạn có bản sao lưu gần đây nhất từ máy tính bảng sử dụng LineageOS, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_subtitle" product="default">Nếu bạn có bản sao lưu gần đây nhất từ điện thoại sử dụng LineageOS, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_button">Khôi phục từ bản sao lưu</string>
 </resources>

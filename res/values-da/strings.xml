@@ -43,7 +43,7 @@
     <string name="other_services_summary">Disse tjenester sætter Google til at arbejde for dig, og du kan slå dem til eller fra, når som helst. Data vil blive anvendt i overensstemmelse med Google\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="location_services_summary">Lokalitetstjenester tillader system og tredjeparts-apps at indsamle og bruge data, så som din omtrentlige lokalitet. For eksempel, kan en app bruge din omtrentlige lokalitet til at finde nærliggende kaffebarer.</string>
     <string name="location_access_summary"><b>Tillad apps, der har bedt om din tilladelse</b> at bruge din lokalitetsinformation. Dette kan inkludere din aktuelle lokalitet og tidligere lokaliteter.</string>
-    <string name="setup_mobile_data">Tænd mobildata</string>
+    <string name="setup_mobile_data">Tænd for mobildata</string>
     <string name="setup_mobile_data_no_service">Ingen tjeneste</string>
     <string name="setup_mobile_data_emergency_only">Kun nødopkald</string>
     <string name="enable_mobile_data_summary">Vil du bruge mobildata under opsætning? Aktivering af mobildata kan medføre dataudgifter.</string>

@@ -46,7 +46,7 @@
     <string name="setup_mobile_data">Mobiele gegevens inschakelen</string>
     <string name="setup_mobile_data_no_service">Geen verbinding</string>
     <string name="setup_mobile_data_emergency_only">Alleen noodoproepen</string>
-    <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hiermee kunnen kosten gemoeid zijn.</string>
+    <string name="enable_mobile_data_summary">Wilt u mobiele gegevens gebruiken tijdens het instellen? Hier kunnen kosten aan verbonden zijn.</string>
     <string name="no">Nee</string>
     <string name="yes">Ja</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>

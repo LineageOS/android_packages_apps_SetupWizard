@@ -22,12 +22,12 @@
     <string name="start">Mulai</string>
     <string name="done">Selesai</string>
     <string name="ok">OKE</string>
-    <string name="loading">Hanya sec\u2026</string>
+    <string name="loading">Harap tunggu\u2026</string>
     <string name="setup_complete">Penyiapan selesai</string>
     <string name="setup_welcome">Selamat datang</string>
     <string name="setup_locale">Bahasa</string>
     <string name="setup_wifi">Pilih Wi-Fi</string>
-    <string name="setup_sim_missing">SIM kartu hilang</string>
+    <string name="setup_sim_missing">Kartu SIM hilang</string>
     <string name="setup_choose_data_sim">Pilih SIM untuk Data</string>
     <string name="setup_location">Layanan lokasi</string>
     <string name="setup_other">Layanan lainnya</string>
@@ -57,7 +57,7 @@
     <string name="services_privacy_policy">Kebijakan privasi</string>
     <string name="services_help_improve_cm">Membantu meningkatkan <xliff:g id="name" example="LineageOS">%s </xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> dengan mengirim data diagnostik dan penggunaan ke LineageOS secara otomatis. Informasi ini tidak dapat mengidentifikasi Anda, dan hanya berfungsi untuk membantu tim bekerja dengan hal-hal seperti masa pakai baterai, kinerja aplikasi, dan fitur <xliff:g id="name" example="LineageOS">%2$s</xliff:g> yang baru.</string>
-    <string name="services_os_nav_keys_label"><b>Digunakan pada tombol navigasi layar</b> bukan tombol perangkat keras.</string>
+    <string name="services_os_nav_keys_label"><b>Gunakan tombol navigasi pada layar</b> bukan tombol perangkat keras.</string>
     <string name="setup_unlock">Buka kunci</string>
     <string name="setup_device_locked">Perangkat ini telah dikunci oleh pengguna.</string>
     <string name="setup_require_cyanogen_label"><b>Memerlukan kata sandi akun anda</b> untuk dapat menggunakan perangkat meskipun setelah di setel ulang ke pengaturan pabrik.</string>
@@ -77,7 +77,7 @@
     <string name="settings_lockscreen_setup_details">Bagaimana cara kunci layar yang Anda suka?</string>
     <string name="lockscreen_setup_title" product="tablet">Lindungi tablet Anda</string>
     <string name="lockscreen_setup_title" product="default">Lindungi telepon anda</string>
-    <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau sandi untuk membuka kunci layar</string>
+    <string name="lockscreen_setup_summary"><b>Lindungi perangkat ini</b> dan minta PIN, pola, atau kata sandi untuk membuka kunci layar</string>
     <string name="lockscreen_setup_screen_lock_setup">Menyiapkan</string>
     <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
     <string name="intro_restore_subtitle" product="tablet">Jika Anda memiliki cadangan dari LineageOS terakhir pada tablet Anda, Anda dapat memulihkannya di sini.</string>

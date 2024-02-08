@@ -77,7 +77,7 @@
     <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="lockscreen_setup_title" product="tablet">Zaščitite vaš tablični računalnik</string>
     <string name="lockscreen_setup_title" product="default">Zaščitite vaš telefon</string>
-    <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in za odklep zaslona zahtevajte kodo PIN, vzorec ali geslo</string>
+    <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in zahtevajte kodo PIN, vzorec ali geslo za odklep zaslona</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
     <string name="intro_restore_title">Obnovi aplikacije in podatke</string>
     <string name="intro_restore_subtitle" product="tablet">Če imate varnostno kopijo iz vašega zadnjega LineageOS tabličnega računalnika, jo lahko obnovite tukaj.</string>
