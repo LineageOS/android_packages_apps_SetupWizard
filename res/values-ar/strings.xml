@@ -51,10 +51,8 @@
     <string name="emergency_call">مكالمة طوارئ</string>
     <string name="accessibility_settings">إعدادات إمكانية الوصول</string>
     <string name="setup_services">ميزات LineageOS</string>
-    <string name="services_pp_explanation">تعمل هذه الخدمات من أجلك لتوسيع قدرات جهازك. ستستخدم البيانات وفقا لسياسة الخصوصية <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">يمكنك قراءة سياسة الخصوصية على جهاز آخر بزيارة <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> بإرسال بيانات التشخيص والاستخدام تلقائياً إلى <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. لا يمكن استخدامها لتحديد هويتك وتقديم يد المساعدة للفرق التي تعمل على أشياء مثل عمر البطارية وأداء التطبيقات والميزات <xliff:g id="name" example="LineageOS">%3$s</xliff:g><xliff:g id="name" example="LineageOS">%3$s</xliff:g><xliff:g id="name" example="LineageOS">%3$s</xliff:g> الجديدة</string>
     <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">حدد نوعاً احتياطياً لشاشة القفل</string>

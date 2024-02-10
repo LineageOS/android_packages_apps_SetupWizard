@@ -75,5 +75,5 @@
     <string name="two_button_navigation">Navegación con dos botones</string>
     <string name="navbar_navigation">Navegación con trés botones</string>
     <string name="hide_gesture_hint">Anubrir l\'indicador de la navegación xestual</string>
-    <string name="location_agps_access_summary">Al activar la llocalización, <b>baxa los datos d\'asistencia satelitales d\'internet</b> que puen ameyorar muncho el rindimientu inicial del GPS</string>
+    <string name="location_agps_access_summary">Al activar la llocalización, <b>baxa los datos d\'asistencia satelitales d\'internet</b> que puen ameyorar muncho\'l rindimientu inicial del GPS</string>
 </resources>

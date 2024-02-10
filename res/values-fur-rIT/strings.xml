@@ -71,10 +71,12 @@
     <string name="settings_lockscreen_setup_title">Selezione il gjenar di bloc schermi</string>
     <string name="settings_lockscreen_setup_details">Cemût desideristu blocâ il schermi?</string>
     <string name="lockscreen_setup_title" product="default">Protêç il to telefon</string>
+    <string name="lockscreen_setup_title" product="device">Protêç il to dispositîf</string>
     <string name="lockscreen_setup_title" product="tablet">Protêç il to tablet</string>
     <string name="lockscreen_setup_summary"><b>Protêç chest dispositîf</b> e domande un PIN, une secuence o une password par sblocâ il schermi</string>
     <string name="lockscreen_setup_screen_lock_setup">Configure</string>
     <string name="intro_restore_title">Ripristine aplicazions e dâts</string>
+    <string name="intro_restore_subtitle">Se tu âs un backup di un altri dispositîf cun <xliff:g id="name" example="LineageOS">%s</xliff:g>, tu puedis ripristinâlu cumò.</string>
     <string name="intro_restore_button">Ripristine dal backup</string>
     <string name="update_recovery_title">Inzorne Recovery di Lineage</string>
     <string name="update_recovery_description">Al inzorne il Recovery di Lineage al prin inviament sucessîf di ogni inzornament.</string>
