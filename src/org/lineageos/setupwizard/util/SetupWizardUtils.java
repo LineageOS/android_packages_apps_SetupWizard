@@ -7,6 +7,7 @@
 package org.lineageos.setupwizard.util;
 
 import static android.content.Context.MODE_PRIVATE;
+import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DEFAULT;
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
 import static android.content.pm.PackageManager.DONT_KILL_APP;
@@ -51,11 +52,14 @@ import androidx.work.OneTimeWorkRequest;
 import androidx.work.OutOfQuotaPolicy;
 import androidx.work.WorkManager;
 
+import com.google.android.setupcompat.util.WizardManagerHelper;
+
 import org.lineageos.internal.util.PackageManagerUtils;
 import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.NetworkSetupActivity;
 import org.lineageos.setupwizard.ScreenLockActivity;
+import org.lineageos.setupwizard.SetupWizardActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SetupWizardExitWorker;
 import org.lineageos.setupwizard.SimMissingActivity;
@@ -239,6 +243,20 @@ public class SetupWizardUtils {
         // which happens when FinishActivity calls nextAction while completing.
     }
 
+    public static boolean isSetupWizardComplete(Context context) {
+        if (!isManagedProfile(context) && WizardManagerHelper.isUserSetupComplete(context)) {
+            return true;
+        }
+        final int enabledSetting = context.getPackageManager().getComponentEnabledSetting(
+                new ComponentName(context, SetupWizardActivity.class));
+        switch (enabledSetting) {
+            case COMPONENT_ENABLED_STATE_DEFAULT:
+            case COMPONENT_ENABLED_STATE_ENABLED:
+                return false;
+        }
+        return true;
+    }
+
     public static boolean isBluetoothDisabled() {
         return SystemProperties.getBoolean("config.disable_bluetooth", false);
     }
@@ -286,6 +304,7 @@ public class SetupWizardUtils {
         }
     }
 
+    /** Disable the Home component, which is presumably SetupWizardActivity at this time. */
     public static void disableHome(Context context) {
         ComponentName homeComponent = getHomeComponent(context);
         if (homeComponent != null) {
