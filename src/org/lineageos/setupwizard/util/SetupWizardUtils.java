@@ -7,6 +7,7 @@
 package org.lineageos.setupwizard.util;
 
 import static android.content.Context.MODE_PRIVATE;
+import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DEFAULT;
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
 import static android.content.pm.PackageManager.DONT_KILL_APP;
@@ -55,6 +56,7 @@ import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.NetworkSetupActivity;
 import org.lineageos.setupwizard.ScreenLockActivity;
+import org.lineageos.setupwizard.SetupWizardActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
 
@@ -205,6 +207,17 @@ public class SetupWizardUtils {
         context.finishAffinity();
         context.nextAction(RESULT_SKIP);
         Log.i(TAG, "Setup complete!");
+    }
+
+    public static boolean isSetupWizardComplete(Context context) {
+        final int enabledSetting = context.getPackageManager().getComponentEnabledSetting(
+                new ComponentName(context, SetupWizardActivity.class));
+        switch (enabledSetting) {
+            case COMPONENT_ENABLED_STATE_DEFAULT:
+            case COMPONENT_ENABLED_STATE_ENABLED:
+                return false;
+        }
+        return true;
     }
 
     public static boolean isBluetoothDisabled() {
