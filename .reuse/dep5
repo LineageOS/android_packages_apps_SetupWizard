@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: SetupWizard
+Upstream-Contact: The LineageOS Project
+Source: https://github.com/LineageOS/android_packages_apps_SetupWizard
+
+Files: res/raw/lottie_system_nav_2_button.json
+       res/raw/lottie_system_nav_3_button.json
+       res/raw/lottie_system_nav_fully_gestural.json
+Copyright: 2019 The Android Open Source Project
+License: Apache-2.0

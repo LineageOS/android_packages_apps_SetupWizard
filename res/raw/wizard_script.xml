@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
-    Copyright (c) 2014 Google Inc.
-    Copyright (C) 2017-2024 The LineageOS Project
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+     SPDX-FileCopyrightText: 2014 Google Inc.
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 
 <!--
@@ -24,7 +12,6 @@
 
     adb shell am to-intent-uri -a com.android.setupwizard.WELCOME -f 0x10000000 \-\-ez firstRun true
 -->
-
 <WizardScript wizard:version="2"
   xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard">
     <WizardAction wizard:uri="intent:#Intent;action=com.android.setupwizard.OEM_PRE_SETUP;end" id="oem_pre_setup" />
