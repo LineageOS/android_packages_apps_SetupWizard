@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2015 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2019 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+
 -keep class * extends java.util.ListResourceBundle {
     protected Object[][] getContents();
 }
