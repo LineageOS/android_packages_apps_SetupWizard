@@ -16,6 +16,24 @@
       "message": "as on the other commit I commented on about wrong default AS style, this is wrong\nThe comment is always supposed to start in its own line",
       "revId": "54dd4cc13c2da7ff7973a62078f5065f1e73a451",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d687dabf_f68f5e9a",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-02-14T16:38:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e7ec023_a87ac7d0",
+      "revId": "54dd4cc13c2da7ff7973a62078f5065f1e73a451",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
