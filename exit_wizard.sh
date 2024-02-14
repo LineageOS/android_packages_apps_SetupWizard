@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+
 adb root
 wait ${!}
 has_google_suw=$(adb shell pm list packages com.google.android.setupwizard)
