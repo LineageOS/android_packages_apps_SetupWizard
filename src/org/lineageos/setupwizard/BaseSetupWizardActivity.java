@@ -38,6 +38,7 @@ import com.android.settingslib.Utils;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.GlifLayout;
+import com.google.android.setupdesign.util.ThemeHelper;
 
 import org.lineageos.setupwizard.NavigationLayout.NavigationBarListener;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
@@ -273,12 +274,14 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
     public void startActivity(Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
         intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
+        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
         super.startActivity(intent);
     }
 
     protected final void startActivityForResult(@NonNull Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
         intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
+        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
         activityResultLauncher.launch(intent);
     }
 
