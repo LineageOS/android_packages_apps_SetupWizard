@@ -32,7 +32,7 @@
     <string name="setup_choose_data_sim">Оберіть SIM-карту для передачі даних</string>
     <string name="setup_location">Служби позиціювання</string>
     <string name="setup_other">Інші служби</string>
-    <string name="setup_datetime">Дата та Час</string>
+    <string name="setup_datetime">Дата й час</string>
     <string name="setup_current_date">Поточна дата</string>
     <string name="setup_current_time">Поточний час</string>
     <string name="sim_missing_summary" product="tablet">У вашому планшеті не виявлено SIM-карти. Щоб дізнатися як вставити SIM-карту, ознайомтеся з інструкціями до вашого пристрою.</string>
