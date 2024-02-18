@@ -16,17 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">সংস্থাপন উইজার্ড</string>
+    <string name="app_name">সেটাপ উইজার্ড</string>
     <string name="next">পরবর্তী</string>
     <string name="skip">এড়িয়ে যান</string>
     <string name="start">শুরু</string>
     <string name="done">সম্পন্ন</string>
     <string name="ok">ঠিক আছে</string>
     <string name="loading">মাত্র কয়েক মুহূর্ত\u2026</string>
+    <string name="setup_complete">সেটাপ সম্পন্ন</string>
     <string name="setup_welcome">স্বাগতম</string>
     <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> এ আপনাকে স্বাগতম!</string>
     <string name="setup_locale">ভাষা</string>
     <string name="setup_wifi">Wi-Fi নির্বাচন করুন</string>
+    <string name="setup_sim_missing">সিম কার্ড অনুপস্থিত</string>
+    <string name="setup_choose_data_sim">ডাটার জন্য সিম বাছাই করুন</string>
     <string name="setup_location">অবস্থান পরিষেবা</string>
     <string name="setup_other">অন্যান্য পরিষেবা</string>
     <string name="setup_datetime">তারিখ &amp; সময়</string>
@@ -49,6 +52,7 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> কে সাহায্য করুন সয়ংক্রিয়ভাবে ইউজেজ ও ডায়াগনস্টিক ডাটা 
 <xliff:g id="name" example="LineageOS">%2$s</xliff:g> কে পাঠানোর মাধ্যমে। এই তথ্য দ্বারা আপনাকে চিহ্নিত করা যাবে না এবং আপনি এর মাধ্যমে প্রজেক্ট এর দলকে বিভিন্ন <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ফিচার তৈরিতে সাহায্য করতে পারবেন।</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
+    <string name="fingerprint_setup_title">আঙ্গুলের ছাপ সেটআপ</string>
     <string name="lockscreen_setup_screen_lock_setup">সেট আপ করুন</string>
     <string name="update_recovery_title">লিনিয়েজ রিকভারি আপডেট করুন</string>
     <string name="update_recovery_description">প্রতিবার আপডেট সম্পন্ন হওয়ার পর প্রথম বুটে লিনিয়েজ রিকভারি আপডেট করে</string>

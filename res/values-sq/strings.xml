@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Asistenti i Konfigurimit</string>
-    <string name="next">Vazhdo</string>
+    <string name="next">Tjetra</string>
     <string name="skip">Kapërce</string>
     <string name="start">Fillo</string>
     <string name="done">U krye</string>
@@ -33,7 +33,7 @@
     <string name="setup_location">Shërbimet e vendndodhjes</string>
     <string name="setup_other">Shërbime të tjera</string>
     <string name="setup_datetime">Data &amp; ora</string>
-    <string name="setup_current_date">Data</string>
+    <string name="setup_current_date">Data aktuale</string>
     <string name="setup_current_time">Ora</string>
     <string name="sim_missing_summary" product="tablet">Ju nuk keni futur asnjë kartë SIM në tabletë. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
     <string name="sim_missing_summary" product="default">Ju nuk keni futur asnjë kartë SIM në telefon. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
@@ -43,7 +43,7 @@
     <string name="location_access_summary"><b> Lejo programe që kanë kërkuar lejen tënde</b> të përdorin informacionin mbi vendndodhjen tuaj. Kjo mund të përfshijë vendndodhjen tuaj aktuale dhe vendodhje tuajat të mëparshme.</string>
     <string name="setup_mobile_data">Aktivizo internetin e celularit</string>
     <string name="setup_mobile_data_no_service">Nuk ka shërbim</string>
-    <string name="setup_mobile_data_emergency_only">Vetëm thirrjet emergjente</string>
+    <string name="setup_mobile_data_emergency_only">Vetëm telefonata urgjente</string>
     <string name="enable_mobile_data_summary">A doni të përdorni internetin e celularit gjatë instalimit? Aktivizimi i internetit të celularit mund të rrisë pagesën e përdorimit të internetit.</string>
     <string name="no">Jo</string>
     <string name="yes">Po</string>
