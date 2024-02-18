@@ -52,16 +52,16 @@
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Klic v sili</string>
     <string name="accessibility_settings">Nastavitve dostopnosti</string>
-    <string name="setup_services">Značilnosti LineageOS</string>
+    <string name="setup_services">LineageOS funkcije</string>
     <string name="services_pp_explanation">Te storitve služijo vam za razširitev zmogljivosti vaše naprave. Podatki bodo uporabljeni v skladu z <xliff:g id="name" example="LineageOS">%1$s</xliff:g>-ovo politiko zasebnosti.</string>
     <string name="services_find_privacy_policy">Politiko zasebnosti lahko preberete na drugi napravi z obiskom <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe LineageOS-a. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih značilnosti <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe LineageOS-a. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih <xliff:g id="name" example="LineageOS">%2$s</xliff:g> funkcij.</string>
     <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
     <string name="setup_unlock">Odkleni</string>
     <string name="setup_device_locked">To napravo je zaklenil uporabnik.</string>
     <string name="setup_require_cyanogen_label"><b>Zahtevajte svoje geslo računa</b>, da uporabite svojo napravo tudi po ponastavitvi na tovarniške vrednosti.</string>
-    <string name="setup_device_locked_instructions"><i>Za vklop/izklop te značilnosti pojdite v Nastavitve &gt; Varnost</i></string>
+    <string name="setup_device_locked_instructions"><i>Za vklop/izklop te funkcije, pojdite v Nastavitve &gt; Varnost</i></string>
     <string name="settings_biometric_setup_title">Izberite nadomestni način zaklepanja zaslona</string>
     <string name="settings_biometric_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
     <string name="fingerprint_setup_title">Nastavitev prstnega odtisa</string>
@@ -85,6 +85,6 @@
     <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
     <string name="update_recovery_title">Posodobi obnovitev Lineage</string>
     <string name="update_recovery_description">Posodobi obnovitev Lineage ob prvem zagonu vsake posodobitve.</string>
-    <string name="update_recovery_warning">Obnovitev bo posodobljena takoj, ko zaključite namestitev. Če jo želite ohraniti nedotaknjeno, onemogočite to značilnost.</string>
+    <string name="update_recovery_warning">Obnovitev bo posodobljena takoj, ko zaključite namestitev. Če jo želite ohraniti nedotaknjeno, onemogočite to funkcijo.</string>
     <string name="update_recovery_setting">Posodobi obnovitev Lineage poleg OS-a</string>
 </resources>
