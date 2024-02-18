@@ -243,19 +243,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         }
     }
 
-    protected final void finishAllAppTasks() {
-        List<ActivityManager.AppTask> appTasks =
-                getSystemService(ActivityManager.class).getAppTasks();
-
-        for (ActivityManager.AppTask task : appTasks) {
-            if (LOGV) {
-                Log.v(TAG, "Finishing task=" + task.toString());
-            }
-            task.finishAndRemoveTask();
-        }
-        finish();
-    }
-
     public void finish() {
         if (LOGV) {
             Log.v(TAG, "finish");

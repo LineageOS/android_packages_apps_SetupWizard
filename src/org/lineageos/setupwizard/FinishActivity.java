@@ -183,7 +183,6 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private void completeSetup() {
-        Log.i(TAG, "Setup complete!");
         handleEnableMetrics(mSetupWizardApp);
         handleNavKeys(mSetupWizardApp);
         handleRecoveryUpdate(mSetupWizardApp);
@@ -191,8 +190,10 @@ public class FinishActivity extends BaseSetupWizardActivity {
         final WallpaperManager wallpaperManager =
                 WallpaperManager.getInstance(mSetupWizardApp);
         wallpaperManager.forgetLoadedWallpaper();
-        finishAllAppTasks();
+        finishAffinity();
+        nextAction(RESULT_OK);
         SetupWizardUtils.enableStatusBar();
+        Log.i(TAG, "Setup complete!");
     }
 
     private static void handleEnableMetrics(SetupWizardApp setupWizardApp) {
