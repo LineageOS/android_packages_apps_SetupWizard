@@ -69,6 +69,5 @@
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;package=org.lineageos.setupwizard;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="oem_post_setup" />
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.KID_POST_SETUP;end" id="kid_post_setup" />
-    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.EXIT;end" id="exit" />
     <WizardAction id="END_OF_SCRIPT" />
 </WizardScript>
