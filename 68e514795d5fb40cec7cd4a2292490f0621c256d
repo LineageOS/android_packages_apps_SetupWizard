@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e027ac6a_61c8417a",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-21T18:06:19Z",
+      "side": 1,
+      "message": "Why do we need nextAction here? At this stage, there is no next action and the components to handle such an action have been disabled, which I think is leading to this crash: `java.lang.RuntimeException: Error receiving broadcast Intent { act\u003dorg.lineageos.setupwizard.SETUP_FINISHED flg\u003d0x10 } in org.lineageos.setupwizard.FinishActivity`.",
+      "revId": "68e514795d5fb40cec7cd4a2292490f0621c256d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
