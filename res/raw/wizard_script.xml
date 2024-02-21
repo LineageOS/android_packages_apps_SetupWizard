@@ -120,9 +120,7 @@
     <WizardAction wizard:uri="intent:#Intent;package=org.lineageos.setupwizard;action=org.lineageos.setupwizard.NAVIGATION_SETTINGS;end" id="navigation_settings">
         <result wizard:action="finish" />
     </WizardAction>
-    <WizardAction wizard:uri="intent:#Intent;package=org.lineageos.setupwizard;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish">
-        <result wizard:action="exit" />
-    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;package=org.lineageos.setupwizard;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" id="finish" />
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_post_dpm_provision_finalization_flow" id="enterprise_finalization_flow" />
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.KID_POST_SETUP;end" id="kid_post_setup" />
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.android.setupwizard.EXIT;end" id="exit" />

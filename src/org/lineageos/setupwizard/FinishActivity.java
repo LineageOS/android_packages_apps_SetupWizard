@@ -182,6 +182,7 @@ public class FinishActivity extends BaseSetupWizardActivity {
         finishAffinity();
         nextAction(RESULT_OK);
         SetupWizardUtils.enableStatusBar();
+        SetupWizardUtils.disableWizardManager(this);
         Log.i(TAG, "Setup complete!");
     }
 
