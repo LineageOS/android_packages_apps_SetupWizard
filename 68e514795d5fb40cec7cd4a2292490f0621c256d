@@ -16,6 +16,24 @@
       "message": "Why do we need nextAction here? At this stage, there is no next action and the components to handle such an action have been disabled, which I think is leading to this crash: `java.lang.RuntimeException: Error receiving broadcast Intent { act\u003dorg.lineageos.setupwizard.SETUP_FINISHED flg\u003d0x10 } in org.lineageos.setupwizard.FinishActivity`.",
       "revId": "68e514795d5fb40cec7cd4a2292490f0621c256d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a51e27ef_bddd1f9c",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-21T18:09:49Z",
+      "side": 1,
+      "message": "Oops, the more relevant part is this:\n```\nE AndroidRuntime: Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act\u003dcom.android.wizard.NEXT (has extras) }\nE AndroidRuntime: \tat android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:2239)\nE AndroidRuntime: \tat android.app.Instrumentation.execStartActivity(Instrumentation.java:1878)\nE AndroidRuntime: \tat android.app.Activity.startActivityForResult(Activity.java:5615)\nE AndroidRuntime: \tat androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:753)\nE AndroidRuntime: \tat androidx.core.app.ActivityCompat$Api16Impl.startActivityForResult(ActivityCompat.java:858)\nE AndroidRuntime: \tat androidx.core.app.ActivityCompat.startActivityForResult(ActivityCompat.java:247)\nE AndroidRuntime: \tat androidx.activity.ComponentActivity$2.onLaunch(ComponentActivity.java:258)\nE AndroidRuntime: \tat androidx.activity.result.ActivityResultRegistry$2.launch(ActivityResultRegistry.java:175)\nE AndroidRuntime: \tat androidx.activity.result.ActivityResultLauncher.launch(ActivityResultLauncher.java:47)\nE AndroidRuntime: \tat org.lineageos.setupwizard.BaseSetupWizardActivity.startActivityForResult(BaseSetupWizardActivity.java:285)\nE AndroidRuntime: \tat org.lineageos.setupwizard.BaseSetupWizardActivity.nextAction(BaseSetupWizardActivity.java:270)\nE AndroidRuntime: \tat org.lineageos.setupwizard.BaseSetupWizardActivity.nextAction(BaseSetupWizardActivity.java:257)\nE AndroidRuntime: \tat org.lineageos.setupwizard.FinishActivity.completeSetup(FinishActivity.java:183)\nE AndroidRuntime: \tat org.lineageos.setupwizard.FinishActivity.-$$Nest$mcompleteSetup(FinishActivity.java:0)\nE AndroidRuntime: \tat org.lineageos.setupwizard.FinishActivity$1.onReceive(FinishActivity.java:75)\nE AndroidRuntime: \tat android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1811)\nE AndroidRuntime: \t... 10 more\n```",
+      "parentUuid": "e027ac6a_61c8417a",
+      "revId": "68e514795d5fb40cec7cd4a2292490f0621c256d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
