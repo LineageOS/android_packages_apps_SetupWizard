@@ -315,20 +315,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".SetupWizardExitActivity"
-            android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize"
-            android:excludeFromRecents="true"
-            android:immersive="true"
-            android:exported="false"
-            android:label="@@string/activity_label_empty"
-            android:theme="@style/NoDisplay">
-            <intent-filter>
-                <action android:name="org.lineageos.setupwizard.EXIT" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <receiver
             android:name=".PartnerReceiver"
             android:exported="true">
