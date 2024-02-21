@@ -223,19 +223,22 @@ public class SetupWizardUtils {
                     Settings.Secure.TV_USER_SETUP_COMPLETE, 1);
         }
 
-        disableSetupWizardComponentsAndSendFinishedBroadcast(context);
+        disableComponentsAndSendFinishedBroadcast(context);
     }
 
-    private static void disableSetupWizardComponentsAndSendFinishedBroadcast(Context context) {
+    private static void disableComponentsAndSendFinishedBroadcast(Context context) {
         if (LOGV) {
             Log.v(TAG, "Disabling Setup Wizard components and sending FINISHED broadcast.");
         }
-        disableComponent(context, WizardManager.class);
         disableHome(context);
         context.sendStickyBroadcastAsUser(
                 new Intent(SetupWizardApp.ACTION_FINISHED),
                 Binder.getCallingUserHandle());
         disableComponentSets(context, GET_RECEIVERS | GET_SERVICES);
+    }
+
+    public static void disableWizardManager(Context context) {
+        disableComponent(context, WizardManager.class);
     }
 
     public static boolean isBluetoothDisabled() {
