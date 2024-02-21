@@ -16,6 +16,23 @@
       "message": "I didn\u0027t want to rebase yet since I don\u0027t know for certain it will work, but it works for me with plain LineageOS.",
       "revId": "a5fcafa0a454c6fef6fec5ae54d8baee4e25f6f1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61babbcb_3b2903ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-02-21T23:39:31Z",
+      "side": 1,
+      "message": "What calls org.lineageos.setupwizard.EXIT after this change?",
+      "revId": "a5fcafa0a454c6fef6fec5ae54d8baee4e25f6f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
