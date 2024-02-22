@@ -34,6 +34,24 @@
       "parentUuid": "e027ac6a_61c8417a",
       "revId": "68e514795d5fb40cec7cd4a2292490f0621c256d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03b79ba4_769b93c2",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-22T15:14:20Z",
+      "side": 1,
+      "message": "Ack, some environments indeed require returning a result code. I\u0027ve fixed this in https://review.lineageos.org/c/LineageOS/android_packages_apps_SetupWizard/+/383762/1 for now",
+      "parentUuid": "a51e27ef_bddd1f9c",
+      "revId": "68e514795d5fb40cec7cd4a2292490f0621c256d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
