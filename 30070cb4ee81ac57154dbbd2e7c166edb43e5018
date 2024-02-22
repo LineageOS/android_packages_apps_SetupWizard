@@ -33,6 +33,24 @@
       "message": "I\u0027m not sure if this is needed actually... It should be handled by the nextAction.",
       "revId": "30070cb4ee81ac57154dbbd2e7c166edb43e5018",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "863734d1_ec441fc7",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-22T15:50:50Z",
+      "side": 1,
+      "message": "Done, it\u0027s not needed. `dumpsys package org.lineageos.setupwizard | grep -A20 disabledComponents`, you\u0027ll see `org.lineageos.setupwizard.wizardmanager.WizardManager` is disabled properly.",
+      "parentUuid": "64b6b8bc_7a775c0f",
+      "revId": "30070cb4ee81ac57154dbbd2e7c166edb43e5018",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
