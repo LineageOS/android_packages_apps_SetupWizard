@@ -16,6 +16,23 @@
       "message": "There, SetupWizardExitActivity and the exit WizardAction are now removed. Working fine for me, can someone else verify?",
       "revId": "30070cb4ee81ac57154dbbd2e7c166edb43e5018",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "64b6b8bc_7a775c0f",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-22T15:40:16Z",
+      "side": 1,
+      "message": "I\u0027m not sure if this is needed actually... It should be handled by the nextAction.",
+      "revId": "30070cb4ee81ac57154dbbd2e7c166edb43e5018",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
