@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "488c08fc_93e737b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-02-22T15:55:51Z",
+      "side": 1,
+      "message": "I guess exit_wizard.sh should be also adapted now that the exit activity is gone",
+      "revId": "cee3fd80cc045f187a6023eda2aaa1ba212d741b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
