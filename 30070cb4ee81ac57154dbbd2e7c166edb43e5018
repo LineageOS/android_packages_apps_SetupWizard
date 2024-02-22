@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd96e8c0_7227477b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-22T15:38:15Z",
+      "side": 1,
+      "message": "There, SetupWizardExitActivity and the exit WizardAction are now removed. Working fine for me, can someone else verify?",
+      "revId": "30070cb4ee81ac57154dbbd2e7c166edb43e5018",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
