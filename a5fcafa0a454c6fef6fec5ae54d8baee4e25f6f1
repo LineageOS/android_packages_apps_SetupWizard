@@ -33,6 +33,24 @@
       "message": "What calls org.lineageos.setupwizard.EXIT after this change?",
       "revId": "a5fcafa0a454c6fef6fec5ae54d8baee4e25f6f1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56066cfc_c2fdb199",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-22T00:06:25Z",
+      "side": 1,
+      "message": "Ohh, looks like nothing? We can try removing it I think. And we may not need the exit activity itself then either?",
+      "parentUuid": "61babbcb_3b2903ce",
+      "revId": "a5fcafa0a454c6fef6fec5ae54d8baee4e25f6f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
