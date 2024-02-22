@@ -16,6 +16,24 @@
       "message": "I guess exit_wizard.sh should be also adapted now that the exit activity is gone",
       "revId": "cee3fd80cc045f187a6023eda2aaa1ba212d741b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a97336a_efb66667",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-22T16:01:08Z",
+      "side": 1,
+      "message": "Oh right, forgot about that.\n\nIf I update it to use FinishActivity and then try it after SUW has completed, I press Start but it crashes at the end with the familiar `E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act\u003dcom.android.wizard.NEXT (has extras) }`.\n\nI don\u0027t know what exit_wizard.sh is used for, but we could have it turn the WizardManager component back on to stop that crash if that\u0027s suitable.",
+      "parentUuid": "488c08fc_93e737b6",
+      "revId": "cee3fd80cc045f187a6023eda2aaa1ba212d741b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
