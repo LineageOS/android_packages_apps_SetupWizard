@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "968eaafc_073c3cc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 21
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-02-24T18:47:42Z",
+      "side": 1,
+      "message": "The string could perhaps be changed; this also shows up on LCD devices, and for obvious reasons it doesn\u0027t save battery there.",
+      "revId": "0db1cebddef7238f01d756bacd62c9a9e32de9f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
