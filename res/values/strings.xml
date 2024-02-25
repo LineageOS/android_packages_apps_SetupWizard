@@ -41,6 +41,11 @@
     <string name="setup_current_date">Current date</string>
     <string name="setup_current_time">Current time</string>
 
+    <!-- Restore backup page -->
+    <string name="intro_restore_title">Restore apps and data</string>
+    <string name="intro_restore_subtitle">If you have a Seedvault backup from <xliff:g id="name" example="LineageOS">%s</xliff:g> or any other OS, you can restore it here.</string>
+    <string name="intro_restore_button">Restore from backup</string>
+
     <!-- Location page -->
     <string name="setup_location">Location services</string>
     <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
@@ -62,11 +67,6 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%3$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-
-    <!-- Restore backup page -->
-    <string name="intro_restore_title">Restore apps and data</string>
-    <string name="intro_restore_subtitle">If you have a backup from your last <xliff:g id="name" example="LineageOS">%s</xliff:g> device, you can restore it here.</string>
-    <string name="intro_restore_button">Restore from backup</string>
 
     <!-- Navigation page -->
     <string name="setup_navigation">Navigation</string>
