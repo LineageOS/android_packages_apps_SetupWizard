@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c9804e1_cd114016",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-29T20:53:36Z",
+      "side": 1,
+      "message": "Exporting is believed to be required for non-vanilla, so this is likely wrong!",
+      "revId": "2f4d860096cd44e5dc96e7554c4baaf53416009a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00aa65f1_bec926ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-02-29T20:53:36Z",
+      "side": 1,
+      "message": "The",
+      "revId": "2f4d860096cd44e5dc96e7554c4baaf53416009a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
