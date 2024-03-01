@@ -59,7 +59,6 @@ import org.lineageos.setupwizard.ScreenLockActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SetupWizardExitWorker;
 import org.lineageos.setupwizard.SimMissingActivity;
-import org.lineageos.setupwizard.wizardmanager.WizardManager;
 
 import java.io.File;
 import java.util.ArrayList;
