@@ -50,6 +50,23 @@
       "message": "I ported both of these here in case it makes it easier for rebasing on the CalyxOS side - plus who knows, maybe it\u0027s not needed for non-vanilla after all, but it probably is.\n\n(We don\u0027t have most of these activities in CalyxOS though; ThemeActivity is new, though, and we don\u0027t want to export it there.)",
       "revId": "2f4d860096cd44e5dc96e7554c4baaf53416009a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3249388_2b3215bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-03-01T01:57:20Z",
+      "side": 1,
+      "message": "GMS SUW fails to launch our pages https://zifb.in/s156sfcaj2",
+      "revId": "2f4d860096cd44e5dc96e7554c4baaf53416009a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
