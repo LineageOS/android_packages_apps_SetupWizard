@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     SPDX-FileCopyrightText: 2021-2024 The LineageOS Project
-     SPDX-License-Identifier: Apache-2.0
--->
-<resources>
-    <!-- Partner customization -->
-    <color name="sud_dynamic_color_accent_glif_v3_light">@color/accent</color>
-</resources>
