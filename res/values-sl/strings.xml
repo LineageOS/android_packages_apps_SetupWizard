@@ -79,7 +79,7 @@
     <string name="lockscreen_setup_title" product="default">Zaščitite vaš telefon</string>
     <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in zahtevajte kodo PIN, vzorec ali geslo za odklep zaslona</string>
     <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
-    <string name="intro_restore_title">Obnovi aplikacije in podatke</string>
+    <string name="intro_restore_title">Obnovite aplikacije in podatke</string>
     <string name="intro_restore_subtitle" product="tablet">Če imate varnostno kopijo iz vašega zadnjega LineageOS tabličnega računalnika, jo lahko obnovite tukaj.</string>
     <string name="intro_restore_subtitle" product="default">Če imate varnostno kopijo iz vašega zadnjega LineageOS telefona, jo lahko obnovite tukaj.</string>
     <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
