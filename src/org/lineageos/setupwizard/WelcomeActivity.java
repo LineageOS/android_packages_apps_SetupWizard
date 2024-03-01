@@ -31,7 +31,6 @@ public class WelcomeActivity extends SubBaseActivity {
         super.onCreate(savedInstanceState);
         onSetupStart();
         SystemBarHelper.setBackButtonVisible(getWindow(), false);
-        View rootView = findViewById(R.id.setup_wizard_layout);
         setNextText(R.string.start);
         Button startButton = findViewById(R.id.start);
         Button emergButton = findViewById(R.id.emerg_dialer);
