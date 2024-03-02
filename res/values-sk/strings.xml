@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Sprievodca nastavením</string>
@@ -23,55 +12,25 @@
     <string name="done">Hotovo</string>
     <string name="ok">OK</string>
     <string name="loading">Moment\u2026</string>
-    <string name="setup_complete">Nastavenie je dokončené</string>
-    <string name="setup_welcome">Vitajte</string>
+    <string name="emergency_call">Tiesňový hovor</string>
     <string name="setup_locale">Jazyk</string>
-    <string name="setup_wifi">Vyberte Wi-Fi</string>
+    <string name="sim_locale_changed">Zistená %1$s SIM</string>
     <string name="setup_sim_missing">Vložte kartu SIM</string>
-    <string name="setup_choose_data_sim">Vyberte kartu SIM pre mobilné dáta</string>
-    <string name="setup_location">Služby polohy</string>
-    <string name="setup_other">Iné služby</string>
-    <string name="setup_datetime">Nastavenia dátumu \u0026 času</string>
-    <string name="setup_current_date">Aktuálny dátum</string>
-    <string name="setup_current_time">Aktuálny čas</string>
     <string name="sim_missing_summary" product="tablet">Vo vašom tablete sa nenašla žiadna karta SIM. Prečítajte si pokyny pre kartu SIM, ktoré boli dodané s vaším zariadením.</string>
     <string name="sim_missing_summary" product="default">Vo vašom telefóne sa nenašla žiadna karta SIM. Prečítajte si pokyny pre kartu SIM, ktoré boli dodané s vaším zariadením.</string>
-    <string name="choose_data_sim_summary" product="tablet">Ktorú SIM chcete použiť pre mobilné dáta? U vybranej SIM môžu byť účtované poplatky za dátové prenosy, ak bude použitá pri nastavovaní tabletu.</string>
-    <string name="choose_data_sim_summary" product="default">Ktorú SIM chcete použiť pre mobilné dáta? U vybranej SIM môžu byť účtované poplatky za dátové prenosy, ak bude použitá pri nastavovaní telefónu.</string>
+    <string name="setup_datetime">Nastavenia dátumu \u0026 času</string>
     <string name="date_time_summary">Nastavte vaše časové pásmo a upravte aktuálny dátum a čas, ak je to potrebné</string>
-    <string name="location_access_summary"><b>Povoliť aplikáciám, ktoré požiadali o vaše povolenie</b>, používať informácie o vašej polohe. To môže zahŕňať vašu aktuálnu polohu a minulé polohy.</string>
-    <string name="setup_mobile_data">Zapnúť mobilné dáta</string>
-    <string name="setup_mobile_data_no_service">Žiadna sieť</string>
-    <string name="setup_mobile_data_emergency_only">Len tiesňové hovory</string>
-    <string name="enable_mobile_data_summary">Chcete používať mobilné dáta počas inštalácie? Zapnutie mobilných dát môže byť spoplatnené.</string>
-    <string name="no">Nie</string>
-    <string name="yes">Áno</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
-    <string name="emergency_call">Tiesňový hovor</string>
-    <string name="setup_services">LineageOS funkcie</string>
-    <string name="services_help_improve_cm">Pomôžte vylepšiť <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_os_nav_keys_label"><b>Používajte navigačné tlačidlá na obrazovke</b> namiesto hardvérových tlačidiel.</string>
-    <string name="settings_biometric_setup_title">Vyberte záložný typ zamknutia obrazovky</string>
-    <string name="settings_biometric_setup_details">Ako chcete zamknúť obrazovku?</string>
-    <string name="fingerprint_setup_title">Nastavenie odtlačkov prstov</string>
-    <string name="fingerprint_setup_summary">Na použitie vášho snímača odtlačkov prstov na odomknutie obrazovky budete potrebovať:</string>
-    <string name="fingerprint_setup_add_fingerprint">Pridať váš odtlačok prsta</string>
-    <string name="face_setup_title">Nastavenie tváre</string>
-    <string name="face_setup_summary">Pre použitie odomykania obrazovky pomocou tváre, budete potrebovať:</string>
-    <string name="face_setup_add_face">Pridajte svoju tvár</string>
-    <string name="biometric_setup_backup_lock_method">Nastaviť alternatívny spôsob odomknutia</string>
-    <string name="biometric_setup_screen_lock_setup">Nastaviť zamknutie obrazovky</string>
-    <string name="sim_locale_changed">Zistená %1$s SIM</string>
-    <string name="settings_lockscreen_setup_title">Vyberte typ zámku obrazovky</string>
-    <string name="settings_lockscreen_setup_details">Ako chcete zamknúť obrazovku?</string>
-    <string name="lockscreen_setup_title" product="default">Chráňte svoj telefón</string>
-    <string name="lockscreen_setup_title" product="tablet">Chráňte svoj tablet</string>
-    <string name="lockscreen_setup_summary"><b>Chrániť toto zariadenie</b> a pred odomknutím obrazovky vyžiadať kód PIN, gesto alebo heslo</string>
-    <string name="lockscreen_setup_screen_lock_setup">Nastaviť</string>
+    <string name="setup_current_date">Aktuálny dátum</string>
+    <string name="setup_current_time">Aktuálny čas</string>
     <string name="intro_restore_title">Obnoviť aplikácie a dáta</string>
     <string name="intro_restore_button">Obnoviť zo záloh</string>
+    <string name="setup_location">Služby polohy</string>
+    <string name="location_access_summary"><b>Povoliť aplikáciám, ktoré požiadali o vaše povolenie</b>, používať informácie o vašej polohe. To môže zahŕňať vašu aktuálnu polohu a minulé polohy.</string>
     <string name="update_recovery_title">Aktualizovať Lineage recovery</string>
     <string name="update_recovery_description">Aktualizovať Lineage recovery pri prvom spustení po každej aktualizácii</string>
     <string name="update_recovery_warning">Oddiel recovery bude aktualizovaný ihneď potom, ako dokončíte nastavenie. Vypnite túto funkciu, ak si prajete ponechať oddiel nezmenený.</string>
     <string name="update_recovery_setting">Aktualizovať Lineage recovery spoločne s OS</string>
+    <string name="setup_services">LineageOS funkcie</string>
+    <string name="services_help_improve_cm">Pomôžte vylepšiť <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_os_nav_keys_label"><b>Používajte navigačné tlačidlá na obrazovke</b> namiesto hardvérových tlačidiel.</string>
 </resources>

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">설치 마법사</string>
@@ -23,33 +12,28 @@
     <string name="done">완료</string>
     <string name="ok">확인</string>
     <string name="loading">잠시만 기다려주세요\u2026</string>
-    <string name="setup_complete">설정 완료</string>
-    <string name="setup_welcome">환영합니다</string>
     <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g>에 오신 것을 환영합니다</string>
-    <string name="setup_locale">언어</string>
-    <string name="setup_wifi">Wi-Fi 연결</string>
-    <string name="setup_sim_missing">SIM 카드 없음</string>
-    <string name="setup_choose_data_sim">모바일 데이터용 SIM 카드 선택</string>
-    <string name="setup_location">위치 서비스</string>
-    <string name="setup_other">기타 서비스</string>
-    <string name="setup_datetime">날짜 및 시간</string>
-    <string name="setup_current_date">현재 날짜</string>
-    <string name="setup_current_time">현재 시간</string>
-    <string name="sim_missing_summary" product="tablet">태블릿에서 SIM 카드가 감지되지 않았습니다. SIM 카드를 삽입하려면 기기와 함께 제공된 설명을 읽어보십시오.</string>
-    <string name="sim_missing_summary" product="default">휴대전화에서 SIM 카드가 감지되지 않았습니다. SIM 카드를 삽입하려면 기기와 함께 제공된 설명을 읽어보십시오.</string>
-    <string name="choose_data_sim_summary" product="tablet">모바일 데이터를 위해 어느 카드를 사용하시겠습니까? 태블릿을 설정하는 동안 선택한 SIM 카드에서 통신 요금이 발생할 수 있습니다.</string>
-    <string name="choose_data_sim_summary" product="default">모바일 데이터를 위해 어느 카드를 사용하시겠습니까? 휴대전화를 설정하는 동안 선택한 SIM 카드에서 통신 요금이 발생할 수 있습니다.</string>
-    <string name="date_time_summary">시간대를 설정하고 필요한 경우 현재 날짜 및 시간을 조정</string>
-    <string name="location_access_summary"><b>사용자에게 권한을 요청한 앱</b>이 위치 정보를 사용할 수 있도록 합니다. 현재 위치 정보와 예전 위치 정보가 포함됩니다.</string>
-    <string name="setup_mobile_data">이동 통신망 데이터 켜기</string>
-    <string name="setup_mobile_data_no_service">서비스 불가</string>
-    <string name="setup_mobile_data_emergency_only">긴급 통화만 가능</string>
-    <string name="enable_mobile_data_summary">기기를 설정하는 동안 이동 통신망 데이터를 사용하겠습니까? 이동 통신망 데이터를 켜면 데이터 요금이 부과될 수 있습니다.</string>
-    <string name="no">아니오</string>
-    <string name="yes">예</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">긴급 통화</string>
     <string name="accessibility_settings">접근성 설정</string>
+    <string name="setup_locale">언어</string>
+    <string name="sim_locale_changed">%1$s SIM 인식됨</string>
+    <string name="setup_sim_missing">SIM 카드 없음</string>
+    <string name="sim_missing_summary" product="tablet">태블릿에서 SIM 카드가 감지되지 않았습니다. SIM 카드를 삽입하려면 기기와 함께 제공된 설명을 읽어보십시오.</string>
+    <string name="sim_missing_summary" product="default">휴대전화에서 SIM 카드가 감지되지 않았습니다. SIM 카드를 삽입하려면 기기와 함께 제공된 설명을 읽어보십시오.</string>
+    <string name="setup_datetime">날짜 및 시간</string>
+    <string name="date_time_summary">시간대를 설정하고 필요한 경우 현재 날짜 및 시간을 조정</string>
+    <string name="setup_current_date">현재 날짜</string>
+    <string name="setup_current_time">현재 시간</string>
+    <string name="intro_restore_title">앱 및 데이터 복원</string>
+    <string name="intro_restore_button">백업에서 복원</string>
+    <string name="setup_location">위치 서비스</string>
+    <string name="location_access_summary"><b>사용자에게 권한을 요청한 앱</b>이 위치 정보를 사용할 수 있도록 합니다. 현재 위치 정보와 예전 위치 정보가 포함됩니다.</string>
+    <string name="location_agps_access_summary">위치 서비스가 켜져 있으면 인터넷에서 A-GPS 데이터를 다운로드합니다. GPS 시작 성능을 크게 향상시킬 수 있습니다.</string>
+    <string name="update_recovery_title">Lineage 복구 모드 업데이트</string>
+    <string name="update_recovery_description">매 업데이트 적용 후 첫 부팅 시 Lineage 복구 모드를 업데이트합니다.</string>
+    <string name="update_recovery_warning">설정을 마치면 복구 모드를 즉시 업데이트합니다. 원치 않는 경우 이 기능을 비활성화하세요.</string>
+    <string name="update_recovery_setting">OS와 함께 Lineage 복구 모드 업데이트</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS 기능</string>
     <string name="services_pp_explanation">이 서비스는 기기의 성능 향상을 위해 작동합니다. 수집한 데이터는 <xliff:g id="name" example="LineageOS">%1$s</xliff:g>의 개인 정보 보호 정책에 따라 사용됩니다.</string>
     <string name="services_find_privacy_policy">다른 기기에서 <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> 페이지를 방문하여 개인 정보 보호 정책을 확인할 수 있습니다.</string>
@@ -57,37 +41,10 @@
     <string name="services_metrics_label"><xliff:g id="name" example="LineageOS의 개선을 돕기 위해">%1$s</xliff:g> 진단 및 사용 정보를 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>에 보냅니다. 이 정보로는 사용자를 식별할 수 없으며 <xliff:g id="name" example="LineageOS">%3$s</xliff:g>에 새로운 기능을 추가하거나 배터리 수명, 앱 성능을 개선하는 데 도움이 됩니다.</string>
     <string name="services_os_nav_keys_label">하드웨어 키 대신 <b>화면 상의 내비게이션 키</b>를 사용합니다.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">백업 화면 잠금 방법 선택</string>
-    <string name="settings_biometric_setup_details">화면을 어떻게 잠그시겠습니까?</string>
-    <string name="fingerprint_setup_title">지문 설정</string>
-    <string name="fingerprint_setup_summary">지문 인식 센서를 사용하여 화면 잠금을 해제하기 위해서는 아래의 설정을 완료해야 합니다.</string>
-    <string name="fingerprint_setup_add_fingerprint">지문 추가</string>
-    <string name="face_setup_title">얼굴 인식 설정</string>
-    <string name="face_setup_summary">얼굴 인식을 사용하여 화면 잠금을 해제하기 위해서는 아래의 설정을 완료해야 합니다.</string>
-    <string name="face_setup_add_face">얼굴 추가</string>
-    <string name="biometric_setup_backup_lock_method">보조 잠금 해제 방법 설정</string>
-    <string name="biometric_setup_screen_lock_setup">화면 잠금 설정</string>
-    <string name="sim_locale_changed">%1$s SIM 인식됨</string>
-    <string name="settings_lockscreen_setup_title">화면 잠금 방식 선택</string>
-    <string name="settings_lockscreen_setup_details">화면을 어떻게 잠그시겠습니까?</string>
-    <string name="lockscreen_setup_title" product="default">휴대전화 보호</string>
-    <string name="lockscreen_setup_title" product="device">기기 보호</string>
-    <string name="lockscreen_setup_title" product="tablet">태블릿 보호</string>
-    <string name="lockscreen_setup_summary"><b>이 기기를 보호</b>하고 화면 잠금 해제에 PIN, 패턴 또는 비밀번호가 필요하도록 설정할 수 있습니다.</string>
-    <string name="lockscreen_setup_screen_lock_setup">설정</string>
-    <string name="intro_restore_title">앱 및 데이터 복원</string>
-    <string name="intro_restore_subtitle">최근에 <xliff:g id="name" example="LineageOS">%s</xliff:g> 휴대전화에서 진행한 백업이 있는 경우 여기에서 복원할 수 있습니다.</string>
-    <string name="intro_restore_button">백업에서 복원</string>
-    <string name="update_recovery_title">Lineage 복구 모드 업데이트</string>
-    <string name="update_recovery_description">매 업데이트 적용 후 첫 부팅 시 Lineage 복구 모드를 업데이트합니다.</string>
-    <string name="update_recovery_warning">설정을 마치면 복구 모드를 즉시 업데이트합니다. 원치 않는 경우 이 기능을 비활성화하세요.</string>
-    <string name="update_recovery_setting">OS와 함께 Lineage 복구 모드 업데이트</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">탐색</string>
     <string name="navigation_summary">마음에 드는 탐색 방법을 선택하세요</string>
     <string name="gesture_navigation">제스처 탐색</string>
     <string name="two_button_navigation">2버튼 탐색</string>
     <string name="navbar_navigation">3버튼 탐색</string>
     <string name="hide_gesture_hint">제스처 탐색 도움말 숨기기</string>
-    <string name="location_agps_access_summary">위치 서비스가 켜져 있으면 인터넷에서 A-GPS 데이터를 다운로드합니다. GPS 시작 성능을 크게 향상시킬 수 있습니다.</string>
 </resources>

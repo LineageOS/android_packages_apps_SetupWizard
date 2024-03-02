@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">გამართვის მეგზური</string>
@@ -23,33 +12,29 @@
     <string name="done">მზადაა</string>
     <string name="ok">კარგი</string>
     <string name="loading">ერთი წამით\u2026</string>
-    <string name="setup_complete">გამართვა დასრულებულია</string>
-    <string name="setup_welcome">მოგესალმებით</string>
     <string name="setup_welcome_message">მოგესალმებათ <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">ენა</string>
-    <string name="setup_wifi">აირჩიეთ WiFi</string>
-    <string name="setup_sim_missing">SIM-ბარათი ამოკლებულია</string>
-    <string name="setup_choose_data_sim">აირჩიეთ SIM ინტერნეტისთვის</string>
-    <string name="setup_location">მდებარეობის მომსახურებები</string>
-    <string name="setup_other">სხვა მომსახურებები</string>
-    <string name="setup_datetime">თარიღი და დრო</string>
-    <string name="setup_current_date">მიმდინარე თარიღი</string>
-    <string name="setup_current_time">მიმდინარე დრო</string>
-    <string name="sim_missing_summary" product="tablet">SIM-ბარათი არაა აღმოჩენილი თქვენს პლანშეტში. SIM-ბარათის სწორად ჩასადებად, იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
-    <string name="sim_missing_summary" product="default">SIM-ბარათი არაა აღმოჩენილი თქვენს ტელეფონში. SIM-ბარათის სწორად ჩასადებად, იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
-    <string name="choose_data_sim_summary" product="tablet">რომელი SIM-ბარათის გამოყენება გსურთ მობილური ინტერნეტისთვის? შერჩეულ SIM-ბარათზე, შესაძლოა თანხა ჩამოგეჭრათ, პლანშეტის გასამართად გამოყენებისას.</string>
-    <string name="choose_data_sim_summary" product="default">რომელი SIM-ბარათის გამოყენება გსურთ მობილური ინტერნეტისთვის? შერჩეულ SIM-ბარათზე, შესაძლოა თანხა ჩამოგეჭრათ, ტელეფონის გასამართად გამოყენებისას.</string>
-    <string name="date_time_summary">სასაათე სარტყლის დაყენება, დროისა და თარიღის საჭიროებისამებრ გასწორება</string>
-    <string name="location_access_summary"><b>ნების დართვა იმ აპებისთვის, რომელთაც ითხოვეს</b> თქვენი მდებარეობის მონაცემთა გამოყენების უფლება. შესაძლოა მოიცავდეს როგორც მიმდინარე, ასევე წარსული მდებარეობის მონაცემებსაც.</string>
-    <string name="setup_mobile_data">ფიჭური ინტერნეტის ჩართვა</string>
-    <string name="setup_mobile_data_no_service">მომსახურება არაა</string>
-    <string name="setup_mobile_data_emergency_only">მხოლოდ საგანგებო ზარები</string>
-    <string name="enable_mobile_data_summary">გსურთ გამართვისას, ფიჭური ინტერნეტის გამოყენება? ფიჭური ინტერნეტის ჩართვის შედეგად, შესაძლოა თანხა ჩამოგეჭრათ.</string>
-    <string name="no">არა</string>
-    <string name="yes">დიახ</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">საგანგებო ზარი</string>
     <string name="accessibility_settings">გამარტივებული პარამეტრები</string>
+    <string name="setup_locale">ენა</string>
+    <string name="sim_locale_changed">%1$s SIM-ბარათია აღმოჩენილი</string>
+    <string name="setup_sim_missing">SIM-ბარათი ამოკლებულია</string>
+    <string name="sim_missing_summary" product="tablet">SIM-ბარათი არაა აღმოჩენილი თქვენს პლანშეტში. SIM-ბარათის სწორად ჩასადებად, იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
+    <string name="sim_missing_summary" product="default">SIM-ბარათი არაა აღმოჩენილი თქვენს ტელეფონში. SIM-ბარათის სწორად ჩასადებად, იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
+    <string name="setup_datetime">თარიღი და დრო</string>
+    <string name="date_time_summary">სასაათე სარტყლის დაყენება, დროისა და თარიღის საჭიროებისამებრ გასწორება</string>
+    <string name="setup_current_date">მიმდინარე თარიღი</string>
+    <string name="setup_current_time">მიმდინარე დრო</string>
+    <string name="intro_restore_title">აპებისა და მონაცემების აღდგენა</string>
+    <string name="intro_restore_subtitle">თუ გაქვთ Seedvault-მარქაფით შენახული <xliff:g id="name" example="LineageOS">%s</xliff:g> ან ნებისმიერი სხვა საოპერაციო სისტემა, აქედან შეძლებთ აღადგინოთ.</string>
+    <string name="intro_restore_button">აღდგენა მარქაფიდან</string>
+    <string name="setup_location">მდებარეობის მომსახურებები</string>
+    <string name="location_access_summary"><b>ნების დართვა იმ აპებისთვის, რომელთაც ითხოვეს</b> თქვენი მდებარეობის მონაცემთა გამოყენების უფლება. შესაძლოა მოიცავდეს როგორც მიმდინარე, ასევე წარსული მდებარეობის მონაცემებსაც.</string>
+    <string name="location_agps_access_summary">მდებარეობა როცა ჩართულია, <b>ინტერნეტიდან ჩამოიტვირთება დამხმარე თანამგზავრული მონაცემები</b>, რომლებიც მეტად აუმჯობესებს შედეგიანობას GPS-ის ამუშავებისთანავე.</string>
+    <string name="update_recovery_title">Lineage-აღმდგენის განახლება</string>
+    <string name="update_recovery_description">განაახლებს Lineage-აღმდგენს პირველი ჩატვირთვისას, ყოველი განახლების შემდგომ.</string>
+    <string name="update_recovery_warning">აღმდგენი განახლდება გამართვის დასრულებისთანავე. თუ გსურთ, ხელუხლებელი დარჩეს, გათიშეთ ეს შესაძლებლობა.</string>
+    <string name="update_recovery_setting">განახლდეს Lineage-აღმდგენი სისტემასთან ერთად</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS-ს შესაძლებლობები</string>
     <string name="services_pp_explanation">ამ მომსახურებების მუშაობა აფართოებს თქვენი მოწყობილობების შესაძლებლობებს. მონაცემებით სარგებლობის პირობებს განსაზღვრავს <xliff:g id="name" example="LineageOS">%1$s</xliff:g> მისი პირადულობის დებულებით.</string>
     <string name="services_find_privacy_policy">შეგიძლიათ გაეცნოთ პირადულობის დაცვის დებულებას სხვა მოწყობილობიდან მისამართზე <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +42,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> იმ საკვლევი და გამოყენების მონაცემთა ავტომატური გაგზავნით, რომელთაც გაეცნობა <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. ეს მონაცემები არ გამოდგება თქვენი ვინაობის დასადგენად, სამაგიეროდ ხელს გაუმართავს შემმუშავებლებს, რომ დახვეწონ ბატარეის მოხმარება, გაზარდონ აპების წარმადობა და გააუმჯობესონ <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ახალი შესაძლებლობებით.</string>
     <string name="services_os_nav_keys_label"><b>ეკრანული ღილაკების გამოყენება სამოძრაოდ</b> ფიზიკურის ნაცვლად.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">ეკრანის სათადარიგო ჩამკეტის სახეობის არჩევა</string>
-    <string name="settings_biometric_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
-    <string name="fingerprint_setup_title">თითის ანაბეჭდის გამართვა</string>
-    <string name="fingerprint_setup_summary">თითის ანაბეჭდით ეკრანის გასახსნელად დაგჭირდებათ:</string>
-    <string name="fingerprint_setup_add_fingerprint">თითის ანაბეჭდის დამატება</string>
-    <string name="face_setup_title">სახის ამოცნობა</string>
-    <string name="face_setup_summary">სახის ამოცნობით ეკრანის გასახსნელად დაგჭირდებათ:</string>
-    <string name="face_setup_add_face">სახის დამატება</string>
-    <string name="biometric_setup_backup_lock_method">გასახსნელად დამატებითი საშუალების დაყენება</string>
-    <string name="biometric_setup_screen_lock_setup">ეკრანის ჩაკეტვის გამართვა</string>
-    <string name="sim_locale_changed">%1$s SIM-ბარათია აღმოჩენილი</string>
-    <string name="settings_lockscreen_setup_title">ეკრანის ჩამკეტის სახეობის არჩევა</string>
-    <string name="settings_lockscreen_setup_details">როგორ გსურთ ეკრანის ჩაკეტვა?</string>
-    <string name="lockscreen_setup_title" product="default">დაიცავით თქვენი ტელეფონი</string>
-    <string name="lockscreen_setup_title" product="device">დაიცავით მოწყობილობა</string>
-    <string name="lockscreen_setup_title" product="tablet">დაიცავით თქვენი პლანშეტი</string>
-    <string name="lockscreen_setup_summary"><b>დაიცავით მოწყობილობა</b> და ჩართეთ PIN-კოდის, მონახაზის ან პაროლის შეყვანის მოთხოვნა, ჩაკეტილი ეკრანის გასახსნელად</string>
-    <string name="lockscreen_setup_screen_lock_setup">გამართვა</string>
-    <string name="intro_restore_title">აპებისა და მონაცემების აღდგენა</string>
-    <string name="intro_restore_subtitle">თუ თქვენი წინა <xliff:g id="name" example="LineageOS">%s</xliff:g>-მოწყობილობის სამარქაფო ასლი გაქვთ, აქედან შეძლებთ აღდგენას.</string>
-    <string name="intro_restore_button">აღდგენა მარქაფიდან</string>
-    <string name="update_recovery_title">Lineage-აღმდგენის განახლება</string>
-    <string name="update_recovery_description">განაახლებს Lineage-აღმდგენს პირველი ჩატვირთვისას, ყოველი განახლების შემდგომ.</string>
-    <string name="update_recovery_warning">აღმდგენი განახლდება გამართვის დასრულებისთანავე. თუ გსურთ, ხელუხლებელი დარჩეს, გათიშეთ ეს შესაძლებლობა.</string>
-    <string name="update_recovery_setting">განახლდეს Lineage-აღმდგენი სისტემასთან ერთად</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">სამოძრაო</string>
     <string name="navigation_summary">აირჩიეთ სასურველი ხერხი სამოძრაოდ</string>
     <string name="gesture_navigation">ჟესტებით სამოძრაო</string>
     <string name="two_button_navigation">2-ღილაკიანი სამოძრაო</string>
     <string name="navbar_navigation">3-ღილაკიანი სამოძრაო</string>
     <string name="hide_gesture_hint">ჟესტებით სამოძრაო მანიშნებლის დამალვა</string>
-    <string name="location_agps_access_summary">მდებარეობა როცა ჩართულია, <b>ინტერნეტიდან ჩამოიტვირთება დამხმარე თანამგზავრული მონაცემები</b>, რომლებიც მეტად აუმჯობესებს შედეგიანობას GPS-ის ამუშავებისთანავე.</string>
+    <string name="setup_theme">იერსახე</string>
+    <string name="theme_summary">მუქი იერსახე იყენებს შავ ფონს და მეტად ზოგავს ენერგიას ზოგიერთ ეკრანზე</string>
+    <string name="dark">მუქი</string>
+    <string name="light">ნათელი</string>
 </resources>
