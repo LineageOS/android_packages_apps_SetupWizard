@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Assistent de configuració</string>
@@ -23,33 +12,29 @@
     <string name="done">Fet</string>
     <string name="ok">Accepta</string>
     <string name="loading">Només un seg\u2026</string>
-    <string name="setup_complete">Configuració completa</string>
-    <string name="setup_welcome">Benvingut</string>
     <string name="setup_welcome_message">Benvingut a <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Idioma</string>
-    <string name="setup_wifi">Selecciona Wi-Fi</string>
-    <string name="setup_sim_missing">Falta la targeta SIM</string>
-    <string name="setup_choose_data_sim">Tria una targeta SIM per a les dades</string>
-    <string name="setup_location">Serveis d\'ubicació</string>
-    <string name="setup_other">Altres serveis</string>
-    <string name="setup_datetime">Data i hora</string>
-    <string name="setup_current_date">Data actual</string>
-    <string name="setup_current_time">Hora actual</string>
-    <string name="sim_missing_summary" product="tablet">No s\'ha detectat una targeta SIM a la teva tauleta. Per inserir una targeta SIM, llegeix les instruccions que venien amb el teu dispositiu.</string>
-    <string name="sim_missing_summary" product="default">No s\'ha detectat una targeta SIM al teu telèfon. Per inserir una targeta SIM, llegeix les instruccions que venien amb el teu dispositiu.</string>
-    <string name="choose_data_sim_summary" product="tablet">Quina SIM vols utilitzar per a les dades? La SIM seleccionada pot provocar càrrecs per part de l\'operador ja que servirà per configurar la teva tauleta.</string>
-    <string name="choose_data_sim_summary" product="default">Quina SIM vols utilitzar per a les dades? La SIM seleccionada pot provocar càrrecs per part de l\'operador ja que servirà per configurar el teu telèfon.</string>
-    <string name="date_time_summary">Estableix el teu fus horari i ajusta la data i hora actual si és necessari</string>
-    <string name="location_access_summary"><b>Permet a les aplicacions que han demanat el teu permís</b> utilitzar la teva informació d\'ubicació. Això pot incloure la teva ubicació i ubicacions anteriors.</string>
-    <string name="setup_mobile_data">Encén les dades mòbils</string>
-    <string name="setup_mobile_data_no_service">Sense servei</string>
-    <string name="setup_mobile_data_emergency_only">Només trucades d\'emergència</string>
-    <string name="enable_mobile_data_summary">Vols utilitzar les dades mòbils durant la instal·lació? Encendre les dades mòbils pot provocar càrrecs de dades.</string>
-    <string name="no">No</string>
-    <string name="yes">Sí</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Trucada d\'emergència</string>
     <string name="accessibility_settings">Configuració d\'accessibilitat</string>
+    <string name="setup_locale">Idioma</string>
+    <string name="sim_locale_changed">%1$s SIM detectada</string>
+    <string name="setup_sim_missing">Falta la targeta SIM</string>
+    <string name="sim_missing_summary" product="tablet">No s\'ha detectat una targeta SIM a la teva tauleta. Per inserir una targeta SIM, llegeix les instruccions que venien amb el teu dispositiu.</string>
+    <string name="sim_missing_summary" product="default">No s\'ha detectat una targeta SIM al teu telèfon. Per inserir una targeta SIM, llegeix les instruccions que venien amb el teu dispositiu.</string>
+    <string name="setup_datetime">Data i hora</string>
+    <string name="date_time_summary">Estableix el teu fus horari i ajusta la data i hora actual si és necessari</string>
+    <string name="setup_current_date">Data actual</string>
+    <string name="setup_current_time">Hora actual</string>
+    <string name="intro_restore_title">Restauració d\'aplicacions i dades</string>
+    <string name="intro_restore_subtitle">Si teniu una còpia de seguretat del Seedvault de <xliff:g id="name" example="LineageOS">%s</xliff:g> o qualsevol altre sistema operatiu, podeu recuperar-la aquí.</string>
+    <string name="intro_restore_button">Restaura des de la còpia de seguretat</string>
+    <string name="setup_location">Serveis d\'ubicació</string>
+    <string name="location_access_summary"><b>Permet a les aplicacions que han demanat el teu permís</b> utilitzar la teva informació d\'ubicació. Això pot incloure la teva ubicació i ubicacions anteriors.</string>
+    <string name="location_agps_access_summary">Quan la ubicació està activada, <b>baixa dades d\'assistència satelital d\'Internet</b>, cosa que pot millorar en gran mesura el rendiment inicial del GPS.</string>
+    <string name="update_recovery_title">Actualització del recuperador del Lineage</string>
+    <string name="update_recovery_description">Actualitza el recuperador del Lineage en el primer inici posterior a cada actualització.</string>
+    <string name="update_recovery_warning">La recuperació s\'actualitzarà tan bon punt hàgiu acabat la configuració. Si voleu mantenir-lo intacte, desactiveu aquesta funció.</string>
+    <string name="update_recovery_setting">Actualitza el recuperador del Lineage juntament amb el sistema operatiu</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Característiques de LineageOS</string>
     <string name="services_pp_explanation">Aquests serveis funcionen per ampliar les capacitats del vostre dispositiu. Les dades s\'utilitzaran d\'acord amb la política de privadesa de &lt;xliff:g id="name" example="LineageOS"&gt;.</string>
     <string name="services_find_privacy_policy">Podeu llegir la política de privadesa en un altre dispositiu visitant <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +42,14 @@
     <string name="services_metrics_label">&lt;xliff:g id="name" example="Help improve LineageOS"&gt; enviant automàticament dades de diagnòstic i d\'ús a &lt;xliff:g id="name" example="LineageOS"&gt;. Aquesta informació no es pot utilitzar per identificar-vos i dóna un cop de mà als equips que treballen en coses com ara la durada de la bateria, el rendiment de les aplicacions i les noves característiques de &lt;xliff:g id="name" example="LineageOS"&gt;.</string>
     <string name="services_os_nav_keys_label"><b>Utilitza les tecles de navegació en pantalla</b> enlloc de les tecles físiques.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation"/>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Selecciona el tipus de bloqueig de pantalla de reserva</string>
-    <string name="settings_biometric_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
-    <string name="fingerprint_setup_title">Configuració de l\'empremta digital</string>
-    <string name="fingerprint_setup_summary">Per utilitzar el teu sensor d\'empremtes digitals per desbloquejar la pantalla, hauràs de:</string>
-    <string name="fingerprint_setup_add_fingerprint">Afegeix la teva empremta digital</string>
-    <string name="face_setup_title">Configuració facial</string>
-    <string name="face_setup_summary">Per utilitzar la cara per desbloquejar la pantalla, haureu de:</string>
-    <string name="face_setup_add_face">Afegiu la vostra cara</string>
-    <string name="biometric_setup_backup_lock_method">Configura el mètode de desbloqueig alternatiu</string>
-    <string name="biometric_setup_screen_lock_setup">Configuració del bloqueig de pantalla</string>
-    <string name="sim_locale_changed">%1$s SIM detectada</string>
-    <string name="settings_lockscreen_setup_title">Selecciona el tipus de bloqueig de pantalla</string>
-    <string name="settings_lockscreen_setup_details">Com t\'agradaria bloquejar la teva pantalla?</string>
-    <string name="lockscreen_setup_title" product="default">Protegeix el teu telèfon</string>
-    <string name="lockscreen_setup_title" product="device">Protegiu el vostre dispositiu</string>
-    <string name="lockscreen_setup_title" product="tablet">Protegeix la tauleta</string>
-    <string name="lockscreen_setup_summary"><b>Protegeix el dispositiu</b> i estableix un PIN, un patró o una contrasenya per desbloquejar la pantalla</string>
-    <string name="lockscreen_setup_screen_lock_setup">Configura</string>
-    <string name="intro_restore_title">Restauració d\'aplicacions i dades</string>
-    <string name="intro_restore_subtitle">Si teniu una còpia de seguretat del vostre darrer dispositiu <xliff:g id="name" example="LineageOS">%s</xliff:g>, podeu restaurar-la aquí.</string>
-    <string name="intro_restore_button">Restaura des de la còpia de seguretat</string>
-    <string name="update_recovery_title">Actualització del recuperador del Lineage</string>
-    <string name="update_recovery_description">Actualitza el recuperador del Lineage en el primer inici posterior a cada actualització.</string>
-    <string name="update_recovery_warning">La recuperació s\'actualitzarà tan bon punt hàgiu acabat la configuració. Si voleu mantenir-lo intacte, desactiveu aquesta funció.</string>
-    <string name="update_recovery_setting">Actualitza el recuperador del Lineage juntament amb el sistema operatiu</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Navegació</string>
     <string name="navigation_summary">Trieu el mètode de navegació preferit</string>
     <string name="gesture_navigation">Navegació gestual</string>
     <string name="two_button_navigation">Navegació de 2 botons</string>
     <string name="navbar_navigation">Navegació de 3 botons</string>
     <string name="hide_gesture_hint">Amaga l\'indicador de navegació gestual</string>
-    <string name="location_agps_access_summary">Quan la ubicació està activada, <b>baixa dades d\'assistència satelital d\'Internet</b>, cosa que pot millorar en gran mesura el rendiment inicial del GPS.</string>
+    <string name="setup_theme">Tema</string>
+    <string name="theme_summary">El tema fosc utilitza un fons negre per mantenir la bateria viva durant més temps en algunes pantalles</string>
+    <string name="dark">Fosc</string>
+    <string name="light">Clar</string>
 </resources>

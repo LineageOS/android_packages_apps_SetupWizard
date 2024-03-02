@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Οδηγός εγκατάστασης</string>
@@ -23,33 +12,29 @@
     <string name="done">Ολοκληρώθηκε</string>
     <string name="ok">ΟΚ</string>
     <string name="loading">Μισό λεπτό\u2026</string>
-    <string name="setup_complete">Η εγκατάσταση ολοκληρώθηκε</string>
-    <string name="setup_welcome">Καλώς ήλθατε</string>
     <string name="setup_welcome_message">Καλώς ήλθατε στο <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Γλώσσα</string>
-    <string name="setup_wifi">Επιλέξτε Wi-Fi</string>
-    <string name="setup_sim_missing">Η κάρτα SIM λείπει</string>
-    <string name="setup_choose_data_sim">Επιλέξτε μια SIM για δεδομένα</string>
-    <string name="setup_location">Υπηρεσίες τοποθεσίας</string>
-    <string name="setup_other">Άλλες υπηρεσίες</string>
-    <string name="setup_datetime">Ημερομηνία &amp; ώρα</string>
-    <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
-    <string name="setup_current_time">Τρέχουσα ώρα</string>
-    <string name="sim_missing_summary" product="tablet">Δεν εντοπίστηκε κάρτα SIM στο tablet σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
-    <string name="sim_missing_summary" product="default">Δεν εντοπίστηκε κάρτα SIM στο τηλέφωνό σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
-    <string name="choose_data_sim_summary" product="tablet">Ποιά SIM θέλετε να χρησιμοποιήσετε για τα δεδομένα; Η επιλεγμένη SIM μπορεί να επιφέρει χρεώσεις δικτύου, αφού θα χρησιμοποιηθεί για τη ρύθμιση του tablet σας.</string>
-    <string name="choose_data_sim_summary" product="default">Ποιά SIM θέλετε να χρησιμοποιήσετε για τα δεδομένα; Η επιλεγμένη SIM μπορεί να επιφέρει χρεώσεις δικτύου, αφού θα χρησιμοποιηθεί για τη ρύθμιση του τηλεφώνου σας.</string>
-    <string name="date_time_summary">Ορίστε τη ζώνη ώρας σας και προσαρμόστε την τρέχουσα ημερομηνία και ώρα εάν χρειάζεται</string>
-    <string name="location_access_summary"><b>Επιτρέπει σε εφαρμογές που έχουν ζητήσει την άδειά σας</b> να χρησιμοποιήσουν τις πληροφορίες τοποθεσίας σας. Αυτό μπορεί να περιλαμβάνει την τρέχουσα και τις προηγούμενες τοποθεσίες σας.</string>
-    <string name="setup_mobile_data">Ενεργοποίηση δεδομένων κινητής τηλεφωνίας</string>
-    <string name="setup_mobile_data_no_service">Καμία υπηρεσία</string>
-    <string name="setup_mobile_data_emergency_only">Μόνο κλήσεις έκτακτης ανάγκης</string>
-    <string name="enable_mobile_data_summary">Θέλετε να χρησιμοποιήσετε τα δεδομένα κινητής τηλεφωνίας κατά την διάρκεια της εγκατάστασης;. Η ενεργοποίηση των δεδομένων κινητής τηλεφωνίας μπορεί να υπόκειται σε χρεώσεις από το πάροχο σας.</string>
-    <string name="no">Όχι</string>
-    <string name="yes">Ναι</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Κλήση έκτακτης ανάγκης</string>
     <string name="accessibility_settings">Ρυθμίσεις προσβασιμότητας</string>
+    <string name="setup_locale">Γλώσσα</string>
+    <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
+    <string name="setup_sim_missing">Η κάρτα SIM λείπει</string>
+    <string name="sim_missing_summary" product="tablet">Δεν εντοπίστηκε κάρτα SIM στο tablet σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
+    <string name="sim_missing_summary" product="default">Δεν εντοπίστηκε κάρτα SIM στο τηλέφωνό σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
+    <string name="setup_datetime">Ημερομηνία &amp; ώρα</string>
+    <string name="date_time_summary">Ορίστε τη ζώνη ώρας σας και προσαρμόστε την τρέχουσα ημερομηνία και ώρα εάν χρειάζεται</string>
+    <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
+    <string name="setup_current_time">Τρέχουσα ώρα</string>
+    <string name="intro_restore_title">Επαναφορά εφαρμογών και δεδομένων</string>
+    <string name="intro_restore_subtitle">Εάν έχετε ένα αντίγραφο ασφαλείας Seedvault από το <xliff:g id="name" example="LineageOS">%s</xliff:g> ή οποιοδήποτε άλλο λειτουργικό σύστημα, μπορείτε να το επαναφέρετε εδώ.</string>
+    <string name="intro_restore_button">Επαναφορά από αντίγραφο ασφαλείας</string>
+    <string name="setup_location">Υπηρεσίες τοποθεσίας</string>
+    <string name="location_access_summary"><b>Επιτρέπει σε εφαρμογές που έχουν ζητήσει την άδειά σας</b> να χρησιμοποιήσουν τις πληροφορίες τοποθεσίας σας. Αυτό μπορεί να περιλαμβάνει την τρέχουσα και τις προηγούμενες τοποθεσίες σας.</string>
+    <string name="location_agps_access_summary">Όταν η τοποθεσία είναι ενεργοποιημένη, <b>λήψη δεδομένων δορυφορικής βοήθειας από το διαδίκτυο</b>, τα οποία μπορούν να βελτιώσουν σημαντικά την απόδοση εκκίνησης GPS.</string>
+    <string name="update_recovery_title">Ενημέρωση Lineage Recovery</string>
+    <string name="update_recovery_description">Ενημέρωση της Lineage Recovery στην πρώτη εκκίνηση μετά από κάθε ενημέρωση.</string>
+    <string name="update_recovery_warning">Η Recovery θα ενημερωθεί μόλις ολοκληρώσετε τη ρύθμιση. Αν θέλετε να κρατήσετε την τρέχουσα recovery, απενεργοποιήστε αυτή την επιλογή.</string>
+    <string name="update_recovery_setting">Ενημέρωση Lineage Recovery παράλληλα με το λειτουργικό σύστημα</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Χαρακτηριστικά LineageOS</string>
     <string name="services_pp_explanation">Οι υπηρεσίες αυτές έχουν σκοπό να επεκτείνουν τις δυνατότητες της συσκευής σας. Τα δεδομένα θα χρησιμοποιηθούν σύμφωνα με την πολιτική απορρήτου του <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">Μπορείτε να διαβάσετε την πολιτική απορρήτου σε μια άλλη συσκευή επισκεπτόμενοι το <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +42,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> στέλνοντας αυτόματα διαγνωστικά δεδομένα και στατιστικά χρήσης στο <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Αυτές οι πληροφορίες δε μπορούν να χρησιμοποιηθούν για να σας αναγνωρίσουν και δίνουν ένα χέρι βοηθείας στις ομάδες που εργάζονται σε θέματα όπως η διάρκεια ζωής μπαταρίας, επιδόσεις εφαρμογών και νέα χαρακτηριστικά του <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Κάντε χρήση των πλήκτρων πλοήγησης της οθόνης</b> αντί των φυσικών πλήκτρων.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Επιλέξτε δευτερεύον κλείδωμα οθόνης</string>
-    <string name="settings_biometric_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
-    <string name="fingerprint_setup_title">Ρύθμιση δακτυλικού αποτυπώματος</string>
-    <string name="fingerprint_setup_summary">Για να χρησιμοποιήσετε τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
-    <string name="fingerprint_setup_add_fingerprint">Προσθέστε το δακτυλικό σας αποτύπωμα</string>
-    <string name="face_setup_title">Ρύθμιση προσώπου</string>
-    <string name="face_setup_summary">Για να χρησιμοποιήσετε το πρόσωπό σας για να ξεκλειδώνετε την οθόνη σας, θα πρέπει να:</string>
-    <string name="face_setup_add_face">Προσθέστε το πρόσωπό σας</string>
-    <string name="biometric_setup_backup_lock_method">Ρυθμίστε ένα δευτερεύον κλείδωμα οθόνης</string>
-    <string name="biometric_setup_screen_lock_setup">Ρύθμιση κλειδώματος οθόνης</string>
-    <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
-    <string name="settings_lockscreen_setup_title">Επιλέξτε κλείδωμα οθόνης</string>
-    <string name="settings_lockscreen_setup_details">Πώς θα θέλατε να κλειδώνετε την οθόνη σας;</string>
-    <string name="lockscreen_setup_title" product="default">Προστατέψτε το τηλέφωνό σας</string>
-    <string name="lockscreen_setup_title" product="device">Προστατέψτε τη συσκευή σας</string>
-    <string name="lockscreen_setup_title" product="tablet">Προστατέψτε το tablet σας</string>
-    <string name="lockscreen_setup_summary"><b>Προστατέψτε αυτήν τη συσκευή</b> και ζητήστε ένα PIN, ένα μοτίβο ή έναν κωδικό πρόσβασης για να ξεκλειδώσετε την οθόνη</string>
-    <string name="lockscreen_setup_screen_lock_setup">Ρύθμιση</string>
-    <string name="intro_restore_title">Επαναφορά εφαρμογών και δεδομένων</string>
-    <string name="intro_restore_subtitle">Εάν έχετε αντίγραφο ασφαλείας από την τελευταία <xliff:g id="name" example="LineageOS">%s</xliff:g> συσκευή σας, μπορείτε να το επαναφέρετε εδώ.</string>
-    <string name="intro_restore_button">Επαναφορά από αντίγραφο ασφαλείας</string>
-    <string name="update_recovery_title">Ενημέρωση Lineage Recovery</string>
-    <string name="update_recovery_description">Ενημέρωση της Lineage Recovery στην πρώτη εκκίνηση μετά από κάθε ενημέρωση.</string>
-    <string name="update_recovery_warning">Η Recovery θα ενημερωθεί μόλις ολοκληρώσετε τη ρύθμιση. Αν θέλετε να κρατήσετε την τρέχουσα recovery, απενεργοποιήστε αυτή την επιλογή.</string>
-    <string name="update_recovery_setting">Ενημέρωση Lineage Recovery παράλληλα με το λειτουργικό σύστημα</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Πλοήγηση</string>
     <string name="navigation_summary">Επιλογή προτιμώμενης μεθόδου πλοήγησης</string>
     <string name="gesture_navigation">Πλοήγηση με χειρονομίες</string>
     <string name="two_button_navigation">Πλοήγηση με δύο πλήκτρα</string>
     <string name="navbar_navigation">Πλοήγηση με τρία πλήκτρα</string>
     <string name="hide_gesture_hint">Απόκρυψη υποδείξεων πλοήγησης με χειρονομίες</string>
-    <string name="location_agps_access_summary">Όταν η τοποθεσία είναι ενεργοποιημένη, <b>λήψη δεδομένων δορυφορικής βοήθειας από το διαδίκτυο</b>, τα οποία μπορούν να βελτιώσουν σημαντικά την απόδοση εκκίνησης GPS.</string>
+    <string name="setup_theme">Θέμα</string>
+    <string name="theme_summary">Το Σκούρο θέμα χρησιμοποιεί μαύρο φόντο για να συμβάλλει στην αύξηση της διάρκειας της μπαταρίας σε ορισμένες οθόνες</string>
+    <string name="dark">Σκούρο</string>
+    <string name="light">Ανοιχτόχρωμο</string>
 </resources>

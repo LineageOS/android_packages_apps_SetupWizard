@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Installationsguide</string>
@@ -23,44 +12,20 @@
     <string name="done">Färdig</string>
     <string name="ok">OK</string>
     <string name="loading">Vänta en liten stund\u2026</string>
-    <string name="setup_complete">Konfigurationen är klar</string>
-    <string name="setup_welcome">Välkommen</string>
+    <string name="emergency_call">Nödsamtal</string>
     <string name="setup_locale">Språk</string>
-    <string name="setup_wifi">Välj Wi\u2011Fi</string>
+    <string name="sim_locale_changed">%1$s SIM upptäckt</string>
     <string name="setup_sim_missing">SIM-kort saknas</string>
-    <string name="setup_choose_data_sim">Välj ett SIM-kort för data</string>
-    <string name="setup_location">Platstjänster</string>
-    <string name="setup_other">Andra tjänster</string>
-    <string name="setup_datetime">Datum &amp; tid</string>
-    <string name="setup_current_date">Aktuellt datum</string>
-    <string name="setup_current_time">Aktuell tid</string>
     <string name="sim_missing_summary" product="tablet">Ett SIM-kort kunde inte hittas på din surfplatta. För att sätta in ett SIM-kort, läs instruktionerna som kom med din enhet.</string>
     <string name="sim_missing_summary" product="default">Ett SIM-kort kunde inte hittas på din telefon. För att sätta in ett SIM-kort, läs instruktionerna som kom med din enhet.</string>
-    <string name="choose_data_sim_summary" product="tablet">Vilket SIM-kort vill du använda för data? Det valda SIM-kortet kan medföra nätverkskostnader eftersom det används för att konfigurera din enhet.</string>
-    <string name="choose_data_sim_summary" product="default">Vilket SIM-kort vill du använda för data? Det valda SIM-kortet kan medföra nätverkskostnader eftersom det används för att konfigurera din telefon.</string>
+    <string name="setup_datetime">Datum &amp; tid</string>
     <string name="date_time_summary">Ställ in din tidszon och justera datum och tid om det behövs</string>
+    <string name="setup_current_date">Aktuellt datum</string>
+    <string name="setup_current_time">Aktuell tid</string>
+    <string name="intro_restore_title">Återställ appar och data</string>
+    <string name="setup_location">Platstjänster</string>
     <string name="location_access_summary"><b>Tillåt appar som du gett tillåtelse</b> att använda din platsinformation. Detta inkluderar din nuvarande plats och tidigare platser.</string>
-    <string name="setup_mobile_data">Slå på mobildata</string>
-    <string name="setup_mobile_data_no_service">Ingen service</string>
-    <string name="setup_mobile_data_emergency_only">Endast nödsamtal</string>
-    <string name="enable_mobile_data_summary">Vill du använda mobildata under installationen? Användning av mobildata kan ge upphov till dataavgifter.</string>
-    <string name="no">Nej</string>
-    <string name="yes">Ja</string>
-    <string name="emergency_call">Nödsamtal</string>
+    <string name="location_agps_access_summary">Ladda ner satellitdata från internet när Plats är på som avsevärt kan förbättra GPS:ens startprestanda.</string>
     <string name="setup_services">LineageOS funktioner</string>
     <string name="services_os_nav_keys_label"><b>Använder styrtangenter på skärmen</b> i stället för fysiska knappar.</string>
-    <string name="settings_biometric_setup_title">Välj alternativ skärmlåsningstyp</string>
-    <string name="settings_biometric_setup_details">Hur vill du låsa din skärm?</string>
-    <string name="fingerprint_setup_title">Konfigurering av fingeravtryck</string>
-    <string name="fingerprint_setup_summary">För att använda din fingeravtrycksavläsare för att låsa upp din skärm, behöver du:</string>
-    <string name="fingerprint_setup_add_fingerprint">Lägga till ditt fingeravtryck</string>
-    <string name="biometric_setup_backup_lock_method">Konfigurera en sekundär upplåsningsmetod</string>
-    <string name="biometric_setup_screen_lock_setup">Konfigurera skärmlås</string>
-    <string name="sim_locale_changed">%1$s SIM upptäckt</string>
-    <string name="settings_lockscreen_setup_title">Välj skärmlåstyp</string>
-    <string name="settings_lockscreen_setup_details">Hur vill du låsa din skärm?</string>
-    <string name="lockscreen_setup_title" product="default">Skydda mobilen</string>
-    <string name="lockscreen_setup_summary"><b>Skydda den här enheten</b> och kräv pinkod, mönster eller lösenord för att låsa upp skärmen</string>
-    <string name="intro_restore_title">Återställ appar och data</string>
-    <string name="location_agps_access_summary">Ladda ner satellitdata från internet när Plats är på som avsevärt kan förbättra GPS:ens startprestanda.</string>
 </resources>

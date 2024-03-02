@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">セットアップウィザード</string>
@@ -23,33 +12,29 @@
     <string name="done">完了</string>
     <string name="ok">OK</string>
     <string name="loading">しばらくお待ちください...</string>
-    <string name="setup_complete">セットアップが完了しました</string>
-    <string name="setup_welcome">ようこそ</string>
     <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> へようこそ</string>
-    <string name="setup_locale">言語</string>
-    <string name="setup_wifi">Wi-Fiの選択</string>
-    <string name="setup_sim_missing">SIMカードがありません</string>
-    <string name="setup_choose_data_sim">データ通信用のSIMを選択</string>
-    <string name="setup_location">位置情報サービス</string>
-    <string name="setup_other">その他のサービス</string>
-    <string name="setup_datetime">日付と時刻</string>
-    <string name="setup_current_date">現在の日付</string>
-    <string name="setup_current_time">現在の時刻</string>
-    <string name="sim_missing_summary" product="tablet">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
-    <string name="sim_missing_summary" product="default">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
-    <string name="choose_data_sim_summary" product="tablet">どちらのSIMをデータ通信に使用しますか？選択したSIMを端末のセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
-    <string name="choose_data_sim_summary" product="default">どちらのSIMをデータ通信に使用しますか？選択したSIMを端末のセットアップに使用するため、パケット通信料を請求される可能性があります。</string>
-    <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
-    <string name="location_access_summary">位置情報を使用する<b>権限を求めてきたアプリを許可します</b>。現在の位置情報と過去の位置情報を含む可能性があります。</string>
-    <string name="setup_mobile_data">モバイルデータをON</string>
-    <string name="setup_mobile_data_no_service">サービスがありません</string>
-    <string name="setup_mobile_data_emergency_only">緊急通報のみ</string>
-    <string name="enable_mobile_data_summary">セットアップ中にモバイルデータを使用しますか？モバイルデータをONにすると、パケット通信料を請求される可能性があります。</string>
-    <string name="no">いいえ</string>
-    <string name="yes">はい</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">緊急通報</string>
     <string name="accessibility_settings">ユーザー補助設定</string>
+    <string name="setup_locale">言語</string>
+    <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
+    <string name="setup_sim_missing">SIMカードがありません</string>
+    <string name="sim_missing_summary" product="tablet">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
+    <string name="sim_missing_summary" product="default">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
+    <string name="setup_datetime">日付と時刻</string>
+    <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
+    <string name="setup_current_date">現在の日付</string>
+    <string name="setup_current_time">現在の時刻</string>
+    <string name="intro_restore_title">アプリとデータを復元</string>
+    <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> または他の OS の Seedvault バックアップがある場合は、ここで復元できます。</string>
+    <string name="intro_restore_button">バックアップから復元</string>
+    <string name="setup_location">位置情報サービス</string>
+    <string name="location_access_summary">位置情報を使用する<b>権限を求めてきたアプリを許可します</b>。現在の位置情報と過去の位置情報を含む可能性があります。</string>
+    <string name="location_agps_access_summary">位置情報がオンの場合、<b>インターネットから衛星支援データをダウンロード</b>して GPS 始動時の性能を大幅に向上させます。</string>
+    <string name="update_recovery_title">Lineage Recovery をアップデート</string>
+    <string name="update_recovery_description">毎回のアップデートの最初の起動時に Lineage Recovery をアップデートします</string>
+    <string name="update_recovery_warning">設定が完了したらすぐにリカバリーがアップデートされます。そのまま維持したい場合は、この機能を無効にしてください。</string>
+    <string name="update_recovery_setting">OS と一緒に Lineage Recovery をアップデートする</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS の機能</string>
     <string name="services_pp_explanation">これらのサービスはデバイスの機能を拡張するために動作します。データは <xliff:g id="name" example="LineageOS">%1$s</xliff:g> のプライバシーポリシーに従って使用されます。</string>
     <string name="services_find_privacy_policy">別のデバイスで<xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g>にアクセスしてプライバシーポリシーを読むことができます。</string>
@@ -57,37 +42,14 @@
     <string name="services_metrics_label">診断と使用状況データを自動的に <xliff:g id="name" example="LineageOS">%2$s</xliff:g>に送信して、<xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>。この情報は個人を特定するために使用されることはなく、電池持ち、アプリのパフォーマンス、<xliff:g id="name" example="LineageOS">%3$s</xliff:g> の新機能などへの取り組みに活用されます。</string>
     <string name="services_os_nav_keys_label">ハードウェアキーのかわりに<b>スクリーンナビゲーションキーを使用します</b>。</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">予備の画面のロックの種類を選択</string>
-    <string name="settings_biometric_setup_details">どのように画面をロックしますか？</string>
-    <string name="fingerprint_setup_title">指紋のセットアップ</string>
-    <string name="fingerprint_setup_summary">指紋センターを画面のロック解除に使用するには、以下のことを行う必要があります:</string>
-    <string name="fingerprint_setup_add_fingerprint">指紋を追加</string>
-    <string name="face_setup_title">顔認証の設定</string>
-    <string name="face_setup_summary">顔認証を画面のロック解除に使用するには、以下のことを行う必要があります:</string>
-    <string name="face_setup_add_face">顔を追加</string>
-    <string name="biometric_setup_backup_lock_method">予備のロック解除方法をセットアップ</string>
-    <string name="biometric_setup_screen_lock_setup">画面のロックをセットアップ</string>
-    <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
-    <string name="settings_lockscreen_setup_title">画面のロックの種類を選択</string>
-    <string name="settings_lockscreen_setup_details">どのように画面をロックしますか？</string>
-    <string name="lockscreen_setup_title" product="default">スマートフォンの保護</string>
-    <string name="lockscreen_setup_title" product="device">デバイスの保護</string>
-    <string name="lockscreen_setup_title" product="tablet">タブレットの保護</string>
-    <string name="lockscreen_setup_summary"><b>この端末を保護</b>し、画面のロック解除にPIN、パターン、またはパスワードを必要とする</string>
-    <string name="lockscreen_setup_screen_lock_setup">セットアップ</string>
-    <string name="intro_restore_title">アプリとデータを復元</string>
-    <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> デバイスのバックアップがあれば、ここで復元できます。</string>
-    <string name="intro_restore_button">バックアップから復元</string>
-    <string name="update_recovery_title">Lineage Recovery をアップデート</string>
-    <string name="update_recovery_description">毎回のアップデートの最初の起動時に Lineage Recovery をアップデートします</string>
-    <string name="update_recovery_warning">設定が完了したらすぐにリカバリーがアップデートされます。そのまま維持したい場合は、この機能を無効にしてください。</string>
-    <string name="update_recovery_setting">OS と一緒に Lineage Recovery をアップデートする</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">ナビゲーション</string>
     <string name="navigation_summary">優先するナビゲーション方法を選択してください</string>
     <string name="gesture_navigation">ジェスチャー ナビゲーション</string>
     <string name="two_button_navigation">2 ボタン ナビゲーション</string>
     <string name="navbar_navigation">3 ボタン ナビゲーション</string>
     <string name="hide_gesture_hint">ナビゲーションヒントを隠す</string>
-    <string name="location_agps_access_summary">位置情報がオンの場合、<b>インターネットから衛星支援データをダウンロード</b>して GPS 始動時の性能を大幅に向上させます。</string>
+    <string name="setup_theme">テーマ</string>
+    <string name="theme_summary">ダークテーマは黒い背景を使用して、一部のディスプレイでバッテリーを長持ちさせるのに役立ちます</string>
+    <string name="dark">ダーク</string>
+    <string name="light">ライト</string>
 </resources>

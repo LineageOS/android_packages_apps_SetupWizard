@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Съветник за инсталиране</string>
@@ -23,59 +12,29 @@
     <string name="done">Готово</string>
     <string name="ok">Добре</string>
     <string name="loading">Само секунда\u2026</string>
-    <string name="setup_complete">Настройването е завършено</string>
-    <string name="setup_welcome">Добре дошли</string>
-    <string name="setup_locale">Език</string>
-    <string name="setup_wifi">Изберете Wi-Fi</string>
-    <string name="setup_sim_missing">Липсва СИМ карта</string>
-    <string name="setup_choose_data_sim">Изберете СИМ карта за данни</string>
-    <string name="setup_location">Услуги за местоположение</string>
-    <string name="setup_other">Други услуги</string>
-    <string name="setup_datetime">Дата &amp; час</string>
-    <string name="setup_current_date">Днешна дата</string>
-    <string name="setup_current_time">Актуално време</string>
-    <string name="sim_missing_summary" product="tablet">СИМ карта не е открита в таблета. За да научите как да поставите СИМ карта, прочетете инструкциите на устройството.</string>
-    <string name="sim_missing_summary" product="default">СИМ карта не е открита в телефона. За да научите как да поставите СИМ карта, прочетете инструкциите на устройството.</string>
-    <string name="choose_data_sim_summary" product="tablet">Коя СИМ карта искате да използвате за данни? Избраната СИМ карта може да добави разходи, тъй като тя ще се използва за настройване на таблета.</string>
-    <string name="choose_data_sim_summary" product="default">Коя СИМ карта искате да използвате за данни? Избраната СИМ карта може да добави разходи, тъй като тя ще се използва за настройване на телефона.</string>
-    <string name="date_time_summary">Задайте часовата си зона и настройте текущата дата и час, ако е необходимо</string>
-    <string name="location_access_summary"><b>Разреши приложения, които са поискали разрешение</b> за да използва информацията за вашето местоположение. Това може да включва текущото местоположение и последните места.</string>
-    <string name="setup_mobile_data">Включване на мобилните данни</string>
-    <string name="setup_mobile_data_no_service">Няма поддръжка</string>
-    <string name="setup_mobile_data_emergency_only">Само спешни повиквания</string>
-    <string name="enable_mobile_data_summary">Желаете ли да се използват мобилни данни по време на инсталацията? Активирането на мобилните данни може да доведе до допълнителни такси.</string>
-    <string name="no">Не</string>
-    <string name="yes">Да</string>
-    <string name="data_sim_name">СИМ карта<xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Спешни повиквания</string>
     <string name="accessibility_settings">Настройки на достъпност</string>
+    <string name="setup_locale">Език</string>
+    <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
+    <string name="setup_sim_missing">Липсва СИМ карта</string>
+    <string name="sim_missing_summary" product="tablet">СИМ карта не е открита в таблета. За да научите как да поставите СИМ карта, прочетете инструкциите на устройството.</string>
+    <string name="sim_missing_summary" product="default">СИМ карта не е открита в телефона. За да научите как да поставите СИМ карта, прочетете инструкциите на устройството.</string>
+    <string name="setup_datetime">Дата &amp; час</string>
+    <string name="date_time_summary">Задайте часовата си зона и настройте текущата дата и час, ако е необходимо</string>
+    <string name="setup_current_date">Днешна дата</string>
+    <string name="setup_current_time">Актуално време</string>
+    <string name="intro_restore_title">Възстановяване на приложения и данни</string>
+    <string name="intro_restore_button">Възстановяване от архив</string>
+    <string name="setup_location">Услуги за местоположение</string>
+    <string name="location_access_summary"><b>Разреши приложения, които са поискали разрешение</b> за да използва информацията за вашето местоположение. Това може да включва текущото местоположение и последните места.</string>
+    <string name="update_recovery_title">Актуализиране на Lineage Recovery</string>
+    <string name="update_recovery_description">Актуализира Lineage Recovery при първо зареждане след всяка актуализация.</string>
+    <string name="update_recovery_warning">Recovery ще се актуализира веднага щом завършите настройката. Ако искате да го запазите непокътнат, деактивирайте тази функция.</string>
+    <string name="update_recovery_setting">Актуализирайте Lineage Recovery заедно с операционната система</string>
     <string name="setup_services">LineageOS функции</string>
     <string name="services_pp_explanation">Тези услуги работят за вас, за да разширите възможностите на вашето устройство. Данните ще бъдат използвани в съответствие с<xliff:g id="name" example="LineageOS">%1$s</xliff:g> политика за поверителност.</string>
     <string name="services_find_privacy_policy">Можете да прочетете политиката за поверителност на друго устройство, като посетите <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Помогне за подобряване на <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> чрез автоматично изпращане на диагностични данни и данни за употреба до <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Тази информация не може да се използва, за да ви идентифицира и помага на екипи, работещи по неща като живот на батерията, производителност на приложенията и нови <xliff:g id="name" example="LineageOS">%3$s</xliff:g> функции.</string>
     <string name="services_os_nav_keys_label"><b>Използване на клавишите за навигация на екрана</b> вместо хардуерните бутони.</string>
-    <string name="settings_biometric_setup_title">Изберете резервен метод за заключване на екрана</string>
-    <string name="settings_biometric_setup_details">Как бихте желали да заключите вашият екран?</string>
-    <string name="fingerprint_setup_title">Създаване на пръстов отпечатък</string>
-    <string name="fingerprint_setup_summary">За да използвате сензора за пръстови отпечатъци за отключите вашият екран, ще трябва да:</string>
-    <string name="fingerprint_setup_add_fingerprint">Добавете вашият пръстов отпечатък</string>
-    <string name="face_setup_title">Настройка на лицево отключване</string>
-    <string name="face_setup_summary">За да използвате лицеви данни, за отключване на екрана, ще трябва:</string>
-    <string name="face_setup_add_face">Добави лицеви данни</string>
-    <string name="biometric_setup_backup_lock_method">Настройка на втори метод за отключване</string>
-    <string name="biometric_setup_screen_lock_setup">Настройка на екрана за заключване</string>
-    <string name="sim_locale_changed">Намерена %1$s СИМ карта</string>
-    <string name="settings_lockscreen_setup_title">Изберете метод на заключване на екрана</string>
-    <string name="settings_lockscreen_setup_details">Как бихте желали да заключите вашият екран?</string>
-    <string name="lockscreen_setup_title" product="default">Защитете телефона си</string>
-    <string name="lockscreen_setup_title" product="tablet">Защитете вашия таблет</string>
-    <string name="lockscreen_setup_summary"><b>Защитете у-вото</b> и изисквайте ПИН код, фигура или парола за отключване на екрана</string>
-    <string name="lockscreen_setup_screen_lock_setup">Конфигуриране</string>
-    <string name="intro_restore_title">Възстановяване на приложения и данни</string>
-    <string name="intro_restore_button">Възстановяване от архив</string>
-    <string name="update_recovery_title">Актуализиране на Lineage Recovery</string>
-    <string name="update_recovery_description">Актуализира Lineage Recovery при първо зареждане след всяка актуализация.</string>
-    <string name="update_recovery_warning">Recovery ще се актуализира веднага щом завършите настройката. Ако искате да го запазите непокътнат, деактивирайте тази функция.</string>
-    <string name="update_recovery_setting">Актуализирайте Lineage Recovery заедно с операционната система</string>
 </resources>

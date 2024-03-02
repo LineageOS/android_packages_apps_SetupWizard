@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Čarovnik za namestitev</string>
@@ -23,33 +12,29 @@
     <string name="done">Končano</string>
     <string name="ok">V redu</string>
     <string name="loading">Samo trenutek \u2026</string>
-    <string name="setup_complete">Namestitev je končana</string>
-    <string name="setup_welcome">Dobrodošli</string>
     <string name="setup_welcome_message">Dobrodošli v <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Jezik</string>
-    <string name="setup_wifi">Izberite Wi-Fi</string>
-    <string name="setup_sim_missing">Kartica SIM ni prisotna</string>
-    <string name="setup_choose_data_sim">Izberite kartico SIM za podatke</string>
-    <string name="setup_location">Lokacijske storitve</string>
-    <string name="setup_other">Druge storitve</string>
-    <string name="setup_datetime">Datum in čas</string>
-    <string name="setup_current_date">Trenutni datum</string>
-    <string name="setup_current_time">Trenutni čas</string>
-    <string name="sim_missing_summary" product="tablet">V vašem tabličnem računalniku ni bila zaznana kartica SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
-    <string name="sim_missing_summary" product="default">V vašem telefonu ni bilo zaznane kartice SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
-    <string name="choose_data_sim_summary" product="tablet">Katero kartico SIM želite uporabiti za podatke? Izbrana kartica SIM lahko povzroči omrežne stroške, ker bo uporabljena za namestitev vašega tabličnega računalnika.</string>
-    <string name="choose_data_sim_summary" product="default">Katero kartico SIM želite uporabiti za podatke? Izbrana kartica SIM lahko povzroči omrežne stroške, ker bo uporabljena za namestitev vašega telefona.</string>
-    <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>
-    <string name="location_access_summary"><b>Dovolite aplikacijam, ki so zahtevale vaše dovoljenje</b>, da uporabijo podatke o vaši lokaciji. To lahko vključuje vašo trenutno lokacijo in prejšnje.</string>
-    <string name="setup_mobile_data">Vklop mobilnih podatkov</string>
-    <string name="setup_mobile_data_no_service">Ni storitve</string>
-    <string name="setup_mobile_data_emergency_only">Samo klici v sili</string>
-    <string name="enable_mobile_data_summary">Ali želite med namestitvijo uporabiti mobilne podatke? Vklop mobilnih podatkov lahko povzroči dodatne stroške.</string>
-    <string name="no">Ne</string>
-    <string name="yes">Da</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Klic v sili</string>
     <string name="accessibility_settings">Nastavitve dostopnosti</string>
+    <string name="setup_locale">Jezik</string>
+    <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
+    <string name="setup_sim_missing">Kartica SIM ni prisotna</string>
+    <string name="sim_missing_summary" product="tablet">V vašem tabličnem računalniku ni bila zaznana kartica SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
+    <string name="sim_missing_summary" product="default">V vašem telefonu ni bilo zaznane kartice SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
+    <string name="setup_datetime">Datum in čas</string>
+    <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>
+    <string name="setup_current_date">Trenutni datum</string>
+    <string name="setup_current_time">Trenutni čas</string>
+    <string name="intro_restore_title">Obnovite aplikacije in podatke</string>
+    <string name="intro_restore_subtitle">Če imate Seedvault varnostno kopijo iz  <xliff:g id="name" example="LineageOS">%s</xliff:g> ali katerega koli drugega OS-a, jo lahko obnovite tukaj.</string>
+    <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
+    <string name="setup_location">Lokacijske storitve</string>
+    <string name="location_access_summary"><b>Dovolite aplikacijam, ki so zahtevale vaše dovoljenje</b>, da uporabijo podatke o vaši lokaciji. To lahko vključuje vašo trenutno lokacijo in prejšnje.</string>
+    <string name="location_agps_access_summary">Ko je lokacija vklopljena, <b>prenesi pomožne podatke satelita iz interneta</b>, kateri lahko močno izboljšajo zagonsko zmogljivost GPS-a</string>
+    <string name="update_recovery_title">Posodobi obnovitev Lineage</string>
+    <string name="update_recovery_description">Posodobi obnovitev Lineage ob prvem zagonu vsake posodobitve.</string>
+    <string name="update_recovery_warning">Obnovitev bo posodobljena takoj, ko zaključite namestitev. Če jo želite ohraniti nedotaknjeno, onemogočite to funkcijo.</string>
+    <string name="update_recovery_setting">Posodobi obnovitev Lineage poleg OS-a</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS funkcije</string>
     <string name="services_pp_explanation">Te storitve služijo vam za razširitev zmogljivosti vaše naprave. Podatki bodo uporabljeni v skladu z <xliff:g id="name" example="LineageOS">%1$s</xliff:g>-ovo politiko zasebnosti.</string>
     <string name="services_find_privacy_policy">Politiko zasebnosti lahko preberete na drugi napravi z obiskom <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +42,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-u. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih <xliff:g id="name" example="LineageOS">%3$s</xliff:g> funkcij.</string>
     <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Izberite nadomestni način zaklepanja zaslona</string>
-    <string name="settings_biometric_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
-    <string name="fingerprint_setup_title">Nastavitev prstnega odtisa</string>
-    <string name="fingerprint_setup_summary">Da uporabite tipalo prstnih odtisov za odklepanje zaslona, boste morali:</string>
-    <string name="fingerprint_setup_add_fingerprint">Dodati vaš prstni odtis</string>
-    <string name="face_setup_title">Nastavitev obraza</string>
-    <string name="face_setup_summary">Da uporabite vaš obraz za odklepanje vašega zaslona, boste morali:</string>
-    <string name="face_setup_add_face">Dodati vaš obraz</string>
-    <string name="biometric_setup_backup_lock_method">Nastaviti dodatni način odklepanja</string>
-    <string name="biometric_setup_screen_lock_setup">Nastavi zaklepanje zaslona</string>
-    <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
-    <string name="settings_lockscreen_setup_title">Izberite način zaklepanja zaslona</string>
-    <string name="settings_lockscreen_setup_details">Kako bi radi zaklenili svoj zaslon?</string>
-    <string name="lockscreen_setup_title" product="default">Zaščitite vaš telefon</string>
-    <string name="lockscreen_setup_title" product="device">Zaščitite vašo napravo</string>
-    <string name="lockscreen_setup_title" product="tablet">Zaščitite vaš tablični računalnik</string>
-    <string name="lockscreen_setup_summary"><b>Zaščitite to napravo</b> in zahtevajte kodo PIN, vzorec ali geslo za odklep zaslona</string>
-    <string name="lockscreen_setup_screen_lock_setup">Nastavi</string>
-    <string name="intro_restore_title">Obnovi aplikacije in podatke</string>
-    <string name="intro_restore_subtitle">Če imate varnostno kopijo iz vaše zadnje <xliff:g id="name" example="LineageOS">%s</xliff:g> naprave, jo lahko obnovite tukaj.</string>
-    <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
-    <string name="update_recovery_title">Posodobi obnovitev Lineage</string>
-    <string name="update_recovery_description">Posodobi obnovitev Lineage ob prvem zagonu vsake posodobitve.</string>
-    <string name="update_recovery_warning">Obnovitev bo posodobljena takoj, ko zaključite namestitev. Če jo želite ohraniti nedotaknjeno, onemogočite to funkcijo.</string>
-    <string name="update_recovery_setting">Posodobi obnovitev Lineage poleg OS-a</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Krmarjenje</string>
     <string name="navigation_summary">Izberite željeni način krmarjenja</string>
     <string name="gesture_navigation">Krmarjenje s potezami</string>
     <string name="two_button_navigation">Krmarjenje z dvema gumboma</string>
     <string name="navbar_navigation">Krmarjenje s tremi gumbi</string>
     <string name="hide_gesture_hint">Skrij namig krmarjenja</string>
-    <string name="location_agps_access_summary">Ko je lokacija vklopljena, <b>prenesi pomožne podatke satelita iz interneta</b>, kateri lahko močno izboljšajo zagonsko zmogljivost GPS-a</string>
+    <string name="setup_theme">Tema</string>
+    <string name="theme_summary">Temna tema uporablja črno ozadje za pomoč pri varčevanju z baterijo na nekaterih zaslonih</string>
+    <string name="dark">Temna</string>
+    <string name="light">Svetla</string>
 </resources>
