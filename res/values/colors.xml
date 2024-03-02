@@ -5,6 +5,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <color name="black">#21272b</color>
+    
     <color name="lineage_accent">#167C80</color>
 
     <color name="button_bar_text_enabled">#ff1e1e1e</color>
