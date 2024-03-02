@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">معالج الإعداد</string>
@@ -23,67 +12,37 @@
     <string name="done">تم</string>
     <string name="ok">موافق</string>
     <string name="loading">ثانية واحدة</string>
-    <string name="setup_complete">الإعداد تم</string>
-    <string name="setup_welcome">مرحبا</string>
     <string name="setup_welcome_message">مرحبا بك في <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">اللغة</string>
-    <string name="setup_wifi">تحديد الواي فاي</string>
-    <string name="setup_sim_missing">شريحة SIM مفقودة</string>
-    <string name="setup_choose_data_sim">اختر شريحة SIM للبيانات</string>
-    <string name="setup_location">خدمات الموقع</string>
-    <string name="setup_other">خدمات أخرى</string>
-    <string name="setup_datetime">التاريخ والوقت</string>
-    <string name="setup_current_date">التاريخ الحالي</string>
-    <string name="setup_current_time">الوقت الحالي</string>
-    <string name="sim_missing_summary" product="tablet">لم يتم العثور على شريحة SIM في الكمبيوتر اللوحي الخاص بك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
-    <string name="sim_missing_summary" product="default">لم يتم العثور على شريحة SIM في هاتفك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
-    <string name="choose_data_sim_summary" product="tablet">أي شريحة SIM تريد استخدامها للبيانات؟ شريحة SIM المحددة قد يترتب عليها رسوماً للشبكة لأنها ستُستخدم لإعداد الكمبيوتر اللوحي الخاص بك.</string>
-    <string name="choose_data_sim_summary" product="default">أي شريحة SIM تريد استخدامها للبيانات؟ شريحة SIM المحددة قد يترتب عليها رسوماً للشبكة لأنها ستُستخدم لإعداد هاتفك.</string>
-    <string name="date_time_summary">تعيين منطقتك الزمنية وضبط الوقت والتاريخ الحالي إذا لزم الأمر</string>
-    <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
-    <string name="setup_mobile_data">تشغيل البيانات الخلوية</string>
-    <string name="setup_mobile_data_no_service">لا توجد خدمة</string>
-    <string name="setup_mobile_data_emergency_only">مكالمات الطوارئ فقط</string>
-    <string name="enable_mobile_data_summary">هل تريد استخدام البيانات الخلوية أثناء عملية الإعداد؟ قد يخضع تشغيل البيانات الخلوية إلى تطبيق رسوم بيانات.</string>
-    <string name="no">لا</string>
-    <string name="yes">نعم</string>
-    <string name="data_sim_name">شريحة <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">مكالمة طوارئ</string>
     <string name="accessibility_settings">إعدادات إمكانية الوصول</string>
-    <string name="setup_services">ميزات LineageOS</string>
-    <string name="services_find_privacy_policy">يمكنك قراءة سياسة الخصوصية على جهاز آخر بزيارة <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
-    <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
-    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">حدد نوعاً احتياطياً لشاشة القفل</string>
-    <string name="settings_biometric_setup_details">كيف تريد إقفال الشاشة؟</string>
-    <string name="fingerprint_setup_title">إنشاء بصمة الإصبع</string>
-    <string name="fingerprint_setup_summary">لاستخدام مستشعر بصمات الأصابع لفتح شاشتك، سيكون عليك:</string>
-    <string name="fingerprint_setup_add_fingerprint">أضف بصمتك</string>
-    <string name="face_setup_title">إعداد الوجه</string>
-    <string name="face_setup_summary">لاستخدام وجهك في فتح شاشتك، سيكون عليك:</string>
-    <string name="face_setup_add_face">إضافة وجهك</string>
-    <string name="biometric_setup_backup_lock_method">إنشاء طريقة احتياطية لإلغاء إقفال الشاشة</string>
-    <string name="biometric_setup_screen_lock_setup">إنشاء إقفال الشاشة</string>
+    <string name="setup_locale">اللغة</string>
     <string name="sim_locale_changed">تم اكتشاف %1$s SIM</string>
-    <string name="settings_lockscreen_setup_title">حدد نوع شاشة القفل</string>
-    <string name="settings_lockscreen_setup_details">كيف تريد إقفال الشاشة؟</string>
-    <string name="lockscreen_setup_title" product="default">حماية هاتفك</string>
-    <string name="lockscreen_setup_title" product="tablet">حماية جهازك اللوحي</string>
-    <string name="lockscreen_setup_summary"><b>حماية هذا الجهاز</b> وطلب رقم تعريف شخصي أو نمط أو كلمة مرور لإلغاء قفل الشاشة.</string>
-    <string name="lockscreen_setup_screen_lock_setup">إعداد</string>
+    <string name="setup_sim_missing">شريحة SIM مفقودة</string>
+    <string name="sim_missing_summary" product="tablet">لم يتم العثور على شريحة SIM في الكمبيوتر اللوحي الخاص بك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
+    <string name="sim_missing_summary" product="default">لم يتم العثور على شريحة SIM في هاتفك. لإدخال شريحة SIM، عليك قراءة الإرشادات المرفقة بجهازك.</string>
+    <string name="setup_datetime">التاريخ والوقت</string>
+    <string name="date_time_summary">تعيين منطقتك الزمنية وضبط الوقت والتاريخ الحالي إذا لزم الأمر</string>
+    <string name="setup_current_date">التاريخ الحالي</string>
+    <string name="setup_current_time">الوقت الحالي</string>
     <string name="intro_restore_title">استعادة التطبيقات والبيانات</string>
     <string name="intro_restore_button">استعادة من نسخة احتياطية</string>
+    <string name="setup_location">خدمات الموقع</string>
+    <string name="location_access_summary"><b>يسمح للتطبيقات التي طلبت إذنك</b> باستخدام معلومات موقعك. وقد يشمل ذلك موقعك الحالي ومواقعك السابقة.</string>
+    <string name="location_agps_access_summary">عندما يكون الموقع قيد التشغيل، <b>قم بتنزيل بيانات مساعدة الأقمار الصناعية من الإنترنت</b>، مما يمكن أن يحسن أداء بدء تشغيل GPS بشكل كبير.</string>
     <string name="update_recovery_title">تحديث وضع الاسترداد (recovery)</string>
     <string name="update_recovery_description">تحديث Lineage Recovery عند أول تشغيل بعد كل تحديث.</string>
     <string name="update_recovery_warning">سيُحدث وضع الاسترداد بمجرد الانتهاء من الإعداد. إذا كنت ترغب في الحفاظ على وضع الاسترداد الحالي، قم بتعطيل هذه الميزة.</string>
     <string name="update_recovery_setting">تحديث Lineage Recovery إلى جانب نظام التشغيل</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_services">ميزات LineageOS</string>
+    <string name="services_find_privacy_policy">يمكنك قراءة سياسة الخصوصية على جهاز آخر بزيارة <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">التنقل</string>
     <string name="navigation_summary">اختر طريقة التنقل المفضلة</string>
     <string name="gesture_navigation">التنقل بالإيماءات</string>
     <string name="two_button_navigation">التنقل باستخدام زرّين</string>
     <string name="navbar_navigation">التنقل باستخدام ثلاثة أزرار</string>
     <string name="hide_gesture_hint">إخفاء تلميحات التنقل الإيمائي</string>
-    <string name="location_agps_access_summary">عندما يكون الموقع قيد التشغيل، <b>قم بتنزيل بيانات مساعدة الأقمار الصناعية من الإنترنت</b>، مما يمكن أن يحسن أداء بدء تشغيل GPS بشكل كبير.</string>
 </resources>

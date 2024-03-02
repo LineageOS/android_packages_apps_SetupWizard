@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">सेटअप विज़ार्ड</string>
@@ -22,34 +11,15 @@
     <string name="start">शुरू करें</string>
     <string name="ok">ठीक है</string>
     <string name="loading">एक सेकंड\u2026</string>
-    <string name="setup_complete">सेटअप पूरा हो गया</string>
-    <string name="setup_welcome">स्वागत</string>
-    <string name="setup_wifi">वाई-फाई चुनें</string>
+    <string name="emergency_call">आपातकालीन कॉल</string>
     <string name="setup_sim_missing">सिम कार्ड नहीं है</string>
-    <string name="setup_choose_data_sim">डेटा के लिए सिम कार्ड चुनें</string>
-    <string name="setup_location">स्थान सेवाएँ</string>
-    <string name="setup_other">अन्य सेवाएँ</string>
-    <string name="setup_datetime">तिथि और समय</string>
-    <string name="setup_current_date">वर्तमान तिथि</string>
-    <string name="setup_current_time">वर्तमान समय</string>
     <string name="sim_missing_summary" product="tablet">आपके टैब्लेट के लिए सिम कार्ड पहचाना नहीं जा सका है। सिम कार्ड डालने के लिए अपने उपकरण के साथ आए निर्देशों को देखें।</string>
     <string name="sim_missing_summary" product="default">आपके फ़ोन के लिए सिम कार्ड पहचाना नहीं जा सका है। सिम कार्ड डालने के लिए अपने उपकरण के साथ आए निर्देशों को देखें।</string>
-    <string name="choose_data_sim_summary" product="tablet">डेटा के लिए आप किस सिम का उपयोग करना चाहते हैं? चयनित सिम कार्ड के लिए नेटवर्क शुल्क लग सकते हैं क्योंकि उसका उपयोग आपके टैब्लेट को सेटअप करने के लिए किया जाएगा।</string>
-    <string name="choose_data_sim_summary" product="default">डेटा के लिए आप किस सिम का उपयोग करना चाहते हैं? चयनित सिम कार्ड के लिए नेटवर्क शुल्क लग सकते हैं क्योंकि उसका उपयोग आपके फ़ोन को सेटअप करने के लिए किया जाएगा।</string>
+    <string name="setup_datetime">तिथि और समय</string>
     <string name="date_time_summary">अपना समय क्षेत्र सेटअप करें और यदि आवश्यक हो तो वर्तमान तिथि और समय को समायोजित करें</string>
+    <string name="setup_current_date">वर्तमान तिथि</string>
+    <string name="setup_current_time">वर्तमान समय</string>
+    <string name="setup_location">स्थान सेवाएँ</string>
     <string name="location_access_summary"><b>जिन ऐपों ने आपसे अनुमति ले ली है</b> उन्हें आपके स्थान संबंधी जानकारी का उपयोग करने दें। इस जानकारी में आपका वर्तमान स्थान और पहले के स्थान शामिल हो सकते हैं।</string>
-    <string name="setup_mobile_data_no_service">कोई सेवा नहीं है</string>
-    <string name="setup_mobile_data_emergency_only">केवल आपातकालीन कॉल</string>
-    <string name="no">नहीं</string>
-    <string name="yes">हाँ</string>
-    <string name="emergency_call">आपातकालीन कॉल</string>
     <string name="services_os_nav_keys_label">हार्डवेयर कुंजियों की जगह <b>स्क्रीन पर मौजूद नेविगेशन कुंजियों का उपयोग करें।</b></string>
-    <string name="settings_biometric_setup_title">बैकअप स्क्रीन लॉक प्रकार चुनें</string>
-    <string name="settings_biometric_setup_details">आप अपने स्क्रीन को किस तरह से लॉक करना चाहेंगे?</string>
-    <string name="fingerprint_setup_title">अँगुली छाप सेटअप</string>
-    <string name="fingerprint_setup_summary">अपने स्क्रीन को अनॉक करने के वास्ते अपने उँगली छाप संवेदक का उपयोग करने के लिए, आपको यह करना होगा:</string>
-    <string name="fingerprint_setup_add_fingerprint">अपनी अँगुली छाप जोड़ें</string>
-    <string name="biometric_setup_backup_lock_method">अनलॉक करने की कोई दूसरी विधि भी सेट अप करें</string>
-    <string name="biometric_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करें</string>
-    <string name="settings_lockscreen_setup_details">आप अपने स्क्रीन को किस तरह से लॉक करना चाहेंगे?</string>
 </resources>

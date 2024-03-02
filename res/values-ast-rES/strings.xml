@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Encontu pa la configuración</string>
@@ -23,58 +12,42 @@
     <string name="done">Fecho</string>
     <string name="ok">D\'acuerdu</string>
     <string name="loading">Un segundín\u2026</string>
-    <string name="setup_welcome">Afáyate</string>
     <string name="setup_welcome_message">Afáyate en <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Llingua</string>
-    <string name="setup_sim_missing">Falta la tarxeta SIM</string>
-    <string name="setup_location">Servicios de llocalización</string>
-    <string name="setup_other">Otros servicios</string>
-    <string name="setup_datetime">Data y hora</string>
-    <string name="setup_current_date">Data actual</string>
-    <string name="setup_current_time">Hora actual</string>
-    <string name="sim_missing_summary" product="tablet">Nun se detectó nenguna tarxeta SIM na tableta. Pa inxertar una, llei les instrucciones que vinieron col preséu.</string>
-    <string name="sim_missing_summary" product="default">Nun se detectó nenguna tarxeta SIM nel teléfonu. Pa inxertar una, llei les instrucciones que vinieron col preséu.</string>
-    <string name="date_time_summary">Si ye preciso, afita\'l to fusu horariu y configura la data y la hora actuales</string>
-    <string name="location_access_summary"><b>Permitir que les aplicaciones que pidieren el to permisu</b> usen la información de la llocalización. Esta opción pue incluyir la llocalización actual y les anteriores.</string>
-    <string name="setup_mobile_data_emergency_only">Namás llamaes d\'emerxencia</string>
-    <string name="enable_mobile_data_summary">¿Quies usar los datos móviles na configuración? La so activación pue xenerar cargos.</string>
-    <string name="no">Non</string>
-    <string name="yes">Sí</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Llamada d\'emerxencia</string>
     <string name="accessibility_settings">Configuración de l\'accesibilidá</string>
+    <string name="setup_locale">Llingua</string>
+    <string name="sim_locale_changed">Detectóse la locale «%1$s» de la SIM</string>
+    <string name="setup_sim_missing">Falta la tarxeta SIM</string>
+    <string name="sim_missing_summary" product="tablet">Nun se detectó nenguna tarxeta SIM na tableta. Pa inxertar una, llei les instrucciones que vinieron col preséu.</string>
+    <string name="sim_missing_summary" product="default">Nun se detectó nenguna tarxeta SIM nel teléfonu. Pa inxertar una, llei les instrucciones que vinieron col preséu.</string>
+    <string name="setup_datetime">Data y hora</string>
+    <string name="date_time_summary">Si ye preciso, afita\'l to fusu horariu y configura la data y la hora actuales</string>
+    <string name="setup_current_date">Data actual</string>
+    <string name="setup_current_time">Hora actual</string>
+    <string name="intro_restore_title">Restauración d\'aplicaciones y datos</string>
+    <string name="intro_restore_subtitle">Si tienes una copia de seguranza de Seedvault de <xliff:g id="name" example="LineageOS">%s</xliff:g> o d\'otru SO, pues restaurala equí.</string>
+    <string name="setup_location">Servicios de llocalización</string>
+    <string name="location_access_summary"><b>Permitir que les aplicaciones que pidieren el to permisu</b> usen la información de la llocalización. Esta opción pue incluyir la llocalización actual y les anteriores.</string>
+    <string name="location_agps_access_summary">Al activar la llocalización, <b>baxa los datos d\'asistencia satelitales d\'internet</b> que puen ameyorar muncho\'l rindimientu inicial del GPS</string>
+    <string name="update_recovery_title">Anovar el recovery de Lineage</string>
+    <string name="update_recovery_description">Anueva\'l recovery de Lineage nel primer arrinque de cada anovamientu.</string>
+    <string name="update_recovery_warning">El recovery anuévase namás que fine la configuración. Si nun lu quies tocar, desactiva esta función.</string>
+    <string name="update_recovery_setting">Anovar el recovery xunto con LineageOS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funciones de LineageOS</string>
     <string name="services_pp_explanation">Estos servicios funcionen p\'aumentar les funciones del preséu. Los datos van usase d\'acuerdu cola política de privacidá de <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="services_find_privacy_policy">Pues lleer la política de privacidá n\'otru preséu pente la visita a <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> pente l\'unviu los datos de diagnósticu y d\'usu a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta información nun se pue usar pa identificate mas val p\'agabitar a los desendolcadores pa que trabayen en coses como la duración de la batería, el rindimientu de les aplicaciones y les funciones nueves de <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_details">¿Cómo quies bloquiar la pantalla?</string>
-    <string name="fingerprint_setup_title">Configuración de buelgues</string>
-    <string name="fingerprint_setup_summary">Pa usar el sensor de buelgues y desbloquiar la pantalla:</string>
-    <string name="fingerprint_setup_add_fingerprint">Amiesta la to buelga</string>
-    <string name="face_setup_title">Configuración facial</string>
-    <string name="face_setup_summary">Pa usar la cara y desbloquiar la pantalla:</string>
-    <string name="face_setup_add_face">Amiesta la to cara</string>
-    <string name="biometric_setup_backup_lock_method">Configura un métodu secundariu de desbloquéu</string>
-    <string name="sim_locale_changed">Detectóse la locale «%1$s» de la SIM</string>
-    <string name="settings_lockscreen_setup_details">¿Cómo quies bloquiar la pantalla?</string>
-    <string name="lockscreen_setup_title" product="default">Proteición del teléfonu</string>
-    <string name="lockscreen_setup_title" product="tablet">Proteición de la tableta</string>
-    <string name="lockscreen_setup_summary"><b>Protexi esti preséu</b> y riqui un PIN, una contraseña o un patrón pa desbloquiar la pantalla</string>
-    <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
-    <string name="intro_restore_title">Restauración d\'aplicaciones y datos</string>
-    <string name="intro_restore_subtitle">Si tienes dalguna copia de seguranza de <xliff:g id="name" example="LineageOS">%s</xliff:g> pal preséu, pues restaurala equí.</string>
-    <string name="update_recovery_title">Anovar el recovery de Lineage</string>
-    <string name="update_recovery_description">Anueva\'l recovery de Lineage nel primer arrinque de cada anovamientu.</string>
-    <string name="update_recovery_warning">El recovery anuévase namás que fine la configuración. Si nun lu quies tocar, desactiva esta función.</string>
-    <string name="update_recovery_setting">Anovar el recovery xunto con LineageOS</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Navegación</string>
     <string name="navigation_summary">Escueyi\'l métodu de navegación preferíu</string>
     <string name="gesture_navigation">Navegación xestual</string>
     <string name="two_button_navigation">Navegación con dos botones</string>
     <string name="navbar_navigation">Navegación con trés botones</string>
     <string name="hide_gesture_hint">Anubrir l\'indicador de la navegación xestual</string>
-    <string name="location_agps_access_summary">Al activar la llocalización, <b>baxa los datos d\'asistencia satelitales d\'internet</b> que puen ameyorar muncho\'l rindimientu inicial del GPS</string>
+    <string name="setup_theme">Estilu</string>
+    <string name="theme_summary">L\'estilu escuru usa un fondu en prieto p\'ayudar a que la batería de los preseos con pantalles OLED dure más</string>
+    <string name="dark">Escuridá</string>
+    <string name="light">Claridá</string>
 </resources>
