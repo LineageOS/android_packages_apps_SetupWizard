@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "595c4a7a_761e9e08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2644
+      },
+      "writtenOn": "2024-03-02T04:45:02Z",
+      "side": 1,
+      "message": "razorlove\u0027s is fancier, perhaps better.",
+      "revId": "795ca57b1133be02fa09dbf3a128d8e522817bdf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
