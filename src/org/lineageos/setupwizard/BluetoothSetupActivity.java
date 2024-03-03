@@ -9,6 +9,8 @@ package org.lineageos.setupwizard;
 import android.content.Intent;
 import android.util.Log;
 
+import androidx.activity.result.ActivityResult;
+
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class BluetoothSetupActivity extends SubBaseActivity {
@@ -32,6 +34,15 @@ public class BluetoothSetupActivity extends SubBaseActivity {
             Log.e(TAG, "Error starting bluetooth setup", e);
             finishAction(RESULT_OK);
             SetupWizardUtils.disableComponent(this, BluetoothSetupActivity.class);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(ActivityResult activityResult) {
+        if (activityResult.getResultCode() == RESULT_CANCELED) {
+            super.onActivityResult(new ActivityResult(RESULT_OK, activityResult.getData()));
+        } else {
+            super.onActivityResult(activityResult);
         }
     }
 }
