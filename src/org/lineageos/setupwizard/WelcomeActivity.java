@@ -61,6 +61,10 @@ public class WelcomeActivity extends SubBaseActivity {
     }
 
     @Override
+    public void onBackPressed() {
+    }
+
+    @Override
     protected int getLayoutResId() {
         return R.layout.welcome_activity;
     }
