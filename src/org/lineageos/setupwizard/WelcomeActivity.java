@@ -15,6 +15,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResult;
+
 import com.google.android.setupcompat.template.FooterButtonStyleUtils;
 import com.google.android.setupcompat.util.SystemBarHelper;
 
@@ -68,5 +70,12 @@ public class WelcomeActivity extends SubBaseActivity {
     @Override
     protected int getTitleResId() {
         return -1;
+    }
+
+    @Override
+    protected void onActivityResult(ActivityResult activityResult) {
+        if (activityResult.getResultCode() != RESULT_CANCELED) {
+            super.onActivityResult(activityResult);
+        }
     }
 }
