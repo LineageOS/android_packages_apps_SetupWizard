@@ -23,7 +23,7 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SubBaseActivity.class.getSimpleName();
 
-    private boolean mIsSubactivityNotFound = false;
+    protected boolean mIsSubactivityNotFound = false;
 
     protected abstract void onStartSubactivity();
 
