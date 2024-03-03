@@ -16,6 +16,24 @@
       "message": "Does this work with the shell scripts? Also, I\u0027d personally prefer finding out what\u0027s starting or restarting this and stopping it there than introducing code to work around it here",
       "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f655f0b_622faf2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-03-03T12:50:58Z",
+      "side": 1,
+      "message": "\u003e I\u0027d personally prefer finding out what\u0027s starting or restarting this and stopping it there\n\nAny exported activities that can be launched later will trigger this. This is resolved in CalyxOS, making this change more of a \"double-lock the door\" there, but not in LineageOS, because these activities must stay exported for non-vanilla. There is probably a fix for that too by programmatically disabling them after everything else is done, but I don\u0027t know enough about the non-vanilla flow.",
+      "parentUuid": "be1979e3_761924c9",
+      "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
