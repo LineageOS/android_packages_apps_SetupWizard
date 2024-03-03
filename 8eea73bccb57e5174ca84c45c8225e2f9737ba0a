@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34b026ac_476b7fa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-03-03T03:45:18Z",
+      "side": 1,
+      "message": "Verified to fix offset text in suw. Original copy on 20 should be un-abandoned and merged as well.",
+      "revId": "8eea73bccb57e5174ca84c45c8225e2f9737ba0a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
