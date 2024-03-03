@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d19ef2f_fa351c6b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-03-03T02:40:44Z",
+      "side": 1,
+      "message": "Verified on quill, the suw on atv is no longer locked on the bluetooth pairing window.",
+      "revId": "14ac51cb4e349b488d78dcc5b7f7540f0dd1368e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
