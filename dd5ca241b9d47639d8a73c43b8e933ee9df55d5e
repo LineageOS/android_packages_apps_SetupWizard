@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3908d35_fbb53942",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-03-03T06:07:14Z",
+      "side": 1,
+      "message": "Does not prevent the back button from cycling the activity.",
+      "revId": "dd5ca241b9d47639d8a73c43b8e933ee9df55d5e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
