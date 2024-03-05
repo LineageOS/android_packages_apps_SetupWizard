@@ -204,10 +204,9 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 // If that fails, fall back to preferred languages reported
                 // by the sim
                 if (locale == null) {
-                    String localeString = telephonyManager.getLocaleFromDefaultSim();
-                    if (localeString != null) {
-                        locale = Locale.forLanguageTag(localeString);
-
+                    Locale simLocale = telephonyManager.getSimLocale();
+                    if (simLocale != null) {
+                        locale = simLocale;
                     }
                 }
                 Locale finalLocale = locale;
