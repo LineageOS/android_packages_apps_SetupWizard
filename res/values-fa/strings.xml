@@ -1,54 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">راهنمای راه‌اندازی</string>
     <string name="start">شروع</string>
     <string name="loading">یک لحظه لطفا\u2026</string>
-    <string name="setup_complete">راه‌اندازی کامل شد</string>
-    <string name="setup_welcome">خوش آمدید</string>
-    <string name="setup_wifi">انتخاب وای‌فای</string>
+    <string name="emergency_call">تماس اضطراری</string>
     <string name="setup_sim_missing">دستگاه فاقد سیم کارت است</string>
-    <string name="setup_choose_data_sim">انتخاب سیم کارت برای داده همراه</string>
-    <string name="setup_location">خدمات مکان</string>
-    <string name="setup_other">سایر خدمات</string>
-    <string name="setup_datetime">تاریخ و زمان</string>
-    <string name="setup_current_date">تاریخ کنونی</string>
-    <string name="setup_current_time">زمان کنونی</string>
     <string name="sim_missing_summary" product="tablet">سیم کارتی در تبلت شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
     <string name="sim_missing_summary" product="default">سیم کارتی در گوشی شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
-    <string name="choose_data_sim_summary" product="tablet">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی تبلت شما استفاده می‌شود.</string>
-    <string name="choose_data_sim_summary" product="default">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی گوشی شما استفاده می‌شود.</string>
+    <string name="setup_datetime">تاریخ و زمان</string>
     <string name="date_time_summary">منطقه‌ی زمانی و تاریخ فعلی را در صورت نیاز تنظیم کنید</string>
+    <string name="setup_current_date">تاریخ کنونی</string>
+    <string name="setup_current_time">زمان کنونی</string>
+    <string name="setup_location">خدمات مکان</string>
     <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
-    <string name="setup_mobile_data_no_service">بدون سرویس</string>
-    <string name="setup_mobile_data_emergency_only">فقط تماس اضطراری</string>
-    <string name="no">خیر</string>
-    <string name="yes">بله</string>
-    <string name="emergency_call">تماس اضطراری</string>
     <string name="setup_services">ویژگی‌های لینیِج اواِس</string>
     <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
-    <string name="settings_biometric_setup_title">انتخاب قفل پشتیبان صفحه</string>
-    <string name="settings_biometric_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
-    <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
-    <string name="fingerprint_setup_summary">برای استفاده از حسگر اثر انگشت برای باز کردن قفل صفحه، به این موارد نیاز دارید:</string>
-    <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
-    <string name="biometric_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
-    <string name="biometric_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
-    <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
-    <string name="lockscreen_setup_screen_lock_setup">برپا سازی</string>
 </resources>

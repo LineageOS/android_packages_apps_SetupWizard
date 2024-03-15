@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Sąrankos vediklis</string>
@@ -22,34 +11,15 @@
     <string name="start">Pradėti</string>
     <string name="ok">Gerai</string>
     <string name="loading">Sekundėlę\u2026</string>
-    <string name="setup_complete">Sąranka baigta</string>
-    <string name="setup_welcome">Sveiki</string>
-    <string name="setup_wifi">Pasirinkite „Wi-Fi“</string>
+    <string name="emergency_call">Pagalbos skambutis</string>
     <string name="setup_sim_missing">SIM kortelės nėra</string>
-    <string name="setup_choose_data_sim">Pasirinkite SIM dėl duomenų</string>
-    <string name="setup_location">Vietovės paslaugos</string>
-    <string name="setup_other">Kitos paslaugos</string>
-    <string name="setup_datetime">Data ir laikas</string>
-    <string name="setup_current_date">Dabartinė data</string>
-    <string name="setup_current_time">Dabartinis laikas</string>
     <string name="sim_missing_summary" product="tablet">SIM kortelė nebuvo aptikta jūsų planšetiniame kompiuteryje. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo planšetiniu kompiuteriu.</string>
     <string name="sim_missing_summary" product="default">SIM kortelė nebuvo aptikta jūsų telefone. Kad įdėtumėte SIM kortelę, perskaitykite instrukcijas, kurias gavote kartu su savo telefonu.</string>
-    <string name="choose_data_sim_summary" product="tablet">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų planšetinį kompiuterį.</string>
-    <string name="choose_data_sim_summary" product="default">Kurią SIM norite naudoti dėl duomenų? pasirenkant SIM galite patirti tinklo mokesčių, nes ji bus naudojama nustatant jūsų telefoną.</string>
+    <string name="setup_datetime">Data ir laikas</string>
     <string name="date_time_summary">Jei reikia nustatykite savo laiko juostą ir koreguokite dabartinę datą ir laiką</string>
+    <string name="setup_current_date">Dabartinė data</string>
+    <string name="setup_current_time">Dabartinis laikas</string>
+    <string name="setup_location">Vietovės paslaugos</string>
     <string name="location_access_summary"><b>Leisti programoms, kurios paprašė jūsų leidimo</b> naudoti jūsų vietos informaciją. Tai gali būti jūsų dabartinė buvimo vieta ir ankstesnės vietos.</string>
-    <string name="setup_mobile_data_no_service">Nėra paslaugos</string>
-    <string name="setup_mobile_data_emergency_only">Tik pagalbos skambučiai</string>
-    <string name="no">Ne</string>
-    <string name="yes">Taip</string>
-    <string name="emergency_call">Pagalbos skambutis</string>
     <string name="services_os_nav_keys_label"><b>Naudokite ekrane rodomus naršymo klavišus</b> vietoj aparatūrinių klavišų.</string>
-    <string name="settings_biometric_setup_title">Pasirinkite atsarginį ekrano užrakto tipą</string>
-    <string name="settings_biometric_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
-    <string name="fingerprint_setup_title">Pirštų atspaudų sąranka</string>
-    <string name="fingerprint_setup_summary">Norint naudotis pirštų atspaudų jutikliu, kad atrakinti ekraną, jums reikia:</string>
-    <string name="fingerprint_setup_add_fingerprint">Pridėti savo pirštų atspaudą</string>
-    <string name="biometric_setup_backup_lock_method">Nustatyti antrinį atrakinimo metodą</string>
-    <string name="biometric_setup_screen_lock_setup">Nustatyti ekrano užraktą</string>
-    <string name="settings_lockscreen_setup_details">Kaip norėtumėte užrakinti ekraną?</string>
 </resources>

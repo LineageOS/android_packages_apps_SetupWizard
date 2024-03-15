@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Häälestusviisard</string>
@@ -22,43 +11,20 @@
     <string name="start">Alusta</string>
     <string name="ok">OK</string>
     <string name="loading">Oota hetk\u2026</string>
-    <string name="setup_complete">Seadistus on valmis</string>
-    <string name="setup_welcome">Tere tulemast</string>
-    <string name="setup_wifi">Vali Wi-Fi</string>
+    <string name="emergency_call">Hädaabinumbril helistamine</string>
     <string name="setup_sim_missing">SIM-kaart on puudu</string>
-    <string name="setup_choose_data_sim">Vali SIM andmete jaoks</string>
-    <string name="setup_location">Asukohateenused</string>
-    <string name="setup_other">Muud teenused</string>
-    <string name="setup_datetime">Kuupäev &amp; kellaaeg</string>
-    <string name="setup_current_date">Tänane kuupäev</string>
-    <string name="setup_current_time">Praegune kellaaeg</string>
     <string name="sim_missing_summary" product="tablet">SIM-kaarti ei leitud. SIM-kaardi sisestamiseks tutvu seadmega kaasas oleva kasutusjuhendiga.</string>
     <string name="sim_missing_summary" product="default">SIM-kaarti ei leitud. SIM-kaardi sisestamiseks tutvu seadmega kaasas oleva kasutusjuhendiga.</string>
-    <string name="choose_data_sim_summary" product="tablet">Millist SIM-kaarti soovid andmeside kasutamiseks? Valitud SIM-ga võivad kaasneda võrgutasud, kuna seda kasutatakse tahvelarvuti seadistamiseks.</string>
-    <string name="choose_data_sim_summary" product="default">Millist SIM-kaarti soovid andmeside kasutamiseks? Valitud SIM-ga võivad kaasneda võrgutasud, kuna seda kasutatakse nutitelefoni seadistamiseks.</string>
+    <string name="setup_datetime">Kuupäev &amp; kellaaeg</string>
     <string name="date_time_summary">Määra ajavöönd ning kohandada vajadusel tänast kuupäeva ja kellaaega</string>
-    <string name="location_access_summary"><b>Luba rakendustel, mis on küsinud Teie nõusolekut</b> kasutada Teie asukoha informatsiooni. See võib tähendada nii Teie praegust kui ka eelnevaid asukohti.</string>
-    <string name="setup_mobile_data_no_service">Teenus puudub</string>
-    <string name="setup_mobile_data_emergency_only">Üksnes hädaabikõned</string>
-    <string name="no">Ei</string>
-    <string name="yes">Jah</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
-    <string name="emergency_call">Hädaabinumbril helistamine</string>
-    <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="LineageOS">%s</xliff:g>i</string>
-    <string name="services_os_nav_keys_label"><b>Kasuta ekraanil olevaid navigeerimisklahve</b> riistvaraliste nuppude asemel.</string>
-    <string name="settings_biometric_setup_title">Valige alternatiivne ekraani luku tüüp</string>
-    <string name="settings_biometric_setup_details">Kuidas soovite ekraani lukustada?</string>
-    <string name="fingerprint_setup_title">Sõrmejälgede seadistamine</string>
-    <string name="fingerprint_setup_summary">Et kasutada sõrmejäljelugejat ekraani avamiseks, peate:</string>
-    <string name="fingerprint_setup_add_fingerprint">Lisa oma sõrmejälg</string>
-    <string name="face_setup_title">Näo seadistus</string>
-    <string name="face_setup_summary">Näo kasutamiseks ekraani lahti lukustamisel pead sa:</string>
-    <string name="face_setup_add_face">Lisa oma nägu</string>
-    <string name="biometric_setup_backup_lock_method">Häälesta teisejärguline avamise meetod</string>
-    <string name="biometric_setup_screen_lock_setup">Ekraaniluku seadistamine</string>
-    <string name="settings_lockscreen_setup_details">Kuidas soovite ekraani lukustada?</string>
+    <string name="setup_current_date">Tänane kuupäev</string>
+    <string name="setup_current_time">Praegune kellaaeg</string>
     <string name="intro_restore_title">Taasta rakendused ja andmed</string>
     <string name="intro_restore_button">Taasta varundusest</string>
+    <string name="setup_location">Asukohateenused</string>
+    <string name="location_access_summary"><b>Luba rakendustel, mis on küsinud Teie nõusolekut</b> kasutada Teie asukoha informatsiooni. See võib tähendada nii Teie praegust kui ka eelnevaid asukohti.</string>
     <string name="update_recovery_title">Uuenda Lineage Recoveryt</string>
     <string name="update_recovery_setting">Uuenda Lineage Recoveryt koos OSiga</string>
+    <string name="services_help_improve_cm">Aita parendada <xliff:g id="name" example="LineageOS">%s</xliff:g>i</string>
+    <string name="services_os_nav_keys_label"><b>Kasuta ekraanil olevaid navigeerimisklahve</b> riistvaraliste nuppude asemel.</string>
 </resources>

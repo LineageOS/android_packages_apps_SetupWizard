@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Asistente de configuración</string>
@@ -23,50 +12,21 @@
     <string name="done">Listo</string>
     <string name="ok">Aceptar</string>
     <string name="loading">Un segundo\u2026</string>
-    <string name="setup_complete">Configuración completada</string>
-    <string name="setup_welcome">¡Bienvenido/a!</string>
+    <string name="emergency_call">Llamada de emergencia</string>
     <string name="setup_locale">Idioma</string>
-    <string name="setup_wifi">Selecciona una red Wi-Fi</string>
+    <string name="sim_locale_changed">%1$s SIM detectada</string>
     <string name="setup_sim_missing">Falta la tarjeta SIM</string>
-    <string name="setup_choose_data_sim">Elige una SIM para datos</string>
-    <string name="setup_location">Servicios de ubicación</string>
-    <string name="setup_other">Otros servicios</string>
-    <string name="setup_datetime">Fecha y hora</string>
-    <string name="setup_current_date">Fecha actual</string>
-    <string name="setup_current_time">Hora actual</string>
     <string name="sim_missing_summary" product="tablet">No se ha detectado una tarjeta SIM en el tablet. Para insertar una tarjeta SIM, lee las instrucciones que vienen con el tablet.</string>
     <string name="sim_missing_summary" product="default">No se ha detectado una tarjeta SIM en el teléfono. Para insertar una tarjeta SIM, lee las instrucciones que vienen con el teléfono.</string>
-    <string name="choose_data_sim_summary" product="tablet">¿Qué tarjeta SIM quieres utilizar para los datos? La tarjeta SIM seleccionada puede incurrir en cargos de red ya que se utilizará para configurar el tablet.</string>
-    <string name="choose_data_sim_summary" product="default">¿Qué tarjeta SIM quieres utilizar para los datos? La tarjeta SIM seleccionada puede incurrir en cargos de red ya que se utilizará para configurar el teléfono.</string>
+    <string name="setup_datetime">Fecha y hora</string>
     <string name="date_time_summary">Configura la zona horaria y ajusta la fecha y hora actuales si es necesario</string>
+    <string name="setup_current_date">Fecha actual</string>
+    <string name="setup_current_time">Hora actual</string>
+    <string name="intro_restore_title">Restaurar aplicaciones y datos</string>
+    <string name="intro_restore_button">Restaurar desde copia de seguridad</string>
+    <string name="setup_location">Servicios de ubicación</string>
     <string name="location_access_summary"><b>Permitir aplicaciones que han solicitado tu permiso</b> para usar tu información de ubicación. Esto puede incluir tus ubicaciones anteriores y la actual.</string>
-    <string name="setup_mobile_data">Activar datos móviles</string>
-    <string name="setup_mobile_data_no_service">Sin servicio</string>
-    <string name="setup_mobile_data_emergency_only">Solo llamadas de emergencia</string>
-    <string name="enable_mobile_data_summary">¿Deseas utilizar los datos móviles durante la instalación? Activar los datos móviles puede provocar cargos de datos.</string>
-    <string name="no">No</string>
-    <string name="yes">Sí</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
-    <string name="emergency_call">Llamada de emergencia</string>
     <string name="setup_services">Características de LineageOS</string>
     <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
-    <string name="settings_biometric_setup_title">Selecciona el tipo de copia de seguridad de pantalla de bloqueo</string>
-    <string name="settings_biometric_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
-    <string name="fingerprint_setup_title">Ajustes de huella digital</string>
-    <string name="fingerprint_setup_summary">Para utilizar el sensor de huella digital para desbloquear la pantalla, necesitarás:</string>
-    <string name="fingerprint_setup_add_fingerprint">Añade tu huella digital</string>
-    <string name="face_setup_title">Configuración facial</string>
-    <string name="face_setup_summary">Para utilizar su cara para desbloquear la pantalla, necesitarás:</string>
-    <string name="face_setup_add_face">Añadir su cara</string>
-    <string name="biometric_setup_backup_lock_method">Establecer un método secundario de desbloqueo</string>
-    <string name="biometric_setup_screen_lock_setup">Ajustes de pantalla de bloqueo</string>
-    <string name="sim_locale_changed">%1$s SIM detectada</string>
-    <string name="settings_lockscreen_setup_title">Seleccione el tipo de bloqueo de la pantalla</string>
-    <string name="settings_lockscreen_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
-    <string name="lockscreen_setup_title" product="default">Proteja su teléfono</string>
-    <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> y establecer un PIN, un patrón o una contraseña para desbloquear la pantalla</string>
-    <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
-    <string name="intro_restore_title">Restaurar aplicaciones y datos</string>
-    <string name="intro_restore_button">Restaurar desde copia de seguridad</string>
 </resources>

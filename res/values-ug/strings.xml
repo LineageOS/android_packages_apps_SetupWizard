@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">تەڭشەك يېتەكچىسى</string>
@@ -22,37 +11,16 @@
     <string name="start">باشلاش</string>
     <string name="ok">جەزملەش</string>
     <string name="loading">سەل كۈتۈڭ\u2026</string>
-    <string name="setup_complete">تەڭشەش تاماملاندى</string>
-    <string name="setup_welcome">مەرھابا</string>
-    <string name="setup_wifi">Wi-Fi تاللاڭ</string>
+    <string name="emergency_call">جىددىي چاقىرىش</string>
+    <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
     <string name="setup_sim_missing">SIM كارتا يوق</string>
-    <string name="setup_choose_data_sim">سانلىق مەلۇماتقا ئىشلىتىدىغان SIM كارتىدىن بىرنى تاللاڭ</string>
-    <string name="setup_location">ئورۇن مۇلازىمەتلىرى</string>
-    <string name="setup_other">باشقا مۇلازىمەتلەر</string>
-    <string name="setup_datetime">چىسلا &amp; ۋاقىت</string>
-    <string name="setup_current_date">نۆۋەتتىكى چېسلا</string>
-    <string name="setup_current_time">نۆۋەتتىكى ۋاقىت</string>
     <string name="sim_missing_summary" product="tablet">تاختا كومپىيوتېرىڭىزدا SIM كارتا بايقىمىدى. تاختا كومپىيوتېر ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
     <string name="sim_missing_summary" product="default">يانفونىڭىزدا SIM كارتا بايقىمىدى. يانفون ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
-    <string name="choose_data_sim_summary" product="tablet">قايسى SIM كارتىنىڭ ئېقىمىنى ئىشلىتىسىز؟ سىز SIM كارتىڭىز تاختا كومپىيوتېرنى تەڭشەش سەۋەبلىك ئېقىم سەرپ قىلىشى مۇمكىن.</string>
-    <string name="choose_data_sim_summary" product="default">قايسى SIM كارتىنىڭ ئېقىمىنى ئىشلىتىسىز؟ سىز SIM كارتىڭىز تېلېفوننى تەڭشەش سەۋەبلىك ئېقىم سەرپ قىلىشى مۇمكىن.</string>
+    <string name="setup_datetime">چىسلا &amp; ۋاقىت</string>
     <string name="date_time_summary">ئەگەر لازىم بولسا، ۋاقىت رايونى. چىسلا ۋە ۋاقىتنى تەڭشەڭ</string>
+    <string name="setup_current_date">نۆۋەتتىكى چېسلا</string>
+    <string name="setup_current_time">نۆۋەتتىكى ۋاقىت</string>
+    <string name="setup_location">ئورۇن مۇلازىمەتلىرى</string>
     <string name="location_access_summary"><b>سىز ھوقۇق بەرگەن ئەپنىڭ</b> سىزنىڭ ئورۇن ئۇچۇرىڭىزنى ئىشلىتىشكە يول قويۇش، بۇ بەلكىم سىزنىڭ ھازىرقى ۋە ئۆتمۈشتىكى ئۇچۇرىڭىزنى ئۆز ئىچىگە ئېلىشى مۇمكىن.</string>
-    <string name="setup_mobile_data">كۆچمە تورنى ئېچىش</string>
-    <string name="setup_mobile_data_no_service">مۇلازىمەت يوق</string>
-    <string name="setup_mobile_data_emergency_only">جىددىي تېلېفونلا ئۇرغىلى بولىدۇ</string>
-    <string name="enable_mobile_data_summary">سىز تەڭشەش جەريانىدا كۆچمە تورنى ئىشلىتەمسىز؟ كۆچمە تورنى قوزغاتسىڭىز بەلكىم ئېقىم چىقىم بۇلىشى مۇمكىن.</string>
-    <string name="no">ياق</string>
-    <string name="yes">ھەئە</string>
-    <string name="emergency_call">جىددىي چاقىرىش</string>
     <string name="services_os_nav_keys_label"><b>مەۋھۇم كونۇپكىنى</b> ھەقىقىي كونۇپكىنىڭ ئورنىغا ئالماشتۇرۇش.</string>
-    <string name="settings_biometric_setup_title">زاپاس قۇلۇپ تىپىنى تاللاڭ</string>
-    <string name="settings_biometric_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
-    <string name="fingerprint_setup_title">بارماق ئىزى تەڭشىكى</string>
-    <string name="fingerprint_setup_summary">ئۆزىڭىزنىڭ بارماق داتچىكنى ئىشلىتىپ قۇلۇپ ئاچماقچى بولسىڭىز، سىز چوقۇم:</string>
-    <string name="fingerprint_setup_add_fingerprint">بارماق ئىزى قوشۇڭ</string>
-    <string name="biometric_setup_backup_lock_method">زاپاس قۇلۇپ يىيىش ئۇسۇلىنى بېكىتىڭ</string>
-    <string name="biometric_setup_screen_lock_setup">ئېكران قۇلۇپ تەڭشىكى</string>
-    <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
-    <string name="settings_lockscreen_setup_details">ئېكراننى قانداق قۇلۇپلايسىز؟</string>
 </resources>
