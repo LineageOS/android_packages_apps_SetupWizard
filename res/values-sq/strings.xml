@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Asistenti i Konfigurimit</string>
@@ -23,33 +12,30 @@
     <string name="done">U krye</string>
     <string name="ok">OK</string>
     <string name="loading">Një sekondë\u2026</string>
-    <string name="setup_complete">Konfigurimi u plotësua</string>
-    <string name="setup_welcome">Mirësevini</string>
     <string name="setup_welcome_message">Mire se erdhët në <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Gjuha</string>
-    <string name="setup_wifi">Zgjidh Wi-Fi</string>
-    <string name="setup_sim_missing">Karta SIM mungon</string>
-    <string name="setup_choose_data_sim">Zgjidh një kartë SIM për internet</string>
-    <string name="setup_location">Shërbimet e vendndodhjes</string>
-    <string name="setup_other">Shërbime të tjera</string>
-    <string name="setup_datetime">Data &amp; ora</string>
-    <string name="setup_current_date">Data aktuale</string>
-    <string name="setup_current_time">Ora</string>
-    <string name="sim_missing_summary" product="tablet">Ju nuk keni futur asnjë kartë SIM në tabletë. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
-    <string name="sim_missing_summary" product="default">Ju nuk keni futur asnjë kartë SIM në telefon. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
-    <string name="choose_data_sim_summary" product="tablet">Kë kartë SIM doni të përdorni për t\'u lidhur me internetin? SIM-i i zgjedhur mund të rrisë pagesën që do i detyroheni operatorit pasi do të përdoret për të konfiguruar tabletën.</string>
-    <string name="choose_data_sim_summary" product="default">Kë kartë SIM doni të përdorni për t\'u lidhur me internetin? SIM-i i zgjedhur mund të rrisë pagesën që do i detyroheni operatorit pasi do të përdoret për të konfiguruar telefonin.</string>
-    <string name="date_time_summary">Cakto zonën kohore dhe rregullo datën dhe orën nëse është e nevojshme</string>
-    <string name="location_access_summary"><b> Lejo programe që kanë kërkuar lejen tënde</b> të përdorin informacionin mbi vendndodhjen tuaj. Kjo mund të përfshijë vendndodhjen tuaj aktuale dhe vendodhje tuajat të mëparshme.</string>
-    <string name="setup_mobile_data">Aktivizo internetin e celularit</string>
-    <string name="setup_mobile_data_no_service">Nuk ka shërbim</string>
-    <string name="setup_mobile_data_emergency_only">Vetëm telefonata urgjente</string>
-    <string name="enable_mobile_data_summary">A doni të përdorni internetin e celularit gjatë instalimit? Aktivizimi i internetit të celularit mund të rrisë pagesën e përdorimit të internetit.</string>
-    <string name="no">Jo</string>
-    <string name="yes">Po</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="setup_managed_profile_welcome_message">Konfiguro profilin tënd të punës</string>
     <string name="emergency_call">Thirrje emergjente</string>
     <string name="accessibility_settings">Cilësimet e aksesueshmërisë</string>
+    <string name="setup_locale">Gjuha</string>
+    <string name="sim_locale_changed">%1$s SIM u lidh</string>
+    <string name="setup_sim_missing">Karta SIM mungon</string>
+    <string name="sim_missing_summary" product="tablet">Ju nuk keni futur asnjë kartë SIM në tabletë. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
+    <string name="sim_missing_summary" product="default">Ju nuk keni futur asnjë kartë SIM në telefon. Për të mësuar si të fusni kartën SIM, lexoni udhëzimet që kanë ardhur me pajisjen tuaj.</string>
+    <string name="setup_datetime">Data &amp; ora</string>
+    <string name="date_time_summary">Cakto zonën kohore dhe rregullo datën dhe orën nëse është e nevojshme</string>
+    <string name="setup_current_date">Data aktuale</string>
+    <string name="setup_current_time">Ora</string>
+    <string name="intro_restore_title">Rikthe aplikacionet dhe të dhënat</string>
+    <string name="intro_restore_subtitle">Nëse keni një kopje rezervë Seedvault nga <xliff:g id="name" example="LineageOS">%s</xliff:g> ose ndonjë OS tjetër, mund ta rivendosni këtu.</string>
+    <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
+    <string name="setup_location">Shërbimet e vendndodhjes</string>
+    <string name="location_access_summary"><b> Lejo programe që kanë kërkuar lejen tënde</b> të përdorin informacionin mbi vendndodhjen tuaj. Kjo mund të përfshijë vendndodhjen tuaj aktuale dhe vendodhje tuajat të mëparshme.</string>
+    <string name="location_agps_access_summary">Kur vendndodhja është aktive, <b>shkarko të dhënat e ndihmës satelitore nga interneti</b>, të cilat mund të përmirësojnë shumë performancën e nisjes së GPS-së.</string>
+    <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>
+    <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo përditësimi.</string>
+    <string name="update_recovery_warning">Rikuperimi do të përditësohet sapo të keni mbaruar konfigurimin. Nëse dëshironi ta mbani të paprekur, mbylleni këtë veçori.</string>
+    <string name="update_recovery_setting">Përditësoni rikuperimin Lineage krahas OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funksionet e LineageOS</string>
     <string name="services_pp_explanation">Këto shërbime punojnë për ju për të zgjeruar aftësitë e pajisjes tuaj. Të dhënat do të përdoren në përputhje me <xliff:g id="name" example="LineageOS">%1$s</xliff:g> politikës së privatësisë</string>
     <string name="services_find_privacy_policy">Ju mund të lexoni politikën e privatësisë në një pajisje tjetër duke vizituar  <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +43,14 @@
     <string name="services_metrics_label">&lt;xliff:g id="name" example="Ndihmoni në përmirësimin e LineageOS&gt;%1$s&lt;/xliff:g&gt; duke dërguar automatikisht të dhënat diagnostikuese dhe të përdorimit te &lt;xliff:g id="name" example="LineageOS"&gt;%2$s&lt;/xliff:g&gt;. Ky informacion nuk mund të përdoret për të të identifikuar ty dhe u jep ndihmë ekipeve që punojnë për gjëra të tilla si jetëgjatësia e baterisë, performanca e aplikacionit dhe të reja &lt;xliff:g id="name" example="LineageOS"&gt;%3$s&lt;/xliff:g&gt; veçoritë.</string>
     <string name="services_os_nav_keys_label"><b>Përdor butonat virtualë të lundrimit</b> në vend të butonave fizikë.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Zgjidh mënyrën rezervë të bllokimit të ekranit</string>
-    <string name="settings_biometric_setup_details">Si doni që ta bllokoni ekranin?</string>
-    <string name="fingerprint_setup_title">Konfigurimi i shenjave të gishtave</string>
-    <string name="fingerprint_setup_summary">Për të përdorur sensorin e shenjave të gishtave që të zhbllokosh ekranin, duhet të:</string>
-    <string name="fingerprint_setup_add_fingerprint">Shtosh shenjat e gishtave</string>
-    <string name="face_setup_title">Konfigurimi i fytyrës</string>
-    <string name="face_setup_summary">Për të përdorur fytyrën tuaj për të zhbllokuar ekranin tuaj, do të duhet:</string>
-    <string name="face_setup_add_face">Shtoni fytyrën tuaj</string>
-    <string name="biometric_setup_backup_lock_method">Konfigurosh një metodë të dytë zhbllokimi</string>
-    <string name="biometric_setup_screen_lock_setup">Konfigurosh bllokimin e ekranit</string>
-    <string name="sim_locale_changed">%1$s SIM u lidh</string>
-    <string name="settings_lockscreen_setup_title">Zgjidh mënyrën e bllokimit të ekranit</string>
-    <string name="settings_lockscreen_setup_details">Si doni ta bllokoni ekranin?</string>
-    <string name="lockscreen_setup_title" product="default">Mbro telefonin</string>
-    <string name="lockscreen_setup_title" product="device">Mbroje pajisjen tënde</string>
-    <string name="lockscreen_setup_title" product="tablet">Mbro tabletin</string>
-    <string name="lockscreen_setup_summary"><b>Mbro këtë pajisje</b> dhe vendos një PIN, model, ose fjalëkalim për të zhbllokuar ekranin</string>
-    <string name="lockscreen_setup_screen_lock_setup">Konfiguro</string>
-    <string name="intro_restore_title">Rikthe aplikacionet dhe të dhënat</string>
-    <string name="intro_restore_subtitle">Nëse keni një kopje rezervë nga pajisja juaj e fundit <xliff:g id="name" example="LineageOS">%s</xliff:g>, mund ta rivendosni këtu.</string>
-    <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
-    <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>
-    <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo azhornimi.</string>
-    <string name="update_recovery_warning">Rikuperimi do të përditësohet sapo të keni mbaruar konfigurimin. Nëse dëshironi ta mbani të paprekur, mbylleni këtë veçori.</string>
-    <string name="update_recovery_setting">Përditësoni rikuperimin Lineage krahas OS</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Lundrimi</string>
     <string name="navigation_summary">Zgjidhni metodën e preferuar të navigimit</string>
     <string name="gesture_navigation">Navigimi me gjeste</string>
     <string name="two_button_navigation">Navigimi me 2 butona</string>
     <string name="navbar_navigation">Navigimi me 3 butona</string>
     <string name="hide_gesture_hint">Fshih këshillën e navigimit gjestik</string>
-    <string name="location_agps_access_summary">Kur vendndodhja është aktive, <b>shkarko të dhënat e ndihmës satelitore nga interneti</b>, të cilat mund të përmirësojnë shumë performancën e nisjes së GPS-së.</string>
+    <string name="setup_theme">Tema</string>
+    <string name="theme_summary">Tema e errët përdor një sfond të zi për të ndihmuar në ruajtjen e baterisë më gjatë në disa ekrane</string>
+    <string name="dark">E errët</string>
+    <string name="light">E bardhë</string>
 </resources>

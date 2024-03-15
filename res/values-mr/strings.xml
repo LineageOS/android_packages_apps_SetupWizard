@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">सेटअप विझार्ड</string>
@@ -22,39 +11,16 @@
     <string name="start">प्रारंभ करा</string>
     <string name="ok">ठीक आहे</string>
     <string name="loading">एक सेकंदांमध्ये\u2026</string>
-    <string name="setup_complete">सेटअप पूर्ण झाला आहे</string>
-    <string name="setup_welcome">सुस्वागतम</string>
-    <string name="setup_wifi">Wi-Fi निवडा</string>
+    <string name="emergency_call">आणीबाणीचा कॉल</string>
+    <string name="sim_locale_changed">%1$s सिम आढळले</string>
     <string name="setup_sim_missing">सिम कार्ड गहाळ आहे</string>
-    <string name="setup_choose_data_sim">डेटासाठी सिम निवडा</string>
-    <string name="setup_location">स्‍थान सेवा</string>
-    <string name="setup_other">इतर सेवा</string>
-    <string name="setup_datetime">तारीख व वेळ</string>
-    <string name="setup_current_date">चालू तारीख</string>
-    <string name="setup_current_time">चालू वेळ</string>
     <string name="sim_missing_summary" product="tablet">तुमच्या टॅब्लेटमध्ये सिम कार्ड आढळले नाही. सिम कार्ड इन्सर्ट करण्यासाठी, तुमच्या डिव्हाइससह येणाऱ्या सूचना वाचा.</string>
     <string name="sim_missing_summary" product="default">तुमच्या फोनमध्ये सिम कार्ड आढळले नाही. सिम कार्ड इन्सर्ट करण्यासाठी, तुमच्या डिव्हाइससह येणाऱ्या सूचना वाचा.</string>
-    <string name="choose_data_sim_summary" product="tablet">डेटासाठी तुम्हाला कोणते सिम वापरायचे आहे? निवडलेल्या सिम ला नेटवर्क शुल्क लागू शकते कारण ते तुमचा टॅब्लेट सेट करण्यासाठी वापरले जाईल.</string>
-    <string name="choose_data_sim_summary" product="default">डेटासाठी तुम्हाला कोणते सिम वापरायचे आहे? निवडलेल्या सिम ला नेटवर्क शुल्क लागू शकते कारण ते तुमचा फोन सेट करण्यासाठी वापरले जाईल.</string>
+    <string name="setup_datetime">तारीख व वेळ</string>
     <string name="date_time_summary">तुमचे वेळ क्षेत्र सेट करा आणि गरज असल्यास चालू तारीख व वेळ समायोजित करा</string>
+    <string name="setup_current_date">चालू तारीख</string>
+    <string name="setup_current_time">चालू वेळ</string>
+    <string name="setup_location">स्‍थान सेवा</string>
     <string name="location_access_summary"><b>तुमची परवानगी विचारलेल्या अनुप्रयोगांना</b> तुमची स्थान माहिती वापरण्यास परवानगी द्या. यामध्ये तुमचे चालू स्थान आणि मागील स्थानांचा समावेश होऊ शकतो.</string>
-    <string name="setup_mobile_data">मोबाईल डेटा चालू करा</string>
-    <string name="setup_mobile_data_no_service">सेवा नाही.</string>
-    <string name="setup_mobile_data_emergency_only">फक्त आणीबाणीचे कॉल</string>
-    <string name="enable_mobile_data_summary">सेटअप दरम्यान तुम्हाला मोबाईल डेटा वापरायचा आहे का? मोबाईल डेटा चालू करणे डेटा शुल्काच्या आधीन असू शकते.</string>
-    <string name="no">नाही</string>
-    <string name="yes">होय</string>
-    <string name="emergency_call">आणीबाणीचा कॉल</string>
     <string name="services_os_nav_keys_label">हार्डवेअर कींच्या ऐवजी <b>स्क्रीन नॅविगेशन कींवर वापरा</b>.</string>
-    <string name="settings_biometric_setup_title">बॅकअप स्क्रीन लॉक टाईप निवडा</string>
-    <string name="settings_biometric_setup_details">तुम्हाला तुमचा स्क्रीन कसा लॉक करायला आवडेल?</string>
-    <string name="fingerprint_setup_title">बोटाचा ठसा सेटअप</string>
-    <string name="fingerprint_setup_summary">तुमचा स्क्रीन अनलॉक करण्यासाठी, तुमचा बोटाचा ठसा सेन्सर वापरण्यासाठी तुम्हाला हे करावे लागेल:</string>
-    <string name="fingerprint_setup_add_fingerprint">तुमचा बोटाचा ठसा जोडा</string>
-    <string name="biometric_setup_backup_lock_method">दुय्यम अनलॉक पध्दत सेटअप करा</string>
-    <string name="biometric_setup_screen_lock_setup">स्क्रीन लॉक सेटअप करा</string>
-    <string name="sim_locale_changed">%1$s सिम आढळले</string>
-    <string name="settings_lockscreen_setup_details">तुम्हाला तुमचा स्क्रीन कसा लॉक करायला आवडेल?</string>
-    <string name="lockscreen_setup_title" product="default">आपला फोन संरक्षित करा</string>
-    <string name="lockscreen_setup_summary"><b>हे डिव्हाइस संरक्षित करा</b> आणि स्क्रीन अनलॉक करण्यासाठी पिन, नमुना किंवा संकेतशब्द आवश्यक आहे</string>
 </resources>

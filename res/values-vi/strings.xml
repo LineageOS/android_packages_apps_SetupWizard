@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Trình hướng dẫn thiết lập</string>
@@ -23,33 +12,30 @@
     <string name="done">Xong</string>
     <string name="ok">OK</string>
     <string name="loading">Vui lòng đợi một giây\u2026</string>
-    <string name="setup_complete">Đã thiết lập xong</string>
-    <string name="setup_welcome">Chào mừng</string>
     <string name="setup_welcome_message">Chào mừng bạn đến <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Ngôn ngữ</string>
-    <string name="setup_wifi">Chọn Wi-Fi</string>
-    <string name="setup_sim_missing">Không có thẻ SIM</string>
-    <string name="setup_choose_data_sim">Chọn một thẻ SIM sử dụng dữ liệu</string>
-    <string name="setup_location">Dịch vụ vị trí</string>
-    <string name="setup_other">Các dịch vụ khác</string>
-    <string name="setup_datetime">Ngày &amp; giờ</string>
-    <string name="setup_current_date">Ngày hiện tại</string>
-    <string name="setup_current_time">Thời gian hiện tại</string>
-    <string name="sim_missing_summary" product="tablet">Không tìm thấy thẻ SIM trong máy tính bảng của bạn. Để chèn thẻ SIM, đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
-    <string name="sim_missing_summary" product="default">Không tìm thấy thẻ SIM trong điện thoại của bạn. Để chèn thẻ SIM, đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
-    <string name="choose_data_sim_summary" product="tablet">Bạn muốn sử dụng dữ liệu bằng SIM nào? SIM đã chọn có thể phát sinh chi phí mạng trong quá trình thiết lập máy tính bảng của bạn.</string>
-    <string name="choose_data_sim_summary" product="default">Bạn muốn sử dụng dữ liệu bằng SIM nào? SIM đã chọn có thể phát sinh chi phí mạng trong quá trình thiết lập điện thoại của bạn.</string>
-    <string name="date_time_summary">Đặt múi giờ của bạn và điều chỉnh ngày và thời gian hiện tại nếu cần thiết</string>
-    <string name="location_access_summary"><b>Cho phép những ứng dụng đã hỏi quyền</b> sử dụng thông tin vị trí của bạn. Những thông tin này có thể bao gồm vị trí hiện tại và trước đó của bạn.</string>
-    <string name="setup_mobile_data">Bật dữ liệu di động</string>
-    <string name="setup_mobile_data_no_service">Không có dịch vụ</string>
-    <string name="setup_mobile_data_emergency_only">Chỉ gọi khẩn cấp</string>
-    <string name="enable_mobile_data_summary">Bạn có muốn sử dụng dữ liệu di động trong lúc thiết lập? Bật dữ liệu di động có thể phải chịu phí dữ liệu.</string>
-    <string name="no">Không</string>
-    <string name="yes">Có</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="setup_managed_profile_welcome_message">Thiết lập hồ sơ công việc của bạn</string>
     <string name="emergency_call">Cuộc gọi khẩn cấp</string>
     <string name="accessibility_settings">Cài đặt trợ năng</string>
+    <string name="setup_locale">Ngôn ngữ</string>
+    <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
+    <string name="setup_sim_missing">Không có thẻ SIM</string>
+    <string name="sim_missing_summary" product="tablet">Không tìm thấy thẻ SIM trong máy tính bảng của bạn. Để chèn thẻ SIM, đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
+    <string name="sim_missing_summary" product="default">Không tìm thấy thẻ SIM trong điện thoại của bạn. Để chèn thẻ SIM, đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
+    <string name="setup_datetime">Ngày &amp; giờ</string>
+    <string name="date_time_summary">Đặt múi giờ của bạn và điều chỉnh ngày và thời gian hiện tại nếu cần thiết</string>
+    <string name="setup_current_date">Ngày hiện tại</string>
+    <string name="setup_current_time">Thời gian hiện tại</string>
+    <string name="intro_restore_title">Khôi phục Sao lưu</string>
+    <string name="intro_restore_subtitle">Nếu bạn có bản sao lưu Seedvault từ <xliff:g id="name" example="LineageOS">%s</xliff:g> hoặc bất kỳ hệ điều hành nào khác, bạn có thể khôi phục nó tại đây.</string>
+    <string name="intro_restore_button">Khôi phục từ bản sao lưu</string>
+    <string name="setup_location">Dịch vụ vị trí</string>
+    <string name="location_access_summary"><b>Cho phép những ứng dụng đã hỏi quyền</b> sử dụng thông tin vị trí của bạn. Những thông tin này có thể bao gồm vị trí hiện tại và trước đó của bạn.</string>
+    <string name="location_agps_access_summary">Khi vị trí được bật, hãy <b>tải xuống dữ liệu hỗ trợ vệ tinh từ internet</b>, dữ liệu này có thể cải thiện đáng kể hiệu suất khởi động GPS.</string>
+    <string name="update_recovery_title">Cập nhật Lineage Recovery</string>
+    <string name="update_recovery_description">Cập nhật Lineage Recovery khi bật máy lần đầu sau mỗi bản cập nhật.</string>
+    <string name="update_recovery_warning">Recovery sẽ được cập nhật sau khi bạn hoàn thành cài đặt. Nếu bạn muốn giữ nguyên, hãy tắt tính năng này.</string>
+    <string name="update_recovery_setting">Cập nhật Lineage Recovery song song với hệ điều hành</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Các tính năng LineageOS</string>
     <string name="services_pp_explanation">Các dịch vụ này giúp bạn mở rộng khả năng của thiết bị. Dữ liệu sẽ được sử dụng theo chính sách bảo mật của <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">Bạn có thể đọc chính sách bảo mật trên một thiết bị khác bằng cách truy cập <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +43,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu sử dụng và chẩn đoán đến <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Thông tin này không thể được sử dụng để nhận dạng bạn và hỗ trợ các nhóm làm việc về những yếu tố như thời lượng pin, hiệu suất ứng dụng và <xliff:g id="name" example="LineageOS">%3$s</xliff:g> tính năng mới.</string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Chọn kiểu khóa màn hình dự phòng</string>
-    <string name="settings_biometric_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
-    <string name="fingerprint_setup_title">Thiết lập vân tay</string>
-    <string name="fingerprint_setup_summary">Để sử dụng cảm biến vân tay của bạn để mở khóa màn hình của bạn, bạn sẽ cần phải:</string>
-    <string name="fingerprint_setup_add_fingerprint">Thêm vân tay của bạn</string>
-    <string name="face_setup_title">Thiết lập khuôn mặt</string>
-    <string name="face_setup_summary">Để sử dụng mở khóa bằng khuôn mặt, bạn cần phải:</string>
-    <string name="face_setup_add_face">Thêm khuôn mặt của bạn</string>
-    <string name="biometric_setup_backup_lock_method">Thiết lập phương thức mở khóa phụ</string>
-    <string name="biometric_setup_screen_lock_setup">Thiết lập khóa màn hình</string>
-    <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
-    <string name="settings_lockscreen_setup_title">Chọn kiểu khóa màn hình</string>
-    <string name="settings_lockscreen_setup_details">Bạn muốn khóa màn hình của bạn như thế nào?</string>
-    <string name="lockscreen_setup_title" product="default">Bảo vệ điện thoại của bạn</string>
-    <string name="lockscreen_setup_title" product="device">Bảo vệ thiết bị của bạn</string>
-    <string name="lockscreen_setup_title" product="tablet">Bảo vệ máy tính bảng của bạn</string>
-    <string name="lockscreen_setup_summary"><b>Bảo vệ thiết bị này</b> và yêu cầu mã PIN, hình hoặc mật khẩu để mở khóa màn hình</string>
-    <string name="lockscreen_setup_screen_lock_setup">Thiết lập</string>
-    <string name="intro_restore_title">Khôi phục Sao lưu</string>
-    <string name="intro_restore_subtitle">Nếu bạn có bản sao lưu từ thiết bị <xliff:g id="name" example="LineageOS">%s</xliff:g> gần đây nhất của mình, bạn có thể khôi phục nó tại đây.</string>
-    <string name="intro_restore_button">Khôi phục từ bản sao lưu</string>
-    <string name="update_recovery_title">Cập nhật Lineage Recovery</string>
-    <string name="update_recovery_description">Cập nhật Lineage Recovery khi bật máy lần đầu sau mỗi bản cập nhật.</string>
-    <string name="update_recovery_warning">Recovery sẽ được cập nhật sau khi bạn hoàn thành cài đặt. Nếu bạn muốn giữ nguyên, hãy tắt tính năng này.</string>
-    <string name="update_recovery_setting">Cập nhật Lineage Recovery song song với hệ điều hành</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Điều hướng</string>
     <string name="navigation_summary">Chọn phương pháp điều hướng ưa thích</string>
     <string name="gesture_navigation">Điều hướng bằng cử chỉ</string>
     <string name="two_button_navigation">Điều hướng 2 nút</string>
     <string name="navbar_navigation">Điều hướng 3 nút</string>
     <string name="hide_gesture_hint">Ẩn gợi ý điều hướng cử chỉ</string>
-    <string name="location_agps_access_summary">Khi vị trí được bật, hãy <b>tải xuống dữ liệu hỗ trợ vệ tinh từ internet</b>, dữ liệu này có thể cải thiện đáng kể hiệu suất khởi động GPS.</string>
+    <string name="setup_theme">Giao diện</string>
+    <string name="theme_summary">Giao diện tối sử dụng nền đen để giúp duy trì thời lượng pin lâu hơn trên một số màn hình</string>
+    <string name="dark">Tối</string>
+    <string name="light">Sáng</string>
 </resources>

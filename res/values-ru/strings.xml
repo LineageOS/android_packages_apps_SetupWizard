@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Мастер настройки</string>
@@ -23,33 +12,30 @@
     <string name="done">Готово</string>
     <string name="ok">ОК</string>
     <string name="loading">Секунду\u2026</string>
-    <string name="setup_complete">Настройка завершена</string>
-    <string name="setup_welcome">Добро пожаловать!</string>
     <string name="setup_welcome_message">Добро пожаловать в <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Язык</string>
-    <string name="setup_wifi">Выбрать сеть Wi-Fi</string>
-    <string name="setup_sim_missing">Нет SIM-карты</string>
-    <string name="setup_choose_data_sim">Выберите SIM-карту для передачи данных</string>
-    <string name="setup_location">Службы местоположения</string>
-    <string name="setup_other">Другие службы</string>
-    <string name="setup_datetime">Дата и время</string>
-    <string name="setup_current_date">Текущая дата</string>
-    <string name="setup_current_time">Текущее время</string>
-    <string name="sim_missing_summary" product="tablet">В планшете не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
-    <string name="sim_missing_summary" product="default">В телефоне не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
-    <string name="choose_data_sim_summary" product="tablet">Какую SIM-карту использовать для передачи данных? Выбранная SIM-карта может повлечь расходы за сетевое подключение, так как она будет использоваться для настройки планшета.</string>
-    <string name="choose_data_sim_summary" product="default">Какую SIM-карту использовать для передачи данных? Выбранная SIM-карта может повлечь расходы за сетевое подключение, так как она будет использоваться для настройки телефона.</string>
-    <string name="date_time_summary">Установите свой часовой пояс и при необходимости скорректируйте текущую дату и время</string>
-    <string name="location_access_summary"><b>Разрешить приложениям, запросившим ваше разрешение</b>, использовать информацию о вашем местоположении. Это может включать ваше текущее и прошлые местоположения.</string>
-    <string name="setup_mobile_data">Включить передачу данных</string>
-    <string name="setup_mobile_data_no_service">Нет сети</string>
-    <string name="setup_mobile_data_emergency_only">Только экстренные вызовы</string>
-    <string name="enable_mobile_data_summary">Использовать мобильную связь во время настройки? Включение передачи данных по сотовым сетям может повлечь расходы.</string>
-    <string name="no">Нет</string>
-    <string name="yes">Да</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="setup_managed_profile_welcome_message">Настройте свой рабочий профиль</string>
     <string name="emergency_call">Экстренный вызов</string>
     <string name="accessibility_settings">Настройки специальных возможностей</string>
+    <string name="setup_locale">Язык</string>
+    <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
+    <string name="setup_sim_missing">Нет SIM-карты</string>
+    <string name="sim_missing_summary" product="tablet">В планшете не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
+    <string name="sim_missing_summary" product="default">В телефоне не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
+    <string name="setup_datetime">Дата и время</string>
+    <string name="date_time_summary">Установите свой часовой пояс и при необходимости скорректируйте текущую дату и время</string>
+    <string name="setup_current_date">Текущая дата</string>
+    <string name="setup_current_time">Текущее время</string>
+    <string name="intro_restore_title">Восстановить приложения и данные</string>
+    <string name="intro_restore_subtitle">Если у вас есть резервная копия Seedvault <xliff:g id="name" example="LineageOS">%s</xliff:g> или любой другой ОС, вы можете восстановить ее здесь.</string>
+    <string name="intro_restore_button">Восстановить из резервной копии</string>
+    <string name="setup_location">Службы местоположения</string>
+    <string name="location_access_summary"><b>Разрешить приложениям, запросившим ваше разрешение</b>, использовать информацию о вашем местоположении. Это может включать ваше текущее и прошлые местоположения.</string>
+    <string name="location_agps_access_summary">При включении определения местоположения <b>из интернета будут загружаться вспомогательные спутниковые данные</b>. Это поможет значительно ускорить подключение к GPS.</string>
+    <string name="update_recovery_title">Обновление Lineage Recovery</string>
+    <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>
+    <string name="update_recovery_warning">Recovery будет обновлен по завершении установки. Если вы хотите оставить его без изменений, отключите эту функцию.</string>
+    <string name="update_recovery_setting">Обновить Lineage Recovery  вместе с ОС</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Возможности LineageOS</string>
     <string name="services_pp_explanation">Эти службы работают, чтобы расширить возможности вашего устройства. Данные будут использоваться в соответствии с политикой конфиденциальности <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">Вы можете ознакомиться с политикой конфиденциальности на другом устройстве, посетив <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +43,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, разрешив отправку данных диагностики и использования в <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Эта информация не может быть использована для идентификации вашей личности и поможет в работе над повышением автономности, производительности и новыми возможностями <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Выберите запасной режим блокировки экрана</string>
-    <string name="settings_biometric_setup_details">Как следует блокировать экран?</string>
-    <string name="fingerprint_setup_title">Настройка отпечатков пальцев</string>
-    <string name="fingerprint_setup_summary">Чтобы использовать сканер отпечатков пальцев для разблокировки экрана, необходимо:</string>
-    <string name="fingerprint_setup_add_fingerprint">Добавить ваши отпечатки</string>
-    <string name="face_setup_title">Разблокировка по лицу</string>
-    <string name="face_setup_summary">Чтобы использовать ваше лицо для разблокировки экрана, необходимо:</string>
-    <string name="face_setup_add_face">Добавить ваше лицо</string>
-    <string name="biometric_setup_backup_lock_method">Настроить дополнительный способ разблокировки</string>
-    <string name="biometric_setup_screen_lock_setup">Настроить экран блокировки</string>
-    <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
-    <string name="settings_lockscreen_setup_title">Выбрать способ блокировки экрана</string>
-    <string name="settings_lockscreen_setup_details">Как вы хотите заблокировать ваш экран?</string>
-    <string name="lockscreen_setup_title" product="default">Защитите свой телефон</string>
-    <string name="lockscreen_setup_title" product="device">Защитите свое устройство</string>
-    <string name="lockscreen_setup_title" product="tablet">Защитите ваш планшет</string>
-    <string name="lockscreen_setup_summary"><b>Защитить это устройство</b> и запрашивать PIN-код, графический ключ или пароль для разблокировки экрана</string>
-    <string name="lockscreen_setup_screen_lock_setup">Настройка</string>
-    <string name="intro_restore_title">Восстановить приложения и данные</string>
-    <string name="intro_restore_subtitle">Если у вас есть резервная копия с вашего последнего устройства с <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можете восстановить ее здесь.</string>
-    <string name="intro_restore_button">Восстановить из резервной копии</string>
-    <string name="update_recovery_title">Обновление Lineage Recovery</string>
-    <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>
-    <string name="update_recovery_warning">Recovery будет обновлен по завершении установки. Если вы хотите оставить его без изменений, отключите эту функцию.</string>
-    <string name="update_recovery_setting">Обновить Lineage Recovery  вместе с ОС</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Навигация</string>
     <string name="navigation_summary">Выберите предпочтительный метод навигации</string>
     <string name="gesture_navigation">Навигация жестами</string>
     <string name="two_button_navigation">Навигация двумя кнопками</string>
     <string name="navbar_navigation">Навигация тремя кнопками</string>
     <string name="hide_gesture_hint">Скрыть подсказку навигации жестами</string>
-    <string name="location_agps_access_summary">При включении определения местоположения <b>из интернета будут загружаться вспомогательные спутниковые данные</b>. Это поможет значительно ускорить подключение к GPS.</string>
+    <string name="setup_theme">Тема</string>
+    <string name="theme_summary">Темная тема использует черный фон, чтобы помочь продлить срок службы батареи на некоторых экранах</string>
+    <string name="dark">Темная</string>
+    <string name="light">Светлая</string>
 </resources>
