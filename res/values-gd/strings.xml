@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Draoidh stàlaidh</string>
@@ -23,59 +12,29 @@
     <string name="done">Deiseil</string>
     <string name="ok">Ceart ma-thà</string>
     <string name="loading">Fuirich greiseag\u2026</string>
-    <string name="setup_complete">Tha an rèiteachadh deiseil</string>
-    <string name="setup_welcome">Fàilte ort</string>
-    <string name="setup_locale">Cànan</string>
-    <string name="setup_wifi">Tagh WiFi</string>
-    <string name="setup_sim_missing">Tha cairt SIM a dhìth</string>
-    <string name="setup_choose_data_sim">Tagh SIM airson dàta</string>
-    <string name="setup_location">Seirbheisean ionaid</string>
-    <string name="setup_other">Seirbheisean eile</string>
-    <string name="setup_datetime">Ceann-là ⁊ àm</string>
-    <string name="setup_current_date">An ceann-là an-diugh</string>
-    <string name="setup_current_time">An t-àm làithreach</string>
-    <string name="sim_missing_summary" product="tablet">Cha do mhothaich sinn do chairt SIM san tablaid agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
-    <string name="sim_missing_summary" product="default">Cha do mhothaich sinn do chairt SIM san fhòn agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
-    <string name="choose_data_sim_summary" product="tablet">Dè an SIM a bu toigh leat cleachdadh airson dàta? Dh’fhaoidte gun èirich cosgaisean lìonraidh an cois an t-SIM a thagh thu on a thèid a chleachdadh airson an tablaid agad a shuidheachadh.</string>
-    <string name="choose_data_sim_summary" product="default">Dè an SIM a bu toigh leat cleachdadh airson dàta? Dh’fhaoidte gun èirich cosgaisean lìonraidh an cois an t-SIM a thagh thu on a thèid a chleachdadh airson an fhòn agad a shuidheachadh.</string>
-    <string name="date_time_summary">Suidhich an roinn-tìde agad agus cuir an ceann-là ’s an t-àm air gleus ma bhios feum air</string>
-    <string name="location_access_summary"><b>Leig le aplacaidean a dh’iarr cead uat</b> fiosrachadh mu d’ ionad a chleachdadh. Dh’fhaoidte gun gabh seo a-staigh an dà chuid d’ ionad làithreach agus far an robh thu roimhe.</string>
-    <string name="setup_mobile_data">Cuir an dàta mobile air</string>
-    <string name="setup_mobile_data_no_service">Chan eil seirbheis ann</string>
-    <string name="setup_mobile_data_emergency_only">Gairmean-èiginn a-mhàin</string>
-    <string name="enable_mobile_data_summary">A bheil thu airson dàta mobile a chleachdadh rè an t-suidheachaidh? Ma chuireas tu dàta mobile air, dh’fhaoidte gun èirich cosgaisean dàta ’na lùib.</string>
-    <string name="no">Chan eil</string>
-    <string name="yes">Tha</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> – <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Gairm-èiginn</string>
     <string name="accessibility_settings">Roghainnean na so-inntrigeachd</string>
+    <string name="setup_locale">Cànan</string>
+    <string name="sim_locale_changed">Mhothaich sinn do SIM %1$s</string>
+    <string name="setup_sim_missing">Tha cairt SIM a dhìth</string>
+    <string name="sim_missing_summary" product="tablet">Cha do mhothaich sinn do chairt SIM san tablaid agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
+    <string name="sim_missing_summary" product="default">Cha do mhothaich sinn do chairt SIM san fhòn agad. Airson cairt SIM a chur a-steach, leugh na mìneachaidhean a fhuair thu leis an uidheam agad.</string>
+    <string name="setup_datetime">Ceann-là ⁊ àm</string>
+    <string name="date_time_summary">Suidhich an roinn-tìde agad agus cuir an ceann-là ’s an t-àm air gleus ma bhios feum air</string>
+    <string name="setup_current_date">An ceann-là an-diugh</string>
+    <string name="setup_current_time">An t-àm làithreach</string>
+    <string name="intro_restore_title">Aisig aplacaidean is dàta</string>
+    <string name="intro_restore_button">Aisig o lethbhreac-glèidhidh</string>
+    <string name="setup_location">Seirbheisean ionaid</string>
+    <string name="location_access_summary"><b>Leig le aplacaidean a dh’iarr cead uat</b> fiosrachadh mu d’ ionad a chleachdadh. Dh’fhaoidte gun gabh seo a-staigh an dà chuid d’ ionad làithreach agus far an robh thu roimhe.</string>
+    <string name="update_recovery_title">Ùraich aiseag Lineage</string>
+    <string name="update_recovery_description">Ùraichidh seo aiseag Lineage air a’ chiad bhùtadh às dèidh gach ùrachadh.</string>
+    <string name="update_recovery_warning">Thèid an t-aiseag ùrachadh cho luath ’s a bhios tu deiseil leis an t-suidheachadh. Ma tha thu airson a chumail mar a bha e, cuir an gleus seo à comas.</string>
+    <string name="update_recovery_setting">Ùraich aiseag Lineage leis an t-siostam obrachaidh</string>
     <string name="setup_services">Gleusan LineageOS</string>
     <string name="services_pp_explanation">Leudaichidh na seirbheisean seo comasan an uidheim agad. Thèid an dàta a chleachdadh a-rèir poileasaidh prìobhaideachd <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">’S urrainn dhut am poileasaidh a leughadh air uidheam eile is tu a’ tadhal air <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu <xliff:g id="name" example="LineageOS">%2$s</xliff:g> gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ùra.</string>
     <string name="services_os_nav_keys_label"><b>Cleachd iuchraichean seòladaireachd air an sgrìn</b> seach iuchraichean bathair-chruaidh.</string>
-    <string name="settings_biometric_setup_title">Tagh seòrsa dàrnach de ghlasadh na sgrìn</string>
-    <string name="settings_biometric_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
-    <string name="fingerprint_setup_title">Suidhich lorg-mheòir</string>
-    <string name="fingerprint_setup_summary">Seo na dh’fheumas tu dèanamh mus cleachd thu mothaichear nan lorgan-meòir a chur a’ ghlas far na sgrìn:</string>
-    <string name="fingerprint_setup_add_fingerprint">Cuir do lorg-mheòir ris</string>
-    <string name="face_setup_title">Suidheachadh aodainn</string>
-    <string name="face_setup_summary">Seo na dh’fheumas tu dèanamh mus cleachd thu d’ aodann a chur a’ ghlas far an sgrìn:</string>
-    <string name="face_setup_add_face">Cuir d’ aodann ris</string>
-    <string name="biometric_setup_backup_lock_method">Suidhich dòigh dhàrnach airson a’ ghlas a thoirt far na sgrìn</string>
-    <string name="biometric_setup_screen_lock_setup">Suidhich glasadh na sgrìn</string>
-    <string name="sim_locale_changed">Mhothaich sinn do SIM %1$s</string>
-    <string name="settings_lockscreen_setup_title">Tagh seòrsa de ghlasadh na sgrìn</string>
-    <string name="settings_lockscreen_setup_details">Dè an dòigh air am bu chaomh leat an sgrìn agad a ghlasadh?</string>
-    <string name="lockscreen_setup_title" product="default">Dìon am fòn agad</string>
-    <string name="lockscreen_setup_title" product="tablet">Dìon an tablaid agad</string>
-    <string name="lockscreen_setup_summary"><b>Dìon an t-uidheam seo</b> agus iarr PIN, pàtran no facal-faire gus a’ ghlas a thoirt far na sgrìn</string>
-    <string name="lockscreen_setup_screen_lock_setup">Suidhich</string>
-    <string name="intro_restore_title">Aisig aplacaidean is dàta</string>
-    <string name="intro_restore_button">Aisig o lethbhreac-glèidhidh</string>
-    <string name="update_recovery_title">Ùraich aiseag Lineage</string>
-    <string name="update_recovery_description">Ùraichidh seo aiseag Lineage air a’ chiad bhùtadh às dèidh gach ùrachadh.</string>
-    <string name="update_recovery_warning">Thèid an t-aiseag ùrachadh cho luath ’s a bhios tu deiseil leis an t-suidheachadh. Ma tha thu airson a chumail mar a bha e, cuir an gleus seo à comas.</string>
-    <string name="update_recovery_setting">Ùraich aiseag Lineage leis an t-siostam obrachaidh</string>
 </resources>

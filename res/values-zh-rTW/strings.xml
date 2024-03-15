@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">設定精靈</string>
@@ -23,33 +12,28 @@
     <string name="done">已完成</string>
     <string name="ok">確定</string>
     <string name="loading">請稍候\u2026</string>
-    <string name="setup_complete">設定已完成</string>
-    <string name="setup_welcome">歡迎</string>
     <string name="setup_welcome_message">歡迎使用 <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">語言</string>
-    <string name="setup_wifi">選擇 Wi-Fi</string>
-    <string name="setup_sim_missing">沒有 SIM 卡</string>
-    <string name="setup_choose_data_sim">選擇使用行動數據的 SIM 卡</string>
-    <string name="setup_location">定位服務</string>
-    <string name="setup_other">其他服務</string>
-    <string name="setup_datetime">日期和時間</string>
-    <string name="setup_current_date">目前日期</string>
-    <string name="setup_current_time">目前時間</string>
-    <string name="sim_missing_summary" product="tablet">您的平板電腦中未發現 SIM 卡。若要插入一張 SIM 卡，請查閱您的裝置附贈的說明。</string>
-    <string name="sim_missing_summary" product="default">您的手機中未發現 SIM 卡。若要插入一張 SIM 卡，請查閱您的裝置附贈的說明。</string>
-    <string name="choose_data_sim_summary" product="tablet">您想要使用哪一張 SIM 卡作為行動數據？ 所選擇的 SIM 卡可能產生費用，因為它將用於設定您的平板電腦。</string>
-    <string name="choose_data_sim_summary" product="default">您想要使用哪一張 SIM 卡作為行動數據？ 所選擇的 SIM 卡可能產生費用，因為它將用於設定您的手機。</string>
-    <string name="date_time_summary">如果需要的話，請調整您的時區及日期與時間</string>
-    <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
-    <string name="setup_mobile_data">啟用行動數據</string>
-    <string name="setup_mobile_data_no_service">沒有服務</string>
-    <string name="setup_mobile_data_emergency_only">僅可撥打緊急電話</string>
-    <string name="enable_mobile_data_summary">您想在設定過程中使用行動數據嗎？使用行動數據可能會產生傳輸費用。</string>
-    <string name="no">否</string>
-    <string name="yes">是</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">緊急電話</string>
     <string name="accessibility_settings">無障礙設定</string>
+    <string name="setup_locale">語言</string>
+    <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
+    <string name="setup_sim_missing">沒有 SIM 卡</string>
+    <string name="sim_missing_summary" product="tablet">您的平板電腦中未發現 SIM 卡。若要插入一張 SIM 卡，請查閱您的裝置附贈的說明。</string>
+    <string name="sim_missing_summary" product="default">您的手機中未發現 SIM 卡。若要插入一張 SIM 卡，請查閱您的裝置附贈的說明。</string>
+    <string name="setup_datetime">日期和時間</string>
+    <string name="date_time_summary">如果需要的話，請調整您的時區及日期與時間</string>
+    <string name="setup_current_date">目前日期</string>
+    <string name="setup_current_time">目前時間</string>
+    <string name="intro_restore_title">恢復應用程式和資料</string>
+    <string name="intro_restore_button">從備份還原</string>
+    <string name="setup_location">定位服務</string>
+    <string name="location_access_summary"><b>允許您許可的應用程式</b>使用您的定位資訊。可能包括您目前和過去的位置。</string>
+    <string name="location_agps_access_summary">定位功能啟用後<b>將從網路上下載衛星輔助定位資料</b>，藉此增加定位的準確度及效能。</string>
+    <string name="update_recovery_title">更新 Lineage Recovery</string>
+    <string name="update_recovery_description">每次更新後，在第一次啟動時更新 Lineage Recovery。</string>
+    <string name="update_recovery_warning">一旦安裝完成，Recovery 就會更新。如果您希望保持原樣，請停用此功能。</string>
+    <string name="update_recovery_setting">與系統一起更新 Lineage Recovery</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS 功能</string>
     <string name="services_pp_explanation">這些服務可協助您強化裝置的功能。資料將會根據 <xliff:g id="name" example="LineageOS">%1$s</xliff:g> 的隱私權政策使用。</string>
     <string name="services_find_privacy_policy">您可以透過在其他裝置上造訪 <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> 來閱讀隱私權政策</string>
@@ -57,37 +41,10 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> 經由傳送錯誤報告及使用資料給 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>，這些資料不會用於識別您的身分，而是用於幫助團隊改善電池壽命、應用程式效能與新的 <xliff:g id="name" example="LineageOS">%3$s</xliff:g> 功能。</string>
     <string name="services_os_nav_keys_label"><b>使用虛擬按鍵</b>替代實體按鍵。</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">選擇備用螢幕鎖定類型</string>
-    <string name="settings_biometric_setup_details">您想如何鎖定畫面？</string>
-    <string name="fingerprint_setup_title">指紋設定</string>
-    <string name="fingerprint_setup_summary">若要使用您的指紋感應器解鎖您的螢幕，您需要︰</string>
-    <string name="fingerprint_setup_add_fingerprint">新增您的指紋</string>
-    <string name="face_setup_title">臉部辨識設定</string>
-    <string name="face_setup_summary">若要使用臉部辨識來解鎖螢幕，您需要：</string>
-    <string name="face_setup_add_face">新增您的臉部</string>
-    <string name="biometric_setup_backup_lock_method">設定第二個解鎖方式</string>
-    <string name="biometric_setup_screen_lock_setup">設定畫面鎖定</string>
-    <string name="sim_locale_changed">檢測到 %1$s 張 SIM 卡</string>
-    <string name="settings_lockscreen_setup_title">選擇螢幕鎖類型</string>
-    <string name="settings_lockscreen_setup_details">您想如何鎖定畫面？</string>
-    <string name="lockscreen_setup_title" product="default">保護您的手機</string>
-    <string name="lockscreen_setup_title" product="device">保護您的裝置</string>
-    <string name="lockscreen_setup_title" product="tablet">保護你的平板電腦</string>
-    <string name="lockscreen_setup_summary"><b>保護這個裝置</b>，並需要輸入 PIN 碼、解鎖圖案或密碼解除螢幕鎖定</string>
-    <string name="lockscreen_setup_screen_lock_setup">設定</string>
-    <string name="intro_restore_title">恢復應用程式和資料</string>
-    <string name="intro_restore_subtitle">如果您之前使用 <xliff:g id="name" example="LineageOS">%s</xliff:g> 設備並有進行備份，您現在可以在這裡將它還原。</string>
-    <string name="intro_restore_button">從備份還原</string>
-    <string name="update_recovery_title">更新 Lineage Recovery</string>
-    <string name="update_recovery_description">每次更新後，在第一次啟動時更新 Lineage Recovery。</string>
-    <string name="update_recovery_warning">一旦安裝完成，Recovery 就會更新。如果您希望保持原樣，請停用此功能。</string>
-    <string name="update_recovery_setting">與系統一起更新 Lineage Recovery</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">導航欄</string>
     <string name="navigation_summary">選擇首選的導航方式</string>
     <string name="gesture_navigation">手勢導航</string>
     <string name="two_button_navigation">透過 2 個按鈕操作系統</string>
     <string name="navbar_navigation">透過 3 個按鈕操作系統</string>
     <string name="hide_gesture_hint">隱藏手勢導航條</string>
-    <string name="location_agps_access_summary">定位功能啟用後<b>將從網路上下載衛星輔助定位資料</b>，藉此增加定位的準確度及效能。</string>
 </resources>

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">સેટઅપ વિઝાર્ડ</string>
@@ -22,39 +11,16 @@
     <string name="start">પ્રારંભ કરો</string>
     <string name="ok">ઑકે</string>
     <string name="loading">માત્ર એક સેકન્ડ\u2026</string>
-    <string name="setup_complete">સેટઅપ પૂર્ણ થયું</string>
-    <string name="setup_welcome">સ્વાગત છે</string>
-    <string name="setup_wifi">Wi-Fi પસંદ કરો</string>
+    <string name="emergency_call">કટોકટીનો કૉલ</string>
+    <string name="sim_locale_changed">%1$s SIM સૂચિત</string>
     <string name="setup_sim_missing">SIM કાર્ડ ગૂમ</string>
-    <string name="setup_choose_data_sim">ડેટા માટે SIM પસંદ કરો</string>
-    <string name="setup_location">સ્થાન સેવાઓ</string>
-    <string name="setup_other">અન્ય સેવાઓ</string>
-    <string name="setup_datetime">તારીખ &amp; સમય</string>
-    <string name="setup_current_date">હાલની તારીખ</string>
-    <string name="setup_current_time">હાલનો સમય</string>
     <string name="sim_missing_summary" product="tablet">તમારા ટૅબ્લેટમાં SIM કાર્ડ સૂચિત થયો નથી. SIM કાર્ડ દાખલ કરવા માટે તમારા ડિવાઇસ સાથે આવેલ સૂચનાઓ વાંચો.</string>
     <string name="sim_missing_summary" product="default">તમારા ફોનમાં SIM કાર્ડ સૂચિત થયો નથી. SIM કાર્ડ દાખલ કરવા માટે તમારા ડિવાઇસ સાથે આવેલ સૂચનાઓ વાંચો.</string>
-    <string name="choose_data_sim_summary" product="tablet">ડેટા માટે તમારે કયો SIM વાપરવો છે? પસંદ કરેલ SIMથી નેટવર્ક શુલ્કો લાગુ થઈ શકે કારણ કે તેનો ઉપયોગ તમારા ટૅબ્લેટ સેટઅપ કરવા થશે.</string>
-    <string name="choose_data_sim_summary" product="default">ડેટા માટે તમારે કયો SIM વાપરવો છે? પસંદ કરેલ SIMથી નેટવર્ક શુલ્કો લાગુ થઈ શકે કારણ કે તેનો ઉપયોગ તમારા ફોન સેટઅપ કરવા થશે.</string>
+    <string name="setup_datetime">તારીખ &amp; સમય</string>
     <string name="date_time_summary">તમારો સમય ઝોન સેટ કરો અને જરૂર હોય તો હાલની તારીખ અને સમય સમાયોજિત કરો</string>
+    <string name="setup_current_date">હાલની તારીખ</string>
+    <string name="setup_current_time">હાલનો સમય</string>
+    <string name="setup_location">સ્થાન સેવાઓ</string>
     <string name="location_access_summary">તમારી લોકેશન માહિતી વાપરવાની <b>પરવાનગી માંગી હોય એવા ઍપ્સને છૂટ આપો</b>. આમાં તમારા હાલના લોકેશન અને ભૂતકાલીન લોકેશનોનો સમાવેશ થઈ શકે.</string>
-    <string name="setup_mobile_data">મોબાઇલ ડેટા ચાલુ કરો</string>
-    <string name="setup_mobile_data_no_service">કોઇ સેવા નથી</string>
-    <string name="setup_mobile_data_emergency_only">ફક્ત કટોકટીના કૉલ્સ</string>
-    <string name="enable_mobile_data_summary">શું સેટઅપ દરમિયાન તમારે મોબાઇલ ડેટાનો ઉપયોગ કરવો છે? મોબાઇલ ડેટા ચાલુ કરવો ડેટા શુલ્કોને આધિન હશે.</string>
-    <string name="no">નહીં</string>
-    <string name="yes">હા</string>
-    <string name="emergency_call">કટોકટીનો કૉલ</string>
     <string name="services_os_nav_keys_label">હાર્ડવેર કીને બદલે <b>સ્ક્રીન નૅવિગેશન કીનો ઉપયોગ કરો</b>.</string>
-    <string name="settings_biometric_setup_title">બૅકઅપ સ્ક્રીન લૉક ટાઇપ પસંદ કરો</string>
-    <string name="settings_biometric_setup_details">તમે કેવી રીતે તમારું સ્ક્રીન લૉક કરવા માંગો છો?</string>
-    <string name="fingerprint_setup_title">ફિંગરપ્રિન્ટ સેટઅપ</string>
-    <string name="fingerprint_setup_summary">તમારી સ્ક્રીન અનલૉક કરવા માટે તમારા ફિંગરપ્રિન્ટ સેન્સરનો ઉપયોગ કરવા, તમારે આ કરવું જરૂરી છે:</string>
-    <string name="fingerprint_setup_add_fingerprint">તમારી ફિંગરપ્રિન્ટ ઉમેરો</string>
-    <string name="biometric_setup_backup_lock_method">સેકન્ડરિ અનલૉક પદ્ધતિ સેટઅપ કરો</string>
-    <string name="biometric_setup_screen_lock_setup">સ્ક્રીન લૉક સેટઅપ કરો</string>
-    <string name="sim_locale_changed">%1$s SIM સૂચિત</string>
-    <string name="settings_lockscreen_setup_details">તમે કેવી રીતે તમારું સ્ક્રીન લૉક કરવા માંગો છો?</string>
-    <string name="lockscreen_setup_title" product="default">તમારા ફોનને સુરક્ષિત કરો</string>
-    <string name="lockscreen_setup_summary"><b>આ ઉપકરણને સુરક્ષિત કરો</b> અને સ્ક્રીનને અનલૉક કરવા માટે PIN, પેટર્ન અથવા પાસવર્ડ જરૂરી</string>
 </resources>

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Uppsetningarleiðarvísir</string>
@@ -23,33 +12,30 @@
     <string name="done">Lokið</string>
     <string name="ok">Í lagi</string>
     <string name="loading">Bíddu aðeins\u2026</string>
-    <string name="setup_complete">Uppsetningu er lokið</string>
-    <string name="setup_welcome">Velkomin</string>
     <string name="setup_welcome_message">Velkomin í <xliff:g id="name" example="LineageOS">%1s</xliff:g></string>
-    <string name="setup_locale">Tungumál</string>
-    <string name="setup_wifi">Veldu Wi-Fi-net</string>
-    <string name="setup_sim_missing">SIM-kortið vantar</string>
-    <string name="setup_choose_data_sim">Veldu SIM-kort undir gögn</string>
-    <string name="setup_location">Staðsetningarþjónustur</string>
-    <string name="setup_other">Aðrar þjónustur</string>
-    <string name="setup_datetime">Dagsetning og tími</string>
-    <string name="setup_current_date">Núverandi dagsetning</string>
-    <string name="setup_current_time">Núverandi tími</string>
-    <string name="sim_missing_summary" product="tablet">SIM-kort fannst ekki í spjaldtölvunni þinni. Til að setja inn SIM-kort skaltu lesa leiðbeiningarnar sem komu með tækinu þínu.</string>
-    <string name="sim_missing_summary" product="default">SIM-kort fannst ekki í símanum þínum. Til að setja inn SIM-kort skaltu lesa leiðbeiningarnar sem komu með tækinu þínu.</string>
-    <string name="choose_data_sim_summary" product="tablet">Hvaða SIM-kort viltu nota undir gögn? Valda SIM-kortið gæti valdið útgjöldum vegna netsambands þar sem það verður notað til að setja upp spjaldtölvuna þína.</string>
-    <string name="choose_data_sim_summary" product="default">Hvaða SIM-kort viltu nota undir gögn? Valda SIM-kortið gæti valdið útgjöldum vegna netsambands þar sem það verður notað til að setja upp símann þinn.</string>
-    <string name="date_time_summary">Settu tímabeltið þitt og lagaðu núverandi dags- og tímasetningu ef þörf krefur</string>
-    <string name="location_access_summary"><b>Leyfa forrit sem hafa beðið um heimild þína</b> til að nota staðsetningarupplýsingar. Þetta gæti falið í sér aðgang að upplýsingum um núverandi jafnt sem fyrri staðsetningar.</string>
-    <string name="setup_mobile_data">Kveiktu á farsímagögnum</string>
-    <string name="setup_mobile_data_no_service">Engin þjónusta</string>
-    <string name="setup_mobile_data_emergency_only">Einungis neyðarsímtöl</string>
-    <string name="enable_mobile_data_summary">Viltu nota farsímagögn á meðan uppsetningu stendur? Sé kveikt á farsímagögnum getur það haft aukakostnað í för með sér.</string>
-    <string name="no">Nei</string>
-    <string name="yes">Já</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="setup_managed_profile_welcome_message">Settu upp vinnusniðið þitt</string>
     <string name="emergency_call">Neyðarsímtal</string>
     <string name="accessibility_settings">Stillingar fyrir altækan aðgang</string>
+    <string name="setup_locale">Tungumál</string>
+    <string name="sim_locale_changed">Fann %1$s SIM-kort</string>
+    <string name="setup_sim_missing">SIM-kortið vantar</string>
+    <string name="sim_missing_summary" product="tablet">SIM-kort fannst ekki í spjaldtölvunni þinni. Til að setja inn SIM-kort skaltu lesa leiðbeiningarnar sem komu með tækinu þínu.</string>
+    <string name="sim_missing_summary" product="default">SIM-kort fannst ekki í símanum þínum. Til að setja inn SIM-kort skaltu lesa leiðbeiningarnar sem komu með tækinu þínu.</string>
+    <string name="setup_datetime">Dagsetning og tími</string>
+    <string name="date_time_summary">Settu tímabeltið þitt og lagaðu núverandi dags- og tímasetningu ef þörf krefur</string>
+    <string name="setup_current_date">Núverandi dagsetning</string>
+    <string name="setup_current_time">Núverandi tími</string>
+    <string name="intro_restore_title">Endurheimta forrit og gögn</string>
+    <string name="intro_restore_subtitle">Ef þú ert með Seedvault-öryggisafrit af <xliff:g id="name" example="LineageOS">%s</xliff:g> eða öðrum stýrikerfum, þá geturðu endurheimt það hér.</string>
+    <string name="intro_restore_button">Endurheimta úr öryggisafriti</string>
+    <string name="setup_location">Staðsetningarþjónustur</string>
+    <string name="location_access_summary"><b>Leyfa forrit sem hafa beðið um heimild þína</b> til að nota staðsetningarupplýsingar. Þetta gæti falið í sér aðgang að upplýsingum um núverandi jafnt sem fyrri staðsetningar.</string>
+    <string name="location_agps_access_summary">Þegar kveikt er á staðsetningu, <b>skal sækja gögn af netinu fyrir stuðning við gervihnattastaðsetningu</b> sem geta bætt verulega afköst í ræsingu á GPS-tækjum.</string>
+    <string name="update_recovery_title">Uppfæra endurheimtingu LineageOS</string>
+    <string name="update_recovery_description">Uppfærir LineageOS endurheimtingarmynd í fyrstu ræsingu á eftir hverri uppfærslu.</string>
+    <string name="update_recovery_warning">Endurheimtudiskmyndin verður uppfærð um leið og þú lýkur uppsetningunni. Ef þú vilt halda henni ósnertri, skaltu gera þetta óvirkt.</string>
+    <string name="update_recovery_setting">Uppfæra endurheimtingu LineageOS samhliða uppfærslum stýrikerfis</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Eiginleikar LineageOS</string>
     <string name="services_pp_explanation">Þessar þjónustur gera þér kleift að útvíkka eiginleika tækisins þíns. Gögn verða notuð í samræmi við persónuverndarstefnu <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">Lestu stefnu varðandi meðferð persónulegra gagna með því að fara á <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,34 +43,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> með því að senda sjálfvirkt greiningargögn og upplýsingar um notkun til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Þessar upplýsingar er ekki hægt að nota til að auðkenna þig og hjálpa þróunarteymum við vinnu varðandi ýmis atriði, eins og líftíma rafhlöðu, afköst forrita og nýja eiginleika í <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Veldu gerð skjálæsingar til vara</string>
-    <string name="settings_biometric_setup_details">Hvernig viltu læsa skjánum þínum?</string>
-    <string name="fingerprint_setup_title">Uppsetning fingrafaraskanna</string>
-    <string name="fingerprint_setup_summary">Til að nota fingrafaraskanna til að aflæsa skjánum, þarftu að:</string>
-    <string name="fingerprint_setup_add_fingerprint">Bættu við fingrafarinu þínu</string>
-    <string name="face_setup_title">Uppsetning andlitskennsla</string>
-    <string name="face_setup_summary">Til að nota andlitaskanna til að aflæsa skjánum, þarftu að:</string>
-    <string name="face_setup_add_face">Bæta við andlitinu þínu</string>
-    <string name="biometric_setup_backup_lock_method">Settu upp aðra aðferð til að aflæsa</string>
-    <string name="biometric_setup_screen_lock_setup">Setja upp skjálæsingu</string>
-    <string name="sim_locale_changed">Fann %1$s SIM-kort</string>
-    <string name="settings_lockscreen_setup_title">Veldu gerð skjálæsingar</string>
-    <string name="settings_lockscreen_setup_details">Hvernig viltu læsa skjánum þínum?</string>
-    <string name="lockscreen_setup_title" product="default">Verndaðu símann þinn</string>
-    <string name="lockscreen_setup_title" product="tablet">Verndaðu spjaldtölvuna þína</string>
-    <string name="lockscreen_setup_summary"><b>Verndaðu tækið</b> og krefstu þess að sett sé inn PIN-númer, mynstur eða lykilorð til að aflæsa skjánum</string>
-    <string name="lockscreen_setup_screen_lock_setup">Setja upp</string>
-    <string name="intro_restore_title">Endurheimta forrit og gögn</string>
-    <string name="intro_restore_button">Endurheimta úr öryggisafriti</string>
-    <string name="update_recovery_title">Uppfæra endurheimtingu LineageOS</string>
-    <string name="update_recovery_description">Uppfærir LineageOS endurheimtingarmynd í fyrstu ræsingu á eftir hverri uppfærslu.</string>
-    <string name="update_recovery_warning">Endurheimtudiskmyndin verður uppfærð um leið og þú lýkur uppsetningunni. Ef þú vilt halda henni ósnertri, skaltu gera þetta óvirkt.</string>
-    <string name="update_recovery_setting">Uppfæra endurheimtingu LineageOS samhliða uppfærslum stýrikerfis</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Flakk</string>
     <string name="navigation_summary">Veldu þá aðferð við flakk sem þú vilt nota</string>
     <string name="gesture_navigation">Bendingastjórnun</string>
     <string name="two_button_navigation">Tveggja-hnappa stjórnun</string>
     <string name="navbar_navigation">Þriggja-hnappa stjórnun</string>
     <string name="hide_gesture_hint">Fela ábendingu við bendingaflakk</string>
+    <string name="setup_theme">Þema</string>
+    <string name="theme_summary">Dökkt þema notar svartan bakgrunn til að rafhlaðan endist lengur á sumum skjám</string>
+    <string name="dark">Dökkt</string>
+    <string name="light">Ljóst</string>
 </resources>

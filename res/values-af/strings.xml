@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Opstel Ghoeroe</string>
@@ -23,43 +12,18 @@
     <string name="done">Gedoen</string>
     <string name="ok">OK</string>
     <string name="loading">Net \'n sekonde\u2026</string>
-    <string name="setup_complete">Opstelling is voltooi</string>
-    <string name="setup_welcome">Welkom</string>
+    <string name="emergency_call">Noodoproep</string>
     <string name="setup_locale">Taal</string>
-    <string name="setup_wifi">Kies Wi\u2011Fi</string>
+    <string name="sim_locale_changed">%1$s SIM opgespoor</string>
     <string name="setup_sim_missing">SIM-kaart ontbreek</string>
-    <string name="setup_choose_data_sim">Kies \'n SIM vir data</string>
-    <string name="setup_location">Ligging dienste</string>
-    <string name="setup_other">Ander dienste</string>
-    <string name="setup_datetime">Datum &amp; tyd</string>
-    <string name="setup_current_date">Huidige datum</string>
-    <string name="setup_current_time">Huidige tyd</string>
     <string name="sim_missing_summary" product="tablet">\'n SIM-kaart is nie bespeur in jou tablet. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou tablet.</string>
     <string name="sim_missing_summary" product="default">\'n SIM-kaart is nie bespeur in jou foon. Om \'n SIM-kaart by te voeg, lees die instruksies wat saam gekom het met jou foon.</string>
-    <string name="choose_data_sim_summary" product="tablet">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou tablet.</string>
-    <string name="choose_data_sim_summary" product="default">Watter SIM wil jy gebruik vir data? Die gekose SIM kan netwerk koste aangaan, dit sal gebruik word met die opstel van jou foon.</string>
+    <string name="setup_datetime">Datum &amp; tyd</string>
     <string name="date_time_summary">Stel jou tydsone en pas huidige datum en tyd toe, indien nodig</string>
+    <string name="setup_current_date">Huidige datum</string>
+    <string name="setup_current_time">Huidige tyd</string>
+    <string name="setup_location">Ligging dienste</string>
     <string name="location_access_summary"><b>Laat programme toe wat jou toestemming gevra het</b> om jou ligging inligting te gebruik. Dit kan jou huidige ligging en plekke asook liggings en plekke uit die verlede insluit.</string>
-    <string name="setup_mobile_data">Skakel mobiele data aan</string>
-    <string name="setup_mobile_data_no_service">Geen diens</string>
-    <string name="setup_mobile_data_emergency_only">Net Noodoproepe</string>
-    <string name="enable_mobile_data_summary">Wil jy sellulêre data aanskakel gedurende opstelling? Wanneer aangeskakel kan dit tot data kostes lui.</string>
-    <string name="no">Nee</string>
-    <string name="yes">Ja</string>
-    <string name="emergency_call">Noodoproep</string>
     <string name="setup_services">LineageOS kenmerke</string>
     <string name="services_os_nav_keys_label"><b>Gebruik skerm navigasie sleutels</b> in plaas van hardeware sleutels.</string>
-    <string name="settings_biometric_setup_title">Kies nog \'n skerm sluit tipe</string>
-    <string name="settings_biometric_setup_details">Hoe wil jy jou skerm sluit?</string>
-    <string name="fingerprint_setup_title">Vingerafdruk opstelling</string>
-    <string name="fingerprint_setup_summary">Om jou vingerafdruk sensor te gebruik om jou skerm te ontsluit, benodig jy:</string>
-    <string name="fingerprint_setup_add_fingerprint">Voeg jou vingerafdruk by</string>
-    <string name="biometric_setup_backup_lock_method">Stel \'n tweede ontsluit metode op</string>
-    <string name="biometric_setup_screen_lock_setup">Stel skerm sluit op</string>
-    <string name="sim_locale_changed">%1$s SIM opgespoor</string>
-    <string name="settings_lockscreen_setup_title">Kies skerm sluit tipe</string>
-    <string name="settings_lockscreen_setup_details">Hoe wil jy jou skerm sluit?</string>
-    <string name="lockscreen_setup_title" product="default">Beskerm jou foon</string>
-    <string name="lockscreen_setup_summary"><b>Beskerm die toestel</b>\" en vereis \'n PIN, patroon of wagwoord om skerm te ontsluit\"</string>
-    <string name="lockscreen_setup_screen_lock_setup">Stel op</string>
 </resources>

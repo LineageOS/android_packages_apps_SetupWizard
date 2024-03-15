@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">ছেটআপ ৱিজাৰ্ড</string>
@@ -22,37 +11,16 @@
     <string name="start">আৰম্ভ</string>
     <string name="ok">ঠিক</string>
     <string name="loading">মাত্র একছেকেণ্ড\u2026</string>
-    <string name="setup_complete">ছেটআপ সম্পূৰ্ণ হৈছে</string>
-    <string name="setup_welcome">স্বাগতম</string>
-    <string name="setup_wifi">Wi-Fi চয়ন কৰক</string>
+    <string name="emergency_call">জৰুৰীকালীন কল</string>
+    <string name="sim_locale_changed">%1$s SIM চিনাক্ত কৰা হৈছে</string>
     <string name="setup_sim_missing">SIM কার্ড হেৰাইছে</string>
-    <string name="setup_choose_data_sim">ডাটাৰ বাবে এখন SIM কাৰ্ড পচন্দ কৰক</string>
-    <string name="setup_location">স্থান সেৱাসমূহ</string>
-    <string name="setup_other">অন্যান্য সেৱাবোৰ</string>
-    <string name="setup_datetime">তাৰিখ আৰু সময়</string>
-    <string name="setup_current_date">চলিত তাৰিখ</string>
-    <string name="setup_current_time">চলিত সময়</string>
     <string name="sim_missing_summary" product="tablet">আপোনাৰ টেবলেটত এখন SIM কাৰ্ড চিনাক্ত কৰা হোৱা নাই। এখন SIM কাৰ্ড আন্তঃসংযোগ কৰিবলৈ আপোনাৰ ডিভাইচৰ সৈতে অহা নিৰ্দেশনা পঢ়ক।</string>
     <string name="sim_missing_summary" product="default">আপোনাৰ ফোনত এখন SIM কাৰ্ড চিনাক্ত কৰা হোৱা নাই। এখন SIM কাৰ্ড আন্তঃসংযোগ কৰিবলৈ আপোনাৰ ডিভাইচৰ সৈতে অহা নিৰ্দেশনা পঢ়ক।</string>
-    <string name="choose_data_sim_summary" product="tablet">ডাটাৰ বাবে আপুনি কোনখন SIM ব্যৱহাৰ কৰিবলৈ বিচাৰে? নিৰ্বাচিত SIM ৰ বাবে নেটৱৰ্ক মাচুল লাগিব পাৰে যিহেতু আপোনাৰ টেবলেট কম্পিউটাৰ ছেটআপ কৰিবলৈ ইয়াক ব্যৱহাৰ কৰা হ\'ব।</string>
-    <string name="choose_data_sim_summary" product="default">ডাটাৰ বাবে আপুনি কোনখন SIM ব্যৱহাৰ কৰিবলৈ বিচাৰে? নিৰ্বাচিত SIM ৰ বাবে নেটৱৰ্ক মাচুল লাগিব পাৰে যিহেতু আপোনাৰ ফোনটো ছেটআপ কৰিবলৈ ইয়াক ব্যৱহাৰ কৰা হ\'ব।</string>
+    <string name="setup_datetime">তাৰিখ আৰু সময়</string>
     <string name="date_time_summary">যদি প্ৰয়োজন হয় তেন্তে চলিত তাৰিখ আৰু সময় মিলাওক</string>
+    <string name="setup_current_date">চলিত তাৰিখ</string>
+    <string name="setup_current_time">চলিত সময়</string>
+    <string name="setup_location">স্থান সেৱাসমূহ</string>
     <string name="location_access_summary">আপোনাৰ অৱস্থান তথ্য ব্যৱহাৰ কৰিবলৈ <b>অনুমতি বিচৰা এপ্প্‌বোৰক অনুমতি দিয়ক</b>। ইয়াত আপোনাৰ চলিত আৰু অতীতৰ অৱস্থান অন্তৰ্ভুক্ত থাকিব পাৰে।</string>
-    <string name="setup_mobile_data">ম\'বাইল ডাটা অন কৰক</string>
-    <string name="setup_mobile_data_no_service">ছাৰ্ভিচ নাই</string>
-    <string name="setup_mobile_data_emergency_only">কেৱলমাত্ৰ জৰুৰীকালীন ফোনসমূহ</string>
-    <string name="enable_mobile_data_summary">আপুনি ছেটআপৰ সময়ত ম\'বাইল ডাটা ব্যৱহাৰ কৰিব বিচাৰে নে? ম\'বাইল ডাটা অন কৰাটো ডাটা মাচুল সাপেক্ষ হ\'ব পাৰে।</string>
-    <string name="no">নহয়</string>
-    <string name="yes">হয়</string>
-    <string name="emergency_call">জৰুৰীকালীন কল</string>
     <string name="services_os_nav_keys_label">হাৰ্ডৱেৰ কীবোৰৰ পৰিৱৰ্তে স্ক্ৰীণ <b>নেভিগেচন কীবোৰ ব্যৱহাৰ কৰক</b>।</string>
-    <string name="settings_biometric_setup_title">স্ক্ৰীণৰ বেকআপ লকৰ প্ৰকাৰ চয়ন কৰক</string>
-    <string name="settings_biometric_setup_details">আপুনি আপোনাৰ স্ক্ৰীণ লক কেনেকৈ কৰিবলৈ বিচাৰিব?</string>
-    <string name="fingerprint_setup_title">আঙুলিৰছাপ ছেটআপ</string>
-    <string name="fingerprint_setup_summary">আপোনাৰ স্ক্ৰীণ আনলক কৰিবলৈ আঙুলিৰছাপ চেনচৰ ব্যৱহাৰ কৰিবলৈ, আপোনাৰ প্ৰয়োজন হ\'ব:</string>
-    <string name="fingerprint_setup_add_fingerprint">আপোনাৰ আঙুলিৰছাপ যোগ কৰক</string>
-    <string name="biometric_setup_backup_lock_method">দ্বিতীয় এটা আনলক পদ্ধতি ছেটআপ কৰক</string>
-    <string name="biometric_setup_screen_lock_setup">স্ক্ৰীণ লক ছেটআপ কৰক</string>
-    <string name="sim_locale_changed">%1$s SIM চিনাক্ত কৰা হৈছে</string>
-    <string name="settings_lockscreen_setup_details">আপুনি আপোনাৰ স্ক্ৰীণ লক কেনেকৈ কৰিবলৈ বিচাৰিব?</string>
 </resources>

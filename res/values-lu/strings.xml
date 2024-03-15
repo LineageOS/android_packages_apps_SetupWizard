@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Installatiounsassistent</string>
@@ -22,34 +11,15 @@
     <string name="start">Start</string>
     <string name="ok">OK</string>
     <string name="loading">Ee Moment w.e.g.\u2026</string>
-    <string name="setup_complete">Installatioun ofgeschloss</string>
-    <string name="setup_welcome">Wëllkomm</string>
-    <string name="setup_wifi">WLAN auswielen</string>
+    <string name="emergency_call">Noutruff</string>
     <string name="setup_sim_missing">SIM-Kaart feelt</string>
-    <string name="setup_choose_data_sim">SIM fir d\'Daten auswielen</string>
-    <string name="setup_location">Standuertservicer</string>
-    <string name="setup_other">Aner Servicer</string>
-    <string name="setup_datetime">Datum an Zäit</string>
-    <string name="setup_current_date">Aktuellen Datum</string>
-    <string name="setup_current_time">Aktuell Zäit</string>
     <string name="sim_missing_summary" product="tablet">Et gouf keng SIM-Kaart an dengem Tablet erkannt. Lies d\'Uleedungen déi mam Tablet komm sinn, fir eng SIM-Kaart anzesetzen.</string>
     <string name="sim_missing_summary" product="default">Et gouf keng SIM-Kaart an dengem Telefon erkannt. Lies d\'Uleedungen déi mam Telefon komm sinn, fir eng SIM-Kaart anzesetzen.</string>
-    <string name="choose_data_sim_summary" product="tablet">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Tablet benotzt gëtt.</string>
-    <string name="choose_data_sim_summary" product="default">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Telefon benotzt gëtt.</string>
+    <string name="setup_datetime">Datum an Zäit</string>
     <string name="date_time_summary">Definéier deng Zäitzon an ajustéier falls néideg den aktuellen Datum an déi aktuell Zäit</string>
+    <string name="setup_current_date">Aktuellen Datum</string>
+    <string name="setup_current_time">Aktuell Zäit</string>
+    <string name="setup_location">Standuertservicer</string>
     <string name="location_access_summary"><b>Appen déi deng Berechtegung gefrot hunn</b> den Zougrëff op d\'Standuertinformatiounen erlaben. Dat ka fir den aktuelle Standuert an och fir fréier Standuerter gëllen.</string>
-    <string name="setup_mobile_data_no_service">Kee Service</string>
-    <string name="setup_mobile_data_emergency_only">Just Noutriff</string>
-    <string name="no">Nee</string>
-    <string name="yes">Jo</string>
-    <string name="emergency_call">Noutruff</string>
     <string name="services_os_nav_keys_label"><b>Schierm-Navigatiounstasten</b> amplaz Hardwaretaste benotzen.</string>
-    <string name="settings_biometric_setup_title">Wiel den Typ vun der Ersatz-Schirmspär aus</string>
-    <string name="settings_biometric_setup_details">Wéi wëlls du däi Schierm spären?</string>
-    <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>
-    <string name="fingerprint_setup_summary">Wann s du däi Fangerofdrocksensor fir d\'Entspäre vun dengem Schierm benotze wëlls, muss du:</string>
-    <string name="fingerprint_setup_add_fingerprint">Däi Fangerofdrock dobäisetzen</string>
-    <string name="biometric_setup_backup_lock_method">Eng zweet Entspärmethod ariichten</string>
-    <string name="biometric_setup_screen_lock_setup">D\'Schiermspär ariichten</string>
-    <string name="settings_lockscreen_setup_details">Wéi wëlls du däi Schierm spären?</string>
 </resources>

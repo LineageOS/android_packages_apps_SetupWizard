@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Telepítő varázsló</string>
@@ -23,33 +12,27 @@
     <string name="done">Kész</string>
     <string name="ok">OK</string>
     <string name="loading">Csak egy pillanat\u2026</string>
-    <string name="setup_complete">Beállítás kész</string>
-    <string name="setup_welcome">Üdvözöljük</string>
     <string name="setup_welcome_message">Legyen üdvözölve a <xliff:g id="name" example="LineageOS">%1$s</xliff:g> rendszerben</string>
-    <string name="setup_locale">Nyelv</string>
-    <string name="setup_wifi">Wi-Fi kiválasztása</string>
-    <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
-    <string name="setup_choose_data_sim">Válasszon SIM-kártyát az adatforgalomhoz</string>
-    <string name="setup_location">Helymeghatározó szolgáltatások</string>
-    <string name="setup_other">Egyéb szolgáltatások</string>
-    <string name="setup_datetime">Dátum &amp; idő</string>
-    <string name="setup_current_date">Aktuális dátum</string>
-    <string name="setup_current_time">Aktuális idő</string>
-    <string name="sim_missing_summary" product="tablet">SIM-kártya nem érzékelhető a táblagépében. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
-    <string name="sim_missing_summary" product="default">SIM-kártya nem érzékelhető a telefonjában. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
-    <string name="choose_data_sim_summary" product="tablet">Melyik SIM-kártyát kívánja a mobilinternet eléréshez használni? A kijelölt SIM-kártyára hálózati díjat is felszámolhatnak, mivel ezt fogjuk a készüléke beállítása során használni.</string>
-    <string name="choose_data_sim_summary" product="default">Melyik SIM-kártyát kívánja a mobilinternet eléréshez használni? A kijelölt SIM-kártyára hálózati díjat is felszámolhatnak, mivel ezt fogjuk a készüléke beállítása során használni.</string>
-    <string name="date_time_summary">Válasszon időzónát és állítsa be az aktuális dátumot és időt, ha szükséges</string>
-    <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
-    <string name="setup_mobile_data">Mobilnet bekapcsolása</string>
-    <string name="setup_mobile_data_no_service">Nincs szolgáltatás</string>
-    <string name="setup_mobile_data_emergency_only">Csak segélyhívások</string>
-    <string name="enable_mobile_data_summary">Szeretné használni a mobilnetet a beállítás során? Bekapcsolás esetén díjat számíthatnak fel érte.</string>
-    <string name="no">Nem</string>
-    <string name="yes">Igen</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Segélyhívás</string>
     <string name="accessibility_settings">Kisegítő beállítások</string>
+    <string name="setup_locale">Nyelv</string>
+    <string name="sim_locale_changed">%1$s SIM észlelve</string>
+    <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
+    <string name="sim_missing_summary" product="tablet">SIM-kártya nem érzékelhető a táblagépében. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
+    <string name="sim_missing_summary" product="default">SIM-kártya nem érzékelhető a telefonjában. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
+    <string name="setup_datetime">Dátum &amp; idő</string>
+    <string name="date_time_summary">Válasszon időzónát és állítsa be az aktuális dátumot és időt, ha szükséges</string>
+    <string name="setup_current_date">Aktuális dátum</string>
+    <string name="setup_current_time">Aktuális idő</string>
+    <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
+    <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
+    <string name="setup_location">Helymeghatározó szolgáltatások</string>
+    <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
+    <string name="update_recovery_title">A Lineage Recovery frissítése</string>
+    <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
+    <string name="update_recovery_warning">A Recovery frissítésre kerül, amint befejeződött a telepítést. Ha érintetlenül akarja hagyni, tiltsa le ezt a funkciót.</string>
+    <string name="update_recovery_setting">A Lineage Recovery frissítése az operációs rendszer mellett</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS újítások</string>
     <string name="services_pp_explanation">Ezek a szolgáltatások Önért dolgoznak, hogy kibővítsék telefonja képességeit. Az adatok felhasználása a <xliff:g id="name" example="LineageOS">%1$s</xliff:g> adatvédelmi szabályzata alapján történik.</string>
     <string name="services_find_privacy_policy">Elolvashatja az adatvédelmi szabályokat, ha megnyitja a következő weboldalt <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,30 +40,6 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatikus diagnosztikai és használati adatok küldésével segíthet a <xliff:g id="name" example="LineageOS">%2$s</xliff:g> fejlesztőinek. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="LineageOS">%3$s</xliff:g> funkciók fejlesztésében.</string>
     <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Válasszon másodlagos feloldási módot</string>
-    <string name="settings_biometric_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
-    <string name="fingerprint_setup_title">Ujjlenyomat beállítások</string>
-    <string name="fingerprint_setup_summary">Az ujjlenyomat érzékelő használatával történő képernyő zárolás feloldásához, a következőre van szüksége:</string>
-    <string name="fingerprint_setup_add_fingerprint">Adja hozzá ujjlenyomatát</string>
-    <string name="face_setup_title">Arcbeállítások</string>
-    <string name="face_setup_summary">Az arcával történő képernyő-feloldásához, a következőkre van szüksége:</string>
-    <string name="face_setup_add_face">Az arcképe hozzá legyen rendelve a feloldáshoz</string>
-    <string name="biometric_setup_backup_lock_method">Másodlagos feloldási mód beállításai</string>
-    <string name="biometric_setup_screen_lock_setup">Képernyőzár beállítása</string>
-    <string name="sim_locale_changed">%1$s SIM észlelve</string>
-    <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
-    <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
-    <string name="lockscreen_setup_title" product="default">Óvja meg telefonját</string>
-    <string name="lockscreen_setup_title" product="tablet">Óvja meg táblagépét</string>
-    <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
-    <string name="lockscreen_setup_screen_lock_setup">Beállítás</string>
-    <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
-    <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
-    <string name="update_recovery_title">A Lineage Recovery frissítése</string>
-    <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
-    <string name="update_recovery_warning">A Recovery frissítésre kerül, amint befejeződött a telepítést. Ha érintetlenül akarja hagyni, tiltsa le ezt a funkciót.</string>
-    <string name="update_recovery_setting">A Lineage Recovery frissítése az operációs rendszer mellett</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Navigáció</string>
     <string name="navigation_summary">Itt választhatja ki a kívánt navigációs módot</string>
     <string name="gesture_navigation">Navigáció kézmozdulatokkal</string>
