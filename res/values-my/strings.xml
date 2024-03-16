@@ -35,8 +35,8 @@
     <string name="setup_datetime">ရက်စွဲနှင့် အချိန်</string>
     <string name="setup_current_date">လက်ရှိနေ့စွဲ</string>
     <string name="setup_current_time">လက်ရှိအချိန်</string>
-    <string name="sim_missing_summary" product="tablet">သင့် တက်ဘလက်တွင် ဆင်းကဒ်ကိုမတွေ့ရှိပါ။ ဆင်းကဒ်ထည့်ရန် ပစ္စည်းဝယ်စဉ်က ပါလာသော လမ်းညွှန်ချက်ကိုဖတ်ပါ။</string>
-    <string name="sim_missing_summary" product="default">သင့်ဖုန်းတွင် ဆင်းကဒ်ကိုမတွေ့ရှိပါ။ ဆင်းကဒ်ထည့်ရန် ပစ္စည်းဝယ်စဉ်က ပါလာသော လမ်းညွှန်ချက်ကိုဖတ်ပါ။</string>
+    <string name="sim_missing_summary" product="tablet">သင့် တက်ဘလက်တွင် ဆင်းကဒ်ကိုမတွေ့ရှိပါ။ ဆင်းကဒ်ထည့်ရန် ပစ္စည်းဝယ်ချိန်ကပါလာသော လမ်းညွှန်ချက်ကိုဖတ်ပါ။</string>
+    <string name="sim_missing_summary" product="default">သင့်ဖုန်းတွင် ဆင်းကဒ်ကိုမတွေ့ရှိပါ။ ဆင်းကဒ်ထည့်ရန် ပစ္စည်းဝယ်ချိန်ကပါလာသော လမ်းညွှန်ချက်ကိုဖတ်ပါ။</string>
     <string name="choose_data_sim_summary" product="tablet">အင်တာနက်အသုံးပြုရန် မည်သည့်ဆင်း(မ်)ကဒ်ကိုရွေးမည်နည်း။ ရွေးချယ်လိုက်သော ဆင်း(မ်)ကဒ်ကို သင်၏တက်ဘလက် စတင်ချိန်အသုံးပြုမည်ဖြစ်သောကြောင့် အင်တာနက်အသုံးပြုခ ကုန်ကျနိုင်ပါသည်။</string>
     <string name="choose_data_sim_summary" product="default">အင်တာနက်အသုံးပြုရန် မည်သည့်ဆင်း(မ်)ကဒ်ကိုရွေးမည်နည်း။ ရွေးချယ်လိုက်သော ဆင်း(မ်)ကဒ်ကို သင်၏ဖုန်း စတင်ချိန်အသုံးပြုမည်ဖြစ်သောကြောင့် အင်တာနက်အသုံးပြုခ ကုန်ကျနိုင်ပါသည်။</string>
     <string name="date_time_summary">သင်၏အချိန်ဇုန်ကိုရွေးချယ်ပြီး လိုအပ်ပါက လက်ရှိရက်စွဲနှင့်အချိန်ကို ချိန်ညှိပါ။</string>
@@ -47,9 +47,11 @@
     <string name="enable_mobile_data_summary">စတင်သတ်မှတ်ချိန်တွင် ဆယ်လူလာဒေတာကို အသုံးပြုလိုပါသလား။ ဆယ်လူလာဒေတာဖွင့်ခြင်းသည် အင်တာနက်အသုံးပြုခကောက်ခံမှုများ ရှိနိုင်ပါသည်။</string>
     <string name="no">မလုပ်ပါ</string>
     <string name="yes">လုပ်မည်</string>
-    <string name="data_sim_name">ဆင်း(မ်) <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="data_sim_name">ဆင်း <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">အရေးပေါ် ခေါ်ဆိုမှု</string>
+    <string name="accessibility_settings">အထောက်အကူပြု သတ်မှတ်ချက်များ</string>
     <string name="setup_services">LineageOS လုပ်ဆောင်နိုင်မှုများ</string>
+    <string name="services_pp_explanation">ဤလုပ်ဆောင်ချက်သည် သင့်စက်ပစ္စည်း၏ စွမ်းဆောင်နိုင်မှုကို တိုးမြင့်စေနိုင်ပါသည်။ အချက်အလက်များကို <xliff:g id="name" example="LineageOS">%1$s</xliff:g>၏ ပုဂ္ဂိုလ်ရေးဆိုင်ရာမူဝါဒအတိုင်း အသုံးပြုပါမည်။</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> ကိုတိုးတက်လာအောင် ကူညီပါ။</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> သည် ပြဿနာများနှင့် အသုံးပြုမှုဆိုင်ရာအချက်အလက်များကို <xliff:g id="name" example="LineageOS">%2$s</xliff:g> သို့ပေးပို့ပါမည်။ အချက်အလက်များသည် သင်မည်သူမည်ဝါဖြစ်သည်ကို မခွဲခြားနိုင်ဘဲ ဘက်ထရီသက်တမ်း, အက်ပ်များ၏ စွမ်းဆောင်ရည်များနှင့် <xliff:g id="name" example="LineageOS">%3$s</xliff:g>၏ လုပ်ဆောင်မှုအသစ်များကဲ့သို့သော အချက်အလက်များကို အလုပ်လုပ်နေသောအဖွဲ့ထံသို့သာ လွှဲပြောင်းပါမည်။</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>

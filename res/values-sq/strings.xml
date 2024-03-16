@@ -79,7 +79,7 @@
     <string name="intro_restore_subtitle">Nëse keni një kopje rezervë nga pajisja juaj e fundit <xliff:g id="name" example="LineageOS">%s</xliff:g>, mund ta rivendosni këtu.</string>
     <string name="intro_restore_button">Rimerr nga kopja rezervë</string>
     <string name="update_recovery_title">Përditësoni rikuperimin e Lineage</string>
-    <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo azhornimi.</string>
+    <string name="update_recovery_description">Përditëson Rikuperimin e Lineage në boot-in e parë pas çdo përditësimi.</string>
     <string name="update_recovery_warning">Rikuperimi do të përditësohet sapo të keni mbaruar konfigurimin. Nëse dëshironi ta mbani të paprekur, mbylleni këtë veçori.</string>
     <string name="update_recovery_setting">Përditësoni rikuperimin Lineage krahas OS</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
