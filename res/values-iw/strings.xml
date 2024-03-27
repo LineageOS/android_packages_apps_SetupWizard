@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">אשף ההגדרות</string>
@@ -23,44 +12,19 @@
     <string name="done">בוצע</string>
     <string name="ok">אישור</string>
     <string name="loading">רק רגע\u2026</string>
-    <string name="setup_complete">ההגדרה הושלמה</string>
-    <string name="setup_welcome">ברוך הבא</string>
+    <string name="emergency_call">שיחת חירום</string>
     <string name="setup_locale">שפה</string>
-    <string name="setup_wifi">בחר רשת Wi-Fi</string>
+    <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>
     <string name="setup_sim_missing">כרטיס SIM חסר</string>
-    <string name="setup_choose_data_sim">בחר כרטיס SIM עבור נתונים</string>
-    <string name="setup_location">שירותי מיקום</string>
-    <string name="setup_other">שירותים אחרים</string>
-    <string name="setup_datetime">תאריך ושעה</string>
-    <string name="setup_current_date">התאריך הנוכחי</string>
-    <string name="setup_current_time">השעה הנוכחית</string>
     <string name="sim_missing_summary" product="tablet">לא זוהה כרטיס SIM בטאבלט שלך. כדי להכניס כרטיס SIM, קרא את הוראות ההפעלה שהגיעו יחד עם מכשירך.</string>
     <string name="sim_missing_summary" product="default">לא זוהה כרטיס SIM במכשיר. כדי להכניס כרטיס SIM, קרא את הוראות ההפעלה שהגיעו יחד עם מכשירך.</string>
-    <string name="choose_data_sim_summary" product="tablet">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? ייתכנו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת הטאבלט שלך.</string>
-    <string name="choose_data_sim_summary" product="default">באיזה כרטיס SIM הנך מעוניין להשתמש עבור אינטרנט סלולרי? ייתכנו חיובי רשת ב-SIM הנבחר בעקבות שימוש באינטרנט במהלך הגדרת מכשירך.</string>
+    <string name="setup_datetime">תאריך ושעה</string>
     <string name="date_time_summary">הגדר את אזור הזמן שלך והתאם את התאריך ואת השעה הנוכחיים במידת הצורך</string>
+    <string name="setup_current_date">התאריך הנוכחי</string>
+    <string name="setup_current_time">השעה הנוכחית</string>
+    <string name="setup_location">שירותי מיקום</string>
     <string name="location_access_summary"><b>אפשר ליישומים שביקשו את רשותך</b> להשתמש במידע על מיקומך. הפעולה עשויה לכלול את מיקומך הנוכחי ומיקומים קודמים.</string>
-    <string name="setup_mobile_data">הפעל נתונים סלולריים</string>
-    <string name="setup_mobile_data_no_service">אין שירות</string>
-    <string name="setup_mobile_data_emergency_only">שיחות חירום בלבד</string>
-    <string name="enable_mobile_data_summary">האם ברצונך להשתמש בתקשורת נתונים סלולרית במהלך ההתקנה? הפעלת נתונים סלולריים עשויה לעלות כסף.</string>
-    <string name="no">לא</string>
-    <string name="yes">כן</string>
-    <string name="emergency_call">שיחת חירום</string>
     <string name="setup_services">תכונות LineageOS</string>
     <string name="services_help_improve_cm">עזור בשיפור <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
-    <string name="settings_biometric_setup_title">בחר סוג שיטת נעילת מסך לגיבוי</string>
-    <string name="settings_biometric_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
-    <string name="fingerprint_setup_title">הגדרת טביעת אצבע</string>
-    <string name="fingerprint_setup_summary">כדי להשתמש בחיישן טביעות האצבע שלך, עליך:</string>
-    <string name="fingerprint_setup_add_fingerprint">הוסף את טביעת האצבע שלך</string>
-    <string name="biometric_setup_backup_lock_method">הגדר שיטת פתיחה משנית</string>
-    <string name="biometric_setup_screen_lock_setup">הגדרת מסך נעילה</string>
-    <string name="sim_locale_changed">זוהו %1$s כרטיסי SIM</string>
-    <string name="settings_lockscreen_setup_title">בחר סוג נעילת מסך</string>
-    <string name="settings_lockscreen_setup_details">כיצד הנך מעוניין לנעול את המסך שלך?</string>
-    <string name="lockscreen_setup_title" product="default">הגן על הטלפון שלך</string>
-    <string name="lockscreen_setup_summary"><b>הגן על מכשיר זה</b> ודרוש קוד אימות, קו או סיסמה לביטול נעילת המסך.</string>
-    <string name="lockscreen_setup_screen_lock_setup">הגדר</string>
 </resources>

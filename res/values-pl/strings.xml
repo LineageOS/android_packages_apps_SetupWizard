@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Kreator konfiguracji</string>
@@ -23,33 +12,30 @@
     <string name="done">Gotowe</string>
     <string name="ok">OK</string>
     <string name="loading">Chwileczkę\u2026</string>
-    <string name="setup_complete">Konfiguracja zakończona</string>
-    <string name="setup_welcome">Witaj</string>
     <string name="setup_welcome_message">Witaj w <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Język</string>
-    <string name="setup_wifi">Wybierz Wi-Fi</string>
-    <string name="setup_sim_missing">Brak karty SIM</string>
-    <string name="setup_choose_data_sim">Wybierz kartę SIM dla danych mobilnych</string>
-    <string name="setup_location">Usługi lokalizacyjne</string>
-    <string name="setup_other">Inne usługi</string>
-    <string name="setup_datetime">Data i czas</string>
-    <string name="setup_current_date">Aktualna data</string>
-    <string name="setup_current_time">Aktualny czas</string>
-    <string name="sim_missing_summary" product="tablet">Karta SIM nie została wykryta w tablecie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do tabletu.</string>
-    <string name="sim_missing_summary" product="default">Karta SIM nie została wykryta w twoim telefonie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do telefonu.</string>
-    <string name="choose_data_sim_summary" product="tablet">Której karty SIM chcesz użyć do transmisji danych? Wybrana karta SIM może spowodować dodatkowe koszty, ponieważ zostanie ona użyta do skonfigurowania tabletu.</string>
-    <string name="choose_data_sim_summary" product="default">Której karty SIM chcesz użyć do transmisji danych? Wybrana karta SIM może spowodować dodatkowe koszty, ponieważ zostanie ona użyta do skonfigurowania telefonu.</string>
-    <string name="date_time_summary">Ustaw swoją strefę czasową i dostosuj bieżącą datę i godzinę w razie potrzeby</string>
-    <string name="location_access_summary"><b>Zezwalaj aplikacjom, które zapytały cię o zezwolenie</b> do używania informacji o twojej lokalizacji. Może to obejmować twoje poprzednie, ale i bieżącą lokalizację.</string>
-    <string name="setup_mobile_data">Włącz transmisję danych</string>
-    <string name="setup_mobile_data_no_service">Brak usługi</string>
-    <string name="setup_mobile_data_emergency_only">Tylko połączenia alarmowe</string>
-    <string name="enable_mobile_data_summary">Czy chcesz użyć mobilnej transmisji danych podczas instalacji? Włączenie transmisji danych może wiązać się z dodatkowymi opłatami.</string>
-    <string name="no">Nie</string>
-    <string name="yes">Tak</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="setup_managed_profile_welcome_message">Skonfiguruj swój profil służbowy</string>
     <string name="emergency_call">Połączenie alarmowe</string>
     <string name="accessibility_settings">Ustawienia ułatwień dostępu</string>
+    <string name="setup_locale">Język</string>
+    <string name="sim_locale_changed">Wykryto %1$s SIM</string>
+    <string name="setup_sim_missing">Brak karty SIM</string>
+    <string name="sim_missing_summary" product="tablet">Karta SIM nie została wykryta w tablecie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do tabletu.</string>
+    <string name="sim_missing_summary" product="default">Karta SIM nie została wykryta w twoim telefonie. Aby włożyć kartę SIM, przeczytaj instrukcję dołączoną do telefonu.</string>
+    <string name="setup_datetime">Data i czas</string>
+    <string name="date_time_summary">Ustaw swoją strefę czasową i dostosuj bieżącą datę i godzinę w razie potrzeby</string>
+    <string name="setup_current_date">Aktualna data</string>
+    <string name="setup_current_time">Aktualny czas</string>
+    <string name="intro_restore_title">Przywróć aplikacje i dane</string>
+    <string name="intro_restore_subtitle">Jeśli masz kopię zapasową Seedvault z <xliff:g id="name" example="LineageOS">%s</xliff:g> lub innego systemu operacyjnego, możesz ją przywrócić tutaj.</string>
+    <string name="intro_restore_button">Przywróć z kopii zapasowej</string>
+    <string name="setup_location">Usługi lokalizacyjne</string>
+    <string name="location_access_summary"><b>Zezwalaj aplikacjom, które zapytały cię o zezwolenie</b> do używania informacji o twojej lokalizacji. Może to obejmować twoje poprzednie, ale i bieżącą lokalizację.</string>
+    <string name="location_agps_access_summary">Gdy lokalizacja jest włączona, <b>pobierz dane pomocy satelitarnej z internetu</b>, co może znacznie poprawić wydajność uruchamiania GPS.</string>
+    <string name="update_recovery_title">Aktualizuj Lineage Recovery</string>
+    <string name="update_recovery_description">Aktualizuje Lineage Recovery przy pierwszym uruchomieniu, po każdej aktualizacji.</string>
+    <string name="update_recovery_warning">Recovery zostanie zaktualizowane po zakończeniu konfiguracji. Jeśli chcesz zachować obecną wersję, wyłącz tę funkcję.</string>
+    <string name="update_recovery_setting">Aktualizuj Lineage Recovery razem z aktualizacją systemu</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funkcje LineageOS</string>
     <string name="services_pp_explanation">Te usługi są uruchomione w celu rozszerzenia możliwości twojego urządzenia. Dane będą używane zgodnie z polityką prywatności <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">Możesz przeczytać politykę prywatności na innym urządzeniu, odwiedzając <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,37 +43,14 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Pomóż ulepszyć LineageOS">%1$s</xliff:g>, automatycznie wysyłając dane diagnostyczne oraz dotyczące użytkowania do <xliff:g id="name" example="LineageOS"> %2$s</xliff:g>. Informacje te nie mogą być wykorzystane do identyfikacji użytkownika i pomagają zespołom pracującym nad takimi kwestiami, jak żywotność baterii, wydajność aplikacji i nowe funkcje <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Użyj ekranowych przycisków nawigacyjnych</b> zamiast klawiszy sprzętowych.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Wybierz zapasową opcję blokady ekranu</string>
-    <string name="settings_biometric_setup_details">Jak chcesz blokować swój ekran?</string>
-    <string name="fingerprint_setup_title">Konfiguracja odcisków palców</string>
-    <string name="fingerprint_setup_summary">Aby użyć czujnika linii papilarnych do odblokowania ekranu, musisz:</string>
-    <string name="fingerprint_setup_add_fingerprint">Dodać swój odcisk palca</string>
-    <string name="face_setup_title">Konfiguracja odblokowywania twarzą</string>
-    <string name="face_setup_summary">Aby używać twarzy do odblokowania ekranu, musisz:</string>
-    <string name="face_setup_add_face">Dodaj swoją twarz</string>
-    <string name="biometric_setup_backup_lock_method">Skonfigurować drugą metodę odblokowania</string>
-    <string name="biometric_setup_screen_lock_setup">Skonfigurować blokadę ekranu</string>
-    <string name="sim_locale_changed">Wykryto %1$s SIM</string>
-    <string name="settings_lockscreen_setup_title">Wybierz typ blokady ekranu</string>
-    <string name="settings_lockscreen_setup_details">Jak chcesz blokować swój ekran?</string>
-    <string name="lockscreen_setup_title" product="default">Zabezpiecz telefon</string>
-    <string name="lockscreen_setup_title" product="device">Chroń swoje urządzenie</string>
-    <string name="lockscreen_setup_title" product="tablet">Chroń swój tablet</string>
-    <string name="lockscreen_setup_summary"><b>Zabezpiecz to urządzenie</b>, wymagając kodu PIN, wzoru lub hasła do odblokowania ekranu</string>
-    <string name="lockscreen_setup_screen_lock_setup">Konfiguracja</string>
-    <string name="intro_restore_title">Przywróć aplikacje i dane</string>
-    <string name="intro_restore_subtitle">Jeśli masz kopię zapasową z poprzedniego urządzenia z systemem <xliff:g id="name" example="LineageOS">%s</xliff:g>, możesz ją tutaj przywrócić.</string>
-    <string name="intro_restore_button">Przywróć z kopii zapasowej</string>
-    <string name="update_recovery_title">Aktualizuj Lineage Recovery</string>
-    <string name="update_recovery_description">Aktualizuje Lineage Recovery przy pierwszym uruchomieniu, po każdej aktualizacji.</string>
-    <string name="update_recovery_warning">Recovery zostanie zaktualizowane po zakończeniu konfiguracji. Jeśli chcesz zachować obecną wersję, wyłącz tę funkcję.</string>
-    <string name="update_recovery_setting">Aktualizuj Lineage Recovery razem z aktualizacją systemu</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Nawigacja w systemie</string>
     <string name="navigation_summary">Wybierz preferowaną metodę nawigacji w systemie</string>
     <string name="gesture_navigation">Nawigacja przy użyciu gestów</string>
     <string name="two_button_navigation">Nawigacja przy użyciu dwóch przycisków</string>
     <string name="navbar_navigation">Nawigacja przy użyciu trzech przycisków</string>
     <string name="hide_gesture_hint">Ukryj podpowiedź dotyczącą nawigacji gestami</string>
-    <string name="location_agps_access_summary">Gdy lokalizacja jest włączona, <b>pobierz dane pomocy satelitarnej z internetu</b>, co może znacznie poprawić wydajność uruchamiania GPS.</string>
+    <string name="setup_theme">Motyw</string>
+    <string name="theme_summary">Ciemny motyw używa czarnego tła, aby pomóc wydłużyć żywotność baterii na niektórych ekranach</string>
+    <string name="dark">Ciemny</string>
+    <string name="light">Jasny</string>
 </resources>

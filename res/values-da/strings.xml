@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
+     SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Opsætningsvejledning</string>
@@ -23,33 +12,28 @@
     <string name="done">Færdig</string>
     <string name="ok">OK</string>
     <string name="loading">Lige et øjeblik\u2026</string>
-    <string name="setup_complete">Opsætning er fuldført</string>
-    <string name="setup_welcome">Velkommen</string>
     <string name="setup_welcome_message">Velkommen til <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="setup_locale">Sprog</string>
-    <string name="setup_wifi">Vælg Wi-Fi</string>
-    <string name="setup_sim_missing">SIM-kort mangler</string>
-    <string name="setup_choose_data_sim">Vælg et SIM til data</string>
-    <string name="setup_location">Lokalitetstjenester</string>
-    <string name="setup_other">Andre tjenester</string>
-    <string name="setup_datetime">Dato &amp; tid</string>
-    <string name="setup_current_date">Aktuelle dato</string>
-    <string name="setup_current_time">Aktuelle tidspunkt</string>
-    <string name="sim_missing_summary" product="tablet">Et SIM-kort er ikke blevet fundet i din tablet-computer. Læs de instruktioner der fulgte med din enhed, for at indsætte et SIM-kort.</string>
-    <string name="sim_missing_summary" product="default">Et SIM-kort er ikke blevet fundet i din telefon. Læs de instruktioner der fulgte med din enhed, for at indsætte et SIM-kort.</string>
-    <string name="choose_data_sim_summary" product="tablet">Hvilket SIM ønsker du at bruge til data? Det valgte SIM kan medføre netværksudgifter, da det vil blive brugt til at indstille din tablet-computer.</string>
-    <string name="choose_data_sim_summary" product="default">Hvilket SIM ønsker du at bruge til data? Det valgte SIM kan medføre netværksudgifter, da det vil blive brugt til at indstille din telefon.</string>
-    <string name="date_time_summary">Angiv din tidszone og justér aktuel dato og tid, hvis det behøves</string>
-    <string name="location_access_summary"><b>Tillad apps, der har bedt om din tilladelse</b> at bruge din lokalitetsinformation. Dette kan inkludere din aktuelle lokalitet og tidligere lokaliteter.</string>
-    <string name="setup_mobile_data">Tænd for mobildata</string>
-    <string name="setup_mobile_data_no_service">Ingen tjeneste</string>
-    <string name="setup_mobile_data_emergency_only">Kun nødopkald</string>
-    <string name="enable_mobile_data_summary">Vil du bruge mobildata under opsætning? Aktivering af mobildata kan medføre dataudgifter.</string>
-    <string name="no">Nej</string>
-    <string name="yes">Ja</string>
-    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Nødopkald</string>
     <string name="accessibility_settings">Hjælpefunktioner</string>
+    <string name="setup_locale">Sprog</string>
+    <string name="sim_locale_changed">%1$s SIM fundet</string>
+    <string name="setup_sim_missing">SIM-kort mangler</string>
+    <string name="sim_missing_summary" product="tablet">Et SIM-kort er ikke blevet fundet i din tablet-computer. Læs de instruktioner der fulgte med din enhed, for at indsætte et SIM-kort.</string>
+    <string name="sim_missing_summary" product="default">Et SIM-kort er ikke blevet fundet i din telefon. Læs de instruktioner der fulgte med din enhed, for at indsætte et SIM-kort.</string>
+    <string name="setup_datetime">Dato &amp; tid</string>
+    <string name="date_time_summary">Angiv din tidszone og justér aktuel dato og tid, hvis det behøves</string>
+    <string name="setup_current_date">Aktuelle dato</string>
+    <string name="setup_current_time">Aktuelle tidspunkt</string>
+    <string name="intro_restore_title">Gendan apps og data</string>
+    <string name="intro_restore_button">Gendan fra backup</string>
+    <string name="setup_location">Lokalitetstjenester</string>
+    <string name="location_access_summary"><b>Tillad apps, der har bedt om din tilladelse</b> at bruge din lokalitetsinformation. Dette kan inkludere din aktuelle lokalitet og tidligere lokaliteter.</string>
+    <string name="location_agps_access_summary">Når lokation er tændt, <b>download satellit hjælpedata fra internettet</b>, som kan hjælpe meget med GPS opstartsfunktion</string>
+    <string name="update_recovery_title">Opdater Lineage Genddanelse</string>
+    <string name="update_recovery_description">Opdateringer Lineage Recovery ved første opstart efter hver opdatering.</string>
+    <string name="update_recovery_warning">Gendannelse vil blive opdateret, så snart du er færdig med opsætningen. Hvis du ønsker at holde det intakt, skal du deaktivere denne funktion.</string>
+    <string name="update_recovery_setting">Opdater Lineage Recovery sammen med OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS-funktioner</string>
     <string name="services_pp_explanation">&lt;xliff:g id="name" example="LineageOS"&gt;Disse tjenester virker for at udvide funktionerne på din enhed. Data vil blive brugt i overensstemmelse med  &lt;xliff:g id="name" example="LineageOS"&gt;%1$s&lt;/xliff:g&gt;\'s privatlivspolitik.</string>
     <string name="services_find_privacy_policy">Du kan læse privatlivspolitikken på en anden enhed ved at besøge <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
@@ -57,35 +41,10 @@
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ved automatisk at sende diagnose og forbrugsdata til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Denne information kan ikke bruge til at identificere dig men giver en hjælpende hånd til de hold der arbejder med batteri levetid, app præstation og nye<xliff:g id="name" example="LineageOS">%3$s</xliff:g> funktioner.</string>
     <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærm</b> i stedet for fysiske-taster.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
-    <string name="settings_biometric_setup_title">Vælg sikkerheds-låseskærmtype</string>
-    <string name="settings_biometric_setup_details">Hvordan vil du låse din skærm?</string>
-    <string name="fingerprint_setup_title">Fingeraftryksopsætning</string>
-    <string name="fingerprint_setup_summary">For at bruge din fingeraftryks-sensor til at låse din skærm op, er du nødt til at:</string>
-    <string name="fingerprint_setup_add_fingerprint">Tilføj dit fingeraftryk</string>
-    <string name="face_setup_title">Ansigt opsætning</string>
-    <string name="face_setup_summary">For at bruge dit ansigt til at låse din skærm op, skal du:</string>
-    <string name="face_setup_add_face">Tilføj dit ansigt</string>
-    <string name="biometric_setup_backup_lock_method">Indstil en sekundær oplåsningsmetode</string>
-    <string name="biometric_setup_screen_lock_setup">Indstil skærmlås</string>
-    <string name="sim_locale_changed">%1$s SIM fundet</string>
-    <string name="settings_lockscreen_setup_title">Vælg skærmlåstype</string>
-    <string name="settings_lockscreen_setup_details">Hvordan vil du låse din skærm?</string>
-    <string name="lockscreen_setup_title" product="default">Beskyt din telefon</string>
-    <string name="lockscreen_setup_title" product="tablet">Beskyt din tablet</string>
-    <string name="lockscreen_setup_summary"><b>Beskyt denne enhed</b>, og kræv en PIN, et mønster, eller en adgangskode, for at låse skærmen op</string>
-    <string name="lockscreen_setup_screen_lock_setup">Opsætning</string>
-    <string name="intro_restore_title">Gendan apps og data</string>
-    <string name="intro_restore_button">Gendan fra backup</string>
-    <string name="update_recovery_title">Opdater Lineage Genddanelse</string>
-    <string name="update_recovery_description">Opdateringer Lineage Recovery ved første opstart efter hver opdatering.</string>
-    <string name="update_recovery_warning">Gendannelse vil blive opdateret, så snart du er færdig med opsætningen. Hvis du ønsker at holde det intakt, skal du deaktivere denne funktion.</string>
-    <string name="update_recovery_setting">Opdater Lineage Recovery sammen med OS</string>
-    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Navigation</string>
     <string name="navigation_summary">Vælg foretrukken navigationsmetode</string>
     <string name="gesture_navigation">Navigering med bevægelser</string>
     <string name="two_button_navigation">Navigering med to knapper</string>
     <string name="navbar_navigation">Navigering med tre knapper</string>
     <string name="hide_gesture_hint">Skjul bevægelses navigerings hint</string>
-    <string name="location_agps_access_summary">Når lokation er tændt, <b>download satellit hjælpedata fra internettet</b>, som kan hjælpe meget med GPS opstartsfunktion</string>
 </resources>
