@@ -28,6 +28,7 @@ class SimMissingActivity : SubBaseActivity() {
                     && getBoolean(KEY_ENABLE_ESIM_UI_BY_DEFAULT, true)
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        useSuwIntentExtras = false
         super.onCreate(savedInstanceState)
 
         if (!simAvailable) {
