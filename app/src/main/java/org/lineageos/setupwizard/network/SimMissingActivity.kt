@@ -14,6 +14,8 @@ import android.telephony.euicc.EuiccManager.EXTRA_FORCE_PROVISION
 import androidx.activity.result.ActivityResult
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
+import com.google.android.setupcompat.util.WizardManagerHelper
+import com.google.android.setupdesign.util.ThemeHelper
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.base.SubBaseActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
@@ -83,6 +85,9 @@ class SimMissingActivity : SubBaseActivity() {
             .setNegativeButton(R.string.cancel, null)
             .show()
     }
+
+    override fun decorateIntent(intent: Intent): Intent =
+        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_EXPRESSIVE)
 
     override val layoutResId = R.layout.sim_missing_page
 
