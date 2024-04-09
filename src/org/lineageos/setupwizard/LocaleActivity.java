@@ -6,8 +6,6 @@
 
 package org.lineageos.setupwizard;
 
-import static androidx.appcompat.app.AppCompatDelegate.setApplicationLocales;
-
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -53,7 +51,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         public void run() {
             if (mCurrentLocale != null) {
                 mLanguagePicker.setEnabled(false);
-                setApplicationLocales(LocaleListCompat.create(mCurrentLocale));
+                com.android.internal.app.LocalePicker.updateLocale(mCurrentLocale);
             }
         }
     };
