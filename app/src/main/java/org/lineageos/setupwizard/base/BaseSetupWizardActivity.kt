@@ -43,6 +43,8 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
 
     private lateinit var nextIntentResultLauncher: ActivityResultLauncher<Intent>
 
+    protected var useSuwIntentExtras = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         if (LOGV) {
             logActivityState("onCreate savedInstanceState=$savedInstanceState")
@@ -215,10 +217,13 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
 
     /** Adorn the Intent with Setup Wizard-related extras. */
     protected open fun decorateIntent(intent: Intent): Intent =
-        intent
-            .putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun())
-            .putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true)
-            .putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_EXPRESSIVE)
+        intent.apply {
+            if (useSuwIntentExtras) {
+                putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun())
+                putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true)
+            }
+            putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_EXPRESSIVE)
+        }
 
     override fun startActivity(intent: Intent) {
         super.startActivity(decorateIntent(intent))

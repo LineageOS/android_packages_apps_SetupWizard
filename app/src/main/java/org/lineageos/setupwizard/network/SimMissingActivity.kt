@@ -24,6 +24,7 @@ class SimMissingActivity : SubBaseActivity() {
         get() = SetupWizardUtils.hasEuicc(this) && getBoolean(KEY_ENABLE_ESIM_UI_BY_DEFAULT, true)
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        useSuwIntentExtras = false
         super.onCreate(savedInstanceState)
 
         if (!SetupWizardUtils.simMissing(this) || !SetupWizardUtils.hasTelephony(this)) {
