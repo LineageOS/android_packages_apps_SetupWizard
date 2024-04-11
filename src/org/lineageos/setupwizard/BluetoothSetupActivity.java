@@ -27,9 +27,7 @@ public class BluetoothSetupActivity extends SubBaseActivity {
     @Override
     protected void onStartSubactivity() {
         try {
-            Intent intent = new Intent();
-            intent.setComponent(SetupWizardUtils.sTvAddAccessorySettingsActivity);
-            intent.setAction(ACTION_CONNECT_INPUT);
+            Intent intent = new Intent(ACTION_CONNECT_INPUT);
             intent.putExtra(INTENT_EXTRA_NO_INPUT_MODE, true);
             startSubactivity(intent);
         } catch (Exception e) {
