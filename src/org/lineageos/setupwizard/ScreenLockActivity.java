@@ -6,11 +6,11 @@
 
 package org.lineageos.setupwizard;
 
-import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_LOCKSCREEN;
-
 import android.content.Intent;
 
 public class ScreenLockActivity extends SubBaseActivity {
+
+    private static final String ACTION_SETUP_LOCKSCREEN = "com.android.settings.SETUP_LOCK_SCREEN";
 
     @Override
     protected void onStartSubactivity() {
