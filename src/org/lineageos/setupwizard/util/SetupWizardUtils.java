@@ -348,14 +348,6 @@ public class SetupWizardUtils {
         return componentNames;
     }
 
-    public static final ComponentName sTvWifiSetupSettingsActivity =
-            new ComponentName("com.android.tv.settings",
-                    "com.android.tv.settings.connectivity.setup.WifiSetupActivity");
-
-    public static final ComponentName sTvAddAccessorySettingsActivity =
-            new ComponentName("com.android.tv.settings",
-                    "com.android.tv.settings.accessories.AddAccessoryActivity");
-
     public static long getBuildDateTimestamp() {
         return SystemProperties.getLong(PROP_BUILD_DATE, 0);
     }
