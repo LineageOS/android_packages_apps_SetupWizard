@@ -6,15 +6,14 @@
 
 package org.lineageos.setupwizard;
 
-import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_BIOMETRIC;
-
 import android.content.Intent;
+import android.provider.Settings;
 
 public class BiometricActivity extends SubBaseActivity {
 
     @Override
     protected void onStartSubactivity() {
-        Intent intent = new Intent(ACTION_SETUP_BIOMETRIC);
+        Intent intent = new Intent(Settings.ACTION_BIOMETRIC_ENROLL);
         startSubactivity(intent);
     }
 }
