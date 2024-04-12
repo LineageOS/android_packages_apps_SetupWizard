@@ -264,7 +264,7 @@ public class SetupWizardUtils {
         } else {
             disableComponent(context, ScreenLockActivity.class);
         }
-        if (!hasTelephony(context) || !simMissing(context)) {
+        if (!hasTelephony(context)) {
             disableComponent(context, SimMissingActivity.class);
         }
         if ((!hasWifi(context) && !hasTelephony(context)) ||
