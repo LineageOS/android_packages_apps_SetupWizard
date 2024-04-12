@@ -6,18 +6,45 @@
 
 package org.lineageos.setupwizard;
 
-import android.os.Bundle;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
+
+import android.content.Intent;
+
+import androidx.activity.result.ActivityResult;
+
+import com.google.android.setupdesign.transition.TransitionHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class SimMissingActivity extends BaseSetupWizardActivity {
+public class SimMissingActivity extends SubBaseActivity {
+
+    protected void onStartSubactivity() {
+        if (!SetupWizardUtils.simMissing(this)) {
+            nextAction(RESULT_OK);
+            return;
+        }
+        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
+        setNextAllowed(true);
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
-        if (!SetupWizardUtils.simMissing(this)) {
-            finishAction(RESULT_OK);
+    protected void onActivityResult(ActivityResult activityResult) {
+        int resultCode = activityResult.getResultCode();
+        Intent data = activityResult.getData();
+        if (resultCode != RESULT_CANCELED) {
+            nextAction(resultCode, data);
+        } else if (mIsSubactivityNotFound) {
+            finishAction(RESULT_ACTIVITY_NOT_FOUND);
+        } else if (data != null && data.getBooleanExtra("onBackPressed", false)) {
+            if (SetupWizardUtils.simMissing(this)) {
+                onStartSubactivity();
+            } else {
+                finishAction(RESULT_CANCELED, data);
+            }
+            TransitionHelper.applyBackwardTransition(this,
+                    TransitionHelper.TRANSITION_FADE_THROUGH, true);
+        } else if (!SetupWizardUtils.simMissing(this)) {
+            nextAction(RESULT_OK);
         }
     }
 
