@@ -23,7 +23,6 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.google.android.setupcompat.util.ResultCodes;
-import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
@@ -71,10 +70,6 @@ public class WizardManager extends Activity {
         finish();
     }
 
-    private void addExtras(Intent intent) {
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, true);
-    }
-
     private void doAction(String scriptUri, WizardAction action, Intent extras) {
         Intent intent = action.getIntent();
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -83,7 +78,6 @@ public class WizardManager extends Activity {
                     + " intent=" + intent + " extras2=" + intent.getExtras() + " action=" + action);
         }
 
-        addExtras(intent);
         if (extras != null) {
             intent.putExtras(extras);
         }
