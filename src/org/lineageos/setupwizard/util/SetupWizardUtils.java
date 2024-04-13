@@ -11,58 +11,57 @@ import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED
 import static android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
 import static android.content.pm.PackageManager.DONT_KILL_APP;
 import static android.content.pm.PackageManager.GET_ACTIVITIES;
-import static android.content.pm.PackageManager.GET_RECEIVERS;
-import static android.content.pm.PackageManager.GET_SERVICES;
+import static android.os.UserHandle.USER_CURRENT;
 import static android.telephony.TelephonyManager.PHONE_TYPE_GSM;
-import static android.telephony.TelephonyManager.SIM_STATE_ABSENT;
 
 import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_TRUE;
 import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_UNKNOWN;
 
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
+
+import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
+import static org.lineageos.setupwizard.SetupWizardApp.ENABLE_RECOVERY_UPDATE;
+import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
+import static org.lineageos.setupwizard.SetupWizardApp.NAVIGATION_OPTION_KEY;
+import static org.lineageos.setupwizard.SetupWizardApp.UPDATE_RECOVERY_PROP;
 
 import android.app.StatusBarManager;
+import android.app.WallpaperManager;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ComponentInfo;
-import android.content.pm.PackageInfo;
+import android.content.om.IOverlayManager;
 import android.content.pm.PackageManager;
-import android.content.pm.ServiceInfo;
 import android.content.res.Resources;
 import android.hardware.biometrics.BiometricManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
-import android.os.Binder;
+import android.os.Bundle;
+import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
 import android.sysprop.TelephonyProperties;
-import android.telephony.ServiceState;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import androidx.work.OneTimeWorkRequest;
-import androidx.work.OutOfQuotaPolicy;
-import androidx.work.WorkManager;
-
-import org.lineageos.internal.util.PackageManagerUtils;
+import org.lineageos.setupwizard.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.NetworkSetupActivity;
 import org.lineageos.setupwizard.ScreenLockActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
-import org.lineageos.setupwizard.SetupWizardExitWorker;
-import org.lineageos.setupwizard.SimMissingActivity;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
+
+import lineageos.providers.LineageSettings;
 
 public class SetupWizardUtils {
 
@@ -153,8 +152,8 @@ public class SetupWizardUtils {
     public static boolean hasGMS(Context context) {
         String gmsSuwPackage = hasLeanback(context) ? GMS_TV_SUW_PACKAGE : GMS_SUW_PACKAGE;
 
-        if (PackageManagerUtils.isAppInstalled(context, GMS_PACKAGE) &&
-                PackageManagerUtils.isAppInstalled(context, gmsSuwPackage)) {
+        if (isPackageInstalled(context, GMS_PACKAGE) &&
+                isPackageInstalled(context, gmsSuwPackage)) {
             PackageManager packageManager = context.getPackageManager();
             if (LOGV) {
                 Log.v(TAG, GMS_SUW_PACKAGE + " state = " +
@@ -176,21 +175,7 @@ public class SetupWizardUtils {
         }
     }
 
-    public static void startSetupWizardExitProcedure(Context context) {
-        try {
-            WorkManager.getInstance(context).enqueue(new OneTimeWorkRequest.Builder(
-                    SetupWizardExitWorker.class).setExpedited(
-                    OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST).build());
-        } catch (IllegalArgumentException e) {
-            // finishSetupWizard -- called by the exit worker -- disables components at the end,
-            // including the WorkManager component required here, so this is likely an error finding
-            // that component. The worker only needs to run once. We can assume it already has.
-            Log.w(TAG, "Could not start SetupWizardExitWorker. It has likely already run.", e);
-            return;
-        }
-    }
-
-    public static void finishSetupWizard(Context context) {
+    public static void finishSetupWizard(BaseSetupWizardActivity context) {
         if (LOGV) {
             Log.v(TAG, "finishSetupWizard");
         }
@@ -210,20 +195,16 @@ public class SetupWizardUtils {
                     Settings.Secure.TV_USER_SETUP_COMPLETE, 1);
         }
 
-        disableComponentsAndSendFinishedBroadcast(context);
-    }
-
-    private static void disableComponentsAndSendFinishedBroadcast(Context context) {
-        if (LOGV) {
-            Log.v(TAG, "Disabling Setup Wizard components and sending FINISHED broadcast.");
-        }
+        handleEnableMetrics(context);
+        handleNavKeys(context);
+        handleRecoveryUpdate();
+        handleNavigationOption();
+        WallpaperManager.getInstance(context).forgetLoadedWallpaper();
         disableHome(context);
-        context.sendStickyBroadcastAsUser(
-                new Intent(SetupWizardApp.ACTION_FINISHED),
-                Binder.getCallingUserHandle());
-        disableComponentSets(context, GET_RECEIVERS | GET_SERVICES);
-        // Note: The WizardManager component is disabled when the WizardManager exits,
-        // which happens when FinishActivity calls nextAction while completing.
+        enableStatusBar();
+        context.finishAffinity();
+        context.nextAction(RESULT_SKIP);
+        Log.i(TAG, "Setup complete!");
     }
 
     public static boolean isBluetoothDisabled() {
@@ -270,6 +251,9 @@ public class SetupWizardUtils {
         }
     }
 
+    /**
+     * Disable the Home component, which is presumably SetupWizardActivity at this time.
+     */
     public static void disableHome(Context context) {
         ComponentName homeComponent = getHomeComponent(context);
         if (homeComponent != null) {
@@ -279,7 +263,7 @@ public class SetupWizardUtils {
         }
     }
 
-    public static ComponentName getHomeComponent(Context context) {
+    private static ComponentName getHomeComponent(Context context) {
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.HOME");
         intent.setPackage(context.getPackageName());
@@ -288,11 +272,6 @@ public class SetupWizardUtils {
             Log.v(TAG, "resolveActivity for intent=" + intent + " returns " + comp);
         }
         return comp;
-    }
-
-    public static void disableComponentSets(Context context, int flags) {
-        setComponentListEnabledState(context, getComponentSets(context, flags),
-                COMPONENT_ENABLED_STATE_DISABLED);
     }
 
     public static void disableComponent(Context context, Class<?> cls) {
@@ -311,42 +290,56 @@ public class SetupWizardUtils {
                 enabledState, DONT_KILL_APP);
     }
 
-    public static void setComponentListEnabledState(Context context,
-            List<ComponentName> componentNames, int enabledState) {
-        for (ComponentName componentName : componentNames) {
-            setComponentEnabledState(context, componentName, enabledState);
+    private static void handleEnableMetrics(Context context) {
+        Bundle privacyData = SetupWizardApp.getSettingsBundle();
+        if (privacyData != null
+                && privacyData.containsKey(KEY_SEND_METRICS)) {
+            LineageSettings.Secure.putInt(context.getContentResolver(),
+                    LineageSettings.Secure.STATS_COLLECTION,
+                    privacyData.getBoolean(KEY_SEND_METRICS)
+                            ? 1 : 0);
         }
     }
 
-    public static List<ComponentName> getComponentSets(Context context, int flags) {
-        int i = 0;
-        List<ComponentName> componentNames = new ArrayList<>();
-        try {
-            PackageInfo allInfo = context.getPackageManager()
-                    .getPackageInfo(context.getPackageName(), flags);
-            if (allInfo != null) {
-                if (allInfo.activities != null && (flags & GET_ACTIVITIES) != 0) {
-                    for (ComponentInfo info : allInfo.activities) {
-                        componentNames.add(new ComponentName(context, info.name));
-                    }
-                }
-                if (allInfo.receivers != null && (flags & GET_RECEIVERS) != 0) {
-                    for (ComponentInfo info2 : allInfo.receivers) {
-                        componentNames.add(new ComponentName(context, info2.name));
-                    }
-                }
-                if (allInfo.services != null && (flags & GET_SERVICES) != 0) {
-                    ServiceInfo[] serviceInfoArr = allInfo.services;
-                    int length = serviceInfoArr.length;
-                    while (i < length) {
-                        componentNames.add(new ComponentName(context, serviceInfoArr[i].name));
-                        i++;
-                    }
-                }
-            }
-        } catch (PackageManager.NameNotFoundException ignored) {
+    private static void handleNavKeys(Context context) {
+        if (SetupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
+            writeDisableNavkeysOption(context,
+                    SetupWizardApp.getSettingsBundle().getBoolean(DISABLE_NAV_KEYS));
         }
-        return componentNames;
+    }
+
+    private static void handleRecoveryUpdate() {
+        if (SetupWizardApp.getSettingsBundle().containsKey(ENABLE_RECOVERY_UPDATE)) {
+            boolean update = SetupWizardApp.getSettingsBundle()
+                    .getBoolean(ENABLE_RECOVERY_UPDATE);
+
+            SystemProperties.set(UPDATE_RECOVERY_PROP, String.valueOf(update));
+        }
+    }
+
+    private static void handleNavigationOption() {
+        Bundle settingsBundle = SetupWizardApp.getSettingsBundle();
+        if (settingsBundle.containsKey(NAVIGATION_OPTION_KEY)) {
+            IOverlayManager overlayManager = IOverlayManager.Stub.asInterface(
+                    ServiceManager.getService(Context.OVERLAY_SERVICE));
+            String selectedNavMode = settingsBundle.getString(NAVIGATION_OPTION_KEY);
+
+            try {
+                overlayManager.setEnabledExclusiveInCategory(selectedNavMode, USER_CURRENT);
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
+    private static void writeDisableNavkeysOption(Context context, boolean enabled) {
+        final boolean virtualKeysEnabled = LineageSettings.System.getIntForUser(
+                context.getContentResolver(), LineageSettings.System.FORCE_SHOW_NAVBAR, 0,
+                UserHandle.USER_CURRENT) != 0;
+        if (enabled != virtualKeysEnabled) {
+            LineageSettings.System.putIntForUser(context.getContentResolver(),
+                    LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+        }
     }
 
     public static long getBuildDateTimestamp() {
