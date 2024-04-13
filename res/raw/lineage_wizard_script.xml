@@ -16,6 +16,7 @@
     <WizardAction
         wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end"
         id="welcome">
+        <result wizard:name="skip" wizard:resultCode="1" />
         <result wizard:action="locale" />
     </WizardAction>
 
