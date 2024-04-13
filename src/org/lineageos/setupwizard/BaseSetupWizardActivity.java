@@ -10,15 +10,11 @@ import static android.view.View.INVISIBLE;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
-import static org.lineageos.setupwizard.SetupWizardApp.ACTION_SETUP_COMPLETE;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
 import android.annotation.Nullable;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.drawable.Drawable;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -49,18 +45,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
 
     private NavigationLayout mNavigationBar;
 
-    private final BroadcastReceiver finishReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (ACTION_SETUP_COMPLETE.equals(intent.getAction())) {
-                if (BaseSetupWizardActivity.this instanceof FinishActivity) return;
-                if (mNavigationBar != null) {
-                    // hide the activity's view, so it does not pop up again
-                    mNavigationBar.getRootView().setVisibility(INVISIBLE);
-                }
-            }
-        }
-    };
     private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             BaseSetupWizardActivity.this::onActivityResult);
@@ -71,7 +55,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
             logActivityState("onCreate savedInstanceState=" + savedInstanceState);
         }
         super.onCreate(savedInstanceState);
-        registerReceiver(finishReceiver, new IntentFilter(ACTION_SETUP_COMPLETE));
         initLayout();
         mNavigationBar = getNavigationBar();
         if (mNavigationBar != null) {
@@ -135,7 +118,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         if (LOGV) {
             logActivityState("onDestroy");
         }
-        unregisterReceiver(finishReceiver);
         super.onDestroy();
     }
 
@@ -252,7 +234,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         finish();
     }
 
-    protected final void nextAction(int resultCode) {
+    public final void nextAction(int resultCode) {
         nextAction(resultCode, null);
     }
 
