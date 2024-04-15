@@ -17,6 +17,7 @@ import android.os.Looper;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
@@ -35,6 +36,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class LocaleActivity extends BaseSetupWizardActivity {
+
+    private static final String TAG = LocaleActivity.class.getSimpleName();
 
     private ArrayAdapter<com.android.internal.app.LocalePicker.LocaleInfo> mLocaleAdapter;
     private Locale mCurrentLocale;
@@ -173,7 +176,7 @@ public class LocaleActivity extends BaseSetupWizardActivity {
         }
         mFetchUpdateSimLocaleTask = Executors.newSingleThreadExecutor();
         mFetchUpdateSimLocaleTask.execute(() -> {
-            Locale locale;
+            Locale locale = null;
             Activity activity = LocaleActivity.this;
             if (!activity.isFinishing() || !activity.isDestroyed()) {
                 // If the sim is currently pin locked, return
@@ -194,8 +197,17 @@ public class LocaleActivity extends BaseSetupWizardActivity {
                 }
 
                 // Fetch locale for active sim's MCC
-                int mcc = Integer.parseInt(activeSubs.get(0).getMccString());
-                locale = LocaleUtils.getLocaleFromMcc(activity, mcc, null);
+                final String mccString = activeSubs.get(0).getMccString();
+                try {
+                    if (mccString != null && !mccString.isEmpty()) {
+                        int mcc = Integer.parseInt(mccString);
+                        locale = LocaleUtils.getLocaleFromMcc(activity, mcc, null);
+                    } else {
+                        Log.w(TAG, "Unexpected mccString: '" + mccString + "'");
+                    }
+                } catch (NumberFormatException e) {
+                    Log.w(TAG, "mccString not a number: '" + mccString + "'", e);
+                }
 
                 // If that fails, fall back to preferred languages reported
                 // by the sim
