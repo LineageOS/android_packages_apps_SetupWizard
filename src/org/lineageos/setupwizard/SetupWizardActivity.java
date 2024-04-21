@@ -31,6 +31,10 @@ public class SetupWizardActivity extends AppCompatActivity {
         if (LOGV) {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
+        if (SetupWizardUtils.hasLeanback(this) && SetupWizardUtils.hasGMS(this)) {
+            finish();
+            return;
+        }
         SetupWizardUtils.enableComponent(this, WizardManager.class);
         Intent intent = new Intent(ACTION_LOAD);
         if (SetupWizardUtils.isOwner()) {
