@@ -31,20 +31,22 @@ public class SetupWizardActivity extends AppCompatActivity {
         if (LOGV) {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
-        SetupWizardUtils.enableComponent(this, WizardManager.class);
-        Intent intent = new Intent(ACTION_LOAD);
-        if (SetupWizardUtils.isOwner()) {
-            intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));
-        } else if (SetupWizardUtils.isManagedProfile(this)) {
-            intent.putExtra(EXTRA_SCRIPT_URI, getString(
-                    R.string.lineage_wizard_script_managed_profile_uri));
-        } else {
-            intent.putExtra(EXTRA_SCRIPT_URI,
-                    getString(R.string.lineage_wizard_script_user_uri));
+        if (!(SetupWizardUtils.hasLeanback(this) && SetupWizardUtils.hasGMS(this))) {
+            SetupWizardUtils.enableComponent(this, WizardManager.class);
+            Intent intent = new Intent(ACTION_LOAD);
+            if (SetupWizardUtils.isOwner()) {
+                intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));
+            } else if (SetupWizardUtils.isManagedProfile(this)) {
+                intent.putExtra(EXTRA_SCRIPT_URI, getString(
+                        R.string.lineage_wizard_script_managed_profile_uri));
+            } else {
+                intent.putExtra(EXTRA_SCRIPT_URI,
+                        getString(R.string.lineage_wizard_script_user_uri));
+            }
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | FLAG_GRANT_READ_URI_PERMISSION);
+            intent.setPackage(getPackageName());
+            startActivity(intent);
         }
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | FLAG_GRANT_READ_URI_PERMISSION);
-        intent.setPackage(getPackageName());
-        startActivity(intent);
         finish();
     }
 }
