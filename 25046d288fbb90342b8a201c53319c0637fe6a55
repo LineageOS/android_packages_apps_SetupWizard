@@ -16,6 +16,23 @@
       "message": "Verified on foster, aosp pairing does not start when gms is present. Needs verification on other atv targets and regression testing on mobile.",
       "revId": "25046d288fbb90342b8a201c53319c0637fe6a55",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96a53551_307b4627",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-04-21T16:45:00Z",
+      "side": 1,
+      "message": "Fixes deadpool",
+      "revId": "25046d288fbb90342b8a201c53319c0637fe6a55",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
