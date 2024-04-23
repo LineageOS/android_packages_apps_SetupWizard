@@ -6,7 +6,11 @@
 
 package org.lineageos.setupwizard.backup;
 
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
+
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP;
+
+import androidx.activity.result.ActivityResult;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +25,19 @@ public class RestoreIntroActivity extends SubBaseActivity {
         super.onCreate(savedInstanceState);
         getGlifLayout().setDescriptionText(getString(R.string.intro_restore_subtitle,
                 getString(R.string.os_name)));
+    }
+
+    @Override
+    protected void onActivityResult(ActivityResult activityResult) {
+        int resultCode = activityResult.getResultCode();
+        Intent data = activityResult.getData();
+        if (resultCode != RESULT_CANCELED) {
+            nextAction(resultCode, data);
+        } else if (mIsSubactivityNotFound) {
+            finishAction(RESULT_ACTIVITY_NOT_FOUND);
+        } else if (data != null && data.getBooleanExtra("onBackPressed", false)) {
+            onStartSubactivity();
+        }
     }
 
     @Override
