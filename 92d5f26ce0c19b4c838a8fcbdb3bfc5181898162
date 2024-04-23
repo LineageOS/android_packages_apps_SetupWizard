@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08b67b6f_0c4394a6",
+        "filename": "src/org/lineageos/setupwizard/util/SetupWizardUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 328,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-04-23T17:40:12Z",
+      "side": 1,
+      "message": "Switch to UserHandle.USER_CURRENT and remove the static import",
+      "range": {
+        "startLine": 328,
+        "startChar": 78,
+        "endLine": 328,
+        "endChar": 90
+      },
+      "revId": "92d5f26ce0c19b4c838a8fcbdb3bfc5181898162",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
