@@ -34,6 +34,23 @@
       "parentUuid": "be1979e3_761924c9",
       "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7fedc02c_430903e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-04-23T15:58:08Z",
+      "side": 1,
+      "message": "Maybe the app\u0027s onCreate doesn\u0027t need to do so much (or... anything), and its work could be done in SetupWizardActivity or something? That would make this change unnecessary. But I\u0027m not sure if that\u0027s feasible or not.",
+      "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
