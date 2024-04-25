@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c243324b_41bd6353",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-04-25T17:37:09Z",
+      "side": 1,
+      "message": "On atv, this change tries to call the mobile wifi intent. The check to change it to the tv version either isn\u0027t running at all or is failing.",
+      "revId": "8fa2b43f65031a3d41ab6bc6e38a100808981510",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
