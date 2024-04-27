@@ -230,12 +230,13 @@ public class SetupWizardUtils {
         return SystemProperties.getBoolean("config.disable_bluetooth", false);
     }
 
-    public static boolean isEthernetConnected(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.
-                getSystemService(Context.CONNECTIVITY_SERVICE);
+    private static boolean isNetworkConnectedToInternetViaEthernet(Context context) {
+        ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
         NetworkCapabilities networkCapabilities = cm.getNetworkCapabilities(cm.getActiveNetwork());
         return networkCapabilities != null &&
-                networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET);
+                networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) &&
+                networkCapabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) &&
+                networkCapabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED);
     }
 
     public static boolean hasLeanback(Context context) {
@@ -266,7 +267,8 @@ public class SetupWizardUtils {
         if (!hasTelephony(context) || !simMissing(context)) {
             disableComponent(context, SimMissingActivity.class);
         }
-        if ((!hasWifi(context) && !hasTelephony(context)) || isEthernetConnected(context)) {
+        if ((!hasWifi(context) && !hasTelephony(context)) ||
+                isNetworkConnectedToInternetViaEthernet(context)) {
             disableComponent(context, NetworkSetupActivity.class);
         }
     }
