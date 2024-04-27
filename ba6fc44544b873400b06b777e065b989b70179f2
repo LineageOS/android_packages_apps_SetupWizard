@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c836c444_ffd0d495",
+        "filename": "src/org/lineageos/setupwizard/NetworkSetupActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-04-27T16:40:30Z",
+      "side": 1,
+      "message": "Apparently this doesn\u0027t work, but can\u0027t we just add `android.settings.NETWORK_PROVIDER_SETUP` in TvSettings and avoid the extra checks here, given that now we need a custom network setup page on atv as well?",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 5
+      },
+      "revId": "ba6fc44544b873400b06b777e065b989b70179f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
