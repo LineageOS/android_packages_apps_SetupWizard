@@ -301,7 +301,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
 
     protected final boolean tryEnablingWifi() {
         WifiManager wifiManager = getSystemService(WifiManager.class);
-        return wifiManager.setWifiEnabled(true);
+        return wifiManager != null ? wifiManager.setWifiEnabled(true) : false;
     }
 
     private boolean isFirstRun() {
