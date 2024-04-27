@@ -234,10 +234,8 @@ public class SetupWizardUtils {
         ConnectivityManager cm = (ConnectivityManager) context.
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkCapabilities networkCapabilities = cm.getNetworkCapabilities(cm.getActiveNetwork());
-        if (networkCapabilities != null) {
-            return networkCapabilities.hasCapability(NetworkCapabilities.TRANSPORT_ETHERNET);
-        }
-        return false;
+        return networkCapabilities != null &&
+                networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET);
     }
 
     public static boolean hasLeanback(Context context) {
