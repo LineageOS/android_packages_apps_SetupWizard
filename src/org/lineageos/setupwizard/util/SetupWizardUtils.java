@@ -231,11 +231,10 @@ public class SetupWizardUtils {
     }
 
     public static boolean isEthernetConnected(Context context) {
-        ConnectivityManager cm = (ConnectivityManager) context.
-                getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
         NetworkCapabilities networkCapabilities = cm.getNetworkCapabilities(cm.getActiveNetwork());
         if (networkCapabilities != null) {
-            return networkCapabilities.hasCapability(NetworkCapabilities.TRANSPORT_ETHERNET);
+            return networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET);
         }
         return false;
     }
