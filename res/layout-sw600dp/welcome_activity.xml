@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+     SPDX-FileCopyrightText: 2017-2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SudContentFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/brand_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="65"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:paddingTop="@dimen/content_margin_top"
+            android:paddingRight="@dimen/content_margin_left"
+            android:paddingLeft="@dimen/content_margin_left"
+            android:paddingBottom="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WelcomeTitle"
+                android:id="@+id/welcome_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hyphenationFrequency="none"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/start"
+                style="@style/SudGlifButton.Primary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/emerg_dialer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_dialer"
+            android:text="@string/emergency_call"
+            style="@style/SudGlifButton.Secondary" />
+
+        <Button
+            android:id="@+id/launch_accessibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_eye"
+            android:text="@string/accessibility_settings"
+            style="@style/SudGlifButton.Secondary" />
+
+    </LinearLayout>
+</LinearLayout>
