@@ -46,6 +46,30 @@
       },
       "revId": "ba6fc44544b873400b06b777e065b989b70179f2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ceb4c37_5e7039aa",
+        "filename": "src/org/lineageos/setupwizard/NetworkSetupActivity.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-04-29T15:55:00Z",
+      "side": 1,
+      "message": "ATV would need something similar to https://github.com/LineageOS/android_packages_apps_Settings/commit/19246ba9a85cdfa280b43086cb036d5943df96b1",
+      "parentUuid": "85a54c35_de3dc816",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 5
+      },
+      "revId": "ba6fc44544b873400b06b777e065b989b70179f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
