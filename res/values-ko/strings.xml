@@ -13,6 +13,7 @@
     <string name="ok">확인</string>
     <string name="loading">잠시만 기다려주세요\u2026</string>
     <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g>에 오신 것을 환영합니다</string>
+    <string name="setup_managed_profile_welcome_message">직장 프로필 설정</string>
     <string name="emergency_call">긴급 통화</string>
     <string name="accessibility_settings">접근성 설정</string>
     <string name="setup_locale">언어</string>
@@ -25,6 +26,7 @@
     <string name="setup_current_date">현재 날짜</string>
     <string name="setup_current_time">현재 시간</string>
     <string name="intro_restore_title">앱 및 데이터 복원</string>
+    <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> 또는 다른 OS의 Seedvault 백업이 있다면 지금 복원할 수 있습니다.</string>
     <string name="intro_restore_button">백업에서 복원</string>
     <string name="setup_location">위치 서비스</string>
     <string name="location_access_summary"><b>사용자에게 권한을 요청한 앱</b>이 위치 정보를 사용할 수 있도록 합니다. 현재 위치 정보와 예전 위치 정보가 포함됩니다.</string>
@@ -47,4 +49,8 @@
     <string name="two_button_navigation">2버튼 탐색</string>
     <string name="navbar_navigation">3버튼 탐색</string>
     <string name="hide_gesture_hint">제스처 탐색 도움말 숨기기</string>
+    <string name="setup_theme">테마</string>
+    <string name="theme_summary">어두운 테마는 일부 디스플레이에서 배터리 사용을 줄이기 위해 검정색 배경을 사용합니다.</string>
+    <string name="dark">어두운 테마</string>
+    <string name="light">밝은 테마</string>
 </resources>
