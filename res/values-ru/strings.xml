@@ -79,9 +79,9 @@
     <string name="intro_restore_subtitle">Если у вас есть резервная копия с вашего последнего устройства с <xliff:g id="name" example="LineageOS">%s</xliff:g>, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_button">Восстановить из резервной копии</string>
     <string name="update_recovery_title">Обновление Lineage Recovery</string>
-    <string name="update_recovery_description">Обновление Lineage Recovery при первом запуске после каждого обновления ОС.</string>
-    <string name="update_recovery_warning">Recovery будет обновлен по завершении установки. Если вы хотите оставить его без изменений, отключите эту функцию.</string>
-    <string name="update_recovery_setting">Обновить Lineage Recovery  вместе с ОС</string>
+    <string name="update_recovery_description">Lineage Recovery обновляется при первой загрузке после обновления.</string>
+    <string name="update_recovery_warning">После установки будет выполнено обновление Recovery. Вы можете отключить эту возможность.</string>
+    <string name="update_recovery_setting">Обновлять Lineage Recovery  вместе с ОС</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_navigation">Навигация</string>
     <string name="navigation_summary">Выберите предпочтительный метод навигации</string>
