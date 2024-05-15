@@ -13,6 +13,7 @@
     <string name="ok">OK</string>
     <string name="loading">Csak egy pillanat\u2026</string>
     <string name="setup_welcome_message">Legyen üdvözölve a <xliff:g id="name" example="LineageOS">%1$s</xliff:g> rendszerben</string>
+    <string name="setup_managed_profile_welcome_message">Állítsa be a munkahelyi profilját</string>
     <string name="emergency_call">Segélyhívás</string>
     <string name="accessibility_settings">Kisegítő beállítások</string>
     <string name="setup_locale">Nyelv</string>
@@ -25,9 +26,11 @@
     <string name="setup_current_date">Aktuális dátum</string>
     <string name="setup_current_time">Aktuális idő</string>
     <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
+    <string name="intro_restore_subtitle">Amennyiben van <xliff:g id="name" example="LineageOS">%s</xliff:g>-mentése a Seedvaulttal, itt helyreállíthatja azt.</string>
     <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
     <string name="setup_location">Helymeghatározó szolgáltatások</string>
     <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
+    <string name="location_agps_access_summary">Ha a helymeghatározás be van kapcsolva, <b>töltse le a műholdsegítő adatokat az internetről</b>, ez nagy mértékben javíthatja a GPS indítási teljesítményét.</string>
     <string name="update_recovery_title">A Lineage Recovery frissítése</string>
     <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
     <string name="update_recovery_warning">A Recovery frissítésre kerül, amint befejeződött a telepítést. Ha érintetlenül akarja hagyni, tiltsa le ezt a funkciót.</string>
@@ -46,4 +49,8 @@
     <string name="two_button_navigation">Kétgombos navigáció</string>
     <string name="navbar_navigation">Háromgombos navigáció</string>
     <string name="hide_gesture_hint">Mozdulatvezérlési navigációs-célsáv elrejtése</string>
+    <string name="setup_theme">Téma</string>
+    <string name="theme_summary">A Sötét téma néhány képernyőn fekete hátteret használ az akkukímélés érdekében.</string>
+    <string name="dark">Sötét</string>
+    <string name="light">Világos</string>
 </resources>
