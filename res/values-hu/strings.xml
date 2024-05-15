@@ -71,10 +71,12 @@
     <string name="settings_lockscreen_setup_title">Válasszon képernyő zárolási típust</string>
     <string name="settings_lockscreen_setup_details">Hogyan szeretné zárolni a képernyőt?</string>
     <string name="lockscreen_setup_title" product="default">Óvja meg telefonját</string>
+    <string name="lockscreen_setup_title" product="device">Védje meg készülékét</string>
     <string name="lockscreen_setup_title" product="tablet">Óvja meg táblagépét</string>
     <string name="lockscreen_setup_summary"><b>Óvja meg eszközét</b>, és a képernyőzár feloldásához állítson be PIN kódot, mintát vagy jelszót.</string>
     <string name="lockscreen_setup_screen_lock_setup">Beállítás</string>
     <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
+    <string name="intro_restore_subtitle">Amennyiben van régebbi <xliff:g id="name" example="LineageOS">%s</xliff:g>-mentése, itt állithatja helyre a készülékét.</string>
     <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
     <string name="update_recovery_title">A Lineage Recovery frissítése</string>
     <string name="update_recovery_description">Frissíti a Lineage Recovery-t minden frissítés utáni első indításkor.</string>
@@ -87,4 +89,5 @@
     <string name="two_button_navigation">Kétgombos navigáció</string>
     <string name="navbar_navigation">Háromgombos navigáció</string>
     <string name="hide_gesture_hint">Mozdulatvezérlési navigációs-célsáv elrejtése</string>
+    <string name="location_agps_access_summary">Ha a helymeghatározás be van kapcsolva, <b>töltse le a műholdsegítő adatokat az internetről</b>, ez nagy mértékben javíthatja a GPS indítási teljesítményét.</string>
 </resources>
