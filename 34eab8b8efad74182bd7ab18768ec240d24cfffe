@@ -69,6 +69,42 @@
       "parentUuid": "7fedc02c_430903e3",
       "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fbd75ed_808dea55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-05-21T15:57:38Z",
+      "side": 1,
+      "message": "The current scripts enable SetupWizardActivity already, and now, that\u0027s all this change checks to see if it\u0027s finished.",
+      "parentUuid": "1f655f0b_622faf2a",
+      "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fea8353_924f7f14",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-05-21T15:57:38Z",
+      "side": 1,
+      "message": "If the scripts are working out for folks as-is, and this doesn\u0027t break them anymore, maybe we can leave that alone.",
+      "parentUuid": "5e3776d1_57f71cc8",
+      "revId": "34eab8b8efad74182bd7ab18768ec240d24cfffe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
