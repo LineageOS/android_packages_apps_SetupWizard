@@ -29,7 +29,7 @@
     <string name="intro_restore_subtitle">Se você tiver um backup do Seedvault do <xliff:g id="name" example="LineageOS">%s</xliff:g> ou qualquer outro sistema operacional, você pode restaurá-lo aqui.</string>
     <string name="intro_restore_button">Restaurar backup</string>
     <string name="setup_location">Serviços de localização</string>
-    <string name="location_access_summary"><b>Permitir que aplicativos que pediram a sua permissão</b> usem suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
+    <string name="location_access_summary"><b>Permitir que apps que pediram a sua permissão</b> usem suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
     <string name="location_agps_access_summary">Quando a localização estiver ativada, <b>dados de assistência para satélite são baixados através da internet</b>, o que pode melhorar consideravelmente o desempenho da inicialização do GPS.</string>
     <string name="update_recovery_title">Atualizar Lineage Recovery</string>
     <string name="update_recovery_description">Atualiza o Lineage Recovery na primeira inicialização após cada atualização.</string>
@@ -40,7 +40,7 @@
     <string name="services_pp_explanation">Estes serviços trabalham para você, estendendo os recursos do seu dispositivo. Os dados serão usados de acordo com a política de privacidade em <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_find_privacy_policy">Você pode ler a política de privacidade em outro dispositivo visitando <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Ajude a melhorar o <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização ao  <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta informação não pode ser usada para identificá-lo e ajuda os desenvolvedores a melhorarem coisas como, a duração da bateria, desempenho de aplicativos e o desenvolvimento de novos recursos para o <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização ao  <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta informação não pode ser usada para identificá-lo e ajuda os desenvolvedores a melhorarem coisas como, a duração da bateria, desempenho de apps e o desenvolvimento de novos recursos para o <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Use as teclas de navegação na tela</b> em vez de botões físicos.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Navegação</string>
