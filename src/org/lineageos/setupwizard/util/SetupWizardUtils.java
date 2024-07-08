@@ -51,10 +51,8 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import org.lineageos.setupwizard.BaseSetupWizardActivity;
-import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.NetworkSetupActivity;
-import org.lineageos.setupwizard.ScreenLockActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 import org.lineageos.setupwizard.SimMissingActivity;
 
@@ -239,11 +237,6 @@ public class SetupWizardUtils {
     public static void disableComponentsForMissingFeatures(Context context) {
         if (!hasLeanback(context) || isBluetoothDisabled()) {
             disableComponent(context, BluetoothSetupActivity.class);
-        }
-        if (!hasBiometric(context)) {
-            disableComponent(context, BiometricActivity.class);
-        } else {
-            disableComponent(context, ScreenLockActivity.class);
         }
         if (!hasTelephony(context)) {
             disableComponent(context, SimMissingActivity.class);

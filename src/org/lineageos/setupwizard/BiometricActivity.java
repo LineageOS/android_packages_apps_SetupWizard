@@ -6,13 +6,24 @@
 
 package org.lineageos.setupwizard;
 
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
+
 import android.content.Intent;
 import android.provider.Settings;
+
+import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class BiometricActivity extends SubBaseActivity {
 
     @Override
     protected void onStartSubactivity() {
+        if (!SetupWizardUtils.hasBiometric(this)) {
+            SetupWizardUtils.enableComponent(this, ScreenLockActivity.class);
+            finishAction(RESULT_SKIP);
+            return;
+        } else {
+            SetupWizardUtils.disableComponent(this, ScreenLockActivity.class);
+        }
         Intent intent = new Intent(Settings.ACTION_BIOMETRIC_ENROLL);
         startSubactivity(intent);
     }
