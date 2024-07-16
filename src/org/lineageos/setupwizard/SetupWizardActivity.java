@@ -10,6 +10,7 @@ import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
 
 import static org.lineageos.setupwizard.SetupWizardApp.ACTION_LOAD;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_WIZARD_BUNDLE;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.Nullable;
@@ -37,15 +38,17 @@ public class SetupWizardActivity extends AppCompatActivity {
         }
         SetupWizardUtils.enableComponent(this, WizardManager.class);
         Intent intent = new Intent(ACTION_LOAD);
+        Bundle wizardBundle = new Bundle();
         if (SetupWizardUtils.isOwner()) {
-            intent.putExtra(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));
+            wizardBundle.putString(EXTRA_SCRIPT_URI, getString(R.string.lineage_wizard_script_uri));
         } else if (SetupWizardUtils.isManagedProfile(this)) {
-            intent.putExtra(EXTRA_SCRIPT_URI, getString(
-                    R.string.lineage_wizard_script_managed_profile_uri));
+            wizardBundle.putString(EXTRA_SCRIPT_URI,
+                    getString(R.string.lineage_wizard_script_managed_profile_uri));
         } else {
-            intent.putExtra(EXTRA_SCRIPT_URI,
+            wizardBundle.putString(EXTRA_SCRIPT_URI,
                     getString(R.string.lineage_wizard_script_user_uri));
         }
+        intent.putExtra(EXTRA_WIZARD_BUNDLE, wizardBundle);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | FLAG_GRANT_READ_URI_PERMISSION);
         intent.setPackage(getPackageName());
         startActivity(intent);

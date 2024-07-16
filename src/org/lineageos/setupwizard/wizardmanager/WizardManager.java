@@ -12,6 +12,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.ACTION_LOAD;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE;
 import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI;
+import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_WIZARD_BUNDLE;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.Nullable;
@@ -44,8 +45,9 @@ public class WizardManager extends Activity {
         if (intent != null) {
             String action = intent.getAction();
             int resultCode = intent.getIntExtra(EXTRA_RESULT_CODE, 0);
-            String scriptUri = intent.getStringExtra(EXTRA_SCRIPT_URI);
-            String actionId = intent.getStringExtra(EXTRA_ACTION_ID);
+            Bundle wizardBundle = intent.getBundleExtra(EXTRA_WIZARD_BUNDLE);
+            String scriptUri = wizardBundle.getString(EXTRA_SCRIPT_URI);
+            String actionId = wizardBundle.getString(EXTRA_ACTION_ID);
             if (LOGV) {
                 Log.v(TAG, "  action=" + action + " resultCode=" + resultCode + " scriptUri="
                         + scriptUri + " actionId=" + actionId + " extras=" + intent.getExtras());
@@ -82,8 +84,10 @@ public class WizardManager extends Activity {
             intent.putExtras(extras);
         }
 
-        intent.putExtra(EXTRA_SCRIPT_URI, scriptUri);
-        intent.putExtra(EXTRA_ACTION_ID, action.getId());
+        Bundle wizardBundle = new Bundle();
+        wizardBundle.putString(EXTRA_SCRIPT_URI, scriptUri);
+        wizardBundle.putString(EXTRA_ACTION_ID, action.getId());
+        intent.putExtra(EXTRA_WIZARD_BUNDLE, wizardBundle);
         intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
         startActivity(intent);
     }
