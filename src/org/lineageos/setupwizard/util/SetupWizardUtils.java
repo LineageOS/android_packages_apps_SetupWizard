@@ -52,9 +52,7 @@ import android.util.Log;
 
 import org.lineageos.setupwizard.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
-import org.lineageos.setupwizard.NetworkSetupActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
-import org.lineageos.setupwizard.SimMissingActivity;
 
 import java.io.File;
 import java.util.List;
@@ -209,7 +207,7 @@ public class SetupWizardUtils {
         return SystemProperties.getBoolean("config.disable_bluetooth", false);
     }
 
-    private static boolean isNetworkConnectedToInternetViaEthernet(Context context) {
+    public static boolean isNetworkConnectedToInternetViaEthernet(Context context) {
         ConnectivityManager cm = context.getSystemService(ConnectivityManager.class);
         NetworkCapabilities networkCapabilities = cm.getNetworkCapabilities(cm.getActiveNetwork());
         return networkCapabilities != null &&
@@ -237,13 +235,6 @@ public class SetupWizardUtils {
     public static void disableComponentsForMissingFeatures(Context context) {
         if (!hasLeanback(context) || isBluetoothDisabled()) {
             disableComponent(context, BluetoothSetupActivity.class);
-        }
-        if (!hasTelephony(context)) {
-            disableComponent(context, SimMissingActivity.class);
-        }
-        if ((!hasWifi(context) && !hasTelephony(context)) ||
-                isNetworkConnectedToInternetViaEthernet(context)) {
-            disableComponent(context, NetworkSetupActivity.class);
         }
     }
 
