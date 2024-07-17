@@ -7,6 +7,9 @@
 package org.lineageos.setupwizard;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
+import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
+
+import static org.lineageos.setupwizard.util.SetupWizardUtils.hasTelephony;
 
 import android.content.Intent;
 
@@ -19,8 +22,8 @@ import org.lineageos.setupwizard.util.SetupWizardUtils;
 public class SimMissingActivity extends SubBaseActivity {
 
     protected void onStartSubactivity() {
-        if (!SetupWizardUtils.simMissing(this)) {
-            nextAction(RESULT_OK);
+        if (!SetupWizardUtils.simMissing(this) || !hasTelephony(this)) {
+            finishAction(RESULT_SKIP);
             return;
         }
         getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
