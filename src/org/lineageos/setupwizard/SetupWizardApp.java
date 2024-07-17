@@ -62,7 +62,6 @@ public class SetupWizardApp extends Application {
         if (LOGV) {
             Log.v(TAG, "onCreate()");
         }
-        SetupWizardUtils.disableComponentsForMissingFeatures(this);
         sStatusBarManager = SetupWizardUtils.disableStatusBar(this);
         mHandler.postDelayed(mRadioTimeoutRunnable, SetupWizardApp.RADIO_READY_TIMEOUT);
         if (SetupWizardUtils.hasGMS(this)) {
