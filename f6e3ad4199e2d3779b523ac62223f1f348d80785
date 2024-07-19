@@ -16,6 +16,24 @@
       "message": "I seem to be getting the ScreenLockActivity on FP4 instead of the BiometricActivity even though it has a fingerprint sensor?",
       "revId": "f6e3ad4199e2d3779b523ac62223f1f348d80785",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1dcd2456_91a49900",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-07-19T21:25:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4d11afc5_f1c66ce1",
+      "revId": "f6e3ad4199e2d3779b523ac62223f1f348d80785",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
