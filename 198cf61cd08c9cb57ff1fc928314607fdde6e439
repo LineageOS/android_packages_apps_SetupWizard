@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7009e44c_340a5d96",
+        "filename": "src/org/lineageos/setupwizard/BluetoothSetupActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-20T09:34:19Z",
+      "side": 1,
+      "message": "Same comment as in the previous change.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 82
+      },
+      "revId": "198cf61cd08c9cb57ff1fc928314607fdde6e439",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
