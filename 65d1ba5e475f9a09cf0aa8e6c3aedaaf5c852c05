@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94c17c7f_63310c59",
+        "filename": "src/org/lineageos/setupwizard/NetworkSetupActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-20T09:31:04Z",
+      "side": 1,
+      "message": "I\u0027d drop these static imports since SetupWizardUtils is already imported (few lines below).",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 102
+      },
+      "revId": "65d1ba5e475f9a09cf0aa8e6c3aedaaf5c852c05",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
