@@ -19,8 +19,6 @@ import android.util.Log;
 
 import androidx.activity.result.ActivityResult;
 
-import com.google.android.setupdesign.transition.TransitionHelper;
-
 public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 
     public static final String TAG = SubBaseActivity.class.getSimpleName();
@@ -82,8 +80,6 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             finishAction(RESULT_ACTIVITY_NOT_FOUND);
         } else if (data != null && data.getBooleanExtra("onBackPressed", false)) {
             onStartSubactivity();
-            TransitionHelper.applyBackwardTransition(this,
-                    TransitionHelper.TRANSITION_FADE_THROUGH, true);
         } else {
             finishAction(RESULT_CANCELED);
         }
