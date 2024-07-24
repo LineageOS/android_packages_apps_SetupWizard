@@ -43,6 +43,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         NavigationBarListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
+    public static final int DEFAULT_TRANSITION = TransitionHelper.TRANSITION_FADE_THROUGH;
 
     private NavigationLayout mNavigationBar;
 
@@ -68,8 +69,6 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
                     Log.v(TAG, "handleOnBackPressed()");
                 }
                 finishAction(RESULT_CANCELED, new Intent().putExtra("onBackPressed", true));
-                TransitionHelper.applyBackwardTransition(BaseSetupWizardActivity.this,
-                        TransitionHelper.TRANSITION_FADE_THROUGH, true);
             }
         });
     }
@@ -95,6 +94,8 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         if (LOGV) {
             logActivityState("onResume");
         }
+        // Apply default transition, to take effect whenever leaving this activity.
+        TransitionHelper.applyForwardTransition(this, DEFAULT_TRANSITION, true);
         super.onResume();
     }
 
@@ -230,6 +231,8 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         if (resultCode != RESULT_CANCELED) {
             nextAction(resultCode, data);
         } else {
+            TransitionHelper.applyBackwardTransition(BaseSetupWizardActivity.this,
+                    DEFAULT_TRANSITION, true);
             setResult(resultCode, data);
         }
         finish();
@@ -252,23 +255,21 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         startSubactivityForResult(intent);
     }
 
-    @Override
-    public void startActivity(Intent intent) {
+    protected Intent decorateIntent(Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
         intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
+    }
+
+    @Override
+    public void startActivity(Intent intent) {
+        decorateIntent(intent);
         super.startActivity(intent);
-        TransitionHelper.applyForwardTransition(this,
-                TransitionHelper.TRANSITION_FADE_THROUGH, true);
     }
 
     protected final void startSubactivityForResult(@NonNull Intent intent) {
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
+        decorateIntent(intent);
         activityResultLauncher.launch(intent);
-        TransitionHelper.applyForwardTransition(this,
-                TransitionHelper.TRANSITION_FADE_THROUGH, true);
     }
 
     protected void onSubactivityResult(ActivityResult activityResult) {
