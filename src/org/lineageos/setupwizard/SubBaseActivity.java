@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultLauncher;
 
 public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 
@@ -26,6 +27,11 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
     protected boolean mIsSubactivityNotFound = false;
 
     protected abstract void onStartSubactivity();
+
+    private final ActivityResultLauncher<Intent> mSubactivityResultLauncher =
+            registerForActivityResult(
+                    new StartDecoratedActivityForResult(),
+                    SubBaseActivity.this::onSubactivityResult);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +67,7 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             subactivityIntent.putExtra(EXTRA_WIZARD_BUNDLE, wizardBundle);
         }
         try {
-            startActivityForResult(subactivityIntent);
+            mSubactivityResultLauncher.launch(subactivityIntent);
         } catch (ActivityNotFoundException e) {
             Log.w(TAG, "activity not found; start next screen and finish; intent=" + intent);
             mIsSubactivityNotFound = true;
@@ -70,8 +76,17 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    protected void onActivityResult(ActivityResult activityResult) {
-        super.onActivityResult(activityResult);
+    protected void onNextIntentResult(@NonNull ActivityResult activityResult) {
+        super.onNextIntentResult(activityResult);
+        int resultCode = activityResult.getResultCode();
+        Intent data = activityResult.getData();
+        if (resultCode == RESULT_CANCELED && data != null
+                && data.getBooleanExtra("onBackPressed", false)) {
+            onStartSubactivity();
+        }
+    }
+
+    protected void onSubactivityResult(@NonNull ActivityResult activityResult) {
         int resultCode = activityResult.getResultCode();
         Intent data = activityResult.getData();
         if (resultCode != RESULT_CANCELED) {

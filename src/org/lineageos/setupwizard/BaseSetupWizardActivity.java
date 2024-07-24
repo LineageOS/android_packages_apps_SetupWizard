@@ -8,12 +8,15 @@ package org.lineageos.setupwizard;
 
 import static android.view.View.INVISIBLE;
 
+import static androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult;
+
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 
 import android.annotation.NonNull;
 import android.annotation.Nullable;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.wifi.WifiManager;
@@ -26,7 +29,7 @@ import android.widget.Button;
 import androidx.activity.OnBackPressedCallback;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.activity.result.contract.ActivityResultContract;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.settingslib.Utils;
@@ -47,9 +50,10 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
 
     private NavigationLayout mNavigationBar;
 
-    private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            BaseSetupWizardActivity.this::onActivityResult);
+    private final ActivityResultLauncher<Intent> mNextIntentResultLauncher =
+            registerForActivityResult(
+                    new StartDecoratedActivityForResult(),
+                    BaseSetupWizardActivity.this::onNextIntentResult);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -252,7 +256,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         }
         setResult(resultCode, data);
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), resultCode, data);
-        startActivityForResult(intent);
+        mNextIntentResultLauncher.launch(intent);
     }
 
     /** Adorn the Intent with Setup Wizard-related extras. */
@@ -268,15 +272,11 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         super.startActivity(decorateIntent(intent));
     }
 
-    protected final void startActivityForResult(@NonNull Intent intent) {
-        activityResultLauncher.launch(decorateIntent(intent));
-    }
-
-    protected void onActivityResult(ActivityResult activityResult) {
+    protected void onNextIntentResult(@NonNull ActivityResult activityResult) {
         int resultCode = activityResult.getResultCode();
         Intent data = activityResult.getData();
         if (LOGV) {
-            StringBuilder append = new StringBuilder().append("onActivityResult(")
+            StringBuilder append = new StringBuilder().append("onNextIntentResult(")
                     .append(resultCode).append(", ");
             Bundle extras = null;
             if (data != null) {
@@ -339,5 +339,22 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
     protected void applyBackwardTransition() {
         TransitionHelper.applyBackwardTransition(BaseSetupWizardActivity.this,
                 DEFAULT_TRANSITION, true);
+    }
+
+    protected final class StartDecoratedActivityForResult
+            extends ActivityResultContract<Intent, ActivityResult> {
+
+        private final StartActivityForResult mWrappedContract = new StartActivityForResult();
+
+        @NonNull
+        @Override
+        public Intent createIntent(@NonNull Context context, @NonNull Intent intent) {
+            return decorateIntent(mWrappedContract.createIntent(context, intent));
+        }
+
+        @Override
+        public ActivityResult parseResult(int resultCode, @Nullable Intent result) {
+            return mWrappedContract.parseResult(resultCode, result);
+        }
     }
 }
