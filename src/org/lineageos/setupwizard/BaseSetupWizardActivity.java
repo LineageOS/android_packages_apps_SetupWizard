@@ -43,6 +43,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         NavigationBarListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
+    public static final int DEFAULT_TRANSITION = TransitionHelper.TRANSITION_FADE_THROUGH;
 
     private NavigationLayout mNavigationBar;
 
@@ -68,10 +69,10 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
                     Log.v(TAG, "handleOnBackPressed()");
                 }
                 finishAction(RESULT_CANCELED, new Intent().putExtra("onBackPressed", true));
-                TransitionHelper.applyBackwardTransition(BaseSetupWizardActivity.this,
-                        TransitionHelper.TRANSITION_FADE_THROUGH, true);
             }
         });
+        // Apply default transition, to take effect whenever leaving this activity.
+        applyForwardTransition();
     }
 
     @Override
@@ -229,10 +230,12 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
     protected final void finishAction(int resultCode, Intent data) {
         if (resultCode != RESULT_CANCELED) {
             nextAction(resultCode, data);
+            finish();
         } else {
             setResult(resultCode, data);
+            finish();
+            applyBackwardTransition();
         }
-        finish();
     }
 
     public final void nextAction(int resultCode) {
@@ -252,23 +255,21 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         startActivityForResult(intent);
     }
 
+    /** Adorn the Intent with Setup Wizard-related extras. */
+    protected Intent decorateIntent(Intent intent) {
+        return intent
+                .putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun())
+                .putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true)
+                .putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
+    }
+
     @Override
     public void startActivity(Intent intent) {
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
-        super.startActivity(intent);
-        TransitionHelper.applyForwardTransition(this,
-                TransitionHelper.TRANSITION_FADE_THROUGH, true);
+        super.startActivity(decorateIntent(intent));
     }
 
     protected final void startActivityForResult(@NonNull Intent intent) {
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
-        intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
-        intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
-        activityResultLauncher.launch(intent);
-        TransitionHelper.applyForwardTransition(this,
-                TransitionHelper.TRANSITION_FADE_THROUGH, true);
+        activityResultLauncher.launch(decorateIntent(intent));
     }
 
     protected void onActivityResult(ActivityResult activityResult) {
@@ -329,5 +330,14 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
 
     protected int getIconResId() {
         return -1;
+    }
+
+    protected void applyForwardTransition() {
+        TransitionHelper.applyForwardTransition(this, DEFAULT_TRANSITION, true);
+    }
+
+    protected void applyBackwardTransition() {
+        TransitionHelper.applyBackwardTransition(BaseSetupWizardActivity.this,
+                DEFAULT_TRANSITION, true);
     }
 }

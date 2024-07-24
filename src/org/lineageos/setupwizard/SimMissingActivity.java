@@ -13,8 +13,6 @@ import android.content.Intent;
 
 import androidx.activity.result.ActivityResult;
 
-import com.google.android.setupdesign.transition.TransitionHelper;
-
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SimMissingActivity extends SubBaseActivity {
@@ -42,8 +40,6 @@ public class SimMissingActivity extends SubBaseActivity {
             } else {
                 finishAction(RESULT_CANCELED, data);
             }
-            TransitionHelper.applyBackwardTransition(this,
-                    TransitionHelper.TRANSITION_FADE_THROUGH, true);
         } else if (!SetupWizardUtils.simMissing(this)) {
             nextAction(RESULT_OK);
         }
