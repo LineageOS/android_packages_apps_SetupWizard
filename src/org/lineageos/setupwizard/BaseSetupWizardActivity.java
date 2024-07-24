@@ -46,9 +46,10 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
 
     private NavigationLayout mNavigationBar;
 
-    private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            BaseSetupWizardActivity.this::onActivityResult);
+    private final ActivityResultLauncher<Intent> mActivityResultLauncher =
+            registerForActivityResult(
+                    new ActivityResultContracts.StartActivityForResult(),
+                    BaseSetupWizardActivity.this::onSubactivityResult);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -249,7 +250,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         }
         setResult(resultCode, data);
         Intent intent = WizardManagerHelper.getNextIntent(getIntent(), resultCode, data);
-        startActivityForResult(intent);
+        startSubactivityForResult(intent);
     }
 
     @Override
@@ -262,20 +263,20 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
                 TransitionHelper.TRANSITION_FADE_THROUGH, true);
     }
 
-    protected final void startActivityForResult(@NonNull Intent intent) {
+    protected final void startSubactivityForResult(@NonNull Intent intent) {
         intent.putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun());
         intent.putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true);
         intent.putExtra(WizardManagerHelper.EXTRA_THEME, ThemeHelper.THEME_GLIF_V4);
-        activityResultLauncher.launch(intent);
+        mActivityResultLauncher.launch(intent);
         TransitionHelper.applyForwardTransition(this,
                 TransitionHelper.TRANSITION_FADE_THROUGH, true);
     }
 
-    protected void onActivityResult(ActivityResult activityResult) {
+    protected void onSubactivityResult(ActivityResult activityResult) {
         int resultCode = activityResult.getResultCode();
         Intent data = activityResult.getData();
         if (LOGV) {
-            StringBuilder append = new StringBuilder().append("onActivityResult(")
+            StringBuilder append = new StringBuilder().append("onSubactivityResult(")
                     .append(resultCode).append(", ");
             Bundle extras = null;
             if (data != null) {

@@ -63,7 +63,7 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             subactivityIntent.putExtra(EXTRA_WIZARD_BUNDLE, wizardBundle);
         }
         try {
-            startActivityForResult(subactivityIntent);
+            startSubactivityForResult(subactivityIntent);
         } catch (ActivityNotFoundException e) {
             Log.w(TAG, "activity not found; start next screen and finish; intent=" + intent);
             mIsSubactivityNotFound = true;
@@ -72,8 +72,8 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
     }
 
     @Override
-    protected void onActivityResult(ActivityResult activityResult) {
-        super.onActivityResult(activityResult);
+    protected void onSubactivityResult(ActivityResult activityResult) {
+        super.onSubactivityResult(activityResult);
         int resultCode = activityResult.getResultCode();
         Intent data = activityResult.getData();
         if (resultCode != RESULT_CANCELED) {
