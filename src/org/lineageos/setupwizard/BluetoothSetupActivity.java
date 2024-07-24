@@ -43,7 +43,7 @@ public class BluetoothSetupActivity extends SubBaseActivity {
     }
 
     @Override
-    protected void onActivityResult(ActivityResult activityResult) {
+    protected void onSubactivityResult(ActivityResult activityResult) {
         Intent data = activityResult.getData();
         if (mIsSubactivityNotFound) {
             finishAction(RESULT_ACTIVITY_NOT_FOUND);
