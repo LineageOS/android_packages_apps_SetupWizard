@@ -82,8 +82,6 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
             finishAction(RESULT_ACTIVITY_NOT_FOUND);
         } else if (data != null && data.getBooleanExtra("onBackPressed", false)) {
             onStartSubactivity();
-            TransitionHelper.applyBackwardTransition(this,
-                    TransitionHelper.TRANSITION_FADE_THROUGH, true);
         } else {
             finishAction(RESULT_CANCELED);
         }
