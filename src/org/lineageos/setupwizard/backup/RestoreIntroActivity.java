@@ -28,7 +28,7 @@ public class RestoreIntroActivity extends SubBaseActivity {
     }
 
     @Override
-    protected void onActivityResult(ActivityResult activityResult) {
+    protected void onSubactivityResult(ActivityResult activityResult) {
         int resultCode = activityResult.getResultCode();
         Intent data = activityResult.getData();
         if (resultCode != RESULT_CANCELED) {
