@@ -46,7 +46,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
         NavigationBarListener {
 
     public static final String TAG = BaseSetupWizardActivity.class.getSimpleName();
-    public static final int DEFAULT_TRANSITION = TransitionHelper.TRANSITION_FADE_THROUGH;
+    public static final int DEFAULT_TRANSITION = TransitionHelper.TRANSITION_SLIDE;
 
     private NavigationLayout mNavigationBar;
 
