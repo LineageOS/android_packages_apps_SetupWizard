@@ -6,43 +6,25 @@
 
 package org.lineageos.setupwizard;
 
-import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
+import android.annotation.Nullable;
 import android.content.Intent;
-
-import androidx.activity.result.ActivityResult;
+import android.os.Bundle;
 
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
-public class SimMissingActivity extends SubBaseActivity {
+public class SimMissingActivity extends BaseSetupWizardActivity {
 
-    protected void onStartSubactivity() {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         if (!SetupWizardUtils.simMissing(this) || !SetupWizardUtils.hasTelephony(this)) {
             finishAction(RESULT_SKIP);
             return;
         }
         getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
         setNextAllowed(true);
-    }
-
-    @Override
-    protected void onSubactivityResult(ActivityResult activityResult) {
-        int resultCode = activityResult.getResultCode();
-        Intent data = activityResult.getData();
-        if (resultCode != RESULT_CANCELED) {
-            nextAction(resultCode, data);
-        } else if (mIsSubactivityNotFound) {
-            finishAction(RESULT_ACTIVITY_NOT_FOUND);
-        } else if (data != null && data.getBooleanExtra("onBackPressed", false)) {
-            if (SetupWizardUtils.simMissing(this)) {
-                onStartSubactivity();
-            } else {
-                finishAction(RESULT_CANCELED, data);
-            }
-        } else if (!SetupWizardUtils.simMissing(this)) {
-            nextAction(RESULT_OK);
-        }
     }
 
     @Override
