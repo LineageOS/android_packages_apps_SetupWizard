@@ -5,7 +5,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <WizardScript xmlns:wizard="http://schemas.android.com/apk/res/com.google.android.setupwizard"
-    wizard:firstAction="bluetooth_setup">
+    wizard:firstAction="welcome">
 
     <WizardAction
         wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP;end"
@@ -17,7 +17,7 @@
         wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end"
         id="welcome">
         <result wizard:name="skip" wizard:resultCode="1" />
-        <result wizard:action="locale" />
+        <result wizard:action="finish" />
     </WizardAction>
 
     <WizardAction
