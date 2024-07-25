@@ -16,6 +16,24 @@
       "message": "Backward transition still not working",
       "revId": "efa9d2d1781b5373c5a39866e893b3a6837f9e22",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4099b3fe_f2004780",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-07-25T20:20:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd6ab5ae_eadbf273",
+      "revId": "efa9d2d1781b5373c5a39866e893b3a6837f9e22",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
