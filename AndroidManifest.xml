@@ -284,7 +284,6 @@
 
         <activity
             android:name=".FinishActivity"
-            android:theme="@style/EdgeToEdgeWallpaperBackground"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
