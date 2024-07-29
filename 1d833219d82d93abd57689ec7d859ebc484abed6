@@ -16,6 +16,24 @@
       "message": "Is it unused because of parent and/or merged changes? I remember having to handle the different cases where the SIM was inserted/removed at different stages",
       "revId": "1d833219d82d93abd57689ec7d859ebc484abed6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc29c5de_f9412594",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-07-29T14:55:27Z",
+      "side": 1,
+      "message": "Apparently that is all handled in onCreate now. If you follow the code, the old stuff wasn\u0027t used because no subactivity was ever started. Maybe it was used once. I didn\u0027t look at the history.",
+      "parentUuid": "33ffa928_fdcd1892",
+      "revId": "1d833219d82d93abd57689ec7d859ebc484abed6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
