@@ -52,6 +52,24 @@
       "parentUuid": "fc29c5de_f9412594",
       "revId": "1d833219d82d93abd57689ec7d859ebc484abed6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c581309_73aee60e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-07-29T15:13:59Z",
+      "side": 1,
+      "message": "Oh, right, yeah, looking at this on mobile and got confused for a second. The point is that we don\u0027t do anything with subactivities in this class (we start no activity at all, it\u0027s merely a warning that may or may not show up), so it\u0027s all been circuitous for no reason. That\u0027s why I moved stuff into onCreate. No need to have it hop around like that. Unless I am missing something...?",
+      "parentUuid": "97cd45c2_327306f9",
+      "revId": "1d833219d82d93abd57689ec7d859ebc484abed6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
