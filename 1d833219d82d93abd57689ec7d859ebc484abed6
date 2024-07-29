@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "33ffa928_fdcd1892",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-07-29T14:42:20Z",
+      "side": 1,
+      "message": "Is it unused because of parent and/or merged changes? I remember having to handle the different cases where the SIM was inserted/removed at different stages",
+      "revId": "1d833219d82d93abd57689ec7d859ebc484abed6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
