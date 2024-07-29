@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eaec5051_7b30f746",
+        "filename": "src/org/lineageos/setupwizard/BaseSetupWizardActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 15060
+      },
+      "writtenOn": "2024-07-29T14:33:46Z",
+      "side": 1,
+      "message": "Is the reason for moving the finish call into both blocks that this needs to be called after it?",
+      "range": {
+        "startLine": 237,
+        "startChar": 12,
+        "endLine": 237,
+        "endChar": 38
+      },
+      "revId": "635998c42d93c51fd362e308586c6ca2622a6485",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
