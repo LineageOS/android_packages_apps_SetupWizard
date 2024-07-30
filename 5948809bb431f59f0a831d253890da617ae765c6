@@ -16,6 +16,24 @@
       "message": "I don\u0027t fully understand the naming being `nextIntentResult` vs `activityResult`",
       "revId": "5948809bb431f59f0a831d253890da617ae765c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1599ac0e_a296238c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-07-30T19:54:36Z",
+      "side": 1,
+      "message": "Changing the name addresses a few issues, mentioned in the commit message, but I\u0027ll try to rephrase / add more context here:\n\n1. Just calling it `onActivityResult` says nothing about where the result is coming from. We should avoid ambiguity, because we have multiple activities that may be launched - the next intent activity, and subactivities. Prior to this change, the results from any activity were received by `onActivityResult` with no ability to determine the actual source. That\u0027s not great.\n\n2. We\u0027ve updated deprecated code. We started using newer, recommended methods, but we masked this by naming them after deprecated AOSP mechanisms. This has already confused me twice. It would be better not to pretend we\u0027re using deprecated methods by keeping the same names.\n\nFrom [Android Developers](https://developer.android.com/training/basics/intents/result):\n\u003e While the underlying startActivityForResult() and onActivityResult() APIs are available on the Activity class on all API levels, Google strongly recommends using the Activity Result APIs introduced in AndroidX Activity and Fragment classes.",
+      "parentUuid": "66b373d3_fdf022be",
+      "revId": "5948809bb431f59f0a831d253890da617ae765c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
