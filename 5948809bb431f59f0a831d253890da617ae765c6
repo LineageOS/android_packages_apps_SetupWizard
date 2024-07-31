@@ -52,6 +52,24 @@
       "parentUuid": "1599ac0e_a296238c",
       "revId": "5948809bb431f59f0a831d253890da617ae765c6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "548cb81a_fa6646a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-07-31T17:50:40Z",
+      "side": 1,
+      "message": "I know you ack\u0027d but just to be super clear for others, it\u0027s `onNextIntentResult` because it\u0027s the result that comes from launching `WizardManager.getNextIntent` in `BaseSetupWizard.nextAction`. The result is only used for that (as is the goal of this change).",
+      "parentUuid": "dda234cc_f8a4de19",
+      "revId": "5948809bb431f59f0a831d253890da617ae765c6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
