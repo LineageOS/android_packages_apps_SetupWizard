@@ -50,10 +50,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
 
     private NavigationLayout mNavigationBar;
 
-    private final ActivityResultLauncher<Intent> mNextIntentResultLauncher =
-            registerForActivityResult(
-                    new StartDecoratedActivityForResult(),
-                    BaseSetupWizardActivity.this::onNextIntentResult);
+    private ActivityResultLauncher<Intent> mNextIntentResultLauncher;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -61,6 +58,9 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
             logActivityState("onCreate savedInstanceState=" + savedInstanceState);
         }
         super.onCreate(savedInstanceState);
+        mNextIntentResultLauncher = registerForActivityResult(
+                new StartDecoratedActivityForResult(),
+                BaseSetupWizardActivity.this::onNextIntentResult);
         initLayout();
         mNavigationBar = getNavigationBar();
         if (mNavigationBar != null) {
@@ -125,6 +125,7 @@ public abstract class BaseSetupWizardActivity extends AppCompatActivity implemen
             logActivityState("onDestroy");
         }
         super.onDestroy();
+        mNextIntentResultLauncher.unregister();
     }
 
     @Override
