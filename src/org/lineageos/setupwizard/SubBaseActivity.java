@@ -80,8 +80,7 @@ public abstract class SubBaseActivity extends BaseSetupWizardActivity {
         super.onNextIntentResult(activityResult);
         int resultCode = activityResult.getResultCode();
         Intent data = activityResult.getData();
-        if (resultCode == RESULT_CANCELED && data != null
-                && data.getBooleanExtra("onBackPressed", false)) {
+        if (data != null && data.getBooleanExtra("onBackPressed", false)) {
             onStartSubactivity();
         }
     }
