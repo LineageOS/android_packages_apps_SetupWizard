@@ -198,7 +198,6 @@ public class SetupWizardUtils {
         disableHome(context);
         enableStatusBar();
         context.finishAffinity();
-        context.nextAction(RESULT_SKIP);
         Log.i(TAG, "Setup complete!");
     }
 
