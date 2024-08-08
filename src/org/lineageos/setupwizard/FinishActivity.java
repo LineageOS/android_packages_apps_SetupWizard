@@ -26,6 +26,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.setupcompat.util.SystemBarHelper;
+
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class FinishActivity extends BaseSetupWizardActivity {
@@ -34,10 +36,17 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     private final Handler mHandler = new Handler(Looper.getMainLooper());
 
+    private enum FinishState {
+        NONE,
+        SHOULD_ANIMATE,
+        ANIMATING,
+        FINISHED
+    }
+
     // "Why not just start this activity with an Intent extra?" you might ask. Been there.
     // We need this to affect the theme, and even onCreate is not early enough for that,
-    // so "static volatile boolean" it is. Feel free to rework this if you dare.
-    private static volatile boolean sIsFinishing;
+    // so "static volatile" it is. Feel free to rework this if you dare.
+    private static volatile FinishState sFinishState = FinishState.NONE;
 
     private View mRootView;
     private Resources.Theme mEdgeToEdgeWallpaperBackgroundTheme;
@@ -45,6 +54,9 @@ public class FinishActivity extends BaseSetupWizardActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.i(TAG, "onCreate: sFinishState=" + sFinishState);
+
         overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, R.anim.translucent_enter,
                 R.anim.translucent_exit);
         if (LOGV) {
@@ -73,9 +85,29 @@ public class FinishActivity extends BaseSetupWizardActivity {
             return WindowInsetsCompat.CONSUMED;
         });
 
-        if (sIsFinishing) {
-            startFinishSequence();
+        if (sFinishState != FinishState.NONE) {
+            disableNavigation();
         }
+
+        switch (sFinishState) {
+            case NONE:
+                break;
+            case SHOULD_ANIMATE:
+                startFinishSequence();
+                break;
+            case FINISHED:
+                Log.e(TAG, "Should not start again when finished!");
+                finish();
+                break;
+            default:
+                Log.w(TAG, "Unexpected onCreate state " + sFinishState);
+                break;
+        }
+    }
+
+    private void disableNavigation() {
+        hideNextButton();
+        SystemBarHelper.setBackButtonVisible(getWindow(), false);
     }
 
     private void disableActivityTransitions() {
@@ -85,14 +117,14 @@ public class FinishActivity extends BaseSetupWizardActivity {
 
     @Override
     protected void applyForwardTransition() {
-        if (!sIsFinishing) {
+        if (FinishState.NONE == sFinishState) {
             super.applyForwardTransition();
         }
     }
 
     @Override
     protected void applyBackwardTransition() {
-        if (!sIsFinishing) {
+        if (FinishState.NONE == sFinishState) {
             super.applyBackwardTransition();
         }
     }
@@ -105,30 +137,44 @@ public class FinishActivity extends BaseSetupWizardActivity {
     @Override
     public Resources.Theme getTheme() {
         Resources.Theme theme = super.getTheme();
-        if (sIsFinishing) {
-            if (mEdgeToEdgeWallpaperBackgroundTheme == null) {
-                theme.applyStyle(R.style.EdgeToEdgeWallpaperBackground, true);
-                mEdgeToEdgeWallpaperBackgroundTheme = theme;
-            }
-            return mEdgeToEdgeWallpaperBackgroundTheme;
+        if (sFinishState == FinishState.NONE) {
+            return theme;
         }
-        return theme;
+        if (mEdgeToEdgeWallpaperBackgroundTheme == null) {
+            theme.applyStyle(R.style.EdgeToEdgeWallpaperBackground, true);
+            mEdgeToEdgeWallpaperBackgroundTheme = theme;
+        }
+        return mEdgeToEdgeWallpaperBackgroundTheme;
     }
 
     @Override
     public void onNavigateNext() {
-        if (!sIsFinishing) {
-            sIsFinishing = true;
-            startActivity(getIntent());
-            finish();
-            disableActivityTransitions();
+        switch (sFinishState) {
+            case NONE:
+                relaunchAndRunAnimation();
+                break;
+            default:
+                Log.e(TAG, "Unexpected state " + sFinishState + " when navigating next");
         }
-        hideNextButton();
+    }
+
+    private void relaunchAndRunAnimation() {
+        sFinishState = FinishState.SHOULD_ANIMATE;
+        // Relaunching the activity before finishing is the only way currently known to prevent
+        // an out-of-place slide transition from happening, even when disabling transitions, and
+        // regardless of when we disable them. This also means we can't simply call recreate(), but
+        // another reason is that recreate() doesn't seem to reinitialize the theme, which is the
+        // entire point of relaunching - to ensure this activity reveals a wallpaper background.
+        // These theme shenanigans and relaunching were not necessary prior to Android 14 QPR3.
+        startActivity(getIntent());
+        finish();
+        disableActivityTransitions();
     }
 
     private void startFinishSequence() {
+        sFinishState = FinishState.ANIMATING;
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
-        hideNextButton();
+        disableNavigation();
 
         // Begin outro animation.
         if (mRootView.isAttachedToWindow()) {
@@ -149,11 +195,21 @@ public class FinishActivity extends BaseSetupWizardActivity {
     }
 
     private void animateOut() {
+        if (sFinishState != FinishState.ANIMATING) {
+            Log.e(TAG, "animateOut but in " + sFinishState + " phase. How?");
+            return;
+        }
         final int cx = (mRootView.getLeft() + mRootView.getRight()) / 2;
         final int cy = (mRootView.getTop() + mRootView.getBottom()) / 2;
         final float fullRadius = (float) Math.hypot(cx, cy);
-        Animator anim =
-                ViewAnimationUtils.createCircularReveal(mRootView, cx, cy, fullRadius, 0f);
+        Animator anim;
+        try {
+            anim = ViewAnimationUtils.createCircularReveal(mRootView, cx, cy, fullRadius, 0f);
+        } catch (IllegalStateException e) {
+            Log.e(TAG, "Failed to create finish animation", e);
+            finishAfterAnimation();
+            return;
+        }
         anim.setDuration(900);
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
@@ -168,10 +224,15 @@ public class FinishActivity extends BaseSetupWizardActivity {
                     if (LOGV) {
                         Log.v(TAG, "Animation ended");
                     }
-                    SetupWizardUtils.finishSetupWizard(FinishActivity.this);
+                    finishAfterAnimation();
                 });
             }
         });
         anim.start();
+    }
+
+    private void finishAfterAnimation() {
+        SetupWizardUtils.finishSetupWizard(FinishActivity.this);
+        sFinishState = FinishState.FINISHED;
     }
 }
