@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90f6dfac_d28ff113",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-08-19T13:50:40Z",
+      "side": 1,
+      "message": "I don\u0027t know if there\u0027s some reason Lineage would need this, e.g. for GMS.",
+      "revId": "8d2c6cb77500c24744e16d526582b7e6f6ca83a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
