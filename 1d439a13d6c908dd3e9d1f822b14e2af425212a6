@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "228232a3_a80b3108",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-08-19T13:53:21Z",
+      "side": 1,
+      "message": "self-nit, style doesn\u0027t match the others (with value first). Due to relation chain hell on the Calyx end, I\u0027d rather not fix it right now...",
+      "revId": "1d439a13d6c908dd3e9d1f822b14e2af425212a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
