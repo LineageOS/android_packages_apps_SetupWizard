@@ -33,6 +33,42 @@
       "message": "Still working on this on the Calyx side. Without a proper call to nextAction, the WizardManager component remains enabled.",
       "revId": "8d2c6cb77500c24744e16d526582b7e6f6ca83a1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6cb07466_db3f071d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-08-19T21:52:23Z",
+      "side": 1,
+      "message": "No longer relevant",
+      "parentUuid": "90f6dfac_d28ff113",
+      "revId": "8d2c6cb77500c24744e16d526582b7e6f6ca83a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b35ee4c2_2559d2d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-08-19T21:52:23Z",
+      "side": 1,
+      "message": "Done, thank you @olivercscott@gmail.com for fixing this.",
+      "parentUuid": "68879a92_13e8a74b",
+      "revId": "8d2c6cb77500c24744e16d526582b7e6f6ca83a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
