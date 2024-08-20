@@ -16,6 +16,23 @@
       "message": "Hold, still seeing a crash.",
       "revId": "188cdf72fdc0cbe95a67c6d2e973739cc1831dc7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0961dde5_27f81799",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-08-20T20:19:02Z",
+      "side": 1,
+      "message": "Let\u0027s abandon this please. I have never been able to repro the issue this change was meant to fix, despite it seeming so ubiquitous in the past. I tried numerous times and even automated dozens of attempts. Let\u0027s just drop this and revisit if needed.",
+      "revId": "188cdf72fdc0cbe95a67c6d2e973739cc1831dc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
