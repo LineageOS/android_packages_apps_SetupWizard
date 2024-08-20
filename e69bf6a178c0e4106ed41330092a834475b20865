@@ -16,6 +16,24 @@
       "message": "This keeps getting clobbered out of the commit message.",
       "revId": "e69bf6a178c0e4106ed41330092a834475b20865",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d920cd23_beddfe94",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 31604
+      },
+      "writtenOn": "2024-08-20T20:22:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ad0ad75_0b57dc60",
+      "revId": "e69bf6a178c0e4106ed41330092a834475b20865",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
