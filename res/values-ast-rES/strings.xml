@@ -45,7 +45,7 @@
     <string name="gesture_navigation">Navegación xestual</string>
     <string name="two_button_navigation">Navegación con dos botones</string>
     <string name="navbar_navigation">Navegación con trés botones</string>
-    <string name="hide_gesture_hint">Anubrir l\'indicador de la navegación xestual</string>
+    <string name="hide_gesture_hint">Esconder l\'indicador de la navegación xestual</string>
     <string name="setup_theme">Estilu</string>
     <string name="theme_summary">L\'estilu «Escuridá» usa un fondu en prieto p\'ayudar a que la batería de los preseos con pantalles OLED dure más</string>
     <string name="dark">Escuridá</string>
