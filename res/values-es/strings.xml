@@ -25,6 +25,7 @@
     <string name="loading">Un segundo\u2026</string>
     <string name="setup_complete">Configuración completada</string>
     <string name="setup_welcome">¡Bienvenido/a!</string>
+    <string name="setup_welcome_message">Bienvenido a <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_locale">Idioma</string>
     <string name="setup_wifi">Selecciona una red Wi-Fi</string>
     <string name="setup_sim_missing">Falta la tarjeta SIM</string>
@@ -48,9 +49,14 @@
     <string name="yes">Sí</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Llamada de emergencia</string>
+    <string name="accessibility_settings">Ajustes de accesibilidad</string>
     <string name="setup_services">Características de LineageOS</string>
+    <string name="services_pp_explanation">Estos servicios sirven para extender las capacidades de tu dispositivo. Los datos se utilizarán de acuerdo a la política de privacidad de <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Puedes leer la política de privacidad en otro dispositivo visitando <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">Ayuda a mejorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> enviando automáticamente datos de diagnóstico y uso a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta información no puede usarse para identificarte y ayuda a los equipos que trabajan en aspectos como la duración de la batería, el rendimiento de la aplicación y las nuevas funciones de <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usar las teclas de navegación en pantalla</b> en vez de las teclas físicas.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">Selecciona el tipo de copia de seguridad de pantalla de bloqueo</string>
     <string name="settings_biometric_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
     <string name="fingerprint_setup_title">Ajustes de huella digital</string>
@@ -65,8 +71,23 @@
     <string name="settings_lockscreen_setup_title">Seleccione el tipo de bloqueo de la pantalla</string>
     <string name="settings_lockscreen_setup_details">¿Cómo quieres bloquear tu pantalla?</string>
     <string name="lockscreen_setup_title" product="default">Proteja su teléfono</string>
+    <string name="lockscreen_setup_title" product="device">Protege tu dispositivo</string>
+    <string name="lockscreen_setup_title" product="tablet">Protege tu tableta</string>
     <string name="lockscreen_setup_summary"><b>Proteger este dispositivo</b> y establecer un PIN, un patrón o una contraseña para desbloquear la pantalla</string>
     <string name="lockscreen_setup_screen_lock_setup">Configurar</string>
     <string name="intro_restore_title">Restaurar aplicaciones y datos</string>
+    <string name="intro_restore_subtitle">Si tienes una copia de seguridad de tu último dispositivo <xliff:g id="name" example="LineageOS">%s</xliff:g> , puedes restaurarla aquí.</string>
     <string name="intro_restore_button">Restaurar desde copia de seguridad</string>
+    <string name="update_recovery_title">Actualizar el modo de recuperación de Lineage</string>
+    <string name="update_recovery_description">Actualiza el modo de recuperación de Lineage en el primer arranque posterior a cada actualización.</string>
+    <string name="update_recovery_warning">El modo de recuperación se actualizará tan pronto como finalice la configuración. Si deseas mantenerlo intacto, desactiva esta función.</string>
+    <string name="update_recovery_setting">Actualizar el modo de recuperación de Lineage junto con el sistema operativo</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navegación</string>
+    <string name="navigation_summary">Elegir método de navegación preferido</string>
+    <string name="gesture_navigation">Navegación por gestos</string>
+    <string name="two_button_navigation">Navegación con dos botones</string>
+    <string name="navbar_navigation">Navegación con tres botones</string>
+    <string name="hide_gesture_hint">Ocultar la ayuda de navegación por gestos.</string>
+    <string name="location_agps_access_summary">Cuando la ubicación está activada en <b>Descargar datos de asistencia por satélite de Internet</b>, puede mejorar en gran medida el rendimiento de arranque del GPS.</string>
 </resources>
