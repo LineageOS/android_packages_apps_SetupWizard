@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3dbb0ab_27c264f8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-09-21T07:24:27Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this go into sepparate changes?",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 69
+      },
+      "revId": "c5399606152065057c09fba363d3401393cbfc10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e39943c_2a9a1f72",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-09-21T07:24:27Z",
+      "side": 1,
+      "message": "Flip the order, like in the other places.",
+      "range": {
+        "startLine": 120,
+        "startChar": 12,
+        "endLine": 120,
+        "endChar": 44
+      },
+      "revId": "c5399606152065057c09fba363d3401393cbfc10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a048d72_297149b6",
+        "filename": "src/org/lineageos/setupwizard/FinishActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-09-21T07:24:27Z",
+      "side": 1,
+      "message": "Same.",
+      "range": {
+        "startLine": 127,
+        "startChar": 12,
+        "endLine": 127,
+        "endChar": 44
+      },
+      "revId": "c5399606152065057c09fba363d3401393cbfc10",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
