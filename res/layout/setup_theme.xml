@@ -5,6 +5,7 @@
 -->
 <com.google.android.setupdesign.GlifLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,22 +28,58 @@
                 android:layout_height="match_parent"
                 android:fillViewport="true">
 
-                <RadioGroup
-                    android:id="@+id/theme_radio_group"
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent">
 
-                    <RadioButton
-                        android:id="@+id/radio_dark"
-                        android:text="@string/dark"
-                        style="@style/SudRadioButton" />
+                    <view class="org.lineageos.setupwizard.widget.TouchBlockingFrameLayout"
+                        android:id="@+id/frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <RadioButton
-                        android:id="@+id/radio_light"
-                        android:text="@string/light"
-                        style="@style/SudRadioButton" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/conversation_message_list_padding"
+                            android:paddingStart="@dimen/conversation_message_list_padding"
+                            android:paddingEnd="@dimen/conversation_message_list_padding"
+                            android:paddingBottom="@dimen/conversation_spacing_bottom"
+                            android:orientation="vertical">
 
-                </RadioGroup>
+                            <org.lineageos.setupwizard.widget.ConversationMessageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:incoming="true"
+                                app:messageText="@string/accessibility_text_reading_conversation_message_1"
+                                app:iconBackgroundColor="@color/message_icon_background_incoming" />
+
+                            <org.lineageos.setupwizard.widget.ConversationMessageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:incoming="false"
+                                app:messageText="@string/accessibility_text_reading_conversation_message_2"
+                                app:iconBackgroundColor="@color/message_icon_background_outgoing" />
+                        </LinearLayout>
+                    </view>
+
+                    <RadioGroup
+                        android:id="@+id/theme_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/radio_dark"
+                            android:text="@string/dark"
+                            style="@style/SudRadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/radio_light"
+                            android:text="@string/light"
+                            style="@style/SudRadioButton" />
+
+                    </RadioGroup>
+                </LinearLayout>
             </ScrollView>
         </FrameLayout>
 

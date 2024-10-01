@@ -82,4 +82,6 @@
     <string name="theme_summary">Dark theme uses a black background to help keep battery alive longer on some screens</string>
     <string name="dark">Dark</string>
     <string name="light">Light</string>
+    <string name="accessibility_text_reading_conversation_message_1">Any weekend plans?</string>
+    <string name="accessibility_text_reading_conversation_message_2">Heading to the beach. Want to join?</string>
 </resources>

@@ -26,4 +26,18 @@
     <declare-styleable name="NavigationLayout">
         <attr name="showSkipButton" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="MessageView">
+        <attr name="messageText" format="reference" />
+    </declare-styleable>
+
+    <!-- For ConversationMessageView -->
+    <declare-styleable name="ConversationMessageView" parent="MessageView">
+        <attr name="incoming" format="boolean" />
+        <attr name="messageText" />
+        <attr name="timestampText" format="reference" />
+        <attr name="iconText" format="reference" />
+        <attr name="iconTextColor" format="reference|color" />
+        <attr name="iconBackgroundColor" format="reference|color" />
+    </declare-styleable>
 </resources>

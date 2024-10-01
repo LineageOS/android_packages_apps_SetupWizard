@@ -11,4 +11,15 @@
     <color name="button_bar_text_disabled">#321e1e1e</color>
 
     <color name="divider">#40000000</color>
+
+    <color name="message_text_incoming">#E4E3DA</color>
+    <color name="message_text_outgoing">#1B1C17</color>
+    <color name="timestamp_text_outgoing">#99323232</color>
+    <color name="timestamp_text_incoming">#99ffffff</color>
+    <color name="message_bubble_incoming">#52534D</color>
+    <color name="message_bubble_outgoing">#C7C8B7</color>
+    <color name="message_icon_background_incoming">@*android:color/system_accent2_400</color>
+    <color name="message_icon_background_outgoing">#FBBC04</color>
+    <color name="message_icon_color">#DADADA</color>
+    <color name="color_filter_base_color">#ff0000</color>
 </resources>
