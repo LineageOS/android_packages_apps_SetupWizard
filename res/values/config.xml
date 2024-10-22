@@ -10,4 +10,6 @@
     <string name="wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/wizard_script_user</string>
     <bool name="config_isLargeNoTouch">false</bool>
+    <bool name="dynamic_color_enabled">true</bool>
+    <bool name="full_dynamic_color_enabled">true</bool>
 </resources>
