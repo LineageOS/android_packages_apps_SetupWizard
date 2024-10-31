@@ -19,7 +19,9 @@ android_app {
     overrides: ["Provision"],
 
     optimize: {
+        optimize: true,
         proguard_flags_files: ["proguard.flags"],
+        shrink_resources: true,
     },
 
     static_libs: [
