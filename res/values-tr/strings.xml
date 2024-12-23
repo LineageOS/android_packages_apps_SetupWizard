@@ -28,7 +28,7 @@
     <string name="intro_restore_button">Yedekten geri yükle</string>
     <string name="setup_location">Konum servisleri</string>
     <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
-    <string name="location_agps_access_summary">GPS\'inizin başlama süresini büyük ölçüde hızlandırmak için &lt;b&gt;internetten uydu yardım verilerini indirin.&lt;b&gt;</string>
+    <string name="location_agps_access_summary">GPS\'inizin başlama süresini büyük ölçüde hızlandırmak için <b>internetten uydu yardım verilerini indirin.</b></string>
     <string name="update_recovery_title">Lineage Kurtarma Modunu Güncelle</string>
     <string name="update_recovery_description">Her güncellemeden sonraki ilk açılışta Lineage Kurtarma Modunu günceller.</string>
     <string name="update_recovery_warning">Kurulum tamamlanır tamamlanmaz kurtarma modu güncellenecektir. Olduğu gibi kalmasını istiyorsanız, bu özelliği devre dışı bırakın.</string>
