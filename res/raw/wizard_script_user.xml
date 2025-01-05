@@ -41,6 +41,9 @@
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.NETWORK_TIMEOUT;end" id="network_timeout" />
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.POST_CHECKIN_AND_UPDATE;end" id="post_checkin_and_update">
+        <result wizard:action="search_selector_presync" />
+    </WizardAction>
+    <WizardAction wizard:uri="intent:#Intent;package=com.google.android.apps.setupwizard.searchselector;action=com.google.android.setupwizard.SELECT_SEARCH_ENGINE_PRESYNC;end" id="search_selector_presync">
         <result wizard:action="network_check" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.NETWORK_CHECK;end" id="network_check">

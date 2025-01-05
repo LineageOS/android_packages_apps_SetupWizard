@@ -71,6 +71,7 @@
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_connect_and_update_flow" id="connect_and_update">
         <result wizard:action="no_network_flow" wizard:name="no_connection" wizard:resultCode="1" />
+        <result wizard:action="no_network_flow" wizard:name="skip_in_esim_only" wizard:resultCode="102" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_zero_touch_flow" id="zero_touch">
         <result wizard:action="post_dpm_user_flow" wizard:name="dpm_user_complete" wizard:resultCode="111" />
@@ -90,12 +91,16 @@
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:uri="intent:#Intent;package=com.google.android.setupwizard;action=com.google.android.setupwizard.TRANSITION_TO_PERSONAL_PROFILE_SETUP;end" id="transition_to_personal_profile_setup">
+        <result wizard:action="no_account_flow" wizard:name="skip_add_personal_account" wizard:resultCode="1" />
         <result wizard:action="add_personal_account_after_work_profile" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_account_flow" id="add_personal_account_after_work_profile">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:flow="SetupAsNewFlow" wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_account_flow" id="setup_as_new_flow">
+        <result wizard:action="oem_post_setup" />
+    </WizardAction>
+    <WizardAction wizard:script="android.resource://com.google.android.gmsintegration/raw/wizard_script_no_account_flow" id="no_account_flow">
         <result wizard:action="oem_post_setup" />
     </WizardAction>
     <WizardAction wizard:script="android.resource://com.google.android.setupwizard/xml/wizard_script_post_dpm_user_flow" id="post_dpm_user_flow">
