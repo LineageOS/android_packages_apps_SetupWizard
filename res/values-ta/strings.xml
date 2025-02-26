@@ -24,13 +24,14 @@
     <string name="loading">வெறும் ஒரு வினாடி\u2026</string>
     <string name="setup_complete">அமைப்பு நிறைவடைந்தது</string>
     <string name="setup_welcome">நல்வரவு</string>
-    <string name="setup_wifi">தேர்வுசெய்யவும் Wi-fi</string>
+    <string name="setup_locale">மொழி</string>
+    <string name="setup_wifi">அருகலைத்  தேர்க</string>
     <string name="setup_sim_missing">SIM கார்டு காணவில்லை</string>
     <string name="setup_choose_data_sim">தரவுகளுக்காக SIM ஒன்றை தேர்வுசெய்க</string>
     <string name="setup_location">இருப்பிடச் சேவைகள்</string>
     <string name="setup_other">மற்ற சேவைகள்</string>
-    <string name="setup_datetime">தேதி &amp; நேரம்</string>
-    <string name="setup_current_date">நடப்பு தேதி</string>
+    <string name="setup_datetime">நாளும் நேரமும்</string>
+    <string name="setup_current_date">நடப்பு நாள்</string>
     <string name="setup_current_time">நடப்பு நேரம்</string>
     <string name="sim_missing_summary" product="tablet">உங்கள் டேப்ளட்டில் ஒரு SIM கார்டு கண்டுபிடிக்கப்படவில்லை. ஒரு SIM கார்டை செருக, உங்கள் சாதனத்துடன் வரும் நெறிமுறைகளை படிக்கவும்.</string>
     <string name="sim_missing_summary" product="default">உங்கள் தொலைப்பேசியில் ஒரு SIM கார்டு கண்டுபிடிக்கப்படவில்லை. ஒரு SIM கார்டை செருக, உங்கள் சாதனத்துடன் வரும் நெறிமுறைகளை படிக்கவும்.</string>

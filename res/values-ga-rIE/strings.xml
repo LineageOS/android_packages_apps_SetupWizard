@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2015 The CyanogenMod Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Treoraí Socraithe</string>
+    <string name="next">Ar aghaidh</string>
+    <string name="skip">Scipeáil</string>
+    <string name="start">Tosaigh</string>
+    <string name="done">Déanta</string>
+    <string name="ok">Ceart go leor</string>
+    <string name="loading">Níl ann ach soic\u2026</string>
+    <string name="setup_complete">Tá an socrú críochnaithe</string>
+    <string name="setup_welcome">Fáilte</string>
+    <string name="setup_welcome_message">Fáilte go <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
+    <string name="setup_locale">Teanga</string>
+    <string name="setup_wifi">Roghnaigh Wi-Fi</string>
+    <string name="setup_sim_missing">Cárta SIM in easnamh</string>
+    <string name="setup_choose_data_sim">Roghnaigh SIM le haghaidh sonraí</string>
+    <string name="setup_location">Seirbhísí suímh</string>
+    <string name="setup_other">Seirbhísí eile</string>
+    <string name="setup_datetime">Dáta &amp; am</string>
+    <string name="setup_current_date">Dáta reatha</string>
+    <string name="setup_current_time">Am reatha</string>
+    <string name="sim_missing_summary" product="tablet">Níor aimsíodh cárta SIM ar do tháibléad. Chun cárta SIM a chur isteach, léigh na treoracha a tháinig le do ghléas.</string>
+    <string name="sim_missing_summary" product="default">Níor aimsíodh cárta SIM ar do ghuthán. Chun cárta SIM a chur isteach, léigh na treoracha a tháinig le do ghléas.</string>
+    <string name="choose_data_sim_summary" product="tablet">Cén SIM is mian leat a úsáid le haghaidh sonraí? D’fhéadfadh táillí líonra a bheith ar an SIM roghnaithe mar go n-úsáidfear é chun do tháibléad a shocrú.</string>
+    <string name="choose_data_sim_summary" product="default">Cén SIM is mian leat a úsáid le haghaidh sonraí? Seans go mbeidh táillí líonra ar an SIM roghnaithe mar go n-úsáidfear é chun do ghuthán a shocrú.</string>
+    <string name="date_time_summary">Socraigh do chrios ama agus coigeartaigh an dáta agus an t-am reatha más gá</string>
+    <string name="location_access_summary"><b>Ceadaigh d’aipeanna a d’iarr do chead</b> do chuid faisnéise suímh a úsáid. Seans go n-áireofaí anseo do shuíomh reatha agus láithreacha san am a chuaigh thart.</string>
+    <string name="setup_mobile_data">Cuir sonraí ceallacha ar siúl</string>
+    <string name="setup_mobile_data_no_service">Gan seirbhís</string>
+    <string name="setup_mobile_data_emergency_only">Glaonna éigeandála amháin</string>
+    <string name="enable_mobile_data_summary">Ar mhaith leat sonraí ceallacha a úsáid le linn an tsocraithe? D’fhéadfadh go mbeadh sé faoi réir táillí sonraí má chuirtear sonraí ceallacha ar siúl.</string>
+    <string name="no">Níl</string>
+    <string name="yes">Tá</string>
+    <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
+    <string name="emergency_call">Glao éigeandála</string>
+    <string name="accessibility_settings">Socruithe inrochtaineachta</string>
+    <string name="setup_services">LineageOS gnéithe</string>
+    <string name="services_pp_explanation">Oibríonn na seirbhísí seo duit chun cumais do ghléis a leathnú. Úsáidfear sonraí de réir pholasaí príobháideachais <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Is féidir leat an polasaí príobháideachais a léamh ar ghléas eile trí chuairt a thabhairt ar <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_help_improve_cm">Cabhraigh le feabhas a chur ar <xliff:g id="name" example="LineageOS"> %s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Cabhraigh le LineageOS a fheabhsú">%1$s</xliff:g> trí shonraí diagnóiseacha agus úsáide a sheoladh go huathoibríoch chuig <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Ní féidir an fhaisnéis seo a úsáid chun tú a aithint agus tugann sé cúnamh d\'fhoirne atá ag obair ar rudaí cosúil le saol ceallraí, feidhmíocht aipe agus <xliff:g id="name" example="LineageOS">%3$s</xliff:g> gnéithe.</string>
+    <string name="services_os_nav_keys_label"><b>Úsáid eochracha nascleanúna scáileáin</b> in ionad eochracha crua-earraí.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
+    <string name="settings_biometric_setup_title">Roghnaigh cineál glas scáileán cúltaca</string>
+    <string name="settings_biometric_setup_details">Conas ba mhaith leat a chur faoi ghlas do scáileán?</string>
+    <string name="fingerprint_setup_title">Socrú méarloirg</string>
+    <string name="fingerprint_setup_summary">Chun do braiteoir méarloirg a úsáid chun do scáileán a dhíghlasáil, beidh ort:</string>
+    <string name="fingerprint_setup_add_fingerprint">Cuir do mhéarloirg leis</string>
+    <string name="face_setup_title">Socrú aghaidhe</string>
+    <string name="face_setup_summary">Chun d\'aghaidh a úsáid chun do scáileán a dhíghlasáil, beidh ort:</string>
+    <string name="face_setup_add_face">Cuir d\'aghaidh leis</string>
+    <string name="biometric_setup_backup_lock_method">Socraigh modh díghlasála tánaisteach</string>
+    <string name="biometric_setup_screen_lock_setup">Socrú glas scáileáin</string>
+    <string name="sim_locale_changed">Braitheadh ​​%1$s SIM</string>
+    <string name="settings_lockscreen_setup_title">Roghnaigh cineál glas scáileáin</string>
+    <string name="settings_lockscreen_setup_details">Conas ar mhaith leat do scáileán a ghlasáil?</string>
+    <string name="lockscreen_setup_title" product="tablet">Cosain do táibléad</string>
+    <string name="lockscreen_setup_title" product="default">Cosain do ghuthán</string>
+    <string name="lockscreen_setup_summary"><b>Cosain an gléas seo</b> agus teastaíonn PIN, patrún nó pasfhocal chun an scáileán a dhíghlasáil</string>
+    <string name="lockscreen_setup_screen_lock_setup">Socraigh</string>
+    <string name="intro_restore_title">Athchóirigh aipeanna agus sonraí</string>
+    <string name="intro_restore_subtitle" product="tablet">Má tá cúltaca agat ó do thaibléad <xliff:g id="name" example="LineageOS">%s</xliff:g> is féidir leat é a chur ar ais anseo.</string>
+    <string name="intro_restore_subtitle" product="default">Má tá cúltaca agat ó do ghuthán deireanach <xliff:g id="name" example="LineageOS">%s</xliff:g>, is féidir leat é a aischur anseo.</string>
+    <string name="intro_restore_button">Athchóirigh ó chúltaca</string>
+    <string name="update_recovery_title">Nuashonraigh Aisghabháil Lineage</string>
+    <string name="update_recovery_description">Nuashonruithe Aisghabháil Lineage ar an gcéad tosaithe tar éis gach nuashonraithe.</string>
+    <string name="update_recovery_warning">Déanfar aisghabháil a nuashonrú chomh luath agus a chríochnaíonn tú an socrú. Más mian leat é a choinneáil slán, díchumasaigh an ghné seo.</string>
+    <string name="update_recovery_setting">Nuashonraigh Aisghabháil Lineage taobh leis an OS</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">Nascleanúint</string>
+    <string name="navigation_summary">Roghnaigh modh nascleanúna is fearr leat</string>
+    <string name="gesture_navigation">Gotha nascleanúint</string>
+    <string name="two_button_navigation">Nascleanúint 2-cnaipe</string>
+    <string name="navbar_navigation">Nascleanúint 3-cnaipe</string>
+    <string name="hide_gesture_hint">Folaigh leid loingseoireachta gothaí</string>
+</resources>

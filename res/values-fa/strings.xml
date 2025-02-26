@@ -17,10 +17,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">راهنمای راه‌اندازی</string>
+    <string name="next">بعدی</string>
+    <string name="skip">پرش</string>
     <string name="start">شروع</string>
+    <string name="done">انجام شد</string>
+    <string name="ok">قبول</string>
     <string name="loading">یک لحظه لطفا\u2026</string>
     <string name="setup_complete">راه‌اندازی کامل شد</string>
     <string name="setup_welcome">خوش آمدید</string>
+    <string name="setup_welcome_message">خوش آمدید به <xliff:g id="name" example="LineageOS"/></string>
+    <string name="setup_locale">زبان</string>
     <string name="setup_wifi">انتخاب وای‌فای</string>
     <string name="setup_sim_missing">دستگاه فاقد سیم کارت است</string>
     <string name="setup_choose_data_sim">انتخاب سیم کارت برای داده همراه</string>
@@ -35,20 +41,52 @@
     <string name="choose_data_sim_summary" product="default">از کدام سیم کارت برای داده همراه استفاده می‌کنید؟ سیم کارت انتخابی ممکن است باعث هزینه‌های اضافی داده شود چرا که برای راه‌اندازی گوشی شما استفاده می‌شود.</string>
     <string name="date_time_summary">منطقه‌ی زمانی و تاریخ فعلی را در صورت نیاز تنظیم کنید</string>
     <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
+    <string name="setup_mobile_data">روشن کردن داده تلفن همراه</string>
     <string name="setup_mobile_data_no_service">بدون سرویس</string>
     <string name="setup_mobile_data_emergency_only">فقط تماس اضطراری</string>
+    <string name="enable_mobile_data_summary">آیا مایلید که از داده تلفن همراه در زمان تنظیم راه‌اندازی اولیه استفاده کنید؟ روشن کردن داده تلفن همراه ممکن است مشمول هزینه باشد.</string>
     <string name="no">خیر</string>
     <string name="yes">بله</string>
+    <string name="data_sim_name">سیم‌کارت <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">تماس اضطراری</string>
+    <string name="accessibility_settings">تنظیمات دسترسی</string>
     <string name="setup_services">ویژگی‌های لینیِج اواِس</string>
+    <string name="services_pp_explanation">این خدمات در جهت افزایش قابلیت‌های دستگاه شما عمل می‌کنند. داده‌ها مطابق سیاست های حریم خصوصی <xliff:g id="name" example="LineageOS">%1$s</xliff:g> مورد استفاده قرار خواهند گرفت.</string>
+    <string name="services_find_privacy_policy">شما می‌توانید سیاست های حریم خصوصی را بر روی یک دستگاه دیگر با بازدید از <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> بخوانید</string>
+    <string name="services_help_improve_cm">کمک به بهبود <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> با ارسال خودکار داده های عیب یابی و استفاده به <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. این اطلاعات قادر به آشکار سازی هویت شما نبوده و به تیم های مشغول بر روی چیز هایی مثل عمر باتری، کارایی نرم افزار و ویژگی های <xliff:g id="name" example="LineageOS">%3$s</xliff:g> جدید کمک می‌کند.</string>
     <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="settings_biometric_setup_title">انتخاب قفل پشتیبان صفحه</string>
     <string name="settings_biometric_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
     <string name="fingerprint_setup_title">تنظیمات اثر انگشت</string>
     <string name="fingerprint_setup_summary">برای استفاده از حسگر اثر انگشت برای باز کردن قفل صفحه، به این موارد نیاز دارید:</string>
     <string name="fingerprint_setup_add_fingerprint">افزودن اثر انگشت خود</string>
+    <string name="face_setup_title">تنظیم صورت</string>
+    <string name="face_setup_summary">برای استفاده از صورت خود برای باز کردن قفل صفحه، باید:</string>
+    <string name="face_setup_add_face">صورت خود را اضافه کنید</string>
     <string name="biometric_setup_backup_lock_method">تنظیم روش دوم باز کردن قفل</string>
     <string name="biometric_setup_screen_lock_setup">تنظیمات قفل صفحه</string>
+    <string name="sim_locale_changed">%1$s سیم کارت یافت شد</string>
+    <string name="settings_lockscreen_setup_title">نوع صفحه قفل را انتخاب کنید</string>
     <string name="settings_lockscreen_setup_details">چگونه می‌خواهید صفحه خود را قفل کنید؟</string>
+    <string name="lockscreen_setup_title" product="tablet">از رایانه‌لوحی خود محافظت کنید</string>
+    <string name="lockscreen_setup_title" product="default">از دستگاه خود محافظت کنید</string>
+    <string name="lockscreen_setup_summary"><b>از این دستگاه محافظت کن</b>و برای بازکردن صفحه نمایش یک پین، الگو، یا گذرواژه درخواست کن</string>
     <string name="lockscreen_setup_screen_lock_setup">برپا سازی</string>
+    <string name="intro_restore_title">برنامه ها و داده ها را بازیابی کنید</string>
+    <string name="intro_restore_subtitle" product="tablet">اگر از رایانه‌لوحی <xliff:g id="name" example="LineageOS">%s</xliff:g> سابق خود پشتیبان دارید، می‌توانید اینجا بازیابی اش کنید.</string>
+    <string name="intro_restore_subtitle" product="default">اگر از گوشی هوشمند <xliff:g id="name" example="LineageOS">%s</xliff:g> سابق خود پشتیبانی دارید، می‌توانید اینجا بازیابی اش کنید.</string>
+    <string name="intro_restore_button">بازیابی از پشتیبان‌گیری</string>
+    <string name="update_recovery_title">به‌روزرسانی ریکاوری Lineage</string>
+    <string name="update_recovery_description">به روزرسانی ریکاوری Lineage در اولین بوت پس از هر بروزرسانی.</string>
+    <string name="update_recovery_warning">به محض پایان راه‌اندازی، ریکاوری به روز می شود. اگر می خواهید آن را دست نخورده نگه دارید، این ویژگی را غیرفعال کنید.</string>
+    <string name="update_recovery_setting">ریکاوری Lineage را در کنار سیستم عامل به روز کنید</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_navigation">پیمایش</string>
+    <string name="navigation_summary">روش پیمایش ترجیحی را انتخاب کنید</string>
+    <string name="gesture_navigation">پیمایش اشاره‌ای</string>
+    <string name="two_button_navigation">پیمایش ۲ دکمه‌ای</string>
+    <string name="navbar_navigation">پیمایش ۳ دکمه‌ای</string>
+    <string name="hide_gesture_hint">پنهان کردن نوار اشاره ناوبری</string>
 </resources>

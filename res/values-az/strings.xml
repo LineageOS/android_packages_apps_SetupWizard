@@ -33,14 +33,14 @@
     <string name="setup_location">Yerləşmə xidmətləri</string>
     <string name="setup_other">Digər xidmətlər</string>
     <string name="setup_datetime">Tarix &amp; vaxt</string>
-    <string name="setup_current_date">Hazırki tarix</string>
-    <string name="setup_current_time">Hazırki vaxt</string>
+    <string name="setup_current_date">Hazırkı tarix</string>
+    <string name="setup_current_time">Hazırkı vaxt</string>
     <string name="sim_missing_summary" product="tablet">Planşetinizdə SIM kart aşkarlanmadı. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
     <string name="sim_missing_summary" product="default">Telefonunuzda SIM kart aşkarlanmadı. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
     <string name="choose_data_sim_summary" product="tablet">Hansı SIM-i internet üçün istifadə etmək istəyirsiz? Şəbəkə planşetinizin quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
     <string name="choose_data_sim_summary" product="default">Hansı SIM-i internet üçün istifadə etmək istəyirsiz? Şəbəkə telefonunuzun quraşdırılması üçün seçilən SIM-ə görə ödəniş tətbiq edə bilər.</string>
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırkı tarix və saatı ayarlayın</string>
-    <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırki və keçmiş yerləşmənizi ehtiva edə bilər.</string>
+    <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
     <string name="setup_mobile_data">Mobil interneti aç</string>
     <string name="setup_mobile_data_no_service">Xidmət yoxdur</string>
     <string name="setup_mobile_data_emergency_only">Yalnız fövqəladə hal zəngləri</string>

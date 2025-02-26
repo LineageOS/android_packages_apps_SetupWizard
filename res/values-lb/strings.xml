@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -37,9 +37,6 @@
     <string name="choose_data_sim_summary" product="tablet">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Tablet benotzt gëtt.</string>
     <string name="choose_data_sim_summary" product="default">Wéi eng SIM soll fir d\'Date benotzt ginn? Déi ausgewiele SIM kéint Netzwierkkäschte verursaachen, well se fir d\'Installatioun vum Telefon benotzt gëtt.</string>
     <string name="date_time_summary">Definéier deng Zäitzon an ajustéier falls néideg den aktuellen Datum an déi aktuell Zäit</string>
-    <string name="backup_data_summary">App-Daten, WLAN-Passwierder an aner Astellungen op de Google-Servere <b>sécheren</b></string>
-    <string name="other_services_summary">Dës Servicer gi vu Google zur Verfügung gestallt a kënnen all Moment aktivéiert oder desaktivéiert ginn. D\'Daten ginn an Iwwerastëmmung mat <xliff:g id="name" example="Privacy Policy">%s</xliff:g> vu Google benotzt.</string>
-    <string name="location_services_summary">Standuertservicer erlabe System-Appen an aneren Appen, Informatiounen zum Standuert ze sammelen an ze benotzen. Eng App ka beispillsweis däin ongeféiere Standuert benotzen, fir Caféen an der Géigend ze lokaliséieren.</string>
     <string name="location_access_summary"><b>Appen déi deng Berechtegung gefrot hunn</b> den Zougrëff op d\'Standuertinformatiounen erlaben. Dat ka fir den aktuelle Standuert an och fir fréier Standuerter gëllen.</string>
     <string name="setup_mobile_data_no_service">Kee Service</string>
     <string name="setup_mobile_data_emergency_only">Just Noutriff</string>
@@ -47,9 +44,6 @@
     <string name="yes">Jo</string>
     <string name="emergency_call">Noutruff</string>
     <string name="services_os_nav_keys_label"><b>Schierm-Navigatiounstasten</b> amplaz Hardwaretaste benotzen.</string>
-    <string name="setup_unlock">Entspären</string>
-    <string name="setup_device_locked">Dësen Apparat gouf duerch de Benotzer gespaart.</string>
-    <string name="setup_device_locked_instructions"><i>Fir dës Funktioun z\'aktivéieren/desaktivéieren, géi op Astellungen  &gt; Sécherheet</i></string>
     <string name="settings_biometric_setup_title">Wiel den Typ vun der Ersatz-Schirmspär aus</string>
     <string name="settings_biometric_setup_details">Wéi wëlls du däi Schierm spären?</string>
     <string name="fingerprint_setup_title">Fangerofdrock ariichten</string>
