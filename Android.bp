@@ -24,7 +24,6 @@ android_app {
         "SettingsLib",
         "setupcompat",
         "setupdesign",
-        "SystemUISharedLib",
         "org.lineageos.platform.internal",
     ],
 

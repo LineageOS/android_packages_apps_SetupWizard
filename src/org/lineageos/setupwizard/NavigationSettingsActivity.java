@@ -34,8 +34,6 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
 
     private SetupWizardApp mSetupWizardApp;
 
-    private boolean mIsTaskbarEnabled;
-
     private String mSelection = NAV_BAR_MODE_GESTURAL_OVERLAY;
 
     private CheckBox mHideGesturalHint;
@@ -49,8 +47,6 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         if (mSetupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
             navBarEnabled = mSetupWizardApp.getSettingsBundle().getBoolean(DISABLE_NAV_KEYS);
         }
-        mIsTaskbarEnabled = LineageSettings.System.getInt(getContentResolver(),
-                LineageSettings.System.ENABLE_TASKBAR, isLargeScreen(this) ? 1 : 0) == 1;
 
         int deviceKeys = getResources().getInteger(
                 org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys);
@@ -90,11 +86,6 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         final RadioGroup radioGroup = findViewById(R.id.navigation_radio_group);
         mHideGesturalHint = findViewById(R.id.hide_navigation_hint);
 
-        // Hide navigation hint checkbox when taskbar is enabled
-        if (mIsTaskbarEnabled) {
-            mHideGesturalHint.setVisibility(View.GONE);
-        }
-
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             switch (checkedId) {
                 case R.id.radio_gesture:
@@ -120,10 +111,6 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private void revealHintCheckbox() {
-        if (mIsTaskbarEnabled) {
-            return;
-        }
-
         mHideGesturalHint.animate().cancel();
 
         if (mHideGesturalHint.getVisibility() == View.VISIBLE) {
@@ -139,10 +126,6 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
     }
 
     private void hideHintCheckBox() {
-        if (mIsTaskbarEnabled) {
-            return;
-        }
-
         if (mHideGesturalHint.getVisibility() == View.INVISIBLE) {
             return;
         }
@@ -162,12 +145,10 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
     @Override
     protected void onNextPressed() {
         mSetupWizardApp.getSettingsBundle().putString(NAVIGATION_OPTION_KEY, mSelection);
-        if (!mIsTaskbarEnabled) {
-            boolean hideHint = mHideGesturalHint.isChecked();
-            LineageSettings.System.putIntForUser(getContentResolver(),
-                    LineageSettings.System.NAVIGATION_BAR_HINT, hideHint ? 0 : 1,
-                    UserHandle.USER_CURRENT);
-        }
+        boolean hideHint = mHideGesturalHint.isChecked();
+        LineageSettings.System.putIntForUser(getContentResolver(),
+                LineageSettings.System.NAVIGATION_BAR_HINT, hideHint ? 0 : 1,
+                UserHandle.USER_CURRENT);
         super.onNextPressed();
     }
 
