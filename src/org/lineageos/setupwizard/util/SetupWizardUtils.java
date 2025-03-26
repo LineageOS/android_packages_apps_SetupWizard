@@ -56,6 +56,7 @@ import org.lineageos.setupwizard.SetupWizardApp;
 import java.io.File;
 import java.util.List;
 
+import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
 public class SetupWizardUtils {
@@ -320,6 +321,9 @@ public class SetupWizardUtils {
             LineageSettings.System.putIntForUser(context.getContentResolver(),
                     LineageSettings.System.FORCE_SHOW_NAVBAR, enabled ? 1 : 0,
                     UserHandle.USER_CURRENT);
+
+            final LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+            hardware.set(LineageHardwareManager.FEATURE_KEY_DISABLE, enabled);
         }
     }
 
