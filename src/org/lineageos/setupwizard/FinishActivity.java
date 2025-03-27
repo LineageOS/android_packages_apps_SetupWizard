@@ -197,7 +197,14 @@ public class FinishActivity extends BaseSetupWizardActivity {
         final int cx = (mRootView.getLeft() + mRootView.getRight()) / 2;
         final int cy = (mRootView.getTop() + mRootView.getBottom()) / 2;
         final float fullRadius = (float) Math.hypot(cx, cy);
-        Animator anim = ViewAnimationUtils.createCircularReveal(mRootView, cx, cy, fullRadius, 0f);
+        Animator anim;
+        try {
+            anim = ViewAnimationUtils.createCircularReveal(mRootView, cx, cy, fullRadius, 0f);
+        } catch (IllegalStateException e) {
+            Log.e(TAG, "Failed to create finish animation", e);
+            finishAfterAnimation();
+            return;
+        }
         anim.setDuration(900);
         anim.addListener(new AnimatorListenerAdapter() {
             @Override
