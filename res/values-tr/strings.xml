@@ -13,6 +13,7 @@
     <string name="ok">Tamam</string>
     <string name="loading">Bir saniye\u2026</string>
     <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> hoş geldiniz</string>
+    <string name="setup_managed_profile_welcome_message">İş profilini ayarla</string>
     <string name="emergency_call">Acil durum araması</string>
     <string name="accessibility_settings">Erişilebilirlik ayarları</string>
     <string name="setup_locale">Dil</string>
@@ -25,6 +26,7 @@
     <string name="setup_current_date">Şimdiki tarih</string>
     <string name="setup_current_time">Şimdiki saat</string>
     <string name="intro_restore_title">Uygulamaları ve verileri geri yükleyin</string>
+    <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> veya başka bir işletim sisteminden bir Seedvault yedeğiniz varsa, buradan geri yükleyebilirsiniz.</string>
     <string name="intro_restore_button">Yedekten geri yükle</string>
     <string name="setup_location">Konum servisleri</string>
     <string name="location_access_summary"><b>Konum bilginizi isteyen uygulamalara izin ver.</b> Bu geçerli konumunuzu ve geçmiş konumlarınızı içerebilir.</string>
@@ -47,4 +49,8 @@
     <string name="two_button_navigation">2 düğmeli gezinme</string>
     <string name="navbar_navigation">3 düğmeli gezinme</string>
     <string name="hide_gesture_hint">Hareketle gezinme ipucunu gizle</string>
+    <string name="setup_theme">Tema</string>
+    <string name="theme_summary">Karanlık tema, siyah bir arka plan kullanarak bazı ekranlarda pilin daha uzun süre dayanmasına yardımcı olur</string>
+    <string name="dark">Karanlık</string>
+    <string name="light">Aydınlık</string>
 </resources>
