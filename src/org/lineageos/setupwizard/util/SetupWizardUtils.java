@@ -19,11 +19,9 @@ import static com.android.internal.telephony.PhoneConstants.LTE_ON_CDMA_UNKNOWN;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
-import static org.lineageos.setupwizard.SetupWizardApp.ENABLE_RECOVERY_UPDATE;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
 import static org.lineageos.setupwizard.SetupWizardApp.LOGV;
 import static org.lineageos.setupwizard.SetupWizardApp.NAVIGATION_OPTION_KEY;
-import static org.lineageos.setupwizard.SetupWizardApp.UPDATE_RECOVERY_PROP;
 
 import android.app.StatusBarManager;
 import android.app.WallpaperManager;
@@ -34,7 +32,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.om.IOverlayManager;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.hardware.biometrics.BiometricManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
@@ -56,7 +53,6 @@ import lineageos.providers.LineageSettings;
 import org.lineageos.setupwizard.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 
-import java.io.File;
 import java.util.List;
 
 public class SetupWizardUtils {
@@ -68,8 +64,6 @@ public class SetupWizardUtils {
     private static final String GMS_TV_SUW_PACKAGE = "com.google.android.tungsten.setupwraith";
     private static final String UPDATER_PACKAGE = "org.lineageos.updater";
 
-    private static final String UPDATE_RECOVERY_EXEC = "/vendor/bin/install-recovery.sh";
-    private static final String CONFIG_HIDE_RECOVERY_UPDATE = "config_hideRecoveryUpdate";
     private static final String PROP_BUILD_DATE = "ro.build.date.utc";
 
     private SetupWizardUtils() {
@@ -87,24 +81,6 @@ public class SetupWizardUtils {
     public static boolean hasTelephony(Context context) {
         PackageManager packageManager = context.getPackageManager();
         return packageManager.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
-    }
-
-    public static boolean hasRecoveryUpdater(Context context) {
-        boolean fileExists = new File(UPDATE_RECOVERY_EXEC).exists();
-        if (!fileExists) {
-            return false;
-        }
-
-        boolean featureHidden = false;
-        try {
-            PackageManager pm = context.getPackageManager();
-            Resources updaterResources = pm.getResourcesForApplication(UPDATER_PACKAGE);
-            int res = updaterResources.getIdentifier(
-                    CONFIG_HIDE_RECOVERY_UPDATE, "bool", UPDATER_PACKAGE);
-            featureHidden = updaterResources.getBoolean(res);
-        } catch (PackageManager.NameNotFoundException | Resources.NotFoundException ignored) {
-        }
-        return !featureHidden;
     }
 
     public static boolean isOwner() {
@@ -193,7 +169,6 @@ public class SetupWizardUtils {
 
         handleEnableMetrics(context);
         handleNavKeys(context);
-        handleRecoveryUpdate();
         handleNavigationOption();
         WallpaperManager.getInstance(context).forgetLoadedWallpaper();
         disableHome(context);
@@ -286,15 +261,6 @@ public class SetupWizardUtils {
         if (SetupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
             writeDisableNavkeysOption(context,
                     SetupWizardApp.getSettingsBundle().getBoolean(DISABLE_NAV_KEYS));
-        }
-    }
-
-    private static void handleRecoveryUpdate() {
-        if (SetupWizardApp.getSettingsBundle().containsKey(ENABLE_RECOVERY_UPDATE)) {
-            boolean update = SetupWizardApp.getSettingsBundle()
-                    .getBoolean(ENABLE_RECOVERY_UPDATE);
-
-            SystemProperties.set(UPDATE_RECOVERY_PROP, String.valueOf(update));
         }
     }
 
