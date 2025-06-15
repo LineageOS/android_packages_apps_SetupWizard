@@ -7,21 +7,50 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">அமைப்பு வழிகாட்டி</string>
     <string name="next">அடுத்து</string>
-    <string name="skip">தவிர்</string>
-    <string name="start">தொடங்கு</string>
+    <string name="skip">தவிர்க்க</string>
+    <string name="start">தொடங்குக</string>
+    <string name="done">முடிந்தது</string>
     <string name="ok">சரி</string>
-    <string name="loading">வெறும் ஒரு வினாடி\u2026</string>
-    <string name="emergency_call">அவசரகால அழைப்பு</string>
+    <string name="loading">வெறும் ஒரு நொடி\u2026</string>
+    <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> இற்கு நல்வரவு</string>
+    <string name="setup_managed_profile_welcome_message">உமது பணித் தனியமைப்பை அமைக்க</string>
+    <string name="emergency_call">நெருக்கடி அழைப்பு</string>
+    <string name="accessibility_settings">அணுகல்தன்மை அமைப்புகள்</string>
     <string name="setup_locale">மொழி</string>
-    <string name="sim_locale_changed">%1$s SIM கண்டறியப்பட்டது.</string>
-    <string name="setup_sim_missing">SIM கார்டு காணவில்லை</string>
-    <string name="sim_missing_summary" product="tablet">உங்கள் டேப்ளட்டில் ஒரு SIM கார்டு கண்டுபிடிக்கப்படவில்லை. ஒரு SIM கார்டை செருக, உங்கள் சாதனத்துடன் வரும் நெறிமுறைகளை படிக்கவும்.</string>
-    <string name="sim_missing_summary" product="default">உங்கள் தொலைப்பேசியில் ஒரு SIM கார்டு கண்டுபிடிக்கப்படவில்லை. ஒரு SIM கார்டை செருக, உங்கள் சாதனத்துடன் வரும் நெறிமுறைகளை படிக்கவும்.</string>
+    <string name="sim_locale_changed">%1$s SIM கண்டறியப்பட்டது</string>
+    <string name="setup_sim_missing">SIM அட்டை காணவில்லை</string>
+    <string name="sim_missing_summary" product="tablet">உமது தத்தல் கணினியில் SIM அட்டை ஒன்றைக் கண்டுபிடிக்கப்படவில்லை. ஒரு SIM அட்டையைச் செருக, உமது கருவியுடன் வரும் நெறிமுறைகளைப் படிக்க.</string>
+    <string name="sim_missing_summary" product="default">உமது தொலைபேசியில் SIM அட்டை ஒன்றைக் கண்டுபிடிக்கப்படவில்லை. ஒரு SIM அட்டையைச் செருக, உமது கருவியுடன் வரும் நெறிமுறைகளைப் படிக்க.</string>
     <string name="setup_datetime">நாளும் நேரமும்</string>
-    <string name="date_time_summary">உங்கள் நேர மண்டலத்தையும் தேவைப்பட்டால் நடப்பு தேதி மற்றும் நேரத்தையும் அமைக்கவும்</string>
+    <string name="date_time_summary">தேவைப்பட்டால் உமது நேர மண்டலத்தை அமைத்து, நடப்பு நாளையும், நேரத்தையும் சரிசெய்க</string>
     <string name="setup_current_date">நடப்பு நாள்</string>
     <string name="setup_current_time">நடப்பு நேரம்</string>
-    <string name="setup_location">இருப்பிடச் சேவைகள்</string>
-    <string name="location_access_summary">உங்கள் இருப்பிட தகவல்களை பயன்படுத்துவதற்கு <b>உங்களிடம் அனுமதி கேட்ட பயன்பாடுகளை அனுமதிக்கவும்.</b> இது உங்களது நடப்பு இருப்பிடம் மற்றும் முந்தைய இருப்பிடத்தை உள்ள்டக்கலாம்.</string>
-    <string name="services_os_nav_keys_label"><b>வன்பொருள் விசைகளுக்கு பதிலாக திரையிலுள்ள</b> வழிச்செல்லுதல் விசைகளை பயன்படுத்தவும்</string>
+    <string name="intro_restore_title">செயலிகளையும், தரவையும் மீட்டெடுக்க</string>
+    <string name="intro_restore_subtitle">உம்மிடம் <xliff:g id="name" example="LineageOS">%s</xliff:g> அல்லது வேறு ஏதேனும் OS இலிருந்து Seedvault காப்புப்பிரதி இருந்தால், அதை இங்கே மீட்டெடுக்கலாம்.</string>
+    <string name="intro_restore_button">காப்புப்பிரதியிலிருந்து மீட்டமைக்க</string>
+    <string name="setup_location">இருப்பிடப் பணிவிடைகள்</string>
+    <string name="location_access_summary">உமது இருப்பிடத் தகவலைப் பயன்படுத்த, <b>உமது அனுமதி கேட்ட பயன்பாடுகளை அனுமதிக்கவும்.</b> இதில் உமது தற்போதைய இருப்பிடமும் கடந்த கால இருப்பிடங்களும் அடங்கலாம்.</string>
+    <string name="location_agps_access_summary">இருப்பிடம் இயக்கப்பட்டிருக்கும்போது, ​​<b>இணையத்திலிருந்து செயற்கைக்கோள் உதவித் தரவைப் பதிவிறக்கவும்</b>, இது GPS தொடக்க செயற்திறனை பெரிதும் மேம்படுத்தும்.</string>
+    <string name="update_recovery_title">Lineage மீட்டெடுப்பைப் புதுப்பிக்க</string>
+    <string name="update_recovery_description">ஒவ்வொரு புதுப்பித்தலுக்குப் பிறகு முதற்தொடக்கத்தில் Lineage மீட்டெடுப்பைப் புதுப்பிக்கிறது.</string>
+    <string name="update_recovery_warning">நீர் அமைப்பை முடித்தவுடனே மீட்டெடுப்பு புதுப்பிக்கப்படும். அப்படியே வைக்க வேண்டுமானால், இச்சிறப்பியலை முடக்குக.</string>
+    <string name="update_recovery_setting">OS உடன் இணைந்து Lineage மீட்டெடுப்பைப் புதுப்பிக்க</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_services">LineageOS சிறப்பியல்புகள்</string>
+    <string name="services_pp_explanation">உமது கருவியின் திறன்களை விரிவாக்க இப்பணிவிடைகள் உமக்காக வேலை செய்கின்றன. <xliff:g id="name" example="LineageOS">%1$s</xliff:g> இன் தனியுரிமைக் கொள்கையின்படி தரவு பயன்படுத்தப்படும்.</string>
+    <string name="services_find_privacy_policy"><xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> இதைப் பார்வையிடுவதன் மூலம் மற்றொரு கருவியில் தனியுரிமைக் கொள்கையைப் படிக்கலாம்</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> ஐ மேம்படுத்த உதவுக</string>
+    <string name="services_metrics_label">தன்னியக்கமாகப் பகுப்பாய்வும், பயன்பாட்டுத் தரவையும்  <xliff:g id="name" example="LineageOS">%2$s</xliff:g> இற்கு அனுப்புவதன் மூலம் <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. இத்தகவலால் உம்மை அடையாளங் காணப்பயன்படுத்த முடியாது. மேலும், மின்கல வாழ்நாள், செயலிச் செயற்திறன், புதிய <xliff:g id="name" example="LineageOS">%3$s</xliff:g> சிறப்பியல்புகள் போன்றவற்றில் பணிபுரியும் குழுக்களுக்கு இஃது உதவும்.</string>
+    <string name="services_os_nav_keys_label">வன்பொருள் விசைகளுக்குப் பதிலாகத் <b>திரையில் வழிசெலுத்தல் விசைகளைப் பயன்படுத்துக</b>.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
+    <string name="setup_navigation">வழிசெலுத்தல்</string>
+    <string name="navigation_summary">விருப்பமான வழிசெலுத்தல் முறையைத் தேர்வுசெய்க</string>
+    <string name="gesture_navigation">மெய்ப்பாடு வழிசெலுத்தல்</string>
+    <string name="two_button_navigation">2-பொத்தான் வழிசெலுத்தல்</string>
+    <string name="navbar_navigation">3-பொத்தான் வழிசெலுத்தல்</string>
+    <string name="hide_gesture_hint">மெய்ப்பாடு வழிசெலுத்தல் குறிப்பை மறைக்க</string>
+    <string name="setup_theme">தோற்றம்</string>
+    <string name="theme_summary">இருள் தோற்றம், சில திரைகளில் மின்கலம் நீண்ட நேரம் நீடிக்கும் வகையில், கருப்புப் பின்னணியைப் பயன்படுத்துகிறது</string>
+    <string name="dark">இருள்</string>
+    <string name="light">வெளிர்</string>
 </resources>
