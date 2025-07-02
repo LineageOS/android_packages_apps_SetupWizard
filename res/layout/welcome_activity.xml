@@ -109,6 +109,19 @@
                 android:layout_weight="1.0" />
 
             <Button
+                android:id="@+id/skip"
+                style="@style/SudGlifButton.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skip"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <Button
                 android:id="@id/start"
                 style="@style/SudGlifButton.Primary"
                 android:layout_width="wrap_content"
