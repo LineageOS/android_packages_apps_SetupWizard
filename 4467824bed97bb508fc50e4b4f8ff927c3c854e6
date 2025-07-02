@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0f6bf68_b6935d52",
+        "filename": "res/layout-sw600dp/welcome_activity.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-02T23:35:47Z",
+      "side": 1,
+      "message": "Indentation is wrong.",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 36
+      },
+      "revId": "4467824bed97bb508fc50e4b4f8ff927c3c854e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
