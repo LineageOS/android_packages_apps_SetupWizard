@@ -16,6 +16,29 @@
       "message": "I wasn\u0027t able to verify that it looks good on television and sw600dp, but I assume it will work. I did verify that this works normally.",
       "revId": "a3f19543657e0766fbd7e5503a0d12d83b967a5e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a759f9a8_8cabe9bf",
+        "filename": "src/org/lineageos/setupwizard/WelcomeActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-02T23:31:04Z",
+      "side": 1,
+      "message": "We can\u0027t do this, LineageOS releases are userdebug.",
+      "range": {
+        "startLine": 66,
+        "startChar": 59,
+        "endLine": 66,
+        "endChar": 68
+      },
+      "revId": "a3f19543657e0766fbd7e5503a0d12d83b967a5e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
