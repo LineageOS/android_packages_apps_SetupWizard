@@ -9,9 +9,14 @@
     <string name="next">كېيىنكى</string>
     <string name="skip">ئاتلاش</string>
     <string name="start">باشلاش</string>
+    <string name="done">تامام</string>
     <string name="ok">جەزملەش</string>
     <string name="loading">سەل كۈتۈڭ\u2026</string>
+    <string name="setup_welcome_message"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> غا خۇش كەلدىڭىز</string>
+    <string name="setup_managed_profile_welcome_message">خىزمەت سەپلىمە ھۆججىتىڭىزنى تەڭشەڭ</string>
     <string name="emergency_call">جىددىي چاقىرىش</string>
+    <string name="accessibility_settings">قوشۇمچە ئىقتىدار تەڭشىكى</string>
+    <string name="setup_locale">تىل</string>
     <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
     <string name="setup_sim_missing">SIM كارتا يوق</string>
     <string name="sim_missing_summary" product="tablet">تاختا كومپىيوتېرىڭىزدا SIM كارتا بايقىمىدى. تاختا كومپىيوتېر ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
@@ -20,7 +25,31 @@
     <string name="date_time_summary">ئەگەر لازىم بولسا، ۋاقىت رايونى. چىسلا ۋە ۋاقىتنى تەڭشەڭ</string>
     <string name="setup_current_date">نۆۋەتتىكى چېسلا</string>
     <string name="setup_current_time">نۆۋەتتىكى ۋاقىت</string>
+    <string name="intro_restore_title">ئەپ ۋە سانلىق مەلۇماتنى ئەسلىگە قايتۇر</string>
+    <string name="intro_restore_subtitle">ئەگەر سىزدە <xliff:g id="name" example="LineageOS">%s</xliff:g> ياكى باشقا مەشغۇلات سىستېمىسىنىڭ Seedvault زاپىسى بولسا، بۇ جايدا ئۇنى ئەسلىگە قايتۇرالايسىز.</string>
+    <string name="intro_restore_button">زاپاستىن ئەسلىگە كەلتۈر</string>
     <string name="setup_location">ئورۇن مۇلازىمەتلىرى</string>
     <string name="location_access_summary"><b>سىز ھوقۇق بەرگەن ئەپنىڭ</b> سىزنىڭ ئورۇن ئۇچۇرىڭىزنى ئىشلىتىشكە يول قويۇش، بۇ بەلكىم سىزنىڭ ھازىرقى ۋە ئۆتمۈشتىكى ئۇچۇرىڭىزنى ئۆز ئىچىگە ئېلىشى مۇمكىن.</string>
+    <string name="location_agps_access_summary">ئورۇن ئوچۇق بولغاندا، <b>ئىنتېرنېتتىن سۈنئىي ھەمراھ قوشۇمچە سانلىق مەلۇماتىنى چۈشۈرىدۇ</b>، بۇ GPS نىڭ قوزغىلىش ئۈنۈمىنى زور دەرىجىدە ئۆستۈرىدۇ.</string>
+    <string name="update_recovery_title">Lineage ئەسلىگە كەلتۈرۈشنى يېڭىلا</string>
+    <string name="update_recovery_description">ھەر قېتىم يېڭىلانغاندىن كېيىن تۇنجى قېتىم قوزغالغاندا Lineage ئەسلىگە كەلتۈرۈشنى يېڭىلايدۇ.</string>
+    <string name="update_recovery_warning">ئەسلىگە كەلتۈرۈشنى تەڭشەش تاماملانغان ھامان يېڭىلايدۇ. ئەگەر ئۇنى ساقلاپ قالماقچى بولسىڭىز، بۇ ئىقتىدارنى چەكلەڭ.</string>
+    <string name="update_recovery_setting">Lineage يېڭىلاشنى مەشغۇلات سىستېمىسى بىلەن بىللە يېڭىلايدۇ</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_services">LineageOS ئىقتىدارلىرى</string>
+    <string name="services_pp_explanation">بۇ مۇلازىمەتلەر ئۈسكۈنىڭىزنىڭ ئىقتىدارىنى كېڭەيتىش ئۈچۈن خىزمەت قىلىدۇ. سانلىق مەلۇمات <xliff:g id="name" example="LineageOS">%1$s</xliff:g> نىڭ شەخسىيەت تۈزۈمىگە ئاساسەن ئىشلىتىلىدۇ.</string>
+    <string name="services_find_privacy_policy">باشقا ئۈسكۈنىدە <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> نى زىيارەت قىلىپ شەخسىيەت تۈزۈمىنى ئوقۇيالايسىز</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> نى ياخشىلاشقا ياردەملىشىڭ</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ئۆزلۈكىدىن دىياگنوز ۋە ئىشلىتىش سانلىق مەلۇماتىنى <xliff:g id="name" example="LineageOS">%2$s</xliff:g> غا يوللايدۇ. بۇ ئۇچۇرلارنى سىزنى پەرقلەندۈرۈشكە ئىشلىتىشكە بولمايدۇ، ئىجادكارلار قوشۇنىنىڭ توكدان ئۆمرى، ئەپ ياخشىلاش ۋە  يېڭى <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ئىقتىدارنى قوشۇش ئوخشاش ئىشلارغا ياردىمى بولىدۇ.</string>
     <string name="services_os_nav_keys_label"><b>مەۋھۇم كونۇپكىنى</b> ھەقىقىي كونۇپكىنىڭ ئورنىغا ئالماشتۇرۇش.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
+    <string name="setup_navigation">يولباشچى</string>
+    <string name="navigation_summary">ياقتۇرىدىغان يول باشلاش ئۇسۇلى تاللىنىدۇ</string>
+    <string name="gesture_navigation">قول ئىشارىتى يولباشچى</string>
+    <string name="navbar_navigation">3-توپچە يولباشچى</string>
+    <string name="hide_gesture_hint">يوشۇرۇن قول ئىشارىتى يولباشچى ئىشارىتى</string>
+    <string name="setup_theme">ئۆرنەك</string>
+    <string name="theme_summary">قاراڭغۇ ئۆرنەك قارا تەگلىك ئىشلىتىپ بەزى ئېكرانلاردا توكداننىڭ سەرپىياتىنى ئازايتىدۇ</string>
+    <string name="dark">قاراڭغۇ</string>
+    <string name="light">يورۇق</string>
 </resources>
