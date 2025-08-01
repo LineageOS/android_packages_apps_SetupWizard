@@ -25,22 +25,22 @@
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırkı tarix və saatı ayarlayın</string>
     <string name="setup_current_date">Hazırkı tarix</string>
     <string name="setup_current_time">Hazırkı vaxt</string>
-    <string name="intro_restore_title">Tətbiqləri və datanı bərpa et</string>
+    <string name="intro_restore_title">Tətbiqləri və veriləri bərpa et</string>
     <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> və ya başqa bir əməliyyat sistemindən Seedvault nüsxəniz varsa, onu burada bərpa edə bilərsiniz.</string>
     <string name="intro_restore_button">Nüsxədən bərpa et</string>
     <string name="setup_location">Yerləşmə xidmətləri</string>
     <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
-    <string name="location_agps_access_summary">Yerləşmə açıq olduqda, <b>peyk köməkçi datalarını internetdən endirin</b>, bu GPS-in başlatma performansını əhəmiyyətli dərəcədə artıra bilər.</string>
+    <string name="location_agps_access_summary">Yerləşmə açıq olduqda, <b>peyk köməkçi verilərini internetdən endirin</b>, bu GPS-in başlatma performansını əhəmiyyətli dərəcədə artıra bilər.</string>
     <string name="update_recovery_title">Lineage Geri qaytarma Rejimini Güncəllə</string>
     <string name="update_recovery_description">Hər güncəlləmədən sonrakı ilk açılışda Lineage Geri qaytarma rejimini güncəlləyir.</string>
     <string name="update_recovery_warning">Quraşdırma bitən kimi Geri qaytarma rejimi güncəllənəcək. Sağlam qalmasını istəyirsinizsə, bu özəlliyi sıradan çıxardın.</string>
     <string name="update_recovery_setting">ƏS ilə birgə Lineage Geri qaytarma rejimini də güncəllə</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS özəllikləri</string>
-    <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Datalar, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un gizlilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
     <string name="services_find_privacy_policy">Gizlilik siyasətini fərqli cihazda <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> ünvanını ziyarət edərək oxuya bilərsiniz</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
-    <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%2$s</xliff:g>-a diaqnostikanı və istifadə datasıını avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlar, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%2$s</xliff:g>-a diaqnostikanı və istifadə verilərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlar, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Hərəkət</string>
