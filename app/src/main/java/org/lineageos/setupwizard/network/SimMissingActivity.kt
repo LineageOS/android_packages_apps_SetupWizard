@@ -1,0 +1,42 @@
+/*
+ * SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+ * SPDX-FileCopyrightText: The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package org.lineageos.setupwizard.network
+
+import android.content.Intent
+import android.os.Bundle
+import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
+import org.lineageos.setupwizard.R
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity
+import org.lineageos.setupwizard.util.SetupWizardUtils
+
+class SimMissingActivity : BaseSetupWizardActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        if (!SetupWizardUtils.simMissing(this) || !SetupWizardUtils.hasTelephony(this)) {
+            // NetworkSetupActivity comes before us. DateTimeActivity comes after.
+            // If the user presses the back button on DateTimeActivity, we can only pass along
+            // that information to NetworkSetupActivity if we are still around. But if we finish
+            // here, we're gone, and NetworkSetupActivity will get whatever result we give here.
+            // We can't predict the future, but we can reasonably assume that the only way for
+            // NetworkSetupActivity to be reached later is if the user went backwards. So, we
+            // finish this activity faking that the user pressed the back button, which is required
+            // for subactivities like NetworkSetupActivity to work properly on backward navigation.
+            // TODO: Resolve all this.
+            finishAction(RESULT_SKIP, Intent().putExtra("onBackPressed", true))
+            return
+        }
+
+        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary))
+        setNextAllowed(true)
+    }
+
+    override fun getLayoutResId(): Int = R.layout.sim_missing_page
+    override fun getTitleResId(): Int = R.string.setup_sim_missing
+    override fun getIconResId(): Int = R.drawable.ic_sim
+}
