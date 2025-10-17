@@ -6,7 +6,10 @@
 android_app {
     name: "LineageSetupWizard",
 
-    srcs: ["src/**/*.java"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
 
     certificate: "platform",
     privileged: true,
