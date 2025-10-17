@@ -4,21 +4,20 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard
 
-import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
+import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 
-import android.annotation.Nullable;
-import android.content.Intent;
-import android.os.Bundle;
+import android.content.Intent
+import android.os.Bundle
 
-import org.lineageos.setupwizard.util.SetupWizardUtils;
+import org.lineageos.setupwizard.util.SetupWizardUtils
 
-public class SimMissingActivity extends BaseSetupWizardActivity {
+class SimMissingActivity : BaseSetupWizardActivity() {
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
         if (!SetupWizardUtils.simMissing(this) || !SetupWizardUtils.hasTelephony(this)) {
             // NetworkSetupActivity comes before us. DateTimeActivity comes after.
             // If the user presses the back button on DateTimeActivity, we can only pass along
@@ -29,26 +28,15 @@ public class SimMissingActivity extends BaseSetupWizardActivity {
             // finish this activity faking that the user pressed the back button, which is required
             // for subactivities like NetworkSetupActivity to work properly on backward navigation.
             // TODO: Resolve all this.
-            finishAction(RESULT_SKIP, new Intent().putExtra("onBackPressed", true));
-            return;
+            finishAction(RESULT_SKIP, Intent().putExtra("onBackPressed", true))
+            return
         }
-        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary));
-        setNextAllowed(true);
+
+        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary))
+        setNextAllowed(true)
     }
 
-    @Override
-    protected int getLayoutResId() {
-        return R.layout.sim_missing_page;
-    }
-
-    @Override
-    protected int getTitleResId() {
-        return R.string.setup_sim_missing;
-    }
-
-    @Override
-    protected int getIconResId() {
-        return R.drawable.ic_sim;
-    }
-
+    override fun getLayoutResId(): Int = R.layout.sim_missing_page
+    override fun getTitleResId(): Int = R.string.setup_sim_missing
+    override fun getIconResId(): Int = R.drawable.ic_sim
 }
