@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c462a086_576c7716",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2025-10-24T07:55:40Z",
+      "side": 1,
+      "message": "I am planning to eventually migrate to compose as a goal, but kotlin migration is a handful 😊",
+      "revId": "8befc9877b306511ff0b0eb1fe1277718f504bb0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
