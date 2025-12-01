@@ -22,7 +22,7 @@
     <string name="sim_missing_summary" product="tablet">Não foi encontrado um cartão SIM no seu tablet. Para colocar um cartão SIM, leia as instruções que vieram com seu dispositivo.</string>
     <string name="sim_missing_summary" product="default">Não foi encontrado um cartão SIM no seu celular. Para colocar um cartão SIM, leia as instruções que vieram com seu dispositivo.</string>
     <string name="setup_datetime">Data e hora</string>
-    <string name="date_time_summary">Defina o fuso horário e ajuste a data e a hora atual, se necessário</string>
+    <string name="date_time_summary">Configure o seu fuso horário e ajuste a data e a hora atual, se necessário</string>
     <string name="setup_current_date">Data atual</string>
     <string name="setup_current_time">Hora atual</string>
     <string name="intro_restore_title">Restaurar apps e dados</string>
