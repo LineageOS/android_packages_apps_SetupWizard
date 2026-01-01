@@ -5,13 +5,40 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="next">Imbeniente</string>
     <string name="skip">Brinca</string>
     <string name="start">Incumintza</string>
     <string name="done">Fatu</string>
     <string name="ok">AB</string>
+    <string name="loading">Abeta unu seg\u2026</string>
+    <string name="setup_welcome_message">Ti donamus sa benebènnida a <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
     <string name="setup_managed_profile_welcome_message">Cunfigura su profilu de traballu tuo</string>
+    <string name="emergency_call">Mutida de emergèntzia</string>
+    <string name="accessibility_settings">Cunfiguratziones de atzessibilidade</string>
     <string name="setup_locale">Limba</string>
+    <string name="sim_locale_changed">%1$s SIM rilevada</string>
+    <string name="setup_sim_missing">Mancat s\'ischeda SIM</string>
+    <string name="setup_datetime">Data e ora</string>
+    <string name="date_time_summary">Cunfigura sa zona orària e sa data e s\'ora atuales si serbit</string>
+    <string name="setup_current_date">Data atuale</string>
+    <string name="setup_current_time">Ora atuale</string>
+    <string name="intro_restore_title">Recùpera aplicatziones e datos</string>
     <string name="intro_restore_subtitle">Si tenes una còpia de seguresa cun Seedvault dae <xliff:g id="name" example="LineageOS">%s</xliff:g> o cale si siat àteru sistema operativu, dda podes recuperare inoghe.</string>
+    <string name="setup_location">Servìtzios de positzione</string>
+    <string name="update_recovery_title">Atualizatzione de recùperu de Lineage</string>
+    <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
+    <string name="setup_services">Funtziones LineageOS</string>
+    <string name="services_pp_explanation">Custos servìtzios funtzionant pro chi potzas crèschere is funtziones de su telèfonu. Is datos s\'ant a impreare de acordu cun sa polìtica de riservadesa de <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Podes lèghere sa polìtica de riservadesa in un\'àteru dispositivu in <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_help_improve_cm">Agiuda a megiorare <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> imbiende in automàticu is datos diagnòsticos e de consumu a s\'iscuadra de isvilupu de LineageOS. Custas infomatziones non si podent impreare pro t\'identificare, ma donant una manu a is iscuadras chi traballant subra de cosas che a sa durada de sa bateria, su rendimentu de is aplicatziones e funtziones noas de <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
+    <string name="services_os_nav_keys_label"><b>Imprea is teclas de navigatzione in ischermu</b> imbetzes de is teclas fìsicas.</string>
+    <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
+    <string name="setup_navigation">Navigatzione</string>
+    <string name="navigation_summary">Sèbera su mètodu de navigatzione preferidu</string>
+    <string name="gesture_navigation">Navigatzione gestuale</string>
+    <string name="navbar_navigation">Navigatzione de 3 butones</string>
+    <string name="hide_gesture_hint">Cua is cussìgios de sa navigatzione gestuale</string>
     <string name="setup_theme">Tema</string>
     <string name="theme_summary">Su tema iscuru impreat un\'isfundu nieddu pro agiudare chi sa bateria abarret biva prus a longu in tzertos ischermos</string>
     <string name="dark">Iscuru</string>
