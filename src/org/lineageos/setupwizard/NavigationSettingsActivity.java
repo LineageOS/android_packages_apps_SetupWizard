@@ -79,18 +79,14 @@ public class NavigationSettingsActivity extends BaseSetupWizardActivity {
         mHideGesturalHint = findViewById(R.id.hide_navigation_hint);
 
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
-            switch (checkedId) {
-                case R.id.radio_gesture:
-                    mSelection = NAV_BAR_MODE_GESTURAL_OVERLAY;
-                    navigationIllustration
-                            .setAnimation(R.raw.lottie_system_nav_fully_gestural);
-                    revealHintCheckbox();
-                    break;
-                case R.id.radio_sw_keys:
-                    mSelection = NAV_BAR_MODE_3BUTTON_OVERLAY;
-                    navigationIllustration.setAnimation(R.raw.lottie_system_nav_3_button);
-                    hideHintCheckBox();
-                    break;
+            if (checkedId == R.id.radio_gesture) {
+                mSelection = NAV_BAR_MODE_GESTURAL_OVERLAY;
+                navigationIllustration.setAnimation(R.raw.lottie_system_nav_fully_gestural);
+                revealHintCheckbox();
+            } else if (checkedId == R.id.radio_sw_keys) {
+                mSelection = NAV_BAR_MODE_3BUTTON_OVERLAY;
+                navigationIllustration.setAnimation(R.raw.lottie_system_nav_3_button);
+                hideHintCheckBox();
             }
 
             navigationIllustration.playAnimation();

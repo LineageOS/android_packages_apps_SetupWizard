@@ -25,13 +25,10 @@ public class ThemeSettingsActivity extends BaseSetupWizardActivity {
                 & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES)
                 ? R.id.radio_dark : R.id.radio_light);
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
-            switch (checkedId) {
-                case R.id.radio_dark:
-                    uiModeManager.setNightModeActivated(true);
-                    break;
-                case R.id.radio_light:
-                    uiModeManager.setNightModeActivated(false);
-                    break;
+            if (checkedId == R.id.radio_dark) {
+                uiModeManager.setNightModeActivated(true);
+            } else if (checkedId == R.id.radio_light) {
+                uiModeManager.setNightModeActivated(false);
             }
         });
     }
