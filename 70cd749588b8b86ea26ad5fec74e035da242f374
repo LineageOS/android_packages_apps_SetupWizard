@@ -34,6 +34,24 @@
       "parentUuid": "79ff2854_4dc3ad93",
       "revId": "70cd749588b8b86ea26ad5fec74e035da242f374",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da5cf1a9_5e2e0b13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-03-07T02:36:07Z",
+      "side": 1,
+      "message": "Update: optimise: true, can be added.\n\nshrink_resources, strips out the wizard scripts, hence the crash, we can add a tools:keep to keep them but that does not seem worth it, in my opinion",
+      "parentUuid": "8ad6a173_8bf745ce",
+      "revId": "70cd749588b8b86ea26ad5fec74e035da242f374",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
