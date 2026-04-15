@@ -47,4 +47,6 @@
     <string name="two_button_navigation">Llywio 2-fotwm</string>
     <string name="navbar_navigation">Llywio 3-botwm</string>
     <string name="hide_gesture_hint">Cuddio hintiau llywio ag ystumiau</string>
+    <string name="theme_summary">Mae\'r thema dywyll yn defnyddio cefndir du i\'r batri aros yn fyw yn hirach gyda rhai sgriniau</string>
+    <string name="dark">Tywyll</string>
 </resources>
