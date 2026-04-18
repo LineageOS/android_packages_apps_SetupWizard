@@ -11,6 +11,7 @@ import android.app.StatusBarManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -41,6 +42,7 @@ public class SetupWizardApp extends Application {
     public static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     public static final String ENABLE_RECOVERY_UPDATE = "enable_recovery_update";
     public static final String UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update";
+    public static final String IGNORE_SIM_LOCALE_PROP = "ro.setupwizard.ignore_sim_locale";
 
     public static final String NAVIGATION_OPTION_KEY = "navigation_option";
 
@@ -49,7 +51,7 @@ public class SetupWizardApp extends Application {
     private static StatusBarManager sStatusBarManager;
 
     private boolean mIsRadioReady = false;
-    private boolean mIgnoreSimLocale = false;
+    private boolean mIgnoreSimLocale = SystemProperties.getBoolean(IGNORE_SIM_LOCALE_PROP, false);
 
     private static final Bundle mSettingsBundle = new Bundle();
     private final Handler mHandler = new Handler(Looper.getMainLooper());
