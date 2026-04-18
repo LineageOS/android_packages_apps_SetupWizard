@@ -49,7 +49,8 @@ public class SetupWizardApp extends Application {
     private static StatusBarManager sStatusBarManager;
 
     private boolean mIsRadioReady = false;
-    private boolean mIgnoreSimLocale = false;
+    private boolean mIgnoreSimLocale =
+            android.os.SystemProperties.getBoolean("ro.setupwizard.ignore_sim_locale", false);
 
     private static final Bundle mSettingsBundle = new Bundle();
     private final Handler mHandler = new Handler(Looper.getMainLooper());
