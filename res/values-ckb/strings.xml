@@ -25,11 +25,11 @@
     <string name="date_time_summary">ناوچەی کاتیی خۆت دیاری بکە و ڕێکەوت و کاتی ئێستا ڕێکبخە ئەگەر پێویست بوو</string>
     <string name="setup_current_date">ڕێکەوتی ئێستا</string>
     <string name="setup_current_time">کاتی ئێستا</string>
-    <string name="intro_restore_title">گەڕانەوەی ئەپ و داتاکان</string>
-    <string name="intro_restore_subtitle">ئەگەر باکئەپی Seedvaultـت هەیە لە <xliff:g id="name" example="LineageOS">%s</xliff:g> یان هەر سیستمێکی تر، دەتوانیت لێرەدا بیگەڕێنیتەوە.</string>
-    <string name="intro_restore_button">گەڕانەوە لە باکئەپەوە</string>
+    <string name="intro_restore_title">گەڕانەوەی بەرنامە و داتاکان</string>
+    <string name="intro_restore_subtitle">ئەگەر باکبەرنامەی Seedvaultـت هەیە لە <xliff:g id="name" example="LineageOS">%s</xliff:g> یان هەر سیستمێکی تر، دەتوانیت لێرەدا بیگەڕێنیتەوە.</string>
+    <string name="intro_restore_button">گەڕانەوە لە باکبەرنامەوە</string>
     <string name="setup_location">خزمەتگوزارییەکانی شوێن</string>
-    <string name="location_access_summary"><b>مۆڵەت بدە بەو ئەپانەی داوایان کردووە</b> بۆ بەکارهێنانی شوێنەکەت. ئەمە ڕێگەیان پێ دەدات شوێنی ئێستا و ڕابردووت دیاری بکەن.</string>
+    <string name="location_access_summary"><b>مۆڵەت بدە بەو بەرنامانەی داوایان کردووە</b> بۆ بەکارهێنانی شوێنەکەت. ئەمە ڕێگەیان پێ دەدات شوێنی ئێستا و ڕابردووت دیاری بکەن.</string>
     <string name="location_agps_access_summary">کاتێک شوێن چالاکە، <b>داتای هاوکاری مانگی دەستکرد لە ئینتەرنێتەوە دابەزێنە</b>، کە دەبێتە هۆی باشترکردنی خێرایی دەستپێکردنی GPS.</string>
     <string name="update_recovery_title">نوێکردنەوەی ریکۆڤەری (Lineage Recovery)</string>
     <string name="update_recovery_description">دوای هەر نوێکردنەوەیەکی سیستم، ریکۆڤەریش نوێ دەکرێتەوە.</string>
@@ -40,7 +40,7 @@
     <string name="services_pp_explanation">ئەم خزمەتگوزارییانە بۆ فراوانکردنی تواناکانی ئامێرەکەت کار دەکەن. داتاکان بەپێی سیاسەتی پاراستنی نهێنیی <xliff:g id="name" example="LineageOS">%1$s</xliff:g> بەکاردەهێنرێن.</string>
     <string name="services_find_privacy_policy">دەتوانیت سیاسەتی پاراستنی نهێنی لە ئامێرێکی ترەوە بخوێنیتەوە بە سەردانکردنی <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">یارمەتیدان لە بەرەوپێشبردنی <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label">یارمەتیی <xliff:g id="name" example="LineageOS">%1$s</xliff:g> بدە بە ناردنی خۆکاری زانیارییەکانی دەستنیشانکردنی هەڵە و بەکارهێنان بۆ <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. ئەم زانیارییانە بۆ ناسینەوەی تۆ بەکارنایەن و یارمەتی تیمەکان دەدەن بۆ باشترکردنی تەمەنی باتری، کارکردنی ئەپەکان و تایبەتمەندییە نوێیەکانی <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
+    <string name="services_metrics_label">یارمەتیی <xliff:g id="name" example="LineageOS">%1$s</xliff:g> بدە بە ناردنی خۆکاری زانیارییەکانی دەستنیشانکردنی هەڵە و بەکارهێنان بۆ <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. ئەم زانیارییانە بۆ ناسینەوەی تۆ بەکارنایەن و یارمەتی تیمەکان دەدەن بۆ باشترکردنی تەمەنی باتری، کارکردنی بەرنامەکان و تایبەتمەندییە نوێیەکانی <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>بەکارهێنانی دوگمەکانی سەر ڕوونما</b> لە جیاتی دوگمەکانی ڕەقەکاڵا.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">ڕێدۆزی (Navigation)</string>
