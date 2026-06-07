@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7d1830f_5b5127eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-06-07T17:39:50Z",
+      "side": 1,
+      "message": "I guess this doesn\u0027t hurt to be merged standalone",
+      "revId": "46ff92a40ca027d8ecd0187d4d13e93cffb00de8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
