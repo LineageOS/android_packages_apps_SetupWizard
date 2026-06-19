@@ -22,8 +22,4 @@
         <attr name="internalLayout" format="reference" />
         <attr name="virtualButtonPressedDrawable" format="reference" />
     </declare-styleable>
-
-    <declare-styleable name="NavigationLayout">
-        <attr name="showSkipButton" format="boolean" />
-    </declare-styleable>
 </resources>
