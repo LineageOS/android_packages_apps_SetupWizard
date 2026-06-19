@@ -11,7 +11,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import com.google.android.setupcompat.template.FooterButtonStyleUtils
 import com.google.android.setupcompat.util.SystemBarHelper
 import org.lineageos.setupwizard.SetupWizardApp.Companion.ACTION_EMERGENCY_DIAL
 import org.lineageos.setupwizard.base.SubBaseActivity
@@ -28,8 +27,6 @@ class WelcomeActivity : SubBaseActivity() {
         onSetupStart()
         SystemBarHelper.setBackButtonVisible(window, false)
 
-        setNextText(R.string.start)
-
         val startButton: Button = findViewById(R.id.start)
         val emergButton: Button = findViewById(R.id.emerg_dialer)
         val skipButton: Button = findViewById(R.id.skip)
@@ -39,12 +36,8 @@ class WelcomeActivity : SubBaseActivity() {
             startSubactivity(Intent(ACTION_ACCESSIBILITY_SETTINGS))
         }
 
-        FooterButtonStyleUtils.applyPrimaryButtonPartnerResource(this, startButton, true)
-
         if (SetupWizardUtils.hasTelephony(this)) {
-            setSkipText(R.string.emergency_call)
             emergButton.setOnClickListener { startSubactivity(Intent(ACTION_EMERGENCY_DIAL)) }
-            FooterButtonStyleUtils.applySecondaryButtonPartnerResource(this, emergButton, true)
         } else {
             emergButton.visibility = View.GONE
         }

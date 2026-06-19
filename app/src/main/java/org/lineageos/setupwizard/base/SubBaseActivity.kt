@@ -94,6 +94,8 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
 
     override val titleResId: Int = R.string.loading
 
+    override val installFooterBar: Boolean = false
+
     companion object {
         private const val TAG = "SubBaseActivity"
     }
