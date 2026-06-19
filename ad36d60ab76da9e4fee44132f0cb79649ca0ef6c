@@ -88,6 +88,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "94c3dfad_262ed9d2",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/SetupWizardActivity.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-19T19:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1255bf53_e4481d6f",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a5c96307_95cd37d9",
@@ -101,6 +119,24 @@
       "writtenOn": "2026-06-19T17:11:08Z",
       "side": 1,
       "message": "should be able to use runCatching here and return default as false in place of the try/catch block",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13a98b3c_71f468f6",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/util/SetupWizardUtils.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-19T19:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a5c96307_95cd37d9",
       "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -122,6 +158,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c46880f_ec1011a9",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/util/SetupWizardUtils.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-19T19:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "343bdd62_ccfe059c",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8195ee8f_7a763e8c",
@@ -135,6 +189,24 @@
       "writtenOn": "2026-06-19T17:11:08Z",
       "side": 1,
       "message": "same",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65e86450_92f4395f",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/util/SetupWizardUtils.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-19T19:05:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8195ee8f_7a763e8c",
       "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
