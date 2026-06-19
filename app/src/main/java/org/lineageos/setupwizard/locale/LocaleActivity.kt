@@ -126,13 +126,13 @@ class LocaleActivity : BaseSetupWizardActivity() {
         mLanguagePicker.setOnValueChangedListener { _, _, _ -> setLocaleFromPicker() }
         mLanguagePicker.setOnScrollListener { _, scrollState ->
             if (scrollState == NumberPicker.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
-                mSetupWizardApp.setIgnoreSimLocale(true)
+                mSetupWizardApp.ignoreSimLocale = true
             }
         }
     }
 
     private fun setLocaleFromPicker() {
-        mSetupWizardApp.setIgnoreSimLocale(true)
+        mSetupWizardApp.ignoreSimLocale = true
         val i = mAdapterIndices[mLanguagePicker.value]
         val localLocaleInfo = mLocaleAdapter.getItem(i)!!
         onLocaleChanged(localLocaleInfo.locale)
@@ -146,7 +146,7 @@ class LocaleActivity : BaseSetupWizardActivity() {
     }
 
     private fun fetchAndUpdateSimLocale() {
-        if (mSetupWizardApp.ignoreSimLocale() || isDestroyed) {
+        if (mSetupWizardApp.ignoreSimLocale || isDestroyed) {
             return
         }
         if (mPaused) {
@@ -195,12 +195,12 @@ class LocaleActivity : BaseSetupWizardActivity() {
                 val finalLocale = locale
                 mHandler.post {
                     if (finalLocale != null && finalLocale != mCurrentLocale) {
-                        if (!mSetupWizardApp.ignoreSimLocale() && !isDestroyed) {
+                        if (!mSetupWizardApp.ignoreSimLocale && !isDestroyed) {
                             val label =
                                 getString(R.string.sim_locale_changed, finalLocale.displayName)
                             Toast.makeText(this@LocaleActivity, label, Toast.LENGTH_SHORT).show()
                             onLocaleChanged(finalLocale)
-                            mSetupWizardApp.setIgnoreSimLocale(true)
+                            mSetupWizardApp.ignoreSimLocale = true
                         }
                     }
                 }

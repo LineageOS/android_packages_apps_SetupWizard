@@ -10,7 +10,7 @@ import android.os.Parcel
 import android.os.Parcelable
 import android.util.Log
 import android.util.SparseArray
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 
 class WizardTransitions() : SparseArray<String?>(), Parcelable {
 
