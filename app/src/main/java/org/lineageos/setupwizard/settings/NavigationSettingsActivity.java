@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.settings;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY;
@@ -25,6 +25,9 @@ import com.airbnb.lottie.LottieAnimationView;
 
 import lineageos.providers.LineageSettings;
 
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class NavigationSettingsActivity extends BaseSetupWizardActivity {

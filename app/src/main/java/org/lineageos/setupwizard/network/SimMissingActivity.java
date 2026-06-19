@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.network;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
@@ -12,6 +12,8 @@ import android.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
 
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class SimMissingActivity extends BaseSetupWizardActivity {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

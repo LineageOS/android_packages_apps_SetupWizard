@@ -89,7 +89,7 @@
         </activity>
 
         <activity
-            android:name=".BluetoothSetupActivity"
+            android:name=".network.BluetoothSetupActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -115,7 +115,7 @@
         </activity>
 
         <activity
-            android:name=".LocaleActivity"
+            android:name=".locale.LocaleActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -128,7 +128,7 @@
         </activity>
 
         <activity
-            android:name=".DateTimeActivity"
+            android:name=".time.DateTimeActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -141,7 +141,7 @@
         </activity>
 
         <activity
-            android:name=".SimMissingActivity"
+            android:name=".network.SimMissingActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -154,7 +154,7 @@
         </activity>
 
         <activity
-            android:name=".NetworkSetupActivity"
+            android:name=".network.NetworkSetupActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -167,7 +167,7 @@
         </activity>
 
         <activity
-            android:name=".LocationSettingsActivity"
+            android:name=".privacy.LocationSettingsActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -180,7 +180,7 @@
         </activity>
 
         <activity
-            android:name=".UpdateRecoveryActivity"
+            android:name=".system.UpdateRecoveryActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -193,7 +193,7 @@
         </activity>
 
         <activity
-            android:name=".DeviceSpecificActivity"
+            android:name=".system.DeviceSpecificActivity"
             android:label="@string/activity_label_empty"
             android:immersive="true"
             android:exported="true"
@@ -205,7 +205,7 @@
         </activity>
 
         <activity
-            android:name=".LineageSettingsActivity"
+            android:name=".settings.LineageSettingsActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -218,7 +218,7 @@
         </activity>
 
         <activity
-            android:name=".NavigationSettingsActivity"
+            android:name=".settings.NavigationSettingsActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -231,7 +231,7 @@
         </activity>
 
         <activity
-            android:name=".BiometricActivity"
+            android:name=".user.BiometricActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -244,7 +244,7 @@
         </activity>
 
         <activity
-            android:name=".ScreenLockActivity"
+            android:name=".user.ScreenLockActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -270,7 +270,7 @@
         </activity>
 
         <activity
-            android:name=".ThemeSettingsActivity"
+            android:name=".settings.ThemeSettingsActivity"
             android:label="@string/activity_label_empty"
             android:configChanges="mcc|mnc"
             android:immersive="true"
@@ -297,7 +297,7 @@
         </activity>
 
         <receiver
-            android:name=".PartnerReceiver"
+            android:name=".receiver.PartnerReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.settings;
 
 import android.app.UiModeManager;
 import android.content.res.Configuration;
@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.widget.RadioGroup;
 
 import androidx.annotation.Nullable;
+
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 
 public class ThemeSettingsActivity extends BaseSetupWizardActivity {
 
