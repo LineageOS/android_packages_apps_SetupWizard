@@ -13,7 +13,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.google.android.setupcompat.template.FooterButtonStyleUtils
 import com.google.android.setupcompat.util.SystemBarHelper
-import org.lineageos.setupwizard.SetupWizardApp.ACTION_EMERGENCY_DIAL
+import org.lineageos.setupwizard.SetupWizardApp.Companion.ACTION_EMERGENCY_DIAL
 import org.lineageos.setupwizard.base.SubBaseActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
 
