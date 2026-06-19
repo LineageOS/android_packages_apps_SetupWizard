@@ -63,10 +63,10 @@ class LocaleActivity : BaseSetupWizardActivity() {
         SystemBarHelper.setBackButtonVisible(window, true)
         setNextText(R.string.next)
         languagePicker = findViewById(R.id.locale_list)
-        languagePicker.setNextRight(nextButton.id)
+        nextButton?.let { languagePicker.setNextRight(it.id) }
         languagePicker.requestFocus()
         if (resources.getBoolean(R.bool.config_isLargeNoTouch)) {
-            languagePicker.setOnClickListener { nextButton.performClick() }
+            languagePicker.setOnClickListener { nextButton?.performClick() }
         }
         loadLanguages()
     }

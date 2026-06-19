@@ -13,7 +13,6 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.view.View.INVISIBLE
 import android.widget.Button
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.ActivityResult
@@ -22,6 +21,8 @@ import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AppCompatActivity
 import com.android.settingslib.Utils
+import com.google.android.setupcompat.template.FooterBarMixin
+import com.google.android.setupcompat.template.FooterButton
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import com.google.android.setupcompat.util.WizardManagerHelper
 import com.google.android.setupdesign.GlifLayout
@@ -31,12 +32,12 @@ import com.google.android.setupdesign.util.ThemeHelper
 import org.lineageos.setupwizard.LOGV
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.util.SetupWizardUtils
-import org.lineageos.setupwizard.widget.NavigationLayout
-import org.lineageos.setupwizard.widget.NavigationLayout.NavigationBarListener
 
-abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListener {
+abstract class BaseSetupWizardActivity : AppCompatActivity() {
 
-    private var navigationBar: NavigationLayout? = null
+    private var footerBarMixin: FooterBarMixin? = null
+    private var nextFooterButton: FooterButton? = null
+
     private lateinit var nextIntentResultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,8 +48,9 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
         nextIntentResultLauncher =
             registerForActivityResult(StartDecoratedActivityForResult(), this::onNextIntentResult)
         initLayout()
-        navigationBar = findViewById<View>(R.id.navigation_bar) as? NavigationLayout
-        navigationBar?.setNavigationBarListener(this)
+        if (installFooterBar) {
+            setupFooterBar()
+        }
         onBackPressedDispatcher.addCallback(
             this,
             object : OnBackPressedCallback(true) {
@@ -119,8 +121,31 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
         }
     }
 
+    private fun setupFooterBar() {
+        val mixin = glifLayout.getMixin(FooterBarMixin::class.java)
+        footerBarMixin = mixin
+
+        nextFooterButton =
+            FooterButton.Builder(this)
+                .setText(R.string.next)
+                .setListener { onNextPressed() }
+                .setButtonType(FooterButton.ButtonType.NEXT)
+                .build()
+                .also { mixin.setPrimaryButton(it) }
+
+        if (showSkipButton) {
+            mixin.setSecondaryButton(
+                FooterButton.Builder(this)
+                    .setText(R.string.skip)
+                    .setListener { onSkipPressed() }
+                    .setButtonType(FooterButton.ButtonType.SKIP)
+                    .build()
+            )
+        }
+    }
+
     fun setNextAllowed(allowed: Boolean) {
-        navigationBar?.nextButton?.isEnabled = allowed
+        nextFooterButton?.isEnabled = allowed
     }
 
     protected open fun onNextPressed() {
@@ -132,27 +157,11 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     }
 
     protected fun setNextText(resId: Int) {
-        navigationBar?.nextButton?.setText(resId)
+        nextFooterButton?.setText(this, resId)
     }
 
-    val nextButton: Button
-        get() = navigationBar!!.nextButton
-
-    protected fun setSkipText(resId: Int) {
-        navigationBar?.skipButton?.setText(resId)
-    }
-
-    protected fun hideNextButton() {
-        navigationBar?.nextButton?.visibility = INVISIBLE
-    }
-
-    override fun onNavigateNext() {
-        onNextPressed()
-    }
-
-    override fun onSkip() {
-        onSkipPressed()
-    }
+    val nextButton: Button?
+        get() = footerBarMixin?.primaryButtonView
 
     protected fun onSetupStart() {
         if (SetupWizardUtils.isOwner()) {
@@ -245,6 +254,10 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     protected open val titleResId = -1
 
     protected open val iconResId = -1
+
+    protected open val installFooterBar = true
+
+    protected open val showSkipButton = false
 
     protected open fun applyForwardTransition() {
         TransitionHelper.applyForwardTransition(this, DEFAULT_TRANSITION, true)

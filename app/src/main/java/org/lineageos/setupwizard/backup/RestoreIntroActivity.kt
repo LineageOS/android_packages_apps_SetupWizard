@@ -47,6 +47,10 @@ class RestoreIntroActivity : SubBaseActivity() {
 
     override val iconResId = R.drawable.ic_restore
 
+    override val installFooterBar = true
+
+    override val showSkipButton = true
+
     private fun launchRestore() {
         startSubactivity(Intent(ACTION_RESTORE_FROM_BACKUP))
     }

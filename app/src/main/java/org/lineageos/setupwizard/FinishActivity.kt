@@ -17,6 +17,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.ViewGroup.MarginLayoutParams
+import android.widget.Button
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.setupcompat.util.SystemBarHelper
@@ -29,6 +30,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     private val handler = Handler(Looper.getMainLooper())
 
     private lateinit var rootView: View
+    private lateinit var startButton: Button
     private var edgeToEdgeWallpaperBackgroundTheme: Resources.Theme? = null
 
     private enum class FinishState {
@@ -51,7 +53,8 @@ class FinishActivity : BaseSetupWizardActivity() {
         if (LOGV) {
             logActivityState("onCreate savedInstanceState=$savedInstanceState")
         }
-        setNextText(R.string.start)
+        startButton = findViewById(R.id.start)
+        startButton.setOnClickListener { onNextPressed() }
 
         // Edge-to-edge. Needed for the background view to fill the full screen.
         val window = window
@@ -90,7 +93,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     }
 
     private fun disableNavigation() {
-        hideNextButton()
+        startButton.visibility = View.INVISIBLE
         SystemBarHelper.setBackButtonVisible(window, false)
     }
 
@@ -113,6 +116,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     override val layoutResId = R.layout.finish_activity
 
+    override val installFooterBar = false
+
     override fun getTheme(): Resources.Theme {
         val theme = super.getTheme()
         if (finishState == FinishState.NONE) {
@@ -124,7 +129,7 @@ class FinishActivity : BaseSetupWizardActivity() {
                 .also { edgeToEdgeWallpaperBackgroundTheme = it }
     }
 
-    override fun onNavigateNext() {
+    override fun onNextPressed() {
         when (finishState) {
             FinishState.NONE -> relaunchAndRunAnimation()
             else -> Log.e(TAG, "Unexpected state $finishState when navigating next")
