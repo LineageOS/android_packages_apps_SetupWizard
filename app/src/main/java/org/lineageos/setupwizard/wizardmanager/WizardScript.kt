@@ -20,7 +20,7 @@ import java.io.InputStream
 import java.util.ArrayList
 import java.util.Collections
 import java.util.HashMap
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 
