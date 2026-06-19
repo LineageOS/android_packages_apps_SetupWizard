@@ -13,7 +13,7 @@ import android.util.Log
 import com.android.internal.util.XmlUtils
 import java.io.IOException
 import java.net.URISyntaxException
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 
