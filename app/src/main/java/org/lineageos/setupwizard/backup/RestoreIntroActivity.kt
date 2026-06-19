@@ -29,7 +29,7 @@ class RestoreIntroActivity : SubBaseActivity() {
         val data = activityResult.data
         when {
             resultCode != RESULT_CANCELED -> nextAction(resultCode, data)
-            mIsSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
+            isSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
             data?.getBooleanExtra("onBackPressed", false) == true -> onStartSubactivity()
         }
     }
@@ -42,14 +42,13 @@ class RestoreIntroActivity : SubBaseActivity() {
         launchRestore()
     }
 
-    override fun getLayoutResId(): Int = R.layout.intro_restore_activity
+    override val layoutResId: Int = R.layout.intro_restore_activity
 
-    override fun getTitleResId(): Int = R.string.intro_restore_title
+    override val titleResId: Int = R.string.intro_restore_title
 
-    override fun getIconResId(): Int = R.drawable.ic_restore
+    override val iconResId: Int = R.drawable.ic_restore
 
     private fun launchRestore() {
-        val intent: Intent = Intent(ACTION_RESTORE_FROM_BACKUP)
-        startSubactivity(intent)
+        startSubactivity(Intent(ACTION_RESTORE_FROM_BACKUP))
     }
 }

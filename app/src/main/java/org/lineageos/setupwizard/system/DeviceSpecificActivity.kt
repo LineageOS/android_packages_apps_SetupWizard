@@ -5,7 +5,6 @@
 
 package org.lineageos.setupwizard.system
 
-import android.content.ComponentName
 import android.content.Intent
 import org.lineageos.setupwizard.base.SubBaseActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
@@ -14,8 +13,7 @@ class DeviceSpecificActivity : SubBaseActivity() {
 
     override fun onStartSubactivity() {
         val intent = Intent(ACTION_SETUP_DEVICE)
-        val name: ComponentName? = intent.resolveActivity(packageManager)
-        if (name != null) {
+        if (intent.resolveActivity(packageManager) != null) {
             startSubactivity(intent)
         } else {
             SetupWizardUtils.disableComponent(this, DeviceSpecificActivity::class.java)
