@@ -33,6 +33,24 @@
       "message": "Should be able to just pick https://review.lineageos.org/c/LineageOS/android_packages_apps_EuiccPolicy/+/468145",
       "revId": "d7205480e9ae425007a64dbdb36f6062a2823832",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac7f8874_ed76a3ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-06-19T16:40:55Z",
+      "side": 1,
+      "message": "Ill do that, but I just did the default android studio formatting, Ill add pre-commit",
+      "parentUuid": "78e77373_ebe5dfd9",
+      "revId": "d7205480e9ae425007a64dbdb36f6062a2823832",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
