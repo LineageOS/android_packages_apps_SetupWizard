@@ -96,9 +96,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/emerg_dialer"
-                style="@style/SudGlifButton.Secondary"
+                style="@style/SucGlifMaterialButton.Secondary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/emergency_call" />
@@ -108,9 +108,9 @@
                 android:layout_height="0.0dip"
                 android:layout_weight="1.0" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/skip"
-                style="@style/SudGlifButton.Secondary"
+                style="@style/SucGlifMaterialButton.Secondary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/skip"
@@ -121,9 +121,9 @@
                 android:layout_height="0.0dip"
                 android:layout_weight="1.0" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@id/start"
-                style="@style/SudGlifButton.Primary"
+                style="@style/SucGlifMaterialButton.Primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/start" />
