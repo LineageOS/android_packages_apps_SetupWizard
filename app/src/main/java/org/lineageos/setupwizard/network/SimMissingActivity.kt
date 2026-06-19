@@ -36,9 +36,9 @@ class SimMissingActivity : BaseSetupWizardActivity() {
         setNextAllowed(true)
     }
 
-    override fun getLayoutResId(): Int = R.layout.sim_missing_page
+    override fun getLayoutResId() = R.layout.sim_missing_page
 
-    override fun getTitleResId(): Int = R.string.setup_sim_missing
+    override fun getTitleResId() = R.string.setup_sim_missing
 
-    override fun getIconResId(): Int = R.drawable.ic_sim
+    override fun getIconResId() = R.drawable.ic_sim
 }

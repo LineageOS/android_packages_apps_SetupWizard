@@ -90,9 +90,9 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
         }
     }
 
-    override fun getLayoutResId(): Int = R.layout.setup_loading_page
+    override fun getLayoutResId() = R.layout.setup_loading_page
 
-    override fun getTitleResId(): Int = R.string.loading
+    override fun getTitleResId() = R.string.loading
 
     companion object {
         private const val TAG = "SubBaseActivity"

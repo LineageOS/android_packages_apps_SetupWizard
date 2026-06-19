@@ -67,9 +67,9 @@ class WelcomeActivity : SubBaseActivity() {
 
     override fun onBackPressed() {}
 
-    override fun getLayoutResId(): Int = R.layout.welcome_activity
+    override fun getLayoutResId() = R.layout.welcome_activity
 
-    override fun getTitleResId(): Int = -1
+    override fun getTitleResId() = -1
 
     companion object {
         private const val ACTION_ACCESSIBILITY_SETTINGS =
