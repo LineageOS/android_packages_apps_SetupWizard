@@ -69,6 +69,24 @@
       "parentUuid": "ac7f8874_ed76a3ee",
       "revId": "d7205480e9ae425007a64dbdb36f6062a2823832",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18e1f4d0_01fa6574",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-19T16:49:57Z",
+      "side": 1,
+      "message": "Use \u0027pre-commit run\u0027 after each commit in the chain. we use ktfmt which has different formatting standards than AS",
+      "parentUuid": "b7f2862d_ea19f455",
+      "revId": "d7205480e9ae425007a64dbdb36f6062a2823832",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
