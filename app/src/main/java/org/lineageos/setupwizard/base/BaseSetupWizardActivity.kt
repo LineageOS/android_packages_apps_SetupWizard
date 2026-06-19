@@ -33,7 +33,7 @@ import com.google.android.setupdesign.transition.TransitionHelper
 import com.google.android.setupdesign.util.ThemeHelper
 
 import org.lineageos.setupwizard.R
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.lineageos.setupwizard.util.SetupWizardUtils
 import org.lineageos.setupwizard.widget.NavigationLayout
 import org.lineageos.setupwizard.widget.NavigationLayout.NavigationBarListener
