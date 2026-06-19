@@ -11,7 +11,7 @@ import android.os.Bundle
 import androidx.activity.result.ActivityResult
 import com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND
 import org.lineageos.setupwizard.R
-import org.lineageos.setupwizard.SetupWizardApp.ACTION_RESTORE_FROM_BACKUP
+import org.lineageos.setupwizard.SetupWizardApp.Companion.ACTION_RESTORE_FROM_BACKUP
 import org.lineageos.setupwizard.base.SubBaseActivity
 
 class RestoreIntroActivity : SubBaseActivity() {
