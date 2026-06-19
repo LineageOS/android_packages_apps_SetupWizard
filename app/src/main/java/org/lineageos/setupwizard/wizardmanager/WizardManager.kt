@@ -14,7 +14,6 @@ import android.os.Bundle
 import android.util.Log
 import com.google.android.setupcompat.util.ResultCodes
 import com.google.android.setupcompat.util.WizardManagerHelper.ACTION_NEXT
-import java.util.HashMap
 import org.lineageos.setupwizard.SetupWizardApp.Companion.ACTION_LOAD
 import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_ACTION_ID
 import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_RESULT_CODE
@@ -111,7 +110,7 @@ class WizardManager : Activity() {
 
     private fun load(scriptUri: String, extras: Intent?) {
         val wizardScript = getWizardScript(this, scriptUri)
-        var wizardAction: WizardAction? = wizardScript.getFirstAction()
+        var wizardAction: WizardAction? = wizardScript.firstAction
 
         while (wizardAction != null) {
             if (isActionAvailable(this, wizardAction)) {
@@ -129,7 +128,7 @@ class WizardManager : Activity() {
         } else {
             Log.e(
                 TAG,
-                "load could not resolve first action scriptUri=$scriptUri actionId=${wizardScript.getFirstActionId()}",
+                "load could not resolve first action scriptUri=$scriptUri actionId=${wizardScript.firstActionId}",
             )
             exit(scriptUri)
         }
@@ -149,14 +148,14 @@ class WizardManager : Activity() {
 
     private fun exit(scriptUri: String) {
         if (LOGV) Log.v(TAG, "exit scriptUri=$scriptUri")
-        sWizardScripts.remove(scriptUri)
+        wizardScripts.remove(scriptUri)
         SetupWizardUtils.disableComponent(this, WizardManager::class.java)
     }
 
     companion object {
         private val TAG: String = WizardManager::class.java.simpleName
 
-        private val sWizardScripts = HashMap<String, WizardScript>()
+        private val wizardScripts = mutableMapOf<String, WizardScript>()
 
         private fun checkNextAction(
             context: Context,
@@ -191,27 +190,23 @@ class WizardManager : Activity() {
             return wizardAction
         }
 
-        private fun isActionAvailable(context: Context, action: WizardAction): Boolean {
-            return isIntentAvailable(context, action.getIntent())
-        }
+        private fun isActionAvailable(context: Context, action: WizardAction): Boolean =
+            isIntentAvailable(context, action.getIntent())
 
         private fun isIntentAvailable(context: Context, intent: Intent?): Boolean {
             if (intent == null) return false
-            val pm = context.packageManager
-            val list = pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY)
-            return list.isNotEmpty()
+            return context.packageManager
+                .queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY)
+                .isNotEmpty()
         }
 
-        private fun getWizardScript(context: Context, scriptUri: String): WizardScript {
-            val cached = sWizardScripts[scriptUri]
-            if (cached != null) return cached
-            val loaded = WizardScript.loadFromUri(context, scriptUri)
-            if (loaded == null) {
-                Log.e(TAG, "Unable to load WizardScript: $scriptUri")
-                throw IllegalStateException("Unable to load WizardScript: $scriptUri")
+        private fun getWizardScript(context: Context, scriptUri: String): WizardScript =
+            wizardScripts.getOrPut(scriptUri) {
+                WizardScript.loadFromUri(context, scriptUri)
+                    ?: run {
+                        Log.e(TAG, "Unable to load WizardScript: $scriptUri")
+                        throw IllegalStateException("Unable to load WizardScript: $scriptUri")
+                    }
             }
-            sWizardScripts[scriptUri] = loaded
-            return loaded
-        }
     }
 }

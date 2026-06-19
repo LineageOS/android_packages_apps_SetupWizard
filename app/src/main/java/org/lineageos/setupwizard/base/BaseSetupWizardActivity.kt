@@ -37,14 +37,14 @@ import org.lineageos.setupwizard.widget.NavigationLayout.NavigationBarListener
 abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListener {
 
     private var mNavigationBar: NavigationLayout? = null
-    private lateinit var mNextIntentResultLauncher: ActivityResultLauncher<Intent>
+    private lateinit var nextIntentResultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (LOGV) {
             logActivityState("onCreate savedInstanceState=$savedInstanceState")
         }
         super.onCreate(savedInstanceState)
-        mNextIntentResultLauncher =
+        nextIntentResultLauncher =
             registerForActivityResult(StartDecoratedActivityForResult(), this::onNextIntentResult)
         initLayout()
         mNavigationBar = getNavigationBar()
@@ -92,7 +92,7 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     override fun onDestroy() {
         if (LOGV) logActivityState("onDestroy")
         super.onDestroy()
-        mNextIntentResultLauncher.unregister()
+        nextIntentResultLauncher.unregister()
     }
 
     override fun onAttachedToWindow() {
@@ -188,12 +188,10 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
         if (LOGV) {
             Log.v(TAG, "nextAction resultCode=$resultCode data=$data this=$this")
         }
-        if (resultCode == RESULT_CANCELED) {
-            throw IllegalArgumentException("Cannot call nextAction with RESULT_CANCELED")
-        }
+        require(resultCode != RESULT_CANCELED) { "Cannot call nextAction with RESULT_CANCELED" }
         setResult(resultCode, data)
-        val intent = WizardManagerHelper.getNextIntent(getIntent(), resultCode, data)
-        mNextIntentResultLauncher.launch(intent)
+        val nextIntent = WizardManagerHelper.getNextIntent(intent, resultCode, data)
+        nextIntentResultLauncher.launch(nextIntent)
     }
 
     /** Adorn the Intent with Setup Wizard-related extras. */
@@ -215,10 +213,8 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
         }
     }
 
-    protected fun tryEnablingWifi(): Boolean {
-        val wifiManager = getSystemService(WifiManager::class.java)
-        return wifiManager != null && wifiManager.setWifiEnabled(true)
-    }
+    protected fun tryEnablingWifi(): Boolean =
+        getSystemService(WifiManager::class.java)?.setWifiEnabled(true) ?: false
 
     private fun isFirstRun(): Boolean = true
 
@@ -227,16 +223,16 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     }
 
     private fun initLayout() {
-        if (getLayoutResId() != -1) {
-            setContentView(getLayoutResId())
+        if (layoutResId != -1) {
+            setContentView(layoutResId)
         }
-        if (getTitleResId() != -1) {
-            val headerText = TextUtils.expandTemplate(getText(getTitleResId()))
+        if (titleResId != -1) {
+            val headerText = TextUtils.expandTemplate(getText(titleResId))
             getGlifLayout().setHeaderText(headerText)
         }
-        if (getIconResId() != -1) {
+        if (iconResId != -1) {
             val layout = getGlifLayout()
-            val icon: Drawable = getDrawable(getIconResId())!!.mutate()
+            val icon: Drawable = getDrawable(iconResId)!!.mutate()
             icon.setTintList(Utils.getColorAccent(layout.context))
             layout.setIcon(icon)
         }
@@ -244,11 +240,11 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
 
     protected fun getGlifLayout(): GlifLayout = requireViewById(R.id.setup_wizard_layout)
 
-    protected open fun getLayoutResId(): Int = -1
+    protected open val layoutResId: Int = -1
 
-    protected open fun getTitleResId(): Int = -1
+    protected open val titleResId: Int = -1
 
-    protected open fun getIconResId(): Int = -1
+    protected open val iconResId: Int = -1
 
     protected open fun applyForwardTransition() {
         TransitionHelper.applyForwardTransition(this, DEFAULT_TRANSITION, true)
@@ -261,13 +257,13 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     protected inner class StartDecoratedActivityForResult :
         ActivityResultContract<Intent, ActivityResult>() {
 
-        private val mWrappedContract = StartActivityForResult()
+        private val wrappedContract = StartActivityForResult()
 
         override fun createIntent(context: Context, input: Intent): Intent =
-            decorateIntent(mWrappedContract.createIntent(context, input))
+            decorateIntent(wrappedContract.createIntent(context, input))
 
         override fun parseResult(resultCode: Int, intent: Intent?): ActivityResult =
-            mWrappedContract.parseResult(resultCode, intent)
+            wrappedContract.parseResult(resultCode, intent)
     }
 
     companion object {

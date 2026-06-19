@@ -34,9 +34,9 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
         }
     }
 
-    override fun getLayoutResId(): Int = R.layout.setup_theme
+    override val layoutResId: Int = R.layout.setup_theme
 
-    override fun getTitleResId(): Int = R.string.setup_theme
+    override val titleResId: Int = R.string.setup_theme
 
-    override fun getIconResId(): Int = R.drawable.ic_theme
+    override val iconResId: Int = R.drawable.ic_theme
 }

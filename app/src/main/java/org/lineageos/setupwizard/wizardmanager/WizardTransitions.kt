@@ -20,9 +20,7 @@ class WizardTransitions() : SparseArray<String?>(), Parcelable {
         mDefaultAction = action
     }
 
-    fun getAction(resultCode: Int): String? {
-        return get(resultCode, mDefaultAction)
-    }
+    fun getAction(resultCode: Int): String? = get(resultCode, mDefaultAction)
 
     override fun put(key: Int, value: String?) {
         if (LOGV) {
@@ -31,9 +29,7 @@ class WizardTransitions() : SparseArray<String?>(), Parcelable {
         super.put(key, value)
     }
 
-    override fun toString(): String {
-        return super.toString() + " mDefaultAction: " + mDefaultAction
-    }
+    override fun toString(): String = "${super.toString()} mDefaultAction: $mDefaultAction"
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
