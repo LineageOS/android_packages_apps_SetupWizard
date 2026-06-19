@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12473070_494ebfaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-19T17:11:08Z",
+      "side": 1,
+      "message": "Just a few nitpicks after a quick review, since we are switching to kotlin we should use their idioms",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1255bf53_e4481d6f",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/SetupWizardActivity.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-19T17:11:08Z",
+      "side": 1,
+      "message": "Move this down and use apply block for the intent putExtra/flags/setPackage",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5c96307_95cd37d9",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/util/SetupWizardUtils.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-19T17:11:08Z",
+      "side": 1,
+      "message": "should be able to use runCatching here and return default as false in place of the try/catch block",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "343bdd62_ccfe059c",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/util/SetupWizardUtils.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-19T17:11:08Z",
+      "side": 1,
+      "message": "use runCatching here as well",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8195ee8f_7a763e8c",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/util/SetupWizardUtils.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-06-19T17:11:08Z",
+      "side": 1,
+      "message": "same",
+      "revId": "ad36d60ab76da9e4fee44132f0cb79649ca0ef6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
