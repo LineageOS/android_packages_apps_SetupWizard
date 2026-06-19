@@ -8,12 +8,12 @@ package org.lineageos.setupwizard.wizardmanager
 
 import com.google.android.setupcompat.util.WizardManagerHelper.ACTION_NEXT
 
-import org.lineageos.setupwizard.SetupWizardApp.ACTION_LOAD
-import org.lineageos.setupwizard.SetupWizardApp.EXTRA_ACTION_ID
-import org.lineageos.setupwizard.SetupWizardApp.EXTRA_RESULT_CODE
-import org.lineageos.setupwizard.SetupWizardApp.EXTRA_SCRIPT_URI
-import org.lineageos.setupwizard.SetupWizardApp.EXTRA_WIZARD_BUNDLE
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.ACTION_LOAD
+import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_ACTION_ID
+import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_RESULT_CODE
+import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_SCRIPT_URI
+import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_WIZARD_BUNDLE
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 
 import android.app.Activity
 import android.content.Context

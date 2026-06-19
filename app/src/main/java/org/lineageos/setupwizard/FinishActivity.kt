@@ -24,7 +24,7 @@ import androidx.core.view.WindowInsetsCompat
 
 import com.google.android.setupcompat.util.SystemBarHelper
 
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
 

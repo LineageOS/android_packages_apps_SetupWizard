@@ -6,7 +6,7 @@
 
 package org.lineageos.setupwizard.wizardmanager
 
-import org.lineageos.setupwizard.SetupWizardApp.LOGV
+import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 
 import android.os.Parcel
 import android.os.Parcelable
