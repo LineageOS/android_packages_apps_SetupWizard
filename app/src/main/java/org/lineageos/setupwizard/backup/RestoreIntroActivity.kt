@@ -18,7 +18,7 @@ class RestoreIntroActivity : SubBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        glifLayout.setDescriptionText(
+        getGlifLayout().setDescriptionText(
             getString(R.string.intro_restore_subtitle, getString(R.string.os_name))
         )
     }
