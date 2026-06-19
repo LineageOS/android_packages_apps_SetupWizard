@@ -41,11 +41,11 @@ class RestoreIntroActivity : SubBaseActivity() {
         launchRestore()
     }
 
-    override fun getLayoutResId(): Int = R.layout.intro_restore_activity
+    override fun getLayoutResId() = R.layout.intro_restore_activity
 
-    override fun getTitleResId(): Int = R.string.intro_restore_title
+    override fun getTitleResId() = R.string.intro_restore_title
 
-    override fun getIconResId(): Int = R.drawable.ic_restore
+    override fun getIconResId() = R.drawable.ic_restore
 
     private fun launchRestore() {
         val intent: Intent = Intent(ACTION_RESTORE_FROM_BACKUP)
