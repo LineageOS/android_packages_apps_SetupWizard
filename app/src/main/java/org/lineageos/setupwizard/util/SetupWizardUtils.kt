@@ -93,27 +93,22 @@ object SetupWizardUtils {
 
     fun disableStatusBar(context: Context): StatusBarManager? {
         val statusBarManager = context.getSystemService(StatusBarManager::class.java)
-        if (statusBarManager != null) {
+        statusBarManager?.also {
             if (LOGV) {
                 Log.v(SetupWizardApp.TAG, "Disabling status bar")
             }
-            statusBarManager.setDisabledForSetup(true)
-        } else {
-            Log.w(SetupWizardApp.TAG, "Skip disabling status bar - could not get StatusBarManager")
-        }
+            it.setDisabledForSetup(true)
+        } ?: Log.w(SetupWizardApp.TAG, "Skip disabling status bar - could not get StatusBarManager")
         return statusBarManager
     }
 
     fun enableStatusBar() {
-        val statusBarManager = SetupWizardApp.getStatusBarManager()
-        if (statusBarManager != null) {
+        SetupWizardApp.statusBarManager?.also {
             if (LOGV) {
                 Log.v(SetupWizardApp.TAG, "Enabling status bar")
             }
-            statusBarManager.setDisabledForSetup(false)
-        } else {
-            Log.w(SetupWizardApp.TAG, "Skip enabling status bar - could not get StatusBarManager")
-        }
+            it.setDisabledForSetup(false)
+        } ?: Log.w(SetupWizardApp.TAG, "Skip enabling status bar - could not get StatusBarManager")
     }
 
     fun hasGMS(context: Context): Boolean {
@@ -248,7 +243,7 @@ object SetupWizardUtils {
     }
 
     private fun handleEnableMetrics(context: Context) {
-        val privacyData = SetupWizardApp.getSettingsBundle()
+        val privacyData = SetupWizardApp.settingsBundle
         if (privacyData.containsKey(KEY_SEND_METRICS)) {
             LineageSettings.Secure.putInt(
                 context.contentResolver,
@@ -259,14 +254,14 @@ object SetupWizardUtils {
     }
 
     private fun handleNavKeys(context: Context) {
-        val settingsBundle = SetupWizardApp.getSettingsBundle()
+        val settingsBundle = SetupWizardApp.settingsBundle
         if (settingsBundle.containsKey(DISABLE_NAV_KEYS)) {
             writeDisableNavkeysOption(context, settingsBundle.getBoolean(DISABLE_NAV_KEYS))
         }
     }
 
     private fun handleRecoveryUpdate() {
-        val settingsBundle = SetupWizardApp.getSettingsBundle()
+        val settingsBundle = SetupWizardApp.settingsBundle
         if (settingsBundle.containsKey(ENABLE_RECOVERY_UPDATE)) {
             val update = settingsBundle.getBoolean(ENABLE_RECOVERY_UPDATE)
             SystemProperties.set(UPDATE_RECOVERY_PROP, update.toString())
@@ -274,7 +269,7 @@ object SetupWizardUtils {
     }
 
     private fun handleNavigationOption() {
-        val settingsBundle = SetupWizardApp.getSettingsBundle()
+        val settingsBundle = SetupWizardApp.settingsBundle
         if (settingsBundle.containsKey(NAVIGATION_OPTION_KEY)) {
             val overlayManager =
                 IOverlayManager.Stub.asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE))
@@ -316,21 +311,16 @@ object SetupWizardUtils {
         if (tm == null || sm == null) {
             return false
         }
-        val subs = sm.activeSubscriptionInfoList
-        if (subs != null) {
-            for (sub in subs) {
+        val hasGsmSim =
+            sm.activeSubscriptionInfoList?.any { sub ->
                 val simState = tm.getSimState(sub.simSlotIndex)
                 if (LOGV) {
                     Log.v(TAG, "getSimState(${sub.subscriptionId}) == $simState")
                 }
-                if (simState != -1) {
-                    val subTm = tm.createForSubscriptionId(sub.subscriptionId)
-                    if (subTm.currentPhoneType == PHONE_TYPE_GSM) {
-                        return false
-                    }
-                }
-            }
-        }
-        return true
+                simState != -1 &&
+                    tm.createForSubscriptionId(sub.subscriptionId).currentPhoneType ==
+                        PHONE_TYPE_GSM
+            } ?: false
+        return !hasGsmSim
     }
 }

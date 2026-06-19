@@ -16,7 +16,7 @@ import org.lineageos.setupwizard.SetupWizardApp
 
 abstract class SubBaseActivity : BaseSetupWizardActivity() {
 
-    protected var mIsSubactivityNotFound: Boolean = false
+    protected var isSubactivityNotFound: Boolean = false
 
     protected abstract fun onStartSubactivity()
 
@@ -24,7 +24,7 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (SetupWizardApp.LOGV) {
-            Log.d(TAG, "onCreate savedInstanceState=" + savedInstanceState)
+            Log.d(TAG, "onCreate savedInstanceState=$savedInstanceState")
         }
         super.onCreate(savedInstanceState)
 
@@ -66,7 +66,7 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
         runCatching { subactivityResultLauncher.launch(subactivityIntent) }
             .onFailure {
                 Log.w(TAG, "activity not found; start next screen and finish; intent=$parentIntent")
-                mIsSubactivityNotFound = true
+                isSubactivityNotFound = true
                 finishAction(RESULT_ACTIVITY_NOT_FOUND)
             }
     }
@@ -84,15 +84,15 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
         val data = activityResult.data
         when {
             resultCode != RESULT_CANCELED -> nextAction(resultCode, data)
-            mIsSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
+            isSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
             data?.getBooleanExtra("onBackPressed", false) == true -> onStartSubactivity()
             else -> finishAction(RESULT_CANCELED)
         }
     }
 
-    override fun getLayoutResId(): Int = R.layout.setup_loading_page
+    override val layoutResId: Int = R.layout.setup_loading_page
 
-    override fun getTitleResId(): Int = R.string.loading
+    override val titleResId: Int = R.string.loading
 
     companion object {
         private const val TAG = "SubBaseActivity"
