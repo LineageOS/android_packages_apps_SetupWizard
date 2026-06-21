@@ -21,13 +21,14 @@
             android:layout_height="0dp"
             android:layout_weight="2" />
 
-        <ImageView
+        <com.google.android.setupdesign.view.SudLottieAnimationView
             android:id="@+id/brand_logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/logo" />
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie_welcome" />
 
         <Space
             android:layout_width="match_parent"
