@@ -16,6 +16,23 @@
       "message": "any objections? not like we care about third party recoveries anyway as seen in the mentioned charter change.",
       "revId": "26b95a305483c50291d819ecd04215c08b603401",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32bb530b_fa09a708",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-08T18:05:59Z",
+      "side": 1,
+      "message": "For 24.0 - but I think it\u0027s about time.",
+      "revId": "26b95a305483c50291d819ecd04215c08b603401",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
