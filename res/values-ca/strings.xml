@@ -33,7 +33,8 @@
     <string name="location_agps_access_summary">Quan la ubicació està activada, <b>baixa dades d\'assistència satelital d\'Internet</b>, cosa que pot millorar en gran mesura el rendiment inicial del GPS.</string>
     <string name="update_recovery_title">Actualització del recuperador del Lineage</string>
     <string name="update_recovery_description">Actualitza el recuperador del Lineage en el primer inici posterior a cada actualització.</string>
-    <string name="update_recovery_warning">La recuperació s\'actualitzarà tan bon punt hàgiu acabat la configuració. Si voleu mantenir-lo intacte, desactiveu aquesta funció.</string>
+    <string name="update_recovery_warning">La recuperació s\'actualitzarà tan bon punt hàgiu acabat la configuració. Si voleu mantenir-lo intacte, desactiveu aquesta funció.
+</string>
     <string name="update_recovery_setting">Actualitza el recuperador del Lineage juntament amb el sistema operatiu</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Característiques de LineageOS</string>
