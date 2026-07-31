@@ -25,6 +25,7 @@ import com.android.settingslib.Utils
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import com.google.android.setupcompat.util.WizardManagerHelper
 import com.google.android.setupdesign.GlifLayout
+import com.google.android.setupdesign.template.IconMixin
 import com.google.android.setupdesign.transition.TransitionHelper
 import com.google.android.setupdesign.util.ThemeHelper
 import org.lineageos.setupwizard.LOGV
@@ -228,12 +229,16 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
             getDrawable(iconResId)?.mutate()?.let {
                 it.setTintList(Utils.getColorAccent(layout.context))
                 layout.setIcon(it)
+                upscaleIcon(layout)
             }
         }
     }
 
     protected val glifLayout: GlifLayout
         get() = requireViewById(R.id.setup_wizard_layout)
+
+    private fun upscaleIcon(layout: GlifLayout) =
+        layout.getMixin(IconMixin::class.java)?.setUpscaleIcon(true)
 
     protected open val layoutResId = -1
 
