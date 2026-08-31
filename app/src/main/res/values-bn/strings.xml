@@ -29,7 +29,7 @@
     <string name="update_recovery_setting">OS এর সাথে সাথে লিনিয়েজ রিকভারি আপডেট করুন</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS এর বৈশিষ্ট্যসমূহ</string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> কে সাহায্য করুন সয়ংক্রিয়ভাবে ইউজেজ ও ডায়াগনস্টিক ডাটা 
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> কে সাহায্য করুন সয়ংক্রিয়ভাবে ইউজেজ ও ডায়াগনস্টিক ডাটা
 <xliff:g id="name" example="LineageOS">%2$s</xliff:g> কে পাঠানোর মাধ্যমে। এই তথ্য দ্বারা আপনাকে চিহ্নিত করা যাবে না এবং আপনি এর মাধ্যমে প্রজেক্ট এর দলকে বিভিন্ন <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ফিচার তৈরিতে সাহায্য করতে পারবেন।</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">ন্যাভিগেশন</string>
