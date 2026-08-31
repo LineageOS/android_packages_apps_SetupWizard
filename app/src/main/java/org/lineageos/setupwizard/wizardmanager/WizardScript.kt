@@ -17,23 +17,18 @@ import com.android.internal.util.XmlUtils
 import java.io.FileNotFoundException
 import java.io.IOException
 import java.io.InputStream
-import java.util.ArrayList
-import java.util.Collections
-import java.util.HashMap
 import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserException
 
-class WizardScript(actions: Map<String, WizardAction>, firstActionId: String) : Parcelable {
+class WizardScript(actions: Map<String, WizardAction>, val firstActionId: String) : Parcelable {
 
-    private val mActions: Map<String, WizardAction> = Collections.unmodifiableMap(actions)
-    private val mFirstActionId: String = firstActionId
+    private val actions: Map<String, WizardAction> = actions.toMap()
 
-    fun getAction(actionId: String): WizardAction? = mActions[actionId]
+    fun getAction(actionId: String): WizardAction? = actions[actionId]
 
-    fun getFirstAction(): WizardAction? = getAction(mFirstActionId)
-
-    fun getFirstActionId(): String = mFirstActionId
+    val firstAction: WizardAction?
+        get() = getAction(firstActionId)
 
     fun getNextAction(currentActionId: String, resultCode: Int): WizardAction? {
         val nextActionId = getNextActionId(currentActionId, resultCode)
@@ -43,7 +38,7 @@ class WizardScript(actions: Map<String, WizardAction>, firstActionId: String) : 
     fun getNextActionId(currentActionId: String, resultCode: Int): String? {
         var nextActionId: String? = null
         if (resultCode != Activity.RESULT_CANCELED) {
-            val wizardAction = mActions[currentActionId]
+            val wizardAction = actions[currentActionId]
             if (LOGV) {
                 val uri = wizardAction?.uri ?: "n/a"
                 Log.v(TAG, "getNextActionId($currentActionId,$resultCode) current uri=$uri")
@@ -61,8 +56,8 @@ class WizardScript(actions: Map<String, WizardAction>, firstActionId: String) : 
     override fun describeContents(): Int = 0
 
     override fun writeToParcel(dest: Parcel, flags: Int) {
-        dest.writeString(mFirstActionId)
-        dest.writeTypedList(ArrayList(mActions.values))
+        dest.writeString(firstActionId)
+        dest.writeTypedList(actions.values.toList())
     }
 
     companion object {
@@ -86,13 +81,9 @@ class WizardScript(actions: Map<String, WizardAction>, firstActionId: String) : 
             object : Parcelable.Creator<WizardScript> {
                 override fun createFromParcel(source: Parcel): WizardScript {
                     val firstActionId = source.readString() ?: ""
-                    val actionList = ArrayList<WizardAction>()
+                    val actionList = mutableListOf<WizardAction>()
                     source.readTypedList(actionList, WizardAction.CREATOR)
-                    val actions = HashMap<String, WizardAction>(actionList.size)
-                    for (action in actionList) {
-                        actions[action.id] = action
-                    }
-                    return WizardScript(actions, firstActionId)
+                    return WizardScript(actionList.associateBy { it.id }, firstActionId)
                 }
 
                 override fun newArray(size: Int): Array<WizardScript?> = arrayOfNulls(size)
@@ -146,7 +137,7 @@ class WizardScript(actions: Map<String, WizardAction>, firstActionId: String) : 
                 parser.getAttributeValue(WIZARD_SCRIPT_NAMESPACE, ATTR_FIRST_ACTION)
                     ?: throw XmlPullParserException("WizardScript must define a firstAction")
 
-            val wizardActions = HashMap<String, WizardAction>()
+            val wizardActions = mutableMapOf<String, WizardAction>()
             val depth = parser.depth
             var type: Int
 
@@ -154,7 +145,6 @@ class WizardScript(actions: Map<String, WizardAction>, firstActionId: String) : 
                 ((parser.next().also { type = it }) != XmlPullParser.END_TAG ||
                     parser.depth > depth) && type != XmlPullParser.END_DOCUMENT
             ) {
-                // Fixes Java bug: use AND (&&) and do NOT call next() again here.
                 if (type != XmlPullParser.END_TAG && type != XmlPullParser.TEXT) {
                     if (parser.name == TAG_WIZARD_ACTION) {
                         val action = WizardAction.parseWizardAction(parser)

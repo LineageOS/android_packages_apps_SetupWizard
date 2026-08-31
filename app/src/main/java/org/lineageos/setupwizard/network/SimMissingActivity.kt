@@ -32,13 +32,13 @@ class SimMissingActivity : BaseSetupWizardActivity() {
             return
         }
 
-        getGlifLayout().setDescriptionText(getString(R.string.sim_missing_summary))
+        glifLayout.setDescriptionText(getString(R.string.sim_missing_summary))
         setNextAllowed(true)
     }
 
-    override fun getLayoutResId(): Int = R.layout.sim_missing_page
+    override val layoutResId: Int = R.layout.sim_missing_page
 
-    override fun getTitleResId(): Int = R.string.setup_sim_missing
+    override val titleResId: Int = R.string.setup_sim_missing
 
-    override fun getIconResId(): Int = R.drawable.ic_sim
+    override val iconResId: Int = R.drawable.ic_sim
 }

@@ -31,7 +31,7 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
     }
 
     companion object {
-        val TAG: String = DatePickerFragment::class.java.simpleName
+        const val TAG = "DatePickerFragment"
 
         fun newInstance() = DatePickerFragment()
     }

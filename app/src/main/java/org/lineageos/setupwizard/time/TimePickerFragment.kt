@@ -32,7 +32,7 @@ class TimePickerFragment : DialogFragment(), TimePickerDialog.OnTimeSetListener 
     }
 
     companion object {
-        val TAG: String = TimePickerFragment::class.java.simpleName
+        const val TAG = "TimePickerFragment"
 
         fun newInstance() = TimePickerFragment()
     }
