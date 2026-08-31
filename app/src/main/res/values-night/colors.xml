@@ -5,4 +5,7 @@
 -->
 <resources>
     <color name="divider">#40ffffff</color>
+
+    <color name="setup_compat_footer_primary_button_bg_color">@*android:color/system_primary_dark</color>
+    <color name="setup_compat_footer_primary_button_text_color">@*android:color/system_on_primary_dark</color>
 </resources>
