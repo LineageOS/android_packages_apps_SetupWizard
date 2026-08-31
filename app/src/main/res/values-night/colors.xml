@@ -8,4 +8,7 @@
 
     <color name="setup_compat_footer_primary_button_bg_color">@*android:color/system_primary_dark</color>
     <color name="setup_compat_footer_primary_button_text_color">@*android:color/system_on_primary_dark</color>
+
+    <color name="materialColorPrimary">@*android:color/system_primary_dark</color>
+    <color name="materialColorOnPrimary">@*android:color/system_on_primary_dark</color>
 </resources>
