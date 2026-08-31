@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.network;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
@@ -16,6 +16,7 @@ import static org.lineageos.setupwizard.SetupWizardApp.EXTRA_PREFS_SHOW_SKIP_TV;
 
 import android.content.Intent;
 
+import org.lineageos.setupwizard.base.SubBaseActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class NetworkSetupActivity extends SubBaseActivity {
