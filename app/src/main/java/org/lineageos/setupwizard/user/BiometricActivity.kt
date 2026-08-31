@@ -19,10 +19,8 @@ class BiometricActivity : SubBaseActivity() {
             SetupWizardUtils.enableComponent(this, ScreenLockActivity::class.java)
             finishAction(RESULT_SKIP)
             return
-        } else {
-            SetupWizardUtils.disableComponent(this, ScreenLockActivity::class.java)
         }
-        val intent: Intent = Intent(Settings.ACTION_BIOMETRIC_ENROLL)
-        startSubactivity(intent)
+        SetupWizardUtils.disableComponent(this, ScreenLockActivity::class.java)
+        startSubactivity(Intent(Settings.ACTION_BIOMETRIC_ENROLL))
     }
 }

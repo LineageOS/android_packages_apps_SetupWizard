@@ -18,30 +18,30 @@ import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 
 class LocationSettingsActivity : BaseSetupWizardActivity() {
 
-    private lateinit var mLocationAccess: CheckBox
-    private lateinit var mLocationAgpsAccess: CheckBox
+    private lateinit var locationAccess: CheckBox
+    private lateinit var locationAgpsAccess: CheckBox
 
-    private lateinit var mLocationManager: LocationManager
-    private lateinit var mUserManager: UserManager
+    private lateinit var locationManager: LocationManager
+    private lateinit var userManager: UserManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setNextText(R.string.next)
 
-        mLocationAccess = findViewById(R.id.location_checkbox)
-        mLocationAgpsAccess = findViewById(R.id.location_agps_checkbox)
-        mLocationManager = getSystemService(LocationManager::class.java)
-        mUserManager = getSystemService(UserManager::class.java)
+        locationAccess = findViewById(R.id.location_checkbox)
+        locationAgpsAccess = findViewById(R.id.location_agps_checkbox)
+        locationManager = getSystemService(LocationManager::class.java)
+        userManager = getSystemService(UserManager::class.java)
 
         val locationAccessView = findViewById<View>(R.id.location)
         locationAccessView.setOnClickListener {
-            mLocationAccess.isChecked = !mLocationAccess.isChecked
+            locationAccess.isChecked = !locationAccess.isChecked
         }
 
         val locationAgpsAccessView = findViewById<View>(R.id.location_agps)
-        if (mUserManager.isMainUser) {
+        if (userManager.isMainUser) {
             locationAgpsAccessView.setOnClickListener {
-                mLocationAgpsAccess.isChecked = !mLocationAgpsAccess.isChecked
+                locationAgpsAccess.isChecked = !locationAgpsAccess.isChecked
             }
         } else {
             locationAgpsAccessView.visibility = View.GONE
@@ -50,36 +50,33 @@ class LocationSettingsActivity : BaseSetupWizardActivity() {
 
     override fun onResume() {
         super.onResume()
-        var checked = mLocationManager.isLocationEnabled
-        if (mUserManager.isManagedProfile) {
+        var checked = locationManager.isLocationEnabled
+        if (userManager.isManagedProfile) {
             checked =
-                checked and mUserManager.hasUserRestriction(UserManager.DISALLOW_SHARE_LOCATION)
+                checked and userManager.hasUserRestriction(UserManager.DISALLOW_SHARE_LOCATION)
         }
-        mLocationAccess.isChecked = checked
+        locationAccess.isChecked = checked
     }
 
     override fun onNextPressed() {
-        mLocationManager.setLocationEnabledForUser(
-            mLocationAccess.isChecked,
-            Process.myUserHandle(),
-        )
-        if (mUserManager.isManagedProfile) {
-            mUserManager.setUserRestriction(
+        locationManager.setLocationEnabledForUser(locationAccess.isChecked, Process.myUserHandle())
+        if (userManager.isManagedProfile) {
+            userManager.setUserRestriction(
                 UserManager.DISALLOW_SHARE_LOCATION,
-                !mLocationAccess.isChecked,
+                !locationAccess.isChecked,
             )
         }
         Settings.Global.putInt(
             contentResolver,
             Settings.Global.ASSISTED_GPS_ENABLED,
-            if (mLocationAgpsAccess.isChecked) 1 else 0,
+            if (locationAgpsAccess.isChecked) 1 else 0,
         )
         super.onNextPressed()
     }
 
-    override fun getLayoutResId(): Int = R.layout.location_settings
+    override val layoutResId: Int = R.layout.location_settings
 
-    override fun getTitleResId(): Int = R.string.setup_location
+    override val titleResId: Int = R.string.setup_location
 
-    override fun getIconResId(): Int = R.drawable.ic_location
+    override val iconResId: Int = R.drawable.ic_location
 }

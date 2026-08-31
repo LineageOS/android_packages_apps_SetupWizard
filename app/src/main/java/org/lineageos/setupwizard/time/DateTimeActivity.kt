@@ -36,13 +36,13 @@ class DateTimeActivity :
     TimePickerDialog.OnTimeSetListener,
     DatePickerDialog.OnDateSetListener {
 
-    private var mCurrentTimeZone: TimeZone? = null
-    private lateinit var mDateTextView: TextView
-    private lateinit var mTimeTextView: TextView
+    private var currentTimeZone: TimeZone? = null
+    private lateinit var dateTextView: TextView
+    private lateinit var timeTextView: TextView
 
-    private val mHandler = Handler(Looper.getMainLooper())
+    private val handler = Handler(Looper.getMainLooper())
 
-    private val mIntentReceiver =
+    private val intentReceiver =
         object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
                 updateTimeAndDateDisplay()
@@ -52,20 +52,20 @@ class DateTimeActivity :
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setNextText(R.string.next)
-        getGlifLayout().setDescriptionText(getString(R.string.date_time_summary))
+        glifLayout.setDescriptionText(getString(R.string.date_time_summary))
 
         val spinner = findViewById<Spinner>(R.id.timezone_list)
         val adapter = constructTimezoneAdapter(this)
-        mCurrentTimeZone = TimeZone.getDefault()
+        currentTimeZone = TimeZone.getDefault()
 
         findViewById<View>(R.id.date_item).setOnClickListener { showDatePicker() }
         findViewById<View>(R.id.time_item).setOnClickListener { showTimePicker() }
-        mDateTextView = findViewById(R.id.date_text)
-        mTimeTextView = findViewById(R.id.time_text)
+        dateTextView = findViewById(R.id.date_text)
+        timeTextView = findViewById(R.id.time_text)
 
         // Pre-select current/default timezone
-        mHandler.post {
-            val tzIndex = getTimeZoneIndex(adapter, mCurrentTimeZone!!)
+        handler.post {
+            val tzIndex = getTimeZoneIndex(adapter, currentTimeZone!!)
             spinner.adapter = adapter
             if (tzIndex != -1) {
                 spinner.setSelection(tzIndex)
@@ -80,11 +80,11 @@ class DateTimeActivity :
                     ) {
                         val map = adapterView.getItemAtPosition(position) as Map<*, *>
                         val tzId = map[KEY_ID] as String
-                        if (mCurrentTimeZone != null && mCurrentTimeZone!!.id != tzId) {
+                        if (currentTimeZone != null && currentTimeZone!!.id != tzId) {
                             // Update the system timezone value
                             val alarm = getSystemService(Context.ALARM_SERVICE) as AlarmManager
                             alarm.setTimeZone(tzId)
-                            mCurrentTimeZone = TimeZone.getTimeZone(tzId)
+                            currentTimeZone = TimeZone.getTimeZone(tzId)
                         }
                     }
 
@@ -93,7 +93,7 @@ class DateTimeActivity :
         }
 
         // Pre-select current/default date if epoch
-        mHandler.post {
+        handler.post {
             val calendar = Calendar.getInstance()
             val isEpoch = calendar.get(Calendar.YEAR) == 1970
             if (isEpoch) {
@@ -124,20 +124,20 @@ class DateTimeActivity :
                 addAction(Intent.ACTION_TIME_CHANGED)
                 addAction(Intent.ACTION_TIMEZONE_CHANGED)
             }
-        registerReceiver(mIntentReceiver, filter)
+        registerReceiver(intentReceiver, filter)
         updateTimeAndDateDisplay()
     }
 
     override fun onPause() {
         super.onPause()
-        unregisterReceiver(mIntentReceiver)
+        unregisterReceiver(intentReceiver)
     }
 
-    override fun getLayoutResId(): Int = R.layout.setup_datetime_page
+    override val layoutResId: Int = R.layout.setup_datetime_page
 
-    override fun getTitleResId(): Int = R.string.setup_datetime
+    override val titleResId: Int = R.string.setup_datetime
 
-    override fun getIconResId(): Int = R.drawable.ic_datetime
+    override val iconResId: Int = R.drawable.ic_datetime
 
     override fun onDateSet(view: DatePicker, year: Int, month: Int, day: Int) {
         setDate(this, year, month, day)
@@ -160,16 +160,16 @@ class DateTimeActivity :
     private fun updateTimeAndDateDisplay() {
         val shortDateFormat: java.text.DateFormat = DateFormat.getDateFormat(this)
         val now = Calendar.getInstance()
-        mTimeTextView.text = DateFormat.getTimeFormat(this).format(now.time)
-        mDateTextView.text = shortDateFormat.format(now.time)
+        timeTextView.text = DateFormat.getTimeFormat(this).format(now.time)
+        dateTextView.text = shortDateFormat.format(now.time)
     }
 
-    private class TimeZoneComparator(private val mSortingKey: String) : Comparator<Map<*, *>> {
+    private class TimeZoneComparator(private val sortingKey: String) : Comparator<Map<*, *>> {
 
         @Suppress("UNCHECKED_CAST")
         override fun compare(map1: Map<*, *>, map2: Map<*, *>): Int {
-            val value1 = map1[mSortingKey]
-            val value2 = map2[mSortingKey]
+            val value1 = map1[sortingKey]
+            val value2 = map2[sortingKey]
             /*
              * This should never happen, but just in-case, put non-comparable
              * items at the end.
@@ -207,36 +207,37 @@ class DateTimeActivity :
 
         private fun getTimeZoneIndex(adapter: SimpleAdapter, tz: TimeZone): Int {
             val defaultId = tz.id
-            for (i in 0 until adapter.count) {
-                val map = adapter.getItem(i) as Map<*, *>
-                val id = map[KEY_ID] as String
-                if (defaultId == id) {
-                    return i
-                }
-            }
-            return -1
+            return (0 until adapter.count).firstOrNull {
+                (adapter.getItem(it) as Map<*, *>)[KEY_ID] as String == defaultId
+            } ?: -1
         }
 
         private fun setDate(context: Context, year: Int, month: Int, day: Int) {
-            val c = Calendar.getInstance()
-            c.set(Calendar.YEAR, year)
-            c.set(Calendar.MONTH, month)
-            c.set(Calendar.DAY_OF_MONTH, day)
-            val `when` = c.timeInMillis
-            if (`when` / 1000 < Integer.MAX_VALUE) {
-                (context.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(`when`)
-            }
+            val calendar =
+                Calendar.getInstance().apply {
+                    set(Calendar.YEAR, year)
+                    set(Calendar.MONTH, month)
+                    set(Calendar.DAY_OF_MONTH, day)
+                }
+            setAlarmManagerTime(context, calendar.timeInMillis)
         }
 
         private fun setTime(context: Context, hourOfDay: Int, minute: Int) {
-            val c = Calendar.getInstance()
-            c.set(Calendar.HOUR_OF_DAY, hourOfDay)
-            c.set(Calendar.MINUTE, minute)
-            c.set(Calendar.SECOND, 0)
-            c.set(Calendar.MILLISECOND, 0)
-            val `when` = c.timeInMillis
-            if (`when` / 1000 < Integer.MAX_VALUE) {
-                (context.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(`when`)
+            val calendar =
+                Calendar.getInstance().apply {
+                    set(Calendar.HOUR_OF_DAY, hourOfDay)
+                    set(Calendar.MINUTE, minute)
+                    set(Calendar.SECOND, 0)
+                    set(Calendar.MILLISECOND, 0)
+                }
+            setAlarmManagerTime(context, calendar.timeInMillis)
+        }
+
+        private fun setAlarmManagerTime(context: Context, whenMillis: Long) {
+            if (whenMillis / 1000 < Int.MAX_VALUE) {
+                (context.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTime(
+                    whenMillis
+                )
             }
         }
     }

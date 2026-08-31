@@ -26,7 +26,7 @@ class WelcomeActivity : SubBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         onSetupStart()
-        SystemBarHelper.setBackButtonVisible(getWindow(), false)
+        SystemBarHelper.setBackButtonVisible(window, false)
 
         setNextText(R.string.start)
 
@@ -50,12 +50,12 @@ class WelcomeActivity : SubBaseActivity() {
         }
 
         val welcomeTitle: TextView = findViewById(R.id.welcome_title)
-        if (SetupWizardUtils.isManagedProfile(this)) {
-            welcomeTitle.text = getString(R.string.setup_managed_profile_welcome_message)
-        } else {
-            welcomeTitle.text =
+        welcomeTitle.text =
+            if (SetupWizardUtils.isManagedProfile(this)) {
+                getString(R.string.setup_managed_profile_welcome_message)
+            } else {
                 getString(R.string.setup_welcome_message, getString(R.string.os_name))
-        }
+            }
 
         if (Build.TYPE == "eng") {
             skipButton.visibility = View.VISIBLE
@@ -67,9 +67,9 @@ class WelcomeActivity : SubBaseActivity() {
 
     override fun onBackPressed() {}
 
-    override fun getLayoutResId(): Int = R.layout.welcome_activity
+    override val layoutResId: Int = R.layout.welcome_activity
 
-    override fun getTitleResId(): Int = -1
+    override val titleResId: Int = -1
 
     companion object {
         private const val ACTION_ACCESSIBILITY_SETTINGS =

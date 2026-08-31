@@ -14,15 +14,13 @@ import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 
 class WizardTransitions() : SparseArray<String?>(), Parcelable {
 
-    private var mDefaultAction: String? = null
+    private var defaultAction: String? = null
 
     fun setDefaultAction(action: String?) {
-        mDefaultAction = action
+        defaultAction = action
     }
 
-    fun getAction(resultCode: Int): String? {
-        return get(resultCode, mDefaultAction)
-    }
+    fun getAction(resultCode: Int): String? = get(resultCode, defaultAction)
 
     override fun put(key: Int, value: String?) {
         if (LOGV) {
@@ -31,25 +29,23 @@ class WizardTransitions() : SparseArray<String?>(), Parcelable {
         super.put(key, value)
     }
 
-    override fun toString(): String {
-        return super.toString() + " mDefaultAction: " + mDefaultAction
-    }
+    override fun toString(): String = "${super.toString()} defaultAction: $defaultAction"
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other == null || this::class != other::class) return false
         val that = other as WizardTransitions
-        return mDefaultAction == that.mDefaultAction
+        return defaultAction == that.defaultAction
     }
 
     override fun hashCode(): Int {
-        return super.hashCode() + (mDefaultAction?.hashCode() ?: 0)
+        return super.hashCode() + (defaultAction?.hashCode() ?: 0)
     }
 
     override fun describeContents(): Int = 0
 
     override fun writeToParcel(dest: Parcel, flags: Int) {
-        dest.writeString(mDefaultAction)
+        dest.writeString(defaultAction)
         val n = size()
         val sparse = SparseArray<String>(n)
         for (i in 0 until n) {
@@ -59,7 +55,7 @@ class WizardTransitions() : SparseArray<String?>(), Parcelable {
     }
 
     private constructor(source: Parcel) : this() {
-        mDefaultAction = source.readString()
+        defaultAction = source.readString()
         val actions: SparseArray<String>? = source.readSparseArray(null, String::class.java)
         if (actions != null) {
             for (i in 0 until actions.size()) {

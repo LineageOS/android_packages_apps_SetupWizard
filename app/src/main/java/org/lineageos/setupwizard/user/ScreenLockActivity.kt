@@ -12,8 +12,7 @@ import org.lineageos.setupwizard.base.SubBaseActivity
 class ScreenLockActivity : SubBaseActivity() {
 
     override fun onStartSubactivity() {
-        val intent: Intent = Intent(ACTION_SETUP_LOCKSCREEN)
-        startSubactivity(intent)
+        startSubactivity(Intent(ACTION_SETUP_LOCKSCREEN))
     }
 
     companion object {

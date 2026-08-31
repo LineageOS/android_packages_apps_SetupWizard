@@ -39,14 +39,14 @@ class BluetoothSetupActivity : SubBaseActivity() {
     override fun onSubactivityResult(activityResult: ActivityResult) {
         val data = activityResult.data
         when {
-            mIsSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
+            isSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
             data?.getBooleanExtra("onBackPressed", false) == true -> onStartSubactivity()
             else -> nextAction(RESULT_OK, data)
         }
     }
 
     companion object {
-        const val TAG: String = "BluetoothSetupActivity"
+        private const val TAG = "BluetoothSetupActivity"
         private const val ACTION_CONNECT_INPUT = "com.google.android.intent.action.CONNECT_INPUT"
         private const val INTENT_EXTRA_NO_INPUT_MODE = "no_input_mode"
     }

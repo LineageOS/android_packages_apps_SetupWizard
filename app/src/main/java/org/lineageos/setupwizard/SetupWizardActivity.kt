@@ -49,6 +49,6 @@ class SetupWizardActivity : AppCompatActivity() {
     }
 
     companion object {
-        private val TAG: String = SetupWizardActivity::class.java.simpleName
+        private const val TAG = "SetupWizardActivity"
     }
 }

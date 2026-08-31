@@ -27,17 +27,14 @@ import org.lineageos.setupwizard.util.SetupWizardUtils
 
 class NavigationSettingsActivity : BaseSetupWizardActivity() {
 
-    private var mSelection: String = NAV_BAR_MODE_GESTURAL_OVERLAY
+    private var selection: String = NAV_BAR_MODE_GESTURAL_OVERLAY
 
-    private lateinit var mHideGesturalHint: CheckBox
+    private lateinit var hideGesturalHint: CheckBox
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        var navBarEnabled = false
-        if (SetupWizardApp.getSettingsBundle().containsKey(DISABLE_NAV_KEYS)) {
-            navBarEnabled = SetupWizardApp.getSettingsBundle().getBoolean(DISABLE_NAV_KEYS)
-        }
+        val navBarEnabled = SetupWizardApp.settingsBundle.getBoolean(DISABLE_NAV_KEYS, false)
 
         val deviceKeys =
             resources.getInteger(
@@ -45,7 +42,7 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
             )
         val hasHomeKey = (deviceKeys and KEY_MASK_APP_SWITCH) != 0
 
-        getGlifLayout().setDescriptionText(getString(R.string.navigation_summary))
+        glifLayout.setDescriptionText(getString(R.string.navigation_summary))
         setNextText(R.string.next)
 
         var available = 3
@@ -61,25 +58,27 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
         }
 
         if (!navBarEnabled && hasHomeKey || available <= 1) {
-            SetupWizardApp.getSettingsBundle()
-                .putString(NAVIGATION_OPTION_KEY, NAV_BAR_MODE_3BUTTON_OVERLAY)
+            SetupWizardApp.settingsBundle.putString(
+                NAVIGATION_OPTION_KEY,
+                NAV_BAR_MODE_3BUTTON_OVERLAY,
+            )
             finishAction(RESULT_OK)
         }
 
         val navigationIllustration = findViewById<LottieAnimationView>(R.id.navigation_illustration)
         val radioGroup = findViewById<RadioGroup>(R.id.navigation_radio_group)
-        mHideGesturalHint = findViewById(R.id.hide_navigation_hint)
+        hideGesturalHint = findViewById(R.id.hide_navigation_hint)
 
         radioGroup.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
                 R.id.radio_gesture -> {
-                    mSelection = NAV_BAR_MODE_GESTURAL_OVERLAY
+                    selection = NAV_BAR_MODE_GESTURAL_OVERLAY
                     navigationIllustration.setAnimation(R.raw.lottie_system_nav_fully_gestural)
                     revealHintCheckbox()
                 }
 
                 R.id.radio_sw_keys -> {
-                    mSelection = NAV_BAR_MODE_3BUTTON_OVERLAY
+                    selection = NAV_BAR_MODE_3BUTTON_OVERLAY
                     navigationIllustration.setAnimation(R.raw.lottie_system_nav_3_button)
                     hideHintCheckBox()
                 }
@@ -89,39 +88,39 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
     }
 
     private fun revealHintCheckbox() {
-        mHideGesturalHint.animate().cancel()
+        hideGesturalHint.animate().cancel()
 
-        if (mHideGesturalHint.visibility == View.VISIBLE) {
+        if (hideGesturalHint.visibility == View.VISIBLE) {
             return
         }
 
-        mHideGesturalHint.visibility = View.VISIBLE
-        mHideGesturalHint.alpha = 0.0f
-        mHideGesturalHint.animate().translationY(0f).alpha(1.0f).setListener(null)
+        hideGesturalHint.visibility = View.VISIBLE
+        hideGesturalHint.alpha = 0.0f
+        hideGesturalHint.animate().translationY(0f).alpha(1.0f).setListener(null)
     }
 
     private fun hideHintCheckBox() {
-        if (mHideGesturalHint.visibility == View.INVISIBLE) {
+        if (hideGesturalHint.visibility == View.INVISIBLE) {
             return
         }
 
-        mHideGesturalHint
+        hideGesturalHint
             .animate()
-            .translationY(-mHideGesturalHint.height.toFloat())
+            .translationY(-hideGesturalHint.height.toFloat())
             .alpha(0.0f)
             .setListener(
                 object : AnimatorListenerAdapter() {
                     override fun onAnimationEnd(animation: Animator) {
                         super.onAnimationEnd(animation)
-                        mHideGesturalHint.visibility = View.INVISIBLE
+                        hideGesturalHint.visibility = View.INVISIBLE
                     }
                 }
             )
     }
 
     override fun onNextPressed() {
-        SetupWizardApp.getSettingsBundle().putString(NAVIGATION_OPTION_KEY, mSelection)
-        val hideHint = mHideGesturalHint.isChecked
+        SetupWizardApp.settingsBundle.putString(NAVIGATION_OPTION_KEY, selection)
+        val hideHint = hideGesturalHint.isChecked
         LineageSettings.System.putIntForUser(
             contentResolver,
             LineageSettings.System.NAVIGATION_BAR_HINT,
@@ -131,9 +130,9 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
         super.onNextPressed()
     }
 
-    override fun getLayoutResId(): Int = R.layout.setup_navigation
+    override val layoutResId: Int = R.layout.setup_navigation
 
-    override fun getTitleResId(): Int = R.string.setup_navigation
+    override val titleResId: Int = R.string.setup_navigation
 
-    override fun getIconResId(): Int = R.drawable.ic_navigation
+    override val iconResId: Int = R.drawable.ic_navigation
 }
