@@ -17,7 +17,7 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        getGlifLayout().setDescriptionText(getString(R.string.theme_summary))
+        glifLayout.setDescriptionText(getString(R.string.theme_summary))
 
         val uiModeManager = getSystemService(UiModeManager::class.java)
         val radioGroup: RadioGroup = findViewById(R.id.theme_radio_group)
@@ -34,9 +34,9 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
         }
     }
 
-    override fun getLayoutResId() = R.layout.setup_theme
+    override val layoutResId = R.layout.setup_theme
 
-    override fun getTitleResId() = R.string.setup_theme
+    override val titleResId = R.string.setup_theme
 
-    override fun getIconResId() = R.drawable.ic_theme
+    override val iconResId = R.drawable.ic_theme
 }

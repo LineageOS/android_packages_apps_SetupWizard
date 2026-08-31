@@ -14,6 +14,7 @@ import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.view.View.INVISIBLE
+import android.widget.Button
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
@@ -34,19 +35,19 @@ import org.lineageos.setupwizard.widget.NavigationLayout.NavigationBarListener
 
 abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListener {
 
-    private var mNavigationBar: NavigationLayout? = null
-    private lateinit var mNextIntentResultLauncher: ActivityResultLauncher<Intent>
+    private var navigationBar: NavigationLayout? = null
+    private lateinit var nextIntentResultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (LOGV) {
             logActivityState("onCreate savedInstanceState=$savedInstanceState")
         }
         super.onCreate(savedInstanceState)
-        mNextIntentResultLauncher =
+        nextIntentResultLauncher =
             registerForActivityResult(StartDecoratedActivityForResult(), this::onNextIntentResult)
         initLayout()
-        mNavigationBar = getNavigationBar()
-        mNavigationBar?.setNavigationBarListener(this)
+        navigationBar = findViewById<View>(R.id.navigation_bar) as? NavigationLayout
+        navigationBar?.setNavigationBarListener(this)
         onBackPressedDispatcher.addCallback(
             this,
             object : OnBackPressedCallback(true) {
@@ -90,7 +91,7 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     override fun onDestroy() {
         if (LOGV) logActivityState("onDestroy")
         super.onDestroy()
-        mNextIntentResultLauncher.unregister()
+        nextIntentResultLauncher.unregister()
     }
 
     override fun onAttachedToWindow() {
@@ -117,14 +118,8 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
         }
     }
 
-    /**
-     * @return The navigation bar instance in the layout, or null if the layout does not have a
-     *   navigation bar.
-     */
-    fun getNavigationBar() = findViewById<View>(R.id.navigation_bar) as? NavigationLayout
-
     fun setNextAllowed(allowed: Boolean) {
-        mNavigationBar?.nextButton?.isEnabled = allowed
+        navigationBar?.nextButton?.isEnabled = allowed
     }
 
     protected open fun onNextPressed() {
@@ -136,17 +131,18 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     }
 
     protected fun setNextText(resId: Int) {
-        mNavigationBar?.nextButton?.setText(resId)
+        navigationBar?.nextButton?.setText(resId)
     }
 
-    fun getNextButton() = mNavigationBar!!.nextButton
+    val nextButton: Button
+        get() = navigationBar!!.nextButton
 
     protected fun setSkipText(resId: Int) {
-        mNavigationBar?.skipButton?.setText(resId)
+        navigationBar?.skipButton?.setText(resId)
     }
 
     protected fun hideNextButton() {
-        mNavigationBar?.nextButton?.visibility = INVISIBLE
+        navigationBar?.nextButton?.visibility = INVISIBLE
     }
 
     override fun onNavigateNext() {
@@ -185,16 +181,14 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
         if (LOGV) {
             Log.v(TAG, "nextAction resultCode=$resultCode data=$data this=$this")
         }
-        if (resultCode == RESULT_CANCELED) {
-            throw IllegalArgumentException("Cannot call nextAction with RESULT_CANCELED")
-        }
+        require(resultCode != RESULT_CANCELED) { "Cannot call nextAction with RESULT_CANCELED" }
         setResult(resultCode, data)
-        val intent = WizardManagerHelper.getNextIntent(getIntent(), resultCode, data)
-        mNextIntentResultLauncher.launch(intent)
+        val nextIntent = WizardManagerHelper.getNextIntent(intent, resultCode, data)
+        nextIntentResultLauncher.launch(nextIntent)
     }
 
     /** Adorn the Intent with Setup Wizard-related extras. */
-    protected open fun decorateIntent(intent: Intent) =
+    protected open fun decorateIntent(intent: Intent): Intent =
         intent
             .putExtra(WizardManagerHelper.EXTRA_IS_FIRST_RUN, isFirstRun())
             .putExtra(WizardManagerHelper.EXTRA_IS_SETUP_FLOW, true)
@@ -213,38 +207,39 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     }
 
     protected fun tryEnablingWifi() =
-        getSystemService(WifiManager::class.java)?.setWifiEnabled(true) == true
+        getSystemService(WifiManager::class.java)?.setWifiEnabled(true) ?: false
 
-    private fun isFirstRun() = true
+    private fun isFirstRun(): Boolean = true
 
     protected fun logActivityState(prefix: String) {
         Log.v(TAG, "$prefix isResumed=$isResumed isFinishing=$isFinishing isDestroyed=$isDestroyed")
     }
 
     private fun initLayout() {
-        if (getLayoutResId() != -1) {
-            setContentView(getLayoutResId())
+        if (layoutResId != -1) {
+            setContentView(layoutResId)
         }
-        if (getTitleResId() != -1) {
-            val headerText = TextUtils.expandTemplate(getText(getTitleResId()))
-            getGlifLayout().setHeaderText(headerText)
+        if (titleResId != -1) {
+            val headerText = TextUtils.expandTemplate(getText(titleResId))
+            glifLayout.setHeaderText(headerText)
         }
-        if (getIconResId() != -1) {
-            val layout = getGlifLayout()
-            getDrawable(getIconResId())?.mutate()?.let {
+        if (iconResId != -1) {
+            val layout = glifLayout
+            getDrawable(iconResId)?.mutate()?.let {
                 it.setTintList(Utils.getColorAccent(layout.context))
                 layout.setIcon(it)
             }
         }
     }
 
-    protected fun getGlifLayout(): GlifLayout = requireViewById(R.id.setup_wizard_layout)
+    protected val glifLayout: GlifLayout
+        get() = requireViewById(R.id.setup_wizard_layout)
 
-    protected open fun getLayoutResId() = -1
+    protected open val layoutResId = -1
 
-    protected open fun getTitleResId() = -1
+    protected open val titleResId = -1
 
-    protected open fun getIconResId() = -1
+    protected open val iconResId = -1
 
     protected open fun applyForwardTransition() {
         TransitionHelper.applyForwardTransition(this, DEFAULT_TRANSITION, true)
@@ -257,17 +252,17 @@ abstract class BaseSetupWizardActivity : AppCompatActivity(), NavigationBarListe
     protected inner class StartDecoratedActivityForResult :
         ActivityResultContract<Intent, ActivityResult>() {
 
-        private val mWrappedContract = StartActivityForResult()
+        private val wrappedContract = StartActivityForResult()
 
         override fun createIntent(context: Context, input: Intent) =
-            decorateIntent(mWrappedContract.createIntent(context, input))
+            decorateIntent(wrappedContract.createIntent(context, input))
 
         override fun parseResult(resultCode: Int, intent: Intent?) =
-            mWrappedContract.parseResult(resultCode, intent)
+            wrappedContract.parseResult(resultCode, intent)
     }
 
     companion object {
-        val TAG: String = BaseSetupWizardActivity::class.java.simpleName
+        private const val TAG = "BaseSetupWizardActivity"
         const val DEFAULT_TRANSITION = TransitionHelper.TRANSITION_FADE_THROUGH
     }
 }

@@ -46,16 +46,16 @@ class SetupWizardApp : Application() {
 
     var ignoreSimLocale = SystemProperties.getBoolean(IGNORE_SIM_LOCALE_PROP, false)
 
-    private val mHandler = Handler(Looper.getMainLooper())
-    private val mRadioTimeoutRunnable = Runnable { isRadioReady = true }
+    private val handler = Handler(Looper.getMainLooper())
+    private val radioTimeoutRunnable = Runnable { isRadioReady = true }
 
     override fun onCreate() {
         super.onCreate()
         if (LOGV) {
             Log.v(TAG, "onCreate()")
         }
-        sStatusBarManager = SetupWizardUtils.disableStatusBar(this)
-        mHandler.postDelayed(mRadioTimeoutRunnable, RADIO_READY_TIMEOUT.toLong())
+        statusBarManager = SetupWizardUtils.disableStatusBar(this)
+        handler.postDelayed(radioTimeoutRunnable, RADIO_READY_TIMEOUT.toLong())
         if (SetupWizardUtils.hasGMS(this)) {
             SetupWizardUtils.disableHome(this)
             if (SetupWizardUtils.isOwner()) {
@@ -65,16 +65,13 @@ class SetupWizardApp : Application() {
     }
 
     companion object {
-        val TAG: String = SetupWizardApp::class.java.simpleName
+        const val TAG = "SetupWizardApp"
 
         @Volatile var isRadioReady: Boolean = false
 
-        private var sStatusBarManager: StatusBarManager? = null
+        var statusBarManager: StatusBarManager? = null
+            private set
 
-        private val mSettingsBundle = Bundle()
-
-        fun getStatusBarManager(): StatusBarManager? = sStatusBarManager
-
-        fun getSettingsBundle(): Bundle = mSettingsBundle
+        val settingsBundle = Bundle()
     }
 }

@@ -20,19 +20,18 @@ import org.lineageos.setupwizard.util.SetupWizardUtils
 
 class UpdateRecoveryActivity : BaseSetupWizardActivity() {
 
-    private lateinit var mRecoveryUpdateCheckbox: CheckBox
+    private lateinit var recoveryUpdateCheckbox: CheckBox
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        getGlifLayout()
-            .setDescriptionText(
-                getString(
-                    R.string.update_recovery_full_description,
-                    getString(R.string.update_recovery_description),
-                    getString(R.string.update_recovery_warning),
-                )
+        glifLayout.setDescriptionText(
+            getString(
+                R.string.update_recovery_full_description,
+                getString(R.string.update_recovery_description),
+                getString(R.string.update_recovery_warning),
             )
+        )
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity")
@@ -41,46 +40,45 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
         }
 
         setNextText(R.string.next)
-        mRecoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox)
+        recoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox)
 
-        val cbView: View = findViewById(R.id.update_recovery_checkbox_view)
-        cbView.setOnClickListener {
-            mRecoveryUpdateCheckbox.isChecked = !mRecoveryUpdateCheckbox.isChecked
+        findViewById<View>(R.id.update_recovery_checkbox_view).setOnClickListener {
+            recoveryUpdateCheckbox.isChecked = !recoveryUpdateCheckbox.isChecked
         }
 
         // Allow overriding the default checkbox state
-        if (sFirstTime) {
-            SetupWizardApp.getSettingsBundle()
-                .putBoolean(
-                    ENABLE_RECOVERY_UPDATE,
-                    SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, true),
-                )
+        if (firstTime) {
+            SetupWizardApp.settingsBundle.putBoolean(
+                ENABLE_RECOVERY_UPDATE,
+                SystemProperties.getBoolean(UPDATE_RECOVERY_PROP, true),
+            )
         }
 
-        sFirstTime = false
+        firstTime = false
     }
 
     override fun onResume() {
         super.onResume()
-        val myPageBundle = SetupWizardApp.getSettingsBundle()
-        val checked = myPageBundle.getBoolean(ENABLE_RECOVERY_UPDATE, true)
-        mRecoveryUpdateCheckbox.isChecked = checked
+        recoveryUpdateCheckbox.isChecked =
+            SetupWizardApp.settingsBundle.getBoolean(ENABLE_RECOVERY_UPDATE, true)
     }
 
     override fun onNextPressed() {
-        SetupWizardApp.getSettingsBundle()
-            .putBoolean(ENABLE_RECOVERY_UPDATE, mRecoveryUpdateCheckbox.isChecked)
+        SetupWizardApp.settingsBundle.putBoolean(
+            ENABLE_RECOVERY_UPDATE,
+            recoveryUpdateCheckbox.isChecked,
+        )
         super.onNextPressed()
     }
 
-    override fun getLayoutResId() = R.layout.update_recovery_page
+    override val layoutResId = R.layout.update_recovery_page
 
-    override fun getTitleResId() = R.string.update_recovery_title
+    override val titleResId = R.string.update_recovery_title
 
-    override fun getIconResId() = R.drawable.ic_system_update
+    override val iconResId = R.drawable.ic_system_update
 
     companion object {
         private const val TAG = "UpdateRecoveryActivity"
-        private var sFirstTime: Boolean = true
+        private var firstTime: Boolean = true
     }
 }
