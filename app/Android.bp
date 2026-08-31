@@ -6,7 +6,9 @@
 android_app {
     name: "LineageSetupWizard",
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/main/java/**/*.java"],
+    resource_dirs: ["src/main/res"],
+    manifest: "src/main/AndroidManifest.xml",
 
     certificate: "platform",
     privileged: true,

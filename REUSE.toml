@@ -7,7 +7,7 @@ SPDX-PackageSupplier = "The LineageOS Project"
 SPDX-PackageDownloadLocation = "https://github.com/LineageOS/android_packages_apps_SetupWizard"
 
 [[annotations]]
-path = ["res/raw/lottie_system_nav_3_button.json", "res/raw/lottie_system_nav_fully_gestural.json"]
+path = ["app/src/main/res/raw/lottie_system_nav_3_button.json", "app/src/main/res/raw/lottie_system_nav_fully_gestural.json"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2019 The Android Open Source Project"
 SPDX-License-Identifier = "Apache-2.0"
