@@ -9,7 +9,7 @@ adb shell pm enable org.lineageos.setupwizard || true
 wait ${!}
 adb shell pm enable org.lineageos.setupwizard/.SetupWizardActivity || true
 wait ${!}
-adb shell pm enable org.lineageos.setupwizard/.DeviceSpecificActivity || true
+adb shell pm enable org.lineageos.setupwizard/.system.DeviceSpecificActivity || true
 wait ${!}
 adb shell pm enable com.google.android.setupwizard || true
 wait ${!}

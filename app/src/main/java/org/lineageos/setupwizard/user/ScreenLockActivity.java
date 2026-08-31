@@ -4,9 +4,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.user;
 
 import android.content.Intent;
+
+import org.lineageos.setupwizard.base.SubBaseActivity;
 
 public class ScreenLockActivity extends SubBaseActivity {
 

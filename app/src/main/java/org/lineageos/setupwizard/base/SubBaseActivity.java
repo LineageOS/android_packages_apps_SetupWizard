@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.base;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 
@@ -19,6 +19,8 @@ import android.util.Log;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
+
+import org.lineageos.setupwizard.R;
 
 public abstract class SubBaseActivity extends BaseSetupWizardActivity {
 

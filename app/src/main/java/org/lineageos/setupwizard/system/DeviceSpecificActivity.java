@@ -3,11 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.system;
 
 import android.content.ComponentName;
 import android.content.Intent;
 
+import org.lineageos.setupwizard.base.SubBaseActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class DeviceSpecificActivity extends SubBaseActivity {

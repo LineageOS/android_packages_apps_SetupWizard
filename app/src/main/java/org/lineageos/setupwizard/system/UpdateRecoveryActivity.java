@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.system;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
@@ -16,6 +16,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class UpdateRecoveryActivity extends BaseSetupWizardActivity {

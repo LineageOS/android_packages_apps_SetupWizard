@@ -4,13 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.user;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
 
 import android.content.Intent;
 import android.provider.Settings;
 
+import org.lineageos.setupwizard.base.SubBaseActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class BiometricActivity extends SubBaseActivity {

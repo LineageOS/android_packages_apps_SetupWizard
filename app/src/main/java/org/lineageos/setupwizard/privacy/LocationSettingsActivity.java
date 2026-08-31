@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.privacy;
 
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -13,6 +13,9 @@ import android.os.UserManager;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.CheckBox;
+
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 
 public class LocationSettingsActivity extends BaseSetupWizardActivity {
 

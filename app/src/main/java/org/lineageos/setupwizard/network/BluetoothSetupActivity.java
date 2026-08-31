@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.network;
 
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND;
 import static com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP;
@@ -14,6 +14,7 @@ import android.util.Log;
 
 import androidx.activity.result.ActivityResult;
 
+import org.lineageos.setupwizard.base.SubBaseActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class BluetoothSetupActivity extends SubBaseActivity {

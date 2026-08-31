@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.locale;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -28,6 +28,9 @@ import com.android.internal.telephony.util.LocaleUtils;
 
 import com.google.android.setupcompat.util.SystemBarHelper;
 
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.widget.LocalePicker;
 
 import java.util.List;

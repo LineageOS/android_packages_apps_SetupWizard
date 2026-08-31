@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.setupwizard;
+package org.lineageos.setupwizard.settings;
 
 import static org.lineageos.setupwizard.SetupWizardApp.DISABLE_NAV_KEYS;
 import static org.lineageos.setupwizard.SetupWizardApp.KEY_SEND_METRICS;
@@ -17,6 +17,10 @@ import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import org.lineageos.setupwizard.R;
+import org.lineageos.setupwizard.SetupWizardApp;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;

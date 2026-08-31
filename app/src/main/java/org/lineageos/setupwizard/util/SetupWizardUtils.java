@@ -49,7 +49,7 @@ import android.util.Log;
 import lineageos.hardware.LineageHardwareManager;
 import lineageos.providers.LineageSettings;
 
-import org.lineageos.setupwizard.BaseSetupWizardActivity;
+import org.lineageos.setupwizard.base.BaseSetupWizardActivity;
 import org.lineageos.setupwizard.SetupWizardApp;
 
 import java.io.File;

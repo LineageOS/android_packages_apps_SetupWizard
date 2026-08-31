@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.google.android.setupcompat.template.FooterButtonStyleUtils;
 import com.google.android.setupcompat.util.SystemBarHelper;
 
+import org.lineageos.setupwizard.base.SubBaseActivity;
 import org.lineageos.setupwizard.util.SetupWizardUtils;
 
 public class WelcomeActivity extends SubBaseActivity {
