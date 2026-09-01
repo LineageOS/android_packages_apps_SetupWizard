@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS ئىقتىدارلىرى</string>
     <string name="services_pp_explanation">بۇ مۇلازىمەتلەر ئۈسكۈنىڭىزنىڭ ئىقتىدارىنى كېڭەيتىش ئۈچۈن خىزمەت قىلىدۇ. سانلىق مەلۇمات <xliff:g id="name" example="LineageOS">%1$s</xliff:g> نىڭ شەخسىيەت تۈزۈمىگە ئاساسەن ئىشلىتىلىدۇ.</string>
-    <string name="services_find_privacy_policy">باشقا ئۈسكۈنىدە <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> نى زىيارەت قىلىپ شەخسىيەت تۈزۈمىنى ئوقۇيالايسىز</string>
+    <string name="services_find_privacy_policy">باشقا ئۈسكۈنىدە تۆۋەندىكى ئادرېسنى زىيارەت قىلىپ شەخسىيەت تۈزۈمىنى ئوقۇيالايسىز:</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> نى ياخشىلاشقا ياردەملىشىڭ</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ئۆزلۈكىدىن دىياگنوز ۋە ئىشلىتىش سانلىق مەلۇماتىنى <xliff:g id="name" example="LineageOS">%2$s</xliff:g> غا يوللايدۇ. بۇ ئۇچۇرلارنى سىزنى پەرقلەندۈرۈشكە ئىشلىتىشكە بولمايدۇ، ئىجادكارلار قوشۇنىنىڭ توكدان ئۆمرى، ئەپ ياخشىلاش ۋە  يېڭى <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ئىقتىدارنى قوشۇش ئوخشاش ئىشلارغا ياردىمى بولىدۇ.</string>
     <string name="services_os_nav_keys_label"><b>مەۋھۇم كونۇپكىنى</b> ھەقىقىي كونۇپكىنىڭ ئورنىغا ئالماشتۇرۇش.</string>

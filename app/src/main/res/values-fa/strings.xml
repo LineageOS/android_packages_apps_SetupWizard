@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">ویژگی‌های لینیِج اواِس</string>
     <string name="services_pp_explanation">این خدمات در جهت افزایش قابلیت‌های دستگاه شما عمل می‌کنند. داده‌ها مطابق سیاست های حریم خصوصی <xliff:g id="name" example="LineageOS">%1$s</xliff:g> مورد استفاده قرار خواهند گرفت.</string>
-    <string name="services_find_privacy_policy">شما می‌توانید سیاست های حریم خصوصی را بر روی یک دستگاه دیگر با بازدید از <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> بخوانید</string>
+    <string name="services_find_privacy_policy">شما می‌توانید سیاست های حریم خصوصی را بر روی یک دستگاه دیگر با بازدید از نشانی زیر بخوانید:</string>
     <string name="services_help_improve_cm">کمک به بهبود <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> با ارسال خودکار داده های عیب یابی و استفاده به <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. این اطلاعات قادر به آشکار سازی هویت شما نبوده و به تیم های مشغول بر روی چیز هایی مثل عمر باتری، کارایی نرم افزار و ویژگی های <xliff:g id="name" example="LineageOS">%3$s</xliff:g> جدید کمک می‌کند.</string>
     <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
