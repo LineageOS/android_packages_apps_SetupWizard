@@ -52,6 +52,18 @@
         <item name="android:lineHeight">@dimen/welcome_title_line_height</item>
     </style>
 
+    <style name="WelcomeIconButton" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="cornerRadius">@dimen/welcome_footer_button_radius</item>
+    </style>
+
     <style name="EdgeToEdgeWallpaperBackground" parent="Theme.Setup">
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
