@@ -16,16 +16,19 @@ import android.content.IntentFilter
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.provider.Settings
 import android.text.format.DateFormat
-import android.view.View
-import android.widget.AdapterView
 import android.widget.DatePicker
 import android.widget.SimpleAdapter
-import android.widget.Spinner
-import android.widget.TextView
 import android.widget.TimePicker
+import androidx.appcompat.app.AlertDialog
 import com.android.settingslib.datetime.ZoneGetter
+import com.google.android.setupdesign.GlifRecyclerLayout
+import com.google.android.setupdesign.items.Item
+import com.google.android.setupdesign.items.RecyclerItemAdapter
+import com.google.android.setupdesign.items.SwitchItem
 import java.util.Calendar
+import java.util.Date
 import java.util.TimeZone
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
@@ -36,9 +39,17 @@ class DateTimeActivity :
     TimePickerDialog.OnTimeSetListener,
     DatePickerDialog.OnDateSetListener {
 
-    private var currentTimeZone: TimeZone? = null
-    private lateinit var dateTextView: TextView
-    private lateinit var timeTextView: TextView
+    private val itemAdapter by lazy {
+        (glifLayout as GlifRecyclerLayout).adapter as RecyclerItemAdapter
+    }
+
+    private val dateItem by lazy { itemAdapter.findItemById(R.id.date_item) as Item }
+    private val dateFormatItem by lazy { itemAdapter.findItemById(R.id.date_format_item) as Item }
+    private val timeItem by lazy { itemAdapter.findItemById(R.id.time_item) as Item }
+    private val timeZoneItem by lazy { itemAdapter.findItemById(R.id.time_zone_item) as Item }
+    private val timeFormatItem by lazy {
+        itemAdapter.findItemById(R.id.time_format_item) as SwitchItem
+    }
 
     private val handler = Handler(Looper.getMainLooper())
 
@@ -54,42 +65,17 @@ class DateTimeActivity :
         setNextText(R.string.next)
         glifLayout.setDescriptionText(getString(R.string.date_time_summary))
 
-        val spinner = findViewById<Spinner>(R.id.timezone_list)
-        val adapter = constructTimezoneAdapter(this)
-        currentTimeZone = TimeZone.getDefault()
+        dateFormatItem.summary = dateFormatOrder()
+        timeFormatItem.isChecked = DateFormat.is24HourFormat(this)
+        timeFormatItem.setOnCheckedChangeListener { _, isChecked -> set24HourFormat(isChecked) }
 
-        findViewById<View>(R.id.date_item).setOnClickListener { showDatePicker() }
-        findViewById<View>(R.id.time_item).setOnClickListener { showTimePicker() }
-        dateTextView = findViewById(R.id.date_text)
-        timeTextView = findViewById(R.id.time_text)
-
-        // Pre-select current/default timezone
-        handler.post {
-            val tzIndex = getTimeZoneIndex(adapter, currentTimeZone!!)
-            spinner.adapter = adapter
-            if (tzIndex != -1) {
-                spinner.setSelection(tzIndex)
+        itemAdapter.setOnItemSelectedListener { item ->
+            when (item) {
+                dateItem -> showDatePicker()
+                timeItem -> showTimePicker()
+                timeZoneItem -> showTimeZonePicker()
+                timeFormatItem -> timeFormatItem.isChecked = !timeFormatItem.isChecked
             }
-            spinner.onItemSelectedListener =
-                object : AdapterView.OnItemSelectedListener {
-                    override fun onItemSelected(
-                        adapterView: AdapterView<*>,
-                        view: View?,
-                        position: Int,
-                        id: Long,
-                    ) {
-                        val map = adapterView.getItemAtPosition(position) as Map<*, *>
-                        val tzId = map[KEY_ID] as String
-                        if (currentTimeZone != null && currentTimeZone!!.id != tzId) {
-                            // Update the system timezone value
-                            val alarm = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-                            alarm.setTimeZone(tzId)
-                            currentTimeZone = TimeZone.getTimeZone(tzId)
-                        }
-                    }
-
-                    override fun onNothingSelected(adapterView: AdapterView<*>) {}
-                }
         }
 
         // Pre-select current/default date if epoch
@@ -157,11 +143,60 @@ class DateTimeActivity :
         TimePickerFragment.newInstance().show(supportFragmentManager, TimePickerFragment.TAG)
     }
 
+    private fun showTimeZonePicker() {
+        val adapter = constructTimezoneAdapter(this)
+        val currentTimeZone = TimeZone.getDefault()
+        val dialog =
+            AlertDialog.Builder(this)
+                .setTitle(R.string.setup_time_zone)
+                .setAdapter(adapter) { _, position ->
+                    val zone = adapter.getItem(position) as Map<*, *>
+                    setTimeZone(this, zone[KEY_ID] as String)
+                    updateTimeAndDateDisplay()
+                }
+                .create()
+        dialog.show()
+        val selection = getTimeZoneIndex(adapter, currentTimeZone)
+        if (selection != -1) {
+            dialog.listView.setSelection(selection)
+        }
+    }
+
+    private fun dateFormatOrder() =
+        DateFormat.getDateFormatOrder(this).joinToString(" / ") {
+            when (it) {
+                'd' -> getString(R.string.date_format_day)
+                'M' -> getString(R.string.date_format_month)
+                else -> getString(R.string.date_format_year)
+            }
+        }
+
+    private fun set24HourFormat(is24Hour: Boolean) {
+        Settings.System.putString(
+            contentResolver,
+            Settings.System.TIME_12_24,
+            if (is24Hour) HOURS_24 else HOURS_12,
+        )
+        sendBroadcast(
+            Intent(Intent.ACTION_TIME_CHANGED)
+                .putExtra(
+                    Intent.EXTRA_TIME_PREF_24_HOUR_FORMAT,
+                    if (is24Hour) {
+                        Intent.EXTRA_TIME_PREF_VALUE_USE_24_HOUR
+                    } else {
+                        Intent.EXTRA_TIME_PREF_VALUE_USE_12_HOUR
+                    },
+                )
+        )
+    }
+
     private fun updateTimeAndDateDisplay() {
-        val shortDateFormat: java.text.DateFormat = DateFormat.getDateFormat(this)
         val now = Calendar.getInstance()
-        timeTextView.text = DateFormat.getTimeFormat(this).format(now.time)
-        dateTextView.text = shortDateFormat.format(now.time)
+        dateItem.summary = DateFormat.getLongDateFormat(this).format(now.time)
+        timeItem.summary = DateFormat.getTimeFormat(this).format(now.time)
+        timeZoneItem.summary =
+            ZoneGetter.getTimeZoneOffsetAndName(this, TimeZone.getDefault(), Date(now.timeInMillis))
+        timeFormatItem.isChecked = DateFormat.is24HourFormat(this)
     }
 
     private class TimeZoneComparator(private val sortingKey: String) : Comparator<Map<*, *>> {
@@ -189,6 +224,9 @@ class DateTimeActivity :
         private const val KEY_GMT = "gmt"
         private const val KEY_OFFSET = "offset"
 
+        private const val HOURS_12 = "12"
+        private const val HOURS_24 = "24"
+
         private fun constructTimezoneAdapter(context: Context): SimpleAdapter {
             val from = arrayOf(KEY_DISPLAYNAME, KEY_GMT)
             val to = intArrayOf(android.R.id.text1, android.R.id.text2)
@@ -210,6 +248,12 @@ class DateTimeActivity :
             return (0 until adapter.count).firstOrNull {
                 (adapter.getItem(it) as Map<*, *>)[KEY_ID] as String == defaultId
             } ?: -1
+        }
+
+        private fun setTimeZone(context: Context, tzId: String) {
+            if (TimeZone.getDefault().id != tzId) {
+                (context.getSystemService(Context.ALARM_SERVICE) as AlarmManager).setTimeZone(tzId)
+            }
         }
 
         private fun setDate(context: Context, year: Int, month: Int, day: Int) {

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<ItemGroup xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SectionItem android:title="@string/setup_datetime_section_date">
+
+        <Item
+            android:id="@+id/date_item"
+            android:title="@string/setup_current_date" />
+
+        <NonActionableItem
+            android:id="@+id/date_format_item"
+            android:title="@string/setup_date_format" />
+
+    </SectionItem>
+
+    <SectionItem android:title="@string/setup_datetime_section_time">
+
+        <Item
+            android:id="@+id/time_zone_item"
+            android:title="@string/setup_time_zone" />
+
+        <Item
+            android:id="@+id/time_item"
+            android:title="@string/setup_current_time" />
+
+        <SwitchItem
+            android:id="@+id/time_format_item"
+            android:layout="@layout/setup_items_switch"
+            android:title="@string/setup_24_hour_format" />
+
+    </SectionItem>
+
+</ItemGroup>
