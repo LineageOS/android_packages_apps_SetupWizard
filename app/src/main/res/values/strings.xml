@@ -81,4 +81,7 @@
     <string name="theme_summary">Dark theme uses a black background to help keep battery alive longer on some screens</string>
     <string name="dark">Dark</string>
     <string name="light">Light</string>
+
+    <!-- Finish Screen -->
+    <string name="swipe_up_to_go_home">Swipe up to go home</string>
 </resources>

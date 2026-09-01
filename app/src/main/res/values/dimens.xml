@@ -22,4 +22,9 @@
     <dimen name="welcome_accessibility_text_size">20sp</dimen>
 
     <dimen name="setup_compat_footer_button_radius">@dimen/sud_glif_expressive_footer_button_radius</dimen>
+
+    <dimen name="swipe_hint_icon_size">67dp</dimen>
+    <dimen name="swipe_hint_text_margin_top">12dp</dimen>
+    <dimen name="swipe_hint_text_size">17sp</dimen>
+    <dimen name="swipe_hint_padding_bottom">24dp</dimen>
 </resources>
