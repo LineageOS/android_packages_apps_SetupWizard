@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Các tính năng LineageOS</string>
     <string name="services_pp_explanation">Các dịch vụ này giúp bạn mở rộng khả năng của thiết bị. Dữ liệu sẽ được sử dụng theo chính sách bảo mật của <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Bạn có thể đọc chính sách bảo mật trên một thiết bị khác bằng cách truy cập <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Bạn có thể đọc chính sách bảo mật trên một thiết bị khác bằng cách truy cập:</string>
     <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu sử dụng và chẩn đoán đến <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Thông tin này không thể được sử dụng để nhận dạng bạn và hỗ trợ các nhóm làm việc về những yếu tố như thời lượng pin, hiệu suất ứng dụng và <xliff:g id="name" example="LineageOS">%3$s</xliff:g> tính năng mới.</string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>

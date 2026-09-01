@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funzionalitâts di LineageOS</string>
     <string name="services_pp_explanation">Chescj servizis a funzionin par slargjâ lis funzionalitâts dal to dispositîf. I dâts a vignaran doprâts in conformitât cu la informative su la riservatece di <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Tu puedis lei la informative su la riservatece suntun altri dispositîf visitant <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Tu puedis lei la informative su la riservatece suntun altri dispositîf visitant:</string>
     <string name="services_help_improve_cm">Jude a miorâ <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> inviant in automatic i dâts diagnostiche di consum ai svilupadôrs di <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Nol sarà pussibil doprâ chestis informazions par identificâti ma a dan une man ai grups che a lavorin su robis come la durade de batarie, lis prestazions des aplicazions e lis gnovis funzionalitâts di <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Dopre i botons virtuâi sul schermi</b> invezit di chei fisics.</string>

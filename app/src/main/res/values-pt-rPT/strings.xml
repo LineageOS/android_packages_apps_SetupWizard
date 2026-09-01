@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funcionalidades LineageOS</string>
     <string name="services_pp_explanation">Estes serviços servem para ampliar os recursos do seu telefone. Os dados serão utilizados em conformidade com a politica de privacidade de <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Pode ler a política de privacidade noutro dispositivo visitando <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Pode ler a política de privacidade noutro dispositivo visitando:</string>
     <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Ajude a melhorar a LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e o desenvolvimento de novas funcionalidades para <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>

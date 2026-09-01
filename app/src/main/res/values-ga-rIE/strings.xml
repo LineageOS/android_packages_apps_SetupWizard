@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS gnéithe</string>
     <string name="services_pp_explanation">Oibríonn na seirbhísí seo duit chun cumais do ghléis a leathnú. Úsáidfear sonraí de réir pholasaí príobháideachais <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Is féidir leat an polasaí príobháideachais a léamh ar ghléas eile trí chuairt a thabhairt ar <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Is féidir leat an polasaí príobháideachais a léamh ar ghléas eile trí chuairt a thabhairt ar:</string>
     <string name="services_help_improve_cm">Cabhraigh le feabhas a chur ar <xliff:g id="name" example="LineageOS"> %s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Cabhraigh le LineageOS a fheabhsú">%1$s</xliff:g> trí shonraí diagnóiseacha agus úsáide a sheoladh go huathoibríoch chuig <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Ní féidir an fhaisnéis seo a úsáid chun tú a aithint agus tugann sé cúnamh d\'fhoirne atá ag obair ar rudaí cosúil le saol ceallraí, feidhmíocht aipe agus <xliff:g id="name" example="LineageOS">%3$s</xliff:g> gnéithe.</string>
     <string name="services_os_nav_keys_label"><b>Úsáid eochracha nascleanúna scáileáin</b> in ionad eochracha crua-earraí.</string>
