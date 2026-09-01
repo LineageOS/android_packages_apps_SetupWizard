@@ -37,8 +37,8 @@
     <string name="update_recovery_setting">עדכון Recovery של Lineage יחד עם מערכת ההפעלה</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">תכונות LineageOS</string>
-    <string name="services_pp_explanation">שירותים אלו פועלים עבורך כדי להרחיב את יכולות ההתקן שלך.  הנתונים ישמשו בכפוף לתנאי הפרטיות המופיעים במדיניות הפרטיות של <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">ניתן לעיין במדיניות הפרטיות בהתקן אחר באמצעות ביקור בכתובת  <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_pp_explanation">שירותים אלו פועלים עבורך כדי להרחיב את יכולות מכשירך.  יעשה שימוש בנתונים בהתאם למדיניות הפרטיות של <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">ניתן לעיין במדיניות הפרטיות במכשיר אחר באמצעות ביקור בכתובת  <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
     <string name="services_help_improve_cm">עזרה בשיפור <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> על ידי שליחת נתוני אבחון ושימוש אוטומטית אל <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. לא ניתן להשתמש במידע זה כדי לזהות אותך, המידע יעניק סיוע לצוותים העובדים על דברים כמו חיי סוללה, ביצועי יישומים ותכונות חדשות של <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>השתמש במקשי הניווט במסך</b> במקום במקשים הפיזיים.</string>
