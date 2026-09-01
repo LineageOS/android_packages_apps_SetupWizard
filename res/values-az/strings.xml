@@ -29,7 +29,7 @@
     <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> və ya başqa bir əməliyyat sistemindən Seedvault nüsxəniz varsa, onu burada bərpa edə bilərsiniz.</string>
     <string name="intro_restore_button">Nüsxədən bərpa et</string>
     <string name="setup_location">Yerləşmə xidmətləri</string>
-    <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
+    <string name="location_access_summary"><b>İzin istəyən tətbiqlərin yerləşmə məlumatlarınızı istifadə etməsinə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
     <string name="location_agps_access_summary">Yerləşmə açıq olduqda, <b>peyk köməkçi verilərini internetdən endirin</b>, bu GPS-in başlatma performansını əhəmiyyətli dərəcədə artıra bilər.</string>
     <string name="update_recovery_title">Lineage Geri qaytarma Rejimini Güncəllə</string>
     <string name="update_recovery_description">Hər güncəlləmədən sonrakı ilk açılışda Lineage Geri qaytarma rejimini güncəlləyir.</string>
