@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS функции</string>
     <string name="services_pp_explanation">Тези услуги работят за вас, за да разширите възможностите на вашето устройство. Данните ще бъдат използвани в съответствие с<xliff:g id="name" example="LineageOS">%1$s</xliff:g> политика за поверителност.</string>
-    <string name="services_find_privacy_policy">Можете да прочетете политиката за поверителност на друго устройство, като посетите <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Можете да прочетете политиката за поверителност на друго устройство, като посетите:</string>
     <string name="services_help_improve_cm">Помогне за подобряване на <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> чрез автоматично изпращане на диагностични данни и данни за употреба до <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Тази информация не може да се използва, за да ви идентифицира и помага на екипи, работещи по неща като живот на батерията, производителност на приложенията и нови <xliff:g id="name" example="LineageOS">%3$s</xliff:g> функции.</string>
     <string name="services_os_nav_keys_label"><b>Използване на клавишите за навигация на екрана</b> вместо хардуерните бутони.</string>

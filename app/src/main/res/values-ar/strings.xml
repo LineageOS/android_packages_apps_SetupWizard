@@ -35,7 +35,7 @@
     <string name="update_recovery_setting">تحديث Lineage Recovery إلى جانب نظام التشغيل</string>
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">ميزات LineageOS</string>
-    <string name="services_find_privacy_policy">يمكنك قراءة سياسة الخصوصية على جهاز آخر بزيارة <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">يمكنك قراءة سياسة الخصوصية على جهاز آخر بزيارة:</string>
     <string name="services_help_improve_cm">ساهم في تحسين <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_os_nav_keys_label"><b>استخدام مفاتيح التنقل على الشاشة</b> بدلاً من مفاتيح الأجهزة.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
