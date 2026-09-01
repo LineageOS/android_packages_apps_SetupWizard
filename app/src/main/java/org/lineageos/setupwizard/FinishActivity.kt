@@ -8,35 +8,47 @@ package org.lineageos.setupwizard
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.animation.ValueAnimator
 import android.content.pm.ActivityInfo
 import android.content.res.Resources
+import android.graphics.BlendMode
+import android.graphics.Paint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.view.MotionEvent
+import android.view.VelocityTracker
 import android.view.View
-import android.view.ViewAnimationUtils
 import android.view.ViewGroup.MarginLayoutParams
-import android.widget.Button
+import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.setupcompat.util.SystemBarHelper
-import kotlin.math.hypot
 import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
+import org.lineageos.setupwizard.widget.RevealHoleView
 
 class FinishActivity : BaseSetupWizardActivity() {
 
     private val handler = Handler(Looper.getMainLooper())
 
     private var rootView: View? = null
-    private var startButton: Button? = null
+    private var swipeHint: View? = null
+    private var background: RevealHoleView? = null
+    private var brandLogo: View? = null
+
+    private var velocityTracker: VelocityTracker? = null
+    private var dragStartY = 0f
+    private var dragging = false
+    private var revealProgress = 0f
+    private var logoPunched = false
+
     private var edgeToEdgeWallpaperBackgroundTheme: Resources.Theme? = null
 
     private enum class FinishState {
         NONE,
-        SHOULD_ANIMATE,
         ANIMATING,
         FINISHED,
     }
@@ -54,18 +66,21 @@ class FinishActivity : BaseSetupWizardActivity() {
         if (LOGV) {
             logActivityState("onCreate savedInstanceState=$savedInstanceState")
         }
-        startButton =
-            findViewById<Button>(R.id.start).apply { setOnClickListener { onNextPressed() } }
-
-        // Edge-to-edge. Needed for the background view to fill the full screen.
+        // Edge-to-edge
         val window = window
         window.setDecorFitsSystemWindows(false)
 
-        // Make sure 3-button navigation bar is the same color as the rest of the screen.
         window.isNavigationBarContrastEnforced = false
+        window.isStatusBarContrastEnforced = false
+
+        rootView = findViewById(R.id.root)
+        swipeHint = findViewById(R.id.swipe_hint)
+        background = findViewById(R.id.background)
+        brandLogo = findViewById(R.id.brand_logo)
+
+        rootView?.setLayerType(View.LAYER_TYPE_HARDWARE, null)
 
         // Ensure the main layout (not including the background view) does not get obscured by bars.
-        rootView = findViewById(R.id.root)
         ViewCompat.setOnApplyWindowInsetsListener(rootView!!) { _, windowInsets ->
             val linearLayout = findViewById<View>(R.id.linear_layout)
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -78,41 +93,106 @@ class FinishActivity : BaseSetupWizardActivity() {
             WindowInsetsCompat.CONSUMED
         }
 
-        if (finishState != FinishState.NONE) {
-            disableNavigation()
+        if (finishState == FinishState.FINISHED) {
+            Log.e(TAG, "Should not start again when finished!")
+            finish()
         }
+    }
 
-        when (finishState) {
-            FinishState.NONE -> {}
-            FinishState.SHOULD_ANIMATE -> startFinishSequence()
-            FinishState.FINISHED -> {
-                Log.e(TAG, "Should not start again when finished!")
-                finish()
+    override fun onDestroy() {
+        super.onDestroy()
+        velocityTracker?.recycle()
+        velocityTracker = null
+    }
+
+    private fun punchLogoOutOfBackground() {
+        if (logoPunched) {
+            return
+        }
+        val logo = brandLogo ?: return
+        logo.setLayerType(View.LAYER_TYPE_HARDWARE, Paint().apply { blendMode = BlendMode.DST_OUT })
+        logoPunched = true
+    }
+
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        if (finishState != FinishState.NONE) {
+            return super.onTouchEvent(event)
+        }
+        when (event.actionMasked) {
+            MotionEvent.ACTION_DOWN -> {
+                punchLogoOutOfBackground()
+                dragStartY = event.y
+                dragging = true
+                velocityTracker = VelocityTracker.obtain()
+                velocityTracker?.addMovement(event)
+                return true
             }
-            else -> Log.w(TAG, "Unexpected onCreate state $finishState")
+            MotionEvent.ACTION_MOVE -> {
+                if (!dragging) return super.onTouchEvent(event)
+                velocityTracker?.addMovement(event)
+                val dragged = (dragStartY - event.y).coerceAtLeast(0f)
+                applyRevealProgress((dragged / swipeDistance()).coerceIn(0f, 1f))
+                return true
+            }
+            MotionEvent.ACTION_UP,
+            MotionEvent.ACTION_CANCEL -> {
+                if (!dragging) return super.onTouchEvent(event)
+                dragging = false
+                val tracker = velocityTracker
+                tracker?.addMovement(event)
+                tracker?.computeCurrentVelocity(1000)
+                val flungUp = -(tracker?.yVelocity ?: 0f) > SWIPE_MIN_VELOCITY
+                tracker?.recycle()
+                velocityTracker = null
+                if (revealProgress >= COMMIT_FRACTION || flungUp) {
+                    commitReveal()
+                } else {
+                    springBack()
+                }
+                return true
+            }
+        }
+        return super.onTouchEvent(event)
+    }
+
+    private fun swipeDistance() = (rootView?.height ?: resources.displayMetrics.heightPixels) / 3f
+
+    private fun applyRevealProgress(progress: Float) {
+        revealProgress = progress
+        val background = background ?: return
+        brandLogo?.let { logo ->
+            (logo.parent as? View)?.let { parent ->
+                val location = IntArray(2)
+                parent.getLocationOnScreen(location)
+                background.holeCenterX = location[0] + logo.left + logo.pivotX
+                background.holeCenterY = location[1] + logo.top + logo.pivotY
+            }
+        }
+        background.holeRadius = background.fullRadius() * REVEAL_OVERSHOOT * progress
+        brandLogo?.apply {
+            val scale = LOGO_START_SCALE + (LOGO_END_SCALE - LOGO_START_SCALE) * progress
+            scaleX = scale
+            scaleY = scale
+        }
+        swipeHint?.alpha = 1f - progress
+    }
+
+    private fun springBack() {
+        ValueAnimator.ofFloat(revealProgress, 0f).apply {
+            duration = SPRING_BACK_DURATION_MS
+            interpolator = AccelerateDecelerateInterpolator()
+            addUpdateListener { applyRevealProgress(it.animatedValue as Float) }
+            start()
         }
     }
 
     private fun disableNavigation() {
-        startButton?.visibility = View.INVISIBLE
+        swipeHint?.visibility = View.INVISIBLE
         SystemBarHelper.setBackButtonVisible(window, false)
     }
 
-    private fun disableActivityTransitions() {
-        overrideActivityTransition(OVERRIDE_TRANSITION_OPEN, 0, 0)
-        overrideActivityTransition(OVERRIDE_TRANSITION_CLOSE, 0, 0)
-    }
-
     override fun applyForwardTransition() {
-        if (finishState == FinishState.NONE) {
-            super.applyForwardTransition()
-        }
-    }
-
-    override fun applyBackwardTransition() {
-        if (finishState == FinishState.NONE) {
-            super.applyBackwardTransition()
-        }
+        // no-op
     }
 
     override val layoutResId: Int = R.layout.finish_activity
@@ -121,9 +201,6 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     override fun getTheme(): Resources.Theme {
         val theme = super.getTheme()
-        if (finishState == FinishState.NONE) {
-            return theme
-        }
         if (edgeToEdgeWallpaperBackgroundTheme == null) {
             theme.applyStyle(R.style.EdgeToEdgeWallpaperBackground, true)
             edgeToEdgeWallpaperBackgroundTheme = theme
@@ -133,96 +210,57 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     override fun onNextPressed() {
         when (finishState) {
-            FinishState.NONE -> relaunchAndRunAnimation()
+            FinishState.NONE -> commitReveal()
             else -> Log.e(TAG, "Unexpected state $finishState when navigating next")
         }
     }
 
-    private fun relaunchAndRunAnimation() {
-        finishState = FinishState.SHOULD_ANIMATE
-        // Relaunching the activity before finishing is the only way currently known to prevent
-        // an out-of-place slide transition from happening, even when disabling transitions, and
-        // regardless of when we disable them. This also means we can't simply call recreate(), but
-        // another reason is that recreate() doesn't seem to reinitialize the theme, which is the
-        // entire point of relaunching - to ensure this activity reveals a wallpaper background.
-        // These theme shenanigans and relaunching were not necessary prior to Android 14 QPR3.
-        startActivity(intent)
-        finish()
-        disableActivityTransitions()
-    }
-
-    private fun startFinishSequence() {
+    private fun commitReveal() {
         finishState = FinishState.ANIMATING
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
         disableNavigation()
-
-        // Begin outro animation.
-        if (rootView!!.isAttachedToWindow) {
-            handler.post { animateOut() }
-        } else {
-            rootView!!.addOnAttachStateChangeListener(
-                object : View.OnAttachStateChangeListener {
-                    override fun onViewAttachedToWindow(v: View) {
-                        handler.post { animateOut() }
-                    }
-
-                    override fun onViewDetachedFromWindow(v: View) {
-                        // Do nothing
+        ValueAnimator.ofFloat(revealProgress, 1f).apply {
+            duration = (ANIM_DURATION_MS * (1f - revealProgress)).toLong().coerceAtLeast(200L)
+            interpolator = AccelerateDecelerateInterpolator()
+            addUpdateListener { applyRevealProgress(it.animatedValue as Float) }
+            addListener(
+                object : AnimatorListenerAdapter() {
+                    override fun onAnimationEnd(animation: Animator) {
+                        rootView?.visibility = View.INVISIBLE
+                        handler.post {
+                            if (LOGV) {
+                                Log.v(TAG, "Animation ended")
+                            }
+                            finishAfterAnimation()
+                        }
                     }
                 }
             )
+            start()
         }
-    }
-
-    private fun animateOut() {
-        if (finishState != FinishState.ANIMATING) {
-            Log.e(TAG, "animateOut but in $finishState phase. How?")
-            return
-        }
-        val cx = (rootView!!.left + rootView!!.right) / 2
-        val cy = (rootView!!.top + rootView!!.bottom) / 2
-        val fullRadius = hypot(cx.toDouble(), cy.toDouble()).toFloat()
-        val anim =
-            runCatching {
-                    ViewAnimationUtils.createCircularReveal(rootView, cx, cy, fullRadius, 0f)
-                }
-                .getOrElse {
-                    Log.e(TAG, "Failed to create finish animation", it)
-                    finishAfterAnimation()
-                    return
-                }
-        anim.duration = 900
-        anim.addListener(
-            object : AnimatorListenerAdapter() {
-                override fun onAnimationStart(animation: Animator) {
-                    rootView!!.visibility = View.VISIBLE
-                }
-
-                override fun onAnimationEnd(animation: Animator) {
-                    rootView!!.visibility = View.INVISIBLE
-                    handler.post {
-                        if (LOGV) {
-                            Log.v(TAG, "Animation ended")
-                        }
-                        finishAfterAnimation()
-                    }
-                }
-            }
-        )
-        anim.start()
     }
 
     private fun finishAfterAnimation() {
-        SetupWizardUtils.finishSetupWizard(this@FinishActivity)
+        SetupWizardUtils.finishSetupWizard(this)
         finishState = FinishState.FINISHED
     }
 
     companion object {
         private const val TAG = "FinishActivity"
 
-        // "Why not just start this activity with an Intent extra?" you might ask. Been there.
-        // We need this to affect the theme, and even onCreate is not early enough for that,
-        // so "@Volatile" it is. Feel free to rework this if you dare.
+        private const val COMMIT_FRACTION = 0.4f
+        private const val SWIPE_MIN_VELOCITY = 600f
+
+        private const val ANIM_DURATION_MS = 900L
+        private const val SPRING_BACK_DURATION_MS = 200L
+
+        private const val REVEAL_OVERSHOOT = 1.35f
+
+        private const val LOGO_START_SCALE = 1.2f
+        private const val LOGO_END_SCALE = 18f
+
+        // Static so a relaunch after the wizard has finished is recognised and dropped rather
+        // than replaying the reveal; @Volatile because it is written from animation callbacks.
         @Volatile private var finishState = FinishState.NONE
     }
 }
