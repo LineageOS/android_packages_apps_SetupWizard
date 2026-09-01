@@ -36,7 +36,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funciones de LineageOS</string>
     <string name="services_pp_explanation">Estos servicios funcionen p\'aumentar les funciones del preséu. Los datos van usase d\'acuerdu cola política de privacidá de <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
-    <string name="services_find_privacy_policy">Pues lleer la política de privacidá n\'otru preséu pente la visita a <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Pues lleer la política de privacidá n\'otru preséu pente la visita a:</string>
     <string name="services_help_improve_cm">Ayudar a ameyorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> pente l\'unviu los datos de diagnósticu y d\'usu a <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta información nun se pue usar pa identificate mas val p\'agabitar a los desendolcadores pa que trabayen en coses como la duración de la batería, el rindimientu de les aplicaciones y les funciones nueves de <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>

@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS-funksjonar</string>
     <string name="services_pp_explanation">Desse tenestene utvidar kva eininga di kan gjera. Data vert brukt i samsvar med personvernreglane til <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Du kan lesa personvernreglane på ei anna eining ved å gå til <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Du kan lesa personvernreglane på ei anna eining ved å gå til:</string>
     <string name="services_help_improve_cm">Hjelp til med å gjera <xliff:g id="name" example="LineageOS">%s</xliff:g> betre</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ved å senda diagnose- og brukdata til <xliff:g id="name" example="LineageOS">%2$s</xliff:g> automatisk. Informasjonen kan ikkje brukast til å identifisera deg, men hjelper utviklarane med ting som batteritid, app-yting og nye <xliff:g id="name" example="LineageOS">%3$s</xliff:g>-funksjonar.</string>
     <string name="services_os_nav_keys_label"><b>Bruk navigasjonsknappar på skjermen</b> i staden for fysiske knappar.</string>

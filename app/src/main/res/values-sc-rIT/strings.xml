@@ -29,7 +29,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funtziones LineageOS</string>
     <string name="services_pp_explanation">Custos servìtzios funtzionant pro chi potzas crèschere is funtziones de su telèfonu. Is datos s\'ant a impreare de acordu cun sa polìtica de riservadesa de <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Podes lèghere sa polìtica de riservadesa in un\'àteru dispositivu in <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Podes lèghere sa polìtica de riservadesa in un\'àteru dispositivu in:</string>
     <string name="services_help_improve_cm">Agiuda a megiorare <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve CyanogenMod">%1$s</xliff:g> imbiende in automàticu is datos diagnòsticos e de consumu a s\'iscuadra de isvilupu de LineageOS. Custas infomatziones non si podent impreare pro t\'identificare, ma donant una manu a is iscuadras chi traballant subra de cosas che a sa durada de sa bateria, su rendimentu de is aplicatziones e funtziones noas de <xliff:g id="name" example="CyanogenMod">%2$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Imprea is teclas de navigatzione in ischermu</b> imbetzes de is teclas fìsicas.</string>
