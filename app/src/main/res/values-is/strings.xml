@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Eiginleikar LineageOS</string>
     <string name="services_pp_explanation">Þessar þjónustur gera þér kleift að útvíkka eiginleika tækisins þíns. Gögn verða notuð í samræmi við persónuverndarstefnu <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">Lestu stefnu varðandi meðferð persónulegra gagna með því að fara á <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Lestu stefnu varðandi meðferð persónulegra gagna með því að fara á:</string>
     <string name="services_help_improve_cm">Hjálpaðu okkur að bæta <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> með því að senda sjálfvirkt greiningargögn og upplýsingar um notkun til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Þessar upplýsingar er ekki hægt að nota til að auðkenna þig og hjálpa þróunarteymum við vinnu varðandi ýmis atriði, eins og líftíma rafhlöðu, afköst forrita og nýja eiginleika í <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>

@@ -36,7 +36,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS-funktioner</string>
     <string name="services_pp_explanation">&lt;xliff:g id="name" example="LineageOS"&gt;Disse tjenester virker for at udvide funktionerne på din enhed. Data vil blive brugt i overensstemmelse med  &lt;xliff:g id="name" example="LineageOS"&gt;%1$s&lt;/xliff:g&gt;\'s privatlivspolitik.</string>
-    <string name="services_find_privacy_policy">Du kan læse privatlivspolitikken på en anden enhed ved at besøge <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Du kan læse privatlivspolitikken på en anden enhed ved at besøge:</string>
     <string name="services_help_improve_cm">Hjælp med at forbedre <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> ved automatisk at sende diagnose og forbrugsdata til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Denne information kan ikke bruge til at identificere dig men giver en hjælpende hånd til de hold der arbejder med batteri levetid, app præstation og nye<xliff:g id="name" example="LineageOS">%3$s</xliff:g> funktioner.</string>
     <string name="services_os_nav_keys_label"><b>Brug navigationstaster på skærm</b> i stedet for fysiske-taster.</string>

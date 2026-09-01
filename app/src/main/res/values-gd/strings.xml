@@ -33,7 +33,7 @@
     <string name="update_recovery_setting">Ùraich aiseag Lineage leis an t-siostam obrachaidh</string>
     <string name="setup_services">Gleusan LineageOS</string>
     <string name="services_pp_explanation">Leudaichidh na seirbheisean seo comasan an uidheim agad. Thèid an dàta a chleachdadh a-rèir poileasaidh prìobhaideachd <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
-    <string name="services_find_privacy_policy">’S urrainn dhut am poileasaidh a leughadh air uidheam eile is tu a’ tadhal air <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">’S urrainn dhut am poileasaidh a leughadh air uidheam eile is tu a’ tadhal air:</string>
     <string name="services_help_improve_cm">Cuidich gus piseach a thoirt air <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> is tu a’ cur dàta na diagnosachd ’s a’ chleachdaidh gu <xliff:g id="name" example="LineageOS">%2$s</xliff:g> gu fèin-obrachail. Cha ghabh an dàta sin a chleachdadh airson d’ aithneachadh agus bheir e cuideachadh dha na sgiobaidhean a bhios ag obair air rudan mar beatha a’ bhataraidh, dèanadas nan aplacaidean agus gleusan <xliff:g id="name" example="LineageOS">%3$s</xliff:g> ùra.</string>
     <string name="services_os_nav_keys_label"><b>Cleachd iuchraichean seòladaireachd air an sgrìn</b> seach iuchraichean bathair-chruaidh.</string>

@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Característiques de LineageOS</string>
     <string name="services_pp_explanation">Aquests serveis funcionen per ampliar les capacitats del vostre dispositiu. Les dades s\'utilitzaran d\'acord amb la política de privadesa de &lt;xliff:g id="name" example="LineageOS"&gt;.</string>
-    <string name="services_find_privacy_policy">Podeu llegir la política de privadesa en un altre dispositiu visitant <xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g></string>
+    <string name="services_find_privacy_policy">Podeu llegir la política de privadesa en un altre dispositiu visitant:</string>
     <string name="services_help_improve_cm">Ajuda a millorar <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label">&lt;xliff:g id="name" example="Help improve LineageOS"&gt; enviant automàticament dades de diagnòstic i d\'ús a &lt;xliff:g id="name" example="LineageOS"&gt;. Aquesta informació no es pot utilitzar per identificar-vos i dóna un cop de mà als equips que treballen en coses com ara la durada de la bateria, el rendiment de les aplicacions i les noves característiques de &lt;xliff:g id="name" example="LineageOS"&gt;.</string>
     <string name="services_os_nav_keys_label"><b>Utilitza les tecles de navegació en pantalla</b> enlloc de les tecles físiques.</string>

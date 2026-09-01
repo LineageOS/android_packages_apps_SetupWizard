@@ -38,7 +38,7 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS சிறப்பியல்புகள்</string>
     <string name="services_pp_explanation">உமது கருவியின் திறன்களை விரிவாக்க இப்பணிவிடைகள் உமக்காக வேலை செய்கின்றன. <xliff:g id="name" example="LineageOS">%1$s</xliff:g> இன் தனியுரிமைக் கொள்கையின்படி தரவு பயன்படுத்தப்படும்.</string>
-    <string name="services_find_privacy_policy"><xliff:g id="uri" example="https://lineageos.org/legal">%1$s</xliff:g> இதைப் பார்வையிடுவதன் மூலம் மற்றொரு கருவியில் தனியுரிமைக் கொள்கையைப் படிக்கலாம்</string>
+    <string name="services_find_privacy_policy">மற்றொரு கருவியில் பின்வரும் முகவரியைப் பார்வையிடுவதன் மூலம் தனியுரிமைக் கொள்கையைப் படிக்கலாம்:</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> ஐ மேம்படுத்த உதவுக</string>
     <string name="services_metrics_label">தன்னியக்கமாகப் பகுப்பாய்வும், பயன்பாட்டுத் தரவையும்  <xliff:g id="name" example="LineageOS">%2$s</xliff:g> இற்கு அனுப்புவதன் மூலம் <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. இத்தகவலால் உம்மை அடையாளங் காணப்பயன்படுத்த முடியாது. மேலும், மின்கல வாழ்நாள், செயலிச் செயற்திறன், புதிய <xliff:g id="name" example="LineageOS">%3$s</xliff:g> சிறப்பியல்புகள் போன்றவற்றில் பணிபுரியும் குழுக்களுக்கு இஃது உதவும்.</string>
     <string name="services_os_nav_keys_label">வன்பொருள் விசைகளுக்குப் பதிலாகத் <b>திரையில் வழிசெலுத்தல் விசைகளைப் பயன்படுத்துக</b>.</string>
