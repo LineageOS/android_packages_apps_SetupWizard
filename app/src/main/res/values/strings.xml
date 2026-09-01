@@ -41,6 +41,15 @@
     <string name="date_time_summary">Set your time zone and adjust current date and time if needed</string>
     <string name="setup_current_date">Current date</string>
     <string name="setup_current_time">Current time</string>
+    <string name="setup_datetime_section_date">Date</string>
+    <string name="setup_datetime_section_time">Time</string>
+    <string name="setup_date_format">Format</string>
+
+    <string name="date_format_day">Day</string>
+    <string name="date_format_month">Month</string>
+    <string name="date_format_year">Year</string>
+    <string name="setup_time_zone">Time zone</string>
+    <string name="setup_24_hour_format">Use 24-hour format</string>
 
     <!-- Restore backup page -->
     <string name="intro_restore_title">Restore apps and data</string>
