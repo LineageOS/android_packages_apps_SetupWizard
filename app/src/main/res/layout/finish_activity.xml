@@ -42,10 +42,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:gravity="center_horizontal"
             android:paddingBottom="@dimen/swipe_hint_padding_bottom">
 
             <ImageView
+                android:id="@+id/swipe_hint_icon"
                 android:layout_width="@dimen/swipe_hint_icon_size"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -53,6 +56,7 @@
                 android:contentDescription="@null" />
 
             <TextView
+                android:id="@+id/swipe_hint_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/swipe_hint_text_margin_top"

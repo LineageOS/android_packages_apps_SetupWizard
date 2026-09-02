@@ -22,6 +22,7 @@ import android.view.VelocityTracker
 import android.view.View
 import android.view.ViewGroup.MarginLayoutParams
 import android.view.animation.AccelerateDecelerateInterpolator
+import androidx.annotation.DimenRes
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.setupcompat.util.SystemBarHelper
@@ -36,6 +37,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     private var rootView: View? = null
     private var swipeHint: View? = null
+    private var swipeHintIcon: View? = null
+    private var swipeHintText: View? = null
     private var background: RevealHoleView? = null
     private var brandLogo: View? = null
 
@@ -75,6 +78,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
         rootView = findViewById(R.id.root)
         swipeHint = findViewById(R.id.swipe_hint)
+        swipeHintIcon = findViewById(R.id.swipe_hint_icon)
+        swipeHintText = findViewById(R.id.swipe_hint_text)
         background = findViewById(R.id.background)
         brandLogo = findViewById(R.id.brand_logo)
 
@@ -93,6 +98,10 @@ class FinishActivity : BaseSetupWizardActivity() {
             WindowInsetsCompat.CONSUMED
         }
 
+        if (savedInstanceState == null && finishState == FinishState.NONE) {
+            playEntranceAnimation()
+        }
+
         if (finishState == FinishState.FINISHED) {
             Log.e(TAG, "Should not start again when finished!")
             finish()
@@ -103,6 +112,37 @@ class FinishActivity : BaseSetupWizardActivity() {
         super.onDestroy()
         velocityTracker?.recycle()
         velocityTracker = null
+    }
+
+    private fun playEntranceAnimation() {
+        val offset = rise(R.dimen.swipe_hint_icon_rise)
+        listOfNotNull(swipeHintIcon, swipeHintText).forEachIndexed { index, view ->
+            view.alpha = 0f
+            view.translationY = offset
+            view
+                .animate()
+                .alpha(1f)
+                .translationY(0f)
+                .setStartDelay(ENTRANCE_HINT_DELAY_MS + index * ENTRANCE_STAGGER_MS)
+                .setDuration(ENTRANCE_DURATION_MS)
+        }
+
+        brandLogo?.let { logo ->
+            logo.alpha = 0f
+            logo
+                .animate()
+                .alpha(1f)
+                .setStartDelay(ENTRANCE_LOGO_DELAY_MS)
+                .setDuration(ENTRANCE_LOGO_DURATION_MS)
+        }
+    }
+
+    private fun endEntranceAnimation() {
+        listOfNotNull(swipeHintIcon, swipeHintText, brandLogo).forEach {
+            it.animate().cancel()
+            it.alpha = 1f
+            it.translationY = 0f
+        }
     }
 
     private fun punchLogoOutOfBackground() {
@@ -120,6 +160,7 @@ class FinishActivity : BaseSetupWizardActivity() {
         }
         when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
+                endEntranceAnimation()
                 punchLogoOutOfBackground()
                 dragStartY = event.y
                 dragging = true
@@ -174,8 +215,18 @@ class FinishActivity : BaseSetupWizardActivity() {
             scaleX = scale
             scaleY = scale
         }
-        swipeHint?.alpha = 1f - progress
+        val fade = 1f - progress
+        swipeHintIcon?.let {
+            it.translationY = -rise(R.dimen.swipe_hint_icon_rise) * progress
+            it.alpha = fade
+        }
+        swipeHintText?.let {
+            it.translationY = -rise(R.dimen.swipe_hint_text_rise) * progress
+            it.alpha = fade
+        }
     }
+
+    private fun rise(@DimenRes dimen: Int) = resources.getDimensionPixelSize(dimen).toFloat()
 
     private fun springBack() {
         ValueAnimator.ofFloat(revealProgress, 0f).apply {
@@ -216,6 +267,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     }
 
     private fun commitReveal() {
+        endEntranceAnimation()
         finishState = FinishState.ANIMATING
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
         disableNavigation()
@@ -247,6 +299,12 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     companion object {
         private const val TAG = "FinishActivity"
+
+        private const val ENTRANCE_HINT_DELAY_MS = 150L
+        private const val ENTRANCE_STAGGER_MS = 80L
+        private const val ENTRANCE_DURATION_MS = 350L
+        private const val ENTRANCE_LOGO_DELAY_MS = 400L
+        private const val ENTRANCE_LOGO_DURATION_MS = 450L
 
         private const val COMMIT_FRACTION = 0.4f
         private const val SWIPE_MIN_VELOCITY = 600f
