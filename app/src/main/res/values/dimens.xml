@@ -27,4 +27,6 @@
     <dimen name="swipe_hint_text_margin_top">12dp</dimen>
     <dimen name="swipe_hint_text_size">17sp</dimen>
     <dimen name="swipe_hint_padding_bottom">24dp</dimen>
+    <dimen name="swipe_hint_icon_rise">24dp</dimen>
+    <dimen name="swipe_hint_text_rise">12dp</dimen>
 </resources>
