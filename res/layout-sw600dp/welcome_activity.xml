@@ -55,6 +55,15 @@
                 android:layout_gravity="center"
                 android:text="@string/start"
                 style="@style/SudGlifButton.Primary" />
+
+            <Button
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/skip"
+                android:visibility="gone"
+                style="@style/SudGlifButton.Secondary" />
         </LinearLayout>
 
     </LinearLayout>
@@ -81,13 +90,5 @@
             android:drawableTop="@drawable/ic_eye"
             android:text="@string/accessibility_settings"
             style="@style/SudGlifButton.Secondary" />
-
-        <Button
-            android:id="@+id/skip"
-            style="@style/SudGlifButton.Secondary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/skip"
-            android:visibility="gone" />
     </LinearLayout>
 </LinearLayout>
