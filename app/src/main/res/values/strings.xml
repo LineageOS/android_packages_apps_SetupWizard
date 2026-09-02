@@ -58,8 +58,11 @@
 
     <!-- Location page -->
     <string name="setup_location">Location services</string>
-    <string name="location_access_summary"><b>Allow apps that have asked your permission</b> to use your location information. This may include your current location and past locations.</string>
-    <string name="location_agps_access_summary">When location is on, <b>download satellite assistance data from the internet</b>, which can greatly improve the GPS startup performance.</string>
+    <string name="location_summary">Choose how your device manages its location</string>
+    <string name="location_access_title">Use location</string>
+    <string name="location_agps_access_title">Enhanced location</string>
+    <string name="location_access_summary">Allow apps that have asked your permission to use your location information. This may include your current location and past locations.</string>
+    <string name="location_agps_access_summary">When location is on, download satellite assistance data from the internet, which can greatly improve the GPS startup performance.</string>
 
     <!-- Recovery update page -->
     <string name="update_recovery_title">Update Lineage Recovery</string>
