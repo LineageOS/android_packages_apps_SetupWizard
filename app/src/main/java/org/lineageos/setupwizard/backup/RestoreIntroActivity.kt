@@ -21,6 +21,7 @@ class RestoreIntroActivity : SubBaseActivity() {
         glifLayout.setDescriptionText(
             getString(R.string.intro_restore_subtitle, getString(R.string.os_name))
         )
+        setNextText(R.string.intro_restore_button)
     }
 
     override fun onSubactivityResult(activityResult: ActivityResult) {
