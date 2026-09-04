@@ -9,6 +9,7 @@ package org.lineageos.setupwizard.util
 import android.app.StatusBarManager
 import android.app.WallpaperManager
 import android.content.ComponentName
+import android.content.ContentResolver
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.Intent
@@ -35,6 +36,7 @@ import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import java.io.File
 import lineageos.hardware.LineageHardwareManager
 import lineageos.providers.LineageSettings
+import org.json.JSONObject
 import org.lineageos.setupwizard.SetupWizardApp
 import org.lineageos.setupwizard.SetupWizardApp.Companion.DISABLE_NAV_KEYS
 import org.lineageos.setupwizard.SetupWizardApp.Companion.ENABLE_RECOVERY_UPDATE
@@ -47,6 +49,13 @@ import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 object SetupWizardUtils {
 
     private const val TAG = "SetupWizardUtils"
+
+    private const val OVERLAY_CATEGORY_ACCENT_COLOR = "android.theme.customization.accent_color"
+    private const val OVERLAY_CATEGORY_SYSTEM_PALETTE = "android.theme.customization.system_palette"
+    private const val OVERLAY_COLOR_SOURCE = "android.theme.customization.color_source"
+    private const val OVERLAY_COLOR_INDEX = "android.theme.customization.color_index"
+    private const val COLOR_SOURCE_PRESET = "preset"
+    private const val COLOR_SOURCE_HOME = "home_wallpaper"
 
     private const val GMS_PACKAGE = "com.google.android.gms"
     private const val GMS_SUW_PACKAGE = "com.google.android.setupwizard"
@@ -133,6 +142,31 @@ object SetupWizardUtils {
     fun isPackageInstalled(context: Context, packageName: String): Boolean =
         runCatching { context.packageManager.getPackageInfo(packageName, GET_ACTIVITIES) }.isSuccess
 
+    private fun restoreWallpaperColorSource(contentResolver: ContentResolver) {
+        val overlayPackages =
+            Settings.Secure.getString(
+                contentResolver,
+                Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES,
+            ) ?: return
+
+        runCatching {
+                val json = JSONObject(overlayPackages)
+                if (json.optString(OVERLAY_COLOR_SOURCE) != COLOR_SOURCE_PRESET) {
+                    return
+                }
+                json.remove(OVERLAY_CATEGORY_SYSTEM_PALETTE)
+                json.remove(OVERLAY_CATEGORY_ACCENT_COLOR)
+                json.remove(OVERLAY_COLOR_INDEX)
+                json.put(OVERLAY_COLOR_SOURCE, COLOR_SOURCE_HOME)
+                Settings.Secure.putString(
+                    contentResolver,
+                    Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES,
+                    json.toString(),
+                )
+            }
+            .onFailure { Log.w(TAG, "Could not restore the wallpaper color source", it) }
+    }
+
     fun finishSetupWizard(context: BaseSetupWizardActivity) {
         if (LOGV) {
             Log.v(TAG, "finishSetupWizard")
@@ -148,6 +182,7 @@ object SetupWizardUtils {
                     "This should not happen!",
             )
         }
+        restoreWallpaperColorSource(contentResolver)
         Settings.Secure.putInt(contentResolver, Settings.Secure.USER_SETUP_COMPLETE, 1)
         if (hasLeanback(context)) {
             Settings.Secure.putInt(contentResolver, Settings.Secure.TV_USER_SETUP_COMPLETE, 1)
