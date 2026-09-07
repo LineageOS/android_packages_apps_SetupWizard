@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.util.TypedValue
 import android.view.View
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import com.google.android.material.button.MaterialButton
 import com.google.android.setupcompat.util.SystemBarHelper
 import com.google.android.setupdesign.R as SudR
@@ -29,6 +30,13 @@ class WelcomeActivity : SubBaseActivity() {
         super.onCreate(savedInstanceState)
         onSetupStart()
         SystemBarHelper.setBackButtonVisible(window, false)
+
+        onBackPressedDispatcher.addCallback(
+            this,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() = Unit
+            },
+        )
 
         setupEmergencyCallButton()
         setupSkipButton()
@@ -92,8 +100,6 @@ class WelcomeActivity : SubBaseActivity() {
             applyChipStyle(getString(R.string.emergency_call))
         }
     }
-
-    override fun onBackPressed() {}
 
     override val layoutResId = R.layout.welcome_activity
 
