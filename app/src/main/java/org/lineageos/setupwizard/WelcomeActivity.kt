@@ -10,17 +10,24 @@ import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
 import android.view.View
+import android.view.ViewGroup
+import android.view.ViewGroup.MarginLayoutParams
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
+import androidx.core.view.updateLayoutParams
 import com.google.android.material.button.MaterialButton
 import com.google.android.setupcompat.util.SystemBarHelper
 import com.google.android.setupdesign.R as SudR
 import com.google.android.setupdesign.template.FloatingActionButtonMixin
 import com.google.android.setupdesign.template.FloatingBackButtonMixin
 import org.lineageos.setupwizard.base.SubBaseActivity
+import org.lineageos.setupwizard.system.DeviceInfoActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
 
 class WelcomeActivity : SubBaseActivity() {
+
+    private val isSkipAvailable: Boolean
+        get() = Build.TYPE == "eng"
 
     override fun onStartSubactivity() {
         // no-op
@@ -39,6 +46,7 @@ class WelcomeActivity : SubBaseActivity() {
         )
 
         setupEmergencyCallButton()
+        setupDeviceInfoButton()
         setupSkipButton()
 
         findViewById<View>(R.id.start).setOnClickListener { onNextPressed() }
@@ -69,9 +77,41 @@ class WelcomeActivity : SubBaseActivity() {
         setPadding(horizontalPadding, paddingTop, horizontalPadding, paddingBottom)
     }
 
+    private fun setupDeviceInfoButton() {
+        val actionButtonContainer =
+            glifLayout.findManagedViewById<View>(
+                SudR.id.sud_layout_floating_action_button_container
+            )
+        val row = actionButtonContainer?.parent as? ViewGroup ?: return
+        val infoButton = layoutInflater.inflate(R.layout.welcome_info_button, row, false)
+        row.addView(infoButton, 0)
+        infoButton.setOnClickListener {
+            startActivity(Intent(this, DeviceInfoActivity::class.java))
+        }
+
+        val edgeMargin = backButtonMarginStart()
+        actionButtonContainer.updateLayoutParams<MarginLayoutParams> { marginEnd = edgeMargin }
+        infoButton.updateLayoutParams<MarginLayoutParams> {
+            marginEnd =
+                if (isSkipAvailable) {
+                    resources.getDimensionPixelSize(R.dimen.welcome_top_button_spacing)
+                } else {
+                    edgeMargin
+                }
+        }
+    }
+
+    private fun backButtonMarginStart(): Int {
+        val attributes =
+            theme.obtainStyledAttributes(intArrayOf(SudR.attr.sudBackButtonMarginStart))
+        val margin = attributes.getDimensionPixelSize(0, 0)
+        attributes.recycle()
+        return margin
+    }
+
     private fun setupSkipButton() {
         val mixin = glifLayout.getMixin(FloatingActionButtonMixin::class.java)
-        if (Build.TYPE != "eng") {
+        if (!isSkipAvailable) {
             mixin.visibility = View.GONE
             return
         }
