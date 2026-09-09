@@ -27,6 +27,12 @@
     <string name="setup_managed_profile_welcome_message">Set up your work profile</string>
     <string name="emergency_call">Emergency call</string>
     <string name="accessibility_settings">Accessibility settings</string>
+    <string name="device_info">Device info</string>
+    <string name="device_information">Device information</string>
+    <string name="device_info_imei">IMEI</string>
+    <string name="device_info_imei_slot">IMEI <xliff:g id="slot" example="1">%1$d</xliff:g></string>
+    <string name="device_info_eid">EID</string>
+    <string name="device_info_serial">Serial number</string>
 
     <!-- Locale page -->
     <string name="setup_locale">Language</string>
