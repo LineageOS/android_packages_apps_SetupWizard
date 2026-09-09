@@ -41,23 +41,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingStart="@dimen/welcome_content_container_padding_start"
-            android:paddingEnd="@dimen/welcome_content_container_padding_end">
+            android:paddingEnd="@dimen/welcome_content_container_padding_end"
+            android:paddingBottom="0dp">
 
             <TextView
                 android:id="@+id/welcome_title"
                 style="@style/WelcomeTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hyphenationFrequency="none"
-                android:paddingBottom="@dimen/welcome_content_container_padding_bottom" />
+                android:hyphenationFrequency="none" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingStart="?attr/sucFooterBarPaddingStart"
-            android:paddingEnd="?attr/sucFooterBarPaddingEnd"
+            android:paddingStart="?attr/sudMarginStart"
+            android:paddingEnd="?attr/sudMarginEnd"
             android:paddingTop="?attr/sucFooterBarPaddingTop"
             android:paddingBottom="?attr/sucFooterBarPaddingBottom">
 
@@ -88,7 +88,7 @@
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="@string/start"
-                android:textSize="@dimen/welcome_start_button_text_size"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
                 app:icon="@drawable/ic_arrow_forward"
                 app:iconGravity="textStart"
                 app:iconPadding="@dimen/welcome_start_button_icon_padding"
