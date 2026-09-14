@@ -33,6 +33,23 @@
       "message": "just confirmed that it works",
       "revId": "0d88c6640bb72b2ad96a8e8b7013c0851f32acb2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "413df922_e901ca68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-14T11:14:47Z",
+      "side": 1,
+      "message": "CC: Saalim, this was merged as a quick fix measure.",
+      "revId": "0d88c6640bb72b2ad96a8e8b7013c0851f32acb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
