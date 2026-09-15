@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2015de4e_d58b6823",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T08:02:32Z",
+      "side": 1,
+      "message": "Along the useless types for fun xx() \u003d thing",
+      "revId": "193755148e924bf4c2aec9882c5a0e3d0a173782",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9268a3b_04ab7551",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/base/BaseSetupWizardActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T08:02:32Z",
+      "side": 1,
+      "message": "can this be null? afaik context.getSystemService() with ::class.java is typed properly and returns a non-null",
+      "range": {
+        "startLine": 222,
+        "startChar": 0,
+        "endLine": 222,
+        "endChar": 70
+      },
+      "revId": "193755148e924bf4c2aec9882c5a0e3d0a173782",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
