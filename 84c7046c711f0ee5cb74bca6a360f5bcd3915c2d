@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1eafa00_7cfbd20c",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/time/DateTimeActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T08:22:04Z",
+      "side": 1,
+      "message": "AlarmManager::class.java please to avoid cast",
+      "range": {
+        "startLine": 255,
+        "startChar": 25,
+        "endLine": 255,
+        "endChar": 41
+      },
+      "revId": "84c7046c711f0ee5cb74bca6a360f5bcd3915c2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
