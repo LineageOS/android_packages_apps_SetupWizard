@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d2837c8_879e8adb",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/privacy/LocationSettingsActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T08:24:37Z",
+      "side": 1,
+      "message": "make those lazy?\n\napplies to previous changes as well, if you get services on create then just make those lazy {}",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 49
+      },
+      "revId": "41f59e8f5383a48fb5e700afbf4756ac3ef83712",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
