@@ -16,6 +16,23 @@
       "message": "I\u0027d prefer if you could keep line len \u003c100, the LOG.v in WizardManager is a mouthful..",
       "revId": "c7a69a8bd3f3dbb79d98f4c74f2200032fed82f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6d43221_16c45759",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/wizardmanager/WizardAction.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T07:53:24Z",
+      "side": 1,
+      "message": "And while I\u0027m at it, this stuff could easily be collapsed into\nfun getNextAction(resultCode: Int) \u003d transitions.getAction(resultCode)",
+      "revId": "c7a69a8bd3f3dbb79d98f4c74f2200032fed82f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
