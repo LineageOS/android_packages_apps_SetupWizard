@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "632d1444_9505c60d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T08:17:52Z",
+      "side": 1,
+      "message": "uh\nremember about\napp/src/main/res/layout-television/*\napp/src/main/res/layout-sw600dp/*\n\nyou\u0027re currently breaking tablet and atv",
+      "revId": "82940391d6ff6b0882abb9c37b11d1f255dcc971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
