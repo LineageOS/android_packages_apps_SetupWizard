@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8371b29b_dac666fb",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/FinishActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-15T08:12:52Z",
+      "side": 1,
+      "message": "an apply for a single action?\ncall .setOnClickListener on it directly",
+      "range": {
+        "startLine": 58,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 93
+      },
+      "revId": "01864c73d754217860233a120add4508aba5500d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
