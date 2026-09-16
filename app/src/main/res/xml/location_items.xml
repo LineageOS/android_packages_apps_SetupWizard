@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<ItemGroup xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchItem
+        android:id="@+id/location_item"
+        android:layout="@layout/setup_items_switch"
+        android:summary="@string/location_access_summary"
+        android:title="@string/location_access_title" />
+
+    <SwitchItem
+        android:id="@+id/location_agps_item"
+        android:checked="true"
+        android:layout="@layout/setup_items_switch"
+        android:summary="@string/location_agps_access_summary"
+        android:title="@string/location_agps_access_title" />
+
+</ItemGroup>
