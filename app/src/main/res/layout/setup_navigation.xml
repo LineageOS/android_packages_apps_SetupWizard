@@ -11,67 +11,109 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="vertical"
+        style="@style/SudContentFrame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        style="@style/SudContentFrame"
-        android:layout_marginTop="@dimen/base_margin_top">
+        android:layout_marginTop="@dimen/base_margin_top"
+        android:orientation="vertical">
 
-        <FrameLayout
+        <ScrollView
             android:id="@+id/page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:fillViewport="true">
 
-            <ScrollView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fillViewport="true">
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:orientation="vertical"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/preview_margin_top"
+                    android:background="@drawable/setup_item_card_background"
+                    android:paddingStart="@dimen/preview_card_padding"
+                    android:paddingTop="@dimen/preview_card_padding"
+                    android:paddingEnd="@dimen/preview_card_padding">
 
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/navigation_illustration"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"
+                        android:adjustViewBounds="true"
                         app:lottie_autoPlay="true"
-                        app:lottie_loop="true" />
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural" />
 
-                    <RadioGroup
-                        android:id="@+id/navigation_radio_group"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                </FrameLayout>
 
-                        <RadioButton
-                            android:id="@+id/radio_gesture"
-                            android:text="@string/gesture_navigation"
-                            android:checked="true"
-                            style="@style/SudRadioButton" />
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/navigation_mode_group"
+                    style="@style/Widget.Material3Expressive.MaterialButtonGroup.Connected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_card_margin_top"
+                    app:checkedButton="@+id/mode_gesture"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
 
-                        <RadioButton
-                            android:id="@+id/radio_sw_keys"
-                            android:text="@string/navbar_navigation"
-                            style="@style/SudRadioButton" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mode_gesture"
+                        style="@style/Widget.Material3Expressive.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/connected_button_height"
+                        android:layout_weight="1"
+                        android:text="@string/gesture_navigation_short" />
 
-                    </RadioGroup>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mode_sw_keys"
+                        style="@style/Widget.Material3Expressive.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/connected_button_height"
+                        android:layout_weight="1"
+                        android:text="@string/navbar_navigation_short" />
 
-                    <CheckBox
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                <LinearLayout
+                    android:id="@+id/hide_navigation_hint_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_card_margin_top"
+                    android:background="@drawable/setup_item_card_background"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/control_card_padding_horizontal"
+                    android:paddingTop="@dimen/control_card_padding_vertical"
+                    android:paddingEnd="@dimen/control_card_padding_horizontal"
+                    android:paddingBottom="@dimen/control_card_padding_vertical">
+
+                    <com.google.android.setupdesign.view.RichTextView
+                        style="?attr/sudItemTitleStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:labelFor="@+id/hide_navigation_hint"
+                        android:text="@string/hide_gesture_hint" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
                         android:id="@+id/hide_navigation_hint"
+                        style="@style/SudExpressiveSwitchBarStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/hide_gesture_hint"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginBottom="6dp"
-                        android:layout_marginLeft="-6dp"
-                        android:paddingLeft="18dp"
-                        style="@style/SudCheckBox" />
-                </LinearLayout>
-            </ScrollView>
-        </FrameLayout>
+                        android:layout_gravity="center_vertical" />
 
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>
