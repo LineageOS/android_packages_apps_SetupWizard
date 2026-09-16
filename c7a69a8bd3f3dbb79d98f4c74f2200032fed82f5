@@ -33,6 +33,24 @@
       "message": "And while I\u0027m at it, this stuff could easily be collapsed into\nfun getNextAction(resultCode: Int) \u003d transitions.getAction(resultCode)",
       "revId": "c7a69a8bd3f3dbb79d98f4c74f2200032fed82f5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5448e70_65b3ca60",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/wizardmanager/WizardAction.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T06:07:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f6d43221_16c45759",
+      "revId": "c7a69a8bd3f3dbb79d98f4c74f2200032fed82f5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
