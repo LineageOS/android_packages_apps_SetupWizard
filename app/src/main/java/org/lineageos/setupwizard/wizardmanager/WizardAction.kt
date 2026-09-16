@@ -31,9 +31,8 @@ class WizardAction(val id: String, val uri: String, val transitions: WizardTrans
 
     fun getNextAction(resultCode: Int) = transitions.getAction(resultCode)
 
-    override fun toString(): String {
-        return "WizardAction{mId='$id', mUri='$uri', mTransitions=$transitions}"
-    }
+    override fun toString(): String =
+        "WizardAction{mId='$id', mUri='$uri', mTransitions=$transitions}"
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

@@ -20,15 +20,16 @@ import android.view.ViewGroup.MarginLayoutParams
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.setupcompat.util.SystemBarHelper
+import kotlin.math.hypot
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
 
 class FinishActivity : BaseSetupWizardActivity() {
 
-    private val mHandler = Handler(Looper.getMainLooper())
+    private val handler = Handler(Looper.getMainLooper())
 
-    private lateinit var mRootView: View
-    private var mEdgeToEdgeWallpaperBackgroundTheme: Resources.Theme? = null
+    private lateinit var rootView: View
+    private var edgeToEdgeWallpaperBackgroundTheme: Resources.Theme? = null
 
     private enum class FinishState {
         NONE,
@@ -40,7 +41,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.i(TAG, "onCreate: sFinishState=$sFinishState")
+        Log.i(TAG, "onCreate: finishState=$finishState")
 
         overrideActivityTransition(
             OVERRIDE_TRANSITION_CLOSE,
@@ -60,8 +61,8 @@ class FinishActivity : BaseSetupWizardActivity() {
         window.isNavigationBarContrastEnforced = false
 
         // Ensure the main layout (not including the background view) does not get obscured by bars.
-        mRootView = findViewById(R.id.root)
-        ViewCompat.setOnApplyWindowInsetsListener(mRootView) { _, windowInsets ->
+        rootView = findViewById(R.id.root)
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { _, windowInsets ->
             val linearLayout = findViewById<View>(R.id.linear_layout)
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             val params = linearLayout.layoutParams as MarginLayoutParams
@@ -73,18 +74,18 @@ class FinishActivity : BaseSetupWizardActivity() {
             WindowInsetsCompat.CONSUMED
         }
 
-        if (sFinishState != FinishState.NONE) {
+        if (finishState != FinishState.NONE) {
             disableNavigation()
         }
 
-        when (sFinishState) {
+        when (finishState) {
             FinishState.NONE -> {}
             FinishState.SHOULD_ANIMATE -> startFinishSequence()
             FinishState.FINISHED -> {
                 Log.e(TAG, "Should not start again when finished!")
                 finish()
             }
-            else -> Log.w(TAG, "Unexpected onCreate state $sFinishState")
+            else -> Log.w(TAG, "Unexpected onCreate state $finishState")
         }
     }
 
@@ -99,39 +100,39 @@ class FinishActivity : BaseSetupWizardActivity() {
     }
 
     override fun applyForwardTransition() {
-        if (sFinishState == FinishState.NONE) {
+        if (finishState == FinishState.NONE) {
             super.applyForwardTransition()
         }
     }
 
     override fun applyBackwardTransition() {
-        if (sFinishState == FinishState.NONE) {
+        if (finishState == FinishState.NONE) {
             super.applyBackwardTransition()
         }
     }
 
-    override fun getLayoutResId() = R.layout.finish_activity
+    override val layoutResId = R.layout.finish_activity
 
     override fun getTheme(): Resources.Theme {
         val theme = super.getTheme()
-        if (sFinishState == FinishState.NONE) {
+        if (finishState == FinishState.NONE) {
             return theme
         }
-        return mEdgeToEdgeWallpaperBackgroundTheme
+        return edgeToEdgeWallpaperBackgroundTheme
             ?: theme
                 .apply { applyStyle(R.style.EdgeToEdgeWallpaperBackground, true) }
-                .also { mEdgeToEdgeWallpaperBackgroundTheme = it }
+                .also { edgeToEdgeWallpaperBackgroundTheme = it }
     }
 
     override fun onNavigateNext() {
-        when (sFinishState) {
+        when (finishState) {
             FinishState.NONE -> relaunchAndRunAnimation()
-            else -> Log.e(TAG, "Unexpected state $sFinishState when navigating next")
+            else -> Log.e(TAG, "Unexpected state $finishState when navigating next")
         }
     }
 
     private fun relaunchAndRunAnimation() {
-        sFinishState = FinishState.SHOULD_ANIMATE
+        finishState = FinishState.SHOULD_ANIMATE
         // Relaunching the activity before finishing is the only way currently known to prevent
         // an out-of-place slide transition from happening, even when disabling transitions, and
         // regardless of when we disable them. This also means we can't simply call recreate(), but
@@ -144,18 +145,18 @@ class FinishActivity : BaseSetupWizardActivity() {
     }
 
     private fun startFinishSequence() {
-        sFinishState = FinishState.ANIMATING
+        finishState = FinishState.ANIMATING
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
         disableNavigation()
 
         // Begin outro animation.
-        if (mRootView.isAttachedToWindow) {
-            mHandler.post { animateOut() }
+        if (rootView.isAttachedToWindow) {
+            handler.post { animateOut() }
         } else {
-            mRootView.addOnAttachStateChangeListener(
+            rootView.addOnAttachStateChangeListener(
                 object : View.OnAttachStateChangeListener {
                     override fun onViewAttachedToWindow(v: View) {
-                        mHandler.post { animateOut() }
+                        handler.post { animateOut() }
                     }
 
                     override fun onViewDetachedFromWindow(v: View) {
@@ -167,16 +168,16 @@ class FinishActivity : BaseSetupWizardActivity() {
     }
 
     private fun animateOut() {
-        if (sFinishState != FinishState.ANIMATING) {
-            Log.e(TAG, "animateOut but in $sFinishState phase. How?")
+        if (finishState != FinishState.ANIMATING) {
+            Log.e(TAG, "animateOut but in $finishState phase. How?")
             return
         }
-        val cx = (mRootView.left + mRootView.right) / 2
-        val cy = (mRootView.top + mRootView.bottom) / 2
-        val fullRadius = Math.hypot(cx.toDouble(), cy.toDouble()).toFloat()
+        val cx = (rootView.left + rootView.right) / 2
+        val cy = (rootView.top + rootView.bottom) / 2
+        val fullRadius = hypot(cx.toDouble(), cy.toDouble()).toFloat()
         val anim =
             runCatching {
-                    ViewAnimationUtils.createCircularReveal(mRootView, cx, cy, fullRadius, 0f)
+                    ViewAnimationUtils.createCircularReveal(rootView, cx, cy, fullRadius, 0f)
                 }
                 .getOrElse {
                     Log.e(TAG, "Failed to create finish animation", it)
@@ -187,12 +188,12 @@ class FinishActivity : BaseSetupWizardActivity() {
         anim.addListener(
             object : AnimatorListenerAdapter() {
                 override fun onAnimationStart(animation: Animator) {
-                    mRootView.visibility = View.VISIBLE
+                    rootView.visibility = View.VISIBLE
                 }
 
                 override fun onAnimationEnd(animation: Animator) {
-                    mRootView.visibility = View.INVISIBLE
-                    mHandler.post {
+                    rootView.visibility = View.INVISIBLE
+                    handler.post {
                         if (LOGV) {
                             Log.v(TAG, "Animation ended")
                         }
@@ -206,15 +207,15 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     private fun finishAfterAnimation() {
         SetupWizardUtils.finishSetupWizard(this@FinishActivity)
-        sFinishState = FinishState.FINISHED
+        finishState = FinishState.FINISHED
     }
 
     companion object {
-        val TAG: String = FinishActivity::class.java.simpleName
+        private const val TAG = "FinishActivity"
 
         // "Why not just start this activity with an Intent extra?" you might ask. Been there.
         // We need this to affect the theme, and even onCreate is not early enough for that,
         // so "@Volatile" it is. Feel free to rework this if you dare.
-        @Volatile private var sFinishState = FinishState.NONE
+        @Volatile private var finishState = FinishState.NONE
     }
 }

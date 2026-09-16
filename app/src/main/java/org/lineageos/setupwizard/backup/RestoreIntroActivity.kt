@@ -18,10 +18,9 @@ class RestoreIntroActivity : SubBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        getGlifLayout()
-            .setDescriptionText(
-                getString(R.string.intro_restore_subtitle, getString(R.string.os_name))
-            )
+        glifLayout.setDescriptionText(
+            getString(R.string.intro_restore_subtitle, getString(R.string.os_name))
+        )
     }
 
     override fun onSubactivityResult(activityResult: ActivityResult) {
@@ -29,7 +28,7 @@ class RestoreIntroActivity : SubBaseActivity() {
         val data = activityResult.data
         when {
             resultCode != RESULT_CANCELED -> nextAction(resultCode, data)
-            mIsSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
+            isSubactivityNotFound -> finishAction(RESULT_ACTIVITY_NOT_FOUND)
             data?.getBooleanExtra("onBackPressed", false) == true -> onStartSubactivity()
         }
     }
@@ -42,14 +41,13 @@ class RestoreIntroActivity : SubBaseActivity() {
         launchRestore()
     }
 
-    override fun getLayoutResId() = R.layout.intro_restore_activity
+    override val layoutResId = R.layout.intro_restore_activity
 
-    override fun getTitleResId() = R.string.intro_restore_title
+    override val titleResId = R.string.intro_restore_title
 
-    override fun getIconResId() = R.drawable.ic_restore
+    override val iconResId = R.drawable.ic_restore
 
     private fun launchRestore() {
-        val intent: Intent = Intent(ACTION_RESTORE_FROM_BACKUP)
-        startSubactivity(intent)
+        startSubactivity(Intent(ACTION_RESTORE_FROM_BACKUP))
     }
 }
