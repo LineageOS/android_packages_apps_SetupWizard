@@ -39,6 +39,30 @@
       },
       "revId": "193755148e924bf4c2aec9882c5a0e3d0a173782",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6aae69cd_a9838d2e",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/base/BaseSetupWizardActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T07:31:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b9268a3b_04ab7551",
+      "range": {
+        "startLine": 222,
+        "startChar": 0,
+        "endLine": 222,
+        "endChar": 70
+      },
+      "revId": "193755148e924bf4c2aec9882c5a0e3d0a173782",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
