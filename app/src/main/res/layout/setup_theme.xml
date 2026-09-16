@@ -60,6 +60,37 @@
                         android:text="@string/light" />
 
                 </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                <LinearLayout
+                    android:id="@+id/black_theme_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_card_margin_top"
+                    android:background="@drawable/setup_item_card_background"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/control_card_padding_horizontal"
+                    android:paddingTop="@dimen/control_card_padding_vertical"
+                    android:paddingEnd="@dimen/control_card_padding_horizontal"
+                    android:paddingBottom="@dimen/control_card_padding_vertical">
+
+                    <com.google.android.setupdesign.view.RichTextView
+                    style="?attr/sudItemTitleStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:labelFor="@+id/black_theme"
+                    android:text="@string/pure_black_theme" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/black_theme"
+                    style="@style/SudExpressiveSwitchBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
