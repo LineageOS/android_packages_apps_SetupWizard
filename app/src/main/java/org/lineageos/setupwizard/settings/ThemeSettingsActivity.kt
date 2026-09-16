@@ -8,29 +8,34 @@ package org.lineageos.setupwizard.settings
 import android.app.UiModeManager
 import android.content.res.Configuration
 import android.os.Bundle
-import android.widget.RadioGroup
+import com.google.android.material.button.MaterialButtonToggleGroup
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
+import org.lineageos.setupwizard.util.updateCheckedIcons
 
 class ThemeSettingsActivity : BaseSetupWizardActivity() {
+
+    private val uiModeManager by lazy { getSystemService(UiModeManager::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         glifLayout.setDescriptionText(getString(R.string.theme_summary))
 
-        val uiModeManager = getSystemService(UiModeManager::class.java)
-        val radioGroup: RadioGroup = findViewById(R.id.theme_radio_group)
+        val modeGroup = findViewById<MaterialButtonToggleGroup>(R.id.theme_mode_group)
         val isNight =
             (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) ==
                 Configuration.UI_MODE_NIGHT_YES
 
-        radioGroup.check(if (isNight) R.id.radio_dark else R.id.radio_light)
-        radioGroup.setOnCheckedChangeListener { _, checkedId ->
-            when (checkedId) {
-                R.id.radio_dark -> uiModeManager.setNightModeActivated(true)
-                R.id.radio_light -> uiModeManager.setNightModeActivated(false)
+        modeGroup.check(if (isNight) R.id.mode_dark else R.id.mode_light)
+        modeGroup.updateCheckedIcons(R.drawable.ic_check)
+
+        modeGroup.addOnButtonCheckedListener { _, checkedId, checked ->
+            if (!checked) {
+                return@addOnButtonCheckedListener
             }
+            modeGroup.updateCheckedIcons(R.drawable.ic_check)
+            uiModeManager.setNightModeActivated(checkedId == R.id.mode_dark)
         }
     }
 
