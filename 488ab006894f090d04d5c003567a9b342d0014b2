@@ -118,6 +118,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d06d16c4_ec3f62be",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/time/DateTimeActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T07:13:23Z",
+      "side": 1,
+      "message": "This errors out on removal",
+      "parentUuid": "3e00a632_41bae4a9",
+      "range": {
+        "startLine": 61,
+        "startChar": 21,
+        "endLine": 61,
+        "endChar": 25
+      },
+      "revId": "488ab006894f090d04d5c003567a9b342d0014b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f3ef13c2_6d06b5e2",
         "filename": "app/src/main/java/org/lineageos/setupwizard/time/DateTimeActivity.kt",
         "patchSetId": 3
