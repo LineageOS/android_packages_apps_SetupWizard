@@ -16,6 +16,24 @@
       "message": "just lateinit those",
       "revId": "069639bb9d91c848c839bad66ccca682ee339ea5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb0645b7_c79fd56c",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/FinishActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T13:24:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15ffc483_794c78ac",
+      "revId": "069639bb9d91c848c839bad66ccca682ee339ea5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
