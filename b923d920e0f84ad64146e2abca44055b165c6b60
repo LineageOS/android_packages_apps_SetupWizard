@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6dffb9f9_608e9203",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/base/BaseSetupWizardActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T07:32:56Z",
+      "side": 1,
+      "message": "Due to Loading page using setupdesign NavBar, which can cause a Class Cast exception, and we are moving to footer Mixin later, so I think we can keep it?",
+      "parentUuid": "823afa5c_1276cb1a",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 84
+      },
+      "revId": "b923d920e0f84ad64146e2abca44055b165c6b60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "904a0bc3_fcb9a14c",
         "filename": "app/src/main/java/org/lineageos/setupwizard/base/BaseSetupWizardActivity.kt",
         "patchSetId": 3
@@ -37,6 +61,24 @@
       "writtenOn": "2026-09-15T08:10:17Z",
       "side": 1,
       "message": "ah I see you changed it, my comment is still valid tho",
+      "revId": "b923d920e0f84ad64146e2abca44055b165c6b60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3dac19f3_15d5342c",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/base/BaseSetupWizardActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T07:32:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "904a0bc3_fcb9a14c",
       "revId": "b923d920e0f84ad64146e2abca44055b165c6b60",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -72,6 +114,24 @@
       "side": 1,
       "message": "I addressed previous comments in the same commits.",
       "parentUuid": "5c74ca7d_59580b05",
+      "revId": "b923d920e0f84ad64146e2abca44055b165c6b60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca7bc0a8_3c4c009d",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/time/DateTimeActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T07:32:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "33a79a3e_a9a40221",
       "revId": "b923d920e0f84ad64146e2abca44055b165c6b60",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
