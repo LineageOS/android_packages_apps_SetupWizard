@@ -17,4 +17,6 @@
 
     <color name="materialColorPrimary">@*android:color/system_primary_light</color>
     <color name="materialColorOnPrimary">@*android:color/system_on_primary_light</color>
+
+    <color name="finish_swipe_arrow">#82D5C7</color>
 </resources>

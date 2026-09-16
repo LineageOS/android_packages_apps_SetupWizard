@@ -6,26 +6,22 @@
 -->
 <android.widget.FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    app:insetForeground="@android:color/transparent">
+    android:clipChildren="false">
 
-    <ImageView
+    <org.lineageos.setupwizard.widget.RevealHoleView
         android:id="@+id/background"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background"
-        android:visibility="visible"/>
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:clipChildren="false"
         style="@style/SudContentFrame">
 
         <ImageView
@@ -36,25 +32,33 @@
             android:src="@drawable/logo"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
             android:gravity="center"
             android:padding="@dimen/content_margin_left"/>
 
         <LinearLayout
-            style="@style/SudGlifButtonBar.Stackable"
+            android:id="@+id/swipe_hint"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/swipe_hint_padding_bottom">
 
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+            <ImageView
+                android:layout_width="@dimen/swipe_hint_icon_size"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_swipe_up"
+                android:contentDescription="@null" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/start"
-                style="@style/SucGlifMaterialButton.Primary"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/start" />
+                android:layout_marginTop="@dimen/swipe_hint_text_margin_top"
+                android:text="@string/swipe_up_to_go_home"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textSize="@dimen/swipe_hint_text_size" />
         </LinearLayout>
 
     </LinearLayout>
