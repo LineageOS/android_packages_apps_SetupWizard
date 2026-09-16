@@ -22,10 +22,12 @@ import android.view.VelocityTracker
 import android.view.View
 import android.view.ViewGroup.MarginLayoutParams
 import android.view.animation.AccelerateDecelerateInterpolator
+import android.widget.ImageView
 import androidx.annotation.DimenRes
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.setupcompat.util.SystemBarHelper
+import kotlin.math.min
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
 import org.lineageos.setupwizard.widget.RevealHoleView
@@ -39,7 +41,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     private lateinit var swipeHintIcon: View
     private lateinit var swipeHintText: View
     private lateinit var background: RevealHoleView
-    private lateinit var brandLogo: View
+    private lateinit var brandLogo: ImageView
 
     private var velocityTracker: VelocityTracker? = null
     private var dragStartY = 0f
@@ -197,13 +199,41 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     private fun swipeDistance() = rootView.height / 3f
 
+    private fun updateLogoPivot() {
+        val drawable = brandLogo.drawable ?: return
+
+        val availableWidth = brandLogo.width - brandLogo.paddingLeft - brandLogo.paddingRight
+        val availableHeight = brandLogo.height - brandLogo.paddingTop - brandLogo.paddingBottom
+        if (availableWidth <= 0 || availableHeight <= 0) {
+            return
+        }
+
+        val scale =
+            min(
+                availableWidth / drawable.intrinsicWidth.toFloat(),
+                availableHeight / drawable.intrinsicHeight.toFloat(),
+            )
+        val width = drawable.intrinsicWidth * scale
+        val height = drawable.intrinsicHeight * scale
+        val left = brandLogo.paddingLeft + (availableWidth - width) / 2f
+        val top = brandLogo.paddingTop + (availableHeight - height) / 2f
+
+        brandLogo.pivotX = left + width * MARK_CENTER_X
+        brandLogo.pivotY = top + height * MARK_CENTER_Y
+    }
+
     private fun applyRevealProgress(progress: Float) {
         revealProgress = progress
+        updateLogoPivot()
         (brandLogo.parent as? View)?.let { parent ->
-            val location = IntArray(2)
-            parent.getLocationOnScreen(location)
-            background.holeCenterX = location[0] + brandLogo.left + brandLogo.pivotX
-            background.holeCenterY = location[1] + brandLogo.top + brandLogo.pivotY
+            val parentLocation = IntArray(2)
+            val backgroundLocation = IntArray(2)
+            parent.getLocationOnScreen(parentLocation)
+            background.getLocationOnScreen(backgroundLocation)
+            background.holeCenterX =
+                parentLocation[0] - backgroundLocation[0] + brandLogo.left + brandLogo.pivotX
+            background.holeCenterY =
+                parentLocation[1] - backgroundLocation[1] + brandLogo.top + brandLogo.pivotY
         }
         background.holeRadius = background.fullRadius * REVEAL_OVERSHOOT * progress
         brandLogo.apply {
@@ -290,6 +320,9 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     companion object {
         private const val TAG = "FinishActivity"
+
+        private const val MARK_CENTER_X = 256f / 512f
+        private const val MARK_CENTER_Y = 128f / 260f
 
         private const val ENTRANCE_HINT_DELAY_MS = 150L
         private const val ENTRANCE_STAGGER_MS = 80L
