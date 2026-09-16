@@ -7,6 +7,7 @@
 package org.lineageos.setupwizard.network
 
 import android.content.Intent
+import com.google.android.setupcompat.partnerconfig.PartnerConfigHelper
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import org.lineageos.setupwizard.EXTRA_ENABLE_NEXT_ON_CONNECT
 import org.lineageos.setupwizard.EXTRA_PREFS_SET_BACK_TEXT
@@ -33,8 +34,10 @@ class NetworkSetupActivity : SubBaseActivity() {
 
         val intent =
             Intent(ACTION_SETUP_NETWORK).apply {
-                putExtra(EXTRA_PREFS_SHOW_BUTTON_BAR, true)
-                putExtra(EXTRA_PREFS_SHOW_SKIP, true)
+                if (!PartnerConfigHelper.isGlifExpressiveEnabled(this@NetworkSetupActivity)) {
+                    putExtra(EXTRA_PREFS_SHOW_BUTTON_BAR, true)
+                    putExtra(EXTRA_PREFS_SHOW_SKIP, true)
+                }
                 putExtra(EXTRA_PREFS_SHOW_SKIP_TV, true)
                 putExtra(EXTRA_PREFS_SET_BACK_TEXT, null as String?)
                 putExtra(EXTRA_ENABLE_NEXT_ON_CONNECT, true)
