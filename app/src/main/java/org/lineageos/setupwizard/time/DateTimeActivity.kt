@@ -62,7 +62,6 @@ class DateTimeActivity :
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setNextText(R.string.next)
         glifLayout.setDescriptionText(getString(R.string.date_time_summary))
 
         dateFormatItem.summary = dateFormatOrder()

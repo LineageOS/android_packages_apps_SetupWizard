@@ -29,9 +29,13 @@ import com.google.android.setupdesign.GlifLayout
 import com.google.android.setupdesign.template.IconMixin
 import com.google.android.setupdesign.transition.TransitionHelper
 import com.google.android.setupdesign.util.ThemeHelper
+import org.lineageos.setupwizard.EXTRA_ACTION_ID
+import org.lineageos.setupwizard.EXTRA_SCRIPT_URI
+import org.lineageos.setupwizard.EXTRA_WIZARD_BUNDLE
 import org.lineageos.setupwizard.LOGV
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.util.SetupWizardUtils
+import org.lineageos.setupwizard.wizardmanager.WizardManager
 
 abstract class BaseSetupWizardActivity : AppCompatActivity() {
 
@@ -121,13 +125,26 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
         }
     }
 
+    private fun isLastStep(): Boolean {
+        val wizardBundle = intent.getBundleExtra(EXTRA_WIZARD_BUNDLE) ?: return false
+        val scriptUri = wizardBundle.getString(EXTRA_SCRIPT_URI) ?: return false
+        val actionId = wizardBundle.getString(EXTRA_ACTION_ID) ?: return false
+
+        val nextAction =
+            runCatching { WizardManager.getNextAction(this, scriptUri, actionId, RESULT_OK) }
+                .onFailure { Log.w(TAG, "No next action found", it) }
+                .getOrNull() ?: return false
+
+        return nextAction.getIntent()?.action == ACTION_SETUP_COMPLETE
+    }
+
     private fun setupFooterBar() {
         val mixin = glifLayout.getMixin(FooterBarMixin::class.java)
         footerBarMixin = mixin
 
         nextFooterButton =
             FooterButton.Builder(this)
-                .setText(R.string.next)
+                .setText(if (isLastStep()) R.string.finish else R.string.next)
                 .setListener { onNextPressed() }
                 .setButtonType(FooterButton.ButtonType.NEXT)
                 .build()
@@ -281,6 +298,9 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
 
     companion object {
         private const val TAG = "BaseSetupWizardActivity"
+
+        /** The wizard action of the reveal screen, which ends the wizard. */
+        private const val ACTION_SETUP_COMPLETE = "org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE"
         const val DEFAULT_TRANSITION = TransitionHelper.TRANSITION_FADE_THROUGH
     }
 }

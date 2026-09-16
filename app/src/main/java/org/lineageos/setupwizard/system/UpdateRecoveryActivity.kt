@@ -39,7 +39,6 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
             return
         }
 
-        setNextText(R.string.next)
         recoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox)
 
         findViewById<View>(R.id.update_recovery_checkbox_view).setOnClickListener {
