@@ -4,35 +4,8 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<com.google.android.setupdesign.GlifLayout
+<com.google.android.setupdesign.GlifRecyclerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        style="@style/SudContentFrame">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <org.lineageos.setupwizard.widget.LocalePicker
-                android:id="@+id/locale_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                style="@style/LocaleWidget.Material.LocalePicker" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-</com.google.android.setupdesign.GlifLayout>
+    android:layout_height="match_parent" />

@@ -15,26 +15,6 @@
         <item name="android:paddingLeft">@dimen/content_margin_left</item>
     </style>
 
-    <style name="LocaleWidget">
-        <item name="android:textAppearance">?android:attr/textAppearance</item>
-    </style>
-
-    <style name="LocaleWidget.LocalePicker">
-        <item name="android:orientation">vertical</item>
-        <item name="android:fadingEdge">vertical</item>
-        <item name="android:fadingEdgeLength">50dip</item>
-    </style>
-
-    <style name="LocaleWidget.Material.LocalePicker" parent="LocaleWidget.LocalePicker">
-        <item name="solidColor">@android:color/transparent</item>
-        <item name="selectionDivider">@drawable/divider</item>
-        <item name="selectionDividerHeight">1dip</item>
-        <item name="internalLayout">@layout/locale_picker</item>
-        <item name="internalMinWidth">64dip</item>
-        <item name="internalMaxHeight">180dip</item>
-        <item name="virtualButtonPressedDrawable">@null</item>
-    </style>
-
     <style name="NoDisplay" parent="@style/Theme.AppCompat">
         <item name="android:windowBackground">@null</item>
         <item name="android:windowContentOverlay">@null</item>
