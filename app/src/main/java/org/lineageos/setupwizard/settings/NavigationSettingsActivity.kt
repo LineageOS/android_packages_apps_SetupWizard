@@ -18,10 +18,10 @@ import android.widget.RadioGroup
 import com.airbnb.lottie.LottieAnimationView
 import lineageos.providers.LineageSettings
 import org.lineageos.internal.util.DeviceKeysConstants.KEY_MASK_APP_SWITCH
+import org.lineageos.setupwizard.DISABLE_NAV_KEYS
+import org.lineageos.setupwizard.NAVIGATION_OPTION_KEY
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.SetupWizardApp
-import org.lineageos.setupwizard.SetupWizardApp.Companion.DISABLE_NAV_KEYS
-import org.lineageos.setupwizard.SetupWizardApp.Companion.NAVIGATION_OPTION_KEY
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
 

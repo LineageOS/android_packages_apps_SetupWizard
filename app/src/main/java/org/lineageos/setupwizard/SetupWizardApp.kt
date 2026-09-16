@@ -16,6 +16,32 @@ import android.provider.Settings
 import android.util.Log
 import org.lineageos.setupwizard.util.SetupWizardUtils
 
+val LOGV: Boolean = Log.isLoggable(SetupWizardApp.TAG, Log.VERBOSE)
+
+const val ACTION_RESTORE_FROM_BACKUP = "com.stevesoltys.seedvault.RESTORE_BACKUP"
+const val ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL"
+const val ACTION_LOAD = "com.android.wizard.LOAD"
+
+const val EXTRA_WIZARD_BUNDLE = "wizardBundle"
+const val EXTRA_SCRIPT_URI = "scriptUri"
+const val EXTRA_ACTION_ID = "actionId"
+const val EXTRA_RESULT_CODE = "com.android.setupwizard.ResultCode"
+const val EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar"
+const val EXTRA_PREFS_SHOW_SKIP = "extra_prefs_show_skip"
+const val EXTRA_PREFS_SHOW_SKIP_TV = "extra_show_skip_network"
+const val EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text"
+const val EXTRA_ENABLE_NEXT_ON_CONNECT = "wifi_enable_next_on_connect"
+
+const val KEY_SEND_METRICS = "send_metrics"
+const val DISABLE_NAV_KEYS = "disable_nav_keys"
+const val ENABLE_RECOVERY_UPDATE = "enable_recovery_update"
+const val UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update"
+const val IGNORE_SIM_LOCALE_PROP = "ro.setupwizard.ignore_sim_locale"
+
+const val NAVIGATION_OPTION_KEY = "navigation_option"
+
+const val RADIO_READY_TIMEOUT = 10 * 1000
+
 class SetupWizardApp : Application() {
 
     var ignoreSimLocale = SystemProperties.getBoolean(IGNORE_SIM_LOCALE_PROP, false)
@@ -40,33 +66,6 @@ class SetupWizardApp : Application() {
 
     companion object {
         val TAG: String = SetupWizardApp::class.java.simpleName
-
-        // Verbose logging
-        val LOGV: Boolean = Log.isLoggable(TAG, Log.VERBOSE)
-
-        const val ACTION_RESTORE_FROM_BACKUP = "com.stevesoltys.seedvault.RESTORE_BACKUP"
-        const val ACTION_EMERGENCY_DIAL = "com.android.phone.EmergencyDialer.DIAL"
-        const val ACTION_LOAD = "com.android.wizard.LOAD"
-
-        const val EXTRA_WIZARD_BUNDLE = "wizardBundle"
-        const val EXTRA_SCRIPT_URI = "scriptUri"
-        const val EXTRA_ACTION_ID = "actionId"
-        const val EXTRA_RESULT_CODE = "com.android.setupwizard.ResultCode"
-        const val EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar"
-        const val EXTRA_PREFS_SHOW_SKIP = "extra_prefs_show_skip"
-        const val EXTRA_PREFS_SHOW_SKIP_TV = "extra_show_skip_network"
-        const val EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text"
-        const val EXTRA_ENABLE_NEXT_ON_CONNECT = "wifi_enable_next_on_connect"
-
-        const val KEY_SEND_METRICS = "send_metrics"
-        const val DISABLE_NAV_KEYS = "disable_nav_keys"
-        const val ENABLE_RECOVERY_UPDATE = "enable_recovery_update"
-        const val UPDATE_RECOVERY_PROP = "persist.vendor.recovery_update"
-        const val IGNORE_SIM_LOCALE_PROP = "ro.setupwizard.ignore_sim_locale"
-
-        const val NAVIGATION_OPTION_KEY = "navigation_option"
-
-        const val RADIO_READY_TIMEOUT = 10 * 1000
 
         @Volatile var isRadioReady: Boolean = false
 

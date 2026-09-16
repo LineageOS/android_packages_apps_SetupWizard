@@ -35,13 +35,13 @@ import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import java.io.File
 import lineageos.hardware.LineageHardwareManager
 import lineageos.providers.LineageSettings
+import org.lineageos.setupwizard.DISABLE_NAV_KEYS
+import org.lineageos.setupwizard.ENABLE_RECOVERY_UPDATE
+import org.lineageos.setupwizard.KEY_SEND_METRICS
+import org.lineageos.setupwizard.LOGV
+import org.lineageos.setupwizard.NAVIGATION_OPTION_KEY
 import org.lineageos.setupwizard.SetupWizardApp
-import org.lineageos.setupwizard.SetupWizardApp.Companion.DISABLE_NAV_KEYS
-import org.lineageos.setupwizard.SetupWizardApp.Companion.ENABLE_RECOVERY_UPDATE
-import org.lineageos.setupwizard.SetupWizardApp.Companion.KEY_SEND_METRICS
-import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
-import org.lineageos.setupwizard.SetupWizardApp.Companion.NAVIGATION_OPTION_KEY
-import org.lineageos.setupwizard.SetupWizardApp.Companion.UPDATE_RECOVERY_PROP
+import org.lineageos.setupwizard.UPDATE_RECOVERY_PROP
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 
 object SetupWizardUtils {
