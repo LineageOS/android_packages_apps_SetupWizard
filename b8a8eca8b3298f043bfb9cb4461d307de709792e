@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08de8848_3aa425fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T07:40:35Z",
+      "side": 1,
+      "message": "That\u0027s fine, kotlin sucks for this kind of stuff",
+      "revId": "b8a8eca8b3298f043bfb9cb4461d307de709792e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
