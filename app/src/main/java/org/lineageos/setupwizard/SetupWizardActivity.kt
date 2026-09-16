@@ -11,10 +11,6 @@ import android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import org.lineageos.setupwizard.SetupWizardApp.Companion.ACTION_LOAD
-import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_SCRIPT_URI
-import org.lineageos.setupwizard.SetupWizardApp.Companion.EXTRA_WIZARD_BUNDLE
-import org.lineageos.setupwizard.SetupWizardApp.Companion.LOGV
 import org.lineageos.setupwizard.util.SetupWizardUtils
 import org.lineageos.setupwizard.wizardmanager.WizardManager
 

@@ -11,8 +11,10 @@ import android.util.Log
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import com.google.android.setupcompat.util.ResultCodes.RESULT_ACTIVITY_NOT_FOUND
+import org.lineageos.setupwizard.EXTRA_SCRIPT_URI
+import org.lineageos.setupwizard.EXTRA_WIZARD_BUNDLE
+import org.lineageos.setupwizard.LOGV
 import org.lineageos.setupwizard.R
-import org.lineageos.setupwizard.SetupWizardApp
 
 abstract class SubBaseActivity : BaseSetupWizardActivity() {
 
@@ -23,7 +25,7 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
     private lateinit var subactivityResultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        if (SetupWizardApp.LOGV) {
+        if (LOGV) {
             Log.d(TAG, "onCreate savedInstanceState=" + savedInstanceState)
         }
         super.onCreate(savedInstanceState)
@@ -57,10 +59,10 @@ abstract class SubBaseActivity : BaseSetupWizardActivity() {
 
     protected fun startSubactivity(subactivityIntent: Intent) {
         val parentIntent = intent
-        val wizardBundle = parentIntent.getBundleExtra(SetupWizardApp.EXTRA_WIZARD_BUNDLE)
+        val wizardBundle = parentIntent.getBundleExtra(EXTRA_WIZARD_BUNDLE)
         wizardBundle?.let {
-            if (it.containsKey(SetupWizardApp.EXTRA_SCRIPT_URI)) {
-                subactivityIntent.putExtra(SetupWizardApp.EXTRA_WIZARD_BUNDLE, it)
+            if (it.containsKey(EXTRA_SCRIPT_URI)) {
+                subactivityIntent.putExtra(EXTRA_WIZARD_BUNDLE, it)
             }
         }
         runCatching { subactivityResultLauncher.launch(subactivityIntent) }

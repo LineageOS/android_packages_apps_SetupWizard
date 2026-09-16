@@ -18,10 +18,10 @@ import android.widget.CheckBox
 import android.widget.TextView
 import lineageos.hardware.LineageHardwareManager
 import lineageos.providers.LineageSettings
+import org.lineageos.setupwizard.DISABLE_NAV_KEYS
+import org.lineageos.setupwizard.KEY_SEND_METRICS
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.SetupWizardApp
-import org.lineageos.setupwizard.SetupWizardApp.Companion.DISABLE_NAV_KEYS
-import org.lineageos.setupwizard.SetupWizardApp.Companion.KEY_SEND_METRICS
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 
 class LineageSettingsActivity : BaseSetupWizardActivity() {
