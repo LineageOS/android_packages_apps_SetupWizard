@@ -35,7 +35,6 @@ class LocationSettingsActivity : BaseSetupWizardActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setNextText(R.string.next)
         glifLayout.setDescriptionText(getString(R.string.location_summary))
 
         locationManager = getSystemService(LocationManager::class.java)

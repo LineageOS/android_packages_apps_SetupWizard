@@ -160,6 +160,13 @@ class WizardManager : Activity() {
 
         private val wizardScripts = mutableMapOf<String, WizardScript>()
 
+        fun getNextAction(
+            context: Context,
+            scriptUri: String,
+            actionId: String,
+            resultCode: Int,
+        ): WizardAction? = checkNextAction(context, scriptUri, actionId, resultCode)
+
         private fun checkNextAction(
             context: Context,
             scriptUri: String,
