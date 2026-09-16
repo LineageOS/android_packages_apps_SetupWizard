@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f77659d5_849d454d",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/FinishActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T07:39:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "41427b31_052768ae",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 39
+      },
+      "revId": "488ab006894f090d04d5c003567a9b342d0014b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aa9cd8cc_bdb7e44b",
@@ -37,6 +61,30 @@
       "writtenOn": "2026-09-15T08:00:04Z",
       "side": 1,
       "message": "That\u0027s... weird, setting them all to \"\" when we always override them later on, just make an empty Array",
+      "range": {
+        "startLine": 112,
+        "startChar": 0,
+        "endLine": 112,
+        "endChar": 55
+      },
+      "revId": "488ab006894f090d04d5c003567a9b342d0014b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32f93a24_c4ea1b2f",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/locale/LocaleActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T07:39:16Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "aa9cd8cc_bdb7e44b",
       "range": {
         "startLine": 112,
         "startChar": 0,
@@ -70,6 +118,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f12b96a_9ff76a13",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/locale/LocaleActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T07:39:16Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "828d1ba3_a7480c31",
+      "range": {
+        "startLine": 113,
+        "startChar": 0,
+        "endLine": 113,
+        "endChar": 44
+      },
+      "revId": "488ab006894f090d04d5c003567a9b342d0014b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "157f4e2b_a423b349",
@@ -83,6 +155,30 @@
       "writtenOn": "2026-09-15T08:00:04Z",
       "side": 1,
       "message": "Ah right, : Int can be removed",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 72
+      },
+      "revId": "488ab006894f090d04d5c003567a9b342d0014b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f954109_ba9ae959",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/settings/LineageSettingsActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T07:39:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "157f4e2b_a423b349",
       "range": {
         "startLine": 99,
         "startChar": 0,

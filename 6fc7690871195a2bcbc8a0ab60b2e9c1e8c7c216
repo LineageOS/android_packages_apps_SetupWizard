@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04dd0074_1882af05",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/locale/LocaleActivity.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-16T07:39:16Z",
+      "side": 1,
+      "message": "Ah sorry, I didn\u0027t read properly what it did before, this is overkill\n\n```kt\nvar currentLocaleIndex \u003d 0\n\nval labels \u003d Array(mLocaleAdapter.count) { i -\u003e\n    val info \u003d mLocaleAdapter.getItem(i)!!\n    if (info.locale \u003d\u003d mCurrentLocale) {\n        currentLocaleIndex \u003d i\n    }\n    info.label\n}\n\nmAdapterIndices \u003d IntArray(mLocaleAdapter.count) { it }\n```\n\ncollapses most of the work into a sane way",
+      "revId": "6fc7690871195a2bcbc8a0ab60b2e9c1e8c7c216",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
