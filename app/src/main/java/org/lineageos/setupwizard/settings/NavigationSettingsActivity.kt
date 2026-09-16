@@ -5,17 +5,15 @@
 
 package org.lineageos.setupwizard.settings
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.os.Bundle
 import android.os.UserHandle
 import android.view.View
 import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY
 import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY
-import android.widget.CheckBox
-import android.widget.RadioButton
-import android.widget.RadioGroup
 import com.airbnb.lottie.LottieAnimationView
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.button.MaterialButtonToggleGroup
+import com.google.android.material.materialswitch.MaterialSwitch
 import lineageos.providers.LineageSettings
 import org.lineageos.internal.util.DeviceKeysConstants.KEY_MASK_APP_SWITCH
 import org.lineageos.setupwizard.DISABLE_NAV_KEYS
@@ -24,12 +22,14 @@ import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.SetupWizardApp
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
+import org.lineageos.setupwizard.util.updateCheckedIcons
 
 class NavigationSettingsActivity : BaseSetupWizardActivity() {
 
     private var selection: String = NAV_BAR_MODE_GESTURAL_OVERLAY
 
-    private lateinit var hideGesturalHint: CheckBox
+    private lateinit var hideGesturalHint: MaterialSwitch
+    private lateinit var hideGesturalHintCard: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,15 +45,43 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
         glifLayout.setDescriptionText(getString(R.string.navigation_summary))
         setNextText(R.string.next)
 
+        val modeGroup = findViewById<MaterialButtonToggleGroup>(R.id.navigation_mode_group)
+        val gestureButton = findViewById<MaterialButton>(R.id.mode_gesture)
+        val swKeysButton = findViewById<MaterialButton>(R.id.mode_sw_keys)
+        val navigationIllustration = findViewById<LottieAnimationView>(R.id.navigation_illustration)
+        hideGesturalHint = findViewById(R.id.hide_navigation_hint)
+        hideGesturalHintCard = findViewById(R.id.hide_navigation_hint_card)
+
+        modeGroup.addOnButtonCheckedListener { _, checkedId, isChecked ->
+            if (!isChecked) {
+                return@addOnButtonCheckedListener
+            }
+            when (checkedId) {
+                R.id.mode_gesture -> {
+                    selection = NAV_BAR_MODE_GESTURAL_OVERLAY
+                    navigationIllustration.setAnimation(R.raw.lottie_system_nav_fully_gestural)
+                    setHintRevealed(revealed = true)
+                }
+
+                R.id.mode_sw_keys -> {
+                    selection = NAV_BAR_MODE_3BUTTON_OVERLAY
+                    navigationIllustration.setAnimation(R.raw.lottie_system_nav_3_button)
+                    setHintRevealed(revealed = false)
+                }
+            }
+            modeGroup.updateCheckedIcons(R.drawable.ic_check)
+            navigationIllustration.playAnimation()
+        }
+
         var available = 3
         if (!SetupWizardUtils.isPackageInstalled(this, NAV_BAR_MODE_GESTURAL_OVERLAY)) {
-            findViewById<View>(R.id.radio_gesture).visibility = View.GONE
-            findViewById<RadioButton>(R.id.radio_sw_keys).isChecked = true
+            gestureButton.visibility = View.GONE
+            modeGroup.check(R.id.mode_sw_keys)
             available--
         }
 
         if (!SetupWizardUtils.isPackageInstalled(this, NAV_BAR_MODE_3BUTTON_OVERLAY)) {
-            findViewById<View>(R.id.radio_sw_keys).visibility = View.GONE
+            swKeysButton.visibility = View.GONE
             available--
         }
 
@@ -65,57 +93,13 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
             finishAction(RESULT_OK)
         }
 
-        val navigationIllustration = findViewById<LottieAnimationView>(R.id.navigation_illustration)
-        val radioGroup = findViewById<RadioGroup>(R.id.navigation_radio_group)
-        hideGesturalHint = findViewById(R.id.hide_navigation_hint)
+        modeGroup.updateCheckedIcons(R.drawable.ic_check)
 
-        radioGroup.setOnCheckedChangeListener { _, checkedId ->
-            when (checkedId) {
-                R.id.radio_gesture -> {
-                    selection = NAV_BAR_MODE_GESTURAL_OVERLAY
-                    navigationIllustration.setAnimation(R.raw.lottie_system_nav_fully_gestural)
-                    revealHintCheckbox()
-                }
-
-                R.id.radio_sw_keys -> {
-                    selection = NAV_BAR_MODE_3BUTTON_OVERLAY
-                    navigationIllustration.setAnimation(R.raw.lottie_system_nav_3_button)
-                    hideHintCheckBox()
-                }
-            }
-            navigationIllustration.playAnimation()
-        }
+        setHintRevealed(selection == NAV_BAR_MODE_GESTURAL_OVERLAY)
     }
 
-    private fun revealHintCheckbox() {
-        hideGesturalHint.animate().cancel()
-
-        if (hideGesturalHint.visibility == View.VISIBLE) {
-            return
-        }
-
-        hideGesturalHint.visibility = View.VISIBLE
-        hideGesturalHint.alpha = 0.0f
-        hideGesturalHint.animate().translationY(0f).alpha(1.0f).setListener(null)
-    }
-
-    private fun hideHintCheckBox() {
-        if (hideGesturalHint.visibility == View.INVISIBLE) {
-            return
-        }
-
-        hideGesturalHint
-            .animate()
-            .translationY(-hideGesturalHint.height.toFloat())
-            .alpha(0.0f)
-            .setListener(
-                object : AnimatorListenerAdapter() {
-                    override fun onAnimationEnd(animation: Animator) {
-                        super.onAnimationEnd(animation)
-                        hideGesturalHint.visibility = View.INVISIBLE
-                    }
-                }
-            )
+    private fun setHintRevealed(revealed: Boolean) {
+        hideGesturalHintCard.visibility = if (revealed) View.VISIBLE else View.GONE
     }
 
     override fun onNextPressed() {

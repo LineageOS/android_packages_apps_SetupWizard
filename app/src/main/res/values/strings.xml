@@ -87,6 +87,8 @@
     <string name="navigation_summary">Choose preferred navigation method</string>
     <string name="gesture_navigation">Gesture navigation</string>
     <string name="navbar_navigation">3-button navigation</string>
+    <string name="gesture_navigation_short">Gesture</string>
+    <string name="navbar_navigation_short">3-button</string>
     <string name="hide_gesture_hint">Hide gestural navigation hint</string>
 
     <!-- Theme page -->

@@ -44,4 +44,13 @@
     <dimen name="swipe_hint_text_rise">12dp</dimen>
 
     <dimen name="time_zone_item_padding_vertical">8dp</dimen>
+
+    <dimen name="connected_button_height">56dp</dimen>
+
+    <dimen name="preview_margin_top">24dp</dimen>
+    <dimen name="preview_card_padding">40dp</dimen>
+    <dimen name="control_card_margin_top">8dp</dimen>
+    <dimen name="control_card_padding_horizontal">24dp</dimen>
+    <dimen name="control_card_padding_vertical">20dp</dimen>
+
 </resources>
