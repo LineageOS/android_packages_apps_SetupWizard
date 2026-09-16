@@ -34,6 +34,24 @@
       "parentUuid": "632d1444_9505c60d",
       "revId": "82940391d6ff6b0882abb9c37b11d1f255dcc971",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01fc1a07_f0404bca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-16T06:53:17Z",
+      "side": 1,
+      "message": "yes I am aware of that, do you know an easier way to test both the layouts? like by setting an unsisble density or something?",
+      "parentUuid": "f4b10024_57f35ff3",
+      "revId": "82940391d6ff6b0882abb9c37b11d1f255dcc971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
