@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24ec9821_b63ce213",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-18T13:37:02Z",
+      "side": 1,
+      "message": "This should handle gesture navigation as well as 3 button navigation, iirc on stock with 3 button navigation you simply tap on home to go home, no swiping",
+      "revId": "ab3b79caf51f5409d83f27e93d8769c15a82d92d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
