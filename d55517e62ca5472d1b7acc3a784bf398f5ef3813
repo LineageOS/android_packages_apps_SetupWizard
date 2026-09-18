@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f3a07f8_ece1e95a",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-18T13:32:12Z",
+      "side": 1,
+      "message": "Is there an actual reason to change this?",
+      "revId": "d55517e62ca5472d1b7acc3a784bf398f5ef3813",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
