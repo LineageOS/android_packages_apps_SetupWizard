@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d72c89fb_2580fcf9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-24T23:02:10Z",
+      "side": 1,
+      "message": "Verified this, it also removes dimens, more overrides and a lot more things",
+      "revId": "8fc3ebc2a454530d386d109454991b72228925e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
