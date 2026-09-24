@@ -35,6 +35,8 @@
 
     <dimen name="setup_compat_footer_button_radius">@dimen/sud_glif_expressive_footer_button_radius</dimen>
     <dimen name="setup_design_items_group_corner_radius">20dp</dimen>
+    <dimen name="setup_design_card_view_intrinsic_width">0dp</dimen>
+    <dimen name="setup_design_card_view_intrinsic_height">0dp</dimen>
 
     <item name="finish_logo_scale" format="float" type="dimen">1.2</item>
     <dimen name="swipe_hint_icon_size">67dp</dimen>
