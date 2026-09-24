@@ -35,6 +35,13 @@
 
     <dimen name="setup_compat_footer_button_radius">@dimen/sud_glif_expressive_footer_button_radius</dimen>
     <dimen name="setup_design_items_group_corner_radius">20dp</dimen>
+    <!-- setupcompat declares these only in values-sw600dp, but setupdesign swaps in the expressive
+         card template, the only one holding an IntrinsicSizeFrameLayout, at w600dp-h480dp. A device
+         matching the latter but not the former resolves the name without a value and the view
+         throws while inflating. Supply the default config. Looked up by name at runtime, so
+         nothing references them. -->
+    <dimen name="setup_design_card_view_intrinsic_width">0dp</dimen>
+    <dimen name="setup_design_card_view_intrinsic_height">0dp</dimen>
 
     <item name="finish_logo_scale" format="float" type="dimen">1.2</item>
     <dimen name="swipe_hint_icon_size">67dp</dimen>
