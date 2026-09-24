@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/wizard_script,
+                @raw/wizard_script_user,
+                @raw/lineage_wizard_script,
+                @raw/lineage_wizard_script_user,
+                @raw/lineage_wizard_script_managed_profile" />
