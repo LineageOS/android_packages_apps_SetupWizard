@@ -7,8 +7,11 @@ package org.lineageos.setupwizard.settings
 
 import android.app.UiModeManager
 import android.content.res.Configuration
+import android.graphics.Outline
 import android.os.Bundle
 import android.view.View
+import android.view.ViewOutlineProvider
+import android.widget.ImageView
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.google.android.material.materialswitch.MaterialSwitch
 import lineageos.providers.LineageSettings
@@ -29,6 +32,7 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
         val modeGroup = findViewById<MaterialButtonToggleGroup>(R.id.theme_mode_group)
         val blackTheme = findViewById<MaterialSwitch>(R.id.black_theme)
         blackThemeCard = findViewById(R.id.black_theme_card)
+        roundPreviewWallpaper(findViewById(R.id.theme_preview_wallpaper))
         val isNight =
             (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) ==
                 Configuration.UI_MODE_NIGHT_YES
@@ -63,6 +67,17 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
         setBlackThemeRevealed(isNight)
     }
 
+    private fun roundPreviewWallpaper(wallpaper: ImageView) {
+        wallpaper.outlineProvider =
+            object : ViewOutlineProvider() {
+                override fun getOutline(view: View, outline: Outline) {
+                    val radius = view.width * PREVIEW_CORNER_RADIUS / PREVIEW_WIDTH
+                    outline.setRoundRect(0, 0, view.width, view.height + radius.toInt(), radius)
+                }
+            }
+        wallpaper.clipToOutline = true
+    }
+
     private fun setBlackThemeRevealed(revealed: Boolean) {
         blackThemeCard.visibility = if (revealed) View.VISIBLE else View.GONE
     }
@@ -71,5 +86,11 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
 
     override val titleResId = R.string.setup_theme
 
-    override val iconResId = R.drawable.ic_theme
+    override val iconResId = R.drawable.ic_palette
+
+    companion object {
+        // Both taken from the preview artwork's viewport, see theme_preview_qs.xml.
+        private const val PREVIEW_WIDTH = 412f
+        private const val PREVIEW_CORNER_RADIUS = 28f
+    }
 }

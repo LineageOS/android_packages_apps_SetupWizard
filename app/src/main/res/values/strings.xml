@@ -97,6 +97,7 @@
     <string name="dark">Dark</string>
     <string name="light">Light</string>
     <string name="pure_black_theme">Use pure black background</string>
+    <string name="theme_preview">Theme preview</string>
 
     <!-- Finish Screen -->
     <string name="swipe_up_to_go_home">Swipe up to go home</string>

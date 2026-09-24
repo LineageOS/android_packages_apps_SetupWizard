@@ -29,16 +29,40 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <Space
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/preview_margin_top"
+                    android:background="@drawable/setup_item_card_background"
+                    android:paddingStart="@dimen/preview_card_padding"
+                    android:paddingTop="@dimen/preview_card_padding"
+                    android:paddingEnd="@dimen/preview_card_padding">
+
+                    <ImageView
+                        android:id="@+id/theme_preview_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/theme_preview_wallpaper" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/theme_preview"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/theme_preview_qs" />
+
+                </FrameLayout>
 
                 <com.google.android.material.button.MaterialButtonToggleGroup
                     android:id="@+id/theme_mode_group"
                     style="@style/Widget.Material3Expressive.MaterialButtonGroup.Connected"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_card_margin_top"
                     app:checkedButton="@+id/mode_dark"
                     app:selectionRequired="true"
                     app:singleSelection="true">
@@ -91,6 +115,12 @@
                     android:layout_gravity="center_vertical" />
 
                 </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
