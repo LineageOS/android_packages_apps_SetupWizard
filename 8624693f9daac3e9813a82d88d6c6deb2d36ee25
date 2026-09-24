@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "217df2db_9773b469",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/base/BaseSetupWizardActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-24T15:19:12Z",
+      "side": 1,
+      "message": "```suggestion\n        val nextAction \u003d runCatching {\n            WizardManager.getNextAction(this, scriptUri, actionId, RESULT_OK)\n        }\n```",
+      "range": {
+        "startLine": 133,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 93
+      },
+      "revId": "8624693f9daac3e9813a82d88d6c6deb2d36ee25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
