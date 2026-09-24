@@ -108,4 +108,6 @@
 
     <!-- Finish Screen -->
     <string name="swipe_up_to_go_home">Swipe up to go home</string>
+    <string name="tap_home_to_go_home">Tap the center nav icon to go home</string>
+    <string name="press_center_to_go_home">Press the center button to go home</string>
 </resources>
