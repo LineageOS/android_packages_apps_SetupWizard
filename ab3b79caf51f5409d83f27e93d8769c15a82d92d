@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "008d9715_6dc92699",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/widget/RevealHoleView.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-24T15:11:18Z",
+      "side": 1,
+      "message": "```suggestion\n    private val holePaint \u003d Paint(Paint.ANTI_ALIAS_FLAG).apply {\n        xfermode \u003d PorterDuffXfermode(PorterDuff.Mode.CLEAR)\n    }\n```\n\nmaybe?",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 99
+      },
+      "revId": "ab3b79caf51f5409d83f27e93d8769c15a82d92d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "24ec9821_b63ce213",
         "filename": "app/src/main/res/values/strings.xml",
         "patchSetId": 4
