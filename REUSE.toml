@@ -17,3 +17,9 @@ path = ["app/src/main/res/raw/lottie_system_nav_3_button.json", "app/src/main/re
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2019 The Android Open Source Project"
 SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["app/src/main/res/drawable-nodpi/theme_preview_wallpaper.jpg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "The LineageOS Project"
+SPDX-License-Identifier = "Apache-2.0"
