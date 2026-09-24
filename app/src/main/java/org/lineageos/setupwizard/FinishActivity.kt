@@ -17,12 +17,16 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.util.TypedValue
+import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.VelocityTracker
 import android.view.View
 import android.view.ViewGroup.MarginLayoutParams
+import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.annotation.DimenRes
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -38,8 +42,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     private lateinit var rootView: View
     private lateinit var swipeHint: View
-    private lateinit var swipeHintIcon: View
-    private lateinit var swipeHintText: View
+    private lateinit var swipeHintIcon: ImageView
+    private lateinit var swipeHintText: TextView
     private lateinit var background: RevealHoleView
     private lateinit var brandLogo: ImageView
 
@@ -86,6 +90,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
         rootView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
 
+        applyHomeAffordance()
+
         // Ensure the main layout (not including the background view) does not get obscured by bars.
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { _, windowInsets ->
             val linearLayout = findViewById<View>(R.id.linear_layout)
@@ -107,6 +113,45 @@ class FinishActivity : BaseSetupWizardActivity() {
             Log.e(TAG, "Should not start again when finished!")
             finish()
         }
+    }
+
+    private fun applyHomeAffordance() {
+        if (usesGestureNavigation()) {
+            return
+        }
+        val hintResId =
+            if (SetupWizardUtils.hasLeanback(this)) {
+                R.string.press_center_to_go_home
+            } else {
+                R.string.tap_home_to_go_home
+            }
+        swipeHintIcon.setImageResource(R.drawable.ic_nav_home)
+        swipeHintText.setText(hintResId)
+
+        swipeHintIcon.contentDescription = getText(hintResId)
+        borderlessRippleResId()?.let { swipeHintIcon.setBackgroundResource(it) }
+        swipeHintIcon.setOnClickListener {
+            if (finishState != FinishState.NONE) {
+                return@setOnClickListener
+            }
+            punchLogoOutOfBackground()
+            commitReveal()
+        }
+    }
+
+    private fun borderlessRippleResId(): Int? {
+        val value = TypedValue()
+        val resolved =
+            theme.resolveAttribute(android.R.attr.selectableItemBackgroundBorderless, value, true)
+        return value.resourceId.takeIf { resolved && it != 0 }
+    }
+
+    private fun usesGestureNavigation(): Boolean {
+        if (SetupWizardUtils.hasLeanback(this)) {
+            return false
+        }
+        val selected = SetupWizardApp.settingsBundle.getString(NAVIGATION_OPTION_KEY) ?: return true
+        return selected == NAV_BAR_MODE_GESTURAL_OVERLAY
     }
 
     override fun onDestroy() {
@@ -153,6 +198,18 @@ class FinishActivity : BaseSetupWizardActivity() {
             Paint().apply { blendMode = BlendMode.DST_OUT },
         )
         logoPunched = true
+    }
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
+        if (finishState != FinishState.NONE || event.repeatCount != 0) {
+            return super.onKeyDown(keyCode, event)
+        }
+        if (keyCode !in COMMIT_KEY_CODES) {
+            return super.onKeyDown(keyCode, event)
+        }
+        punchLogoOutOfBackground()
+        commitReveal()
+        return true
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
@@ -335,6 +392,14 @@ class FinishActivity : BaseSetupWizardActivity() {
 
         private const val ANIM_DURATION_MS = 900L
         private const val SPRING_BACK_DURATION_MS = 200L
+
+        private val COMMIT_KEY_CODES =
+            setOf(
+                KeyEvent.KEYCODE_DPAD_CENTER,
+                KeyEvent.KEYCODE_ENTER,
+                KeyEvent.KEYCODE_NUMPAD_ENTER,
+                KeyEvent.KEYCODE_BUTTON_A,
+            )
 
         private const val REVEAL_OVERSHOOT = 1.35f
 
