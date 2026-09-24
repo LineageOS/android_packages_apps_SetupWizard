@@ -7,8 +7,6 @@
 <resources>
     <dimen name="content_margin_top">26dp</dimen>
     <dimen name="content_margin_left">26dp</dimen>
-    <dimen name="content_margin_right">14dp</dimen>
-    <dimen name="location_margin_left">20dp</dimen>
     <dimen name="location_text_margin_left">10dp</dimen>
     <dimen name="location_text_margin_right">30dp</dimen>
     <dimen name="base_margin_top">0dp</dimen>
