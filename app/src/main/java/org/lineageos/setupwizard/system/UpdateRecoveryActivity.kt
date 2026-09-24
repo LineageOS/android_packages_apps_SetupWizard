@@ -8,9 +8,10 @@ package org.lineageos.setupwizard.system
 import android.os.Bundle
 import android.os.SystemProperties
 import android.util.Log
-import android.view.View
-import android.widget.CheckBox
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
+import com.google.android.setupdesign.GlifRecyclerLayout
+import com.google.android.setupdesign.items.RecyclerItemAdapter
+import com.google.android.setupdesign.items.SwitchItem
 import org.lineageos.setupwizard.ENABLE_RECOVERY_UPDATE
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.SetupWizardApp
@@ -20,7 +21,13 @@ import org.lineageos.setupwizard.util.SetupWizardUtils
 
 class UpdateRecoveryActivity : BaseSetupWizardActivity() {
 
-    private lateinit var recoveryUpdateCheckbox: CheckBox
+    private val itemAdapter by lazy {
+        (glifLayout as GlifRecyclerLayout).adapter as RecyclerItemAdapter
+    }
+
+    private val updateRecoveryItem by lazy {
+        itemAdapter.findItemById(R.id.update_recovery_item) as SwitchItem
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,13 +46,13 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
             return
         }
 
-        recoveryUpdateCheckbox = findViewById(R.id.update_recovery_checkbox)
-
-        findViewById<View>(R.id.update_recovery_checkbox_view).setOnClickListener {
-            recoveryUpdateCheckbox.isChecked = !recoveryUpdateCheckbox.isChecked
+        itemAdapter.setOnItemSelectedListener { item ->
+            if (item is SwitchItem) {
+                item.isChecked = !item.isChecked
+            }
         }
 
-        // Allow overriding the default checkbox state
+        // Allow overriding the default switch state
         if (firstTime) {
             SetupWizardApp.settingsBundle.putBoolean(
                 ENABLE_RECOVERY_UPDATE,
@@ -58,14 +65,14 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
 
     override fun onResume() {
         super.onResume()
-        recoveryUpdateCheckbox.isChecked =
+        updateRecoveryItem.isChecked =
             SetupWizardApp.settingsBundle.getBoolean(ENABLE_RECOVERY_UPDATE, true)
     }
 
     override fun onNextPressed() {
         SetupWizardApp.settingsBundle.putBoolean(
             ENABLE_RECOVERY_UPDATE,
-            recoveryUpdateCheckbox.isChecked,
+            updateRecoveryItem.isChecked,
         )
         super.onNextPressed()
     }

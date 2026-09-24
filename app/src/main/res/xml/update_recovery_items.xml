@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<ItemGroup xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchItem
+        android:id="@+id/update_recovery_item"
+        android:layout="@layout/setup_items_switch"
+        android:title="@string/update_recovery_setting" />
+
+</ItemGroup>
