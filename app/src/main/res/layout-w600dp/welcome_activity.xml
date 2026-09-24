@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout="@layout/welcome_template"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingStart="?attr/sudMarginStart"
+            android:paddingEnd="?attr/sudMarginEnd"
+            android:paddingTop="?attr/sucFooterBarPaddingTop"
+            android:paddingBottom="?attr/sucFooterBarPaddingBottom">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.setupdesign.view.SudLottieAnimationView
+                    android:id="@+id/brand_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/welcome_wide_logo_height"
+                    android:adjustViewBounds="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/lottie_welcome" />
+
+                <TextView
+                    android:id="@+id/welcome_title"
+                    style="@style/WelcomeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hyphenationFrequency="none"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/launch_accessibility"
+                style="@style/WelcomeIconButton"
+                android:layout_width="@dimen/welcome_footer_button_size"
+                android:layout_height="@dimen/welcome_footer_button_size"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/welcome_footer_button_spacing"
+                android:layout_marginEnd="@dimen/welcome_footer_button_spacing"
+                android:contentDescription="@string/accessibility_settings"
+                app:icon="@drawable/ic_accessibility"
+                app:iconSize="@dimen/welcome_accessibility_icon_size"
+                app:iconTint="?attr/colorOnSurface" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/start"
+                style="?attr/materialButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="@dimen/welcome_wide_start_button_min_width"
+                android:minHeight="@dimen/welcome_footer_button_size"
+                android:text="@string/start"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
+                app:icon="@drawable/ic_arrow_forward"
+                app:iconGravity="textStart"
+                app:iconPadding="@dimen/welcome_start_button_icon_padding"
+                app:iconSize="@dimen/welcome_start_button_icon_size" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
