@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56e3ce6e_9b7bde28",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/FinishActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-24T15:23:25Z",
+      "side": 1,
+      "message": "```suggestion\n        val hintResId \u003d if (SetupWizardUtils.hasLeanback(this)) {\n```",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 123,
+        "endChar": 53
+      },
+      "revId": "a8b7718081b3948d8efc96209f7b70dc74904b5a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
