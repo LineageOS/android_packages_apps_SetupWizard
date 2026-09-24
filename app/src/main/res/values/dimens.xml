@@ -15,7 +15,7 @@
     <dimen name="welcome_content_container_padding_start">24dp</dimen>
     <dimen name="welcome_title_text_size">48sp</dimen>
     <dimen name="welcome_title_padding_bottom">16dp</dimen>
-    <dimen name="welcome_title_line_height">44dp</dimen>
+    <dimen name="welcome_title_line_height">56dp</dimen>
 
     <dimen name="welcome_top_button_spacing">8dp</dimen>
     <dimen name="welcome_chip_text_size">14sp</dimen>
@@ -29,6 +29,9 @@
     <dimen name="welcome_start_button_icon_size">32dp</dimen>
     <dimen name="welcome_start_button_icon_padding">12dp</dimen>
     <dimen name="welcome_accessibility_icon_size">32dp</dimen>
+
+    <dimen name="welcome_wide_logo_height">72dp</dimen>
+    <dimen name="welcome_wide_start_button_min_width">199dp</dimen>
 
     <dimen name="setup_compat_footer_button_radius">@dimen/sud_glif_expressive_footer_button_radius</dimen>
     <dimen name="setup_design_items_group_corner_radius">20dp</dimen>
@@ -52,5 +55,4 @@
     <dimen name="control_card_margin_top">8dp</dimen>
     <dimen name="control_card_padding_horizontal">24dp</dimen>
     <dimen name="control_card_padding_vertical">20dp</dimen>
-
 </resources>

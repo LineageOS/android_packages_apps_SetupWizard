@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="welcome_title_text_size">57sp</dimen>
+    <dimen name="welcome_title_line_height">64dp</dimen>
+
+    <dimen name="welcome_wide_logo_height">112dp</dimen>
+</resources>
