@@ -32,8 +32,6 @@
             android:src="@drawable/logo"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:scaleX="1.2"
-            android:scaleY="1.2"
             android:gravity="center"
             android:padding="@dimen/content_margin_left"/>
 
