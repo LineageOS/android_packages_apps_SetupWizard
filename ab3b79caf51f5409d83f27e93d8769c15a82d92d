@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7217b91_997b4686",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/widget/RevealHoleView.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-24T21:03:53Z",
+      "side": 1,
+      "message": "pre-commit reverts it back",
+      "parentUuid": "008d9715_6dc92699",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 99
+      },
+      "revId": "ab3b79caf51f5409d83f27e93d8769c15a82d92d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "24ec9821_b63ce213",
