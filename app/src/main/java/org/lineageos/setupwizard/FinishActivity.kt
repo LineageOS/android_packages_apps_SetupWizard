@@ -54,6 +54,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     private var logoPunched = false
 
     private var edgeToEdgeWallpaperBackgroundTheme: Resources.Theme? = null
+    private val revealWallpaper by lazy { !SetupWizardUtils.hasLeanback(this) }
 
     private enum class FinishState {
         NONE,
@@ -190,7 +191,7 @@ class FinishActivity : BaseSetupWizardActivity() {
     }
 
     private fun punchLogoOutOfBackground() {
-        if (logoPunched) {
+        if (logoPunched || !revealWallpaper) {
             return
         }
         brandLogo.setLayerType(
@@ -331,6 +332,9 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     override fun getTheme(): Resources.Theme {
         val theme = super.getTheme()
+        if (!revealWallpaper) {
+            return theme
+        }
         return edgeToEdgeWallpaperBackgroundTheme
             ?: theme
                 .apply { applyStyle(R.style.EdgeToEdgeWallpaperBackground, true) }
