@@ -21,8 +21,10 @@ import android.view.MotionEvent
 import android.view.VelocityTracker
 import android.view.View
 import android.view.ViewGroup.MarginLayoutParams
+import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.annotation.DimenRes
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -38,8 +40,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
     private lateinit var rootView: View
     private lateinit var swipeHint: View
-    private lateinit var swipeHintIcon: View
-    private lateinit var swipeHintText: View
+    private lateinit var swipeHintIcon: ImageView
+    private lateinit var swipeHintText: TextView
     private lateinit var background: RevealHoleView
     private lateinit var brandLogo: ImageView
 
@@ -86,6 +88,8 @@ class FinishActivity : BaseSetupWizardActivity() {
 
         rootView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
 
+        applyHomeAffordance()
+
         // Ensure the main layout (not including the background view) does not get obscured by bars.
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { _, windowInsets ->
             val linearLayout = findViewById<View>(R.id.linear_layout)
@@ -107,6 +111,22 @@ class FinishActivity : BaseSetupWizardActivity() {
             Log.e(TAG, "Should not start again when finished!")
             finish()
         }
+    }
+
+    private fun applyHomeAffordance() {
+        if (usesGestureNavigation()) {
+            return
+        }
+        swipeHintIcon.setImageResource(R.drawable.ic_nav_home)
+        swipeHintText.setText(R.string.tap_home_to_go_home)
+    }
+
+    private fun usesGestureNavigation(): Boolean {
+        if (SetupWizardUtils.hasLeanback(this)) {
+            return false
+        }
+        val selected = SetupWizardApp.settingsBundle.getString(NAVIGATION_OPTION_KEY) ?: return true
+        return selected == NAV_BAR_MODE_GESTURAL_OVERLAY
     }
 
     override fun onDestroy() {
