@@ -28,6 +28,7 @@ import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.DimenRes
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.setupcompat.util.SystemBarHelper
@@ -54,6 +55,10 @@ class FinishActivity : BaseSetupWizardActivity() {
     private var logoPunched = false
 
     private var edgeToEdgeWallpaperBackgroundTheme: Resources.Theme? = null
+
+    private val logoStartScale by lazy {
+        ResourcesCompat.getFloat(resources, R.dimen.finish_logo_scale)
+    }
 
     private enum class FinishState {
         NONE,
@@ -89,6 +94,9 @@ class FinishActivity : BaseSetupWizardActivity() {
         brandLogo = findViewById(R.id.brand_logo)
 
         rootView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
+
+        brandLogo.scaleX = logoStartScale
+        brandLogo.scaleY = logoStartScale
 
         applyHomeAffordance()
 
@@ -282,10 +290,10 @@ class FinishActivity : BaseSetupWizardActivity() {
     private fun applyRevealProgress(progress: Float) {
         revealProgress = progress
         updateLogoPivot()
-        (brandLogo.parent as? View)?.let { parent ->
+        (brandLogo.parent as? View)?.let {
             val parentLocation = IntArray(2)
             val backgroundLocation = IntArray(2)
-            parent.getLocationOnScreen(parentLocation)
+            it.getLocationOnScreen(parentLocation)
             background.getLocationOnScreen(backgroundLocation)
             background.holeCenterX =
                 parentLocation[0] - backgroundLocation[0] + brandLogo.left + brandLogo.pivotX
@@ -294,7 +302,7 @@ class FinishActivity : BaseSetupWizardActivity() {
         }
         background.holeRadius = background.fullRadius * REVEAL_OVERSHOOT * progress
         brandLogo.apply {
-            val scale = LOGO_START_SCALE + (LOGO_END_SCALE - LOGO_START_SCALE) * progress
+            val scale = logoStartScale + (LOGO_END_SCALE - logoStartScale) * progress
             scaleX = scale
             scaleY = scale
         }
@@ -403,7 +411,6 @@ class FinishActivity : BaseSetupWizardActivity() {
 
         private const val REVEAL_OVERSHOOT = 1.35f
 
-        private const val LOGO_START_SCALE = 1.2f
         private const val LOGO_END_SCALE = 18f
 
         // Static so a relaunch after the wizard has finished is recognised and dropped rather

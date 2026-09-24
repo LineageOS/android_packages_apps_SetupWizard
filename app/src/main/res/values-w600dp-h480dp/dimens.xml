@@ -8,4 +8,6 @@
     <dimen name="welcome_title_line_height">64dp</dimen>
 
     <dimen name="welcome_wide_logo_height">112dp</dimen>
+
+    <item name="finish_logo_scale" format="float" type="dimen">0.84</item>
 </resources>
