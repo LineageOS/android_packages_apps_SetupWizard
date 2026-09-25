@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <style name="Theme.Setup" parent="@style/SudThemeGlifExpressive.DayNight">
+        <item name="sucUsePartnerResource">true</item>
+        <item name="sudUsePartnerHeavyTheme">true</item>
+        <item name="android:windowBackground">@color/tv_background</item>
+        <item name="android:colorBackground">@color/tv_background</item>
+
+        <item name="sudMarginStart">@dimen/tv_overscan_horizontal</item>
+        <item name="sudMarginEnd">@dimen/tv_overscan_horizontal</item>
+        <item name="sucGlifIconMarginTop">@dimen/tv_overscan_vertical</item>
+        <item name="sucFooterBarPaddingStart">@dimen/tv_overscan_horizontal</item>
+        <item name="sucFooterBarPaddingEnd">@dimen/tv_overscan_horizontal</item>
+        <item name="sucFooterBarPaddingTop">@dimen/tv_overscan_vertical</item>
+        <item name="sucFooterBarPaddingBottom">@dimen/tv_overscan_vertical</item>
+    </style>
+</resources>
