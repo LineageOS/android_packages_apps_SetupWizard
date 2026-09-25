@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.telephony.TelephonyManager
 import android.telephony.euicc.EuiccManager
 import android.util.Log
-import com.google.android.setupdesign.GlifRecyclerLayout
 import com.google.android.setupdesign.items.ItemGroup
 import com.google.android.setupdesign.items.RecyclerItemAdapter
 import org.lineageos.setupwizard.R
@@ -29,7 +28,7 @@ class DeviceInfoActivity : BaseSetupWizardActivity() {
 
         val adapter = RecyclerItemAdapter(itemGroup)
         adapter.setOnItemSelectedListener { (it as? DeviceInfoItem)?.toggle() }
-        (glifLayout as GlifRecyclerLayout).adapter = adapter
+        itemAdapter = adapter
     }
 
     private fun deviceIdentifiers(): List<Pair<String, String>> {

@@ -42,7 +42,7 @@ class NavigationSettingsActivity : BaseSetupWizardActivity() {
             )
         val hasHomeKey = (deviceKeys and KEY_MASK_APP_SWITCH) != 0
 
-        glifLayout.setDescriptionText(getString(R.string.navigation_summary))
+        setDescriptionText(getString(R.string.navigation_summary))
 
         val modeGroup = findViewById<MaterialButtonToggleGroup>(R.id.navigation_mode_group)
         val gestureButton = findViewById<MaterialButton>(R.id.mode_gesture)
