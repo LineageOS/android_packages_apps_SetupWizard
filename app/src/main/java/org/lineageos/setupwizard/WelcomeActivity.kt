@@ -20,6 +20,7 @@ import com.google.android.setupcompat.util.SystemBarHelper
 import com.google.android.setupdesign.R as SudR
 import com.google.android.setupdesign.template.FloatingActionButtonMixin
 import com.google.android.setupdesign.template.FloatingBackButtonMixin
+import org.lineageos.setupwizard.base.GlifTemplate
 import org.lineageos.setupwizard.base.SubBaseActivity
 import org.lineageos.setupwizard.system.DeviceInfoActivity
 import org.lineageos.setupwizard.util.SetupWizardUtils
@@ -45,9 +46,11 @@ class WelcomeActivity : SubBaseActivity() {
             },
         )
 
-        setupEmergencyCallButton()
-        setupDeviceInfoButton()
-        setupSkipButton()
+        if (template is GlifTemplate) {
+            setupEmergencyCallButton()
+            setupDeviceInfoButton()
+            setupSkipButton()
+        }
 
         findViewById<View>(R.id.start).setOnClickListener { onNextPressed() }
         findViewById<View>(R.id.launch_accessibility).setOnClickListener {

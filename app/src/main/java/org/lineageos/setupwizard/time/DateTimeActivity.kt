@@ -23,9 +23,7 @@ import android.widget.SimpleAdapter
 import android.widget.TimePicker
 import androidx.appcompat.app.AlertDialog
 import com.android.settingslib.datetime.ZoneGetter
-import com.google.android.setupdesign.GlifRecyclerLayout
 import com.google.android.setupdesign.items.Item
-import com.google.android.setupdesign.items.RecyclerItemAdapter
 import com.google.android.setupdesign.items.SwitchItem
 import java.util.Calendar
 import java.util.Date
@@ -38,10 +36,6 @@ class DateTimeActivity :
     BaseSetupWizardActivity(),
     TimePickerDialog.OnTimeSetListener,
     DatePickerDialog.OnDateSetListener {
-
-    private val itemAdapter by lazy {
-        (glifLayout as GlifRecyclerLayout).adapter as RecyclerItemAdapter
-    }
 
     private val dateItem by lazy { itemAdapter.findItemById(R.id.date_item) as Item }
     private val dateFormatItem by lazy { itemAdapter.findItemById(R.id.date_format_item) as Item }
@@ -62,7 +56,7 @@ class DateTimeActivity :
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        glifLayout.setDescriptionText(getString(R.string.date_time_summary))
+        setDescriptionText(getString(R.string.date_time_summary))
 
         dateFormatItem.summary = dateFormatOrder()
         timeFormatItem.isChecked = DateFormat.is24HourFormat(this)
