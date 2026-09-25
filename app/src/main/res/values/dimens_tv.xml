@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="tv_overscan_horizontal">48dp</dimen>
+    <dimen name="tv_overscan_vertical">27dp</dimen>
+
+    <dimen name="tv_welcome_logo_height">72dp</dimen>
+    <dimen name="tv_welcome_title_margin_top">24dp</dimen>
+    <dimen name="tv_welcome_title_text_size">32sp</dimen>
+
+    <dimen name="tv_list_item_min_height">56dp</dimen>
+    <dimen name="tv_list_item_padding_horizontal">24dp</dimen>
+    <dimen name="tv_list_item_radius">28dp</dimen>
+    <dimen name="tv_list_item_title_text_size">18sp</dimen>
+    <dimen name="tv_list_item_summary_text_size">14sp</dimen>
+    <dimen name="tv_list_item_icon_size">32dp</dimen>
+    <dimen name="tv_list_item_icon_spacing">16dp</dimen>
+    <dimen name="tv_list_item_expand_size">24dp</dimen>
+
+    <item name="tv_guidance_weight" format="float" type="dimen">1</item>
+    <item name="tv_gutter_weight" format="float" type="dimen">0.8</item>
+    <item name="tv_actions_weight" format="float" type="dimen">1.4</item>
+    <dimen name="tv_guidance_padding_end">32dp</dimen>
+    <item name="tv_guidance_space_above" format="float" type="dimen">2</item>
+    <item name="tv_guidance_space_below" format="float" type="dimen">1</item>
+    <dimen name="tv_actions_padding_vertical">24dp</dimen>
+</resources>
