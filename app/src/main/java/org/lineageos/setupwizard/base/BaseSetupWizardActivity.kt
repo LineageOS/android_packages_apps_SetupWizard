@@ -20,13 +20,12 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AppCompatActivity
-import com.android.settingslib.Utils
 import com.google.android.setupcompat.template.FooterBarMixin
 import com.google.android.setupcompat.template.FooterButton
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import com.google.android.setupcompat.util.WizardManagerHelper
 import com.google.android.setupdesign.GlifLayout
-import com.google.android.setupdesign.template.IconMixin
+import com.google.android.setupdesign.items.RecyclerItemAdapter
 import com.google.android.setupdesign.transition.TransitionHelper
 import com.google.android.setupdesign.util.ThemeHelper
 import org.lineageos.setupwizard.EXTRA_ACTION_ID
@@ -52,7 +51,7 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
         nextIntentResultLauncher =
             registerForActivityResult(StartDecoratedActivityForResult(), this::onNextIntentResult)
         initLayout()
-        if (installFooterBar) {
+        if (installFooterBar && template.hasFooterBar) {
             setupFooterBar()
         }
         onBackPressedDispatcher.addCallback(
@@ -246,31 +245,53 @@ abstract class BaseSetupWizardActivity : AppCompatActivity() {
         if (layoutResId != -1) {
             setContentView(layoutResId)
         }
+        if (findViewById<View>(R.id.setup_wizard_layout) == null) {
+            return
+        }
+        if (SetupWizardUtils.hasLeanback(this)) {
+            template.setBackButtonVisible(false)
+        }
+        if (itemEntriesResId != -1) {
+            template.setItems(itemEntriesResId)
+        }
         if (titleResId != -1) {
-            val headerText = TextUtils.expandTemplate(getText(titleResId))
-            glifLayout.setHeaderText(headerText)
+            template.setHeaderText(TextUtils.expandTemplate(getText(titleResId)))
         }
         if (iconResId != -1) {
-            val layout = glifLayout
-            getDrawable(iconResId)?.mutate()?.let {
-                it.setTintList(Utils.getColorAccent(layout.context))
-                layout.setIcon(it)
-                upscaleIcon(layout)
-            }
+            getDrawable(iconResId)?.mutate()?.let { template.setIcon(it) }
+        }
+    }
+
+    protected val template: SetupTemplate by lazy {
+        when (val root = requireViewById<View>(R.id.setup_wizard_layout)) {
+            is GlifLayout -> GlifTemplate(root)
+            else -> LeanbackTemplate(root)
         }
     }
 
     protected val glifLayout: GlifLayout
         get() = requireViewById(R.id.setup_wizard_layout)
 
-    private fun upscaleIcon(layout: GlifLayout) =
-        layout.getMixin(IconMixin::class.java)?.setUpscaleIcon(true)
+    protected fun setDescriptionText(text: CharSequence) = template.setDescriptionText(text)
+
+    // List backed screens
+    protected var itemAdapter: RecyclerItemAdapter
+        get() = template.itemAdapter
+        set(value) {
+            template.itemAdapter = value
+        }
+
+    protected fun scrollItemsToTop() = template.scrollItemsToTop()
+
+    protected fun toggle(id: Int): SetupToggle = template.toggle(id)
 
     protected open val layoutResId = -1
 
     protected open val titleResId = -1
 
     protected open val iconResId = -1
+
+    protected open val itemEntriesResId = -1
 
     protected open val installFooterBar = true
 

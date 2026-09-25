@@ -9,9 +9,6 @@ import android.os.Bundle
 import android.os.SystemProperties
 import android.util.Log
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
-import com.google.android.setupdesign.GlifRecyclerLayout
-import com.google.android.setupdesign.items.RecyclerItemAdapter
-import com.google.android.setupdesign.items.SwitchItem
 import org.lineageos.setupwizard.ENABLE_RECOVERY_UPDATE
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.SetupWizardApp
@@ -21,18 +18,12 @@ import org.lineageos.setupwizard.util.SetupWizardUtils
 
 class UpdateRecoveryActivity : BaseSetupWizardActivity() {
 
-    private val itemAdapter by lazy {
-        (glifLayout as GlifRecyclerLayout).adapter as RecyclerItemAdapter
-    }
-
-    private val updateRecoveryItem by lazy {
-        itemAdapter.findItemById(R.id.update_recovery_item) as SwitchItem
-    }
+    private val updateRecoveryItem by lazy { toggle(R.id.update_recovery_item) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        glifLayout.setDescriptionText(
+        setDescriptionText(
             getString(
                 R.string.update_recovery_full_description,
                 getString(R.string.update_recovery_description),
@@ -44,12 +35,6 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity")
             finishAction(RESULT_SKIP)
             return
-        }
-
-        itemAdapter.setOnItemSelectedListener { item ->
-            if (item is SwitchItem) {
-                item.isChecked = !item.isChecked
-            }
         }
 
         // Allow overriding the default switch state
@@ -82,6 +67,8 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
     override val titleResId = R.string.update_recovery_title
 
     override val iconResId = R.drawable.ic_system_update
+
+    override val itemEntriesResId = R.xml.update_recovery_items
 
     companion object {
         private const val TAG = "UpdateRecoveryActivity"

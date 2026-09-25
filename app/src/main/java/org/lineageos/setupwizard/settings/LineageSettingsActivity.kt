@@ -10,9 +10,6 @@ import android.content.Context
 import android.os.Bundle
 import android.os.UserHandle
 import android.text.TextUtils
-import com.google.android.setupdesign.GlifRecyclerLayout
-import com.google.android.setupdesign.items.RecyclerItemAdapter
-import com.google.android.setupdesign.items.SwitchItem
 import lineageos.hardware.LineageHardwareManager
 import lineageos.providers.LineageSettings
 import org.lineageos.setupwizard.DISABLE_NAV_KEYS
@@ -23,12 +20,8 @@ import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 
 class LineageSettingsActivity : BaseSetupWizardActivity() {
 
-    private val itemAdapter by lazy {
-        (glifLayout as GlifRecyclerLayout).adapter as RecyclerItemAdapter
-    }
-
-    private val metricsItem by lazy { itemAdapter.findItemById(R.id.metrics_item) as SwitchItem }
-    private val navKeysItem by lazy { itemAdapter.findItemById(R.id.nav_keys_item) as SwitchItem }
+    private val metricsItem by lazy { toggle(R.id.metrics_item) }
+    private val navKeysItem by lazy { toggle(R.id.nav_keys_item) }
 
     private var supportsKeyDisabler = false
 
@@ -36,25 +29,19 @@ class LineageSettingsActivity : BaseSetupWizardActivity() {
         super.onCreate(savedInstanceState)
 
         val osName = getString(R.string.os_name)
-        glifLayout.setDescriptionText(buildDescription(osName))
+        setDescriptionText(buildDescription(osName))
 
         val metricsHelpImproveLineage = getString(R.string.services_help_improve_cm, osName)
         metricsItem.summary =
             getString(R.string.services_metrics_label, metricsHelpImproveLineage, osName, osName)
-        metricsItem.setOnCheckedChangeListener { _, isChecked ->
+        metricsItem.setOnCheckedChangeListener { isChecked ->
             SetupWizardApp.settingsBundle.putBoolean(KEY_SEND_METRICS, isChecked)
         }
 
         supportsKeyDisabler = isKeyDisablerSupported(this)
         navKeysItem.isVisible = supportsKeyDisabler
-        navKeysItem.setOnCheckedChangeListener { _, isChecked ->
+        navKeysItem.setOnCheckedChangeListener { isChecked ->
             SetupWizardApp.settingsBundle.putBoolean(DISABLE_NAV_KEYS, isChecked)
-        }
-
-        itemAdapter.setOnItemSelectedListener { item ->
-            if (item is SwitchItem) {
-                item.isChecked = !item.isChecked
-            }
         }
     }
 
@@ -69,6 +56,8 @@ class LineageSettingsActivity : BaseSetupWizardActivity() {
     override val titleResId = R.string.setup_services
 
     override val iconResId = R.drawable.logo
+
+    override val itemEntriesResId = R.xml.lineage_settings_items
 
     private fun buildDescription(osName: String): CharSequence =
         TextUtils.concat(

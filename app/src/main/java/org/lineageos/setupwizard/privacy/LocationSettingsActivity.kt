@@ -11,17 +11,11 @@ import android.os.Bundle
 import android.os.Process
 import android.os.UserManager
 import android.provider.Settings
-import com.google.android.setupdesign.GlifRecyclerLayout
-import com.google.android.setupdesign.items.RecyclerItemAdapter
 import com.google.android.setupdesign.items.SwitchItem
 import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 
 class LocationSettingsActivity : BaseSetupWizardActivity() {
-
-    private val itemAdapter by lazy {
-        (glifLayout as GlifRecyclerLayout).adapter as RecyclerItemAdapter
-    }
 
     private val locationAccess by lazy {
         itemAdapter.findItemById(R.id.location_item) as SwitchItem
@@ -35,7 +29,7 @@ class LocationSettingsActivity : BaseSetupWizardActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        glifLayout.setDescriptionText(getString(R.string.location_summary))
+        setDescriptionText(getString(R.string.location_summary))
 
         locationAgpsAccess.isVisible = userManager.isMainUser
 

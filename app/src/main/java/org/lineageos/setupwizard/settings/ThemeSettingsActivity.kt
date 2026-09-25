@@ -27,7 +27,7 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        glifLayout.setDescriptionText(getString(R.string.theme_summary))
+        setDescriptionText(getString(R.string.theme_summary))
 
         val modeGroup = findViewById<MaterialButtonToggleGroup>(R.id.theme_mode_group)
         val blackTheme = findViewById<MaterialSwitch>(R.id.black_theme)
