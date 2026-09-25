@@ -17,111 +17,93 @@
         android:layout_marginTop="@dimen/base_margin_top"
         android:orientation="vertical">
 
-        <ScrollView
-            android:id="@+id/page"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:fillViewport="true">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/preview_margin_top"
+            android:background="@drawable/setup_item_card_background"
+            android:paddingStart="@dimen/preview_card_padding"
+            android:paddingTop="@dimen/preview_card_padding"
+            android:paddingEnd="@dimen/preview_card_padding">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/theme_preview_wallpaper"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/preview_max_height"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/theme_preview_wallpaper" />
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/preview_margin_top"
-                    android:background="@drawable/setup_item_card_background"
-                    android:paddingStart="@dimen/preview_card_padding"
-                    android:paddingTop="@dimen/preview_card_padding"
-                    android:paddingEnd="@dimen/preview_card_padding">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/preview_max_height"
+                android:contentDescription="@string/theme_preview"
+                android:scaleType="fitCenter"
+                android:src="@drawable/theme_preview_qs" />
 
-                    <ImageView
-                        android:id="@+id/theme_preview_wallpaper"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:contentDescription="@null"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/theme_preview_wallpaper" />
+        </FrameLayout>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:contentDescription="@string/theme_preview"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/theme_preview_qs" />
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/theme_mode_group"
+            style="@style/Widget.Material3Expressive.MaterialButtonGroup.Connected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_card_margin_top"
+            app:checkedButton="@+id/mode_dark"
+            app:selectionRequired="true"
+            app:singleSelection="true">
 
-                </FrameLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mode_dark"
+                style="@style/Widget.Material3Expressive.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/connected_button_height"
+                android:layout_weight="1"
+                android:text="@string/dark" />
 
-                <com.google.android.material.button.MaterialButtonToggleGroup
-                    android:id="@+id/theme_mode_group"
-                    style="@style/Widget.Material3Expressive.MaterialButtonGroup.Connected"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/control_card_margin_top"
-                    app:checkedButton="@+id/mode_dark"
-                    app:selectionRequired="true"
-                    app:singleSelection="true">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mode_light"
+                style="@style/Widget.Material3Expressive.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/connected_button_height"
+                android:layout_weight="1"
+                android:text="@string/light" />
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/mode_dark"
-                        style="@style/Widget.Material3Expressive.Button.TonalButton"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/connected_button_height"
-                        android:layout_weight="1"
-                        android:text="@string/dark" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/mode_light"
-                        style="@style/Widget.Material3Expressive.Button.TonalButton"
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/connected_button_height"
-                        android:layout_weight="1"
-                        android:text="@string/light" />
+        <LinearLayout
+            android:id="@+id/black_theme_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/control_card_margin_top"
+            android:background="@drawable/setup_item_card_background"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/control_card_padding_horizontal"
+            android:paddingTop="@dimen/control_card_padding_vertical"
+            android:paddingEnd="@dimen/control_card_padding_horizontal"
+            android:paddingBottom="@dimen/control_card_padding_vertical">
 
-                </com.google.android.material.button.MaterialButtonToggleGroup>
+            <com.google.android.setupdesign.view.RichTextView
+            style="?attr/sudItemTitleStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/black_theme"
+            android:text="@string/pure_black_theme" />
 
-                <LinearLayout
-                    android:id="@+id/black_theme_card"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/control_card_margin_top"
-                    android:background="@drawable/setup_item_card_background"
-                    android:baselineAligned="false"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingStart="@dimen/control_card_padding_horizontal"
-                    android:paddingTop="@dimen/control_card_padding_vertical"
-                    android:paddingEnd="@dimen/control_card_padding_horizontal"
-                    android:paddingBottom="@dimen/control_card_padding_vertical">
+            <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/black_theme"
+            style="@style/SudExpressiveSwitchBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
 
-                    <com.google.android.setupdesign.view.RichTextView
-                    style="?attr/sudItemTitleStyle"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:labelFor="@+id/black_theme"
-                    android:text="@string/pure_black_theme" />
-
-                    <com.google.android.material.materialswitch.MaterialSwitch
-                    android:id="@+id/black_theme"
-                    style="@style/SudExpressiveSwitchBarStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical" />
-
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
 </com.google.android.setupdesign.GlifLayout>

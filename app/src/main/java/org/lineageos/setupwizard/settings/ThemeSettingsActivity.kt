@@ -71,8 +71,24 @@ class ThemeSettingsActivity : BaseSetupWizardActivity() {
         wallpaper.outlineProvider =
             object : ViewOutlineProvider() {
                 override fun getOutline(view: View, outline: Outline) {
-                    val radius = view.width * PREVIEW_CORNER_RADIUS / PREVIEW_WIDTH
-                    outline.setRoundRect(0, 0, view.width, view.height + radius.toInt(), radius)
+                    val artwork = wallpaper.drawable ?: return
+                    val scale =
+                        minOf(
+                            view.width.toFloat() / artwork.intrinsicWidth,
+                            view.height.toFloat() / artwork.intrinsicHeight,
+                        )
+                    val width = (artwork.intrinsicWidth * scale).toInt()
+                    val height = (artwork.intrinsicHeight * scale).toInt()
+                    val left = (view.width - width) / 2
+                    val top = (view.height - height) / 2
+                    val radius = width * PREVIEW_CORNER_RADIUS / PREVIEW_WIDTH
+                    outline.setRoundRect(
+                        left,
+                        top,
+                        left + width,
+                        top + height + radius.toInt(),
+                        radius,
+                    )
                 }
             }
         wallpaper.clipToOutline = true
