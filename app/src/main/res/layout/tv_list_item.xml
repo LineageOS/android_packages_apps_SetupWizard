@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tv_list_item_background"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:tag="noBackground"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/tv_list_item_min_height"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/tv_list_item_padding_horizontal"
+    android:paddingEnd="@dimen/tv_list_item_padding_horizontal">
+
+    <FrameLayout
+        android:id="@id/sud_items_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/tv_list_item_icon_spacing"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@id/sud_items_icon"
+            android:layout_width="@dimen/tv_list_item_icon_size"
+            android:layout_height="@dimen/tv_list_item_icon_size"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/sud_items_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:textColor="@color/tv_list_item_foreground"
+            android:textSize="@dimen/tv_list_item_title_text_size" />
+
+        <TextView
+            android:id="@id/sud_items_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:maxLines="@integer/tv_list_item_summary_max_lines"
+            android:textColor="@color/tv_list_item_foreground"
+            android:textSize="@dimen/tv_list_item_summary_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tv_list_item_expand"
+        android:layout_width="@dimen/tv_list_item_expand_size"
+        android:layout_height="@dimen/tv_list_item_expand_size"
+        android:layout_marginStart="@dimen/tv_list_item_icon_spacing"
+        android:contentDescription="@null"
+        android:duplicateParentState="true"
+        android:src="@drawable/ic_tv_expand"
+        android:tint="@color/tv_list_item_foreground"
+        android:visibility="gone" />
+</LinearLayout>
