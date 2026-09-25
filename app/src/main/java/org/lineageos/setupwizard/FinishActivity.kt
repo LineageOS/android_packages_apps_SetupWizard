@@ -361,6 +361,10 @@ class FinishActivity : BaseSetupWizardActivity() {
         finishState = FinishState.ANIMATING
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED)
         disableNavigation()
+        if (!revealWallpaper) {
+            fadeOutAndFinish()
+            return
+        }
         ValueAnimator.ofFloat(revealProgress, 1f).apply {
             duration = (ANIM_DURATION_MS * (1f - revealProgress)).toLong().coerceAtLeast(200L)
             interpolator = AccelerateDecelerateInterpolator()
@@ -380,6 +384,17 @@ class FinishActivity : BaseSetupWizardActivity() {
             )
             start()
         }
+    }
+
+    private fun fadeOutAndFinish() {
+        findViewById<View>(R.id.linear_layout)
+            .animate()
+            .alpha(0f)
+            .setDuration(FADE_OUT_DURATION_MS)
+            .withEndAction {
+                rootView.visibility = View.INVISIBLE
+                handler.post { finishAfterAnimation() }
+            }
     }
 
     private fun finishAfterAnimation() {
@@ -404,6 +419,7 @@ class FinishActivity : BaseSetupWizardActivity() {
 
         private const val ANIM_DURATION_MS = 900L
         private const val SPRING_BACK_DURATION_MS = 200L
+        private const val FADE_OUT_DURATION_MS = 400L
 
         private val COMMIT_KEY_CODES =
             setOf(
