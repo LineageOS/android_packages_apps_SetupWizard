@@ -16,6 +16,7 @@ import android.os.Looper
 import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import com.android.internal.app.LocaleHelper
@@ -23,7 +24,6 @@ import com.android.internal.app.LocaleStore
 import com.android.internal.telephony.TelephonyIntents
 import com.android.internal.telephony.util.LocaleUtils
 import com.google.android.setupcompat.util.SystemBarHelper
-import com.google.android.setupdesign.GlifRecyclerLayout
 import com.google.android.setupdesign.items.Item
 import com.google.android.setupdesign.items.ItemGroup
 import com.google.android.setupdesign.items.RecyclerItemAdapter
@@ -36,9 +36,7 @@ import org.lineageos.setupwizard.R
 import org.lineageos.setupwizard.SetupWizardApp
 import org.lineageos.setupwizard.base.BaseSetupWizardActivity
 
-class LocaleActivity : BaseSetupWizardActivity() {
-
-    private val recyclerLayout by lazy { glifLayout as GlifRecyclerLayout }
+open class LocaleActivity : BaseSetupWizardActivity() {
 
     private var parentLanguage: LocaleStore.LocaleInfo? = null
 
@@ -127,18 +125,26 @@ class LocaleActivity : BaseSetupWizardActivity() {
     }
 
     private fun showLevel(parent: LocaleStore.LocaleInfo?, countryMode: Boolean) {
-        onLevelLocales(parent, countryMode) { show(it, countryMode) }
+        onLevelLocales(parent, countryMode) { locales, expandable ->
+            show(locales, countryMode, expandable)
+        }
     }
 
     private fun onLevelLocales(
         parent: LocaleStore.LocaleInfo?,
         countryMode: Boolean,
-        onReady: (List<LocaleStore.LocaleInfo>) -> Unit,
+        onReady: (List<LocaleStore.LocaleInfo>, expandable: Set<String>) -> Unit,
     ) {
         localeExecutor.execute {
             val locales = levelLocales(parent)
             locales.forEach { if (countryMode) it.fullCountryNameNative else it.fullNameNative }
-            handler.post { if (!isDestroyed) onReady(locales) }
+            val expandable =
+                if (countryMode) {
+                    emptySet()
+                } else {
+                    locales.filter { levelLocales(it).size > 1 }.map { it.id }.toSet()
+                }
+            handler.post { if (!isDestroyed) onReady(locales, expandable) }
         }
     }
 
@@ -148,16 +154,20 @@ class LocaleActivity : BaseSetupWizardActivity() {
                 .sortedWith(LocaleHelper.LocaleInfoComparator(Locale.getDefault(), parent != null))
         }
 
-    private fun show(locales: List<LocaleStore.LocaleInfo>, countryMode: Boolean) {
+    private fun show(
+        locales: List<LocaleStore.LocaleInfo>,
+        countryMode: Boolean,
+        expandable: Set<String>,
+    ) {
         val (suggested, remaining) = locales.partition { it.isSuggested }
 
         val root = ItemGroup()
-        suggested.forEach { root.addChild(localeItem(it, countryMode)) }
+        suggested.forEach { root.addChild(localeItem(it, countryMode, it.id in expandable)) }
 
         if (remaining.isNotEmpty()) {
             val section = SectionItem()
-            remaining.forEach { section.addChild(localeItem(it, countryMode)) }
-            if (suggested.isNotEmpty()) {
+            remaining.forEach { section.addChild(localeItem(it, countryMode, it.id in expandable)) }
+            if (suggested.isNotEmpty() && separatesSuggestedLocales) {
                 section.setHeaderTitle("")
             }
             root.addChild(section)
@@ -167,12 +177,23 @@ class LocaleActivity : BaseSetupWizardActivity() {
         adapter.setOnItemSelectedListener { item ->
             (item as? LocaleItem)?.let { onItemSelected(it) }
         }
-        recyclerLayout.adapter = adapter
-        recyclerLayout.recyclerView.scrollToPosition(0)
+        itemAdapter = adapter
+        scrollItemsToTop()
     }
 
-    private fun localeItem(localeInfo: LocaleStore.LocaleInfo, countryMode: Boolean) =
-        LocaleItem(localeInfo).apply {
+    protected open val localeItemLayoutResId = 0
+
+    protected open val separatesSuggestedLocales = true
+
+    private fun localeItem(
+        localeInfo: LocaleStore.LocaleInfo,
+        countryMode: Boolean,
+        expandable: Boolean,
+    ) =
+        LocaleItem(localeInfo, expandable).apply {
+            if (localeItemLayoutResId != 0) {
+                layoutResource = localeItemLayoutResId
+            }
             title =
                 if (countryMode) {
                     localeInfo.fullCountryNameNative
@@ -187,7 +208,7 @@ class LocaleActivity : BaseSetupWizardActivity() {
             selectLocale(localeInfo)
             return
         }
-        onLevelLocales(localeInfo, countryMode = true) { regions ->
+        onLevelLocales(localeInfo, countryMode = true) { regions, _ ->
             if (regions.size > 1) showRegions(localeInfo) else selectLocale(localeInfo)
         }
     }
@@ -261,7 +282,17 @@ class LocaleActivity : BaseSetupWizardActivity() {
         return telephonyManager.simLocale
     }
 
-    private class LocaleItem(val localeInfo: LocaleStore.LocaleInfo) : Item()
+    private class LocaleItem(
+        val localeInfo: LocaleStore.LocaleInfo,
+        private val expandable: Boolean,
+    ) : Item() {
+
+        override fun onBindView(view: View) {
+            super.onBindView(view)
+            view.findViewById<View>(R.id.tv_list_item_expand)?.visibility =
+                if (expandable) View.VISIBLE else View.GONE
+        }
+    }
 
     companion object {
         private const val TAG = "LocaleActivity"

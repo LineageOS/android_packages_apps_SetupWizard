@@ -10,17 +10,12 @@
     <WizardAction
         wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP;end"
         id="bluetooth_setup">
-        <result wizard:action="welcome" />
+        <result wizard:action="welcome_locale" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end"
-        id="welcome">
-        <result wizard:action="locale" />
-    </WizardAction>
-    <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCALE;end"
-        id="locale">
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME_LOCALE;end"
+        id="welcome_locale">
         <result wizard:action="network_setup" />
     </WizardAction>
 
