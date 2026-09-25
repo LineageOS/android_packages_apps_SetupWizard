@@ -18,4 +18,11 @@
     <color name="materialColorOnPrimary">@*android:color/system_on_primary_light</color>
 
     <color name="finish_swipe_arrow">#82D5C7</color>
+
+    <!-- TV -->
+    <color name="tv_background">#000000</color>
+    <color name="tv_welcome_title">#FFFFFF</color>
+    <color name="tv_list_item_focused">#F1F3F4</color>
+    <color name="tv_list_item_text">#E3E3E3</color>
+    <color name="tv_list_item_text_focused">#1B1B1B</color>
 </resources>
