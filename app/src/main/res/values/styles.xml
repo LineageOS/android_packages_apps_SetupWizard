@@ -10,6 +10,9 @@
         <item name="sudUsePartnerHeavyTheme">true</item>
     </style>
 
+    <!-- TV -->
+    <style name="Theme.Setup.Tv" />
+
     <style name="SpinnerItem">
         <item name="android:textSize">15sp</item>
         <item name="android:paddingLeft">@dimen/content_margin_left</item>
