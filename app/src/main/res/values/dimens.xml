@@ -56,6 +56,7 @@
 
     <dimen name="preview_margin_top">24dp</dimen>
     <dimen name="preview_card_padding">40dp</dimen>
+    <dimen name="preview_max_height">9999dp</dimen>
     <dimen name="control_card_margin_top">8dp</dimen>
     <dimen name="control_card_padding_horizontal">24dp</dimen>
     <dimen name="control_card_padding_vertical">20dp</dimen>
