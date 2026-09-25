@@ -24,6 +24,7 @@ android_app {
 
     static_libs: [
         "androidx.activity_activity",
+        "androidx.leanback_leanback",
         "SettingsLib",
         "setupcompat",
         "setupdesign",
