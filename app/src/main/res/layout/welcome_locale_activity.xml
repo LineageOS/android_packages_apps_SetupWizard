@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_wizard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/tv_overscan_horizontal"
+    android:paddingTop="@dimen/tv_overscan_vertical"
+    android:paddingEnd="@dimen/tv_overscan_horizontal"
+    android:paddingBottom="@dimen/tv_overscan_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/tv_guidance_weight"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/tv_guidance_padding_end">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/tv_guidance_space_above" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/brand_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tv_welcome_logo_height"
+                android:adjustViewBounds="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/lottie_welcome" />
+
+            <TextView
+                android:id="@+id/welcome_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_welcome_title_margin_top"
+                android:hyphenationFrequency="none"
+                android:textColor="@color/tv_welcome_title"
+                android:textSize="@dimen/tv_welcome_title_text_size" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/tv_guidance_space_below" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/tv_gutter_weight" />
+
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@id/setup_items"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/tv_actions_weight"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/tv_actions_padding_vertical"
+            android:paddingBottom="@dimen/tv_actions_padding_vertical" />
+    </LinearLayout>
+</FrameLayout>
