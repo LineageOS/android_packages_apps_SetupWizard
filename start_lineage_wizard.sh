@@ -11,6 +11,8 @@ adb shell pm enable org.lineageos.setupwizard/.SetupWizardActivity || true
 wait ${!}
 adb shell pm enable org.lineageos.setupwizard/.system.DeviceSpecificActivity || true
 wait ${!}
+adb shell pm enable org.lineageos.setupwizard/.system.UpdateRecoveryActivity || true
+wait ${!}
 if adb shell pm list packages | grep com.google.android.setupwizard; then
   adb shell pm disable com.google.android.setupwizard || true
   wait ${!}

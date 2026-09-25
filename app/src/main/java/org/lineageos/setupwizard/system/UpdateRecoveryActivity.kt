@@ -33,6 +33,7 @@ class UpdateRecoveryActivity : BaseSetupWizardActivity() {
 
         if (!SetupWizardUtils.hasRecoveryUpdater(this)) {
             Log.v(TAG, "No recovery updater, skipping UpdateRecoveryActivity")
+            SetupWizardUtils.disableComponent(this, UpdateRecoveryActivity::class.java)
             finishAction(RESULT_SKIP)
             return
         }
