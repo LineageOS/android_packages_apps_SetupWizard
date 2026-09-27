@@ -3,8 +3,7 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<com.google.android.setupdesign.GlifLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
@@ -31,8 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="@dimen/preview_max_height"
                 android:contentDescription="@null"
+                android:maxHeight="@dimen/preview_max_height"
                 android:scaleType="fitCenter"
                 android:src="@drawable/theme_preview_wallpaper" />
 
@@ -40,8 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:maxHeight="@dimen/preview_max_height"
                 android:contentDescription="@string/theme_preview"
+                android:maxHeight="@dimen/preview_max_height"
                 android:scaleType="fitCenter"
                 android:src="@drawable/theme_preview_qs" />
 
@@ -90,20 +89,20 @@
             android:paddingBottom="@dimen/control_card_padding_vertical">
 
             <com.google.android.setupdesign.view.RichTextView
-            style="?attr/sudItemTitleStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:labelFor="@+id/black_theme"
-            android:text="@string/pure_black_theme" />
+                style="?attr/sudItemTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:labelFor="@+id/black_theme"
+                android:text="@string/pure_black_theme" />
 
             <com.google.android.material.materialswitch.MaterialSwitch
-            android:id="@+id/black_theme"
-            style="@style/SudExpressiveSwitchBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical" />
+                android:id="@+id/black_theme"
+                style="@style/SudExpressiveSwitchBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
 
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 </com.google.android.setupdesign.GlifLayout>

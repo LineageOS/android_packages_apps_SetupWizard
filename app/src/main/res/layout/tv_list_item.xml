@@ -3,19 +3,18 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/tv_list_item_background"
     android:baselineAligned="false"
     android:focusable="true"
-    android:tag="noBackground"
     android:gravity="center_vertical"
     android:minHeight="@dimen/tv_list_item_min_height"
     android:orientation="horizontal"
     android:paddingStart="@dimen/tv_list_item_padding_horizontal"
-    android:paddingEnd="@dimen/tv_list_item_padding_horizontal">
+    android:paddingEnd="@dimen/tv_list_item_padding_horizontal"
+    android:tag="noBackground">
 
     <FrameLayout
         android:id="@id/sud_items_icon_container"
