@@ -8,43 +8,43 @@
     wizard:firstAction="bluetooth_setup">
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP;end"
-        id="bluetooth_setup">
+        id="bluetooth_setup"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_BLUETOOTH_SETUP;end">
         <result wizard:action="welcome_locale" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME_LOCALE;end"
-        id="welcome_locale">
+        id="welcome_locale"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME_LOCALE;end">
         <result wizard:action="network_setup" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end"
-        id="network_setup">
+        id="network_setup"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_NETWORK_SETUP;end">
         <result wizard:action="device_specific" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.DEVICE_SPECIFIC;end"
-        id="device_specific">
+        id="device_specific"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.DEVICE_SPECIFIC;end">
         <result wizard:action="recovery_update" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RECOVERY_UPDATE;end"
-        id="recovery_update">
+        id="recovery_update"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RECOVERY_UPDATE;end">
         <result wizard:action="lineage_settings" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETTINGS;end"
-        id="lineage_settings">
+        id="lineage_settings"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETTINGS;end">
         <result wizard:action="finish" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end"
-        id="finish" />
+        id="finish"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" />
 
 </WizardScript>

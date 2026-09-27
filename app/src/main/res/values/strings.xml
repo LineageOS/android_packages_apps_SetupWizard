@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
      SPDX-FileCopyrightText: 2013-2015 The CyanogenMod Project
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
@@ -23,14 +22,14 @@
     <string name="loading">Just a sec\u2026</string>
 
     <!-- Welcome page -->
-    <string name="setup_welcome_message">Welcome to <xliff:g id="name" example="LineageOS">%1$s</xliff:g></string>
+    <string name="setup_welcome_message">Welcome to <xliff:g example="LineageOS" id="name">%1$s</xliff:g></string>
     <string name="setup_managed_profile_welcome_message">Set up your work profile</string>
     <string name="emergency_call">Emergency call</string>
     <string name="accessibility_settings">Accessibility settings</string>
     <string name="device_info">Device info</string>
     <string name="device_information">Device information</string>
     <string name="device_info_imei">IMEI</string>
-    <string name="device_info_imei_slot">IMEI <xliff:g id="slot" example="1">%1$d</xliff:g></string>
+    <string name="device_info_imei_slot">IMEI <xliff:g example="1" id="slot">%1$d</xliff:g></string>
     <string name="device_info_eid">EID</string>
     <string name="device_info_serial">Serial number</string>
 
@@ -60,7 +59,7 @@
 
     <!-- Restore backup page -->
     <string name="intro_restore_title">Restore apps and data</string>
-    <string name="intro_restore_subtitle">If you have a Seedvault backup from <xliff:g id="name" example="LineageOS">%s</xliff:g> or any other OS, you can restore it here.</string>
+    <string name="intro_restore_subtitle">If you have a Seedvault backup from <xliff:g example="LineageOS" id="name">%s</xliff:g> or any other OS, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
 
     <!-- Location page -->
@@ -80,11 +79,11 @@
 
     <!-- LineageOS features page -->
     <string name="setup_services">LineageOS features</string>
-    <string name="services_pp_explanation">These services work for you to extend the capabilities of your device. Data will be used in accordance with <xliff:g id="name" example="LineageOS">%1$s</xliff:g>\'s privacy policy.</string>
+    <string name="services_pp_explanation">These services work for you to extend the capabilities of your device. Data will be used in accordance with <xliff:g example="LineageOS" id="name">%1$s</xliff:g>\'s privacy policy.</string>
     <string name="services_find_privacy_policy">You can read the privacy policy on another device by visiting:</string>
     <string name="services_privacy_policy_uri" translatable="false"><b>https://lineageos.org/legal</b></string>
-    <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%3$s</xliff:g> features.</string>
+    <string name="services_help_improve_cm">Help improve <xliff:g example="LineageOS" id="name">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g example="Help improve LineageOS" id="name">%1$s</xliff:g> by automatically sending diagnostic and usage data to <xliff:g example="LineageOS" id="name">%2$s</xliff:g>. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g example="LineageOS" id="name">%3$s</xliff:g> features.</string>
     <string name="services_metrics_title">Contribute diagnostic data</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
