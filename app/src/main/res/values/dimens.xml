@@ -34,7 +34,9 @@
     <dimen name="welcome_wide_start_button_min_width">199dp</dimen>
     <dimen name="welcome_wide_row_padding_vertical">24dp</dimen>
 
-    <dimen name="setup_compat_footer_button_radius">@dimen/sud_glif_expressive_footer_button_radius</dimen>
+    <dimen name="setup_compat_footer_button_radius">
+        @dimen/sud_glif_expressive_footer_button_radius
+    </dimen>
     <dimen name="setup_design_items_group_corner_radius">20dp</dimen>
     <dimen name="setup_design_card_view_intrinsic_width">0dp</dimen>
     <dimen name="setup_design_card_view_intrinsic_height">0dp</dimen>

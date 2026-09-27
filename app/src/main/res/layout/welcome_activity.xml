@@ -4,8 +4,7 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<com.google.android.setupdesign.GlifLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/setup_wizard_layout"
     android:layout_width="match_parent"
@@ -57,8 +56,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingStart="?attr/sudMarginStart"
-            android:paddingEnd="?attr/sudMarginEnd"
             android:paddingTop="?attr/sucFooterBarPaddingTop"
+            android:paddingEnd="?attr/sudMarginEnd"
             android:paddingBottom="?attr/sucFooterBarPaddingBottom">
 
             <com.google.android.material.button.MaterialButton
@@ -84,9 +83,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="@dimen/welcome_footer_button_size"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:minHeight="@dimen/welcome_footer_button_size"
                 android:text="@string/start"
                 android:textAppearance="?attr/textAppearanceTitleLarge"
                 app:icon="@drawable/ic_arrow_forward"
