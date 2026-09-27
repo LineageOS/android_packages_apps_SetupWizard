@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df26e6ac_054a64fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-27T14:51:52Z",
+      "side": 1,
+      "message": "I\u0027d leave lotties anims as is",
+      "revId": "fcb5b3e3d39cfe6daae876b35e6f0b1ee8e039d6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
