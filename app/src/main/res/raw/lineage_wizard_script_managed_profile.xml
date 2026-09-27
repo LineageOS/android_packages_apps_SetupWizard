@@ -9,26 +9,28 @@
     wizard:firstAction="welcome">
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end"
-        id="welcome">
-        <result wizard:name="skip" wizard:resultCode="1" />
+        id="welcome"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_WELCOME;end">
+        <result
+            wizard:name="skip"
+            wizard:resultCode="1" />
         <result wizard:action="restore" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end"
-        id="restore">
+        id="restore"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_RESTORE_BACKUP;end">
         <result wizard:action="location_settings" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCATION_SETTINGS;end"
-        id="location_settings">
+        id="location_settings"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_LOCATION_SETTINGS;end">
         <result wizard:action="finish" />
     </WizardAction>
 
     <WizardAction
-        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end"
-        id="finish" />
+        id="finish"
+        wizard:uri="intent:#Intent;action=org.lineageos.setupwizard.LINEAGE_SETUP_COMPLETE;end" />
 
 </WizardScript>

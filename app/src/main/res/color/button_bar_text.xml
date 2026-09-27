@@ -4,6 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:color="@color/button_bar_text_disabled" />
+    <item android:color="@color/button_bar_text_disabled" android:state_enabled="false" />
     <item android:color="@color/button_bar_text_enabled" />
 </selector>
