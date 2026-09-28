@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5235d9b_e375ccbe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-09-28T14:11:53Z",
+      "side": 1,
+      "message": "ah my bad didn\u0027t check strings.xml",
+      "revId": "0b22d6dd084995fd370dfd54c1a82d22c739c2b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "815bd737_71b2689c",
