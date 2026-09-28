@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "815bd737_71b2689c",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-28T13:36:04Z",
+      "side": 1,
+      "message": "also this sucks, can\u0027t believe this thing still happens in studio...",
+      "revId": "0b22d6dd084995fd370dfd54c1a82d22c739c2b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dafb5dfc_958908a4",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-09-28T13:36:04Z",
+      "side": 1,
+      "message": "Changing strings like this here and below will just invalidate all the translations for no real reason",
+      "revId": "0b22d6dd084995fd370dfd54c1a82d22c739c2b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
