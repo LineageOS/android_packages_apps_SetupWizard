@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "647fe0f9_330102c9",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-28T14:19:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "815bd737_71b2689c",
+      "revId": "0b22d6dd084995fd370dfd54c1a82d22c739c2b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dafb5dfc_958908a4",
@@ -48,6 +66,24 @@
       "writtenOn": "2026-09-28T13:36:04Z",
       "side": 1,
       "message": "Changing strings like this here and below will just invalidate all the translations for no real reason",
+      "revId": "0b22d6dd084995fd370dfd54c1a82d22c739c2b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d48ee0f3_0e438432",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-09-28T14:19:50Z",
+      "side": 1,
+      "message": "I might have missed it, have dropped it",
+      "parentUuid": "dafb5dfc_958908a4",
       "revId": "0b22d6dd084995fd370dfd54c1a82d22c739c2b9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
