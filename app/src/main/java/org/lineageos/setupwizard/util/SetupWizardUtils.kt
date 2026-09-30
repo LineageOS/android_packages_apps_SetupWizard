@@ -32,11 +32,14 @@ import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
 import android.telephony.TelephonyManager.PHONE_TYPE_GSM
 import android.util.Log
+import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL
+import android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_GESTURAL_OVERLAY
 import com.google.android.setupcompat.util.ResultCodes.RESULT_SKIP
 import java.io.File
 import lineageos.hardware.LineageHardwareManager
 import lineageos.providers.LineageSettings
 import org.json.JSONObject
+import org.lineageos.internal.util.DeviceKeysConstants.KEY_MASK_APP_SWITCH
 import org.lineageos.setupwizard.DISABLE_NAV_KEYS
 import org.lineageos.setupwizard.ENABLE_RECOVERY_UPDATE
 import org.lineageos.setupwizard.KEY_SEND_METRICS
@@ -141,6 +144,35 @@ object SetupWizardUtils {
 
     fun isPackageInstalled(context: Context, packageName: String): Boolean =
         runCatching { context.packageManager.getPackageInfo(packageName, GET_ACTIVITIES) }.isSuccess
+
+    fun enableGesturalNavigation(context: Context) {
+        if (isManagedProfile(context)) {
+            return
+        }
+        if (!isPackageInstalled(context, NAV_BAR_MODE_GESTURAL_OVERLAY)) {
+            return
+        }
+        val deviceKeys =
+            context.resources.getInteger(
+                org.lineageos.platform.internal.R.integer.config_deviceHardwareKeys
+            )
+        if ((deviceKeys and KEY_MASK_APP_SWITCH) != 0) {
+            return
+        }
+        val navigationMode =
+            Settings.Secure.getInt(context.contentResolver, Settings.Secure.NAVIGATION_MODE, 0)
+        if (navigationMode == NAV_BAR_MODE_GESTURAL) {
+            return
+        }
+        val overlayManager =
+            IOverlayManager.Stub.asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE))
+        runCatching {
+            overlayManager.setEnabledExclusiveInCategory(
+                NAV_BAR_MODE_GESTURAL_OVERLAY,
+                UserHandle.USER_CURRENT,
+            )
+        }
+    }
 
     private fun restoreWallpaperColorSource(contentResolver: ContentResolver) {
         val overlayPackages =
