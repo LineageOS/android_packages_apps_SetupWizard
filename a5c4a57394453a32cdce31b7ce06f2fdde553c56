@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39ad783f_62b6d8a9",
+        "filename": "README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-02T11:32:25Z",
+      "side": 1,
+      "message": "You don\u0027t really need this in the README, besides it\u0027s not being shown: https://github.com/LineageOS/android_packages_apps_SetupWizard/blob/a5c4a57394453a32cdce31b7ce06f2fdde553c56/README.md",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 3
+      },
+      "revId": "a5c4a57394453a32cdce31b7ce06f2fdde553c56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
