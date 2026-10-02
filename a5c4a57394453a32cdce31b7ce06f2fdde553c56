@@ -22,6 +22,30 @@
       },
       "revId": "a5c4a57394453a32cdce31b7ce06f2fdde553c56",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8715ccd_4c4325e0",
+        "filename": "README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-02T12:09:27Z",
+      "side": 1,
+      "message": "It\u0027s needed for REUSE check",
+      "parentUuid": "39ad783f_62b6d8a9",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 3
+      },
+      "revId": "a5c4a57394453a32cdce31b7ce06f2fdde553c56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
