@@ -12,6 +12,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
 import android.os.Handler
+import android.os.LocaleList
 import android.os.Looper
 import android.telephony.SubscriptionManager
 import android.telephony.TelephonyManager
@@ -151,6 +152,7 @@ open class LocaleActivity : BaseSetupWizardActivity() {
     private fun levelLocales(parent: LocaleStore.LocaleInfo?): List<LocaleStore.LocaleInfo> =
         levelLocales.getOrPut(parent?.id.orEmpty()) {
             LocaleStore.getLevelLocales(this, emptySet(), parent, /* translatedOnly= */ true)
+                .filterNot { LocaleList.isPseudoLocale(it.locale) }
                 .sortedWith(LocaleHelper.LocaleInfoComparator(Locale.getDefault(), parent != null))
         }
 
