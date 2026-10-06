@@ -70,6 +70,24 @@
       "parentUuid": "da5cf1a9_5e2e0b13",
       "revId": "70cd749588b8b86ea26ad5fec74e035da242f374",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf6f222f_92a941c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28798
+      },
+      "writtenOn": "2026-10-06T07:14:45Z",
+      "side": 1,
+      "message": "Tested this out, and we will have to bring those resources back, which breaks M3E, dimens, configs, and a lot more, I think it is better to keep this as it is rather than fixing it.",
+      "parentUuid": "f6666645_f892b99b",
+      "revId": "70cd749588b8b86ea26ad5fec74e035da242f374",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
