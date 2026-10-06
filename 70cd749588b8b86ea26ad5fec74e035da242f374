@@ -106,6 +106,24 @@
       "parentUuid": "bf6f222f_92a941c4",
       "revId": "70cd749588b8b86ea26ad5fec74e035da242f374",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "742d881a_bc5fd654",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-06T16:29:04Z",
+      "side": 1,
+      "message": "If we can add optimize it\u0027s better than nothing, but ideally we also drop resources, hopefully they aren\u0027t crazy big.",
+      "parentUuid": "be275f9f_2c4a3d1e",
+      "revId": "70cd749588b8b86ea26ad5fec74e035da242f374",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
