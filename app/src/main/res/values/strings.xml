@@ -29,9 +29,9 @@
     <string name="accessibility_settings">Accessibility settings</string>
     <string name="device_info">Device info</string>
     <string name="device_information">Device information</string>
-    <string name="device_info_imei">IMEI</string>
-    <string name="device_info_imei_slot">IMEI <xliff:g id="slot" example="1">%1$d</xliff:g></string>
-    <string name="device_info_eid">EID</string>
+    <string name="device_info_imei" translatable="false">IMEI</string>
+    <string name="device_info_imei_slot" translatable="false">IMEI <xliff:g id="slot" example="1">%1$d</xliff:g></string>
+    <string name="device_info_eid" translatable="false">EID</string>
     <string name="device_info_serial">Serial number</string>
 
     <!-- Locale page -->
