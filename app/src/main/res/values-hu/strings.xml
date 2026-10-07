@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Telepítő varázsló</string>
     <string name="next">Következő</string>
+    <string name="finish">Befejezés</string>
     <string name="skip">Kihagyás</string>
     <string name="start">Indít</string>
     <string name="done">Kész</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">Állítsa be a munkahelyi profilját</string>
     <string name="emergency_call">Segélyhívás</string>
     <string name="accessibility_settings">Kisegítő beállítások</string>
+    <string name="device_info">Készülékadatok</string>
+    <string name="device_information">Készülékinformáció</string>
+    <string name="device_info_serial">Sorozatszám</string>
     <string name="setup_locale">Nyelv</string>
     <string name="sim_locale_changed">%1$s SIM észlelve</string>
     <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">Válasszon időzónát és állítsa be az aktuális dátumot és időt, ha szükséges</string>
     <string name="setup_current_date">Aktuális dátum</string>
     <string name="setup_current_time">Aktuális idő</string>
+    <string name="setup_datetime_section_date">Dátum</string>
+    <string name="setup_datetime_section_time">Idő</string>
+    <string name="setup_date_format">Formátum</string>
+    <string name="date_format_day">Nap</string>
+    <string name="date_format_month">Hónap</string>
+    <string name="date_format_year">Év</string>
+    <string name="setup_time_zone">Időzóna</string>
+    <string name="setup_24_hour_format">24-órás formátum használata</string>
     <string name="intro_restore_title">Alkalmazások és adatok visszaállítása</string>
     <string name="intro_restore_subtitle">Amennyiben van <xliff:g id="name" example="LineageOS">%s</xliff:g>-mentése a Seedvaulttal, itt helyreállíthatja azt.</string>
     <string name="intro_restore_button">Visszaállítás biztonsági mentésből</string>
     <string name="setup_location">Helymeghatározó szolgáltatások</string>
+    <string name="location_summary">Adja meg, hogyan kezelje készüléke a helyadatokat</string>
+    <string name="location_access_title">Helyadatok használata</string>
+    <string name="location_agps_access_title">Bővített helyadatok</string>
     <string name="location_access_summary"><b>Lehetővé teszi az alkalmazás számára, amely korábban engedélyt kért,</b> a helymeghatározási információ használatára. Beleértve a jelenlegi és a korábbi helyeket.</string>
     <string name="location_agps_access_summary">Ha a helymeghatározás be van kapcsolva, <b>töltse le a műholdsegítő adatokat az internetről</b>, ez nagy mértékben javíthatja a GPS indítási teljesítményét.</string>
     <string name="update_recovery_title">A Lineage Recovery frissítése</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS újítások</string>
     <string name="services_pp_explanation">Ezek a szolgáltatások Önért dolgoznak, hogy kibővítsék telefonja képességeit. Az adatok felhasználása a <xliff:g id="name" example="LineageOS">%1$s</xliff:g> adatvédelmi szabályzata alapján történik.</string>
+    <string name="services_find_privacy_policy">Az adatvédelmi szabályzatot máshol is elolvashatja az alábbi címen:</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>, segítsen a fejlesztésében</string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> automatikus diagnosztikai és használati adatok küldésével segíthet a <xliff:g id="name" example="LineageOS">%2$s</xliff:g> fejlesztőinek. Ez az információ nem használható az Ön beazonosítására, csupán segítséget nyújt a csapat számára például az akkumulátor használat, alkalmazás teljesítmény, és más új <xliff:g id="name" example="LineageOS">%3$s</xliff:g> funkciók fejlesztésében.</string>
+    <string name="services_metrics_title">Diagnosztikai adatok megosztása</string>
     <string name="services_os_nav_keys_label"><b>A képernyő navigációs gombjainak használata</b> a hardveres gombok helyett.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Navigáció</string>
     <string name="navigation_summary">Itt választhatja ki a kívánt navigációs módot</string>
     <string name="gesture_navigation">Navigáció kézmozdulatokkal</string>
     <string name="navbar_navigation">Háromgombos navigáció</string>
+    <string name="gesture_navigation_short">Kézmozdulat-vezérlés</string>
+    <string name="navbar_navigation_short">3-gombos</string>
     <string name="hide_gesture_hint">Mozdulatvezérlési navigációs-célsáv elrejtése</string>
     <string name="setup_theme">Téma</string>
     <string name="theme_summary">A Sötét téma néhány képernyőn fekete hátteret használ az akkukímélés érdekében.</string>
     <string name="dark">Sötét</string>
     <string name="light">Világos</string>
+    <string name="pure_black_theme">Teljesen fekete háttér használata</string>
+    <string name="theme_preview">Téma-előnézet</string>
+    <string name="swipe_up_to_go_home">Kezdőoldal felfelé csúsztatással</string>
+    <string name="tap_home_to_go_home">Kezdőoldal a középső navigációs ikon megérintésével</string>
+    <string name="press_center_to_go_home">Kezdőoldal a középső navigációs ikon megnyomásával</string>
 </resources>

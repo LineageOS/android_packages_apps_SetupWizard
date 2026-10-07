@@ -25,10 +25,14 @@
     <string name="date_time_summary">Settu tímabeltið þitt og lagaðu núverandi dags- og tímasetningu ef þörf krefur</string>
     <string name="setup_current_date">Núverandi dagsetning</string>
     <string name="setup_current_time">Núverandi tími</string>
+    <string name="setup_24_hour_format">Nota 24-tíma snið</string>
     <string name="intro_restore_title">Endurheimta forrit og gögn</string>
     <string name="intro_restore_subtitle">Ef þú ert með Seedvault-öryggisafrit af <xliff:g id="name" example="LineageOS">%s</xliff:g> eða öðrum stýrikerfum, þá geturðu endurheimt það hér.</string>
     <string name="intro_restore_button">Endurheimta úr öryggisafriti</string>
     <string name="setup_location">Staðsetningarþjónustur</string>
+    <string name="location_summary">Veldu hvernig tækið þitt meðhöndlar staðsetningu</string>
+    <string name="location_access_title">Nota staðsetningu</string>
+    <string name="location_agps_access_title">Endurbætt staðsetning</string>
     <string name="location_access_summary"><b>Leyfa forrit sem hafa beðið um heimild þína</b> til að nota staðsetningarupplýsingar. Þetta gæti falið í sér aðgang að upplýsingum um núverandi jafnt sem fyrri staðsetningar.</string>
     <string name="location_agps_access_summary">Þegar kveikt er á staðsetningu, <b>skal sækja gögn af netinu fyrir stuðning við gervihnattastaðsetningu</b> sem geta bætt verulega afköst í ræsingu á GPS-tækjum.</string>
     <string name="update_recovery_title">Uppfæra endurheimtingu LineageOS</string>
@@ -40,15 +44,23 @@
     <string name="services_pp_explanation">Þessar þjónustur gera þér kleift að útvíkka eiginleika tækisins þíns. Gögn verða notuð í samræmi við persónuverndarstefnu <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
     <string name="services_help_improve_cm">Hjálpaðu okkur að bæta <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> með því að senda sjálfvirkt greiningargögn og upplýsingar um notkun til <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Þessar upplýsingar er ekki hægt að nota til að auðkenna þig og hjálpa þróunarteymum við vinnu varðandi ýmis atriði, eins og líftíma rafhlöðu, afköst forrita og nýja eiginleika í <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
+    <string name="services_metrics_title">Leggðu fram greiningargögn</string>
     <string name="services_os_nav_keys_label"><b>Nota leiðsagnarlykla á skjánum</b> í stað vélbúnaðarhnappa.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Flakk</string>
     <string name="navigation_summary">Veldu þá aðferð við flakk sem þú vilt nota</string>
     <string name="gesture_navigation">Bendingastjórnun</string>
     <string name="navbar_navigation">Þriggja-hnappa stjórnun</string>
+    <string name="gesture_navigation_short">Bending</string>
+    <string name="navbar_navigation_short">3-hnappa</string>
     <string name="hide_gesture_hint">Fela ábendingu við bendingaflakk</string>
     <string name="setup_theme">Þema</string>
     <string name="theme_summary">Dökkt þema notar svartan bakgrunn til að rafhlaðan endist lengur á sumum skjám</string>
     <string name="dark">Dökkt</string>
     <string name="light">Ljóst</string>
+    <string name="pure_black_theme">Nota hreinan svartan bakgrunn</string>
+    <string name="theme_preview">Forskoðun á þema</string>
+    <string name="swipe_up_to_go_home">Strjúka upp til að fara á heimaskjá</string>
+    <string name="tap_home_to_go_home">Ýta á leiðsagnartákn á miðju til að fara á heimaskjá</string>
+    <string name="press_center_to_go_home">Ýttu á miðjuhnappinn til að fara á heimaskjá</string>
 </resources>

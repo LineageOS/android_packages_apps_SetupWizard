@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Assistente de configuração</string>
     <string name="next">Próximo</string>
+    <string name="finish">Terminar</string>
     <string name="skip">Saltar</string>
     <string name="start">Início</string>
     <string name="done">Concluído</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">Configure o seu perfil de trabalho</string>
     <string name="emergency_call">Chamada de emergência</string>
     <string name="accessibility_settings">Definições de acessibilidade</string>
+    <string name="device_info">Informações do dispositivo</string>
+    <string name="device_information">Informações do dispositivo</string>
+    <string name="device_info_serial">Número de série</string>
     <string name="setup_locale">Idioma</string>
     <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
     <string name="setup_sim_missing">Falta o cartão SIM</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">Defina o fuso horário e ajuste a hora e a data atuais, se necessário</string>
     <string name="setup_current_date">Data atual</string>
     <string name="setup_current_time">Hora atual</string>
+    <string name="setup_datetime_section_date">Data</string>
+    <string name="setup_datetime_section_time">Hora</string>
+    <string name="setup_date_format">Formato</string>
+    <string name="date_format_day">Dia</string>
+    <string name="date_format_month">Mês</string>
+    <string name="date_format_year">Ano</string>
+    <string name="setup_time_zone">Fuso horário</string>
+    <string name="setup_24_hour_format">Usar formato de 24 horas</string>
     <string name="intro_restore_title">Restaurar aplicações e dados</string>
     <string name="intro_restore_subtitle">Se tiver uma cópia de segurança Seedvault da <xliff:g id="name" example="LineageOS">%s</xliff:g> ou de qualquer outro SO, pode restaurá-la aqui.</string>
     <string name="intro_restore_button">Restaurar a partir de cópia de segurança</string>
     <string name="setup_location">Serviços de localização</string>
+    <string name="location_summary">Escolha como o seu dispositivo gere a localização</string>
+    <string name="location_access_title">Usar localização</string>
+    <string name="location_agps_access_title">Localização melhorada</string>
     <string name="location_access_summary"><b>Permitir que as aplicações que pediram a sua permissão</b> usem as suas informações de localização. Isso pode incluir a sua localização atual bem como localizações anteriores.</string>
     <string name="location_agps_access_summary">Quando a localização estiver ativada, &lt;b&gt;descarregar da internet dados de assistência por satélite&lt;b&gt;, o que pode melhorar bastante o desempenho de arranque do GPS.</string>
     <string name="update_recovery_title">Atualizar a recuperação Lineage</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funcionalidades LineageOS</string>
     <string name="services_pp_explanation">Estes serviços servem para ampliar os recursos do seu telefone. Os dados serão utilizados em conformidade com a politica de privacidade de <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Pode ler a política de privacidade noutro dispositivo ao visitar:</string>
     <string name="services_help_improve_cm">Ajude a melhorar a <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Ajude a melhorar a LineageOS">%1$s</xliff:g> enviando automaticamente dados de diagnóstico e utilização para <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Esta informação não pode ser usada para identificá-lo e ajuda as equipas de desenvolvimento a melhorarem coisas como a duração da bateria, o desempenho das aplicações e o desenvolvimento de novas funcionalidades para <xliff:g id="name" example="LineageOS">%2$s</xliff:g>.</string>
+    <string name="services_metrics_title">Contribuir com dados de diagnóstico</string>
     <string name="services_os_nav_keys_label"><b>Usar os botões de navegação no ecrã</b> em vez dos botões do dispositivo.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Navegação</string>
     <string name="navigation_summary">Escolher método de navegação preferido</string>
     <string name="gesture_navigation">Navegação por gestos</string>
     <string name="navbar_navigation">Navegação com 3 botões</string>
+    <string name="gesture_navigation_short">Gesto</string>
+    <string name="navbar_navigation_short">3 botões</string>
     <string name="hide_gesture_hint">Ocultar dica de navegação por gestos</string>
     <string name="setup_theme">Tema</string>
     <string name="theme_summary">O tema escuro usa um fundo preto para ajudar a obter mais tempo de bateria nalguns ecrãs</string>
     <string name="dark">Escuro</string>
     <string name="light">Claro</string>
+    <string name="pure_black_theme">Usar fundo preto puro</string>
+    <string name="theme_preview">Pré-visualização do tema</string>
+    <string name="swipe_up_to_go_home">Deslizar para cima para ir para a Página Inicial</string>
+    <string name="tap_home_to_go_home">Tocar no ícone de navegação central para ir para a Página Inicial</string>
+    <string name="press_center_to_go_home">Pressionar o botão central para is para a Página Inicial</string>
 </resources>

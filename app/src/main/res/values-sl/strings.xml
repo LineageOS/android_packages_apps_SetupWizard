@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Čarovnik za namestitev</string>
     <string name="next">Naprej</string>
+    <string name="finish">Končaj</string>
     <string name="skip">Preskoči</string>
     <string name="start">Začni</string>
     <string name="done">Končano</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">Nastavite vaš službeni profil</string>
     <string name="emergency_call">Klic v sili</string>
     <string name="accessibility_settings">Nastavitve dostopnosti</string>
+    <string name="device_info">Podatki o napravi</string>
+    <string name="device_information">Podatki o napravi</string>
+    <string name="device_info_serial">Serijska številka</string>
     <string name="setup_locale">Jezik</string>
     <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
     <string name="setup_sim_missing">Kartica SIM ni prisotna</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>
     <string name="setup_current_date">Trenutni datum</string>
     <string name="setup_current_time">Trenutni čas</string>
+    <string name="setup_datetime_section_date">Datum</string>
+    <string name="setup_datetime_section_time">Ura</string>
+    <string name="setup_date_format">Oblika</string>
+    <string name="date_format_day">Dan</string>
+    <string name="date_format_month">Mesec</string>
+    <string name="date_format_year">Leto</string>
+    <string name="setup_time_zone">Časovni pas</string>
+    <string name="setup_24_hour_format">Uporabi 24-urno obliko</string>
     <string name="intro_restore_title">Obnovite aplikacije in podatke</string>
     <string name="intro_restore_subtitle">Če imate Seedvault varnostno kopijo iz  <xliff:g id="name" example="LineageOS">%s</xliff:g> ali katerega koli drugega OS-a, jo lahko obnovite tukaj.</string>
     <string name="intro_restore_button">Obnovi iz varnostne kopije</string>
     <string name="setup_location">Lokacijske storitve</string>
+    <string name="location_summary">Izberite, kako vaša naprava upravlja njeno lokacijo</string>
+    <string name="location_access_title">Uporabi lokacijo</string>
+    <string name="location_agps_access_title">Izboljšana lokacija</string>
     <string name="location_access_summary"><b>Dovolite aplikacijam, ki so zahtevale vaše dovoljenje</b>, da uporabijo podatke o vaši lokaciji. To lahko vključuje vašo trenutno lokacijo in prejšnje.</string>
     <string name="location_agps_access_summary">Ko je lokacija vklopljena, <b>prenesi pomožne podatke satelita iz interneta</b>, kateri lahko močno izboljšajo zagonsko zmogljivost GPS-a</string>
     <string name="update_recovery_title">Posodobi obnovitev Lineage</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS funkcije</string>
     <string name="services_pp_explanation">Te storitve služijo vam za razširitev zmogljivosti vaše naprave. Podatki bodo uporabljeni v skladu z <xliff:g id="name" example="LineageOS">%1$s</xliff:g>-ovo politiko zasebnosti.</string>
+    <string name="services_find_privacy_policy">Politiko zasebnosti lahko preberete na drugi napravi z obiskom:</string>
     <string name="services_help_improve_cm">Pomagajte izboljšati <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> s samodejnim pošiljanjem diagnostičnih podatkov in podatkov uporabe <xliff:g id="name" example="LineageOS">%2$s</xliff:g>-u. Ti podatki se ne uporabljajo za vaše prepoznavanje in ekipi pomagajo pri izboljšanju npr. življenjske dobe baterije, zmogljivosti aplikacij in novih <xliff:g id="name" example="LineageOS">%3$s</xliff:g> funkcij.</string>
+    <string name="services_metrics_title">Prispevaj diagnostične podatke</string>
     <string name="services_os_nav_keys_label"><b>Uporabite zaslonske tipke za krmarjenje</b> namesto fizičnih tipk.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Krmarjenje</string>
     <string name="navigation_summary">Izberite željeni način krmarjenja</string>
     <string name="gesture_navigation">Krmarjenje s potezami</string>
     <string name="navbar_navigation">Krmarjenje s tremi gumbi</string>
+    <string name="gesture_navigation_short">Poteza</string>
+    <string name="navbar_navigation_short">Trije gumbi</string>
     <string name="hide_gesture_hint">Skrij namig krmarjenja</string>
     <string name="setup_theme">Tema</string>
     <string name="theme_summary">Temna tema uporablja črno ozadje za pomoč pri varčevanju z baterijo na nekaterih zaslonih</string>
     <string name="dark">Temna</string>
     <string name="light">Svetla</string>
+    <string name="pure_black_theme">Uporabi popolnima črno ozadje</string>
+    <string name="theme_preview">Predogled teme</string>
+    <string name="swipe_up_to_go_home">Potegnite gor za domov</string>
+    <string name="tap_home_to_go_home">Tapnite sredinsko navigacijsko ikono za domov</string>
+    <string name="press_center_to_go_home">Pritisnite sredinski gumb za domov</string>
 </resources>

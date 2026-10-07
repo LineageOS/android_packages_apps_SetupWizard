@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">设置向导</string>
     <string name="next">下一步</string>
+    <string name="finish">完成</string>
     <string name="skip">跳过</string>
     <string name="start">开始</string>
     <string name="done">完成</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">设置您的工作资料</string>
     <string name="emergency_call">紧急电话</string>
     <string name="accessibility_settings">无障碍设置</string>
+    <string name="device_info">设备信息</string>
+    <string name="device_information">设备信息</string>
+    <string name="device_info_serial">序列号</string>
     <string name="setup_locale">语言</string>
     <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
     <string name="setup_sim_missing">SIM 卡未找到</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">如果需要，设置时区和调整日期和时间</string>
     <string name="setup_current_date">当前日期</string>
     <string name="setup_current_time">当前时间</string>
+    <string name="setup_datetime_section_date">日期</string>
+    <string name="setup_datetime_section_time">时间</string>
+    <string name="setup_date_format">格式</string>
+    <string name="date_format_day">日</string>
+    <string name="date_format_month">月</string>
+    <string name="date_format_year">年</string>
+    <string name="setup_time_zone">时区</string>
+    <string name="setup_24_hour_format">使用 24 小时格式</string>
     <string name="intro_restore_title">恢复应用和数据</string>
     <string name="intro_restore_subtitle">如果你有来自<xliff:g id="name" example="LineageOS">%s</xliff:g>或其他操作系统的Seedvault备份，你可以在这里恢复它。</string>
     <string name="intro_restore_button">从备份中还原</string>
     <string name="setup_location">位置服务</string>
+    <string name="location_summary">选择设备如何管理其位置</string>
+    <string name="location_access_title">使用位置信息</string>
+    <string name="location_agps_access_title">增强位置信息</string>
     <string name="location_access_summary"><b>允许得到您授权的应用</b>使用您的位置信息，可能包括您当前的位置和过去的位置。</string>
     <string name="location_agps_access_summary">当位置信息开启时，<b>将会从互联网下载卫星辅助数据</b>，这将大幅提升 GPS 的启动性能。</string>
     <string name="update_recovery_title">更新 Lineage 恢复</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS 功能</string>
     <string name="services_pp_explanation">这些服务可帮助您扩展设备的功能。 数据将按照 <xliff:g id="name" example="LineageOS">%1$s</xliff:g>的隐私政策进行使用。</string>
+    <string name="services_find_privacy_policy">您可以访问以下链接，在其他设备上阅读隐私政策：</string>
     <string name="services_help_improve_cm">帮助改进 <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> 通过自动发送诊断和使用数据给 <xliff:g id="name" example="LineageOS">%2$s</xliff:g>。这些信息不会被用于识别您的身份，而是用于帮助团队致力于诸如电池寿命、应用性能和新 <xliff:g id="name" example="LineageOS">%3$s</xliff:g> 功能。</string>
+    <string name="services_metrics_title">提供诊断数据</string>
     <string name="services_os_nav_keys_label"><b>使用虚拟导航键</b>替代实体按键。</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">导航栏</string>
     <string name="navigation_summary">选择导航栏方式</string>
     <string name="gesture_navigation">手势导航</string>
     <string name="navbar_navigation">“三按钮”导航</string>
+    <string name="gesture_navigation_short">手势</string>
+    <string name="navbar_navigation_short">三键</string>
     <string name="hide_gesture_hint">隐藏手势导航栏</string>
     <string name="setup_theme">主题</string>
     <string name="theme_summary">深色模式使用黑色背景来帮助电池在一些场景下提升续航能力</string>
     <string name="dark">深色</string>
     <string name="light">浅色</string>
+    <string name="pure_black_theme">使用纯黑背景</string>
+    <string name="theme_preview">主题预览</string>
+    <string name="swipe_up_to_go_home">向上滑动即可转到主屏幕</string>
+    <string name="tap_home_to_go_home">点击中间的导航图标返回首页</string>
+    <string name="press_center_to_go_home">按下中间按钮返回主页</string>
 </resources>

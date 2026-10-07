@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Treoraí Socraithe</string>
     <string name="next">Ar aghaidh</string>
+    <string name="finish">Críochnaigh</string>
     <string name="skip">Scipeáil</string>
     <string name="start">Tosaigh</string>
     <string name="done">Déanta</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">Socraigh do phróifíl oibre</string>
     <string name="emergency_call">Glao éigeandála</string>
     <string name="accessibility_settings">Socruithe inrochtaineachta</string>
+    <string name="device_info">Eolas faoin ngléas</string>
+    <string name="device_information">Faisnéis faoin ngléas</string>
+    <string name="device_info_serial">Uimhir shraitheach</string>
     <string name="setup_locale">Teanga</string>
     <string name="sim_locale_changed">Braitheadh ​​%1$s SIM</string>
     <string name="setup_sim_missing">Cárta SIM in easnamh</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">Socraigh do chrios ama agus coigeartaigh an dáta agus an t-am reatha más gá</string>
     <string name="setup_current_date">Dáta reatha</string>
     <string name="setup_current_time">Am reatha</string>
+    <string name="setup_datetime_section_date">Dáta</string>
+    <string name="setup_datetime_section_time">Am</string>
+    <string name="setup_date_format">Formáid</string>
+    <string name="date_format_day">Lá</string>
+    <string name="date_format_month">Mí</string>
+    <string name="date_format_year">Bliain</string>
+    <string name="setup_time_zone">Crios ama</string>
+    <string name="setup_24_hour_format">Úsáid formáid 24 uair an chloig</string>
     <string name="intro_restore_title">Athchóirigh aipeanna agus sonraí</string>
     <string name="intro_restore_subtitle">Má tá cúltaca Seedvault agat ó <xliff:g id="name" example="LineageOS">%s</xliff:g> nó ó aon OS eile, is féidir leat é a aischur anseo.</string>
     <string name="intro_restore_button">Athchóirigh ó chúltaca</string>
     <string name="setup_location">Seirbhísí suímh</string>
+    <string name="location_summary">Roghnaigh conas a bhainistíonn do ghléas a shuíomh</string>
+    <string name="location_access_title">Úsáid an suíomh</string>
+    <string name="location_agps_access_title">Suíomh feabhsaithe</string>
     <string name="location_access_summary"><b>Ceadaigh d’aipeanna a d’iarr do chead</b> do chuid faisnéise suímh a úsáid. Seans go n-áireofaí anseo do shuíomh reatha agus láithreacha san am a chuaigh thart.</string>
     <string name="location_agps_access_summary">Nuair atá an suíomh ar siúl, <b>íoslódáil sonraí cúnaimh satailíte ón idirlíon</b>, rud a d\'fhéadfadh feabhas mór a chur ar fheidhmíocht tosaithe GPS.</string>
     <string name="update_recovery_title">Nuashonraigh Aisghabháil Lineage</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS gnéithe</string>
     <string name="services_pp_explanation">Oibríonn na seirbhísí seo duit chun cumais do ghléis a leathnú. Úsáidfear sonraí de réir pholasaí príobháideachais <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Is féidir leat an polasaí príobháideachais a léamh ar ghléas eile trí chuairt a thabhairt ar:</string>
     <string name="services_help_improve_cm">Cabhraigh le feabhas a chur ar <xliff:g id="name" example="LineageOS"> %s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Cabhraigh le LineageOS a fheabhsú">%1$s</xliff:g> trí shonraí diagnóiseacha agus úsáide a sheoladh go huathoibríoch chuig <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Ní féidir an fhaisnéis seo a úsáid chun tú a aithint agus tugann sé cúnamh d\'fhoirne atá ag obair ar rudaí cosúil le saol ceallraí, feidhmíocht aipe agus <xliff:g id="name" example="LineageOS">%3$s</xliff:g> gnéithe.</string>
+    <string name="services_metrics_title">Cuir sonraí diagnóiseacha ar fáil</string>
     <string name="services_os_nav_keys_label"><b>Úsáid eochracha nascleanúna scáileáin</b> in ionad eochracha crua-earraí.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Nascleanúint</string>
     <string name="navigation_summary">Roghnaigh modh nascleanúna is fearr leat</string>
     <string name="gesture_navigation">Gotha nascleanúint</string>
     <string name="navbar_navigation">Nascleanúint 3-cnaipe</string>
+    <string name="gesture_navigation_short">Gotha</string>
+    <string name="navbar_navigation_short">3 gcnaipe</string>
     <string name="hide_gesture_hint">Folaigh leid loingseoireachta gothaí</string>
     <string name="setup_theme">Téama</string>
     <string name="theme_summary">Úsáideann téama dorcha cúlra dubh chun an ceallraí a choinneáil beo níos faide ar roinnt scáileáin</string>
     <string name="dark">Dorcha</string>
     <string name="light">Solas</string>
+    <string name="pure_black_theme">Úsáid cúlra dubh glan</string>
+    <string name="theme_preview">Réamhamharc ar an téama</string>
+    <string name="swipe_up_to_go_home">Svaidhpeáil suas chun dul abhaile</string>
+    <string name="tap_home_to_go_home">Tapáil an deilbhín nascleanúna lár chun dul abhaile</string>
+    <string name="press_center_to_go_home">Brúigh an cnaipe lárnach chun dul abhaile</string>
 </resources>
