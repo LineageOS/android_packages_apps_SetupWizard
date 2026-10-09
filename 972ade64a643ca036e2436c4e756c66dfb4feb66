@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00abeffb_73b954ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-09T10:06:07Z",
+      "side": 1,
+      "message": "Should double check if that\u0027s the case with latest pixel and google euicc",
+      "revId": "972ade64a643ca036e2436c4e756c66dfb4feb66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
