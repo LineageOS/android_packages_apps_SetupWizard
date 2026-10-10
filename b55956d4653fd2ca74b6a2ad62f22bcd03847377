@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e2ea911_30411763",
+        "filename": "app/src/main/java/org/lineageos/setupwizard/network/SimMissingActivity.kt",
+        "patchSetId": 5
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-10-10T19:17:02Z",
+      "side": 1,
+      "message": "Why not import a trimmed down version of https://cs.android.com/android/platform/superproject/+/android-latest-release:packages/apps/Settings/src/com/android/settings/network/telephony/euicc/EuiccRepository.kt;l\u003d63?q\u003desim.enable_esim_system_ui_by_default\u0026ss\u003dandroid%2Fplatform%2Fsuperproject\n\nIt seems to do more checks",
+      "range": {
+        "startLine": 105,
+        "startChar": 0,
+        "endLine": 110,
+        "endChar": 5
+      },
+      "revId": "b55956d4653fd2ca74b6a2ad62f22bcd03847377",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
