@@ -16,6 +16,23 @@
       "message": "on non-eSIM",
       "revId": "3d0fc00672872111ce2f8ff6647898f93b88094e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca60f23b_b1976252",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-10-12T14:08:49Z",
+      "side": 1,
+      "message": "I assume the original crash is still present when passing suw extras?",
+      "revId": "3d0fc00672872111ce2f8ff6647898f93b88094e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
