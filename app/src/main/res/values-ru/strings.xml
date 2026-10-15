@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Мастер настройки</string>
+    <string name="cancel">Отмена</string>
     <string name="next">Далее</string>
     <string name="skip">Пропустить</string>
     <string name="start">Начать</string>
@@ -18,9 +19,13 @@
     <string name="accessibility_settings">Настройки специальных возможностей</string>
     <string name="setup_locale">Язык</string>
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
+    <string name="setup_euicc">Настроить eSIM</string>
     <string name="setup_sim_missing">Нет SIM-карты</string>
+    <string name="esim_support_summary">Настройте eSIM или вставьте SIM-карту. Чтобы вставить SIM-карту, ознакомьтесь с инструкцией, прилагаемой к устройству.</string>
     <string name="sim_missing_summary" product="tablet">В планшете не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
     <string name="sim_missing_summary" product="default">В телефоне не обнаружена SIM-карта. Чтобы узнать, как ее вставить, ознакомьтесь с инструкцией к вашему устройству.</string>
+    <string name="sim_missing_skip_title">Пропустить настройку SIM-карты?</string>
+    <string name="sim_missing_skip_message">Если вы пропустите этот шаг, вы не будете подключены к мобильной сети до тех пор, пока не настроите SIM-карту.</string>
     <string name="setup_datetime">Дата и время</string>
     <string name="date_time_summary">Установите свой часовой пояс и при необходимости скорректируйте текущую дату и время</string>
     <string name="setup_current_date">Текущая дата</string>

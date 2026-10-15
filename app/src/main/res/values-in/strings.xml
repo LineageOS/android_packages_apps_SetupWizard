@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Panduan Penyiapan</string>
     <string name="next">Berikutnya</string>
+    <string name="finish">Selesai</string>
     <string name="skip">Lewati</string>
     <string name="start">Mulai</string>
     <string name="done">Selesai</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">Siapkan profil kerja Anda</string>
     <string name="emergency_call">Panggilan darurat</string>
     <string name="accessibility_settings">Pengaturan aksesibilitas</string>
+    <string name="device_info">Info perangkat</string>
+    <string name="device_information">Informasi perangkat</string>
+    <string name="device_info_serial">Nomor seri</string>
     <string name="setup_locale">Bahasa</string>
     <string name="sim_locale_changed">%1$s SIM terdeteksi</string>
     <string name="setup_sim_missing">Kartu SIM hilang</string>
@@ -25,9 +29,18 @@
     <string name="date_time_summary">Atur zona waktu dan sesuaikan tanggal dan waktu jika diperlukan</string>
     <string name="setup_current_date">Tanggal sekarang</string>
     <string name="setup_current_time">Waktu saat ini</string>
+    <string name="setup_datetime_section_date">Tanggal</string>
+    <string name="setup_datetime_section_time">Waktu</string>
+    <string name="setup_date_format">Format</string>
+    <string name="date_format_day">Hari</string>
+    <string name="date_format_month">Bulan</string>
+    <string name="date_format_year">Tahun</string>
+    <string name="setup_time_zone">Zona waktu</string>
+    <string name="setup_24_hour_format">Gunakan format 24 jam</string>
     <string name="intro_restore_title">Pulihkan aplikasi dan data</string>
     <string name="intro_restore_button">Pulihkan dari cadangan</string>
     <string name="setup_location">Layanan lokasi</string>
+    <string name="location_access_title">Gunakan lokasi</string>
     <string name="location_access_summary"><b>Izinkan aplikasi yang telah meminta izin Anda</b> menggunakan informasi lokasi Anda. Ini mungkin termasuk lokasi Anda saat ini dan lokasi terakhir.</string>
     <string name="update_recovery_title">Perbarui Lineage Recovery</string>
     <string name="update_recovery_description">Memperbarui Lineage Recovery saat boot pertama untuk setiap update selanjutnya.</string>
@@ -44,8 +57,10 @@
     <string name="navigation_summary">Pilih metode navigasi yang disukai</string>
     <string name="gesture_navigation">Navigasi gestur</string>
     <string name="navbar_navigation">Navigasi 3 tombol</string>
+    <string name="navbar_navigation_short">3-tombol</string>
     <string name="hide_gesture_hint">Sembunyikan petunjuk navigasi gestur</string>
     <string name="setup_theme">Tema</string>
     <string name="dark">Gelap</string>
     <string name="light">Terang</string>
+    <string name="theme_preview">Pratinjau tema</string>
 </resources>

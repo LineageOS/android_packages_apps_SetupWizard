@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Assistente de configuração</string>
+    <string name="cancel">Cancelar</string>
     <string name="next">Próximo</string>
     <string name="finish">Terminar</string>
     <string name="skip">Saltar</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Número de série</string>
     <string name="setup_locale">Idioma</string>
     <string name="sim_locale_changed">Cartão SIM %1$s detetado</string>
+    <string name="setup_euicc">Configurar o eSIM</string>
     <string name="setup_sim_missing">Falta o cartão SIM</string>
+    <string name="esim_support_summary">Configure um eSIM ou insira um cartão SIM. Para inserir um cartão SIM, leia as instruções que vieram com o dispositivo.</string>
     <string name="sim_missing_summary" product="tablet">Não foi detetado nenhum cartão SIM no seu tablet. Para inserir um cartão SIM, leia o manual de instruções que veio com o seu dispositivo.</string>
     <string name="sim_missing_summary" product="default">Não foi detetado nenhum cartão SIM no seu telefone. Para inserir um cartão SIM, leia o manual de instruções que veio com o seu dispositivo.</string>
+    <string name="sim_missing_skip_title">Saltar a configuração do SIM?</string>
+    <string name="sim_missing_skip_message">Se saltar este passo, ficará desconectado da rede móvel até configurar um SIM nas Definições.</string>
     <string name="setup_datetime">Data e hora</string>
     <string name="date_time_summary">Defina o fuso horário e ajuste a hora e a data atuais, se necessário</string>
     <string name="setup_current_date">Data atual</string>

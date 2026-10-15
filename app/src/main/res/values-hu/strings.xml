@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Telepítő varázsló</string>
+    <string name="cancel">Mégse</string>
     <string name="next">Következő</string>
     <string name="finish">Befejezés</string>
     <string name="skip">Kihagyás</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Sorozatszám</string>
     <string name="setup_locale">Nyelv</string>
     <string name="sim_locale_changed">%1$s SIM észlelve</string>
+    <string name="setup_euicc">eSIM-beállítás</string>
     <string name="setup_sim_missing">Hiányzik a SIM-kártya</string>
+    <string name="esim_support_summary">Állítson be egy eSIM-et, vagy tegyen be egy fizikai SIM-et. Olvassa el a gyári leírást a SIM behelyezéséhez.</string>
     <string name="sim_missing_summary" product="tablet">SIM-kártya nem érzékelhető a táblagépében. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
     <string name="sim_missing_summary" product="default">SIM-kártya nem érzékelhető a telefonjában. A SIM-kártya behelyezéséhez olvassa el a készülékhez járó útmutatót.</string>
+    <string name="sim_missing_skip_title">Kihagyja a SIM-beállítást?</string>
+    <string name="sim_missing_skip_message">Amennyiben kihagyja ez a lépést, nem lesz mobilhálózata, amíg be nem állít egy SIM-kártyát a Beállításokban.</string>
     <string name="setup_datetime">Dátum &amp; idő</string>
     <string name="date_time_summary">Válasszon időzónát és állítsa be az aktuális dátumot és időt, ha szükséges</string>
     <string name="setup_current_date">Aktuális dátum</string>

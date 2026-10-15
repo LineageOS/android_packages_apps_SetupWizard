@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quraşdırma Sehrbazı</string>
     <string name="next">Sonrakı</string>
+    <string name="finish">Bitir</string>
     <string name="skip">Ötür</string>
     <string name="start">Başla</string>
     <string name="done">Hazırdır</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">İş profilinizi qurun</string>
     <string name="emergency_call">Fövqəladə hal zəngləri</string>
     <string name="accessibility_settings">Erişiləbilənlik ayarları</string>
+    <string name="device_info">Cihaz məlumatı</string>
+    <string name="device_information">Cihaz məlumatları</string>
+    <string name="device_info_serial">Seriya nömrəsi</string>
     <string name="setup_locale">Dil</string>
     <string name="sim_locale_changed">%1$s SIM aşkarlandı</string>
     <string name="setup_sim_missing">SIM kart yoxdur</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırkı tarix və saatı ayarlayın</string>
     <string name="setup_current_date">Hazırkı tarix</string>
     <string name="setup_current_time">Hazırkı vaxt</string>
+    <string name="setup_datetime_section_date">Tarix</string>
+    <string name="setup_datetime_section_time">Vaxt</string>
+    <string name="setup_date_format">Format</string>
+    <string name="date_format_day">Gün</string>
+    <string name="date_format_month">Ay</string>
+    <string name="date_format_year">İl</string>
+    <string name="setup_time_zone">Saat qurşağı</string>
+    <string name="setup_24_hour_format">24 saatlıq formatı istifadə et</string>
     <string name="intro_restore_title">Tətbiqləri və veriləri bərpa et</string>
     <string name="intro_restore_subtitle"><xliff:g id="name" example="LineageOS">%s</xliff:g> və ya başqa bir əməliyyat sistemindən Seedvault nüsxəniz varsa, onu burada bərpa edə bilərsiniz.</string>
     <string name="intro_restore_button">Nüsxədən bərpa et</string>
     <string name="setup_location">Yerləşmə xidmətləri</string>
+    <string name="location_summary">Cihazın yerləşməni necə idarə edəcəyini seçin</string>
+    <string name="location_access_title">Yerləşməni istifadə et</string>
+    <string name="location_agps_access_title">Təkmil yerləşmə</string>
     <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
     <string name="location_agps_access_summary">Yerləşmə açıq olduqda, <b>peyk köməkçi verilərini internetdən endirin</b>, bu GPS-in başlatma performansını əhəmiyyətli dərəcədə artıra bilər.</string>
     <string name="update_recovery_title">Lineage Geri qaytarma Rejimini Güncəllə</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">LineageOS özəllikləri</string>
     <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un məxfilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="services_find_privacy_policy">Məxfilik siyasətini başqa bir cihazda oxumaq üçün ziyarət edin:</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
     <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%2$s</xliff:g>-a diaqnostikanı və istifadə verilərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlar, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
+    <string name="services_metrics_title">Diaqnostika verilərinə töhfə ver</string>
     <string name="services_os_nav_keys_label">Donanım düymələri əvəzinə <b>ekran üzərindəki naviqasiya düymələrini istifadə edin.</b></string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Hərəkət</string>
     <string name="navigation_summary">Tərcih edilən naviqasiya üsulunu seçin</string>
     <string name="gesture_navigation">Jest hərəkəti</string>
     <string name="navbar_navigation">3 düyməli hərəkət</string>
+    <string name="gesture_navigation_short">Jest</string>
+    <string name="navbar_navigation_short">3 düymə</string>
     <string name="hide_gesture_hint">Jestlə hərəkət məsləhətini gizlət</string>
     <string name="setup_theme">Tema</string>
     <string name="theme_summary">Qaranlıq tema, bəzi ekranlarda batareyanın daha uzun müddət dayanmasına kömək etmək üçün qara arxaplan istifadə edir</string>
     <string name="dark">Qaranlıq</string>
     <string name="light">İşıqlı</string>
+    <string name="pure_black_theme">Tamamilə qara arxaplan istifadə et</string>
+    <string name="theme_preview">Tema önizləməsi</string>
+    <string name="swipe_up_to_go_home">Ana ekran üçün yuxarı sürüşdür</string>
+    <string name="tap_home_to_go_home">Ana ekran üçün mərkəzdəki nav ikonuna toxun</string>
+    <string name="press_center_to_go_home">Ana ekran üçün mərkəzdəki düyməyə bas</string>
 </resources>

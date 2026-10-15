@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Treoraí Socraithe</string>
+    <string name="cancel">Cealaigh</string>
     <string name="next">Ar aghaidh</string>
     <string name="finish">Críochnaigh</string>
     <string name="skip">Scipeáil</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Uimhir shraitheach</string>
     <string name="setup_locale">Teanga</string>
     <string name="sim_locale_changed">Braitheadh ​​%1$s SIM</string>
+    <string name="setup_euicc">Socraigh eSIM</string>
     <string name="setup_sim_missing">Cárta SIM in easnamh</string>
+    <string name="esim_support_summary">Socraigh eSIM nó cuir cárta SIM isteach. Chun cárta SIM a chur isteach, léigh na treoracha a tháinig leis an bhfeiste.</string>
     <string name="sim_missing_summary" product="tablet">Níor aimsíodh cárta SIM ar do tháibléad. Chun cárta SIM a chur isteach, léigh na treoracha a tháinig le do ghléas.</string>
     <string name="sim_missing_summary" product="default">Níor aimsíodh cárta SIM ar do ghuthán. Chun cárta SIM a chur isteach, léigh na treoracha a tháinig le do ghléas.</string>
+    <string name="sim_missing_skip_title">An bhfuil tú ag iarraidh an socrúchán SIM a sheachaint?</string>
+    <string name="sim_missing_skip_message">Má sháraíonn tú an chéim seo, ní bheidh tú ceangailte le líonra soghluaiste go dtí go socróidh tú cárta SIM sna Socruithe.</string>
     <string name="setup_datetime">Dáta &amp; am</string>
     <string name="date_time_summary">Socraigh do chrios ama agus coigeartaigh an dáta agus an t-am reatha más gá</string>
     <string name="setup_current_date">Dáta reatha</string>

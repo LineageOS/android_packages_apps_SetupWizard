@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">设置向导</string>
+    <string name="cancel">取消</string>
     <string name="next">下一步</string>
     <string name="finish">完成</string>
     <string name="skip">跳过</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">序列号</string>
     <string name="setup_locale">语言</string>
     <string name="sim_locale_changed">检测到 %1$s SIM 卡</string>
+    <string name="setup_euicc">设置 eSIM</string>
     <string name="setup_sim_missing">SIM 卡未找到</string>
+    <string name="esim_support_summary">设置 eSIM 或插入 SIM 卡。要插入 SIM 卡，请阅读设备随附的说明。</string>
     <string name="sim_missing_summary" product="tablet">在您的平板电脑上未检测到 SIM 卡。请按照您平板电脑附带说明书中的操作方法插入 SIM 卡。</string>
     <string name="sim_missing_summary" product="default">在您的手机上未检测到 SIM 卡。请按照您手机附带说明书中的操作方法插入 SIM 卡。</string>
+    <string name="sim_missing_skip_title">跳过设置 SIM 卡？</string>
+    <string name="sim_missing_skip_message">如果您跳过这一步，您将不会连接到移动网络，直到您在设置中设置一个 SIM 卡。</string>
     <string name="setup_datetime">日期和时间</string>
     <string name="date_time_summary">如果需要，设置时区和调整日期和时间</string>
     <string name="setup_current_date">当前日期</string>

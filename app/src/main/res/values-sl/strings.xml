@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Čarovnik za namestitev</string>
+    <string name="cancel">Prekliči</string>
     <string name="next">Naprej</string>
     <string name="finish">Končaj</string>
     <string name="skip">Preskoči</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Serijska številka</string>
     <string name="setup_locale">Jezik</string>
     <string name="sim_locale_changed">%1$s kartica SIM zaznana</string>
+    <string name="setup_euicc">Nastavite eSIM</string>
     <string name="setup_sim_missing">Kartica SIM ni prisotna</string>
+    <string name="esim_support_summary">Nastavite eSIM ali vstavite kartico SIM. Da vstavite kartico SIM, preberite navodila, priložena vaši napravi.</string>
     <string name="sim_missing_summary" product="tablet">V vašem tabličnem računalniku ni bila zaznana kartica SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
     <string name="sim_missing_summary" product="default">V vašem telefonu ni bilo zaznane kartice SIM. Za vstavitev kartice SIM preberite navodila priložena k napravi.</string>
+    <string name="sim_missing_skip_title">Preskoči nastavitev SIM?</string>
+    <string name="sim_missing_skip_message">Če preskočite ta korak, se ne boste morali povezati na mobilno omrežje, dokler ne nastavite SIM v Nastavitvah.</string>
     <string name="setup_datetime">Datum in čas</string>
     <string name="date_time_summary">Nastavite časovni pas in prilagodite trenutni datum in čas, če je potrebno</string>
     <string name="setup_current_date">Trenutni datum</string>

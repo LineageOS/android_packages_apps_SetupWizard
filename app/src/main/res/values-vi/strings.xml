@@ -7,6 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Trình hướng dẫn thiết lập</string>
     <string name="next">Tiếp theo</string>
+    <string name="finish">Hoàn tất</string>
     <string name="skip">Bỏ qua</string>
     <string name="start">Bắt đầu</string>
     <string name="done">Xong</string>
@@ -16,6 +17,9 @@
     <string name="setup_managed_profile_welcome_message">Thiết lập hồ sơ công việc của bạn</string>
     <string name="emergency_call">Cuộc gọi khẩn cấp</string>
     <string name="accessibility_settings">Cài đặt trợ năng</string>
+    <string name="device_info">Thông tin thiết bị</string>
+    <string name="device_information">Thông tin thiết bị</string>
+    <string name="device_info_serial">Số sê-ri</string>
     <string name="setup_locale">Ngôn ngữ</string>
     <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
     <string name="setup_sim_missing">Không có thẻ SIM</string>
@@ -25,10 +29,21 @@
     <string name="date_time_summary">Đặt múi giờ của bạn và điều chỉnh ngày và thời gian hiện tại nếu cần thiết</string>
     <string name="setup_current_date">Ngày hiện tại</string>
     <string name="setup_current_time">Thời gian hiện tại</string>
+    <string name="setup_datetime_section_date">Ngày</string>
+    <string name="setup_datetime_section_time">Thời gian</string>
+    <string name="setup_date_format">Định dạng</string>
+    <string name="date_format_day">Ngày</string>
+    <string name="date_format_month">Tháng</string>
+    <string name="date_format_year">Năm</string>
+    <string name="setup_time_zone">Múi giờ</string>
+    <string name="setup_24_hour_format">Sử dụng định dạng 24 giờ</string>
     <string name="intro_restore_title">Khôi phục Sao lưu</string>
     <string name="intro_restore_subtitle">Nếu bạn có bản sao lưu Seedvault từ <xliff:g id="name" example="LineageOS">%s</xliff:g> hoặc bất kỳ hệ điều hành nào khác, bạn có thể khôi phục nó tại đây.</string>
     <string name="intro_restore_button">Khôi phục từ bản sao lưu</string>
     <string name="setup_location">Dịch vụ vị trí</string>
+    <string name="location_summary">Chọn cách thiết bị quản lý vị trí</string>
+    <string name="location_access_title">Sử dụng vị trí</string>
+    <string name="location_agps_access_title">Định vị nâng cao</string>
     <string name="location_access_summary"><b>Cho phép những ứng dụng đã hỏi quyền</b> sử dụng thông tin vị trí của bạn. Những thông tin này có thể bao gồm vị trí hiện tại và trước đó của bạn.</string>
     <string name="location_agps_access_summary">Khi vị trí được bật, hãy <b>tải xuống dữ liệu hỗ trợ vệ tinh từ internet</b>, dữ liệu này có thể cải thiện đáng kể hiệu suất khởi động GPS.</string>
     <string name="update_recovery_title">Cập nhật Lineage Recovery</string>
@@ -38,17 +53,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Các tính năng LineageOS</string>
     <string name="services_pp_explanation">Các dịch vụ này giúp bạn mở rộng khả năng của thiết bị. Dữ liệu sẽ được sử dụng theo chính sách bảo mật của <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Bạn có thể đọc chính sách quyền riêng tư trên thiết bị khác bằng cách truy cập:</string>
     <string name="services_help_improve_cm">Giúp cải thiện <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> bằng cách tự động gửi dữ liệu sử dụng và chẩn đoán đến <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Thông tin này không thể được sử dụng để nhận dạng bạn và hỗ trợ các nhóm làm việc về những yếu tố như thời lượng pin, hiệu suất ứng dụng và <xliff:g id="name" example="LineageOS">%3$s</xliff:g> tính năng mới.</string>
+    <string name="services_metrics_title">Đóng góp dữ liệu chẩn đoán</string>
     <string name="services_os_nav_keys_label"><b>Sử dụng các phím điều hướng trên màn hình</b> thay cho các phím cứng.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Điều hướng</string>
     <string name="navigation_summary">Chọn phương pháp điều hướng ưa thích</string>
     <string name="gesture_navigation">Điều hướng bằng cử chỉ</string>
     <string name="navbar_navigation">Điều hướng 3 nút</string>
+    <string name="gesture_navigation_short">Cử chỉ</string>
+    <string name="navbar_navigation_short">3 nút</string>
     <string name="hide_gesture_hint">Ẩn gợi ý điều hướng cử chỉ</string>
     <string name="setup_theme">Giao diện</string>
     <string name="theme_summary">Giao diện tối sử dụng nền đen để giúp duy trì thời lượng pin lâu hơn trên một số màn hình</string>
     <string name="dark">Tối</string>
     <string name="light">Sáng</string>
+    <string name="pure_black_theme">Sử dụng nền đen tuyền</string>
+    <string name="theme_preview">Xem trước chủ đề</string>
+    <string name="swipe_up_to_go_home">Vuốt lên để về màn hình chính</string>
+    <string name="tap_home_to_go_home">Chạm vào biểu tượng điều hướng ở giữa để về màn hình chính</string>
+    <string name="press_center_to_go_home">Nhấn nút giữa để quay về màn hình chính</string>
 </resources>

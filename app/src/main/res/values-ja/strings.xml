@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">セットアップウィザード</string>
+    <string name="cancel">キャンセル</string>
     <string name="next">次へ</string>
     <string name="finish">完了</string>
     <string name="skip">スキップ</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">シリアル番号</string>
     <string name="setup_locale">言語</string>
     <string name="sim_locale_changed">%1$sのSIMを検出しました</string>
+    <string name="setup_euicc">eSIM の設定</string>
     <string name="setup_sim_missing">SIMカードがありません</string>
+    <string name="esim_support_summary">eSIM を設定するか、SIM カードを挿入してください。SIM カードの挿入方法については、デバイス付属の説明書をご覧ください。</string>
     <string name="sim_missing_summary" product="tablet">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
     <string name="sim_missing_summary" product="default">お使いの端末でSIMカードが検出されませんでした。SIMカードの挿入方法については、端末に付属している説明書をご覧ください。</string>
+    <string name="sim_missing_skip_title">SIM の設定をスキップしますか？</string>
+    <string name="sim_missing_skip_message">この手順をスキップすると、設定で SIM を設定するまでモバイルネットワークに接続されません。</string>
     <string name="setup_datetime">日付と時刻</string>
     <string name="date_time_summary">タイムゾーンを設定して、必要であれば現在の日付と時刻を調整してください</string>
     <string name="setup_current_date">現在の日付</string>

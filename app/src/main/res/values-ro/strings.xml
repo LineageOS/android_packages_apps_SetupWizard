@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Expert de instalare</string>
+    <string name="cancel">Anulare</string>
     <string name="next">Următoarea</string>
     <string name="finish">Finalizați</string>
     <string name="skip">Omite</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Număr de serie</string>
     <string name="setup_locale">Limba</string>
     <string name="sim_locale_changed">SIM %1$s detectat</string>
+    <string name="setup_euicc">Configurați eSIM</string>
     <string name="setup_sim_missing">Lipsă card SIM</string>
+    <string name="esim_support_summary">Configurați un eSIM sau introduceți o cartelă SIM. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu dispozitivul dvs.</string>
     <string name="sim_missing_summary" product="tablet">O cartelă SIM nu a fost detectată în tableta dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
     <string name="sim_missing_summary" product="default">O cartelă SIM nu a fost detectată în telefonul dvs. Pentru a insera o cartelă SIM, citiți instrucțiunile care au venit cu aparatul dvs.</string>
+    <string name="sim_missing_skip_title">Săriți peste configurarea unui SIM?</string>
+    <string name="sim_missing_skip_message">Dacă omiteți acest pas, nu veți fi conectat la o rețea mobilă până când nu setați un SIM în Setări.</string>
     <string name="setup_datetime">Dată &amp; oră</string>
     <string name="date_time_summary">Setați fusul orar și reglați data și ora curentă, dacă este necesar</string>
     <string name="setup_current_date">Data curentă</string>

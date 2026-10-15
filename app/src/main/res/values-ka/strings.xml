@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">გამართვის მეგზური</string>
+    <string name="cancel">გაუქმება</string>
     <string name="next">შემდეგი</string>
     <string name="skip">გამოტოვება</string>
     <string name="start">დაწყება</string>
@@ -18,9 +19,13 @@
     <string name="accessibility_settings">გამარტივებული პარამეტრები</string>
     <string name="setup_locale">ენა</string>
     <string name="sim_locale_changed">%1$s SIM-ბარათია აღმოჩენილი</string>
+    <string name="setup_euicc">გამართეთ eSIM</string>
     <string name="setup_sim_missing">SIM-ბარათი ამოკლებულია</string>
+    <string name="esim_support_summary">გამართეთ eSIM ან ჩადეთ SIM-ბარათი. SIM-ბარათის სწორად ჩასადებად იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
     <string name="sim_missing_summary" product="tablet">SIM-ბარათი არაა აღმოჩენილი თქვენს პლანშეტში. SIM-ბარათის სწორად ჩასადებად, იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
     <string name="sim_missing_summary" product="default">SIM-ბარათი არაა აღმოჩენილი თქვენს ტელეფონში. SIM-ბარათის სწორად ჩასადებად, იხილეთ მოწყობილობის თანმხლები სახელმძღვანელო.</string>
+    <string name="sim_missing_skip_title">გსურთ, გამოტოვოთ SIM-ბარათის გამართვა?</string>
+    <string name="sim_missing_skip_message">ამ ნაბიჯის გამოტოვების შედეგად ვერ დაუკავშირდებით ფიჭურ ქსელს, სანამ არ გამართავთ SIM-ბარათს პარამეტრებიდან.</string>
     <string name="setup_datetime">თარიღი და დრო</string>
     <string name="date_time_summary">სასაათე სარტყლის დაყენება, დროისა და თარიღის საჭიროებისამებრ გასწორება</string>
     <string name="setup_current_date">მიმდინარე თარიღი</string>

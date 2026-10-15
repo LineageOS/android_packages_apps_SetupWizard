@@ -6,7 +6,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">راهنمای راه‌اندازی</string>
+    <string name="cancel">لغو</string>
     <string name="next">بعدی</string>
+    <string name="finish">پایان</string>
     <string name="skip">پرش</string>
     <string name="start">شروع</string>
     <string name="done">انجام شد</string>
@@ -16,19 +18,37 @@
     <string name="setup_managed_profile_welcome_message">نمایه کاری خود را تنظیم کنید</string>
     <string name="emergency_call">تماس اضطراری</string>
     <string name="accessibility_settings">تنظیمات دسترسی</string>
+    <string name="device_info">اطلاعات دستگاه</string>
+    <string name="device_information">اطلاعات دستگاه</string>
+    <string name="device_info_serial">شماره سریال</string>
     <string name="setup_locale">زبان</string>
     <string name="sim_locale_changed">%1$s سیم کارت یافت شد</string>
+    <string name="setup_euicc">راه‌اندازی سیم مجازی</string>
     <string name="setup_sim_missing">دستگاه فاقد سیم کارت است</string>
+    <string name="esim_support_summary">یک سیم مجازی راه‌اندازی کرده یا یک سیم‌کارت وارد کنید. برای وارد کردن سیم‌کارت، دستورالعمل‌های همراه دستگاه خود را مطالعه کنید.</string>
     <string name="sim_missing_summary" product="tablet">سیم کارتی در تبلت شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
     <string name="sim_missing_summary" product="default">سیم کارتی در گوشی شما یافت نشد. برای قرار دادن یک سیم کارت، دستورالعمل همراه دستگاه خود را بخوانید.</string>
+    <string name="sim_missing_skip_title">از تنظیم سیم‌کارت صرف‌نظر می‌کنید؟</string>
+    <string name="sim_missing_skip_message">اگر از این مرحله رد شوید، تا زمانی که سیم‌کارت را در بخش تنظیمات راه‌اندازی نکنید، به شبکه تلفن همراه متصل نخواهید شد.</string>
     <string name="setup_datetime">تاریخ و زمان</string>
     <string name="date_time_summary">منطقه‌ی زمانی و تاریخ فعلی را در صورت نیاز تنظیم کنید</string>
     <string name="setup_current_date">تاریخ کنونی</string>
     <string name="setup_current_time">زمان کنونی</string>
+    <string name="setup_datetime_section_date">تاریخ</string>
+    <string name="setup_datetime_section_time">زمان</string>
+    <string name="setup_date_format">قالب</string>
+    <string name="date_format_day">روز</string>
+    <string name="date_format_month">ماه</string>
+    <string name="date_format_year">سال</string>
+    <string name="setup_time_zone">منطقهٔ زمانی</string>
+    <string name="setup_24_hour_format">استفاده از قالب ۲۴ ساعته</string>
     <string name="intro_restore_title">برنامه ها و داده ها را بازیابی کنید</string>
     <string name="intro_restore_subtitle">اگر نسخه پشتیبان Seedvault از <xliff:g id="name" example="LineageOS">%s</xliff:g> یا هر سیستم‌عامل دیگری دارید، می‌توانید آن را در اینجا بازیابی کنید.</string>
     <string name="intro_restore_button">بازیابی از پشتیبان‌گیری</string>
     <string name="setup_location">خدمات مکان</string>
+    <string name="location_summary">نحوه مدیریت موقعیت مکانی توسط دستگاه خود را انتخاب کنید</string>
+    <string name="location_access_title">استفاده از مکان</string>
+    <string name="location_agps_access_title">موقعیت مکانی بهبودیافته</string>
     <string name="location_access_summary"><b>به برنامه‌هایی که درخواست مکان می‌کنند اجازه دهید</b> از اطلاعات مکان شما استفاده کنند. ممکن است این استفاده شامل مکان فعلی و قبلی شما باشد.</string>
     <string name="location_agps_access_summary">وقتی مکان روشن است، <b>داده های کمک ماهواره را از اینترنت بارگیری کنید</b> که می تواند عملکرد راه‌اندازی GPS را تا حد زیادی بهبود بخشد.</string>
     <string name="update_recovery_title">به‌روزرسانی ریکاوری Lineage</string>
@@ -38,17 +58,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">ویژگی‌های لینیِج اواِس</string>
     <string name="services_pp_explanation">این خدمات در جهت افزایش قابلیت‌های دستگاه شما عمل می‌کنند. داده‌ها مطابق سیاست های حریم خصوصی <xliff:g id="name" example="LineageOS">%1$s</xliff:g> مورد استفاده قرار خواهند گرفت.</string>
+    <string name="services_find_privacy_policy">می‌توانید با مراجعه به آدرس زیر، سیاست حفظ حریم خصوصی را در دستگاه دیگری مطالعه کنید:</string>
     <string name="services_help_improve_cm">کمک به بهبود <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> با ارسال خودکار داده های عیب یابی و استفاده به <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. این اطلاعات قادر به آشکار سازی هویت شما نبوده و به تیم های مشغول بر روی چیز هایی مثل عمر باتری، کارایی نرم افزار و ویژگی های <xliff:g id="name" example="LineageOS">%3$s</xliff:g> جدید کمک می‌کند.</string>
+    <string name="services_metrics_title">ارسال داده‌های تشخیصی</string>
     <string name="services_os_nav_keys_label"><b>استفاده از کلیدهای پیمایش صفحه نمایش</b> به جای کلیدهای سخت‌افزاری.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">پیمایش</string>
     <string name="navigation_summary">روش پیمایش ترجیحی را انتخاب کنید</string>
     <string name="gesture_navigation">پیمایش اشاره‌ای</string>
     <string name="navbar_navigation">پیمایش ۳ دکمه‌ای</string>
+    <string name="gesture_navigation_short">اشاره</string>
+    <string name="navbar_navigation_short">سه دکمه</string>
     <string name="hide_gesture_hint">پنهان کردن نوار اشاره ناوبری</string>
     <string name="setup_theme">پوسته</string>
     <string name="theme_summary">طرح زمینه تیره از پس‌زمینه سیاه استفاده می‌کند تا باتری را برای مدت طولانی‌تری در برخی از صفحه‌ها زنده نگه دارد</string>
     <string name="dark">تاریک</string>
     <string name="light">روشن</string>
+    <string name="pure_black_theme">استفاده از پس‌زمینه کاملاً سیاه</string>
+    <string name="theme_preview">پیش‌نمایش پوسته</string>
+    <string name="swipe_up_to_go_home">بالا کشیدن برای رفتن به خانه</string>
+    <string name="tap_home_to_go_home">برای رفتن به خانه، روی نماد ناوبری مرکزی ضربه بزنید</string>
+    <string name="press_center_to_go_home">برای رفتن به خانه، دکمه وسط را فشار دهید</string>
 </resources>
