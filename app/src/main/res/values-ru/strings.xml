@@ -8,6 +8,7 @@
     <string name="app_name">Мастер настройки</string>
     <string name="cancel">Отмена</string>
     <string name="next">Далее</string>
+    <string name="finish">Готово</string>
     <string name="skip">Пропустить</string>
     <string name="start">Начать</string>
     <string name="done">Готово</string>
@@ -17,6 +18,9 @@
     <string name="setup_managed_profile_welcome_message">Настройте свой рабочий профиль</string>
     <string name="emergency_call">Экстренный вызов</string>
     <string name="accessibility_settings">Настройки специальных возможностей</string>
+    <string name="device_info">Информация об устройстве</string>
+    <string name="device_information">Информация об устройстве</string>
+    <string name="device_info_serial">Серийный номер</string>
     <string name="setup_locale">Язык</string>
     <string name="sim_locale_changed">Обнаружена %1$s SIM-карта</string>
     <string name="setup_euicc">Настроить eSIM</string>
@@ -30,10 +34,21 @@
     <string name="date_time_summary">Установите свой часовой пояс и при необходимости скорректируйте текущую дату и время</string>
     <string name="setup_current_date">Текущая дата</string>
     <string name="setup_current_time">Текущее время</string>
+    <string name="setup_datetime_section_date">Дата</string>
+    <string name="setup_datetime_section_time">Время</string>
+    <string name="setup_date_format">Формат</string>
+    <string name="date_format_day">День</string>
+    <string name="date_format_month">Месяц</string>
+    <string name="date_format_year">Год</string>
+    <string name="setup_time_zone">Часовой пояс</string>
+    <string name="setup_24_hour_format">Использовать 24-часовой формат</string>
     <string name="intro_restore_title">Восстановить приложения и данные</string>
     <string name="intro_restore_subtitle">Если у вас есть резервная копия Seedvault <xliff:g id="name" example="LineageOS">%s</xliff:g> или любой другой ОС, вы можете восстановить ее здесь.</string>
     <string name="intro_restore_button">Восстановить из резервной копии</string>
     <string name="setup_location">Службы местоположения</string>
+    <string name="location_summary">Выберите, как ваше устройство управляет своим местоположением</string>
+    <string name="location_access_title">Использовать местоположение</string>
+    <string name="location_agps_access_title">Улучшенное местоположение</string>
     <string name="location_access_summary"><b>Разрешить приложениям, запросившим ваше разрешение</b>, использовать информацию о вашем местоположении. Это может включать ваше текущее и прошлые местоположения.</string>
     <string name="location_agps_access_summary">При включении определения местоположения <b>из интернета будут загружаться вспомогательные спутниковые данные</b>. Это поможет значительно ускорить подключение к GPS.</string>
     <string name="update_recovery_title">Обновление Lineage Recovery</string>
@@ -43,17 +58,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Возможности LineageOS</string>
     <string name="services_pp_explanation">Эти службы работают, чтобы расширить возможности вашего устройства. Данные будут использоваться в соответствии с политикой конфиденциальности <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Вы можете прочитать политику конфиденциальности на другом устройстве, посетив:</string>
     <string name="services_help_improve_cm">Помочь улучшить <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>, разрешив отправку данных диагностики и использования в <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Эта информация не может быть использована для идентификации вашей личности и поможет в работе над повышением автономности, производительности и новыми возможностями <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
+    <string name="services_metrics_title">Отправлять диагностические данные</string>
     <string name="services_os_nav_keys_label"><b>Использовать экранные навигационные кнопки</b> вместо аппаратных.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Навигация</string>
     <string name="navigation_summary">Выберите предпочтительный метод навигации</string>
     <string name="gesture_navigation">Навигация жестами</string>
     <string name="navbar_navigation">Навигация тремя кнопками</string>
+    <string name="gesture_navigation_short">Жесты</string>
+    <string name="navbar_navigation_short">Навигационный бар</string>
     <string name="hide_gesture_hint">Скрыть подсказку навигации жестами</string>
     <string name="setup_theme">Тема</string>
     <string name="theme_summary">Темная тема использует черный фон, чтобы помочь продлить срок службы батареи на некоторых экранах</string>
     <string name="dark">Темная</string>
     <string name="light">Светлая</string>
+    <string name="pure_black_theme">Использовать черный фон</string>
+    <string name="theme_preview">Предпросмотр темы</string>
+    <string name="swipe_up_to_go_home">Проведите вверх для перехода на главный экран</string>
+    <string name="tap_home_to_go_home">Нажмите на значок посередине, чтобы перейти на главный экран</string>
+    <string name="press_center_to_go_home">Нажмите на центральную кнопку, чтобы перейти на главный экран</string>
 </resources>

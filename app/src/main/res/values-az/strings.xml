@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Quraşdırma Sehrbazı</string>
+    <string name="cancel">İmtina</string>
     <string name="next">Sonrakı</string>
     <string name="finish">Bitir</string>
     <string name="skip">Ötür</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Seriya nömrəsi</string>
     <string name="setup_locale">Dil</string>
     <string name="sim_locale_changed">%1$s SIM aşkarlandı</string>
+    <string name="setup_euicc">eSIM-i qur</string>
     <string name="setup_sim_missing">SIM kart yoxdur</string>
+    <string name="esim_support_summary">eSIM-u qurun və ya bir SIM kart taxın. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
     <string name="sim_missing_summary" product="tablet">Planşetinizdə SIM kart aşkarlanmadı. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
     <string name="sim_missing_summary" product="default">Telefonunuzda SIM kart aşkarlanmadı. SIM kart taxmaq üçün cihazınızla birgə gələn təlimatları oxuyun.</string>
+    <string name="sim_missing_skip_title">SIM qurulması ötürülsün?</string>
+    <string name="sim_missing_skip_message">Bu addımı ötürsəniz, Ayarlarda SIM qurana qədər mobil şəbəkəyə bağlana bilməyəcəksiniz.</string>
     <string name="setup_datetime">Tarix &amp; vaxt</string>
     <string name="date_time_summary">Saat qurşağınızı seçin və lazım olsa hazırkı tarix və saatı ayarlayın</string>
     <string name="setup_current_date">Hazırkı tarix</string>
@@ -73,6 +78,6 @@
     <string name="pure_black_theme">Tamamilə qara arxaplan istifadə et</string>
     <string name="theme_preview">Tema önizləməsi</string>
     <string name="swipe_up_to_go_home">Ana ekran üçün yuxarı sürüşdür</string>
-    <string name="tap_home_to_go_home">Ana ekran üçün mərkəzdəki nav ikonuna toxun</string>
+    <string name="tap_home_to_go_home">Ana ekrana getmək üçün mərkəzdəki nav simgəsinə toxun</string>
     <string name="press_center_to_go_home">Ana ekran üçün mərkəzdəki düyməyə bas</string>
 </resources>

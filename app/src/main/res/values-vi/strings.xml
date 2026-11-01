@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Trình hướng dẫn thiết lập</string>
+    <string name="cancel">Hủy</string>
     <string name="next">Tiếp theo</string>
     <string name="finish">Hoàn tất</string>
     <string name="skip">Bỏ qua</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Số sê-ri</string>
     <string name="setup_locale">Ngôn ngữ</string>
     <string name="sim_locale_changed">Đã phát hiện %1$s SIM</string>
+    <string name="setup_euicc">Thiết lập eSIM</string>
     <string name="setup_sim_missing">Không có thẻ SIM</string>
+    <string name="esim_support_summary">Thiết lập eSIM hoặc lắp thẻ SIM. Để lắp thẻ SIM, hãy đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
     <string name="sim_missing_summary" product="tablet">Không tìm thấy thẻ SIM trong máy tính bảng của bạn. Để chèn thẻ SIM, đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
     <string name="sim_missing_summary" product="default">Không tìm thấy thẻ SIM trong điện thoại của bạn. Để chèn thẻ SIM, đọc hướng dẫn đi kèm với thiết bị của bạn.</string>
+    <string name="sim_missing_skip_title">Bỏ qua bước thiết lập SIM?</string>
+    <string name="sim_missing_skip_message">Nếu bỏ qua bước này, bạn sẽ không thể kết nối với mạng di động cho đến khi thiết lập SIM trong phần Cài đặt.</string>
     <string name="setup_datetime">Ngày &amp; giờ</string>
     <string name="date_time_summary">Đặt múi giờ của bạn và điều chỉnh ngày và thời gian hiện tại nếu cần thiết</string>
     <string name="setup_current_date">Ngày hiện tại</string>

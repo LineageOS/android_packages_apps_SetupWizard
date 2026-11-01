@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">تەڭشەك يېتەكچىسى</string>
+    <string name="cancel">ۋاز كەچ</string>
     <string name="next">كېيىنكى</string>
     <string name="finish">تامام</string>
     <string name="skip">ئاتلاش</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">تەرتىپ نومۇرى</string>
     <string name="setup_locale">تىل</string>
     <string name="sim_locale_changed">ھازىر %1$s دانە SIM كارتا بايقىدى</string>
+    <string name="setup_euicc">eSIM تەڭشەك</string>
     <string name="setup_sim_missing">SIM كارتا يوق</string>
+    <string name="esim_support_summary">eSIM تەڭشەش ياكى eSIM كارتا قىستۇرۇش. eSIM كارتا قىستۇرۇشتا، ئۈسكۈنىڭىزنىڭ قوللانمىسىنى ئوقۇڭ.</string>
     <string name="sim_missing_summary" product="tablet">تاختا كومپىيوتېرىڭىزدا SIM كارتا بايقىمىدى. تاختا كومپىيوتېر ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
     <string name="sim_missing_summary" product="default">يانفونىڭىزدا SIM كارتا بايقىمىدى. يانفون ئىشلىتىش قوللانمىسى بۇيىچە SIM كارتا سېلىڭ.</string>
+    <string name="sim_missing_skip_title">SIM تەڭشەشتىن ئاتلامدۇ؟</string>
+    <string name="sim_missing_skip_message">ئەگەر بۇ باسقۇچتىن ئاتلاپ كەتسىڭىز، تەڭشەكتە SIM كارتىنى سەپلىمىگۈچە كۆچمە تورغا باغلىنالمايسىز.</string>
     <string name="setup_datetime">چىسلا &amp; ۋاقىت</string>
     <string name="date_time_summary">ئەگەر لازىم بولسا، ۋاقىت رايونى. چىسلا ۋە ۋاقىتنى تەڭشەڭ</string>
     <string name="setup_current_date">نۆۋەتتىكى چېسلا</string>

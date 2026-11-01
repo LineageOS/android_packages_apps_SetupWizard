@@ -25,8 +25,11 @@
     <string name="sim_locale_changed">سیمی %1$s دۆزرایەوە</string>
     <string name="setup_euicc">ڕێکخستنی eSIM</string>
     <string name="setup_sim_missing">سیمکارت نییە</string>
+    <string name="esim_support_summary">eSIM ڕێکبخە یان سیمکارتێک تێبکە. بۆ تێکردنی سیمکارت، ئەو ڕێنماییانە بخوێنەرەوە کە لەگەڵ ئامێرەکەتدا هاتوون.</string>
     <string name="sim_missing_summary" product="tablet">سیمکارت لە ناو تاتەبژمێرەکەتدا نەدۆزرایەوە. بۆ تێکردنی سیمکارت، ئەو ڕێنماییانە بخوێنەرەوە کە لەگەڵ ئامێرەکەتدا هاتوون.</string>
     <string name="sim_missing_summary" product="default">سیمکارت لە ناو مۆبایلەکەتدا نەدۆزرایەوە. بۆ تێکردنی سیمکارت، ئەو ڕێنماییانە بخوێنەرەوە کە لەگەڵ ئامێرەکەتدا هاتوون.</string>
+    <string name="sim_missing_skip_title">ڕێکخستنی سیمکارت تێپەڕێنرێت؟</string>
+    <string name="sim_missing_skip_message">ئەگەر ئەم هەنگاوە تێپەڕێنیت، پەیوەست نابیت بە تۆڕی مۆبایلەوە تا ئەو کاتەی لە ڕێکخستنەکاندا سیمکارتێک ڕێکدەخەیت.</string>
     <string name="setup_datetime">ڕۆژ &amp; کات</string>
     <string name="date_time_summary">ناوچەی کاتیی خۆت دیاری بکە و ڕێکەوت و کاتی ئێستا ڕێکبخە ئەگەر پێویست بوو</string>
     <string name="setup_current_date">ڕێکەوتی ئێستا</string>

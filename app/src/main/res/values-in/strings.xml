@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Panduan Penyiapan</string>
+    <string name="cancel">Batal</string>
     <string name="next">Berikutnya</string>
     <string name="finish">Selesai</string>
     <string name="skip">Lewati</string>

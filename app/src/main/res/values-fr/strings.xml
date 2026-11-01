@@ -6,7 +6,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Assistant de configuration</string>
+    <string name="cancel">Annuler</string>
     <string name="next">Suivant</string>
+    <string name="finish">Terminer</string>
     <string name="skip">Ignorer</string>
     <string name="start">Commencer</string>
     <string name="done">Effectué</string>
@@ -16,6 +18,8 @@
     <string name="setup_managed_profile_welcome_message">Configurez votre profil de travail</string>
     <string name="emergency_call">Appel d\'urgence</string>
     <string name="accessibility_settings">Paramètres d\'accessibilité</string>
+    <string name="device_info">Infos sur l\'appareil</string>
+    <string name="device_information">Informations sur l\'appareil</string>
     <string name="device_info_serial">Numéro de série</string>
     <string name="setup_locale">Langue</string>
     <string name="sim_locale_changed">%1$s carte SIM détectée</string>
@@ -54,6 +58,8 @@
     <string name="navigation_summary">Choisir la méthode de navigation préférée</string>
     <string name="gesture_navigation">Navigation gestuelle</string>
     <string name="navbar_navigation">Navigation à trois boutons</string>
+    <string name="gesture_navigation_short">Geste</string>
+    <string name="navbar_navigation_short">3 boutons</string>
     <string name="hide_gesture_hint">Cacher l\'indice de navigation gestuelle</string>
     <string name="setup_theme">Thème</string>
     <string name="theme_summary">Le thème sombre utilise un fond noir pour aider à prolonger l\'autonomie de la batterie sur certains écrans</string>

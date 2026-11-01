@@ -6,6 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Οδηγός εγκατάστασης</string>
+    <string name="cancel">Ακύρωση</string>
     <string name="next">Επόμενο</string>
     <string name="finish">Ολοκλήρωση</string>
     <string name="skip">Παράλειψη</string>
@@ -22,9 +23,13 @@
     <string name="device_info_serial">Σειριακός αριθμός</string>
     <string name="setup_locale">Γλώσσα</string>
     <string name="sim_locale_changed">Ανιχνεύθηκε %1$s SIM</string>
+    <string name="setup_euicc">Ρύθμιση eSIM</string>
     <string name="setup_sim_missing">Η κάρτα SIM λείπει</string>
+    <string name="esim_support_summary">Ρυθμίστε μια eSIM ή εισάγετε μια κάρτα SIM. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
     <string name="sim_missing_summary" product="tablet">Δεν εντοπίστηκε κάρτα SIM στο tablet σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
     <string name="sim_missing_summary" product="default">Δεν εντοπίστηκε κάρτα SIM στο τηλέφωνό σας. Για να εισάγετε μια κάρτα SIM, διαβάστε τις οδηγίες που συνοδεύουν τη συσκευή σας.</string>
+    <string name="sim_missing_skip_title">Παράλειψη ρύθμισης SIM;</string>
+    <string name="sim_missing_skip_message">Αν παραλείψετε αυτό το βήμα, δεν θα συνδεθείτε σε δίκτυο κινητής τηλεφωνίας μέχρι να ρυθμίσετε μια SIM στις Ρυθμίσεις.</string>
     <string name="setup_datetime">Ημερομηνία &amp; ώρα</string>
     <string name="date_time_summary">Ορίστε τη ζώνη ώρας σας και προσαρμόστε την τρέχουσα ημερομηνία και ώρα εάν χρειάζεται</string>
     <string name="setup_current_date">Τρέχουσα ημερομηνία</string>
