@@ -6,7 +6,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Installazione guidata</string>
+    <string name="cancel">Annulla</string>
     <string name="next">Avanti</string>
+    <string name="finish">Fine</string>
     <string name="skip">Salta</string>
     <string name="start">Inizia</string>
     <string name="done">Fatto</string>
@@ -16,19 +18,37 @@
     <string name="setup_managed_profile_welcome_message">Configura il tuo profilo di lavoro</string>
     <string name="emergency_call">Emergenza</string>
     <string name="accessibility_settings">Impostazioni di accessibilità</string>
+    <string name="device_info">Informazioni sul dispositivo</string>
+    <string name="device_information">Informazioni sul dispositivo</string>
+    <string name="device_info_serial">Numero di serie</string>
     <string name="setup_locale">Lingua</string>
     <string name="sim_locale_changed">%1$s SIM rilevata</string>
+    <string name="setup_euicc">Configura eSIM</string>
     <string name="setup_sim_missing">Scheda SIM mancante</string>
+    <string name="esim_support_summary">Configurare una eSIM o inserire una scheda SIM. Per inserire una scheda SIM, consultare le istruzioni del dispositivo.</string>
     <string name="sim_missing_summary" product="tablet">Non è stata riconosciuta alcuna scheda SIM nel tuo tablet. Per inserire una scheda SIM, leggi le istruzioni comprese col tuo dispositivo.</string>
     <string name="sim_missing_summary" product="default">Non è stata rilevata alcuna scheda SIM nel tuo cellulare. Per inserire una scheda SIM, leggi le istruzioni comprese col tuo dispositivo.</string>
+    <string name="sim_missing_skip_title">Saltare la configurazione di una SIM?</string>
+    <string name="sim_missing_skip_message">Se salti questo passaggio, non sarai connesso a una rete mobile finché non avrai configurato una SIM nelle Impostazioni.</string>
     <string name="setup_datetime">Data &amp; ora</string>
     <string name="date_time_summary">Imposta il fuso orario e se necessario regola data e ora corrente</string>
     <string name="setup_current_date">Data corrente</string>
     <string name="setup_current_time">Ora corrente</string>
+    <string name="setup_datetime_section_date">Data</string>
+    <string name="setup_datetime_section_time">Ora</string>
+    <string name="setup_date_format">Formato</string>
+    <string name="date_format_day">Giorno</string>
+    <string name="date_format_month">Mese</string>
+    <string name="date_format_year">Anno</string>
+    <string name="setup_time_zone">Fuso orario</string>
+    <string name="setup_24_hour_format">Usa il formato 24 ore</string>
     <string name="intro_restore_title">Ripristina app e dati</string>
     <string name="intro_restore_subtitle">Se hai un backup Seedvault di <xliff:g id="name" example="LineageOS">%s</xliff:g> o di qualsiasi altro sistema operativo, puoi ripristinarlo qui.</string>
     <string name="intro_restore_button">Ripristina dal backup</string>
     <string name="setup_location">Localizzazione</string>
+    <string name="location_summary">Scegli come il tuo dispositivo gestisce la sua posizione</string>
+    <string name="location_access_title">Utilizza posizione</string>
+    <string name="location_agps_access_title">Geolocalizzazione migliorata</string>
     <string name="location_access_summary"><b>Consenti alle applicazioni che hanno chiesto la tua autorizzazione</b> di utilizzare informazioni sulla tua posizione. Ciò può includere la tua posizione attuale e quelle precedenti.</string>
     <string name="location_agps_access_summary">Quando la geolocalizzazione è attiva, <b>scarica da internet i dati di assistenza satellitare</b>, che possono migliorare notevolmente le prestazioni di avvio del GPS.</string>
     <string name="update_recovery_title">Aggiorna recovery Lineage</string>
@@ -38,17 +58,26 @@
     <string name="update_recovery_full_description"><xliff:g id="recovery_update_description">%1$s</xliff:g>\n<xliff:g id="recovery_update_warning">%2$s</xliff:g></string>
     <string name="setup_services">Funzioni LineageOS</string>
     <string name="services_pp_explanation">Questi servizi funzionano per estendere le funzionalità del tuo dispositivo. I dati saranno utilizzati in conformità con l\'informativa sulla privacy di <xliff:g id="name" example="LineageOS">%1$s</xliff:g>.</string>
+    <string name="services_find_privacy_policy">Puoi leggere l\'informativa sulla privacy su un altro dispositivo visitando:</string>
     <string name="services_help_improve_cm">Contribuisci a migliorare <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
     <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> inviando automaticamente dati diagnostici e di consumo agli svilupatori di <xliff:g id="name" example="LineageOS">%2$s</xliff:g>. Queste informazioni non possono essere utilizzate per identificare te ma danno una mano ai team che lavorano su cose come la durata della batteria, performance delle app e nuove funzioni di <xliff:g id="name" example="LineageOS">%3$s</xliff:g>.</string>
+    <string name="services_metrics_title">Fornisci dati diagnostici</string>
     <string name="services_os_nav_keys_label"><b>Usa i pulsanti virtuali a schermo</b> invece di quelli fisici.</string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
     <string name="setup_navigation">Navigazione</string>
     <string name="navigation_summary">Scegli il metodo di navigazione preferito</string>
     <string name="gesture_navigation">Navigazione tramite gesti</string>
     <string name="navbar_navigation">Navigazione con tre pulsanti</string>
+    <string name="gesture_navigation_short">Gesti</string>
+    <string name="navbar_navigation_short">A 3 pulsanti</string>
     <string name="hide_gesture_hint">Nascondi i suggerimenti per la navigazione tramite gesti</string>
     <string name="setup_theme">Tema</string>
     <string name="theme_summary">Il tema scuro usa uno sfondo nero per prolungare la durata della batteria su alcuni schermi</string>
     <string name="dark">Scuro</string>
     <string name="light">Chiaro</string>
+    <string name="pure_black_theme">Usa sfondo nero</string>
+    <string name="theme_preview">Anteprima del tema</string>
+    <string name="swipe_up_to_go_home">Scorri verso l\'alto per andare alla schermata home</string>
+    <string name="tap_home_to_go_home">Tocca il pulsante centrale della barra di navigazione per andare alla schermata home</string>
+    <string name="press_center_to_go_home">Premi il pulsante centrale per andare alla schermata home</string>
 </resources>

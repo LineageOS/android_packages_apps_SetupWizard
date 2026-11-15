@@ -18,8 +18,8 @@
     <string name="setup_managed_profile_welcome_message">İş profilinizi qurun</string>
     <string name="emergency_call">Fövqəladə hal zəngləri</string>
     <string name="accessibility_settings">Erişiləbilənlik ayarları</string>
-    <string name="device_info">Cihaz məlumatı</string>
-    <string name="device_information">Cihaz məlumatları</string>
+    <string name="device_info">Cihaz bilgiləri</string>
+    <string name="device_information">Cihaz bilgiləri</string>
     <string name="device_info_serial">Seriya nömrəsi</string>
     <string name="setup_locale">Dil</string>
     <string name="sim_locale_changed">%1$s SIM aşkarlandı</string>
@@ -49,7 +49,7 @@
     <string name="location_summary">Cihazın yerləşməni necə idarə edəcəyini seçin</string>
     <string name="location_access_title">Yerləşməni istifadə et</string>
     <string name="location_agps_access_title">Təkmil yerləşmə</string>
-    <string name="location_access_summary"><b>Yer məlumatlarınızı istəyən tətbiqlərə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
+    <string name="location_access_summary"><b>Yer bilgilərinizi istəyən tətbiqlərə icazə verin.</b> Bu hazırkı və keçmiş yerləşmənizi ehtiva edə bilər.</string>
     <string name="location_agps_access_summary">Yerləşmə açıq olduqda, <b>peyk köməkçi verilərini internetdən endirin</b>, bu GPS-in başlatma performansını əhəmiyyətli dərəcədə artıra bilər.</string>
     <string name="update_recovery_title">Lineage Geri qaytarma Rejimini Güncəllə</string>
     <string name="update_recovery_description">Hər güncəlləmədən sonrakı ilk açılışda Lineage Geri qaytarma rejimini güncəlləyir.</string>
@@ -60,7 +60,7 @@
     <string name="services_pp_explanation">Bu xidmətlər cihazınızın imkanlarını artırır. Verilər, <xliff:g id="name" example="LineageOS">%1$s</xliff:g>un məxfilik siyasətinə uyğun olaraq istifadə ediləcək.</string>
     <string name="services_find_privacy_policy">Məxfilik siyasətini başqa bir cihazda oxumaq üçün ziyarət edin:</string>
     <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
-    <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%2$s</xliff:g>-a diaqnostikanı və istifadə verilərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlar, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
+    <string name="services_metrics_label"><xliff:g id="name" example="LineageOS">%1$s</xliff:g> diaqnostika və istifadə verilərini avtomatik olaraq bura göndərir: <xliff:g id="name" example="Help improve LineageOS">%2$s</xliff:g>. Bu bilgilər, kimliyinizi müəyyənləşdirmək üçün istifadə edilmir və batareya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%3$s</xliff:g> özəllikləri kimi işlərlə məşğul olan komandalara kömək edir.</string>
     <string name="services_metrics_title">Diaqnostika verilərinə töhfə ver</string>
     <string name="services_os_nav_keys_label">Donanım düymələri əvəzinə <b>ekran üzərindəki naviqasiya düymələrini istifadə edin.</b></string>
     <string name="services_full_description"><xliff:g id="pp_explanation">%1$s</xliff:g>\n<xliff:g id="pp_find">%2$s</xliff:g></string>
