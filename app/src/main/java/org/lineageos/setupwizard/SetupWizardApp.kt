@@ -30,6 +30,7 @@ const val EXTRA_PREFS_SHOW_BUTTON_BAR = "extra_prefs_show_button_bar"
 const val EXTRA_PREFS_SHOW_SKIP = "extra_prefs_show_skip"
 const val EXTRA_PREFS_SHOW_SKIP_TV = "extra_show_skip_network"
 const val EXTRA_PREFS_SET_BACK_TEXT = "extra_prefs_set_back_text"
+const val EXTRA_USE_EXPRESSIVE_STYLE = "use_expressive_style"
 const val EXTRA_ENABLE_NEXT_ON_CONNECT = "wifi_enable_next_on_connect"
 
 const val KEY_SEND_METRICS = "send_metrics"
